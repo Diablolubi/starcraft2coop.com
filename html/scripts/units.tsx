@@ -166,6 +166,7 @@ class Units extends preact.Component {
         const separator = rawHash.indexOf("/");
         const commander = (separator >= 0 ? rawHash.slice(0, separator) : rawHash) as Token || null;
         const unit = (separator >= 0 ? rawHash.slice(separator + 1) : "") as Token || null;
+        document.getElementById("units")?.setAttribute("data-unit-debug", `${rawHash}|${commander}|${unit}`);
         const modifiers = commander && unit
             ? (this.state.modifiers?.commander === commander && this.state.modifiers?.unit === unit
                 ? this.state.modifiers
