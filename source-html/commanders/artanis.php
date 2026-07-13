@@ -1066,8 +1066,8 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <p class="buildOrder">
         投射能量场<br>
         15 传送门<br>
-        17 吸收站<br>
-        18 吸收站<br>
+        17 吸纳舱<br>
+        18 吸纳舱<br>
         时空提速传送门<br>
         21 狂热者 -> 岩石<br>
         24 狂热者<br>

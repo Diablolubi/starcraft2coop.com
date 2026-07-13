@@ -1,0 +1,14 @@
+{
+  "source": "local-starcraft-ii-client",
+  "game_build": "5.0.16.97426",
+  "extracted_at": "2026-07-14T00:00:00Z",
+  "entries": [
+    {
+      "id": "Assimilator",
+      "en": "Assimilator",
+      "zh-CN": "吸纳舱",
+      "kind": "building",
+      "source_file": "mods/core.sc2mod/zhcn.sc2data/localizeddata/editor/editorcatalogstrings.txt"
+    }
+  ]
+}

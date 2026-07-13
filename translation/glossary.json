@@ -2163,7 +2163,7 @@
     { "en": "Gateway", "zh-CN": "传送门", "aliases": ["Gateway"] },
     { "en": "Warp Gate", "zh-CN": "折跃门", "aliases": ["Warp Gate"] },
     { "en": "Pylon", "zh-CN": "水晶塔", "aliases": ["Pylon"] },
-    { "en": "Assimilator", "zh-CN": "吸收站", "aliases": ["Assimilator"] },
+    { "en": "Assimilator", "zh-CN": "吸纳舱", "aliases": ["Assimilator"] },
     { "en": "Extractor", "zh-CN": "萃取巢", "aliases": ["Extractor"] },
     { "en": "Missile Turret", "zh-CN": "导弹塔", "aliases": ["Missile Turret"] },
     { "en": "Spine Crawler", "zh-CN": "脊针爬虫", "aliases": ["Spine Crawler"] },

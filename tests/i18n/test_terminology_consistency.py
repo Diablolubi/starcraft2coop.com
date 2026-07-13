@@ -39,7 +39,7 @@ class TerminologyConsistencyTests(unittest.TestCase):
             "Missile Turret": "导弹塔",
             "Spine Crawler": "脊针爬虫",
             "Solar Lance": "太阳能长枪",
-            "Assimilator": "吸收站",
+            "Assimilator": "吸纳舱",
             "Extractor": "萃取巢",
         }
         entries = {
@@ -115,7 +115,7 @@ class TerminologyConsistencyTests(unittest.TestCase):
 
     def test_retired_building_terms_are_not_visible(self):
         roots = (ROOT / "source-html", ROOT / "source-data", ROOT / "translation")
-        retired = ("吸纳舱", "萃取房", "太阳能射线", "生命力")
+        retired = ("吸收站", "萃取房", "太阳能射线", "生命力")
         offenders = []
         for root in roots:
             for path in root.rglob("*"):

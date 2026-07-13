@@ -10,3 +10,7 @@ Thumbs.db
 # generated automatically by Dreamhost
 .dh-diag
 favicon.gif
+
+# Local StarCraft II extraction tools and proprietary CASC exports.
+.local-tools/
+sc2_extract.obj
