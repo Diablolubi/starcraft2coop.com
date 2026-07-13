@@ -1,6 +1,6 @@
 import { expect, test } from "bun:test";
 
-import { parseUnitHash, unitToken, UnitStats } from "./units";
+import { mergeUnitModifiers, parseUnitHash, unitToken, UnitStats } from "./units";
 import type { Token } from "./units";
 
 function upgradedUnit(
@@ -71,4 +71,14 @@ test("unit hash keeps commander and unit selection together", () => {
     expect(parseUnitHash("#raynor/marine")).toEqual({ commander: "raynor", unit: "marine" });
     expect(parseUnitHash("#raynor")).toEqual({ commander: "raynor", unit: null });
     expect(parseUnitHash("")).toEqual({ commander: null, unit: null });
+});
+
+test("unit modifier updates keep the selected unit when state is not initialized", () => {
+    const base = UnitStats.modifiers("raynor", "marine");
+    const updated = mergeUnitModifiers(null, { upgradeLevels: { weapon: 2 } }, "raynor", "marine");
+
+    expect(updated.commander).toBe("raynor");
+    expect(updated.unit).toBe("marine");
+    expect(updated.upgrades).toEqual(base.upgrades);
+    expect(updated.upgradeLevels.weapon).toBe(2);
 });

@@ -128,13 +128,26 @@ function modifierLevel(values: Record<string, number>, stableKey: string): numbe
     return Object.entries(values).find(([key, level]) => level && token(key) === stableKey)?.[1] ?? 0;
 }
 
-interface UnitModifiers {
+export interface UnitModifiers {
     commander: Token;
     unit: Token;
     upgrades: Record<string, boolean>;
     masteries: Record<string, number>;
     prestiges: Record<string, boolean>;
     upgradeLevels: { weapon?: number, armor?: number, shields?: number, artifacts?: number, rank?: number };
+}
+
+/** Merge an interaction into the active unit's modifiers, rebuilding defaults when needed. */
+export function mergeUnitModifiers(
+    current: UnitModifiers | null,
+    partial: Partial<UnitModifiers>,
+    commander: Token,
+    unit: Token,
+): UnitModifiers {
+    const base = current?.commander === commander && current.unit === unit
+        ? current
+        : UnitStats.modifiers(commander, unit);
+    return { ...base, ...partial };
 }
 
 class Units extends preact.Component {
@@ -151,13 +164,20 @@ class Units extends preact.Component {
             compareModifiers: null,
         };
     onSetModifiers = (modifiers: Partial<UnitModifiers>) => {
-        this.setState({ modifiers: { ...this.state.modifiers, ...modifiers } });
+        const selection = parseUnitHash(window.location.hash);
+        if (!selection.commander || !selection.unit) return;
+        this.setState({ modifiers: mergeUnitModifiers(this.state.modifiers, modifiers, selection.commander, selection.unit) });
     };
     onSetCompareModifiers = (compareModifiers: Partial<UnitModifiers>) => {
-        this.setState({ compareModifiers: { ...this.state.compareModifiers, ...compareModifiers } });
+        const current = this.state.compareModifiers;
+        if (!current) return;
+        this.setState({ compareModifiers: mergeUnitModifiers(current, compareModifiers, current.commander, current.unit) });
     };
     onClickCompare = () => {
-        this.setState({ compareModifiers: { ...this.state.modifiers } });
+        const selection = parseUnitHash(window.location.hash);
+        if (!selection.commander || !selection.unit) return;
+        const current = mergeUnitModifiers(this.state.modifiers, {}, selection.commander, selection.unit);
+        this.setState({ compareModifiers: { ...current } });
     };
     onClickClose = () => {
         this.setState({ compareModifiers: null });
