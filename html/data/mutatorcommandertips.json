@@ -45,21 +45,21 @@
         "tipid": 7,
         "mutator": 1,
         "commander": "Zeratul",
-        "tip": "“漆黑一片”会禁用泽拉图的全地图地形视野。你可能需要使用集结点寻找神器碎片。",
+        "tip": "“极度谨慎”会禁用泽拉图的全地图地形视野。你可能需要使用集结点寻找神器碎片。",
         "video": "h0OZG494TCY"
     },
     {
         "tipid": 8,
         "mutator": 2,
         "commander": "Abathur",
-        "tip": "“强势部署”空投生成的单位不会掉落生物质。",
+        "tip": "“进攻部署”空投生成的单位不会掉落生物质。",
         "video": null
     },
     {
         "tipid": 9,
         "mutator": 2,
         "commander": "Dehaka",
-        "tip": "“强势部署”空投生成的单位不会掉落精华。",
+        "tip": "“进攻部署”空投生成的单位不会掉落精华。",
         "video": null
     },
     {
@@ -73,14 +73,14 @@
         "tipid": 11,
         "mutator": 2,
         "commander": "Mengsk",
-        "tip": "“强势部署”空投生成的单位不会提供皇家卫队经验值。",
+        "tip": "“进攻部署”空投生成的单位不会提供皇家卫队经验值。",
         "video": null
     },
     {
         "tipid": 12,
         "mutator": 2,
         "commander": "Vorazun",
-        "tip": "时间停止会延后“强势部署”的触发时间。",
+        "tip": "时间停止会延后“进攻部署”的触发时间。",
         "video": null
     },
     {
@@ -108,7 +108,7 @@
         "tipid": 16,
         "mutator": 4,
         "commander": "Zeratul",
-        "tip": "泽拉图精华化身的退化技能会使单位退化，并失去其拥有的所有复仇者层数。",
+        "tip": "泽拉图精华化身的退化技能会使单位退化，并失去其拥有的所有复仇战士层数。",
         "video": null
     },
     {
@@ -262,7 +262,7 @@
         "tipid": 38,
         "mutator": 12,
         "commander": "Abathur",
-        "tip": "拥有 100 点或更多生物质的单位可以无视“双刃剑”伤害。",
+        "tip": "拥有 100 点或更多生物质的单位可以无视“双重压力”伤害。",
         "video": null
     },
     {
@@ -276,35 +276,35 @@
         "tipid": 40,
         "mutator": 12,
         "commander": "Fenix",
-        "tip": "保护者的力场可以降低“双刃剑”造成的伤害。",
+        "tip": "保护者的力场可以降低“双重压力”造成的伤害。",
         "video": null
     },
     {
         "tipid": 41,
         "mutator": 12,
         "commander": "Kerrigan",
-        "tip": "凯瑞甘当前的变异甲壳会先被“双刃剑”消耗，随后才获得由所造成伤害生成的新变异甲壳。",
+        "tip": "凯瑞甘当前的变异甲壳会先被“双重压力”消耗，随后才获得由所造成伤害生成的新变异甲壳。",
         "video": null
     },
     {
         "tipid": 42,
         "mutator": 12,
         "commander": "Nova",
-        "tip": "诺娃防御无人机的防御矩阵可以抵挡“双刃剑”造成的伤害。",
+        "tip": "诺娃防御无人机的防御矩阵可以抵挡“双重压力”造成的伤害。",
         "video": null
     },
     {
         "tipid": 43,
         "mutator": 12,
         "commander": "Stetmann",
-        "tip": "斯台特曼的爱心过载可以抵挡“双刃剑”造成的伤害。",
+        "tip": "斯台特曼的爱心过载可以抵挡“双重压力”造成的伤害。",
         "video": null
     },
     {
         "tipid": 44,
         "mutator": 12,
         "commander": "Swann",
-        "tip": "斯旺科学船的防御矩阵可以抵挡“双刃剑”造成的伤害。",
+        "tip": "斯旺科学船的防御矩阵可以抵挡“双重压力”造成的伤害。",
         "video": null
     },
     {
@@ -325,28 +325,28 @@
         "tipid": 47,
         "mutator": 12,
         "commander": "Zeratul",
-        "tip": "伏击者生成的虚空幻影本身会被视为单位，因此伏击者闪现时不会受到“双刃剑”伤害。",
+        "tip": "伏击者生成的虚空幻影本身会被视为单位，因此伏击者闪现时不会受到“双重压力”伤害。",
         "video": null
     },
     {
         "tipid": 48,
         "mutator": 13,
         "commander": "Mengsk",
-        "tip": "大地碎裂炮被“强占地盘”夺取后会停止攻击，装载在炮内的所有单位都会丢失。",
+        "tip": "大地碎裂炮被“强行征用”夺取后会停止攻击，装载在炮内的所有单位都会丢失。",
         "video": null
     },
     {
         "tipid": 49,
         "mutator": 13,
         "commander": "Mengsk",
-        "tip": "补给地堡被“强占地盘”夺取时，装载在其中的单位都会丢失。",
+        "tip": "补给地堡被“强行征用”夺取时，装载在其中的单位都会丢失。",
         "video": null
     },
     {
         "tipid": 50,
         "mutator": 13,
         "commander": "Raynor",
-        "tip": "地堡被“强占地盘”夺取时，装载在其中的单位都会丢失。",
+        "tip": "地堡被“强行征用”夺取时，装载在其中的单位都会丢失。",
         "video": null
     },
     {
@@ -360,14 +360,14 @@
         "tipid": 52,
         "mutator": 13,
         "commander": "Zeratul",
-        "tip": "“强占地盘”会影响光子炮投影。如果投影被埃蒙夺取，可在源光子炮处取消该投影。",
+        "tip": "“强行征用”会影响光子炮投影。如果投影被埃蒙夺取，可在源光子炮处取消该投影。",
         "video": null
     },
     {
         "tipid": 53,
         "mutator": 13,
         "commander": "Zagara",
-        "tip": "胆汁喷射体被“强占地盘”夺取后会停止攻击。",
+        "tip": "胆汁喷射体被“强行征用”夺取后会停止攻击。",
         "video": null
     },
     {
@@ -395,14 +395,14 @@
         "tipid": 57,
         "mutator": 17,
         "commander": "Zagara",
-        "tip": "跳虫的闪避可以规避“烟花表演”造成的伤害。",
+        "tip": "跳虫的闪避可以规避“焰火秀”造成的伤害。",
         "video": null
     },
     {
         "tipid": 58,
         "mutator": 18,
         "commander": "Abathur",
-        "tip": "“礼物交换”生成的单位会掉落生物质。",
+        "tip": "“礼尚往来”生成的单位会掉落生物质。",
         "video": null
     },
     {
@@ -416,21 +416,21 @@
         "tipid": 60,
         "mutator": 18,
         "commander": "Dehaka",
-        "tip": "“礼物交换”生成的单位会掉落精华。",
+        "tip": "“礼尚往来”生成的单位会掉落精华。",
         "video": null
     },
     {
         "tipid": 61,
         "mutator": 18,
         "commander": "Mengsk",
-        "tip": "“礼物交换”生成的单位会提供皇家卫队经验值。",
+        "tip": "“礼尚往来”生成的单位会提供皇家卫队经验值。",
         "video": null
     },
     {
         "tipid": 62,
         "mutator": 18,
         "commander": "Fenix",
-        "tip": "菲尼克斯切换装甲时，会失去获赠的所有复仇者层数。",
+        "tip": "菲尼克斯切换装甲时，会失去获赠的所有复仇战士层数。",
         "video": null
     },
     {
@@ -549,7 +549,7 @@
         "tipid": 79,
         "mutator": 34,
         "commander": "Vorazun",
-        "tip": "时间停止不会影响“导弹指挥”的触发时间。",
+        "tip": "时间停止不会影响“飞弹大战”的触发时间。",
         "video": null
     },
     {
@@ -563,70 +563,70 @@
         "tipid": 81,
         "mutator": 35,
         "commander": "Kerrigan",
-        "tip": "可在“静默时刻”减益触发前进入欧米伽虫洞来规避它。",
+        "tip": "可在“默哀”减益触发前进入欧米伽虫洞来规避它。",
         "video": null
     },
     {
         "tipid": 82,
         "mutator": 35,
         "commander": "Nova",
-        "tip": "可在“静默时刻”减益触发前使用战术空运来规避它。",
+        "tip": "可在“默哀”减益触发前使用战术空运来规避它。",
         "video": null
     },
     {
         "tipid": 83,
         "mutator": 35,
         "commander": "Tychus",
-        "tip": "可在“静默时刻”减益触发前使用医疗运输机接送来规避它。",
+        "tip": "可在“默哀”减益触发前使用医疗运输机接送来规避它。",
         "video": null
     },
     {
         "tipid": 84,
         "mutator": 37,
         "commander": "Fenix",
-        "tip": "菲尼克斯切换装甲不会重置淘气名单。",
+        "tip": "菲尼克斯切换装甲不会重置杀生业报。",
         "video": null
     },
     {
         "tipid": 85,
         "mutator": 37,
         "commander": "Zeratul",
-        "tip": "泽拉图的影子投影不会计入光子炮或巨石的击杀数。投影会获得淘气名单计数，但投影消失后，该计数也会消失并重置。",
+        "tip": "泽拉图的影子投影不会计入光子炮或巨石的击杀数。投影会获得杀生业报计数，但投影消失后，该计数也会消失并重置。",
         "video": null
     },
     {
         "tipid": 86,
         "mutator": 39,
         "commander": "Abathur",
-        "tip": "“感染爆发”生成的单位不会掉落生物质。",
+        "tip": "“丧尸大战”生成的单位不会掉落生物质。",
         "video": null
     },
     {
         "tipid": 87,
         "mutator": 39,
         "commander": "Dehaka",
-        "tip": "“感染爆发”生成的单位不会掉落精华。",
+        "tip": "“丧尸大战”生成的单位不会掉落精华。",
         "video": null
     },
     {
         "tipid": 88,
         "mutator": 39,
         "commander": "Mengsk",
-        "tip": "“感染爆发”生成的单位不会提供皇家卫队经验值。",
+        "tip": "“丧尸大战”生成的单位不会提供皇家卫队经验值。",
         "video": null
     },
     {
         "tipid": 89,
         "mutator": 39,
         "commander": "Vorazun",
-        "tip": "时间停止不会影响“感染爆发”的触发时间。",
+        "tip": "时间停止不会影响“丧尸大战”的触发时间。",
         "video": null
     },
     {
         "tipid": 90,
         "mutator": 42,
         "commander": "Artanis",
-        "tip": "若没有“势不可挡”，就无法对无能量单位施放反馈。",
+        "tip": "若没有“灵能爆表”，就无法对无能量单位施放反馈。",
         "video": null
     },
     {
@@ -640,14 +640,14 @@
         "tipid": 92,
         "mutator": 42,
         "commander": "Mengsk",
-        "tip": "皇帝之影的 EMP 会汲取“势不可挡”能量条中的能量。",
+        "tip": "皇帝之影的 EMP 会汲取“灵能爆表”能量条中的能量。",
         "video": ""
     },
     {
         "tipid": 93,
         "mutator": 42,
         "commander": "Nova",
-        "tip": "幽魂的 EMP 会汲取“势不可挡”能量条中的能量。",
+        "tip": "幽魂的 EMP 会汲取“灵能爆表”能量条中的能量。",
         "video": null
     },
     {
@@ -661,77 +661,77 @@
         "tipid": 95,
         "mutator": 42,
         "commander": "Vorazun",
-        "tip": "由于“势不可挡”是全地图效果，而非作用于单位的效果，时间停止无法阻止技能施放。",
+        "tip": "由于“灵能爆表”是全地图效果，而非作用于单位的效果，时间停止无法阻止技能施放。",
         "video": null
     },
     {
         "tipid": 96,
         "mutator": 43,
         "commander": "Dehaka",
-        "tip": "至少需要六只穿刺者才能对付一个传播者。",
+        "tip": "至少需要六只穿刺者才能对付一个同化体。",
         "video": null
     },
     {
         "tipid": 97,
         "mutator": 43,
         "commander": "Kerrigan",
-        "tip": "主要技能伤害投入 13 点时，可用英雄单位凯瑞甘消灭一个传播者。",
+        "tip": "主要技能伤害投入 13 点时，可用英雄单位凯瑞甘消灭一个同化体。",
         "video": "K5kwuOQdvj4"
     },
     {
         "tipid": 98,
         "mutator": 43,
         "commander": "Stetmann",
-        "tip": "艾星卫星可被转化为传播者。请将艾星卫星放置在不可通行地形上。",
+        "tip": "艾星卫星可被转化为同化体。请将艾星卫星放置在不可通行地形上。",
         "video": null
     },
     {
         "tipid": 99,
         "mutator": 43,
         "commander": "Stukov",
-        "tip": "关闭被感染的人类收容所“生成被感染的平民”技能的自动施放，防止单位意外与传播者交战。",
+        "tip": "关闭被感染的人类收容所“生成被感染的平民”技能的自动施放，防止单位意外与同化体交战。",
         "video": null
     },
     {
         "tipid": 100,
         "mutator": 43,
         "commander": "Stukov",
-        "tip": "在同时攻击的前提下，两座完全升级（攻击升级和兵营科技升级）的地堡或四座未升级地堡可以消灭一个传播者。三座地堡也能对付一个传播者，但不进行操作时会损失一座地堡。",
+        "tip": "在同时攻击的前提下，两座完全升级（攻击升级和兵营科技升级）的地堡或四座未升级地堡可以消灭一个同化体。三座地堡也能对付一个同化体，但不进行操作时会损失一座地堡。",
         "video": null
     },
     {
         "tipid": 101,
         "mutator": 43,
         "commander": "Tychus",
-        "tip": "升级萨姆的莫比斯拘束矩阵后，爆破装药会使传播者无法移动。",
+        "tip": "升级萨姆的莫比斯拘束矩阵后，爆破装药会使同化体无法移动。",
         "video": null
     },
     {
         "tipid": 102,
         "mutator": 43,
         "commander": "Vorazun",
-        "tip": "手动施放黑暗圣堂武士的暗影之怒，防止它们意外游荡到传播者附近。",
+        "tip": "手动施放黑暗圣堂武士的暗影之怒，防止它们意外游荡到同化体附近。",
         "video": null
     },
     {
         "tipid": 103,
         "mutator": 43,
         "commander": "Vorazun",
-        "tip": "时间停止不会影响传播者的触发时间。",
+        "tip": "时间停止不会影响同化体的触发时间。",
         "video": null
     },
     {
         "tipid": 104,
         "mutator": 43,
         "commander": "Zagara",
-        "tip": "爆虫伤害精通点满时，扎加拉可用一次爆虫弹幕和两次普通攻击消灭一个传播者。",
+        "tip": "爆虫伤害精通点满时，扎加拉可用一次爆虫弹幕和两次普通攻击消灭一个同化体。",
         "video": null
     },
     {
         "tipid": 105,
         "mutator": 43,
         "commander": "Zeratul",
-        "tip": "影子投影被传播者消灭时会生成传播者。",
+        "tip": "影子投影被同化体消灭时会生成同化体。",
         "video": null
     },
     {
@@ -780,28 +780,28 @@
         "tipid": 112,
         "mutator": 55,
         "commander": "Abathur",
-        "tip": "“不给糖就捣蛋”生成的单位会掉落生物质。",
+        "tip": "“不给糖果就捣蛋”生成的单位会掉落生物质。",
         "video": null
     },
     {
         "tipid": 113,
         "mutator": 55,
         "commander": "Dehaka",
-        "tip": "“不给糖就捣蛋”生成的单位会掉落精华。",
+        "tip": "“不给糖果就捣蛋”生成的单位会掉落精华。",
         "video": null
     },
     {
         "tipid": 114,
         "mutator": 55,
         "commander": "Mengsk",
-        "tip": "“不给糖就捣蛋”生成的单位会提供皇家卫队经验值。",
+        "tip": "“不给糖果就捣蛋”生成的单位会提供皇家卫队经验值。",
         "video": null
     },
     {
         "tipid": 115,
         "mutator": 55,
         "commander": "Vorazun",
-        "tip": "时间停止不会影响“不给糖就捣蛋”的触发时间。",
+        "tip": "时间停止不会影响“不给糖果就捣蛋”的触发时间。",
         "video": null
     },
     {
@@ -948,35 +948,35 @@
         "tipid": 136,
         "mutator": 59,
         "commander": "Kerrigan",
-        "tip": "被虚空复生者复活的单位会因同化光环掉落资源拾取物。",
+        "tip": "被虚空重生者复活的单位会因同化光环掉落资源拾取物。",
         "video": null
     },
     {
         "tipid": 137,
         "mutator": 59,
         "commander": "Abathur",
-        "tip": "被虚空复生者复活的单位不会掉落生物质。",
+        "tip": "被虚空重生者复活的单位不会掉落生物质。",
         "video": null
     },
     {
         "tipid": 138,
         "mutator": 59,
         "commander": "Dehaka",
-        "tip": "被虚空复生者复活的单位不会掉落精华。",
+        "tip": "被虚空重生者复活的单位不会掉落精华。",
         "video": null
     },
     {
         "tipid": 139,
         "mutator": 59,
         "commander": "Mengsk",
-        "tip": "被虚空复生者复活的单位不会提供皇家卫队经验值。",
+        "tip": "被虚空重生者复活的单位不会提供皇家卫队经验值。",
         "video": null
     },
     {
         "tipid": 140,
         "mutator": 26,
         "commander": "Alarak",
-        "tip": "在熔岩爆裂上放置力场，防止单位意外走上去。使用重型单位时要小心，因为它们可以破坏力场。",
+        "tip": "在岩浆爆发上放置力场，防止单位意外走上去。使用重型单位时要小心，因为它们可以破坏力场。",
         "video": null
     },
     {
@@ -990,7 +990,7 @@
         "tipid": 142,
         "mutator": 41,
         "commander": "Tychus",
-        "tip": "萨姆爆破装药的昏迷可以击晕“极性互换”单位（但不会造成伤害）。",
+        "tip": "萨姆爆破装药的昏迷可以击晕“极性不定”单位（但不会造成伤害）。",
         "video": null
     },
     {
@@ -1018,14 +1018,14 @@
         "tipid": 146,
         "mutator": 43,
         "commander": "Dehaka",
-        "tip": "德哈卡的族群首领属于地图首领，因此免疫传播者。",
+        "tip": "德哈卡的族群首领属于地图首领，因此免疫同化体。",
         "video": null
     },
     {
         "tipid": 147,
         "mutator": 32,
         "commander": "Horner",
-        "tip": "两组磁力雷可以清除矿区中生成的所有矿物护盾。",
+        "tip": "两组磁力雷可以清除矿区中生成的所有晶矿护盾。",
         "video": null
     },
     {
@@ -1039,49 +1039,49 @@
         "tipid": 149,
         "mutator": 63,
         "commander": "Vorazun",
-        "tip": "海盗船的干扰网可以阻止爆破机器人攻击。",
+        "tip": "海盗船的干扰网可以阻止炸弹机器人攻击。",
         "video": null
     },
     {
         "tipid": 150,
         "mutator": 63,
         "commander": "Stetmann",
-        "tip": "将艾星卫星分散到地图各处，以获得爆破机器人的视野。",
+        "tip": "将艾星卫星分散到地图各处，以获得炸弹机器人的视野。",
         "video": null
     },
     {
         "tipid": 151,
         "mutator": 63,
         "commander": "Raynor",
-        "tip": "使用扫描提前很远发现爆破机器人。",
+        "tip": "使用扫描提前很远发现炸弹机器人。",
         "video": null
     },
     {
         "tipid": 152,
         "mutator": 63,
         "commander": "Kerrigan",
-        "tip": "凯瑞甘的坑道虫可以承受两次爆破机器人核弹后才死亡。",
+        "tip": "凯瑞甘的坑道虫可以承受两次炸弹机器人核弹后才死亡。",
         "video": null
     },
     {
         "tipid": 153,
         "mutator": 15,
         "commander": "Tychus",
-        "tip": "奥丁免疫“致命吸引”。",
+        "tip": "奥丁免疫“致命勾引”。",
         "video": null
     },
     {
         "tipid": 154,
         "mutator": 63,
         "commander": "Mengsk",
-        "tip": "大地碎裂炮会在轰击区域提供临时视野，可用于发现爆破机器人。",
+        "tip": "大地碎裂炮会在轰击区域提供临时视野，可用于发现炸弹机器人。",
         "video": null
     },
     {
         "tipid": 155,
         "mutator": 32,
         "commander": "Zagara",
-        "tip": "将胆汁喷射体放在矿区后方，使其轰击自动清除矿物护盾。",
+        "tip": "将胆汁喷射体放在矿区后方，使其轰击自动清除晶矿护盾。",
         "video": null
     },
     {
@@ -1102,14 +1102,14 @@
         "tipid": 158,
         "mutator": 12,
         "commander": "Alarak",
-        "tip": "单位（包括阿拉纳克）攻击或使用技能后可立即装入折跃棱镜，以避免受到“双刃剑”伤害。",
+        "tip": "单位（包括阿拉纳克）攻击或使用技能后可立即装入折跃棱镜，以避免受到“双重压力”伤害。",
         "video": null
     },
     {
         "tipid": 159,
         "mutator": 35,
         "commander": "Dehaka",
-        "tip": "德哈卡的族群首领属于地图首领，因此免疫“静默时刻”。",
+        "tip": "德哈卡的族群首领属于地图首领，因此免疫“默哀”。",
         "video": null
     },
     {
@@ -1144,7 +1144,7 @@
         "tipid": 164,
         "mutator": 63,
         "commander": "Abathur",
-        "tip": "致盲毒云可以阻止爆破机器人攻击。",
+        "tip": "致盲毒云可以阻止炸弹机器人攻击。",
         "video": null
     },
     {
@@ -1158,7 +1158,7 @@
         "tipid": 166,
         "mutator": 41,
         "commander": "Kerrigan",
-        "tip": "“人类愚行”的闪电打击可以击晕“极性互换”单位（但不会造成伤害）。",
+        "tip": "“人类愚行”的闪电打击可以击晕“极性不定”单位（但不会造成伤害）。",
         "video": null
     },
     {
@@ -1200,28 +1200,28 @@
         "tipid": 172,
         "mutator": 42,
         "commander": "Mengsk",
-        "tip": "皇帝之影的反馈会伤害带有“势不可挡”的单位。",
+        "tip": "皇帝之影的反馈会伤害带有“灵能爆表”的单位。",
         "video": "EeNtBNtzGlU"
     },
     {
         "tipid": 173,
         "mutator": 12,
         "commander": "Mengsk",
-        "tip": "补给地堡内的单位不会受到“双刃剑”伤害。",
+        "tip": "补给地堡内的单位不会受到“双重压力”伤害。",
         "video": null
     },
     {
         "tipid": 174,
         "mutator": 12,
         "commander": "Raynor",
-        "tip": "地堡内的单位不会受到“双刃剑”伤害。",
+        "tip": "地堡内的单位不会受到“双重压力”伤害。",
         "video": null
     },
     {
         "tipid": 175,
         "mutator": 2,
         "commander": "Stukov",
-        "tip": "斯托科夫被感染的人类收容所生成的单位是“强势部署”空投的有效目标。",
+        "tip": "斯托科夫被感染的人类收容所生成的单位是“进攻部署”空投的有效目标。",
         "video": null
     },
     {
@@ -1242,21 +1242,21 @@
         "tipid": 178,
         "mutator": 15,
         "commander": "Dehaka",
-        "tip": "穿刺者会被“致命吸引”拉动。",
+        "tip": "穿刺者会被“致命勾引”拉动。",
         "video": null
     },
     {
         "tipid": 179,
         "mutator": 15,
         "commander": "Horner",
-        "tip": "汉的寡妇雷会被“致命吸引”拉动。",
+        "tip": "汉的寡妇雷会被“致命勾引”拉动。",
         "video": null
     },
     {
         "tipid": 180,
         "mutator": 63,
         "commander": "Abathur",
-        "tip": "放置一个剧毒巢穴并关闭自动引爆，即可用它获得爆破机器人视野。",
+        "tip": "放置一个剧毒巢穴并关闭自动引爆，即可用它获得炸弹机器人视野。",
         "video": null
     },
     {
@@ -1347,21 +1347,21 @@
         "tipid": 193,
         "mutator": 42,
         "commander": "Dehaka",
-        "tip": "“势不可挡”的点防御无人机可以阻止穆瓦尔的蝗虫和爆炸爬行者生成。",
+        "tip": "“灵能爆表”的点防御无人机可以阻止穆瓦尔的蝗虫和爆炸爬行者生成。",
         "video": null
     },
     {
         "tipid": 194,
         "mutator": 12,
         "commander": "Artanis",
-        "tip": "护盾超载可以抵挡“双刃剑”造成的伤害。",
+        "tip": "护盾超载可以抵挡“双重压力”造成的伤害。",
         "video": null
     },
     {
         "tipid": 195,
         "mutator": 41,
         "commander": "Alarak",
-        "tip": "阿拉纳克的建筑超载会锁定“极性互换”单位，即使无法伤害它们也不例外，因此可能浪费面板技能。",
+        "tip": "阿拉纳克的建筑超载会锁定“极性不定”单位，即使无法伤害它们也不例外，因此可能浪费面板技能。",
         "video": null
     },
     {
@@ -1410,28 +1410,28 @@
         "tipid": 202,
         "mutator": 20,
         "commander": "Dehaka",
-        "tip": "吞噬拥有“坚定意志”且活力超过 10 的单位时，会使其剩余 1 点生命值。",
+        "tip": "吞噬拥有“坚强意志”且活力超过 10 的单位时，会使其剩余 1 点生命值。",
         "video": null
     },
     {
         "tipid": 203,
         "mutator": 2,
         "commander": "Tychus",
-        "tip": "泰凯斯不是“强势部署”空投的有效目标。",
+        "tip": "泰凯斯不是“进攻部署”空投的有效目标。",
         "video": null
     },
     {
         "tipid": 204,
         "mutator": 2,
         "commander": "Alarak",
-        "tip": "母舰不是“强势部署”空投的有效目标。",
+        "tip": "母舰不是“进攻部署”空投的有效目标。",
         "video": null
     },
     {
         "tipid": 205,
         "mutator": 15,
         "commander": "Dehaka",
-        "tip": "族群首领免疫“致命吸引”。",
+        "tip": "族群首领免疫“致命勾引”。",
         "video": null
     },
     {
@@ -1487,7 +1487,7 @@
         "tipid": 213,
         "mutator": 20,
         "commander": "Vorazun",
-        "tip": "时间停止生效期间，单位身上的“坚定意志”不会被移除。",
+        "tip": "时间停止生效期间，单位身上的“坚强意志”不会被移除。",
         "video": null
     },
     {
@@ -1501,7 +1501,7 @@
         "tipid": 215,
         "mutator": 15,
         "commander": "Nova",
-        "tip": "“致命吸引”会取消诺娃的核打击，且核弹将直接损失。",
+        "tip": "“致命勾引”会取消诺娃的核打击，且核弹将直接损失。",
         "video": null
     },
     {
@@ -1557,7 +1557,7 @@
         "tipid": 223,
         "mutator": 13,
         "commander": "Zeratul",
-        "tip": "超维空间巨石不会被“强占地盘”转化，而会直接被摧毁。",
+        "tip": "超维空间巨石不会被“强行征用”转化，而会直接被摧毁。",
         "video": null
     },
     {

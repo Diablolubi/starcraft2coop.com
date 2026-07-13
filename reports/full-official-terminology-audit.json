@@ -1,0 +1,635 @@
+{
+  "match": [
+    {
+      "kind": "mutator",
+      "english": "Afraid of the Dark",
+      "current": "极度谨慎",
+      "official": "极度谨慎",
+      "official_key": "AfraidOfTheDark",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Aggressive Deployment",
+      "current": "进攻部署",
+      "official": "进攻部署",
+      "official_key": "DropPods",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Alien Incubation",
+      "current": "异形寄生",
+      "official": "异形寄生",
+      "official_key": "SpawnBroodlings",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Avenger",
+      "current": "复仇战士",
+      "official": "复仇战士",
+      "official_key": "Avenger",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Barrier",
+      "current": "减伤屏障",
+      "official": "减伤屏障",
+      "official_key": "Barrier",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Black Death",
+      "current": "黑死病",
+      "official": "黑死病",
+      "official_key": "Plague",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Blizzard",
+      "current": "暴风雪",
+      "official": "暴风雪",
+      "official_key": "Blizzard",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Chaos Studios",
+      "current": "混乱工作室",
+      "official": "混乱工作室",
+      "official_key": "CycleRandom",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Concussive Attacks",
+      "current": "震荡攻击",
+      "official": "震荡攻击",
+      "official_key": "ConcussiveAttacks",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Darkness",
+      "current": "暗无天日",
+      "official": "暗无天日",
+      "official_key": "BlackFog",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Diffusion",
+      "current": "伤害散射",
+      "official": "伤害散射",
+      "official_key": "DamageBounce",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Double Edged",
+      "current": "双重压力",
+      "official": "双重压力",
+      "official_key": "DamageReflect",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Eminent Domain",
+      "current": "强行征用",
+      "official": "强行征用",
+      "official_key": "StructureSteal",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Evasive Maneuvers",
+      "current": "闪避机动",
+      "official": "闪避机动",
+      "official_key": "SideStep",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Fatal Attraction",
+      "current": "致命勾引",
+      "official": "致命勾引",
+      "official_key": "DeathPull",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Fear",
+      "current": "无边恐惧",
+      "official": "无边恐惧",
+      "official_key": "Fear",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Fireworks",
+      "current": "焰火秀",
+      "official": "焰火秀",
+      "official_key": "Fireworks",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Gift Exchange",
+      "current": "礼尚往来",
+      "official": "礼尚往来",
+      "official_key": "GiftFight",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Going Nuclear",
+      "current": "核弹打击",
+      "official": "核弹打击",
+      "official_key": "Nukes",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Hardened Will",
+      "current": "坚强意志",
+      "official": "坚强意志",
+      "official_key": "HardenedWill",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Heroes from the Storm",
+      "current": "风暴英雄",
+      "official": "风暴英雄",
+      "official_key": "HeroesFromTheStorm",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Inspiration",
+      "current": "鼓舞人心",
+      "official": "鼓舞人心",
+      "official_key": "Inspiration",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Just Die",
+      "current": "给我死吧！",
+      "official": "给我死吧！",
+      "official_key": "JustDie",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Kill Bots",
+      "current": "杀戮机器人",
+      "official": "杀戮机器人",
+      "official_key": "KillBots",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Laser Drill",
+      "current": "激光钻机",
+      "official": "激光钻机",
+      "official_key": "LaserDrill",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Lava Burst",
+      "current": "岩浆爆发",
+      "official": "岩浆爆发",
+      "official_key": "LavaBurst",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Life Leech",
+      "current": "生命吸取",
+      "official": "生命吸取",
+      "official_key": "LifeLeech",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Long Range",
+      "current": "超远视距",
+      "official": "超远视距",
+      "official_key": "LongRange",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Lucky Envelopes",
+      "current": "幸运红包",
+      "official": "幸运红包",
+      "official_key": "RedEnvelopes",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Mag-nificent",
+      "current": "强磁雷场",
+      "official": "强磁雷场",
+      "official_key": "Magnificent",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Micro Transactions",
+      "current": "拿钱说话",
+      "official": "拿钱说话",
+      "official_key": "OrderCosts",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Mineral Shields",
+      "current": "晶矿护盾",
+      "official": "晶矿护盾",
+      "official_key": "Entomb",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Minesweeper",
+      "current": "扫雷专家",
+      "official": "扫雷专家",
+      "official_key": "SpiderMines",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Missile Command",
+      "current": "飞弹大战",
+      "official": "飞弹大战",
+      "official_key": "MissileBarrage",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Moment of Silence",
+      "current": "默哀",
+      "official": "默哀",
+      "official_key": "MomentOfSilence",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Mutually Assured Destruction",
+      "current": "相互摧毁",
+      "official": "相互摧毁",
+      "official_key": "HybridNuke",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Naughty List",
+      "current": "杀生业报",
+      "official": "杀生业报",
+      "official_key": "KillKarma",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Orbital Strike",
+      "current": "轨道轰炸",
+      "official": "轨道轰炸",
+      "official_key": "OrbitalStrike",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Outbreak",
+      "current": "丧尸大战",
+      "official": "丧尸大战",
+      "official_key": "InfestedTerranSpawner",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Photon Overload",
+      "current": "光子过载",
+      "official": "光子过载",
+      "official_key": "PhotonOverload",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Polarity",
+      "current": "极性不定",
+      "official": "极性不定",
+      "official_key": "Polarity",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Power Overwhelming",
+      "current": "灵能爆表",
+      "official": "灵能爆表",
+      "official_key": "OopsAllCasters",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Propagators",
+      "current": "同化体",
+      "official": "同化体",
+      "official_key": "Propagate",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Purifier Beam",
+      "current": "净化光束",
+      "official": "净化光束",
+      "official_key": "PurifierBeam",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Random",
+      "current": "随机",
+      "official": "随机",
+      "official_key": "Random",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Scorched Earth",
+      "current": "焦土政策",
+      "official": "焦土政策",
+      "official_key": "FireFight",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Self Destruction",
+      "current": "自毁程序",
+      "official": "自毁程序",
+      "official_key": "DeathAOE",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Sharing is Caring",
+      "current": "补给共享",
+      "official": "补给共享",
+      "official_key": "SharedSupply",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Shortsighted",
+      "current": "短视症",
+      "official": "短视症",
+      "official_key": "ReducedVision",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Slim Pickings",
+      "current": "小捞油水",
+      "official": "小捞油水",
+      "official_key": "NoResources",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Speed Freaks",
+      "current": "速度狂魔",
+      "official": "速度狂魔",
+      "official_key": "SpeedFreaks",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Temporal Field",
+      "current": "时空力场",
+      "official": "时空力场",
+      "official_key": "TemporalField",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Time Warp",
+      "current": "时间扭曲",
+      "official": "时间扭曲",
+      "official_key": "TimeWarp",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Transmutation",
+      "current": "力量蜕变",
+      "official": "力量蜕变",
+      "official_key": "Evolve",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Trick or Treat",
+      "current": "不给糖果就捣蛋",
+      "official": "不给糖果就捣蛋",
+      "official_key": "TrickOrTreat",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Turkey Shoot",
+      "current": "捕杀火鸡",
+      "official": "捕杀火鸡",
+      "official_key": "FoodHunt",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Twister",
+      "current": "龙卷风暴",
+      "official": "龙卷风暴",
+      "official_key": "Tornadoes",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Vertigo",
+      "current": "迷失方向",
+      "official": "迷失方向",
+      "official_key": "Vertigo",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Void Reanimators",
+      "current": "虚空重生者",
+      "official": "虚空重生者",
+      "official_key": "Reanimators",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Void Rifts",
+      "current": "虚空裂隙",
+      "official": "虚空裂隙",
+      "official_key": "VoidRifts",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Walking Infested",
+      "current": "行尸走肉",
+      "official": "行尸走肉",
+      "official_key": "WalkingInfested",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "We Move Unseen",
+      "current": "来去无踪",
+      "official": "来去无踪",
+      "official_key": "AllEnemiesCloaked",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mutator",
+      "english": "Boom Bots",
+      "current": "炸弹机器人",
+      "official": "炸弹机器人",
+      "official_key": "BoomBots",
+      "source_file": "source-data/mutators.json"
+    },
+    {
+      "kind": "mission",
+      "english": "Chain of Ascension",
+      "current": "升格之链",
+      "official": "升格之链",
+      "official_key": "AC_SlaynPayload",
+      "source_file": "source-data/missionnames.json"
+    },
+    {
+      "kind": "mission",
+      "english": "Cradle of Death",
+      "current": "死亡摇篮",
+      "official": "死亡摇篮",
+      "official_key": "AC_CradleOfDeath",
+      "source_file": "source-data/missionnames.json"
+    },
+    {
+      "kind": "mission",
+      "english": "Dead of Night",
+      "current": "求生无路",
+      "official": "求生无路",
+      "official_key": "AC_MeinhoffDayNight",
+      "source_file": "source-data/missionnames.json"
+    },
+    {
+      "kind": "mission",
+      "english": "Lock & Load",
+      "current": "天界封锁",
+      "official": "天界封锁",
+      "official_key": "AC_UlnarLocks",
+      "source_file": "source-data/missionnames.json"
+    },
+    {
+      "kind": "mission",
+      "english": "Malwarfare",
+      "current": "净网行动",
+      "official": "净网行动",
+      "official_key": "AC_CybrosEscort",
+      "source_file": "source-data/missionnames.json"
+    },
+    {
+      "kind": "mission",
+      "english": "Miner Evacuation",
+      "current": "营救矿工",
+      "official": "营救矿工",
+      "official_key": "AC_JarbanPointCapture",
+      "source_file": "source-data/missionnames.json"
+    },
+    {
+      "kind": "mission",
+      "english": "Mist Opportunities",
+      "current": "机会渺茫",
+      "official": "机会渺茫",
+      "official_key": "AC_BelshirEscort",
+      "source_file": "source-data/missionnames.json"
+    },
+    {
+      "kind": "mission",
+      "english": "Oblivion Express",
+      "current": "湮灭快车",
+      "official": "湮灭快车",
+      "official_key": "AC_TarsonisTrain",
+      "source_file": "source-data/missionnames.json"
+    },
+    {
+      "kind": "mission",
+      "english": "Part and Parcel",
+      "current": "聚铁成兵",
+      "official": "聚铁成兵",
+      "official_key": "AC_PartAndParcel",
+      "source_file": "source-data/missionnames.json"
+    },
+    {
+      "kind": "mission",
+      "english": "Rifts to Korhal",
+      "current": "克哈裂痕",
+      "official": "克哈裂痕",
+      "official_key": "AC_KorhalRift",
+      "source_file": "source-data/missionnames.json"
+    },
+    {
+      "kind": "mission",
+      "english": "Scythe of Amon",
+      "current": "黑暗杀星",
+      "official": "黑暗杀星",
+      "official_key": "AC_AiurSiege",
+      "source_file": "source-data/missionnames.json"
+    },
+    {
+      "kind": "mission",
+      "english": "Temple of the Past",
+      "current": "往日神庙",
+      "official": "往日神庙",
+      "official_key": "AC_ShakurasTemple",
+      "source_file": "source-data/missionnames.json"
+    },
+    {
+      "kind": "mission",
+      "english": "The Vermillion Problem",
+      "current": "熔火危机",
+      "official": "熔火危机",
+      "official_key": "AC_VeridiaCourier",
+      "source_file": "source-data/missionnames.json"
+    },
+    {
+      "kind": "mission",
+      "english": "Void Launch",
+      "current": "虚空降临",
+      "official": "虚空降临",
+      "official_key": "AC_KaldirShuttle",
+      "source_file": "source-data/missionnames.json"
+    },
+    {
+      "kind": "mission",
+      "english": "Void Thrashing",
+      "current": "虚空撕裂",
+      "official": "虚空撕裂",
+      "official_key": "AC_CharThrasher",
+      "source_file": "source-data/missionnames.json"
+    }
+  ],
+  "mismatch": [],
+  "unresolved": [],
+  "summary": {
+    "match": 78,
+    "mismatch": 0,
+    "unresolved": 0
+  }
+}

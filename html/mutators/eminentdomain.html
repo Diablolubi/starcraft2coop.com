@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap">
     <link rel="stylesheet" href="/styles/global.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <title>《星际争霸 II》合作任务 - 突变因子 - 强占地盘</title>
+        <title>《星际争霸 II》合作任务 - 突变因子 - 强行征用</title>
     <link rel="canonical" href="https://starcraft2coop.com/mutators/eminentdomain">
 </head>
 <body>
@@ -62,15 +62,15 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <div id="missionList" class="submenu">
         <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">飞升之链</div></a>
         <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">死亡摇篮</div></a>
-        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">亡者之夜</div></a>
-        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">天锁</div></a>
-        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">恶意代码</div></a>
-        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">疏散矿工</div></a>
+        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">求生无路</div></a>
+        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">天界封锁</div></a>
+        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">净网行动</div></a>
+        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">营救矿工</div></a>
         <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">机会渺茫</div></a>
         <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">湮灭快车</div></a>
         <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">聚铁成兵</div></a>
         <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">克哈裂痕</div></a>
-        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">埃蒙之镰</div></a>
+        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">黑暗杀星</div></a>
         <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">往日神庙</div></a>
         <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">熔火危机</div></a>
         <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">虚空降临</div></a>
@@ -168,7 +168,7 @@ if (document.location.host === 'dev.starcraft2coop.com') {
 </script>
 <script src="/scripts/search.js" defer></script>
 <div id="content">
-        <h1><span class="unbold">突变因子：</span>强占地盘</h1>
+        <h1><span class="unbold">突变因子：</span>强行征用</h1>
     <p><img src="/images/mutators/eminentdomain.png" alt="" /></p>
     <p>敌人摧毁你的建筑后会取得该建筑的控制权。</p>
     <table>
@@ -185,38 +185,38 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         <li>建筑不是被静态防御摧毁。</li>
         <li>摧毁建筑的单位与玩家 1 起始位置周围 5 射程内的某一点之间存在有效路径。</li>
     </ul>
-    <p>由于攻城坦克的运作方式，架起的攻城坦克摧毁建筑时无法触发强占地盘。</p>
+    <p>由于攻城坦克的运作方式，架起的攻城坦克摧毁建筑时无法触发强行征用。</p>
     <p>其他情况下，建筑会照常被摧毁。该逻辑有一个漏洞：让人类建筑自行燃烧至毁。燃烧殆尽的建筑会自动转为埃蒙所有，无论此前由谁造成伤害，包括玩家单位。利用埃蒙不会攻击自有建筑这一点，可以针对某些部队组合用建筑封锁地图。</p>
     <h2 id="commanderspecifictips">指挥官专属技巧</h2>
     <ul>
-        <li>蒙斯克：裂地者被强占地盘夺取后会停止攻击，内部装载的所有单位都会丢失。</li>
-        <li>蒙斯克：补给地堡被强占地盘夺取时，内部装载的单位都会丢失。</li>
-        <li>雷诺：地堡被强占地盘夺取时，内部装载的单位都会丢失。</li>
+        <li>蒙斯克：裂地者被强行征用夺取后会停止攻击，内部装载的所有单位都会丢失。</li>
+        <li>蒙斯克：补给地堡被强行征用夺取时，内部装载的单位都会丢失。</li>
+        <li>雷诺：地堡被强行征用夺取时，内部装载的单位都会丢失。</li>
         <li>斯台特曼：艾星只会重生一次，之后会被永久摧毁。</li>
         <li>斯旺：如果激光钻机被敌人夺取，它会以埃蒙激光钻机的形式重生。将其摧毁后，钻机会进入冷却并再次重生。这意味着你会永久失去自己的钻机，无法取回。</li>
-        <li>泽拉图：强占地盘会影响光炮投影。如果光炮投影被埃蒙夺取，可以在源光炮处取消投影来将其取消。</li>
-        <li>泽拉图：超维空间巨石不会被强占地盘转化，而会直接被摧毁。</li>
-        <li>扎加拉：胆汁喷射体被强占地盘夺取后会停止攻击。</li>
+        <li>泽拉图：强行征用会影响光炮投影。如果光炮投影被埃蒙夺取，可以在源光炮处取消投影来将其取消。</li>
+        <li>泽拉图：超维空间巨石不会被强行征用转化，而会直接被摧毁。</li>
+        <li>扎加拉：胆汁喷射体被强行征用夺取后会停止攻击。</li>
     </ul>
 
     <h2 id="interactions">突变因子交互</h2>
     <table>
-        <tr><td style="white-space:nowrap"><a href="/mutators/barrier"><img src="/images/mutators/barrier.png" class="miniIcon" alt="">屏障</a></td><td>被埃蒙占领的建筑会获得屏障增益。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/barrier"><img src="/images/mutators/barrier.png" class="miniIcon" alt="">减伤屏障</a></td><td>被埃蒙占领的建筑会获得屏障增益。</td></tr>
         <tr><td style="white-space:nowrap"><a href="/mutators/concussiveattacks"><img src="/images/mutators/concussiveattacks.png" class="miniIcon" alt="">震荡攻击</a></td><td>被埃蒙占领的炮台会施加震荡攻击减益。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/diffusion"><img src="/images/mutators/diffusion.png" class="miniIcon" alt="">扩散</a></td><td>炮台对自身造成过多伤害时可能被埃蒙占领。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/doubleedged"><img src="/images/mutators/doubleedged.png" class="miniIcon" alt="">双刃剑</a></td><td>炮台对自身造成过多伤害时可能被埃蒙占领。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/fear"><img src="/images/mutators/fear.png" class="miniIcon" alt="">恐惧</a></td><td>被埃蒙占领的炮台可以施加恐惧效果。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/diffusion"><img src="/images/mutators/diffusion.png" class="miniIcon" alt="">伤害散射</a></td><td>炮台对自身造成过多伤害时可能被埃蒙占领。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/doubleedged"><img src="/images/mutators/doubleedged.png" class="miniIcon" alt="">双重压力</a></td><td>炮台对自身造成过多伤害时可能被埃蒙占领。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/fear"><img src="/images/mutators/fear.png" class="miniIcon" alt="">无边恐惧</a></td><td>被埃蒙占领的炮台可以施加恐惧效果。</td></tr>
         <tr><td style="white-space:nowrap"><a href="/mutators/killbots"><img src="/images/mutators/killbots.png" class="miniIcon" alt="">杀戮机器人</a></td><td>被强制征用转化的建筑会生成击杀机器人。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/lifeleech"><img src="/images/mutators/lifeleech.png" class="miniIcon" alt="">生命汲取</a></td><td>被埃蒙占领的炮台拥有生命吸取。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/longrange"><img src="/images/mutators/longrange.png" class="miniIcon" alt="">超远射程</a></td><td>被埃蒙占领的建筑会获得超远射程增益。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/outbreak"><img src="/images/mutators/outbreak.png" class="miniIcon" alt="">感染爆发</a></td><td>被强制征用转化的建筑会生成感染体和畸变体。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/polarity"><img src="/images/mutators/polarity.png" class="miniIcon" alt="">极性互换</a></td><td>被埃蒙占领的建筑会获得极性。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/propagators"><img src="/images/mutators/propagators.png" class="miniIcon" alt="">传播者</a></td><td>被传播者命中的建筑会变为传播者，而不会被转化。被强制征用转化的建筑会生成传播者。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/transmutation"><img src="/images/mutators/transmutation.png" class="miniIcon" alt="">转化</a></td><td>摧毁玩家建筑的攻击不会使敌方单位发生嬗变。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/trickortreat"><img src="/images/mutators/trickortreat.png" class="miniIcon" alt="">不给糖就捣蛋</a></td><td>被强制征用转化的建筑会生成平民。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/turkeyshoot"><img src="/images/mutators/turkeyshoot.png" class="miniIcon" alt="">火鸡射击</a></td><td>被火鸡摧毁的建筑会被转化。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/voidreanimators"><img src="/images/mutators/voidreanimators.png" class="miniIcon" alt="">虚空复生者</a></td><td>被强制征用转化的建筑会生成虚空复生者。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/boombots"><img src="/images/mutators/boombots.png" class="miniIcon" alt="">爆破机器人</a></td><td>被强制征用转化的建筑会生成自爆机器人。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/lifeleech"><img src="/images/mutators/lifeleech.png" class="miniIcon" alt="">生命吸取</a></td><td>被埃蒙占领的炮台拥有生命吸取。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/longrange"><img src="/images/mutators/longrange.png" class="miniIcon" alt="">超远视距</a></td><td>被埃蒙占领的建筑会获得超远视距增益。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/outbreak"><img src="/images/mutators/outbreak.png" class="miniIcon" alt="">丧尸大战</a></td><td>被强制征用转化的建筑会生成感染体和畸变体。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/polarity"><img src="/images/mutators/polarity.png" class="miniIcon" alt="">极性不定</a></td><td>被埃蒙占领的建筑会获得极性。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/propagators"><img src="/images/mutators/propagators.png" class="miniIcon" alt="">同化体</a></td><td>被同化体命中的建筑会变为同化体，而不会被转化。被强制征用转化的建筑会生成同化体。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/transmutation"><img src="/images/mutators/transmutation.png" class="miniIcon" alt="">力量蜕变</a></td><td>摧毁玩家建筑的攻击不会使敌方单位发生嬗变。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/trickortreat"><img src="/images/mutators/trickortreat.png" class="miniIcon" alt="">不给糖果就捣蛋</a></td><td>被强制征用转化的建筑会生成平民。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/turkeyshoot"><img src="/images/mutators/turkeyshoot.png" class="miniIcon" alt="">捕杀火鸡</a></td><td>被火鸡摧毁的建筑会被转化。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/voidreanimators"><img src="/images/mutators/voidreanimators.png" class="miniIcon" alt="">虚空重生者</a></td><td>被强制征用转化的建筑会生成虚空重生者。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/boombots"><img src="/images/mutators/boombots.png" class="miniIcon" alt="">炸弹机器人</a></td><td>被强制征用转化的建筑会生成自爆机器人。</td></tr>
 
     </table>
 <script src="/scripts/nav.js"></script>

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap">
     <link rel="stylesheet" href="/styles/global.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <title>《星际争霸 II》合作任务 - 突变因子 - 复仇者</title>
+        <title>《星际争霸 II》合作任务 - 突变因子 - 复仇战士</title>
     <link rel="canonical" href="https://starcraft2coop.com/mutators/avenger">
 </head>
 <body>
@@ -62,15 +62,15 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <div id="missionList" class="submenu">
         <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">飞升之链</div></a>
         <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">死亡摇篮</div></a>
-        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">亡者之夜</div></a>
-        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">天锁</div></a>
-        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">恶意代码</div></a>
-        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">疏散矿工</div></a>
+        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">求生无路</div></a>
+        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">天界封锁</div></a>
+        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">净网行动</div></a>
+        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">营救矿工</div></a>
         <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">机会渺茫</div></a>
         <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">湮灭快车</div></a>
         <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">聚铁成兵</div></a>
         <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">克哈裂痕</div></a>
-        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">埃蒙之镰</div></a>
+        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">黑暗杀星</div></a>
         <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">往日神庙</div></a>
         <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">熔火危机</div></a>
         <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">虚空降临</div></a>
@@ -168,7 +168,7 @@ if (document.location.host === 'dev.starcraft2coop.com') {
 </script>
 <script src="/scripts/search.js" defer></script>
 <div id="content">
-        <h1><span class="unbold">突变因子：</span>复仇者</h1>
+        <h1><span class="unbold">突变因子：</span>复仇战士</h1>
     <p><img src="/images/mutators/avenger.png" alt="" /></p>
     <p>附近有敌方单位死亡时，敌军会提高攻击速度、移动速度、护甲、生命值和生命恢复速度。</p>
     <table>
@@ -177,9 +177,9 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         <tr><th align="right">可由混乱工作室抽取</th><td align="left">是</td></tr>
     </table>
     <h2 id="mutatordetails">突变因子详细信息</h2>
-    <p>单位死亡时，会向 1.25 射程内的单位提供一定层数的复仇者增益。层数等于该单位占用的补给；如果单位不占用补给，则提供 1 层。请注意，混合体占用 8 点补给。</p>
-    <p>每个单位最多拥有 10 层复仇者增益。单位所有权改变（精神控制、支配等）时会失去全部层数。</p>
-    <p>每层复仇者都会为获得者提供以下增益，且各层效果相加。</p>
+    <p>单位死亡时，会向 1.25 射程内的单位提供一定层数的复仇战士增益。层数等于该单位占用的补给；如果单位不占用补给，则提供 1 层。请注意，混合体占用 8 点补给。</p>
+    <p>每个单位最多拥有 10 层复仇战士增益。单位所有权改变（精神控制、支配等）时会失去全部层数。</p>
+    <p>每层复仇战士都会为获得者提供以下增益，且各层效果相加。</p>
     <table class="dataTable">
         <thead>
             <tr>
@@ -218,17 +218,17 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             </tr>
         </tbody>
     </table>
-    <p>复仇者层数可以转移给“聚铁成兵”中的混合体。在“湮灭快车”中，整列列车被视为一个单位，因此只会提供 8 层。</p>
-    <p>各任务专属单位死亡时提供的复仇者层数如下：</p>
+    <p>复仇战士层数可以转移给“聚铁成兵”中的混合体。在“湮灭快车”中，整列列车被视为一个单位，因此只会提供 8 层。</p>
+    <p>各任务专属单位死亡时提供的复仇战士层数如下：</p>
     <ul>
         <li>飞升之链的斯莱恩元素生物：1</li>
         <li>死亡摇篮的守门者构造体：10</li>
-        <li>亡者之夜的猎杀虫：1</li>
-        <li>亡者之夜的爆破虫、监视者：2</li>
-        <li>亡者之夜的扼杀者：3</li>
-        <li>亡者之夜的畸变巨兽：12</li>
-        <li>天锁的萨尔纳加构造体：10</li>
-        <li>疏散矿工的疫病使者、根除者：1</li>
+        <li>求生无路的猎杀虫：1</li>
+        <li>求生无路的爆破虫、监视者：2</li>
+        <li>求生无路的扼杀者：3</li>
+        <li>求生无路的畸变巨兽：12</li>
+        <li>天界封锁的萨尔纳加构造体：10</li>
+        <li>营救矿工的疫病使者、根除者：1</li>
         <li>湮灭快车的列车：8</li>
         <li>聚铁成兵的莫比斯混合体实验品：8</li>
         <li>聚铁成兵的列车：8</li>
@@ -240,31 +240,31 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     </ul>
     <h2 id="commanderspecifictips">指挥官专属技巧</h2>
     <ul>
-        <li>泽拉图：泽拉图的精华化身使用退化技能后，会使目标单位失去全部复仇者层数。</li>
+        <li>泽拉图：泽拉图的精华化身使用退化技能后，会使目标单位失去全部复仇战士层数。</li>
     </ul>
 
     <h2 id="interactions">突变因子交互</h2>
     <table>
-        <tr><td style="white-space:nowrap"><a href="/mutators/aggressivedeployment"><img src="/images/mutators/aggressivedeployment.png" class="miniIcon" alt="">强势部署</a></td><td>进攻部署空投中的单位会提供和获得复仇者层数。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/alienincubation"><img src="/images/mutators/alienincubation.png" class="miniIcon" alt="">异形孵化</a></td><td>巢虫可以提供/获得复仇者层数。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/giftexchange"><img src="/images/mutators/giftexchange.png" class="miniIcon" alt="">礼物交换</a></td><td>礼物交换生成的单位可以提供/获得复仇者层数。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/heroesfromthestorm"><img src="/images/mutators/heroesfromthestorm.png" class="miniIcon" alt="">风暴英雄</a></td><td>埃蒙英雄可以提供（1层）/获得复仇者层数。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/inspiration"><img src="/images/mutators/inspiration.png" class="miniIcon" alt="">鼓舞人心</a></td><td>拥有复仇者层数的单位可以获得鼓舞增益。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/justdie"><img src="/images/mutators/justdie.png" class="miniIcon" alt="">就是死不了</a></td><td>单位受到致命伤害并重生时不会提供或失去复仇者层数。单位最终死亡时会向周围单位提供复仇者层数。单位受到致命伤害并重生时会保留复仇者层数。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/killbots"><img src="/images/mutators/killbots.png" class="miniIcon" alt="">杀戮机器人</a></td><td>击杀机器人死亡时可以提供复仇者层数（1层）。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/magnificent"><img src="/images/mutators/magnificent.png" class="miniIcon" alt="">磁力惊人</a></td><td>磁力地雷引爆时不会提供复仇者层数。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/minesweeper"><img src="/images/mutators/minesweeper.png" class="miniIcon" alt="">扫雷专家</a></td><td>地雷可以提供复仇者层数，但无法获得层数。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/missilecommand"><img src="/images/mutators/missilecommand.png" class="miniIcon" alt="">导弹指挥</a></td><td>飞弹被摧毁时不会提供复仇者层数。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/outbreak"><img src="/images/mutators/outbreak.png" class="miniIcon" alt="">感染爆发</a></td><td>感染体和畸变体可以提供/获得复仇者层数。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/propagators"><img src="/images/mutators/propagators.png" class="miniIcon" alt="">传播者</a></td><td>传播者可以提供（1层）/获得复仇者层数。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/speedfreaks"><img src="/images/mutators/speedfreaks.png" class="miniIcon" alt="">极速狂飙</a></td><td>拥有复仇者层数的单位在速度狂魔作用下移动更快。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/transmutation"><img src="/images/mutators/transmutation.png" class="miniIcon" alt="">转化</a></td><td>单位嬗变后会失去复仇者层数。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/trickortreat"><img src="/images/mutators/trickortreat.png" class="miniIcon" alt="">不给糖就捣蛋</a></td><td>平民生成的单位会提供和收集复仇者层数。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/turkeyshoot"><img src="/images/mutators/turkeyshoot.png" class="miniIcon" alt="">火鸡射击</a></td><td>火鸡不会提供复仇者层数。愤怒火鸡可以提供（1层）/获得复仇者层数。火鸡王可以提供（10层）复仇者层数。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/voidreanimators"><img src="/images/mutators/voidreanimators.png" class="miniIcon" alt="">虚空复生者</a></td><td>虚空复生者可以提供（3层）复仇者层数。复活后的单位不会保留复仇者层数。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/voidrifts"><img src="/images/mutators/voidrifts.png" class="miniIcon" alt="">虚空裂隙</a></td><td>虚空裂隙生成的单位可以提供/获得复仇者层数。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/walkinginfested"><img src="/images/mutators/walkinginfested.png" class="miniIcon" alt="">行尸走肉</a></td><td>感染体可以提供/获得复仇者层数。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/boombots"><img src="/images/mutators/boombots.png" class="miniIcon" alt="">爆破机器人</a></td><td>自爆机器人不会提供复仇者层数死亡时。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/aggressivedeployment"><img src="/images/mutators/aggressivedeployment.png" class="miniIcon" alt="">进攻部署</a></td><td>进攻部署空投中的单位会提供和获得复仇战士层数。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/alienincubation"><img src="/images/mutators/alienincubation.png" class="miniIcon" alt="">异形寄生</a></td><td>巢虫可以提供/获得复仇战士层数。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/giftexchange"><img src="/images/mutators/giftexchange.png" class="miniIcon" alt="">礼尚往来</a></td><td>礼尚往来生成的单位可以提供/获得复仇战士层数。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/heroesfromthestorm"><img src="/images/mutators/heroesfromthestorm.png" class="miniIcon" alt="">风暴英雄</a></td><td>埃蒙英雄可以提供（1层）/获得复仇战士层数。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/inspiration"><img src="/images/mutators/inspiration.png" class="miniIcon" alt="">鼓舞人心</a></td><td>拥有复仇战士层数的单位可以获得鼓舞增益。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/justdie"><img src="/images/mutators/justdie.png" class="miniIcon" alt="">给我死吧！</a></td><td>单位受到致命伤害并重生时不会提供或失去复仇战士层数。单位最终死亡时会向周围单位提供复仇战士层数。单位受到致命伤害并重生时会保留复仇战士层数。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/killbots"><img src="/images/mutators/killbots.png" class="miniIcon" alt="">杀戮机器人</a></td><td>击杀机器人死亡时可以提供复仇战士层数（1层）。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/magnificent"><img src="/images/mutators/magnificent.png" class="miniIcon" alt="">强磁雷场</a></td><td>磁力地雷引爆时不会提供复仇战士层数。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/minesweeper"><img src="/images/mutators/minesweeper.png" class="miniIcon" alt="">扫雷专家</a></td><td>地雷可以提供复仇战士层数，但无法获得层数。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/missilecommand"><img src="/images/mutators/missilecommand.png" class="miniIcon" alt="">飞弹大战</a></td><td>飞弹被摧毁时不会提供复仇战士层数。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/outbreak"><img src="/images/mutators/outbreak.png" class="miniIcon" alt="">丧尸大战</a></td><td>感染体和畸变体可以提供/获得复仇战士层数。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/propagators"><img src="/images/mutators/propagators.png" class="miniIcon" alt="">同化体</a></td><td>同化体可以提供（1层）/获得复仇战士层数。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/speedfreaks"><img src="/images/mutators/speedfreaks.png" class="miniIcon" alt="">速度狂魔</a></td><td>拥有复仇战士层数的单位在速度狂魔作用下移动更快。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/transmutation"><img src="/images/mutators/transmutation.png" class="miniIcon" alt="">力量蜕变</a></td><td>单位嬗变后会失去复仇战士层数。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/trickortreat"><img src="/images/mutators/trickortreat.png" class="miniIcon" alt="">不给糖果就捣蛋</a></td><td>平民生成的单位会提供和收集复仇战士层数。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/turkeyshoot"><img src="/images/mutators/turkeyshoot.png" class="miniIcon" alt="">捕杀火鸡</a></td><td>火鸡不会提供复仇战士层数。愤怒火鸡可以提供（1层）/获得复仇战士层数。火鸡王可以提供（10层）复仇战士层数。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/voidreanimators"><img src="/images/mutators/voidreanimators.png" class="miniIcon" alt="">虚空重生者</a></td><td>虚空重生者可以提供（3层）复仇战士层数。复活后的单位不会保留复仇战士层数。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/voidrifts"><img src="/images/mutators/voidrifts.png" class="miniIcon" alt="">虚空裂隙</a></td><td>虚空裂隙生成的单位可以提供/获得复仇战士层数。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/walkinginfested"><img src="/images/mutators/walkinginfested.png" class="miniIcon" alt="">行尸走肉</a></td><td>感染体可以提供/获得复仇战士层数。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/boombots"><img src="/images/mutators/boombots.png" class="miniIcon" alt="">炸弹机器人</a></td><td>自爆机器人不会提供复仇战士层数死亡时。</td></tr>
 
     </table>
 <script src="/scripts/nav.js"></script>

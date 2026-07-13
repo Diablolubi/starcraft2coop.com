@@ -2372,7 +2372,7 @@
   {
     "unitid": 80,
     "basename": "Carrier",
-    "name": "航空母舰（拦截机）",
+    "name": "航母（拦截机）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2397,7 +2397,7 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": 1,
-    "notes": "航空母舰拥有 8 架拦截机。"
+    "notes": "航母拥有 8 架拦截机。"
   },
   {
     "unitid": 81,
@@ -3572,7 +3572,7 @@
   {
     "unitid": 120,
     "basename": "Carrier",
-    "name": "航空母舰（拦截机）",
+    "name": "航母（拦截机）",
     "commander": "Karax",
     "race": "Protoss",
     "combatunit": 1,
@@ -3597,7 +3597,7 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": 1,
-    "notes": "航空母舰拥有 8 架拦截机。"
+    "notes": "航母拥有 8 架拦截机。"
   },
   {
     "unitid": 121,

@@ -186,30 +186,34 @@
     },
     {
       "en": "Dead of Night",
-      "zh-CN": "亡者之夜",
+      "zh-CN": "求生无路",
       "aliases": [
-        "Dead of Night"
+        "Dead of Night",
+        "亡者之夜"
       ]
     },
     {
       "en": "Lock & Load",
-      "zh-CN": "天锁",
+      "zh-CN": "天界封锁",
       "aliases": [
-        "Lock & Load"
+        "Lock & Load",
+        "天锁"
       ]
     },
     {
       "en": "Malwarfare",
-      "zh-CN": "恶意代码",
+      "zh-CN": "净网行动",
       "aliases": [
-        "Malwarfare"
+        "Malwarfare",
+        "恶意代码"
       ]
     },
     {
       "en": "Miner Evacuation",
-      "zh-CN": "疏散矿工",
+      "zh-CN": "营救矿工",
       "aliases": [
-        "Miner Evacuation"
+        "Miner Evacuation",
+        "疏散矿工"
       ]
     },
     {
@@ -242,9 +246,10 @@
     },
     {
       "en": "Scythe of Amon",
-      "zh-CN": "埃蒙之镰",
+      "zh-CN": "黑暗杀星",
       "aliases": [
-        "Scythe of Amon"
+        "Scythe of Amon",
+        "埃蒙之镰"
       ]
     },
     {
@@ -306,35 +311,37 @@
   "mutators": [
     {
       "en": "Afraid of the Dark",
-      "zh-CN": "漆黑一片",
+      "zh-CN": "极度谨慎",
       "aliases": [
         "Afraid of the Dark"
       ]
     },
     {
       "en": "Aggressive Deployment",
-      "zh-CN": "强势部署",
+      "zh-CN": "进攻部署",
       "aliases": [
-        "Aggressive Deployment"
+        "Aggressive Deployment",
+        "强势部署"
       ]
     },
     {
       "en": "Alien Incubation",
-      "zh-CN": "异形孵化",
+      "zh-CN": "异形寄生",
       "aliases": [
-        "Alien Incubation"
+        "Alien Incubation",
+        "异形孵化"
       ]
     },
     {
       "en": "Avenger",
-      "zh-CN": "复仇者",
+      "zh-CN": "复仇战士",
       "aliases": [
         "Avenger"
       ]
     },
     {
       "en": "Barrier",
-      "zh-CN": "屏障",
+      "zh-CN": "减伤屏障",
       "aliases": [
         "Barrier"
       ]
@@ -343,7 +350,8 @@
       "en": "Black Death",
       "zh-CN": "黑死病",
       "aliases": [
-        "Black Death"
+        "Black Death",
+        "黑死病"
       ]
     },
     {
@@ -357,7 +365,8 @@
       "en": "Chaos Studios",
       "zh-CN": "混乱工作室",
       "aliases": [
-        "Chaos Studios"
+        "Chaos Studios",
+        "混乱工作室"
       ]
     },
     {
@@ -369,77 +378,85 @@
     },
     {
       "en": "Darkness",
-      "zh-CN": "黑暗",
+      "zh-CN": "暗无天日",
       "aliases": [
-        "Darkness"
+        "Darkness",
+        "黑暗"
       ]
     },
     {
       "en": "Diffusion",
-      "zh-CN": "扩散",
+      "zh-CN": "伤害散射",
       "aliases": [
-        "Diffusion"
+        "Diffusion",
+        "扩散"
       ]
     },
     {
       "en": "Double Edged",
-      "zh-CN": "双刃剑",
+      "zh-CN": "双重压力",
       "aliases": [
-        "Double Edged"
+        "Double Edged",
+        "双刃剑"
       ]
     },
     {
       "en": "Eminent Domain",
-      "zh-CN": "强占地盘",
+      "zh-CN": "强行征用",
       "aliases": [
-        "Eminent Domain"
+        "Eminent Domain",
+        "强占地盘"
       ]
     },
     {
       "en": "Evasive Maneuvers",
       "zh-CN": "闪避机动",
       "aliases": [
-        "Evasive Maneuvers"
+        "Evasive Maneuvers",
+        "闪避机动"
       ]
     },
     {
       "en": "Fatal Attraction",
-      "zh-CN": "致命吸引",
+      "zh-CN": "致命勾引",
       "aliases": [
-        "Fatal Attraction"
+        "Fatal Attraction",
+        "致命吸引"
       ]
     },
     {
       "en": "Fear",
-      "zh-CN": "恐惧",
+      "zh-CN": "无边恐惧",
       "aliases": [
         "Fear"
       ]
     },
     {
       "en": "Fireworks",
-      "zh-CN": "烟花表演",
+      "zh-CN": "焰火秀",
       "aliases": [
         "Fireworks"
       ]
     },
     {
       "en": "Gift Exchange",
-      "zh-CN": "礼物交换",
+      "zh-CN": "礼尚往来",
       "aliases": [
-        "Gift Exchange"
+        "Gift Exchange",
+        "礼物交换"
       ]
     },
     {
       "en": "Going Nuclear",
-      "zh-CN": "核弹来袭",
+      "zh-CN": "核弹打击",
       "aliases": [
-        "Going Nuclear"
+        "Going Nuclear",
+        "核弹来袭"
       ]
     },
     {
       "en": "Hardened Will",
-      "zh-CN": "坚定意志",
+      "zh-CN": "坚强意志",
       "aliases": [
         "Hardened Will"
       ]
@@ -460,7 +477,7 @@
     },
     {
       "en": "Just Die",
-      "zh-CN": "就是死不了",
+      "zh-CN": "给我死吧！",
       "aliases": [
         "Just Die"
       ]
@@ -481,21 +498,21 @@
     },
     {
       "en": "Lava Burst",
-      "zh-CN": "熔岩爆裂",
+      "zh-CN": "岩浆爆发",
       "aliases": [
         "Lava Burst"
       ]
     },
     {
       "en": "Life Leech",
-      "zh-CN": "生命汲取",
+      "zh-CN": "生命吸取",
       "aliases": [
         "Life Leech"
       ]
     },
     {
       "en": "Long Range",
-      "zh-CN": "超远射程",
+      "zh-CN": "超远视距",
       "aliases": [
         "Long Range"
       ]
@@ -504,28 +521,31 @@
       "en": "Lucky Envelopes",
       "zh-CN": "幸运红包",
       "aliases": [
-        "Lucky Envelopes"
+        "Lucky Envelopes",
+        "幸运红包"
       ]
     },
     {
       "en": "Mag-nificent",
-      "zh-CN": "磁力惊人",
+      "zh-CN": "强磁雷场",
       "aliases": [
         "Mag-nificent"
       ]
     },
     {
       "en": "Micro Transactions",
-      "zh-CN": "微交易",
+      "zh-CN": "拿钱说话",
       "aliases": [
-        "Micro Transactions"
+        "Micro Transactions",
+        "微交易"
       ]
     },
     {
       "en": "Mineral Shields",
-      "zh-CN": "矿物护盾",
+      "zh-CN": "晶矿护盾",
       "aliases": [
-        "Mineral Shields"
+        "Mineral Shields",
+        "矿物护盾"
       ]
     },
     {
@@ -537,30 +557,33 @@
     },
     {
       "en": "Missile Command",
-      "zh-CN": "导弹指挥",
+      "zh-CN": "飞弹大战",
       "aliases": [
-        "Missile Command"
+        "Missile Command",
+        "导弹指挥"
       ]
     },
     {
       "en": "Moment of Silence",
-      "zh-CN": "静默时刻",
+      "zh-CN": "默哀",
       "aliases": [
         "Moment of Silence"
       ]
     },
     {
       "en": "Mutually Assured Destruction",
-      "zh-CN": "相互保证毁灭",
+      "zh-CN": "相互摧毁",
       "aliases": [
-        "Mutually Assured Destruction"
+        "Mutually Assured Destruction",
+        "相互保证毁灭"
       ]
     },
     {
       "en": "Naughty List",
-      "zh-CN": "淘气名单",
+      "zh-CN": "杀生业报",
       "aliases": [
-        "Naughty List"
+        "Naughty List",
+        "淘气名单"
       ]
     },
     {
@@ -572,37 +595,40 @@
     },
     {
       "en": "Outbreak",
-      "zh-CN": "感染爆发",
+      "zh-CN": "丧尸大战",
       "aliases": [
-        "Outbreak"
+        "Outbreak",
+        "感染爆发"
       ]
     },
     {
       "en": "Photon Overload",
-      "zh-CN": "光子超载",
+      "zh-CN": "光子过载",
       "aliases": [
         "Photon Overload"
       ]
     },
     {
       "en": "Polarity",
-      "zh-CN": "极性互换",
+      "zh-CN": "极性不定",
       "aliases": [
         "Polarity"
       ]
     },
     {
       "en": "Power Overwhelming",
-      "zh-CN": "势不可挡",
+      "zh-CN": "灵能爆表",
       "aliases": [
-        "Power Overwhelming"
+        "Power Overwhelming",
+        "势不可挡"
       ]
     },
     {
       "en": "Propagators",
-      "zh-CN": "传播者",
+      "zh-CN": "同化体",
       "aliases": [
-        "Propagators"
+        "Propagators",
+        "传播者"
       ]
     },
     {
@@ -623,40 +649,45 @@
       "en": "Scorched Earth",
       "zh-CN": "焦土政策",
       "aliases": [
-        "Scorched Earth"
+        "Scorched Earth",
+        "焦土政策"
       ]
     },
     {
       "en": "Self Destruction",
       "zh-CN": "自毁程序",
       "aliases": [
-        "Self Destruction"
+        "Self Destruction",
+        "自毁程序"
       ]
     },
     {
       "en": "Sharing is Caring",
-      "zh-CN": "有福同享",
+      "zh-CN": "补给共享",
       "aliases": [
-        "Sharing is Caring"
+        "Sharing is Caring",
+        "有福同享"
       ]
     },
     {
       "en": "Shortsighted",
-      "zh-CN": "近视眼",
+      "zh-CN": "短视症",
       "aliases": [
-        "Shortsighted"
+        "Shortsighted",
+        "近视眼"
       ]
     },
     {
       "en": "Slim Pickings",
-      "zh-CN": "资源短缺",
+      "zh-CN": "小捞油水",
       "aliases": [
-        "Slim Pickings"
+        "Slim Pickings",
+        "资源短缺"
       ]
     },
     {
       "en": "Speed Freaks",
-      "zh-CN": "极速狂飙",
+      "zh-CN": "速度狂魔",
       "aliases": [
         "Speed Freaks"
       ]
@@ -677,44 +708,48 @@
     },
     {
       "en": "Transmutation",
-      "zh-CN": "转化",
+      "zh-CN": "力量蜕变",
       "aliases": [
-        "Transmutation"
+        "Transmutation",
+        "转化"
       ]
     },
     {
       "en": "Trick or Treat",
-      "zh-CN": "不给糖就捣蛋",
+      "zh-CN": "不给糖果就捣蛋",
       "aliases": [
         "Trick or Treat"
       ]
     },
     {
       "en": "Turkey Shoot",
-      "zh-CN": "火鸡射击",
+      "zh-CN": "捕杀火鸡",
       "aliases": [
-        "Turkey Shoot"
+        "Turkey Shoot",
+        "火鸡射击"
       ]
     },
     {
       "en": "Twister",
-      "zh-CN": "龙卷风",
+      "zh-CN": "龙卷风暴",
       "aliases": [
-        "Twister"
+        "Twister",
+        "龙卷风"
       ]
     },
     {
       "en": "Vertigo",
-      "zh-CN": "眩晕",
+      "zh-CN": "迷失方向",
       "aliases": [
         "Vertigo"
       ]
     },
     {
       "en": "Void Reanimators",
-      "zh-CN": "虚空复生者",
+      "zh-CN": "虚空重生者",
       "aliases": [
-        "Void Reanimators"
+        "Void Reanimators",
+        "虚空复生者"
       ]
     },
     {
@@ -733,14 +768,15 @@
     },
     {
       "en": "We Move Unseen",
-      "zh-CN": "隐形行动",
+      "zh-CN": "来去无踪",
       "aliases": [
-        "We Move Unseen"
+        "We Move Unseen",
+        "隐形行动"
       ]
     },
     {
       "en": "Boom Bots",
-      "zh-CN": "爆破机器人",
+      "zh-CN": "炸弹机器人",
       "aliases": [
         "Boom Bots"
       ]
@@ -2145,7 +2181,7 @@
     { "en": "Colossus", "zh-CN": "巨像", "aliases": ["Colossus"] },
     { "en": "Warp Prism", "zh-CN": "折跃棱镜", "aliases": ["Warp Prism", "War Prism"] },
     { "en": "Void Ray", "zh-CN": "虚空辉光舰", "aliases": ["Void Ray"] },
-    { "en": "Carrier", "zh-CN": "航空母舰", "aliases": ["Carrier"] },
+    { "en": "Carrier", "zh-CN": "航母", "aliases": ["Carrier", "航空母舰"] },
     { "en": "Oracle", "zh-CN": "先知", "aliases": ["Oracle"] },
     { "en": "Roach", "zh-CN": "蟑螂", "aliases": ["Roach"] },
     { "en": "Zergling", "zh-CN": "跳虫", "aliases": ["Zergling"] },

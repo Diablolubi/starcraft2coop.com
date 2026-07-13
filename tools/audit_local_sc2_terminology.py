@@ -13,6 +13,7 @@ VISIBLE_SUFFIXES = {".php", ".json", ".html", ".ts", ".tsx", ".md", ".txt"}
 CJK_RE = re.compile(r"[\u3400-\u9fff]")
 URL_RE = re.compile(r"(?:https?|ftp)://|www\.", re.IGNORECASE)
 INTERNAL_ID_RE = re.compile(r"\b(?:Unit|Abil|Button|Catalog|Upgrade|Effect)\.[A-Za-z0-9_.-]+\b")
+INTERNAL_JSON_FIELD_RE = re.compile(r"^\s*\"(?:basename|unit|icon|nameid|commander|race|modifier|target)\"\s*:")
 
 
 def _iter_lines(roots: list[Path]):
@@ -25,7 +26,7 @@ def _iter_lines(roots: list[Path]):
                 lines = path.read_text(encoding="utf-8").splitlines()
             except UnicodeDecodeError:
                 continue
-            for number, line in enumerate(lines, 1):
+        for number, line in enumerate(lines, 1):
                 yield path, number, line
 
 
@@ -45,6 +46,8 @@ def audit_paths(roots: list[Path], reference: dict, exceptions: list[dict]) -> d
     entries = reference.get("entries", [])
     for path, line_number, line in _iter_lines(roots):
         if URL_RE.search(line) or INTERNAL_ID_RE.search(line):
+            continue
+        if path.suffix.lower() == ".json" and INTERNAL_JSON_FIELD_RE.search(line):
             continue
         for entry in entries:
             english = entry["en"]

@@ -135,15 +135,15 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <div id="missionList" class="submenu">
         <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">飞升之链</div></a>
         <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">死亡摇篮</div></a>
-        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">亡者之夜</div></a>
-        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">天锁</div></a>
-        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">恶意代码</div></a>
-        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">疏散矿工</div></a>
+        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">求生无路</div></a>
+        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">天界封锁</div></a>
+        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">净网行动</div></a>
+        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">营救矿工</div></a>
         <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">机会渺茫</div></a>
         <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">湮灭快车</div></a>
         <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">聚铁成兵</div></a>
         <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">克哈裂痕</div></a>
-        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">埃蒙之镰</div></a>
+        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">黑暗杀星</div></a>
         <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">往日神庙</div></a>
         <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">熔火危机</div></a>
         <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">虚空降临</div></a>
@@ -252,8 +252,8 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <p>部分突变因子会制造环境危害，对包括工人在内的玩家单位造成影响或施加减益。这些突变因子会在称为“安全区”的区域内停用。所有玩家主基地和扩张基地均视为安全区。遵循安全区规则的突变因子如下：</p>
     <ul>
         <li>暴风雪</li>
-        <li>核弹来袭*</li>
-        <li>熔岩爆裂</li>
+        <li>核弹打击*</li>
+        <li>岩浆爆发</li>
         <li>轨道轰炸</li>
         <li>净化光束</li>
         <li>时空力场</li>
@@ -272,20 +272,20 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             <img src="/images/mutatordata/safetyzonecradleofdeath.jpg" alt="死亡摇篮安全区">
         </div>
         <div class="mapSafetyZone">
-            <p>亡者之夜</p>
-            <img src="/images/mutatordata/safetyzonedeadofnight.jpg" alt="亡者之夜安全区">
+            <p>求生无路</p>
+            <img src="/images/mutatordata/safetyzonedeadofnight.jpg" alt="求生无路安全区">
         </div>
         <div class="mapSafetyZone">
-            <p>天锁</p>
-            <img src="/images/mutatordata/safetyzonelockandload.jpg" alt="天锁安全区">
+            <p>天界封锁</p>
+            <img src="/images/mutatordata/safetyzonelockandload.jpg" alt="天界封锁安全区">
         </div>
         <div class="mapSafetyZone">
-            <p>恶意代码</p>
-            <img src="/images/mutatordata/safetyzonemalwarfare.jpg" alt="恶意代码安全区">
+            <p>净网行动</p>
+            <img src="/images/mutatordata/safetyzonemalwarfare.jpg" alt="净网行动安全区">
         </div>
         <div class="mapSafetyZone">
-            <p>疏散矿工</p>
-            <img src="/images/mutatordata/safetyzoneminerevacuation.jpg" alt="疏散矿工安全区">
+            <p>营救矿工</p>
+            <img src="/images/mutatordata/safetyzoneminerevacuation.jpg" alt="营救矿工安全区">
         </div>
         <div class="mapSafetyZone">
             <p>机会渺茫</p>
@@ -304,8 +304,8 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             <img src="/images/mutatordata/safetyzoneriftstokorhal.jpg" alt="克哈裂痕安全区">
         </div>
         <div class="mapSafetyZone">
-            <p>埃蒙之镰</p>
-            <img src="/images/mutatordata/safetyzonescytheofamon.jpg" alt="埃蒙之镰安全区">
+            <p>黑暗杀星</p>
+            <img src="/images/mutatordata/safetyzonescytheofamon.jpg" alt="黑暗杀星安全区">
         </div>
         <div class="mapSafetyZone">
             <p>往日神庙</p>
@@ -328,137 +328,137 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         <form action="mutators.php" method="post">
         <p class="centerAlign">突变因子 1：</p>
         <select name="mut1" id="mut1">
-            <option value='0'>-</option><option value='55' data-slug='trickortreat'>不给糖就捣蛋</option>
-<option value='43' data-slug='propagators'>传播者</option>
-<option value='40' data-slug='photonoverload'>光子超载</option>
+            <option value='0'>-</option><option value='55' data-slug='trickortreat'>不给糖果就捣蛋</option>
+<option value='39' data-slug='outbreak'>丧尸大战</option>
+<option value='11' data-slug='diffusion'>伤害散射</option>
+<option value='40' data-slug='photonoverload'>光子过载</option>
 <option value='44' data-slug='purifierbeam'>净化光束</option>
-<option value='42' data-slug='poweroverwhelming'>势不可挡</option>
-<option value='12' data-slug='doubleedged'>双刃剑</option>
-<option value='20' data-slug='hardenedwill'>坚定意志</option>
-<option value='4' data-slug='avenger'>复仇者</option>
-<option value='34' data-slug='missilecommand'>导弹指挥</option>
-<option value='23' data-slug='justdie'>就是死不了</option>
-<option value='5' data-slug='barrier'>屏障</option>
+<option value='5' data-slug='barrier'>减伤屏障</option>
+<option value='54' data-slug='transmutation'>力量蜕变</option>
+<option value='12' data-slug='doubleedged'>双重压力</option>
+<option value='43' data-slug='propagators'>同化体</option>
+<option value='20' data-slug='hardenedwill'>坚强意志</option>
+<option value='4' data-slug='avenger'>复仇战士</option>
+<option value='50' data-slug='slimpickings'>小捞油水</option>
+<option value='26' data-slug='lavaburst'>岩浆爆发</option>
 <option value='29' data-slug='luckyenvelopes'>幸运红包</option>
-<option value='3' data-slug='alienincubation'>异形孵化</option>
-<option value='2' data-slug='aggressivedeployment'>强势部署</option>
-<option value='13' data-slug='eminentdomain'>强占地盘</option>
-<option value='31' data-slug='microtransactions'>微交易</option>
-<option value='16' data-slug='fear'>恐惧</option>
-<option value='39' data-slug='outbreak'>感染爆发</option>
-<option value='11' data-slug='diffusion'>扩散</option>
+<option value='3' data-slug='alienincubation'>异形寄生</option>
+<option value='30' data-slug='magnificent'>强磁雷场</option>
+<option value='13' data-slug='eminentdomain'>强行征用</option>
 <option value='33' data-slug='minesweeper'>扫雷专家</option>
+<option value='31' data-slug='microtransactions'>拿钱说话</option>
+<option value='56' data-slug='turkeyshoot'>捕杀火鸡</option>
+<option value='16' data-slug='fear'>无边恐惧</option>
 <option value='52' data-slug='temporalfield'>时空力场</option>
 <option value='53' data-slug='timewarp'>时间扭曲</option>
+<option value='32' data-slug='mineralshields'>晶矿护盾</option>
+<option value='10' data-slug='darkness'>暗无天日</option>
 <option value='7' data-slug='blizzard'>暴风雪</option>
-<option value='48' data-slug='sharingiscaring'>有福同享</option>
 <option value='24' data-slug='killbots'>杀戮机器人</option>
-<option value='41' data-slug='polarity'>极性互换</option>
-<option value='51' data-slug='speedfreaks'>极速狂飙</option>
-<option value='19' data-slug='goingnuclear'>核弹来袭</option>
-<option value='37' data-slug='naughtylist'>淘气名单</option>
+<option value='37' data-slug='naughtylist'>杀生业报</option>
+<option value='62' data-slug='wemoveunseen'>来去无踪</option>
+<option value='1' data-slug='afraidofthedark'>极度谨慎</option>
+<option value='41' data-slug='polarity'>极性不定</option>
+<option value='19' data-slug='goingnuclear'>核弹打击</option>
 <option value='8' data-slug='chaosstudios'>混乱工作室</option>
-<option value='1' data-slug='afraidofthedark'>漆黑一片</option>
 <option value='25' data-slug='laserdrill'>激光钻机</option>
-<option value='56' data-slug='turkeyshoot'>火鸡射击</option>
-<option value='17' data-slug='fireworks'>烟花表演</option>
+<option value='42' data-slug='poweroverwhelming'>灵能爆表</option>
+<option value='63' data-slug='boombots'>炸弹机器人</option>
 <option value='46' data-slug='scorchedearth'>焦土政策</option>
-<option value='26' data-slug='lavaburst'>熔岩爆裂</option>
-<option value='63' data-slug='boombots'>爆破机器人</option>
-<option value='27' data-slug='lifeleech'>生命汲取</option>
-<option value='36' data-slug='mutuallyassureddestruction'>相互保证毁灭</option>
-<option value='58' data-slug='vertigo'>眩晕</option>
-<option value='32' data-slug='mineralshields'>矿物护盾</option>
-<option value='30' data-slug='magnificent'>磁力惊人</option>
-<option value='18' data-slug='giftexchange'>礼物交换</option>
+<option value='17' data-slug='fireworks'>焰火秀</option>
+<option value='27' data-slug='lifeleech'>生命吸取</option>
+<option value='36' data-slug='mutuallyassureddestruction'>相互摧毁</option>
+<option value='49' data-slug='shortsighted'>短视症</option>
+<option value='18' data-slug='giftexchange'>礼尚往来</option>
+<option value='23' data-slug='justdie'>给我死吧！</option>
 <option value='47' data-slug='selfdestruction'>自毁程序</option>
-<option value='15' data-slug='fatalattraction'>致命吸引</option>
-<option value='59' data-slug='voidreanimators'>虚空复生者</option>
+<option value='15' data-slug='fatalattraction'>致命勾引</option>
 <option value='60' data-slug='voidrifts'>虚空裂隙</option>
+<option value='59' data-slug='voidreanimators'>虚空重生者</option>
 <option value='61' data-slug='walkinginfested'>行尸走肉</option>
-<option value='50' data-slug='slimpickings'>资源短缺</option>
-<option value='28' data-slug='longrange'>超远射程</option>
+<option value='48' data-slug='sharingiscaring'>补给共享</option>
+<option value='28' data-slug='longrange'>超远视距</option>
 <option value='38' data-slug='orbitalstrike'>轨道轰炸</option>
-<option value='54' data-slug='transmutation'>转化</option>
-<option value='49' data-slug='shortsighted'>近视眼</option>
+<option value='2' data-slug='aggressivedeployment'>进攻部署</option>
+<option value='58' data-slug='vertigo'>迷失方向</option>
+<option value='51' data-slug='speedfreaks'>速度狂魔</option>
 <option value='14' data-slug='evasivemaneuvers'>闪避机动</option>
 <option value='45' data-slug='random'>随机</option>
-<option value='62' data-slug='wemoveunseen'>隐形行动</option>
 <option value='9' data-slug='concussiveattacks'>震荡攻击</option>
-<option value='35' data-slug='momentofsilence'>静默时刻</option>
 <option value='21' data-slug='heroesfromthestorm'>风暴英雄</option>
-<option value='10' data-slug='darkness'>黑暗</option>
+<option value='34' data-slug='missilecommand'>飞弹大战</option>
 <option value='6' data-slug='blackdeath'>黑死病</option>
+<option value='35' data-slug='momentofsilence'>默哀</option>
 <option value='22' data-slug='inspiration'>鼓舞人心</option>
-<option value='57' data-slug='twister'>龙卷风</option>
+<option value='57' data-slug='twister'>龙卷风暴</option>
         </select>
         <img class="centerAlign" id="mut1img" src="/images/mutators/random.png" height="50" width="50" alt="突变因子 1">
         <p></p>
         <p class="centerAlign" >突变因子 2：</p>
         <select name="mut2" id="mut2">
-            <option value='0'>-</option><option value='-1'>（显示所有交互）</option><option value='55' data-slug='trickortreat'>不给糖就捣蛋</option>
-<option value='43' data-slug='propagators'>传播者</option>
-<option value='40' data-slug='photonoverload'>光子超载</option>
+            <option value='0'>-</option><option value='-1'>（显示所有交互）</option><option value='55' data-slug='trickortreat'>不给糖果就捣蛋</option>
+<option value='39' data-slug='outbreak'>丧尸大战</option>
+<option value='11' data-slug='diffusion'>伤害散射</option>
+<option value='40' data-slug='photonoverload'>光子过载</option>
 <option value='44' data-slug='purifierbeam'>净化光束</option>
-<option value='42' data-slug='poweroverwhelming'>势不可挡</option>
-<option value='12' data-slug='doubleedged'>双刃剑</option>
-<option value='20' data-slug='hardenedwill'>坚定意志</option>
-<option value='4' data-slug='avenger'>复仇者</option>
-<option value='34' data-slug='missilecommand'>导弹指挥</option>
-<option value='23' data-slug='justdie'>就是死不了</option>
-<option value='5' data-slug='barrier'>屏障</option>
+<option value='5' data-slug='barrier'>减伤屏障</option>
+<option value='54' data-slug='transmutation'>力量蜕变</option>
+<option value='12' data-slug='doubleedged'>双重压力</option>
+<option value='43' data-slug='propagators'>同化体</option>
+<option value='20' data-slug='hardenedwill'>坚强意志</option>
+<option value='4' data-slug='avenger'>复仇战士</option>
+<option value='50' data-slug='slimpickings'>小捞油水</option>
+<option value='26' data-slug='lavaburst'>岩浆爆发</option>
 <option value='29' data-slug='luckyenvelopes'>幸运红包</option>
-<option value='3' data-slug='alienincubation'>异形孵化</option>
-<option value='2' data-slug='aggressivedeployment'>强势部署</option>
-<option value='13' data-slug='eminentdomain'>强占地盘</option>
-<option value='31' data-slug='microtransactions'>微交易</option>
-<option value='16' data-slug='fear'>恐惧</option>
-<option value='39' data-slug='outbreak'>感染爆发</option>
-<option value='11' data-slug='diffusion'>扩散</option>
+<option value='3' data-slug='alienincubation'>异形寄生</option>
+<option value='30' data-slug='magnificent'>强磁雷场</option>
+<option value='13' data-slug='eminentdomain'>强行征用</option>
 <option value='33' data-slug='minesweeper'>扫雷专家</option>
+<option value='31' data-slug='microtransactions'>拿钱说话</option>
+<option value='56' data-slug='turkeyshoot'>捕杀火鸡</option>
+<option value='16' data-slug='fear'>无边恐惧</option>
 <option value='52' data-slug='temporalfield'>时空力场</option>
 <option value='53' data-slug='timewarp'>时间扭曲</option>
+<option value='32' data-slug='mineralshields'>晶矿护盾</option>
+<option value='10' data-slug='darkness'>暗无天日</option>
 <option value='7' data-slug='blizzard'>暴风雪</option>
-<option value='48' data-slug='sharingiscaring'>有福同享</option>
 <option value='24' data-slug='killbots'>杀戮机器人</option>
-<option value='41' data-slug='polarity'>极性互换</option>
-<option value='51' data-slug='speedfreaks'>极速狂飙</option>
-<option value='19' data-slug='goingnuclear'>核弹来袭</option>
-<option value='37' data-slug='naughtylist'>淘气名单</option>
+<option value='37' data-slug='naughtylist'>杀生业报</option>
+<option value='62' data-slug='wemoveunseen'>来去无踪</option>
+<option value='1' data-slug='afraidofthedark'>极度谨慎</option>
+<option value='41' data-slug='polarity'>极性不定</option>
+<option value='19' data-slug='goingnuclear'>核弹打击</option>
 <option value='8' data-slug='chaosstudios'>混乱工作室</option>
-<option value='1' data-slug='afraidofthedark'>漆黑一片</option>
 <option value='25' data-slug='laserdrill'>激光钻机</option>
-<option value='56' data-slug='turkeyshoot'>火鸡射击</option>
-<option value='17' data-slug='fireworks'>烟花表演</option>
+<option value='42' data-slug='poweroverwhelming'>灵能爆表</option>
+<option value='63' data-slug='boombots'>炸弹机器人</option>
 <option value='46' data-slug='scorchedearth'>焦土政策</option>
-<option value='26' data-slug='lavaburst'>熔岩爆裂</option>
-<option value='63' data-slug='boombots'>爆破机器人</option>
-<option value='27' data-slug='lifeleech'>生命汲取</option>
-<option value='36' data-slug='mutuallyassureddestruction'>相互保证毁灭</option>
-<option value='58' data-slug='vertigo'>眩晕</option>
-<option value='32' data-slug='mineralshields'>矿物护盾</option>
-<option value='30' data-slug='magnificent'>磁力惊人</option>
-<option value='18' data-slug='giftexchange'>礼物交换</option>
+<option value='17' data-slug='fireworks'>焰火秀</option>
+<option value='27' data-slug='lifeleech'>生命吸取</option>
+<option value='36' data-slug='mutuallyassureddestruction'>相互摧毁</option>
+<option value='49' data-slug='shortsighted'>短视症</option>
+<option value='18' data-slug='giftexchange'>礼尚往来</option>
+<option value='23' data-slug='justdie'>给我死吧！</option>
 <option value='47' data-slug='selfdestruction'>自毁程序</option>
-<option value='15' data-slug='fatalattraction'>致命吸引</option>
-<option value='59' data-slug='voidreanimators'>虚空复生者</option>
+<option value='15' data-slug='fatalattraction'>致命勾引</option>
 <option value='60' data-slug='voidrifts'>虚空裂隙</option>
+<option value='59' data-slug='voidreanimators'>虚空重生者</option>
 <option value='61' data-slug='walkinginfested'>行尸走肉</option>
-<option value='50' data-slug='slimpickings'>资源短缺</option>
-<option value='28' data-slug='longrange'>超远射程</option>
+<option value='48' data-slug='sharingiscaring'>补给共享</option>
+<option value='28' data-slug='longrange'>超远视距</option>
 <option value='38' data-slug='orbitalstrike'>轨道轰炸</option>
-<option value='54' data-slug='transmutation'>转化</option>
-<option value='49' data-slug='shortsighted'>近视眼</option>
+<option value='2' data-slug='aggressivedeployment'>进攻部署</option>
+<option value='58' data-slug='vertigo'>迷失方向</option>
+<option value='51' data-slug='speedfreaks'>速度狂魔</option>
 <option value='14' data-slug='evasivemaneuvers'>闪避机动</option>
 <option value='45' data-slug='random'>随机</option>
-<option value='62' data-slug='wemoveunseen'>隐形行动</option>
 <option value='9' data-slug='concussiveattacks'>震荡攻击</option>
-<option value='35' data-slug='momentofsilence'>静默时刻</option>
 <option value='21' data-slug='heroesfromthestorm'>风暴英雄</option>
-<option value='10' data-slug='darkness'>黑暗</option>
+<option value='34' data-slug='missilecommand'>飞弹大战</option>
 <option value='6' data-slug='blackdeath'>黑死病</option>
+<option value='35' data-slug='momentofsilence'>默哀</option>
 <option value='22' data-slug='inspiration'>鼓舞人心</option>
-<option value='57' data-slug='twister'>龙卷风</option>
+<option value='57' data-slug='twister'>龙卷风暴</option>
         </select>
         <img class="centerAlign"  id="mut2img" src="/images/mutators/random.png" height="50" width="50" alt="突变因子 2">
         <p></p>
@@ -572,69 +572,69 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <p>下方列出了《星际争霸 II》合作任务的全部突变因子及其名称、图标、说明和机制。点击“详情”可显示每个突变因子的更多信息。如需查看突变因子的更多数值数据（以及其他难度等级下的突变因子信息），请访问 <a href="https://seamaguro.blogspot.com/2017/12/mutator-compendium.html" rel="nofollow">Maguro 的博客</a>。</p>
     <p>大多数突变因子还拥有称为“畸变值”的难度分数。这些分数用于为残酷+游戏选择不同难度等级。分数列表和难度等级分界点请参阅<a href="brutal">残酷+页面</a>。</p>
     <p>点击下方链接可快速跳转到相应突变因子：</p>
-    <p id="navList"> <a href="#row_afraidofthedark">漆黑一片</a> -
-        <a href="#row_aggressivedeployment">强势部署</a> -
-        <a href="#row_alienincubation">异形孵化</a> -
-        <a href="#row_avenger">复仇者</a> -
+    <p id="navList"> <a href="#row_afraidofthedark">极度谨慎</a> -
+        <a href="#row_aggressivedeployment">进攻部署</a> -
+        <a href="#row_alienincubation">异形寄生</a> -
+        <a href="#row_avenger">复仇战士</a> -
         <a href="#row_barrier">屏障</a> -
         <a href="#row_blackdeath">黑死病</a> -
         <a href="#row_blizzard">暴风雪</a> -
-        <a href="#row_boombots">爆破机器人</a> -
+        <a href="#row_boombots">炸弹机器人</a> -
         <a href="#row_chaosstudios">混乱工作室</a> -
         <a href="#row_concussiveattacks">震荡攻击</a> -
         <a href="#row_darkness">黑暗</a> -
         <a href="#row_diffusion">扩散</a> -
-        <a href="#row_doubleedged">双刃剑</a> -
-        <a href="#row_eminentdomain">强占地盘</a> -
+        <a href="#row_doubleedged">双重压力</a> -
+        <a href="#row_eminentdomain">强行征用</a> -
         <a href="#row_evasivemaneuvers">闪避机动</a> -
-        <a href="#row_fatalattraction">致命吸引</a> -
+        <a href="#row_fatalattraction">致命勾引</a> -
         <a href="#row_fear">恐惧</a> -
-        <a href="#row_fireworks">烟花表演</a> -
-        <a href="#row_giftexchange">礼物交换</a> -
-        <a href="#row_goingnuclear">核弹来袭</a> -
-        <a href="#row_hardenedwill">坚定意志</a> -
+        <a href="#row_fireworks">焰火秀</a> -
+        <a href="#row_giftexchange">礼尚往来</a> -
+        <a href="#row_goingnuclear">核弹打击</a> -
+        <a href="#row_hardenedwill">坚强意志</a> -
         <a href="#row_heroesfromthestorm">风暴英雄</a> -
         <a href="#row_inspiration">鼓舞人心</a> -
-        <a href="#row_justdie">就是死不了</a> -
+        <a href="#row_justdie">给我死吧！</a> -
         <a href="#row_killbots">杀戮机器人</a> -
         <a href="#row_laserdrill">激光钻机</a> -
-        <a href="#row_lavaburst">熔岩爆裂</a> -
-        <a href="#row_lifeleech">生命汲取</a> -
-        <a href="#row_longrange">超远射程</a> -
+        <a href="#row_lavaburst">岩浆爆发</a> -
+        <a href="#row_lifeleech">生命吸取</a> -
+        <a href="#row_longrange">超远视距</a> -
         <a href="#row_luckyenvelopes">幸运红包</a> -
-        <a href="#row_magnificent">磁力惊人</a> -
-        <a href="#row_microtransactions">微交易</a> -
-        <a href="#row_mineralshields">矿物护盾</a> -
+        <a href="#row_magnificent">强磁雷场</a> -
+        <a href="#row_microtransactions">拿钱说话</a> -
+        <a href="#row_mineralshields">晶矿护盾</a> -
         <a href="#row_minesweeper">扫雷专家</a> -
-        <a href="#row_missilecommand">导弹指挥</a> -
-        <a href="#row_momentofsilence">静默时刻</a> -
-        <a href="#row_mutuallyassureddestruction">相互保证毁灭</a> -
-        <a href="#row_naughtylist">淘气名单</a> -
+        <a href="#row_missilecommand">飞弹大战</a> -
+        <a href="#row_momentofsilence">默哀</a> -
+        <a href="#row_mutuallyassureddestruction">相互摧毁</a> -
+        <a href="#row_naughtylist">杀生业报</a> -
         <a href="#row_orbitalstrike">轨道轰炸</a> -
-        <a href="#row_outbreak">感染爆发</a> -
-        <a href="#row_photonoverload">光子超载</a> -
-        <a href="#row_polarity">极性互换</a> -
-        <a href="#row_poweroverwhelming">势不可挡</a> -
-        <a href="#row_propagators">传播者</a> -
+        <a href="#row_outbreak">丧尸大战</a> -
+        <a href="#row_photonoverload">光子过载</a> -
+        <a href="#row_polarity">极性不定</a> -
+        <a href="#row_poweroverwhelming">灵能爆表</a> -
+        <a href="#row_propagators">同化体</a> -
         <a href="#row_purifierbeam">净化光束</a> -
         <a href="#row_random">随机</a> -
         <a href="#row_scorchedearth">焦土政策</a> -
         <a href="#row_selfdestruction">自毁程序</a> -
-        <a href="#row_sharingiscaring">有福同享</a> -
-        <a href="#row_shortsighted">近视眼</a> -
-        <a href="#row_slimpickings">资源短缺</a> -
-        <a href="#row_speedfreaks">极速狂飙</a> -
+        <a href="#row_sharingiscaring">补给共享</a> -
+        <a href="#row_shortsighted">短视症</a> -
+        <a href="#row_slimpickings">小捞油水</a> -
+        <a href="#row_speedfreaks">速度狂魔</a> -
         <a href="#row_temporalfield">时空力场</a> -
         <a href="#row_timewarp">时间扭曲</a> -
         <a href="#row_transmutation">转化</a> -
-        <a href="#row_trickortreat">不给糖就捣蛋</a> -
-        <a href="#row_turkeyshoot">火鸡射击</a> -
+        <a href="#row_trickortreat">不给糖果就捣蛋</a> -
+        <a href="#row_turkeyshoot">捕杀火鸡</a> -
         <a href="#row_twister">龙卷风</a> -
-        <a href="#row_vertigo">眩晕</a> -
-        <a href="#row_voidreanimators">虚空复生者</a> -
+        <a href="#row_vertigo">迷失方向</a> -
+        <a href="#row_voidreanimators">虚空重生者</a> -
         <a href="#row_voidrifts">虚空裂隙</a> -
         <a href="#row_walkinginfested">行尸走肉</a> -
-        <a href="#row_wemoveunseen">隐形行动</a></p>
+        <a href="#row_wemoveunseen">来去无踪</a></p>
         <table id="mutatorTable">
         <thead>
             <tr>
@@ -647,12 +647,12 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         <tbody>
             <tr id="row_trickortreat">
                 <td><img src="/images/mutators/trickortreat.png" alt=""></td>
-                <td>不给糖就捣蛋</td>
+                <td>不给糖果就捣蛋</td>
                 <td>平民会造访你的糖果碗索要糖果，花费矿物即可生成糖果。没有糖果时，平民会随机变成敌方单位。                    <br /><br />
                     <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
 <p>糖果碗最多存放 50 颗糖果。花费 25 矿物可以向碗中添加 1 颗糖果。糖果碗如下图所示：</p>
 <img src="/images/mutatordata/trickortreatcandybowl.jpg" alt="糖果碗">
-<p>平民会从随机敌方建筑中生成。清除地图上的所有敌方建筑后，他们便会停止生成。平民会前往你的糖果碗。请注意，完全清除“恶意代码”和“虚空降临”的敌人无法阻止生成，因为压制塔和发射舱都是无法摧毁的敌方建筑。</p>
+<p>平民会从随机敌方建筑中生成。清除地图上的所有敌方建筑后，他们便会停止生成。平民会前往你的糖果碗。请注意，完全清除“净网行动”和“虚空降临”的敌人无法阻止生成，因为压制塔和发射舱都是无法摧毁的敌方建筑。</p>
 <p>平民每 30 秒生成一次，生成数量取决于任务时间，如下所示：</p>
 <table class="dataTable">
     <thead>
@@ -734,26 +734,330 @@ if (document.location.host === 'dev.starcraft2coop.com') {
 <p>目前该突变因子存在错误：10:00 后，单位等级会重置为 1 级。</p>
 <p class="subheading">指挥官专属技巧</p>
 <ul>
-    <li>阿巴瑟：由不给糖就捣蛋生成的单位会掉落生物质。</li>
-    <li>德哈卡：由不给糖就捣蛋生成的单位会掉落精华。</li>
-    <li>蒙斯克：由不给糖就捣蛋生成的单位会提供皇家卫队经验值。</li>
-    <li>沃拉尊：时间停止不会影响不给糖就捣蛋的生成时间。</li>
+    <li>阿巴瑟：由不给糖果就捣蛋生成的单位会掉落生物质。</li>
+    <li>德哈卡：由不给糖果就捣蛋生成的单位会掉落精华。</li>
+    <li>蒙斯克：由不给糖果就捣蛋生成的单位会提供皇家卫队经验值。</li>
+    <li>沃拉尊：时间停止不会影响不给糖果就捣蛋的生成时间。</li>
 </ul>
 </details>
                 </td>
                 <td><img src="/images/mutators/no.png" alt="否"></td>
             </tr>
+            <tr id="row_outbreak">
+                <td><img src="/images/mutators/outbreak.png" alt=""></td>
+                <td>丧尸大战</td>
+                <td>一波波被感染的大军会持续向指挥官的基地进发。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>从 2:00 起，感染体会开始从敌方建筑中生成。清除所有敌方建筑后，感染体便会停止生成。</p>
+<p>感染体每 25 秒生成一波，每波数量随机。13:20 前每波生成 2 至 4 个感染体，之后每波生成 4 至 6 个。</p>
+<p>生成的感染体类型取决于任务时间，如下表所示：</p>
+<table class="dataTable">
+    <thead>
+        <tr>
+            <th>任务时间</th>
+            <th>感染体</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0:00-6:20</td>
+            <td>被感染的人类</td>
+        </tr>
+        <tr>
+            <td>6:20-20:00</td>
+            <td>被感染的陆战队员</td>
+        </tr>
+        <tr>
+            <td>20:00+</td>
+            <td>畸变体</td>
+        </tr>
+    </tbody>
+</table>
+<p>此外，15:00 后每波感染体都会同时生成一名被感染的医疗兵。</p>
+<p>由于“求生无路”针对感染体的独特机制，从被感染建筑生成的被感染的陆战队员和畸变体会在白天燃烧，包括由本突变因子生成者；若它们从埃蒙的其他建筑中生成，则不会燃烧。</p>
+<p>在“营救矿工”中，由丧尸大战生成的所有感染体都拥有双倍生命值。</p>
+<p>丧尸大战可以从“聚铁成兵”的零件箱中生成感染体，并产生一些意外的突变因子交互。只有以下突变因子会与零件箱生成的感染体互动（这些感染体显示为白色同盟关系）：</p>
+<ul>
+    <li>震荡攻击</li>
+    <li>扩散</li>
+    <li>强行征用</li>
+    <li>恐惧</li>
+    <li>生命吸取</li>
+</ul>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>阿巴瑟：由丧尸大战生成的单位不会掉落生物质。</li>
+    <li>德哈卡：由丧尸大战生成的单位不会掉落精华。</li>
+    <li>蒙斯克：由丧尸大战生成的单位不会提供皇家卫队经验值。</li>
+    <li>沃拉尊：时间停止不会影响丧尸大战的时间。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_diffusion">
+                <td><img src="/images/mutators/diffusion.png" alt=""></td>
+                <td>伤害散射</td>
+                <td>对敌人造成的伤害会平均分摊给附近所有单位，包括你的单位。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>你造成的 50% 伤害会由 5 射程内的所有单位平均分担。只有目标承受伤害后仍然存活时才会触发该效果；一击消灭单位不会触发扩散。</p>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>蒙斯克：补给地堡内的单位不会受到扩散伤害。</li>
+    <li>诺娃：诺娃的防御无人机施加的防御矩阵可以阻挡扩散伤害。</li>
+    <li>雷诺：地堡内的单位不会受到扩散伤害。</li>
+    <li>斯台特曼：斯台特曼的艾的呵护超载可以阻挡扩散伤害。</li>
+    <li>斯旺：斯旺的科学船施加的防御矩阵可以阻挡扩散伤害。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_photonoverload">
+                <td><img src="/images/mutators/photonoverload.png" alt=""></td>
+                <td>光子过载</td>
+                <td>所有敌方建筑都会攻击附近的敌对单位。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>任何护盾或生命值受到伤害的建筑都会获得光子过载。它每 1.25 秒对 10 射程内的一个单位造成 20 点伤害，持续 15 秒。</p>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_purifierbeam">
+                <td><img src="/images/mutators/purifierbeam.png" alt=""></td>
+                <td>净化光束</td>
+                <td>一道敌方净化光束会在地图上移动，追逐附近的玩家单位。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>净化光束无法被摧毁。它每 0.25 秒在 1 半径内造成 10 点基础伤害，在 2.2 半径内造成基础伤害的 50%，在 2.8 半径内造成基础伤害的 10%。</p>
+<p>净化光束始终与资源点保持至少 20 的距离。</p>
+<p>10:00 会额外生成一道光束，20:00 再生成一道。净化光束的生成位置始终距离玩家基地至少 80。</p>
+<p>玩家可以让一个单位（人类也可使用建筑）围绕净化光束巡逻来“吸引”它。无论单位体型或移动速度如何，有效巡逻圆的直径大约应等于屏幕纵向可见区域。让单位围绕光束巡逻后，光束会在整场游戏中一直追随该单位。异虫指挥官可以使用王虫，但必须研究气囊甲壳升级。</p>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>凯拉克斯：只要拥有足够多的护盾充能器，就能把净化光束“困”在一座水晶塔上，由周围的护盾充能器持续恢复其护盾。示意图如下：<br>
+    <img src="/images/mutatordata/purifierbeamtrap.jpg" alt="净化光束陷阱"><br>
+    <p>请注意，必须研究“快速充能”升级才能奏效。绿色护盾充能器放置标记表示第 7 座的可选位置。研究“防御壁垒”升级后即可放置，使光子炮不受任何本体伤害，并解放修复光束。</p>
+    <p>光子炮、水晶塔和护盾充能器的布局如下：</p>
+    <img src="/images/mutatordata/purifierbeamtraplayout.jpg" alt="净化光束陷阱布局"><br>
+    <p>演示视频如下：</p>
+    <iframe width="475" height="268" src="https://www.youtube.com/embed/zvvnvFFTooY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </li>
+    <li>凯瑞甘：凯瑞甘可以用欧米伽虫洞把净化光束引离某个区域。</li>
+    <li>沃拉尊：时间停止会延迟净化光束的时间。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_barrier">
+                <td><img src="/images/mutators/barrier.png" alt=""></td>
+                <td>减伤屏障</td>
+                <td>敌方单位和建筑首次受到伤害时会获得一层临时护盾。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>单位或建筑首次受到伤害时会触发屏障。因此，一击消灭单位可以绕过屏障。屏障增益会施加持续 5 秒、最多吸收 100 点伤害的护盾。单位获得过一次屏障增益后便无法再次获得。</p>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>斯旺：由于脉冲炮的伤害结算方式，如果单位拥有超过 100 点生命值，脉冲炮会触发屏障。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_transmutation">
+                <td><img src="/images/mutators/transmutation.png" alt=""></td>
+                <td>力量蜕变</td>
+                <td>敌方单位每次造成伤害时，都有几率转化为更强大的单位。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>敌方单位每次对玩家单位造成伤害，都有概率转化为补给占用高 1 的单位。0 补给单位按 1 补给计算。</p>
+<p>请注意，转化是永久的。因此，新转化的单位会比原单位掉落更多生物质、精华等。此外，原本不会掉落生物质的单位（例如虚空裂隙生成的单位）也会开始掉落生物质。</p>
+<p>转化触发概率按造成伤害的百分比 Damage/2 计算。因此，如果单位造成 200 点伤害，就有 100% 概率触发转化。该计算在护甲/护盾减伤和减伤增益结算之后进行。</p>
+<p>如果敌方单位击杀玩家单位，会提升等同于被击杀单位补给占用的等级数。如果被击杀者是英雄单位，击杀者会立即升至最高等级。</p>
+<p>转化后的单位也会掉落生物质、精华并提供蒙斯克皇家卫队经验值，即使原单位不会提供（例如来自虚空裂隙的单位）。</p>
+<p>等级如下：</p>
+<table class="dataTable">
+    <thead>
+        <tr>
+            <th>等级</th>
+            <th>单位</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>
+                <ul>
+                    <li>爆虫</li>
+                    <li>陆战队员</li>
+                    <li>跳虫</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>
+                <ul>
+                    <li>恶火</li>
+                    <li>恶火战车</li>
+                    <li>收割者</li>
+                    <li>蟑螂</li>
+                    <li>寡妇雷</li>
+                    <li>狂热者</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>
+                <ul>
+                    <li>使徒</li>
+                    <li>火蝠</li>
+                    <li>刺蛇</li>
+                    <li>劫掠者</li>
+                    <li>哨兵</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>
+                <ul>
+                    <li>龙骑士</li>
+                    <li>歌利亚</li>
+                    <li>高阶圣堂武士</li>
+                    <li>异龙</li>
+                    <li>追猎者</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>
+                <ul>
+                    <li>女妖</li>
+                    <li>感染虫</li>
+                    <li>凤凰</li>
+                    <li>侦察机</li>
+                    <li>维京战机</li>
+                    <li>战狼</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>
+                <ul>
+                    <li>飓风</li>
+                    <li>幽灵</li>
+                    <li>潜伏者</li>
+                    <li>先知</li>
+                    <li>攻城坦克</li>
+                    <li>虫群宿主</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>
+                <ul>
+                    <li>执政官</li>
+                    <li>干扰者</li>
+                    <li>不朽者</li>
+                    <li>解放者</li>
+                    <li>破坏者</li>
+                    <li>虚空辉光舰</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>
+                <ul>
+                    <li>战列巡航舰</li>
+                    <li>巢虫领主</li>
+                    <li>航母</li>
+                    <li>巨像</li>
+                    <li>掠夺者</li>
+                    <li>风暴战舰</li>
+                    <li>雷神</li>
+                    <li>雷兽</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>
+                <ul>
+                    <li>混合体毁灭者</li>
+                    <li>混合体天罚者</li>
+                    <li>混合体掠夺者</li>
+                    <li>洛基</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>
+                <ul>
+                    <li>混合体巨兽</li>
+                    <li>混合体支配者</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>阿拉纳克：建筑超载可以阻止单位触发转化。</li>
+    <li>阿塔尼斯：护盾超载可以阻止单位触发转化。</li>
+    <li>菲尼克斯：菲尼克斯的智能人格英雄不算会导致最高等级转化的英雄单位。</li>
+    <li>诺娃：防御无人机的防御矩阵可以阻止攻击者触发转化。</li>
+    <li>斯台特曼：艾的呵护超载可以阻止单位触发转化。</li>
+    <li>斯旺：防御矩阵可以阻止攻击者触发转化。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_doubleedged">
+                <td><img src="/images/mutators/doubleedged.png" alt=""></td>
+                <td>双重压力</td>
+                <td>你的单位和建筑造成的伤害会反作用于自身，但随后会随时间恢复。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>按照游戏代码，生命值每 0.1 秒恢复 1 点。但由于该函数的设计，平均每秒实际只恢复约 8 点生命值。只有造成伤害的单位会受到双重压力影响。例如，航母不受影响，但其拦截机受影响。被运输工具装载的单位处于安全状态，不受突变因子影响。</p>
+<p>双重压力与单位的生命吸取效果（例如德哈卡的基因突变）存在特殊互动。双重压力造成的伤害也会计入已造成伤害。也就是说，如果单位对敌人造成 100 点伤害，它同时对自身造成 100 点伤害，因此生命吸取会按总计 200 点伤害结算，立即治疗 40 点生命值，并随时间再治疗 100 点。</p>
+<ul>
+    <li>阿巴瑟：拥有至少 100 生物质的单位可以无视双重压力伤害。</li>
+    <li>阿拉纳克：单位（包括阿拉纳克）攻击或使用技能后可立即装入折跃棱镜，避免双重压力伤害。</li>
+    <li>阿塔尼斯：方舟舰指挥官威望下，无拘狂热者的等离子波造成伤害时会令其自毁，严重降低无拘狂热者的效能。</li>
+    <li>阿塔尼斯：护盾超载可以阻挡双重压力伤害。</li>
+    <li>德哈卡：达克伦和拥有尖刺皮肤突变的暴龙兽会因反射伤害迅速自毁（在 2 秒内）。</li>
+    <li>菲尼克斯：保护者力场可以降低双重压力伤害。</li>
+    <li>凯瑞甘：凯瑞甘当前的异变甲壳会先被双重压力消耗，之后才获得因造成伤害而生成的新异变甲壳。</li>
+    <li>蒙斯克：补给地堡内的单位不会受到双重压力伤害。</li>
+    <li>诺娃：诺娃的防御无人机施加的防御矩阵可以阻挡双重压力伤害。</li>
+    <li>雷诺：地堡内的单位不会受到双重压力伤害。</li>
+    <li>斯台特曼：斯台特曼的艾的呵护超载可以阻挡双重压力伤害。</li>
+    <li>斯旺：斯旺的科学船施加的防御矩阵可以阻挡双重压力伤害。</li>
+    <li>泰凯斯：奥丁发射导弹后，可以对其使用医疗运输机接送，在导弹命中时避免受到伤害。所有歹徒技能同理。</li>
+    <li>扎加拉：扎加拉的爆虫冲锋命中建筑时会反伤扎加拉；但用于攻击单位时不会对扎加拉造成反伤。</li>
+    <li>泽拉图：伏击者生成的虚空幻影本身被视为单位，因此伏击者闪现时不会受到双重压力伤害。</li>
+    <li>泽拉图：虚空先驱生成的龙卷风不会对泽拉图造成伤害。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
             <tr id="row_propagators">
                 <td><img src="/images/mutators/propagators.png" alt=""></td>
-                <td>传播者</td>
+                <td>同化体</td>
                 <td>扭曲现实的软泥怪正向你爬来。它们接触到的任何单位都会变成软泥怪的复制体。                    <br /><br />
                     <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>传播者会从敌方建筑中生成，因此清除任务中的所有敌方建筑即可阻止生成。请注意，完全清除“恶意代码”和“虚空降临”的敌人无法阻止生成，因为压制塔和发射舱都是无法摧毁的敌方建筑。</p>
-<p>另请注意：在“往日神庙”中，第一个传播者会攻击岩石并将其转化为另一个传播者，迫使玩家在首波同时应对两个传播者。可以在传播者生成前摧毁岩石来避免这种情况。</p>
-<p>传播者拥有 450 点生命值和 0 点护甲，属于英雄单位并具有反隐能力，可以攻击 1 射程内的空中和地面单位。其移动速度为 1.6。</p>
-<p>传播者如下图所示。</p>
-<img src="/images/mutatordata/propagator.jpg" alt="传播者">
-<p>传播者会在任务中的不同时间成波生成，如下表所示：</p>
+<p>同化体会从敌方建筑中生成，因此清除任务中的所有敌方建筑即可阻止生成。请注意，完全清除“净网行动”和“虚空降临”的敌人无法阻止生成，因为压制塔和发射舱都是无法摧毁的敌方建筑。</p>
+<p>另请注意：在“往日神庙”中，第一个同化体会攻击岩石并将其转化为另一个同化体，迫使玩家在首波同时应对两个同化体。可以在同化体生成前摧毁岩石来避免这种情况。</p>
+<p>同化体拥有 450 点生命值和 0 点护甲，属于英雄单位并具有反隐能力，可以攻击 1 射程内的空中和地面单位。其移动速度为 1.6。</p>
+<p>同化体如下图所示。</p>
+<img src="/images/mutatordata/propagator.jpg" alt="同化体">
+<p>同化体会在任务中的不同时间成波生成，如下表所示：</p>
 <table class="dataTable">
     <thead>
         <tr>
@@ -844,63 +1148,951 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         </tr>
     </tbody>
 </table>
-<p>23:48 之后，每 50 秒会生成一波 5 个传播者。</p>
-<p>传播者可以攻击所有英雄建筑，但不会攻击指挥官生成点或泽拉图的神器储备。斯旺的激光钻机、菲尼克斯的净化者集结点和凯拉克斯的太阳能锻炉被摧毁后会开始重生，且不会生成传播者。</p>
-<p>其他英雄建筑被摧毁时会生成一个传播者，玩家必须手动重建这些建筑。汉与霍纳的星港例外，它被摧毁后无法重建。</p>
-<p>传播者不会攻击带有 MapBoss 属性的单位。因此，在“恶意代码”中，它们会攻击数据核心，但不会攻击奥拉娜运输舰；也不会攻击“机会渺茫”中的采集机器人、“死亡摇篮”中的神器卡车或“疏散矿工”中的撤离船。</p>
-<p>可以通过堵路困住传播者，让攻击较慢的单位将其消灭。详情请观看以下视频：</p>
+<p>23:48 之后，每 50 秒会生成一波 5 个同化体。</p>
+<p>同化体可以攻击所有英雄建筑，但不会攻击指挥官生成点或泽拉图的神器储备。斯旺的激光钻机、菲尼克斯的净化者集结点和凯拉克斯的太阳能锻炉被摧毁后会开始重生，且不会生成同化体。</p>
+<p>其他英雄建筑被摧毁时会生成一个同化体，玩家必须手动重建这些建筑。汉与霍纳的星港例外，它被摧毁后无法重建。</p>
+<p>同化体不会攻击带有 MapBoss 属性的单位。因此，在“净网行动”中，它们会攻击数据核心，但不会攻击奥拉娜运输舰；也不会攻击“机会渺茫”中的采集机器人、“死亡摇篮”中的神器卡车或“营救矿工”中的撤离船。</p>
+<p>可以通过堵路困住同化体，让攻击较慢的单位将其消灭。详情请观看以下视频：</p>
 <iframe width="475" height="268" src="https://www.youtube.com/embed/T051w67T4Dc" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <p class="subheading">指挥官专属技巧</p>
 <ul>
-    <li>德哈卡：至少需要六个穿刺者才能应对一个传播者。</li>
-    <li>德哈卡：德哈卡的族群首领属于地图首领，因此免疫传播者。</li>
-    <li>凯瑞甘：主要技能伤害投入 13 点后，可以用英雄凯瑞甘消灭传播者。演示视频如下。<br>
+    <li>德哈卡：至少需要六个穿刺者才能应对一个同化体。</li>
+    <li>德哈卡：德哈卡的族群首领属于地图首领，因此免疫同化体。</li>
+    <li>凯瑞甘：主要技能伤害投入 13 点后，可以用英雄凯瑞甘消灭同化体。演示视频如下。<br>
     <iframe width="475" height="268" src="https://www.youtube.com/embed/K5kwuOQdvj4" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </li>
-    <li>斯台特曼：艾星会被转化为传播者，请将艾星布置在无法通行的地形上。</li>
-    <li>斯托科夫：关闭被感染的移民营“生成被感染的平民”技能的自动施放，防止单位意外接近传播者。</li>
-    <li>斯托科夫：假设同时攻击，两个完全升级（攻击升级和兵营科技升级）的地堡或四个未升级地堡可以消灭传播者。三个地堡也能应对传播者，但在不进行操作的情况下会损失一个地堡。</li>
-    <li>泰凯斯：响尾蛇萨姆研究莫比斯抑制矩阵后，爆破装药可以阻止传播者移动。</li>
-    <li>沃拉尊：手动让黑暗圣堂武士施放暗影之怒，防止他们意外游荡到传播者身边。</li>
-    <li>沃拉尊：时间停止不会影响传播者的生成时间。</li>
-    <li>扎加拉：爆虫伤害精通加满后，扎加拉可以用一次爆虫冲锋和两次普通攻击消灭传播者。</li>
-    <li>泽拉图：投影被传播者消灭时会生成新的传播者。</li>
+    <li>斯台特曼：艾星会被转化为同化体，请将艾星布置在无法通行的地形上。</li>
+    <li>斯托科夫：关闭被感染的移民营“生成被感染的平民”技能的自动施放，防止单位意外接近同化体。</li>
+    <li>斯托科夫：假设同时攻击，两个完全升级（攻击升级和兵营科技升级）的地堡或四个未升级地堡可以消灭同化体。三个地堡也能应对同化体，但在不进行操作的情况下会损失一个地堡。</li>
+    <li>泰凯斯：响尾蛇萨姆研究莫比斯抑制矩阵后，爆破装药可以阻止同化体移动。</li>
+    <li>沃拉尊：手动让黑暗圣堂武士施放暗影之怒，防止他们意外游荡到同化体身边。</li>
+    <li>沃拉尊：时间停止不会影响同化体的生成时间。</li>
+    <li>扎加拉：爆虫伤害精通加满后，扎加拉可以用一次爆虫冲锋和两次普通攻击消灭同化体。</li>
+    <li>泽拉图：投影被同化体消灭时会生成新的同化体。</li>
 </ul>
 </details>
                 </td>
                 <td><img src="/images/mutators/yes.png" alt="是"></td>
             </tr>
-            <tr id="row_photonoverload">
-                <td><img src="/images/mutators/photonoverload.png" alt=""></td>
-                <td>光子超载</td>
-                <td>所有敌方建筑都会攻击附近的敌对单位。                    <br /><br />
+            <tr id="row_hardenedwill">
+                <td><img src="/images/mutators/hardenedwill.png" alt=""></td>
+                <td>坚强意志</td>
+                <td>附近存在非英雄敌方单位时，敌方英雄单位受到的单次伤害最多为 10 点。                    <br /><br />
                     <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>任何护盾或生命值受到伤害的建筑都会获得光子超载。它每 1.25 秒对 10 射程内的一个单位造成 20 点伤害，持续 15 秒。</p>
+<p>坚强意志会检查英雄单位周围 6 射程内的区域。如果该区域内存在任何非英雄单位，就会施加坚强意志。</p>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>德哈卡：吞噬拥有坚强意志且耐久值超过 10 的单位，会使其剩余 1 点生命值。</li>
+    <li>沃拉尊：时间停止生效时，单位身上的坚强意志不会被移除。</li>
+</ul>
 </details>
                 </td>
                 <td><img src="/images/mutators/yes.png" alt="是"></td>
             </tr>
-            <tr id="row_purifierbeam">
-                <td><img src="/images/mutators/purifierbeam.png" alt=""></td>
-                <td>净化光束</td>
-                <td>一道敌方净化光束会在地图上移动，追逐附近的玩家单位。                    <br /><br />
+            <tr id="row_avenger">
+                <td><img src="/images/mutators/avenger.png" alt=""></td>
+                <td>复仇战士</td>
+                <td>附近有敌方单位死亡时，敌军会提高攻击速度、移动速度、护甲、生命值和生命恢复速度。                    <br /><br />
                     <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>净化光束无法被摧毁。它每 0.25 秒在 1 半径内造成 10 点基础伤害，在 2.2 半径内造成基础伤害的 50%，在 2.8 半径内造成基础伤害的 10%。</p>
-<p>净化光束始终与资源点保持至少 20 的距离。</p>
-<p>10:00 会额外生成一道光束，20:00 再生成一道。净化光束的生成位置始终距离玩家基地至少 80。</p>
-<p>玩家可以让一个单位（人类也可使用建筑）围绕净化光束巡逻来“吸引”它。无论单位体型或移动速度如何，有效巡逻圆的直径大约应等于屏幕纵向可见区域。让单位围绕光束巡逻后，光束会在整场游戏中一直追随该单位。异虫指挥官可以使用王虫，但必须研究气囊甲壳升级。</p>
+<p>单位死亡时，会向 1.25 射程内的单位提供一定层数的复仇战士增益。层数等于该单位占用的补给；如果单位不占用补给，则提供 1 层。请注意，混合体占用 8 点补给。</p>
+<p>每个单位最多拥有 10 层复仇战士增益。单位所有权改变（精神控制、支配等）时会失去全部层数。</p>
+<p>每层复仇战士都会为获得者提供以下增益，且各层效果相加。</p>
+<table class="dataTable">
+    <thead>
+        <tr>
+            <th>属性</th>
+            <th>增益</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>攻击速度</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>移动速度</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>护甲</td>
+            <td>0.3</td>
+        </tr>
+        <tr>
+            <td>生命值</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>生命恢复</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>护盾</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>护盾恢复</td>
+            <td>1</td>
+        </tr>
+    </tbody>
+</table>
+<p>复仇战士层数可以转移给“聚铁成兵”中的混合体。在“湮灭快车”中，整列列车被视为一个单位，因此只会提供 8 层。</p>
+<p>各任务专属单位死亡时提供的复仇战士层数如下：</p>
+<ul>
+    <li>飞升之链的斯莱恩元素生物：1</li>
+    <li>死亡摇篮的守门者构造体：10</li>
+    <li>求生无路的猎杀虫：1</li>
+    <li>求生无路的爆破虫、监视者：2</li>
+    <li>求生无路的扼杀者：3</li>
+    <li>求生无路的畸变巨兽：12</li>
+    <li>天界封锁的萨尔纳加构造体：10</li>
+    <li>营救矿工的疫病使者、根除者：1</li>
+    <li>湮灭快车的列车：8</li>
+    <li>聚铁成兵的莫比斯混合体实验品：8</li>
+    <li>聚铁成兵的列车：8</li>
+    <li>克哈裂痕的海盗船：6</li>
+    <li>往日神庙的虚空撕裂者：10</li>
+    <li>熔火危机的熔岩沙罗曼蛇：10</li>
+    <li>虚空降临的穿梭机：2</li>
+    <li>虚空撕裂的虚空撕裂者：10</li>
+</ul>
 <p class="subheading">指挥官专属技巧</p>
 <ul>
-    <li>凯拉克斯：只要拥有足够多的护盾充能器，就能把净化光束“困”在一座水晶塔上，由周围的护盾充能器持续恢复其护盾。示意图如下：<br>
-    <img src="/images/mutatordata/purifierbeamtrap.jpg" alt="净化光束陷阱"><br>
-    <p>请注意，必须研究“快速充能”升级才能奏效。绿色护盾充能器放置标记表示第 7 座的可选位置。研究“防御壁垒”升级后即可放置，使光子炮不受任何本体伤害，并解放修复光束。</p>
-    <p>光子炮、水晶塔和护盾充能器的布局如下：</p>
-    <img src="/images/mutatordata/purifierbeamtraplayout.jpg" alt="净化光束陷阱布局"><br>
-    <p>演示视频如下：</p>
-    <iframe width="475" height="268" src="https://www.youtube.com/embed/zvvnvFFTooY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <li>泽拉图：泽拉图的精华化身使用退化技能后，会使目标单位失去全部复仇战士层数。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_slimpickings">
+                <td><img src="/images/mutators/slimpickings.png" alt=""></td>
+                <td>小捞油水</td>
+                <td>玩家工人的资源采集速度降低，但地图各处会生成资源拾取物。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>每处矿物最多含有 1500 矿物。自动采气厂、自动吸纳舱、矿骡和工人每次采集或往返都只能获得 1 点资源。</p>
+<p>任务开始后的前 3 分钟，资源拾取物每 5.4 秒生成一次，之后改为每 7 秒生成。每个拾取物含有 50 矿物或 50 高能瓦斯。每次会生成两个矿物拾取物，或 1 个矿物拾取物和 1 个高能瓦斯拾取物。它们只能由地面单位拾取。</p>
+<p>每隔一次生成，其中一个拾取物会出现在地图任意位置，另一个则只会在起始位置周围 30 射程内生成。该限制只在前 3 分钟生效，之后拾取物不再限定于起始位置附近。</p>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_lavaburst">
+                <td><img src="/images/mutators/lavaburst.png" alt=""></td>
+                <td>岩浆爆发</td>
+                <td>熔岩会定期从随机位置喷出，对玩家的空中和地面单位造成伤害。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>岩浆爆发每 0.5 秒出现一次，位置始终距离主基地至少 25，距离任意资源点至少 10，也不会直接出现在你的建筑下方。</p>
+<p>岩浆爆发会先在地面显示标记。标记持续 4 秒后开始造成伤害。岩浆爆发每 0.125 秒对非英雄单位造成 5 点伤害（对重甲 +2），即每秒 40 点；伤害阶段持续 16 秒。</p>
+<p>岩浆爆发对英雄单位造成的伤害取决于其最大生命值，汇总如下：</p>
+<table class="dataTable centered">
+    <thead>
+        <tr>
+            <th>单位生命值</th>
+            <th>总每秒伤害</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>100</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>150</td>
+            <td>36</td>
+        </tr>
+        <tr>
+            <td>200</td>
+            <td>48</td>
+        </tr>
+        <tr>
+            <td>250</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>300</td>
+            <td>72</td>
+        </tr>
+        <tr>
+            <td>400</td>
+            <td>128</td>
+        </tr>
+        <tr>
+            <td>500</td>
+            <td>120</td>
+        </tr>
+        <tr>
+            <td>600</td>
+            <td>144</td>
+        </tr>
+        <tr>
+            <td>800</td>
+            <td>192</td>
+        </tr>
+        <tr>
+            <td>1000</td>
+            <td>240</td>
+        </tr>
+        <tr>
+            <td>1500</td>
+            <td>360</td>
+        </tr>
+        <tr>
+            <td>2000</td>
+            <td>480</td>
+        </tr>
+    </tbody>
+</table>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>阿拉纳克：在岩浆爆发上方放置力场，防止部队误入。使用重型单位时要格外小心，因为它们能破坏力场。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_luckyenvelopes">
+                <td><img src="/images/mutators/luckyenvelopes.png" alt=""></td>
+                <td>幸运红包</td>
+                <td>装有资源拾取物的节日红包会随机掉落在地图各处。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>红包中含有供两名玩家共享的 50 高能瓦斯或 50 矿物，需要主动拾取，而且只能由地面单位拾取。</p>
+<p>最初 3:00 内，红包每 7 秒在玩家基地周围 30 射程内生成。此后，红包每 5.4 秒在地图任意位置生成。</p>
+</details>
+                </td>
+                <td><img src="/images/mutators/no.png" alt="否"></td>
+            </tr>
+            <tr id="row_alienincubation">
+                <td><img src="/images/mutators/alienincubation.png" alt=""></td>
+                <td>异形寄生</td>
+                <td>所有敌方单位死亡时都会生成巢虫。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>生成的巢虫数量等于该单位占用的补给。如果单位不占用补给，则生成 1 只巢虫。请注意，混合体占用 8 点补给。巢虫没有持续时间，会一直留在地图上，直到被消灭。</p>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>阿巴瑟：巢虫不会掉落生物质。</li>
+    <li>德哈卡：巢虫不会掉落精华。</li>
+    <li>蒙斯克：巢虫不会提供皇家卫队经验值。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_magnificent">
+                <td><img src="/images/mutators/magnificent.png" alt=""></td>
+                <td>强磁雷场</td>
+                <td>任务开始时，地图各处会部署磁力地雷。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>游戏开始时，地图各处会随机布置 200 枚磁力地雷。磁力地雷不会出现在玩家起始位置周围 30 射程内，也不会出现在资源点周围 5 射程内。</p>
+<p>地雷触发后延迟 2.5 秒才会造成 250 点伤害，因此很容易躲避。无需反隐即可触发它们。</p>
+<p>此外，部分地图还有以下特殊限制：</p>
+<ul>
+    <li>飞升之链：磁力地雷不会出现在吉娜拉周围 15 射程内。</li>
+    <li>天界封锁：磁力地雷不会出现在天界封锁周围 8 射程内。</li>
+</ul>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>雷诺：休伯利安号的点防御无人机可以击落磁力地雷。</li>
+    <li>泽拉图：光盾卫士有 50% 概率移除磁力地雷的投射物。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_eminentdomain">
+                <td><img src="/images/mutators/eminentdomain.png" alt=""></td>
+                <td>强行征用</td>
+                <td>敌人摧毁你的建筑后会取得该建筑的控制权。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>建筑被占领后会恢复全部护盾和生命值。如果无法通往玩家 1 的基地，该建筑会被摧毁。英雄建筑（斯旺的激光钻机除外）不会被埃蒙夺取。</p>
+<p>只有满足以下条件时，建筑才会被埃蒙占领：</p>
+<ul>
+    <li>该建筑不是坑道虫。</li>
+    <li>如果建筑由埃蒙单位摧毁，该单位仍然存活。</li>
+    <li>建筑不是被静态防御摧毁。</li>
+    <li>摧毁建筑的单位与玩家 1 起始位置周围 5 射程内的某一点之间存在有效路径。</li>
+</ul>
+<p>由于攻城坦克的运作方式，架起的攻城坦克摧毁建筑时无法触发强行征用。</p>
+<p>其他情况下，建筑会照常被摧毁。该逻辑有一个漏洞：让人类建筑自行燃烧至毁。燃烧殆尽的建筑会自动转为埃蒙所有，无论此前由谁造成伤害，包括玩家单位。利用埃蒙不会攻击自有建筑这一点，可以针对某些部队组合用建筑封锁地图。</p>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>蒙斯克：裂地者被强行征用夺取后会停止攻击，内部装载的所有单位都会丢失。</li>
+    <li>蒙斯克：补给地堡被强行征用夺取时，内部装载的单位都会丢失。</li>
+    <li>雷诺：地堡被强行征用夺取时，内部装载的单位都会丢失。</li>
+    <li>斯台特曼：艾星只会重生一次，之后会被永久摧毁。</li>
+    <li>斯旺：如果激光钻机被敌人夺取，它会以埃蒙激光钻机的形式重生。将其摧毁后，钻机会进入冷却并再次重生。这意味着你会永久失去自己的钻机，无法取回。</li>
+    <li>泽拉图：强行征用会影响光炮投影。如果光炮投影被埃蒙夺取，可以在源光炮处取消投影来将其取消。</li>
+    <li>泽拉图：超维空间巨石不会被强行征用转化，而会直接被摧毁。</li>
+    <li>扎加拉：胆汁喷射体被强行征用夺取后会停止攻击。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_minesweeper">
+                <td><img src="/images/mutators/minesweeper.png" alt=""></td>
+                <td>扫雷专家</td>
+                <td>战场各处埋藏着成群的寡妇雷和蜘蛛雷。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>游戏开始时会生成共 25 片寡妇雷与蜘蛛雷区。每片雷区包含 5 枚寡妇雷和 7 枚蜘蛛雷。雷区不会出现在玩家起始位置周围 30 射程内、资源点周围 5 射程内，彼此间距也不会小于 8。</p>
+<p>寡妇雷对主目标造成 250 点伤害（对护盾 +35），并造成 80 点溅射伤害（对护盾 +40）。它拥有 180 点生命值，会在目标进入 5 射程内时触发。</p>
+<p>蜘蛛雷在 1.7 射程内造成 250 点基础伤害，在 2.25 射程内造成基础伤害的 50%，在 3 射程内造成基础伤害的 25%。它拥有 25 点生命值，会在目标进入 4 射程内时触发。</p>
+<p>蜘蛛雷和寡妇雷都不会攻击建筑，因此拥有可移动静态防御的指挥官能高效清雷。</p>
+<p>地雷会被“净网行动”中的奥拉娜运输舰、“机会渺茫”中的地嗪采集机器人、“死亡摇篮”中的神器卡车，以及“聚铁成兵”中的巴利俄斯触发。</p>
+<p>此外，部分地图还有以下特殊限制：</p>
+<ul>
+    <li>飞升之链：雷区不会出现在吉娜拉周围 15 射程内。</li>
+    <li>天界封锁：雷区不会出现在天界封锁周围 8 射程内。</li>
+</ul>
+<p>下图是该突变因子生成的雷区示例。请记住，清雷需要反隐。</p>
+<img src="/images/mutatordata/minesweeperfield.jpg" alt="扫雷专家雷区">
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>凯瑞甘：在定身波精通中投入 25 点后，凯瑞甘可以一击消灭寡妇雷。</li>
+    <li>凯瑞甘：愚勇怒火的叠加攻击无需反隐也能命中地雷。</li>
+    <li>斯台特曼：为跳虫研究强化艾能护盾，可以高效清雷而不会遭受重大损失。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_microtransactions">
+                <td><img src="/images/mutators/microtransactions.png" alt=""></td>
+                <td>拿钱说话</td>
+                <td>向单位下达命令会根据该单位的费用消耗资源。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>向英雄单位、顶栏技能单位和泰凯斯的歹徒下达命令，每次都要花费 10 矿物和 5 高能瓦斯。向普通单位下令的费用取决于其实际造价与补给占用。不消耗高能瓦斯的单位需支付其补给数 2 倍的矿物；消耗高能瓦斯的单位则需支付其补给数 1 倍的矿物和高能瓦斯。请注意，如果资源不足，下达命令免费；但如果高能瓦斯为零，拿钱说话的矿物费用会翻倍。</p>
+<p>只有直接向单位下达命令才会收费。因此，让单位跟随另一单位时只会收取最初设置跟随的费用；被跟随单位移动时，所有跟随者都不会再次收费。</p>
+<p>如果盟友离开，向其单位下达命令也不会免费。</p>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_turkeyshoot">
+                <td><img src="/images/mutators/turkeyshoot.png" alt=""></td>
+                <td>捕杀火鸡</td>
+                <td>只能通过消灭在地图各处游荡的火鸡来获得人口。这样做可能激怒剩余的火鸡。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>玩家初始拥有 50 补给，必须消灭地图上的火鸡来提高补给上限。</p>
+<p>补给上限会按可变间隔降低，间隔取决于当前补给。每经过 250/[Supply] 秒，补给降低 1。因此，在 250 补给时，每秒会损失 1 点补给。</p>
+<p>如果玩家的已用补给超过可用补给，且未能获得更多补给，单位会在 3 秒后开始受到伤害。当前占用更多共享补给的玩家会承受伤害；若双方占用相同，则随机选择一名玩家。每秒该玩家的一个随机单位受到 20 点伤害。如果持续超过补给上限，每 3 秒受伤单位数增加 1。作战单位优先受伤；当所有作战单位都在受伤后，工人也会开始受伤。</p>
+<p>最初会在玩家基地 7 至 40 射程内生成 30 只火鸡。之后每 8 秒生成两只火鸡，且距离玩家当前镜头位置至少 20。</p>
+<p>火鸡被消灭时，10 射程内的所有火鸡都会攻击玩家。每只火鸡提供 2 点补给。火鸡如下图所示。</p>
+<img src="/images/mutatordata/turkeyshootturkey.jpg" alt="火鸡">
+<p>火鸡每 1.5 秒造成 8 点伤害（对建筑为 16），拥有 10 点生命值和 0 点护甲。</p>
+<h2>湮灭快车中的情况</h2>
+<p>该突变因子曾出现在“湮灭快车”的<a href="weeklymutations">每周突变</a>“鸡飞狗跳”中。列车被摧毁时，通常每节车厢会生成 5 只普通火鸡（每列列车有 7 或 13 节车厢）。但特定列车波次会生成被感染的火鸡，详情如下：</p>
+<table class="dataTable centered">
+    <thead>
+        <tr>
+            <th>列车波次</th>
+            <th>每节车厢的被感染火鸡数</th>
+            <th>生成总数</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>3</td>
+            <td>3</td>
+            <td>39</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>4</td>
+            <td>52</td>
+        </tr>
+    </tbody>
+</table>
+<p>被感染的火鸡被消灭时不会提供补给。被感染的火鸡如下图所示：</p>
+<img src="/images/mutatordata/turkeyshootinfestedturkey.jpg" alt="被感染的火鸡">
+<p>被感染的火鸡每 2 秒造成 0 点伤害（对建筑为 70），拥有 150 点生命值和 1 点护甲。</p>
+<p>第 6 个列车波次被摧毁时，会生成火鸡王。火鸡王如下图所示：</p>
+<img src="/images/mutatordata/turkeyshootturking.jpg" alt="火鸡王">
+<p>火鸡王每 2 秒造成 250 点伤害（对建筑为 500），拥有 6000 点生命值和 3 点护甲。它拥有冷却时间为 30 秒的“恐怖咯咯叫”技能，可使 11 射程内的所有玩家单位陷入恐惧。</p>
+</details>
+                </td>
+                <td><img src="/images/mutators/no.png" alt="否"></td>
+            </tr>
+            <tr id="row_fear">
+                <td><img src="/images/mutators/fear.png" alt=""></td>
+                <td>无边恐惧</td>
+                <td>玩家单位受到伤害时偶尔会停止攻击，并因恐惧而四处逃窜。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>恐惧对非英雄单位持续 10 秒，对英雄单位持续 5 秒。恐惧按概率施加，取决于单位的耐久值（生命值 + 护盾值），百分比计算公式为 2000/耐久值。因此，耐久值不高于 20 的单位有 100% 概率陷入恐惧。</p>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>阿塔尼斯：护盾超载可以阻止单位触发恐惧。</li>
+    <li>诺娃：防御无人机的防御矩阵可以阻止单位触发恐惧。</li>
+    <li>斯旺：防御矩阵可以阻止单位触发恐惧。</li>
+    <li>斯台特曼：艾的呵护超载可以阻止单位触发恐惧。</li>
+    <li>泰凯斯：医疗运输机接送不会移除恐惧减益。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_temporalfield">
+                <td><img src="/images/mutators/temporalfield.png" alt=""></td>
+                <td>时空力场</td>
+                <td>敌方时空力场会定期部署到地图各处。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>时空力场会将时间流速缩放至正常速度的 1%，减缓范围内所有基于时间的效果，并显露所有隐形单位，包括冷却、恢复和攻击。英雄单位的移动速度和攻击速度会降低至 50%。力场每 3 秒生成一次，延迟 1 秒激活，每个力场持续 20 秒。</p>
+<p>时空力场始终距离起始位置至少 30，距离矿物至少 4。</p>
+<ul>
+    <li>德哈卡：只要原始异龙的原始重生被动可用，即使陷入时空力场也不会死亡。</li>
+    <li>凯拉克斯：只要哨兵的重构被动可用，即使陷入时空力场也不会死亡。</li>
+    <li>凯瑞甘：只要雷兽的复活被动可用，即使陷入时空力场也不会死亡。</li>
+    <li>诺娃：渗透专家诺娃进入时空力场后会失去超级隐形。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_timewarp">
+                <td><img src="/images/mutators/timewarp.png" alt=""></td>
+                <td>时间扭曲</td>
+                <td>敌方时间扭曲会定期部署到地图各处。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>时间扭曲会将时间流速缩放至正常速度的 33%，减缓范围内所有基于时间的效果，包括冷却、恢复、限时生命和攻击。时间扭曲每 3 秒生成一次，延迟 2.5 秒激活，每个力场持续 30 秒。拥有狂暴被动的单位（例如莽兽、奥丁和雷兽）不受影响。</p>
+<p>时间扭曲始终距离起始位置至少 25，距离矿物至少 4。</p>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_mineralshields">
+                <td><img src="/images/mutators/mineralshields.png" alt=""></td>
+                <td>晶矿护盾</td>
+                <td>玩家基地的矿区会定期被护盾包围；必须摧毁护盾才能继续采集。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>第一批晶矿护盾会在 2:40 出现，之后每 2:00 出现一批。每处矿物有 15% 概率被护盾覆盖；晶矿护盾每出现一轮，该概率提高 5%。</p>
+<p>每个晶矿护盾拥有 50 点生命值，持续 60 秒。单位不会自动攻击晶矿护盾，因此需要手动指定目标将其摧毁。</p>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>汉与霍纳：两组磁力地雷可以清除一条矿线生成的全部晶矿护盾。</li>
+    <li>斯托科夫：让一辆研究了腐蚀黏液的响尾蛇在矿线后巡逻，即可自动清除护盾。</li>
+    <li>扎加拉：在矿线后布置胆汁喷射体，让其轰炸自动清除晶矿护盾。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_darkness">
+                <td><img src="/images/mutators/darkness.png" alt=""></td>
+                <td>暗无天日</td>
+                <td>离开玩家视野后，已经探索的区域在小地图上仍会变为黑色。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>进攻波次和目标的信号标记不会显示在小地图上。将着色器设置降低至中等或更低画质后即可看到地形，从而抵消该突变因子的效果。</p>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>阿巴瑟：布置剧毒巢穴并关闭自动引爆，为地图关键区域提供视野。</li>
+    <li>斯台特曼：被禁用的艾星仍会提供正常视野。</li>
+    <li>泽拉图：黑暗会禁用泽拉图的全地图地形视野。你可能需要使用集结点寻找神器碎片，如下所示：<br>
+    <iframe width="475" height="268" src="https://www.youtube.com/embed/h0OZG494TCY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </li>
-    <li>凯瑞甘：凯瑞甘可以用欧米伽虫洞把净化光束引离某个区域。</li>
-    <li>沃拉尊：时间停止会延迟净化光束的时间。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_blizzard">
+                <td><img src="/images/mutators/blizzard.png" alt=""></td>
+                <td>暴风雪</td>
+                <td>暴风云会在地图上移动，对路径上的玩家单位造成伤害并将其冻结。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>暴风雪会在 5 秒内将单位的移动速度降低至 12%，同时对范围内的所有单位每秒造成 5 点伤害。减益效果持续 2 秒。</p>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>阿塔尼斯：龙骑士的三棱压缩系统升级可以让它们在暴风雪中存活更久。</li>
+    <li>斯托科夫：斯托科夫扎根地堡的治疗速度足以抵消暴风雪的伤害。</li>
+    <li>沃拉尊：时间停止会让当前已存在的暴风雪停止移动。新生成的暴风雪仍会正常移动，所有暴风雪也仍会造成伤害。</li>
+    <li>扎加拉：跳虫的闪避可以规避暴风雪造成的伤害。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_killbots">
+                <td><img src="/images/mutators/killbots.png" alt=""></td>
+                <td>杀戮机器人</td>
+                <td>一波波机器人会攻击玩家；在消灭指定数量的单位前，它们不会受到伤害。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>机器人会从任意敌方建筑中生成。清除地图上的所有敌方建筑后，它们便会停止生成。请注意，完全清除“净网行动”和“虚空降临”的敌人无法阻止生成，因为压制塔和发射舱都是无法摧毁的敌方建筑。</p>
+<p>会生成以下三种杀戮机器人：</p>
+<table class="dataTable centered">
+    <thead>
+        <tr>
+            <th>机器人</th>
+            <th>所需击杀数</th>
+            <th>图片</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>谋杀机器人</td>
+            <td>5</td>
+            <td><img src="/images/mutatordata/killbotsmurderbot.jpg" alt="谋杀机器人"></td>
+        </tr>
+        <tr>
+            <td>死亡机器人</td>
+            <td>10</td>
+            <td><img src="/images/mutatordata/killbotsdeathbot.jpg" alt="死亡机器人"></td>
+        </tr>
+        <tr>
+            <td>杀戮机器人</td>
+            <td>15</td>
+            <td><img src="/images/mutatordata/killbotskillbot.jpg" alt="杀戮机器人"></td>
+        </tr>
+    </tbody>
+</table>
+<p>杀戮机器人的生成时间如下：</p>
+<table class="dataTable centered">
+    <thead>
+        <tr>
+            <th>时间</th>
+            <th>机器人类型</th>
+            <th>生成数量</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>3:35</td>
+            <td>谋杀机器人</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>5:05</td>
+            <td>谋杀机器人</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>6:35</td>
+            <td>谋杀机器人</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>8:05</td>
+            <td>谋杀机器人</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>9:35</td>
+            <td>谋杀机器人</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>10:45</td>
+            <td>死亡机器人</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>11:55</td>
+            <td>死亡机器人</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>13:05</td>
+            <td>死亡机器人</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>14:15</td>
+            <td>死亡机器人</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>15:25</td>
+            <td>死亡机器人</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>16:35</td>
+            <td>死亡机器人</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>17:45</td>
+            <td>死亡机器人</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>18:55</td>
+            <td>死亡机器人</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>20:05</td>
+            <td>杀戮机器人</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>21:05</td>
+            <td>杀戮机器人</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>22:05</td>
+            <td>杀戮机器人</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>23:05</td>
+            <td>杀戮机器人</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>24:05</td>
+            <td>杀戮机器人</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>25:05</td>
+            <td>杀戮机器人</td>
+            <td>4</td>
+        </tr>
+    </tbody>
+</table>
+<p>25:05 这一波之后，每 60 秒会出现 4 个杀戮机器人。</p>
+<p>机器人会攻击“净网行动”中的奥拉娜运输舰和数据核心、“机会渺茫”中的地嗪采集机器人、“死亡摇篮”中的神器卡车，以及“营救矿工”中的撤离船。</p>
+<p>使用拥有进化腔的指挥官时，可以用进化腔喂养杀戮机器人。进化腔被摧毁（1 次击杀）后会生成 6 只巢虫（6 次击杀）。</p>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>凯瑞甘：如果用跳虫喂养杀戮机器人，在它们开始生成前不要研究强化甲壳，这样死亡机器人就能一击消灭跳虫。</li>
+    <li>蒙斯克：杀戮机器人不会攻击战争之犬召唤的异虫单位。</li>
+    <li>雷诺：蜘蛛雷不会增加杀戮机器人的击杀计数。</li>
+    <li>斯台特曼：如果用跳虫喂养杀戮机器人，切勿研究强化艾能护盾；该升级会延长跳虫寿命，使杀戮机器人留在地图上更久。</li>
+    <li>斯托科夫：易爆感染体不会增加杀戮机器人的击杀计数。</li>
+    <li>沃拉尊：海盗船的干扰网可以阻止杀戮机器人攻击。</li>
+    <li>沃拉尊：被紧急召回的单位不会增加杀戮机器人的击杀计数。</li>
+    <li>沃拉尊：时间停止不会影响杀戮机器人的生成时间。</li>
+    <li>扎加拉：如果用跳虫喂养杀戮机器人，在它们开始生成前不要研究强化甲壳，这样死亡机器人就能一击消灭跳虫。</li>
+    <li>泽拉图：光炮投影的击杀不会增加杀戮机器人的击杀计数。</li>
+    <li>泽拉图：军团单位不会被杀戮机器人攻击。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_naughtylist">
+                <td><img src="/images/mutators/naughtylist.png" alt=""></td>
+                <td>杀生业报</td>
+                <td>玩家单位和建筑每消灭一个敌人，受到的伤害就会提高。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>每次击杀都会增加一层伤害叠加，使该单位受到的伤害提高一定比例。伤害增幅取决于单位的击杀数，如下表所示：</p>
+<table class="dataTable centered">
+    <thead>
+        <tr>
+            <th>击杀数</th>
+            <th>每层伤害</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1-4</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>5-14</td>
+            <td>4%</td>
+        </tr>
+        <tr>
+            <td>15-150</td>
+            <td>6%</td>
+        </tr>
+    </tbody>
+</table>
+<p>英雄单位死亡后，直到该英雄再次完成击杀才会重新施加减益；届时会根据其整场游戏累计的击杀数施加减益。</p>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>菲尼克斯：切换菲尼克斯形态不会重置杀生业报。</li>
+    <li>菲尼克斯：菲尼克斯的智能人格英雄会保留前一个躯壳的击杀数。</li>
+    <li>泽拉图：泽拉图的投影不会计入光炮/巨石的击杀数。投影会获得自己的杀生业报计数，但投影消失后该计数也会消失并重置。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/no.png" alt="否"></td>
+            </tr>
+            <tr id="row_wemoveunseen">
+                <td><img src="/images/mutators/wemoveunseen.png" alt=""></td>
+                <td>来去无踪</td>
+                <td>所有敌方单位都永久隐形。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>包括地图目标在内的所有非建筑单位都会隐形。</p>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_afraidofthedark">
+                <td><img src="/images/mutators/afraidofthedark.png" alt=""></td>
+                <td>极度谨慎</td>
+                <td>除镜头当前覆盖的区域外，所有来源提供的视野都极其有限。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>极度谨慎会大幅缩小视野范围，效果示例如下：</p>
+<img src="/images/mutatordata/afraidofthedark.jpg" alt="极度谨慎的视野范围">
+<p>请注意，探机位于视野范围之外。这意味着它可能受到攻击却无法还击。只有获得玩家镜头提供的视野时，单位才能发动攻击。</p>
+<p>各类视野范围如下：</p>
+<table class="dataTable centered">
+    <thead>
+        <tr>
+            <th>单位/建筑</th>
+            <th>视野范围</th>
+            <th>示例</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>主基地建筑</td>
+            <td>7</td>
+            <td><img src="/images/mutatordata/afraidofthedarktownhall.jpg" alt="极度谨慎中主基地建筑的视野范围"></td>
+        </tr>
+        <tr>
+            <td>其他任意建筑</td>
+            <td>2</td>
+            <td><img src="/images/mutatordata/afraidofthedarkstructure.jpg" alt="极度谨慎中其他建筑的视野范围"></td>
+        </tr>
+        <tr>
+            <td>单位</td>
+            <td>0</td>
+            <td><img src="/images/mutatordata/afraidofthedarkunit.jpg" alt="极度谨慎中单位的视野范围"></td>
+        </tr>
+        <tr>
+            <td>镜头<br>（悬停播放动画。<br>请等待动画<br>加载完成。）</td>
+            <td>4 + 3(1-{distance to closest unit}/12)</td>
+            <td><img id="afraidofthedarkHover" src="/images/mutatordata/afraidofthedarkcamerastatic.jpg" alt="极度谨慎中玩家镜头的视野范围"></td>
+            <script>
+                $("#afraidofthedarkHover").hover(function(){
+                    $(this).attr("src", function(index, attr){
+                        return attr.replace("static.jpg", ".gif");
+                    });
+                }, function(){
+                $(this).attr("src", function(index, attr){
+                    return attr.replace(".gif", "static.jpg");
+                    });
+                });
+            </script>
+        </tr>
+    </tbody>
+</table>
+<p>任何带有 Map Boss 标签的单位都不受该突变因子影响。这些通常是任务专属单位，例如“死亡摇篮”中的神器卡车和“机会渺茫”中的地嗪采集机器人。</p>
+<p>进攻波次和目标的信号标记不会显示在小地图上。</p>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>德哈卡：德哈卡的族群首领属于 Map Boss，因此保留正常视野。</li>
+    <li>汉与霍纳：霍纳的呼叫舰队技能扫射经过目标区域时，会自行生成一圈视野。</li>
+    <li>蒙斯克：无论镜头位于何处，裂地者轰炸都会提供视野。</li>
+    <li>雷诺：雷诺的扫描会在持续期间提供临时视野。</li>
+    <li>斯托科夫：虫群女王的视觉共生技能可以提高单位视野。</li>
+    <li>斯托科夫：被亚历山大号精神控制的单位会保留完整视野。</li>
+    <li>泽拉图：极度谨慎会禁用泽拉图的全地图地形视野。你可能需要使用集结点寻找神器碎片，如下所示：<br>
+    <iframe width="475" height="268" src="https://www.youtube.com/embed/h0OZG494TCY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/no.png" alt="否"></td>
+            </tr>
+            <tr id="row_polarity">
+                <td><img src="/images/mutators/polarity.png" alt=""></td>
+                <td>极性不定</td>
+                <td>每个敌方单位都免疫你或盟友其中一方单位的攻击。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>极性不定同时作用于单位和建筑。错误极性的单位不会受到伤害，但仍可被施加减益。</p>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>阿拉纳克：建筑超载仍会锁定错误极性的单位，即使无法造成伤害，可能因此浪费顶栏技能。</li>
+    <li>凯瑞甘：愚勇的闪电可以击晕错误极性的单位，但不会造成伤害。</li>
+    <li>泰凯斯：响尾蛇萨姆的爆破装药可以击晕错误极性的单位，但不会造成伤害。</li>
+    <li>沃拉尊：百夫长的黑暗缠绕无法击晕相反极性的单位。</li>
+    <li>沃拉尊：迷惑可以影响任意极性的单位。</li>
+    <li>沃拉尊：静滞结界可以令任意极性的单位进入静滞。</li>
+    <li>沃拉尊：沃拉尊的枯萎虹吸威望可以伤害任意极性的单位。</li>
+    <li>泽拉图：被精华化身退化的单位会获得随机极性。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_goingnuclear">
+                <td><img src="/images/mutators/goingnuclear.png" alt=""></td>
+                <td>核弹打击</td>
+                <td>核弹会随机发射到地图各处。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>每 2 秒会部署一枚核弹（地面上会出现标记），其位置始终距离主基地至少 25，距离任意资源点至少 15。</p>
+<p>核弹会部署在随机选中的玩家单位周围 50 射程内。</p>
+<p>核弹会在中心 4 射程内造成 750 点基础伤害（对建筑为 950）；在 6 射程内造成基础伤害的 50%；在 8 射程内造成基础伤害的 25%。</p>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>凯瑞甘：可以让单位进入凯瑞甘的欧米伽虫洞，避免被核弹消灭。</li>
+    <li>诺娃：可以用诺娃的战术空运救走单位，避开核弹后再将其投放回原位。</li>
+    <li>泰凯斯：可以用泰凯斯的医疗运输机平台救走单位，避开核弹后再将其投放回原位。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_chaosstudios">
+                <td><img src="/images/mutators/chaosstudios.png" alt=""></td>
+                <td>混乱工作室</td>
+                <td>突变因子会随机选取，并在任务期间定期轮换。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>游戏开始时会激活三个突变因子。4:30 时其中一个会被轮换掉，15 秒后再加入一个。此后每 90 秒更换一次突变因子。</p>
+<p>可能出现的突变因子如下：</p>
+<ul>
+    <li>进攻部署</li>
+    <li>异形寄生</li>
+    <li>复仇战士</li>
+    <li>屏障</li>
+    <li>黑死病</li>
+    <li>暴风雪</li>
+    <li>震荡攻击</li>
+    <li>黑暗</li>
+    <li>扩散</li>
+    <li>双重压力</li>
+    <li>强行征用</li>
+    <li>闪避机动</li>
+    <li>致命勾引</li>
+    <li>核弹打击</li>
+    <li>给我死吧！！</li>
+    <li>激光钻机</li>
+    <li>岩浆爆发</li>
+    <li>生命吸取</li>
+    <li>拿钱说话</li>
+    <li>晶矿护盾</li>
+    <li>飞弹大战</li>
+    <li>轨道轰炸</li>
+    <li>丧尸大战</li>
+    <li>光子过载</li>
+    <li>极性不定</li>
+    <li>同化体</li>
+    <li>净化光束</li>
+    <li>焦土政策</li>
+    <li>自毁程序</li>
+    <li>小捞油水</li>
+    <li>速度狂魔</li>
+    <li>时空力场</li>
+    <li>时间扭曲</li>
+    <li>转化</li>
+    <li>龙卷风</li>
+    <li>虚空重生者</li>
+    <li>虚空裂隙</li>
+    <li>行尸走肉</li>
+    <li>来去无踪</li>
+</ul>
+<p>在上述列表中，以下突变因子<i>不会</i>出现在初始三个之中：</p>
+<ul>
+    <li>晶矿护盾</li>
+    <li>同化体</li>
+    <li>小捞油水</li>
+</ul>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>沃拉尊：时间停止不会影响混乱工作室的轮换时间。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/no.png" alt="否"></td>
+            </tr>
+            <tr id="row_laserdrill">
+                <td><img src="/images/mutators/laserdrill.png" alt=""></td>
+                <td>激光钻机</td>
+                <td>一台敌方德拉肯激光钻机会持续攻击处于敌方视野内的玩家单位。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>钻机会根据持续攻击同一单位的时间分三个阶段造成伤害，如下所示：</p>
+<table class="dataTable centered">
+    <thead>
+        <tr>
+            <th>攻击时间</th>
+            <th>伤害</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0-15 秒</td>
+            <td>每 0.1 秒 2 点</td>
+        </tr>
+        <tr>
+            <td>15-30 秒</td>
+            <td>每 0.1 秒 4 点</td>
+        </tr>
+        <tr>
+            <td>30+ 秒</td>
+            <td>每 0.1 秒 6 点</td>
+        </tr>
+    </tbody>
+</table>
+<p>如果玩家能够接近钻机，就可以将其摧毁。它拥有 1000 点生命值、2000 点护盾和 2 点护甲；被摧毁后会进入维修模式，120 秒后才会再次开始攻击。</p>
+<p>请注意，面对异虫部队组合时，菌毯肿瘤会为激光钻机提供视野。</p>
+<p>激光钻机的生成点如下：</p>
+<table class="dataTable">
+    <thead>
+        <tr>
+            <th>任务</th>
+            <th>生成点</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>飞升之链</td>
+            <td><img src="/images/mutatordata/laserdrillspawnchainofascension.jpg" alt="飞升之链激光钻机生成位置"></td>
+        </tr>
+        <tr>
+            <td>死亡摇篮</td>
+            <td><img src="/images/mutatordata/laserdrillspawncradleofdeath.jpg" alt="死亡摇篮激光钻机生成位置"></td>
+        </tr>
+        <tr>
+            <td>求生无路</td>
+            <td><img src="/images/mutatordata/laserdrillspawndeadofnight.jpg" alt="求生无路激光钻机生成位置"></td>
+        </tr>
+        <tr>
+            <td>天界封锁</td>
+            <td><img src="/images/mutatordata/laserdrillspawnlockandload.jpg" alt="天界封锁激光钻机生成位置"></td>
+        </tr>
+        <tr>
+            <td>净网行动</td>
+            <td><img src="/images/mutatordata/laserdrillspawnmalwarfare.jpg" alt="净网行动激光钻机生成位置"></td>
+        </tr>
+        <tr>
+            <td>营救矿工</td>
+            <td><img src="/images/mutatordata/laserdrillspawnminerevacuation.jpg" alt="营救矿工激光钻机生成位置"></td>
+        </tr>
+        <tr>
+            <td>机会渺茫</td>
+            <td><img src="/images/mutatordata/laserdrillspawnmistopportunities.jpg" alt="机会渺茫激光钻机生成位置"></td>
+        </tr>
+        <tr>
+            <td>湮灭快车</td>
+            <td><img src="/images/mutatordata/laserdrillspawnoblivionexpress.jpg" alt="湮灭快车激光钻机生成位置"></td>
+        </tr>
+        <tr>
+            <td>聚铁成兵</td>
+            <td><img src="/images/mutatordata/laserdrillspawnpartandparcel.jpg" alt="聚铁成兵激光钻机生成位置"></td>
+        </tr>
+        <tr>
+            <td>克哈裂痕</td>
+            <td><img src="/images/mutatordata/laserdrillspawnriftstokorhal.jpg" alt="克哈裂痕激光钻机生成位置"></td>
+        </tr>
+        <tr>
+            <td>黑暗杀星</td>
+            <td><img src="/images/mutatordata/laserdrillspawnscytheofamon.jpg" alt="黑暗杀星激光钻机生成位置"></td>
+        </tr>
+        <tr>
+            <td>往日神庙</td>
+            <td><img src="/images/mutatordata/laserdrillspawntempleofthepast.jpg" alt="往日神庙激光钻机生成位置"></td>
+        </tr>
+        <tr>
+            <td>熔火危机</td>
+            <td><img src="/images/mutatordata/laserdrillspawnthevermillionproblem.jpg" alt="熔火危机激光钻机生成位置"></td>
+        </tr>
+        <tr>
+            <td>虚空降临</td>
+            <td><img src="/images/mutatordata/laserdrillspawnvoidlaunch.jpg" alt="虚空降临激光钻机生成位置"></td>
+        </tr>
+        <tr>
+            <td>虚空撕裂</td>
+            <td><img src="/images/mutatordata/laserdrillspawnvoidthrashing.jpg" alt="虚空撕裂激光钻机生成位置"></td>
+        </tr>
+    </tbody>
+</table>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>德哈卡：如果激光钻机锁定达克伦，会被他的伤害反射击毁。</li>
 </ul>
 </details>
                 </td>
@@ -908,12 +2100,12 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             </tr>
             <tr id="row_poweroverwhelming">
                 <td><img src="/images/mutators/poweroverwhelming.png" alt=""></td>
-                <td>势不可挡</td>
+                <td>灵能爆表</td>
                 <td>所有敌方单位都拥有能量，并会随机使用技能。                    <br /><br />
                     <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
 <p>游戏开始时，所有单位初始拥有 50 点能量，能量恢复速率为 0.5625，能量上限为 200。单位所有权改变（精神控制、支配等）时，会失去技能和能量条。</p>
 <p>这些单位虽然拥有能量条并用其施法，但同时会从每名玩家的总能量池中抽取能量。总能量池耗尽后，即使单位自身有能量也不会施法；同样，如果单位自身没有能量，即使能量池充足也不会施法。</p>
-<p>请注意，这条能量条专门用于显示势不可挡的状态，不受 EMP 和反馈影响。</p>
+<p>请注意，这条能量条专门用于显示灵能爆表的状态，不受 EMP 和反馈影响。</p>
 <p>施放技能无需反隐，因此仍可选中隐形单位。</p>
 <p>根据任务时间，只有达到最低能量水平后才会施放技能。技能随机选择，因此随着游戏推进，会逐渐有机会施放能耗更高的技能。能量池还具有恢复速率与上限，如下表所示：</p>
 <table class="dataTable centered">
@@ -1052,1266 +2244,17 @@ if (document.location.host === 'dev.starcraft2coop.com') {
 <p></p>
 <p class="subheading">指挥官专属技巧</p>
 <ul>
-    <li>阿塔尼斯：如果单位在没有势不可挡时不具备能量，就无法对其施放反馈。</li>
+    <li>阿塔尼斯：如果单位在没有灵能爆表时不具备能量，就无法对其施放反馈。</li>
     <li>德哈卡：尽管单位拥有灵能技能，但不会获得灵能标签，因此德哈卡吞噬它们时不会造成范围伤害。</li>
-    <li>德哈卡：势不可挡生成的点防御无人机会阻止穆瓦尔的蝗虫和潜地虫生成。</li>
+    <li>德哈卡：灵能爆表生成的点防御无人机会阻止穆瓦尔的蝗虫和潜地虫生成。</li>
     <li>凯瑞甘：荒芜女王凯瑞甘的动能冲击会被点防御无人机拦截。</li>
-    <li>蒙斯克：帝国暗影的反馈会对拥有势不可挡的单位造成伤害。以下流言终结者视频对此进行了演示：</li>
+    <li>蒙斯克：帝国暗影的反馈会对拥有灵能爆表的单位造成伤害。以下流言终结者视频对此进行了演示：</li>
     <iframe width="475" height="268" src="https://www.youtube.com/embed/EeNtBNtzGlU" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <li>蒙斯克：帝国暗影的 EMP 会抽取势不可挡能量条中的能量。</li>
-    <li>诺娃：幽灵的 EMP 会抽取势不可挡能量条中的能量。</li>
+    <li>蒙斯克：帝国暗影的 EMP 会抽取灵能爆表能量条中的能量。</li>
+    <li>诺娃：幽灵的 EMP 会抽取灵能爆表能量条中的能量。</li>
     <li>斯台特曼：机械残骸可能被点防御无人机击落，导致盖瑞或艾星无法收集。</li>
     <li>斯台特曼：超级盖瑞的普通攻击无法被点防御无人机击落。</li>
-    <li>沃拉尊：势不可挡属于全地图效果而非单位效果，因此时间停止无法阻止技能施放。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_doubleedged">
-                <td><img src="/images/mutators/doubleedged.png" alt=""></td>
-                <td>双刃剑</td>
-                <td>你的单位和建筑造成的伤害会反作用于自身，但随后会随时间恢复。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>按照游戏代码，生命值每 0.1 秒恢复 1 点。但由于该函数的设计，平均每秒实际只恢复约 8 点生命值。只有造成伤害的单位会受到双刃剑影响。例如，航母不受影响，但其拦截机受影响。被运输工具装载的单位处于安全状态，不受突变因子影响。</p>
-<p>双刃剑与单位的生命汲取效果（例如德哈卡的基因突变）存在特殊互动。双刃剑造成的伤害也会计入已造成伤害。也就是说，如果单位对敌人造成 100 点伤害，它同时对自身造成 100 点伤害，因此生命汲取会按总计 200 点伤害结算，立即治疗 40 点生命值，并随时间再治疗 100 点。</p>
-<ul>
-    <li>阿巴瑟：拥有至少 100 生物质的单位可以无视双刃剑伤害。</li>
-    <li>阿拉纳克：单位（包括阿拉纳克）攻击或使用技能后可立即装入折跃棱镜，避免双刃剑伤害。</li>
-    <li>阿塔尼斯：方舟舰指挥官威望下，无拘狂热者的等离子波造成伤害时会令其自毁，严重降低无拘狂热者的效能。</li>
-    <li>阿塔尼斯：护盾超载可以阻挡双刃剑伤害。</li>
-    <li>德哈卡：达克伦和拥有尖刺皮肤突变的暴龙兽会因反射伤害迅速自毁（在 2 秒内）。</li>
-    <li>菲尼克斯：保护者力场可以降低双刃剑伤害。</li>
-    <li>凯瑞甘：凯瑞甘当前的异变甲壳会先被双刃剑消耗，之后才获得因造成伤害而生成的新异变甲壳。</li>
-    <li>蒙斯克：补给地堡内的单位不会受到双刃剑伤害。</li>
-    <li>诺娃：诺娃的防御无人机施加的防御矩阵可以阻挡双刃剑伤害。</li>
-    <li>雷诺：地堡内的单位不会受到双刃剑伤害。</li>
-    <li>斯台特曼：斯台特曼的艾的呵护超载可以阻挡双刃剑伤害。</li>
-    <li>斯旺：斯旺的科学船施加的防御矩阵可以阻挡双刃剑伤害。</li>
-    <li>泰凯斯：奥丁发射导弹后，可以对其使用医疗运输机接送，在导弹命中时避免受到伤害。所有歹徒技能同理。</li>
-    <li>扎加拉：扎加拉的爆虫冲锋命中建筑时会反伤扎加拉；但用于攻击单位时不会对扎加拉造成反伤。</li>
-    <li>泽拉图：伏击者生成的虚空幻影本身被视为单位，因此伏击者闪现时不会受到双刃剑伤害。</li>
-    <li>泽拉图：虚空先驱生成的龙卷风不会对泽拉图造成伤害。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_hardenedwill">
-                <td><img src="/images/mutators/hardenedwill.png" alt=""></td>
-                <td>坚定意志</td>
-                <td>附近存在非英雄敌方单位时，敌方英雄单位受到的单次伤害最多为 10 点。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>坚定意志会检查英雄单位周围 6 射程内的区域。如果该区域内存在任何非英雄单位，就会施加坚定意志。</p>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>德哈卡：吞噬拥有坚定意志且耐久值超过 10 的单位，会使其剩余 1 点生命值。</li>
-    <li>沃拉尊：时间停止生效时，单位身上的坚定意志不会被移除。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_avenger">
-                <td><img src="/images/mutators/avenger.png" alt=""></td>
-                <td>复仇者</td>
-                <td>附近有敌方单位死亡时，敌军会提高攻击速度、移动速度、护甲、生命值和生命恢复速度。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>单位死亡时，会向 1.25 射程内的单位提供一定层数的复仇者增益。层数等于该单位占用的补给；如果单位不占用补给，则提供 1 层。请注意，混合体占用 8 点补给。</p>
-<p>每个单位最多拥有 10 层复仇者增益。单位所有权改变（精神控制、支配等）时会失去全部层数。</p>
-<p>每层复仇者都会为获得者提供以下增益，且各层效果相加。</p>
-<table class="dataTable">
-    <thead>
-        <tr>
-            <th>属性</th>
-            <th>增益</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>攻击速度</td>
-            <td>10%</td>
-        </tr>
-        <tr>
-            <td>移动速度</td>
-            <td>10%</td>
-        </tr>
-        <tr>
-            <td>护甲</td>
-            <td>0.3</td>
-        </tr>
-        <tr>
-            <td>生命值</td>
-            <td>10%</td>
-        </tr>
-        <tr>
-            <td>生命恢复</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>护盾</td>
-            <td>10%</td>
-        </tr>
-        <tr>
-            <td>护盾恢复</td>
-            <td>1</td>
-        </tr>
-    </tbody>
-</table>
-<p>复仇者层数可以转移给“聚铁成兵”中的混合体。在“湮灭快车”中，整列列车被视为一个单位，因此只会提供 8 层。</p>
-<p>各任务专属单位死亡时提供的复仇者层数如下：</p>
-<ul>
-    <li>飞升之链的斯莱恩元素生物：1</li>
-    <li>死亡摇篮的守门者构造体：10</li>
-    <li>亡者之夜的猎杀虫：1</li>
-    <li>亡者之夜的爆破虫、监视者：2</li>
-    <li>亡者之夜的扼杀者：3</li>
-    <li>亡者之夜的畸变巨兽：12</li>
-    <li>天锁的萨尔纳加构造体：10</li>
-    <li>疏散矿工的疫病使者、根除者：1</li>
-    <li>湮灭快车的列车：8</li>
-    <li>聚铁成兵的莫比斯混合体实验品：8</li>
-    <li>聚铁成兵的列车：8</li>
-    <li>克哈裂痕的海盗船：6</li>
-    <li>往日神庙的虚空撕裂者：10</li>
-    <li>熔火危机的熔岩沙罗曼蛇：10</li>
-    <li>虚空降临的穿梭机：2</li>
-    <li>虚空撕裂的虚空撕裂者：10</li>
-</ul>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>泽拉图：泽拉图的精华化身使用退化技能后，会使目标单位失去全部复仇者层数。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_missilecommand">
-                <td><img src="/images/mutators/missilecommand.png" alt=""></td>
-                <td>导弹指挥</td>
-                <td>无穷无尽的导弹会轰炸你的建筑，必须在整个任务期间将其击落。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>导弹会从地图边缘发射。导弹的生成无法阻止，但导弹本身可以被摧毁。会出现以下不同类型的导弹：</p>
-<table class="dataTable centered">
-    <thead>
-        <tr>
-            <th>导弹</th>
-            <th>生命值</th>
-            <th>伤害</th>
-            <th>说明</th>
-            <th>图片</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>标准导弹</td>
-            <td>10</td>
-            <td>100</td>
-            <td>标准导弹，也是最常生成的导弹。</td>
-            <td><img src="/images/mutatordata/missilecommandstandard.jpg" alt="标准导弹"></td>
-        </tr>
-        <tr>
-            <td>点防御导弹</td>
-            <td>15</td>
-            <td>-</td>
-            <td>伴随另一枚导弹飞行，抵达目标建筑时停下。初始拥有 200 点能量，会击落任何投射物；每击落一个投射物消耗 10 点能量。</td>
-            <td><img src="/images/mutatordata/missilecommandpdm.jpg" alt="点防御导弹"></td>
-        </tr>
-        <tr>
-            <td>分裂导弹</td>
-            <td>20</td>
-            <td>175</td>
-            <td>被摧毁时会分裂成两枚较小的导弹。</td>
-            <td><img src="/images/mutatordata/missilecommandsplitter.jpg" alt="分裂导弹"></td>
-        </tr>
-        <tr>
-            <td>分裂导弹子弹体</td>
-            <td>5</td>
-            <td>75</td>
-            <td>由分裂导弹生成。</td>
-            <td><img src="/images/mutatordata/missilecommandsplitterchild.jpg" alt="分裂导弹子弹体"></td>
-        </tr>
-        <tr>
-            <td>核弹</td>
-            <td>100</td>
-            <td>300（对建筑 500）</td>
-            <td>由 5 枚点防御导弹护航。核弹每 60 秒最多部署一次。<br>伤害取决于与命中中心的距离：<br>4 射程内为 100%<br>6 射程内为 50%<br>8 射程内为 25%</td>
-            <td><img src="/images/mutatordata/missilecommandnuke.jpg" alt="核导弹"></td>
-        </tr>
-    </tbody>
-</table>
-<p>导弹生成频率及各类型所占比例会随任务时间变化，如下表所示。请注意，每个生成周期会发射 2 枚导弹，分别攻击两名玩家。</p>
-<table class="dataTable">
-    <thead>
-        <tr>
-            <th>任务时间</th>
-            <th>生成频率</th>
-            <th>标准导弹 %</th>
-            <th>标准导弹 + 点防御导弹 %</th>
-            <th>分裂导弹 %</th>
-            <th>核弹 + 5 枚点防御导弹 %</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>0:00-5:00</td>
-            <td>15 秒</td>
-            <td>100%</td>
-            <td>0%</td>
-            <td>0%</td>
-            <td>0%</td>
-        </tr>
-        <tr>
-            <td>5:00-10:00</td>
-            <td>5 秒</td>
-            <td>90%</td>
-            <td>10%</td>
-            <td>0%</td>
-            <td>0%</td>
-        </tr>
-        <tr>
-            <td>10:00-15:00</td>
-            <td>2 秒</td>
-            <td>60%</td>
-            <td>20%</td>
-            <td>20%</td>
-            <td>0%</td>
-        </tr>
-        <tr>
-            <td>15:00+</td>
-            <td>1 秒</td>
-            <td>40%</td>
-            <td>20%</td>
-            <td>30%</td>
-            <td>10%</td>
-        </tr>
-    </tbody>
-</table>
-<p>点防御导弹会在能量耗尽前击落所有投射物攻击，但即时命中攻击可以击毁或绕过它们。以下视频说明了两种攻击类型的区别：</p>
-<iframe width="475" height="268" src="https://www.youtube.com/embed/OKg_hJ-ldD8" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<p>另一种方法是用大量火力压垮点防御导弹。若同时向其发射大量投射物，点防御导弹会迅速耗尽能量，无法全部击落。</p>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>阿塔尼斯：高阶圣堂武士/高阶执政官可以对点防御导弹使用反馈。</li>
-    <li>凯瑞甘：荒芜女王凯瑞甘的动能冲击会被点防御导弹和点防御无人机拦截。</li>
-    <li>斯台特曼：超级盖瑞的普通攻击无法被点防御导弹和点防御无人机击落。</li>
-    <li>沃拉尊：时间停止不会影响导弹指挥的生成时间。</li>
-    <li>泽拉图：超维空间巨石可以击晕点防御导弹，让投射物攻击命中目标。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_justdie">
-                <td><img src="/images/mutators/justdie.png" alt=""></td>
-                <td>就是死不了</td>
-                <td>敌方单位死亡后会自动复活。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>刚刚死亡并被突变因子复活的单位会昏迷（无法移动、攻击或使用技能）并无敌 1 秒。</p>
-<p>非建筑类任务目标和奖励目标会受到“就是死不了！”影响，因此被消灭后会重生一次。</p>
-<p>请注意，单位并不是真的重新生成；它们首次受到致命伤害时，生命值、护盾和能量会直接恢复至满值。</p>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>阿巴瑟：单位只会在最终被消灭时掉落一次生物质。</li>
-    <li>德哈卡：单位只会在最终被消灭时掉落一次精华。</li>
-    <li>蒙斯克：单位只会在最终被消灭时提供一次皇家卫队经验值。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_barrier">
-                <td><img src="/images/mutators/barrier.png" alt=""></td>
-                <td>屏障</td>
-                <td>敌方单位和建筑首次受到伤害时会获得一层临时护盾。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>单位或建筑首次受到伤害时会触发屏障。因此，一击消灭单位可以绕过屏障。屏障增益会施加持续 5 秒、最多吸收 100 点伤害的护盾。单位获得过一次屏障增益后便无法再次获得。</p>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>斯旺：由于脉冲炮的伤害结算方式，如果单位拥有超过 100 点生命值，脉冲炮会触发屏障。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_luckyenvelopes">
-                <td><img src="/images/mutators/luckyenvelopes.png" alt=""></td>
-                <td>幸运红包</td>
-                <td>装有资源拾取物的节日红包会随机掉落在地图各处。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>红包中含有供两名玩家共享的 50 高能瓦斯或 50 矿物，需要主动拾取，而且只能由地面单位拾取。</p>
-<p>最初 3:00 内，红包每 7 秒在玩家基地周围 30 射程内生成。此后，红包每 5.4 秒在地图任意位置生成。</p>
-</details>
-                </td>
-                <td><img src="/images/mutators/no.png" alt="否"></td>
-            </tr>
-            <tr id="row_alienincubation">
-                <td><img src="/images/mutators/alienincubation.png" alt=""></td>
-                <td>异形孵化</td>
-                <td>所有敌方单位死亡时都会生成巢虫。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>生成的巢虫数量等于该单位占用的补给。如果单位不占用补给，则生成 1 只巢虫。请注意，混合体占用 8 点补给。巢虫没有持续时间，会一直留在地图上，直到被消灭。</p>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>阿巴瑟：巢虫不会掉落生物质。</li>
-    <li>德哈卡：巢虫不会掉落精华。</li>
-    <li>蒙斯克：巢虫不会提供皇家卫队经验值。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_aggressivedeployment">
-                <td><img src="/images/mutators/aggressivedeployment.png" alt=""></td>
-                <td>强势部署</td>
-                <td>额外的敌方单位会定期部署到战场上。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>空投会优先选择符合以下条件的玩家单位：</p>
-<ul>
-    <li>拥有武器（即能够造成伤害）。</li>
-    <li>占用的补给大于 0。</li>
-    <li>不是女王。</li>
-</ul>
-<p>空投会在潜在目标 7 射程外生成。如果没有找到潜在目标，则会在玩家基地 25 至 40 射程外生成。</p>
-<p>空投舱详情及其强度等级和科技等级如下。有关强度与科技等级的更多信息，请参阅<a href="/guides/enemycomps">敌方部队组合</a>页面。</p>
-<table class="dataTable centered">
-    <thead>
-        <tr>
-            <th>波次</th>
-            <th>时间</th>
-            <th>科技等级</th>
-            <th>强度等级</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>4:50</td>
-            <td>1</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>7:00</td>
-            <td>1</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>9:10</td>
-            <td>2</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>11:20</td>
-            <td>2</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>13:30</td>
-            <td>3</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>15:40</td>
-            <td>4</td>
-            <td>4</td>
-        </tr>
-    </tbody>
-</table>
-<p>第 6 个波次之后，空投舱每 2:10 投放一次，科技等级为 6，强度等级为 5。</p>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>阿巴瑟：由强势部署空投生成的单位不会掉落生物质。</li>
-    <li>阿拉纳克：母舰不是强势部署空投的有效目标。</li>
-    <li>德哈卡：由强势部署空投生成的单位不会掉落精华。</li>
-    <li>凯瑞甘：可以对空投部队使用同化光环以获取额外资源。</li>
-    <li>蒙斯克：由强势部署空投生成的单位不会提供皇家卫队经验值。</li>
-    <li>斯托科夫：斯托科夫的被感染的移民营生成的单位是强势部署空投的有效目标。</li>
-    <li>泰凯斯：泰凯斯不是强势部署空投的有效目标。</li>
-    <li>沃拉尊：时间停止会延迟强势部署的时间。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_eminentdomain">
-                <td><img src="/images/mutators/eminentdomain.png" alt=""></td>
-                <td>强占地盘</td>
-                <td>敌人摧毁你的建筑后会取得该建筑的控制权。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>建筑被占领后会恢复全部护盾和生命值。如果无法通往玩家 1 的基地，该建筑会被摧毁。英雄建筑（斯旺的激光钻机除外）不会被埃蒙夺取。</p>
-<p>只有满足以下条件时，建筑才会被埃蒙占领：</p>
-<ul>
-    <li>该建筑不是坑道虫。</li>
-    <li>如果建筑由埃蒙单位摧毁，该单位仍然存活。</li>
-    <li>建筑不是被静态防御摧毁。</li>
-    <li>摧毁建筑的单位与玩家 1 起始位置周围 5 射程内的某一点之间存在有效路径。</li>
-</ul>
-<p>由于攻城坦克的运作方式，架起的攻城坦克摧毁建筑时无法触发强占地盘。</p>
-<p>其他情况下，建筑会照常被摧毁。该逻辑有一个漏洞：让人类建筑自行燃烧至毁。燃烧殆尽的建筑会自动转为埃蒙所有，无论此前由谁造成伤害，包括玩家单位。利用埃蒙不会攻击自有建筑这一点，可以针对某些部队组合用建筑封锁地图。</p>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>蒙斯克：裂地者被强占地盘夺取后会停止攻击，内部装载的所有单位都会丢失。</li>
-    <li>蒙斯克：补给地堡被强占地盘夺取时，内部装载的单位都会丢失。</li>
-    <li>雷诺：地堡被强占地盘夺取时，内部装载的单位都会丢失。</li>
-    <li>斯台特曼：艾星只会重生一次，之后会被永久摧毁。</li>
-    <li>斯旺：如果激光钻机被敌人夺取，它会以埃蒙激光钻机的形式重生。将其摧毁后，钻机会进入冷却并再次重生。这意味着你会永久失去自己的钻机，无法取回。</li>
-    <li>泽拉图：强占地盘会影响光炮投影。如果光炮投影被埃蒙夺取，可以在源光炮处取消投影来将其取消。</li>
-    <li>泽拉图：超维空间巨石不会被强占地盘转化，而会直接被摧毁。</li>
-    <li>扎加拉：胆汁喷射体被强占地盘夺取后会停止攻击。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_microtransactions">
-                <td><img src="/images/mutators/microtransactions.png" alt=""></td>
-                <td>微交易</td>
-                <td>向单位下达命令会根据该单位的费用消耗资源。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>向英雄单位、顶栏技能单位和泰凯斯的歹徒下达命令，每次都要花费 10 矿物和 5 高能瓦斯。向普通单位下令的费用取决于其实际造价与补给占用。不消耗高能瓦斯的单位需支付其补给数 2 倍的矿物；消耗高能瓦斯的单位则需支付其补给数 1 倍的矿物和高能瓦斯。请注意，如果资源不足，下达命令免费；但如果高能瓦斯为零，微交易的矿物费用会翻倍。</p>
-<p>只有直接向单位下达命令才会收费。因此，让单位跟随另一单位时只会收取最初设置跟随的费用；被跟随单位移动时，所有跟随者都不会再次收费。</p>
-<p>如果盟友离开，向其单位下达命令也不会免费。</p>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_fear">
-                <td><img src="/images/mutators/fear.png" alt=""></td>
-                <td>恐惧</td>
-                <td>玩家单位受到伤害时偶尔会停止攻击，并因恐惧而四处逃窜。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>恐惧对非英雄单位持续 10 秒，对英雄单位持续 5 秒。恐惧按概率施加，取决于单位的耐久值（生命值 + 护盾值），百分比计算公式为 2000/耐久值。因此，耐久值不高于 20 的单位有 100% 概率陷入恐惧。</p>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>阿塔尼斯：护盾超载可以阻止单位触发恐惧。</li>
-    <li>诺娃：防御无人机的防御矩阵可以阻止单位触发恐惧。</li>
-    <li>斯旺：防御矩阵可以阻止单位触发恐惧。</li>
-    <li>斯台特曼：艾的呵护超载可以阻止单位触发恐惧。</li>
-    <li>泰凯斯：医疗运输机接送不会移除恐惧减益。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_outbreak">
-                <td><img src="/images/mutators/outbreak.png" alt=""></td>
-                <td>感染爆发</td>
-                <td>一波波被感染的大军会持续向指挥官的基地进发。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>从 2:00 起，感染体会开始从敌方建筑中生成。清除所有敌方建筑后，感染体便会停止生成。</p>
-<p>感染体每 25 秒生成一波，每波数量随机。13:20 前每波生成 2 至 4 个感染体，之后每波生成 4 至 6 个。</p>
-<p>生成的感染体类型取决于任务时间，如下表所示：</p>
-<table class="dataTable">
-    <thead>
-        <tr>
-            <th>任务时间</th>
-            <th>感染体</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>0:00-6:20</td>
-            <td>被感染的人类</td>
-        </tr>
-        <tr>
-            <td>6:20-20:00</td>
-            <td>被感染的陆战队员</td>
-        </tr>
-        <tr>
-            <td>20:00+</td>
-            <td>畸变体</td>
-        </tr>
-    </tbody>
-</table>
-<p>此外，15:00 后每波感染体都会同时生成一名被感染的医疗兵。</p>
-<p>由于“亡者之夜”针对感染体的独特机制，从被感染建筑生成的被感染的陆战队员和畸变体会在白天燃烧，包括由本突变因子生成者；若它们从埃蒙的其他建筑中生成，则不会燃烧。</p>
-<p>在“疏散矿工”中，由感染爆发生成的所有感染体都拥有双倍生命值。</p>
-<p>感染爆发可以从“聚铁成兵”的零件箱中生成感染体，并产生一些意外的突变因子交互。只有以下突变因子会与零件箱生成的感染体互动（这些感染体显示为白色同盟关系）：</p>
-<ul>
-    <li>震荡攻击</li>
-    <li>扩散</li>
-    <li>强占地盘</li>
-    <li>恐惧</li>
-    <li>生命汲取</li>
-</ul>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>阿巴瑟：由感染爆发生成的单位不会掉落生物质。</li>
-    <li>德哈卡：由感染爆发生成的单位不会掉落精华。</li>
-    <li>蒙斯克：由感染爆发生成的单位不会提供皇家卫队经验值。</li>
-    <li>沃拉尊：时间停止不会影响感染爆发的时间。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_diffusion">
-                <td><img src="/images/mutators/diffusion.png" alt=""></td>
-                <td>扩散</td>
-                <td>对敌人造成的伤害会平均分摊给附近所有单位，包括你的单位。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>你造成的 50% 伤害会由 5 射程内的所有单位平均分担。只有目标承受伤害后仍然存活时才会触发该效果；一击消灭单位不会触发扩散。</p>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>蒙斯克：补给地堡内的单位不会受到扩散伤害。</li>
-    <li>诺娃：诺娃的防御无人机施加的防御矩阵可以阻挡扩散伤害。</li>
-    <li>雷诺：地堡内的单位不会受到扩散伤害。</li>
-    <li>斯台特曼：斯台特曼的艾的呵护超载可以阻挡扩散伤害。</li>
-    <li>斯旺：斯旺的科学船施加的防御矩阵可以阻挡扩散伤害。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_minesweeper">
-                <td><img src="/images/mutators/minesweeper.png" alt=""></td>
-                <td>扫雷专家</td>
-                <td>战场各处埋藏着成群的寡妇雷和蜘蛛雷。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>游戏开始时会生成共 25 片寡妇雷与蜘蛛雷区。每片雷区包含 5 枚寡妇雷和 7 枚蜘蛛雷。雷区不会出现在玩家起始位置周围 30 射程内、资源点周围 5 射程内，彼此间距也不会小于 8。</p>
-<p>寡妇雷对主目标造成 250 点伤害（对护盾 +35），并造成 80 点溅射伤害（对护盾 +40）。它拥有 180 点生命值，会在目标进入 5 射程内时触发。</p>
-<p>蜘蛛雷在 1.7 射程内造成 250 点基础伤害，在 2.25 射程内造成基础伤害的 50%，在 3 射程内造成基础伤害的 25%。它拥有 25 点生命值，会在目标进入 4 射程内时触发。</p>
-<p>蜘蛛雷和寡妇雷都不会攻击建筑，因此拥有可移动静态防御的指挥官能高效清雷。</p>
-<p>地雷会被“恶意代码”中的奥拉娜运输舰、“机会渺茫”中的地嗪采集机器人、“死亡摇篮”中的神器卡车，以及“聚铁成兵”中的巴利俄斯触发。</p>
-<p>此外，部分地图还有以下特殊限制：</p>
-<ul>
-    <li>飞升之链：雷区不会出现在吉娜拉周围 15 射程内。</li>
-    <li>天锁：雷区不会出现在天锁周围 8 射程内。</li>
-</ul>
-<p>下图是该突变因子生成的雷区示例。请记住，清雷需要反隐。</p>
-<img src="/images/mutatordata/minesweeperfield.jpg" alt="扫雷专家雷区">
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>凯瑞甘：在定身波精通中投入 25 点后，凯瑞甘可以一击消灭寡妇雷。</li>
-    <li>凯瑞甘：愚勇怒火的叠加攻击无需反隐也能命中地雷。</li>
-    <li>斯台特曼：为跳虫研究强化艾能护盾，可以高效清雷而不会遭受重大损失。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_temporalfield">
-                <td><img src="/images/mutators/temporalfield.png" alt=""></td>
-                <td>时空力场</td>
-                <td>敌方时空力场会定期部署到地图各处。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>时空力场会将时间流速缩放至正常速度的 1%，减缓范围内所有基于时间的效果，并显露所有隐形单位，包括冷却、恢复和攻击。英雄单位的移动速度和攻击速度会降低至 50%。力场每 3 秒生成一次，延迟 1 秒激活，每个力场持续 20 秒。</p>
-<p>时空力场始终距离起始位置至少 30，距离矿物至少 4。</p>
-<ul>
-    <li>德哈卡：只要原始异龙的原始重生被动可用，即使陷入时空力场也不会死亡。</li>
-    <li>凯拉克斯：只要哨兵的重构被动可用，即使陷入时空力场也不会死亡。</li>
-    <li>凯瑞甘：只要雷兽的复活被动可用，即使陷入时空力场也不会死亡。</li>
-    <li>诺娃：渗透专家诺娃进入时空力场后会失去超级隐形。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_timewarp">
-                <td><img src="/images/mutators/timewarp.png" alt=""></td>
-                <td>时间扭曲</td>
-                <td>敌方时间扭曲会定期部署到地图各处。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>时间扭曲会将时间流速缩放至正常速度的 33%，减缓范围内所有基于时间的效果，包括冷却、恢复、限时生命和攻击。时间扭曲每 3 秒生成一次，延迟 2.5 秒激活，每个力场持续 30 秒。拥有狂暴被动的单位（例如莽兽、奥丁和雷兽）不受影响。</p>
-<p>时间扭曲始终距离起始位置至少 25，距离矿物至少 4。</p>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_blizzard">
-                <td><img src="/images/mutators/blizzard.png" alt=""></td>
-                <td>暴风雪</td>
-                <td>暴风云会在地图上移动，对路径上的玩家单位造成伤害并将其冻结。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>暴风雪会在 5 秒内将单位的移动速度降低至 12%，同时对范围内的所有单位每秒造成 5 点伤害。减益效果持续 2 秒。</p>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>阿塔尼斯：龙骑士的三棱压缩系统升级可以让它们在暴风雪中存活更久。</li>
-    <li>斯托科夫：斯托科夫扎根地堡的治疗速度足以抵消暴风雪的伤害。</li>
-    <li>沃拉尊：时间停止会让当前已存在的暴风雪停止移动。新生成的暴风雪仍会正常移动，所有暴风雪也仍会造成伤害。</li>
-    <li>扎加拉：跳虫的闪避可以规避暴风雪造成的伤害。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_sharingiscaring">
-                <td><img src="/images/mutators/sharingiscaring.png" alt=""></td>
-                <td>有福同享</td>
-                <td>你与盟友共享人口，双方部队都会计入共同的人口上限。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>两名玩家共享已用补给，但补给上限仍分别计算。因此，普通指挥官仍受水晶塔/补给站/王虫数量限制，满补给指挥官也仍保有正常上限。不过，任意一方生产单位都会影响双方的可用补给。</p>
-<p>补给上限为 100 的指挥官会受到很大影响。如果与补给上限 200、且已使用超过 100 补给的指挥官组队，那么在总已用补给降至 100 以下前，这名上限 100 的指挥官无法生产任何占用补给的单位。</p>
-</details>
-                </td>
-                <td><img src="/images/mutators/no.png" alt="否"></td>
-            </tr>
-            <tr id="row_killbots">
-                <td><img src="/images/mutators/killbots.png" alt=""></td>
-                <td>杀戮机器人</td>
-                <td>一波波机器人会攻击玩家；在消灭指定数量的单位前，它们不会受到伤害。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>机器人会从任意敌方建筑中生成。清除地图上的所有敌方建筑后，它们便会停止生成。请注意，完全清除“恶意代码”和“虚空降临”的敌人无法阻止生成，因为压制塔和发射舱都是无法摧毁的敌方建筑。</p>
-<p>会生成以下三种杀戮机器人：</p>
-<table class="dataTable centered">
-    <thead>
-        <tr>
-            <th>机器人</th>
-            <th>所需击杀数</th>
-            <th>图片</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>谋杀机器人</td>
-            <td>5</td>
-            <td><img src="/images/mutatordata/killbotsmurderbot.jpg" alt="谋杀机器人"></td>
-        </tr>
-        <tr>
-            <td>死亡机器人</td>
-            <td>10</td>
-            <td><img src="/images/mutatordata/killbotsdeathbot.jpg" alt="死亡机器人"></td>
-        </tr>
-        <tr>
-            <td>杀戮机器人</td>
-            <td>15</td>
-            <td><img src="/images/mutatordata/killbotskillbot.jpg" alt="杀戮机器人"></td>
-        </tr>
-    </tbody>
-</table>
-<p>杀戮机器人的生成时间如下：</p>
-<table class="dataTable centered">
-    <thead>
-        <tr>
-            <th>时间</th>
-            <th>机器人类型</th>
-            <th>生成数量</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>3:35</td>
-            <td>谋杀机器人</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>5:05</td>
-            <td>谋杀机器人</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>6:35</td>
-            <td>谋杀机器人</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>8:05</td>
-            <td>谋杀机器人</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>9:35</td>
-            <td>谋杀机器人</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>10:45</td>
-            <td>死亡机器人</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>11:55</td>
-            <td>死亡机器人</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>13:05</td>
-            <td>死亡机器人</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>14:15</td>
-            <td>死亡机器人</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>15:25</td>
-            <td>死亡机器人</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>16:35</td>
-            <td>死亡机器人</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>17:45</td>
-            <td>死亡机器人</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>18:55</td>
-            <td>死亡机器人</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>20:05</td>
-            <td>杀戮机器人</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>21:05</td>
-            <td>杀戮机器人</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>22:05</td>
-            <td>杀戮机器人</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>23:05</td>
-            <td>杀戮机器人</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>24:05</td>
-            <td>杀戮机器人</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>25:05</td>
-            <td>杀戮机器人</td>
-            <td>4</td>
-        </tr>
-    </tbody>
-</table>
-<p>25:05 这一波之后，每 60 秒会出现 4 个杀戮机器人。</p>
-<p>机器人会攻击“恶意代码”中的奥拉娜运输舰和数据核心、“机会渺茫”中的地嗪采集机器人、“死亡摇篮”中的神器卡车，以及“疏散矿工”中的撤离船。</p>
-<p>使用拥有进化腔的指挥官时，可以用进化腔喂养杀戮机器人。进化腔被摧毁（1 次击杀）后会生成 6 只巢虫（6 次击杀）。</p>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>凯瑞甘：如果用跳虫喂养杀戮机器人，在它们开始生成前不要研究强化甲壳，这样死亡机器人就能一击消灭跳虫。</li>
-    <li>蒙斯克：杀戮机器人不会攻击战争之犬召唤的异虫单位。</li>
-    <li>雷诺：蜘蛛雷不会增加杀戮机器人的击杀计数。</li>
-    <li>斯台特曼：如果用跳虫喂养杀戮机器人，切勿研究强化艾能护盾；该升级会延长跳虫寿命，使杀戮机器人留在地图上更久。</li>
-    <li>斯托科夫：易爆感染体不会增加杀戮机器人的击杀计数。</li>
-    <li>沃拉尊：海盗船的干扰网可以阻止杀戮机器人攻击。</li>
-    <li>沃拉尊：被紧急召回的单位不会增加杀戮机器人的击杀计数。</li>
-    <li>沃拉尊：时间停止不会影响杀戮机器人的生成时间。</li>
-    <li>扎加拉：如果用跳虫喂养杀戮机器人，在它们开始生成前不要研究强化甲壳，这样死亡机器人就能一击消灭跳虫。</li>
-    <li>泽拉图：光炮投影的击杀不会增加杀戮机器人的击杀计数。</li>
-    <li>泽拉图：军团单位不会被杀戮机器人攻击。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_polarity">
-                <td><img src="/images/mutators/polarity.png" alt=""></td>
-                <td>极性互换</td>
-                <td>每个敌方单位都免疫你或盟友其中一方单位的攻击。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>极性互换同时作用于单位和建筑。错误极性的单位不会受到伤害，但仍可被施加减益。</p>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>阿拉纳克：建筑超载仍会锁定错误极性的单位，即使无法造成伤害，可能因此浪费顶栏技能。</li>
-    <li>凯瑞甘：愚勇的闪电可以击晕错误极性的单位，但不会造成伤害。</li>
-    <li>泰凯斯：响尾蛇萨姆的爆破装药可以击晕错误极性的单位，但不会造成伤害。</li>
-    <li>沃拉尊：百夫长的黑暗缠绕无法击晕相反极性的单位。</li>
-    <li>沃拉尊：迷惑可以影响任意极性的单位。</li>
-    <li>沃拉尊：静滞结界可以令任意极性的单位进入静滞。</li>
-    <li>沃拉尊：沃拉尊的枯萎虹吸威望可以伤害任意极性的单位。</li>
-    <li>泽拉图：被精华化身退化的单位会获得随机极性。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_speedfreaks">
-                <td><img src="/images/mutators/speedfreaks.png" alt=""></td>
-                <td>极速狂飙</td>
-                <td>敌人的移动速度超过玩家能够使用的任何单位。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>所有敌方单位的移动速度均为 5.5。</p>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_goingnuclear">
-                <td><img src="/images/mutators/goingnuclear.png" alt=""></td>
-                <td>核弹来袭</td>
-                <td>核弹会随机发射到地图各处。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>每 2 秒会部署一枚核弹（地面上会出现标记），其位置始终距离主基地至少 25，距离任意资源点至少 15。</p>
-<p>核弹会部署在随机选中的玩家单位周围 50 射程内。</p>
-<p>核弹会在中心 4 射程内造成 750 点基础伤害（对建筑为 950）；在 6 射程内造成基础伤害的 50%；在 8 射程内造成基础伤害的 25%。</p>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>凯瑞甘：可以让单位进入凯瑞甘的欧米伽虫洞，避免被核弹消灭。</li>
-    <li>诺娃：可以用诺娃的战术空运救走单位，避开核弹后再将其投放回原位。</li>
-    <li>泰凯斯：可以用泰凯斯的医疗运输机平台救走单位，避开核弹后再将其投放回原位。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_naughtylist">
-                <td><img src="/images/mutators/naughtylist.png" alt=""></td>
-                <td>淘气名单</td>
-                <td>玩家单位和建筑每消灭一个敌人，受到的伤害就会提高。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>每次击杀都会增加一层伤害叠加，使该单位受到的伤害提高一定比例。伤害增幅取决于单位的击杀数，如下表所示：</p>
-<table class="dataTable centered">
-    <thead>
-        <tr>
-            <th>击杀数</th>
-            <th>每层伤害</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1-4</td>
-            <td>1%</td>
-        </tr>
-        <tr>
-            <td>5-14</td>
-            <td>4%</td>
-        </tr>
-        <tr>
-            <td>15-150</td>
-            <td>6%</td>
-        </tr>
-    </tbody>
-</table>
-<p>英雄单位死亡后，直到该英雄再次完成击杀才会重新施加减益；届时会根据其整场游戏累计的击杀数施加减益。</p>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>菲尼克斯：切换菲尼克斯形态不会重置淘气名单。</li>
-    <li>菲尼克斯：菲尼克斯的智能人格英雄会保留前一个躯壳的击杀数。</li>
-    <li>泽拉图：泽拉图的投影不会计入光炮/巨石的击杀数。投影会获得自己的淘气名单计数，但投影消失后该计数也会消失并重置。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/no.png" alt="否"></td>
-            </tr>
-            <tr id="row_chaosstudios">
-                <td><img src="/images/mutators/chaosstudios.png" alt=""></td>
-                <td>混乱工作室</td>
-                <td>突变因子会随机选取，并在任务期间定期轮换。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>游戏开始时会激活三个突变因子。4:30 时其中一个会被轮换掉，15 秒后再加入一个。此后每 90 秒更换一次突变因子。</p>
-<p>可能出现的突变因子如下：</p>
-<ul>
-    <li>强势部署</li>
-    <li>异形孵化</li>
-    <li>复仇者</li>
-    <li>屏障</li>
-    <li>黑死病</li>
-    <li>暴风雪</li>
-    <li>震荡攻击</li>
-    <li>黑暗</li>
-    <li>扩散</li>
-    <li>双刃剑</li>
-    <li>强占地盘</li>
-    <li>闪避机动</li>
-    <li>致命吸引</li>
-    <li>核弹来袭</li>
-    <li>就是死不了！</li>
-    <li>激光钻机</li>
-    <li>熔岩爆裂</li>
-    <li>生命汲取</li>
-    <li>微交易</li>
-    <li>矿物护盾</li>
-    <li>导弹指挥</li>
-    <li>轨道轰炸</li>
-    <li>感染爆发</li>
-    <li>光子超载</li>
-    <li>极性互换</li>
-    <li>传播者</li>
-    <li>净化光束</li>
-    <li>焦土政策</li>
-    <li>自毁程序</li>
-    <li>资源短缺</li>
-    <li>极速狂飙</li>
-    <li>时空力场</li>
-    <li>时间扭曲</li>
-    <li>转化</li>
-    <li>龙卷风</li>
-    <li>虚空复生者</li>
-    <li>虚空裂隙</li>
-    <li>行尸走肉</li>
-    <li>隐形行动</li>
-</ul>
-<p>在上述列表中，以下突变因子<i>不会</i>出现在初始三个之中：</p>
-<ul>
-    <li>矿物护盾</li>
-    <li>传播者</li>
-    <li>资源短缺</li>
-</ul>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>沃拉尊：时间停止不会影响混乱工作室的轮换时间。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/no.png" alt="否"></td>
-            </tr>
-            <tr id="row_afraidofthedark">
-                <td><img src="/images/mutators/afraidofthedark.png" alt=""></td>
-                <td>漆黑一片</td>
-                <td>除镜头当前覆盖的区域外，所有来源提供的视野都极其有限。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>漆黑一片会大幅缩小视野范围，效果示例如下：</p>
-<img src="/images/mutatordata/afraidofthedark.jpg" alt="漆黑一片的视野范围">
-<p>请注意，探机位于视野范围之外。这意味着它可能受到攻击却无法还击。只有获得玩家镜头提供的视野时，单位才能发动攻击。</p>
-<p>各类视野范围如下：</p>
-<table class="dataTable centered">
-    <thead>
-        <tr>
-            <th>单位/建筑</th>
-            <th>视野范围</th>
-            <th>示例</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>主基地建筑</td>
-            <td>7</td>
-            <td><img src="/images/mutatordata/afraidofthedarktownhall.jpg" alt="漆黑一片中主基地建筑的视野范围"></td>
-        </tr>
-        <tr>
-            <td>其他任意建筑</td>
-            <td>2</td>
-            <td><img src="/images/mutatordata/afraidofthedarkstructure.jpg" alt="漆黑一片中其他建筑的视野范围"></td>
-        </tr>
-        <tr>
-            <td>单位</td>
-            <td>0</td>
-            <td><img src="/images/mutatordata/afraidofthedarkunit.jpg" alt="漆黑一片中单位的视野范围"></td>
-        </tr>
-        <tr>
-            <td>镜头<br>（悬停播放动画。<br>请等待动画<br>加载完成。）</td>
-            <td>4 + 3(1-{distance to closest unit}/12)</td>
-            <td><img id="afraidofthedarkHover" src="/images/mutatordata/afraidofthedarkcamerastatic.jpg" alt="漆黑一片中玩家镜头的视野范围"></td>
-            <script>
-                $("#afraidofthedarkHover").hover(function(){
-                    $(this).attr("src", function(index, attr){
-                        return attr.replace("static.jpg", ".gif");
-                    });
-                }, function(){
-                $(this).attr("src", function(index, attr){
-                    return attr.replace(".gif", "static.jpg");
-                    });
-                });
-            </script>
-        </tr>
-    </tbody>
-</table>
-<p>任何带有 Map Boss 标签的单位都不受该突变因子影响。这些通常是任务专属单位，例如“死亡摇篮”中的神器卡车和“机会渺茫”中的地嗪采集机器人。</p>
-<p>进攻波次和目标的信号标记不会显示在小地图上。</p>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>德哈卡：德哈卡的族群首领属于 Map Boss，因此保留正常视野。</li>
-    <li>汉与霍纳：霍纳的呼叫舰队技能扫射经过目标区域时，会自行生成一圈视野。</li>
-    <li>蒙斯克：无论镜头位于何处，裂地者轰炸都会提供视野。</li>
-    <li>雷诺：雷诺的扫描会在持续期间提供临时视野。</li>
-    <li>斯托科夫：虫群女王的视觉共生技能可以提高单位视野。</li>
-    <li>斯托科夫：被亚历山大号精神控制的单位会保留完整视野。</li>
-    <li>泽拉图：漆黑一片会禁用泽拉图的全地图地形视野。你可能需要使用集结点寻找神器碎片，如下所示：<br>
-    <iframe width="475" height="268" src="https://www.youtube.com/embed/h0OZG494TCY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/no.png" alt="否"></td>
-            </tr>
-            <tr id="row_laserdrill">
-                <td><img src="/images/mutators/laserdrill.png" alt=""></td>
-                <td>激光钻机</td>
-                <td>一台敌方德拉肯激光钻机会持续攻击处于敌方视野内的玩家单位。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>钻机会根据持续攻击同一单位的时间分三个阶段造成伤害，如下所示：</p>
-<table class="dataTable centered">
-    <thead>
-        <tr>
-            <th>攻击时间</th>
-            <th>伤害</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>0-15 秒</td>
-            <td>每 0.1 秒 2 点</td>
-        </tr>
-        <tr>
-            <td>15-30 秒</td>
-            <td>每 0.1 秒 4 点</td>
-        </tr>
-        <tr>
-            <td>30+ 秒</td>
-            <td>每 0.1 秒 6 点</td>
-        </tr>
-    </tbody>
-</table>
-<p>如果玩家能够接近钻机，就可以将其摧毁。它拥有 1000 点生命值、2000 点护盾和 2 点护甲；被摧毁后会进入维修模式，120 秒后才会再次开始攻击。</p>
-<p>请注意，面对异虫部队组合时，菌毯肿瘤会为激光钻机提供视野。</p>
-<p>激光钻机的生成点如下：</p>
-<table class="dataTable">
-    <thead>
-        <tr>
-            <th>任务</th>
-            <th>生成点</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>飞升之链</td>
-            <td><img src="/images/mutatordata/laserdrillspawnchainofascension.jpg" alt="飞升之链激光钻机生成位置"></td>
-        </tr>
-        <tr>
-            <td>死亡摇篮</td>
-            <td><img src="/images/mutatordata/laserdrillspawncradleofdeath.jpg" alt="死亡摇篮激光钻机生成位置"></td>
-        </tr>
-        <tr>
-            <td>亡者之夜</td>
-            <td><img src="/images/mutatordata/laserdrillspawndeadofnight.jpg" alt="亡者之夜激光钻机生成位置"></td>
-        </tr>
-        <tr>
-            <td>天锁</td>
-            <td><img src="/images/mutatordata/laserdrillspawnlockandload.jpg" alt="天锁激光钻机生成位置"></td>
-        </tr>
-        <tr>
-            <td>恶意代码</td>
-            <td><img src="/images/mutatordata/laserdrillspawnmalwarfare.jpg" alt="恶意代码激光钻机生成位置"></td>
-        </tr>
-        <tr>
-            <td>疏散矿工</td>
-            <td><img src="/images/mutatordata/laserdrillspawnminerevacuation.jpg" alt="疏散矿工激光钻机生成位置"></td>
-        </tr>
-        <tr>
-            <td>机会渺茫</td>
-            <td><img src="/images/mutatordata/laserdrillspawnmistopportunities.jpg" alt="机会渺茫激光钻机生成位置"></td>
-        </tr>
-        <tr>
-            <td>湮灭快车</td>
-            <td><img src="/images/mutatordata/laserdrillspawnoblivionexpress.jpg" alt="湮灭快车激光钻机生成位置"></td>
-        </tr>
-        <tr>
-            <td>聚铁成兵</td>
-            <td><img src="/images/mutatordata/laserdrillspawnpartandparcel.jpg" alt="聚铁成兵激光钻机生成位置"></td>
-        </tr>
-        <tr>
-            <td>克哈裂痕</td>
-            <td><img src="/images/mutatordata/laserdrillspawnriftstokorhal.jpg" alt="克哈裂痕激光钻机生成位置"></td>
-        </tr>
-        <tr>
-            <td>埃蒙之镰</td>
-            <td><img src="/images/mutatordata/laserdrillspawnscytheofamon.jpg" alt="埃蒙之镰激光钻机生成位置"></td>
-        </tr>
-        <tr>
-            <td>往日神庙</td>
-            <td><img src="/images/mutatordata/laserdrillspawntempleofthepast.jpg" alt="往日神庙激光钻机生成位置"></td>
-        </tr>
-        <tr>
-            <td>熔火危机</td>
-            <td><img src="/images/mutatordata/laserdrillspawnthevermillionproblem.jpg" alt="熔火危机激光钻机生成位置"></td>
-        </tr>
-        <tr>
-            <td>虚空降临</td>
-            <td><img src="/images/mutatordata/laserdrillspawnvoidlaunch.jpg" alt="虚空降临激光钻机生成位置"></td>
-        </tr>
-        <tr>
-            <td>虚空撕裂</td>
-            <td><img src="/images/mutatordata/laserdrillspawnvoidthrashing.jpg" alt="虚空撕裂激光钻机生成位置"></td>
-        </tr>
-    </tbody>
-</table>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>德哈卡：如果激光钻机锁定达克伦，会被他的伤害反射击毁。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_turkeyshoot">
-                <td><img src="/images/mutators/turkeyshoot.png" alt=""></td>
-                <td>火鸡射击</td>
-                <td>只能通过消灭在地图各处游荡的火鸡来获得人口。这样做可能激怒剩余的火鸡。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>玩家初始拥有 50 补给，必须消灭地图上的火鸡来提高补给上限。</p>
-<p>补给上限会按可变间隔降低，间隔取决于当前补给。每经过 250/[Supply] 秒，补给降低 1。因此，在 250 补给时，每秒会损失 1 点补给。</p>
-<p>如果玩家的已用补给超过可用补给，且未能获得更多补给，单位会在 3 秒后开始受到伤害。当前占用更多共享补给的玩家会承受伤害；若双方占用相同，则随机选择一名玩家。每秒该玩家的一个随机单位受到 20 点伤害。如果持续超过补给上限，每 3 秒受伤单位数增加 1。作战单位优先受伤；当所有作战单位都在受伤后，工人也会开始受伤。</p>
-<p>最初会在玩家基地 7 至 40 射程内生成 30 只火鸡。之后每 8 秒生成两只火鸡，且距离玩家当前镜头位置至少 20。</p>
-<p>火鸡被消灭时，10 射程内的所有火鸡都会攻击玩家。每只火鸡提供 2 点补给。火鸡如下图所示。</p>
-<img src="/images/mutatordata/turkeyshootturkey.jpg" alt="火鸡">
-<p>火鸡每 1.5 秒造成 8 点伤害（对建筑为 16），拥有 10 点生命值和 0 点护甲。</p>
-<h2>湮灭快车中的情况</h2>
-<p>该突变因子曾出现在“湮灭快车”的<a href="weeklymutations">每周突变</a>“鸡飞狗跳”中。列车被摧毁时，通常每节车厢会生成 5 只普通火鸡（每列列车有 7 或 13 节车厢）。但特定列车波次会生成被感染的火鸡，详情如下：</p>
-<table class="dataTable centered">
-    <thead>
-        <tr>
-            <th>列车波次</th>
-            <th>每节车厢的被感染火鸡数</th>
-            <th>生成总数</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>3</td>
-            <td>3</td>
-            <td>39</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>4</td>
-            <td>52</td>
-        </tr>
-    </tbody>
-</table>
-<p>被感染的火鸡被消灭时不会提供补给。被感染的火鸡如下图所示：</p>
-<img src="/images/mutatordata/turkeyshootinfestedturkey.jpg" alt="被感染的火鸡">
-<p>被感染的火鸡每 2 秒造成 0 点伤害（对建筑为 70），拥有 150 点生命值和 1 点护甲。</p>
-<p>第 6 个列车波次被摧毁时，会生成火鸡王。火鸡王如下图所示：</p>
-<img src="/images/mutatordata/turkeyshootturking.jpg" alt="火鸡王">
-<p>火鸡王每 2 秒造成 250 点伤害（对建筑为 500），拥有 6000 点生命值和 3 点护甲。它拥有冷却时间为 30 秒的“恐怖咯咯叫”技能，可使 11 射程内的所有玩家单位陷入恐惧。</p>
-</details>
-                </td>
-                <td><img src="/images/mutators/no.png" alt="否"></td>
-            </tr>
-            <tr id="row_fireworks">
-                <td><img src="/images/mutators/fireworks.png" alt=""></td>
-                <td>烟花表演</td>
-                <td>敌人死亡时会发射耀眼的烟花，对附近的玩家单位造成伤害。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>敌方单位死亡时，会发射数量等于其补给占用的烟花。烟花随机攻击 10 射程内的玩家单位；如果附近没有玩家单位，则会随机攻击 3 射程内的位置。每发烟花造成 50 点伤害。</p>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>扎加拉：跳虫的闪避可以规避烟花造成的伤害。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/no.png" alt="否"></td>
-            </tr>
-            <tr id="row_scorchedearth">
-                <td><img src="/images/mutators/scorchedearth.png" alt=""></td>
-                <td>焦土政策</td>
-                <td>敌方单位死亡时会点燃周围地面。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>焦土政策只会伤害地面单位。灼烧区域分为三种大小，取决于死亡单位占用的补给；“天锁”中的萨尔纳加构造体例外，它会生成大型圆形区域。灼烧区域详情如下：</p>
-<table class="dataTable centered">
-    <thead>
-        <tr>
-            <th>补给占用</th>
-            <th>灼烧规模</th>
-            <th>伤害</th>
-            <th>半径</th>
-            <th>地面持续时间（秒）</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>0-1</td>
-            <td>小型</td>
-            <td>每 0.5 秒 7 点</td>
-            <td>0.25</td>
-            <td>15</td>
-        </tr>
-        <tr>
-            <td>2-4</td>
-            <td>普通</td>
-            <td>每 0.5 秒 7 点</td>
-            <td>0.5</td>
-            <td>30</td>
-        </tr>
-        <tr>
-            <td>4+</td>
-            <td>大型</td>
-            <td>每 0.5 秒 7 点</td>
-            <td>1.5</td>
-            <td>60</td>
-        </tr>
-    </tbody>
-</table>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_lavaburst">
-                <td><img src="/images/mutators/lavaburst.png" alt=""></td>
-                <td>熔岩爆裂</td>
-                <td>熔岩会定期从随机位置喷出，对玩家的空中和地面单位造成伤害。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>熔岩爆裂每 0.5 秒出现一次，位置始终距离主基地至少 25，距离任意资源点至少 10，也不会直接出现在你的建筑下方。</p>
-<p>熔岩爆裂会先在地面显示标记。标记持续 4 秒后开始造成伤害。熔岩爆裂每 0.125 秒对非英雄单位造成 5 点伤害（对重甲 +2），即每秒 40 点；伤害阶段持续 16 秒。</p>
-<p>熔岩爆裂对英雄单位造成的伤害取决于其最大生命值，汇总如下：</p>
-<table class="dataTable centered">
-    <thead>
-        <tr>
-            <th>单位生命值</th>
-            <th>总每秒伤害</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>100</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>150</td>
-            <td>36</td>
-        </tr>
-        <tr>
-            <td>200</td>
-            <td>48</td>
-        </tr>
-        <tr>
-            <td>250</td>
-            <td>60</td>
-        </tr>
-        <tr>
-            <td>300</td>
-            <td>72</td>
-        </tr>
-        <tr>
-            <td>400</td>
-            <td>128</td>
-        </tr>
-        <tr>
-            <td>500</td>
-            <td>120</td>
-        </tr>
-        <tr>
-            <td>600</td>
-            <td>144</td>
-        </tr>
-        <tr>
-            <td>800</td>
-            <td>192</td>
-        </tr>
-        <tr>
-            <td>1000</td>
-            <td>240</td>
-        </tr>
-        <tr>
-            <td>1500</td>
-            <td>360</td>
-        </tr>
-        <tr>
-            <td>2000</td>
-            <td>480</td>
-        </tr>
-    </tbody>
-</table>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>阿拉纳克：在熔岩爆裂上方放置力场，防止部队误入。使用重型单位时要格外小心，因为它们能破坏力场。</li>
+    <li>沃拉尊：灵能爆表属于全地图效果而非单位效果，因此时间停止无法阻止技能施放。</li>
 </ul>
 </details>
                 </td>
@@ -2319,15 +2262,15 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             </tr>
             <tr id="row_boombots">
                 <td><img src="/images/mutators/boombots.png" alt=""></td>
-                <td>爆破机器人</td>
+                <td>炸弹机器人</td>
                 <td>冷酷无情的自动机器人携带核弹向你的基地推进。一名玩家必须识别解除序列，另一名玩家则必须输入该序列。                    <br /><br />
                     <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>机器人会从任意敌方建筑中生成。清除地图上的所有敌方建筑后，它们便会停止生成。请注意，完全清除“恶意代码”和“虚空降临”的敌人无法阻止生成，因为压制塔和发射舱都是无法摧毁的敌方建筑。</p>
-<p>爆破机器人如下图所示：</p>
-<img src="/images/mutatordata/boombot.jpg" alt="爆破机器人">
-<p>爆破机器人生成时，一名玩家会在其上方看到密码，另一名玩家则会看到“?-?-?-?”。看到密码的玩家必须把它告诉队友，由队友输入爆破机器人。点击机器人后，即使失去视野，玩家也不会失去命令面板，仍可继续输入密码。</p>
-<p>爆破机器人的初始移动速度为 1.25。输入错误数字后，玩家会有 8 秒无法继续输入；同时机器人的速度提高 1.0，最高达到 4.75。</p>
-<p>爆破机器人的生成时间如下：</p>
+<p>机器人会从任意敌方建筑中生成。清除地图上的所有敌方建筑后，它们便会停止生成。请注意，完全清除“净网行动”和“虚空降临”的敌人无法阻止生成，因为压制塔和发射舱都是无法摧毁的敌方建筑。</p>
+<p>炸弹机器人如下图所示：</p>
+<img src="/images/mutatordata/boombot.jpg" alt="炸弹机器人">
+<p>炸弹机器人生成时，一名玩家会在其上方看到密码，另一名玩家则会看到“?-?-?-?”。看到密码的玩家必须把它告诉队友，由队友输入炸弹机器人。点击机器人后，即使失去视野，玩家也不会失去命令面板，仍可继续输入密码。</p>
+<p>炸弹机器人的初始移动速度为 1.25。输入错误数字后，玩家会有 8 秒无法继续输入；同时机器人的速度提高 1.0，最高达到 4.75。</p>
+<p>炸弹机器人的生成时间如下：</p>
 <table class="dataTable centered">
     <thead>
         <tr>
@@ -2390,36 +2333,94 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         </tr>
     </tbody>
 </table>
-<p>18:50 这一波之后，每 50 秒会出现 2 个爆破机器人。</p>
+<p>18:50 这一波之后，每 50 秒会出现 2 个炸弹机器人。</p>
 <p>机器人接触玩家单位或建筑后会引爆核弹。核弹在中心 4 射程内造成 750 点基础伤害（对建筑为 950），在 6 射程内造成基础伤害的 50%，在 8 射程内造成基础伤害的 25%。核弹引爆后需冷却 4 秒才能再次使用。</p>
-<p>机器人不会主动攻击“恶意代码”中的奥拉娜运输舰和数据核心、“机会渺茫”中的地嗪采集机器人、“死亡摇篮”中的神器卡车，以及“疏散矿工”中的撤离船；但核弹仍会对这些单位造成伤害。</p>
+<p>机器人不会主动攻击“净网行动”中的奥拉娜运输舰和数据核心、“机会渺茫”中的地嗪采集机器人、“死亡摇篮”中的神器卡车，以及“营救矿工”中的撤离船；但核弹仍会对这些单位造成伤害。</p>
 <p class="subheading">指挥官专属技巧</p>
 <ul>
-    <li>阿巴瑟：蔽目毒云可以阻止爆破机器人攻击。</li>
-    <li>阿巴瑟：布置剧毒巢穴并关闭自动引爆，可以用它获取爆破机器人的视野。</li>
-    <li>凯瑞甘：凯瑞甘的坑道虫可以承受两次爆破机器人核弹后才死亡。</li>
-    <li>蒙斯克：裂地者会在轰炸区域提供临时视野，可用来发现爆破机器人。</li>
-    <li>雷诺：提前使用扫描获取爆破机器人的视野。</li>
-    <li>斯台特曼：在地图各处铺设艾星，为爆破机器人提供视野。</li>
-    <li>沃拉尊：海盗船的干扰网可以阻止爆破机器人攻击。</li>
+    <li>阿巴瑟：蔽目毒云可以阻止炸弹机器人攻击。</li>
+    <li>阿巴瑟：布置剧毒巢穴并关闭自动引爆，可以用它获取炸弹机器人的视野。</li>
+    <li>凯瑞甘：凯瑞甘的坑道虫可以承受两次炸弹机器人核弹后才死亡。</li>
+    <li>蒙斯克：裂地者会在轰炸区域提供临时视野，可用来发现炸弹机器人。</li>
+    <li>雷诺：提前使用扫描获取炸弹机器人的视野。</li>
+    <li>斯台特曼：在地图各处铺设艾星，为炸弹机器人提供视野。</li>
+    <li>沃拉尊：海盗船的干扰网可以阻止炸弹机器人攻击。</li>
 </ul>
 </details>
                 </td>
                 <td><img src="/images/mutators/yes.png" alt="是"></td>
             </tr>
+            <tr id="row_scorchedearth">
+                <td><img src="/images/mutators/scorchedearth.png" alt=""></td>
+                <td>焦土政策</td>
+                <td>敌方单位死亡时会点燃周围地面。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>焦土政策只会伤害地面单位。灼烧区域分为三种大小，取决于死亡单位占用的补给；“天界封锁”中的萨尔纳加构造体例外，它会生成大型圆形区域。灼烧区域详情如下：</p>
+<table class="dataTable centered">
+    <thead>
+        <tr>
+            <th>补给占用</th>
+            <th>灼烧规模</th>
+            <th>伤害</th>
+            <th>半径</th>
+            <th>地面持续时间（秒）</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0-1</td>
+            <td>小型</td>
+            <td>每 0.5 秒 7 点</td>
+            <td>0.25</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>2-4</td>
+            <td>普通</td>
+            <td>每 0.5 秒 7 点</td>
+            <td>0.5</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>4+</td>
+            <td>大型</td>
+            <td>每 0.5 秒 7 点</td>
+            <td>1.5</td>
+            <td>60</td>
+        </tr>
+    </tbody>
+</table>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_fireworks">
+                <td><img src="/images/mutators/fireworks.png" alt=""></td>
+                <td>焰火秀</td>
+                <td>敌人死亡时会发射耀眼的烟花，对附近的玩家单位造成伤害。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>敌方单位死亡时，会发射数量等于其补给占用的烟花。烟花随机攻击 10 射程内的玩家单位；如果附近没有玩家单位，则会随机攻击 3 射程内的位置。每发烟花造成 50 点伤害。</p>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>扎加拉：跳虫的闪避可以规避烟花造成的伤害。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/no.png" alt="否"></td>
+            </tr>
             <tr id="row_lifeleech">
                 <td><img src="/images/mutators/lifeleech.png" alt=""></td>
-                <td>生命汲取</td>
+                <td>生命吸取</td>
                 <td>敌方单位每次造成伤害时都会窃取生命值或护盾。                    <br /><br />
                     <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>生命汲取会按照埃蒙单位对玩家单位造成伤害的 100% 为其恢复生命值。</p>
+<p>生命吸取会按照埃蒙单位对玩家单位造成伤害的 100% 为其恢复生命值。</p>
 </details>
                 </td>
                 <td><img src="/images/mutators/yes.png" alt="是"></td>
             </tr>
             <tr id="row_mutuallyassureddestruction">
                 <td><img src="/images/mutators/mutuallyassureddestruction.png" alt=""></td>
-                <td>相互保证毁灭</td>
+                <td>相互摧毁</td>
                 <td>敌方混合体单位死亡时会引爆一枚核弹。                    <br /><br />
                     <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
 <p>所有混合体死亡时都会引爆核弹。如果死亡的是混合体天罚者或“聚铁成兵”中的莫比斯混合体 A，核弹延迟 2 秒爆炸；其他情况下延迟 1 秒。</p>
@@ -2455,49 +2456,21 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                 </td>
                 <td><img src="/images/mutators/yes.png" alt="是"></td>
             </tr>
-            <tr id="row_vertigo">
-                <td><img src="/images/mutators/vertigo.png" alt=""></td>
-                <td>眩晕</td>
-                <td>你的镜头位置会随机变化。                    <br /><br />
+            <tr id="row_shortsighted">
+                <td><img src="/images/mutators/shortsighted.png" alt=""></td>
+                <td>短视症</td>
+                <td>玩家单位和建筑的视野范围缩小。                    <br /><br />
                     <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>你的镜头位置每 20 秒改变一次。</p>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_mineralshields">
-                <td><img src="/images/mutators/mineralshields.png" alt=""></td>
-                <td>矿物护盾</td>
-                <td>玩家基地的矿区会定期被护盾包围；必须摧毁护盾才能继续采集。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>第一批矿物护盾会在 2:40 出现，之后每 2:00 出现一批。每处矿物有 15% 概率被护盾覆盖；矿物护盾每出现一轮，该概率提高 5%。</p>
-<p>每个矿物护盾拥有 50 点生命值，持续 60 秒。单位不会自动攻击矿物护盾，因此需要手动指定目标将其摧毁。</p>
+<p>所有玩家单位的视野范围降低 60%，最低为 1。原本范围为 0 的单位（例如精华或生物质掉落物）会提高至 1。</p>
 <p class="subheading">指挥官专属技巧</p>
 <ul>
-    <li>汉与霍纳：两组磁力地雷可以清除一条矿线生成的全部矿物护盾。</li>
-    <li>斯托科夫：让一辆研究了腐蚀黏液的响尾蛇在矿线后巡逻，即可自动清除护盾。</li>
-    <li>扎加拉：在矿线后布置胆汁喷射体，让其轰炸自动清除矿物护盾。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_magnificent">
-                <td><img src="/images/mutators/magnificent.png" alt=""></td>
-                <td>磁力惊人</td>
-                <td>任务开始时，地图各处会部署磁力地雷。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>游戏开始时，地图各处会随机布置 200 枚磁力地雷。磁力地雷不会出现在玩家起始位置周围 30 射程内，也不会出现在资源点周围 5 射程内。</p>
-<p>地雷触发后延迟 2.5 秒才会造成 250 点伤害，因此很容易躲避。无需反隐即可触发它们。</p>
-<p>此外，部分地图还有以下特殊限制：</p>
-<ul>
-    <li>飞升之链：磁力地雷不会出现在吉娜拉周围 15 射程内。</li>
-    <li>天锁：磁力地雷不会出现在天锁周围 8 射程内。</li>
-</ul>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>雷诺：休伯利安号的点防御无人机可以击落磁力地雷。</li>
-    <li>泽拉图：光盾卫士有 50% 概率移除磁力地雷的投射物。</li>
+    <li>阿巴瑟：生物质掉落物会提供视野。</li>
+    <li>德哈卡：精华掉落物会提供视野。</li>
+    <li>汉与霍纳：回收资源掉落物会提供视野。</li>
+    <li>凯瑞甘：同化光环掉落物会提供视野。</li>
+    <li>雷诺：雷诺的扫描可以在扫描区域内提供正常视野。</li>
+    <li>斯托科夫：虫群女王的视觉共生技能可以提高单位视野。</li>
+    <li>斯托科夫：被亚历山大号精神控制的单位会保留完整视野。</li>
 </ul>
 </details>
                 </td>
@@ -2505,7 +2478,7 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             </tr>
             <tr id="row_giftexchange">
                 <td><img src="/images/mutators/giftexchange.png" alt=""></td>
-                <td>礼物交换</td>
+                <td>礼尚往来</td>
                 <td>地图各处会定期投放礼物。如果你不去领取，埃蒙就会拿走！                    <br /><br />
                     <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
 <p>第一份礼物会在 3:00 生成。此后每隔 2:10 生成一份礼物；任务时间超过 20:00 后，礼物改为每隔 1:40 生成。</p>
@@ -2538,12 +2511,12 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             <td>在你的基地投放 3 个矿骡。</td>
         </tr>
         <tr>
-            <td>{Unit} 成为复仇者</td>
-            <td>选中的单位获得 10 层复仇者增益（更多信息请参阅“复仇者”的详细说明）。</td>
+            <td>{Unit} 成为复仇战士</td>
+            <td>选中的单位获得 10 层复仇战士增益（更多信息请参阅“复仇战士”的详细说明）。</td>
         </tr>
         <tr>
-            <td>淘气名单已清空</td>
-            <td>清空淘气名单。</td>
+            <td>杀生业报已清空</td>
+            <td>清空杀生业报。</td>
         </tr>
         <tr>
             <td>一架大天使</td>
@@ -2572,16 +2545,16 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             <td>临时突变因子</td>
             <td>从下方列表中随机选择一个突变因子，持续 3 分钟（更多信息请参阅“混乱工作室”的详细说明）。
                 <ul>
-                    <li>异形孵化</li>
+                    <li>异形寄生</li>
                     <li>暴风雪</li>
                     <li>震荡攻击</li>
-                    <li>核弹来袭</li>
-                    <li>就是死不了！</li>
-                    <li>相互保证毁灭</li>
-                    <li>感染爆发</li>
+                    <li>核弹打击</li>
+                    <li>给我死吧！！</li>
+                    <li>相互摧毁</li>
+                    <li>丧尸大战</li>
                     <li>自毁程序</li>
                     <li>转化</li>
-                    <li>隐形行动</li>
+                    <li>来去无踪</li>
                 </ul>
             </td>
         </tr>
@@ -2741,15 +2714,33 @@ if (document.location.host === 'dev.starcraft2coop.com') {
 <p>“所有项目免费”是玩家最有价值的礼物奖励之一，尤其是在游戏前期。要充分利用它，请至少为一种建筑（最好是同时消耗晶体矿和高能瓦斯的建筑）设置<a href="/guides/generaltips">快速施法</a>，并在任意位置免费连续放置这些建筑。效果结束后取消建造，即可退还这些建筑原本所需的资源。</p>
 <p class="subheading">指挥官专属提示</p>
 <ul>
-    <li>阿巴瑟：“礼物交换”生成的单位会掉落生物质。</li>
+    <li>阿巴瑟：“礼尚往来”生成的单位会掉落生物质。</li>
     <li>阿塔尼斯：阿塔尼斯的折跃力场会被视为一个单位，因此可用该面板技能占领礼物。</li>
-    <li>德哈卡：“礼物交换”生成的单位会掉落精华。</li>
-    <li>蒙斯克：“礼物交换”生成的单位会提供皇家卫队经验值。</li>
-    <li>菲尼克斯：菲尼克斯切换装甲时，会失去获赠的所有复仇者层数。</li>
+    <li>德哈卡：“礼尚往来”生成的单位会掉落精华。</li>
+    <li>蒙斯克：“礼尚往来”生成的单位会提供皇家卫队经验值。</li>
+    <li>菲尼克斯：菲尼克斯切换装甲时，会失去获赠的所有复仇战士层数。</li>
 </ul>
 </details>
                 </td>
                 <td><img src="/images/mutators/no.png" alt="否"></td>
+            </tr>
+            <tr id="row_justdie">
+                <td><img src="/images/mutators/justdie.png" alt=""></td>
+                <td>给我死吧！</td>
+                <td>敌方单位死亡后会自动复活。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>刚刚死亡并被突变因子复活的单位会昏迷（无法移动、攻击或使用技能）并无敌 1 秒。</p>
+<p>非建筑类任务目标和奖励目标会受到“给我死吧！！”影响，因此被消灭后会重生一次。</p>
+<p>请注意，单位并不是真的重新生成；它们首次受到致命伤害时，生命值、护盾和能量会直接恢复至满值。</p>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>阿巴瑟：单位只会在最终被消灭时掉落一次生物质。</li>
+    <li>德哈卡：单位只会在最终被消灭时掉落一次精华。</li>
+    <li>蒙斯克：单位只会在最终被消灭时提供一次皇家卫队经验值。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
             </tr>
             <tr id="row_selfdestruction">
                 <td><img src="/images/mutators/selfdestruction.png" alt=""></td>
@@ -2763,10 +2754,10 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             </tr>
             <tr id="row_fatalattraction">
                 <td><img src="/images/mutators/fatalattraction.png" alt=""></td>
-                <td>致命吸引</td>
+                <td>致命勾引</td>
                 <td>敌方单位和建筑死亡时，会将附近的玩家单位拉到其位置。                    <br /><br />
                     <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>单位死亡时，9 射程内的所有玩家单位都会受到致命吸引影响。该效果只作用于能够移动的单位；潜地的虫群宿主、架起的攻城坦克等不会受到影响。单位占用的补给决定牵引强度和昏迷时间（无法攻击、使用技能或移动），具体如下：</p>
+<p>单位死亡时，9 射程内的所有玩家单位都会受到致命勾引影响。该效果只作用于能够移动的单位；潜地的虫群宿主、架起的攻城坦克等不会受到影响。单位占用的补给决定牵引强度和昏迷时间（无法攻击、使用技能或移动），具体如下：</p>
 <table class="dataTable">
     <thead>
         <tr>
@@ -2796,58 +2787,11 @@ if (document.location.host === 'dev.starcraft2coop.com') {
 <p class="subheading">指挥官专属技巧</p>
 <ul>
     <li>阿拉纳克：使用浩劫的力场技能，防止部队被该突变因子吸入。</li>
-    <li>德哈卡：穿刺者会被致命吸引牵引。</li>
-    <li>德哈卡：族群首领免疫致命吸引。</li>
-    <li>诺娃：致命吸引会取消诺娃的核弹，且核弹将直接损失。</li>
-    <li>汉与霍纳：汉的寡妇雷会被致命吸引牵引。</li>
-    <li>泰凯斯：奥丁免疫致命吸引。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_voidreanimators">
-                <td><img src="/images/mutators/voidreanimators.png" alt=""></td>
-                <td>虚空复生者</td>
-                <td>虚空复生者会在战场上游荡，使敌人死而复生。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>首个敌方单位被消灭 10 秒后，虚空复生者会从一座随机敌方建筑中生成。之后每 55 秒生成一个虚空复生者。摧毁地图上的所有敌方建筑后，它们便不会继续生成。请注意，完全清除“恶意代码”和“虚空降临”的敌人无法阻止生成，因为压制塔和发射舱都是无法摧毁的敌方建筑。</p>
-<p>虚空复生者拥有 200 点生命值和 200 点护盾，没有攻击能力。地图上最多同时存在 4 个虚空复生者，它们只会复活死亡的敌方单位。虚空复生者如下图所示：</p>
-<img src="/images/mutatordata/voidreanimator.jpg" alt="虚空复生者">
-<p>虚空复生者会尝试复活距离最近的死亡单位。复活速度取决于单位占用的补给，具体如下：</p>
-<table class="dataTable centered">
-    <thead>
-        <tr>
-            <th>补给占用</th>
-            <th>复活时间（秒）</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>0-1</td>
-            <td>1.5</td>
-        </tr>
-        <tr>
-            <td>2-5</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>6+</td>
-            <td>8</td>
-        </tr>
-    </tbody>
-</table>
-<p>系统总共只会保存 500 具尸体。列表填满后，如果新死亡单位占用的补给不低于 2，它会随机替换尸体列表中的一个单位。</p>
-<p>可以通过堵路阻止虚空复生者接近复活目标。详情请观看以下视频：</p>
-<iframe width="475" height="268" src="https://www.youtube.com/embed/T051w67T4Dc" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<p>在“亡者之夜”中，复活的感染体不会被阳光杀死，必须由玩家亲自消灭。</p>
-<p>在“疏散矿工”中，虚空复生者不会复活任何感染体。</p>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>阿巴瑟：被虚空复生者复活的单位不会掉落生物质。</li>
-    <li>德哈卡：被虚空复生者复活的单位不会掉落精华。</li>
-    <li>凯瑞甘：被虚空复生者复活的单位会掉落同化光环产生的资源拾取物。</li>
-    <li>蒙斯克：被虚空复生者复活的单位不会提供皇家卫队经验值。</li>
+    <li>德哈卡：穿刺者会被致命勾引牵引。</li>
+    <li>德哈卡：族群首领免疫致命勾引。</li>
+    <li>诺娃：致命勾引会取消诺娃的核弹，且核弹将直接损失。</li>
+    <li>汉与霍纳：汉的寡妇雷会被致命勾引牵引。</li>
+    <li>泰凯斯：奥丁免疫致命勾引。</li>
 </ul>
 </details>
                 </td>
@@ -3027,11 +2971,58 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                 </td>
                 <td><img src="/images/mutators/yes.png" alt="是"></td>
             </tr>
+            <tr id="row_voidreanimators">
+                <td><img src="/images/mutators/voidreanimators.png" alt=""></td>
+                <td>虚空重生者</td>
+                <td>虚空重生者会在战场上游荡，使敌人死而复生。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>首个敌方单位被消灭 10 秒后，虚空重生者会从一座随机敌方建筑中生成。之后每 55 秒生成一个虚空重生者。摧毁地图上的所有敌方建筑后，它们便不会继续生成。请注意，完全清除“净网行动”和“虚空降临”的敌人无法阻止生成，因为压制塔和发射舱都是无法摧毁的敌方建筑。</p>
+<p>虚空重生者拥有 200 点生命值和 200 点护盾，没有攻击能力。地图上最多同时存在 4 个虚空重生者，它们只会复活死亡的敌方单位。虚空重生者如下图所示：</p>
+<img src="/images/mutatordata/voidreanimator.jpg" alt="虚空重生者">
+<p>虚空重生者会尝试复活距离最近的死亡单位。复活速度取决于单位占用的补给，具体如下：</p>
+<table class="dataTable centered">
+    <thead>
+        <tr>
+            <th>补给占用</th>
+            <th>复活时间（秒）</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0-1</td>
+            <td>1.5</td>
+        </tr>
+        <tr>
+            <td>2-5</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>6+</td>
+            <td>8</td>
+        </tr>
+    </tbody>
+</table>
+<p>系统总共只会保存 500 具尸体。列表填满后，如果新死亡单位占用的补给不低于 2，它会随机替换尸体列表中的一个单位。</p>
+<p>可以通过堵路阻止虚空重生者接近复活目标。详情请观看以下视频：</p>
+<iframe width="475" height="268" src="https://www.youtube.com/embed/T051w67T4Dc" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p>在“求生无路”中，复活的感染体不会被阳光杀死，必须由玩家亲自消灭。</p>
+<p>在“营救矿工”中，虚空重生者不会复活任何感染体。</p>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>阿巴瑟：被虚空重生者复活的单位不会掉落生物质。</li>
+    <li>德哈卡：被虚空重生者复活的单位不会掉落精华。</li>
+    <li>凯瑞甘：被虚空重生者复活的单位会掉落同化光环产生的资源拾取物。</li>
+    <li>蒙斯克：被虚空重生者复活的单位不会提供皇家卫队经验值。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
             <tr id="row_walkinginfested">
                 <td><img src="/images/mutators/walkinginfested.png" alt=""></td>
                 <td>行尸走肉</td>
                 <td>指挥官消灭的每个敌方单位都会生成被感染的人类。单位的生命值越高，尸体中出现的感染体就越多。                    <br /><br />
-                    <details><summary>详情</summary><p>在“疏散矿工”中，由行尸走肉生成的所有感染体都拥有双倍生命值。</p>
+                    <details><summary>详情</summary><p>在“营救矿工”中，由行尸走肉生成的所有感染体都拥有双倍生命值。</p>
 <p class="subheading">突变因子详细信息</p>
 <p>生成的被感染的人类数量等于该单位占用的补给。如果单位不占用补给，则生成 1 个被感染的人类。请注意，混合体占用 8 点补给。</p>
 <p class="subheading">指挥官专属技巧</p>
@@ -3044,21 +3035,20 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                 </td>
                 <td><img src="/images/mutators/yes.png" alt="是"></td>
             </tr>
-            <tr id="row_slimpickings">
-                <td><img src="/images/mutators/slimpickings.png" alt=""></td>
-                <td>资源短缺</td>
-                <td>玩家工人的资源采集速度降低，但地图各处会生成资源拾取物。                    <br /><br />
+            <tr id="row_sharingiscaring">
+                <td><img src="/images/mutators/sharingiscaring.png" alt=""></td>
+                <td>补给共享</td>
+                <td>你与盟友共享人口，双方部队都会计入共同的人口上限。                    <br /><br />
                     <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>每处矿物最多含有 1500 矿物。自动采气厂、自动吸纳舱、矿骡和工人每次采集或往返都只能获得 1 点资源。</p>
-<p>任务开始后的前 3 分钟，资源拾取物每 5.4 秒生成一次，之后改为每 7 秒生成。每个拾取物含有 50 矿物或 50 高能瓦斯。每次会生成两个矿物拾取物，或 1 个矿物拾取物和 1 个高能瓦斯拾取物。它们只能由地面单位拾取。</p>
-<p>每隔一次生成，其中一个拾取物会出现在地图任意位置，另一个则只会在起始位置周围 30 射程内生成。该限制只在前 3 分钟生效，之后拾取物不再限定于起始位置附近。</p>
+<p>两名玩家共享已用补给，但补给上限仍分别计算。因此，普通指挥官仍受水晶塔/补给站/王虫数量限制，满补给指挥官也仍保有正常上限。不过，任意一方生产单位都会影响双方的可用补给。</p>
+<p>补给上限为 100 的指挥官会受到很大影响。如果与补给上限 200、且已使用超过 100 补给的指挥官组队，那么在总已用补给降至 100 以下前，这名上限 100 的指挥官无法生产任何占用补给的单位。</p>
 </details>
                 </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
+                <td><img src="/images/mutators/no.png" alt="否"></td>
             </tr>
             <tr id="row_longrange">
                 <td><img src="/images/mutators/longrange.png" alt=""></td>
-                <td>超远射程</td>
+                <td>超远视距</td>
                 <td>敌方单位和建筑的武器射程与视野范围提高。                    <br /><br />
                     <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
 <p>所有敌人的远程武器射程和视野范围提高 3。</p>
@@ -3109,177 +3099,99 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                 </td>
                 <td><img src="/images/mutators/yes.png" alt="是"></td>
             </tr>
-            <tr id="row_transmutation">
-                <td><img src="/images/mutators/transmutation.png" alt=""></td>
-                <td>转化</td>
-                <td>敌方单位每次造成伤害时，都有几率转化为更强大的单位。                    <br /><br />
+            <tr id="row_aggressivedeployment">
+                <td><img src="/images/mutators/aggressivedeployment.png" alt=""></td>
+                <td>进攻部署</td>
+                <td>额外的敌方单位会定期部署到战场上。                    <br /><br />
                     <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>敌方单位每次对玩家单位造成伤害，都有概率转化为补给占用高 1 的单位。0 补给单位按 1 补给计算。</p>
-<p>请注意，转化是永久的。因此，新转化的单位会比原单位掉落更多生物质、精华等。此外，原本不会掉落生物质的单位（例如虚空裂隙生成的单位）也会开始掉落生物质。</p>
-<p>转化触发概率按造成伤害的百分比 Damage/2 计算。因此，如果单位造成 200 点伤害，就有 100% 概率触发转化。该计算在护甲/护盾减伤和减伤增益结算之后进行。</p>
-<p>如果敌方单位击杀玩家单位，会提升等同于被击杀单位补给占用的等级数。如果被击杀者是英雄单位，击杀者会立即升至最高等级。</p>
-<p>转化后的单位也会掉落生物质、精华并提供蒙斯克皇家卫队经验值，即使原单位不会提供（例如来自虚空裂隙的单位）。</p>
-<p>等级如下：</p>
-<table class="dataTable">
+<p>空投会优先选择符合以下条件的玩家单位：</p>
+<ul>
+    <li>拥有武器（即能够造成伤害）。</li>
+    <li>占用的补给大于 0。</li>
+    <li>不是女王。</li>
+</ul>
+<p>空投会在潜在目标 7 射程外生成。如果没有找到潜在目标，则会在玩家基地 25 至 40 射程外生成。</p>
+<p>空投舱详情及其强度等级和科技等级如下。有关强度与科技等级的更多信息，请参阅<a href="/guides/enemycomps">敌方部队组合</a>页面。</p>
+<table class="dataTable centered">
     <thead>
         <tr>
-            <th>等级</th>
-            <th>单位</th>
+            <th>波次</th>
+            <th>时间</th>
+            <th>科技等级</th>
+            <th>强度等级</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>1</td>
-            <td>
-                <ul>
-                    <li>爆虫</li>
-                    <li>陆战队员</li>
-                    <li>跳虫</li>
-                </ul>
-            </td>
+            <td>4:50</td>
+            <td>1</td>
+            <td>1</td>
         </tr>
         <tr>
             <td>2</td>
-            <td>
-                <ul>
-                    <li>恶火</li>
-                    <li>恶火战车</li>
-                    <li>收割者</li>
-                    <li>蟑螂</li>
-                    <li>寡妇雷</li>
-                    <li>狂热者</li>
-                </ul>
-            </td>
+            <td>7:00</td>
+            <td>1</td>
+            <td>2</td>
         </tr>
         <tr>
             <td>3</td>
-            <td>
-                <ul>
-                    <li>使徒</li>
-                    <li>火蝠</li>
-                    <li>刺蛇</li>
-                    <li>劫掠者</li>
-                    <li>哨兵</li>
-                </ul>
-            </td>
+            <td>9:10</td>
+            <td>2</td>
+            <td>3</td>
         </tr>
         <tr>
             <td>4</td>
-            <td>
-                <ul>
-                    <li>龙骑士</li>
-                    <li>歌利亚</li>
-                    <li>高阶圣堂武士</li>
-                    <li>异龙</li>
-                    <li>追猎者</li>
-                </ul>
-            </td>
+            <td>11:20</td>
+            <td>2</td>
+            <td>4</td>
         </tr>
         <tr>
             <td>5</td>
-            <td>
-                <ul>
-                    <li>女妖</li>
-                    <li>感染虫</li>
-                    <li>凤凰</li>
-                    <li>侦察机</li>
-                    <li>维京战机</li>
-                    <li>战狼</li>
-                </ul>
-            </td>
+            <td>13:30</td>
+            <td>3</td>
+            <td>4</td>
         </tr>
         <tr>
             <td>6</td>
-            <td>
-                <ul>
-                    <li>飓风</li>
-                    <li>幽灵</li>
-                    <li>潜伏者</li>
-                    <li>先知</li>
-                    <li>攻城坦克</li>
-                    <li>虫群宿主</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>
-                <ul>
-                    <li>执政官</li>
-                    <li>干扰者</li>
-                    <li>不朽者</li>
-                    <li>解放者</li>
-                    <li>破坏者</li>
-                    <li>虚空辉光舰</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>
-                <ul>
-                    <li>战列巡航舰</li>
-                    <li>巢虫领主</li>
-                    <li>航母</li>
-                    <li>巨像</li>
-                    <li>掠夺者</li>
-                    <li>风暴战舰</li>
-                    <li>雷神</li>
-                    <li>雷兽</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td>
-                <ul>
-                    <li>混合体毁灭者</li>
-                    <li>混合体天罚者</li>
-                    <li>混合体掠夺者</li>
-                    <li>洛基</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td>
-                <ul>
-                    <li>混合体巨兽</li>
-                    <li>混合体支配者</li>
-                </ul>
-            </td>
+            <td>15:40</td>
+            <td>4</td>
+            <td>4</td>
         </tr>
     </tbody>
 </table>
+<p>第 6 个波次之后，空投舱每 2:10 投放一次，科技等级为 6，强度等级为 5。</p>
 <p class="subheading">指挥官专属技巧</p>
 <ul>
-    <li>阿拉纳克：建筑超载可以阻止单位触发转化。</li>
-    <li>阿塔尼斯：护盾超载可以阻止单位触发转化。</li>
-    <li>菲尼克斯：菲尼克斯的智能人格英雄不算会导致最高等级转化的英雄单位。</li>
-    <li>诺娃：防御无人机的防御矩阵可以阻止攻击者触发转化。</li>
-    <li>斯台特曼：艾的呵护超载可以阻止单位触发转化。</li>
-    <li>斯旺：防御矩阵可以阻止攻击者触发转化。</li>
+    <li>阿巴瑟：由进攻部署空投生成的单位不会掉落生物质。</li>
+    <li>阿拉纳克：母舰不是进攻部署空投的有效目标。</li>
+    <li>德哈卡：由进攻部署空投生成的单位不会掉落精华。</li>
+    <li>凯瑞甘：可以对空投部队使用同化光环以获取额外资源。</li>
+    <li>蒙斯克：由进攻部署空投生成的单位不会提供皇家卫队经验值。</li>
+    <li>斯托科夫：斯托科夫的被感染的移民营生成的单位是进攻部署空投的有效目标。</li>
+    <li>泰凯斯：泰凯斯不是进攻部署空投的有效目标。</li>
+    <li>沃拉尊：时间停止会延迟进攻部署的时间。</li>
 </ul>
 </details>
                 </td>
                 <td><img src="/images/mutators/yes.png" alt="是"></td>
             </tr>
-            <tr id="row_shortsighted">
-                <td><img src="/images/mutators/shortsighted.png" alt=""></td>
-                <td>近视眼</td>
-                <td>玩家单位和建筑的视野范围缩小。                    <br /><br />
+            <tr id="row_vertigo">
+                <td><img src="/images/mutators/vertigo.png" alt=""></td>
+                <td>迷失方向</td>
+                <td>你的镜头位置会随机变化。                    <br /><br />
                     <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>所有玩家单位的视野范围降低 60%，最低为 1。原本范围为 0 的单位（例如精华或生物质掉落物）会提高至 1。</p>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>阿巴瑟：生物质掉落物会提供视野。</li>
-    <li>德哈卡：精华掉落物会提供视野。</li>
-    <li>汉与霍纳：回收资源掉落物会提供视野。</li>
-    <li>凯瑞甘：同化光环掉落物会提供视野。</li>
-    <li>雷诺：雷诺的扫描可以在扫描区域内提供正常视野。</li>
-    <li>斯托科夫：虫群女王的视觉共生技能可以提高单位视野。</li>
-    <li>斯托科夫：被亚历山大号精神控制的单位会保留完整视野。</li>
-</ul>
+<p>你的镜头位置每 20 秒改变一次。</p>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
+            <tr id="row_speedfreaks">
+                <td><img src="/images/mutators/speedfreaks.png" alt=""></td>
+                <td>速度狂魔</td>
+                <td>敌人的移动速度超过玩家能够使用的任何单位。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>所有敌方单位的移动速度均为 5.5。</p>
 </details>
                 </td>
                 <td><img src="/images/mutators/yes.png" alt="是"></td>
@@ -3305,17 +3217,7 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                 <td>随机</td>
                 <td>随机分配一个突变因子。                    <br /><br />
                     <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>从自定义突变因子列表中随机选择一个可用突变因子，但不会选择眩晕。</p>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
-            <tr id="row_wemoveunseen">
-                <td><img src="/images/mutators/wemoveunseen.png" alt=""></td>
-                <td>隐形行动</td>
-                <td>所有敌方单位都永久隐形。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>包括地图目标在内的所有非建筑单位都会隐形。</p>
+<p>从自定义突变因子列表中随机选择一个可用突变因子，但不会选择迷失方向。</p>
 </details>
                 </td>
                 <td><img src="/images/mutators/yes.png" alt="是"></td>
@@ -3334,31 +3236,13 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                 </td>
                 <td><img src="/images/mutators/yes.png" alt="是"></td>
             </tr>
-            <tr id="row_momentofsilence">
-                <td><img src="/images/mutators/momentofsilence.png" alt=""></td>
-                <td>静默时刻</td>
-                <td>敌方英雄单位死亡时，周围所有玩家单位都会反思自己的罪行，暂时无法攻击或使用技能。                    <br /><br />
-                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>静默时刻会在死亡单位周围 8 射程内施放，持续 12 秒。</p>
-<p>如果死亡单位是混合体天罚者，效果会延迟 2 秒施加；其他情况下延迟 1 秒。</p>
-<p class="subheading">指挥官专属技巧</p>
-<ul>
-    <li>德哈卡：德哈卡的族群首领属于地图首领，因此免疫静默时刻。</li>
-    <li>凯瑞甘：可以在静默时刻减益触发前进入欧米伽虫洞躲避。</li>
-    <li>诺娃：可以在静默时刻减益触发前使用战术空运躲避。</li>
-    <li>泰凯斯：可以在静默时刻减益触发前使用医疗运输机接送躲避。</li>
-</ul>
-</details>
-                </td>
-                <td><img src="/images/mutators/yes.png" alt="是"></td>
-            </tr>
             <tr id="row_heroesfromthestorm">
                 <td><img src="/images/mutators/heroesfromthestorm.png" alt=""></td>
                 <td>风暴英雄</td>
                 <td>每波进攻都由实力逐渐增强的英雄带领。                    <br /><br />
                     <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
 <p>随着任务推进，英雄会通过“英雄池”系统加入进攻波次，该系统记录可生成的英雄数量。英雄池初始值为 1。每生成一名英雄，英雄池就减少 1。在特定任务时间，英雄池的当前值会按下表增加：</p>
-<p>在“亡者之夜”中，坑道虫卸载会被视为进攻波次生成，因此也会生成埃蒙英雄。</p>
+<p>在“求生无路”中，坑道虫卸载会被视为进攻波次生成，因此也会生成埃蒙英雄。</p>
 <table class="dataTable">
     <thead>
         <tr>
@@ -3821,19 +3705,117 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                 </td>
                 <td><img src="/images/mutators/yes.png" alt="是"></td>
             </tr>
-            <tr id="row_darkness">
-                <td><img src="/images/mutators/darkness.png" alt=""></td>
-                <td>黑暗</td>
-                <td>离开玩家视野后，已经探索的区域在小地图上仍会变为黑色。                    <br /><br />
+            <tr id="row_missilecommand">
+                <td><img src="/images/mutators/missilecommand.png" alt=""></td>
+                <td>飞弹大战</td>
+                <td>无穷无尽的导弹会轰炸你的建筑，必须在整个任务期间将其击落。                    <br /><br />
                     <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
-<p>进攻波次和目标的信号标记不会显示在小地图上。将着色器设置降低至中等或更低画质后即可看到地形，从而抵消该突变因子的效果。</p>
+<p>导弹会从地图边缘发射。导弹的生成无法阻止，但导弹本身可以被摧毁。会出现以下不同类型的导弹：</p>
+<table class="dataTable centered">
+    <thead>
+        <tr>
+            <th>导弹</th>
+            <th>生命值</th>
+            <th>伤害</th>
+            <th>说明</th>
+            <th>图片</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>标准导弹</td>
+            <td>10</td>
+            <td>100</td>
+            <td>标准导弹，也是最常生成的导弹。</td>
+            <td><img src="/images/mutatordata/missilecommandstandard.jpg" alt="标准导弹"></td>
+        </tr>
+        <tr>
+            <td>点防御导弹</td>
+            <td>15</td>
+            <td>-</td>
+            <td>伴随另一枚导弹飞行，抵达目标建筑时停下。初始拥有 200 点能量，会击落任何投射物；每击落一个投射物消耗 10 点能量。</td>
+            <td><img src="/images/mutatordata/missilecommandpdm.jpg" alt="点防御导弹"></td>
+        </tr>
+        <tr>
+            <td>分裂导弹</td>
+            <td>20</td>
+            <td>175</td>
+            <td>被摧毁时会分裂成两枚较小的导弹。</td>
+            <td><img src="/images/mutatordata/missilecommandsplitter.jpg" alt="分裂导弹"></td>
+        </tr>
+        <tr>
+            <td>分裂导弹子弹体</td>
+            <td>5</td>
+            <td>75</td>
+            <td>由分裂导弹生成。</td>
+            <td><img src="/images/mutatordata/missilecommandsplitterchild.jpg" alt="分裂导弹子弹体"></td>
+        </tr>
+        <tr>
+            <td>核弹</td>
+            <td>100</td>
+            <td>300（对建筑 500）</td>
+            <td>由 5 枚点防御导弹护航。核弹每 60 秒最多部署一次。<br>伤害取决于与命中中心的距离：<br>4 射程内为 100%<br>6 射程内为 50%<br>8 射程内为 25%</td>
+            <td><img src="/images/mutatordata/missilecommandnuke.jpg" alt="核导弹"></td>
+        </tr>
+    </tbody>
+</table>
+<p>导弹生成频率及各类型所占比例会随任务时间变化，如下表所示。请注意，每个生成周期会发射 2 枚导弹，分别攻击两名玩家。</p>
+<table class="dataTable">
+    <thead>
+        <tr>
+            <th>任务时间</th>
+            <th>生成频率</th>
+            <th>标准导弹 %</th>
+            <th>标准导弹 + 点防御导弹 %</th>
+            <th>分裂导弹 %</th>
+            <th>核弹 + 5 枚点防御导弹 %</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0:00-5:00</td>
+            <td>15 秒</td>
+            <td>100%</td>
+            <td>0%</td>
+            <td>0%</td>
+            <td>0%</td>
+        </tr>
+        <tr>
+            <td>5:00-10:00</td>
+            <td>5 秒</td>
+            <td>90%</td>
+            <td>10%</td>
+            <td>0%</td>
+            <td>0%</td>
+        </tr>
+        <tr>
+            <td>10:00-15:00</td>
+            <td>2 秒</td>
+            <td>60%</td>
+            <td>20%</td>
+            <td>20%</td>
+            <td>0%</td>
+        </tr>
+        <tr>
+            <td>15:00+</td>
+            <td>1 秒</td>
+            <td>40%</td>
+            <td>20%</td>
+            <td>30%</td>
+            <td>10%</td>
+        </tr>
+    </tbody>
+</table>
+<p>点防御导弹会在能量耗尽前击落所有投射物攻击，但即时命中攻击可以击毁或绕过它们。以下视频说明了两种攻击类型的区别：</p>
+<iframe width="475" height="268" src="https://www.youtube.com/embed/OKg_hJ-ldD8" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p>另一种方法是用大量火力压垮点防御导弹。若同时向其发射大量投射物，点防御导弹会迅速耗尽能量，无法全部击落。</p>
 <p class="subheading">指挥官专属技巧</p>
 <ul>
-    <li>阿巴瑟：布置剧毒巢穴并关闭自动引爆，为地图关键区域提供视野。</li>
-    <li>斯台特曼：被禁用的艾星仍会提供正常视野。</li>
-    <li>泽拉图：黑暗会禁用泽拉图的全地图地形视野。你可能需要使用集结点寻找神器碎片，如下所示：<br>
-    <iframe width="475" height="268" src="https://www.youtube.com/embed/h0OZG494TCY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </li>
+    <li>阿塔尼斯：高阶圣堂武士/高阶执政官可以对点防御导弹使用反馈。</li>
+    <li>凯瑞甘：荒芜女王凯瑞甘的动能冲击会被点防御导弹和点防御无人机拦截。</li>
+    <li>斯台特曼：超级盖瑞的普通攻击无法被点防御导弹和点防御无人机击落。</li>
+    <li>沃拉尊：时间停止不会影响飞弹大战的生成时间。</li>
+    <li>泽拉图：超维空间巨石可以击晕点防御导弹，让投射物攻击命中目标。</li>
 </ul>
 </details>
                 </td>
@@ -3865,6 +3847,24 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                 </td>
                 <td><img src="/images/mutators/yes.png" alt="是"></td>
             </tr>
+            <tr id="row_momentofsilence">
+                <td><img src="/images/mutators/momentofsilence.png" alt=""></td>
+                <td>默哀</td>
+                <td>敌方英雄单位死亡时，周围所有玩家单位都会反思自己的罪行，暂时无法攻击或使用技能。                    <br /><br />
+                    <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
+<p>默哀会在死亡单位周围 8 射程内施放，持续 12 秒。</p>
+<p>如果死亡单位是混合体天罚者，效果会延迟 2 秒施加；其他情况下延迟 1 秒。</p>
+<p class="subheading">指挥官专属技巧</p>
+<ul>
+    <li>德哈卡：德哈卡的族群首领属于地图首领，因此免疫默哀。</li>
+    <li>凯瑞甘：可以在默哀减益触发前进入欧米伽虫洞躲避。</li>
+    <li>诺娃：可以在默哀减益触发前使用战术空运躲避。</li>
+    <li>泰凯斯：可以在默哀减益触发前使用医疗运输机接送躲避。</li>
+</ul>
+</details>
+                </td>
+                <td><img src="/images/mutators/yes.png" alt="是"></td>
+            </tr>
             <tr id="row_inspiration">
                 <td><img src="/images/mutators/inspiration.png" alt=""></td>
                 <td>鼓舞人心</td>
@@ -3877,7 +3877,7 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             </tr>
             <tr id="row_twister">
                 <td><img src="/images/mutators/twister.png" alt=""></td>
-                <td>龙卷风</td>
+                <td>龙卷风暴</td>
                 <td>龙卷风会在地图上移动，对路径上的玩家单位造成伤害并将其击退。                    <br /><br />
                     <details><summary>详情</summary><p class="subheading">突变因子详细信息</p>
 <p>地图上的龙卷风总数取决于地图尺寸，计算公式为 (width + height)/19。每个龙卷风造成 25 点伤害并击退所有单位。</p>

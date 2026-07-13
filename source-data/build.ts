@@ -1,6 +1,7 @@
 #!/usr/bin/env bun
 import tsj from "ts-json-schema-generator";
 import type { BrutalPlusList, CommanderList, Mission, MutationCycleList, MutationCycleWithScore, MutatorWithStats } from "./data-types";
+import glossary from "../translation/glossary.json";
 
 const files: [`${string}.json`, string][] = [
     ['brutalplus.json', 'BrutalPlusList'],
@@ -49,6 +50,11 @@ const missions: Mission[] = [];
 const missionData: Record<string, Mission> = {};
 const mutatorData: Record<number, MutatorWithStats> = {};
 
+function canonicalMissionName(name: string): string {
+    const entry = glossary.missions.find(item => item["zh-CN"] === name || item.aliases.includes(name));
+    return entry?.["zh-CN"] || name;
+}
+
 for (const missionName of missionNames) {
     missionData[missionName] = { name: missionName, mutationcount: 0 };
     missions.push(missionData[missionName]);
@@ -59,6 +65,7 @@ for (const mutator of mutators) {
 }
 
 for (const mutation of mutationCycle) {
+    mutation.map = canonicalMissionName(mutation.map);
     missionData[mutation.map]!.mutationcount++;
     mutatorData[mutation.mut01]!.mutationcount++;
     if (mutation.mut02) mutatorData[mutation.mut02]!.mutationcount++;

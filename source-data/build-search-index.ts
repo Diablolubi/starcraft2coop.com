@@ -44,7 +44,7 @@ function token(text: string): string {
 type GlossarySection = 'commanders' | 'missions' | 'mutators' | 'weekly_mutations';
 
 function glossaryEntry(section: GlossarySection, chinese: string) {
-    return glossary[section].find(entry => entry['zh-CN'] === chinese);
+    return glossary[section].find(entry => entry['zh-CN'] === chinese || entry.aliases.includes(chinese));
 }
 
 function englishName(section: GlossarySection, chinese: string): string {

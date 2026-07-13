@@ -1,7 +1,7 @@
 [
     {
         "mutatorid": 1,
-        "mutatorname": "漆黑一片",
+        "mutatorname": "极度谨慎",
         "abomination": 0,
         "mutatordescription": "除镜头当前覆盖的区域外，所有来源提供的视野都极其有限。",
         "customusable": false,
@@ -11,7 +11,7 @@
     },
     {
         "mutatorid": 2,
-        "mutatorname": "强势部署",
+        "mutatorname": "进攻部署",
         "abomination": 3,
         "mutatordescription": "额外的敌方单位会定期部署到战场上。",
         "customusable": true,
@@ -21,7 +21,7 @@
     },
     {
         "mutatorid": 3,
-        "mutatorname": "异形孵化",
+        "mutatorname": "异形寄生",
         "abomination": 2,
         "mutatordescription": "所有敌方单位死亡时都会生成巢虫。",
         "customusable": true,
@@ -31,7 +31,7 @@
     },
     {
         "mutatorid": 4,
-        "mutatorname": "复仇者",
+        "mutatorname": "复仇战士",
         "abomination": 5,
         "mutatordescription": "附近有敌方单位死亡时，敌军会提高攻击速度、移动速度、护甲、生命值和生命恢复速度。",
         "customusable": true,
@@ -41,7 +41,7 @@
     },
     {
         "mutatorid": 5,
-        "mutatorname": "屏障",
+        "mutatorname": "减伤屏障",
         "abomination": 2,
         "mutatordescription": "敌方单位和建筑首次受到伤害时会获得一层临时护盾。",
         "customusable": true,
@@ -91,7 +91,7 @@
     },
     {
         "mutatorid": 10,
-        "mutatorname": "黑暗",
+        "mutatorname": "暗无天日",
         "abomination": 2,
         "mutatordescription": "离开玩家视野后，已经探索的区域在小地图上仍会变为黑色。",
         "customusable": true,
@@ -101,7 +101,7 @@
     },
     {
         "mutatorid": 11,
-        "mutatorname": "扩散",
+        "mutatorname": "伤害散射",
         "abomination": 3,
         "mutatordescription": "对敌人造成的伤害会平均分摊给附近所有单位，包括你的单位。",
         "customusable": true,
@@ -111,7 +111,7 @@
     },
     {
         "mutatorid": 12,
-        "mutatorname": "双刃剑",
+        "mutatorname": "双重压力",
         "abomination": 3,
         "mutatordescription": "你的单位和建筑造成的伤害会反作用于自身，但随后会随时间恢复。",
         "customusable": true,
@@ -121,7 +121,7 @@
     },
     {
         "mutatorid": 13,
-        "mutatorname": "强占地盘",
+        "mutatorname": "强行征用",
         "abomination": 1,
         "mutatordescription": "敌人摧毁你的建筑后会取得该建筑的控制权。",
         "customusable": true,
@@ -141,7 +141,7 @@
     },
     {
         "mutatorid": 15,
-        "mutatorname": "致命吸引",
+        "mutatorname": "致命勾引",
         "abomination": 3,
         "mutatordescription": "敌方单位和建筑死亡时，会将附近的玩家单位拉到其位置。",
         "customusable": true,
@@ -151,7 +151,7 @@
     },
     {
         "mutatorid": 16,
-        "mutatorname": "恐惧",
+        "mutatorname": "无边恐惧",
         "abomination": 3,
         "mutatordescription": "玩家单位受到伤害时偶尔会停止攻击，并因恐惧而四处逃窜。",
         "customusable": true,
@@ -161,7 +161,7 @@
     },
     {
         "mutatorid": 17,
-        "mutatorname": "烟花表演",
+        "mutatorname": "焰火秀",
         "abomination": 0,
         "mutatordescription": "敌人死亡时会发射耀眼的烟花，对附近的玩家单位造成伤害。",
         "customusable": false,
@@ -171,7 +171,7 @@
     },
     {
         "mutatorid": 18,
-        "mutatorname": "礼物交换",
+        "mutatorname": "礼尚往来",
         "abomination": 0,
         "mutatordescription": "地图各处会定期投放礼物。如果你不去领取，埃蒙就会拿走！",
         "customusable": false,
@@ -181,7 +181,7 @@
     },
     {
         "mutatorid": 19,
-        "mutatorname": "核弹来袭",
+        "mutatorname": "核弹打击",
         "abomination": 3,
         "mutatordescription": "核弹会随机发射到地图各处。",
         "customusable": true,
@@ -191,7 +191,7 @@
     },
     {
         "mutatorid": 20,
-        "mutatorname": "坚定意志",
+        "mutatorname": "坚强意志",
         "abomination": 2,
         "mutatordescription": "附近存在非英雄敌方单位时，敌方英雄单位受到的单次伤害最多为 10 点。",
         "customusable": true,
@@ -221,7 +221,7 @@
     },
     {
         "mutatorid": 23,
-        "mutatorname": "就是死不了",
+        "mutatorname": "给我死吧！",
         "abomination": 7,
         "mutatordescription": "敌方单位死亡后会自动复活。",
         "customusable": true,
@@ -251,7 +251,7 @@
     },
     {
         "mutatorid": 26,
-        "mutatorname": "熔岩爆裂",
+        "mutatorname": "岩浆爆发",
         "abomination": 3,
         "mutatordescription": "熔岩会定期从随机位置喷出，对玩家的空中和地面单位造成伤害。",
         "customusable": true,
@@ -261,7 +261,7 @@
     },
     {
         "mutatorid": 27,
-        "mutatorname": "生命汲取",
+        "mutatorname": "生命吸取",
         "abomination": 1,
         "mutatordescription": "敌方单位每次造成伤害时都会窃取生命值或护盾。",
         "customusable": true,
@@ -271,7 +271,7 @@
     },
     {
         "mutatorid": 28,
-        "mutatorname": "超远射程",
+        "mutatorname": "超远视距",
         "abomination": 2,
         "mutatordescription": "敌方单位和建筑的武器射程与视野范围提高。",
         "customusable": true,
@@ -291,7 +291,7 @@
     },
     {
         "mutatorid": 30,
-        "mutatorname": "磁力惊人",
+        "mutatorname": "强磁雷场",
         "abomination": 4,
         "mutatordescription": "任务开始时，地图各处会部署磁力地雷。",
         "customusable": true,
@@ -301,7 +301,7 @@
     },
     {
         "mutatorid": 31,
-        "mutatorname": "微交易",
+        "mutatorname": "拿钱说话",
         "abomination": 5,
         "mutatordescription": "向单位下达命令会根据该单位的费用消耗资源。",
         "customusable": true,
@@ -311,7 +311,7 @@
     },
     {
         "mutatorid": 32,
-        "mutatorname": "矿物护盾",
+        "mutatorname": "晶矿护盾",
         "abomination": 2,
         "mutatordescription": "玩家基地的矿区会定期被护盾包围；必须摧毁护盾才能继续采集。",
         "customusable": true,
@@ -331,7 +331,7 @@
     },
     {
         "mutatorid": 34,
-        "mutatorname": "导弹指挥",
+        "mutatorname": "飞弹大战",
         "abomination": 3,
         "mutatordescription": "无穷无尽的导弹会轰炸你的建筑，必须在整个任务期间将其击落。",
         "customusable": true,
@@ -341,7 +341,7 @@
     },
     {
         "mutatorid": 35,
-        "mutatorname": "静默时刻",
+        "mutatorname": "默哀",
         "abomination": 2,
         "mutatordescription": "敌方英雄单位死亡时，周围所有玩家单位都会反思自己的罪行，暂时无法攻击或使用技能。",
         "customusable": true,
@@ -351,7 +351,7 @@
     },
     {
         "mutatorid": 36,
-        "mutatorname": "相互保证毁灭",
+        "mutatorname": "相互摧毁",
         "abomination": 5,
         "mutatordescription": "敌方混合体单位死亡时会引爆一枚核弹。",
         "customusable": true,
@@ -361,7 +361,7 @@
     },
     {
         "mutatorid": 37,
-        "mutatorname": "淘气名单",
+        "mutatorname": "杀生业报",
         "abomination": 0,
         "mutatordescription": "玩家单位和建筑每消灭一个敌人，受到的伤害就会提高。",
         "customusable": false,
@@ -381,7 +381,7 @@
     },
     {
         "mutatorid": 39,
-        "mutatorname": "感染爆发",
+        "mutatorname": "丧尸大战",
         "abomination": 3,
         "mutatordescription": "一波波被感染的大军会持续向指挥官的基地进发。",
         "customusable": true,
@@ -391,7 +391,7 @@
     },
     {
         "mutatorid": 40,
-        "mutatorname": "光子超载",
+        "mutatorname": "光子过载",
         "abomination": 1,
         "mutatordescription": "所有敌方建筑都会攻击附近的敌对单位。",
         "customusable": true,
@@ -401,7 +401,7 @@
     },
     {
         "mutatorid": 41,
-        "mutatorname": "极性互换",
+        "mutatorname": "极性不定",
         "abomination": 7,
         "mutatordescription": "每个敌方单位都免疫你或盟友其中一方单位的攻击。",
         "customusable": true,
@@ -411,7 +411,7 @@
     },
     {
         "mutatorid": 42,
-        "mutatorname": "势不可挡",
+        "mutatorname": "灵能爆表",
         "abomination": 5,
         "mutatordescription": "所有敌方单位都拥有能量，并会随机使用技能。",
         "customusable": true,
@@ -421,7 +421,7 @@
     },
     {
         "mutatorid": 43,
-        "mutatorname": "传播者",
+        "mutatorname": "同化体",
         "abomination": 8,
         "mutatordescription": "扭曲现实的软泥怪正向你爬来。它们接触到的任何单位都会变成软泥怪的复制体。",
         "customusable": true,
@@ -471,7 +471,7 @@
     },
     {
         "mutatorid": 48,
-        "mutatorname": "有福同享",
+        "mutatorname": "补给共享",
         "abomination": 0,
         "mutatordescription": "你与盟友共享人口，双方部队都会计入共同的人口上限。",
         "customusable": false,
@@ -481,7 +481,7 @@
     },
     {
         "mutatorid": 49,
-        "mutatorname": "近视眼",
+        "mutatorname": "短视症",
         "abomination": 1,
         "mutatordescription": "玩家单位和建筑的视野范围缩小。",
         "customusable": true,
@@ -491,7 +491,7 @@
     },
     {
         "mutatorid": 50,
-        "mutatorname": "资源短缺",
+        "mutatorname": "小捞油水",
         "abomination": 5,
         "mutatordescription": "玩家工人的资源采集速度降低，但地图各处会生成资源拾取物。",
         "customusable": true,
@@ -501,7 +501,7 @@
     },
     {
         "mutatorid": 51,
-        "mutatorname": "极速狂飙",
+        "mutatorname": "速度狂魔",
         "abomination": 2,
         "mutatordescription": "敌人的移动速度超过玩家能够使用的任何单位。",
         "customusable": true,
@@ -531,7 +531,7 @@
     },
     {
         "mutatorid": 54,
-        "mutatorname": "转化",
+        "mutatorname": "力量蜕变",
         "abomination": 7,
         "mutatordescription": "敌方单位每次造成伤害时，都有几率转化为更强大的单位。",
         "customusable": true,
@@ -541,7 +541,7 @@
     },
     {
         "mutatorid": 55,
-        "mutatorname": "不给糖就捣蛋",
+        "mutatorname": "不给糖果就捣蛋",
         "abomination": 0,
         "mutatordescription": "平民会造访你的糖果碗索要糖果，花费矿物即可生成糖果。没有糖果时，平民会随机变成敌方单位。",
         "customusable": false,
@@ -551,7 +551,7 @@
     },
     {
         "mutatorid": 56,
-        "mutatorname": "火鸡射击",
+        "mutatorname": "捕杀火鸡",
         "abomination": 0,
         "mutatordescription": "只能通过消灭在地图各处游荡的火鸡来获得人口。这样做可能激怒剩余的火鸡。",
         "customusable": false,
@@ -561,7 +561,7 @@
     },
     {
         "mutatorid": 57,
-        "mutatorname": "龙卷风",
+        "mutatorname": "龙卷风暴",
         "abomination": 2,
         "mutatordescription": "龙卷风会在地图上移动，对路径上的玩家单位造成伤害并将其击退。",
         "customusable": true,
@@ -571,7 +571,7 @@
     },
     {
         "mutatorid": 58,
-        "mutatorname": "眩晕",
+        "mutatorname": "迷失方向",
         "abomination": 0,
         "mutatordescription": "你的镜头位置会随机变化。",
         "customusable": true,
@@ -581,9 +581,9 @@
     },
     {
         "mutatorid": 59,
-        "mutatorname": "虚空复生者",
+        "mutatorname": "虚空重生者",
         "abomination": 5,
-        "mutatordescription": "虚空复生者会在战场上游荡，使敌人死而复生。",
+        "mutatordescription": "虚空重生者会在战场上游荡，使敌人死而复生。",
         "customusable": true,
         "chaosrollable": true,
         "hassafezone": false,
@@ -611,7 +611,7 @@
     },
     {
         "mutatorid": 62,
-        "mutatorname": "隐形行动",
+        "mutatorname": "来去无踪",
         "abomination": 3,
         "mutatordescription": "所有敌方单位都永久隐形。",
         "customusable": true,
@@ -621,7 +621,7 @@
     },
     {
         "mutatorid": 63,
-        "mutatorname": "爆破机器人",
+        "mutatorname": "炸弹机器人",
         "abomination": 10,
         "mutatordescription": "冷酷无情的自动机器人携带核弹向你的基地推进。一名玩家必须识别解除序列，另一名玩家则必须输入该序列。",
         "customusable": true,

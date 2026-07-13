@@ -9,6 +9,174 @@
       "zh-CN": "吸纳舱",
       "kind": "building",
       "source_file": "mods/core.sc2mod/zhcn.sc2data/localizeddata/editor/editorcatalogstrings.txt"
+    },
+    {
+      "id": "Map/Name/AC_MeinhoffDayNight",
+      "en": "Dead of Night",
+      "zh-CN": "求生无路",
+      "kind": "term",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
+    },
+    {
+      "id": "Map/Name/AC_UlnarLocks",
+      "en": "Lock & Load",
+      "zh-CN": "天界封锁",
+      "kind": "term",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
+    },
+    {
+      "id": "Map/Name/AC_CybrosEscort",
+      "en": "Malwarfare",
+      "zh-CN": "净网行动",
+      "kind": "term",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
+    },
+    {
+      "id": "Map/Name/AC_JarbanPointCapture",
+      "en": "Miner Evacuation",
+      "zh-CN": "营救矿工",
+      "kind": "term",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
+    },
+    {
+      "id": "Map/Name/AC_AiurSiege",
+      "en": "Scythe of Amon",
+      "zh-CN": "黑暗杀星",
+      "kind": "term",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
+    },
+    {
+      "id": "ArmyCategory/Name/Carrier",
+      "en": "Carrier",
+      "zh-CN": "航母",
+      "kind": "unit",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
+    },
+    {
+      "id": "UserData/Mutators/AfraidOfTheDark_Name",
+      "en": "Afraid of the Dark",
+      "zh-CN": "极度谨慎",
+      "kind": "term",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
+    },
+    {
+      "id": "UserData/Mutators/Avenger_Name",
+      "en": "Avenger",
+      "zh-CN": "复仇战士",
+      "kind": "term",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
+    },
+    {
+      "id": "UserData/Mutators/Barrier_Name",
+      "en": "Barrier",
+      "zh-CN": "减伤屏障",
+      "kind": "term",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
+    },
+    {
+      "id": "UserData/Mutators/Fear_Name",
+      "en": "Fear",
+      "zh-CN": "无边恐惧",
+      "kind": "term",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
+    },
+    {
+      "id": "UserData/Mutators/Fireworks_Name",
+      "en": "Fireworks",
+      "zh-CN": "焰火秀",
+      "kind": "term",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
+    },
+    {
+      "id": "UserData/Mutators/HardenedWill_Name",
+      "en": "Hardened Will",
+      "zh-CN": "坚强意志",
+      "kind": "term",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
+    },
+    {
+      "id": "UserData/Mutators/JustDie_Name",
+      "en": "Just Die",
+      "zh-CN": "给我死吧！",
+      "kind": "term",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
+    },
+    {
+      "id": "UserData/Mutators/LavaBurst_Name",
+      "en": "Lava Burst",
+      "zh-CN": "岩浆爆发",
+      "kind": "term",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
+    },
+    {
+      "id": "UserData/Mutators/LifeLeech_Name",
+      "en": "Life Leech",
+      "zh-CN": "生命吸取",
+      "kind": "term",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
+    },
+    {
+      "id": "UserData/Mutators/LongRange_Name",
+      "en": "Long Range",
+      "zh-CN": "超远视距",
+      "kind": "term",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
+    },
+    {
+      "id": "UserData/Mutators/Magnificent_Name",
+      "en": "Mag-nificent",
+      "zh-CN": "强磁雷场",
+      "kind": "term",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
+    },
+    {
+      "id": "UserData/Mutators/MomentOfSilence_Name",
+      "en": "Moment of Silence",
+      "zh-CN": "默哀",
+      "kind": "term",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
+    },
+    {
+      "id": "UserData/Mutators/PhotonOverload_Name",
+      "en": "Photon Overload",
+      "zh-CN": "光子过载",
+      "kind": "term",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
+    },
+    {
+      "id": "UserData/Mutators/Polarity_Name",
+      "en": "Polarity",
+      "zh-CN": "极性不定",
+      "kind": "term",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
+    },
+    {
+      "id": "UserData/Mutators/SpeedFreaks_Name",
+      "en": "Speed Freaks",
+      "zh-CN": "速度狂魔",
+      "kind": "term",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
+    },
+    {
+      "id": "UserData/Mutators/TrickOrTreat_Name",
+      "en": "Trick or Treat",
+      "zh-CN": "不给糖果就捣蛋",
+      "kind": "term",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
+    },
+    {
+      "id": "UserData/Mutators/Vertigo_Name",
+      "en": "Vertigo",
+      "zh-CN": "迷失方向",
+      "kind": "term",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
+    },
+    {
+      "id": "UserData/Mutators/BoomBots_Name",
+      "en": "Boom Bots",
+      "zh-CN": "炸弹机器人",
+      "kind": "term",
+      "source_file": "mods/starcoop/starcoop.sc2mod/zhcn.sc2data/localizeddata/gamestrings.txt"
     }
   ]
 }

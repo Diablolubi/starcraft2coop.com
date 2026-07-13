@@ -27,6 +27,28 @@
 5. 先处理 `translation_conflict` 和 `missing_reference`，再人工审阅 `unreviewed_visible_term`。上下文确实需要不同译名时，必须在 `translation/terminology-exceptions.json` 中写明理由和来源；工具不会自动改写源码。
 6. 修改 `source-data`、`source-html` 和术语表后，按项目既有脚本重新生成 `html`，再运行 Python/Bun/PHP 测试和 `git diff --check`。
 
+## 本机快速全量复核
+
+本仓库的 `.local-tools/sc2_extract.exe` 是仅供本机使用的 CascLib 提取器。它不会进入 Git，支持按语言导出核心模组和合作模式字符串：
+
+```powershell
+\.local-tools\sc2_extract.exe `
+  'C:\Program Files (x86)\StarCraft II' `
+  'mods\starcoop\starcoop.sc2mod\zhcn.sc2data\localizeddata\*.txt' `
+  '.local-tools\sc2-export\zhCN-starcoop' zhCN
+```
+
+导出后，使用面向可见名称的全量审计（报告只提交差异摘要，不提交原始 CASC 数据）：
+
+```powershell
+py tools/full_official_terminology_audit.py `
+  --official-root .local-tools\sc2-export\zhCN-starcoop\mods\starcoop\starcoop.sc2mod\zhcn.sc2data\localizeddata `
+  --repo-root . `
+  --output reports/full-official-terminology-audit.json
+```
+
+该审计按稳定的模组键比较任务、突变因子和单位名称；`mismatch` 必须修正，`unresolved` 必须补充键映射或记录明确例外。当前基准已复核 78 行，结果为 0 mismatch、0 unresolved。
+
 ## 校对原则
 
 - 本地简体中文客户端字符串优先于社区 Wiki、搜索结果和机器翻译；网络资料只用于发现候选项。

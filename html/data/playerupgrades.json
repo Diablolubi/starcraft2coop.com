@@ -3475,7 +3475,7 @@
         "upgradeid": 258,
         "unit": "Ascendant",
         "commander": "Alarak",
-        "name": "势不可挡",
+        "name": "灵能爆表",
         "icon": "poweroverwhelming",
         "effect": "升格者每次使用牺牲时，永久获得25%技能伤害和100点护盾。此效果最多叠加10次。",
         "modifier": "Shields",

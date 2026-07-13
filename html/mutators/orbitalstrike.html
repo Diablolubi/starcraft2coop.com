@@ -62,15 +62,15 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <div id="missionList" class="submenu">
         <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">飞升之链</div></a>
         <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">死亡摇篮</div></a>
-        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">亡者之夜</div></a>
-        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">天锁</div></a>
-        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">恶意代码</div></a>
-        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">疏散矿工</div></a>
+        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">求生无路</div></a>
+        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">天界封锁</div></a>
+        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">净网行动</div></a>
+        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">营救矿工</div></a>
         <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">机会渺茫</div></a>
         <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">湮灭快车</div></a>
         <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">聚铁成兵</div></a>
         <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">克哈裂痕</div></a>
-        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">埃蒙之镰</div></a>
+        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">黑暗杀星</div></a>
         <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">往日神庙</div></a>
         <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">熔火危机</div></a>
         <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">虚空降临</div></a>
@@ -224,8 +224,8 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <p>部分突变因子会制造环境威胁，影响玩家单位（包括工人）或施加减益。这些突变因子会在称为“安全区”的区域内停用。所有玩家主基地和分矿都属于安全区。遵循安全区规则的突变因子如下：</p>
     <ul>
         <li>暴风雪</li>
-        <li>核弹来袭*</li>
-        <li>熔岩爆裂</li>
+        <li>核弹打击*</li>
+        <li>岩浆爆发</li>
         <li>轨道轰炸</li>
         <li>净化光束</li>
         <li>时空力场</li>
@@ -244,20 +244,20 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             <img src="/images/mutatordata/safetyzonecradleofdeath.jpg" alt="死亡摇篮安全区">
         </div>
         <div class="mapSafetyZone">
-            <p>亡者之夜</p>
-            <img src="/images/mutatordata/safetyzonedeadofnight.jpg" alt="亡者之夜安全区">
+            <p>求生无路</p>
+            <img src="/images/mutatordata/safetyzonedeadofnight.jpg" alt="求生无路安全区">
         </div>
         <div class="mapSafetyZone">
-            <p>天锁</p>
-            <img src="/images/mutatordata/safetyzonelockandload.jpg" alt="天锁安全区">
+            <p>天界封锁</p>
+            <img src="/images/mutatordata/safetyzonelockandload.jpg" alt="天界封锁安全区">
         </div>
         <div class="mapSafetyZone">
-            <p>恶意代码</p>
-            <img src="/images/mutatordata/safetyzonemalwarfare.jpg" alt="恶意代码安全区">
+            <p>净网行动</p>
+            <img src="/images/mutatordata/safetyzonemalwarfare.jpg" alt="净网行动安全区">
         </div>
         <div class="mapSafetyZone">
-            <p>疏散矿工</p>
-            <img src="/images/mutatordata/safetyzoneminerevacuation.jpg" alt="疏散矿工安全区">
+            <p>营救矿工</p>
+            <img src="/images/mutatordata/safetyzoneminerevacuation.jpg" alt="营救矿工安全区">
         </div>
         <div class="mapSafetyZone">
             <p>机会渺茫</p>
@@ -276,8 +276,8 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             <img src="/images/mutatordata/safetyzoneriftstokorhal.jpg" alt="克哈裂痕安全区">
         </div>
         <div class="mapSafetyZone">
-            <p>埃蒙之镰</p>
-            <img src="/images/mutatordata/safetyzonescytheofamon.jpg" alt="埃蒙之镰安全区">
+            <p>黑暗杀星</p>
+            <img src="/images/mutatordata/safetyzonescytheofamon.jpg" alt="黑暗杀星安全区">
         </div>
         <div class="mapSafetyZone">
             <p>往日神庙</p>
@@ -300,7 +300,7 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <h2 id="interactions">突变因子交互</h2>
     <table>
         <tr><td style="white-space:nowrap"><a href="/mutators/concussiveattacks"><img src="/images/mutators/concussiveattacks.png" class="miniIcon" alt="">震荡攻击</a></td><td>轨道轰炸会施加震荡攻击减益。</td></tr>
-        <tr><td style="white-space:nowrap"><a href="/mutators/fear"><img src="/images/mutators/fear.png" class="miniIcon" alt="">恐惧</a></td><td>轨道轰炸可以施加恐惧效果。</td></tr>
+        <tr><td style="white-space:nowrap"><a href="/mutators/fear"><img src="/images/mutators/fear.png" class="miniIcon" alt="">无边恐惧</a></td><td>轨道轰炸可以施加恐惧效果。</td></tr>
 
     </table>
 <script src="/scripts/nav.js"></script>

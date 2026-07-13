@@ -128,6 +128,14 @@ class LocalReferenceSnapshotTests(unittest.TestCase):
             self.assertEqual(report["translation_conflict"], [])
             self.assertEqual(len(report["approved_exception"]), 1)
 
+    def test_full_audit_compares_named_rows_against_official_values(self):
+        from tools.full_official_terminology_audit import compare_named_rows
+
+        rows = [{"english": "Avenger", "current": "复仇者"}]
+        result = compare_named_rows(rows, {"Avenger": "复仇战士"})
+        self.assertEqual(result["mismatch"][0]["official"], "复仇战士")
+        self.assertEqual(result["mismatch"][0]["current"], "复仇者")
+
 
 if __name__ == "__main__":
     unittest.main()
