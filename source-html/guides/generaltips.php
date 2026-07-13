@@ -5,9 +5,9 @@
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - General Tips for Co-op Players</title>
-  <meta name="description" content="Improve your Co-op gameplay with these simple tips, made for players of all skill levels. Beginners and Veterans can all benefit.">
-  <meta name="keywords" content="Starcraft Co-op General Tips ">
+  <title>StarCraft II 合作任务——通用技巧</title>
+  <meta name="description" content="适合各种水平玩家的实用技巧，无论新手还是老手，都能借此提升合作任务表现。">
+  <meta name="keywords" content="StarCraft II 合作任务通用技巧">
   <link rel="canonical" href="https://starcraft2coop.com/guides/generaltips">
   <style>
         .hotkeysFile{
@@ -21,105 +21,105 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         }
   </style>
   <?= startContent() ?>
-    <h1>General Tips For Co-op Players</h1>
+    <h1>合作任务通用技巧</h1>
     <?php include("../../includes/reporterror.php");?>
     <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#tips1">Tips for Beginners</a></p>
-        <p class="subgroup"><a href="#overproduction">Avoid Overproduction</a></p>
-        <p class="subgroup"><a href="#minimap">Learn the Minimap Icons</a></p>
-        <p class="subgroup"><a href="#usehero">Use Your Hero Unit</a></p>
-        <p class="subgroup"><a href="#usetopbar">Use Your Topbar Abilities</a></p>
+        <h2>本页目录</h2>
+        <p><a href="#tips1">新手技巧</a></p>
+        <p class="subgroup"><a href="#overproduction">避免过量生产</a></p>
+        <p class="subgroup"><a href="#minimap">认识小地图图标</a></p>
+        <p class="subgroup"><a href="#usehero">使用英雄单位</a></p>
+        <p class="subgroup"><a href="#usetopbar">使用顶部技能</a></p>
 
-        <p><a href="#tips2">Tips for Intermediate Players</a></p>
-        <p class="subgroup"><a href="#adapt">Adapt to the Enemy Composition and Map</a></p>
-        <p class="subgroup"><a href="#aggressive">Aggressive Play is Rewarded</a></p>
-        <p class="subgroup"><a href="#bindrapidfire">Bind Rapidfire</a></p>
-        <p class="subgroup"><a href="#expand">Expand As Fast As Possible</a></p>
+        <p><a href="#tips2">进阶玩家技巧</a></p>
+        <p class="subgroup"><a href="#adapt">针对敌方阵容和地图灵活调整</a></p>
+        <p class="subgroup"><a href="#aggressive">主动进攻会带来回报</a></p>
+        <p class="subgroup"><a href="#bindrapidfire">绑定快速施法</a></p>
+        <p class="subgroup"><a href="#expand">尽快开分矿</a></p>
 
-        <p><a href="#tips3">Tips for Veterans</a></p>
-        <p class="subgroup"><a href="#armor">Armor Upgrades</a></p>
-        <p class="subgroup"><a href="#checkingcreep">Checking Creep</a></p>
-        <p class="subgroup"><a href="#knowledge">Knowledge is Power</a></p>
-        <p class="subgroup"><a href="#attacktypes">Note the Different Attack Types</a></p>
-        <p class="subgroup"><a href="#workercounts">Worker Counts</a></p>
+        <p><a href="#tips3">老手技巧</a></p>
+        <p class="subgroup"><a href="#armor">护甲升级</a></p>
+        <p class="subgroup"><a href="#checkingcreep">检查菌毯</a></p>
+        <p class="subgroup"><a href="#knowledge">知识就是力量</a></p>
+        <p class="subgroup"><a href="#attacktypes">留意不同攻击类型</a></p>
+        <p class="subgroup"><a href="#workercounts">工人数量</a></p>
 
     </div>
-    <h2 id="tips1">Tips for Beginners</h2>
-    <h3 id="overproduction">Avoid Overproduction</h3>
-    <p>Queueing up several units/structures, and overproducing structures can tie up vital resources you need, especially during the early stage of the game. For example:</p>
-    <img src="/images/newplayer/overproduction.jpg" alt="Overproduction">
-    <p>In the image above, the six queued up Laborers account for 240 minerals spent that isn't being used. Additionally, the 11 queued up Supply Bunkers costed 1100 minerals, but none are being built. Most of all, the player will be unable to use all that extra supply. In total, the 12 Supply Bunkers account for 144 Supply - too much supply to be utilized. Build only what you need, and spend the rest of your resources teching up and making your army larger.</p>
-    <p>Additionally, make sure you will have adequate resources to spend once the structure is complete. For example, don't build Tech structures if you do not have the gas to spend to use it.</p>
-    <h3 id="minimap">Learn the Minimap Icons</h3>
-    <p>Your minimap provides you with critical information throughout the course of the mission. Use it to evaluate your position and what is going on around the map.</p>
-    <img src="/images/newplayer/minimapicons.jpg" alt="Minimap Icons">
-    <h3 id="usehero">Use Your Hero Unit</h3>
-    <p>Certain commanders (such as <a href="/commanders/kerrigan">Kerrigan</a>) spawn a Hero unit. These Hero units are extremely powerful and should be used as much as possible, especially during the early game. They provide the player with early-game power to allow them to push and complete objectives, while macro'ing up at the back to tech up and gain access to high-tier units.</p>
-    <h3 id="usetopbar">Use Your Topbar Abilities</h3>
-    <p>Topbar Abilities provide players with a large amount of power throughout the course of the game. Use these Topbars to help you push and take engagements. They should be used as soon as they are off cooldown, as frequently as possible. You can time your pushes to line up with when powerful Topbar abilities come off cooldown.</p>
-    <h2 id="tips2">Tips for Intermediate Players</h2>
-    <h3 id="adapt">Adapt to the Enemy Composition and Map</h3>
-    <p>It is important to learn the units that make up various Attack Waves that will attack players. Check the <a href="/guides/enemycomps">Enemy Compositions</a> page to learn about the various enemy compositions in the game. Use that knowledge to build an army that directly counters that composition while allowing you to push and complete the objectives in the game.</p>
-    <h3 id="aggressive">Aggressive Play is Rewarded</h3>
-    <p>Enemy bases can seem very intimidating, discouraging players from pushing in when they're not required to do so. However, playing aggressively can make missions easier by providing players with access to enemy wave spawn points. Players can then use Topbar abilities (such as <a href="/commanders/abathur">Abathur's</a> Toxic Nests) to spawn-camp attack waves.</p>
-    <h3 id="bindrapidfire">Bind Rapidfire</h3>
-    <p>Rapidfire binds the selection of a skill (through its hotkey) and its targeting to the same hotkey. This means in order to cast a skill, you need to press its hotkey once (to select it) and then once more to target it at your cursor's current position.</p>
-    <p>Rapidfire has its advantages, because it allows you to cast skills in quick succession. This is very important for commanders like <a href="/commanders/alarak">Alarak</a>, who depends on Rapidfire for his Ascendant abilities. Without Rapidfire, skills like Mind Blast would be ineffective due to the high amount of clicking required.</p>
-    <p>Rapidfire is also used for Protoss warp-ins. In order to warp in units quickly, you'd want to bind Rapidfire to your warp in units hotkeys.</p>
-    <p>Rapidfire cannot be bound in-game. You will need to manually edit the hotkey settings file in order to do so. This is because the game can only bind one key to Rapidfire. Generally, you'll want a lot more to make it effective.</p>
-    <p>To find the hotkey settings file, navigate to: My Documents\Starcraft II\Accounts\[Random Number]\Hotkeys</p>
-    <p>You will see a [Your Username].SC2Hotkeys file. Open it in Notepad. If you do not see the file, make sure you have created a custom hotkey profile in-game first.</p>
-    <p>That file will look something like this:</p>
+    <h2 id="tips1">新手技巧</h2>
+    <h3 id="overproduction">避免过量生产</h3>
+    <p>一次排队生产多个单位或建筑，或建造过多生产建筑，会占用你急需的重要资源，尤其是在游戏前期。例如：</p>
+    <img src="/images/newplayer/overproduction.jpg" alt="过量生产">
+    <p>上图中，队列里的 6 名劳工占用了 240 点矿物，却没有发挥作用。此外，队列中的 11 座补给地堡花费了 1100 点矿物，但没有一座正在建造。更重要的是，玩家根本用不完这么多人口。12 座补给地堡总计提供 144 人口，远超实际需求。只建造当前需要的设施，把剩余资源用于攀升科技和扩充部队。</p>
+    <p>还要确保建筑完工后有足够的资源使用它。例如，如果没有足够的高能瓦斯支持后续生产，就不要急着建造科技建筑。</p>
+    <h3 id="minimap">认识小地图图标</h3>
+    <p>在整个任务过程中，小地图都会提供关键信息。利用它判断自己的位置，并掌握地图各处正在发生的情况。</p>
+    <img src="/images/newplayer/minimapicons.jpg" alt="小地图图标">
+    <h3 id="usehero">使用英雄单位</h3>
+    <p>某些指挥官（例如<a href="/commanders/kerrigan">凯瑞甘</a>）会召唤英雄单位。这些英雄极为强大，应尽可能多加利用，尤其是在游戏前期。英雄能提供强大的前期战力，帮助你推进和完成目标；与此同时，你可以在后方运营、攀升科技并解锁高级单位。</p>
+    <h3 id="usetopbar">使用顶部技能</h3>
+    <p>顶部技能能在整场游戏中为玩家提供强大助力。利用这些技能帮助推进和接战，并尽可能在冷却结束后立即使用。你也可以根据强力顶部技能的冷却时间来安排推进节奏。</p>
+    <h2 id="tips2">进阶玩家技巧</h2>
+    <h3 id="adapt">针对敌方阵容和地图灵活调整</h3>
+    <p>了解各种进攻波次由哪些单位组成非常重要。请查看<a href="/guides/enemycomps">敌方阵容</a>页面，了解游戏中的各类敌军组合。运用这些知识组建能够直接克制敌方阵容，同时又能推进并完成任务目标的部队。</p>
+    <h3 id="aggressive">主动进攻会带来回报</h3>
+    <p>敌方基地看起来可能令人望而生畏，让玩家在没有强制要求时不愿主动推进。然而，积极进攻可以让任务变得更轻松，因为你能接近敌方进攻波次的出生点。随后便可利用顶部技能（例如<a href="/commanders/abathur">阿巴瑟</a>的剧毒巢穴）蹲守并消灭刚刷新的进攻波次。</p>
+    <h3 id="bindrapidfire">绑定快速施法</h3>
+    <p>快速施法会把通过快捷键选择技能和指定目标绑定到同一个按键。施放技能时，先按一次快捷键选择技能，再按一次即可在当前鼠标位置指定目标。</p>
+    <p>快速施法的优势在于能连续迅速施放技能。这对<a href="/commanders/alarak">阿拉纳克</a>等指挥官尤其重要，因为他的飞升者技能十分依赖快速施法。如果没有快速施法，像心灵震爆这样的技能会因需要大量点击而难以发挥效果。</p>
+    <p>星灵折跃单位时也会用到快速施法。若想快速折跃单位，应把快速施法绑定到对应单位的折跃快捷键。</p>
+    <p>快速施法无法直接在游戏中绑定，必须手动编辑快捷键设置文件。这是因为游戏只能为快速施法绑定一个按键，而通常需要绑定多个按键才能充分发挥作用。</p>
+    <p>快捷键设置文件位于：My Documents\Starcraft II\Accounts\[Random Number]\Hotkeys</p>
+    <p>你会看到一个 [Your Username].SC2Hotkeys 文件。请用记事本打开。如果没有看到该文件，请先确认已在游戏内创建自定义快捷键方案。</p>
+    <p>文件内容大致如下：</p>
     <p class="hotkeysFile">[Settings]<br><br>[Hotkeys]<br><br>[Commands]<br>HHBomberAreaBomb/HHBomberPlatform=</p>
-    <p>Under the [Hotkeys] section, add the following line:</p>
+    <p>在 [Hotkeys] 部分下方添加以下一行：</p>
     <p class="hotkeysFile">TargetChoose=LeftMouseButton,Z</p>
-    <p>Your hotkeys file should look like this now:</p>
+    <p>此时，快捷键文件应如下所示：</p>
     <p class="hotkeysFile">[Settings]<br><br>[Hotkeys]<br>TargetChoose=LeftMouseButton,Z<br><br>[Commands]<br>HHBomberAreaBomb/HHBomberPlatform=</p>
-    <p>Once you save the file, you would have bound the "Z" key to rapidfire. To test it, play Protoss, and warp in a Zealot (assuming other hotkeys are default). But instead of clicking the location you'd like to warp the Zealot in, just press the Z key again. The Zealot will be warped in.</p>
-    <p>You may add as many keys as you'd like, separated by commas to the "TargetChoose" setting to bind additional keys to Rapidfire.</p>
-    <p>A video on Rapidfire is below:</p>
+    <p>保存文件后，Z 键就已绑定到快速施法。要进行测试，可以选择星灵并折跃一名狂热者（假设其他快捷键均为默认设置）。这次不用点击想要折跃的位置，只需再按一次 Z 键，狂热者便会折跃进场。</p>
+    <p>你可以在“TargetChoose”设置中用逗号分隔并添加任意数量的按键，为快速施法绑定更多快捷键。</p>
+    <p>以下视频介绍了快速施法：</p>
     <iframe width="475" height="268" src="https://www.youtube.com/embed/SxXmfRhY6m8" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <h3 id="expand">Expand As Fast As Possible</h3>
-    <p>Some missions in co-op have uncontested expansions, while others might be guarded. Regardless, you should always aim to take your expansion as quickly as possible. Certain commanders (like <a href="/commanders/mengsk">Mengsk</a>) have ways of capturing expansions unusually early in the game (these are called "Fast-Expand Techniques"). Learn them to strengthen your early-game economy. If you are playing Terran, pre-build your Expansion Commander Center and float it over once you clear the defenders/rocks.</p>
-    <h2 id="tips3">Tips for Veterans</h2>
-    <h3 id="armor">Armor Upgrades</h3>
-    <p>In Versus games, armor is a critical part of a player's macro, as without it, they end up taking much less efficient trades in battle. However, due to the unique nature of Co-op, armor upgrades are not that important because:</p>
+    <h3 id="expand">尽快开分矿</h3>
+    <p>有些合作任务的分矿无人防守，有些则有守军。不论如何，都应尽快拿下分矿。某些指挥官（例如<a href="/commanders/mengsk">蒙斯克</a>）可以在极早期占领分矿，这类方法称为“速开分矿技巧”。掌握这些技巧可以强化前期经济。如果你使用人类，可以预先建好分矿指挥中心，清除守军或岩石后再将其飞过去。</p>
+    <h2 id="tips3">老手技巧</h2>
+    <h3 id="armor">护甲升级</h3>
+    <p>在对战模式中，护甲是玩家运营的重要一环；缺少护甲升级会让交换战损的效率大幅降低。然而，由于合作任务的特殊性，护甲升级并没有那么重要，原因如下：</p>
     <ul>
-        <li>Calldowns reduce the damage an army takes by eliminating high-threat targets, protecting the army or debuffing enemies</li>
-        <li>Most enemy units that deal damage to a player's army are spellcasters</li>
-        <li>Player armies become large deathballs in the lategame, killing enemy units before they take significant damage</li>
+        <li>面板技能可以消灭高威胁目标、保护部队或削弱敌人，从而减少部队承受的伤害</li>
+        <li>对玩家部队造成伤害的许多敌方单位都是施法单位</li>
+        <li>玩家部队在后期会形成强大的死亡之球，往往能在承受大量伤害前消灭敌人</li>
     </ul>
-    <p>There are some cases where a player should invest in armor upgrades, such as:</p>
+    <p>不过，在某些情况下仍值得投资护甲升级，例如：</p>
     <ul>
-        <li>They are cheap (<a href="/commanders/kerrigan">Kerrigan</a>)</li>
-        <li>They provide additional bonuses such as extra HP (<a href="/commanders/raynor">Raynor</a>, <a href="/commanders/tychus">Tychus</a>)</li>
+        <li>升级费用很低（<a href="/commanders/kerrigan">凯瑞甘</a>）</li>
+        <li>还能提供额外生命值等其他加成（<a href="/commanders/raynor">雷诺</a>、<a href="/commanders/tychus">泰凯斯</a>）</li>
     </ul>
-    <p>A video that explains this in more detail is below:</p>
+    <p>以下视频提供了更详细的说明：</p>
     <iframe width="475" height="268" src="https://www.youtube.com/embed/IsPSXlj8Nh8" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-    <h3 id="checkingcreep">Checking Creep</h3>
-    <p>Checking creep for the presence of Zerg can allow you to adjust your opening to better counter the potential attack waves you will face at the start of the mission. Press Alt+T. This changes the minimap to a Terrain view. If you see creep, you'll be facing a Zerg composition. If you don't see creep, you'll be facing a Protoss or a Terran composition. The below image shows you an example:</p>
-    <img src="/images/newplayer/creepminimap.jpg" alt="Creep on Minimap">
-    <p>Note that for <a href="/missions/scytheofamon">Scythe of Amon</a>, creep will <i>always</i> be present. However, the <i>positions</i> of the creep will allow you to uniquely identify which enemy race you'll be playing against.</p>
-    <h3 id="knowledge">Knowledge is Power</h3>
-    <p>In Co-op, knowledge of the game mode can significantly reduce the challenges that new players face. While some interactions between Co-op mechanics are rare, good Co-op players should at least be aware of:</p>
+    <h3 id="checkingcreep">检查菌毯</h3>
+    <p>检查地图上是否存在异虫菌毯，可以让你调整开局，更好地克制任务开始时可能遇到的进攻波次。按 Alt+T 将小地图切换为地形视图。如果看到菌毯，你将面对异虫阵容；如果没有菌毯，则会面对星灵或人类阵容。下图展示了一个示例：</p>
+    <img src="/images/newplayer/creepminimap.jpg" alt="小地图上的菌毯">
+    <p>请注意，在<a href="/missions/scytheofamon">埃蒙之镰</a>中，地图上<i>始终</i>存在菌毯。不过，你可以根据菌毯的<i>位置</i>准确判断即将面对的敌方种族。</p>
+    <h3 id="knowledge">知识就是力量</h3>
+    <p>在合作任务中，了解该模式可以显著降低新玩家面临的挑战。虽然部分机制之间的互动并不常见，但优秀的合作任务玩家至少应该了解：</p>
     <ul>
-        <li>Mission Timings (most importantly, the first attack wave)</li>
-        <li><a href="/guides/enemycomps">Enemy Compositions</a></li>
-        <li><a href="/guides/enemycomps">Hybrid Types</a>, their abilities and their start locations on the map</li>
-        <li>Attack Wave Spawn points</li>
-        <li>Commander Fast-Expand techniques (like <a href="/commanders/zeratul">Zeratul</a>)</li>
-        <li>Commander Topbars</li>
-        <li>Commander Passives</li>
+        <li>任务时间点（尤其是第一波进攻）</li>
+        <li><a href="/guides/enemycomps">敌方阵容</a></li>
+        <li><a href="/guides/enemycomps">混合体类型</a>、它们的技能及其在地图上的初始位置</li>
+        <li>进攻波次出生点</li>
+        <li>指挥官速开分矿技巧（例如<a href="/commanders/zeratul">泽拉图</a>）</li>
+        <li>指挥官顶部技能</li>
+        <li>指挥官被动能力</li>
     </ul>
-    <h3 id="attacktypes">Note the Different Attack Types</h3>
-    <p>In Co-op, Point Defense Drones and Point Defense Missiles frequently appear, which can affect your effectiveness in a mission, especially when dealing with <a href="/resources/mutators">Mutators</a>. It is important to be aware of what Hitscan and Projectile attacks are and what the difference between them is.</p>
-    <p>These terms refer to the types of attack a unit has and may be a factor in unit selection against certain <a href="/resources/mutators">mutators</a> such as Missile Command.</p>
-    <p>In short, a Hitscan attack deals damage as soon as it is fired. A Projectile attack has a physcial projectile that must travel to its target to deal damage. For more details on the differences, you can watch the video below:</p>
+    <h3 id="attacktypes">留意不同攻击类型</h3>
+    <p>合作任务中经常出现点防御无人机和点防御导弹，它们会影响你在任务中的作战效率，尤其是在应对<a href="/resources/mutators">突变因子</a>时。了解即时命中攻击与弹道攻击的含义和区别非常重要。</p>
+    <p>这些术语描述单位的攻击类型；面对“导弹指挥”等特定<a href="/resources/mutators">突变因子</a>时，它们可能会影响你的单位选择。</p>
+    <p>简单来说，即时命中攻击会在出手瞬间造成伤害；弹道攻击则会发射实体弹体，弹体必须飞抵目标才能造成伤害。有关两者区别的更多细节，请观看以下视频：</p>
     <iframe width="475" height="268" src="https://www.youtube.com/embed/OKg_hJ-ldD8" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <h3 id="workercounts">Worker Counts</h3>
-    <p>In Versus games, the worker count displayed at the top of the Primary Structure denotes the worker count that corresponds to the Optimal mining rate. However, in Co-op, the value denotes the Maximum mining rate. More information on these mining rates can be found in the <a href="/guides/buildordertheory">Build Order Theory</a> Guide.</p>
-    <img src="/images/newplayer/workercounts.jpg" alt="Worker Counts">
+    <h3 id="workercounts">工人数量</h3>
+    <p>在对战模式中，主基地上方显示的工人数量对应最优采集效率；但在合作任务中，该数值对应最大采集效率。有关这些采集效率的更多信息，请参阅<a href="/guides/buildordertheory">建造顺序理论</a>指南。</p>
+    <img src="/images/newplayer/workercounts.jpg" alt="工人数量">
 <script src="/scripts/nav.js"></script>
 <?= endContent() ?>

@@ -5,9 +5,9 @@
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-    <title>Starcraft 2 Co-op - Unit Stats</title>
-    <meta name="description" content="A calculator to provide you with unit stats before and after upgrades for every unit in Co-op. Also includes data on Amon's units.">
-    <meta name="keywords" content="Starcraft co-op unit stats">
+    <title>《星际争霸 II》合作任务 - 单位属性</title>
+    <meta name="description" content="计算合作任务中各单位升级前后的属性，也包含埃蒙单位的数据。">
+    <meta name="keywords" content="星际争霸 II, 合作任务, 单位属性">
     <link rel="canonical" href="https://starcraft2coop.com/tools/units">
     <style>
         .units td {
@@ -87,23 +87,23 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         }
     </style>
 <?= startContent() ?>
-    <h1>Units</h1>
+    <h1>单位</h1>
     <div id="units"></div>
     <script src="/scripts/units.js?v2.1" defer></script>
     <script src="/scripts/tooltips.js" defer></script>
 
-    <h3>Notes about the data</h3>
+    <h3>数据说明</h3>
     <ul>
-        <li>Data only shows base stats and upgrades that affect those base stats. Upgrades that affect skill cooldowns are not displayed.</li>
-        <li>All evolutions (e.g. Abathur's Devourer, Dehaka's Primal Combat units) build times only includes the evolution time, and not the build time of the parent units.</li>
-        <li>Any units with charge-based production (e.g. Artanis) uses the charge cooldown time as the build time. For Stukov, the unit's build time is displayed, and not the charge time.</li>
-        <li>For multiple-spawned units (e.g. Zerglings), resource costs are divided by the number of units spawned.</li>
-        <li>For buffs that have multiple stacks (e.g. Biomass), the maximum buff value will be calculated.</li>
-        <li>Only upgrades that change the units weapon stats are listed. For this reason, damage reduction like Fenix's Network Administrator is not shown.</li>
-        <li>Since numbers are calculated, there may be small rounding errors.</li>
+        <li>数据只显示基础属性，以及会影响这些基础属性的升级。影响技能冷却时间的升级不会显示。</li>
+        <li>所有进化单位（例如阿巴瑟的吞噬者、德哈卡的原始战斗单位）的建造时间只包含进化耗时，不包含前置单位的建造时间。</li>
+        <li>使用充能次数生产的单位（例如阿塔尼斯）以充能冷却时间作为建造时间。斯托科夫的单位显示实际建造时间，而非充能时间。</li>
+        <li>一次生成多个的单位（例如跳虫），资源消耗会除以生成数量。</li>
+        <li>可叠加多层的强化效果（例如生物质）按最大层数计算。</li>
+        <li>只列出会改变单位武器属性的升级。因此，菲尼克斯“网络管理员”等伤害减免效果不会显示。</li>
+        <li>数值由计算得出，可能存在轻微的舍入误差。</li>
     </ul>
     <p>
-        If you prefer <a href="/tools/unitstats">the old unit stats page, it's still available</a>.
+        如果你更喜欢<a href="/tools/unitstats">旧版单位属性页面，仍可在此访问</a>。
     </p>
 
 <?= endContent() ?>

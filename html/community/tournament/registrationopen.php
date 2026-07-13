@@ -1,3 +1,3 @@
 <?php
 
-die("We no longer do tournament registrations.");
+die("我们已不再接受锦标赛报名。");

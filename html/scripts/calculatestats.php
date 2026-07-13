@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
 if (!isset($_GET['mode'])) {
-    echo("Error!");
+    echo("错误！");
     return;
 } else {
     $mode = $_GET['mode'];
@@ -31,8 +31,8 @@ switch ($mode) {
 
         $unitsList = "<ul>\n";
 
-        foreach (get_playerunit_basenames($commander) as $basename) {
-            $unitsList .= "<li>" . $basename . "</li>\n";
+        foreach (get_playerunit_display_names($commander) as $basename => $displayName) {
+            $unitsList .= "<li data-unit='" . htmlspecialchars($basename, ENT_QUOTES) . "'>" . htmlspecialchars($displayName) . "</li>\n";
         }
         $unitsList .= "</ul>";
         echo($unitsList);
@@ -49,7 +49,7 @@ switch ($mode) {
 
         $unitStats = getUnitStats($commander, $unit);
         if (count($unitStats) == 0) {
-            echo("Error!");
+            echo("错误！");
             return;
         }
         $unitStats = standardizeStatsTemplate($unit, $unitStats);
@@ -164,7 +164,7 @@ switch ($mode) {
         return;
 
     default:
-        echo("Error!");
+        echo("错误！");
         return;
 }
 
@@ -174,47 +174,53 @@ function convertStatsToOutput($unitStats)
     $modeStats = ['Armor','Move_Speed','Vision','Range','Attack_Speed','Hits','Damage'];
     $outputString = "";
     $outputString .= "<span class='title'>" . $unitStats['unitName'] . "</span>\n";
-    $outputString .= "<span style='text-align:center;display:block'><img src='/images/commanderdata/unitupgrades/iconmineral.png' alt='Minerals'>/<img src='/images/commanderdata/unitupgrades/icongas_" . strtolower($unitStats['race']) . ".png' alt='Gas'><br>";
+    $outputString .= "<span style='text-align:center;display:block'><img src='/images/commanderdata/unitupgrades/iconmineral.png' alt='晶体矿'>/<img src='/images/commanderdata/unitupgrades/icongas_" . strtolower($unitStats['race']) . ".png' alt='高能瓦斯'><br>";
     $outputString .= "{$unitStats['mineralCost']}/{$unitStats['vespeneCost']}</span><br>";
-    $outputString .= "<span style='display:block'><img style='margin-right:5px;' src='/images/commanderdata/unitupgrades/icontime_" . strtolower($unitStats['race']) . ".png' alt='Build Time'>{$unitStats['time']}</span><br>";
-    $outputString .= "<span style='display:block'><img style='margin-right:5px;' src='/images/commanderdata/unitupgrades/iconsupply_" . strtolower($unitStats['race']) . ".png' alt='Supply'>{$unitStats['supply']}</span><br>";
+    $outputString .= "<span style='display:block'><img style='margin-right:5px;' src='/images/commanderdata/unitupgrades/icontime_" . strtolower($unitStats['race']) . ".png' alt='建造时间'>{$unitStats['time']}</span><br>";
+    $outputString .= "<span style='display:block'><img style='margin-right:5px;' src='/images/commanderdata/unitupgrades/iconsupply_" . strtolower($unitStats['race']) . ".png' alt='补给'>{$unitStats['supply']}</span><br>";
 
     foreach ($standardStats as $stat) {
         if (isset($unitStats[$stat])) {
             if ($unitStats[$stat] != 0 || strpos($unitStats[$stat], "modified") !== false) {
                 $statClass = str_replace("_", "", $stat);
-                $statTitle = str_replace("_", " ", $stat);
+                $statTitle = ['Shields' => '护盾', 'Shield_Armor' => '护盾护甲', 'HP' => '生命值', 'Armor' => '护甲', 'Energy' => '能量', 'Move_Speed' => '移动速度', 'Vision' => '视野'][$stat];
                 $outputString .= "<span id='unit{$statClass}'>$statTitle: {$unitStats[$stat]}</span><br>\n";
             }
         }
     }
 
-    $outputString .= "<span class='title'>Tags</span>\n" . str_replace(",", "<br>\n", $unitStats['Tags']);
+    $translatedTags = str_replace(
+        ['Light', 'Armored', 'Biological', 'Mechanical', 'Psionic', 'Heroic', 'Massive', 'Structure', 'Air', 'Ground'],
+        ['轻甲', '重甲', '生物', '机械', '灵能', '英雄', '重型', '建筑', '空中', '地面'],
+        $unitStats['Tags']
+    );
+    $outputString .= "<span class='title'>标签</span>\n" . str_replace(",", "<br>\n", $translatedTags);
 
     foreach ($unitStats['modes'] as $mode) {
         $outputString .= "<span class='title'>{$mode['modeName']}</span>\n";
         foreach ($modeStats as $stat) {
             if (isset($mode[$stat])) {
                 $statClass = str_replace("_", "", $stat);
-                $statTitle = str_replace("_", " ", $stat);
+                $statTitle = ['Armor' => '护甲', 'Move_Speed' => '移动速度', 'Vision' => '视野', 'Range' => '射程', 'Attack_Speed' => '攻击速度', 'Hits' => '攻击次数', 'Damage' => '伤害'][$stat];
                 $outputString .= "<span id='unit{$statClass}'>$statTitle: {$mode[$stat]}</span><br>\n";
             }
         }
         if (isset($mode['attribute'])) {
             foreach ($mode['attribute'] as $index => $attribute) {
                 if ($attribute == "None") {
-                    $attributeString = "Damage: ";
+                    $attributeString = "伤害：";
                 } else {
-                    $attributeString = "(vs.$attribute): ";
+                    $translatedAttribute = ['Light' => '轻甲', 'Armored' => '重甲', 'Biological' => '生物', 'Mechanical' => '机械', 'Psionic' => '灵能', 'Heroic' => '英雄', 'Massive' => '重型', 'Structure' => '建筑'][$attribute] ?? $attribute;
+                    $attributeString = "（对$translatedAttribute）：";
                 }
 
-                $outputString .= $attributeString . $mode['damage'][$index] . " (" . $mode['damageResult'][$index] . " DPS)<br>\n";
+                $outputString .= $attributeString . $mode['damage'][$index] . "（" . $mode['damageResult'][$index] . " 每秒伤害）<br>\n";
             }
         }
     }
 
     if (isset($unitStats['Notes'])) {
-        $outputString .= "<span class='title'>Notes</span>\n{$unitStats['Notes']}";
+        $outputString .= "<span class='title'>备注</span>\n{$unitStats['Notes']}";
     }
 
     return $outputString;
@@ -224,7 +230,7 @@ function standardizeStatsTemplate($unit, $unitStats)
     $returnArray = [];
 
     $returnArray['race'] = $unitStats[0]['race'];
-    $returnArray['unitName'] = $unit;
+    $returnArray['unitName'] = preg_replace('/（[^）]+）$/u', '', $unitStats[0]['name']);
     $returnArray['mineralCost'] = $unitStats[0]['mcost'];
     $returnArray['vespeneCost'] = $unitStats[0]['vcost'];
     $returnArray['time'] = $unitStats[0]['buildtime'];
@@ -267,7 +273,7 @@ function standardizeStatsTemplate($unit, $unitStats)
     $returnArray['modes'] = [];
     foreach ($unitStats as $mode) {
         $tempArray = [];
-        $tempArray['modeName'] = trim(str_replace($unit, "", $mode['name']));
+        $tempArray['modeName'] = trim(str_replace($unit, "", $mode['_original_name']));
         if ($tempArray['modeName'] == "") {
             $tempArray['modeName'] = "Weapon";
         }
@@ -324,7 +330,7 @@ function compareStats($oldStats, &$newStats)
 function handlePostExceptions($unitStats, &$upgradesArray)
 {
     foreach ($upgradesArray as $upgrade) {
-        if ($upgrade['name'] == "Advanced Siege Tech") {
+        if ($upgrade['_original_name'] == "Advanced Siege Tech") {
             $armorValue = $unitStats['Armor'];
             unset($unitStats['Armor']);
             foreach ($unitStats['modes'] as &$mode) {
@@ -335,7 +341,7 @@ function handlePostExceptions($unitStats, &$upgradesArray)
                 }
             }
         }
-        if ($upgrade['name'] == "2") {
+        if ($upgrade['_original_name'] == "2") {
             if ($upgrade['unit'] == "Shock Division" && $upgrade['modifier'] == "Vision") {
                 $visionValue = $unitStats['Vision'];
                 unset($unitStats['Vision']);
@@ -348,7 +354,7 @@ function handlePostExceptions($unitStats, &$upgradesArray)
                 }
             }
         }
-        if ($upgrade['name'] == "Redline Power Cells") {
+        if ($upgrade['_original_name'] == "Redline Power Cells") {
             $unitStats['modes'][0]['damage'][0] += 60;
             $dps = number_format(floatval($unitStats['modes'][0]['damage'][0]) / $unitStats['modes'][0]['Attack_Speed'], 2);
             $unitStats['modes'][0]['damageResult'][0] = $dps;
@@ -841,10 +847,10 @@ function getUnitUpgradesOutput($commander, $unit)
             }
         }
         if ($upgradeCount == 0) {
-            $upgradeString .= "<span style='font-size:0.75em'>No Tech Upgrades Available</span>";
+            $upgradeString .= "<span style='font-size:0.75em'>没有可用的科技升级</span>";
         }
     } else {
-        $upgradeString .= "<span style='font-size:0.75em'>No Tech Upgrades Available</span>";
+        $upgradeString .= "<span style='font-size:0.75em'>没有可用的科技升级</span>";
     }
 
     $elementNames = [];
@@ -871,7 +877,8 @@ function getUnitUpgradesOutput($commander, $unit)
 
     foreach ($elementNames as $elementName) {
         $divName = strtolower(str_replace(" ", "", $elementName));
-        $upgradeString .= "<br><p>$elementName:</p>";
+        $elementTitle = ['Rank' => '军衔', 'Fragments Collected' => '已收集神器碎片', 'Attack Upgrade Level' => '攻击升级等级', 'Armor Upgrade Level' => '护甲升级等级', 'Shield Upgrade Level' => '护盾升级等级'][$elementName];
+        $upgradeString .= "<br><p>$elementTitle：</p>";
         $upgradeString .= '<label><input type="radio" name="' . $divName . '" value="0" checked>0</label>';
         for ($i = 1; $i <= $elementCount; $i++) {
             $upgradeString .= '<label><input type="radio" name="' . $divName . '" value="' . $i . '">' . $i . '</label>';
@@ -880,7 +887,7 @@ function getUnitUpgradesOutput($commander, $unit)
 
     if (count($masteryList) > 0) {
         $upgradeString .= "<br><div class='masteryContainer'>";
-        $upgradeString .= "<u>Masteries:</u>";
+        $upgradeString .= "<u>精通：</u>";
         $counter = 0;
         foreach ($masteryList as $mastery) {
             $upgradeString .= "<br><p>{$mastery['name']}</p>";
@@ -892,9 +899,9 @@ function getUnitUpgradesOutput($commander, $unit)
 
     if (count($prestigeList) > 0) {
         $upgradeString .= "<br><div class='prestigeContainer'>";
-        $upgradeString .= "<u>Prestiges:</u>";
+        $upgradeString .= "<u>威望：</u>";
         $counter = 1;
-        $motto = strtolower(str_replace([" ","-","(",")"], "", $basePrestige));
+        $motto = '';
         $upgradeString .= "<br><label><input type='radio' name='{$commander}Prestige' value='$motto' checked>$basePrestige</label>";
         foreach ($commanderPrestiges as $prestigeName) {
             if (isset($prestigeList[str_replace(" ", "", $prestigeName)])) {
@@ -908,7 +915,7 @@ function getUnitUpgradesOutput($commander, $unit)
     }
 
     $upgradeString .= "</form><br>";
-    $upgradeString .= "<button type='button' id='recalculate'>Recalculate Stats</button>";
+    $upgradeString .= "<button type='button' id='recalculate'>重新计算属性</button>";
     $upgradeString .= "</div>";
     return $upgradeString;
 }
@@ -923,17 +930,17 @@ function fixNumber($number)
 function checkVariable($var, $checktype)
 {
     if (!isset($var)) {
-        echo("Error!");
+        echo("错误！");
         die();
     }
     if ($checktype == "text") {
         if (ctype_alnum(str_replace([' ','.'], '', $var)) === false) {
-            echo("Error!");
+            echo("错误！");
             die();
         }
     } else {
         if (ctype_digit($var) == false) {
-            echo("Error!");
+            echo("错误！");
             die();
         }
     }

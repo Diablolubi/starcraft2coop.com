@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
@@ -9,11 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-    <link rel="stylesheet" href="/styles/global.css?v=70e9bc">
+    <link rel="stylesheet" href="/styles/global.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <title>Starcraft 2 Co-op - Downloads</title>
-  <meta name="description" content="A list of free tools and software for community use. Some programming experience will be required in order to utilize the code provided.">
-  <meta name="keywords" content="Starcraft co-op downloads">
+      <title>《星际争霸 II》合作任务 - 下载</title>
+  <meta name="description" content="供社区免费使用的工具和软件列表；使用所提供的代码需要一定编程经验。">
+  <meta name="keywords" content="星际争霸 II, 合作任务, 工具, 下载">
   <link rel="canonical" href="https://starcraft2coop.com/tools/downloads">
   <style>
         #output{
@@ -27,105 +27,105 @@
 <body>
 
 <header id="header">
-    <img src="/images/starcraft2coop.png" alt="Starcraft II Co-op">
+    <img src="/images/starcraft2coop.png" alt="StarCraft II 合作任务">
 </header>
 <script>
 if (document.location.host === 'dev.starcraft2coop.com') {
-    document.write('<div class="construction">THIS IS THE TEST SITE. (<a href="https://starcraft2coop.com">Go to the real site</a>)</div>');
+    document.write('<div class="construction">这里是测试站点。（<a href="https://starcraft2coop.com">前往正式站点</a>）</div>');
 }
 </script>
 <nav id="menu">
 <ul id="topmenu">
-    <li class="normal"><a href="/" title="Home">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>Home</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+    <li class="normal"><a href="/" title="首页">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>首页</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
     </a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-commanders">Commanders</a></li>
-    <li class="highlight"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-resources">Guides</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-missions">Missions</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-about">About</a></li>
-    <li class="normal"><button type="button" id="site-search-button" title="Search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Search</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-commanders">指挥官</a></li>
+    <li class="highlight"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-resources">攻略</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-missions">任务</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-about">关于</a></li>
+    <li class="normal"><button type="button" id="site-search-button" title="搜索">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>搜索</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
         <span class="search-shortcut" aria-hidden="true"></span>
     </button></li>
 </ul>
 <div id="container">
     <div id="commanderList" class="submenu">
-        <a href="/commanders/raynor" class="normal"><img src="/images/commanderportraits/raynorportrait.png" alt="Raynor"></a>
-        <a href="/commanders/kerrigan" class="normal"><img src="/images/commanderportraits/kerriganportrait.png" alt="Kerrigan"></a>
-        <a href="/commanders/artanis" class="normal"><img src="/images/commanderportraits/artanisportrait.png" alt="Artanis"></a>
-        <a href="/commanders/swann" class="normal"><img src="/images/commanderportraits/swannportrait.png" alt="Swann"></a>
-        <a href="/commanders/zagara" class="normal"><img src="/images/commanderportraits/zagaraportrait.png" alt="Zagara"></a>
-        <a href="/commanders/vorazun" class="normal"><img src="/images/commanderportraits/vorazunportrait.png" alt="Vorazun"></a>
-        <a href="/commanders/karax" class="normal"><img src="/images/commanderportraits/karaxportrait.png" alt="Karax"></a>
-        <a href="/commanders/abathur" class="normal"><img src="/images/commanderportraits/abathurportrait.png" alt="Abathur"></a>
-        <a href="/commanders/alarak" class="normal"><img src="/images/commanderportraits/alarakportrait.png" alt="Alarak"></a>
-        <a href="/commanders/nova" class="normal"><img src="/images/commanderportraits/novaportrait.png" alt="Nova"></a>
-        <a href="/commanders/stukov" class="normal"><img src="/images/commanderportraits/stukovportrait.png" alt="Stukov"></a>
-        <a href="/commanders/fenix" class="normal"><img src="/images/commanderportraits/fenixportrait.png" alt="Fenix"></a>
-        <a href="/commanders/dehaka" class="normal"><img src="/images/commanderportraits/dehakaportrait.png" alt="Dehaka"></a>
-        <a href="/commanders/horner" class="normal"><img src="/images/commanderportraits/hornerportrait.png" alt="Han &amp; Horner"></a>
-        <a href="/commanders/tychus" class="normal"><img src="/images/commanderportraits/tychusportrait.png" alt="Tychus"></a>
-        <a href="/commanders/zeratul" class="normal"><img src="/images/commanderportraits/zeratulportrait.png" alt="Zeratul"></a>
-        <a href="/commanders/stetmann" class="normal"><img src="/images/commanderportraits/stetmannportrait.png" alt="Stetmann"></a>
-        <a href="/commanders/mengsk" class="normal"><img src="/images/commanderportraits/mengskportrait.png" alt="Mengsk"></a>
+        <a href="/commanders/raynor" class="normal"><img src="/images/commanderportraits/raynorportrait.png" alt="雷诺"></a>
+        <a href="/commanders/kerrigan" class="normal"><img src="/images/commanderportraits/kerriganportrait.png" alt="凯瑞甘"></a>
+        <a href="/commanders/artanis" class="normal"><img src="/images/commanderportraits/artanisportrait.png" alt="阿塔尼斯"></a>
+        <a href="/commanders/swann" class="normal"><img src="/images/commanderportraits/swannportrait.png" alt="斯旺"></a>
+        <a href="/commanders/zagara" class="normal"><img src="/images/commanderportraits/zagaraportrait.png" alt="扎加拉"></a>
+        <a href="/commanders/vorazun" class="normal"><img src="/images/commanderportraits/vorazunportrait.png" alt="沃拉尊"></a>
+        <a href="/commanders/karax" class="normal"><img src="/images/commanderportraits/karaxportrait.png" alt="凯拉克斯"></a>
+        <a href="/commanders/abathur" class="normal"><img src="/images/commanderportraits/abathurportrait.png" alt="阿巴瑟"></a>
+        <a href="/commanders/alarak" class="normal"><img src="/images/commanderportraits/alarakportrait.png" alt="阿拉纳克"></a>
+        <a href="/commanders/nova" class="normal"><img src="/images/commanderportraits/novaportrait.png" alt="诺娃"></a>
+        <a href="/commanders/stukov" class="normal"><img src="/images/commanderportraits/stukovportrait.png" alt="斯托科夫"></a>
+        <a href="/commanders/fenix" class="normal"><img src="/images/commanderportraits/fenixportrait.png" alt="菲尼克斯"></a>
+        <a href="/commanders/dehaka" class="normal"><img src="/images/commanderportraits/dehakaportrait.png" alt="德哈卡"></a>
+        <a href="/commanders/horner" class="normal"><img src="/images/commanderportraits/hornerportrait.png" alt="汉与霍纳"></a>
+        <a href="/commanders/tychus" class="normal"><img src="/images/commanderportraits/tychusportrait.png" alt="泰凯斯"></a>
+        <a href="/commanders/zeratul" class="normal"><img src="/images/commanderportraits/zeratulportrait.png" alt="泽拉图"></a>
+        <a href="/commanders/stetmann" class="normal"><img src="/images/commanderportraits/stetmannportrait.png" alt="斯台特曼"></a>
+        <a href="/commanders/mengsk" class="normal"><img src="/images/commanderportraits/mengskportrait.png" alt="蒙斯克"></a>
     </div>
     <div id="missionList" class="submenu">
-        <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">Chain of Ascension</div></a>
-        <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">Cradle of Death</div></a>
-        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">Dead of Night</div></a>
-        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">Lock &amp; Load</div></a>
-        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">Malwarfare</div></a>
-        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">Miner Evacuation</div></a>
-        <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">Mist Opportunities</div></a>
-        <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">Oblivion Express</div></a>
-        <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">Part &amp; Parcel</div></a>
-        <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">Rifts to Korhal</div></a>
-        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">Scythe of Amon</div></a>
-        <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">Temple of the Past</div></a>
-        <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">The Vermillion Problem</div></a>
-        <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">Void Launch</div></a>
-        <a href="/missions/voidthrashing" class="normal"><div class="mapImg mapImg-voidthrashing">Void Thrashing</div></a>
+        <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">飞升之链</div></a>
+        <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">死亡摇篮</div></a>
+        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">亡者之夜</div></a>
+        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">天锁</div></a>
+        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">恶意代码</div></a>
+        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">疏散矿工</div></a>
+        <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">机会渺茫</div></a>
+        <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">湮灭快车</div></a>
+        <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">聚铁成兵</div></a>
+        <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">克哈裂痕</div></a>
+        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">埃蒙之镰</div></a>
+        <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">往日神庙</div></a>
+        <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">熔火危机</div></a>
+        <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">虚空降临</div></a>
+        <a href="/missions/voidthrashing" class="normal"><div class="mapImg mapImg-voidthrashing">虚空撕裂</div></a>
     </div>
     <div id="resources" class="submenu">
         <div class="submenu-with-sections"><div class="submenu-section">
-            <strong>Resources:</strong>
+            <strong>资料：</strong>
             <ul>
-                <li class="normal"><a href="/mutators/">Mutators</a></li>
-                <li class="normal"><a href="/resources/weeklymutations">Weekly&nbsp;Mutations</a></li>
-                <li class="normal"><a href="/resources/brutal">Brutal+</a></li>
-                <li class="normal"><a href="/units/">Unit&nbsp;Stats</a></li>
+                <li class="normal"><a href="/mutators/">突变因子</a></li>
+                <li class="normal"><a href="/resources/weeklymutations">每周突变</a></li>
+                <li class="normal"><a href="/resources/brutal">残酷+</a></li>
+                <li class="normal"><a href="/units/">单位数据</a></li>
             </ul>
         </div><div class="submenu-section">
-            <strong>Guides:</strong>
+            <strong>攻略：</strong>
             <ul>
-                <li class="normal"><a href="/guides/buildordertheory">Build&nbsp;Order&nbsp;Theory</a></li>
-                <li class="normal"><a href="/guides/enemycomps">Enemy&nbsp;Compositions</a></li>
-                <li class="normal"><a href="/guides/generaltips">General&nbsp;Tips</a></li>
-                <li class="normal"><a href="/guides/newplayer">New&nbsp;Players</a></li>
-                <li class="normal"><a href="/guides/youtube">Youtube</a></li>
+                <li class="normal"><a href="/guides/buildordertheory">建造顺序理论</a></li>
+                <li class="normal"><a href="/guides/enemycomps">敌方阵容</a></li>
+                <li class="normal"><a href="/guides/generaltips">通用技巧</a></li>
+                <li class="normal"><a href="/guides/newplayer">新手指南</a></li>
+                <li class="normal"><a href="/guides/youtube">YouTube</a></li>
             </ul>
         </div><div class="submenu-section">
-            <strong>Miscellaneous:</strong>
+            <strong>其他：</strong>
             <ul>
-                <li class="normal"><a href="/resources/achievements">Achievements</a></li>
-                <li class="normal"><a href="/resources/ailogic">AI&nbsp;Logic</a></li>
-                <li class="normal"><a href="/resources/bugs">Bugs</a></li>
-                <li class="normal"><a href="/resources/deathprevention">Death&nbsp;Prevent&nbsp;Effects</a></li>
-                <li class="normal"><a href="/resources/eastereggs">Easter&nbsp;Eggs</a></li>
-                <li class="normal"><a href="/resources/levels">Levels</a></li>
-                <li class="normal"><a href="/resources/patchdata">Patch&nbsp;Data</a></li>
-                <li class="highlight"><a href="/tools/downloads">Downloads</a></li>
-                <li class="normal"><a href="/tools/masterybreakpoints">Mastery&nbsp;Breakpoints</a></li>
+                <li class="normal"><a href="/resources/achievements">成就</a></li>
+                <li class="normal"><a href="/resources/ailogic">人工智能逻辑</a></li>
+                <li class="normal"><a href="/resources/bugs">错误</a></li>
+                <li class="normal"><a href="/resources/deathprevention">免死效果</a></li>
+                <li class="normal"><a href="/resources/eastereggs">彩蛋</a></li>
+                <li class="normal"><a href="/resources/levels">等级</a></li>
+                <li class="normal"><a href="/resources/patchdata">补丁数据</a></li>
+                <li class="highlight"><a href="/tools/downloads">下载</a></li>
+                <li class="normal"><a href="/tools/masterybreakpoints">精通阈值</a></li>
             </ul>
         </div></div>
     </div>
     <div id="about" class="submenu">
         <ul>
             <!--<li class="normal"><a href="/about/contact">Contact</a></li>-->
-            <li class="normal"><a href="/about/faq">FAQ</a></li>
-            <li class="normal"><a href="/about/links">Links</a></li>
+            <li class="normal"><a href="/about/faq">常见问题</a></li>
+            <li class="normal"><a href="/about/links">相关链接</a></li>
             <!--li class="normal"><a href="https://www.youtube.com/c/Starcraft2Coop" rel="nofollow">Youtube</a></li-->
-            <li class="normal"><a href="/about/stats">Misc. Stats</a></li>
+            <li class="normal"><a href="/about/stats">杂项统计</a></li>
         </ul>
     </div>
     <!--<div id="imgs">
@@ -176,25 +176,25 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         }
     })(jQuery);
 </script>
-<script src="/scripts/search.js?v=3646f5" defer></script>
+<script src="/scripts/search.js" defer></script>
 <div id="content">
-        <h1>Downloads (Co-op Assistant and Replay Parsing Script)</h1>
+        <h1>下载（合作任务助手与录像解析脚本）</h1>
     <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#coopassistant">Co-op Overlay</a></p>
+        <h2>本页章节</h2>
+        <p><a href="#coopassistant">合作任务叠加界面</a></p>
         <!--
         <p><a href="#coopassistant">Co-op Assistant</a></p>
         <p><a href="#download1">Download</a></p>
         <p><a href="#usage1">Usage Notes</a></p>
         <p><a href="#config1">Configuring the Program</a></p>-->
-        <p><a href="#replaySummarizer">Co-op Replay Data Summarizer</a></p>
-        <p><a href="#download2">Download</a></p>
-        <p><a href="#usage2">Usage Notes</a></p>
-        <p><a href="#updates2">Updates</a></p>
-        <p><a href="#other2">Other Notes</a></p>
+        <p><a href="#replaySummarizer">合作任务录像数据汇总器</a></p>
+        <p><a href="#download2">下载</a></p>
+        <p><a href="#usage2">使用说明</a></p>
+        <p><a href="#updates2">更新</a></p>
+        <p><a href="#other2">其他说明</a></p>
     </div>
-    <h2 id="coopassistant">Co-op Overlay</h2>
-    <p><a href="https://github.com/FluffyMaguro/SC2_Coop_overlay" rel="nofollow">Maguro's Coop Overlay</a> is recommended for viewing game statistics and automatically uploading replay files to the site.</p>
+    <h2 id="coopassistant">合作任务叠加界面</h2>
+    <p>推荐使用<a href="https://github.com/FluffyMaguro/SC2_Coop_overlay" rel="nofollow">Maguro 的合作任务叠加界面</a>查看游戏统计信息，并自动将录像文件上传至网站。</p>
     <!--
     <h2 id="coopassistant">Co-op Assistant</h2>
     <p>This is a Windows application that provides two pieces of functionality which can be turned on/off as required:</p>
@@ -288,47 +288,45 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
     </form>
     -->
-    <h2 id="replaySummarizer">Co-op Replay Data Summarizer</h2>
-    <p>This is a Python script which takes a Replays folder and generates a delimited text file summarizing the replay data for co-op games, which can be imported for further data analysis. Below is an example of the output:</p>
+    <h2 id="replaySummarizer">合作任务录像数据汇总器</h2>
+    <p>这是一个 Python 脚本，可读取录像文件夹并生成分隔符文本文件，汇总合作任务录像数据，供导入后进一步分析。输出示例如下：</p>
     <div id="output">
-        <p>Date Played&#9;Map&#9;Commander&#9;Level&#9;Ally Commander&#9;Ally Level&#9;Game Type&#9;Result&#9;Game Length<br>
-            2019-02-18&#9;Chain of Ascension&#9;Horner&#9;0&#9;Stukov&#9;34&#9;Standard&#9;Lose&#9;1552<br>
-            2019-02-15&#9;Cradle of Death&#9;Karax&#9;0&#9;Abathur&#9;25&#9;Standard&#9;Win&#9;1359<br>
-            2019-02-15&#9;Cradle of Death&#9;Vorazun&#9;0&#9;Zeratul&#9;0&#9;Standard&#9;Win&#9;1538<br>
-            2019-02-27&#9;Temple of the Past&#9;Horner&#9;71&#9;Karax&#9;1000&#9;Mutators&#9;Win&#9;1591<br>
-            2019-02-24&#9;The Vermillion Problem&#9;Dehaka&#9;57&#9;Raynor&#9;0&#9;Standard&#9;Lose&#9;1536<br>
-            2019-02-17&#9;Void Launch&#9;Swann&#9;0&#9;Fenix&#9;73&#9;Standard&#9;Win&#9;1465</p>
+        <p>游玩日期&#9;地图&#9;指挥官&#9;等级&#9;盟友指挥官&#9;盟友等级&#9;游戏类型&#9;结果&#9;游戏时长<br>
+            2019-02-18&#9;升格之链&#9;霍纳&#9;0&#9;斯托科夫&#9;34&#9;标准&#9;失败&#9;1552<br>
+            2019-02-15&#9;死亡摇篮&#9;凯拉克斯&#9;0&#9;阿巴瑟&#9;25&#9;标准&#9;胜利&#9;1359<br>
+            2019-02-15&#9;死亡摇篮&#9;沃拉尊&#9;0&#9;泽拉图&#9;0&#9;标准&#9;胜利&#9;1538<br>
+            2019-02-27&#9;往日神庙&#9;霍纳&#9;71&#9;凯拉克斯&#9;1000&#9;突变因子&#9;胜利&#9;1591<br>
+            2019-02-24&#9;熔火危机&#9;德哈卡&#9;57&#9;雷诺&#9;0&#9;标准&#9;失败&#9;1536<br>
+            2019-02-17&#9;虚空降临&#9;斯旺&#9;0&#9;菲尼克斯&#9;73&#9;标准&#9;胜利&#9;1465</p>
     </div>
-    <h2 id="download2">Download Links</h2>
-    <p><a href="/files/CRDS.py" download>Download CRDS</a></p>
-    <h2 id="usage2">Usage Notes</h2>
+    <h2 id="download2">下载链接</h2>
+    <p><a href="/files/CRDS.py" download>下载 CRDS</a></p>
+    <h2 id="usage2">使用说明</h2>
     <ul>
-        <li>You will require Python 2, as S2Protocol has been written under that version of Python. You can download Python from <a href="https://www.python.org/downloads/release/python-2718/">here</a>. Make sure to select the appropriate installer for your system.</li>
-        <li>You will need to have Python's S2Protocol installed in order for this script to work. You can get it from <a href="https://github.com/Blizzard/s2protocol" rel="nofollow">here</a>. If you have Pip, you may use "pip install s2protocol" to install S2Protocol.</li>
-        <li>Make sure you specify your replay folder path and player name correctly. An incorrect player name may cause issues in determining which commander you are playing.</li>
-        <li>On completion of the script, a file named "output.txt" will be created in the folder the script was run with the summarized data.</li>
-        <li>Replay parsing should not take more than a second, as only the simple data is being read.</li>
-        <li>You may modify the script to parse Ladder game information as well. However, this script is only provided as-is, and support is only available for Co-op games. Support for advanced parsing of Co-op game data will not be provided.</li>
+        <li>该脚本需要 Python 2，因为 S2Protocol 使用此版本的 Python 编写。可从<a href="https://www.python.org/downloads/release/python-2718/">这里</a>下载 Python，请为你的系统选择合适的安装程序。</li>
+        <li>脚本需要安装 Python 的 S2Protocol，可从<a href="https://github.com/Blizzard/s2protocol" rel="nofollow">这里</a>获取。如果已安装 Pip，可执行“pip install s2protocol”安装 S2Protocol。</li>
+        <li>请确保录像文件夹路径和玩家名称填写正确。错误的玩家名称可能导致脚本无法判断你使用的指挥官。</li>
+        <li>脚本完成后，会在运行目录创建名为“output.txt”的汇总数据文件。</li>
+        <li>由于只读取简单数据，解析一份录像通常不应超过一秒。</li>
+        <li>你也可以修改脚本来解析天梯对局信息。不过该脚本按现状提供，且只支持合作任务；不提供合作任务录像数据的高级解析支持。</li>
     </ul>
-    <h2 id="updates2">Updates</h2>
+    <h2 id="updates2">更新</h2>
     <ul>
-        <li>Whenever a new version of Starcraft gets released (major or minor patch), you may need to update S2Protocol. You may do so by copying any newly-added protocol files from the Github to the Versions folder of S2Protocol, or if you used Pip, you can use "pip install s2protocol --upgrade".</li>
-        <li>Sometimes, S2Protocol may not be updated, which means you can use the last protocol version for the latest build. Simply copy and rename the last protocol file as the last build ID and the parser should work fine. This is because the Protocols are very rarely updated and most are copies of the older versions. The advantage to this is that it is possible that older Protocol versions can work with newer replay files.</li>
-        <li>The above issue has occurred before and may occur for older replay files. If you notice that you are missing a protocol version, you may use the steps above to solve the problem.</li>
+        <li>《星际争霸 II》发布新版本（主要或次要补丁）时，可能需要更新 S2Protocol。可将 GitHub 上新增的协议文件复制到 S2Protocol 的 Versions 文件夹；如果使用 Pip 安装，也可执行“pip install s2protocol --upgrade”。</li>
+        <li>S2Protocol 有时不会及时更新，此时可将上一个协议版本用于最新构建。只需复制最后一个协议文件，并将副本重命名为最新构建 ID，解析器通常即可正常工作。协议很少改动，大多数新版本只是旧版的副本，因此旧协议也可能兼容较新的录像文件。</li>
+        <li>上述情况过去也曾发生，处理旧录像文件时同样可能遇到。如果发现缺少某个协议版本，可按上述步骤解决。</li>
     </ul>
-    <h2 id="other2">Other Notes</h2>
+    <h2 id="other2">其他说明</h2>
     <ul>
-        <li>Map names will be affected by language localization. That is, the map names will be displayed in the language the game was played in when the replay was created.</li>
+        <li>地图名称会受游戏语言影响，即按创建录像时所用游戏语言显示。</li>
     </ul>
-<script src="/scripts/nav.js?v=fd4985"></script>
+<script src="/scripts/nav.js"></script>
 </div>
 
 <div id="footer">
-    <p>Note: All data generated on this site is based on Brutal difficulty. Timings, compositions and other elements may differ on easier difficulty levels.</p>
-    <p>CC-BY-NC-SA-4.0. Originally written by Aommaster. This is a fansite not affiliated with StarCraft 2 or Blizzard Entertainment, Inc.</p>
+    <p>注意：本站生成的所有数据均以“残酷”难度为准；在较低难度下，时间、阵容及其他要素可能有所不同。</p>
+    <p>非官方简体中文翻译站，仅供学习与非商业使用。本站无广告，也不收集用户数据。采用 CC BY-NC-SA 4.0 许可。原作者：Aommaster。本站为粉丝站点，与 StarCraft II 或 Blizzard Entertainment 无隶属关系。</p>
 </div>
 
 </body>
 </html>
-
-    

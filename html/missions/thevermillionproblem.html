@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
@@ -9,15 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-    <link rel="stylesheet" href="/styles/global.css?v=70e9bc">
+    <link rel="stylesheet" href="/styles/global.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <title>Starcraft 2 Co-op - Mission Guide - The Vermillion Problem</title>
-  <meta name="description" content="Starcraft 2 Co-op Mission Guide The Vermillion Problem">
-  <meta name="keywords" content="Starcraft co-op guides Vermillion Problem mission">
-  <link rel="stylesheet"  media="all" type="text/css" href="/styles/missionstyle.css?v=e0ba7b?v=1.00">
+      <title>《星际争霸 II》合作任务攻略 - 熔火危机</title>
+  <meta name="description" content="《星际争霸 II》合作任务“熔火危机”攻略">
+  <meta name="keywords" content="星际争霸 II, 合作任务, 熔火危机, 攻略">
+  <link rel="stylesheet"  media="all" type="text/css" href="/styles/missionstyle.css?v=1.00">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="https://starcraft2coop.com/missions/thevermillionproblem">
-  <script src="/scripts/preload.js?v=0264fe"></script>
+  <script src="/scripts/preload.js"></script>
   <style>
       #spawnView{
           position:relative;
@@ -39,105 +39,105 @@
 <body>
 
 <header id="header">
-    <img src="/images/starcraft2coop.png" alt="Starcraft II Co-op">
+    <img src="/images/starcraft2coop.png" alt="StarCraft II 合作任务">
 </header>
 <script>
 if (document.location.host === 'dev.starcraft2coop.com') {
-    document.write('<div class="construction">THIS IS THE TEST SITE. (<a href="https://starcraft2coop.com">Go to the real site</a>)</div>');
+    document.write('<div class="construction">这里是测试站点。（<a href="https://starcraft2coop.com">前往正式站点</a>）</div>');
 }
 </script>
 <nav id="menu">
 <ul id="topmenu">
-    <li class="normal"><a href="/" title="Home">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>Home</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+    <li class="normal"><a href="/" title="首页">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>首页</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
     </a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-commanders">Commanders</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-resources">Guides</a></li>
-    <li class="highlight"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-missions">Missions</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-about">About</a></li>
-    <li class="normal"><button type="button" id="site-search-button" title="Search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Search</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-commanders">指挥官</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-resources">攻略</a></li>
+    <li class="highlight"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-missions">任务</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-about">关于</a></li>
+    <li class="normal"><button type="button" id="site-search-button" title="搜索">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>搜索</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
         <span class="search-shortcut" aria-hidden="true"></span>
     </button></li>
 </ul>
 <div id="container">
     <div id="commanderList" class="submenu">
-        <a href="/commanders/raynor" class="normal"><img src="/images/commanderportraits/raynorportrait.png" alt="Raynor"></a>
-        <a href="/commanders/kerrigan" class="normal"><img src="/images/commanderportraits/kerriganportrait.png" alt="Kerrigan"></a>
-        <a href="/commanders/artanis" class="normal"><img src="/images/commanderportraits/artanisportrait.png" alt="Artanis"></a>
-        <a href="/commanders/swann" class="normal"><img src="/images/commanderportraits/swannportrait.png" alt="Swann"></a>
-        <a href="/commanders/zagara" class="normal"><img src="/images/commanderportraits/zagaraportrait.png" alt="Zagara"></a>
-        <a href="/commanders/vorazun" class="normal"><img src="/images/commanderportraits/vorazunportrait.png" alt="Vorazun"></a>
-        <a href="/commanders/karax" class="normal"><img src="/images/commanderportraits/karaxportrait.png" alt="Karax"></a>
-        <a href="/commanders/abathur" class="normal"><img src="/images/commanderportraits/abathurportrait.png" alt="Abathur"></a>
-        <a href="/commanders/alarak" class="normal"><img src="/images/commanderportraits/alarakportrait.png" alt="Alarak"></a>
-        <a href="/commanders/nova" class="normal"><img src="/images/commanderportraits/novaportrait.png" alt="Nova"></a>
-        <a href="/commanders/stukov" class="normal"><img src="/images/commanderportraits/stukovportrait.png" alt="Stukov"></a>
-        <a href="/commanders/fenix" class="normal"><img src="/images/commanderportraits/fenixportrait.png" alt="Fenix"></a>
-        <a href="/commanders/dehaka" class="normal"><img src="/images/commanderportraits/dehakaportrait.png" alt="Dehaka"></a>
-        <a href="/commanders/horner" class="normal"><img src="/images/commanderportraits/hornerportrait.png" alt="Han &amp; Horner"></a>
-        <a href="/commanders/tychus" class="normal"><img src="/images/commanderportraits/tychusportrait.png" alt="Tychus"></a>
-        <a href="/commanders/zeratul" class="normal"><img src="/images/commanderportraits/zeratulportrait.png" alt="Zeratul"></a>
-        <a href="/commanders/stetmann" class="normal"><img src="/images/commanderportraits/stetmannportrait.png" alt="Stetmann"></a>
-        <a href="/commanders/mengsk" class="normal"><img src="/images/commanderportraits/mengskportrait.png" alt="Mengsk"></a>
+        <a href="/commanders/raynor" class="normal"><img src="/images/commanderportraits/raynorportrait.png" alt="雷诺"></a>
+        <a href="/commanders/kerrigan" class="normal"><img src="/images/commanderportraits/kerriganportrait.png" alt="凯瑞甘"></a>
+        <a href="/commanders/artanis" class="normal"><img src="/images/commanderportraits/artanisportrait.png" alt="阿塔尼斯"></a>
+        <a href="/commanders/swann" class="normal"><img src="/images/commanderportraits/swannportrait.png" alt="斯旺"></a>
+        <a href="/commanders/zagara" class="normal"><img src="/images/commanderportraits/zagaraportrait.png" alt="扎加拉"></a>
+        <a href="/commanders/vorazun" class="normal"><img src="/images/commanderportraits/vorazunportrait.png" alt="沃拉尊"></a>
+        <a href="/commanders/karax" class="normal"><img src="/images/commanderportraits/karaxportrait.png" alt="凯拉克斯"></a>
+        <a href="/commanders/abathur" class="normal"><img src="/images/commanderportraits/abathurportrait.png" alt="阿巴瑟"></a>
+        <a href="/commanders/alarak" class="normal"><img src="/images/commanderportraits/alarakportrait.png" alt="阿拉纳克"></a>
+        <a href="/commanders/nova" class="normal"><img src="/images/commanderportraits/novaportrait.png" alt="诺娃"></a>
+        <a href="/commanders/stukov" class="normal"><img src="/images/commanderportraits/stukovportrait.png" alt="斯托科夫"></a>
+        <a href="/commanders/fenix" class="normal"><img src="/images/commanderportraits/fenixportrait.png" alt="菲尼克斯"></a>
+        <a href="/commanders/dehaka" class="normal"><img src="/images/commanderportraits/dehakaportrait.png" alt="德哈卡"></a>
+        <a href="/commanders/horner" class="normal"><img src="/images/commanderportraits/hornerportrait.png" alt="汉与霍纳"></a>
+        <a href="/commanders/tychus" class="normal"><img src="/images/commanderportraits/tychusportrait.png" alt="泰凯斯"></a>
+        <a href="/commanders/zeratul" class="normal"><img src="/images/commanderportraits/zeratulportrait.png" alt="泽拉图"></a>
+        <a href="/commanders/stetmann" class="normal"><img src="/images/commanderportraits/stetmannportrait.png" alt="斯台特曼"></a>
+        <a href="/commanders/mengsk" class="normal"><img src="/images/commanderportraits/mengskportrait.png" alt="蒙斯克"></a>
     </div>
     <div id="missionList" class="submenu">
-        <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">Chain of Ascension</div></a>
-        <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">Cradle of Death</div></a>
-        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">Dead of Night</div></a>
-        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">Lock &amp; Load</div></a>
-        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">Malwarfare</div></a>
-        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">Miner Evacuation</div></a>
-        <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">Mist Opportunities</div></a>
-        <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">Oblivion Express</div></a>
-        <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">Part &amp; Parcel</div></a>
-        <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">Rifts to Korhal</div></a>
-        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">Scythe of Amon</div></a>
-        <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">Temple of the Past</div></a>
-        <a href="/missions/thevermillionproblem" class="highlight"><div class="mapImg mapImg-thevermillionproblem">The Vermillion Problem</div></a>
-        <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">Void Launch</div></a>
-        <a href="/missions/voidthrashing" class="normal"><div class="mapImg mapImg-voidthrashing">Void Thrashing</div></a>
+        <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">飞升之链</div></a>
+        <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">死亡摇篮</div></a>
+        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">亡者之夜</div></a>
+        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">天锁</div></a>
+        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">恶意代码</div></a>
+        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">疏散矿工</div></a>
+        <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">机会渺茫</div></a>
+        <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">湮灭快车</div></a>
+        <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">聚铁成兵</div></a>
+        <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">克哈裂痕</div></a>
+        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">埃蒙之镰</div></a>
+        <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">往日神庙</div></a>
+        <a href="/missions/thevermillionproblem" class="highlight"><div class="mapImg mapImg-thevermillionproblem">熔火危机</div></a>
+        <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">虚空降临</div></a>
+        <a href="/missions/voidthrashing" class="normal"><div class="mapImg mapImg-voidthrashing">虚空撕裂</div></a>
     </div>
     <div id="resources" class="submenu">
         <div class="submenu-with-sections"><div class="submenu-section">
-            <strong>Resources:</strong>
+            <strong>资料：</strong>
             <ul>
-                <li class="normal"><a href="/mutators/">Mutators</a></li>
-                <li class="normal"><a href="/resources/weeklymutations">Weekly&nbsp;Mutations</a></li>
-                <li class="normal"><a href="/resources/brutal">Brutal+</a></li>
-                <li class="normal"><a href="/units/">Unit&nbsp;Stats</a></li>
+                <li class="normal"><a href="/mutators/">突变因子</a></li>
+                <li class="normal"><a href="/resources/weeklymutations">每周突变</a></li>
+                <li class="normal"><a href="/resources/brutal">残酷+</a></li>
+                <li class="normal"><a href="/units/">单位数据</a></li>
             </ul>
         </div><div class="submenu-section">
-            <strong>Guides:</strong>
+            <strong>攻略：</strong>
             <ul>
-                <li class="normal"><a href="/guides/buildordertheory">Build&nbsp;Order&nbsp;Theory</a></li>
-                <li class="normal"><a href="/guides/enemycomps">Enemy&nbsp;Compositions</a></li>
-                <li class="normal"><a href="/guides/generaltips">General&nbsp;Tips</a></li>
-                <li class="normal"><a href="/guides/newplayer">New&nbsp;Players</a></li>
-                <li class="normal"><a href="/guides/youtube">Youtube</a></li>
+                <li class="normal"><a href="/guides/buildordertheory">建造顺序理论</a></li>
+                <li class="normal"><a href="/guides/enemycomps">敌方阵容</a></li>
+                <li class="normal"><a href="/guides/generaltips">通用技巧</a></li>
+                <li class="normal"><a href="/guides/newplayer">新手指南</a></li>
+                <li class="normal"><a href="/guides/youtube">YouTube</a></li>
             </ul>
         </div><div class="submenu-section">
-            <strong>Miscellaneous:</strong>
+            <strong>其他：</strong>
             <ul>
-                <li class="normal"><a href="/resources/achievements">Achievements</a></li>
-                <li class="normal"><a href="/resources/ailogic">AI&nbsp;Logic</a></li>
-                <li class="normal"><a href="/resources/bugs">Bugs</a></li>
-                <li class="normal"><a href="/resources/deathprevention">Death&nbsp;Prevent&nbsp;Effects</a></li>
-                <li class="normal"><a href="/resources/eastereggs">Easter&nbsp;Eggs</a></li>
-                <li class="normal"><a href="/resources/levels">Levels</a></li>
-                <li class="normal"><a href="/resources/patchdata">Patch&nbsp;Data</a></li>
-                <li class="normal"><a href="/tools/downloads">Downloads</a></li>
-                <li class="normal"><a href="/tools/masterybreakpoints">Mastery&nbsp;Breakpoints</a></li>
+                <li class="normal"><a href="/resources/achievements">成就</a></li>
+                <li class="normal"><a href="/resources/ailogic">人工智能逻辑</a></li>
+                <li class="normal"><a href="/resources/bugs">错误</a></li>
+                <li class="normal"><a href="/resources/deathprevention">免死效果</a></li>
+                <li class="normal"><a href="/resources/eastereggs">彩蛋</a></li>
+                <li class="normal"><a href="/resources/levels">等级</a></li>
+                <li class="normal"><a href="/resources/patchdata">补丁数据</a></li>
+                <li class="normal"><a href="/tools/downloads">下载</a></li>
+                <li class="normal"><a href="/tools/masterybreakpoints">精通阈值</a></li>
             </ul>
         </div></div>
     </div>
     <div id="about" class="submenu">
         <ul>
             <!--<li class="normal"><a href="/about/contact">Contact</a></li>-->
-            <li class="normal"><a href="/about/faq">FAQ</a></li>
-            <li class="normal"><a href="/about/links">Links</a></li>
+            <li class="normal"><a href="/about/faq">常见问题</a></li>
+            <li class="normal"><a href="/about/links">相关链接</a></li>
             <!--li class="normal"><a href="https://www.youtube.com/c/Starcraft2Coop" rel="nofollow">Youtube</a></li-->
-            <li class="normal"><a href="/about/stats">Misc. Stats</a></li>
+            <li class="normal"><a href="/about/stats">杂项统计</a></li>
         </ul>
     </div>
     <!--<div id="imgs">
@@ -188,41 +188,41 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         }
     })(jQuery);
 </script>
-<script src="/scripts/search.js?v=3646f5" defer></script>
+<script src="/scripts/search.js" defer></script>
 <div id="content">
-        <h1><span class="unbold">Mission:</span> The Vermillion Problem</h1>
-    <p id="missionPlace">Veridia Prime</p>
+        <h1><span class="unbold">任务：</span>熔火危机</h1>
+    <p id="missionPlace">维里迪亚主星</p>
         <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#misSum">Mission Summary</a></p>
-        <p><a href="#objectives">Objectives</a></p>
-        <p><a href="#baseAnalysis">Enemy Base Analysis</a></p>
-        <p><a href="#bonus">Completing the Bonus Objective</a></p>
-        <p><a href="#timings">Timings</a></p>
-        <p><a href="#spawnPoints">Spawn Points</a></p>
-        <p><a href="#crystalSpawn">Crystal Spawn Order</a></p>
-        <p><a href="#misTips">Mission Tips</a></p>
-        <p><a href="#comTips">Commander-Specific Tips</a></p>
+        <h2>本页章节</h2>
+        <p><a href="#misSum">任务概述</a></p>
+        <p><a href="#objectives">任务目标</a></p>
+        <p><a href="#baseAnalysis">敌方基地分析</a></p>
+        <p><a href="#bonus">完成奖励目标</a></p>
+        <p><a href="#timings">时间点</a></p>
+        <p><a href="#spawnPoints">出生点</a></p>
+        <p><a href="#crystalSpawn">晶体出现顺序</a></p>
+        <p><a href="#misTips">任务技巧</a></p>
+        <p><a href="#comTips">指挥官专属技巧</a></p>
     </div>
-    <h2 id="misSum">Mission Summary</h2>
-    <p>Amon has incited volcanic eruptions that are destroying Veridia Prime. Gather the crystals required to reactivate the environmental stabilizers and restore the planet before it is obliterated.</p>
-    <h2 id="objectives">Objectives</h2>
-    <h3>Primary Objective</h3>
+    <h2 id="misSum">任务概述</h2>
+    <p>埃蒙引发的火山喷发正在摧毁维里迪亚主星。收集重新启动环境稳定器所需的晶体，在星球毁灭前恢复其环境。</p>
+    <h2 id="objectives">任务目标</h2>
+    <h3>主要目标</h3>
         <ul>
-            <li>Collect Xenon Crystals (20).</li>
-            <li>Do Not Allow Planet to Explode.</li>
+            <li>收集氙晶体（20）。</li>
+            <li>不要让星球爆炸。</li>
         </ul>
-    <h3>Secondary Objective</h3>
+    <h3>奖励目标</h3>
         <ul>
-            <li>Kill the Molten Salamander (1)</li>
+            <li>消灭熔岩蜥蜴（1）</li>
         </ul>
-    <h2 id="baseAnalysis">Enemy Base Analysis</h2>
+    <h2 id="baseAnalysis">敌方基地分析</h2>
     <div id="globalRaceSelect">
-        <p>Change all base analysis pictures to race:</p>
+        <p>将所有基地分析图片切换为以下种族：</p>
         <form action="#">
-            <label><input type="radio" name="globalRace" value="protoss" checked>Protoss</label><br>
-            <label><input type="radio" name="globalRace" value="terran">Terran</label><br>
-            <label><input type="radio" name="globalRace" value="zerg">Zerg</label><br>
+            <label><input type="radio" name="globalRace" value="protoss" checked>星灵</label><br>
+            <label><input type="radio" name="globalRace" value="terran">人类</label><br>
+            <label><input type="radio" name="globalRace" value="zerg">异虫</label><br>
         </form>
         <script>
             $("input[name='globalRace']").change(function(){
@@ -236,41 +236,41 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             })
         </script>
     </div>
-        <p>Pushing into enemy bases is a key part of play on The Vermillion Problem, because most crystals will spawn behind enemy lines.</p>
-    <p>The first base you will be pushing into will be the one at your expansion. It is guarded by a small force of units, so you will need a small army or a hero unit to clear it.</p>
-    <p>Beweare of the small force of units guarding the northern ramp (not shown below). This force of units is based on the race, and consists of the following:</p>
+        <p>在“熔火危机”中，攻入敌方基地是关键环节，因为大多数晶体都会出现在敌后。</p>
+    <p>首先要进攻的是分矿处的基地。那里只有一小支部队防守，用少量部队或英雄单位即可清除。</p>
+    <p>注意守卫北侧斜坡的小股部队（下图未显示）。该部队随敌方种族而异，组成如下：</p>
     <ul>
-        <li><b>Protoss:</b> Three Stalkers</li>
-        <li><b>Terran:</b> Three Goliaths</li>
-        <li><b>Zerg:</b> Two Ravagers and Eight Zerglings</li>
+        <li><b>星灵：</b>3 个追猎者</li>
+        <li><b>人类：</b>3 个歌利亚</li>
+        <li><b>异虫：</b>2 个破坏者和 8 只跳虫</li>
     </ul>
-    <div class='switcher'><div class='long' id='expansionlongdiv'><img id ='expansionlong' src=' /images/missiondata/thevermillionproblem/expansionlong_protoss.jpg' alt='expansionlong Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='expansionlong' value='protoss' checked>Protoss</label><br><label><input type='radio' name='expansionlong' value='terran'>Terran</label><br><label><input type='radio' name='expansionlong' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/thevermillionproblem/expansionlongminimap.jpg' alt='expansionlong Minimap'></div></div></div><script>$("input[name='expansionlong']").change(function(){var race= $(this).val();var oldImg = $('#expansionlong');var img = new Image();img.src = '/images/missiondata/thevermillionproblem/expansionlong_'+ race + '.jpg';var newImg = $(img).hide();$('#expansionlongdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'expansionlong');return false;});var imgList=[];imgList.push('/images/missiondata/thevermillionproblem/expansionlong_protoss.jpg');imgList.push('/images/missiondata/thevermillionproblem/expansionlong_terran.jpg');imgList.push('/images/missiondata/thevermillionproblem/expansionlong_zerg.jpg');preload(imgList);</script>    <p>At this point, the bases you will clear will usually depend on where the crystals spawn, rather than a particular order.</p>
-    <p>The base to the West is usually the most lightly defended base after the expansion. It is shown below:</p>
-    <div class='switcher'><div class='basePic' id='wbasediv'><img id ='wbase' src=' /images/missiondata/thevermillionproblem/wbase_protoss.jpg' alt='wbase Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='wbase' value='protoss' checked>Protoss</label><br><label><input type='radio' name='wbase' value='terran'>Terran</label><br><label><input type='radio' name='wbase' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/thevermillionproblem/wbaseminimap.jpg' alt='wbase Minimap'></div></div></div><script>$("input[name='wbase']").change(function(){var race= $(this).val();var oldImg = $('#wbase');var img = new Image();img.src = '/images/missiondata/thevermillionproblem/wbase_'+ race + '.jpg';var newImg = $(img).hide();$('#wbasediv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'wbase');return false;});var imgList=[];imgList.push('/images/missiondata/thevermillionproblem/wbase_protoss.jpg');imgList.push('/images/missiondata/thevermillionproblem/wbase_terran.jpg');imgList.push('/images/missiondata/thevermillionproblem/wbase_zerg.jpg');preload(imgList);</script>    <p>The next base usually captured is the base to the North. It is slightly more heavily defended, but should be relatively easy to capture.</p>
-    <div class='switcher'><div class='long' id='nbaselongdiv'><img id ='nbaselong' src=' /images/missiondata/thevermillionproblem/nbaselong_protoss.jpg' alt='nbaselong Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='nbaselong' value='protoss' checked>Protoss</label><br><label><input type='radio' name='nbaselong' value='terran'>Terran</label><br><label><input type='radio' name='nbaselong' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/thevermillionproblem/nbaselongminimap.jpg' alt='nbaselong Minimap'></div></div></div><script>$("input[name='nbaselong']").change(function(){var race= $(this).val();var oldImg = $('#nbaselong');var img = new Image();img.src = '/images/missiondata/thevermillionproblem/nbaselong_'+ race + '.jpg';var newImg = $(img).hide();$('#nbaselongdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'nbaselong');return false;});var imgList=[];imgList.push('/images/missiondata/thevermillionproblem/nbaselong_protoss.jpg');imgList.push('/images/missiondata/thevermillionproblem/nbaselong_terran.jpg');imgList.push('/images/missiondata/thevermillionproblem/nbaselong_zerg.jpg');preload(imgList);</script>    <p>Due to the flow of the mission, there will be a lava surge by the time this base is cleared. It is usually optimal to continue pushing downwards to the North-East base. Watch out for the Hybrid Dominator in this area.</p>
-    <div class='switcher'><div class='basePic' id='nebasediv'><img id ='nebase' src=' /images/missiondata/thevermillionproblem/nebase_protoss.jpg' alt='nebase Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='nebase' value='protoss' checked>Protoss</label><br><label><input type='radio' name='nebase' value='terran'>Terran</label><br><label><input type='radio' name='nebase' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/thevermillionproblem/nebaseminimap.jpg' alt='nebase Minimap'></div></div></div><script>$("input[name='nebase']").change(function(){var race= $(this).val();var oldImg = $('#nebase');var img = new Image();img.src = '/images/missiondata/thevermillionproblem/nebase_'+ race + '.jpg';var newImg = $(img).hide();$('#nebasediv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'nebase');return false;});var imgList=[];imgList.push('/images/missiondata/thevermillionproblem/nebase_protoss.jpg');imgList.push('/images/missiondata/thevermillionproblem/nebase_terran.jpg');imgList.push('/images/missiondata/thevermillionproblem/nebase_zerg.jpg');preload(imgList);</script>    <p>The rest of the bases do require some strong forces in order to clear. The base to the South-West is probably the easiest of the remaining bases that can have crystals near them.</p>
-    <div class='switcher'><div class='long' id='swbaselongdiv'><img id ='swbaselong' src=' /images/missiondata/thevermillionproblem/swbaselong_protoss.jpg' alt='swbaselong Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='swbaselong' value='protoss' checked>Protoss</label><br><label><input type='radio' name='swbaselong' value='terran'>Terran</label><br><label><input type='radio' name='swbaselong' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/thevermillionproblem/swbaselongminimap.jpg' alt='swbaselong Minimap'></div></div></div><script>$("input[name='swbaselong']").change(function(){var race= $(this).val();var oldImg = $('#swbaselong');var img = new Image();img.src = '/images/missiondata/thevermillionproblem/swbaselong_'+ race + '.jpg';var newImg = $(img).hide();$('#swbaselongdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'swbaselong');return false;});var imgList=[];imgList.push('/images/missiondata/thevermillionproblem/swbaselong_protoss.jpg');imgList.push('/images/missiondata/thevermillionproblem/swbaselong_terran.jpg');imgList.push('/images/missiondata/thevermillionproblem/swbaselong_zerg.jpg');preload(imgList);</script>    <p>If you choose to push East from this base towards the bonus objective, you'll need to destroy a small enemy camp. Note that the ramp from the opposite side of this island is unguarded and you can reach the bonus objective without fighting enemy units.</p>
-    <div class='switcher'><div class='basePic' id='bonuscampdiv'><img id ='bonuscamp' src=' /images/missiondata/thevermillionproblem/bonuscamp_protoss.jpg' alt='bonuscamp Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='bonuscamp' value='protoss' checked>Protoss</label><br><label><input type='radio' name='bonuscamp' value='terran'>Terran</label><br><label><input type='radio' name='bonuscamp' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/thevermillionproblem/bonuscampminimap.jpg' alt='bonuscamp Minimap'></div></div></div><script>$("input[name='bonuscamp']").change(function(){var race= $(this).val();var oldImg = $('#bonuscamp');var img = new Image();img.src = '/images/missiondata/thevermillionproblem/bonuscamp_'+ race + '.jpg';var newImg = $(img).hide();$('#bonuscampdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'bonuscamp');return false;});var imgList=[];imgList.push('/images/missiondata/thevermillionproblem/bonuscamp_protoss.jpg');imgList.push('/images/missiondata/thevermillionproblem/bonuscamp_terran.jpg');imgList.push('/images/missiondata/thevermillionproblem/bonuscamp_zerg.jpg');preload(imgList);</script>    <p>If you push East from your expansion, there are a patches of enemies present. The first is a camp of units.</p>
-    <div class='switcher'><div class='basePic' id='ebasecampdiv'><img id ='ebasecamp' src=' /images/missiondata/thevermillionproblem/ebasecamp_protoss.jpg' alt='ebasecamp Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='ebasecamp' value='protoss' checked>Protoss</label><br><label><input type='radio' name='ebasecamp' value='terran'>Terran</label><br><label><input type='radio' name='ebasecamp' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/thevermillionproblem/ebasecampminimap.jpg' alt='ebasecamp Minimap'></div></div></div><script>$("input[name='ebasecamp']").change(function(){var race= $(this).val();var oldImg = $('#ebasecamp');var img = new Image();img.src = '/images/missiondata/thevermillionproblem/ebasecamp_'+ race + '.jpg';var newImg = $(img).hide();$('#ebasecampdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'ebasecamp');return false;});var imgList=[];imgList.push('/images/missiondata/thevermillionproblem/ebasecamp_protoss.jpg');imgList.push('/images/missiondata/thevermillionproblem/ebasecamp_terran.jpg');imgList.push('/images/missiondata/thevermillionproblem/ebasecamp_zerg.jpg');preload(imgList);</script>    <p>If you follow the path up North, you'll get to the enemy base.</p>
-    <div class='switcher'><div class='long' id='ebaselongdiv'><img id ='ebaselong' src=' /images/missiondata/thevermillionproblem/ebaselong_protoss.jpg' alt='ebaselong Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='ebaselong' value='protoss' checked>Protoss</label><br><label><input type='radio' name='ebaselong' value='terran'>Terran</label><br><label><input type='radio' name='ebaselong' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/thevermillionproblem/ebaselongminimap.jpg' alt='ebaselong Minimap'></div></div></div><script>$("input[name='ebaselong']").change(function(){var race= $(this).val();var oldImg = $('#ebaselong');var img = new Image();img.src = '/images/missiondata/thevermillionproblem/ebaselong_'+ race + '.jpg';var newImg = $(img).hide();$('#ebaselongdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'ebaselong');return false;});var imgList=[];imgList.push('/images/missiondata/thevermillionproblem/ebaselong_protoss.jpg');imgList.push('/images/missiondata/thevermillionproblem/ebaselong_terran.jpg');imgList.push('/images/missiondata/thevermillionproblem/ebaselong_zerg.jpg');preload(imgList);</script>    <p>Just South of this base, there is a small enclave of enemies.</p>
-    <div class='switcher'><div class='long' id='eenclavelongdiv'><img id ='eenclavelong' src=' /images/missiondata/thevermillionproblem/eenclavelong_protoss.jpg' alt='eenclavelong Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='eenclavelong' value='protoss' checked>Protoss</label><br><label><input type='radio' name='eenclavelong' value='terran'>Terran</label><br><label><input type='radio' name='eenclavelong' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/thevermillionproblem/eenclavelongminimap.jpg' alt='eenclavelong Minimap'></div></div></div><script>$("input[name='eenclavelong']").change(function(){var race= $(this).val();var oldImg = $('#eenclavelong');var img = new Image();img.src = '/images/missiondata/thevermillionproblem/eenclavelong_'+ race + '.jpg';var newImg = $(img).hide();$('#eenclavelongdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'eenclavelong');return false;});var imgList=[];imgList.push('/images/missiondata/thevermillionproblem/eenclavelong_protoss.jpg');imgList.push('/images/missiondata/thevermillionproblem/eenclavelong_terran.jpg');imgList.push('/images/missiondata/thevermillionproblem/eenclavelong_zerg.jpg');preload(imgList);</script>    <h2 id="bonus">Completing the Bonus Objective</h2>
+    <div class='switcher'><div class='long' id='expansionlongdiv'><img id ='expansionlong' src=' /images/missiondata/thevermillionproblem/expansionlong_protoss.jpg' alt='expansionlong Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='expansionlong' value='protoss' checked>Protoss</label><br><label><input type='radio' name='expansionlong' value='terran'>Terran</label><br><label><input type='radio' name='expansionlong' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/thevermillionproblem/expansionlongminimap.jpg' alt='expansionlong Minimap'></div></div></div><script>$("input[name='expansionlong']").change(function(){var race= $(this).val();var oldImg = $('#expansionlong');var img = new Image();img.src = '/images/missiondata/thevermillionproblem/expansionlong_'+ race + '.jpg';var newImg = $(img).hide();$('#expansionlongdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'expansionlong');return false;});var imgList=[];imgList.push('/images/missiondata/thevermillionproblem/expansionlong_protoss.jpg');imgList.push('/images/missiondata/thevermillionproblem/expansionlong_terran.jpg');imgList.push('/images/missiondata/thevermillionproblem/expansionlong_zerg.jpg');preload(imgList);</script>    <p>此后通常要根据晶体的出现位置决定清理哪些基地，而非遵循固定顺序。</p>
+    <p>除分矿外，西侧基地通常防守最薄弱，如下所示：</p>
+    <div class='switcher'><div class='basePic' id='wbasediv'><img id ='wbase' src=' /images/missiondata/thevermillionproblem/wbase_protoss.jpg' alt='wbase Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='wbase' value='protoss' checked>Protoss</label><br><label><input type='radio' name='wbase' value='terran'>Terran</label><br><label><input type='radio' name='wbase' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/thevermillionproblem/wbaseminimap.jpg' alt='wbase Minimap'></div></div></div><script>$("input[name='wbase']").change(function(){var race= $(this).val();var oldImg = $('#wbase');var img = new Image();img.src = '/images/missiondata/thevermillionproblem/wbase_'+ race + '.jpg';var newImg = $(img).hide();$('#wbasediv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'wbase');return false;});var imgList=[];imgList.push('/images/missiondata/thevermillionproblem/wbase_protoss.jpg');imgList.push('/images/missiondata/thevermillionproblem/wbase_terran.jpg');imgList.push('/images/missiondata/thevermillionproblem/wbase_zerg.jpg');preload(imgList);</script>    <p>接下来通常会攻占北侧基地。其防守稍强，但仍相对容易拿下。</p>
+    <div class='switcher'><div class='long' id='nbaselongdiv'><img id ='nbaselong' src=' /images/missiondata/thevermillionproblem/nbaselong_protoss.jpg' alt='nbaselong Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='nbaselong' value='protoss' checked>Protoss</label><br><label><input type='radio' name='nbaselong' value='terran'>Terran</label><br><label><input type='radio' name='nbaselong' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/thevermillionproblem/nbaselongminimap.jpg' alt='nbaselong Minimap'></div></div></div><script>$("input[name='nbaselong']").change(function(){var race= $(this).val();var oldImg = $('#nbaselong');var img = new Image();img.src = '/images/missiondata/thevermillionproblem/nbaselong_'+ race + '.jpg';var newImg = $(img).hide();$('#nbaselongdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'nbaselong');return false;});var imgList=[];imgList.push('/images/missiondata/thevermillionproblem/nbaselong_protoss.jpg');imgList.push('/images/missiondata/thevermillionproblem/nbaselong_terran.jpg');imgList.push('/images/missiondata/thevermillionproblem/nbaselong_zerg.jpg');preload(imgList);</script>    <p>按任务节奏，清除该基地时会遇到一次熔岩喷发。通常最好继续向下方的东北基地推进。注意该区域的混合体支配者。</p>
+    <div class='switcher'><div class='basePic' id='nebasediv'><img id ='nebase' src=' /images/missiondata/thevermillionproblem/nebase_protoss.jpg' alt='nebase Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='nebase' value='protoss' checked>Protoss</label><br><label><input type='radio' name='nebase' value='terran'>Terran</label><br><label><input type='radio' name='nebase' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/thevermillionproblem/nebaseminimap.jpg' alt='nebase Minimap'></div></div></div><script>$("input[name='nebase']").change(function(){var race= $(this).val();var oldImg = $('#nebase');var img = new Image();img.src = '/images/missiondata/thevermillionproblem/nebase_'+ race + '.jpg';var newImg = $(img).hide();$('#nebasediv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'nebase');return false;});var imgList=[];imgList.push('/images/missiondata/thevermillionproblem/nebase_protoss.jpg');imgList.push('/images/missiondata/thevermillionproblem/nebase_terran.jpg');imgList.push('/images/missiondata/thevermillionproblem/nebase_zerg.jpg');preload(imgList);</script>    <p>清除其余基地需要较强的部队。在附近可能出现晶体的剩余基地中，西南基地大概最容易攻克。</p>
+    <div class='switcher'><div class='long' id='swbaselongdiv'><img id ='swbaselong' src=' /images/missiondata/thevermillionproblem/swbaselong_protoss.jpg' alt='swbaselong Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='swbaselong' value='protoss' checked>Protoss</label><br><label><input type='radio' name='swbaselong' value='terran'>Terran</label><br><label><input type='radio' name='swbaselong' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/thevermillionproblem/swbaselongminimap.jpg' alt='swbaselong Minimap'></div></div></div><script>$("input[name='swbaselong']").change(function(){var race= $(this).val();var oldImg = $('#swbaselong');var img = new Image();img.src = '/images/missiondata/thevermillionproblem/swbaselong_'+ race + '.jpg';var newImg = $(img).hide();$('#swbaselongdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'swbaselong');return false;});var imgList=[];imgList.push('/images/missiondata/thevermillionproblem/swbaselong_protoss.jpg');imgList.push('/images/missiondata/thevermillionproblem/swbaselong_terran.jpg');imgList.push('/images/missiondata/thevermillionproblem/swbaselong_zerg.jpg');preload(imgList);</script>    <p>如果选择从该基地向东推进至奖励目标，就需要摧毁一处小型敌军营地。注意，这座岛另一侧的斜坡无人防守，可以避开敌军直接到达奖励目标。</p>
+    <div class='switcher'><div class='basePic' id='bonuscampdiv'><img id ='bonuscamp' src=' /images/missiondata/thevermillionproblem/bonuscamp_protoss.jpg' alt='bonuscamp Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='bonuscamp' value='protoss' checked>Protoss</label><br><label><input type='radio' name='bonuscamp' value='terran'>Terran</label><br><label><input type='radio' name='bonuscamp' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/thevermillionproblem/bonuscampminimap.jpg' alt='bonuscamp Minimap'></div></div></div><script>$("input[name='bonuscamp']").change(function(){var race= $(this).val();var oldImg = $('#bonuscamp');var img = new Image();img.src = '/images/missiondata/thevermillionproblem/bonuscamp_'+ race + '.jpg';var newImg = $(img).hide();$('#bonuscampdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'bonuscamp');return false;});var imgList=[];imgList.push('/images/missiondata/thevermillionproblem/bonuscamp_protoss.jpg');imgList.push('/images/missiondata/thevermillionproblem/bonuscamp_terran.jpg');imgList.push('/images/missiondata/thevermillionproblem/bonuscamp_zerg.jpg');preload(imgList);</script>    <p>从分矿向东推进时会遇到数股敌军，首先是一处部队营地。</p>
+    <div class='switcher'><div class='basePic' id='ebasecampdiv'><img id ='ebasecamp' src=' /images/missiondata/thevermillionproblem/ebasecamp_protoss.jpg' alt='ebasecamp Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='ebasecamp' value='protoss' checked>Protoss</label><br><label><input type='radio' name='ebasecamp' value='terran'>Terran</label><br><label><input type='radio' name='ebasecamp' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/thevermillionproblem/ebasecampminimap.jpg' alt='ebasecamp Minimap'></div></div></div><script>$("input[name='ebasecamp']").change(function(){var race= $(this).val();var oldImg = $('#ebasecamp');var img = new Image();img.src = '/images/missiondata/thevermillionproblem/ebasecamp_'+ race + '.jpg';var newImg = $(img).hide();$('#ebasecampdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'ebasecamp');return false;});var imgList=[];imgList.push('/images/missiondata/thevermillionproblem/ebasecamp_protoss.jpg');imgList.push('/images/missiondata/thevermillionproblem/ebasecamp_terran.jpg');imgList.push('/images/missiondata/thevermillionproblem/ebasecamp_zerg.jpg');preload(imgList);</script>    <p>沿道路向北即可到达敌方基地。</p>
+    <div class='switcher'><div class='long' id='ebaselongdiv'><img id ='ebaselong' src=' /images/missiondata/thevermillionproblem/ebaselong_protoss.jpg' alt='ebaselong Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='ebaselong' value='protoss' checked>Protoss</label><br><label><input type='radio' name='ebaselong' value='terran'>Terran</label><br><label><input type='radio' name='ebaselong' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/thevermillionproblem/ebaselongminimap.jpg' alt='ebaselong Minimap'></div></div></div><script>$("input[name='ebaselong']").change(function(){var race= $(this).val();var oldImg = $('#ebaselong');var img = new Image();img.src = '/images/missiondata/thevermillionproblem/ebaselong_'+ race + '.jpg';var newImg = $(img).hide();$('#ebaselongdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'ebaselong');return false;});var imgList=[];imgList.push('/images/missiondata/thevermillionproblem/ebaselong_protoss.jpg');imgList.push('/images/missiondata/thevermillionproblem/ebaselong_terran.jpg');imgList.push('/images/missiondata/thevermillionproblem/ebaselong_zerg.jpg');preload(imgList);</script>    <p>该基地正南方还有一小片敌军据点。</p>
+    <div class='switcher'><div class='long' id='eenclavelongdiv'><img id ='eenclavelong' src=' /images/missiondata/thevermillionproblem/eenclavelong_protoss.jpg' alt='eenclavelong Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='eenclavelong' value='protoss' checked>Protoss</label><br><label><input type='radio' name='eenclavelong' value='terran'>Terran</label><br><label><input type='radio' name='eenclavelong' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/thevermillionproblem/eenclavelongminimap.jpg' alt='eenclavelong Minimap'></div></div></div><script>$("input[name='eenclavelong']").change(function(){var race= $(this).val();var oldImg = $('#eenclavelong');var img = new Image();img.src = '/images/missiondata/thevermillionproblem/eenclavelong_'+ race + '.jpg';var newImg = $(img).hide();$('#eenclavelongdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'eenclavelong');return false;});var imgList=[];imgList.push('/images/missiondata/thevermillionproblem/eenclavelong_protoss.jpg');imgList.push('/images/missiondata/thevermillionproblem/eenclavelong_terran.jpg');imgList.push('/images/missiondata/thevermillionproblem/eenclavelong_zerg.jpg');preload(imgList);</script>    <h2 id="bonus">完成奖励目标</h2>
     <div id="objectiveImages">
-        <img src="/images/missiondata/thevermillionproblem/moltensalamander.jpg" alt="Molten Salamander">
+        <img src="/images/missiondata/thevermillionproblem/moltensalamander.jpg" alt="熔岩蜥蜴">
     </div>
-    <p>The bonus objective requires you to kill the Molten Salamander that spawns in the marked location below.</p>
-    <img src="/images/missiondata/thevermillionproblem/moltensalamanderspawnlocation.jpg" alt="Minimap of Molten Salamander spawn location">
-    <h2 id="timings">Timings</h2>
-    <p>Note: Information on Tech and Strength levels can be found on the <a href="/guides/enemycomps">Enemy Compositions</a> page.</p>
-    <p>Some attack waves in this mission have variance associated with their spawn timings. That is, attack waves have a little bit of randomness as to when they will spawn. The attack wave timings and variances are shown below. A variance of 1:30 seconds means attack waves can spawn anywhere from 1:30 <i>before</i> the attack wave timing to 1:30 <i>after</i> the attack wave timing.</p>
-    <p>The Attack Wave Timings for this mission are:</p>
+    <p>奖励目标要求你消灭在下方标记位置出现的熔岩蜥蜴。</p>
+    <img src="/images/missiondata/thevermillionproblem/moltensalamanderspawnlocation.jpg" alt="熔岩蜥蜴出现位置的小地图">
+    <h2 id="timings">时间点</h2>
+    <p>注意：科技等级与强度等级的说明可参阅<a href="/guides/enemycomps">敌方部队组合</a>页面。</p>
+    <p>本任务部分进攻波次的出现时间存在偏差，即具体出现时间带有一定随机性。下表列出波次时间及其偏差。偏差为 1:30 表示波次可能在标示时间<i>之前</i> 1:30 到<i>之后</i> 1:30 之间的任意时刻出现。</p>
+    <p>本任务的进攻波次时间如下：</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Wave</th>
-                <th>Time</th>
-                <th>Tech Level</th>
-                <th>Strength Level</th>
-                <th>Target</th>
+                <th>波次</th>
+                <th>时间</th>
+                <th>科技等级</th>
+                <th>强度等级</th>
+                <th>目标</th>
             </tr>
         </thead>
         <tbody>
@@ -279,93 +279,93 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                 <td>3:30</td>
                 <td>1</td>
                 <td>1</td>
-                <td>Main</td>
+                <td>主基地</td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>6:00</td>
                 <td>2</td>
                 <td>2</td>
-                <td>Main</td>
+                <td>主基地</td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>9:00 ± 1:30</td>
                 <td>3</td>
                 <td>4</td>
-                <td>Expansion</td>
+                <td>分矿</td>
             </tr>
             <tr>
                 <td>4*</td>
                 <td>12:00 ± 1:30</td>
                 <td>3</td>
                 <td>4</td>
-                <td>Expansion</td>
+                <td>分矿</td>
             </tr>
             <tr>
                 <td>5</td>
                 <td>15:00 ± 1:30</td>
                 <td>5</td>
                 <td>5</td>
-                <td>Main</td>
+                <td>主基地</td>
             </tr>
             <tr>
                 <td>6</td>
                 <td>18:00 ± 1:30</td>
                 <td>5</td>
                 <td>5</td>
-                <td>Main</td>
+                <td>主基地</td>
             </tr>
             <tr>
                 <td>7</td>
                 <td>21:00 ± 1:30</td>
                 <td>5</td>
                 <td>5</td>
-                <td>Expansion</td>
+                <td>分矿</td>
             </tr>
             <tr>
                 <td>8</td>
                 <td>24:00 ± 1:30</td>
                 <td>6</td>
                 <td>6</td>
-                <td>Expansion</td>
+                <td>分矿</td>
             </tr>
             <tr>
                 <td>9</td>
                 <td>27:00</td>
                 <td>5</td>
                 <td>5</td>
-                <td>Expansion</td>
+                <td>分矿</td>
             </tr>
         </tbody>
     </table>
-    <p>* Attack wave #4 is a multi-pronged attack wave that will have attacking units spawn from two different locations.</p>
-    <p>The final attack wave will repeat every two minutes until the end of the mission.</p>
-    <p>The Molten Salamander will start to spawn every lava surge after 11:00.</p>
-    <h2 id="spawnPoints">Spawn Points</h2>
-    <p>The spawn points for attack waves are shown below.</p>
-    <p>Attack Wave Spawn Location (West Base):</p>
-    <img src="/images/missiondata/thevermillionproblem/wattackwavespawn.jpg" alt="West Attack Wave Spawn">
-    <p>Attack Wave Spawn Location (East Base, usually not cleared because crystals do not spawn there):</p>
-    <img src="/images/missiondata/thevermillionproblem/eattackwavespawn.jpg" alt="East Attack Wave Spawn">
-    <p>Attack Wave Spawn Location (South, near Bonus Objective):</p>
-    <img src="/images/missiondata/thevermillionproblem/sattackwavespawn.jpg" alt="South Attack Wave Spawn">
-    <p>Crystals also have certain spawn locations. However, at each collection stage, crystals can spawn in more than 10 individual locations, making it infeasible to list them all out individually. Addtionally, spawn locations are randomized as the mission progresses.</p>
-    <h2 id="crystalSpawn">Crystal Spawn Order</h2>
-    <p>The spawn order and locations of the Xenon Crystals can be viewed below. This may be useful when playing against <a href="/resources/mutators">mutators</a> that hide the crystal locations on the minimap, such as Darkness.</p>
+    <p>* 第 4 波是多路进攻，进攻单位会从两个不同位置出现。</p>
+    <p>最后一波进攻会每两分钟重复一次，直至任务结束。</p>
+    <p>11:00 后，熔岩蜥蜴会在每次熔岩喷发时开始出现。</p>
+    <h2 id="spawnPoints">出生点</h2>
+    <p>进攻波次的出生点如下所示。</p>
+    <p>进攻波次出生位置（西侧基地）：</p>
+    <img src="/images/missiondata/thevermillionproblem/wattackwavespawn.jpg" alt="西侧进攻波次出生点">
+    <p>进攻波次出生位置（东侧基地；由于晶体不会在那里出现，通常不会清理）：</p>
+    <img src="/images/missiondata/thevermillionproblem/eattackwavespawn.jpg" alt="东侧进攻波次出生点">
+    <p>进攻波次出生位置（南侧，奖励目标附近）：</p>
+    <img src="/images/missiondata/thevermillionproblem/sattackwavespawn.jpg" alt="南侧进攻波次出生点">
+    <p>晶体也有特定的出现位置。不过，每个收集阶段都可能在 10 个以上的独立位置出现晶体，无法逐一列出。此外，随着任务推进，出现位置会随机变化。</p>
+    <h2 id="crystalSpawn">晶体出现顺序</h2>
+    <p>下方可查看氙晶体的出现顺序和位置。面对会在小地图上隐藏晶体位置的<a href="/resources/mutators">突变因子</a>（例如“黑暗”）时，这些信息可能很有用。</p>
     <div id="spawnView">
-        <img id="base"  src="/images/missiondata/thevermillionproblem/mapbase.jpg" alt="Terrain">
-        <img id="spawn" src="/images/missiondata/thevermillionproblem/spawn_01.png" alt="Spawn Overlay">
+        <img id="base"  src="/images/missiondata/thevermillionproblem/mapbase.jpg" alt="地形">
+        <img id="spawn" src="/images/missiondata/thevermillionproblem/spawn_01.png" alt="出生点叠加层">
         <form action='#'>
-            <label><input type='radio' name='spawn' value='1' checked>Spawn 1</label><br>
-            <label><input type='radio' name='spawn' value='2'>Spawn 2</label><br>
-            <label><input type='radio' name='spawn' value='3'>Spawn 3</label><br>
-            <label><input type='radio' name='spawn' value='4'>Spawn 4</label><br>
-            <label><input type='radio' name='spawn' value='5'>Spawn 5</label><br>
-            <label><input type='radio' name='spawn' value='6'>Spawn 6</label><br>
-            <label><input type='radio' name='spawn' value='7'>Spawn 7</label><br>
-            <label><input type='radio' name='spawn' value='8'>Spawn 8</label><br>
-            <label><input type='radio' name='spawn' value='9'>Spawn 9</label><br>
+            <label><input type='radio' name='spawn' value='1' checked>第 1 批</label><br>
+            <label><input type='radio' name='spawn' value='2'>第 2 批</label><br>
+            <label><input type='radio' name='spawn' value='3'>第 3 批</label><br>
+            <label><input type='radio' name='spawn' value='4'>第 4 批</label><br>
+            <label><input type='radio' name='spawn' value='5'>第 5 批</label><br>
+            <label><input type='radio' name='spawn' value='6'>第 6 批</label><br>
+            <label><input type='radio' name='spawn' value='7'>第 7 批</label><br>
+            <label><input type='radio' name='spawn' value='8'>第 8 批</label><br>
+            <label><input type='radio' name='spawn' value='9'>第 9 批</label><br>
         </form>
     </div>
     <script>
@@ -389,33 +389,31 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             return false;
         })
     </script>
-    <h2 id="misTips">Mission Tips</h2>
+    <h2 id="misTips">任务技巧</h2>
     <ul>
-        <li>Ensure you have adequate defenses in your main and expansion for the attack waves.</li>
-        <li>Pay attention to your army as you push into enemy defenses due to the large number of Hybrid Dominators present on this map.</li>
-        <li>All crystals from the 3rd spawn will come with a small harass force. Ensure you clear them out before you send your workers to pick up the crystal. These forces do not spawn immediately with the crystal, and have some travel time before they arrive.</li>
+        <li>确保主基地和分矿有足够防御来应对进攻波次。</li>
+        <li>本地图有大量混合体支配者，攻入敌方防线时要留意自己的部队。</li>
+        <li>从第 3 批开始，每颗晶体都会伴随一小股骚扰部队。派工人拾取晶体前务必先消灭它们。这些部队不会与晶体同时出现，而是经过一段移动时间后抵达。</li>
     </ul>
-    <h2 id="comTips">Commander-specific Tips</h2>
+    <h2 id="comTips">指挥官专属技巧</h2>
     <ul>
-        <li><a href="/commanders/abathur">Abathur</a>: Place Toxic Nests on spawn locations to weaken attack waves.</li>
-        <li><a href="/commanders/horner">Han & Horner</a>: Place Mag Mines on spawn locations to weaken attack waves.</li>
-        <li><a href="/commanders/kerrigan">Kerrigan</a>: Place Omega Worms on each of the islands to help you and your ally intercept attack waves and crystals in a timely manner.</li>
-        <li><a href="/commanders/nova">Nova</a>: If you use Siege Tanks, place Spider-mines on spawn locations to weaken attack waves.</li>
-        <li><a href="/commanders/raynor">Raynor</a>: If you use Vultures, place Spider-mines on spawn locations to weaken attack waves.</li>
-        <li><a href="/commanders/stetmann">Stetmann</a>: Use the Speed Stetzone to return crystals faster.</li>
-        <li><a href="/commanders/stukov">Stukov</a>: Once you have creep spread, move your Infested Colonist Compound to your Expansion area.</li>
-        <li><a href="/commanders/zagara">Zagara</a>: Build your macro hatcheries at your expansion for quick reinforcements.</li>
-        <li><a href="/commanders/zeratul">Zeratul</a>: Place a Void Array on each of the islands to help you intercept attack waves and crystals in a timely manner.</li>
+        <li><a href="/commanders/abathur">阿巴瑟</a>：在出生点放置剧毒巢穴以削弱进攻波次。</li>
+        <li><a href="/commanders/horner">汉与霍纳</a>：在出生点放置磁雷以削弱进攻波次。</li>
+        <li><a href="/commanders/kerrigan">凯瑞甘</a>：在每座岛上放置欧米伽虫洞，帮助你和盟友及时拦截进攻波次并收集晶体。</li>
+        <li><a href="/commanders/nova">诺娃</a>：使用攻城坦克时，在出生点布置蜘蛛雷以削弱进攻波次。</li>
+        <li><a href="/commanders/raynor">雷诺</a>：使用秃鹫战车时，在出生点布置蜘蛛雷以削弱进攻波次。</li>
+        <li><a href="/commanders/stetmann">斯台特曼</a>：使用“艾的急切”爱心区域更快送回晶体。</li>
+        <li><a href="/commanders/stukov">斯托科夫</a>：菌毯铺开后，将被感染的移民营移动到分矿区域。</li>
+        <li><a href="/commanders/zagara">扎加拉</a>：在分矿建造用于暴兵的孵化场，以便快速增援。</li>
+        <li><a href="/commanders/zeratul">泽拉图</a>：在每座岛上放置一艘虚空阵列船，帮助你及时拦截进攻波次并收集晶体。</li>
     </ul>
-<script src="/scripts/nav.js?v=fd4985"></script>
+<script src="/scripts/nav.js"></script>
 </div>
 
 <div id="footer">
-    <p>Note: All data generated on this site is based on Brutal difficulty. Timings, compositions and other elements may differ on easier difficulty levels.</p>
-    <p>CC-BY-NC-SA-4.0. Originally written by Aommaster. This is a fansite not affiliated with StarCraft 2 or Blizzard Entertainment, Inc.</p>
+    <p>注意：本站生成的所有数据均以“残酷”难度为准；在较低难度下，时间、阵容及其他要素可能有所不同。</p>
+    <p>非官方简体中文翻译站，仅供学习与非商业使用。本站无广告，也不收集用户数据。采用 CC BY-NC-SA 4.0 许可。原作者：Aommaster。本站为粉丝站点，与 StarCraft II 或 Blizzard Entertainment 无隶属关系。</p>
 </div>
 
 </body>
 </html>
-
-    

@@ -3,25 +3,24 @@
 // run from CLI; generate static pages
 
 chdir(__DIR__);
-$grep_output = shell_exec('grep -r -l -F --include="*.php" "/** @generateStatic " html/');
-
+$HTML_DIR = __DIR__ . '/html';
 $pages = [];
-if ($grep_output) {
-    $lines = explode("\n", trim($grep_output));
-    foreach ($lines as $filepath) {
-        if (empty($filepath)) {
-            continue;
-        }
-        if (str_starts_with($filepath, 'html/') && str_ends_with($filepath, '.php')) {
-            $pages[] = substr($filepath, 4, -4);
-        }
+foreach (new RecursiveIteratorIterator(new RecursiveDirectoryIterator($HTML_DIR)) as $file) {
+    if (!$file->isFile() || $file->getExtension() !== 'php') {
+        continue;
     }
-} else {
-    echo "Error: Grep had 0 results!";
+    $contents = file_get_contents($file->getPathname());
+    if (str_contains($contents, '/** @generateStatic ')) {
+        $relativePath = str_replace('\\', '/', substr($file->getPathname(), strlen($HTML_DIR)));
+        $pages[] = substr($relativePath, 0, -4);
+    }
+}
+sort($pages, SORT_STRING);
+if (!$pages) {
+    echo "错误：未找到需要静态生成的 PHP 页面！";
     exit(1);
 }
 
-$HTML_DIR = __DIR__ . '/html';
 $GENERATING_STATIC_PAGES = true;
 error_reporting(E_ALL);
 
@@ -45,6 +44,7 @@ foreach ($pages as $page) {
     }
     $html = ob_get_clean();
     $html = str_replace("\r\n", "\n", $html);
+    $html = rtrim($html) . "\n";
 
     $result = file_put_contents($HTML_DIR . "$page.html", $html);
     if (!$result) {

@@ -2,2681 +2,2681 @@
     {
         "id1": 1,
         "id2": 7,
-        "interaction": "Blizzards appear on the minimap."
+        "interaction": "暴风雪会显示在小地图上。"
     },
     {
         "id1": 1,
         "id2": 18,
-        "interaction": "Gifts do not appear on the minimap. Kill Bots gifted to Amon do not appear on the minimap."
+        "interaction": "礼物不会显示在小地图上。赠送给埃蒙的击杀机器人也不会显示在小地图上。"
     },
     {
         "id1": 1,
         "id2": 24,
-        "interaction": "Kill Bots do not appear on the minimap."
+        "interaction": "击杀机器人不会显示在小地图上。"
     },
     {
         "id1": 1,
         "id2": 25,
-        "interaction": "The Laser Drill will be marked on the minimap when it attacks you."
+        "interaction": "激光钻机攻击你时会在小地图上显示标记。"
     },
     {
         "id1": 1,
         "id2": 30,
-        "interaction": "Mag-mines appear on the minimap."
+        "interaction": "磁力地雷会显示在小地图上。"
     },
     {
         "id1": 1,
         "id2": 34,
-        "interaction": "Missiles do not appear on the minimap."
+        "interaction": "飞弹不会显示在小地图上。"
     },
     {
         "id1": 1,
         "id2": 43,
-        "interaction": "Propagators do not appear on the minimap."
+        "interaction": "传播者不会显示在小地图上。"
     },
     {
         "id1": 1,
         "id2": 44,
-        "interaction": "Purifier Beam appears as a red dot on the minimap."
+        "interaction": "净化光束会以红点显示在小地图上。"
     },
     {
         "id1": 1,
         "id2": 56,
-        "interaction": "The Turking does not appear on the minimap."
+        "interaction": "火鸡王不会显示在小地图上。"
     },
     {
         "id1": 1,
         "id2": 60,
-        "interaction": "Void Rifts are marked on the minimap."
+        "interaction": "虚空裂隙会在小地图上显示标记。"
     },
     {
         "id1": 1,
         "id2": 63,
-        "interaction": "Boom Bots do not appear on the minimap."
+        "interaction": "自爆机器人不会显示在小地图上。"
     },
     {
         "id1": 2,
         "id2": 3,
-        "interaction": "Units from Aggressive Deployment Drops spawn Broodlings when they die."
+        "interaction": "进攻部署空投中的单位死亡时生成巢虫。"
     },
     {
         "id1": 2,
         "id2": 4,
-        "interaction": "Units from Aggressive Deployment Drops give out and receive Avenger stacks."
+        "interaction": "进攻部署空投中的单位会提供和获得复仇者层数。"
     },
     {
         "id1": 2,
         "id2": 5,
-        "interaction": "Units from Aggressive Deployment Drops get the Barrier buff."
+        "interaction": "进攻部署空投中的单位会获得屏障增益。"
     },
     {
         "id1": 2,
         "id2": 6,
-        "interaction": "Units from Aggressive Deployment Drops can carry Plague."
+        "interaction": "进攻部署空投中的单位可以携带瘟疫。"
     },
     {
         "id1": 2,
         "id2": 8,
-        "interaction": "A single 1/1 Aggressive Deployment drop will spawn once the mutator rolls out."
+        "interaction": "突变因子启用后会生成一次1/1规模的进攻部署空投。"
     },
     {
         "id1": 2,
         "id2": 9,
-        "interaction": "Units from Aggressive Deployment Drops apply the Concussive Attacks debuff."
+        "interaction": "进攻部署空投中的单位会施加震荡攻击减益。"
     },
     {
         "id1": 2,
         "id2": 14,
-        "interaction": "Units from Aggressive Deployment Drops get the Evasive Maneuvers buff."
+        "interaction": "进攻部署空投中的单位会获得规避机动增益。"
     },
     {
         "id1": 2,
         "id2": 15,
-        "interaction": "Units from Aggressive Deployment Drops trigger Fatal Attraction when they die."
+        "interaction": "进攻部署空投中的单位死亡时触发致命吸引。"
     },
     {
         "id1": 2,
         "id2": 16,
-        "interaction": "Units from Aggressive Deployment Drops can apply the Fear effect."
+        "interaction": "进攻部署空投中的单位可以施加恐惧效果。"
     },
     {
         "id1": 2,
         "id2": 17,
-        "interaction": "Units from Aggressive Deployment Drops do not launch Fireworks when they die."
+        "interaction": "进攻部署空投中的单位死亡时不会发射烟花。"
     },
     {
         "id1": 2,
         "id2": 18,
-        "interaction": "Units from Aggressive Deployment Drops can capture gifts."
+        "interaction": "进攻部署空投中的单位可以拾取礼物。"
     },
     {
         "id1": 2,
         "id2": 20,
-        "interaction": "Units from Aggressive Deployment Drops cause Hardened Will to activate."
+        "interaction": "进攻部署空投中的单位会触发坚毅意志。"
     },
     {
         "id1": 2,
         "id2": 21,
-        "interaction": "Aggressive Deployment drops do not contain Amon Heroes."
+        "interaction": "进攻部署空投不包含埃蒙英雄。"
     },
     {
         "id1": 2,
         "id2": 22,
-        "interaction": "Units from Aggressive Deployment Drops can get the Inspiration buff."
+        "interaction": "进攻部署空投中的单位可以获得鼓舞增益。"
     },
     {
         "id1": 2,
         "id2": 23,
-        "interaction": "Units from Aggressive Deployment Drops respawn when they die."
+        "interaction": "进攻部署空投中的单位死亡时会重生。"
     },
     {
         "id1": 2,
         "id2": 27,
-        "interaction": "Units from Aggressive Deployment Drops have the Life Leech buff."
+        "interaction": "进攻部署空投中的单位拥有生命吸取增益。"
     },
     {
         "id1": 2,
         "id2": 28,
-        "interaction": "Units from Aggressive Deployment Drops get the Long Range buff."
+        "interaction": "进攻部署空投中的单位会获得超远射程增益。"
     },
     {
         "id1": 2,
         "id2": 37,
-        "interaction": "Aggressive Deployment Drop kills increase the Naughty List count."
+        "interaction": "进攻部署空投的击杀会增加淘气名单计数。"
     },
     {
         "id1": 2,
         "id2": 41,
-        "interaction": "Units from Aggressive Deployment Drops all have Polarity applied to them."
+        "interaction": "进攻部署空投中的单位全部会被施加极性。"
     },
     {
         "id1": 2,
         "id2": 42,
-        "interaction": "Units from Aggressive Deployment Drops move can cast skills."
+        "interaction": "进攻部署空投中的单位移动时可以施放技能。"
     },
     {
         "id1": 2,
         "id2": 46,
-        "interaction": "Units from Aggressive Deployment Drops set the ground on fire when they die."
+        "interaction": "进攻部署空投中的单位死亡时会点燃地面。"
     },
     {
         "id1": 2,
         "id2": 47,
-        "interaction": "Units from Aggressive Deployment Drops create an explosion when they die."
+        "interaction": "进攻部署空投中的单位死亡时会产生爆炸。"
     },
     {
         "id1": 2,
         "id2": 51,
-        "interaction": "Units from Aggressive Deployment Drops move faster with Speed Freaks."
+        "interaction": "进攻部署空投中的单位在速度狂魔作用下移动更快。"
     },
     {
         "id1": 2,
         "id2": 54,
-        "interaction": "Units from Aggressive Deployment Drops can Transmute."
+        "interaction": "进攻部署空投中的单位可以发生嬗变。"
     },
     {
         "id1": 2,
         "id2": 59,
-        "interaction": "Void Reanimators can resurrect units from Aggressive Deployment Drops."
+        "interaction": "虚空复生者可以复活进攻部署空投中的单位。"
     },
     {
         "id1": 2,
         "id2": 61,
-        "interaction": "Units from Aggressive Deployment Drops spawn Infested when they die."
+        "interaction": "进攻部署空投中的单位死亡时生成感染体。"
     },
     {
         "id1": 2,
         "id2": 62,
-        "interaction": "Units from Aggressive Deployment Drops are cloaked."
+        "interaction": "进攻部署空投中的单位处于隐形状态。"
     },
     {
         "id1": 3,
         "id2": 4,
-        "interaction": "Broodlings can give out/receive Avenger stacks."
+        "interaction": "巢虫可以提供/获得复仇者层数。"
     },
     {
         "id1": 3,
         "id2": 5,
-        "interaction": "Broodlings get the Barrier buff."
+        "interaction": "巢虫会获得屏障增益。"
     },
     {
         "id1": 3,
         "id2": 6,
-        "interaction": "Broodlings can carry Plague."
+        "interaction": "巢虫可以携带瘟疫。"
     },
     {
         "id1": 3,
         "id2": 14,
-        "interaction": "Broodlings get the Evasive Maneuvers buff."
+        "interaction": "巢虫会获得规避机动增益。"
     },
     {
         "id1": 3,
         "id2": 15,
-        "interaction": "Broodlings trigger Fatal Attraction when they die."
+        "interaction": "巢虫死亡时触发致命吸引。"
     },
     {
         "id1": 3,
         "id2": 16,
-        "interaction": "Broodlings can apply the Fear effect."
+        "interaction": "巢虫可以施加恐惧效果。"
     },
     {
         "id1": 3,
         "id2": 17,
-        "interaction": "Broodlings launch Fireworks when they die."
+        "interaction": "巢虫死亡时发射烟花。"
     },
     {
         "id1": 3,
         "id2": 18,
-        "interaction": "Broodlings can capture gifts. Units spawned from Gift Exchange spawn Broodlings when they die."
+        "interaction": "巢虫可以拾取礼物。礼物交换生成的单位死亡时生成巢虫。"
     },
     {
         "id1": 3,
         "id2": 20,
-        "interaction": "Broodlings cause Hardened Will to activate."
+        "interaction": "巢虫会触发坚毅意志。"
     },
     {
         "id1": 3,
         "id2": 21,
-        "interaction": "Amon Heroes spawn Broodlings when they die."
+        "interaction": "埃蒙英雄死亡时生成巢虫。"
     },
     {
         "id1": 3,
         "id2": 22,
-        "interaction": "Broodlings can get the Inspiration buff."
+        "interaction": "巢虫可以获得鼓舞增益。"
     },
     {
         "id1": 3,
         "id2": 23,
-        "interaction": "Broodlings respawn when they die."
+        "interaction": "巢虫死亡时会重生。"
     },
     {
         "id1": 3,
         "id2": 24,
-        "interaction": "Kill Bots spawn Broodlings when they die."
+        "interaction": "击杀机器人死亡时生成巢虫。"
     },
     {
         "id1": 3,
         "id2": 27,
-        "interaction": "Broodlings have Life Leech."
+        "interaction": "巢虫拥有生命吸取。"
     },
     {
         "id1": 3,
         "id2": 30,
-        "interaction": "Mag-mines do not spawn Broodlings when they detonate."
+        "interaction": "磁力地雷引爆时不会生成巢虫。"
     },
     {
         "id1": 3,
         "id2": 33,
-        "interaction": "Mines spawn Broodlings when they are destroyed."
+        "interaction": "地雷被摧毁时生成巢虫。"
     },
     {
         "id1": 3,
         "id2": 34,
-        "interaction": "Missiles do not spawn Broodlings when destroyed."
+        "interaction": "飞弹被摧毁时不会生成巢虫。"
     },
     {
         "id1": 3,
         "id2": 37,
-        "interaction": "Broodling kills increase the Naughty List count."
+        "interaction": "巢虫的击杀会增加淘气名单计数。"
     },
     {
         "id1": 3,
         "id2": 39,
-        "interaction": "Infested and Aberrations do not spawn Broodlings units when killed."
+        "interaction": "感染体和畸变体被消灭时不会生成巢虫单位。"
     },
     {
         "id1": 3,
         "id2": 41,
-        "interaction": "Broodlings all have Polarity applied to them."
+        "interaction": "巢虫全部会被施加极性。"
     },
     {
         "id1": 3,
         "id2": 42,
-        "interaction": "Broodlings can cast abilities."
+        "interaction": "巢虫可以施放技能。"
     },
     {
         "id1": 3,
         "id2": 43,
-        "interaction": "Propagators spawn Broodlings when they die."
+        "interaction": "传播者死亡时生成巢虫。"
     },
     {
         "id1": 3,
         "id2": 46,
-        "interaction": "Broodlings set the ground on fire when they die."
+        "interaction": "巢虫死亡时会点燃地面。"
     },
     {
         "id1": 3,
         "id2": 47,
-        "interaction": "Broodlings create an explosion when they die."
+        "interaction": "巢虫死亡时会产生爆炸。"
     },
     {
         "id1": 3,
         "id2": 51,
-        "interaction": "Broodlings move faster with Speed Freaks."
+        "interaction": "巢虫在速度狂魔作用下移动更快。"
     },
     {
         "id1": 3,
         "id2": 54,
-        "interaction": "Broodlings can transmutate. Newly-transmuted units spawn Broodlings when they die."
+        "interaction": "巢虫可以发生嬗变。新嬗变出的单位死亡时生成巢虫。"
     },
     {
         "id1": 3,
         "id2": 55,
-        "interaction": "Units spawned from Civilians spawn Broodlings when they die."
+        "interaction": "平民生成的单位死亡时生成巢虫。"
     },
     {
         "id1": 3,
         "id2": 56,
-        "interaction": "Turkeys do not spawn Broodlings when they die. Angry Turkeys spawn Broodlings when they die. The Turking does not spawn Broodlings when it dies."
+        "interaction": "火鸡死亡时不会生成巢虫。愤怒火鸡死亡时生成巢虫。火鸡王死亡时不会生成巢虫。"
     },
     {
         "id1": 3,
         "id2": 59,
-        "interaction": "Void Reanimators cannot resurrect Broodlings."
+        "interaction": "虚空复生者无法复活巢虫。"
     },
     {
         "id1": 3,
         "id2": 60,
-        "interaction": "Units spawned from Void Rifts spawn Broodlings when they die."
+        "interaction": "虚空裂隙生成的单位死亡时生成巢虫。"
     },
     {
         "id1": 3,
         "id2": 61,
-        "interaction": "Killed units spawn both, Infested and Broodlings at the same time. Infested units and Broodlings do not spawn units on death."
+        "interaction": "被消灭的单位会同时生成感染体和巢虫。感染体单位和巢虫死亡时不会生成单位。"
     },
     {
         "id1": 3,
         "id2": 62,
-        "interaction": "Broodlings are cloaked."
+        "interaction": "巢虫处于隐形状态。"
     },
     {
         "id1": 3,
         "id2": 63,
-        "interaction": "Boom Bots spawn Broodlings when they die."
+        "interaction": "自爆机器人死亡时生成巢虫。"
     },
     {
         "id1": 4,
         "id2": 18,
-        "interaction": "Units spawned from Gift Exchange can give out/receive Avenger stacks."
+        "interaction": "礼物交换生成的单位可以提供/获得复仇者层数。"
     },
     {
         "id1": 4,
         "id2": 21,
-        "interaction": "Amon Heroes can give out (1 stack)/receive Avenger stacks."
+        "interaction": "埃蒙英雄可以提供（1层）/获得复仇者层数。"
     },
     {
         "id1": 4,
         "id2": 22,
-        "interaction": "Units with Avenger stacks can get the Inspiration buff."
+        "interaction": "拥有复仇者层数的单位可以获得鼓舞增益。"
     },
     {
         "id1": 4,
         "id2": 23,
-        "interaction": "Units do not give out/lose Avenger stacks when taking fatal damage and respawning. When a unit is finally killed, Avenger stacks are provided to surrounding units. Units retain their Avenger stacks when taking fatal damage and respawning."
+        "interaction": "单位受到致命伤害并重生时不会提供或失去复仇者层数。单位最终死亡时会向周围单位提供复仇者层数。单位受到致命伤害并重生时会保留复仇者层数。"
     },
     {
         "id1": 4,
         "id2": 24,
-        "interaction": "Kill Bots can give out Avenger stacks (1 stack) when they die."
+        "interaction": "击杀机器人死亡时可以提供复仇者层数（1层）。"
     },
     {
         "id1": 4,
         "id2": 30,
-        "interaction": "Mag-mines do not give out Avenger stacks when they detonate."
+        "interaction": "磁力地雷引爆时不会提供复仇者层数。"
     },
     {
         "id1": 4,
         "id2": 33,
-        "interaction": "Mines can give out Avenger stacks, but cannot receive them."
+        "interaction": "地雷可以提供复仇者层数，但无法获得层数。"
     },
     {
         "id1": 4,
         "id2": 34,
-        "interaction": "Missiles do not give out Avenger stacks when destroyed."
+        "interaction": "飞弹被摧毁时不会提供复仇者层数。"
     },
     {
         "id1": 4,
         "id2": 39,
-        "interaction": "Infested and Aberrations can give out/receive Avenger stacks."
+        "interaction": "感染体和畸变体可以提供/获得复仇者层数。"
     },
     {
         "id1": 4,
         "id2": 43,
-        "interaction": "Propagators can give out (1 stack)/receive Avenger stacks."
+        "interaction": "传播者可以提供（1层）/获得复仇者层数。"
     },
     {
         "id1": 4,
         "id2": 51,
-        "interaction": "Units with Avenger stacks move faster with Speed Freaks."
+        "interaction": "拥有复仇者层数的单位在速度狂魔作用下移动更快。"
     },
     {
         "id1": 4,
         "id2": 54,
-        "interaction": "Units lose their Avenger stacks after they Transmute."
+        "interaction": "单位嬗变后会失去复仇者层数。"
     },
     {
         "id1": 4,
         "id2": 55,
-        "interaction": "Units spawned from Civilians give out and collect Avenger stacks."
+        "interaction": "平民生成的单位会提供和收集复仇者层数。"
     },
     {
         "id1": 4,
         "id2": 56,
-        "interaction": "Turkeys do not give out Avenger stacks. Angry Turkeys can give out (1 stack)/receive Avenger stacks. The Turking can give out (10 stacks) Avenger stacks."
+        "interaction": "火鸡不会提供复仇者层数。愤怒火鸡可以提供（1层）/获得复仇者层数。火鸡王可以提供（10层）复仇者层数。"
     },
     {
         "id1": 4,
         "id2": 59,
-        "interaction": "Void Reanimators can give out (3 stacks) Avenger stacks. Resurrected units do not keep their Avenger stacks."
+        "interaction": "虚空复生者可以提供（3层）复仇者层数。复活后的单位不会保留复仇者层数。"
     },
     {
         "id1": 4,
         "id2": 60,
-        "interaction": "Units spawned from Void Rifts can give out/receive Avenger stacks."
+        "interaction": "虚空裂隙生成的单位可以提供/获得复仇者层数。"
     },
     {
         "id1": 4,
         "id2": 61,
-        "interaction": "Infested can give out/receive Avenger stacks."
+        "interaction": "感染体可以提供/获得复仇者层数。"
     },
     {
         "id1": 4,
         "id2": 63,
-        "interaction": "Boom Bots do not give out Avenger stacks when they die."
+        "interaction": "自爆机器人不会提供复仇者层数死亡时。"
     },
     {
         "id1": 5,
         "id2": 13,
-        "interaction": "Structures captured by Amon get the Barrier buff."
+        "interaction": "被埃蒙占领的建筑会获得屏障增益。"
     },
     {
         "id1": 5,
         "id2": 18,
-        "interaction": "Units spawned from Gift Exchange get the Barrier buff."
+        "interaction": "礼物交换生成的单位会获得屏障增益。"
     },
     {
         "id1": 5,
         "id2": 21,
-        "interaction": "Amon Heroes get the Barrier buff."
+        "interaction": "埃蒙英雄会获得屏障增益。"
     },
     {
         "id1": 5,
         "id2": 23,
-        "interaction": "If a unit has used its Barrier buff, the respawned unit will not get the Barrier buff. If a unit has not used its Barrier buff, the respawned unit will have the Barrier buff activated when it respawns."
+        "interaction": "如果单位已经触发屏障增益，重生后不会再次获得屏障增益。如果单位尚未触发屏障增益，重生时会激活屏障增益。"
     },
     {
         "id1": 5,
         "id2": 32,
-        "interaction": "Mineral Shields get the Barrier buff."
+        "interaction": "矿物护盾会获得屏障增益。"
     },
     {
         "id1": 5,
         "id2": 33,
-        "interaction": "Mines get the Barrier buff."
+        "interaction": "地雷会获得屏障增益。"
     },
     {
         "id1": 5,
         "id2": 34,
-        "interaction": "Missiles get the Barrier buff."
+        "interaction": "飞弹会获得屏障增益。"
     },
     {
         "id1": 5,
         "id2": 39,
-        "interaction": "Infested and Aberrations get the Barrier buff."
+        "interaction": "感染体和畸变体会获得屏障增益。"
     },
     {
         "id1": 5,
         "id2": 41,
-        "interaction": "Damage blocked by Polarity still triggers Barrier."
+        "interaction": "被极性阻挡的伤害仍会触发屏障。"
     },
     {
         "id1": 5,
         "id2": 43,
-        "interaction": "Propagators get the Barrier buff."
+        "interaction": "传播者会获得屏障增益。"
     },
     {
         "id1": 5,
         "id2": 54,
-        "interaction": "Transmuted units get the Barrier buff."
+        "interaction": "嬗变后的单位会获得屏障增益。"
     },
     {
         "id1": 5,
         "id2": 55,
-        "interaction": "Units spawned from Civilians get the Barrier buff."
+        "interaction": "平民生成的单位会获得屏障增益。"
     },
     {
         "id1": 5,
         "id2": 56,
-        "interaction": "Turkeys do not get the Barrier buff."
+        "interaction": "火鸡不会获得屏障增益。"
     },
     {
         "id1": 5,
         "id2": 59,
-        "interaction": "Void Reanimators get the Barrier buff. Resurrected units get the Barrier buff."
+        "interaction": "虚空复生者会获得屏障增益。复活后的单位会获得屏障增益。"
     },
     {
         "id1": 5,
         "id2": 60,
-        "interaction": "Units spawned from Void Rifts get the Barrier buff."
+        "interaction": "虚空裂隙生成的单位会获得屏障增益。"
     },
     {
         "id1": 5,
         "id2": 61,
-        "interaction": "Infested get the Barrier buff."
+        "interaction": "感染体会获得屏障增益。"
     },
     {
         "id1": 6,
         "id2": 12,
-        "interaction": "Units with Black Death will die twice as fast with Double Edged active."
+        "interaction": "双刃剑生效时，带有黑死病的单位死亡速度会加快一倍。"
     },
     {
         "id1": 6,
         "id2": 16,
-        "interaction": "Plague damage ticks do not have a chance of applying Fear."
+        "interaction": "瘟疫的周期伤害不会触发恐惧。"
     },
     {
         "id1": 6,
         "id2": 18,
-        "interaction": "Units spawned from Gift Exchange can carry Plague."
+        "interaction": "礼物交换生成的单位可以携带瘟疫。"
     },
     {
         "id1": 6,
         "id2": 21,
-        "interaction": "Amon Heroes can carry Plague."
+        "interaction": "埃蒙英雄可以携带瘟疫。"
     },
     {
         "id1": 6,
         "id2": 23,
-        "interaction": "Whether a unit has Plague or not is retained when it takes fatal damage. Plague only spreads when the unit is finnally killed."
+        "interaction": "单位受到致命伤害时会保留是否携带瘟疫的状态。只有单位最终死亡时，瘟疫才会传播。"
     },
     {
         "id1": 6,
         "id2": 24,
-        "interaction": "Kill Bots cannot carry Plague."
+        "interaction": "击杀机器人无法携带瘟疫。"
     },
     {
         "id1": 6,
         "id2": 30,
-        "interaction": "Mag-mines cannot carry Plague."
+        "interaction": "磁力地雷无法携带瘟疫。"
     },
     {
         "id1": 6,
         "id2": 33,
-        "interaction": "Mines can carry Plague."
+        "interaction": "地雷可以携带瘟疫。"
     },
     {
         "id1": 6,
         "id2": 34,
-        "interaction": "Missiles cannot carry Plague."
+        "interaction": "飞弹无法携带瘟疫。"
     },
     {
         "id1": 6,
         "id2": 39,
-        "interaction": "Infested and Aberrations can carry Plague."
+        "interaction": "感染体和畸变体可以携带瘟疫。"
     },
     {
         "id1": 6,
         "id2": 43,
-        "interaction": "Propagators can carry Plague."
+        "interaction": "传播者可以携带瘟疫。"
     },
     {
         "id1": 6,
         "id2": 54,
-        "interaction": "Transmuted units may or may not carry Plague, irrespective of whether it carried Plague or not before Transmuting."
+        "interaction": "嬗变后的单位是否携带瘟疫与嬗变前的状态无关。"
     },
     {
         "id1": 6,
         "id2": 55,
-        "interaction": "Units spawned from Civilians can carry Plague."
+        "interaction": "平民生成的单位可以携带瘟疫。"
     },
     {
         "id1": 6,
         "id2": 56,
-        "interaction": "Turkeys cannot carry Plague. The Turking can carry Plague."
+        "interaction": "火鸡无法携带瘟疫。火鸡王可以携带瘟疫。"
     },
     {
         "id1": 6,
         "id2": 59,
-        "interaction": "Void Reanimators can carry Plague. Resurrected units may or may not carry Plague, irrespective of whether it originally carried Plague or not before it died."
+        "interaction": "虚空复生者可以携带瘟疫。复活后的单位是否携带瘟疫与死亡前的状态无关。"
     },
     {
         "id1": 6,
         "id2": 60,
-        "interaction": "Units spawned from Void Rifts can carry Plague."
+        "interaction": "虚空裂隙生成的单位可以携带瘟疫。"
     },
     {
         "id1": 6,
         "id2": 61,
-        "interaction": "Infested can carry Plague."
+        "interaction": "感染体可以携带瘟疫。"
     },
     {
         "id1": 6,
         "id2": 63,
-        "interaction": "Boom Bots cannot carry Plague."
+        "interaction": "自爆机器人无法携带瘟疫。"
     },
     {
         "id1": 7,
         "id2": 9,
-        "interaction": "Blizzard applies the Concussive Attacks debuff."
+        "interaction": "暴风雪会施加震荡攻击减益。"
     },
     {
         "id1": 7,
         "id2": 10,
-        "interaction": "Blizzards appear on the minimap."
+        "interaction": "暴风雪会显示在小地图上。"
     },
     {
         "id1": 7,
         "id2": 16,
-        "interaction": "Blizzard can apply the Fear effect."
+        "interaction": "暴风雪可以施加恐惧效果。"
     },
     {
         "id1": 7,
         "id2": 18,
-        "interaction": "Blizzards can capture gifts."
+        "interaction": "暴风雪可以拾取礼物。"
     },
     {
         "id1": 7,
         "id2": 25,
-        "interaction": "Blizzards do not provide vision for the Laser Drill."
+        "interaction": "暴风雪不会为激光钻机提供视野。"
     },
     {
         "id1": 7,
         "id2": 62,
-        "interaction": "Blizzards are not cloaked."
+        "interaction": "暴风雪不处于隐形状态。"
     },
     {
         "id1": 8,
         "id2": 32,
-        "interaction": "Mineral Shields will always spawn on all mineral patches."
+        "interaction": "所有矿区始终都会生成矿物护盾。"
     },
     {
         "id1": 8,
         "id2": 50,
-        "interaction": "Mineral patches will have their total mineral count permanently reduced, even after Slim Pickings  cycles out."
+        "interaction": "即使矿藏贫乏轮换结束，矿区的矿物总量仍会永久减少。"
     },
     {
         "id1": 8,
         "id2": 60,
-        "interaction": "Void Rifts will spawn 2:20 after they are activated, meaning only two spawns will occur."
+        "interaction": "虚空裂隙会在激活2:20后生成，因此只会生成两次。"
     },
     {
         "id1": 9,
         "id2": 13,
-        "interaction": "Turrets captured by Amon apply the Concussive Attacks debuff."
+        "interaction": "被埃蒙占领的炮台会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 17,
-        "interaction": "Fireworks apply the Concussive Attacks debuff."
+        "interaction": "烟花会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 18,
-        "interaction": "Units spawned from Gift Exchange apply the Concussive Attacks debuff."
+        "interaction": "礼物交换生成的单位会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 19,
-        "interaction": "Nukes apply the Concussive Attacks debuff."
+        "interaction": "核弹会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 21,
-        "interaction": "Amon Heroes apply the Concussive Attacks debuff."
+        "interaction": "埃蒙英雄会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 23,
-        "interaction": "Respawned units apply the Concussive Attacks debuff."
+        "interaction": "重生后的单位会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 24,
-        "interaction": "Kill Bots apply the Concussive Attacks debuff."
+        "interaction": "击杀机器人会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 25,
-        "interaction": "Laser Drill applies the Concussive Attacks debuff."
+        "interaction": "激光钻机会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 26,
-        "interaction": "Lava Burst applies the Concussive Attacks debuff."
+        "interaction": "熔岩爆发会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 30,
-        "interaction": "Mines apply the Concussive Attacks debuff."
+        "interaction": "地雷会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 33,
-        "interaction": "Mines apply the Concussive Attacks debuff."
+        "interaction": "地雷会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 34,
-        "interaction": "Missiles apply the Concussive Attacks debuff."
+        "interaction": "飞弹会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 36,
-        "interaction": "Hybrid Nukes apply the Concussive Attacks debuff."
+        "interaction": "混合体核弹会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 38,
-        "interaction": "Orbital Strikes apply the Concussive Attacks debuff."
+        "interaction": "轨道轰炸会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 39,
-        "interaction": "Infested and Aberrations apply the Concussive Attacks debuff."
+        "interaction": "感染体和畸变体会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 40,
-        "interaction": "Photon Overload applies the Concussive Attacks debuff."
+        "interaction": "光子超载会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 42,
-        "interaction": "Damaging skills will apply the Concussive Attacks debuff."
+        "interaction": "伤害技能会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 44,
-        "interaction": "Purifier Beam applies the Concussive Attacks debuff."
+        "interaction": "净化光束会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 46,
-        "interaction": "Scorched Earth applies the Concussive Attacks debuff."
+        "interaction": "焦土会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 47,
-        "interaction": "Self Destruction applies the Concussive Attacks debuff."
+        "interaction": "自毁会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 54,
-        "interaction": "Transmuted units apply the Concussive Attacks debuff."
+        "interaction": "嬗变后的单位会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 55,
-        "interaction": "Units spawned from Civilians apply the Concussive Attacks debuff."
+        "interaction": "平民生成的单位会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 56,
-        "interaction": "Turkeys apply the Concussive Attacks debuff."
+        "interaction": "火鸡会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 57,
-        "interaction": "Twisters apply the Concussive Attacks debuff."
+        "interaction": "龙卷风会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 59,
-        "interaction": "Resurrected units apply the Concussive Attacks debuff."
+        "interaction": "复活后的单位会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 60,
-        "interaction": "Units spawned from Void Rifts apply the Concussive Attacks debuff."
+        "interaction": "虚空裂隙生成的单位会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 61,
-        "interaction": "Infested apply the Concussive Attacks debuff."
+        "interaction": "感染体会施加震荡攻击减益。"
     },
     {
         "id1": 9,
         "id2": 63,
-        "interaction": "Boom Bots apply the Concussive Attacks debuff."
+        "interaction": "自爆机器人会施加震荡攻击减益。"
     },
     {
         "id1": 10,
         "id2": 18,
-        "interaction": "Gifts do not appear on the minimap. Kill Bots gifted to Amon do not appear on the minimap."
+        "interaction": "礼物不会显示在小地图上。赠送给埃蒙的击杀机器人也不会显示在小地图上。"
     },
     {
         "id1": 10,
         "id2": 24,
-        "interaction": "Kill Bots do not appear on the minimap."
+        "interaction": "击杀机器人不会显示在小地图上。"
     },
     {
         "id1": 10,
         "id2": 25,
-        "interaction": "The Laser Drill will be marked on the minimap when it attacks you."
+        "interaction": "激光钻机攻击你时会在小地图上显示标记。"
     },
     {
         "id1": 10,
         "id2": 30,
-        "interaction": "Mag-mines appear on the minimap."
+        "interaction": "磁力地雷会显示在小地图上。"
     },
     {
         "id1": 10,
         "id2": 34,
-        "interaction": "Missiles do not appear on the minimap."
+        "interaction": "飞弹不会显示在小地图上。"
     },
     {
         "id1": 10,
         "id2": 43,
-        "interaction": "Propagators do not appear on the minimap."
+        "interaction": "传播者不会显示在小地图上。"
     },
     {
         "id1": 10,
         "id2": 44,
-        "interaction": "Purifier Beam appears as a red dot on the minimap."
+        "interaction": "净化光束会以红点显示在小地图上。"
     },
     {
         "id1": 10,
         "id2": 56,
-        "interaction": "The Turking does not appear on the minimap."
+        "interaction": "火鸡王不会显示在小地图上。"
     },
     {
         "id1": 10,
         "id2": 60,
-        "interaction": "Void Rifts are marked on the minimap."
+        "interaction": "虚空裂隙会在小地图上显示标记。"
     },
     {
         "id1": 10,
         "id2": 63,
-        "interaction": "Boom Bots do not appear on the minimap."
+        "interaction": "自爆机器人不会显示在小地图上。"
     },
     {
         "id1": 11,
         "id2": 13,
-        "interaction": "Turrets can be captured by Amon if they deal too much damage to themselves."
+        "interaction": "炮台对自身造成过多伤害时可能被埃蒙占领。"
     },
     {
         "id1": 11,
         "id2": 16,
-        "interaction": "Damage dealt by Diffusion can trigger Fear."
+        "interaction": "扩散造成的伤害可以触发恐惧。"
     },
     {
         "id1": 11,
         "id2": 18,
-        "interaction": "Diffusion applies to all units spawned from Gift Exchange."
+        "interaction": "扩散会作用于礼物交换生成的所有单位。"
     },
     {
         "id1": 11,
         "id2": 27,
-        "interaction": "Damage dealt by Diffusion counts as Life Leech for the unit attacked."
+        "interaction": "扩散造成的伤害会计为受攻击单位的生命吸取。"
     },
     {
         "id1": 11,
         "id2": 41,
-        "interaction": "Diffusion damages all units regardless of their Polarity."
+        "interaction": "扩散会伤害所有单位，无视其极性。"
     },
     {
         "id1": 11,
         "id2": 54,
-        "interaction": "Damage dealt by Diffusion can trigger Transmutation on enemy units."
+        "interaction": "扩散造成的伤害可以在敌方单位上触发嬗变。"
     },
     {
         "id1": 12,
         "id2": 13,
-        "interaction": "Turrets can be captured by Amon if they deal too much damage to themselves."
+        "interaction": "炮台对自身造成过多伤害时可能被埃蒙占领。"
     },
     {
         "id1": 12,
         "id2": 16,
-        "interaction": "Damage dealt by Double Edged does not trigger Fear."
+        "interaction": "双刃剑造成的伤害不会触发恐惧。"
     },
     {
         "id1": 12,
         "id2": 27,
-        "interaction": "Damage dealt by Double Edged does not trigger Life Leech."
+        "interaction": "双刃剑造成的伤害不会触发生命吸取。"
     },
     {
         "id1": 12,
         "id2": 54,
-        "interaction": "Damage dealt by Double Edged does not trigger Transmutation."
+        "interaction": "双刃剑造成的伤害不会触发嬗变。"
     },
     {
         "id1": 13,
         "id2": 16,
-        "interaction": "Turrets captured by Amon can apply the Fear effect."
+        "interaction": "被埃蒙占领的炮台可以施加恐惧效果。"
     },
     {
         "id1": 13,
         "id2": 24,
-        "interaction": "Kill Bots spawn out of structures converted by Eminent Domain."
+        "interaction": "被强制征用转化的建筑会生成击杀机器人。"
     },
     {
         "id1": 13,
         "id2": 27,
-        "interaction": "Turrets captured by Amon have Life Leech."
+        "interaction": "被埃蒙占领的炮台拥有生命吸取。"
     },
     {
         "id1": 13,
         "id2": 28,
-        "interaction": "Structures captured by Amon get the Long Range buff."
+        "interaction": "被埃蒙占领的建筑会获得超远射程增益。"
     },
     {
         "id1": 13,
         "id2": 39,
-        "interaction": "Infested and Aberrations spawn out of structures converted by Eminent Domain."
+        "interaction": "被强制征用转化的建筑会生成感染体和畸变体。"
     },
     {
         "id1": 13,
         "id2": 41,
-        "interaction": "Structures captured by Amon get Polarity."
+        "interaction": "被埃蒙占领的建筑会获得极性。"
     },
     {
         "id1": 13,
         "id2": 43,
-        "interaction": "Structures hit by Propagators change to a Propagator and do not get converted. Propagators spawn out of structures converted by Eminent Domain."
+        "interaction": "被传播者命中的建筑会变为传播者，而不会被转化。被强制征用转化的建筑会生成传播者。"
     },
     {
         "id1": 13,
         "id2": 54,
-        "interaction": "The attack that kills a player's structure will not cause the enemy unit to Transmute."
+        "interaction": "摧毁玩家建筑的攻击不会使敌方单位发生嬗变。"
     },
     {
         "id1": 13,
         "id2": 55,
-        "interaction": "Civilians spawn out of structures converted by Eminent Domain."
+        "interaction": "被强制征用转化的建筑会生成平民。"
     },
     {
         "id1": 13,
         "id2": 56,
-        "interaction": "Structures destroyed by Turkeys will be converted."
+        "interaction": "被火鸡摧毁的建筑会被转化。"
     },
     {
         "id1": 13,
         "id2": 59,
-        "interaction": "Void Reanimators spawn out of structures converted by Eminent Domain."
+        "interaction": "被强制征用转化的建筑会生成虚空复生者。"
     },
     {
         "id1": 13,
         "id2": 63,
-        "interaction": "Boom Bots spawn out of structures converted by Eminent Domain."
+        "interaction": "被强制征用转化的建筑会生成自爆机器人。"
     },
     {
         "id1": 14,
         "id2": 18,
-        "interaction": "Units spawned from Gift Exchange get the Evasive Manuevers buff."
+        "interaction": "礼物交换生成的单位会获得规避机动增益。"
     },
     {
         "id1": 14,
         "id2": 21,
-        "interaction": "Amon Heroes do not get the Evasive Maneuvers buff."
+        "interaction": "埃蒙英雄不会获得规避机动增益。"
     },
     {
         "id1": 14,
         "id2": 23,
-        "interaction": "Respawned units get the Evasive Maneuvers buff."
+        "interaction": "重生后的单位会获得规避机动增益。"
     },
     {
         "id1": 14,
         "id2": 33,
-        "interaction": "Mines do not get the Evasive Maneuvers buff."
+        "interaction": "地雷不会获得规避机动增益。"
     },
     {
         "id1": 14,
         "id2": 34,
-        "interaction": "Missiles do not get the Evasive Maneuvers buff."
+        "interaction": "飞弹不会获得规避机动增益。"
     },
     {
         "id1": 14,
         "id2": 39,
-        "interaction": "Infested and Aberrations get the Evasive Maneuvers buff."
+        "interaction": "感染体和畸变体会获得规避机动增益。"
     },
     {
         "id1": 14,
         "id2": 41,
-        "interaction": "Damage blocked by Polarity still triggers Evasive Maneuvers."
+        "interaction": "被极性阻挡的伤害仍会触发规避机动。"
     },
     {
         "id1": 14,
         "id2": 43,
-        "interaction": "Propagators do not get the Evasive Maneuvers buff."
+        "interaction": "传播者不会获得规避机动增益。"
     },
     {
         "id1": 14,
         "id2": 54,
-        "interaction": "Transmuted units get the Evasive Maneuvers buff."
+        "interaction": "嬗变后的单位会获得规避机动增益。"
     },
     {
         "id1": 14,
         "id2": 55,
-        "interaction": "Units spawned from Civilians get the Evasive Maneuvers buff."
+        "interaction": "平民生成的单位会获得规避机动增益。"
     },
     {
         "id1": 14,
         "id2": 56,
-        "interaction": "Turkeys do not get the Evasive Maneuvers buff. Angry Turkeys get the Evasive Maneuvers buff. The Turking does not get the Evasive Maneuvers buff."
+        "interaction": "火鸡不会获得规避机动增益。愤怒火鸡会获得规避机动增益。火鸡王不会获得规避机动增益。"
     },
     {
         "id1": 14,
         "id2": 59,
-        "interaction": "Void Reanimators do not get the Evasive Maneuvers buff."
+        "interaction": "虚空复生者不会获得规避机动增益。"
     },
     {
         "id1": 14,
         "id2": 60,
-        "interaction": "Units spawned from Void Rifts get the Evasive Maneuvers buff."
+        "interaction": "虚空裂隙生成的单位会获得规避机动增益。"
     },
     {
         "id1": 14,
         "id2": 61,
-        "interaction": "Infested get the Evasive Maneuvers buff."
+        "interaction": "感染体会获得规避机动增益。"
     },
     {
         "id1": 15,
         "id2": 18,
-        "interaction": "Units spawned from Gift Exchange trigger Fatal Attraction when they die."
+        "interaction": "礼物交换生成的单位死亡时触发致命吸引。"
     },
     {
         "id1": 15,
         "id2": 21,
-        "interaction": "Amon Heroes trigger Fatal Attraction when they die."
+        "interaction": "埃蒙英雄死亡时触发致命吸引。"
     },
     {
         "id1": 15,
         "id2": 23,
-        "interaction": "Units do not trigger Fatal Attraction when taking fatal damage and respawning."
+        "interaction": "单位受到致命伤害并重生时不会触发致命吸引。"
     },
     {
         "id1": 15,
         "id2": 24,
-        "interaction": "Kill Bots trigger Fatal Attraction when they die."
+        "interaction": "击杀机器人死亡时触发致命吸引。"
     },
     {
         "id1": 15,
         "id2": 30,
-        "interaction": "Mag-mines trigger Fatal Attraction when they detonate."
+        "interaction": "磁力地雷引爆时触发致命吸引。"
     },
     {
         "id1": 15,
         "id2": 32,
-        "interaction": "Mineral Shields trigger Fatal Attraction when destroyed or when they expire."
+        "interaction": "矿物护盾被摧毁或到期时会触发致命吸引。"
     },
     {
         "id1": 15,
         "id2": 33,
-        "interaction": "Mines trigger Fatal Attraction when they are destroyed."
+        "interaction": "地雷被摧毁时触发致命吸引。"
     },
     {
         "id1": 15,
         "id2": 34,
-        "interaction": "Missiles do not trigger Fatal Attraction when destroyed."
+        "interaction": "飞弹被摧毁时不会触发致命吸引。"
     },
     {
         "id1": 15,
         "id2": 36,
-        "interaction": "Hybrids will only trigger Mutually Assured Destruction"
+        "interaction": "混合体只会触发相互毁灭"
     },
     {
         "id1": 15,
         "id2": 39,
-        "interaction": "Infested and Aberrations trigger Fatal Attraction when they die."
+        "interaction": "感染体和畸变体死亡时触发致命吸引。"
     },
     {
         "id1": 15,
         "id2": 43,
-        "interaction": "Propagators trigger Fatal Attraction when they die."
+        "interaction": "传播者死亡时触发致命吸引。"
     },
     {
         "id1": 15,
         "id2": 54,
-        "interaction": "Transmuted units trigger Fatal Attraction when they die."
+        "interaction": "嬗变后的单位死亡时触发致命吸引。"
     },
     {
         "id1": 15,
         "id2": 55,
-        "interaction": "Units spawned from Civilians  trigger Fatal Attraction when they die."
+        "interaction": "平民生成的单位 死亡时触发致命吸引。"
     },
     {
         "id1": 15,
         "id2": 56,
-        "interaction": "Turkeys trigger Fatal Attraction when they die."
+        "interaction": "火鸡死亡时触发致命吸引。"
     },
     {
         "id1": 15,
         "id2": 59,
-        "interaction": "Void Reanimators trigger Fatal Attraction when they die."
+        "interaction": "虚空复生者死亡时触发致命吸引。"
     },
     {
         "id1": 15,
         "id2": 60,
-        "interaction": "Units spawned from Void Rifts trigger Fatal Attraction when they die."
+        "interaction": "虚空裂隙生成的单位死亡时触发致命吸引。"
     },
     {
         "id1": 15,
         "id2": 61,
-        "interaction": "Infested trigger Fatal Attraction when they die."
+        "interaction": "感染体死亡时触发致命吸引。"
     },
     {
         "id1": 15,
         "id2": 63,
-        "interaction": "Boom Bots trigger Fatal Attraction when they die."
+        "interaction": "自爆机器人死亡时触发致命吸引。"
     },
     {
         "id1": 16,
         "id2": 17,
-        "interaction": "Fireworks can apply the Fear effect."
+        "interaction": "烟花可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 18,
-        "interaction": "Units spawned from Gift Exchange can apply the Fear effect."
+        "interaction": "礼物交换生成的单位可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 19,
-        "interaction": "Nukes can apply the Fear effect."
+        "interaction": "核弹可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 21,
-        "interaction": "Amon Heroes can apply the Fear effect."
+        "interaction": "埃蒙英雄可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 23,
-        "interaction": "Respawned units can apply the Fear effect."
+        "interaction": "重生后的单位可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 24,
-        "interaction": "Kill Bots can apply the Fear effect."
+        "interaction": "击杀机器人可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 25,
-        "interaction": "Laser Drill can apply the Fear effect."
+        "interaction": "激光钻机可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 26,
-        "interaction": "Lava Burst can apply the Fear effect."
+        "interaction": "熔岩爆发可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 30,
-        "interaction": "Mines can apply the Fear effect."
+        "interaction": "地雷可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 33,
-        "interaction": "Mines can apply the Fear effect."
+        "interaction": "地雷可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 36,
-        "interaction": "Hybrid Nukes can apply the Fear effect."
+        "interaction": "混合体核弹可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 38,
-        "interaction": "Orbital Strikes can apply the Fear effect."
+        "interaction": "轨道轰炸可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 39,
-        "interaction": "Infested and Aberrations can apply the Fear effect."
+        "interaction": "感染体和畸变体可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 40,
-        "interaction": "Photon Overload can apply the Fear effect."
+        "interaction": "光子超载可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 44,
-        "interaction": "Purifier Beam can apply the Fear effect."
+        "interaction": "净化光束可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 46,
-        "interaction": "Scorched Earth can apply the Fear effect."
+        "interaction": "焦土可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 47,
-        "interaction": "Self Destruction can apply the Fear effect."
+        "interaction": "自毁可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 54,
-        "interaction": "Transmuted units can apply the Fear effect."
+        "interaction": "嬗变后的单位可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 55,
-        "interaction": "Units spawned from Civilians can apply the Fear effect."
+        "interaction": "平民生成的单位可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 56,
-        "interaction": "Turkeys can apply the Fear effect."
+        "interaction": "火鸡可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 57,
-        "interaction": "Twisters can apply the Fear effect."
+        "interaction": "龙卷风可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 59,
-        "interaction": "Resurrected units can apply the Fear effect."
+        "interaction": "复活后的单位可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 60,
-        "interaction": "Units spawned from Void Rifts can apply the Fear effect."
+        "interaction": "虚空裂隙生成的单位可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 61,
-        "interaction": "Infested can apply the Fear effect."
+        "interaction": "感染体可以施加恐惧效果。"
     },
     {
         "id1": 16,
         "id2": 63,
-        "interaction": "Boom Bots do not apply the Fear effect."
+        "interaction": "自爆机器人不会施加恐惧效果。"
     },
     {
         "id1": 17,
         "id2": 18,
-        "interaction": "Units spawned from Gift Exchange launch Fireworks when they die."
+        "interaction": "礼物交换生成的单位死亡时发射烟花。"
     },
     {
         "id1": 17,
         "id2": 21,
-        "interaction": "Amon Heroes do not launch Fireworks when they die."
+        "interaction": "埃蒙英雄死亡时不会发射烟花。"
     },
     {
         "id1": 17,
         "id2": 24,
-        "interaction": "Kill Bots launch Fireworks when they die."
+        "interaction": "击杀机器人死亡时发射烟花。"
     },
     {
         "id1": 17,
         "id2": 30,
-        "interaction": "Mines do not launch Fireworks when they explode."
+        "interaction": "地雷爆炸时不会发射烟花。"
     },
     {
         "id1": 17,
         "id2": 33,
-        "interaction": "Mines do not launch Fireworks when they are destroyed."
+        "interaction": "地雷被摧毁时不会发射烟花。"
     },
     {
         "id1": 17,
         "id2": 34,
-        "interaction": "Missiles do not launch Fireworks when they are destroyed."
+        "interaction": "飞弹被摧毁时不会发射烟花。"
     },
     {
         "id1": 17,
         "id2": 39,
-        "interaction": "Infested and Aberrations launch Fireworks when they die."
+        "interaction": "感染体和畸变体死亡时发射烟花。"
     },
     {
         "id1": 17,
         "id2": 43,
-        "interaction": "Propagators do not launch Fireworks when they die."
+        "interaction": "传播者死亡时不会发射烟花。"
     },
     {
         "id1": 17,
         "id2": 55,
-        "interaction": "Units spawned from Civilians launch Fireworks when they die."
+        "interaction": "平民生成的单位死亡时发射烟花。"
     },
     {
         "id1": 17,
         "id2": 56,
-        "interaction": "Turkeys do not launch Fireworks when they die. The Turking launches Fireworks when it dies."
+        "interaction": "火鸡死亡时不会发射烟花。火鸡王死亡时会发射烟花。"
     },
     {
         "id1": 17,
         "id2": 59,
-        "interaction": "Void Reanimators do not launch Fireworks when they die."
+        "interaction": "虚空复生者死亡时不会发射烟花。"
     },
     {
         "id1": 17,
         "id2": 60,
-        "interaction": "Units spawned from Void Rifts launch Fireworks when they die."
+        "interaction": "虚空裂隙生成的单位死亡时发射烟花。"
     },
     {
         "id1": 17,
         "id2": 61,
-        "interaction": "Infested do not launch Fireworks when they die."
+        "interaction": "感染体死亡时不会发射烟花。"
     },
     {
         "id1": 17,
         "id2": 63,
-        "interaction": "Boom Bots launch Fireworks when they die."
+        "interaction": "自爆机器人死亡时发射烟花。"
     },
     {
         "id1": 18,
         "id2": 20,
-        "interaction": "Units spawned from Gift Exchange can cause Hardened Will to activate. Hybrids and Kill Bots spawned from Gift Exchange can get the Hardened Will buff."
+        "interaction": "礼物交换生成的单位可以触发坚毅意志。礼物交换生成的混合体和击杀机器人可以获得坚毅意志增益。"
     },
     {
         "id1": 18,
         "id2": 21,
-        "interaction": "Gift spawns do not spawn an Amon Heroes with the capturing attack force. Amon Heroes can capture gifts."
+        "interaction": "礼物生成时不会随拾取礼物的进攻部队生成埃蒙英雄。埃蒙英雄可以拾取礼物。"
     },
     {
         "id1": 18,
         "id2": 22,
-        "interaction": "Units spawned from Gift Exchange can get the Inspiration buff. Hybrids and Kill Bots spawned from Gift Exchange can provide the Inspiration buff."
+        "interaction": "礼物交换生成的单位可以获得鼓舞增益。礼物交换生成的混合体和击杀机器人可以提供鼓舞增益。"
     },
     {
         "id1": 18,
         "id2": 23,
-        "interaction": "Units spawned from Gift Exchange respawn when they die."
+        "interaction": "礼物交换生成的单位死亡时会重生。"
     },
     {
         "id1": 18,
         "id2": 24,
-        "interaction": "Kill Bots can capture gifts."
+        "interaction": "击杀机器人可以拾取礼物。"
     },
     {
         "id1": 18,
         "id2": 25,
-        "interaction": "Gifts do not provide vision for the Laser Drill."
+        "interaction": "礼物不会为激光钻机提供视野。"
     },
     {
         "id1": 18,
         "id2": 26,
-        "interaction": "Lava Bursts cannot capture gifts."
+        "interaction": "熔岩爆发无法拾取礼物。"
     },
     {
         "id1": 18,
         "id2": 27,
-        "interaction": "Units spawned from Gift Exchange have Life Leech."
+        "interaction": "礼物交换生成的单位拥有生命吸取。"
     },
     {
         "id1": 18,
         "id2": 28,
-        "interaction": "Units spawned from Gift Exchange get the Long Range buff."
+        "interaction": "礼物交换生成的单位会获得超远射程增益。"
     },
     {
         "id1": 18,
         "id2": 30,
-        "interaction": "Mag-mines can capture gifts."
+        "interaction": "磁力地雷可以拾取礼物。"
     },
     {
         "id1": 18,
         "id2": 33,
-        "interaction": "Mines can capture gifts."
+        "interaction": "地雷可以拾取礼物。"
     },
     {
         "id1": 18,
         "id2": 34,
-        "interaction": "Missiles can capture gifts."
+        "interaction": "飞弹可以拾取礼物。"
     },
     {
         "id1": 18,
         "id2": 35,
-        "interaction": "Hybrids spawned from Gift Exchange trigger Moment of Silence when they die."
+        "interaction": "礼物交换生成的混合体死亡时触发沉默时刻。"
     },
     {
         "id1": 18,
         "id2": 36,
-        "interaction": "Hybrids spawned from Gift Exchange detonate Hybrid Nukes when they die."
+        "interaction": "礼物交换生成的混合体死亡时会引爆混合体核弹。"
     },
     {
         "id1": 18,
         "id2": 37,
-        "interaction": "Units spawned from Gift Exchange kills increase the Naughty List count."
+        "interaction": "礼物交换生成的单位的击杀会增加淘气名单计数。"
     },
     {
         "id1": 18,
         "id2": 39,
-        "interaction": "Infested and Aberrations can capture gifts."
+        "interaction": "感染体和畸变体可以拾取礼物。"
     },
     {
         "id1": 18,
         "id2": 41,
-        "interaction": "Units spawned from Gift Exchange all have Polarity applied to them."
+        "interaction": "礼物交换生成的单位全部会被施加极性。"
     },
     {
         "id1": 18,
         "id2": 42,
-        "interaction": "Units spawned from Gift Exchange can cast abilities."
+        "interaction": "礼物交换生成的单位可以施放技能。"
     },
     {
         "id1": 18,
         "id2": 43,
-        "interaction": "Propagators can capture gifts."
+        "interaction": "传播者可以拾取礼物。"
     },
     {
         "id1": 18,
         "id2": 44,
-        "interaction": "Purifier Beam can capture gifts."
+        "interaction": "净化光束可以拾取礼物。"
     },
     {
         "id1": 18,
         "id2": 46,
-        "interaction": "Units spawned from Gift Exchange set the ground on fire when they die."
+        "interaction": "礼物交换生成的单位死亡时会点燃地面。"
     },
     {
         "id1": 18,
         "id2": 47,
-        "interaction": "Units spawned from Gift Exchange create an explosion when they die."
+        "interaction": "礼物交换生成的单位死亡时会产生爆炸。"
     },
     {
         "id1": 18,
         "id2": 51,
-        "interaction": "Units spawned from Gift Exchange move faster with Speed Freaks."
+        "interaction": "礼物交换生成的单位在速度狂魔作用下移动更快。"
     },
     {
         "id1": 18,
         "id2": 52,
-        "interaction": "Temporal Fields cannot capture gifts. Units caught in a Temporal Field can still capture Gifts."
+        "interaction": "时间场无法拾取礼物。被时间场困住的单位仍可拾取礼物。"
     },
     {
         "id1": 18,
         "id2": 53,
-        "interaction": "Time Warps cannot capture gifts. Units caught in a Time Warp can still capture gifts."
+        "interaction": "时间扭曲无法拾取礼物。被时间扭曲困住的单位仍可拾取礼物。"
     },
     {
         "id1": 18,
         "id2": 54,
-        "interaction": "Units spawned from Gift Exchange can Transmute."
+        "interaction": "礼物交换生成的单位可以发生嬗变。"
     },
     {
         "id1": 18,
         "id2": 56,
-        "interaction": "Turkeys cannot capture gifts. Angry Turkeys can capture gifts. The Turking can capture gifts."
+        "interaction": "火鸡无法拾取礼物。愤怒火鸡可以拾取礼物。火鸡王可以拾取礼物。"
     },
     {
         "id1": 18,
         "id2": 57,
-        "interaction": "Twisters can capture gifts."
+        "interaction": "龙卷风可以拾取礼物。"
     },
     {
         "id1": 18,
         "id2": 59,
-        "interaction": "Void Reanimators can capture gifts. Void Reanimators can resurrect units spawned from Gift Exchange. Void Reanimators do not resurrect Kill Bots."
+        "interaction": "虚空复生者可以拾取礼物。虚空复生者可以复活礼物交换生成的单位。虚空复生者不会复活击杀机器人。"
     },
     {
         "id1": 18,
         "id2": 60,
-        "interaction": "Units spawned from Void Rifts can capture gifts."
+        "interaction": "虚空裂隙生成的单位可以拾取礼物。"
     },
     {
         "id1": 18,
         "id2": 61,
-        "interaction": "Infested can capture gifts. Units spawned from Gift Exchange spawn Infested when they die."
+        "interaction": "感染体可以拾取礼物。礼物交换生成的单位死亡时会生成感染体。"
     },
     {
         "id1": 18,
         "id2": 62,
-        "interaction": "Units spawned from Gift Exchange are cloaked."
+        "interaction": "礼物交换生成的单位处于隐形状态。"
     },
     {
         "id1": 18,
         "id2": 63,
-        "interaction": "Boom Bots do not capture gifts."
+        "interaction": "自爆机器人不会拾取礼物。"
     },
     {
         "id1": 19,
         "id2": 25,
-        "interaction": "The Laser Drill has vision of the area for a short time after the nuke hits."
+        "interaction": "核弹命中后，激光钻机会在短时间内获得该区域的视野。"
     },
     {
         "id1": 20,
         "id2": 21,
-        "interaction": "Amon Heroes can get the Hardened Will buff."
+        "interaction": "埃蒙英雄可以获得坚毅意志增益。"
     },
     {
         "id1": 20,
         "id2": 24,
-        "interaction": "Kill Bots can get the Hardened Will buff."
+        "interaction": "击杀机器人可以获得坚毅意志增益。"
     },
     {
         "id1": 20,
         "id2": 30,
-        "interaction": "Mag-mines do not cause Hardened Will to activate."
+        "interaction": "磁力地雷不会触发坚毅意志。"
     },
     {
         "id1": 20,
         "id2": 33,
-        "interaction": "Mines cause Hardened Will to activate."
+        "interaction": "地雷会触发坚毅意志。"
     },
     {
         "id1": 20,
         "id2": 34,
-        "interaction": "Missiles cause Hardened Will to activate."
+        "interaction": "飞弹会触发坚毅意志。"
     },
     {
         "id1": 20,
         "id2": 39,
-        "interaction": "Infested and Aberrations cause Hardened Will to activate."
+        "interaction": "感染体和畸变体会触发坚毅意志。"
     },
     {
         "id1": 20,
         "id2": 43,
-        "interaction": "Propagators can get the Hardened Will buff."
+        "interaction": "传播者可以获得坚毅意志增益。"
     },
     {
         "id1": 20,
         "id2": 44,
-        "interaction": "Purifier Beam does not cause Hardened Will to activate."
+        "interaction": "净化光束不会触发坚毅意志。"
     },
     {
         "id1": 20,
         "id2": 54,
-        "interaction": "Transmuted units cause Hardened Will to activate."
+        "interaction": "嬗变后的单位会触发坚毅意志。"
     },
     {
         "id1": 20,
         "id2": 55,
-        "interaction": "Units spawned from Civilians can cause Hardened Will to activate. Hybrids spawned from Civilians can get the Hardened Will buff."
+        "interaction": "平民生成的单位可以触发坚毅意志。平民生成的混合体可以获得坚毅意志增益。"
     },
     {
         "id1": 20,
         "id2": 56,
-        "interaction": "Turkeys do not cause Hardened Will to activate. Angry Turkeys cause Hardened Will to activate. The Turking can get the Hardened Will buff."
+        "interaction": "火鸡不会触发坚毅意志。愤怒火鸡会触发坚毅意志。火鸡王可以获得坚毅意志增益。"
     },
     {
         "id1": 20,
         "id2": 60,
-        "interaction": "Units spawned from Void Rifts cause Hardened Will to activate. Hybrids spawned from Void Rifts can get the Hardened Will buff."
+        "interaction": "虚空裂隙生成的单位会触发坚毅意志。虚空裂隙生成的混合体可以获得坚毅意志增益。"
     },
     {
         "id1": 20,
         "id2": 61,
-        "interaction": "Infested cause Hardened Will to activate."
+        "interaction": "感染体会触发坚毅意志。"
     },
     {
         "id1": 20,
         "id2": 63,
-        "interaction": "Boom Bots do not get the Hardened Will buff."
+        "interaction": "自爆机器人不会获得坚毅意志增益。"
     },
     {
         "id1": 21,
         "id2": 22,
-        "interaction": "Amon Heroes can provide the Inspiration buff."
+        "interaction": "埃蒙英雄可以提供鼓舞增益。"
     },
     {
         "id1": 21,
         "id2": 23,
-        "interaction": "Amon Heroes respawn when they die."
+        "interaction": "埃蒙英雄死亡时会重生。"
     },
     {
         "id1": 21,
         "id2": 27,
-        "interaction": "Amon Heroes have Life Leech."
+        "interaction": "埃蒙英雄拥有生命吸取。"
     },
     {
         "id1": 21,
         "id2": 28,
-        "interaction": "Amon Heroes do not get the Long Range buff."
+        "interaction": "埃蒙英雄不会获得超远射程增益。"
     },
     {
         "id1": 21,
         "id2": 35,
-        "interaction": "Amon Heroes trigger Moment of Silence when they die."
+        "interaction": "埃蒙英雄死亡时触发沉默时刻。"
     },
     {
         "id1": 21,
         "id2": 37,
-        "interaction": "Amon Hero kills increase the Naughty List count."
+        "interaction": "埃蒙英雄的击杀会增加淘气名单计数。"
     },
     {
         "id1": 21,
         "id2": 40,
-        "interaction": "Amon's Karax's spawned structures will have Photon Overload applied when damaged."
+        "interaction": "埃蒙的卡拉克斯生成的建筑受到伤害时会被施加光子超载。"
     },
     {
         "id1": 21,
         "id2": 41,
-        "interaction": "Amon Heroes all have Polarity applied to them."
+        "interaction": "埃蒙英雄全部会被施加极性。"
     },
     {
         "id1": 21,
         "id2": 42,
-        "interaction": "Amon Heroes can cast abilities other than the ones they already have."
+        "interaction": "埃蒙英雄可以施放自身原有技能之外的其他技能。"
     },
     {
         "id1": 21,
         "id2": 46,
-        "interaction": "Amon Heroes set the ground on fire when they die."
+        "interaction": "埃蒙英雄死亡时会点燃地面。"
     },
     {
         "id1": 21,
         "id2": 47,
-        "interaction": "Amon Heroes create an explosion when they die."
+        "interaction": "埃蒙英雄死亡时会产生爆炸。"
     },
     {
         "id1": 21,
         "id2": 51,
-        "interaction": "Amon Heroes move faster with Speed Freaks."
+        "interaction": "埃蒙英雄在速度狂魔作用下移动更快。"
     },
     {
         "id1": 21,
         "id2": 54,
-        "interaction": "Amon Heroes do not Transmute after killing a unit."
+        "interaction": "埃蒙英雄击杀单位后不会发生嬗变。"
     },
     {
         "id1": 21,
         "id2": 59,
-        "interaction": "Void Reanimators do not resurrect Amon Heroes."
+        "interaction": "虚空复生者不会复活埃蒙英雄。"
     },
     {
         "id1": 21,
         "id2": 61,
-        "interaction": "Amon Heroes spawn Infested when they die."
+        "interaction": "埃蒙英雄死亡时生成感染体。"
     },
     {
         "id1": 21,
         "id2": 62,
-        "interaction": "Amon Heroes are cloaked."
+        "interaction": "埃蒙英雄处于隐形状态。"
     },
     {
         "id1": 22,
         "id2": 24,
-        "interaction": "Kill Bots can provide the Inspiration buff."
+        "interaction": "击杀机器人可以提供鼓舞增益。"
     },
     {
         "id1": 22,
         "id2": 39,
-        "interaction": "Infested and Aberrations can get the Inspiration buff."
+        "interaction": "感染体和畸变体可以获得鼓舞增益。"
     },
     {
         "id1": 22,
         "id2": 43,
-        "interaction": "Propagators can provide the Inspiration buff."
+        "interaction": "传播者可以提供鼓舞增益。"
     },
     {
         "id1": 22,
         "id2": 54,
-        "interaction": "Transmuted units can get the Inspiration buff."
+        "interaction": "嬗变后的单位可以获得鼓舞增益。"
     },
     {
         "id1": 22,
         "id2": 55,
-        "interaction": "Units spawned from Civilians can get the Inspiration buff. Hybrids spawned from Civilians can provide the Inspiration buff."
+        "interaction": "平民生成的单位可以获得鼓舞增益。平民生成的混合体可以提供鼓舞增益。"
     },
     {
         "id1": 22,
         "id2": 56,
-        "interaction": "Turkeys do not get the Inspiration buff. Angry Turkeys get the Inspiration buff. The Turking can provide the Inspiration buff."
+        "interaction": "火鸡不会获得鼓舞增益。愤怒火鸡会获得鼓舞增益。火鸡王可以提供鼓舞增益。"
     },
     {
         "id1": 22,
         "id2": 59,
-        "interaction": "Void Reanimators can get the Inspiration buff."
+        "interaction": "虚空复生者可以获得鼓舞增益。"
     },
     {
         "id1": 22,
         "id2": 60,
-        "interaction": "Units spawned from Void Rifts can get the Inspiration buff. Hybrids spawned from Void Rifts can provide the Inspiration buff."
+        "interaction": "虚空裂隙生成的单位可以获得鼓舞增益。虚空裂隙生成的混合体可以提供鼓舞增益。"
     },
     {
         "id1": 22,
         "id2": 61,
-        "interaction": "Infested can get the Inspiration buff."
+        "interaction": "感染体可以获得鼓舞增益。"
     },
     {
         "id1": 22,
         "id2": 63,
-        "interaction": "Boom Bots do not provide the Inspiration buff."
+        "interaction": "自爆机器人不会提供鼓舞增益。"
     },
     {
         "id1": 23,
         "id2": 24,
-        "interaction": "Kill Bots do not respawn when they self-destruct. They will respawn if killed by Abathur's Toxic Nests."
+        "interaction": "击杀机器人自毁时不会重生。如果被阿巴瑟的剧毒巢穴消灭，则会重生。"
     },
     {
         "id1": 23,
         "id2": 27,
-        "interaction": "Respawned units have Life Leech."
+        "interaction": "重生后的单位拥有生命吸取。"
     },
     {
         "id1": 23,
         "id2": 30,
-        "interaction": "Mag-mines do not respawn when they explode."
+        "interaction": "磁力地雷爆炸时不会重生。"
     },
     {
         "id1": 23,
         "id2": 33,
-        "interaction": "Mines respawn when they are destroyed."
+        "interaction": "地雷被摧毁时会重生。"
     },
     {
         "id1": 23,
         "id2": 34,
-        "interaction": "Missiles respawn when destroyed."
+        "interaction": "飞弹被摧毁时会重生。"
     },
     {
         "id1": 23,
         "id2": 35,
-        "interaction": "Units do not trigger Moment of Silence when taking fatal damage and respawning."
+        "interaction": "单位受到致命伤害并重生时不会触发沉默时刻。"
     },
     {
         "id1": 23,
         "id2": 36,
-        "interaction": "Hybrids do not detonate Hybrid Nukes when taking fatal damage and respawning."
+        "interaction": "混合体受到致命伤害并重生时不会引爆混合体核弹。"
     },
     {
         "id1": 23,
         "id2": 37,
-        "interaction": "Units do not increase the Naughty List count when taking fatal damage and respawning."
+        "interaction": "单位受到致命伤害并重生时不会增加淘气名单计数。"
     },
     {
         "id1": 23,
         "id2": 39,
-        "interaction": "Infested and Aberrations respawn when they die."
+        "interaction": "感染体和畸变体死亡时会重生。"
     },
     {
         "id1": 23,
         "id2": 41,
-        "interaction": "Polarity reverses after a unit respawns."
+        "interaction": "单位重生后极性会反转。"
     },
     {
         "id1": 23,
         "id2": 43,
-        "interaction": "Propagators respawn when they die. When a Propagator Propagates a unit, the new Propagator will have the Just Die! buff applied to it too and will need to be killed twice."
+        "interaction": "传播者死亡时会重生。传播者转化一个单位时，新传播者也会获得死了又死增益，需要被消灭两次。"
     },
     {
         "id1": 23,
         "id2": 46,
-        "interaction": "Units do not set the ground of fire when taking fatal damage and respawning."
+        "interaction": "单位受到致命伤害并重生时不会点燃地面。"
     },
     {
         "id1": 23,
         "id2": 47,
-        "interaction": "Units do set the ground on fire when taking fatal damage and respawning."
+        "interaction": "单位受到致命伤害并重生时会点燃地面。"
     },
     {
         "id1": 23,
         "id2": 51,
-        "interaction": "Respawned units keep moving faster with Speed Freaks."
+        "interaction": "重生后的单位在速度狂魔作用下仍会移动得更快。"
     },
     {
         "id1": 23,
         "id2": 54,
-        "interaction": "Transmutated units have their Just Die stacks reset, allowing them to respawn again."
+        "interaction": "嬗变后的单位会重置死了又死层数，使其可以再次重生。"
     },
     {
         "id1": 23,
         "id2": 55,
-        "interaction": "Units spawned from Civilians respawn when they die."
+        "interaction": "平民生成的单位死亡时会重生。"
     },
     {
         "id1": 23,
         "id2": 56,
-        "interaction": "Turkeys do not respawn when they die. The Turking respawns when it dies."
+        "interaction": "火鸡死亡时不会重生。火鸡王死亡时会重生。"
     },
     {
         "id1": 23,
         "id2": 59,
-        "interaction": "Void Reanimators respawn when they die. Resurrected units respawn when they die."
+        "interaction": "虚空复生者死亡时会重生。复活后的单位死亡时会重生。"
     },
     {
         "id1": 23,
         "id2": 60,
-        "interaction": "Units spawned from Void Rifts respawn when they die."
+        "interaction": "虚空裂隙生成的单位死亡时会重生。"
     },
     {
         "id1": 23,
         "id2": 61,
-        "interaction": "Infested respawn when they die."
+        "interaction": "感染体死亡时会重生。"
     },
     {
         "id1": 23,
         "id2": 62,
-        "interaction": "Respawned units are cloaked."
+        "interaction": "重生后的单位处于隐形状态。"
     },
     {
         "id1": 23,
         "id2": 63,
-        "interaction": "Boom Bots do not respawn when they self-destruct."
+        "interaction": "自爆机器人自毁时不会重生。"
     },
     {
         "id1": 24,
         "id2": 25,
-        "interaction": "Kill Bots provide vision for the Laser Drill.\nKill Bots do not spawn from the Laser Drill."
+        "interaction": "击杀机器人会为激光钻机提供视野.\n击杀机器人不会从激光钻机生成。"
     },
     {
         "id1": 24,
         "id2": 28,
-        "interaction": "Kill Bots get the Long Range buff."
+        "interaction": "击杀机器人会获得超远射程增益。"
     },
     {
         "id1": 24,
         "id2": 35,
-        "interaction": "Kill Bots trigger Moment of Silence when they die."
+        "interaction": "击杀机器人死亡时触发沉默时刻。"
     },
     {
         "id1": 24,
         "id2": 42,
-        "interaction": "Kill Bots can cast abilities. Kill bots can spawn out of Point Defense Drones dropped by Power Overwhelming."
+        "interaction": "击杀机器人可以施放技能。力量蜕变投放的定点防御无人机可以生成击杀机器人。"
     },
     {
         "id1": 24,
         "id2": 46,
-        "interaction": "Kill Bots set the ground on fire when they die."
+        "interaction": "击杀机器人死亡时会点燃地面。"
     },
     {
         "id1": 24,
         "id2": 47,
-        "interaction": "Kill Bots create an explosion when they die."
+        "interaction": "击杀机器人死亡时会产生爆炸。"
     },
     {
         "id1": 24,
         "id2": 51,
-        "interaction": "Kill Bots move faster with Speed Freaks."
+        "interaction": "击杀机器人在速度狂魔作用下移动更快。"
     },
     {
         "id1": 24,
         "id2": 54,
-        "interaction": "Kill Bots do not Transmute when dealing damage or killing units."
+        "interaction": "击杀机器人造成伤害或击杀单位时不会发生嬗变。"
     },
     {
         "id1": 24,
         "id2": 59,
-        "interaction": "Void Reanimators do not resurrect Kill Bots."
+        "interaction": "虚空复生者不会复活击杀机器人。"
     },
     {
         "id1": 24,
         "id2": 60,
-        "interaction": "Kill Bots do not spawn from Void Rifts."
+        "interaction": "击杀机器人不会从虚空裂隙生成。"
     },
     {
         "id1": 24,
         "id2": 61,
-        "interaction": "Kill Bots spawn Infested when they die."
+        "interaction": "击杀机器人死亡时生成感染体。"
     },
     {
         "id1": 24,
         "id2": 62,
-        "interaction": "Kill Bots are cloaked."
+        "interaction": "击杀机器人处于隐形状态。"
     },
     {
         "id1": 25,
         "id2": 26,
-        "interaction": "Lava Bursts do not provide vision for the Laser Drill."
+        "interaction": "熔岩爆发不会为激光钻机提供视野。"
     },
     {
         "id1": 25,
         "id2": 27,
-        "interaction": "Laser Drill has Life Leech."
+        "interaction": "激光钻机拥有生命吸取。"
     },
     {
         "id1": 25,
         "id2": 30,
-        "interaction": "Mag-mines provide vision for the Laser Drill."
+        "interaction": "磁力地雷会为激光钻机提供视野。"
     },
     {
         "id1": 25,
         "id2": 32,
-        "interaction": "Mineral Shields provide vision for the Laser Drill."
+        "interaction": "矿物护盾会为激光钻机提供视野。"
     },
     {
         "id1": 25,
         "id2": 33,
-        "interaction": "Mines provide vision for the Laser Drill."
+        "interaction": "地雷会为激光钻机提供视野。"
     },
     {
         "id1": 25,
         "id2": 34,
-        "interaction": "Missiles do not provide vision for the Laser Drill."
+        "interaction": "飞弹不会为激光钻机提供视野。"
     },
     {
         "id1": 25,
         "id2": 39,
-        "interaction": "Infested and Aberrations provide vision for the Laser Drill.\nInfested and Aberrations do not spawn from the Laser Drill."
+        "interaction": "感染体和畸变体会为激光钻机提供视野.\n感染体和畸变体不会从激光钻机生成。"
     },
     {
         "id1": 25,
         "id2": 40,
-        "interaction": "The Laser Drill does not get Photon Overcharge when damaged."
+        "interaction": "激光钻机受到伤害时不会获得光子超载。"
     },
     {
         "id1": 25,
         "id2": 41,
-        "interaction": "Polarity of the Laser Drill remains fixed, even when the drill respawns after being destroyed."
+        "interaction": "激光钻机的极性保持不变，即使钻机被摧毁后重生也是如此。"
     },
     {
         "id1": 25,
         "id2": 43,
-        "interaction": "Propagators provide vision for the Laser Drill. Propagators do not spawn from the Laser Drill."
+        "interaction": "传播者会为激光钻机提供视野。传播者不会从激光钻机生成。"
     },
     {
         "id1": 25,
         "id2": 44,
-        "interaction": "Purifier Beams do not provide vision for the Laser Drill."
+        "interaction": "净化光束不会为激光钻机提供视野。"
     },
     {
         "id1": 25,
         "id2": 52,
-        "interaction": "The area inside a Temporal Field provides vision for the Laser Drill."
+        "interaction": "时间场内的区域会为激光钻机提供视野。"
     },
     {
         "id1": 25,
         "id2": 53,
-        "interaction": "Time Warps do not provide vision for the Laser Drill."
+        "interaction": "时间扭曲不会为激光钻机提供视野。"
     },
     {
         "id1": 25,
         "id2": 54,
-        "interaction": "Transmuted units provide vision for the Laser Drill."
+        "interaction": "嬗变后的单位会为激光钻机提供视野。"
     },
     {
         "id1": 25,
         "id2": 55,
-        "interaction": "The Candy Bowl provides vision for the Laser Drill. Units spawned from Civilians provide vision for the Laser Drill."
+        "interaction": "糖果碗会为激光钻机提供视野。平民生成的单位会为激光钻机提供视野。"
     },
     {
         "id1": 25,
         "id2": 56,
-        "interaction": "Normal Turkeys do not provide vision for the Laser Drill. Angry Turkeys provide vision for the Laser Drill. The Turking provides vision for the Laser Drill."
+        "interaction": "普通火鸡不会为激光钻机提供视野。愤怒火鸡会为激光钻机提供视野。火鸡王会为激光钻机提供视野。"
     },
     {
         "id1": 25,
         "id2": 57,
-        "interaction": "Twisters do not provide vision for the Laser Drill."
+        "interaction": "龙卷风不会为激光钻机提供视野。"
     },
     {
         "id1": 25,
         "id2": 59,
-        "interaction": "Void Reanimators provide vision for the Laser Drill. Void Reanimators do not spawn from the Laser Drill."
+        "interaction": "虚空复生者会为激光钻机提供视野。虚空复生者不会从激光钻机生成。"
     },
     {
         "id1": 25,
         "id2": 60,
-        "interaction": "Units spawned from Void Rifts provide vision for the Laser Drill."
+        "interaction": "虚空裂隙生成的单位会为激光钻机提供视野。"
     },
     {
         "id1": 25,
         "id2": 61,
-        "interaction": "Infested provide vision for the Laser Drill."
+        "interaction": "感染体会为激光钻机提供视野。"
     },
     {
         "id1": 25,
         "id2": 63,
-        "interaction": "Boom Bots provide vision for the Laser Drill.\nBoom Bots do not spawn from the Laser Drill."
+        "interaction": "自爆机器人会为激光钻机提供视野.\n自爆机器人不会从激光钻机生成。"
     },
     {
         "id1": 26,
         "id2": 62,
-        "interaction": "Lava Bursts are not cloaked."
+        "interaction": "熔岩爆发不处于隐形状态。"
     },
     {
         "id1": 27,
         "id2": 39,
-        "interaction": "Infested and Aberrations have Life Leech."
+        "interaction": "感染体和畸变体拥有生命吸取。"
     },
     {
         "id1": 27,
         "id2": 54,
-        "interaction": "Transmuted units have Life Leech."
+        "interaction": "嬗变后的单位拥有生命吸取。"
     },
     {
         "id1": 27,
         "id2": 55,
-        "interaction": "Units spawned from Civilians have Life Leech."
+        "interaction": "平民生成的单位拥有生命吸取。"
     },
     {
         "id1": 27,
         "id2": 56,
-        "interaction": "Turkeys have Life Leech."
+        "interaction": "火鸡拥有生命吸取。"
     },
     {
         "id1": 27,
         "id2": 59,
-        "interaction": "Resurrected units have Life Leech."
+        "interaction": "复活后的单位拥有生命吸取。"
     },
     {
         "id1": 27,
         "id2": 60,
-        "interaction": "Units spawned from Void Rifts have Life Leech."
+        "interaction": "虚空裂隙生成的单位拥有生命吸取。"
     },
     {
         "id1": 27,
         "id2": 61,
-        "interaction": "Infested have Life Leech."
+        "interaction": "感染体拥有生命吸取。"
     },
     {
         "id1": 28,
         "id2": 30,
-        "interaction": "Mag-mines do not get the Long Range buff."
+        "interaction": "磁力地雷不会获得超远射程增益。"
     },
     {
         "id1": 28,
         "id2": 33,
-        "interaction": "Mines do not get the Long Range buff."
+        "interaction": "地雷不会获得超远射程增益。"
     },
     {
         "id1": 28,
         "id2": 39,
-        "interaction": "Infested Marines get the Long Range buff."
+        "interaction": "被感染陆战队员会获得超远射程增益。"
     },
     {
         "id1": 28,
         "id2": 40,
-        "interaction": "Photon Overload gets increased range with Long Range."
+        "interaction": "光子超载会通过超远射程提高射程。"
     },
     {
         "id1": 28,
         "id2": 42,
-        "interaction": "Ranges of spells does not increase with Long Range."
+        "interaction": "技能射程不会通过超远射程提高。"
     },
     {
         "id1": 28,
         "id2": 43,
-        "interaction": "Propagators do not get the Long Range buff."
+        "interaction": "传播者不会获得超远射程增益。"
     },
     {
         "id1": 28,
         "id2": 55,
-        "interaction": "Units spawned from Civilians get the Long Range buff."
+        "interaction": "平民生成的单位会获得超远射程增益。"
     },
     {
         "id1": 28,
         "id2": 56,
-        "interaction": "Turkeys do not get the Long Range buff."
+        "interaction": "火鸡不会获得超远射程增益。"
     },
     {
         "id1": 28,
         "id2": 59,
-        "interaction": "Void Reanimators do not get increased Resurrection range."
+        "interaction": "虚空复生者的复活射程不会提高。"
     },
     {
         "id1": 28,
         "id2": 60,
-        "interaction": "Units spawned from Void Rifts get the Long Range buff."
+        "interaction": "虚空裂隙生成的单位会获得超远射程增益。"
     },
     {
         "id1": 30,
         "id2": 42,
-        "interaction": "Mag-mines cannot cast abilities."
+        "interaction": "磁力地雷无法施放技能。"
     },
     {
         "id1": 30,
         "id2": 46,
-        "interaction": "Mag-mines do not set the ground on fire when they explode."
+        "interaction": "磁力地雷爆炸时不会点燃地面。"
     },
     {
         "id1": 30,
         "id2": 47,
-        "interaction": "Mag-mines do not create an explosion when explode."
+        "interaction": "磁力地雷爆炸时不会产生爆炸。"
     },
     {
         "id1": 30,
         "id2": 51,
-        "interaction": "Mag-mines do not move faster with Speed Freaks."
+        "interaction": "磁力地雷不会因速度狂魔而移动得更快。"
     },
     {
         "id1": 30,
         "id2": 54,
-        "interaction": "Mag-mines do not Transmute after killing a unit."
+        "interaction": "磁力地雷击杀单位后不会发生嬗变。"
     },
     {
         "id1": 30,
         "id2": 59,
-        "interaction": "Void Reanimators do not resurrect Mag-mines."
+        "interaction": "虚空复生者不会复活磁力地雷。"
     },
     {
         "id1": 30,
         "id2": 61,
-        "interaction": "Mag-mines do not spawn Infested when they detonate."
+        "interaction": "磁力地雷引爆时不会生成感染体。"
     },
     {
         "id1": 30,
         "id2": 62,
-        "interaction": "Mag-mines are cloaked."
+        "interaction": "磁力地雷处于隐形状态。"
     },
     {
         "id1": 32,
         "id2": 37,
-        "interaction": "Mineral Shield kills increase the Naughty List count."
+        "interaction": "矿物护盾的击杀会增加淘气名单计数。"
     },
     {
         "id1": 32,
         "id2": 40,
-        "interaction": "Mineral Shields will have Photon Overload applied when damaged."
+        "interaction": "矿物护盾受到伤害时会被施加光子超载。"
     },
     {
         "id1": 32,
         "id2": 41,
-        "interaction": "Mineral Shields all have Polarity applied to them."
+        "interaction": "矿物护盾全部会被施加极性。"
     },
     {
         "id1": 33,
         "id2": 37,
-        "interaction": "Mine kills increase the Naughty List count."
+        "interaction": "地雷的击杀会增加淘气名单计数。"
     },
     {
         "id1": 33,
         "id2": 41,
-        "interaction": "Widow Mines and Spider Mines all have Polarity applied to them."
+        "interaction": "寡妇雷和蜘蛛雷全部会被施加极性。"
     },
     {
         "id1": 33,
         "id2": 42,
-        "interaction": "Widow mines can cast abilities. Spider mines cannot cast abilities."
+        "interaction": "寡妇雷可以施放技能。蜘蛛雷无法施放技能。"
     },
     {
         "id1": 33,
         "id2": 46,
-        "interaction": "Mines set the ground on fire when they die."
+        "interaction": "地雷死亡时会点燃地面。"
     },
     {
         "id1": 33,
         "id2": 47,
-        "interaction": "Mines set the ground on fire when they are destroyed."
+        "interaction": "地雷被摧毁时会点燃地面。"
     },
     {
         "id1": 33,
         "id2": 51,
-        "interaction": "Spider mines do not move faster with Speed Freaks."
+        "interaction": "蜘蛛雷不会因速度狂魔而移动得更快。"
     },
     {
         "id1": 33,
         "id2": 54,
-        "interaction": "Widow Mines Transmute after killing a unit."
+        "interaction": "寡妇雷击杀单位后会发生嬗变。"
     },
     {
         "id1": 33,
         "id2": 59,
-        "interaction": "Void Reanimators resurrect Widow Mines but not Spider Mines. Widow Mines will move towards player bases after resurrection."
+        "interaction": "虚空复生者可以复活寡妇雷，但无法复活蜘蛛雷。寡妇雷复活后会向玩家基地移动。"
     },
     {
         "id1": 33,
         "id2": 61,
-        "interaction": "Mines spawned Infested when they are destroyed."
+        "interaction": "地雷被摧毁时会生成感染体。"
     },
     {
         "id1": 34,
         "id2": 37,
-        "interaction": "Missile kills do not increase the Naughty List count."
+        "interaction": "飞弹的击杀不会增加淘气名单计数。"
     },
     {
         "id1": 34,
         "id2": 41,
-        "interaction": "Missiles have Polarity applied to them."
+        "interaction": "飞弹会被施加极性。"
     },
     {
         "id1": 34,
         "id2": 42,
-        "interaction": "Point Defense Missiles can cast abilities."
+        "interaction": "定点防御飞弹可以施放技能。"
     },
     {
         "id1": 34,
         "id2": 46,
-        "interaction": "Missiles set the ground on fire when they are destroyed."
+        "interaction": "飞弹被摧毁时会点燃地面。"
     },
     {
         "id1": 34,
         "id2": 47,
-        "interaction": "Missiles create an explosion when destroyed."
+        "interaction": "飞弹被摧毁时会产生爆炸。"
     },
     {
         "id1": 34,
         "id2": 51,
-        "interaction": "Missiles do not move faster with Speed Freaks."
+        "interaction": "飞弹不会因速度狂魔而移动得更快。"
     },
     {
         "id1": 34,
         "id2": 59,
-        "interaction": "Void Reanimators cannot resurrect Missiles."
+        "interaction": "虚空复生者无法复活飞弹。"
     },
     {
         "id1": 34,
         "id2": 61,
-        "interaction": "Missiles do not spawn Infested when they land on their target. Missiles spawn Infested when destroyed by players."
+        "interaction": "飞弹命中目标时不会生成感染体。被玩家摧毁时会生成感染体。"
     },
     {
         "id1": 34,
         "id2": 62,
-        "interaction": "Missiles are cloaked."
+        "interaction": "飞弹处于隐形状态。"
     },
     {
         "id1": 35,
         "id2": 43,
-        "interaction": "Propagators trigger Moment of Silence when they die."
+        "interaction": "传播者死亡时触发沉默时刻。"
     },
     {
         "id1": 35,
         "id2": 54,
-        "interaction": "Transmuted units which are now Hybrids trigger Moment of Silence when they die."
+        "interaction": "嬗变为混合体的单位死亡时触发沉默时刻。"
     },
     {
         "id1": 35,
         "id2": 55,
-        "interaction": "Hybrids spawned from Civilians trigger Moment of Silence when they die."
+        "interaction": "平民生成的混合体死亡时触发沉默时刻。"
     },
     {
         "id1": 35,
         "id2": 56,
-        "interaction": "The Turking triggers Moment of Silence when it dies."
+        "interaction": "火鸡王死亡时会触发沉默时刻。"
     },
     {
         "id1": 35,
         "id2": 60,
-        "interaction": "Hybrids spawned from Void Rifts trigger Moment of Silence when they die."
+        "interaction": "虚空裂隙生成的混合体死亡时触发沉默时刻。"
     },
     {
         "id1": 35,
         "id2": 63,
-        "interaction": "Boom Bots do not trigger Moment of Silence when they die."
+        "interaction": "自爆机器人死亡时不会触发沉默时刻。"
     },
     {
         "id1": 36,
         "id2": 55,
-        "interaction": "Hybrids spawned from Civilians detonate Hybrid Nukes when they die."
+        "interaction": "平民生成的混合体死亡时引爆混合体核弹。"
     },
     {
         "id1": 36,
         "id2": 60,
-        "interaction": "Hybrids spawned from Void Rifts detonate Hybrid Nukes when they die."
+        "interaction": "虚空裂隙生成的混合体死亡时引爆混合体核弹。"
     },
     {
         "id1": 37,
         "id2": 39,
-        "interaction": "Infested and Aberration kills increase the Naughty List count."
+        "interaction": "感染体和畸变体的击杀会增加淘气名单计数。"
     },
     {
         "id1": 37,
         "id2": 43,
-        "interaction": "Propagator kills increase the Naughty List count."
+        "interaction": "传播者的击杀会增加淘气名单计数。"
     },
     {
         "id1": 37,
         "id2": 50,
-        "interaction": "Turkey kills increase the Naughty List count."
+        "interaction": "火鸡的击杀会增加淘气名单计数。"
     },
     {
         "id1": 37,
         "id2": 55,
-        "interaction": "Units spawned from Civilians kills increase the Naughty List count."
+        "interaction": "平民生成的单位的击杀会增加淘气名单计数。"
     },
     {
         "id1": 37,
         "id2": 56,
-        "interaction": "Turkey kills increase the Naughty List count."
+        "interaction": "火鸡的击杀会增加淘气名单计数。"
     },
     {
         "id1": 37,
         "id2": 59,
-        "interaction": "Void Reanimator kills increase the Naughty List count."
+        "interaction": "虚空复生者的击杀会增加淘气名单计数。"
     },
     {
         "id1": 37,
         "id2": 60,
-        "interaction": "Units spawned from Void Rifts kills increase the Naughty List count."
+        "interaction": "虚空裂隙生成的单位的击杀会增加淘气名单计数。"
     },
     {
         "id1": 37,
         "id2": 61,
-        "interaction": "Infested kills increase the Naughty List count."
+        "interaction": "感染体的击杀会增加淘气名单计数。"
     },
     {
         "id1": 39,
         "id2": 41,
-        "interaction": "Infested and Aberrations all have Polarity applied to them."
+        "interaction": "感染体和畸变体全部会被施加极性。"
     },
     {
         "id1": 39,
         "id2": 42,
-        "interaction": "Infested and Aberrations can cast abilities. Infested and Aberrations can spawn out of Point Defense Drones dropped by Power Overwhelming."
+        "interaction": "感染体和畸变体可以施放技能。力量蜕变投放的定点防御无人机可以生成感染体和畸变体。"
     },
     {
         "id1": 39,
         "id2": 46,
-        "interaction": "Infested and Aberrations set the ground on fire when they die."
+        "interaction": "感染体和畸变体死亡时会点燃地面。"
     },
     {
         "id1": 39,
         "id2": 47,
-        "interaction": "Infested and Aberrations create an explosion when they die."
+        "interaction": "感染体和畸变体死亡时会产生爆炸。"
     },
     {
         "id1": 39,
         "id2": 51,
-        "interaction": "Infested and Aberrations move faster with Speed Freaks."
+        "interaction": "感染体和畸变体在速度狂魔作用下移动更快。"
     },
     {
         "id1": 39,
         "id2": 54,
-        "interaction": "Infested and Aberrations can transmute."
+        "interaction": "感染体和畸变体可以发生嬗变。"
     },
     {
         "id1": 39,
         "id2": 59,
-        "interaction": "Void Reanimators can resurrect Infested and Aberrations."
+        "interaction": "虚空复生者可以复活感染体和畸变体。"
     },
     {
         "id1": 39,
         "id2": 60,
-        "interaction": "Infested and Aberrations do not spawn from Void Rifts."
+        "interaction": "感染体和畸变体不会从虚空裂隙生成。"
     },
     {
         "id1": 39,
         "id2": 61,
-        "interaction": "Infested and Aberrations do not spawn other infested units when killed."
+        "interaction": "感染体和畸变体被消灭时不会生成其他感染体单位。"
     },
     {
         "id1": 39,
         "id2": 62,
-        "interaction": "Infested and Aberrations are cloaked."
+        "interaction": "感染体和畸变体处于隐形状态。"
     },
     {
         "id1": 40,
         "id2": 42,
-        "interaction": "Point Defense Drones spawned from Power Overwhelming will gain Photon Overcharge when damaged."
+        "interaction": "力量蜕变生成的定点防御无人机受到伤害时会获得光子超载。"
     },
     {
         "id1": 40,
         "id2": 60,
-        "interaction": "Void Rifts do not get Photon Overcharge when damaged. "
+        "interaction": "虚空裂隙受到伤害时不会获得光子超载。 "
     },
     {
         "id1": 41,
         "id2": 43,
-        "interaction": "Propagators that spawn around the map have Polarity applied to them. Propagators spawned from other Propagators do not have any polarity."
+        "interaction": "地图各处生成的传播者会被施加极性。由其他传播者生成的传播者没有极性。"
     },
     {
         "id1": 41,
         "id2": 54,
-        "interaction": "When units Transmute, they can switch Polarities."
+        "interaction": "单位发生嬗变时可能切换极性。"
     },
     {
         "id1": 41,
         "id2": 55,
-        "interaction": "Units spawned from Civilians all have Polarity applied to them."
+        "interaction": "平民生成的单位全部会被施加极性。"
     },
     {
         "id1": 41,
         "id2": 56,
-        "interaction": "Turkeys do not have Polarity applied to them. The Turking has Polarity applied to it."
+        "interaction": "火鸡不会被施加极性。火鸡王会被施加极性。"
     },
     {
         "id1": 41,
         "id2": 59,
-        "interaction": "Void Reanimators all have Polarity applied to them. Resurrected units may change Polarity after resurrection."
+        "interaction": "虚空复生者全部会被施加极性。复活后的单位可能在复活后改变极性。"
     },
     {
         "id1": 41,
         "id2": 60,
-        "interaction": "Void Rifts and units spawned from Void Rifts all have Polarity applied to them."
+        "interaction": "虚空裂隙及其生成的单位全部会被施加极性。"
     },
     {
         "id1": 41,
         "id2": 61,
-        "interaction": "Infested all have Polarity applied to them."
+        "interaction": "感染体全部会被施加极性。"
     },
     {
         "id1": 42,
         "id2": 43,
-        "interaction": "Propagators can cast abilities. Propagators can spawn out of Point Defense Drones dropped by Power Overwhelming."
+        "interaction": "传播者可以施放技能。力量蜕变投放的定点防御无人机可以生成传播者。"
     },
     {
         "id1": 42,
         "id2": 55,
-        "interaction": "Units spawned from Civilians  can cast abilities."
+        "interaction": "平民生成的单位 可以施放技能。"
     },
     {
         "id1": 42,
         "id2": 56,
-        "interaction": "Turkeys cannot cast abilities."
+        "interaction": "火鸡无法施放技能。"
     },
     {
         "id1": 42,
         "id2": 59,
-        "interaction": "Void Reanimators can cast abilities. Void Reanimators can spawn out of Point Defense Drones dropped by Power Overwhelming."
+        "interaction": "虚空复生者可以施放技能。力量蜕变投放的定点防御无人机可以生成虚空复生者。"
     },
     {
         "id1": 42,
         "id2": 60,
-        "interaction": "Units spawned from Void Rifts can cast abilities."
+        "interaction": "虚空裂隙生成的单位可以施放技能。"
     },
     {
         "id1": 42,
         "id2": 61,
-        "interaction": "Infested can cast abilities."
+        "interaction": "感染体可以施放技能。"
     },
     {
         "id1": 42,
         "id2": 63,
-        "interaction": "Boom Bots can cast abilities. Boom Bots can spawn out of Point Defense Drones dropped by Power Overwhelming."
+        "interaction": "自爆机器人可以施放技能。力量蜕变投放的定点防御无人机可以生成自爆机器人。"
     },
     {
         "id1": 43,
         "id2": 46,
-        "interaction": "Propagators set the ground on fire when they die."
+        "interaction": "传播者死亡时会点燃地面。"
     },
     {
         "id1": 43,
         "id2": 47,
-        "interaction": "Propagators create an explosion when they die."
+        "interaction": "传播者死亡时会产生爆炸。"
     },
     {
         "id1": 43,
         "id2": 51,
-        "interaction": "Propagators move faster with Speed Freaks."
+        "interaction": "传播者在速度狂魔作用下移动更快。"
     },
     {
         "id1": 43,
         "id2": 54,
-        "interaction": "Propagators do not Transmute."
+        "interaction": "传播者不会发生嬗变。"
     },
     {
         "id1": 43,
         "id2": 59,
-        "interaction": "Void Reanimators can resurrect Propagators. Propagators resurrected by Void Reanimators are not marked with an icon on the minimap."
+        "interaction": "虚空复生者可以复活传播者。被虚空复生者复活的传播者不会在小地图上显示图标。"
     },
     {
         "id1": 43,
         "id2": 60,
-        "interaction": "Propagators do not spawn from Void Rifts."
+        "interaction": "传播者不会从虚空裂隙生成。"
     },
     {
         "id1": 43,
         "id2": 61,
-        "interaction": "Propagators spawn Infested when they die."
+        "interaction": "传播者死亡时生成感染体。"
     },
     {
         "id1": 43,
         "id2": 62,
-        "interaction": "Propagators are cloaked."
+        "interaction": "传播者处于隐形状态。"
     },
     {
         "id1": 44,
         "id2": 51,
-        "interaction": "Purifier Beam does not move faster with Speed Freaks."
+        "interaction": "净化光束不会因速度狂魔而移动得更快。"
     },
     {
         "id1": 44,
         "id2": 62,
-        "interaction": "Purifier Beam is cloaked."
+        "interaction": "净化光束处于隐形状态。"
     },
     {
         "id1": 46,
         "id2": 55,
-        "interaction": "Units spawned from Civilians set the ground on fire when they die."
+        "interaction": "平民生成的单位死亡时会点燃地面。"
     },
     {
         "id1": 46,
         "id2": 56,
-        "interaction": "Turkeys set the ground on fire when they die."
+        "interaction": "火鸡死亡时会点燃地面。"
     },
     {
         "id1": 46,
         "id2": 59,
-        "interaction": "Void Reanimators set the ground on fire when they die."
+        "interaction": "虚空复生者死亡时会点燃地面。"
     },
     {
         "id1": 46,
         "id2": 60,
-        "interaction": "Units spawned from Void Rifts set the ground on fire when they die."
+        "interaction": "虚空裂隙生成的单位死亡时会点燃地面。"
     },
     {
         "id1": 46,
         "id2": 61,
-        "interaction": "Infested set the ground on fire when they die."
+        "interaction": "感染体死亡时会点燃地面。"
     },
     {
         "id1": 46,
         "id2": 63,
-        "interaction": "Boom Bots set the ground on fire when they die."
+        "interaction": "自爆机器人死亡时会点燃地面。"
     },
     {
         "id1": 47,
         "id2": 55,
-        "interaction": "Units spawned from Civilians create an explosion when they die."
+        "interaction": "平民生成的单位死亡时会产生爆炸。"
     },
     {
         "id1": 47,
         "id2": 56,
-        "interaction": "Turkeys do not create an explosion when they die. Angry Turkeys create an explosion when they die. The Turking creates an explosion when it does."
+        "interaction": "火鸡死亡时不会产生爆炸。愤怒火鸡死亡时会产生爆炸。火鸡王死亡时会产生爆炸。"
     },
     {
         "id1": 47,
         "id2": 59,
-        "interaction": "Void Reanimators create an explosion when they die."
+        "interaction": "虚空复生者死亡时会产生爆炸。"
     },
     {
         "id1": 47,
         "id2": 60,
-        "interaction": "Units spawned from Void Rifts  create an explosion when they die."
+        "interaction": "虚空裂隙生成的单位 死亡时会产生爆炸。"
     },
     {
         "id1": 47,
         "id2": 61,
-        "interaction": "Infested create an explosion when they die."
+        "interaction": "感染体死亡时会产生爆炸。"
     },
     {
         "id1": 47,
         "id2": 63,
-        "interaction": "Boom Bots create an explosion when they die."
+        "interaction": "自爆机器人死亡时会产生爆炸。"
     },
     {
         "id1": 51,
         "id2": 54,
-        "interaction": "Transmuted units move faster with Speed Freaks."
+        "interaction": "嬗变后的单位在速度狂魔作用下移动更快。"
     },
     {
         "id1": 51,
         "id2": 55,
-        "interaction": "Units spawned from Civilians move faster with Speed Freaks."
+        "interaction": "平民生成的单位在速度狂魔作用下移动更快。"
     },
     {
         "id1": 51,
         "id2": 56,
-        "interaction": "Turkeys do not move faster with Speed Freaks. The Turking moves faster with Speed Freaks."
+        "interaction": "火鸡不会因速度狂魔而移动得更快。火鸡王会因速度狂魔而移动得更快。"
     },
     {
         "id1": 51,
         "id2": 59,
-        "interaction": "Void Reanimators move faster with Speed Freaks. Resurrected units move faster with Speed Freaks."
+        "interaction": "虚空复生者在速度狂魔作用下移动更快。复活后的单位在速度狂魔作用下移动更快。"
     },
     {
         "id1": 51,
         "id2": 60,
-        "interaction": "Units spawned from Void Rifts move faster with Speed Freaks."
+        "interaction": "虚空裂隙生成的单位在速度狂魔作用下移动更快。"
     },
     {
         "id1": 51,
         "id2": 61,
-        "interaction": "Infested units move faster with Speed Freaks."
+        "interaction": "感染体单位在速度狂魔作用下移动更快。"
     },
     {
         "id1": 51,
         "id2": 63,
-        "interaction": "Boom Bots move faster with Speed Freaks."
+        "interaction": "自爆机器人在速度狂魔作用下移动更快。"
     },
     {
         "id1": 52,
         "id2": 62,
-        "interaction": "Temporal Fields are not cloaked."
+        "interaction": "时间场不处于隐形状态。"
     },
     {
         "id1": 53,
         "id2": 62,
-        "interaction": "Time Warps are not cloaked."
+        "interaction": "时间扭曲不处于隐形状态。"
     },
     {
         "id1": 54,
         "id2": 55,
-        "interaction": "Units spawned from Civilians can Transmute."
+        "interaction": "平民生成的单位可以发生嬗变。"
     },
     {
         "id1": 54,
         "id2": 56,
-        "interaction": "Turkeys can transmute when they deal damage or kill a unit. The Turking does not transmute."
+        "interaction": "火鸡造成伤害或击杀单位时可以发生嬗变。火鸡王不会发生嬗变。"
     },
     {
         "id1": 54,
         "id2": 59,
-        "interaction": "Resurrected units can Transmute."
+        "interaction": "复活后的单位可以发生嬗变。"
     },
     {
         "id1": 54,
         "id2": 60,
-        "interaction": "Units spawned from Void Rifts can transmute."
+        "interaction": "虚空裂隙生成的单位可以发生嬗变。"
     },
     {
         "id1": 54,
         "id2": 61,
-        "interaction": "Infested can transmute. Newly-transmuted units spawn Infested when they die."
+        "interaction": "感染体可以发生嬗变。新嬗变出的单位死亡时会生成感染体。"
     },
     {
         "id1": 54,
         "id2": 62,
-        "interaction": "Transmuted units are cloaked."
+        "interaction": "嬗变后的单位处于隐形状态。"
     },
     {
         "id1": 55,
         "id2": 59,
-        "interaction": "Void Reanimators can resurrect units spawned from Civilians."
+        "interaction": "虚空复生者可以复活平民生成的单位。"
     },
     {
         "id1": 55,
         "id2": 60,
-        "interaction": "Civilians do not spawn from Void Rifts."
+        "interaction": "平民不会从虚空裂隙生成。"
     },
     {
         "id1": 55,
         "id2": 61,
-        "interaction": "Units spawned from Civilians spawn Infested when they die."
+        "interaction": "平民生成的单位死亡时生成感染体。"
     },
     {
         "id1": 55,
         "id2": 62,
-        "interaction": "Units spawned from Civilians are cloaked."
+        "interaction": "平民生成的单位处于隐形状态。"
     },
     {
         "id1": 56,
         "id2": 59,
-        "interaction": "Void Reanimators can resurrect Turkeys. Void Reanimators do not resurrect the Turking."
+        "interaction": "虚空复生者可以复活火鸡，但不会复活火鸡王。"
     },
     {
         "id1": 56,
         "id2": 61,
-        "interaction": "Turkeys do not spawn Infested when they die. Angry Turkeys spawn Infested when they die. The Turking does not spawn Infested when it dies."
+        "interaction": "火鸡死亡时不会生成感染体。愤怒火鸡死亡时会生成感染体。火鸡王死亡时不会生成感染体。"
     },
     {
         "id1": 56,
         "id2": 62,
-        "interaction": "Turkeys are not cloaked. The Turking is cloaked."
+        "interaction": "火鸡不处于隐形状态。火鸡王处于隐形状态。"
     },
     {
         "id1": 57,
         "id2": 62,
-        "interaction": "Twisters are not cloaked."
+        "interaction": "龙卷风不处于隐形状态。"
     },
     {
         "id1": 59,
         "id2": 60,
-        "interaction": "Void Reanimators can resurrect units spawned from Void Rifts.\nVoid Reanimators do not spawn from Void Rifts."
+        "interaction": "虚空复生者可以复活虚空裂隙生成的单位。\n虚空复生者不会从虚空裂隙生成。"
     },
     {
         "id1": 59,
         "id2": 61,
-        "interaction": "Void Reanimators can resurrect Infested."
+        "interaction": "虚空复生者可以复活感染体。"
     },
     {
         "id1": 59,
         "id2": 62,
-        "interaction": "Void Reanimators are cloaked."
+        "interaction": "虚空复生者处于隐形状态。"
     },
     {
         "id1": 59,
         "id2": 63,
-        "interaction": "Void Reanimators do not resurrect Boom Bots."
+        "interaction": "虚空复生者不会复活自爆机器人。"
     },
     {
         "id1": 60,
         "id2": 61,
-        "interaction": "Units spawned from Void Rifts spawn Infested when they die."
+        "interaction": "虚空裂隙生成的单位死亡时生成感染体。"
     },
     {
         "id1": 60,
         "id2": 62,
-        "interaction": "Units spawned from Void Rifts are cloaked."
+        "interaction": "虚空裂隙生成的单位处于隐形状态。"
     },
     {
         "id1": 60,
         "id2": 63,
-        "interaction": "Boom Bots do not spawn from Void Rifts."
+        "interaction": "自爆机器人不会从虚空裂隙生成。"
     },
     {
         "id1": 61,
         "id2": 62,
-        "interaction": "Infested are cloaked."
+        "interaction": "感染体处于隐形状态。"
     },
     {
         "id1": 61,
         "id2": 63,
-        "interaction": "Boom Bots spawn Infested when they die."
+        "interaction": "自爆机器人死亡时生成感染体。"
     },
     {
         "id1": 62,
         "id2": 63,
-        "interaction": "Boom Bots are cloaked, but their tags are still visible.\nCodes cannot be input without detection."
+        "interaction": "自爆机器人处于隐形状态，但其标签仍然可见。\n没有反隐时无法输入代码。"
     }
 ]

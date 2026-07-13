@@ -5,9 +5,9 @@
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Levels</title>
-  <meta name="description" content="A list of experience brackets in Starcraft II Co-op, as well as a few calculators to show you how far you are through Ascension levels.">
-  <meta name="keywords" content="Starcraft co-op guides levels">
+  <title>《星际争霸2》合作任务 - 等级</title>
+  <meta name="description" content="《星际争霸II》合作任务经验区间列表，以及用于计算晋升等级进度的工具。">
+  <meta name="keywords" content="星际争霸 合作任务 攻略 等级">
   <link rel="canonical" href="https://starcraft2coop.com/resources/levels">
   <style>
     .centered {
@@ -55,107 +55,107 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     }
   </style>
   <?= startContent() ?>
-    <h1>Co-op Levels, Experience Requirements, Mastery and Ascension Levels</h1>
+    <h1>合作任务等级、经验需求、精通与晋升等级</h1>
     <?php include("../../includes/reporterror.php");?>
     <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#summary">Summary</a></p>
-        <p><a href="#rewards">Rewards</a></p>
-        <p><a href="#expTables">Experience Tables</a></p>
-        <p><a href="#rawCalc">Games For Experience</a></p>
-        <p><a href="#close">How Close to Ascension/Max Level</a></p>
-        <p><a href="#numbers">Some Interesting Numbers</a></p>
+        <h2>本页章节</h2>
+        <p><a href="#summary">概述</a></p>
+        <p><a href="#rewards">奖励</a></p>
+        <p><a href="#expTables">经验表</a></p>
+        <p><a href="#rawCalc">获取经验所需场次</a></p>
+        <p><a href="#close">距离晋升/满级还有多远</a></p>
+        <p><a href="#numbers">一些有趣的数据</a></p>
     </div>
-    <h2 id="summary">Summary</h2>
-    <p>When you complete missions (either completely or partially), you earn mission experience. This experience goes towards levelling. There are a total of three phases in levelling. These phases are:</p>
+    <h2 id="summary">概述</h2>
+    <p>完成任务（无论完整完成还是部分完成）时会获得任务经验，用于提升等级。升级共分为三个阶段：</p>
     <ol>
-        <li><b>Commander Levels:</b> Levels range from 1-15. As you level a commander, you unlock upgrades that make the commander stronger. Commander levels are not shared between commanders.</li>
-        <li><b>Mastery Levels:</b> Levels range from 0-90. As you level your mastery, you are awarded with mastery points that you can put towards each commander. Mastery levels are shared between commanders. Every mastery level gives you one mastery point to put towards each commander you have. These mastery points make your commanders much more powerful and improve upon their passive bonuses or abilities. At max level, you will get a total of 90 Mastery Points to distribute into three different power sets, 30 points each. Each power set requires you to pick one of two special perks available, unique to the commander.</li>
-        <li><b>Ascension Levels:</b> Levels range from 91-1000. They do not award anything except for some cosmetic rewards. Ascension levels are shared between commanders.</li>
+        <li><b>指挥官等级：</b>等级范围为1-15。提升指挥官等级可解锁强化内容。不同指挥官的等级互不共享。</li>
+        <li><b>精通等级：</b>等级范围为0-90。精通等级在指挥官之间共享；每提升一级，所有已拥有的指挥官各获得一点精通点数，用于强化其被动加成或技能。满级时共有90点精通点数，可分配到三个技能组中，每组30点；每组需在两项该指挥官专属加成中选择其一。</li>
+        <li><b>晋升等级：</b>等级范围为91-1000。除部分外观奖励外不提供其他奖励，且在指挥官之间共享。</li>
     </ol>
-    <p>When a commander reaches level 15 (requiring a total of 1,045,000 experience), a player may choose to Prestige them. This resets the commander back down to level 1 and unlocks a new selectable talent. A player may Prestige a maximum of three times, unlocking three talents.</p>
-    <h2 id="rewards">Rewards</h2>
-    <p>Rewards for the completion of a mission is as follows:</p>
+    <p>指挥官达到15级（总计需要1,045,000点经验）后，玩家可选择进行威望重置。指挥官会回到1级，并解锁一项可选天赋。每名指挥官最多可重置威望三次，共解锁三项天赋。</p>
+    <h2 id="rewards">奖励</h2>
+    <p>完成任务可获得以下奖励：</p>
     <ul>
-        <li>Mission Completion: 20,000 EXP</li>
-        <li>Bonus Completion: 2,000 EXP</li>
-        <li>Difficulty Bonus:
+        <li>完成任务：20,000点经验</li>
+        <li>完成额外目标：2,000点经验</li>
+        <li>难度加成：
             <br><br>
-            Standard Difficulties:
+            标准难度：
             <table>
                 <thead>
                     <tr>
-                        <th>Difficulty</th>
-                        <th>EXP</th>
+                        <th>难度</th>
+                        <th>经验</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Casual</td>
+                        <td>休闲</td>
                         <td>0%</td>
                     </tr>
                     <tr>
-                        <td>Normal</td>
+                        <td>普通</td>
                         <td>20%</td>
                     </tr>
                     <tr>
-                        <td>Hard</td>
+                        <td>困难</td>
                         <td>50%</td>
                     </tr>
                     <tr>
-                        <td>Brutal</td>
+                        <td>残酷</td>
                         <td>100%</td>
                     </tr>
                 </tbody>
             </table>
             <br><br>
-            Extended Difficulties:
+            扩展难度：
             <table>
                 <thead>
                     <tr>
-                        <th>Difficulty</th>
-                        <th>EXP</th>
+                        <th>难度</th>
+                        <th>经验</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Brutal+</td>
+                        <td>残酷+</td>
                         <td>175%</td>
                     </tr>
                     <tr>
-                        <td>Brutal+2</td>
+                        <td>残酷+2</td>
                         <td>200%</td>
                     </tr>
                     <tr>
-                        <td>Brutal+3</td>
+                        <td>残酷+3</td>
                         <td>225%</td>
                     </tr>
                     <tr>
-                        <td>Brutal+4</td>
+                        <td>残酷+4</td>
                         <td>250%</td>
                     </tr>
                     <tr>
-                        <td>Brutal+5</td>
+                        <td>残酷+5</td>
                         <td>275%</td>
                     </tr>
                     <tr>
-                        <td>Brutal+6</td>
+                        <td>残酷+6</td>
                         <td>300%</td>
                     </tr>
                 </tbody>
             </table>
             <br>
         </li>
-        <li>Random Mission Bonus: 25%</li>
-        <li>First Win of the Day Bonus: 10,000 EXP</li>
+        <li>随机任务加成：25%</li>
+        <li>每日首胜加成：10,000点经验</li>
     </ul>
-    <h2 id="expTables">Experience Tables</h2>
-    <p>The experience requirements for leveling a commander is shown below:</p>
+    <h2 id="expTables">经验表</h2>
+    <p>指挥官升级所需经验如下：</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Level Bracket</th>
-                <th>Experience</th>
+                <th>等级区间</th>
+                <th>经验</th>
             </tr>
         </thead>
         <tbody>
@@ -217,23 +217,23 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
         </tbody>
     </table>
-    <p>At level 15, you'll be at Mastery Level 0, which is where the progression below takes place.</p>
+    <p>达到15级后，精通等级为0，后续升级进度如下表所示。</p>
     <div class="tableContainer">
         <table class="centered split">
             <thead>
                 <tr>
-                    <th>Level</th>
-                    <th>Exp needed</th>
-                    <th>Level</th>
-                    <th>Exp needed</th>
-                    <th>Level</th>
-                    <th>Exp needed</th>
-                    <th>Level</th>
-                    <th>Exp needed</th>
-                    <th>Level</th>
-                    <th>Exp needed</th>
-                    <th>Level</th>
-                    <th>Exp needed</th>
+                    <th>等级</th>
+                    <th>所需经验</th>
+                    <th>等级</th>
+                    <th>所需经验</th>
+                    <th>等级</th>
+                    <th>所需经验</th>
+                    <th>等级</th>
+                    <th>所需经验</th>
+                    <th>等级</th>
+                    <th>所需经验</th>
+                    <th>等级</th>
+                    <th>所需经验</th>
                 </tr>
             </thead>
             <tbody>
@@ -450,103 +450,103 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tbody>
         </table>
     </div>
-    <p>From level 90 onwards, you need 200,000 experience to gain an ascension level.</p>
-    <h2 id="rawCalc">Games For Experience</h2>
-    <p>You can calculate how many games of each difficulty are required to get a certain amount of experience.</p>
-    <p>Experience Required</p>
+    <p>从90级开始，每提升一个晋升等级需要200,000点经验。</p>
+    <h2 id="rawCalc">获取经验所需场次</h2>
+    <p>你可以计算获得指定经验所需完成的各难度任务场次。</p>
+    <p>所需经验</p>
     <input type="text" name="experienceNeeded" id="experienceNeeded" maxlength="8" size="9" value="0">
-    <p>Random Mission Bonus: <label><input type="checkbox" name="exp_random_mission_bonus" value="0.25"></label></p>
-    <p>Bonus Objective Completed: <label><input type="checkbox" value="1" name="exp_bonus_objective_completed"></label></p>
-    <p>Stimpack Active: <label><input type="checkbox" value="0.5" name="exp_stim_pack"></label></p>
-    <p>Warchest Active: <label><input type="checkbox" value="0.5" name="exp_war_chest"></label></p>
-    <p>Holiday Bonus:
-        <label><input type="radio" checked="checked" value="0" name="exp_holiday_bonus">None</label>
+    <p>随机任务加成： <label><input type="checkbox" name="exp_random_mission_bonus" value="0.25"></label></p>
+    <p>已完成额外目标： <label><input type="checkbox" value="1" name="exp_bonus_objective_completed"></label></p>
+    <p>已启用经验加成剂： <label><input type="checkbox" value="0.5" name="exp_stim_pack"></label></p>
+    <p>已启用战争宝箱： <label><input type="checkbox" value="0.5" name="exp_war_chest"></label></p>
+    <p>节日加成：
+        <label><input type="radio" checked="checked" value="0" name="exp_holiday_bonus">无</label>
         <label><input type="radio" value="0.5" name="exp_holiday_bonus">50%</label>
         <label><input type="radio" name="exp_holiday_bonus" value="1">100%</label>
     </p>
-    <input type="submit" value="Go" id="calcGames">
+    <input type="submit" value="计算" id="calcGames">
     <div id ="gameCount">
-        <p>Here's how many games (averaging 20 minutes each) it would take you:</p>
+        <p>所需任务场次如下（每场平均20分钟）：</p>
         <table class="centered">
             <thead>
                 <tr>
-                    <th>Difficulty</th>
-                    <th>Games Needed</th>
-                    <th>Total Time (Hours)</th>
+                    <th>难度</th>
+                    <th>所需场次</th>
+                    <th>总时间（小时）</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Casual</td>
+                    <td>休闲</td>
                     <td><span id="expCasGames">0</span></td>
                     <td><span id="expCasTime">0:00</span></td>
                 </tr>
                 <tr>
-                    <td>Normal</td>
+                    <td>普通</td>
                     <td><span id="expNormGames">0</span></td>
                     <td><span id="expNormTime">0:00</span></td>
                 </tr>
                 <tr>
-                    <td>Hard</td>
+                    <td>困难</td>
                     <td><span id="expHardGames">0</span></td>
                     <td><span id="expHardTime">0:00</span></td>
                 </tr>
                 <tr>
-                    <td>Brutal</td>
+                    <td>残酷</td>
                     <td><span id="expBrutGames">0</span></td>
                     <td><span id="expBrutTime">0:00</span></td>
                 </tr>
                 <tr>
-                    <td>Brutal+1</td>
+                    <td>残酷+1</td>
                     <td><span id="expBrut1Games">0</span></td>
                     <td><span id="expBrut1Time">0:00</span></td>
                 </tr>
                 <tr>
-                    <td>Brutal+2</td>
+                    <td>残酷+2</td>
                     <td><span id="expBrut2Games">0</span></td>
                     <td><span id="expBrut2Time">0:00</span></td>
                 </tr>
                 <tr>
-                    <td>Brutal+3</td>
+                    <td>残酷+3</td>
                     <td><span id="expBrut3Games">0</span></td>
                     <td><span id="expBrut3Time">0:00</span></td>
                 </tr>
                 <tr>
-                    <td>Brutal+4</td>
+                    <td>残酷+4</td>
                     <td><span id="expBrut4Games">0</span></td>
                     <td><span id="expBrut4Time">0:00</span></td>
                 </tr>
                 <tr>
-                    <td>Brutal+5</td>
+                    <td>残酷+5</td>
                     <td><span id="expBrut5Games">0</span></td>
                     <td><span id="expBrut5Time">0:00</span></td>
                 </tr>
                 <tr>
-                    <td>Brutal+6</td>
+                    <td>残酷+6</td>
                     <td><span id="expBrut6Games">0</span></td>
                     <td><span id="expBrut6Time">0:00</span></td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <h2 id="close">How Close to Ascension/Max Level</h2>
-    <p>Levelling to Level 90 yields an increase in power to every commander a player has access to and is usually the most important part in co-op gameplay. You can use the calculator below to see how far you are in your levelling path towards level 90.</p>
-    <p>Your current mastery:</p>
+    <h2 id="close">距离晋升/满级还有多远</h2>
+    <p>提升至90级能强化玩家拥有的每位指挥官，通常也是合作任务中最重要的成长阶段。你可以使用下方计算器查看自己距离90级还有多远。</p>
+    <p>当前精通等级：</p>
     <input type="text" name="masteryLevel" id="masteryLevel" maxlength="4" size="5" value="0">
-    <p>Target Level:
+    <p>目标等级：
     <label><input type="radio" name="targetLevel" value="90" checked="checked"> 90</label>
     <label><input type="radio" name="targetLevel" value="1000"> 1000</label>
     </p>
-    <p>Random Mission Bonus: <label><input type="checkbox" name="random_mission_bonus" value="0.25"></label></p>
-    <p>Bonus Objective Completed: <label><input type="checkbox" value="1" name="bonus_objective_completed"></label></p>
-    <p>Stimpack Active: <label><input type="checkbox" value="0.5" name="stim_pack"></label></p>
-    <p>Warchest Active: <label><input type="checkbox" value="0.5" name="war_chest"></label></p>
-    <p>Holiday Bonus:
-        <label><input type="radio" checked="checked" value="0" name="holiday_bonus">None</label>
+    <p>随机任务加成： <label><input type="checkbox" name="random_mission_bonus" value="0.25"></label></p>
+    <p>已完成额外目标： <label><input type="checkbox" value="1" name="bonus_objective_completed"></label></p>
+    <p>已启用经验加成剂： <label><input type="checkbox" value="0.5" name="stim_pack"></label></p>
+    <p>已启用战争宝箱： <label><input type="checkbox" value="0.5" name="war_chest"></label></p>
+    <p>节日加成：
+        <label><input type="radio" checked="checked" value="0" name="holiday_bonus">无</label>
         <label><input type="radio" value="0.5" name="holiday_bonus">50%</label>
         <label><input type="radio" name="holiday_bonus" value="1">100%</label>
     </p>
-    <input type="submit" value="Go" id="calcMastery">
+    <input type="submit" value="计算" id="calcMastery">
     <br><br>
     <div id="progressContainer">
         <div id="progressBar">
@@ -555,88 +555,88 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         <div id="progress"><p>0%</p></div>
     </div>
     <div id ="mastery">
-        <p>Here's how many games (averaging 20 minutes each) it would take you:</p>
+        <p>所需任务场次如下（每场平均20分钟）：</p>
         <table class="centered">
             <thead>
                 <tr>
-                    <th>Difficulty</th>
-                    <th>Games Needed</th>
-                    <th>Total Time (Hours)</th>
+                    <th>难度</th>
+                    <th>所需场次</th>
+                    <th>总时间（小时）</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Casual</td>
+                    <td>休闲</td>
                     <td><span id="masCasGames">0</span></td>
                     <td><span id="masCasTime">0:00</span></td>
                 </tr>
                 <tr>
-                    <td>Normal</td>
+                    <td>普通</td>
                     <td><span id="masNormGames">0</span></td>
                     <td><span id="masNormTime">0:00</span></td>
                 </tr>
                 <tr>
-                    <td>Hard</td>
+                    <td>困难</td>
                     <td><span id="masHardGames">0</span></td>
                     <td><span id="masHardTime">0:00</span></td>
                 </tr>
                 <tr>
-                    <td>Brutal</td>
+                    <td>残酷</td>
                     <td><span id="masBrutGames">0</span></td>
                     <td><span id="masBrutTime">0:00</span></td>
                 </tr>
                 <tr>
-                    <td>Brutal+1</td>
+                    <td>残酷+1</td>
                     <td><span id="masBrut1Games">0</span></td>
                     <td><span id="masBrut1Time">0:00</span></td>
                 </tr>
                 <tr>
-                    <td>Brutal+2</td>
+                    <td>残酷+2</td>
                     <td><span id="masBrut2Games">0</span></td>
                     <td><span id="masBrut2Time">0:00</span></td>
                 </tr>
                 <tr>
-                    <td>Brutal+3</td>
+                    <td>残酷+3</td>
                     <td><span id="masBrut3Games">0</span></td>
                     <td><span id="masBrut3Time">0:00</span></td>
                 </tr>
                 <tr>
-                    <td>Brutal+4</td>
+                    <td>残酷+4</td>
                     <td><span id="masBrut4Games">0</span></td>
                     <td><span id="masBrut4Time">0:00</span></td>
                 </tr>
                 <tr>
-                    <td>Brutal+5</td>
+                    <td>残酷+5</td>
                     <td><span id="masBrut5Games">0</span></td>
                     <td><span id="masBrut5Time">0:00</span></td>
                 </tr>
                 <tr>
-                    <td>Brutal+6</td>
+                    <td>残酷+6</td>
                     <td><span id="masBrut6Games">0</span></td>
                     <td><span id="masBrut6Time">0:00</span></td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <h2 id="numbers">Some Interesting Numbers</h2>
-    <p>Use this calculator to get some interesting numbers regarding your leveling.</p>
+    <h2 id="numbers">一些有趣的数据</h2>
+    <p>使用此计算器可得到一些与你的升级进度有关的数据。</p>
     <form action="#">
-        (There are a total of <?php echo(count(scandir("../images/commanderportraits")) - 2); ?> commanders currently)
+        （当前共有 <?php echo(count(scandir("../images/commanderportraits")) - 2); ?> 名指挥官）
         <br>
         <table id="calcTable">
             <thead>
                 <tr>
                     <th></th>
-                    <th>Asia</th>
-                    <th>CN</th>
-                    <th>EU</th>
-                    <th>NA</th>
-                    <th>SEA</th>
+                    <th>亚洲</th>
+                    <th>中国</th>
+                    <th>欧洲</th>
+                    <th>北美</th>
+                    <th>东南亚</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Ascension Levels</td>
+                    <td>晋升等级</td>
                     <td><input type="text" name="krLevel" id="krLevel" maxlength="4" size="4" value=<?=$levelInfo['Asia'][0] = $levelInfo['Asia'][0] ?? '0'?>></td>
                     <td><input type="text" name="cnLevel" id="cnLevel" maxlength="4" size="4" value=<?=$levelInfo['CN'][0] = $levelInfo['CN'][0] ?? '0'?>></td>
                     <td><input type="text" name="euLevel" id="euLevel" maxlength="4" size="4" value=<?=$levelInfo['EU'][0] = $levelInfo['EU'][0] ?? '0'?>></td>
@@ -644,7 +644,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                     <td><input type="text" name="seaLevel" id="seaLevel" maxlength="4" size="4" value=<?=$levelInfo['SEA'][0] = $levelInfo['SEA'][0] ?? '0'?>></td>
                 </tr>
                 <tr>
-                    <td>0 Prestige Lvl. 15 Commanders</td>
+                    <td>0威望的15级指挥官</td>
                     <td><input type="text" name="krComs0" id="krComs0" maxlength="2" size="2" value=<?=$prestigeInfo['Asia'][0] = $prestigeInfo['Asia'][0] ?? '0'?>></td>
                     <td><input type="text" name="cnComs0" id="cnComs0" maxlength="2" size="2" value=<?=$prestigeInfo['CN'][0] = $prestigeInfo['CN'][0] ?? '0'?>></td>
                     <td><input type="text" name="euComs0" id="euComs0" maxlength="2" size="2" value=<?=$prestigeInfo['EU'][0] = $prestigeInfo['EU'][0] ?? '0'?>></td>
@@ -652,7 +652,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                     <td><input type="text" name="seaComs0" id="seaComs0" maxlength="2" size="2" value=<?=$prestigeInfo['SEA'][0] = $prestigeInfo['SEA'][0] ?? '0'?>></td>
                 </tr>
                 <tr>
-                    <td>1 Prestige Lvl. 15 Commanders</td>
+                    <td>1威望的15级指挥官</td>
                     <td><input type="text" name="krComs1" id="krComs1" maxlength="2" size="2" value=<?=$prestigeInfo['Asia'][1] = $prestigeInfo['Asia'][1] ?? '0'?>></td>
                     <td><input type="text" name="cnComs1" id="cnComs1" maxlength="2" size="2" value=<?=$prestigeInfo['CN'][1] = $prestigeInfo['CN'][1] ?? '0'?>></td>
                     <td><input type="text" name="euComs1" id="euComs1" maxlength="2" size="2" value=<?=$prestigeInfo['EU'][1] = $prestigeInfo['EU'][1] ?? '0'?>></td>
@@ -660,7 +660,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                     <td><input type="text" name="seaComs1" id="seaComs1" maxlength="2" size="2" value=<?=$prestigeInfo['SEA'][1] = $prestigeInfo['SEA'][1] ?? '0'?>></td>
                 </tr>
                 <tr>
-                    <td>2 Prestige Lvl. 15 Commanders</td>
+                    <td>2威望的15级指挥官</td>
                     <td><input type="text" name="krComs2" id="krComs2" maxlength="2" size="2" value=<?=$prestigeInfo['Asia'][2] = $prestigeInfo['Asia'][2] ?? '0'?>></td>
                     <td><input type="text" name="cnComs2" id="cnComs2" maxlength="2" size="2" value=<?=$prestigeInfo['CN'][2] = $prestigeInfo['CN'][2] ?? '0'?>></td>
                     <td><input type="text" name="euComs2" id="euComs2" maxlength="2" size="2" value=<?=$prestigeInfo['EU'][2] = $prestigeInfo['EU'][2] ?? '0'?>></td>
@@ -668,7 +668,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                     <td><input type="text" name="seaComs2" id="seaComs2" maxlength="2" size="2" value=<?=$prestigeInfo['SEA'][2] = $prestigeInfo['SEA'][2] ?? '0'?>></td>
                 </tr>
                 <tr>
-                    <td>3 Prestige Lvl. 15 Commanders</td>
+                    <td>3威望的15级指挥官</td>
                     <td><input type="text" name="krComs3" id="krComs3" maxlength="2" size="2" value=<?=$prestigeInfo['Asia'][3] = $prestigeInfo['Asia'][3] ?? '0'?>></td>
                     <td><input type="text" name="cnComs3" id="cnComs3" maxlength="2" size="2" value=<?=$prestigeInfo['CN'][3] = $prestigeInfo['CN'][3] ?? '0'?>></td>
                     <td><input type="text" name="euComs3" id="euComs3" maxlength="2" size="2" value=<?=$prestigeInfo['EU'][3] = $prestigeInfo['EU'][3] ?? '0'?>></td>
@@ -678,68 +678,68 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tbody>
         </table>
          <br>
-        <input type="submit" value="Calculate" id="calc">
+        <input type="submit" value="计算" id="calc">
         <div id ="stats">
-            <p>The total experience you have earned is: <span id="totalExp">0</span>.</p>
-            <p>If you only played on one server, with all commanders at Level 15 Prestige 3, you'd be level: <span id="bestLevel">0</span>.</p>
-            <p>If you only played on one server, with only one commander  at Level 15 Prestige 0, you'd be level: <span id="maxLevel">0</span></p>
-            <p>Here's how many games (averaging 20 minutes each) it would take you (without bounties, first win bonuses, or stimpacks but with random mission bonus and bonus objectives complete):</p>
+            <p>你已获得的总经验为： <span id="totalExp">0</span>.</p>
+            <p>如果只在一个服务器游玩，且所有指挥官均为15级威望3，你的等级将为： <span id="bestLevel">0</span>.</p>
+            <p>如果只在一个服务器游玩，且只有一名指挥官达到15级威望0，你的等级将为： <span id="maxLevel">0</span></p>
+            <p>所需任务场次如下（每场平均20分钟；不计悬赏、首胜加成和经验加成剂，但计入随机任务加成并假定完成额外目标）：</p>
             <table class="centered">
                 <thead>
                     <tr>
-                        <th>Difficulty</th>
-                        <th>Games Played</th>
-                        <th>Total Time (Hours)</th>
+                        <th>难度</th>
+                        <th>已完成场次</th>
+                        <th>总时间（小时）</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Casual</td>
+                        <td>休闲</td>
                         <td><span id="casGames">0</span></td>
                         <td><span id="casTime">0:00</span></td>
                     </tr>
                     <tr>
-                        <td>Normal</td>
+                        <td>普通</td>
                         <td><span id="normGames">0</span></td>
                         <td><span id="normTime">0:00</span></td>
                     </tr>
                     <tr>
-                        <td>Hard</td>
+                        <td>困难</td>
                         <td><span id="hardGames">0</span></td>
                         <td><span id="hardTime">0:00</span></td>
                     </tr>
                     <tr>
-                        <td>Brutal</td>
+                        <td>残酷</td>
                         <td><span id="brutGames">0</span></td>
                         <td><span id="brutTime">0:00</span></td>
                     </tr>
                     <tr>
-                        <td>Brutal+</td>
+                        <td>残酷+</td>
                         <td><span id="brut1Games">0</span></td>
                         <td><span id="brut1Time">0:00</span></td>
                     </tr>
                     <tr>
-                        <td>Brutal+2</td>
+                        <td>残酷+2</td>
                         <td><span id="brut2Games">0</span></td>
                         <td><span id="brut2Time">0:00</span></td>
                     </tr>
                     <tr>
-                        <td>Brutal+3</td>
+                        <td>残酷+3</td>
                         <td><span id="brut3Games">0</span></td>
                         <td><span id="brut3Time">0:00</span></td>
                     </tr>
                     <tr>
-                        <td>Brutal+4</td>
+                        <td>残酷+4</td>
                         <td><span id="brut4Games">0</span></td>
                         <td><span id="brut4Time">0:00</span></td>
                     </tr>
                     <tr>
-                        <td>Brutal+5</td>
+                        <td>残酷+5</td>
                         <td><span id="brut5Games">0</span></td>
                         <td><span id="brut5Time">0:00</span></td>
                     </tr>
                     <tr>
-                        <td>Brutal+6</td>
+                        <td>残酷+6</td>
                         <td><span id="brut6Games">0</span></td>
                         <td><span id="brut6Time">0:00</span></td>
                     </tr>
@@ -845,7 +845,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             var progress;
             var targetLevel;
 
-            if($("#masteryLevel").val()==""){masteryLevel =0;}else if(!$.isNumeric($("#masteryLevel").val())){alert("Mastery Level is not numeric");}else{masteryLevel= parseInt($("#masteryLevel").val());}
+            if($("#masteryLevel").val()==""){masteryLevel =0;}else if(!$.isNumeric($("#masteryLevel").val())){alert("精通等级必须为数字");}else{masteryLevel= parseInt($("#masteryLevel").val());}
             if(masteryLevel<0){masteryLevel = 0;$("#masteryLevel").val("0");}
 
             targetLevel = $('input[name=targetLevel]:checked').val()
@@ -970,15 +970,15 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             var brut6Games;
             var brut6Time;
 
-            if($("#krLevel").val()==""){krLevel=0}else if(!$.isNumeric($("#krLevel").val())){alert("KR Level is not numeric");return;}else{krLevel=parseInt($("#krLevel").val())}
+            if($("#krLevel").val()==""){krLevel=0}else if(!$.isNumeric($("#krLevel").val())){alert("亚洲服务器等级必须为数字");return;}else{krLevel=parseInt($("#krLevel").val())}
             if(krLevel<0){krLevel = 0;$("#krLevel").val("0");}
-            if($("#cnLevel").val()==""){cnLevel=0}else if(!$.isNumeric($("#cnLevel").val())){alert("CN Level is not numeric");return;}else{cnLevel=parseInt($("#cnLevel").val())}
+            if($("#cnLevel").val()==""){cnLevel=0}else if(!$.isNumeric($("#cnLevel").val())){alert("中国服务器等级必须为数字");return;}else{cnLevel=parseInt($("#cnLevel").val())}
             if(cnLevel<0){seaLevel = 0;$("#cnLevel").val("0");}
-            if($("#euLevel").val()==""){euLevel =0;}else if(!$.isNumeric($("#euLevel").val())){alert("EU Level is not numeric");return;}else{euLevel= parseInt($("#euLevel").val());}
+            if($("#euLevel").val()==""){euLevel =0;}else if(!$.isNumeric($("#euLevel").val())){alert("欧洲服务器等级必须为数字");return;}else{euLevel= parseInt($("#euLevel").val());}
             if(euLevel<0){euLevel = 0;$("#euLevel").val("0");}
-            if($("#naLevel").val()==""){naLevel=0}else if(!$.isNumeric($("#naLevel").val())){alert("NA Level is not numeric");return;}else{naLevel=parseInt($("#naLevel").val())}
+            if($("#naLevel").val()==""){naLevel=0}else if(!$.isNumeric($("#naLevel").val())){alert("北美服务器等级必须为数字");return;}else{naLevel=parseInt($("#naLevel").val())}
             if(naLevel<0){naLevel = 0;$("#naLevel").val("0");}
-            if($("#seaLevel").val()==""){seaLevel=0}else if(!$.isNumeric($("#seaLevel").val())){alert("SEA Level is not numeric");return;}else{seaLevel=parseInt($("#seaLevel").val())}
+            if($("#seaLevel").val()==""){seaLevel=0}else if(!$.isNumeric($("#seaLevel").val())){alert("东南亚服务器等级必须为数字");return;}else{seaLevel=parseInt($("#seaLevel").val())}
             if(seaLevel<0){seaLevel = 0;$("#seaLevel").val("0");}
 
             var serverArray=['kr','cn','eu','na','sea']
@@ -993,7 +993,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                 for(var j=0; j < 4; j++){
                     var elementName = "#" + serverArray[i] + 'Coms' + j.toString();
                     var elementVal = 0;
-                    if($(elementName).val()==""){elementVal =0;}else if(!$.isNumeric($(elementName).val())){alert("Prestige is not numeric");return;}else{elementVal= parseInt($(elementName).val());}
+                    if($(elementName).val()==""){elementVal =0;}else if(!$.isNumeric($(elementName).val())){alert("威望必须为数字");return;}else{elementVal= parseInt($(elementName).val());}
                     if(elementVal < 0){
                         elementVal = 0;
                     }

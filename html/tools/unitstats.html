@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
@@ -9,11 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-    <link rel="stylesheet" href="/styles/global.css?v=70e9bc">
+    <link rel="stylesheet" href="/styles/global.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <title>Starcraft 2 Co-op - Unit Stats</title>
-  <meta name="description" content="A calculator to provide you with unit stats before and after upgrades for every unit in Co-op. Also includes data on Amon's units.">
-  <meta name="keywords" content="Starcraft co-op unit stats">
+      <title>《星际争霸 II》合作任务 - 单位属性</title>
+  <meta name="description" content="查看并比较合作任务中各单位升级前后的属性，也包含埃蒙单位的数据。">
+  <meta name="keywords" content="星际争霸 II, 合作任务, 单位属性, 比较">
   <link rel="canonical" href="https://starcraft2coop.com/tools/unitstats">
   <style>
     @media (max-width: 700px){
@@ -223,105 +223,105 @@
 <body>
 
 <header id="header">
-    <img src="/images/starcraft2coop.png" alt="Starcraft II Co-op">
+    <img src="/images/starcraft2coop.png" alt="StarCraft II 合作任务">
 </header>
 <script>
 if (document.location.host === 'dev.starcraft2coop.com') {
-    document.write('<div class="construction">THIS IS THE TEST SITE. (<a href="https://starcraft2coop.com">Go to the real site</a>)</div>');
+    document.write('<div class="construction">这里是测试站点。（<a href="https://starcraft2coop.com">前往正式站点</a>）</div>');
 }
 </script>
 <nav id="menu">
 <ul id="topmenu">
-    <li class="normal"><a href="/" title="Home">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>Home</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+    <li class="normal"><a href="/" title="首页">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>首页</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
     </a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-commanders">Commanders</a></li>
-    <li class="highlight"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-resources">Guides</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-missions">Missions</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-about">About</a></li>
-    <li class="normal"><button type="button" id="site-search-button" title="Search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Search</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-commanders">指挥官</a></li>
+    <li class="highlight"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-resources">攻略</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-missions">任务</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-about">关于</a></li>
+    <li class="normal"><button type="button" id="site-search-button" title="搜索">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>搜索</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
         <span class="search-shortcut" aria-hidden="true"></span>
     </button></li>
 </ul>
 <div id="container">
     <div id="commanderList" class="submenu">
-        <a href="/commanders/raynor" class="normal"><img src="/images/commanderportraits/raynorportrait.png" alt="Raynor"></a>
-        <a href="/commanders/kerrigan" class="normal"><img src="/images/commanderportraits/kerriganportrait.png" alt="Kerrigan"></a>
-        <a href="/commanders/artanis" class="normal"><img src="/images/commanderportraits/artanisportrait.png" alt="Artanis"></a>
-        <a href="/commanders/swann" class="normal"><img src="/images/commanderportraits/swannportrait.png" alt="Swann"></a>
-        <a href="/commanders/zagara" class="normal"><img src="/images/commanderportraits/zagaraportrait.png" alt="Zagara"></a>
-        <a href="/commanders/vorazun" class="normal"><img src="/images/commanderportraits/vorazunportrait.png" alt="Vorazun"></a>
-        <a href="/commanders/karax" class="normal"><img src="/images/commanderportraits/karaxportrait.png" alt="Karax"></a>
-        <a href="/commanders/abathur" class="normal"><img src="/images/commanderportraits/abathurportrait.png" alt="Abathur"></a>
-        <a href="/commanders/alarak" class="normal"><img src="/images/commanderportraits/alarakportrait.png" alt="Alarak"></a>
-        <a href="/commanders/nova" class="normal"><img src="/images/commanderportraits/novaportrait.png" alt="Nova"></a>
-        <a href="/commanders/stukov" class="normal"><img src="/images/commanderportraits/stukovportrait.png" alt="Stukov"></a>
-        <a href="/commanders/fenix" class="normal"><img src="/images/commanderportraits/fenixportrait.png" alt="Fenix"></a>
-        <a href="/commanders/dehaka" class="normal"><img src="/images/commanderportraits/dehakaportrait.png" alt="Dehaka"></a>
-        <a href="/commanders/horner" class="normal"><img src="/images/commanderportraits/hornerportrait.png" alt="Han &amp; Horner"></a>
-        <a href="/commanders/tychus" class="normal"><img src="/images/commanderportraits/tychusportrait.png" alt="Tychus"></a>
-        <a href="/commanders/zeratul" class="normal"><img src="/images/commanderportraits/zeratulportrait.png" alt="Zeratul"></a>
-        <a href="/commanders/stetmann" class="normal"><img src="/images/commanderportraits/stetmannportrait.png" alt="Stetmann"></a>
-        <a href="/commanders/mengsk" class="normal"><img src="/images/commanderportraits/mengskportrait.png" alt="Mengsk"></a>
+        <a href="/commanders/raynor" class="normal"><img src="/images/commanderportraits/raynorportrait.png" alt="雷诺"></a>
+        <a href="/commanders/kerrigan" class="normal"><img src="/images/commanderportraits/kerriganportrait.png" alt="凯瑞甘"></a>
+        <a href="/commanders/artanis" class="normal"><img src="/images/commanderportraits/artanisportrait.png" alt="阿塔尼斯"></a>
+        <a href="/commanders/swann" class="normal"><img src="/images/commanderportraits/swannportrait.png" alt="斯旺"></a>
+        <a href="/commanders/zagara" class="normal"><img src="/images/commanderportraits/zagaraportrait.png" alt="扎加拉"></a>
+        <a href="/commanders/vorazun" class="normal"><img src="/images/commanderportraits/vorazunportrait.png" alt="沃拉尊"></a>
+        <a href="/commanders/karax" class="normal"><img src="/images/commanderportraits/karaxportrait.png" alt="凯拉克斯"></a>
+        <a href="/commanders/abathur" class="normal"><img src="/images/commanderportraits/abathurportrait.png" alt="阿巴瑟"></a>
+        <a href="/commanders/alarak" class="normal"><img src="/images/commanderportraits/alarakportrait.png" alt="阿拉纳克"></a>
+        <a href="/commanders/nova" class="normal"><img src="/images/commanderportraits/novaportrait.png" alt="诺娃"></a>
+        <a href="/commanders/stukov" class="normal"><img src="/images/commanderportraits/stukovportrait.png" alt="斯托科夫"></a>
+        <a href="/commanders/fenix" class="normal"><img src="/images/commanderportraits/fenixportrait.png" alt="菲尼克斯"></a>
+        <a href="/commanders/dehaka" class="normal"><img src="/images/commanderportraits/dehakaportrait.png" alt="德哈卡"></a>
+        <a href="/commanders/horner" class="normal"><img src="/images/commanderportraits/hornerportrait.png" alt="汉与霍纳"></a>
+        <a href="/commanders/tychus" class="normal"><img src="/images/commanderportraits/tychusportrait.png" alt="泰凯斯"></a>
+        <a href="/commanders/zeratul" class="normal"><img src="/images/commanderportraits/zeratulportrait.png" alt="泽拉图"></a>
+        <a href="/commanders/stetmann" class="normal"><img src="/images/commanderportraits/stetmannportrait.png" alt="斯台特曼"></a>
+        <a href="/commanders/mengsk" class="normal"><img src="/images/commanderportraits/mengskportrait.png" alt="蒙斯克"></a>
     </div>
     <div id="missionList" class="submenu">
-        <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">Chain of Ascension</div></a>
-        <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">Cradle of Death</div></a>
-        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">Dead of Night</div></a>
-        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">Lock &amp; Load</div></a>
-        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">Malwarfare</div></a>
-        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">Miner Evacuation</div></a>
-        <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">Mist Opportunities</div></a>
-        <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">Oblivion Express</div></a>
-        <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">Part &amp; Parcel</div></a>
-        <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">Rifts to Korhal</div></a>
-        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">Scythe of Amon</div></a>
-        <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">Temple of the Past</div></a>
-        <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">The Vermillion Problem</div></a>
-        <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">Void Launch</div></a>
-        <a href="/missions/voidthrashing" class="normal"><div class="mapImg mapImg-voidthrashing">Void Thrashing</div></a>
+        <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">飞升之链</div></a>
+        <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">死亡摇篮</div></a>
+        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">亡者之夜</div></a>
+        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">天锁</div></a>
+        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">恶意代码</div></a>
+        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">疏散矿工</div></a>
+        <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">机会渺茫</div></a>
+        <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">湮灭快车</div></a>
+        <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">聚铁成兵</div></a>
+        <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">克哈裂痕</div></a>
+        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">埃蒙之镰</div></a>
+        <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">往日神庙</div></a>
+        <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">熔火危机</div></a>
+        <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">虚空降临</div></a>
+        <a href="/missions/voidthrashing" class="normal"><div class="mapImg mapImg-voidthrashing">虚空撕裂</div></a>
     </div>
     <div id="resources" class="submenu">
         <div class="submenu-with-sections"><div class="submenu-section">
-            <strong>Resources:</strong>
+            <strong>资料：</strong>
             <ul>
-                <li class="normal"><a href="/mutators/">Mutators</a></li>
-                <li class="normal"><a href="/resources/weeklymutations">Weekly&nbsp;Mutations</a></li>
-                <li class="normal"><a href="/resources/brutal">Brutal+</a></li>
-                <li class="normal"><a href="/units/">Unit&nbsp;Stats</a></li>
+                <li class="normal"><a href="/mutators/">突变因子</a></li>
+                <li class="normal"><a href="/resources/weeklymutations">每周突变</a></li>
+                <li class="normal"><a href="/resources/brutal">残酷+</a></li>
+                <li class="normal"><a href="/units/">单位数据</a></li>
             </ul>
         </div><div class="submenu-section">
-            <strong>Guides:</strong>
+            <strong>攻略：</strong>
             <ul>
-                <li class="normal"><a href="/guides/buildordertheory">Build&nbsp;Order&nbsp;Theory</a></li>
-                <li class="normal"><a href="/guides/enemycomps">Enemy&nbsp;Compositions</a></li>
-                <li class="normal"><a href="/guides/generaltips">General&nbsp;Tips</a></li>
-                <li class="normal"><a href="/guides/newplayer">New&nbsp;Players</a></li>
-                <li class="normal"><a href="/guides/youtube">Youtube</a></li>
+                <li class="normal"><a href="/guides/buildordertheory">建造顺序理论</a></li>
+                <li class="normal"><a href="/guides/enemycomps">敌方阵容</a></li>
+                <li class="normal"><a href="/guides/generaltips">通用技巧</a></li>
+                <li class="normal"><a href="/guides/newplayer">新手指南</a></li>
+                <li class="normal"><a href="/guides/youtube">YouTube</a></li>
             </ul>
         </div><div class="submenu-section">
-            <strong>Miscellaneous:</strong>
+            <strong>其他：</strong>
             <ul>
-                <li class="normal"><a href="/resources/achievements">Achievements</a></li>
-                <li class="normal"><a href="/resources/ailogic">AI&nbsp;Logic</a></li>
-                <li class="normal"><a href="/resources/bugs">Bugs</a></li>
-                <li class="normal"><a href="/resources/deathprevention">Death&nbsp;Prevent&nbsp;Effects</a></li>
-                <li class="normal"><a href="/resources/eastereggs">Easter&nbsp;Eggs</a></li>
-                <li class="normal"><a href="/resources/levels">Levels</a></li>
-                <li class="normal"><a href="/resources/patchdata">Patch&nbsp;Data</a></li>
-                <li class="normal"><a href="/tools/downloads">Downloads</a></li>
-                <li class="normal"><a href="/tools/masterybreakpoints">Mastery&nbsp;Breakpoints</a></li>
+                <li class="normal"><a href="/resources/achievements">成就</a></li>
+                <li class="normal"><a href="/resources/ailogic">人工智能逻辑</a></li>
+                <li class="normal"><a href="/resources/bugs">错误</a></li>
+                <li class="normal"><a href="/resources/deathprevention">免死效果</a></li>
+                <li class="normal"><a href="/resources/eastereggs">彩蛋</a></li>
+                <li class="normal"><a href="/resources/levels">等级</a></li>
+                <li class="normal"><a href="/resources/patchdata">补丁数据</a></li>
+                <li class="normal"><a href="/tools/downloads">下载</a></li>
+                <li class="normal"><a href="/tools/masterybreakpoints">精通阈值</a></li>
             </ul>
         </div></div>
     </div>
     <div id="about" class="submenu">
         <ul>
             <!--<li class="normal"><a href="/about/contact">Contact</a></li>-->
-            <li class="normal"><a href="/about/faq">FAQ</a></li>
-            <li class="normal"><a href="/about/links">Links</a></li>
+            <li class="normal"><a href="/about/faq">常见问题</a></li>
+            <li class="normal"><a href="/about/links">相关链接</a></li>
             <!--li class="normal"><a href="https://www.youtube.com/c/Starcraft2Coop" rel="nofollow">Youtube</a></li-->
-            <li class="normal"><a href="/about/stats">Misc. Stats</a></li>
+            <li class="normal"><a href="/about/stats">杂项统计</a></li>
         </ul>
     </div>
     <!--<div id="imgs">
@@ -372,30 +372,30 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         }
     })(jQuery);
 </script>
-<script src="/scripts/search.js?v=3646f5" defer></script>
+<script src="/scripts/search.js" defer></script>
 <div id="content">
-        <h1>A List of Unit Stats for Player and Amon Units</h1>
-        <h2>Unit Comparison</h2>
-    <p>Use the below applet to see single unit stats or compare two units together. Click on a commander, then a unit of theirs to get its stats. To compare two units, select a commander and their unit on the opposite side.</p>
-    <p>Notes about the data:</p>
+        <h1>玩家与埃蒙单位属性列表</h1>
+        <h2>单位比较</h2>
+    <p>使用下方工具可查看单个单位的属性，或比较两个单位。点击指挥官，再点击其单位即可查看属性；若要比较，请在另一侧选择指挥官及其单位。</p>
+    <p>数据说明：</p>
     <ul>
-        <li>Data only shows base stats and upgrades that affect those base stats. Upgrades that affect skill cooldowns are not displayed.</li>
-        <li>All evolutions (e.g. Abathur's Devourer, Dehaka's Primal Combat units) build times only includes the evolution time, and not the build time of the parent units.</li>
-        <li>Any units with charge-based production (e.g. Artanis) uses the charge cooldown time as the build time. For Stukov, the unit's build time is displayed, and not the charge time.</li>
-        <li>For multiple-spawned units (e.g. Zerglings), resource costs are divided by the number of units spawned.</li>
-        <li>For buffs that have multiple stacks (e.g. Biomass), the maximum buff value will be calculated.</li>
-        <li>Only upgrades that change the units weapon stats are listed. For this reason, damage reduction like Fenix's Network Administrator is not shown.</li>
-        <li>Since numbers are calculated, there may be small rounding errors.</li>
+        <li>数据只显示基础属性，以及会影响这些基础属性的升级。影响技能冷却时间的升级不会显示。</li>
+        <li>所有进化单位（例如阿巴瑟的吞噬者、德哈卡的原始战斗单位）的建造时间只包含进化耗时，不包含前置单位的建造时间。</li>
+        <li>使用充能次数生产的单位（例如阿塔尼斯）以充能冷却时间作为建造时间。斯托科夫的单位显示实际建造时间，而非充能时间。</li>
+        <li>一次生成多个的单位（例如跳虫），资源消耗会除以生成数量。</li>
+        <li>可叠加多层的强化效果（例如生物质）按最大层数计算。</li>
+        <li>只列出会改变单位武器属性的升级。因此，菲尼克斯“网络管理员”等伤害减免效果不会显示。</li>
+        <li>数值由计算得出，可能存在轻微的舍入误差。</li>
     </ul>
-    <div id="tooltip" style="display: none; top: 1601px; left: 667px; position: absolute;"><b>Upgrade Name</b><br><br>Selected upgrade description.</div>
+    <div id="tooltip" style="display: none; top: 1601px; left: 667px; position: absolute;"><b>升级名称</b><br><br>所选升级的说明。</div>
     <div class="tableContainer">
         <table id="unitStats">
             <thead>
                 <tr>
-                    <th class="rotate1"><div><span>Commander</span></div></th>
-                    <th>Unit</th>
-                    <th>Data</th>
-                    <th>Compare</th>
+                    <th class="rotate1"><div><span>指挥官</span></div></th>
+                    <th>单位</th>
+                    <th>数据</th>
+                    <th>比较</th>
                 </tr>
             </thead>
             <tbody>
@@ -403,61 +403,61 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                     <td></td>
                     <td rowspan="19" id="leftList"></td>
                     <td rowspan="19" id="leftStats"></td>
-                    <td rowspan="19" id="comparisonContainer"><button id='clearCompare' type='button'>Clear</button><div id="comparison"></div></td>
+                    <td rowspan="19" id="comparisonContainer"><button id='clearCompare' type='button'>清除</button><div id="comparison"></div></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/raynorportrait.png" alt="Raynor"></td>
+                    <td><img src="/images/commanderportraits/raynorportrait.png" data-commander="Raynor" alt="雷诺"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/kerriganportrait.png" alt="Kerrigan"></td>
+                    <td><img src="/images/commanderportraits/kerriganportrait.png" data-commander="Kerrigan" alt="凯瑞甘"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/artanisportrait.png" alt="Artanis"></td>
+                    <td><img src="/images/commanderportraits/artanisportrait.png" data-commander="Artanis" alt="阿塔尼斯"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/swannportrait.png" alt="Swann"></td>
+                    <td><img src="/images/commanderportraits/swannportrait.png" data-commander="Swann" alt="斯旺"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/zagaraportrait.png" alt="Zagara"></td>
+                    <td><img src="/images/commanderportraits/zagaraportrait.png" data-commander="Zagara" alt="扎加拉"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/vorazunportrait.png" alt="Vorazun"></td>
+                    <td><img src="/images/commanderportraits/vorazunportrait.png" data-commander="Vorazun" alt="沃拉尊"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/karaxportrait.png" alt="Karax"></td>
+                    <td><img src="/images/commanderportraits/karaxportrait.png" data-commander="Karax" alt="凯拉克斯"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/abathurportrait.png" alt="Abathur"></td>
+                    <td><img src="/images/commanderportraits/abathurportrait.png" data-commander="Abathur" alt="阿巴瑟"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/alarakportrait.png" alt="Alarak"></td>
+                    <td><img src="/images/commanderportraits/alarakportrait.png" data-commander="Alarak" alt="阿拉纳克"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/novaportrait.png" alt="Nova"></td>
+                    <td><img src="/images/commanderportraits/novaportrait.png" data-commander="Nova" alt="诺娃"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/stukovportrait.png" alt="Stukov"></td>
+                    <td><img src="/images/commanderportraits/stukovportrait.png" data-commander="Stukov" alt="斯托科夫"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/fenixportrait.png" alt="Fenix"></td>
+                    <td><img src="/images/commanderportraits/fenixportrait.png" data-commander="Fenix" alt="菲尼克斯"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/dehakaportrait.png" alt="Dehaka"></td>
+                    <td><img src="/images/commanderportraits/dehakaportrait.png" data-commander="Dehaka" alt="德哈卡"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/hornerportrait.png" alt="Horner"></td>
+                    <td><img src="/images/commanderportraits/hornerportrait.png" data-commander="Horner" alt="汉与霍纳"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/tychusportrait.png" alt="Tychus"></td>
+                    <td><img src="/images/commanderportraits/tychusportrait.png" data-commander="Tychus" alt="泰凯斯"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/zeratulportrait.png" alt="Zeratul"></td>
+                    <td><img src="/images/commanderportraits/zeratulportrait.png" data-commander="Zeratul" alt="泽拉图"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/stetmannportrait.png" alt="Stetmann"></td>
+                    <td><img src="/images/commanderportraits/stetmannportrait.png" data-commander="Stetmann" alt="斯台特曼"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/mengskportrait.png" alt="Mengsk"></td>
+                    <td><img src="/images/commanderportraits/mengskportrait.png" data-commander="Mengsk" alt="蒙斯克"></td>
                 </tr>
             </tbody>
         </table>
@@ -469,14 +469,14 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         var selectedCommanders= ["",""];
         var selectedUnits= ["",""];
         $("#unitStats img").on("click", function(){
-            var selectedCommander = $(this).attr("alt");
+            var selectedCommander = $(this).data("commander");
             $(this).parent().css("background-color", "darkslateblue");
             if (oldtdLeft){
                 oldtdLeft.css("background-color","");
             }
             oldtdLeft=$(this).parent();
             selectedCommanders[0] = selectedCommander;
-            $("#leftList").text("Loading...");
+            $("#leftList").text("正在加载……");
 
             $.ajax({
                 type: 'GET',
@@ -488,12 +488,12 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             });
         });
         $("#unitStats").on("click", "li", function(){
-            var selectedUnit = $(this).text();
+            var selectedUnit = $(this).data("unit");
             var dataColumn;
             var unitColumn;
             var selectedCommander = selectedCommanders[0];
             selectedUnits[0] = selectedUnit;
-            $("#leftStats").text("Loading...");
+            $("#leftStats").text("正在加载……");
             $.ajax({
                 type: 'GET',
                 url: '/scripts/calculatestats.php',
@@ -502,7 +502,7 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                     response = JSON.parse(response);
                     $("#leftList").find(".upgradesList").remove();
                     $("#leftList").append(response[1]);
-                    $("#leftStats").html("<button id='setCompare' type='button'>Set Compare >></button><br><div id='statsContent'>" + response[0] + "</div>");
+                    $("#leftStats").html("<button id='setCompare' type='button'>设为比较对象 &gt;&gt;</button><br><div id='statsContent'>" + response[0] + "</div>");
                 },
             });
         });
@@ -571,7 +571,7 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                 url: '/scripts/calculatestats.php',
                 data: jsonobject,
                 success: function(response){
-                    $("#leftStats").html("<button id='setCompare' type='button'>Set Compare >></button><br><div id='statsContent'>" + response + "</div>");
+                    $("#leftStats").html("<button id='setCompare' type='button'>设为比较对象 &gt;&gt;</button><br><div id='statsContent'>" + response + "</div>");
                 }
             })
         });
@@ -586,32 +586,32 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             $("#comparison").html("");
         })
     </script>
-    <h2>Enemy Target Vitalities</h2>
-    <p>Use the below filters to see which enemy units and objectives fall below a certain vitality (HP + Shields). Click on a unit to see its vitality data and associated tags.</p>
-    <p>Race Filters:</p>
+    <h2>敌方目标耐久度</h2>
+    <p>使用下方筛选器查看耐久度（生命值 + 护盾）低于特定数值的敌方单位和任务目标。点击单位可查看其耐久数据与相关标签。</p>
+    <p>种族筛选：</p>
     <p id="raceFilters">
-        <span class="toggle Protoss">Protoss</span>
-        <span class="toggle Terran">Terran</span>
-        <span class="toggle Zerg">Zerg</span>
-        <span class="toggle Hybrid">Hybrid</span>
-        <span class="toggle Infested">Infested</span>
-        <span class="toggle Objective">Objective</span>
-        <span class="toggle Mutator">Mutator</span>
+        <span class="toggle Protoss" data-race="Protoss">星灵</span>
+        <span class="toggle Terran" data-race="Terran">人类</span>
+        <span class="toggle Zerg" data-race="Zerg">异虫</span>
+        <span class="toggle Hybrid" data-race="Hybrid">混合体</span>
+        <span class="toggle Infested" data-race="Infested">感染体</span>
+        <span class="toggle Objective" data-race="Objective">任务目标</span>
+        <span class="toggle Mutator" data-race="Mutator">突变因子</span>
     </p>
     <div id="formElements">
         <table id="amonFilter">
             <tbody>
                 <tr>
-                    <td><label>Min Vitality: </label></td>
+                    <td><label>最低耐久度：</label></td>
                     <td><input type="text" id="minVitality" maxlength="5" size="5"></td>
                 </tr>
                 <tr>
-                    <td><label>Max Vitality: </label></td>
+                    <td><label>最高耐久度：</label></td>
                     <td><input type="text" id="maxVitality" maxlength="5" size="5"></td>
                 </tr>
             </tbody>
         </table>
-        <button id="filter" type="button">Filter</button><button id="reset" type="button">Reset</button>
+        <button id="filter" type="button">筛选</button><button id="reset" type="button">重置</button>
     </div>
     <br><br>
     <script>
@@ -637,12 +637,12 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <div id="dataContainer"></div>
     <div id="amonTableContainer">
         <div id="flexContainer">
-            <div class='content Zerg'>Aberration</div><div class='content Protoss'>Adept</div><div class='content Terran'>Aegis Guard</div><div class='content Protoss'>Arbiter</div><div class='content Objective'>Archangel</div><div class='content Protoss'>Archon</div><div class='content Mutator'>Artanis</div><div class='content Zerg'>Baneling</div><div class='content Terran'>Banshee</div><div class='content Terran'>Battlecruiser</div><div class='content Objective'>Blightbringer</div><div class='content Zerg'>Brood Lord</div><div class='content Zerg'>Brood Queen</div><div class='content Zerg'>Broodling</div><div class='content Zerg'>Brutalisk</div><div class='content Terran'>Bunker</div><div class='content Protoss'>Carrier</div><div class='content Infested'>Choker</div><div class='content Protoss'>Colossus</div><div class='content Terran'>Combat Shield Marine</div><div class='content Zerg'>Corruptor</div><div class='content Protoss'>Corsair</div><div class='content Terran'>Cyclone</div><div class='content Protoss'>Dark Templar</div><div class='content Objective'>Death Grip Crystal</div><div class='content Terran'>Death Head</div><div class='content Objective'>Defense Bot</div><div class='content Mutator'>Dehaka</div><div class='content Mutator'>Dehaka Spawn</div><div class='content Terran'>Devil Dog</div><div class='content Zerg'>Devourer</div><div class='content Terran'>Diamondback</div><div class='content Protoss'>Disruptor</div><div class='content Terran'>Dominion Trooper</div><div class='content Protoss'>Dragoon</div><div class='content Terran'>Dusk Wings</div><div class='content Objective'>Eradicator</div><div class='content Objective'>Extraction Device</div><div class='content Terran'>Field Response Theta</div><div class='content Terran'>Firebat</div><div class='content Objective'>Gatekeeper Construct 1</div><div class='content Objective'>Gatekeeper Construct 2</div><div class='content Objective'>Gatekeeper Construct 3</div><div class='content Objective'>Gatekeeper Construct 4</div><div class='content Objective'>Gatekeeper Construct Bonus</div><div class='content Terran'>Ghost</div><div class='content Terran'>Goliath</div><div class='content Zerg'>Guardian</div><div class='content Terran'>Hammer Securities</div><div class='content Terran'>Hellbat</div><div class='content Terran'>Hellion</div><div class='content Terran'>Hels Angel</div><div class='content Infested'>HERC</div><div class='content Protoss'>High Templar</div><div class='content Mutator'>Hunter Killer</div><div class='content Infested'>Hunterling</div><div class='content Hybrid'>Hybrid Behemoth</div><div class='content Hybrid'>Hybrid Destroyer</div><div class='content Hybrid'>Hybrid Dominator</div><div class='content Hybrid'>Hybrid Experiment 1 A626 </div><div class='content Hybrid'>Hybrid Experiment 2 9E57</div><div class='content Hybrid'>Hybrid Experiment 3 523I</div><div class='content Hybrid'>Hybrid Nemesis</div><div class='content Hybrid'>Hybrid Reaver</div><div class='content Zerg'>Hydralisk</div><div class='content Protoss'>Immortal</div><div class='content Terran'>Imperial Intercessor</div><div class='content Terran'>Imperial Witness</div><div class='content Infested'>Infested Banshee</div><div class='content Infested'>Infested Bunker</div><div class='content Infested'>Infested Death Head</div><div class='content Infested'>Infested Diamondback</div><div class='content Infested'>Infested Hammer Securities</div><div class='content Infested'>Infested Liberator</div><div class='content Infested'>Infested Marine DON</div><div class='content Infested'>Infested Marine ME</div><div class='content Infested'>Infested Missile Turret</div><div class='content Infested'>Infested Siege Tank</div><div class='content Infested'>Infested Terran DoN</div><div class='content Infested'>Infested Terran ME</div><div class='content Mutator'>Infested Turkey</div><div class='content Infested'>Infested War Pig</div><div class='content Zerg'>Infestor</div><div class='content Terran'>Jacksons Revenge</div><div class='content Infested'>Kaboomer</div><div class='content Mutator'>Karax</div><div class='content Mutator'>Kerrigan</div><div class='content Zerg'>Leviathan</div><div class='content Terran'>Liberator</div><div class='content Zerg'>Locust</div><div class='content Terran'>Loki</div><div class='content Zerg'>Lurker</div><div class='content Terran'>Marauder</div><div class='content Terran'>Marine</div><div class='content Terran'>Medic</div><div class='content Terran'>Medivac</div><div class='content Mutator'>Missile Nuke</div><div class='content Terran'>Missile Turret</div><div class='content Mutator'>Moebius Corps Laser Drill</div><div class='content Objective'>Moebius Train 1</div><div class='content Objective'>Moebius Train 2</div><div class='content Objective'>Moebius Train 3</div><div class='content Objective'>Moebius Train 4</div><div class='content Objective'>Moebius Train 5</div><div class='content Objective'>Moebius Train 6</div><div class='content Objective'>Moebius Train 7</div><div class='content Objective'>Moebius Train 8</div><div class='content Objective'>Moebius Train OE Bonus 1</div><div class='content Objective'>Moebius Train OE Bonus 2</div><div class='content Objective'>Moebius Train PP Bonus 1</div><div class='content Objective'>Moebius Train PP Bonus 2</div><div class='content Objective'>Molten Salamander</div><div class='content Protoss'>Mothership</div><div class='content Terran'>MULE</div><div class='content Zerg'>Mutalisk</div><div class='content Terran'>Night Wolf</div><div class='content Mutator'>Nova</div><div class='content Protoss'>Observer</div><div class='content Protoss'>Oracle</div><div class='content Terran'>Outback Hunter</div><div class='content Zerg'>Overlord</div><div class='content Zerg'>Overseer</div><div class='content Protoss'>Phoenix</div><div class='content Protoss'>Photon Cannon</div><div class='content Objective'>Pirate Capital Ship</div><div class='content Mutator'>Point Defense Missile</div><div class='content Terran'>Pride of Augustgrad</div><div class='content Mutator'>Propagator</div><div class='content Protoss'>Pylon</div><div class='content Zerg'>Queen</div><div class='content Zerg'>Ravager</div><div class='content Terran'>Raven</div><div class='content Mutator'>Raynor</div><div class='content Terran'>Reaper</div><div class='content Protoss'>Reaver</div><div class='content Zerg'>Roach</div><div class='content Terran'>Science Vessel</div><div class='content Zerg'>Scourge</div><div class='content Protoss'>Scout</div><div class='content Protoss'>Sentry</div><div class='content Terran'>Sentry Bot</div><div class='content Terran'>Shock Division</div><div class='content Objective'>Shuttle</div><div class='content Terran'>Siege Breaker</div><div class='content Terran'>Siege Tank</div><div class='content Terran'>Skibis Angel</div><div class='content Terran'>Sky Fury</div><div class='content Objective'>Slayn Elemental 1</div><div class='content Objective'>Slayn Elemental 2</div><div class='content Terran'>Spartan Company</div><div class='content Terran'>Spider Mine</div><div class='content Zerg'>Spine Crawler</div><div class='content Mutator'>Splitter Missile</div><div class='content Zerg'>Spore Crawler</div><div class='content Infested'>Spotter</div><div class='content Protoss'>Stalker</div><div class='content Mutator'>Standard Missile</div><div class='content Infested'>Stank</div><div class='content Objective'>Suppression Tower 1</div><div class='content Objective'>Suppression Tower 2</div><div class='content Zerg'>Swarm Host</div><div class='content Zerg'>Swarm Queen</div><div class='content Protoss'>Tempest</div><div class='content Terran'>Thor</div><div class='content Mutator'>Turkey</div><div class='content Mutator'>Turking</div><div class='content Mutator'>Tychus</div><div class='content Zerg'>Ultralisk</div><div class='content Terran'>Viking</div><div class='content Zerg'>Viper</div><div class='content Objective'>Virophage</div><div class='content Protoss'>Void Ray</div><div class='content Mutator'>Void Reanimator</div><div class='content Mutator'>Void Rift</div><div class='content Objective'>Void Shard</div><div class='content Objective'>Void Sliver 1</div><div class='content Objective'>Void Sliver 2</div><div class='content Objective'>Void Sliver 3</div><div class='content Objective'>Void Sliver 4</div><div class='content Objective'>Void Sliver 5</div><div class='content Objective'>Void Thrasher TotP 1</div><div class='content Objective'>Void Thrasher TotP 2</div><div class='content Objective'>Void Thrasher TotP 3</div><div class='content Objective'>Void Thrasher TotP 4</div><div class='content Objective'>Void Thrasher VT</div><div class='content Infested'>Volatile Infested DoN</div><div class='content Infested'>Volatile Infested ME</div><div class='content Terran'>Vulture</div><div class='content Terran'>War Pig</div><div class='content Terran'>Warhound</div><div class='content Protoss'>Warp Prism</div><div class='content Terran'>Widow Mine</div><div class='content Terran'>Widow Mine Mutator</div><div class='content Terran'>Wraith</div><div class='content Objective'>XelNaga Construct</div><div class='content Mutator'>Zagara</div><div class='content Protoss'>Zealot</div><div class='content Objective'>Zenith Stone</div><div class='content Mutator'>Zeratul</div><div class='content Zerg'>Zergling</div>        </div>
+            <div class='content Infested' data-amon-id='125'>HERC</div><div class='content Protoss' data-amon-id='7'>不朽者</div><div class='content Protoss' data-amon-id='132'>仲裁者</div><div class='content Protoss' data-amon-id='2'>使徒</div><div class='content Protoss' data-amon-id='20'>侦察机</div><div class='content Infested' data-amon-id='80'>侦察者</div><div class='content Protoss' data-amon-id='187'>侦测器</div><div class='content Protoss' data-amon-id='21'>先知</div><div class='content Protoss' data-amon-id='176'>光子炮</div><div class='content Terran' data-amon-id='136'>冲击分队</div><div class='content Protoss' data-amon-id='11'>凤凰战机</div><div class='content Mutator' data-amon-id='165'>凯拉克斯</div><div class='content Mutator' data-amon-id='166'>凯瑞甘</div><div class='content Mutator' data-amon-id='159'>分裂导弹</div><div class='content Zerg' data-amon-id='56'>利维坦</div><div class='content Zerg' data-amon-id='63'>刺蛇</div><div class='content Terran' data-amon-id='28'>劫掠者</div><div class='content Terran' data-amon-id='27'>医疗兵</div><div class='content Terran' data-amon-id='41'>医疗运输机</div><div class='content Objective' data-amon-id='85'>压制塔 1</div><div class='content Objective' data-amon-id='86'>压制塔 2</div><div class='content Zerg' data-amon-id='134'>吞噬者</div><div class='content Terran' data-amon-id='135'>哈默安保部队</div><div class='content Terran' data-amon-id='51'>响尾蛇</div><div class='content Protoss' data-amon-id='3'>哨兵</div><div class='content Terran' data-amon-id='148'>哨戒机器人</div><div class='content Terran' data-amon-id='172'>地堡</div><div class='content Mutator' data-amon-id='157'>增殖者</div><div class='content Terran' data-amon-id='195'>壁垒卫士</div><div class='content Terran' data-amon-id='150'>夜狼</div><div class='content Objective' data-amon-id='115'>大天使</div><div class='content Terran' data-amon-id='198'>天空之怒</div><div class='content Objective' data-amon-id='101'>天顶石</div><div class='content Objective' data-amon-id='76'>奖励守门者构造体</div><div class='content Terran' data-amon-id='149'>奥古斯特格勒的骄傲</div><div class='content Terran' data-amon-id='40'>女妖</div><div class='content Zerg' data-amon-id='174'>孢子爬虫</div><div class='content Zerg' data-amon-id='133'>守护者</div><div class='content Objective' data-amon-id='16'>守门者构造体 1</div><div class='content Objective' data-amon-id='17'>守门者构造体 2</div><div class='content Objective' data-amon-id='18'>守门者构造体 3</div><div class='content Objective' data-amon-id='19'>守门者构造体 4</div><div class='content Terran' data-amon-id='46'>寡妇雷</div><div class='content Terran' data-amon-id='180'>寡妇雷（突变因子）</div><div class='content Terran' data-amon-id='173'>导弹塔</div><div class='content Zerg' data-amon-id='127'>巢群女王</div><div class='content Zerg' data-amon-id='204'>巢虫</div><div class='content Zerg' data-amon-id='70'>巢虫领主</div><div class='content Protoss' data-amon-id='8'>巨像</div><div class='content Terran' data-amon-id='197'>帝国仲裁机</div><div class='content Terran' data-amon-id='200'>帝国冲锋队</div><div class='content Terran' data-amon-id='199'>帝国见证者</div><div class='content Protoss' data-amon-id='5'>干扰者</div><div class='content Terran' data-amon-id='39'>幽灵</div><div class='content Zerg' data-amon-id='69'>异龙</div><div class='content Mutator' data-amon-id='163'>德哈卡</div><div class='content Mutator' data-amon-id='164'>德哈卡分身</div><div class='content Terran' data-amon-id='130'>怨灵战机</div><div class='content Terran' data-amon-id='36'>恶火</div><div class='content Terran' data-amon-id='35'>恶蝠</div><div class='content Terran' data-amon-id='143'>恶魔犬</div><div class='content Zerg' data-amon-id='75'>感染者</div><div class='content Terran' data-amon-id='45'>战列巡航舰</div><div class='content Terran' data-amon-id='147'>战地响应部队西塔</div><div class='content Terran' data-amon-id='188'>战斗护盾陆战队员</div><div class='content Terran' data-amon-id='48'>战狼</div><div class='content Terran' data-amon-id='146'>战猪</div><div class='content Mutator' data-amon-id='170'>扎加拉</div><div class='content Protoss' data-amon-id='12'>执政官</div><div class='content Infested' data-amon-id='82'>扼杀者</div><div class='content Protoss' data-amon-id='22'>折跃棱镜</div><div class='content Terran' data-amon-id='33'>收割者</div><div class='content Terran' data-amon-id='30'>攻城坦克</div><div class='content Terran' data-amon-id='141'>攻城破坏者</div><div class='content Terran' data-amon-id='145'>斯基比的天使</div><div class='content Terran' data-amon-id='139'>斯巴达连队</div><div class='content Objective' data-amon-id='52'>斯雷恩元素生物 1</div><div class='content Objective' data-amon-id='53'>斯雷恩元素生物 2</div><div class='content Infested' data-amon-id='128'>易爆感染体（亡者之夜）</div><div class='content Infested' data-amon-id='121'>易爆感染体（疏散矿工）</div><div class='content Terran' data-amon-id='138'>杰克逊的复仇号</div><div class='content Mutator' data-amon-id='158'>标准导弹</div><div class='content Mutator' data-amon-id='161'>核弹导弹</div><div class='content Objective' data-amon-id='87'>根除者</div><div class='content Terran' data-amon-id='31'>歌利亚</div><div class='content Objective' data-amon-id='112'>死亡之握水晶</div><div class='content Terran' data-amon-id='140'>死神之首</div><div class='content Protoss' data-amon-id='60'>母舰</div><div class='content Protoss' data-amon-id='177'>水晶塔</div><div class='content Mutator' data-amon-id='169'>泰凯斯</div><div class='content Mutator' data-amon-id='171'>泽拉图</div><div class='content Terran' data-amon-id='50'>洛基</div><div class='content Objective' data-amon-id='58'>海盗主力舰</div><div class='content Protoss' data-amon-id='131'>海盗船</div><div class='content Hybrid' data-amon-id='47'>混合体天罚者</div><div class='content Hybrid' data-amon-id='24'>混合体巨兽</div><div class='content Hybrid' data-amon-id='25'>混合体掠夺者</div><div class='content Hybrid' data-amon-id='23'>混合体支配者</div><div class='content Hybrid' data-amon-id='54'>混合体毁灭者</div><div class='content Zerg' data-amon-id='66'>潜伏者</div><div class='content Terran' data-amon-id='29'>火蝠</div><div class='content Mutator' data-amon-id='151'>火鸡</div><div class='content Mutator' data-amon-id='153'>火鸡王</div><div class='content Mutator' data-amon-id='160'>点防御导弹</div><div class='content Objective' data-amon-id='113'>熔岩蜥蜴</div><div class='content Zerg' data-amon-id='64'>爆虫</div><div class='content Zerg' data-amon-id='72'>爆蚊</div><div class='content Infested' data-amon-id='79'>爆裂者</div><div class='content Protoss' data-amon-id='1'>狂热者</div><div class='content Infested' data-amon-id='81'>猎杀者</div><div class='content Mutator' data-amon-id='193'>猎杀者</div><div class='content Zerg' data-amon-id='186'>王虫</div><div class='content Zerg' data-amon-id='65'>畸变体</div><div class='content Objective' data-amon-id='88'>疫病使者</div><div class='content Objective' data-amon-id='192'>病毒吞噬体</div><div class='content Zerg' data-amon-id='185'>监察王虫</div><div class='content Terran' data-amon-id='189'>矿骡</div><div class='content Zerg' data-amon-id='74'>破坏者</div><div class='content Terran' data-amon-id='43'>秃鹫</div><div class='content Terran' data-amon-id='38'>科学船</div><div class='content Objective' data-amon-id='49'>穿梭机</div><div class='content Terran' data-amon-id='37'>维京战机</div><div class='content Zerg' data-amon-id='175'>脊针爬虫</div><div class='content Zerg' data-amon-id='73'>腐化者</div><div class='content Infested' data-amon-id='83'>腐臭兽</div><div class='content Protoss' data-amon-id='15'>航空母舰</div><div class='content Terran' data-amon-id='137'>荒野猎手</div><div class='content Mutator' data-amon-id='154'>莫比斯军团激光钻机</div><div class='content Objective' data-amon-id='89'>莫比斯列车 1</div><div class='content Objective' data-amon-id='90'>莫比斯列车 2</div><div class='content Objective' data-amon-id='91'>莫比斯列车 3</div><div class='content Objective' data-amon-id='93'>莫比斯列车 4</div><div class='content Objective' data-amon-id='94'>莫比斯列车 5</div><div class='content Objective' data-amon-id='95'>莫比斯列车 6</div><div class='content Objective' data-amon-id='97'>莫比斯列车 7</div><div class='content Objective' data-amon-id='98'>莫比斯列车 8</div><div class='content Objective' data-amon-id='92'>莫比斯列车（湮灭快车奖励）1</div><div class='content Objective' data-amon-id='96'>莫比斯列车（湮灭快车奖励）2</div><div class='content Objective' data-amon-id='99'>莫比斯列车（聚铁成兵奖励）1</div><div class='content Objective' data-amon-id='100'>莫比斯列车（聚铁成兵奖励）2</div><div class='content Hybrid' data-amon-id='116'>莫比斯混合体实验体 1 A626 </div><div class='content Hybrid' data-amon-id='117'>莫比斯混合体实验体 2 9E57</div><div class='content Hybrid' data-amon-id='118'>莫比斯混合体实验体 3 523I</div><div class='content Zerg' data-amon-id='55'>莽兽</div><div class='content Objective' data-amon-id='59'>萃取装置</div><div class='content Objective' data-amon-id='84'>萨尔纳加构造体</div><div class='content Mutator' data-amon-id='156'>虚空复生者</div><div class='content Objective' data-amon-id='102'>虚空撕裂者（往日神庙）1</div><div class='content Objective' data-amon-id='103'>虚空撕裂者（往日神庙）2</div><div class='content Objective' data-amon-id='104'>虚空撕裂者（往日神庙）3</div><div class='content Objective' data-amon-id='105'>虚空撕裂者（往日神庙）4</div><div class='content Objective' data-amon-id='114'>虚空撕裂者（虚空撕裂）</div><div class='content Objective' data-amon-id='57'>虚空碎片</div><div class='content Objective' data-amon-id='107'>虚空裂片 1</div><div class='content Objective' data-amon-id='108'>虚空裂片 2</div><div class='content Objective' data-amon-id='109'>虚空裂片 3</div><div class='content Objective' data-amon-id='110'>虚空裂片 4</div><div class='content Objective' data-amon-id='111'>虚空裂片 5</div><div class='content Mutator' data-amon-id='106'>虚空裂隙</div><div class='content Protoss' data-amon-id='13'>虚空辉光舰</div><div class='content Zerg' data-amon-id='184'>虫后</div><div class='content Zerg' data-amon-id='183'>虫群女王</div><div class='content Zerg' data-amon-id='67'>虫群宿主</div><div class='content Terran' data-amon-id='181'>蜘蛛雷</div><div class='content Zerg' data-amon-id='190'>蝗虫</div><div class='content Zerg' data-amon-id='62'>蟑螂</div><div class='content Infested' data-amon-id='77'>被感染的人类（亡者之夜）</div><div class='content Infested' data-amon-id='120'>被感染的人类（疏散矿工）</div><div class='content Infested' data-amon-id='124'>被感染的哈默安保部队</div><div class='content Infested' data-amon-id='201'>被感染的响尾蛇</div><div class='content Infested' data-amon-id='178'>被感染的地堡</div><div class='content Infested' data-amon-id='123'>被感染的女妖</div><div class='content Infested' data-amon-id='179'>被感染的导弹塔</div><div class='content Infested' data-amon-id='126'>被感染的战猪</div><div class='content Infested' data-amon-id='122'>被感染的攻城坦克</div><div class='content Infested' data-amon-id='129'>被感染的死神之首</div><div class='content Mutator' data-amon-id='152'>被感染的火鸡</div><div class='content Infested' data-amon-id='202'>被感染的解放者</div><div class='content Infested' data-amon-id='78'>被感染的陆战队员（亡者之夜）</div><div class='content Infested' data-amon-id='119'>被感染的陆战队员（疏散矿工）</div><div class='content Terran' data-amon-id='44'>解放者</div><div class='content Mutator' data-amon-id='167'>诺娃</div><div class='content Terran' data-amon-id='144'>赫尔天使</div><div class='content Zerg' data-amon-id='61'>跳虫</div><div class='content Protoss' data-amon-id='4'>追猎者</div><div class='content Protoss' data-amon-id='6'>金甲虫</div><div class='content Terran' data-amon-id='42'>铁鸦</div><div class='content Objective' data-amon-id='191'>防御机器人</div><div class='content Mutator' data-amon-id='162'>阿塔尼斯</div><div class='content Terran' data-amon-id='26'>陆战队员</div><div class='content Zerg' data-amon-id='68'>雷兽</div><div class='content Terran' data-amon-id='34'>雷神</div><div class='content Mutator' data-amon-id='168'>雷诺</div><div class='content Protoss' data-amon-id='14'>风暴战舰</div><div class='content Terran' data-amon-id='32'>飓风</div><div class='content Zerg' data-amon-id='71'>飞蛇</div><div class='content Protoss' data-amon-id='9'>高阶圣堂武士</div><div class='content Terran' data-amon-id='142'>黄昏之翼</div><div class='content Protoss' data-amon-id='10'>黑暗圣堂武士</div><div class='content Protoss' data-amon-id='182'>龙骑士</div>        </div>
     </div>
     <script>
         $("#flexContainer").on("click",".content", function(){
-            selectedUnit=$(this).text();
-            $("#dataContainer").text("Loading...");
+            selectedUnit=$(this).data("amon-id");
+            $("#dataContainer").text("正在加载……");
             $.ajax({
                 type: 'GET',
                 url: '../scripts/getamonstats.php',
@@ -670,7 +670,7 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                         $("#flexContainer").html(response);
                         $(".toggle").each(function(){
                             if($(this).css("opacity")==0.25){
-                                $("#flexContainer").find("." + $(this).text()).css("display","none")
+                                $("#flexContainer").find("." + $(this).data("race")).css("display","none")
                             }
                         })
                     }
@@ -698,11 +698,9 @@ if (document.location.host === 'dev.starcraft2coop.com') {
 </div>
 
 <div id="footer">
-    <p>Note: All data generated on this site is based on Brutal difficulty. Timings, compositions and other elements may differ on easier difficulty levels.</p>
-    <p>CC-BY-NC-SA-4.0. Originally written by Aommaster. This is a fansite not affiliated with StarCraft 2 or Blizzard Entertainment, Inc.</p>
+    <p>注意：本站生成的所有数据均以“残酷”难度为准；在较低难度下，时间、阵容及其他要素可能有所不同。</p>
+    <p>非官方简体中文翻译站，仅供学习与非商业使用。本站无广告，也不收集用户数据。采用 CC BY-NC-SA 4.0 许可。原作者：Aommaster。本站为粉丝站点，与 StarCraft II 或 Blizzard Entertainment 无隶属关系。</p>
 </div>
 
 </body>
 </html>
-
-    

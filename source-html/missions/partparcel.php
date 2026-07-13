@@ -6,9 +6,9 @@ require_once __DIR__ . "/../../includes/wrapper.php";
 require_once "../../includes/switchergenerator.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Mission Guide - Part and Parcel</title>
-  <meta name="description" content="Starcraft 2 Co-op Mission Guide Part and Parcel">
-  <meta name="keywords" content="Starcraft co-op guides part parcel mission">
+  <title>《星际争霸 II》合作任务攻略 - 聚铁成兵</title>
+  <meta name="description" content="《星际争霸 II》合作任务攻略：聚铁成兵">
+  <meta name="keywords" content="星际争霸 II 合作任务 聚铁成兵 攻略">
   <link rel="stylesheet"  media="all" type="text/css" href="/styles/missionstyle.css?v=1.00">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="https://starcraft2coop.com/missions/partparcel">
@@ -19,45 +19,45 @@ require_once "../../includes/switchergenerator.php";
       }
   </style>
 <?= startContent() ?>
-    <h1><span class="unbold">Mission:</span> Part and Parcel</h1>
-    <p id="missionPlace">Moebius Research Station</p>
+    <h1><span class="unbold">任务：</span>聚铁成兵</h1>
+    <p id="missionPlace">莫比斯研究站</p>
     <?php include("../../includes/reporterror.php");?>
     <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#misSum">Mission Summary</a></p>
-        <p><a href="#objectives">Objectives</a></p>
-        <p><a href="#idRace">Identifying the Enemy Race</a></p>
-        <p><a href="#baseAnalysis">Enemy Base Analysis</a></p>
-        <p><a href="#hybridAbilities">Hybrid Abilities</a></p>
-        <p><a href="#bonus">Completing the Bonus Objective</a></p>
-        <p><a href="#timings">Timings</a></p>
-        <p><a href="#spawnPoints">Spawn Points</a></p>
-        <p><a href="#misTips">Mission Tips</a></p>
-        <p><a href="#comTips">Commander-Specific Tips</a></p>
+        <h2>本页目录</h2>
+        <p><a href="#misSum">任务概述</a></p>
+        <p><a href="#objectives">任务目标</a></p>
+        <p><a href="#idRace">识别敌方种族</a></p>
+        <p><a href="#baseAnalysis">敌方基地分析</a></p>
+        <p><a href="#hybridAbilities">混合体技能</a></p>
+        <p><a href="#bonus">完成奖励目标</a></p>
+        <p><a href="#timings">时间点</a></p>
+        <p><a href="#spawnPoints">出生点</a></p>
+        <p><a href="#misTips">任务技巧</a></p>
+        <p><a href="#comTips">指挥官专属技巧</a></p>
     </div>
-    <h2 id="misSum">Mission Summary</h2>
-    <p>Moebius Corps researchers have been experimenting on hybrid as they attempt to create even more destructive horrors. Help General Davis put an end to this by using Moebius Corps' own unfinished mech, the Balius, to kill the hybrid.</p>
-    <h2 id="objectives">Objectives</h2>
-    <h3>Primary Objective</h3>
+    <h2 id="misSum">任务概述</h2>
+    <p>莫比斯军团的研究人员一直在混合体身上进行实验，企图创造破坏力更强的恐怖怪物。协助戴维斯将军，用莫比斯军团尚未完工的机械兵器巴利俄斯消灭混合体，终结这一切。</p>
+    <h2 id="objectives">任务目标</h2>
+    <h3>主要目标</h3>
         <ul>
-            <li>Kill Moebius Hybrid (3)</li>
-            <li>Gather Balius Parts to delay Hybrid (70 x 3)</li>
-            <li>Stop the Moebius Hybrid Project</li>
+            <li>消灭莫比斯混合体 (3)</li>
+            <li>收集巴利俄斯零件以延缓混合体释放 (70 × 3)</li>
+            <li>阻止莫比斯混合体计划</li>
         </ul>
-    <h3>Secondary Objective</h3>
+    <h3>奖励目标</h3>
         <ul>
-            <li>Destroy the Trains (2)</li>
+            <li>摧毁列车 (2)</li>
         </ul>
-    <h2 id="idRace">Identifying the Enemy Race</h2>
-    <p>It is possible to uniquely identify the enemy race on this map. First, check for creep (Alt +T) to check if the enemy is Zerg. If not, use a worker to attack one of the boxes near your Primary Structure. If the enemy race is Protoss, an enemy composition indicator will appear. If the enemy is Terran, no composition indicator will appear. A video is below:</p>
+    <h2 id="idRace">识别敌方种族</h2>
+    <p>你可以在这张地图上准确识别敌方种族。首先检查菌毯（Alt + T），判断敌人是否为异虫。如果不是，就让一名工人攻击主基地建筑附近的一个箱子。若敌方为星灵，敌方部队组合指示器会出现；若敌方为人类，则不会出现组合指示器。演示视频如下：</p>
     <iframe width="475" height="268" src="https://www.youtube.com/embed/fXVobSPfE5c" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <h2 id="baseAnalysis">Enemy Base Analysis</h2>
+    <h2 id="baseAnalysis">敌方基地分析</h2>
     <div id="globalRaceSelect">
-        <p>Change all base analysis pictures to race:</p>
+        <p>将所有基地分析图片切换为以下种族：</p>
         <form action="#">
-            <label><input type="radio" name="globalRace" value="protoss" checked>Protoss</label><br>
-            <label><input type="radio" name="globalRace" value="terran">Terran</label><br>
-            <label><input type="radio" name="globalRace" value="zerg">Zerg</label><br>
+            <label><input type="radio" name="globalRace" value="protoss" checked>星灵</label><br>
+            <label><input type="radio" name="globalRace" value="terran">人类</label><br>
+            <label><input type="radio" name="globalRace" value="zerg">异虫</label><br>
         </form>
         <script>
             $("input[name='globalRace']").change(function(){
@@ -72,47 +72,47 @@ require_once "../../includes/switchergenerator.php";
         </script>
     </div>
     <?php $mission = "partparcel"; ?>
-    <p>The expansion on Part and Parcel is guarded by enemy forces, it is usually optimal to first capture the expansion. The expansion is shown below.</p>
+    <p>“聚铁成兵”的分矿有敌军守卫，通常最好先夺取分矿。分矿如下所示。</p>
     <?php switcher_generator("expo") ?>
-    <p>The next area that is usually pushed is the bottom left. This is because there are very minimal defenses, and has enough parts that, combined with the expansion, can complete the first main objective.</p>
+    <p>之后通常推进左下区域，因为这里防守极为薄弱，而且加上分矿区域的零件，足以完成第一个主要目标。</p>
     <?php switcher_generator("swbase") ?>
-    <p>At this point, the first hybrid would have spawned. The path between your main and the hybrid is guarded by tiny patches of enemies (which should have already been cleared on the way to your expansion) and an enemy camp. The enemy camp is shown below.</p>
+    <p>此时第一个混合体应该已经出现。主基地与混合体之间的路径由零散敌军（你在前往分矿时应该已经将其清除）和一座敌方营地把守。该营地如下所示。</p>
     <?php switcher_generator("camp1") ?>
-    <p>The next camp that would be attacked is the one East of your expansion. This usually lines up with the attack wave that spawns. The camp is shown below.</p>
+    <p>接下来应攻击分矿东侧的营地，通常正好能顺路迎击生成的进攻波次。该营地如下所示。</p>
     <?php switcher_generator("camp2") ?>
-    <p>Once this base is cleared, it is usually recommended to clean up the area around this. Watch out for the Hybrid Dominator in this area.</p>
+    <p>清除该基地后，通常建议继续清理周边区域。小心这里的混合体支配者。</p>
     <?php switcher_generator("cleanuplong") ?>
-    <p>With the cleanup done, you can move south and take the camp at the bottom right of the map, right outside the main.</p>
+    <p>清理完毕后，可以向南推进，拿下地图右下方、主基地外侧的营地。</p>
     <?php switcher_generator("sebase") ?>
-    <p>By this point, you should have a sufficiently large army to be able to push anywhere you like and gather the remaining parts to finish up the mission. Near the above base, there is an enemy base which has a lot of parts.</p>
+    <p>此时你的部队规模应该已经足够，可以随意向各处推进并收集剩余零件来完成任务。上述基地附近还有一座拥有大量零件的敌方基地。</p>
     <?php switcher_generator("eastbaselong") ?>
-    <p>Just north of this base, there is an alcove with some more parts to collect.</p>
+    <p>该基地正北方有一处凹地，其中还有一些零件可供收集。</p>
     <?php switcher_generator("alcove") ?>
-    <p>At the top left of the map there is a large enemy camp with several parts available for pick up as well.</p>
+    <p>地图左上角有一座大型敌方营地，那里也有若干零件可供拾取。</p>
     <?php switcher_generator("necamplong") ?>
-    <p>The final place you will need to push is the North enemy base. This is the area with most defenses. There is a ramp off to each side as well, if you prefer to attack from the side.</p>
+    <p>最后需要推进的是北侧敌方基地，这里的防守最为严密。两侧各有一条斜坡，如果愿意，也可以从侧面发起攻击。</p>
     <?php switcher_generator("finalbaselong") ?>
-    <h2 id="hybridAbilities">Hybrid Abilities</h2>
-    <img id="hybridExperiment" src="/images/missiondata/partparcel/hybrid.jpg" alt="Moebius Hybrid Experiment">
-    <p>The Hybrid that spawns after the containment cell is broken has its own abilities. These are listed below:</p>
+    <h2 id="hybridAbilities">混合体技能</h2>
+    <img id="hybridExperiment" src="/images/missiondata/partparcel/hybrid.jpg" alt="莫比斯混合体实验品">
+    <p>收容舱被打破后出现的混合体拥有专属技能，具体如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Ability</th>
-                <th>Description</th>
-                <th>Cooldown</th>
+                <th>技能</th>
+                <th>说明</th>
+                <th>冷却时间</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Attack Wave Spawner</td>
-                <td>Spawns an attack wave with the following Tech and Strength levels depending on which Hybrid in the mission it is. For more information, please check the <a href="/guides/enemycomps">Enemy Compositions page</a>.
+                <td>进攻波次生成器</td>
+                <td>根据这是任务中的第几个混合体，生成具备以下科技等级和强度等级的进攻波次。详情请参阅<a href="/guides/enemycomps">敌方部队组合页面</a>。
                     <table>
                         <thead>
                             <tr>
-                                <th>Hybrid</th>
-                                <th>Tech Level</th>
-                                <th>Strength Level</th>
+                                <th>混合体</th>
+                                <th>科技等级</th>
+                                <th>强度等级</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -134,51 +134,51 @@ require_once "../../includes/switchergenerator.php";
                         </tbody>
                     </table>
                 </td>
-                <td>45 seconds</td>
+                <td>45 秒</td>
             </tr>
             <tr>
-                <td>Fire Chains</td>
-                <td>Creates a number of dots on the ground that eventually explode after 4.5 seconds, dealing 50 damage per hit. They can be either in a circular pattern (with radius 10) or in a conical pattern (with length 15).</td>
-                <td>30 seconds</td>
+                <td>火焰锁链</td>
+                <td>在地面上生成若干光点，它们会在 4.5 秒后爆炸，每次命中造成 50 点伤害。光点可能排列成圆形（半径 10），也可能排列成锥形（长度 15）。</td>
+                <td>30 秒</td>
             </tr>
             <tr>
-                <td>Illusionist</td>
-                <td>Creates 2, then 3, then 4 mirror images of the Hybrid. The total HP and shields of all spawned Hybrids is 30% of the main Hybrid's max HP and shields, equally spread across all of them.</td>
-                <td>20 seconds</td>
+                <td>幻术师</td>
+                <td>依次生成 2、3、4 个混合体镜像。所有生成混合体的生命值与护盾值总和为本体最大生命值与护盾值的 30%，并在所有镜像之间平均分配。</td>
+                <td>20 秒</td>
             </tr>
             <tr>
-                <td>Lock On</td>
-                <td>Selects a target and places a lock-on marker on it for 5 seconds before holding its position, and then deals 200 damage vs. ground and 150 damage vs. air after 2 seconds.</td>
-                <td>12 seconds</td>
+                <td>锁定</td>
+                <td>选择一个目标并在其身上放置持续 5 秒的锁定标记，随后将其定身，并对地面目标造成 200 点伤害、对空中目标造成 150 点伤害；伤害会在 2 秒后生效。</td>
+                <td>12 秒</td>
             </tr>
             <tr>
-                <td>Puddle Lines</td>
-                <td>Creates a grid-like pattern on the ground that deals 1 damage per second to all units on top of them. The gridlines last 10 seconds.</td>
-                <td>45 seconds</td>
+                <td>腐蚀网格</td>
+                <td>在地面上生成网格图案，对其上的所有单位每秒造成 1 点伤害。网格线持续 10 秒。</td>
+                <td>45 秒</td>
             </tr>
             <tr>
-                <td>Stasis</td>
-                <td>Creates an area of radius 6 on the ground that lasts 5 seconds. Any units located in that area will be put into stasis for 8 seconds. Units in stasis cannot be attacked and do not take damage. However, they are unable to move, attack, or use abilities.</td>
-                <td>20 seconds</td>
+                <td>静滞</td>
+                <td>在地面上生成一片半径为 6、持续 5 秒的区域。区域内的所有单位都会进入静滞状态 8 秒。静滞中的单位无法被攻击，也不会受到伤害，但同样无法移动、攻击或使用技能。</td>
+                <td>20 秒</td>
             </tr>
         </tbody>
     </table>
-    <p>The first Hybrid will only have one ability. The second two. And the third, three. Abilities are shared between the Hybrids. That is, a Hybrid will have all of the previous Hybrids' abitiles and an additional new one. A Hybrid cannot have both, Fire Chains and Puddle Lines at the same time.</p>
-    <h2 id="bonus">Completing the Bonus Objective</h2>
-    <p>The bonus objective requires you to destroy two Moebius trains before they cross the map. The the first train will spawn from the left, and the second from the right. They both spawn on the same rail. The path these trains take is shown below:</p>
-    <img src="/images/missiondata/partparcel/bonuspath.jpg" alt="Bonus Train Path">
-    <h2 id="timings">Timings</h2>
-    <p>Note: Information on Tech and Strength levels can be found on the <a href="/guides/enemycomps">Enemy Compositions</a> page.</p>
-    <p>The timings for the attack waves, Strength and Tech Levels and targets on this map are shown below.</p>
-    <p>The Attack Wave Timings for this mission are:</p>
+    <p>第一个混合体只有一种技能，第二个有两种，第三个有三种。技能会在混合体之间继承，也就是说，后续混合体会拥有此前混合体的所有技能，并额外获得一种新技能。混合体不会同时拥有火焰锁链和腐蚀网格。</p>
+    <h2 id="bonus">完成奖励目标</h2>
+    <p>奖励目标要求你在两列莫比斯列车穿过地图前将其摧毁。第一列从左侧生成，第二列从右侧生成，两者使用同一条轨道。列车的行进路线如下：</p>
+    <img src="/images/missiondata/partparcel/bonuspath.jpg" alt="奖励列车路线">
+    <h2 id="timings">时间点</h2>
+    <p>注意：科技等级与强度等级的说明参见<a href="/guides/enemycomps">敌方部队组合</a>页面。</p>
+    <p>本地图进攻波次的时间、强度等级、科技等级及目标如下。</p>
+    <p>本任务的进攻波次时间为：</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Wave</th>
-                <th>Time</th>
-                <th>Tech Level</th>
-                <th>Strength Level</th>
-                <th>Target</th>
+                <th>波次</th>
+                <th>时间</th>
+                <th>科技等级</th>
+                <th>强度等级</th>
+                <th>目标</th>
             </tr>
         </thead>
         <tbody>
@@ -187,111 +187,111 @@ require_once "../../includes/switchergenerator.php";
                 <td>3:45</td>
                 <td>1</td>
                 <td>1</td>
-                <td>Main Base</td>
+                <td>主基地</td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>6:30</td>
                 <td>2</td>
                 <td>2</td>
-                <td>Main Base</td>
+                <td>主基地</td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>10:00</td>
                 <td>3</td>
                 <td>3</td>
-                <td>Expansion</td>
+                <td>分矿</td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>14:06</td>
                 <td>4</td>
                 <td>4</td>
-                <td>Main Base</td>
+                <td>主基地</td>
             </tr>
             <tr>
                 <td>5</td>
                 <td>17:12</td>
                 <td>5</td>
                 <td>5</td>
-                <td>Expansion</td>
+                <td>分矿</td>
             </tr>
             <tr>
                 <td>6</td>
                 <td>20:00</td>
                 <td>6</td>
                 <td>6</td>
-                <td>Main Base</td>
+                <td>主基地</td>
             </tr>
             <tr>
                 <td>7</td>
                 <td>24:00</td>
                 <td>7</td>
                 <td>7</td>
-                <td>Army</td>
+                <td>部队</td>
             </tr>
             <tr>
                 <td>8</td>
                 <td>27:00</td>
                 <td>5</td>
                 <td>5</td>
-                <td>Main Base</td>
+                <td>主基地</td>
             </tr>
             <tr>
                 <td>9</td>
                 <td>30:00</td>
                 <td>6</td>
                 <td>6</td>
-                <td>Main Base</td>
+                <td>主基地</td>
             </tr>
         </tbody>
     </table>
-    <p>The spawn timings for the Bonus trains is below:</p>
+    <p>奖励列车的生成时间如下：</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Train</th>
-                <th>Time</th>
-                <th>Spawn Location</th>
+                <th>列车</th>
+                <th>时间</th>
+                <th>生成位置</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>1</td>
                 <td>8:00</td>
-                <td>Left</td>
+                <td>左侧</td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>15:00</td>
-                <td>Right</td>
+                <td>右侧</td>
             </tr>
         </tbody>
     </table>
-    <h2 id="spawnPoints">Spawn Points</h2>
-    <p>There are four spawn points for the attack waves on this map. The left spawn point for normal attack waves is shown below:</p>
-    <img src="/images/missiondata/partparcel/attackwaveleftspawn.jpg" alt="Left Spawn Point of Normal Attack Wave">
-    <p>The left spawn point for attack waves targeting the expansion is shown below:</p>
-    <img src="/images/missiondata/partparcel/expattackwaveleftspawn.jpg" alt="Left Spawn Point of Expansion Attack Wave">
-    <p>The right spawn point for normal attack waves is shown below:</p>
-    <img src="/images/missiondata/partparcel/attackwaverightspawn.jpg" alt="Right Spawn Point of Attack Wave">
-    <p>The right spawn point for attack waves targeting the expansion is shown below:</p>
-    <img src="/images/missiondata/partparcel/expattackwaverightspawn.jpg" alt="Right Spawn Point of Expansion Attack Wave">
-    <h2 id="misTips">Mission Tips</h2>
+    <h2 id="spawnPoints">出生点</h2>
+    <p>本地图的进攻波次共有四个生成点。普通进攻波次的左侧生成点如下：</p>
+    <img src="/images/missiondata/partparcel/attackwaveleftspawn.jpg" alt="普通进攻波次的左侧生成点">
+    <p>攻击分矿的进攻波次左侧生成点如下：</p>
+    <img src="/images/missiondata/partparcel/expattackwaveleftspawn.jpg" alt="分矿进攻波次的左侧生成点">
+    <p>普通进攻波次的右侧生成点如下：</p>
+    <img src="/images/missiondata/partparcel/attackwaverightspawn.jpg" alt="进攻波次的右侧生成点">
+    <p>攻击分矿的进攻波次右侧生成点如下：</p>
+    <img src="/images/missiondata/partparcel/expattackwaverightspawn.jpg" alt="分矿进攻波次的右侧生成点">
+    <h2 id="misTips">任务技巧</h2>
     <ul>
-        <li>Even once the Balius is complete, you can use that time to collect more parts. This will further add seconds to your clock, and the parts will count for the next phase of the mission, sometimes, allowing you to start the next Hybrid phase immediately.</li>
-        <li>There are more parts present on the map than you need to complete the mission.</li>
-        <li>Gen. Davis will not attack the bonus objective for you, but will attack other enemy units.</li>
-        <li>If the Balius gets too damaged while pushing to the Hybrid, the Balius will enter flight mode, break the Hybrid containment cell, then fly back.</li>
+        <li>即使巴利俄斯已经完工，你仍可利用这段时间继续收集零件。零件会继续为倒计时增加秒数，并计入任务的下一阶段，有时甚至能让你立即开始下一个混合体阶段。</li>
+        <li>地图上的零件数量多于完成任务所需的数量。</li>
+        <li>戴维斯将军不会替你攻击奖励目标，但会攻击其他敌方单位。</li>
+        <li>如果巴利俄斯在前往混合体的途中受损过重，它会进入飞行模式，打破混合体收容舱后飞回基地。</li>
     </ul>
-    <h2 id="comTips">Commander-specific Tips</h2>
+    <h2 id="comTips">指挥官专属技巧</h2>
     <ul>
-        <li><a href="/commanders/horner">Han & Horner</a>: Strike Fighter Platforms can be used to break and collect parts.</li>
-        <li><a href="/commanders/tychus">Tychus</a>: Crooked Sam can use his demolition charge on multiple train carriages at the same time, making him extremely effective at dealing with the bonus objective.</li>
-        <li><a href="/commanders/stukov">Stukov</a>: Once you have creep spread, move your Infested Colonist Compound to your expansion to minimize travel time of your infested.</li>
-        <li><a href="/commanders/zagara">Zagara</a>: Build your macro hatcheries at your expansion for quick reinforcements.</li>
-        <li><a href="/commanders/zeratul">Zeratul</a>: Zeratul can identify the enemy race at the start of the game. As usual, if creep is present, the enemy race is Zerg. If the enemy is Terran, the four boxes that form a diamond shape will be centered in the expansion area on the minimap. If the diamond is off-center, the enemy race is Protoss. A video is below:</li>
+        <li><a href="/commanders/horner">汉与霍纳</a>：打击战斗机平台可以用来打破并收集零件。</li>
+        <li><a href="/commanders/tychus">泰凯斯</a>：响尾蛇萨姆可以同时在多节车厢上安放爆破装药，因此极其擅长处理奖励目标。</li>
+        <li><a href="/commanders/stukov">斯托科夫</a>：菌毯铺开后，将被感染的移民营移到分矿，以缩短感染体的行进时间。</li>
+        <li><a href="/commanders/zagara">扎加拉</a>：将额外的孵化场建在分矿，以便快速增援。</li>
+        <li><a href="/commanders/zeratul">泽拉图</a>：泽拉图可以在游戏开始时识别敌方种族。和往常一样，若存在菌毯，敌方就是异虫。若敌方为人类，小地图上组成菱形的四个箱子会位于分矿区域正中央；若菱形偏离中心，敌方就是星灵。演示视频如下：</li>
     </ul>
     <iframe width="475" height="268" src="https://www.youtube.com/embed/YkCX8PXqyAc" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <script src="/scripts/nav.js"></script>

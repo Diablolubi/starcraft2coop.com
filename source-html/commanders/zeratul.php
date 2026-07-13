@@ -5,9 +5,9 @@
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Commander Guide - Zeratul</title>
-  <meta name="description" content="Starcraft 2 Co-op Commander Guide Zeratul">
-  <meta name="keywords" content="Starcraft co-op guides zeratul commander mastery prestige build">
+  <title>星际争霸 2 合作任务 - 指挥官攻略 - 泽拉图</title>
+  <meta name="description" content="星际争霸 2 合作任务指挥官泽拉图攻略">
+  <meta name="keywords" content="星际争霸 合作任务 攻略 泽拉图 Zeratul 指挥官 精通 威望 配兵">
   <link rel="stylesheet"  media="all" type="text/css" href="/styles/commanderstyle.css?v=2">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="https://starcraft2coop.com/commanders/zeratul">
@@ -42,284 +42,284 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         }
   </style>
   <?= startContent() ?>
-    <div id="tooltip">tooltip</div>
-    <h1><span class="unbold">Commander:</span> Zeratul</h1>
-    <p id="commanderMotto">Dark Prelate</p>
+    <div id="tooltip">提示</div>
+    <h1><span class="unbold">指挥官：</span>泽拉图</h1>
+    <p id="commanderMotto">黑暗教长</p>
     <?php include("../../includes/reporterror.php");?>
     <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#comSum">Commander Summary</a></p>
-        <p><a href="#levelUnlocks">Level Unlocks</a></p>
-        <p><a href="#achievements">Achievements</a></p>
-        <p><a href="#calldowns">Calldowns</a></p>
-        <p><a href="#leveling">Sub-Ascension Leveling</a></p>
-        <p><a href="#masteries">Masteries</a></p>
-        <p><a href="#prestiges">Prestiges</a></p>
-        <p><a href="#hero">Hero Unit</a></p>
-        <p><a href="#army">Recommended Army Composition</a></p>
-        <p><a href="#units">Combat Units</a></p>
-        <p><a href="#buildOrder">Build Order</a></p>
-        <p><a href="#guide">Gameplay Guide</a></p>
-        <p><a href="#fastexpand">Legion Expands</a></p>
-        <p><a href="#artifact">Artifact Spawn Locations</a></p>
-        <p><a href="#artifacttrap">Artifact Trapping</a></p>
-        <p><a href="#videos">Video Guides</a></p>
+        <h2>本页目录</h2>
+        <p><a href="#comSum">指挥官概览</a></p>
+        <p><a href="#levelUnlocks">等级解锁</a></p>
+        <p><a href="#achievements">成就</a></p>
+        <p><a href="#calldowns">面板技能</a></p>
+        <p><a href="#leveling">飞升前升级</a></p>
+        <p><a href="#masteries">精通</a></p>
+        <p><a href="#prestiges">威望</a></p>
+        <p><a href="#hero">英雄单位</a></p>
+        <p><a href="#army">推荐配兵</a></p>
+        <p><a href="#units">作战单位</a></p>
+        <p><a href="#buildOrder">建造顺序</a></p>
+        <p><a href="#guide">玩法攻略</a></p>
+        <p><a href="#fastexpand">军团速开分矿</a></p>
+        <p><a href="#artifact">神器刷新位置</a></p>
+        <p><a href="#artifacttrap">神器封锁</a></p>
+        <p><a href="#videos">视频攻略</a></p>
     </div>
-    <h2 id="comSum">Commander Summary</h2>
-    <p>Zeratul uses a very small force of powerful units that he strengthens as he finds Xel'Naga Artifacts.</p>
-    <h2 id="levelUnlocks">Level Unlocks</h2>
+    <h2 id="comSum">指挥官概览</h2>
+    <p>泽拉图只率领一支规模极小但战力强大的部队，并会在找到萨尔纳加神器后进一步强化他们。</p>
+    <h2 id="levelUnlocks">等级解锁</h2>
     <table class="progressionTable">
         <thead>
             <tr>
-                <th>Level/Icon</th>
-                <th>Name</th>
-                <th>Description</th>
+                <th>等级/图标</th>
+                <th>名称</th>
+                <th>说明</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/progression/zeratul/zeratul_01.png" alt = "Power of the Xel'Naga"></td>
-                <td>Power of the Xel'Naga</td>
+                <td><img src="/images/commanderdata/progression/zeratul/zeratul_01.png" alt = "萨尔纳加之力"></td>
+                <td>萨尔纳加之力</td>
                 <td>
-                    Zeratul has a 100 starting supply and his units have increased life and damage. Buildings do not require Pylon power and units cannot be warped directly onto the battlefield. Zeratul's Ancient Nexus can automatically construct Ancient Assimilators.
+                    泽拉图的初始人口上限为 100，其单位拥有更高的生命值和伤害。建筑无需水晶塔供能，单位也无法直接折跃到战场。泽拉图的古代星灵枢纽可自动建造古代吸纳舱。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/zeratul/zeratul_02.png" alt = "Prophecy Fulfilled"></td>
-                <td>Prophecy Fulfilled</td>
+                <td><img src="/images/commanderdata/progression/zeratul/zeratul_02.png" alt = "预言应验"></td>
+                <td>预言应验</td>
                 <td>
-                    Unlocks the ability for Zeratul to find the third and final Artifact Fragment. Once all Artifacts are found, Zeratul unlocks the following abilities:
+                    使泽拉图能够找到第三块也是最后一块神器碎片。找到全部神器碎片后，泽拉图将解锁以下技能：
                     <ul>
-                        <li>Call down the Avatar of Form, the embodiment of psionic potential.</li>
-                        <li>Call down the Avatar of Essence, the embodiment of evolutionary potential.</li>
+                        <li>召唤形体化身——灵能潜力的具现。</li>
+                        <li>召唤精华化身——进化潜力的具现。</li>
                     </ul>
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/zeratul/zeratul_03.png" alt = "Passageway Enhancement Cache 1"></td>
-                <td>Passageway Enhancement Cache 1</td>
+                <td><img src="/images/commanderdata/progression/zeratul/zeratul_03.png" alt = "时空通道强化包 1"></td>
+                <td>时空通道强化包 1</td>
                 <td>
-                   Unlocks the following Passageway-level Artifact upgrades after the second Artifact Fragment is found:
+                   找到第二块神器碎片后，解锁以下通道类神器升级：
                    <ul>
-                        <li>Allows the Xel'Naga Ambusher's Blink to leave behind a Void Apparition that attacks once for 50% of its weapon damage.</li>
-                        <li>Increases the energy regeneration of the Xel'Naga Shieldguard by 100%.</li>
-                        <li>Allows the Void Templar's Blink to deal 50 damage to units caught in its path.</li>
-                        <li>Allows Tesseract Cannons and Tesseract Monoliths to project themselves to a target location for 120 seconds.</li>
+                        <li>萨尔纳加伏击者使用闪现后会留下虚空幻影，以其武器伤害的 50% 攻击一次。</li>
+                        <li>萨尔纳加光盾卫士的能量恢复速度提高 100%。</li>
+                        <li>虚空圣堂武士的闪现对路径上的单位造成 50 点伤害。</li>
+                        <li>超维空间炮和超维空间巨石可将自身投射至目标位置，持续 120 秒。</li>
                    </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/zeratul/zeratul_04.png" alt = "New Unit: Xel'Naga Abrogator"></td>
-                <td>New Unit: Xel'Naga Abrogator</td>
+                <td><img src="/images/commanderdata/progression/zeratul/zeratul_04.png" alt = "新单位：萨尔纳加禁绝者"></td>
+                <td>新单位：萨尔纳加禁绝者</td>
                 <td>
-                    Robotic Disruption unit. Can use Purification Nova to deal heavy area damage. Built at the Constructs Facility.<br><br>Can attack ground units.
+                    机械干扰单位。可使用净化新星造成高额范围伤害。由构造体设施生产。<br><br>可攻击地面单位。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/zeratul/zeratul_05.png" alt = "Tesseract Enhancement Cache"></td>
-                <td>Tesseract Enhancement Cache</td>
+                <td><img src="/images/commanderdata/progression/zeratul/zeratul_05.png" alt = "超维空间强化包"></td>
+                <td>超维空间强化包</td>
                 <td>
-                    Unlocks the option to select the following Artifact abilities:
+                    解锁选择以下神器技能的选项：
                     <ul>
-                        <li>Deploys a Tesseract Monolith at the target location. Tesseract Monoliths can stun enemies, project themselves, and protect themselves from damage.</li>
-                        <li>Improves the effectiveness of the Shade Projection and Shade Barrier abilities by 100%.</li>
+                        <li>在目标位置部署一座超维空间巨石。超维空间巨石可击晕敌人、投射自身并抵挡伤害。</li>
+                        <li>阴影投射和阴影屏障的效果提高 100%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/zeratul/zeratul_06.png" alt = "Constructs Enhancement Cache 1"></td>
-                <td>Constructs Enhancement Cache 1</td>
+                <td><img src="/images/commanderdata/progression/zeratul/zeratul_06.png" alt = "构造体强化包 1"></td>
+                <td>构造体强化包 1</td>
                 <td>
-                    Unlocks the following Constructs-level Artifact upgrades after the second Artifact Fragment is found:
+                    找到第二块神器碎片后，解锁以下构造体类神器升级：
                     <ul>
-                        <li>Allows the Xel'Naga Enforcer's anti-air weapon to knock back enemy air units, dealing 25% of its damage to units caught in the path of the blast.</li>
-                        <li>Reduces the cooldown of the Xel'Naga Abrogator's Purification Nova by 50%.</li>
-                        <li>Increases the movement speed of Xel'Naga Watchers by 50%.</li>
+                        <li>萨尔纳加执行者的对空武器可击退敌方空中单位，并对冲击路径上的单位造成相当于该次攻击 25% 的伤害。</li>
+                        <li>萨尔纳加禁绝者的净化新星冷却时间缩短 50%。</li>
+                        <li>萨尔纳加观察者的移动速度提高 50%。</li>
                     </ul>
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/zeratul/zeratul_07.png" alt = "Path of the Void"></td>
-                <td>Path of the Void</td>
+                <td><img src="/images/commanderdata/progression/zeratul/zeratul_07.png" alt = "虚空之路"></td>
+                <td>虚空之路</td>
                 <td>
-                    Unlocks the option to select the following Artifact abilities:
+                    解锁选择以下神器技能的选项：
                     <ul>
-                        <li>Call down Serdath and his legendary legion of Dark Archons to aid in the battle. Serdath cannot be directly controlled but can be guided via the top-bar.</li>
-                        <li>Summons an invulnerable Void Suppression Crystal that slows the movement and attack speeds of enemy units and disable enemy structures in its vicinity.</li>
-                        <li>Reduces the cooldown of Zeratul and his units' Blink abilities by 50%.</li>
+                        <li>召唤塞达斯及其传奇黑暗执政官军团参战。塞达斯无法直接控制，但可通过顶部面板引导。</li>
+                        <li>召唤一枚无敌的虚空抑制晶体，降低附近敌方单位的移动和攻击速度，并使敌方建筑失效。</li>
+                        <li>泽拉图及其单位的闪现技能冷却时间缩短 50%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/zeratul/zeratul_08.png" alt = "Empowered Legions"></td>
-                <td>Empowered Legions</td>
+                <td><img src="/images/commanderdata/progression/zeratul/zeratul_08.png" alt = "超能军团"></td>
+                <td>超能军团</td>
                 <td>
-                    Legendary Legions gain new abilities once the third Artifact Fragment is found:
+                    找到第三块神器碎片后，传奇军团将获得新技能：
                     <ul>
-                        <li>Telbrus gains the Feedback ability, which drains energy from an enemy unit. Telbrus' Zealot Legion gains the Charge ability, which allows them to intercept enemy ground units.</li>
-                        <li>Zoraya and her Void Ray legion gain the Prismatic Range ability, which increases the range of their weapons as they continue to attack.</li>
-                        <li>Serdath and his Dark Archons gain the Maelstrom ability, which temporarily stuns enemy units in an area.</li>
+                        <li>特布鲁斯获得反馈技能，可吸取敌方单位的能量。特布鲁斯的狂热者军团获得冲锋技能，可拦截敌方地面单位。</li>
+                        <li>佐拉亚及其虚空辉光舰军团获得棱镜射程技能，可在持续攻击时提高武器射程。</li>
+                        <li>塞达斯及其黑暗执政官获得漩涡技能，可暂时击晕一片区域内的敌方单位。</li>
                    </ul>
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/zeratul/zeratul_09.png" alt = "New Unit: Xel'Naga Void Array"></td>
-                <td>New Unit: Xel'Naga Void Array</td>
+                <td><img src="/images/commanderdata/progression/zeratul/zeratul_09.png" alt = "新单位：萨尔纳加虚空阵列船"></td>
+                <td>新单位：萨尔纳加虚空阵列船</td>
                 <td>
-                    Flying wormhole generator. Builds two at a time. Can deploy to create a link between all Xel'Naga Void Arrays on the field.
+                    飞行虫洞生成器。每次生产两个。可部署并连接战场上的所有萨尔纳加虚空阵列船。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/zeratul/zeratul_10.png" alt = "Chronometry"></td>
-                <td>Chronometry</td>
+                <td><img src="/images/commanderdata/progression/zeratul/zeratul_10.png" alt = "时空理论"></td>
+                <td>时空理论</td>
                 <td>
-                    Reduces the build time of units produced by the Xel'Naga Passageway and the Constructs Facility by 50%.
+                    萨尔纳加时空通道和构造体设施所生产单位的建造时间缩短 50%。
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/zeratul/zeratul_11.png" alt = "Passageway Enhancement Cache 2"></td>
-                <td>Passageway Enhancement Cache 2</td>
+                <td><img src="/images/commanderdata/progression/zeratul/zeratul_11.png" alt = "时空通道强化包 2"></td>
+                <td>时空通道强化包 2</td>
                 <td>
-                    Unlocks the following Passageway-level Artifact upgrades after the third Artifact Fragment is found:
+                    找到第三块神器碎片后，解锁以下通道类神器升级：
                     <ul>
-                        <li>Allows the Xel'Naga Ambushers to store up to 3 charges of Predictive Blink and regain a charge every 8 seconds.</li>
-                        <li>Allows the Xel'Naga Shieldguard to create a range 4.5 aura that reflects 50% of all projectiles back to the attacker.</li>
-                        <li>When a Void Templar takes fatal damage, it retreats to the Void and regenerates its health and shields over 10 seconds.</li>
-                        <li>Allows Tesseract Cannons and Tesseract Monoliths to absorb up to 100 damage every 60 seconds.</li>
+                        <li>萨尔纳加伏击者最多可储存 3 次预判闪现，并且每 8 秒恢复一次充能。</li>
+                        <li>萨尔纳加光盾卫士生成一个射程为 4.5 的光环，将 50% 的所有投射物反弹给攻击者。</li>
+                        <li>虚空圣堂武士受到致命伤害时会撤入虚空，并在 10 秒内恢复生命值和护盾。</li>
+                        <li>超维空间炮和超维空间巨石每 60 秒可吸收至多 100 点伤害。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/zeratul/zeratul_12.png" alt = "Dark Agency"></td>
-                <td>Dark Agency</td>
+                <td><img src="/images/commanderdata/progression/zeratul/zeratul_12.png" alt = "黑暗代理"></td>
+                <td>黑暗代理</td>
                 <td>
-                    Reduces the supply cost of Xel'Naga Shieldguards to 1. Reduces the supply cost of a pair of Xel'Naga Void Arrays to 1. Reduces the supply cost of Xel'Naga Watchers to 0.
+                    萨尔纳加光盾卫士的人口占用降至 1，一对萨尔纳加虚空阵列船的人口占用降至 1，萨尔纳加观察者的人口占用降至 0。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/zeratul/zeratul_13.png" alt = "Constructs Enhancement Cache 2"></td>
-                <td>Constructs Enhancement Cache 2</td>
+                <td><img src="/images/commanderdata/progression/zeratul/zeratul_13.png" alt = "构造体强化包 2"></td>
+                <td>构造体强化包 2</td>
                 <td>
-                    Unlocks the following Constructs-level Artifact upgrades after the third Artifact Fragment is found:
+                    找到第三块神器碎片后，解锁以下构造体类神器升级：
                     <ul>
-                        <li>Increases the damage absorbed by the Xel'Naga Enforcer's Barrier by 300%. The Xel'Naga Enforcer's Barrier will fully restore its health whenever it activates.</li>
-                        <li>When a Xel'Naga Abrogator's Purification Nova explodes, it generates three smaller Novas that deal 50 damage each to enemy units in their path.</li>
-                        <li>Xel'Naga Void Arrays in Wormhole Mode increase the shield regeneration rate of nearby friendly units by 2 per second.</li>
-                        <li>Increases the sight radius of Xel'Naga Watchers by 50%.</li>
+                        <li>萨尔纳加执行者的屏障可吸收的伤害提高 300%。屏障每次激活时还会完全恢复萨尔纳加执行者的生命值。</li>
+                        <li>萨尔纳加禁绝者的净化新星爆炸时会生成三枚小型新星，每枚对路径上的敌方单位造成 50 点伤害。</li>
+                        <li>处于虫洞模式的萨尔纳加虚空阵列船使附近友方单位的护盾恢复速度每秒提高 2 点。</li>
+                        <li>萨尔纳加观察者的视野范围提高 50%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/zeratul/zeratul_14.png" alt = "Purity of Perfection"></td>
-                <td>Purity of Perfection</td>
+                <td><img src="/images/commanderdata/progression/zeratul/zeratul_14.png" alt = "纯粹完美"></td>
+                <td>纯粹完美</td>
                 <td>
-                    The Avatar of Form gains the ability to summon Charged Crystals that can individually cast miniature Psionic Storms. The Avatar of Essence gains the ability to transform all enemy units in a large area into a lower evolutionary form.
+                    形体化身获得召唤充能水晶的能力，每枚水晶都能施放小型灵能风暴。精华化身获得将大范围内所有敌方单位转化为低等进化形态的能力。
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/zeratul/zeratul_15.png" alt = "Purity of Will"></td>
-                <td>Purity of Will</td>
+                <td><img src="/images/commanderdata/progression/zeratul/zeratul_15.png" alt = "纯粹意志"></td>
+                <td>纯粹意志</td>
                 <td>
-                    Zeratul will gain additional shields (+50), increased Shadow Cleave damage (+10), and additional charges of Blink (+1) with each Artifact Fragment he finds.
+                    泽拉图每找到一块神器碎片，便会获得额外护盾（+50）、提高暗影顺劈伤害（+10），并增加闪现充能次数（+1）。
                 </td>
             </tr>
         </tbody>
     </table>
-    <p id="powerSpikeInfo">Highlighted rows denote large power spikes for the commander.</p>
-    <h2 id="achievements">Achievements</h2>
-    <p>The commander-specific achievements for Zeratul are:</p>
+    <p id="powerSpikeInfo">高亮行表示该指挥官迎来显著的强势期。</p>
+    <h2 id="achievements">成就</h2>
+    <p>泽拉图的指挥官专属成就如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Achievement</th>
-                <th>Name</th>
-                <th>Description</th>
+                <th>成就</th>
+                <th>名称</th>
+                <th>说明</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/achievements/zeratul/bankshotpocketneutral.jpg" alt="Bank Shot, Pocket Natural"></td>
-                <td>Bank Shot, Pocket Natural</td>
-                <td>Deal 2,000 damage with the Xel'Naga Abrogator's Cluster Novas.</td>
+                <td><img src="/images/commanderdata/achievements/zeratul/bankshotpocketneutral.jpg" alt="擦板球高手"></td>
+                <td>擦板球高手</td>
+                <td>使用萨尔纳加禁绝者的集束新星造成 2,000 点伤害。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/zeratul/devolutionretribution.jpg" alt="Devolution Retribution"></td>
-                <td>Devolution Retribution</td>
-                <td>Kill 200 devolved enemies in a single game.</td>
+                <td><img src="/images/commanderdata/achievements/zeratul/devolutionretribution.jpg" alt="退化报应"></td>
+                <td>退化报应</td>
+                <td>在一场游戏中消灭 200 个已退化的敌人。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/zeratul/haveaportablecharger.jpg" alt="Have a Portable Charger?"></td>
-                <td>Have a Portable Charger?</td>
-                <td>Recharge 5,000 shields on allied units in Co-op Missions.</td>
+                <td><img src="/images/commanderdata/achievements/zeratul/haveaportablecharger.jpg" alt="带充电宝了吗？"></td>
+                <td>带充电宝了吗？</td>
+                <td>在合作任务中为友方单位恢复 5,000 点护盾。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/zeratul/thatbelongsinamuseum.jpg" alt="That Belongs in a Museum!"></td>
-                <td>That Belongs in a Museum!</td>
-                <td>Complete the Xel'Naga Artifact within 12 minutes on Hard difficulty.</td>
+                <td><img src="/images/commanderdata/achievements/zeratul/thatbelongsinamuseum.jpg" alt="它属于博物馆！"></td>
+                <td>它属于博物馆！</td>
+                <td>在困难难度下于 12 分钟内完成萨尔纳加神器。</td>
             </tr>
         </tbody>
     </table>
-    <h2 id="calldowns">Artifact Abilities</h2>
-    <p>The artifact abilities for Zeratul, at level 15, with no mastery points added are shown below. Only one ability from each set can be selected.</p>
-    <p>Legion Calldowns (costs 800 minerals to deploy):</p>
+    <h2 id="calldowns">神器技能</h2>
+    <p>以下为泽拉图 15 级且未投入精通点数时的神器技能。每组只能选择一个技能。</p>
+    <p>军团面板技能（部署消耗 800 晶体矿）：</p>
     <table class="calldownTable">
         <thead>
             <tr>
-                <th>Calldown</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Recommended Usage</th>
-                <th>Numbers</th>
+                <th>面板技能</th>
+                <th>名称</th>
+                <th>说明</th>
+                <th>推荐用法</th>
+                <th>数据</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/abilities/zeratul/telbruslegion.png" alt = "Telbrus Legion"></td>
-                <td>Telbrus Legion</td>
-                <td>Call down Telbrus and his legendary legion of Zealots to aid in the battle. This legion cannot be directly controlled but can be guided via the top-bar and will fight for 60 seconds.</td>
-                <td>Generally not as useful as other legions but reasonably effective against Zerg compositions. However, it can be useful on missions like <a href="/missions/deadofnight">Dead of Night</a>.</td>
+                <td><img src="/images/commanderdata/abilities/zeratul/telbruslegion.png" alt = "特布鲁斯军团"></td>
+                <td>特布鲁斯军团</td>
+                <td>召唤特布鲁斯及其传奇狂热者军团参战。该军团无法直接控制，但可通过顶部面板引导，并会战斗 60 秒。</td>
+                <td>通常不如其他军团实用，但对异虫兵种组合颇为有效。在<a href="/missions/deadofnight">亡者之夜</a>等任务中也能发挥作用。</td>
                 <td>
                     <ul>
-                        <li>Coolup: 0 seconds</li>
-                        <li>Cooldown: 120 seconds</li>
+                        <li>初始冷却：0 秒</li>
+                        <li>冷却时间：120 秒</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/abilities/zeratul/zorayalegion.png" alt = "Zoraya Legion"></td>
-                <td>Zoraya Legion</td>
-                <td>Call down Zoraya and her legendary legion of Void Rays to aid in the battle. This legion cannot be directly controlled but can be guided via the top-bar and will fight for 60 seconds.</td>
-                <td>Provides great potential for fast-expanding, even on contested maps. If bases are close to each other, players can even clear their ally's expansions.</td>
+                <td><img src="/images/commanderdata/abilities/zeratul/zorayalegion.png" alt = "佐拉亚军团"></td>
+                <td>佐拉亚军团</td>
+                <td>召唤佐拉亚及其传奇虚空辉光舰军团参战。该军团无法直接控制，但可通过顶部面板引导，并会战斗 60 秒。</td>
+                <td>即使分矿有敌军驻守，也拥有很强的速开分矿能力。若双方基地距离较近，甚至能顺带清理盟友的分矿。</td>
                 <td>
                     <ul>
-                        <li>Coolup: 0 seconds</li>
-                        <li>Cooldown: 120 seconds</li>
+                        <li>初始冷却：0 秒</li>
+                        <li>冷却时间：120 秒</li>
                     </ul>
                 </td>
             </tr>
 
             <tr>
-                <td><img src="/images/commanderdata/abilities/zeratul/serdathlegion.png" alt = "Serdath Legion"></td>
-                <td>Serdath Legion</td>
-                <td>Call down Serdath and his legendary legion of Dark Archons to aid in the battle. This legion cannot be directly controlled but can be guided via the top-bar and will fight for 60 seconds.</td>
-                <td>Powerful for breaking into tough-to-push fortifications by stealing high-value enemy units. Can also be used to significantly weaken powerful attack waves by spawning on top of it.</td>
+                <td><img src="/images/commanderdata/abilities/zeratul/serdathlegion.png" alt = "塞达斯军团"></td>
+                <td>塞达斯军团</td>
+                <td>召唤塞达斯及其传奇黑暗执政官军团参战。该军团无法直接控制，但可通过顶部面板引导，并会战斗 60 秒。</td>
+                <td>可通过窃取高价值敌军单位来突破难以强攻的防御工事。也可直接部署在强力进攻波次上方，大幅削弱敌军。</td>
                 <td>
                     <ul>
-                        <li>Coolup: 0 seconds</li>
-                        <li>Cooldown: 120 seconds</li>
+                        <li>初始冷却：0 秒</li>
+                        <li>冷却时间：120 秒</li>
                     </ul>
                 </td>
             </tr>
         </tbody>
     </table>
-    <p>The number of fragments collected affect the Legion. Each fragment will add 100 shields to the hero unit (Telbrus, Zoraya, Serdath). Additionally, for Telbrus and Serdath, each fragment will add 100 energy to those heroic units. Artifact fragments also affect how many units are spawned from the Legion. This is summarized in the table below (numbers do not include the Hero unit):</p>
+    <p>已收集的碎片数量会影响军团。每块碎片都会为英雄单位（特布鲁斯、佐拉亚、塞达斯）增加 100 点护盾；此外还会为特布鲁斯和塞达斯增加 100 点能量。神器碎片也会影响军团生成的单位数量，具体见下表（数字不包括英雄单位）：</p>
     <table class="centered">
         <thead>
             <tr>
-                <td>Artifacts</td>
-                <td>Telbrus</td>
-                <td>Zoraya</td>
-                <td>Serdath</td>
+                <td>神器</td>
+                <td>特布鲁斯</td>
+                <td>佐拉亚</td>
+                <td>塞达斯</td>
             </tr>
         </thead>
         <tbody>
@@ -349,36 +349,36 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
         </tbody>
     </table>
-    <p>The Telbrus Legion ability deploys a Telbrus Legion onto the battlefield. The units have abilities themselves, shown below:</p>
+    <p>特布鲁斯军团技能会将一支特布鲁斯军团部署到战场。军团单位自身拥有以下技能：</p>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#zeratul/zealot">
-                <img src="/images/commanderdata/abilities/zeratul/zealot.jpg" alt="Zealot">
-                <p>Zealot</p>
+                <img src="/images/commanderdata/abilities/zeratul/zealot.jpg" alt="狂热者">
+                <p>狂热者</p>
             </a>
         </div>
         <div>
             <table class="unitAbilities">
                 <thead>
                     <tr>
-                        <th>Ability</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/abilities/zeratul/charge.png" alt="Charge"></td>
-                        <td>Charge</td>
-                        <td>Requirements: 3rd Xel'Naga Artifact.<br>Intercepts enemy ground units and increases movement speed.</td>
-                        <td>10 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/zeratul/charge.png" alt="冲锋"></td>
+                        <td>冲锋</td>
+                        <td>要求：第 3 件萨尔纳加神器。<br>拦截敌方地面单位并提高移动速度。</td>
+                        <td>10 秒</td>
                     </tr>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/abilities/zeratul/whirlwind.png" alt="Whirlwind"></td>
-                        <td>Whirlwind</td>
-                        <td>Deals 10 damage per second to all nearby enemy units. Lasts 3 seconds.</td>
-                        <td>10 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/zeratul/whirlwind.png" alt="旋风斩"></td>
+                        <td>旋风斩</td>
+                        <td>每秒对附近所有敌方单位造成 10 点伤害，持续 3 秒。</td>
+                        <td>10 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -387,72 +387,72 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#zeratul/telbrus">
-                <img src="/images/commanderdata/abilities/zeratul/telbrus.jpg" alt="Telbrus">
-                <p>Telbrus</p>
+                <img src="/images/commanderdata/abilities/zeratul/telbrus.jpg" alt="特布鲁斯">
+                <p>特布鲁斯</p>
             </a>
         </div>
         <div>
             <table class="unitAbilities">
                 <thead>
                     <tr>
-                        <th>Ability</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/abilities/zeratul/psionicstorm.png" alt="Psionic Storm"></td>
-                        <td>Psionic Storm</td>
-                        <td>Creates a storm of psionic energy that lasts 4 seconds, causing up to 112 damage to all enemy units and restoring 112 shields to all friendly units in a large target area.</td>
-                        <td>2.5 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/zeratul/psionicstorm.png" alt="灵能风暴"></td>
+                        <td>灵能风暴</td>
+                        <td>在大范围目标区域制造一场持续 4 秒的灵能风暴，对所有敌方单位造成最多 112 点伤害，并为所有友方单位恢复 112 点护盾。</td>
+                        <td>2.5 秒</td>
                         <td>75</td>
                     </tr>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/abilities/zeratul/feedback.png" alt="Feedback"></td>
-                        <td>Feedback</td>
-                        <td>Requirements: 3rd Xel'Naga Artifact.<br>Drains all energy from the target. Deals 1 damage per point of energy.</td>
-                        <td>10 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/zeratul/feedback.png" alt="反馈"></td>
+                        <td>反馈</td>
+                        <td>要求：第 3 件萨尔纳加神器。<br>吸取目标的全部能量。每吸取一点能量造成 1 点伤害。</td>
+                        <td>10 秒</td>
                         <td>50</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-    <p>The Serdath Legion ability deploys a Serdath Legion onto the battlefield. The units have abilities themselves, shown below:</p>
+    <p>塞达斯军团技能会将一支塞达斯军团部署到战场。军团单位自身拥有以下技能：</p>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#zeratul/darkarchon">
-                <img src="/images/commanderdata/abilities/zeratul/darkarchon.jpg" alt="Dark Archon">
-                <p>Dark Archon</p>
+                <img src="/images/commanderdata/abilities/zeratul/darkarchon.jpg" alt="黑暗执政官">
+                <p>黑暗执政官</p>
             </a>
         </div>
         <div>
             <table class="unitAbilities">
                 <thead>
                     <tr>
-                        <th>Ability</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/abilities/zeratul/mindcontrol.png" alt="Mind Control"></td>
-                        <td>Mind Control</td>
-                        <td>Temporarily grants Zeratul control of a target enemy unit. Controlled units self-destruct after 120 seconds.<br><br>Heroic units are immune.</td>
-                        <td>15 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/zeratul/mindcontrol.png" alt="精神控制"></td>
+                        <td>精神控制</td>
+                        <td>使泽拉图暂时控制一个目标敌方单位。被控制的单位会在 120 秒后自毁。<br><br>英雄单位免疫。</td>
+                        <td>15 秒</td>
                         <td>150</td>
                     </tr>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/abilities/zeratul/maelstrom.png" alt="Maelstrom"></td>
-                        <td>Maelstrom</td>
-                        <td>Requirements: 3rd Xel'Naga Artifact.<br>Temporarily stuns enemy units and structures in an area of effect for 3 seconds.</td>
-                        <td>15 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/zeratul/maelstrom.png" alt="漩涡"></td>
+                        <td>漩涡</td>
+                        <td>要求：第 3 件萨尔纳加神器。<br>使一片区域内的敌方单位和建筑暂时昏迷 3 秒。</td>
+                        <td>15 秒</td>
                         <td>50</td>
                     </tr>
                 </tbody>
@@ -462,250 +462,250 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#zeratul/serdath">
-                <img src="/images/commanderdata/abilities/zeratul/serdath.jpg" alt="Serdath">
-                <p>Serdath</p>
+                <img src="/images/commanderdata/abilities/zeratul/serdath.jpg" alt="塞达斯">
+                <p>塞达斯</p>
             </a>
         </div>
         <div>
             <table class="unitAbilities">
                 <thead>
                     <tr>
-                        <th>Ability</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/abilities/zeratul/mindcontrol.png" alt="Mind Control"></td>
-                        <td>Mind Control</td>
-                        <td>Temporarily grants Zeratul control of a target enemy unit. Controlled units self-destruct after 120 seconds.<br><br>Heroic units are immune.</td>
-                        <td>15 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/zeratul/mindcontrol.png" alt="精神控制"></td>
+                        <td>精神控制</td>
+                        <td>使泽拉图暂时控制一个目标敌方单位。被控制的单位会在 120 秒后自毁。<br><br>英雄单位免疫。</td>
+                        <td>15 秒</td>
                         <td>150</td>
                     </tr>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/abilities/zeratul/maelstrom.png" alt="Maelstrom"></td>
-                        <td>Maelstrom</td>
-                        <td>Requirements: 3rd Xel'Naga Artifact.<br>Temporarily stuns enemy units in an area of effect for 3 seconds.</td>
-                        <td>15 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/zeratul/maelstrom.png" alt="漩涡"></td>
+                        <td>漩涡</td>
+                        <td>要求：第 3 件萨尔纳加神器。<br>使一片区域内的敌方单位暂时昏迷 3 秒。</td>
+                        <td>15 秒</td>
                         <td>50</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-    <p>Fragment 1:</p>
+    <p>碎片 1：</p>
     <table class="calldownTable">
         <thead>
             <tr>
-                <th>Calldown</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Recommended Usage</th>
-                <th>Numbers</th>
+                <th>面板技能</th>
+                <th>名称</th>
+                <th>说明</th>
+                <th>推荐用法</th>
+                <th>数据</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/abilities/zeratul/stasisbeam.png" alt = "Stasis Beam"></td>
-                <td>Stasis Beam</td>
-                <td>Fires a beam emanating from the Artifact Holder that places enemies in stasis for 15 seconds. Units in stasis cannot move, attack, be attacked, or be affected by abilities.</td>
-                <td>Can be useful to temporarily take high value targets out of combat while dealing with weaker units first. However, targeting is dependent on the position of the Artifact Holder, making it extremely difficult to land several hits in a straight line.</td>
-                <td>Cooldown: 90 seconds</td>
+                <td><img src="/images/commanderdata/abilities/zeratul/stasisbeam.png" alt = "静滞射线"></td>
+                <td>静滞射线</td>
+                <td>从神器持有者处发射一道射线，使敌人陷入静滞状态 15 秒。静滞中的单位无法移动、攻击、受到攻击或受技能影响。</td>
+                <td>可以暂时让高价值目标退出战斗，以便先解决较弱的单位。不过，瞄准方向取决于神器持有者的位置，因此很难在一条直线上同时命中多个目标。</td>
+                <td>冷却时间：90 秒</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/abilities/zeratul/deploytesseractmonolith.png" alt = "Deploy Tesseract Monolith"></td>
-                <td>Deploy Tesseract Monolith</td>
-                <td>Deploys a Tesseract Monolith at the target location. Tesseract Monoliths can stun enemies, project themselves, and protect themselves from damage.</td>
-                <td>Exremely powerful when projected. Multiple can be used to stun attack waves and help when pushing into enemy bases.</td>
+                <td><img src="/images/commanderdata/abilities/zeratul/deploytesseractmonolith.png" alt = "部署超维空间巨石"></td>
+                <td>部署超维空间巨石</td>
+                <td>在目标位置部署一座超维空间巨石。超维空间巨石可击晕敌人、投射自身并抵挡伤害。</td>
+                <td>投射后极为强大。多座巨石可用于击晕进攻波次，并协助攻入敌方基地。</td>
                 <td>
                     <ul>
-                        <li>Charge Cooldown: 180 seconds</li>
-                        <li>Max Charges: 3</li>
+                        <li>充能冷却：180 秒</li>
+                        <li>最大充能次数：3</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/abilities/zeratul/voidsuppressioncrystal.png" alt = "Void Suppression Crystal"></td>
-                <td>Void Suppression Crystal</td>
-                <td>Summons an invulnerable Void Suppression Crystal that slows the movement and attack speeds of enemy units by 70% and disables enemy structures. The Void Suppression Crystal is controllable and lasts for 30 seconds.</td>
-                <td>Great ability to use when pushing into heavily-fortified positions. Despite the short timer on the crystal, 30 seconds should be more than enough time to clear out high value targets and even an entire base if timed correctly.</td>
-                <td>Cooldown: 180 seconds</td>
+                <td><img src="/images/commanderdata/abilities/zeratul/voidsuppressioncrystal.png" alt = "虚空抑制晶体"></td>
+                <td>虚空抑制晶体</td>
+                <td>召唤一枚无敌的虚空抑制晶体，使敌方单位的移动和攻击速度降低 70%，并使敌方建筑失效。虚空抑制晶体可控制，持续 30 秒。</td>
+                <td>非常适合用于攻入重兵设防的阵地。虽然水晶持续时间不长，但只要时机恰当，30 秒足以清除高价值目标，甚至拔掉整座基地。</td>
+                <td>冷却时间：180 秒</td>
             </tr>
         </tbody>
     </table>
-    <p>The Deploy Tesseract Monolith ability brings a Tesseract Monolith onto the battlefield. This unit has abilities itself, shown below:</p>
+    <p>部署超维空间巨石技能会将一座超维空间巨石带入战场。该单位自身拥有以下技能：</p>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#zeratul/tesseractmonolith">
-                <img src="/images/commanderdata/abilities/zeratul/tesseractmonolith.jpg" alt="Tesseract Monolith">
-                <p>Tesseract Monolith</p>
+                <img src="/images/commanderdata/abilities/zeratul/tesseractmonolith.jpg" alt="超维空间巨石">
+                <p>超维空间巨石</p>
             </a>
         </div>
         <div>
             <table class="unitAbilities">
                 <thead>
                     <tr>
-                        <th>Ability</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/abilities/zeratul/shadeprojection.png" alt="Shade Projection"></td>
-                        <td>Shade Projection</td>
-                        <td>Requirements: Core Forge and 2nd Xel'Naga Artifact Fragment<br>Projects the Tesseract Monolith to a target location for 60 seconds, transferring all of its shields and its weapon. The Tesseract Monolith is deactivated while this ability is active.</td>
-                        <td>120 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/zeratul/shadeprojection.png" alt="阴影投射"></td>
+                        <td>阴影投射</td>
+                        <td>要求：芯核锻炉和第 2 块萨尔纳加神器碎片<br>将超维空间巨石投射至目标位置，转移其全部护盾和武器，持续 60 秒。该技能激活期间，原超维空间巨石将停止运作。</td>
+                        <td>120 秒</td>
                     </tr>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/abilities/zeratul/shadebarrier.png" alt="Shade Barrier"></td>
-                        <td>Shade Barrier</td>
-                        <td>Requirements: Core Forge and 3rd Xel'Naga Artifact Fragment<br>Absorbs up to 100 damage. Lasts for 10 seconds.</td>
-                        <td>60 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/zeratul/shadebarrier.png" alt="阴影屏障"></td>
+                        <td>阴影屏障</td>
+                        <td>要求：芯核锻炉和第 3 块萨尔纳加神器碎片<br>吸收最多 100 点伤害，持续 10 秒。</td>
+                        <td>60 秒</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-    <p>Fragment 2:</p>
+    <p>碎片 2：</p>
     <table class="calldownTable">
         <thead>
             <tr>
-                <th>Passive</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Recommended Usage</th>
+                <th>被动能力</th>
+                <th>名称</th>
+                <th>说明</th>
+                <th>推荐用法</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/abilities/zeratul/steadfastreinforcements.png" alt = "Steadfast Reinforcements"></td>
-                <td>Steadfast Reinforcements</td>
-                <td>Increases the duration of Zeratul's Legion and Avatar calldowns by 50%.</td>
-                <td>Useful for players that prefer to utilize their Legions and Avatars more effectively. However, do note that they do tend to die relatively quickly and therefore, this passive upgrade may not provide as much value as initially intended.</td>
+                <td><img src="/images/commanderdata/abilities/zeratul/steadfastreinforcements.png" alt = "刚韧援军"></td>
+                <td>刚韧援军</td>
+                <td>泽拉图的军团和化身面板技能持续时间延长 50%。</td>
+                <td>适合希望更充分利用军团和化身的玩家。不过要注意，它们往往会很快阵亡，因此这一被动升级的实际收益可能低于预期。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/abilities/zeratul/tesseractmatrix.png" alt = "Tesseract Matrix"></td>
-                <td>Tesseract Matrix</td>
-                <td>Decreases the cooldown of Shade Projection by 25%. Increases the damage absorbed by Shade Barrier by 100%.</td>
-                <td>Great passive for players that rely on the Shade Projections to pushing/defending. It can significantly strengthen Zeratul's late-game as well, where cannons are used as a mineral dump.</td>
+                <td><img src="/images/commanderdata/abilities/zeratul/tesseractmatrix.png" alt = "超维空间矩阵"></td>
+                <td>超维空间矩阵</td>
+                <td>阴影投射的冷却时间缩短 25%，阴影屏障吸收的伤害提高 100%。</td>
+                <td>非常适合依靠阴影投射推进或防守的玩家。后期将多余晶体矿投入光炮时，也能显著提高泽拉图的实力。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/abilities/zeratul/voidblink.png" alt = "Void Blink"></td>
-                <td>Void Blink</td>
-                <td>Reduces the cooldown of Zeratul and his units' Blink abilities by 50%.</td>
-                <td>This passive compounds extremely well with the Void Templar's Void Fury upgrade as well as the Ambusher's Vengeance of the Void. Players that intend on using mass Ambusher builds should consider this upgrade.</td>
+                <td><img src="/images/commanderdata/abilities/zeratul/voidblink.png" alt = "虚空闪现"></td>
+                <td>虚空闪现</td>
+                <td>泽拉图及其单位的闪现技能冷却时间缩短 50%。</td>
+                <td>这一被动能力与虚空圣堂武士的虚空之怒升级、伏击者的虚空复仇升级配合极佳。打算大量生产伏击者的玩家应考虑选择它。</td>
             </tr>
         </tbody>
     </table>
-    <p>Fragment 3:</p>
+    <p>碎片 3：</p>
     <table class="calldownTable">
         <thead>
             <tr>
-                <th>Ability</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Recommended Usage</th>
-                <th>Cooldown</th>
+                <th>技能</th>
+                <th>名称</th>
+                <th>说明</th>
+                <th>推荐用法</th>
+                <th>冷却时间</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/abilities/zeratul/avatarofform.png" alt = "Avatar of Form"></td>
-                <td>Avatar of Form</td>
-                <td>Call down the Avatar of Form, the embodiment of psionic potential, at the target location. The Avatar of Form is controllable and will fight for 60 seconds.</td>
-                <td>Generally not as useful as the Avatar of Essence, due to it not being able to buff your units. Can be used when doing Cannon-only builds. Additionally, the spawned Charged Crystals have a very low chance of casting Psionic Storms, and have a very low HP. Can be useful against certain <a href="/guides/enemycomps">Enemy Compositions</a> with numerous, low-HP units like Swarmy Zerg or against Infested units.</td>
-                <td>300 seconds</td>
+                <td><img src="/images/commanderdata/abilities/zeratul/avatarofform.png" alt = "形体化身"></td>
+                <td>形体化身</td>
+                <td>在目标位置召唤灵能潜力的具现——形体化身。形体化身可控制，并会战斗 60 秒。</td>
+                <td>由于无法强化己方单位，通常不如精华化身实用。只用光炮的打法可以选择它。此外，其生成的充能水晶施放灵能风暴的概率很低，生命值也很低。面对虫群异虫等拥有大量低生命值单位的特定<a href="/guides/enemycomps">敌方兵种组合</a>，或对抗感染单位时仍有作用。</td>
+                <td>300 秒</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/abilities/zeratul/avatarofessence.png" alt = "Avatar of Essence"></td>
-                <td>Avatar of Essence</td>
-                <td>Call down the Avatar of Essence, the embodiment of evolutionary potential, at the target location. The Avatar of Essence is controllable and will fight for 60 seconds.</td>
-                <td>Extremely powerful Avatar due to the fact that it can devolve all non-heroic enemy units (including Infested). Heroic units will have their Attack speed and movement speed reduced by 50%. One devolution wave can significantly reduce the power level of the enemy forces. Additionally, it may be useful to pre-buff your units with the Avatar by spawning it a few seconds before you expect to take an engagement so your units will have an attack speed buff applied to them.</td>
-                <td>300 seconds</td>
+                <td><img src="/images/commanderdata/abilities/zeratul/avatarofessence.png" alt = "精华化身"></td>
+                <td>精华化身</td>
+                <td>在目标位置召唤进化潜力的具现——精华化身。精华化身可控制，并会战斗 60 秒。</td>
+                <td>这是极其强大的化身，因为它能使所有非英雄敌军单位退化（包括感染单位）。英雄单位的攻击速度和移动速度则会降低 50%。一次退化波便能显著削弱敌军。此外，还可在预计交战前几秒召唤化身，预先为己方单位施加攻击速度增益。</td>
+                <td>300 秒</td>
             </tr>
         </tbody>
     </table>
-    <p>The Avatar of Form ability brings an Avatar of Form onto the battlefield. This unit has abilities itself, shown below:</p>
+    <p>形体化身技能会将形体化身带入战场。该单位自身拥有以下技能：</p>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#zeratul/avatarofform">
-                <img src="/images/commanderdata/abilities/zeratul/avatarofform.jpg" alt="Avatar of Form">
-                <p>Avatar of Form</p>
+                <img src="/images/commanderdata/abilities/zeratul/avatarofform.jpg" alt="形体化身">
+                <p>形体化身</p>
             </a>
         </div>
         <div>
             <table class="unitAbilities">
                 <thead>
                     <tr>
-                        <th>Ability</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/abilities/zeratul/summonchargedcrystals.png" alt="Summon Charged Crystals"></td>
-                        <td>Summon Charged Crystals</td>
-                        <td>Marks a target area on the ground. After 2 seconds, the Avatar of Form deals 100 damage and summons 10 Xel'Naga Charged Crystals at the target location.<br>Charged Crystals have a 10% chance to cast a miniature Psionic Storm with each attack, dealing 40 damage to all enemy units in a small area over 4 seconds.</td>
-                        <td>25 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/zeratul/summonchargedcrystals.png" alt="召唤充能水晶"></td>
+                        <td>召唤充能水晶</td>
+                        <td>标记一片地面目标区域。2 秒后，形体化身造成 100 点伤害，并在目标位置召唤 10 枚萨尔纳加充能水晶。<br>充能水晶每次攻击有 10% 几率施放小型灵能风暴，在 4 秒内对小范围内的所有敌方单位造成 40 点伤害。</td>
+                        <td>25 秒</td>
                     </tr>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/abilities/zeratul/psionicgale.png" alt="Psionic Gale"></td>
-                        <td>Psionic Gale</td>
-                        <td>Creates a storm of psionic energy that lasts 4 seconds, dealing 160 damage to all enemy units in a large target area. Does not damage friendly units.</td>
-                        <td>10 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/zeratul/psionicgale.png" alt="灵能烈风"></td>
+                        <td>灵能烈风</td>
+                        <td>制造一场持续 4 秒的灵能风暴，对大范围目标区域内的所有敌方单位造成 160 点伤害。不会伤害友方单位。</td>
+                        <td>10 秒</td>
                     </tr>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/abilities/zeratul/psionicblast.png" alt="Psionic Blast"></td>
-                        <td>Psionic Blast</td>
-                        <td>Charges up, dealing 500 damage to a target unit after 3 seconds. </td>
-                        <td>10 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/zeratul/psionicblast.png" alt="灵能爆破"></td>
+                        <td>灵能爆破</td>
+                        <td>蓄力后，在 3 秒后对目标单位造成 500 点伤害。</td>
+                        <td>10 秒</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-    <p>The Avatar of Essence ability brings an Avatar of Essence onto the battlefield. This unit has abilities itself, shown below:</p>
+    <p>精华化身技能会将精华化身带入战场。该单位自身拥有以下技能：</p>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#zeratul/avatarofessence">
-                <img src="/images/commanderdata/abilities/zeratul/avatarofessence.jpg" alt="Avatar of Essence">
-                <p>Avatar of Essence</p>
+                <img src="/images/commanderdata/abilities/zeratul/avatarofessence.jpg" alt="精华化身">
+                <p>精华化身</p>
             </a>
         </div>
         <div>
             <table class="unitAbilities">
                 <thead>
                     <tr>
-                        <th>Ability</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/abilities/zeratul/devolutionwave.png" alt="Devolution Wave"></td>
-                        <td>Devolution Wave</td>
-                        <td>Transforms all enemy units in a large area around the Avatar of Essence into a lower evolutionary form.</td>
-                        <td>20 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/zeratul/devolutionwave.png" alt="退化波"></td>
+                        <td>退化波</td>
+                        <td>将精华化身周围大范围内的所有敌方单位转化为低等进化形态。</td>
+                        <td>20 秒</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-    <p>Devolve will Devolve all non-heroic, non-MapBoss enemy units within 10 range of the Avatar of Essence. For Heroic units, Attack speed and Movement speed are reduced by 50%. Devolve works in a very similar way to the Transmutation <a href="/resources/mutators">Mutator</a>. All units caught within the Devolve wave will Devolve to one tier lower. The tier list is shown below:</p>
+    <p>退化会使精华化身周围 10 射程内所有非英雄、非地图首领的敌方单位退化。英雄单位的攻击速度和移动速度则会降低 50%。退化的机制与<a href="/resources/mutators">突变因子</a>“转化”十分相似。被退化波命中的所有单位都会降低一个阶级，阶级表如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Tier</th>
-                <th>Devolves Into</th>
+                <th>阶级</th>
+                <th>退化为</th>
             </tr>
         </thead>
         <tbody>
@@ -713,8 +713,8 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                 <td>1</td>
                 <td>
                     <ul>
-                        <li>Drone</li>
-                        <li>Probe</li>
+                        <li>工蜂</li>
+                        <li>探机</li>
                         <li>SCV</li>
                     </ul>
                 </td>
@@ -723,8 +723,8 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                 <td>2</td>
                 <td>
                     <ul>
-                        <li>Marine</li>
-                        <li>Zergling</li>
+                        <li>陆战队员</li>
+                        <li>跳虫</li>
                     </ul>
                 </td>
             </tr>
@@ -732,15 +732,15 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                 <td>3</td>
                 <td>
                     <ul>
-                        <li>Baneling</li>
-                        <li>Hellbat</li>
-                        <li>Hellion</li>
-                        <li>Medic</li>
-                        <li>Reaper</li>
-                        <li>Roach</li>
-                        <li>Vulture</li>
-                        <li>Widow Mine</li>
-                        <li>Zealot</li>
+                        <li>爆虫</li>
+                        <li>恶火</li>
+                        <li>恶火战车</li>
+                        <li>医疗兵</li>
+                        <li>死神</li>
+                        <li>蟑螂</li>
+                        <li>秃鹫车</li>
+                        <li>寡妇雷</li>
+                        <li>狂热者</li>
                     </ul>
                 </td>
             </tr>
@@ -748,12 +748,12 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                 <td>4</td>
                 <td>
                     <ul>
-                        <li>Adept</li>
-                        <li>Firebat</li>
-                        <li>Marauder</li>
-                        <li>Sentry</li>
-                        <li>Swarm Queen</li>
-                        <li>Queen</li>
+                        <li>使徒</li>
+                        <li>火蝠</li>
+                        <li>劫掠者</li>
+                        <li>哨兵</li>
+                        <li>虫群女王</li>
+                        <li>女王</li>
                     </ul>
                 </td>
             </tr>
@@ -761,19 +761,19 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                 <td>5</td>
                 <td>
                     <ul>
-                        <li>Corruptor</li>
-                        <li>Dragoon</li>
-                        <li>Ghost</li>
-                        <li>High Templar</li>
-                        <li>Hydralisk</li>
-                        <li>Medivac</li>
-                        <li>Mutalisk</li>
-                        <li>Phoenix</li>
-                        <li>Stalker</li>
-                        <li>Viking</li>
-                        <li>Widow Mine</li>
-                        <li>Widow Mine (Burrowed)</li>
-                        <li>Wraith</li>
+                        <li>腐化者</li>
+                        <li>龙骑士</li>
+                        <li>幽灵</li>
+                        <li>高阶圣堂武士</li>
+                        <li>刺蛇</li>
+                        <li>医疗运输机</li>
+                        <li>异龙</li>
+                        <li>凤凰</li>
+                        <li>追猎者</li>
+                        <li>维京战机</li>
+                        <li>寡妇雷</li>
+                        <li>寡妇雷（潜地）</li>
+                        <li>怨灵</li>
                     </ul>
                 </td>
             </tr>
@@ -781,15 +781,15 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                 <td>6</td>
                 <td>
                     <ul>
-                        <li>Banshee</li>
-                        <li>Brood Queen</li>
-                        <li>Cyclone</li>
-                        <li>Dark Templar</li>
-                        <li>Infestor</li>
-                        <li>Oracle</li>
-                        <li>Ravager</li>
-                        <li>Scout</li>
-                        <li>Warhound</li>
+                        <li>女妖</li>
+                        <li>巢穴女王</li>
+                        <li>飓风</li>
+                        <li>黑暗圣堂武士</li>
+                        <li>感染者</li>
+                        <li>先知</li>
+                        <li>破坏者</li>
+                        <li>侦察机</li>
+                        <li>战狼</li>
                     </ul>
                 </td>
             </tr>
@@ -797,18 +797,18 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                 <td>7</td>
                 <td>
                     <ul>
-                        <li>Archon</li>
-                        <li>Disruptor</li>
-                        <li>Immortal</li>
-                        <li>Liberator</li>
-                        <li>Lurker</li>
-                        <li>Lurker (Burrowed)</li>
-                        <li>Raven</li>
-                        <li>Science Vessel</li>
-                        <li>Siege Tank</li>
-                        <li>Swarm Host</li>
-                        <li>Viper</li>
-                        <li>Void Ray</li>
+                        <li>执政官</li>
+                        <li>干扰者</li>
+                        <li>不朽者</li>
+                        <li>解放者</li>
+                        <li>潜伏者</li>
+                        <li>潜伏者（潜地）</li>
+                        <li>铁鸦</li>
+                        <li>科学船</li>
+                        <li>攻城坦克</li>
+                        <li>虫群宿主</li>
+                        <li>飞蛇</li>
+                        <li>虚空辉光舰</li>
                     </ul>
                 </td>
             </tr>
@@ -816,37 +816,37 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                 <td>8</td>
                 <td>
                     <ul>
-                        <li>Battlecruiser</li>
-                        <li>Brood Lord</li>
-                        <li>Carrier</li>
-                        <li>Colossus</li>
-                        <li>Reaver</li>
-                        <li>Tempest</li>
-                        <li>Thor</li>
-                        <li>Ultralisk</li>
+                        <li>战列巡航舰</li>
+                        <li>巢虫领主</li>
+                        <li>航母</li>
+                        <li>巨像</li>
+                        <li>掠夺者</li>
+                        <li>风暴战舰</li>
+                        <li>雷神</li>
+                        <li>雷兽</li>
                     </ul>
                 </td>
             </tr>
         </tbody>
     </table>
-    <p>For any units not included on the list, their tier will equal their supply cost, with a minimum tier of 1.</p>
-    <p>Devolve will not create the following units as a result of the Devolution Wave:</p>
+    <p>未列出的单位，其阶级等于人口占用，且最低为 1 阶。</p>
+    <p>退化波不会通过退化生成以下单位：</p>
     <ul>
-        <li>Baneling</li>
-        <li>Disruptor</li>
-        <li>Liberator (in Siege Mode)</li>
-        <li>Oracle</li>
-        <li>Reaver</li>
-        <li>Scourge</li>
-        <li>Siege Tank (in Siege Mode)</li>
+        <li>爆虫</li>
+        <li>干扰者</li>
+        <li>解放者（防卫模式）</li>
+        <li>先知</li>
+        <li>掠夺者</li>
+        <li>爆蚊</li>
+        <li>攻城坦克（攻城模式）</li>
     </ul>
-    <p>All units present within 10 range of the Avatar will get an evolution buff level every 15 seconds. When out of range, they will lose an evolution buff level every 15 seconds.</p>
+    <p>化身周围 10 射程内的所有单位每 15 秒获得一级进化增益；离开范围后，每 15 秒失去一级进化增益。</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Buff Level</th>
-                <th>Attack Speed</th>
-                <th>Damage Reduction</th>
+                <th>增益等级</th>
+                <th>攻击速度</th>
+                <th>伤害减免</th>
             </tr>
         </thead>
         <tbody>
@@ -872,124 +872,124 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
         </tbody>
     </table>
-    <h2 id="leveling">Sub-Ascension Leveling</h2>
-    <p>Difficulty: Easy</p>
-    <p>Use Ambushers and Enforcers during the early stages of leveling as part of your core army composition. Once you get to level 3, Ambushers damage output increases a lot due to their powerful Blink damage upgrade. Be wary of your use of the Stasis Beam, which is a bad calldown. It should not be used to Stasis an entire attack wave, but cut the wave into more manageable parts. Rely on your Legion calldowns more aggressively, even if it means cutting unit production.</p>
-    <h2 id="masteries">Masteries</h2>
-    <p>Below are the three Power Sets for Zeratul with the recommended point allocations for each. Note that these are meant to serve a general, all-purpose build that is effective across all maps with no Prestiges selected. You are highly encourged to change these masteries to suit your playstyle and particular challenges you face (e.g. <a href="/resources/weeklymutations">Weekly Mutations</a>).</p>
-    <p>Power Set 1:</p>
+    <h2 id="leveling">飞升前升级</h2>
+    <p>难度：简单</p>
+    <p>升级初期以伏击者和执行者作为核心部队。达到 3 级后，伏击者会凭借强力的闪现伤害升级大幅提高输出。谨慎使用静滞射线——这是一项较差的面板技能。不要用它静滞整波进攻，而应将进攻波分割成更易处理的几部分。更积极地依赖军团面板技能，即使这意味着要暂时削减单位生产也无妨。</p>
+    <h2 id="masteries">精通</h2>
+    <p>以下是泽拉图三个技能组的推荐点数分配。这套配置旨在作为未选择任何威望时适用于所有地图的通用方案。强烈建议根据自己的玩法和所面对的特殊挑战（例如<a href="/resources/weeklymutations">每周突变</a>）调整精通。</p>
+    <p>技能组 1：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>精通</th>
+                <th>数值</th>
+                <th>推荐投入点数</th>
+                <th>其他考量</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Zeratul Attack Speed</td>
-                <td>1.5% per point<br>45% maximum</td>
+                <td>泽拉图攻击速度</td>
+                <td>每点 1.5%<br>最多 45%</td>
                 <td>?</td>
-                <td rowspan="2">The choice here depends on how you use Zeratul compared to his units. If you prefer to use a cannon build, Zeratul's attack speed is a better investment. Additionally, your ability to micro Zeratul can provide you with a lot of value from Zeratul Attack Speed.</td>
+                <td rowspan="2">这里的选择取决于你更倚重泽拉图本人还是他的部队。如果喜欢光炮流，投资泽拉图攻击速度更合适。此外，操作泽拉图的水平越高，攻击速度精通带来的收益也越大。</td>
             </tr>
             <tr>
-                <td>Combat Unit Attack Speed</td>
-                <td>0.5% per point<br>15% maximum</td>
+                <td>作战单位攻击速度</td>
+                <td>每点 0.5%<br>最多 15%</td>
                 <td>?</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">A player's playstyle will determine which mastery to use. For players that prefer to micro Zeratul, the Attack Speed Mastery can be very beneficial, especially when combined with the Avatar of Essence.</p>
-    <p>Power Set 2:</p>
+    <p class="masterySummary">应根据个人玩法选择精通。喜欢操作泽拉图的玩家可以从攻击速度精通中获得很大收益，尤其是与精华化身配合时。</p>
+    <p>技能组 2：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>精通</th>
+                <th>数值</th>
+                <th>推荐投入点数</th>
+                <th>其他考量</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Artifact Fragment Spawn Rate</td>
-                <td>-2 sec per point<br>-60 sec maximum</td>
+                <td>神器碎片刷新速度</td>
+                <td>每点 -2 秒<br>最多 -60 秒</td>
                 <td>30</td>
-                <td rowspan="2">Artifact Fragments directly correlate to Zeratul's power level in the game and should be prioritized. Support Calldown Cooldown Reduction may be useful for players that prefer to spam them.</td>
+                <td rowspan="2">神器碎片直接决定泽拉图在游戏中的强度，应优先选择。喜欢频繁使用支援面板技能的玩家也可考虑缩短其冷却时间。</td>
             </tr>
             <tr>
-                <td>Support Calldown Cooldown Reduction</td>
-                <td>-1% per point<br>-30% maximum</td>
+                <td>支援面板技能冷却缩减</td>
+                <td>每点 -1%<br>最多 -30%</td>
                 <td>0</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">The Support Calldowns, while strong, do not provide as much of a ramp up in power level of the commander as the Artifact Fragments. It is much more efficient to increase the spawn rate of Artifact Fragments.</p>
-    <p>Power Set 3:</p>
+    <p class="masterySummary">支援面板技能虽然强大，但对指挥官强度的提升不及神器碎片。提高神器碎片刷新速度的效率高得多。</p>
+    <p>技能组 3：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>精通</th>
+                <th>数值</th>
+                <th>推荐投入点数</th>
+                <th>其他考量</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Legendary Legion Cost</td>
-                <td>-1% per point<br>-30% maximum</td>
+                <td>传奇军团消耗</td>
+                <td>每点 -1%<br>最多 -30%</td>
                 <td>0</td>
-                <td rowspan="2">Players that utilize Avatars often can find some benefit for the Avatar Cooldown. The Legendary Legion cost makes it easy to spam them, and for players that use them to fast-expand, allows them to expand faster.</td>
+                <td rowspan="2">经常使用化身的玩家能从化身冷却中获益。传奇军团消耗精通便于频繁召唤军团，使用军团速开分矿的玩家也能更快扩张。</td>
             </tr>
             <tr>
-                <td>Avatar Cooldown</td>
-                <td>-4 sec per point<br>-120 sec maximum</td>
+                <td>化身冷却时间</td>
+                <td>每点 -4 秒<br>最多 -120 秒</td>
                 <td>30</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">While the Legion calldown mastery allows players to expand quicker, the cost reduction is not significant enough to justify its use. The Avatar mastery is recommended for more general play.</p>
-    <h2 id="prestiges">Prestiges</h2>
-    <p>Below are the prestiges for Zeratul. Note that "Effective Level" is the level at which the prestige achieves it full effect.</p>
+    <p class="masterySummary">军团面板技能精通虽然能让玩家更快扩张，但消耗降低幅度不足以体现价值。通用玩法更推荐化身精通。</p>
+    <h2 id="prestiges">威望</h2>
+    <p>以下是泽拉图的威望。“生效等级”表示该威望达到完整效果时所需的等级。</p>
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P1: <strong>Anakh Su'n</strong></td>
+                <td class="prestigeTitle" colspan="2">P1：<strong>黎明使徒</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>Zeratul can deploy the Void Seeker, granting all friendly units in a target area Super Cloak for 15 seconds.</li>
+                        <li>泽拉图可部署虚空寻觅者号，使目标区域内的所有友方单位获得超级隐形，持续 15 秒。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>The Void Seeker can no longer transport Zeratul.</li>
+                        <li>虚空寻觅者号不再能运送泽拉图。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Notes</th>
+                <th>备注</th>
                 <td>
                     <ul>
-                        <li>Void Seeker cooldown is 180 seconds</li>
-                        <li>Supercloak range is 16 range from selected point</li>
+                        <li>虚空寻觅者号的冷却时间为 180 秒</li>
+                        <li>超级隐形范围为所选位置周围 16 射程</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>生效等级</th>
                 <td>1</td>
             </tr>
             <tr>
-                <th>Advice</th><td>One of the primary uses for the Void Seeker for Zeratul play is quickly getting to Artifact Fragments. You can mitigate the disadvantage by using Void Arrays or Blink to transport Zeratul. The prestige sacrifices that for a Supercloak that Zeratul can use to push into enemy bases without taking losses. It is a powerful prestige that helps Zeratul mitigate losses of his expensive units. This prestige works very well when both players coordinate a push into an enemy base, as both players can take advantage of the Supercloak to pick off high-priority targets.</td>
+                <th>建议</th><td>虚空寻觅者号的主要用途之一是让泽拉图迅速抵达神器碎片处。选择此威望后，可通过虚空阵列船或闪现来弥补无法运输泽拉图的劣势，换取让部队无损攻入敌方基地的超级隐形。这一强力威望能减少泽拉图昂贵单位的损失。双方玩家协同推进敌方基地时尤其出色，因为两边都能利用超级隐形优先击杀关键目标。</td>
             </tr>
         </tbody>
     </table>
@@ -997,38 +997,38 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P2: <strong>Knowledge Seeker</strong></td>
+                <td class="prestigeTitle" colspan="2">P2：<strong>知识探求者</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>Zeratul can collect an unlimited number of Artifact Fragments.</li>
+                        <li>泽拉图可收集无限数量的神器碎片。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>Zeratul's combat units cost 25% more.</li>
+                        <li>泽拉图的作战单位消耗提高 25%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Notes</th>
+                <th>备注</th>
                 <td>
                     <ul>
-                        <li>Each artifact increases number of Blink charges by 1</li>
+                        <li>每件神器使闪现的充能次数增加 1</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>生效等级</th>
                 <td>1</td>
             </tr>
             <tr>
-                <th>Advice</th><td>This prestige works well for players that can quickly find their Artifact Fragments. The effectiveness of this prestige is dependant on the length of the mission. Fixed-time missions are best for this, as the longer game time allows Zeratul's units to upgrade more and more. This prestige works best with the Artifact Spawn mastery. The disadvantage can be further mitigated by using Tesseract Cannons. As they are structures, their costs are not increased from this prestige.</td>
+                <th>建议</th><td>这一威望适合能迅速找到神器碎片的玩家，其效果取决于任务时长。固定时长的任务最适合此威望，因为游戏时间越长，泽拉图单位获得的升级就越多。它与神器刷新精通配合最佳。使用超维空间炮还能进一步缓解劣势，因为它们属于建筑，消耗不会因该威望而提高。</td>
             </tr>
         </tbody>
     </table>
@@ -1036,109 +1036,109 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P3: <strong>Herald of the Void</strong></td>
+                <td class="prestigeTitle" colspan="2">P3：<strong>虚空先驱</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>Each collected Artifact Fragment reduces the cooldown of Zeratul's Shadow Cleave by 5 seconds.</li>
-                        <li>Shadow Cleave spawns a tornado that damages and slows enemy units.</li>
+                        <li>每收集一块神器碎片，泽拉图的暗影顺劈冷却时间缩短 5 秒。</li>
+                        <li>暗影顺劈会生成一道龙卷风，对敌方单位造成伤害并使其减速。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>Zeratul can only collect up to two Artifact Fragments.</li>
+                        <li>泽拉图最多只能收集两块神器碎片。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Notes</th>
+                <th>备注</th>
                 <td>
                     <ul>
-                        <li>Tornadoes deal 5 damage every 0.25 seconds and slows units by 30% for 5 seconds</li>
-                        <li>Tornadoes target Detectors first</li>
+                        <li>龙卷风每 0.25 秒造成 5 点伤害，并使单位减速 30%，持续 5 秒</li>
+                        <li>龙卷风会优先以反隐单位为目标</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>生效等级</th>
                 <td>1</td>
             </tr>
             <tr>
-                <th>Advice</th><td>This prestige sacrifices the third artifact set of upgrades (as well as the Avatars) for a more versatile hero unit. This prestige works best on shorter maps and missions where hyper-aggressive hero play is rewarded, as a lot of the units will not have the defensive upgrades that are provided with the third Artifact Fragment. This prestige works well against certain <a href="/resources/mutators">mutators</a> like Minesweeper, as the Tornadoes can damage burrowed units without the need for any detection.</td>
+                <th>建议</th><td>这一威望牺牲第三组神器升级（以及化身），换取更加灵活的英雄单位。由于许多单位无法获得第三块神器碎片提供的防御升级，它最适合较短的地图，以及鼓励激进英雄玩法的任务。对抗“扫雷专家”等特定<a href="/resources/mutators">突变因子</a>时效果很好，因为龙卷风无需反隐便能伤害潜地单位。</td>
             </tr>
         </tbody>
     </table>
-    <p>All of Zeratul's prestiges are solid and a player can get by general play using any (or none of them). The optimal prestige selection is highly dependant on the map that is being played. For example, Knowledge Seeker works best on long maps, whereas Herald of the Void works best on short maps.</p>
-    <h2 id="hero">Hero Unit</h2>
-    <a class="unitStatsLink" href="/units/#zeratul/zeratul"><img id="heroPic" src="/images/commanderdata/hero/zeratul/zeratul.jpg" alt="Zeratul"></a>
-    <p>Spawn time: 4:00</p>
-    <p>Respawn time: 1:00</p>
-    <p>Zeratul has a Passive called "One With the Shadows". Zeratul is permanently cloaked. He becomes immune to damage for 0.5 seconds after being attacked. Cannot occur more than once every 5 seconds.</p>
-    <p>The abilities for Zeratul are:</p>
+    <p>泽拉图的所有威望都很扎实，通用玩法选择任何一个（或不选）都能顺利应对。最佳威望高度取决于当前地图。例如，知识探求者最适合长地图，而虚空先驱最适合短地图。</p>
+    <h2 id="hero">英雄单位</h2>
+    <a class="unitStatsLink" href="/units/#zeratul/zeratul"><img id="heroPic" src="/images/commanderdata/hero/zeratul/zeratul.jpg" alt="泽拉图"></a>
+    <p>首次登场时间：4:00</p>
+    <p>重生时间：1:00</p>
+    <p>泽拉图拥有名为“暗影合一”的被动能力。他永久保持隐形，并在受到攻击后免疫伤害 0.5 秒。该效果每 5 秒最多触发一次。</p>
+    <p>泽拉图的技能如下：</p>
     <table class="abilityTable">
         <thead>
             <tr>
-                <th>Ability</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Cooldown</th>
+                <th>技能</th>
+                <th>名称</th>
+                <th>说明</th>
+                <th>冷却时间</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/hero/zeratul/blink.png" alt = "Blink"></td>
-                <td>Blink</td>
-                <td>Teleports Zeratul to a nearby location.</td>
-                <td>8 seconds</td>
+                <td><img src="/images/commanderdata/hero/zeratul/blink.png" alt = "闪现"></td>
+                <td>闪现</td>
+                <td>将泽拉图传送至附近目标位置。</td>
+                <td>8 秒</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/zeratul/summonvoidseeker.png" alt = "Summon Void Seeker"></td>
-                <td>Summon Void Seeker</td>
-                <td>Transports Zeratul to a target location.</td>
-                <td>120 seconds</td>
+                <td><img src="/images/commanderdata/hero/zeratul/summonvoidseeker.png" alt = "召唤虚空寻觅者号"></td>
+                <td>召唤虚空寻觅者号</td>
+                <td>将泽拉图运送至目标位置。</td>
+                <td>120 秒</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/zeratul/shadowcleave.png" alt = "Shadow Cleave"></td>
-                <td>Shadow Cleave</td>
-                <td>Deals 100 damage to nearby enemies.</td>
-                <td>12 seconds</td>
+                <td><img src="/images/commanderdata/hero/zeratul/shadowcleave.png" alt = "暗影顺劈"></td>
+                <td>暗影顺劈</td>
+                <td>对附近敌人造成 100 点伤害。</td>
+                <td>12 秒</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/zeratul/propheticvision.png" alt = "Prophetic Vision"></td>
-                <td>Prophetic Vision</td>
-                <td>Shows the location of or unearths a hidden Xel'Naga Artifact Fragment.</td>
-                <td>10 seconds if Fragment is not found<br>Remaining seconds until next Fragment spawns if found.</td>
+                <td><img src="/images/commanderdata/hero/zeratul/propheticvision.png" alt = "先知视野"></td>
+                <td>先知视野</td>
+                <td>显示隐藏的萨尔纳加神器碎片位置，或将其发掘出来。</td>
+                <td>未找到碎片时为 10 秒<br>找到碎片后为距离下一块碎片刷新的剩余秒数。</td>
             </tr>
         </tbody>
     </table>
-    <p>The upgrades for Zeratul are:</p>
+    <p>泽拉图的升级如下：</p>
     <table class="heroUpgrades">
         <thead>
             <tr>
-                <th>Upgrade</th>
-                <th>Name</th>
-                <th>Effect</th>
+                <th>升级</th>
+                <th>名称</th>
+                <th>效果</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/hero/zeratul/purityofwill.png" alt="Purity of Will"></td>
-                <td>Purity of Will</td>
-                <td>Zeratul will gain additional shields (+50), increased Shadow Cleave damage (+10), and additional charges of Blink (+1) with each Artifact Fragment he finds.</td>
+                <td><img src="/images/commanderdata/hero/zeratul/purityofwill.png" alt="纯粹意志"></td>
+                <td>纯粹意志</td>
+                <td>泽拉图每找到一块神器碎片，便会获得额外护盾（+50）、提高暗影顺劈伤害（+10），并增加闪现充能次数（+1）。</td>
             </tr>
         </tbody>
     </table>
-    <h2 id="army">Recommended Army Composition</h2>
-    <p>The recommended army composition for Zeratul is below. Note that this assumes no Prestige talent selected and recommended Mastery Allocations. This is a basic recommendation for your army framework. It is recommended to gain an understanding for each of the units in the <a href="#units">Units</a> section and further add tech units so that you are able to better handle the situations you face.</p>
-    <img class="army" src="/images/commanderdata/units/zeratul/xelnagaambusher.jpg" alt="Xel'Naga Ambusher"><img class="army" src="/images/commanderdata/units/zeratul/xelnagashieldguard.jpg" alt="Xel'Naga Shieldguard"><img class="army" src="/images/commanderdata/units/zeratul/xelnagavoidarray.jpg" alt="Xel'Naga Void Array">
-    <p>Mass Ambusher builds work very well for Zeratul, but care will need to be taken in how you engage high-damage attack waves. Shieldguards should be used to quickly replenish the shield damage taken by your army. Use Void Arrays to move your army around the map and handle attack waves.</p>
-    <div class="techContainer"><img class="army"src="/images/commanderdata/units/zeratul/xelnagaenforcer.jpg" alt="Xel'Naga Enforcer"><div class="techAdd">+</div></div>
-    <p>Add Enforcers to your army if dealing with large numbers of Armored air units.</p>
+    <h2 id="army">推荐配兵</h2>
+    <p>以下是泽拉图的推荐配兵，假定未选择威望并采用推荐精通分配。这只是部队框架的基础建议。建议先了解<a href="#units">单位</a>章节中的每个单位，再根据实际情况加入科技单位，以便更好地应对不同局面。</p>
+    <img class="army" src="/images/commanderdata/units/zeratul/xelnagaambusher.jpg" alt="萨尔纳加伏击者"><img class="army" src="/images/commanderdata/units/zeratul/xelnagashieldguard.jpg" alt="萨尔纳加光盾卫士"><img class="army" src="/images/commanderdata/units/zeratul/xelnagavoidarray.jpg" alt="萨尔纳加虚空阵列船">
+    <p>大量伏击者的打法非常适合泽拉图，但面对高伤害进攻波次时需要谨慎交战。使用光盾卫士快速补充部队损失的护盾，并用虚空阵列船在地图各处调动部队、处理进攻波次。</p>
+    <div class="techContainer"><img class="army"src="/images/commanderdata/units/zeratul/xelnagaenforcer.jpg" alt="萨尔纳加执行者"><div class="techAdd">+</div></div>
+    <p>面对大量重甲空中单位时，将执行者加入部队。</p>
     <script>
         $(".army").on('mouseover',function(e){
             var unit = $(this).attr("alt").split(":");
@@ -1169,69 +1169,69 @@ require_once __DIR__ . "/../../includes/wrapper.php";
 
         });
     </script>
-    <h2 id="units">Combat Units</h2>
-    <p>For more information on Zeratul's unit stats, comparison between units and upgrade calculations, visit the <a href="/units/#zeratul">Data Tables</a> page.</p>
-    <p>Zeratul's combat units are listed below:</p>
+    <h2 id="units">作战单位</h2>
+    <p>如需了解泽拉图单位的详细数据、单位对比和升级计算，请访问<a href="/units/#zeratul">数据表</a>页面。</p>
+    <p>泽拉图的作战单位如下：</p>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#zeratul/xelnagaambusher">
-                <img src="/images/commanderdata/units/zeratul/xelnagaambusher.jpg" alt="Xel'Naga Ambusher">
-                <p>Xel'Naga Ambusher</p>
+                <img src="/images/commanderdata/units/zeratul/xelnagaambusher.jpg" alt="萨尔纳加伏击者">
+                <p>萨尔纳加伏击者</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Good for providing anti-air support to an army with strong anti-ground capabilities</li>
-                <li>Does a good amount of burst damage if enough Blink charges are stored.</li>
+                <li>适合为对地能力强大的部队提供对空支援</li>
+                <li>储存足够的闪现充能后，可打出可观的爆发伤害。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="unlockable autocast">
-                        <td><img src="/images/commanderdata/unitskills/zeratul/predictiveblink.png" alt="Predictive Blink"></td>
-                        <td>Predictive Blink</td>
-                        <td>Teleports this unit to a nearby target location.</td>
-                        <td>0 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/zeratul/predictiveblink.png" alt="预判闪现"></td>
+                        <td>预判闪现</td>
+                        <td>将该单位传送至附近目标位置。</td>
+                        <td>0 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th>Fragments Required</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th>所需碎片</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zeratul/predictiveblink.png" alt="Predictive Blink"></td>
-                        <td>Predictive Blink</td>
-                        <td>Allows this unit to teleport to a nearby target location. Xel'Naga Ambushers will automatically teleport to safety once their hulls have been breached.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zeratul/predictiveblink.png" alt="预判闪现"></td>
+                        <td>预判闪现</td>
+                        <td>使该单位可传送至附近目标位置。萨尔纳加伏击者的躯体受损后会自动传送至安全位置。</td>
                         <td>1</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zeratul/vengeanceofthevoid.png" alt="Vengeance of the Void"></td>
-                        <td>Vengeance of the Void</td>
-                        <td>Blinking leaves behind a Void Apparition that attacks once for 50% of the unit's weapon damage.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zeratul/vengeanceofthevoid.png" alt="虚空复仇"></td>
+                        <td>虚空复仇</td>
+                        <td>使用闪现后会留下虚空幻影，以该单位武器伤害的 50% 攻击一次。</td>
                         <td>2</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zeratul/phasebattery.png" alt="Phase Battery"></td>
-                        <td>Phase Battery</td>
-                        <td>This unit can now store up to 3 charges of Predictive Blink and regains a charge every 8 seconds.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zeratul/phasebattery.png" alt="相位电池"></td>
+                        <td>相位电池</td>
+                        <td>该单位现在最多可储存 3 次预判闪现，并且每 8 秒恢复一次充能。</td>
                         <td>3</td>
                     </tr>
                 </tbody>
@@ -1241,70 +1241,70 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#zeratul/xelnagashieldguard">
-                <img src="/images/commanderdata/units/zeratul/xelnagashieldguard.jpg" alt="Xel'Naga Shieldguard">
-                <p>Xel'Naga Shieldguard</p>
+                <img src="/images/commanderdata/units/zeratul/xelnagashieldguard.jpg" alt="萨尔纳加光盾卫士">
+                <p>萨尔纳加光盾卫士</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Recommended to have a few in your army to replenish shields to prevent unnecessary losses, especially considering each unit is expensive.</li>
-                <li>Reflection shield only works on projectiles (e.g. Stalker attacks) and not Hitscan (e.g. Marine attacks) shots.</li>
+                <li>建议部队中配备少量光盾卫士来补充护盾、避免不必要的损失，尤其是考虑到每个单位都十分昂贵。</li>
+                <li>反射护盾只对投射物（例如追猎者的攻击）生效，对即时命中攻击（例如陆战队员的攻击）无效。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="unlockable autocast">
-                        <td><img src="/images/commanderdata/unitskills/zeratul/shieldrecharge.png" alt="Shield Recharge"></td>
-                        <td>Shield Recharge</td>
-                        <td>Recharges the shields of a friendly Protoss unit.<br><br>Restores 4 shields per 1 energy.</td>
-                        <td>0 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/zeratul/shieldrecharge.png" alt="护盾充能"></td>
+                        <td>护盾充能</td>
+                        <td>为一个友方星灵单位恢复护盾。<br><br>每消耗 1 点能量恢复 4 点护盾。</td>
+                        <td>0 秒</td>
                         <td>0</td>
                     </tr>
                     <tr class="unlockable">
-                        <td><img src="/images/commanderdata/unitskills/zeratul/reflectionshield.png" alt="Reflection Shield"></td>
-                        <td>Reflection Shield</td>
-                        <td>Creates an aura that reflects 50% of all projectiles back to enemy attackers. Lasts 15 seconds. Can be set to Autocast.</td>
-                        <td>180 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/zeratul/reflectionshield.png" alt="反射护盾"></td>
+                        <td>反射护盾</td>
+                        <td>生成一道光环，将 50% 的所有投射物反弹给敌方攻击者，持续 15 秒。可设为自动施放。</td>
+                        <td>180 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th>Fragments Required</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th>所需碎片</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zeratul/shieldrecharge.png" alt="Shield Recharge"></td>
-                        <td>Shield Recharge</td>
-                        <td>Allows this unit to recharge the shields of a friendly Protoss unit.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zeratul/shieldrecharge.png" alt="护盾充能"></td>
+                        <td>护盾充能</td>
+                        <td>使该单位可为一个友方星灵单位恢复护盾。</td>
                         <td>1</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zeratul/eclipseprotocol.png" alt="Eclipse Protocol"></td>
-                        <td>Eclipse Protocol</td>
-                        <td>Increases the energy regeneration of this unit by 100%.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zeratul/eclipseprotocol.png" alt="日蚀协议"></td>
+                        <td>日蚀协议</td>
+                        <td>该单位的能量恢复速度提高 100%。</td>
                         <td>2</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zeratul/reflectionshield.png" alt="Reflection Shield"></td>
-                        <td>Reflection Shield</td>
-                        <td>Allows this unit to create an aura that reflects 50% of all projectiles back to enemy attackers.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zeratul/reflectionshield.png" alt="反射护盾"></td>
+                        <td>反射护盾</td>
+                        <td>使该单位可生成一道光环，将 50% 的所有投射物反弹给敌方攻击者。</td>
                         <td>3</td>
                     </tr>
                 </tbody>
@@ -1314,64 +1314,64 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#zeratul/voidtemplar">
-                <img src="/images/commanderdata/units/zeratul/voidtemplar.jpg" alt="Void Templar">
-                <p>Void Templar</p>
+                <img src="/images/commanderdata/units/zeratul/voidtemplar.jpg" alt="虚空圣堂武士">
+                <p>虚空圣堂武士</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Does great anti-ground DPS.</li>
-                <li>Can take a lot of damage and should be backed up with Shieldguards.</li>
-                <li>Void Fury provides a significant powerspike due to high burst-damage capabilities.</li>
+                <li>对地持续伤害极高。</li>
+                <li>能够承受大量伤害，应由光盾卫士提供支援。</li>
+                <li>虚空之怒带来很高的爆发伤害，使其强度显著提升。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="unlockable">
-                        <td><img src="/images/commanderdata/unitskills/zeratul/dtblink.png" alt="Blink"></td>
-                        <td>Blink</td>
-                        <td>Allows the Void Templar to teleport to a nearby target location.</td>
-                        <td>8 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/zeratul/dtblink.png" alt="闪现"></td>
+                        <td>闪现</td>
+                        <td>使虚空圣堂武士可传送至附近目标位置。</td>
+                        <td>8 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th>Fragments Required</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th>所需碎片</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zeratul/dtblink.png" alt="Blink"></td>
-                        <td>Blink</td>
-                        <td>Allows this unit to teleport to a nearby target location.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zeratul/dtblink.png" alt="闪现"></td>
+                        <td>闪现</td>
+                        <td>使该单位可传送至附近目标位置。</td>
                         <td>1</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zeratul/voidfury.png" alt="Void Fury"></td>
-                        <td>Void Fury</td>
-                        <td>When this unit Blinks, it will deal 50 damage to units caught in its path.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zeratul/voidfury.png" alt="虚空之怒"></td>
+                        <td>虚空之怒</td>
+                        <td>该单位使用闪现时，对路径上的单位造成 50 点伤害。</td>
                         <td>2</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zeratul/backtotheshadows.png" alt="Back to the Shadows"></td>
-                        <td>Back to the Shadows</td>
-                        <td>When this unit takes fatal damage, it retreats to the Void and regenerates its health and shields over 10 seconds. Cannot occur more than once every 180 seconds.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zeratul/backtotheshadows.png" alt="遁入暗影"></td>
+                        <td>遁入暗影</td>
+                        <td>该单位受到致命伤害时会撤入虚空，并在 10 秒内恢复生命值和护盾。每 180 秒最多触发一次。</td>
                         <td>3</td>
                     </tr>
                 </tbody>
@@ -1381,64 +1381,64 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#zeratul/xelnagaenforcer">
-                <img src="/images/commanderdata/units/zeratul/xelnagaenforcer.jpg" alt="Xel'Naga Enforcer">
-                <p>Xel'Naga Enforcer</p>
+                <img src="/images/commanderdata/units/zeratul/xelnagaenforcer.jpg" alt="萨尔纳加执行者">
+                <p>萨尔纳加执行者</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Does very high anti-air DPS.</li>
-                <li>Not as good as regular immortals for anti-ground, due to higher costs, and slightly reduced range.</li>
-                <li>Massing them is viable, but not efficient, because their shots are projectiles, leading to a lot of potential overkill on targets and wasted shots.</li>
+                <li>对空持续伤害极高。</li>
+                <li>由于消耗更高、射程略短，对地能力不如普通不朽者。</li>
+                <li>可以大量生产，但效率不高，因为攻击属于投射物，容易对目标造成过量伤害并浪费火力。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="unlockable autocast">
-                        <td><img src="/images/commanderdata/unitskills/zeratul/barrier.png" alt="Barrier"></td>
-                        <td>Barrier</td>
-                        <td>Absorbs up to 100 damage. Lasts for 10 seconds.</td>
-                        <td>60 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/zeratul/barrier.png" alt="屏障"></td>
+                        <td>屏障</td>
+                        <td>吸收最多 100 点伤害，持续 10 秒。</td>
+                        <td>60 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th>Fragments Required</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th>所需碎片</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zeratul/barrier.png" alt="Barrier"></td>
-                        <td>Barrier</td>
-                        <td>Allows this unit to absorb 100 damage. Lasts for 10 seconds.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zeratul/barrier.png" alt="屏障"></td>
+                        <td>屏障</td>
+                        <td>使该单位可吸收 100 点伤害，持续 10 秒。</td>
                         <td>1</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zeratul/forcecannon.png" alt="Force Cannon"></td>
-                        <td>Force Cannon</td>
-                        <td>Allows this unit's anti-air weapon to knock back enemy air units, dealing 25% of its damage to units caught in the path of the blast.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zeratul/forcecannon.png" alt="力场光炮"></td>
+                        <td>力场光炮</td>
+                        <td>使该单位的对空武器可击退敌方空中单位，并对冲击路径上的单位造成相当于该次攻击 25% 的伤害。</td>
                         <td>2</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zeratul/enternitybarrier.png" alt="Eternity Barrier"></td>
-                        <td>Eternity Barrier</td>
-                        <td>Increases the damage absorption of the Xel'Naga Enforcer's Barrier by 300% and fully repairs its hull damage.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zeratul/enternitybarrier.png" alt="永恒屏障"></td>
+                        <td>永恒屏障</td>
+                        <td>萨尔纳加执行者的屏障吸收伤害提高 300%，并完全修复其躯体损伤。</td>
                         <td>3</td>
                     </tr>
                 </tbody>
@@ -1448,58 +1448,58 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#zeratul/xelnagaabrogator">
-                <img src="/images/commanderdata/units/zeratul/xelnagaabrogator.jpg" alt="Xel'Naga Abrogator">
-                <p>Xel'Naga Abrogator</p>
+                <img src="/images/commanderdata/units/zeratul/xelnagaabrogator.jpg" alt="萨尔纳加禁绝者">
+                <p>萨尔纳加禁绝者</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Great unit for dealing with <a href="/guides/enemycomps">Enemy Compositions</a> with numerous, low-HP units like Swarmy Zerg or against Infested units.</li>
-                <li>Very good defensive unit for Infested maps.</li>
-                <li>Relatively ineffective when massed due to overkills.</li>
+                <li>非常适合对付虫群异虫等拥有大量低生命值单位的<a href="/guides/enemycomps">敌方兵种组合</a>，或用于对抗感染单位。</li>
+                <li>在感染主题地图上是极好的防守单位。</li>
+                <li>大量生产时容易造成过量伤害，效率相对较低。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/unitskills/zeratul/purificationnova.png" alt="Purification Nova"></td>
-                        <td>Purification Nova</td>
-                        <td>Shoots out a ball of energy that detonates 3 seconds or on contact with an enemy unit, dealing 100 splash damage to nearby ground units and structures. The Xel'Naga Abrogator is immobile while this is active.</td>
-                        <td>12 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/zeratul/purificationnova.png" alt="净化新星"></td>
+                        <td>净化新星</td>
+                        <td>射出一枚能量球，在 3 秒后或接触敌方单位时引爆，对附近地面单位和建筑造成 100 点溅射伤害。技能生效期间，萨尔纳加禁绝者无法移动。</td>
+                        <td>12 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th>Fragments Required</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th>所需碎片</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zeratul/novabattery.png" alt="Nova Battery"></td>
-                        <td>Nova Battery</td>
-                        <td>Reduces the cooldown of Purification Nova by 50%.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zeratul/novabattery.png" alt="新星电池"></td>
+                        <td>新星电池</td>
+                        <td>净化新星的冷却时间缩短 50%。</td>
                         <td>2</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zeratul/clusternova.png" alt="Cluster Nova"></td>
-                        <td>Cluster Nova</td>
-                        <td>When a Purification Nova explodes, it generates three smaller Novas that deal 50 damage each to enemy units in their path.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zeratul/clusternova.png" alt="集束新星"></td>
+                        <td>集束新星</td>
+                        <td>净化新星爆炸时会生成三枚小型新星，每枚对路径上的敌方单位造成 50 点伤害。</td>
                         <td>3</td>
                     </tr>
                 </tbody>
@@ -1509,128 +1509,128 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#zeratul/xelnagavoidarray">
-                <img src="/images/commanderdata/units/zeratul/xelnagavoidarray.jpg" alt="Xel'Naga Void Array">
-                <p>Xel'Naga Void Array</p>
+                <img src="/images/commanderdata/units/zeratul/xelnagavoidarray.jpg" alt="萨尔纳加虚空阵列船">
+                <p>萨尔纳加虚空阵列船</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>A must-have in Zeratul's army to allow for great mobility around the map.</li>
-                <li>Can be used to quickly reinforce units on the battlefield.</li>
+                <li>泽拉图部队的必备单位，可提供极强的全图机动能力。</li>
+                <li>可用于快速向战场增援单位。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades:</p>
+            <p>技能：无</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th>Fragments Required</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th>所需碎片</th>
                     </tr>
                 </thead>
                 <tbody>
 
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zeratul/infinitevoid.png" alt="Infinite Void"></td>
-                        <td>Infinite Void</td>
-                        <td>Grants the Xel'Naga Void Array unlimited capacity.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zeratul/infinitevoid.png" alt="无限虚空"></td>
+                        <td>无限虚空</td>
+                        <td>使萨尔纳加虚空阵列船获得无限装载容量。</td>
                         <td>2</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zeratul/shieldboosters.png" alt="Shield Boosters"></td>
-                        <td>Shield Boosters</td>
-                        <td>Nearby units regenerate an additional 2 shields per second.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zeratul/shieldboosters.png" alt="护盾增幅器"></td>
+                        <td>护盾增幅器</td>
+                        <td>附近单位每秒额外恢复 2 点护盾。</td>
                         <td>3</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-    <h2 id="buildOrder">Build Order</h2>
-    <p>Below is the standard economic build order for Zeratul (assumes max points in Legion Cost Reduction). For more information on how to read and construct your own build orders, please check the <a href="/guides/buildordertheory">Build Order Theory</a> page.</p>
+    <h2 id="buildOrder">建造顺序</h2>
+    <p>以下是泽拉图的标准经济建造顺序（假定军团消耗降低已投入全部点数）。如需了解如何阅读并制定自己的建造顺序，请参阅<a href="/guides/buildordertheory">建造顺序理论</a>页面。</p>
     <p class="buildOrder">
-        18 Probe -> Expo<br>
-        19 Zoraya Legion<br>
-        21 Nexus
+        18 探机 -> 分矿<br>
+        19 佐拉亚军团<br>
+        21 星灵枢纽
     </p>
-    <h2 id="guide">Gameplay Guide</h2>
-    <h3>Playstyle Traps</h3>
-    <p>None.</p>
-    <h3 id="fastexpand">Legion Expands</h3>
-    <p>One of the advantages of Zeratul is his access to powerful Legion calldowns which can be used to not only clear expansion rocks, but also clear contested expansions and sometimes even clear their ally's expansion too. The table below explains how to maximize utilization of your first Legion calldown.. Note that for some missions (like <a href="/missions/oblivionexpress">Oblivion Express</a>), the Legion expand is simple because clearing both expansions is easy and therefore, no details will be provided.</p>
+    <h2 id="guide">玩法攻略</h2>
+    <h3>玩法误区</h3>
+    <p>无。</p>
+    <h3 id="fastexpand">军团速开分矿</h3>
+    <p>泽拉图的一项优势是拥有强大的军团面板技能，不仅能清理分矿岩石，还能清除有敌军驻守的分矿，有时甚至能连盟友的分矿一起清掉。下表说明如何最大限度利用第一次军团召唤。对于某些任务（例如<a href="/missions/oblivionexpress">湮灭快车</a>），由于清理双方分矿十分简单，因此不再提供详细说明。</p>
     <table id="fastExpand">
         <thead>
             <tr>
-                <th>Map</th>
-                <th>Legion Expand</th>
+                <th>地图</th>
+                <th>军团开矿方法</th>
             </tr>
         </thead>
 
         <tbody>
             <tr>
-                <td><a href="/missions/chainofascension">Chain of Ascension</a></td>
-                <td>Clear your expansion and direct the Legion towards the nearest enemy camp.</td>
+                <td><a href="/missions/chainofascension">飞升之链</a></td>
+                <td>清理自己的分矿，并将军团引向最近的敌军营地。</td>
             </tr>
             <tr>
-                <td><a href="/missions/cradleofdeath">Cradle of Death</a></td>
-                <td>This expand is incredibly difficult and will require a lot of practice.<br><br>
-                    Step 1:<br>
-                    <img src="/images/commanderdata/guides/zeratul/legionexpand_cod1.jpg" alt="Cradle of Death Legion Expand Step 1"><br><br>
-                    Step 2:<br>
-                    <img src="/images/commanderdata/guides/zeratul/legionexpand_cod2.jpg" alt="Cradle of Death Legion Expand Step 2"><br><br>
-                    Notes:
+                <td><a href="/missions/cradleofdeath">死亡摇篮</a></td>
+                <td>这种开矿方法难度极高，需要大量练习。<br><br>
+                    步骤 1：<br>
+                    <img src="/images/commanderdata/guides/zeratul/legionexpand_cod1.jpg" alt="死亡摇篮军团速开分矿步骤 1"><br><br>
+                    步骤 2：<br>
+                    <img src="/images/commanderdata/guides/zeratul/legionexpand_cod2.jpg" alt="死亡摇篮军团速开分矿步骤 2"><br><br>
+                    注意：
                     <ul>
-                        <li>Move your truck to the first Beacon as soon as the Construct dies to prevent losing your truck.</li>
-                        <li>The second truck can move to the remaining beacon and simply ignore the remaining defenders.</li>
+                        <li>构造体死亡后立即把运输车移向第一座信标，以免损失运输车。</li>
+                        <li>第二辆运输车可以直接驶向剩余信标，无视残余守军。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/deadofnight">Dead of Night</a></td>
-                <td>No expansion available.</td>
+                <td><a href="/missions/deadofnight">亡者之夜</a></td>
+                <td>没有可用分矿。</td>
             </tr>
             <tr>
-                <td><a href="/missions/lockload">Lock & Load</a></td>
-                <td>You can fully clear both expansion with one Zoraya Legion calldown shown below:<br><img src="/images/commanderdata/guides/zeratul/legionexpand_ll.jpg" alt="Lock & Load Legion Expand"></td>
+                <td><a href="/missions/lockload">天锁</a></td>
+                <td>按下图召唤一次佐拉亚军团，即可彻底清理双方分矿：<br><img src="/images/commanderdata/guides/zeratul/legionexpand_ll.jpg" alt="天锁军团速开分矿"></td>
             </tr>
             <tr>
-                <td><a href="/missions/malwarfare">Malwarfare</a></td>
-                <td>Clearing both expansions is difficult because units that cannot hit air will run away from the Zoraya Legion. You may improve the effectiveness of your Legion by luring enemy units with your Probe into the Legion.<br><br>
-                    Be careful with enemy Zerg compositions. When structures are destroyed, they will spawn broodlings that can kill your Probe.</td>
+                <td><a href="/missions/malwarfare">恶意代码</a></td>
+                <td>无法对空的单位会逃离佐拉亚军团，因此很难清理双方分矿。可以用探机把敌军引向军团，提高军团效率。<br><br>
+                    面对异虫兵种组合时务必小心。建筑被摧毁后会生成幼虫，可能杀死你的探机。</td>
             </tr>
             <tr>
-                <td><a href="/missions/minerevacuation">Miner Evacuation</a></td>
-                <td>This expand is incredibly difficult and will require a lot of practice.<br><br>
-                    Step 1: Make your way to Evacuation Ship #4 in the top-left of the map.<br>
-                    <img src="/images/commanderdata/guides/zeratul/legionexpand_me1.jpg" alt="Miner Evacuation Legion Expand Step 1"><br>Note: If the Evacuation Ship to the right of the expansion area is destroyed (beacon not present), you may go around the entire expansion area and avoid any threat inside it.<br><br>
-                    Step 2: Drop a Serdath Legion in that area. This causes Infested Banshees to unburrow and get Mind Controlled.<br>
-                    <img src="/images/commanderdata/guides/zeratul/legionexpand_me2.jpg" alt="Miner Evacuation Legion Expand Step 2"><br><br>
-                    Step 3: Use these Banshees to clear the Expansion. Make sure you do not lose any. There are many Infested Marines present in that area.
-                    Notes:
+                <td><a href="/missions/minerevacuation">疏散矿工</a></td>
+                <td>这种开矿方法难度极高，需要大量练习。<br><br>
+                    步骤 1：前往地图左上角的 4 号疏散飞船。<br>
+                    <img src="/images/commanderdata/guides/zeratul/legionexpand_me1.jpg" alt="疏散矿工军团速开分矿步骤 1"><br>注意：如果分矿区域右侧的疏散飞船已被摧毁（信标不存在），可以绕过整个分矿区域，避开其中的所有威胁。<br><br>
+                    步骤 2：在该区域部署塞达斯军团，使感染女妖钻出地面并受到精神控制。<br>
+                    <img src="/images/commanderdata/guides/zeratul/legionexpand_me2.jpg" alt="疏散矿工军团速开分矿步骤 2"><br><br>
+                    步骤 3：用这些女妖清理分矿。确保一架都不要损失，该区域内有许多被感染的陆战队员。
+                    注意：
                     <ul>
-                        <li>Your Probe will take 2 hits from Infested Marauders (it dies on the third hit).</li>
-                        <li>As soon as you summon the Legion, move your probe away towards the expansion so it does not die to Infested.</li>
-                        <li>You can Burrow Infested Banshees to get them to quickly regenerate HP.</li>
+                        <li>探机能承受被感染的劫掠者 2 次攻击（第三次会死亡）。</li>
+                        <li>召唤军团后立即将探机移向分矿，以免被感染单位杀死。</li>
+                        <li>可以让感染女妖潜地，使其快速恢复生命值。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/mistopportunities">Mist Opportunities</a></td>
-                <td>Due to the large distance between expansions, it is not possible to clear both expansions before the Legion's timer runs out.</td>
+                <td><a href="/missions/mistopportunities">机会渺茫</a></td>
+                <td>双方分矿距离太远，无法在军团持续时间结束前全部清理。</td>
             </tr>
             <tr>
-                <td><a href="/missions/oblivionexpress">Oblivion Express</a></td>
-                <td>Simple expand because the expansions are next to each other.</td>
+                <td><a href="/missions/oblivionexpress">湮灭快车</a></td>
+                <td>双方分矿彼此相邻，因此开矿很简单。</td>
             </tr>
             <tr>
-                <td><a href="/missions/partparcel">Part & Parcel</a></td>
-                <td>The pathing for the fast-expand is race-dependent (similar to <a href="/commanders/alarak">Alarak's</a> fast expand).<br>
+                <td><a href="/missions/partparcel">聚铁成兵</a></td>
+                <td>速开分矿的行进路线取决于敌方种族（与<a href="/commanders/alarak">阿拉纳克</a>的速开方法类似）。<br>
                     <form action='#'>
-                        <label><input type='radio' name='pp' value='protoss' checked>Protoss</label><br>
-                        <label><input type='radio' name='pp' value='terran'>Terran</label><br>
-                        <label><input type='radio' name='pp' value='zerg'>Zerg</label><br></form>
-                    <div class="fastExpand" id="ppdiv"><img id="pp" src="/images/commanderdata/guides/zeratul/legionexpand_pp_protoss.jpg" alt="Zeratul Legion Expand on Part & Parcel"></div>
+                        <label><input type='radio' name='pp' value='protoss' checked>星灵</label><br>
+                        <label><input type='radio' name='pp' value='terran'>人类</label><br>
+                        <label><input type='radio' name='pp' value='zerg'>异虫</label><br></form>
+                    <div class="fastExpand" id="ppdiv"><img id="pp" src="/images/commanderdata/guides/zeratul/legionexpand_pp_protoss.jpg" alt="泽拉图在聚铁成兵的军团速开分矿"></div>
 
                     <script>
                         var imgList=[];
@@ -1656,54 +1656,54 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/riftstokorhal">Rifts to Korhal</a></td>
-                <td>It is generally really difficult to deal with the first attack wave with the Legion used to clear the expansion.<br><br>Zoraya Legion takes approximately 25 seconds to clear the Expansion rocks. Additionally, the Legion takes roughly 25 seconds to reach the main ramp, allowing for only 10 seconds of attacking the first wave.<br><br>Arrival of the initial attack wave at the top of the main ramp depends on the composition of the attack wave and can range from anywhere between 2:35 to 2:55. Therefore, it is better to use the Legion to defend against the first wave, then use whatever time is left to start clearing the rocks. The remaining rocks can be cleared with a few units.
+                <td><a href="/missions/riftstokorhal">克哈裂痕</a></td>
+                <td>通常很难用清理分矿的军团同时应付第一波进攻。<br><br>佐拉亚军团清理分矿岩石约需 25 秒，再抵达主基地坡口约需 25 秒，因此只剩 10 秒攻击第一波敌军。<br><br>第一波敌军抵达主坡顶端的时间取决于兵种组合，范围为 2:35 至 2:55。因此，最好先用军团防守第一波进攻，再利用剩余时间开始清理岩石；剩余岩石可用少量单位解决。
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/scytheofamon">Scythe of Amon</a></td>
-                <td><img src="/images/commanderdata/guides/zeratul/legionexpand_soa.jpg" alt="Scythe of Amon Legion Expand"></td>
+                <td><a href="/missions/scytheofamon">埃蒙之镰</a></td>
+                <td><img src="/images/commanderdata/guides/zeratul/legionexpand_soa.jpg" alt="埃蒙之镰军团速开分矿"></td>
             </tr>
             <tr>
-                <td><a href="/missions/templeofthepast">Temple of the Past</a></td>
-                <td>Timing for this is really tight. The Legion will die when they have 0.1 seconds left on the timer.<br><br>
-                    Step 1: Target the Zoraya Legion as shown below.<br>
-                    <img src="/images/commanderdata/guides/zeratul/legionexpand_totp1.jpg" alt="Temple of the Past Legion Expand Step 1"><br><br>
-                    It should look like below:<br>
-                    <img src="/images/commanderdata/guides/zeratul/legionexpand_totp2.jpg" alt="Temple of the Past Legion Expand Path"><br><br>
-                    Step 2: As soon as the Void Rays start attacking the rocks, place the pathing marker up to the gas rocks.<br>
-                    <img src="/images/commanderdata/guides/zeratul/legionexpand_totp3.jpg" alt="Temple of the Past Legion Expand Step 2"><br><br>
-                    If done correctly, one Void Ray will move to attack the top gas rock when the main rock break, while the rest of the Legion attack the lower gas rock.<br><br>
-                    Step 3: As soon as the single Void Ray starts attacking the top gas rock, move the pathing marker down to your ally's lower gas rock. Use the minimap to do so. You may fine-tune the positioning once they start moving shown below.<br>
-                    <img src="/images/commanderdata/guides/zeratul/legionexpand_totp4.jpg" alt="Temple of the Past Legion Expand Step 3">
+                <td><a href="/missions/templeofthepast">往日神庙</a></td>
+                <td>这里的时间非常紧。军团会在计时仅剩 0.1 秒时死亡。<br><br>
+                    步骤 1：按下图指定佐拉亚军团的目标。<br>
+                    <img src="/images/commanderdata/guides/zeratul/legionexpand_totp1.jpg" alt="往日神庙军团速开分矿步骤 1"><br><br>
+                    路线应如下图所示：<br>
+                    <img src="/images/commanderdata/guides/zeratul/legionexpand_totp2.jpg" alt="往日神庙军团速开分矿路线"><br><br>
+                    步骤 2：虚空辉光舰开始攻击岩石后，立即将行进标记放到上方的气矿岩石处。<br>
+                    <img src="/images/commanderdata/guides/zeratul/legionexpand_totp3.jpg" alt="往日神庙军团速开分矿步骤 2"><br><br>
+                    操作正确时，主岩石破碎后会有一架虚空辉光舰转去攻击上方气矿岩石，其余军团则攻击下方气矿岩石。<br><br>
+                    步骤 3：单独的虚空辉光舰开始攻击上方气矿岩石后，立即通过小地图将行进标记移到盟友下方的气矿岩石处。它们开始移动后，可按下图微调位置。<br>
+                    <img src="/images/commanderdata/guides/zeratul/legionexpand_totp4.jpg" alt="往日神庙军团速开分矿步骤 3">
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/thevermillionproblem">The Vermillion Problem</a></td>
-                <td>It is not possible to clear both, your and your ally's expansion with one Zoraya Legion.<br><br>
-                    Make sure you access the expansion from either the East or the South ramp, rather than the Northern ramp to avoid the defenders there.
+                <td><a href="/missions/thevermillionproblem">熔火危机</a></td>
+                <td>一次佐拉亚军团无法同时清理你和盟友的分矿。<br><br>
+                    务必从东侧或南侧坡道进入分矿，不要走北侧坡道，以避开那里的守军。
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/voidlaunch">Void Launch</a></td>
-                <td>Due to the large distance between expansions, it is not possible to clear both expansions before the Legion's timer runs out.</td>
+                <td><a href="/missions/voidlaunch">虚空降临</a></td>
+                <td>双方分矿距离太远，无法在军团持续时间结束前全部清理。</td>
             </tr>
             <tr>
-                <td><a href="/missions/voidthrashing">Void Thrashing</a></td>
-                <td>Due to the large distance between expansions, it is not possible to clear both expansions before the Legion's timer runs out.</td>
+                <td><a href="/missions/voidthrashing">虚空撕裂</a></td>
+                <td>双方分矿距离太远，无法在军团持续时间结束前全部清理。</td>
             </tr>
         </tbody>
     </table>
-    <h3 id="artifact">Artifact Spawn Locations</h3>
-    <p>A key part of Zeratul gameplay is finding Artifact Fragments. These fragments directly correspond to the power level of your units and therefore, it is critical to get them as fast as possible. Assuming Artifact fragments are found as quickly as possible, Prophetic Vision incurs a 3-minute cooldown (assuming no masteries are added).</p>
-    <p>If an artifact is not found within a certain amount of time, the minimap will be pinged and a circle displaying the rough area to look shown to the player. Each hint makes the search radius smaller, making it easier for the player to find the artifact fragment. The hint timings are shown below and are also affected by the Zeratul Artifact Spawn mastery:</p>
+    <h3 id="artifact">神器刷新位置</h3>
+    <p>寻找神器碎片是泽拉图玩法的核心。碎片直接决定单位的强度，因此必须尽快取得。假定每块神器碎片都能立即找到，先知视野会进入 3 分钟冷却（未投入精通点数）。</p>
+    <p>如果在一定时间内没有找到神器，小地图会发出提示，并向玩家显示一个圆圈，标出大致搜索区域。每次提示都会缩小搜索半径，让玩家更容易找到神器碎片。提示时间如下，并且也受泽拉图的神器刷新精通影响：</p>
     <table>
         <thead>
             <tr>
-                <th>Fragment</th>
-                <th>Hint 1 (Radius 35)</th>
-                <th>Hint 2 (Radius 25)</th>
-                <th>Hint 3 (Radius 15)</th>
+                <th>碎片</th>
+                <th>提示 1（半径 35）</th>
+                <th>提示 2（半径 25）</th>
+                <th>提示 3（半径 15）</th>
             </tr>
         </thead>
         <tbody>
@@ -1727,21 +1727,21 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
         </tbody>
     </table>
-    <p>Artifacts spawn within a certain distance away from either the Zeratul Artifact Container, or the mid-point of both player bases. There are many limitations as to where the artifact can spawn, from maximum walking distance and the total health of enemy units nearby. This technical data is listed below. A more visual guide is shown in the subsequent table.</p>
-    <p>To allow the table to fit, the column headers are referred as variable names instead as follows:</p>
+    <p>神器会在距离泽拉图神器容器或双方玩家基地中点一定范围内刷新。神器刷新位置受到许多限制，包括最大步行距离以及附近敌方单位的生命值总和。相关技术数据列于下表，后续表格还提供了更直观的图示。</p>
+    <p>为使表格能够完整显示，各列标题改用以下变量名：</p>
     <ul>
-        <li><b>Rmin:</b> Minimum Spawning Distance away from the center.</li>
-        <li><b>Rmax:</b> Maximum Spawning Distance away from the center.</li>
-        <li><b>Wmax:</b> Maximum Walking Distance to Artifact Spawn Point away from the center. A maximum walking distance of 0 means there is no limit to the pathing length. You will see this value used on more open maps.</li>
-        <li><b>HPmax:</b> Maximum total HP of enemy units within 10 range of the Artifact spawn location</li>
+        <li><b>Rmin：</b>距中心的最小刷新距离。</li>
+        <li><b>Rmax：</b>距中心的最大刷新距离。</li>
+        <li><b>Wmax：</b>从中心步行至神器刷新点的最大距离。最大步行距离为 0 表示路径长度不受限制，这一数值常见于较开阔的地图。</li>
+        <li><b>HPmax：</b>神器刷新位置周围 10 射程内敌方单位的最大生命值总和</li>
     </ul>
     <div class="tableContainer">
         <table class="centered">
                 <tr>
-                    <th rowspan="2">Map</th>
-                    <th colspan="4">Fragment 1</th>
-                    <th colspan="4">Fragment 2</th>
-                    <th colspan="4">Fragment 3</th>
+                    <th rowspan="2">地图</th>
+                    <th colspan="4">碎片 1</th>
+                    <th colspan="4">碎片 2</th>
+                    <th colspan="4">碎片 3</th>
                 </tr>
                 <tr>
                     <th>Rmin</th>
@@ -1759,7 +1759,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                 </tr>
                 <tbody>
                     <tr>
-                        <td><a href="/missions/chainofascension">Chain of Ascension</a></td>
+                        <td><a href="/missions/chainofascension">飞升之链</a></td>
                         <td>30</td>
                         <td>50</td>
                         <td>0</td>
@@ -1774,7 +1774,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                         <td>1000</td>
                     </tr>
                     <tr>
-                        <td><a href="/missions/cradleofdeath">Cradle of Death</a></td>
+                        <td><a href="/missions/cradleofdeath">死亡摇篮</a></td>
                         <td>20</td>
                         <td>40</td>
                         <td>50</td>
@@ -1789,7 +1789,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                         <td>1000</td>
                     </tr>
                     <tr>
-                        <td><a href="/missions/deadofnight">Dead of Night</a></td>
+                        <td><a href="/missions/deadofnight">亡者之夜</a></td>
                         <td>30</td>
                         <td>100</td>
                         <td>60</td>
@@ -1804,7 +1804,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                         <td>1000</td>
                     </tr>
                     <tr>
-                        <td><a href="/missions/lockload">Lock & Load</a></td>
+                        <td><a href="/missions/lockload">天锁</a></td>
                         <td>30</td>
                         <td>50</td>
                         <td>0</td>
@@ -1819,7 +1819,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                         <td>1000</td>
                     </tr>
                     <tr>
-                        <td><a href="/missions/malwarfare">Malwarfare</a></td>
+                        <td><a href="/missions/malwarfare">恶意代码</a></td>
                         <td>30</td>
                         <td>50</td>
                         <td>0</td>
@@ -1834,7 +1834,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                         <td>1000</td>
                     </tr>
                     <tr>
-                        <td><a href="/missions/minerevacuation">Miner Evacuation</a></td>
+                        <td><a href="/missions/minerevacuation">疏散矿工</a></td>
                         <td>25</td>
                         <td>40</td>
                         <td>0</td>
@@ -1849,7 +1849,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                         <td>1000</td>
                     </tr>
                     <tr>
-                        <td><a href="/missions/mistopportunities">Mist Opportunities</a></td>
+                        <td><a href="/missions/mistopportunities">机会渺茫</a></td>
                         <td>30</td>
                         <td>50</td>
                         <td>0</td>
@@ -1864,7 +1864,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                         <td>1000</td>
                     </tr>
                     <tr>
-                        <td><a href="/missions/oblivionexpress">Oblivion Express</a></td>
+                        <td><a href="/missions/oblivionexpress">湮灭快车</a></td>
                         <td>20</td>
                         <td>40</td>
                         <td>60</td>
@@ -1879,7 +1879,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                         <td>1000</td>
                     </tr>
                     <tr>
-                        <td><a href="/missions/partparcel">Part & Parcel</a></td>
+                        <td><a href="/missions/partparcel">聚铁成兵</a></td>
                         <td>30</td>
                         <td>50</td>
                         <td>0</td>
@@ -1894,7 +1894,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                         <td>1000</td>
                     </tr>
                     <tr>
-                        <td><a href="/missions/riftstokorhal">Rifts to Korhal</a></td>
+                        <td><a href="/missions/riftstokorhal">克哈裂痕</a></td>
                         <td>30</td>
                         <td>50</td>
                         <td>0</td>
@@ -1909,7 +1909,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                         <td>1000</td>
                     </tr>
                     <tr>
-                        <td><a href="/missions/scytheofamon">Scythe of Amon</a></td>
+                        <td><a href="/missions/scytheofamon">埃蒙之镰</a></td>
                         <td>30</td>
                         <td>50</td>
                         <td>0</td>
@@ -1924,7 +1924,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                         <td>1000</td>
                     </tr>
                     <tr>
-                        <td><a href="/missions/templeofthepast">Temple of the Past</a></td>
+                        <td><a href="/missions/templeofthepast">往日神庙</a></td>
                         <td>30</td>
                         <td>50</td>
                         <td>0</td>
@@ -1939,7 +1939,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td><a href="/missions/thevermillionproblem">The Vermillion Problem</a></td>
+                        <td><a href="/missions/thevermillionproblem">熔火危机</a></td>
                         <td>20</td>
                         <td>40</td>
                         <td>0</td>
@@ -1954,7 +1954,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                         <td>1000</td>
                     </tr>
                     <tr>
-                        <td><a href="/missions/voidlaunch">Void Launch</a></td>
+                        <td><a href="/missions/voidlaunch">虚空降临</a></td>
                         <td>30</td>
                         <td>50</td>
                         <td>0</td>
@@ -1969,7 +1969,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                         <td>1000</td>
                     </tr>
                     <tr>
-                        <td><a href="/missions/voidthrashing">Void Thrashing</a></td>
+                        <td><a href="/missions/voidthrashing">虚空撕裂</a></td>
                         <td>30</td>
                         <td>50</td>
                         <td>0</td>
@@ -1986,114 +1986,114 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                 </tbody>
         </table>
     </div>
-    <p>A more visual guide for the Artifact Spawn locations is shown below, with green, yellow and red areas denoting the spawn locations of the first, second and third artifacts. Note that because these locations are dependent on the nearby HP's of enemies, there will be some variance with different races, and if you have previously pushed into those locations.</p>
+    <p>下面提供更直观的神器刷新位置指南，绿色、黄色和红色区域分别表示第一、第二和第三件神器的刷新位置。请注意，这些位置取决于附近敌人的生命值，因此面对不同种族，或此前已经推进过相应区域时，结果会略有差异。</p>
     <table class="centered">
             <tr>
-                <th>Map</th>
-                <th>Artifact Spawn Locations</th>
+                <th>地图</th>
+                <th>神器刷新位置</th>
             </tr>
             <tbody>
                 <tr>
-                    <td><a href="/missions/chainofascension">Chain of Ascension</a></td>
-                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_coa.jpg" alt="Chain of Ascension Artifact Spawn Locations"></td>
+                    <td><a href="/missions/chainofascension">飞升之链</a></td>
+                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_coa.jpg" alt="飞升之链神器刷新位置"></td>
                 </tr>
                 <tr>
-                    <td><a href="/missions/cradleofdeath">Cradle of Death</a></td>
-                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_cod.jpg" alt="Cradle of Death Artifact Spawn Locations"></td>
+                    <td><a href="/missions/cradleofdeath">死亡摇篮</a></td>
+                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_cod.jpg" alt="死亡摇篮神器刷新位置"></td>
                 </tr>
                 <tr>
-                    <td><a href="/missions/deadofnight">Dead of Night</a></td>
-                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_don.jpg" alt="Dead of Night Artifact Spawn Locations"></td>
+                    <td><a href="/missions/deadofnight">亡者之夜</a></td>
+                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_don.jpg" alt="亡者之夜神器刷新位置"></td>
                 </tr>
                 <tr>
-                    <td><a href="/missions/lockload">Lock & Load</a></td>
-                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_ll.jpg" alt="Lock & Load Artifact Spawn Locations"></td>
+                    <td><a href="/missions/lockload">天锁</a></td>
+                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_ll.jpg" alt="天锁神器刷新位置"></td>
                 </tr>
                 <tr>
-                    <td><a href="/missions/malwarfare">Malwarfare</a></td>
-                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_mw.jpg" alt="Malwarfare Artifact Spawn Locations"></td>
+                    <td><a href="/missions/malwarfare">恶意代码</a></td>
+                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_mw.jpg" alt="恶意代码神器刷新位置"></td>
                 </tr>
                 <tr>
-                    <td><a href="/missions/minerevacuation">Miner Evacuation</a></td>
-                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_me.jpg" alt="Miner Evacuation Artifact Spawn Locations"></td>
+                    <td><a href="/missions/minerevacuation">疏散矿工</a></td>
+                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_me.jpg" alt="疏散矿工神器刷新位置"></td>
                 </tr>
                 <tr>
-                    <td><a href="/missions/mistopportunities">Mist Opportunities</a></td>
-                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_mo.jpg" alt="Mist Opportunities Artifact Spawn Locations"></td>
+                    <td><a href="/missions/mistopportunities">机会渺茫</a></td>
+                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_mo.jpg" alt="机会渺茫神器刷新位置"></td>
                 </tr>
                 <tr>
-                    <td><a href="/missions/oblivionexpress">Oblivion Express</a></td>
-                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_oe.jpg" alt="Oblivion Express Artifact Spawn Locations"></td>
+                    <td><a href="/missions/oblivionexpress">湮灭快车</a></td>
+                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_oe.jpg" alt="湮灭快车神器刷新位置"></td>
                 </tr>
                 <tr>
-                    <td><a href="/missions/partparcel">Part & Parcel</a></td>
-                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_pp.jpg" alt="Part & Parcel Artifact Spawn Locations"></td>
+                    <td><a href="/missions/partparcel">聚铁成兵</a></td>
+                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_pp.jpg" alt="聚铁成兵神器刷新位置"></td>
                 </tr>
                 <tr>
-                    <td><a href="/missions/riftstokorhal">Rifts to Korhal</a></td>
-                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_rtk.jpg" alt="Rifts to Korhal Artifact Spawn Locations"></td>
+                    <td><a href="/missions/riftstokorhal">克哈裂痕</a></td>
+                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_rtk.jpg" alt="克哈裂痕神器刷新位置"></td>
                 </tr>
                 <tr>
-                    <td><a href="/missions/scytheofamon">Scythe of Amon</a></td>
-                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_soa.jpg" alt="Scythe of Amon Artifact Spawn Locations"></td>
+                    <td><a href="/missions/scytheofamon">埃蒙之镰</a></td>
+                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_soa.jpg" alt="埃蒙之镰神器刷新位置"></td>
                 </tr>
                 <tr>
-                    <td><a href="/missions/templeofthepast">Temple of the Past</a></td>
-                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_totp.jpg" alt="Temple of the Past Artifact Spawn Locations"></td>
+                    <td><a href="/missions/templeofthepast">往日神庙</a></td>
+                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_totp.jpg" alt="往日神庙神器刷新位置"></td>
                 </tr>
                 <tr>
-                    <td><a href="/missions/thevermillionproblem">The Vermillion Problem</a></td>
-                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_tvp.jpg" alt="The Vermillion Problem Artifact Spawn Locations"></td>
+                    <td><a href="/missions/thevermillionproblem">熔火危机</a></td>
+                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_tvp.jpg" alt="熔火危机神器刷新位置"></td>
                 </tr>
                 <tr>
-                    <td><a href="/missions/voidlaunch">Void Launch</a></td>
-                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_vl.jpg" alt="Void Launch Artifact Spawn Locations"></td>
+                    <td><a href="/missions/voidlaunch">虚空降临</a></td>
+                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_vl.jpg" alt="虚空降临神器刷新位置"></td>
                 </tr>
                 <tr>
-                    <td><a href="/missions/voidthrashing">Void Thrashing</a></td>
-                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_vt.jpg" alt="Void Thrashing Artifact Spawn Locations"></td>
+                    <td><a href="/missions/voidthrashing">虚空撕裂</a></td>
+                    <td><img src="/images/commanderdata/guides/zeratul/artifactspawn_vt.jpg" alt="虚空撕裂神器刷新位置"></td>
                 </tr>
             </tbody>
     </table>
-    <h3 id="artifacttrap">Artifact Trapping</h3>
-    <p>When Zeratul uses Prophetic Vision, the fragment can be trapped by placing buildings around its "spawn" point. The first fragment can't be trapped this way (it's spawned in at the start), but every other fragment can. This is <strong>only possible on six maps</strong>: Cradle of Death, Dead of Night, Malwarfare, Miner Evacuation, Oblivion Express, and The Vermillion Problem.</p>
-    <p>The trap must not allow movement in and out of the area (check with a Probe), so the buildings must have one square of edges touching, not just corners. If you're not sure of the exact spot, you can make a bigger circle.</p>
-    <p>(This guide is adapted with permission from <a href="https://www.youtube.com/watch?v=oPB88elDVWY" target="_blank">TwoTuuu's video</a>).</p>
-    <h4><a href="/missions/cradleofdeath">Cradle of Death</a></h4>
-    <img src="/images/commanderdata/guides/zeratul/artifacttrap_cod1.jpg" style="width:100%" alt="Cradle of Death Artifact Trapping guide"><br />
-    <img src="/images/commanderdata/guides/zeratul/artifacttrap_cod2.jpg" style="width:100%" alt="Cradle of Death Artifact Trapping guide"><br />
-    <img src="/images/commanderdata/guides/zeratul/artifacttrap_cod3.jpg" style="width:100%" alt="Cradle of Death Artifact Trapping guide"><br />
-    <img src="/images/commanderdata/guides/zeratul/artifacttrap_cod4.jpg" style="width:100%" alt="Cradle of Death Artifact Trapping guide"><br />
-    <h4><a href="/missions/deadofnight">Dead of Night</a></h4>
-    <img src="/images/commanderdata/guides/zeratul/artifacttrap_don1.jpg" style="width:100%" alt="Dead of Night Artifact Trapping guide"><br />
-    <img src="/images/commanderdata/guides/zeratul/artifacttrap_don2.jpg" style="width:100%" alt="Dead of Night Artifact Trapping guide"><br />
-    <h4><a href="/missions/malwarfare">Malwarfare</a></h4>
-    <img src="/images/commanderdata/guides/zeratul/artifacttrap_mw1.jpg" style="width:100%" alt="Malwarfare Artifact Trapping guide"><br />
-    <img src="/images/commanderdata/guides/zeratul/artifacttrap_mw2.jpg" style="width:100%" alt="Malwarfare Artifact Trapping guide"><br />
-    <h4><a href="/missions/minerevacuation">Miner Evacuation</a></h4>
-    <img src="/images/commanderdata/guides/zeratul/artifacttrap_me1.jpg" style="width:100%" alt="Miner Evacuation Artifact Trapping guide"><br />
+    <h3 id="artifacttrap">神器封锁</h3>
+    <p>泽拉图使用先知视野时，可以在碎片“刷新”点周围放置建筑，将其封锁。第一块碎片在游戏开始时便已生成，无法用这种方法封锁，但之后的碎片都可以。此技巧<strong>仅适用于六张地图</strong>：死亡摇篮、亡者之夜、恶意代码、疏散矿工、湮灭快车和熔火危机。</p>
+    <p>封锁区域必须无法进出（可用探机检查），因此建筑边缘之间必须有一格接触，不能只让角落相接。如果不确定确切位置，可以围一个更大的圈。</p>
+    <p>（本攻略经许可改编自 <a href="https://www.youtube.com/watch?v=oPB88elDVWY" target="_blank">TwoTuuu 的视频</a>）。</p>
+    <h4><a href="/missions/cradleofdeath">死亡摇篮</a></h4>
+    <img src="/images/commanderdata/guides/zeratul/artifacttrap_cod1.jpg" style="width:100%" alt="死亡摇篮神器封锁攻略"><br />
+    <img src="/images/commanderdata/guides/zeratul/artifacttrap_cod2.jpg" style="width:100%" alt="死亡摇篮神器封锁攻略"><br />
+    <img src="/images/commanderdata/guides/zeratul/artifacttrap_cod3.jpg" style="width:100%" alt="死亡摇篮神器封锁攻略"><br />
+    <img src="/images/commanderdata/guides/zeratul/artifacttrap_cod4.jpg" style="width:100%" alt="死亡摇篮神器封锁攻略"><br />
+    <h4><a href="/missions/deadofnight">亡者之夜</a></h4>
+    <img src="/images/commanderdata/guides/zeratul/artifacttrap_don1.jpg" style="width:100%" alt="亡者之夜神器封锁攻略"><br />
+    <img src="/images/commanderdata/guides/zeratul/artifacttrap_don2.jpg" style="width:100%" alt="亡者之夜神器封锁攻略"><br />
+    <h4><a href="/missions/malwarfare">恶意代码</a></h4>
+    <img src="/images/commanderdata/guides/zeratul/artifacttrap_mw1.jpg" style="width:100%" alt="恶意代码神器封锁攻略"><br />
+    <img src="/images/commanderdata/guides/zeratul/artifacttrap_mw2.jpg" style="width:100%" alt="恶意代码神器封锁攻略"><br />
+    <h4><a href="/missions/minerevacuation">疏散矿工</a></h4>
+    <img src="/images/commanderdata/guides/zeratul/artifacttrap_me1.jpg" style="width:100%" alt="疏散矿工神器封锁攻略"><br />
     <!-- me2 just repeats the note about checking with a probe -->
-    <img src="/images/commanderdata/guides/zeratul/artifacttrap_me3.jpg" style="width:100%" alt="Miner Evacuation Artifact Trapping guide"><br />
+    <img src="/images/commanderdata/guides/zeratul/artifacttrap_me3.jpg" style="width:100%" alt="疏散矿工神器封锁攻略"><br />
     <!-- me2 just repeats the note about a bigger circle -->
-    <h4><a href="/missions/oblivionexpress">Oblivion Express</a></h4>
-    <img src="/images/commanderdata/guides/zeratul/artifacttrap_oe1.jpg" style="width:100%" alt="Oblivion Express Artifact Trapping guide"><br />
-    <img src="/images/commanderdata/guides/zeratul/artifacttrap_oe2.jpg" style="width:100%" alt="Oblivion Express Artifact Trapping guide"><br />
-    <img src="/images/commanderdata/guides/zeratul/artifacttrap_oe3.jpg" style="width:100%" alt="Oblivion Express Artifact Trapping guide"><br />
-    <h4><a href="/missions/thevermillionproblem">The Vermillion Problem</a></h4>
-    <img src="/images/commanderdata/guides/zeratul/artifacttrap_tvp1.jpg" style="width:100%" alt="The Vermillion Problem Artifact Trapping guide"><br />
-    <img src="/images/commanderdata/guides/zeratul/artifacttrap_tvp2.jpg" style="width:100%" alt="The Vermillion Problem Artifact Trapping guide"><br />
-    <img src="/images/commanderdata/guides/zeratul/artifacttrap_tvp3.jpg" style="width:100%" alt="The Vermillion Problem Artifact Trapping guide"><br />
-    <h3>Playstyle Tips</h3>
+    <h4><a href="/missions/oblivionexpress">湮灭快车</a></h4>
+    <img src="/images/commanderdata/guides/zeratul/artifacttrap_oe1.jpg" style="width:100%" alt="湮灭快车神器封锁攻略"><br />
+    <img src="/images/commanderdata/guides/zeratul/artifacttrap_oe2.jpg" style="width:100%" alt="湮灭快车神器封锁攻略"><br />
+    <img src="/images/commanderdata/guides/zeratul/artifacttrap_oe3.jpg" style="width:100%" alt="湮灭快车神器封锁攻略"><br />
+    <h4><a href="/missions/thevermillionproblem">熔火危机</a></h4>
+    <img src="/images/commanderdata/guides/zeratul/artifacttrap_tvp1.jpg" style="width:100%" alt="熔火危机神器封锁攻略"><br />
+    <img src="/images/commanderdata/guides/zeratul/artifacttrap_tvp2.jpg" style="width:100%" alt="熔火危机神器封锁攻略"><br />
+    <img src="/images/commanderdata/guides/zeratul/artifacttrap_tvp3.jpg" style="width:100%" alt="熔火危机神器封锁攻略"><br />
+    <h3>玩法技巧</h3>
     <ul>
-        <li>Shades can be cancelled by clicking on the unit's Shade and pressing the ESC key. The shade will disappear, starting the cooldown. This allows you to only utilize the shades when you need them.</li>
-        <li>If you are unsure on the location of an artifact, place waypoints around the map. Waypoints appear in Prophetic Vision, allowing you to find the artifact location quickly. A video is below:</li>
-        <li>Throughout the mission, make Xel'Naga Watchers and place them in Watcher mode around the entire map. Granting vision of the entire map can be extremely powerful and synergizes very well with almost all commanders.</li>
-        <li>Once you hit supply cap with your army, build Tesseract Cannons as a mineral dump in your base and Shade them across the map to defend and help your army push.</li>
-        <li>Loading units into Void Arrays will prevent them from taking DoT (damage over time) damage.</li>
+        <li>点击单位的幽影并按下 ESC 键可以取消幽影。幽影会消失并开始计算冷却时间，让你只在需要时使用幽影。</li>
+        <li>如果不确定神器位置，可在地图各处设置路径点。路径点会显示在先知视野中，帮助你迅速找到神器。下方视频展示了这一技巧：</li>
+        <li>在整个任务期间持续生产萨尔纳加观察者，并将其以观察者模式部署到整张地图。获得全图视野极其强大，且能与几乎所有指挥官形成良好配合。</li>
+        <li>部队达到人口上限后，在基地用多余晶体矿建造超维空间炮，再将阴影投射到地图各处进行防守并协助部队推进。</li>
+        <li>将单位装入虚空阵列船可使其免受 DoT（持续伤害）效果。</li>
     </ul>
     <iframe width="475" height="268" src="https://www.youtube.com/embed/h0OZG494TCY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <h2 id="videos">Video Guides</h2>
-    <p>The below videos demonstrate the various Legion expands explained earlier. Note that as of patch 4.11.3, Zeratul's Legion costs have been increased significantly. The expand will still take place in the same way, but at a later point in the game (~2 mins).</p>
+    <h2 id="videos">视频攻略</h2>
+    <p>以下视频演示了前文所述的各种军团速开分矿方法。请注意，自 4.11.3 补丁起，泽拉图的军团消耗已大幅提高。开矿方法仍然相同，但执行时间会推迟到游戏约 2 分钟时。</p>
     <iframe width="950" height="535" src="https://www.youtube.com/embed/videoseries?list=PL-U97hco2Fu53ZsL8KSqVBysp4tPpg5CT" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <script src="/scripts/nav.js"></script>
 <?= endContent() ?>

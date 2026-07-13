@@ -5,20 +5,20 @@
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Rockslapping Champions</title>
-  <meta name="description" content="Rockslapping Champions is starcraft2coop.com's flagship series, which is very similar to Bronze League Heroes.">
-  <meta name="keywords" content="Starcraft co-op rockslapping champions">
+  <title>《星际争霸 II》合作任务 - 拍石冠军</title>
+  <meta name="description" content="“拍石冠军”是本站的招牌喜剧解说系列，风格类似“青铜组英雄”。">
+  <meta name="keywords" content="星际争霸 II, 合作任务, 拍石冠军">
   <link rel="canonical" href="https://starcraft2coop.com/community/rockslappingchampions">
   <script>
         function validate() {
           var x = $('#rcForm [name=file]').val()
           if (x == "") {
-              alert("File not selected");
+              alert("尚未选择文件");
               return false;
           }
           var x = $('#rcForm [name=desc]').val()
           if (x == "") {
-              alert("Description is blank");
+              alert("说明不能为空");
               return false;
           }
       }
@@ -64,13 +64,13 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         }
     </style>
   <?= startContent() ?>
-    <h1>Rockslapping Champions</h1>
-    <h2>The Series</h2>
-    <p>Rockslapping Champions is a comedy series of co-op games casted where a player has demonstrated poor decision-making and strategic-thinking ability.  It is named after <a href="/commanders/dehaka">Dehaka's Rockslapping</a> (a highly inefficient opening with Dehaka). The games are casted with a one-of-a-kind Co-op Observer UI, with "Did You Know" facts scattered throughout the video.</p>
-    <p>The Co-op Observer Interface used during these casts is an exclusive interface used for starcraft2coop.com's content. It contains information that you'd expect from any observer interface (such as resource counts, supplies and upgrades). However, in addition to this, it also contains calldown information such as charges available, cooldown and unlock status.</p>
-    <h2>Full Playlist</h2>
+    <h1>拍石冠军</h1>
+    <h2>系列简介</h2>
+    <p>“拍石冠军”是一档合作任务喜剧解说系列，主角往往展现出糟糕的决策与战略思维。系列名称源自<a href="/commanders/dehaka">德哈卡拍石头</a>（一种效率极低的德哈卡开局）。对局使用独特的合作任务观战界面进行解说，视频中还会穿插“你知道吗？”小知识。</p>
+    <p>解说使用的合作任务观战界面是本站内容专用界面。除资源、补给和升级等常规观战信息外，它还会显示可用次数、冷却时间和解锁状态等面板技能信息。</p>
+    <h2>完整播放列表</h2>
     <iframe width="480" height="270" src="https://www.youtube.com/embed/videoseries?list=PL-U97hco2Fu543NyDyGNox2VGtz6BkbWl" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <h2>Submit Your Replays for Casting</h2>
+    <h2>提交录像供解说</h2>
     <!--
     <p>You are welcome to submit replays for casting. Before submitting a replay, please consider the following:</p>
     <ul>
@@ -100,14 +100,14 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <a href="https://policies.google.com/privacy">Privacy Policy</a> and
     <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
     </form>-->
-    <p>Submissions are now closed. Thank you.</p>
-    <h2>Filter By Commander</h2>
-    <p>If you would like to filter previous Rockslapping Champions episode by the Rockslapping Commander, you may click the link below to generate a full list of episodes. Click on the Commander Portraits to remove the commander from the list.</p>
-    <p>Compilation episodes take into consideration all commanders featured in that episode. As long as a single commander is unfiltered out, compilation episodes will continue to appear in the list.</p>
+    <p>投稿现已关闭，感谢支持。</p>
+    <h2>按指挥官筛选</h2>
+    <p>如果想按“拍石”指挥官筛选往期节目，可以点击下方链接生成完整节目列表。点击指挥官头像可将其从列表中排除。</p>
+    <p>合辑会考虑该期出现的所有指挥官。只要其中至少一名指挥官未被过滤，合辑就会继续显示在列表中。</p>
     <div id="player">
         <iframe id="video" width="640" height="360" src="about:blank" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
-    <p id="showList"><a href="#">Show List</a></p>
+    <p id="showList"><a href="#">显示列表</a></p>
     <div id="commanderSelection">
     </div>
     <div id="rcList">
@@ -132,7 +132,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         function refilter(){
             var commanders = [];
             $("#commanderSelection img:not(.filtered)").each(function(){
-                commanders.push("." + $(this).attr("alt"));
+                commanders.push("." + $(this).attr("data-commander"));
             });
             var collection = $('#rcList a');
 
@@ -168,6 +168,21 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                     var stringArray=JSON.parse(data);
                     $("#commanderSelection").html(stringArray[0]);
                     $("#rcList").html(stringArray[1]);
+                    const commanderNames = {
+                        raynor: "雷诺", kerrigan: "凯瑞甘", artanis: "阿塔尼斯", swann: "斯旺",
+                        zagara: "扎加拉", vorazun: "沃拉尊", karax: "凯拉克斯", abathur: "阿巴瑟",
+                        alarak: "阿拉纳克", nova: "诺娃", stukov: "斯托科夫", fenix: "菲尼克斯",
+                        dehaka: "德哈卡", horner: "汉与霍纳", tychus: "泰凯斯", zeratul: "泽拉图",
+                        stetmann: "斯台特曼", mengsk: "蒙斯克"
+                    };
+                    $("#commanderSelection img").each(function () {
+                        const commander = $(this).attr("alt");
+                        $(this).attr("data-commander", commander);
+                        $(this).attr("alt", commanderNames[commander] || commander);
+                    });
+                    $("#select").text("全选");
+                    $("#unselect").text("全部取消");
+                    $("#rcList img.rcThumb").attr("alt", "YouTube 视频缩略图");
                 }
             });
             return true;

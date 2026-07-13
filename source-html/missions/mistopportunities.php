@@ -6,47 +6,47 @@ require_once __DIR__ . "/../../includes/wrapper.php";
 require_once "../../includes/switchergenerator.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Mission Guide - Mist Opportunities</title>
-  <meta name="description" content="Starcraft 2 Co-op Mission Guide Mist Opportunities">
-  <meta name="keywords" content="Starcraft co-op guides mist opportunities mission">
+  <title>《星际争霸 II》合作任务攻略 - 机会渺茫</title>
+  <meta name="description" content="《星际争霸 II》合作任务攻略：机会渺茫">
+  <meta name="keywords" content="星际争霸 II 合作任务 机会渺茫 攻略">
   <link rel="stylesheet"  media="all" type="text/css" href="/styles/missionstyle.css?v=1.00">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="https://starcraft2coop.com/missions/mistopportunities">
   <script src="/scripts/preload.js"></script>
 <?= startContent() ?>
-    <h1><span class="unbold">Mission:</span> Mist Opportunities</h1>
-    <p id="missionPlace">Belshir</p>
+    <h1><span class="unbold">任务：</span>机会渺茫</h1>
+    <p id="missionPlace">贝尔石</p>
     <?php include("../../includes/reporterror.php");?>
     <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#misSum">Mission Summary</a></p>
-        <p><a href="#objectives">Objectives</a></p>
-        <p><a href="#botOrder">Bot Harvesting Order</a></p>
-        <p><a href="#bonus">Completing the Bonus Objective</a></p>
-        <p><a href="#timings">Timings</a></p>
-        <p><a href="#spawnPoints">Spawn Points</a></p>
-        <p><a href="#misTips">Mission Tips</a></p>
-        <p><a href="#comTips">Commander-Specific Tips</a></p>
+        <h2>本页目录</h2>
+        <p><a href="#misSum">任务概述</a></p>
+        <p><a href="#objectives">任务目标</a></p>
+        <p><a href="#botOrder">机器人采集顺序</a></p>
+        <p><a href="#bonus">完成奖励目标</a></p>
+        <p><a href="#timings">时间点</a></p>
+        <p><a href="#spawnPoints">出生点</a></p>
+        <p><a href="#misTips">任务技巧</a></p>
+        <p><a href="#comTips">指挥官专属技巧</a></p>
     </div>
-    <h2 id="misSum">Mission Summary</h2>
-    <p>Egon Stetmann, stranded on Bel’shir since before the fall of Arcturus, is now under assault from Amon’s forces. Protect his harvesters as they collect the planet’s terrazine to prevent it from falling into the wrong hands.</p>
-    <h2 id="objectives">Objectives</h2>
-    <h3>Primary Objective</h3>
+    <h2 id="misSum">任务概述</h2>
+    <p>早在阿克图尔斯倒台之前就被困在贝尔石的伊冈·斯台特曼，如今正遭到埃蒙军队的袭击。保护他的采集机器人收集这颗行星上的地嗪，防止这些资源落入敌手。</p>
+    <h2 id="objectives">任务目标</h2>
+    <h3>主要目标</h3>
         <ul>
-            <li>Escort Harvesting Bots (5 Waves)</li>
-            <li>Do not let 2 bots be destroyed</li>
+            <li>护送采集机器人（5 个波次）</li>
+            <li>不得让 2 个机器人被摧毁</li>
         </ul>
-    <h3>Secondary Objective</h3>
+    <h3>奖励目标</h3>
         <ul>
-            <li>Destroy the Extraction Device (2)</li>
+            <li>摧毁萃取装置 (2)</li>
         </ul>
-    <h2 id="botOrder">Bot Harvesting Order</h2>
+    <h2 id="botOrder">机器人采集顺序</h2>
     <div id="globalRaceSelect">
-        <p>Change all base analysis pictures to race:</p>
+        <p>将所有基地分析图片切换为以下种族：</p>
         <form action="#">
-            <label><input type="radio" name="globalRace" value="protoss" checked>Protoss</label><br>
-            <label><input type="radio" name="globalRace" value="terran">Terran</label><br>
-            <label><input type="radio" name="globalRace" value="zerg">Zerg</label><br>
+            <label><input type="radio" name="globalRace" value="protoss" checked>星灵</label><br>
+            <label><input type="radio" name="globalRace" value="terran">人类</label><br>
+            <label><input type="radio" name="globalRace" value="zerg">异虫</label><br>
         </form>
         <script>
             $("input[name='globalRace']").change(function(){
@@ -61,35 +61,35 @@ require_once "../../includes/switchergenerator.php";
         </script>
     </div>
     <?php $mission = "mistopportunities"; ?>
-    <p>There are a total of five bot waves that will leave the base area to go to harvest Terrazine. The goal of the mission is to protect those bots from enemy attack forces. The number of the bots in the wave increases as the mission progresses. The harvesting locations for each of the waves is shown below.</p>
-    <img src="/images/missiondata/mistopportunities/botwaves.jpg" alt="Harvesting Wave Locations">
-    <p>Each bot takes 60 seconds to harvest the Terrazine. However, do note that there is a travel time to and from the Terrazine Geyser, where the bots can also be attacked by stray forces and attack waves.</p>
-    <h2 id="bonus">Completing the Bonus Objective</h2>
+    <p>共有五个机器人波次会离开基地前去采集地嗪。本任务的目标是保护这些机器人免受敌方部队攻击。随着任务推进，每个波次中的机器人数量会逐渐增加。各波次的采集位置如下所示。</p>
+    <img src="/images/missiondata/mistopportunities/botwaves.jpg" alt="各波次的采集位置">
+    <p>每个机器人需要 60 秒采集地嗪。请注意，机器人往返地嗪喷口还需要一定时间，在途中也可能遭到零散敌军和进攻波次的袭击。</p>
+    <h2 id="bonus">完成奖励目标</h2>
     <div id="objectiveImages">
-        <img src="/images/missiondata/mistopportunities/extractiondevice.jpg" alt="Terrazine Extraction Device">
-        <img src="/images/missiondata/mistopportunities/extractiondevice.jpg" alt="Terrazine Extraction Device">
+        <img src="/images/missiondata/mistopportunities/extractiondevice.jpg" alt="地嗪萃取装置">
+        <img src="/images/missiondata/mistopportunities/extractiondevice.jpg" alt="地嗪萃取装置">
     </div>
-    <p>The bonus objective requires you to destroy two Terrazine Extraction Devices that are extracting Terrazine from the Belshir Gliders.</p>
-    <p>Each extraction device is guarded by a number of enemy forces. The location and guards of the first extraction device is shown below.</p>
+    <p>奖励目标要求你摧毁两台正在从贝尔石滑翔者体内抽取地嗪的地嗪萃取装置。</p>
+    <p>每台萃取装置都有敌军守卫。第一台萃取装置的位置和守军如下所示。</p>
     <?php switcher_generator("extractiondevice1") ?>
-    <p>The location and guards of the second extraction device is shown below. These forces are a lot stronger, but are much more clumped up together.</p>
+    <p>第二台萃取装置的位置和守军如下所示。这些部队强大得多，但站位也更加密集。</p>
     <?php switcher_generator("extractiondevice2") ?>
-    <h2 id="timings">Timings</h2>
-    <p>Note: Information on Tech and Strength levels can be found on the <a href="/guides/enemycomps">Enemy Compositions</a> page.</p>
-    <p>There are three timings that play a role in Mist Opportunities. These are:</p>
+    <h2 id="timings">时间点</h2>
+    <p>注意：科技等级与强度等级的说明参见<a href="/guides/enemycomps">敌方部队组合</a>页面。</p>
+    <p>“机会渺茫”中有三类重要时间点：</p>
     <ul>
-        <li><b>Attack Waves:</b> These are waves that target your base.</li>
-        <li><b>Harvester Bots:</b> These are the times when the harvester bots are sent out, making them vulnerable to attack.</li>
-        <li><b>Harass Waves:</b> These are waves specifically targeting the bots to destroy them.</li>
+        <li><b>进攻波次：</b>以你的基地为目标的波次。</li>
+        <li><b>采集机器人：</b>采集机器人出发并暴露在敌方攻击下的时间。</li>
+        <li><b>骚扰波次：</b>专门以机器人为目标并试图将其摧毁的波次。</li>
     </ul>
-    <p>The timings, Strength and Tech levels of attack waves in this mission are listed below.</p>
+    <p>本任务进攻波次的时间、强度等级和科技等级如下。</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Wave</th>
-                <th>Time</th>
-                <th>Tech Level</th>
-                <th>Strength Level</th>
+                <th>波次</th>
+                <th>时间</th>
+                <th>科技等级</th>
+                <th>强度等级</th>
             </tr>
         </thead>
         <tbody>
@@ -125,41 +125,41 @@ require_once "../../includes/switchergenerator.php";
             </tr>
         </tbody>
     </table>
-    <p>Additionally, attack waves 3 and 5 have Hybrids with them. Both these waves will have 2 Minor and 1 Major Hybrid. The types of these Hybrids will depend on the enemy race, as follows:</p>
+    <p>此外，第 3 和第 5 个进攻波次会带有混合体。这两个波次都会包含 2 个小型混合体和 1 个大型混合体。混合体类型取决于敌方种族，具体如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Race</th>
-                <th>Minor Hybrid</th>
-                <th>Major Hybrid</th>
+                <th>种族</th>
+                <th>小型混合体</th>
+                <th>大型混合体</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Protoss</td>
-                <td>Hybrid Destroyer</td>
-                <td>Hybrid Behemoth</td>
+                <td>星灵</td>
+                <td>混合体毁灭者</td>
+                <td>混合体巨兽</td>
             </tr>
             <tr>
-                <td>Terran</td>
-                <td>Hybrid Reaver</td>
-                <td>Hybrid Dominator</td>
+                <td>人类</td>
+                <td>混合体掠夺者</td>
+                <td>混合体支配者</td>
             </tr>
             <tr>
-                <td>Zerg</td>
-                <td>Hybrid Nemesis</td>
-                <td>Hybrid Dominator</td>
+                <td>异虫</td>
+                <td>混合体天罚者</td>
+                <td>混合体支配者</td>
             </tr>
         </tbody>
     </table>
-    <p>Harvester Bot waves will give you a warning before the bot leaves. It then takes 45 seconds for the bot to actually spawn at the station. 20 seconds later, it will leave to harvest the Terrazine. The timings are all summarized below.</p>
+    <p>每个采集机器人波次出发前都会发出警告。机器人会在 45 秒后于站点实际出现，再过 20 秒便出发采集地嗪。所有时间如下。</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Bot Wave</th>
-                <th>Warning Time</th>
-                <th>Spawn Time</th>
-                <th>Leave Time</th>
+                <th>机器人波次</th>
+                <th>警告时间</th>
+                <th>生成时间</th>
+                <th>出发时间</th>
             </tr>
         </thead>
         <tbody>
@@ -195,15 +195,15 @@ require_once "../../includes/switchergenerator.php";
             </tr>
         </tbody>
     </table>
-    <p>Harass waves will start to spawn and target the harvesting bots. The timings for the harrass waves for each bot wave is below.</p>
-    <p>Bot Wave 1:</p>
+    <p>骚扰波次会陆续生成并攻击采集机器人。每个机器人波次对应的骚扰波次时间如下。</p>
+    <p>机器人波次 1：</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Wave</th>
-                <th>Time</th>
-                <th>Tech Level</th>
-                <th>Strength Level</th>
+                <th>波次</th>
+                <th>时间</th>
+                <th>科技等级</th>
+                <th>强度等级</th>
             </tr>
         </thead>
         <tbody>
@@ -221,14 +221,14 @@ require_once "../../includes/switchergenerator.php";
             </tr>
         </tbody>
     </table>
-    <p>Bot Wave 2:</p>
+    <p>机器人波次 2：</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Wave</th>
-                <th>Time</th>
-                <th>Tech Level</th>
-                <th>Strength Level</th>
+                <th>波次</th>
+                <th>时间</th>
+                <th>科技等级</th>
+                <th>强度等级</th>
             </tr>
         </thead>
         <tbody>
@@ -258,14 +258,14 @@ require_once "../../includes/switchergenerator.php";
             </tr>
         </tbody>
     </table>
-    <p>Bot Wave 3:</p>
+    <p>机器人波次 3：</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Wave</th>
-                <th>Time</th>
-                <th>Tech Level</th>
-                <th>Strength Level</th>
+                <th>波次</th>
+                <th>时间</th>
+                <th>科技等级</th>
+                <th>强度等级</th>
             </tr>
         </thead>
         <tbody>
@@ -307,14 +307,14 @@ require_once "../../includes/switchergenerator.php";
             </tr>
         </tbody>
     </table>
-    <p>Bot Wave 4:</p>
+    <p>机器人波次 4：</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Wave</th>
-                <th>Time</th>
-                <th>Tech Level</th>
-                <th>Strength Level</th>
+                <th>波次</th>
+                <th>时间</th>
+                <th>科技等级</th>
+                <th>强度等级</th>
             </tr>
         </thead>
         <tbody>
@@ -356,15 +356,15 @@ require_once "../../includes/switchergenerator.php";
             </tr>
         </tbody>
     </table>
-    <p>Note: If the first or fourth wave spawn from the bottom left, that wave and all subsequent waves will have a Tech Level of 1.</p>
-    <p>Bot Wave 5:</p>
+    <p>注意：如果第一或第四个波次从左下方生成，该波次及其后的所有波次都将只有 1 级科技。</p>
+    <p>机器人波次 5：</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Wave</th>
-                <th>Time</th>
-                <th>Tech Level</th>
-                <th>Strength Level</th>
+                <th>波次</th>
+                <th>时间</th>
+                <th>科技等级</th>
+                <th>强度等级</th>
             </tr>
         </thead>
         <tbody>
@@ -424,35 +424,35 @@ require_once "../../includes/switchergenerator.php";
             </tr>
         </tbody>
     </table>
-    <h2 id="spawnPoints">Spawn Points</h2>
-    <p>Attack Waves have two spawn points on the map. These are shown below.</p>
-    <img src="/images/missiondata/mistopportunities/attackwavespawns.jpg" alt="Attack Wave Spawn Positions">
-    <p>Escort Wave spawn positions are much more complicated. There are multiple different spawn positions in the same area. The logic behind this is that spawn positions farther away from the bots will be used at the start of the harass waves. As the bots continue to harvest Terrazine, closer spawn positions will be used. The possible spawn positions for harass waves for each bot wave is shown below.</p>
-    <p>Bot Wave 1:</p>
-    <img src="/images/missiondata/mistopportunities/wave1harassspawns.jpg" alt="Harass Wave Spawn Positions for Bot Wave 1">
-    <p>Bot Wave 2:</p>
-    <img src="/images/missiondata/mistopportunities/wave2harassspawns.jpg" alt="Harass Wave Spawn Positions for Bot Wave 2">
-    <p>Bot Wave 3:</p>
-    <img src="/images/missiondata/mistopportunities/wave3harassspawns.jpg" alt="Harass Wave Spawn Positions for Bot Wave 3">
-    <p>Bot Wave 4:</p>
-    <img src="/images/missiondata/mistopportunities/wave4harassspawns.jpg" alt="Harass Wave Spawn Positions for Bot Wave 4">
-    <p>Bot Wave 5:</p>
-    <img src="/images/missiondata/mistopportunities/wave5harassspawns.jpg" alt="Harass Wave Spawn Positions for Bot Wave 5">
-    <h2 id="misTips">Mission Tips</h2>
+    <h2 id="spawnPoints">出生点</h2>
+    <p>进攻波次在地图上有两个生成点，如下所示。</p>
+    <img src="/images/missiondata/mistopportunities/attackwavespawns.jpg" alt="进攻波次生成位置">
+    <p>护送期间的波次生成位置要复杂得多，同一区域内存在多个不同的生成点。其规律是：骚扰波次刚开始时会使用离机器人较远的生成点；随着机器人继续采集地嗪，系统会改用更近的生成点。各机器人波次可能使用的骚扰波次生成位置如下。</p>
+    <p>机器人波次 1：</p>
+    <img src="/images/missiondata/mistopportunities/wave1harassspawns.jpg" alt="机器人波次 1 的骚扰波次生成位置">
+    <p>机器人波次 2：</p>
+    <img src="/images/missiondata/mistopportunities/wave2harassspawns.jpg" alt="机器人波次 2 的骚扰波次生成位置">
+    <p>机器人波次 3：</p>
+    <img src="/images/missiondata/mistopportunities/wave3harassspawns.jpg" alt="机器人波次 3 的骚扰波次生成位置">
+    <p>机器人波次 4：</p>
+    <img src="/images/missiondata/mistopportunities/wave4harassspawns.jpg" alt="机器人波次 4 的骚扰波次生成位置">
+    <p>机器人波次 5：</p>
+    <img src="/images/missiondata/mistopportunities/wave5harassspawns.jpg" alt="机器人波次 5 的骚扰波次生成位置">
+    <h2 id="misTips">任务技巧</h2>
     <ul>
-        <li>Clear harvest locations ahead of time to ensure bots do not take damage.</li>
-        <li>The bonus objective countdown will stop as long as the bonus objective is being hit. This means a single photon canon or army unit can stop the countdown. Use that to take out the bonus objective after you have cleared the area.</li>
+        <li>提前清理采集位置，确保机器人不会受到伤害。</li>
+        <li>只要奖励目标持续受到攻击，其倒计时就会暂停。这意味着单个光子炮或作战单位就能阻止倒计时。你可以先清理该区域，再利用这一点摧毁奖励目标。</li>
     </ul>
-    <h2 id="comTips">Commander-specific Tips</h2>
+    <h2 id="comTips">指挥官专属技巧</h2>
     <ul>
-        <li><a href="/commanders/abathur">Abathur</a>: Place Toxic Nests on key choke points to weaken attack and harass waves.</li>
-        <li><a href="/commanders/horner">Han & Horner</a>: Place Mag Mines on key choke points to weaken attack and harass waves.</li>
-        <li><a href="/commanders/karax">Karax</a>: Build static defenses near key choke points to take out harass waves.</li>
-        <li><a href="/commanders/kerrigan">Kerrigan</a>: Omega Worms can give you great mobility to defend multiple bots in quick succession.</li>
-        <li><a href="/commanders/nova">Nova</a>: If you use Siege Tanks, place Spider Mines on key choke points to weaken attack and harass waves.</li>
-        <li><a href="/commanders/raynor">Raynor</a>: If you use Vultures, place Spider Mines on key choke points to weaken attack and harass waves.</li>
-        <li><a href="/commanders/vorazun">Vorazun</a>: Place Dark Pylons and use their Recall to move your army around the map.</li>
-        <li><a href="/commanders/zeratul">Zeratul</a>: Void Arrays can give you great mobility to defend multiple bots in quick succession.</li>
+        <li><a href="/commanders/abathur">阿巴瑟</a>：在关键隘口布置剧毒巢穴，削弱进攻波次和骚扰波次。</li>
+        <li><a href="/commanders/horner">汉与霍纳</a>：在关键隘口布置磁力地雷，削弱进攻波次和骚扰波次。</li>
+        <li><a href="/commanders/karax">凯拉克斯</a>：在关键隘口附近修建静态防御，以消灭骚扰波次。</li>
+        <li><a href="/commanders/kerrigan">凯瑞甘</a>：欧米伽虫洞能提供极佳的机动性，让你快速连续防守多个机器人。</li>
+        <li><a href="/commanders/nova">诺娃</a>：如果使用攻城坦克，请在关键隘口布置蜘蛛雷，削弱进攻波次和骚扰波次。</li>
+        <li><a href="/commanders/raynor">雷诺</a>：如果使用秃鹫，请在关键隘口布置蜘蛛雷，削弱进攻波次和骚扰波次。</li>
+        <li><a href="/commanders/vorazun">沃拉尊</a>：布置黑暗水晶塔并使用其召回，让你的部队在地图上快速转移。</li>
+        <li><a href="/commanders/zeratul">泽拉图</a>：虚空阵列船能提供极佳的机动性，让你快速连续防守多个机器人。</li>
     </ul>
 <script src="/scripts/nav.js"></script>
 <?= endContent() ?>

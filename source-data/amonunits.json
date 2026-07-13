@@ -1,7 +1,7 @@
 [
   {
     "amonid": 1,
-    "name": "Zealot",
+    "name": "狂热者",
     "race": "Protoss",
     "hp": 100,
     "armor": 2,
@@ -20,7 +20,7 @@
   },
   {
     "amonid": 2,
-    "name": "Adept",
+    "name": "使徒",
     "race": "Protoss",
     "hp": 90,
     "armor": 2,
@@ -39,7 +39,7 @@
   },
   {
     "amonid": 3,
-    "name": "Sentry",
+    "name": "哨兵",
     "race": "Protoss",
     "hp": 40,
     "armor": 2,
@@ -58,7 +58,7 @@
   },
   {
     "amonid": 4,
-    "name": "Stalker",
+    "name": "追猎者",
     "race": "Protoss",
     "hp": 80,
     "armor": 2,
@@ -77,7 +77,7 @@
   },
   {
     "amonid": 5,
-    "name": "Disruptor",
+    "name": "干扰者",
     "race": "Protoss",
     "hp": 100,
     "armor": 2,
@@ -96,7 +96,7 @@
   },
   {
     "amonid": 6,
-    "name": "Reaver",
+    "name": "金甲虫",
     "race": "Protoss",
     "hp": 200,
     "armor": 2,
@@ -115,7 +115,7 @@
   },
   {
     "amonid": 7,
-    "name": "Immortal",
+    "name": "不朽者",
     "race": "Protoss",
     "hp": 200,
     "armor": 2,
@@ -134,7 +134,7 @@
   },
   {
     "amonid": 8,
-    "name": "Colossus",
+    "name": "巨像",
     "race": "Protoss",
     "hp": 200,
     "armor": 2,
@@ -153,7 +153,7 @@
   },
   {
     "amonid": 9,
-    "name": "High Templar",
+    "name": "高阶圣堂武士",
     "race": "Protoss",
     "hp": 40,
     "armor": 1,
@@ -172,7 +172,7 @@
   },
   {
     "amonid": 10,
-    "name": "Dark Templar",
+    "name": "黑暗圣堂武士",
     "race": "Protoss",
     "hp": 40,
     "armor": 2,
@@ -191,7 +191,7 @@
   },
   {
     "amonid": 11,
-    "name": "Phoenix",
+    "name": "凤凰战机",
     "race": "Protoss",
     "hp": 120,
     "armor": 1,
@@ -210,7 +210,7 @@
   },
   {
     "amonid": 12,
-    "name": "Archon",
+    "name": "执政官",
     "race": "Protoss",
     "hp": 10,
     "armor": 1,
@@ -229,7 +229,7 @@
   },
   {
     "amonid": 13,
-    "name": "Void Ray",
+    "name": "虚空辉光舰",
     "race": "Protoss",
     "hp": 150,
     "armor": 1,
@@ -248,7 +248,7 @@
   },
   {
     "amonid": 14,
-    "name": "Tempest",
+    "name": "风暴战舰",
     "race": "Protoss",
     "hp": 300,
     "armor": 3,
@@ -267,7 +267,7 @@
   },
   {
     "amonid": 15,
-    "name": "Carrier",
+    "name": "航空母舰",
     "race": "Protoss",
     "hp": 300,
     "armor": 3,
@@ -286,7 +286,7 @@
   },
   {
     "amonid": 16,
-    "name": "Gatekeeper Construct 1",
+    "name": "守门者构造体 1",
     "race": "Objective",
     "hp": 750,
     "armor": 0,
@@ -305,7 +305,7 @@
   },
   {
     "amonid": 17,
-    "name": "Gatekeeper Construct 2",
+    "name": "守门者构造体 2",
     "race": "Objective",
     "hp": 1500,
     "armor": 0,
@@ -324,7 +324,7 @@
   },
   {
     "amonid": 18,
-    "name": "Gatekeeper Construct 3",
+    "name": "守门者构造体 3",
     "race": "Objective",
     "hp": 2250,
     "armor": 0,
@@ -343,7 +343,7 @@
   },
   {
     "amonid": 19,
-    "name": "Gatekeeper Construct 4",
+    "name": "守门者构造体 4",
     "race": "Objective",
     "hp": 3000,
     "armor": 0,
@@ -362,7 +362,7 @@
   },
   {
     "amonid": 20,
-    "name": "Scout",
+    "name": "侦察机",
     "race": "Protoss",
     "hp": 150,
     "armor": 1,
@@ -381,7 +381,7 @@
   },
   {
     "amonid": 21,
-    "name": "Oracle",
+    "name": "先知",
     "race": "Protoss",
     "hp": 100,
     "armor": 1,
@@ -400,7 +400,7 @@
   },
   {
     "amonid": 22,
-    "name": "Warp Prism",
+    "name": "折跃棱镜",
     "race": "Protoss",
     "hp": 100,
     "armor": 1,
@@ -419,7 +419,7 @@
   },
   {
     "amonid": 23,
-    "name": "Hybrid Dominator",
+    "name": "混合体支配者",
     "race": "Hybrid",
     "hp": 1000,
     "armor": 1,
@@ -438,7 +438,7 @@
   },
   {
     "amonid": 24,
-    "name": "Hybrid Behemoth",
+    "name": "混合体巨兽",
     "race": "Hybrid",
     "hp": 2000,
     "armor": 2,
@@ -457,7 +457,7 @@
   },
   {
     "amonid": 25,
-    "name": "Hybrid Reaver",
+    "name": "混合体掠夺者",
     "race": "Hybrid",
     "hp": 1000,
     "armor": 2,
@@ -476,7 +476,7 @@
   },
   {
     "amonid": 26,
-    "name": "Marine",
+    "name": "陆战队员",
     "race": "Terran",
     "hp": 45,
     "armor": 1,
@@ -495,7 +495,7 @@
   },
   {
     "amonid": 27,
-    "name": "Medic",
+    "name": "医疗兵",
     "race": "Terran",
     "hp": 60,
     "armor": 2,
@@ -514,7 +514,7 @@
   },
   {
     "amonid": 28,
-    "name": "Marauder",
+    "name": "劫掠者",
     "race": "Terran",
     "hp": 125,
     "armor": 2,
@@ -533,7 +533,7 @@
   },
   {
     "amonid": 29,
-    "name": "Firebat",
+    "name": "火蝠",
     "race": "Terran",
     "hp": 100,
     "armor": 2,
@@ -552,7 +552,7 @@
   },
   {
     "amonid": 30,
-    "name": "Siege Tank",
+    "name": "攻城坦克",
     "race": "Terran",
     "hp": 160,
     "armor": 2,
@@ -571,7 +571,7 @@
   },
   {
     "amonid": 31,
-    "name": "Goliath",
+    "name": "歌利亚",
     "race": "Terran",
     "hp": 150,
     "armor": 2,
@@ -590,7 +590,7 @@
   },
   {
     "amonid": 32,
-    "name": "Cyclone",
+    "name": "飓风",
     "race": "Terran",
     "hp": 200,
     "armor": 2,
@@ -609,7 +609,7 @@
   },
   {
     "amonid": 33,
-    "name": "Reaper",
+    "name": "收割者",
     "race": "Terran",
     "hp": 50,
     "armor": 1,
@@ -628,7 +628,7 @@
   },
   {
     "amonid": 34,
-    "name": "Thor",
+    "name": "雷神",
     "race": "Terran",
     "hp": 400,
     "armor": 2,
@@ -647,7 +647,7 @@
   },
   {
     "amonid": 35,
-    "name": "Hellbat",
+    "name": "恶蝠",
     "race": "Terran",
     "hp": 135,
     "armor": 1,
@@ -666,7 +666,7 @@
   },
   {
     "amonid": 36,
-    "name": "Hellion",
+    "name": "恶火",
     "race": "Terran",
     "hp": 90,
     "armor": 1,
@@ -685,7 +685,7 @@
   },
   {
     "amonid": 37,
-    "name": "Viking",
+    "name": "维京战机",
     "race": "Terran",
     "hp": 125,
     "armor": 1,
@@ -704,7 +704,7 @@
   },
   {
     "amonid": 38,
-    "name": "Science Vessel",
+    "name": "科学船",
     "race": "Terran",
     "hp": 200,
     "armor": 2,
@@ -723,7 +723,7 @@
   },
   {
     "amonid": 39,
-    "name": "Ghost",
+    "name": "幽灵",
     "race": "Terran",
     "hp": 100,
     "armor": 1,
@@ -742,7 +742,7 @@
   },
   {
     "amonid": 40,
-    "name": "Banshee",
+    "name": "女妖",
     "race": "Terran",
     "hp": 140,
     "armor": 1,
@@ -761,7 +761,7 @@
   },
   {
     "amonid": 41,
-    "name": "Medivac",
+    "name": "医疗运输机",
     "race": "Terran",
     "hp": 150,
     "armor": 2,
@@ -780,7 +780,7 @@
   },
   {
     "amonid": 42,
-    "name": "Raven",
+    "name": "铁鸦",
     "race": "Terran",
     "hp": 140,
     "armor": 2,
@@ -799,7 +799,7 @@
   },
   {
     "amonid": 43,
-    "name": "Vulture",
+    "name": "秃鹫",
     "race": "Terran",
     "hp": 75,
     "armor": 2,
@@ -818,7 +818,7 @@
   },
   {
     "amonid": 44,
-    "name": "Liberator",
+    "name": "解放者",
     "race": "Terran",
     "hp": 180,
     "armor": 1,
@@ -837,7 +837,7 @@
   },
   {
     "amonid": 45,
-    "name": "Battlecruiser",
+    "name": "战列巡航舰",
     "race": "Terran",
     "hp": 550,
     "armor": 4,
@@ -856,7 +856,7 @@
   },
   {
     "amonid": 46,
-    "name": "Widow Mine",
+    "name": "寡妇雷",
     "race": "Terran",
     "hp": 90,
     "armor": 1,
@@ -875,7 +875,7 @@
   },
   {
     "amonid": 47,
-    "name": "Hybrid Nemesis",
+    "name": "混合体天罚者",
     "race": "Hybrid",
     "hp": 600,
     "armor": 0,
@@ -894,7 +894,7 @@
   },
   {
     "amonid": 48,
-    "name": "Warhound",
+    "name": "战狼",
     "race": "Terran",
     "hp": 220,
     "armor": 2,
@@ -913,7 +913,7 @@
   },
   {
     "amonid": 49,
-    "name": "Shuttle",
+    "name": "穿梭机",
     "race": "Objective",
     "hp": 400,
     "armor": 0,
@@ -932,7 +932,7 @@
   },
   {
     "amonid": 50,
-    "name": "Loki",
+    "name": "洛基",
     "race": "Terran",
     "hp": 1500,
     "armor": 4,
@@ -951,7 +951,7 @@
   },
   {
     "amonid": 51,
-    "name": "Diamondback",
+    "name": "响尾蛇",
     "race": "Terran",
     "hp": 200,
     "armor": 2,
@@ -970,7 +970,7 @@
   },
   {
     "amonid": 52,
-    "name": "Slayn Elemental 1",
+    "name": "斯雷恩元素生物 1",
     "race": "Objective",
     "hp": 3500,
     "armor": 1,
@@ -989,7 +989,7 @@
   },
   {
     "amonid": 53,
-    "name": "Slayn Elemental 2",
+    "name": "斯雷恩元素生物 2",
     "race": "Objective",
     "hp": 6125,
     "armor": 1,
@@ -1008,7 +1008,7 @@
   },
   {
     "amonid": 54,
-    "name": "Hybrid Destroyer",
+    "name": "混合体毁灭者",
     "race": "Hybrid",
     "hp": 500,
     "armor": 1,
@@ -1027,7 +1027,7 @@
   },
   {
     "amonid": 55,
-    "name": "Brutalisk",
+    "name": "莽兽",
     "race": "Zerg",
     "hp": 1500,
     "armor": 3,
@@ -1046,7 +1046,7 @@
   },
   {
     "amonid": 56,
-    "name": "Leviathan",
+    "name": "利维坦",
     "race": "Zerg",
     "hp": 2000,
     "armor": 2,
@@ -1065,7 +1065,7 @@
   },
   {
     "amonid": 57,
-    "name": "Void Shard",
+    "name": "虚空碎片",
     "race": "Objective",
     "hp": 5500,
     "armor": 3,
@@ -1084,7 +1084,7 @@
   },
   {
     "amonid": 58,
-    "name": "Pirate Capital Ship",
+    "name": "海盗主力舰",
     "race": "Objective",
     "hp": 5500,
     "armor": 3,
@@ -1103,7 +1103,7 @@
   },
   {
     "amonid": 59,
-    "name": "Extraction Device",
+    "name": "萃取装置",
     "race": "Objective",
     "hp": 8000,
     "armor": 3,
@@ -1122,7 +1122,7 @@
   },
   {
     "amonid": 60,
-    "name": "Mothership",
+    "name": "母舰",
     "race": "Protoss",
     "hp": 350,
     "armor": 3,
@@ -1141,7 +1141,7 @@
   },
   {
     "amonid": 61,
-    "name": "Zergling",
+    "name": "跳虫",
     "race": "Zerg",
     "hp": 35,
     "armor": 1,
@@ -1160,7 +1160,7 @@
   },
   {
     "amonid": 62,
-    "name": "Roach",
+    "name": "蟑螂",
     "race": "Zerg",
     "hp": 145,
     "armor": 2,
@@ -1179,7 +1179,7 @@
   },
   {
     "amonid": 63,
-    "name": "Hydralisk",
+    "name": "刺蛇",
     "race": "Zerg",
     "hp": 80,
     "armor": 1,
@@ -1198,7 +1198,7 @@
   },
   {
     "amonid": 64,
-    "name": "Baneling",
+    "name": "爆虫",
     "race": "Zerg",
     "hp": 30,
     "armor": 1,
@@ -1217,7 +1217,7 @@
   },
   {
     "amonid": 65,
-    "name": "Aberration",
+    "name": "畸变体",
     "race": "Zerg",
     "hp": 275,
     "armor": 1,
@@ -1236,7 +1236,7 @@
   },
   {
     "amonid": 66,
-    "name": "Lurker",
+    "name": "潜伏者",
     "race": "Zerg",
     "hp": 200,
     "armor": 2,
@@ -1255,7 +1255,7 @@
   },
   {
     "amonid": 67,
-    "name": "Swarm Host",
+    "name": "虫群宿主",
     "race": "Zerg",
     "hp": 160,
     "armor": 2,
@@ -1274,7 +1274,7 @@
   },
   {
     "amonid": 68,
-    "name": "Ultralisk",
+    "name": "雷兽",
     "race": "Zerg",
     "hp": 500,
     "armor": 2,
@@ -1293,7 +1293,7 @@
   },
   {
     "amonid": 69,
-    "name": "Mutalisk",
+    "name": "异龙",
     "race": "Zerg",
     "hp": 120,
     "armor": 1,
@@ -1312,7 +1312,7 @@
   },
   {
     "amonid": 70,
-    "name": "Brood Lord",
+    "name": "巢虫领主",
     "race": "Zerg",
     "hp": 225,
     "armor": 2,
@@ -1331,7 +1331,7 @@
   },
   {
     "amonid": 71,
-    "name": "Viper",
+    "name": "飞蛇",
     "race": "Zerg",
     "hp": 150,
     "armor": 2,
@@ -1350,7 +1350,7 @@
   },
   {
     "amonid": 72,
-    "name": "Scourge",
+    "name": "爆蚊",
     "race": "Zerg",
     "hp": 25,
     "armor": 1,
@@ -1369,7 +1369,7 @@
   },
   {
     "amonid": 73,
-    "name": "Corruptor",
+    "name": "腐化者",
     "race": "Zerg",
     "hp": 200,
     "armor": 3,
@@ -1388,7 +1388,7 @@
   },
   {
     "amonid": 74,
-    "name": "Ravager",
+    "name": "破坏者",
     "race": "Zerg",
     "hp": 120,
     "armor": 2,
@@ -1407,7 +1407,7 @@
   },
   {
     "amonid": 75,
-    "name": "Infestor",
+    "name": "感染者",
     "race": "Zerg",
     "hp": 90,
     "armor": 1,
@@ -1426,7 +1426,7 @@
   },
   {
     "amonid": 76,
-    "name": "Gatekeeper Construct Bonus",
+    "name": "奖励守门者构造体",
     "race": "Objective",
     "hp": 1000,
     "armor": 0,
@@ -1445,7 +1445,7 @@
   },
   {
     "amonid": 77,
-    "name": "Infested Terran DoN",
+    "name": "被感染的人类（亡者之夜）",
     "race": "Infested",
     "hp": 35,
     "armor": 1,
@@ -1464,7 +1464,7 @@
   },
   {
     "amonid": 78,
-    "name": "Infested Marine DON",
+    "name": "被感染的陆战队员（亡者之夜）",
     "race": "Infested",
     "hp": 50,
     "armor": 1,
@@ -1483,7 +1483,7 @@
   },
   {
     "amonid": 79,
-    "name": "Kaboomer",
+    "name": "爆裂者",
     "race": "Infested",
     "hp": 1000,
     "armor": 1,
@@ -1502,7 +1502,7 @@
   },
   {
     "amonid": 80,
-    "name": "Spotter",
+    "name": "侦察者",
     "race": "Infested",
     "hp": 500,
     "armor": 1,
@@ -1521,7 +1521,7 @@
   },
   {
     "amonid": 81,
-    "name": "Hunterling",
+    "name": "猎杀者",
     "race": "Infested",
     "hp": 250,
     "armor": 2,
@@ -1540,7 +1540,7 @@
   },
   {
     "amonid": 82,
-    "name": "Choker",
+    "name": "扼杀者",
     "race": "Infested",
     "hp": 600,
     "armor": 2,
@@ -1559,7 +1559,7 @@
   },
   {
     "amonid": 83,
-    "name": "Stank",
+    "name": "腐臭兽",
     "race": "Infested",
     "hp": 6000,
     "armor": 3,
@@ -1578,7 +1578,7 @@
   },
   {
     "amonid": 84,
-    "name": "XelNaga Construct",
+    "name": "萨尔纳加构造体",
     "race": "Objective",
     "hp": 12500,
     "armor": 0,
@@ -1597,7 +1597,7 @@
   },
   {
     "amonid": 85,
-    "name": "Suppression Tower 1",
+    "name": "压制塔 1",
     "race": "Objective",
     "hp": 2000,
     "armor": 1,
@@ -1616,7 +1616,7 @@
   },
   {
     "amonid": 86,
-    "name": "Suppression Tower 2",
+    "name": "压制塔 2",
     "race": "Objective",
     "hp": 2500,
     "armor": 1,
@@ -1635,7 +1635,7 @@
   },
   {
     "amonid": 87,
-    "name": "Eradicator",
+    "name": "根除者",
     "race": "Objective",
     "hp": 3500,
     "armor": 1,
@@ -1654,7 +1654,7 @@
   },
   {
     "amonid": 88,
-    "name": "Blightbringer",
+    "name": "疫病使者",
     "race": "Objective",
     "hp": 5500,
     "armor": 0,
@@ -1673,7 +1673,7 @@
   },
   {
     "amonid": 89,
-    "name": "Moebius Train 1",
+    "name": "莫比斯列车 1",
     "race": "Objective",
     "hp": 4200,
     "armor": 2,
@@ -1692,7 +1692,7 @@
   },
   {
     "amonid": 90,
-    "name": "Moebius Train 2",
+    "name": "莫比斯列车 2",
     "race": "Objective",
     "hp": 10400,
     "armor": 2,
@@ -1711,7 +1711,7 @@
   },
   {
     "amonid": 91,
-    "name": "Moebius Train 3",
+    "name": "莫比斯列车 3",
     "race": "Objective",
     "hp": 12400,
     "armor": 2,
@@ -1730,7 +1730,7 @@
   },
   {
     "amonid": 92,
-    "name": "Moebius Train OE Bonus 1",
+    "name": "莫比斯列车（湮灭快车奖励）1",
     "race": "Objective",
     "hp": 7750,
     "armor": 2,
@@ -1749,7 +1749,7 @@
   },
   {
     "amonid": 93,
-    "name": "Moebius Train 4",
+    "name": "莫比斯列车 4",
     "race": "Objective",
     "hp": 7200,
     "armor": 2,
@@ -1768,7 +1768,7 @@
   },
   {
     "amonid": 94,
-    "name": "Moebius Train 5",
+    "name": "莫比斯列车 5",
     "race": "Objective",
     "hp": 16400,
     "armor": 2,
@@ -1787,7 +1787,7 @@
   },
   {
     "amonid": 95,
-    "name": "Moebius Train 6",
+    "name": "莫比斯列车 6",
     "race": "Objective",
     "hp": 18400,
     "armor": 2,
@@ -1806,7 +1806,7 @@
   },
   {
     "amonid": 96,
-    "name": "Moebius Train OE Bonus 2",
+    "name": "莫比斯列车（湮灭快车奖励）2",
     "race": "Objective",
     "hp": 11500,
     "armor": 2,
@@ -1825,7 +1825,7 @@
   },
   {
     "amonid": 97,
-    "name": "Moebius Train 7",
+    "name": "莫比斯列车 7",
     "race": "Objective",
     "hp": 20400,
     "armor": 2,
@@ -1844,7 +1844,7 @@
   },
   {
     "amonid": 98,
-    "name": "Moebius Train 8",
+    "name": "莫比斯列车 8",
     "race": "Objective",
     "hp": 10200,
     "armor": 2,
@@ -1863,7 +1863,7 @@
   },
   {
     "amonid": 99,
-    "name": "Moebius Train PP Bonus 1",
+    "name": "莫比斯列车（聚铁成兵奖励）1",
     "race": "Objective",
     "hp": 8000,
     "armor": 2,
@@ -1882,7 +1882,7 @@
   },
   {
     "amonid": 100,
-    "name": "Moebius Train PP Bonus 2",
+    "name": "莫比斯列车（聚铁成兵奖励）2",
     "race": "Objective",
     "hp": 18000,
     "armor": 2,
@@ -1901,7 +1901,7 @@
   },
   {
     "amonid": 101,
-    "name": "Zenith Stone",
+    "name": "天顶石",
     "race": "Objective",
     "hp": 6000,
     "armor": 1,
@@ -1920,7 +1920,7 @@
   },
   {
     "amonid": 102,
-    "name": "Void Thrasher TotP 1",
+    "name": "虚空撕裂者（往日神庙）1",
     "race": "Objective",
     "hp": 1800,
     "armor": 1,
@@ -1939,7 +1939,7 @@
   },
   {
     "amonid": 103,
-    "name": "Void Thrasher TotP 2",
+    "name": "虚空撕裂者（往日神庙）2",
     "race": "Objective",
     "hp": 2550,
     "armor": 1,
@@ -1958,7 +1958,7 @@
   },
   {
     "amonid": 104,
-    "name": "Void Thrasher TotP 3",
+    "name": "虚空撕裂者（往日神庙）3",
     "race": "Objective",
     "hp": 3300,
     "armor": 1,
@@ -1977,7 +1977,7 @@
   },
   {
     "amonid": 105,
-    "name": "Void Thrasher TotP 4",
+    "name": "虚空撕裂者（往日神庙）4",
     "race": "Objective",
     "hp": 4050,
     "armor": 1,
@@ -1996,7 +1996,7 @@
   },
   {
     "amonid": 106,
-    "name": "Void Rift",
+    "name": "虚空裂隙",
     "race": "Mutator",
     "hp": 500,
     "armor": 1,
@@ -2015,7 +2015,7 @@
   },
   {
     "amonid": 107,
-    "name": "Void Sliver 1",
+    "name": "虚空裂片 1",
     "race": "Objective",
     "hp": 1500,
     "armor": 3,
@@ -2034,7 +2034,7 @@
   },
   {
     "amonid": 108,
-    "name": "Void Sliver 2",
+    "name": "虚空裂片 2",
     "race": "Objective",
     "hp": 1500,
     "armor": 3,
@@ -2053,7 +2053,7 @@
   },
   {
     "amonid": 109,
-    "name": "Void Sliver 3",
+    "name": "虚空裂片 3",
     "race": "Objective",
     "hp": 1500,
     "armor": 3,
@@ -2072,7 +2072,7 @@
   },
   {
     "amonid": 110,
-    "name": "Void Sliver 4",
+    "name": "虚空裂片 4",
     "race": "Objective",
     "hp": 1500,
     "armor": 3,
@@ -2091,7 +2091,7 @@
   },
   {
     "amonid": 111,
-    "name": "Void Sliver 5",
+    "name": "虚空裂片 5",
     "race": "Objective",
     "hp": 1500,
     "armor": 3,
@@ -2110,7 +2110,7 @@
   },
   {
     "amonid": 112,
-    "name": "Death Grip Crystal",
+    "name": "死亡之握水晶",
     "race": "Objective",
     "hp": 250,
     "armor": 0,
@@ -2129,7 +2129,7 @@
   },
   {
     "amonid": 113,
-    "name": "Molten Salamander",
+    "name": "熔岩蜥蜴",
     "race": "Objective",
     "hp": 6000,
     "armor": 1,
@@ -2148,7 +2148,7 @@
   },
   {
     "amonid": 114,
-    "name": "Void Thrasher VT",
+    "name": "虚空撕裂者（虚空撕裂）",
     "race": "Objective",
     "hp": 3000,
     "armor": 1,
@@ -2167,7 +2167,7 @@
   },
   {
     "amonid": 115,
-    "name": "Archangel",
+    "name": "大天使",
     "race": "Objective",
     "hp": 1500,
     "armor": 1,
@@ -2186,7 +2186,7 @@
   },
   {
     "amonid": 116,
-    "name": "Hybrid Experiment 1 A626 ",
+    "name": "莫比斯混合体实验体 1 A626 ",
     "race": "Hybrid",
     "hp": 5500,
     "armor": 3,
@@ -2205,7 +2205,7 @@
   },
   {
     "amonid": 117,
-    "name": "Hybrid Experiment 2 9E57",
+    "name": "莫比斯混合体实验体 2 9E57",
     "race": "Hybrid",
     "hp": 8250,
     "armor": 3,
@@ -2224,7 +2224,7 @@
   },
   {
     "amonid": 118,
-    "name": "Hybrid Experiment 3 523I",
+    "name": "莫比斯混合体实验体 3 523I",
     "race": "Hybrid",
     "hp": 10250,
     "armor": 3,
@@ -2243,7 +2243,7 @@
   },
   {
     "amonid": 119,
-    "name": "Infested Marine ME",
+    "name": "被感染的陆战队员（疏散矿工）",
     "race": "Infested",
     "hp": 100,
     "armor": 0,
@@ -2262,7 +2262,7 @@
   },
   {
     "amonid": 120,
-    "name": "Infested Terran ME",
+    "name": "被感染的人类（疏散矿工）",
     "race": "Infested",
     "hp": 70,
     "armor": 0,
@@ -2281,7 +2281,7 @@
   },
   {
     "amonid": 121,
-    "name": "Volatile Infested ME",
+    "name": "易爆感染体（疏散矿工）",
     "race": "Infested",
     "hp": 120,
     "armor": 1,
@@ -2300,7 +2300,7 @@
   },
   {
     "amonid": 122,
-    "name": "Infested Siege Tank",
+    "name": "被感染的攻城坦克",
     "race": "Infested",
     "hp": 160,
     "armor": 1,
@@ -2319,7 +2319,7 @@
   },
   {
     "amonid": 123,
-    "name": "Infested Banshee",
+    "name": "被感染的女妖",
     "race": "Infested",
     "hp": 140,
     "armor": 0,
@@ -2338,7 +2338,7 @@
   },
   {
     "amonid": 124,
-    "name": "Infested Hammer Securities",
+    "name": "被感染的哈默安保部队",
     "race": "Infested",
     "hp": 125,
     "armor": 2,
@@ -2376,7 +2376,7 @@
   },
   {
     "amonid": 126,
-    "name": "Infested War Pig",
+    "name": "被感染的战猪",
     "race": "Infested",
     "hp": 75,
     "armor": 1,
@@ -2395,7 +2395,7 @@
   },
   {
     "amonid": 127,
-    "name": "Brood Queen",
+    "name": "巢群女王",
     "race": "Zerg",
     "hp": 120,
     "armor": 1,
@@ -2414,7 +2414,7 @@
   },
   {
     "amonid": 128,
-    "name": "Volatile Infested DoN",
+    "name": "易爆感染体（亡者之夜）",
     "race": "Infested",
     "hp": 60,
     "armor": 1,
@@ -2433,7 +2433,7 @@
   },
   {
     "amonid": 129,
-    "name": "Infested Death Head",
+    "name": "被感染的死神之首",
     "race": "Infested",
     "hp": 75,
     "armor": 0,
@@ -2452,7 +2452,7 @@
   },
   {
     "amonid": 130,
-    "name": "Wraith",
+    "name": "怨灵战机",
     "race": "Terran",
     "hp": 140,
     "armor": 1,
@@ -2471,7 +2471,7 @@
   },
   {
     "amonid": 131,
-    "name": "Corsair",
+    "name": "海盗船",
     "race": "Protoss",
     "hp": 120,
     "armor": 2,
@@ -2490,7 +2490,7 @@
   },
   {
     "amonid": 132,
-    "name": "Arbiter",
+    "name": "仲裁者",
     "race": "Protoss",
     "hp": 150,
     "armor": 1,
@@ -2509,7 +2509,7 @@
   },
   {
     "amonid": 133,
-    "name": "Guardian",
+    "name": "守护者",
     "race": "Zerg",
     "hp": 150,
     "armor": 3,
@@ -2528,7 +2528,7 @@
   },
   {
     "amonid": 134,
-    "name": "Devourer",
+    "name": "吞噬者",
     "race": "Zerg",
     "hp": 250,
     "armor": 3,
@@ -2547,7 +2547,7 @@
   },
   {
     "amonid": 135,
-    "name": "Hammer Securities",
+    "name": "哈默安保部队",
     "race": "Terran",
     "hp": 125,
     "armor": 2,
@@ -2566,7 +2566,7 @@
   },
   {
     "amonid": 136,
-    "name": "Shock Division",
+    "name": "冲击分队",
     "race": "Terran",
     "hp": 350,
     "armor": 1,
@@ -2585,7 +2585,7 @@
   },
   {
     "amonid": 137,
-    "name": "Outback Hunter",
+    "name": "荒野猎手",
     "race": "Terran",
     "hp": 150,
     "armor": 0,
@@ -2604,7 +2604,7 @@
   },
   {
     "amonid": 138,
-    "name": "Jacksons Revenge",
+    "name": "杰克逊的复仇号",
     "race": "Terran",
     "hp": 700,
     "armor": 4,
@@ -2623,7 +2623,7 @@
   },
   {
     "amonid": 139,
-    "name": "Spartan Company",
+    "name": "斯巴达连队",
     "race": "Terran",
     "hp": 165,
     "armor": 2,
@@ -2642,7 +2642,7 @@
   },
   {
     "amonid": 140,
-    "name": "Death Head",
+    "name": "死神之首",
     "race": "Terran",
     "hp": 75,
     "armor": 0,
@@ -2661,7 +2661,7 @@
   },
   {
     "amonid": 141,
-    "name": "Siege Breaker",
+    "name": "攻城破坏者",
     "race": "Terran",
     "hp": 200,
     "armor": 2,
@@ -2680,7 +2680,7 @@
   },
   {
     "amonid": 142,
-    "name": "Dusk Wings",
+    "name": "黄昏之翼",
     "race": "Terran",
     "hp": 175,
     "armor": 1,
@@ -2699,7 +2699,7 @@
   },
   {
     "amonid": 143,
-    "name": "Devil Dog",
+    "name": "恶魔犬",
     "race": "Terran",
     "hp": 160,
     "armor": 2,
@@ -2718,7 +2718,7 @@
   },
   {
     "amonid": 144,
-    "name": "Hels Angel",
+    "name": "赫尔天使",
     "race": "Terran",
     "hp": 180,
     "armor": 1,
@@ -2737,7 +2737,7 @@
   },
   {
     "amonid": 145,
-    "name": "Skibis Angel",
+    "name": "斯基比的天使",
     "race": "Terran",
     "hp": 100,
     "armor": 1,
@@ -2756,7 +2756,7 @@
   },
   {
     "amonid": 146,
-    "name": "War Pig",
+    "name": "战猪",
     "race": "Terran",
     "hp": 75,
     "armor": 1,
@@ -2775,7 +2775,7 @@
   },
   {
     "amonid": 147,
-    "name": "Field Response Theta",
+    "name": "战地响应部队西塔",
     "race": "Terran",
     "hp": 75,
     "armor": 2,
@@ -2794,7 +2794,7 @@
   },
   {
     "amonid": 148,
-    "name": "Sentry Bot",
+    "name": "哨戒机器人",
     "race": "Terran",
     "hp": 50,
     "armor": 0,
@@ -2813,7 +2813,7 @@
   },
   {
     "amonid": 149,
-    "name": "Pride of Augustgrad",
+    "name": "奥古斯特格勒的骄傲",
     "race": "Terran",
     "hp": 550,
     "armor": 4,
@@ -2832,7 +2832,7 @@
   },
   {
     "amonid": 150,
-    "name": "Night Wolf",
+    "name": "夜狼",
     "race": "Terran",
     "hp": 160,
     "armor": 2,
@@ -2851,7 +2851,7 @@
   },
   {
     "amonid": 151,
-    "name": "Turkey",
+    "name": "火鸡",
     "race": "Mutator",
     "hp": 10,
     "armor": 0,
@@ -2870,7 +2870,7 @@
   },
   {
     "amonid": 152,
-    "name": "Infested Turkey",
+    "name": "被感染的火鸡",
     "race": "Mutator",
     "hp": 150,
     "armor": 1,
@@ -2889,7 +2889,7 @@
   },
   {
     "amonid": 153,
-    "name": "Turking",
+    "name": "火鸡王",
     "race": "Mutator",
     "hp": 6000,
     "armor": 3,
@@ -2908,7 +2908,7 @@
   },
   {
     "amonid": 154,
-    "name": "Moebius Corps Laser Drill",
+    "name": "莫比斯军团激光钻机",
     "race": "Mutator",
     "hp": 1000,
     "armor": 2,
@@ -2927,7 +2927,7 @@
   },
   {
     "amonid": 156,
-    "name": "Void Reanimator",
+    "name": "虚空复生者",
     "race": "Mutator",
     "hp": 200,
     "armor": 0,
@@ -2946,7 +2946,7 @@
   },
   {
     "amonid": 157,
-    "name": "Propagator",
+    "name": "增殖者",
     "race": "Mutator",
     "hp": 450,
     "armor": 0,
@@ -2965,7 +2965,7 @@
   },
   {
     "amonid": 158,
-    "name": "Standard Missile",
+    "name": "标准导弹",
     "race": "Mutator",
     "hp": 10,
     "armor": 0,
@@ -2984,7 +2984,7 @@
   },
   {
     "amonid": 159,
-    "name": "Splitter Missile",
+    "name": "分裂导弹",
     "race": "Mutator",
     "hp": 20,
     "armor": 0,
@@ -3003,7 +3003,7 @@
   },
   {
     "amonid": 160,
-    "name": "Point Defense Missile",
+    "name": "点防御导弹",
     "race": "Mutator",
     "hp": 15,
     "armor": 0,
@@ -3022,7 +3022,7 @@
   },
   {
     "amonid": 161,
-    "name": "Missile Nuke",
+    "name": "核弹导弹",
     "race": "Mutator",
     "hp": 100,
     "armor": 0,
@@ -3041,7 +3041,7 @@
   },
   {
     "amonid": 162,
-    "name": "Artanis",
+    "name": "阿塔尼斯",
     "race": "Mutator",
     "hp": 2000,
     "armor": 3,
@@ -3060,7 +3060,7 @@
   },
   {
     "amonid": 163,
-    "name": "Dehaka",
+    "name": "德哈卡",
     "race": "Mutator",
     "hp": 1500,
     "armor": 1,
@@ -3079,7 +3079,7 @@
   },
   {
     "amonid": 164,
-    "name": "Dehaka Spawn",
+    "name": "德哈卡分身",
     "race": "Mutator",
     "hp": 750,
     "armor": 1,
@@ -3098,7 +3098,7 @@
   },
   {
     "amonid": 165,
-    "name": "Karax",
+    "name": "凯拉克斯",
     "race": "Mutator",
     "hp": 750,
     "armor": 1,
@@ -3117,7 +3117,7 @@
   },
   {
     "amonid": 166,
-    "name": "Kerrigan",
+    "name": "凯瑞甘",
     "race": "Mutator",
     "hp": 5000,
     "armor": 0,
@@ -3136,7 +3136,7 @@
   },
   {
     "amonid": 167,
-    "name": "Nova",
+    "name": "诺娃",
     "race": "Mutator",
     "hp": 2250,
     "armor": 2,
@@ -3155,7 +3155,7 @@
   },
   {
     "amonid": 168,
-    "name": "Raynor",
+    "name": "雷诺",
     "race": "Mutator",
     "hp": 1000,
     "armor": 1,
@@ -3174,7 +3174,7 @@
   },
   {
     "amonid": 169,
-    "name": "Tychus",
+    "name": "泰凯斯",
     "race": "Mutator",
     "hp": 1000,
     "armor": 1,
@@ -3193,7 +3193,7 @@
   },
   {
     "amonid": 170,
-    "name": "Zagara",
+    "name": "扎加拉",
     "race": "Mutator",
     "hp": 2250,
     "armor": 0,
@@ -3212,7 +3212,7 @@
   },
   {
     "amonid": 171,
-    "name": "Zeratul",
+    "name": "泽拉图",
     "race": "Mutator",
     "hp": 2000,
     "armor": 2,
@@ -3231,7 +3231,7 @@
   },
   {
     "amonid": 172,
-    "name": "Bunker",
+    "name": "地堡",
     "race": "Terran",
     "hp": 400,
     "armor": 1,
@@ -3250,7 +3250,7 @@
   },
   {
     "amonid": 173,
-    "name": "Missile Turret",
+    "name": "导弹塔",
     "race": "Terran",
     "hp": 250,
     "armor": 0,
@@ -3269,7 +3269,7 @@
   },
   {
     "amonid": 174,
-    "name": "Spore Crawler",
+    "name": "孢子爬虫",
     "race": "Zerg",
     "hp": 400,
     "armor": 1,
@@ -3288,7 +3288,7 @@
   },
   {
     "amonid": 175,
-    "name": "Spine Crawler",
+    "name": "脊针爬虫",
     "race": "Zerg",
     "hp": 300,
     "armor": 2,
@@ -3307,7 +3307,7 @@
   },
   {
     "amonid": 176,
-    "name": "Photon Cannon",
+    "name": "光子炮",
     "race": "Protoss",
     "hp": 150,
     "armor": 1,
@@ -3326,7 +3326,7 @@
   },
   {
     "amonid": 177,
-    "name": "Pylon",
+    "name": "水晶塔",
     "race": "Protoss",
     "hp": 200,
     "armor": 1,
@@ -3345,7 +3345,7 @@
   },
   {
     "amonid": 178,
-    "name": "Infested Bunker",
+    "name": "被感染的地堡",
     "race": "Infested",
     "hp": 600,
     "armor": 2,
@@ -3364,7 +3364,7 @@
   },
   {
     "amonid": 179,
-    "name": "Infested Missile Turret",
+    "name": "被感染的导弹塔",
     "race": "Infested",
     "hp": 375,
     "armor": 0,
@@ -3383,7 +3383,7 @@
   },
   {
     "amonid": 180,
-    "name": "Widow Mine Mutator",
+    "name": "寡妇雷（突变因子）",
     "race": "Terran",
     "hp": 180,
     "armor": 1,
@@ -3402,7 +3402,7 @@
   },
   {
     "amonid": 181,
-    "name": "Spider Mine",
+    "name": "蜘蛛雷",
     "race": "Terran",
     "hp": 25,
     "armor": 0,
@@ -3421,7 +3421,7 @@
   },
   {
     "amonid": 182,
-    "name": "Dragoon",
+    "name": "龙骑士",
     "race": "Protoss",
     "hp": 100,
     "armor": 2,
@@ -3440,7 +3440,7 @@
   },
   {
     "amonid": 183,
-    "name": "Swarm Queen",
+    "name": "虫群女王",
     "race": "Zerg",
     "hp": 150,
     "armor": 2,
@@ -3459,7 +3459,7 @@
   },
   {
     "amonid": 184,
-    "name": "Queen",
+    "name": "虫后",
     "race": "Zerg",
     "hp": 175,
     "armor": 2,
@@ -3478,7 +3478,7 @@
   },
   {
     "amonid": 185,
-    "name": "Overseer",
+    "name": "监察王虫",
     "race": "Zerg",
     "hp": 200,
     "armor": 2,
@@ -3497,7 +3497,7 @@
   },
   {
     "amonid": 186,
-    "name": "Overlord",
+    "name": "王虫",
     "race": "Zerg",
     "hp": 200,
     "armor": 1,
@@ -3516,7 +3516,7 @@
   },
   {
     "amonid": 187,
-    "name": "Observer",
+    "name": "侦测器",
     "race": "Protoss",
     "hp": 40,
     "armor": 1,
@@ -3535,7 +3535,7 @@
   },
   {
     "amonid": 188,
-    "name": "Combat Shield Marine",
+    "name": "战斗护盾陆战队员",
     "race": "Terran",
     "hp": 55,
     "armor": 1,
@@ -3554,7 +3554,7 @@
   },
   {
     "amonid": 189,
-    "name": "MULE",
+    "name": "矿骡",
     "race": "Terran",
     "hp": 60,
     "armor": 1,
@@ -3573,7 +3573,7 @@
   },
   {
     "amonid": 190,
-    "name": "Locust",
+    "name": "蝗虫",
     "race": "Zerg",
     "hp": 65,
     "armor": 1,
@@ -3592,7 +3592,7 @@
   },
   {
     "amonid": 191,
-    "name": "Defense Bot",
+    "name": "防御机器人",
     "race": "Objective",
     "hp": 50,
     "armor": 0,
@@ -3611,7 +3611,7 @@
   },
   {
     "amonid": 192,
-    "name": "Virophage",
+    "name": "病毒吞噬体",
     "race": "Objective",
     "hp": 10000,
     "armor": 0,
@@ -3630,7 +3630,7 @@
   },
   {
     "amonid": 193,
-    "name": "Hunter Killer",
+    "name": "猎杀者",
     "race": "Mutator",
     "hp": 150,
     "armor": 2,
@@ -3649,7 +3649,7 @@
   },
   {
     "amonid": 195,
-    "name": "Aegis Guard",
+    "name": "壁垒卫士",
     "race": "Terran",
     "hp": 300,
     "armor": 1,
@@ -3668,7 +3668,7 @@
   },
   {
     "amonid": 197,
-    "name": "Imperial Intercessor",
+    "name": "帝国仲裁机",
     "race": "Terran",
     "hp": 150,
     "armor": 1,
@@ -3687,7 +3687,7 @@
   },
   {
     "amonid": 198,
-    "name": "Sky Fury",
+    "name": "天空之怒",
     "race": "Terran",
     "hp": 270,
     "armor": 0,
@@ -3706,7 +3706,7 @@
   },
   {
     "amonid": 199,
-    "name": "Imperial Witness",
+    "name": "帝国见证者",
     "race": "Terran",
     "hp": 350,
     "armor": 1,
@@ -3725,7 +3725,7 @@
   },
   {
     "amonid": 200,
-    "name": "Dominion Trooper",
+    "name": "帝国冲锋队",
     "race": "Terran",
     "hp": 45,
     "armor": 0,
@@ -3744,7 +3744,7 @@
   },
   {
     "amonid": 201,
-    "name": "Infested Diamondback",
+    "name": "被感染的响尾蛇",
     "race": "Infested",
     "hp": 250,
     "armor": 1,
@@ -3763,7 +3763,7 @@
   },
   {
     "amonid": 202,
-    "name": "Infested Liberator",
+    "name": "被感染的解放者",
     "race": "Infested",
     "hp": 180,
     "armor": 0,
@@ -3782,7 +3782,7 @@
   },
   {
     "amonid": 204,
-    "name": "Broodling",
+    "name": "巢虫",
     "race": "Zerg",
     "hp": 30,
     "armor": 1,

@@ -5,9 +5,9 @@
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Commander Guide - Dehaka</title>
-  <meta name="description" content="Starcraft 2 Co-op Commander Guide Dehaka">
-  <meta name="keywords" content="Starcraft co-op guides dehaka commander mastery prestige build">
+  <title>星际争霸 2 合作 - 指挥官指南 - 德哈卡</title>
+  <meta name="description" content="星际争霸 2 合作模式德哈卡指挥官指南">
+  <meta name="keywords" content="星际争霸合作模式指南德哈卡指挥官精通威望配兵">
   <link rel="stylesheet"  media="all" type="text/css" href="/styles/commanderstyle.css?v=2">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="https://starcraft2coop.com/commanders/dehaka">
@@ -25,344 +25,344 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         }
   </style>
   <?= startContent() ?>
-    <div id="tooltip">tooltip</div>
-    <h1><span class="unbold">Commander:</span> Dehaka</h1>
-    <p id="commanderMotto">Primal Pack Leader</p>
+    <div id="tooltip">工具提示</div>
+    <h1><span class="unbold">指挥官：</span> 德哈卡</h1>
+    <p id="commanderMotto">原始族群首领</p>
     <?php include("../../includes/reporterror.php");?>
     <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#comSum">Commander Summary</a></p>
-        <p><a href="#levelUnlocks">Level Unlocks</a></p>
-        <p><a href="#achievements">Achievements</a></p>
-        <p><a href="#calldowns">Calldowns</a></p>
-        <p><a href="#leveling">Sub-Ascension Leveling</a></p>
-        <p><a href="#masteries">Masteries</a></p>
-        <p><a href="#prestiges">Prestiges</a></p>
-        <p><a href="#hero">Hero Unit</a></p>
-        <p><a href="#army">Recommended Army Composition</a></p>
-        <p><a href="#units">Combat Units</a></p>
-        <p><a href="#buildOrder">Build Order</a></p>
-        <p><a href="#guide">Gameplay Guide</a></p>
-        <p><a href="#essence">Essence Farming</a></p>
+        <h2>本页内容</h2>
+        <p><a href="#comSum">指挥官概述</a></p>
+        <p><a href="#levelUnlocks">等级解锁</a></p>
+        <p><a href="#achievements">成就</a></p>
+        <p><a href="#calldowns">面板技能</a></p>
+        <p><a href="#leveling">飞升前升级</a></p>
+        <p><a href="#masteries">精通</a></p>
+        <p><a href="#prestiges">威望</a></p>
+        <p><a href="#hero">英雄单位</a></p>
+        <p><a href="#army">推荐配兵</a></p>
+        <p><a href="#units">作战单位</a></p>
+        <p><a href="#buildOrder">建造顺序</a></p>
+        <p><a href="#guide">游戏指南</a></p>
+        <p><a href="#essence">精华收集</a></p>
     </div>
-    <h2 id="comSum">Commander Summary</h2>
-    <p>Dehaka uses Essence gained from fallen enemies to grow and get stronger, while being backed up with a powerful force of Primal units.</p>
-    <h2 id="levelUnlocks">Level Unlocks</h2>
+    <h2 id="comSum">指挥官概述</h2>
+    <p>德哈卡从阵亡的敌人身上收集精华，不断成长变强，并率领强大的原始虫群作战。</p>
+    <h2 id="levelUnlocks">等级解锁</h2>
     <table class="progressionTable">
         <thead>
             <tr>
-                <th>Level/Icon</th>
-                <th>Name</th>
-                <th>Description</th>
+                <th>等级/图标</th>
+                <th>名称</th>
+                <th>描述</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/progression/dehaka/dehaka_01.png" alt = "Essence Gatherer"></td>
-                <td>Essence Gatherer</td>
+                <td><img src="/images/commanderdata/progression/dehaka/dehaka_01.png" alt = "精华采集者"></td>
+                <td>精华采集者</td>
                 <td>
-                    Dehaka can collect essence, grow stronger, and choose mutations. Dehaka spawns in faster than other hero units and can devour Primal Drones to reduce his respawn time.
+                    德哈卡可以收集精华、变得更强并选择变异。德哈卡比其他英雄单位更早登场，并可吞噬原始工蜂来缩短复活时间。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/dehaka/dehaka_02.png" alt = "New Units: Ravasaur & Primal Igniter"></td>
-                <td>New Units: Ravasaur & Primal Igniter</td>
+                <td><img src="/images/commanderdata/progression/dehaka/dehaka_02.png" alt = "新单位：暴掠龙与原始点火虫"></td>
+                <td>新单位：暴掠龙与原始点火虫</td>
                 <td>
-                    Units can be commanded to engage in primal combat to force evolutions. Unlocks the following new evolutions:
+                    可命令单位进行原始战斗以强制进化。解锁以下进化路线：
                     <ul>
-                        <li>Primal Zerglings can evolve into Ravasaurs.</li>
-                        <li>Primal Roaches can evolve into Primal Igniters.</li>
+                        <li>原始跳虫可以进化为暴掠龙。</li>
+                        <li>原始蟑螂可以进化为原始点火虫。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/dehaka/dehaka_03.png" alt = "Ravasaur Upgrade Cache"></td>
-                <td>Ravasaur Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/dehaka/dehaka_03.png" alt = "暴掠龙升级包"></td>
+                <td>暴掠龙升级包</td>
                 <td>
-                   Unlocks the following upgrades at Glevig's Den:
+                   在格利维格之巢解锁以下升级：
                    <ul>
-                       <li>Ravasaurs gain increased movement speed and attack range.</li>
-                       <li>Ravasaurs gain +15 attack damage against armored enemies.</li>
+                       <li>提高暴掠龙的移动速度和攻击射程。</li>
+                       <li>暴掠龙对重甲敌人的伤害提高 15 点。</li>
                    </ul>
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/dehaka/dehaka_04.png" alt = "Deep Tunnel"></td>
-                <td>Deep Tunnel</td>
+                <td><img src="/images/commanderdata/progression/dehaka/dehaka_04.png" alt = "深槽虫道"></td>
+                <td>深槽虫道</td>
                 <td>
-                    Dehaka, Primal Wurms, and Greater Primal Wurms gain the ability to Deep Tunnel.
+                    德哈卡、原始蠕虫和巨型原始蠕虫获得深槽虫道技能。
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/dehaka/dehaka_05.png" alt = "Primal Insight"></td>
-                <td>Primal Insight</td>
+                <td><img src="/images/commanderdata/progression/dehaka/dehaka_05.png" alt = "原始洞察力"></td>
+                <td>原始洞察力</td>
                 <td>
-                    Dehaka’s maximum level increases from 10 to 12 and unlocks the following mutation choices for Dehaka:
+                    德哈卡的最高等级从 10 级提高至 12 级，并解锁以下变异选项：
                     <ul>
-                        <li>Gain the ability to detect cloaked and burrowed units.</li>
-                        <li>Gain increased armor.</li>
+                        <li>能够探测隐形和潜地单位。</li>
+                        <li>提高护甲。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/dehaka/dehaka_06.png" alt = "New Units: Primal Mutalisk & Primal Guardian"></td>
-                <td>New Units: Primal Mutalisk & Primal Guardian</td>
+                <td><img src="/images/commanderdata/progression/dehaka/dehaka_06.png" alt = "新单位：原始异龙与原始守护者"></td>
+                <td>新单位：原始异龙与原始守护者</td>
                 <td>
-                    Units can be commanded to engage in primal combat to force evolutions. Unlocks the following new evolutions:
+                    可命令单位进行原始战斗以强制进化。解锁以下进化路线：
                     <ul>
-                        <li>Primal Hydralisks can evolve into Primal Mutalisks.</li>
-                        <li>Primal Roaches can evolve into Primal Guardians.</li>
+                        <li>原始刺蛇可以进化为原始异龙。</li>
+                        <li>原始蟑螂可以进化为原始守护者。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/dehaka/dehaka_07.png" alt = "Primal Mutalisk & Primal Guardian Upgrade Cache"></td>
-                <td>Primal Mutalisk & Primal Guardian Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/dehaka/dehaka_07.png" alt = "原始异龙与原始守护者升级包"></td>
+                <td>原始异龙与原始守护者升级包</td>
                 <td>
-                    Unlocks the following upgrades at Murvar’s Den:
+                    在穆瓦尔之巢解锁以下升级：
                     <ul>
-                        <li>Primal Mutalisks revive on death after a short time.</li>
-                        <li>Primal Guardians can fire area damaging spores at enemy ground units.</li>
+                        <li>原始异龙死亡后会在短时间内复活。</li>
+                        <li>原始守护者可以向敌方地面单位发射造成范围伤害的孢子。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/dehaka/dehaka_08.png" alt = "New Units: Creeper Host & Primal Impaler"></td>
-                <td>New Units: Creeper Host & Primal Impaler</td>
+                <td><img src="/images/commanderdata/progression/dehaka/dehaka_08.png" alt = "新单位：潜地宿主与穿刺者"></td>
+                <td>新单位：潜地宿主与穿刺者</td>
                 <td>
-                    Units can be commanded to engage in primal combat to force evolutions. Unlocks the following new evolutions:
+                    可命令单位进行原始战斗以强制进化。解锁以下进化路线：
                     <ul>
-                        <li>Primal Hydralisks can evolve into Impalers.</li>
-                        <li>Primal Hosts can evolve into Creeper Hosts.</li>
+                        <li>原始刺蛇可以进化为穿刺者。</li>
+                        <li>原始宿主可以进化为潜地宿主。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/dehaka/dehaka_09.png" alt = "Primal Igniter & Primal Impaler Upgrade Cache"></td>
-                <td>Primal Igniter & Primal Impaler Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/dehaka/dehaka_09.png" alt = "原始点火虫与穿刺者升级包"></td>
+                <td>原始点火虫与穿刺者升级包</td>
                 <td>
-                    Unlocks the following upgrades at Glevig's Den:
+                    在格利维格之巢解锁以下升级：
                     <ul>
-                        <li>Primal Igniters deal bonus damage to light units.</li>
-                        <li>Impaler attacks tenderize enemies, causing them to take damage over time. Devouring tenderized enemies with Dehaka invokes 25% of the normal cooldown time.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr class="spike">
-                <td><img src="/images/commanderdata/progression/dehaka/dehaka_10.png" alt = "Evolved Pack Leaders"></td>
-                <td>Evolved Pack Leaders</td>
-                <td>
-                    The Pack Leaders and Primal Wurms gain new abilities:
-                    <ul>
-                        <li>Glevig gains a flame breath that deals area damage.</li>
-                        <li>Murvar also spawns explosive creepers.</li>
-                        <li>Dakrun reflects damage (20 per hit) to enemy attackers.</li>
-                        <li>Primal Wurms and Greater Primal Wurms gain the ability to project a powerful stream of acid.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="/images/commanderdata/progression/dehaka/dehaka_11.png" alt = "New Unit: Tyrannozor"></td>
-                <td>New Unit: Tyrannozor</td>
-                <td>
-                    Units can be commanded to engage in primal combat to force evolutions. Unlocks the following new evolution:
-                    <ul>
-                        <li>Primal Ultralisks can evolve into Tyrannozors.</li>
-                        <li>Tyrannozors gain an ability that deals area damage.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="/images/commanderdata/progression/dehaka/dehaka_12.png" alt = "Survival Instinct"></td>
-                <td>Survival Instinct</td>
-                <td>
-                    Dehaka’s maximum level increases from 12 to 14 and unlocks the following mutation choices for Dehaka:
-                    <ul>
-                        <li>Passively heal nearby friendly units.</li>
-                        <li>Can attack air units.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="/images/commanderdata/progression/dehaka/dehaka_13.png" alt = "Elite Primal Zerg Upgrade Cache"></td>
-                <td>Elite Primal Zerg Upgrade Cache</td>
-                <td>
-                    Unlocks the following upgrades at Murvar and Dakrun’s Dens:
-                    <ul>
-                        <li>Primal Ultralisk and Tyrannozor attacks have a chance to stun enemies.</li>
-                        <li>Tyrannozor grants nearby friendly units extra armor.</li>
-                        <li>Creeper Host Creepers gain increased movement speed and can target air units.</li>
+                        <li>原始点火虫对轻甲单位造成额外伤害。</li>
+                        <li>穿刺者的攻击会使敌人受到“嫩化”，持续受到伤害。德哈卡吞噬被嫩化的敌人时，冷却时间仅为正常值的 25%。</li>
                     </ul>
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/dehaka/dehaka_14.png" alt = "Zerus Cunning"></td>
-                <td>Zerus Cunning</td>
+                <td><img src="/images/commanderdata/progression/dehaka/dehaka_10.png" alt = "进化的原始族群首领"></td>
+                <td>进化的原始族群首领</td>
                 <td>
-                    Dehaka’s maximum level increases from 14 to 15 and Dehaka starts with an additional mutation point.
+                    原始族群首领和原始蠕虫获得新技能：
+                    <ul>
+                        <li>格利维格获得可造成范围伤害的火焰吐息。</li>
+                        <li>穆瓦尔还会孵化爆炸爬行者。</li>
+                        <li>达克伦会向攻击者反射伤害（每次命中 20 点）。</li>
+                        <li>原始蠕虫和巨型原始蠕虫获得投射强大酸流的能力。</li>
+                    </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/dehaka/dehaka_15.png" alt = "Gene Mutation"></td>
-                <td>Gene Mutation</td>
+                <td><img src="/images/commanderdata/progression/dehaka/dehaka_11.png" alt = "新单位：暴龙兽"></td>
+                <td>新单位：暴龙兽</td>
                 <td>
-                    Primal combat evolutions have a chance to mutate, providing permanent passive bonuses that can increase life, attack speed, grant life leech, and more.
+                    可命令单位进行原始战斗以强制进化。解锁以下进化路线：
+                    <ul>
+                        <li>原始雷兽可以进化为暴龙兽。</li>
+                        <li>暴龙兽获得可造成范围伤害的技能。</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="/images/commanderdata/progression/dehaka/dehaka_12.png" alt = "生存本能"></td>
+                <td>生存本能</td>
+                <td>
+                    德哈卡的最高等级从 12 级提高至 14 级，并解锁以下变异选项：
+                    <ul>
+                        <li>被动治疗附近的友方单位。</li>
+                        <li>可以攻击空中单位。</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="/images/commanderdata/progression/dehaka/dehaka_13.png" alt = "精英原始虫族升级包"></td>
+                <td>精英原始虫族升级包</td>
+                <td>
+                    在穆瓦尔之巢和达克伦之巢解锁以下升级：
+                    <ul>
+                        <li>原始雷兽和暴龙兽攻击有一定几率击晕敌人。</li>
+                        <li>暴龙兽为附近的友方单位提供额外护甲。</li>
+                        <li>潜地宿主的爆炸爬行者提高移动速度，并可攻击空中单位。</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="spike">
+                <td><img src="/images/commanderdata/progression/dehaka/dehaka_14.png" alt = "狡猾的泽鲁斯"></td>
+                <td>狡猾的泽鲁斯</td>
+                <td>
+                    德哈卡的最高等级从 14 提升至 15，并在开始时额外获得一个突变点。
+                </td>
+            </tr>
+            <tr>
+                <td><img src="/images/commanderdata/progression/dehaka/dehaka_15.png" alt = "基因突变"></td>
+                <td>基因突变</td>
+                <td>
+                    通过原始战斗进化出的单位有几率发生基因突变，永久获得生命值、攻击速度、吸血等被动增益。
                 </td>
             </tr>
         </tbody>
     </table>
-    <p id="powerSpikeInfo">Highlighted rows denote large power spikes for the commander.</p>
-    <h2 id="achievements">Achievements</h2>
-    <p>The commander-specific achievements for Dehaka are:</p>
+    <p id="powerSpikeInfo">高亮行表示该指挥官的重要强势等级。</p>
+    <h2 id="achievements">成就</h2>
+    <p>德哈卡的指挥官专属成就如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Achievement</th>
-                <th>Name</th>
-                <th>Description</th>
+                <th>成就</th>
+                <th>名称</th>
+                <th>描述</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/achievements/dehaka/essencebuffet.jpg" alt="Essence Buffet"></td>
-                <td>Essence Buffet</td>
-                <td>Devour 2,000 supply with Dehaka in Co-op Missions.</td>
+                <td><img src="/images/commanderdata/achievements/dehaka/essencebuffet.jpg" alt="精华自助餐"></td>
+                <td>精华自助餐</td>
+                <td>在合作任务中，使用德哈卡吞噬总补给量达 2,000 的敌方单位。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/dehaka/powerleveling.jpg" alt="Power Leveling"></td>
-                <td>Power Leveling</td>
-                <td>Reach level 6 with Dehaka within the first 6 minutes on Hard difficulty.</td>
+                <td><img src="/images/commanderdata/achievements/dehaka/powerleveling.jpg" alt="代练"></td>
+                <td>代练</td>
+                <td>在困难难度下，于任务开始后的 6 分钟内将德哈卡升至 6 级。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/dehaka/primalrage.jpg" alt="Primal Rage"></td>
-                <td>Primal Rage</td>
-                <td>Deal 400,000 damage with Glevig, Murvar, and Dakrun in Co-op Missions.</td>
+                <td><img src="/images/commanderdata/achievements/dehaka/primalrage.jpg" alt="原始狂怒"></td>
+                <td>原始狂怒</td>
+                <td>在合作任务中，使用格利维格、穆瓦尔和达克伦累计造成 400,000 点伤害。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/dehaka/smashysmashy.jpg" alt="Smashy Smashy"></td>
-                <td>Smashy Smashy</td>
-                <td>Deal 800,000 damage with Dehaka in Co-op Missions.</td>
+                <td><img src="/images/commanderdata/achievements/dehaka/smashysmashy.jpg" alt="粉碎粉碎"></td>
+                <td>粉碎粉碎</td>
+                <td>在合作任务中，使用德哈卡累计造成 800,000 点伤害。</td>
             </tr>
         </tbody>
     </table>
-    <h2 id="calldowns">Calldowns</h2>
-    <p>The calldowns for Dehaka, at level 15, with no mastery points added are:</p>
+    <h2 id="calldowns">面板技能</h2>
+    <p>以下是德哈卡在 15 级且未投入精通点时的面板技能：</p>
     <table class="calldownTable">
         <thead>
             <tr>
-                <th>Calldown</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Recommended Usage</th>
-                <th>Numbers</th>
+                <th>面板技能</th>
+                <th>名称</th>
+                <th>描述</th>
+                <th>推荐使用方式</th>
+                <th>数据</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/abilities/dehaka/summongreaterprimalwurm.png" alt = "Summon Greater Primal Wurm"></td>
-                <td>Summon Greater Primal Wurm</td>
-                <td>Requirements: Glevig's Den<br><br>Summons a powerful temporary defensive Wurm that can detect cloaked and burrowed units.</td>
+                <td><img src="/images/commanderdata/abilities/dehaka/summongreaterprimalwurm.png" alt = "召唤巨型原始蠕虫"></td>
+                <td>召唤巨型原始蠕虫</td>
+                <td>要求：格利维格之巢<br><br>召唤一只强大的临时防御原始蠕虫，可探测隐形和潜地单位。</td>
                 <td>
                     <ul>
-                        <li>Useful for early-game detection.</li>
-                        <li>Excellent last-minute detection and damage (e.g. Nukes in base).</li>
-                        <li>Can be spawned in any explored location, regardless of vision.</li>
+                        <li>可在游戏前期提供探测。</li>
+                        <li>适合在紧急时刻提供探测和火力，例如应对基地中的核弹。</li>
+                        <li>可召唤至任何已探索的位置，无需当前视野。</li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        <li>Coolup: 120 seconds</li>
-                        <li>Cooldown: 120 seconds</li>
-                        <li>Max Charges: 3</li>
+                        <li>初始冷却时间：120 秒</li>
+                        <li>冷却时间：120 秒</li>
+                        <li>最大充能数：3</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/abilities/dehaka/summonglevig.png" alt = "Summon Glevig"></td>
-                <td>Summon Glevig</td>
-                <td>Requirements: Glevig's Den<br><br>Summons the Primal Pack Leader Glevig and a small pack of Primal Zerg. Glevig is a powerful stationary ranged attacker that deals area damage and can relocate his position with Deep Tunnel. Glevig will fight for 60 seconds before returning to his den.</td>
+                <td><img src="/images/commanderdata/abilities/dehaka/summonglevig.png" alt = "召唤格利维格"></td>
+                <td>召唤格利维格</td>
+                <td>要求：格利维格之巢<br><br>召唤原始族群首领格利维格和一小群原始虫族。格利维格是强大的远程火力单位，能够造成范围伤害，并可使用深槽虫道转移位置。格利维格会战斗 60 秒，随后返回巢穴。</td>
                 <td>
                     <ul>
-                        <li>Great for dealing with attack waves.</li>
-                        <li>Excellent mobility with Deep Tunnel (although vision is required).</li>
-                        <li>Useful for dealing structure damage.</li>
+                        <li>非常适合应对攻击波。</li>
+                        <li>深槽虫道提供出色的机动性，但需要目标位置的视野。</li>
+                        <li>适合摧毁建筑。</li>
                     </ul>
 
                 </td>
                 <td>
                     <ul>
-                        <li>Coolup: 120 seconds</li>
-                        <li>Cooldown: 360 seconds</li>
+                        <li>初始冷却时间：120 秒</li>
+                        <li>冷却时间：360 秒</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/abilities/dehaka/summonmurvar.png" alt = "Summon Murvar"></td>
-                <td>Summon Murvar</td>
-                <td>Requirements: Murvar's Den<br><br>Summons the Primal Pack Leader Murvar. Murvar spawns locusts and can create a cloud that slows enemy movement speed and prevents enemy units and structures from attacking or using energy-based abilities. Murvar will fight for 60 seconds before returning to her den.</td>
+                <td><img src="/images/commanderdata/abilities/dehaka/summonmurvar.png" alt = "召唤穆瓦尔"></td>
+                <td>召唤穆瓦尔</td>
+                <td>要求：穆瓦尔之巢<br><br>召唤原始族群首领穆瓦尔。穆瓦尔会孵化蝗虫，并生成云雾，降低敌人的移动速度，使敌方单位和建筑无法攻击或使用消耗能量的技能。穆瓦尔会战斗 60 秒，随后返回巢穴。</td>
                 <td>
                     <ul>
-                        <li>Useful when pushing into enemy bases to prevent units from attacking.</li>
-                        <li>Deals reasonably good amount of damage.</li>
-                        <li>Getting the Aerial Burst Sacs upgrade will allow creepers to target air units as well.</li>
+                        <li>当推进敌方基地以阻止单位攻击时很有用。</li>
+                        <li>造成相当可观的伤害。</li>
+                        <li>研究空中爆囊后，爆炸爬行者也能攻击空中单位。</li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        <li>Coolup: 60 seconds</li>
-                        <li>Cooldown: 360 seconds</li>
+                        <li>初始冷却时间：60 秒</li>
+                        <li>冷却时间：360 秒</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/abilities/dehaka/summondakrun.png" alt = "Summon Dakrun"></td>
-                <td>Summon Dakrun</td>
-                <td>Requirements: Dakrun's Den<br><br>Summons the Primal Pack Leader Dakrun. Darkrun is a heavily armored juggernaut that can charge at a target location to deal heavy damage and knock back enemy units in the area. Dakrun will fight for 60 seconds before returning to his den.</td>
+                <td><img src="/images/commanderdata/abilities/dehaka/summondakrun.png" alt = "召唤达克伦"></td>
+                <td>召唤达克伦</td>
+                <td>要求：达克伦之巢<br><br>召唤原始族群首领达克伦。达克伦是一头重甲巨兽，能够冲向目标位置，造成高额伤害并击退区域内的敌方单位。达克伦会战斗 60 秒，随后返回巢穴。</td>
                 <td>
                     <ul>
-                        <li>Damage reflect makes him really effective at dealing with low-HP waves.</li>
-                        <li>Good at tanking damage.</li>
+                        <li>伤害反射使他在应对由低生命值单位组成的进攻波时非常有效。</li>
+                        <li>非常适合承受伤害。</li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        <li>Coolup: 60 seconds</li>
-                        <li>Cooldown: 360 seconds</li>
+                        <li>初始冷却时间：60 秒</li>
+                        <li>冷却时间：360 秒</li>
                     </ul>
                 </td>
             </tr>
         </tbody>
     </table>
-    <p>Each of the calldowns above bring a new unit onto the battlefield. These units have abilities themselves, shown below.</p>
+    <p>上述每项召唤都会带来一个拥有独立技能的单位，具体如下。</p>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#dehaka/greaterprimalwurm">
-                <img src="/images/commanderdata/abilities/dehaka/greaterprimalwurm.jpg" alt="Greater Primal Wurm">
-                <p>Greater Primal Wurm</p>
+                <img src="/images/commanderdata/abilities/dehaka/greaterprimalwurm.jpg" alt="巨型原始蠕虫">
+                <p>巨型原始蠕虫</p>
             </a>
         </div>
         <div>
             <table class="unitAbilities">
                 <thead>
                     <tr>
-                        <th>Ability</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
+                        <th>能力</th>
+                        <th>名称</th>
+                        <th>描述</th>
+                        <th>冷却</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/abilities/dehaka/greaterbilestream.png" alt="Greater Bile Stream"></td>
-                        <td>Greater Bile Stream</td>
-                        <td>Deals 70 damage per second to the target unit for 5 seconds.</td>
-                        <td>20 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/dehaka/greaterbilestream.png" alt="强力胆汁喷射"></td>
+                        <td>强力胆汁喷射</td>
+                        <td>每秒对目标单位造成 70 点伤害，持续 5 秒。</td>
+                        <td>20 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/abilities/dehaka/greaterdeeptunnel.png" alt="Greater Deep Tunnel"></td>
-                        <td>Greater Deep Tunnel</td>
-                        <td>Quickly burrow to any visible location.</td>
-                        <td>60 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/dehaka/greaterdeeptunnel.png" alt="巨型深槽虫道"></td>
+                        <td>巨型深槽虫道</td>
+                        <td>快速挖掘到任何可见的位置。</td>
+                        <td>60 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -371,32 +371,32 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#dehaka/glevig">
-                <img src="/images/commanderdata/abilities/dehaka/glevig.jpg" alt="Glevig">
-                <p>Glevig</p>
+                <img src="/images/commanderdata/abilities/dehaka/glevig.jpg" alt="格利维格">
+                <p>格利维格</p>
             </a>
         </div>
         <div>
             <table class="unitAbilities">
                 <thead>
                     <tr>
-                        <th>Ability</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
+                        <th>能力</th>
+                        <th>名称</th>
+                        <th>描述</th>
+                        <th>冷却</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/abilities/dehaka/incendiaryacid.png" alt="Incendiary Acid"></td>
-                        <td>Incendiary Acid</td>
-                        <td>Carpets the ground in fire. Enemy units in the area take 500 damage over 5 seconds.  Can be set to Autocast.</td>
-                        <td>6 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/dehaka/incendiaryacid.png" alt="燃烧酸"></td>
+                        <td>燃烧酸</td>
+                        <td>使地面燃起火焰。区域内的敌方单位受到 500 点伤害，持续 5 秒。可设为自动施放。</td>
+                        <td>6 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/abilities/dehaka/deeptunnel.png" alt="Deep Tunnel"></td>
-                        <td>Deep Tunnel</td>
-                        <td>Glevig burrows to the target location and erupts, dealing damage to units in the area and knocking them back.</td>
-                        <td>0 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/dehaka/deeptunnel.png" alt="深槽虫道"></td>
+                        <td>深槽虫道</td>
+                        <td>格利维格钻入目标位置并爆发，对该区域内的单位造成伤害并将其击退。</td>
+                        <td>0 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -405,32 +405,32 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#dehaka/murvar">
-                <img src="/images/commanderdata/abilities/dehaka/murvar.jpg" alt="Murvar">
-                <p>Murvar</p>
+                <img src="/images/commanderdata/abilities/dehaka/murvar.jpg" alt="穆瓦尔">
+                <p>穆瓦尔</p>
             </a>
         </div>
         <div>
             <table class="unitAbilities">
                 <thead>
                     <tr>
-                        <th>Ability</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
+                        <th>能力</th>
+                        <th>名称</th>
+                        <th>描述</th>
+                        <th>冷却</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/abilities/dehaka/spawnswarm.png" alt="Spawn Swarm"></td>
-                        <td>Spawn Swarm</td>
-                        <td>Spawns 6 Primal Locusts and 6 Explosive Creepers that fight for 25 seconds.</td>
-                        <td>10 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/dehaka/spawnswarm.png" alt="孵化虫群"></td>
+                        <td>孵化虫群</td>
+                        <td>生成 6 只原始蝗虫和 6 只爆炸爬行者，战斗时间为 25 秒。</td>
+                        <td>10 秒</td>
                     </tr>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/abilities/dehaka/oppressivestench.png" alt="Oppressive Stench"></td>
-                        <td>Oppressive Stench</td>
-                        <td>Creates a cloud that slows enemy movement speed and prevents enemy units and structures from attacking or using energy-based abilities. Lasts for 5 seconds.</td>
-                        <td>3 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/dehaka/oppressivestench.png" alt="令人窒息的恶臭"></td>
+                        <td>令人窒息的恶臭</td>
+                        <td>生成一团云雾，降低敌人的移动速度，并使敌方单位和建筑无法攻击或使用消耗能量的技能。持续 5 秒。</td>
+                        <td>3 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -439,209 +439,209 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#dehaka/dakrun">
-                <img src="/images/commanderdata/abilities/dehaka/dakrun.jpg" alt="Dakrun">
-                <p>Dakrun</p>
+                <img src="/images/commanderdata/abilities/dehaka/dakrun.jpg" alt="达克伦">
+                <p>达克伦</p>
             </a>
         </div>
         <div>
             <table class="unitAbilities">
                 <thead>
                     <tr>
-                        <th>Ability</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
+                        <th>能力</th>
+                        <th>名称</th>
+                        <th>描述</th>
+                        <th>冷却</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/abilities/dehaka/brutalcharge.png" alt="Brutal Charge"></td>
-                        <td>Brutal Charge</td>
-                        <td>Charge to a target location knocking back units  in the area and dealing 200 damage.</td>
-                        <td>10 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/dehaka/brutalcharge.png" alt="残酷冲锋"></td>
+                        <td>残酷冲锋</td>
+                        <td>冲向目标位置，击退该区域内的单位并造成 200 点伤害。</td>
+                        <td>10 秒</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-    <h2 id="leveling">Sub-Ascension Leveling</h2>
-    <p>Difficulty: Moderate</p>
-    <p>The biggest challenge with Dehaka is during the early game, where Dehaka only has one point to allocate. This point should go towards Devour. In early levels (before you have Primal Combat units), build Hydralisks and Ultralisks as your main army composition. The Ultralisks can tank while the Hydralisks deal damage from the back.</p>
-    <h2 id="masteries">Masteries</h2>
-    <p>Below are the three Power Sets for Dehaka with the recommended point allocations for each. Note that these are meant to serve a general, all-purpose build that is effective across all maps with no Prestiges selected. You are highly encourged to change these masteries to suit your playstyle and particular challenges you face (e.g. <a href="/resources/weeklymutations">Weekly Mutations</a>).</p>
-    <p>Power Set 1:</p>
+    <h2 id="leveling">飞升前升级</h2>
+    <p>难度：中等</p>
+    <p>德哈卡升级过程中最大的难点在游戏前期：英雄登场时只有一个技能点，应优先投入吞噬。在尚未解锁原始战斗进化单位的低等级阶段，可用刺蛇和雷兽作为主力部队；雷兽在前排承伤，刺蛇在后排输出。</p>
+    <h2 id="masteries">精通</h2>
+    <p>以下是德哈卡三个技能组的建议点数分配。这套方案适用于未选择威望时的大多数地图；请根据个人打法和具体挑战（例如<a href="/resources/weeklymutations">每周突变</a>）灵活调整。</p>
+    <p>技能组 1：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>精通</th>
+                <th>数值</th>
+                <th>推荐投入点数</th>
+                <th>补充说明</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Devour Healing Increase</td>
-                <td>1% per point<br>30% maximum</td>
+                <td>吞噬治疗量提高</td>
+                <td>每点 1%<br>最多 30%</td>
                 <td>30</td>
-                <td rowspan="2">The Buff Duration mastery can help lengthen the time Dehaka has buffs, helping him move from one base to another while maintaining the buffs. A full stack of buffs can also strengthen Dehaka's survivability, however, the challenge comes in obtaining those buffs without the bonus to healing.</td>
+                <td rowspan="2">增益持续时间精通可让德哈卡保留增益更久，便于带着增益在不同敌方基地之间转移。完整增益也能提高生存能力，但不投入治疗量精通时，获得这些增益的过程会更加危险。</td>
             </tr>
             <tr>
-                <td>Devour Buff Duration</td>
-                <td>3% per point<br>90% maximum</td>
+                <td>吞噬增益持续时间</td>
+                <td>每点 3%<br>最大 90%</td>
                 <td>0</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">With efficient play, Devour will have a short cooldown, allowing you to replenish the buff as needed, making the Buff Duration mastery redundant.</p>
-    <p>Power Set 2:</p>
+    <p class="masterySummary">操作得当时，吞噬的冷却时间很短，可以按需刷新增益，因此增益持续时间精通的价值较低。</p>
+    <p>技能组 2：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>精通</th>
+                <th>数值</th>
+                <th>推荐投入点数</th>
+                <th>补充说明</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Greater Primal Wurm Cooldown</td>
-                <td>-2% per point<br>-60% maximum</td>
+                <td>巨型原始蠕虫冷却时间</td>
+                <td>每点 -2%<br>最大 -60%</td>
                 <td>0</td>
-                <td rowspan="2">The Primal Wurm Cooldown can benefit players that prefer to spam the Wurms for vision, and for support. Note that the support they can provide Dehaka is minimal. Usually, it is better to not use them as much, rather than spending mastery points to reduce their cooldown.</td>
+                <td rowspan="2">巨型原始蠕虫冷却时间适合频繁召唤它们来获取视野和提供支援的玩家，但它们能为德哈卡提供的帮助有限。通常无需频繁使用，也不值得为此投入精通点。</td>
             </tr>
             <tr>
-                <td>Pack Leaders Active Duration</td>
-                <td>1% per point<br>30% maximum</td>
+                <td>原始族群首领持续时间</td>
+                <td>每点 1%<br>最多 30%</td>
                 <td>30</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">The Pack Leaders are the most important calldowns for Dehaka, so increasing the time they stay on the field is the better pick.</p>
-    <p>Power Set 3:</p>
+    <p class="masterySummary">原始族群首领是德哈卡最重要的召唤，因此延长其在场时间通常是更好的选择。</p>
+    <p>技能组 3：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>精通</th>
+                <th>数值</th>
+                <th>推荐投入点数</th>
+                <th>补充说明</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Gene Mutation Chance</td>
-                <td>1% per point<br>30% maximum</td>
+                <td>基因突变几率</td>
+                <td>每点 1%<br>最多 30%</td>
                 <td>?</td>
-                <td rowspan="2">Players that prefer to use Dehaka's combat units instead of Dehaka himself would probably prefer to use the Gene Mutation chance which can improve Dehaka's units significantly.</td>
+                <td rowspan="2">更依赖德哈卡部队作战的玩家可优先选择基因突变几率，它能显著强化进化单位。</td>
             </tr>
             <tr>
-                <td>Dehaka Attack Speed</td>
-                <td>1% per point<br>30% maximum</td>
+                <td>德哈卡攻击速度</td>
+                <td>每点 1%<br>最多 30%</td>
                 <td>?</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">Both mastery choices are competitive choices, and the player will have to determine what mastery allocation to use to help their playstyle. The Gene Mutation Chance is slightly better as it is very rare for Dehaka to not utilize any army units.</p>
-    <h2 id="prestiges">Prestiges</h2>
-    <p>Below are the prestiges for Dehaka. Note that "Effective Level" is the level at which the prestige achieves it full effect.</p>
+    <p class="masterySummary">两项精通都很有竞争力，应按个人打法分配。由于德哈卡几乎总会搭配部队，基因突变几率通常略占优势。</p>
+    <h2 id="prestiges">威望</h2>
+    <p>以下是德哈卡的威望。“生效等级”表示该威望能够完整发挥作用的最低等级。</p>
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P1: <strong>Devouring One</strong></td>
+                <td class="prestigeTitle" colspan="2">P1：<strong>吞噬者</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优点</th>
                 <td>
                     <ul>
-                        <li>Devour applies its benefits to all nearby friendly units.</li>
+                        <li>吞噬获得的增益会同时施加给附近所有友方单位。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>缺点</th>
                 <td>
                     <ul>
-                        <li>Dehaka has 0 base armor, loses the Scorching Breath ability, and has his max level reduced by 4.</li>
+                        <li>德哈卡的基础护甲降为 0，失去灼热吐息，且最高等级降低 4 级。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Notes</th>
+                <th>说明</th>
                 <td>
                     <ul>
-                        <li>All friendly units within 10 range of Dehaka gets the Devour buffs</li>
-                        <li>When Devouring air units, buff applied is +2 range for ranged weapons</li>
-                        <li>When Devouring Psionic units, buff applied is only cooldown reduction</li>
+                        <li>德哈卡周围 10 范围内的所有友方单位都会获得吞噬增益。</li>
+                        <li>吞噬空中单位时，远程武器增益会额外提供 +2 射程。</li>
+                        <li>吞噬灵能单位时，只会向友军施加冷却时间缩短增益。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>生效等级</th>
                 <td>1</td>
             </tr>
             <tr>
-                <th>Advice</th><td>This prestige allows Dehaka to buff his own and allied units as he devours enemies in battle. It is especially powerful when playing with commanders that have Hero units. However, if your ally is not able to take advantage of Dehaka's buff's, the impact of the prestige is greatly diminished and the player is better off not using a Prestige Talent.</td>
+                <th>建议</th><td>该威望让德哈卡在战斗中吞噬敌人时，同时强化自己和友军单位，与拥有英雄单位的指挥官合作时尤其强大。如果盟友无法有效利用这些增益，威望收益会大幅降低，此时不选威望反而更好。</td>
             </tr>
         </tbody>
     </table>
-    <p>Devouring a Psionic unit will provide an ability cooldown buff to all units within Dehaka's vicinity. This makes Psionic units even more valuable. The interactions with various commanders' Heroic units are listed below:</p>
-    <li>Abathur: Brutalisk Deep Tunnel and both Symbiote abilities get cooldown reduction</li>
-    <li>Alarak: None of his abilities get cooldown reduction. Mothership Thermal Lance and Teleport get cooldown reduction, however Shadow of Death Destroyer Warp In does not</li>
-    <li>Dehaka: All pack leaders get cooldown reduction</li>
-    <li>Fenix: Praetor Armor and Solarite Dragoon abilities do not get cooldown reduction. All A.I Champions get cooldown reduction for their abilities except for Clolarion's Interceptors and Interdictors</li>
-    <li>Kerrigan: Immobilization Wave and Assimilion Aura do not get cooldown reduction</li>
-    <li>Nova: Only Sabotage Drone gets cooldown reduction</li>
-    <li>Raynor: All Hyperions abilities get cooldown reduction</li>
-    <li>Stetmann: Only Garyzone is affected</li>
-    <li>Stukov: Only Apocalisk Burrow Charge gets cooldown reduction</li>
-    <li>Tychus: Only non-charge-based abilities get cooldown reduction</li>
-    <li>Vorazun: All Shadow Guard abilities are affected</li>
-    <li>Zagara: Apex Predator Deep Tunnel gets cooldown reduction only</li>
-    <li>Zeratul: Cleave, Void Seeker get cooldown reduction only. Both Avatars and all Legions get cooldown reduction</li>
+    <p>吞噬灵能单位会为德哈卡附近的所有单位提供技能冷却增益，使灵能目标更具价值。该增益与各指挥官英雄单位的交互如下：</p>
+    <li>阿巴瑟：莽兽的深槽虫道和两项共生体技能都会缩短冷却时间。</li>
+    <li>阿拉纳克：阿拉纳克本人的技能均不受影响。母舰的热能射线和传送会缩短冷却时间，但“死亡阴影”召唤的毁灭者折跃不会。</li>
+    <li>德哈卡：所有原始族群首领的技能都会缩短冷却时间。</li>
+    <li>菲尼克斯：执政官装甲和太阳能龙骑士的技能不会缩短冷却时间。除克罗拉里昂的拦截机和禁绝者外，所有勇士人工智能的技能都会缩短冷却时间。</li>
+    <li>凯瑞甘：定身波和同化光环不会缩短冷却时间。</li>
+    <li>诺瓦：只有破坏无人机的冷却时间会缩短。</li>
+    <li>雷诺：海伯利昂号的所有技能都会缩短冷却时间。</li>
+    <li>斯台特曼：只有盖瑞的区域技能受到影响。</li>
+    <li>斯托科夫：只有末日巨兽的潜地冲锋会缩短冷却时间。</li>
+    <li>泰凯斯：只有不以充能次数为限制的技能才会缩短冷却时间。</li>
+    <li>沃拉尊：暗影卫队的所有技能都会缩短冷却时间。</li>
+    <li>扎加拉：只有顶级捕食者的深槽虫道会缩短冷却时间。</li>
+    <li>泽拉图：顺势斩和虚空探索者会缩短冷却时间；化身和所有军团也会缩短冷却时间。</li>
     <br>
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P2: <strong>Primal Contender</strong></td>
+                <td class="prestigeTitle" colspan="2">P2：<strong>原始挑战者</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优点</th>
                 <td>
                     <ul>
-                        <li>Pack Leaders and their entourage deal 50% more damage and have 100% increased life.</li>
-                        <li>Pack Leader cooldowns reduced by 33%. </li>
-                        <li>Pack Leaders can consume Essence for Dehaka.</li>
+                        <li>族群首领及其随从造成的伤害增加 50%，生命增加 100%。</li>
+                        <li>族群首领冷却时间减少 33%。</li>
+                        <li>原始族群首领可代替德哈卡收集精华。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>缺点</th>
                 <td>
                     <ul>
-                        <li>Dehaka exits the map while a Pack Leader is active.</li>
-                        <li>Only one Pack Leader may be active at a time.</li>
+                        <li>原始族群首领在场时，德哈卡会暂时离开地图。</li>
+                        <li>同一时间只能有一名原始族群首领在场。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Notes</th>
+                <th>说明</th>
                 <td>
                     <ul>
-                        <li>Dehaka respawns from where he left the map</li>
-                        <li>Pack Leaders do not have abilities until they get unlocked with the Level 10 talent</li>
-                        <li>Pack Leader Coolup times are not affected</li>
-                        <li>Combined with the Pack Leader Duration mastery, you can have Pack Leaders on the map nearly 100% of the game length</li>
+                        <li>德哈卡会在离开地图的位置重新出现。</li>
+                        <li>解锁 10 级天赋前，原始族群首领没有主动技能。</li>
+                        <li>原始族群首领的初始冷却时间不受影响。</li>
+                        <li>配合原始族群首领持续时间精通，可以让原始族群首领在接近 100% 的任务时间内保持在场。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>生效等级</th>
                 <td>1</td>
             </tr>
             <tr>
-                <th>Advice</th><td>This prestige can vastly increase the amount of damage that can be dealt by Pack Leaders by increasing their life and allowing the player to spawn them more often. However, it can be challenging for players that are unaware on how to select Pack Leaders to deal with a situation they are facing. However, this presige does alleviate the pressure on players to micro several things at the same time, allowing them to focus on a single Pack Leader at a time.</td>
+                <th>建议</th><td>该威望大幅提高原始族群首领的生命值和出场频率，使其能够造成更多伤害。玩家需要熟悉不同首领的适用场景，但德哈卡会在首领登场时离场，也降低了多线操作压力，让玩家能专注控制当前首领。</td>
             </tr>
         </tbody>
     </table>
@@ -649,99 +649,99 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P3: <strong>Broodbrother</strong></td>
+                <td class="prestigeTitle" colspan="2">P3：<strong>族群兄弟</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优点</th>
                 <td>
                     <ul>
-                        <li>Dehaka spawns a clone.</li>
+                        <li>德哈卡会生成一个克隆体。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>缺点</th>
                 <td>
                     <ul>
-                        <li>If either Dehaka or the clone dies, the other dies as well.</li>
+                        <li>如果德哈卡或克隆体死亡，另一个也会死亡。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Notes</th>
+                <th>说明</th>
                 <td>
                     <ul>
-                        <li>Essence is not shared between Dehaka and Zweihaka</li>
+                        <li>德哈卡与克隆体之间不共享精华。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>生效等级</th>
                 <td>1</td>
             </tr>
             <tr>
-                <th>Advice</th><td>Because Essence is not shared between the two hero units, the amount of Essence required to reach maximum level is essentially doubled. Combined with the fact that micro-ing Dehaka (while also macro-ing behind) is already very difficult, adding a second Hero unit that also increases your liability makes this prestige fairly ineffective.</td>
+                <th>建议</th><td>由于两个英雄不共享精华，将二者都升至最高等级所需的精华几乎翻倍。德哈卡本身已经需要较多操作，同时还要兼顾运营；再增加一个英雄会进一步加重操作负担，因此该威望通常收益不高。</td>
             </tr>
         </tbody>
     </table>
-    <p>The choice of prestige will come down to both player and ally skill. A player with a highly-skilled ally might be able to get a lot of value out of Devouring One. On the other hand, a highly-skilled player that understands how to use Pack Leaders effectively may get a lot of mileage out of Primal Contender. For safer play, playing without a Prestige Talent is fine too.</p>
-    <h2 id="hero">Hero Unit</h2>
-    <img id="heroPic" src="/images/commanderdata/hero/dehaka/dehaka.jpg" alt="Dehaka">
-    <p>Spawn time: 1:00</p>
-    <p>Respawn time: 1:30</p>
-    <p>The abilities for Dehaka are (at max level 3):</p>
+    <p>威望选择取决于玩家和盟友的操作水平。高水平盟友往往能充分利用“吞噬者”；熟悉族群首领用法的玩家则能从“原始挑战者”中获得很高收益。若希望打法更稳妥，也可以不选择威望。</p>
+    <h2 id="hero">英雄单位</h2>
+    <img id="heroPic" src="/images/commanderdata/hero/dehaka/dehaka.jpg" alt="德哈卡">
+    <p>生成时间：1:00</p>
+    <p>重生时间：1:30</p>
+    <p>德哈卡的技能如下（最高 3 级）：</p>
     <table class="abilityTable">
         <thead>
             <tr>
-                <th>Ability</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Cooldown</th>
+                <th>能力</th>
+                <th>名称</th>
+                <th>描述</th>
+                <th>冷却</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/hero/dehaka/leap.png" alt = "Leap"></td>
-                <td>Leap</td>
-                <td>Dehaka leaps to the target location, dealing 145 damage to nearby enemy ground units. Each enemy hit grants Dehaka 1 armour for 2 seconds.</td>
-                <td>10 seconds</td>
+                <td><img src="/images/commanderdata/hero/dehaka/leap.png" alt = "飞跃"></td>
+                <td>飞跃</td>
+                <td>德哈卡跃向目标位置，对附近敌方地面单位造成 145 点伤害。每命中一个敌人，德哈卡获得 1 点护甲，持续 2 秒。</td>
+                <td>10 秒</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/dehaka/intimidatingroar.png" alt = "Intimidating Roar"></td>
-                <td>Intimidating Roar</td>
-                <td>Dehaka terrifies nearby enemies, reducing their movement speed by 75% and attack speed by 25% for 15 seconds.<br>Enemies affected by Intimidating Roar have their armor reduced by 2 and cannot use abilities that cost energy.</td>
-                <td>30 seconds</td>
+                <td><img src="/images/commanderdata/hero/dehaka/intimidatingroar.png" alt = "威吓咆哮"></td>
+                <td>威吓咆哮</td>
+                <td>德哈卡威吓附近敌人，使其移动速度降低 75%、攻击速度降低 25%，持续 15 秒。<br>受威吓咆哮影响的敌人还会降低 2 点护甲，且无法使用消耗能量的技能。</td>
+                <td>30 秒</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/dehaka/devour.png" alt = "Devour"></td>
-                <td>Devour</td>
-                <td>Instantly kill the target enemy unit to heal 5% Life and gain passive abilities based on the enemy type for 25 seconds. The cooldown is based on the amount of life the enemy has when killed.</td>
-                <td>~ seconds</td>
+                <td><img src="/images/commanderdata/hero/dehaka/devour.png" alt = "吞噬"></td>
+                <td>吞噬</td>
+                <td>立即击杀目标敌方单位，恢复 5% 生命值，并根据敌人类型获得持续 25 秒的被动增益。冷却时间取决于目标被击杀时的生命值。</td>
+                <td>〜秒</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/dehaka/scorchingbreath.png" alt = "Scorching Breath"></td>
-                <td>Scorching Breath</td>
-                <td>Dehaka's fiery breath scorches the earth, dealing weapon damage to all enemy units in its path. 3 charges max.</td>
-                <td>30 seconds</td>
+                <td><img src="/images/commanderdata/hero/dehaka/scorchingbreath.png" alt = "灼热吐息"></td>
+                <td>灼热吐息</td>
+                <td>德哈卡喷出烈焰灼烧地面，对路径上的所有敌方单位造成武器伤害。最多储存 3 次充能。</td>
+                <td>30 秒</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/abilities/dehaka/deeptunnel.png" alt="Deep Tunnel"></td>
-                <td>Deep Tunnel</td>
-                <td>Quickly burrow to any visible location.</td>
-                <td>60 seconds</td>
+                <td><img src="/images/commanderdata/abilities/dehaka/deeptunnel.png" alt="深槽虫道"></td>
+                <td>深槽虫道</td>
+                <td>快速挖掘到任何可见的位置。</td>
+                <td>60 秒</td>
             </tr>
         </tbody>
     </table>
-    <p>As Dehaka gathers esssence, he also gains increased attack and HP stats as follows:</p>
+    <p>德哈卡收集精华时，攻击力和生命值会按以下方式提高：</p>
     <ul>
-        <li>Attack: This is equal to (level +1)x10. For example, at level 11, he will have 120 attack.</li>
-        <li>HP: For every Essence he gathers, he will gain +0.75 max life and regenerate 2 HP.</li>
+        <li>攻击力：等于（等级 + 1）× 10。例如，11 级时攻击力为 120。</li>
+        <li>生命值：每收集一点精华，最大生命值提高 0.75，并恢复 2 点生命值。</li>
     </ul>
-    <h2 id="army">Recommended Army Composition</h2>
-    <p>The recommended army composition for Dehaka is below. Note that this assumes no Prestige talent selected and recommended Mastery Allocations. This is a basic recommendation for your army framework. It is recommended to gain an understanding for each of the units in the <a href="#units">Units</a> section and further add tech units so that you are able to better handle the situations you face.</p>
-    <img class="army" src="/images/commanderdata/units/dehaka/primalmutalisk.jpg" alt="Primal Mutalisk">
-    <p>Primal Mutalisks provide an all-round solution to dealing with enemies. Remember that you will need to first engage attack wave with Dehaka (preferably devouring a Psionic unit to deal splash damage wiping out most of the dangerous units) and then cleaning up with the Mutalisks.</p>
-    <div id="tooltip">tooltip</div>
+    <h2 id="army">推荐配兵</h2>
+    <p>以下配兵假设未选择威望，并采用推荐精通分配。这只是部队的基础框架；建议阅读<a href="#units">作战单位</a>一节，按敌方阵容加入合适的功能单位。</p>
+    <img class="army" src="/images/commanderdata/units/dehaka/primalmutalisk.jpg" alt="原始异龙">
+    <p>原始异龙能应对绝大多数敌人。交战时应先让德哈卡处理进攻波，最好吞噬灵能单位触发范围伤害，消灭大部分高威胁目标，再让异龙收尾。</p>
+    <div id="tooltip">工具提示</div>
     <script>
         $(".army").on('mouseover',function(e){
             var unit = $(this).attr("alt").split(":");
@@ -772,64 +772,64 @@ require_once __DIR__ . "/../../includes/wrapper.php";
 
         });
     </script>
-    <h2 id="units">Combat Units</h2>
-    <p>For more information on Dehaka's unit stats, comparison between units and upgrade calculations, visit the <a href="/units/#dehaka">Data Tables</a> page.</p>
-    <p>Dehaka's combat units are listed below:</p>
+    <h2 id="units">作战单位</h2>
+    <p>有关德哈卡的单位属性、单位对比和升级计算，请参阅<a href="/units/#dehaka">数据表</a>。</p>
+    <p>德哈卡的作战单位如下：</p>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#dehaka/primalzergling">
-                <img src="/images/commanderdata/units/dehaka/primalzergling.jpg" alt="Primal Zergling">
-                <p>Primal Zergling</p>
+                <img src="/images/commanderdata/units/dehaka/primalzergling.jpg" alt="原始跳虫">
+                <p>原始跳虫</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Extremely basic unit.</li>
-                <li>Generally not worth making, as they are outperformed by other units.</li>
-                <li>Most commonly used to clear expansion rocks.</li>
+                <li>非常基础的单位。</li>
+                <li>通常不值得生产，因为其他单位的表现更好。</li>
+                <li>最常用于清理扩张区岩石。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades: None</p>
+            <p>技能：无</p>
+            <p>升级：无</p>
         </div>
     </div>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#dehaka/ravasaur">
-                <img src="/images/commanderdata/units/dehaka/ravasaur.jpg" alt="Ravasaur">
-                <p>Ravasaur</p>
+                <img src="/images/commanderdata/units/dehaka/ravasaur.jpg" alt="暴掠龙">
+                <p>暴掠龙</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Created from 2 Zerglings through Primal Combat.</li>
-                <li>Objectively worse than Primal Zerglings, due to reduced DPS.</li>
+                <li>由 2 只原始跳虫通过原始战斗进化而来。</li>
+                <li>伤害输出较低，整体表现反而不如原始跳虫。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades:</p>
+            <p>技能：无</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/dehaka/dissolvingacid.png" alt="Dissolving Acid"></td>
-                        <td>Dissolving Acid</td>
-                        <td>Ravasaurs deal +15 damage to armored targets.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/dehaka/dissolvingacid.png" alt="溶解酸"></td>
+                        <td>溶解酸</td>
+                        <td>暴掠龙对重甲目标造成的伤害提高 15 点。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/dehaka/enlargedparotidglands.png" alt="Enlarged Parotid Glands"></td>
-                        <td>Enlarged Parotid Glands</td>
-                        <td>Increases movement speed and attack range.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/dehaka/enlargedparotidglands.png" alt="腮腺肿大"></td>
+                        <td>腮腺肿大</td>
+                        <td>增加移动速度和攻击范围。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -838,34 +838,34 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#dehaka/primalroach">
-                <img src="/images/commanderdata/units/dehaka/primalroach.jpg" alt="Primal Roach">
-                <p>Primal Roach</p>
+                <img src="/images/commanderdata/units/dehaka/primalroach.jpg" alt="原始蟑螂">
+                <p>原始蟑螂</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Basic unit.</li>
-                <li>Doesn't see much play, due to it being less effective than its upgraded form, the Primal Igniter.</li>
+                <li>基本单位。</li>
+                <li>实战中较少使用，因为其效率不如进化形态原始点火虫。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades:</p>
+            <p>技能：无</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/dehaka/glialreconstitution.png" alt="Glial Reconstitution"></td>
-                        <td>Glial Reconstitution</td>
-                        <td>Increases the movement speed of Primal Roaches by 31% and Primal Igniters by 19%.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/dehaka/glialreconstitution.png" alt="神经胶质重建"></td>
+                        <td>神经胶质重建</td>
+                        <td>原始蟑螂的移动速度提高 31%，原始点火虫的移动速度提高 19%。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -874,41 +874,41 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#dehaka/primaligniter">
-                <img src="/images/commanderdata/units/dehaka/primaligniter.jpg" alt="Primal Igniter">
-                <p>Primal Igniter</p>
+                <img src="/images/commanderdata/units/dehaka/primaligniter.jpg" alt="原始点火虫">
+                <p>原始点火虫</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Created from 2 Primal Roaches through Primal Combat.</li>
-                <li>Extremely effective on infested maps, due to its splash damage, and bonus damage to light units with the "Concentrated Fire" upgrade.</li>
+                <li>由 2 只原始蟑螂通过原始战斗进化而来。</li>
+                <li>拥有范围伤害，研究“集中火力”后还能对轻甲单位造成额外伤害，因此在感染地图上极其有效。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades:</p>
+            <p>技能：无</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/dehaka/glialreconstitution.png" alt="Glial Reconstitution"></td>
-                        <td>Glial Reconstitution</td>
-                        <td>Increases the movement speed of Primal Roaches by 31% and Primal Igniters by 19%.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/dehaka/glialreconstitution.png" alt="神经胶质重建"></td>
+                        <td>神经胶质重建</td>
+                        <td>原始蟑螂的移动速度提高 31%，原始点火虫的移动速度提高 19%。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/dehaka/concentratedfire.png" alt="Concentrated Fire"></td>
-                        <td>Concentrated Fire</td>
-                        <td>Increases the Primal Igniter's damage against light enemies by 15.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/dehaka/concentratedfire.png" alt="集中火力"></td>
+                        <td>集中火力</td>
+                        <td>原始点火虫对轻甲敌人的伤害提高 15 点。</td>
                         <td>100/100</td>
-                        <td>120 seconds</td>
+                        <td>120 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -917,62 +917,62 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#dehaka/primalguardian">
-                <img src="/images/commanderdata/units/dehaka/primalguardian.jpg" alt="Primal Guardian">
-                <p>Primal Guardian</p>
+                <img src="/images/commanderdata/units/dehaka/primalguardian.jpg" alt="原始守护者">
+                <p>原始守护者</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Created from 2 Primal Roaches through Primal Combat.</li>
-                <li>Effective on infested maps with the "Explosive Spores" upgrade.</li>
-                <li>Useful in small numbers when dealing with ground compositions.</li>
+                <li>由 2 只原始蟑螂通过原始战斗进化而来。</li>
+                <li>研究“爆炸孢子”后，在感染地图上表现出色。</li>
+                <li>应对地面阵容时，少量编入即可发挥作用。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>描述</th>
+                        <th>冷却</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="unlockable autocast">
-                        <td><img src="/images/commanderdata/unitskills/dehaka/explosivespores.png" alt="Explosive Spores"></td>
-                        <td>Explosive Spores</td>
-                        <td>Fires an Explosive Spore at the target, causing the target and all nearby enemy ground units to take 50 damage.</td>
-                        <td>10 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/dehaka/explosivespores.png" alt="爆炸孢子"></td>
+                        <td>爆炸孢子</td>
+                        <td>向目标发射爆炸孢子，使目标和附近所有敌方地面单位受到 50 点伤害。</td>
+                        <td>10 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/dehaka/explosivespores.png" alt="Explosive Spores"></td>
-                        <td>Explosive Spores</td>
-                        <td>Primal Guardians can fire an Explosive Spore at the target, causing the target and all nearby enemy ground units to take 50 damage.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/dehaka/explosivespores.png" alt="爆炸孢子"></td>
+                        <td>爆炸孢子</td>
+                        <td>原始守护者可以向目标发射爆炸孢子，对目标和附近所有敌方地面单位造成 50 点伤害。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/dehaka/primordialfury.png" alt="Primordial Fury"></td>
-                        <td>Primordial Fury</td>
-                        <td>Primal Guardian attacks temporarily increases its attack speed by 10%. Can stack up to 50% increased attack speed.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/dehaka/primordialfury.png" alt="原始之怒"></td>
+                        <td>原始之怒</td>
+                        <td>原始守护者每次攻击都会使攻击速度暂时提高 10%，最多叠加至 50%。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -981,34 +981,34 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#dehaka/primalhydralisk">
-                <img src="/images/commanderdata/units/dehaka/primalhydralisk.jpg" alt="Primal Hydralisk">
-                <p>Primal Hydralisk</p>
+                <img src="/images/commanderdata/units/dehaka/primalhydralisk.jpg" alt="原始刺蛇">
+                <p>原始刺蛇</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Basic unit.</li>
-                <li>Can be used on shorter maps, however, they are much more effective in their upgraded forms, Primal Mutalisks or Impalers.</li>
+                <li>基本单位。</li>
+                <li>可在流程较短的地图中使用，但进化为原始异龙或穿刺者后效率更高。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades:</p>
+            <p>技能：无</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/dehaka/muscularaugments.png" alt="Muscular Augments"></td>
-                        <td>Muscular Augments</td>
-                        <td>Increases Primal Hydralisk movement speed by 22% and attack range by 1.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/dehaka/muscularaugments.png" alt="肌肉增强"></td>
+                        <td>肌肉增强</td>
+                        <td>原始刺蛇的移动速度提高 22%，攻击射程增加 1。</td>
                         <td>50/50</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -1017,51 +1017,51 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#dehaka/primalmutalisk">
-                <img src="/images/commanderdata/units/dehaka/primalmutalisk.jpg" alt="Primal Mutalisk">
-                <p>Primal Mutalisk</p>
+                <img src="/images/commanderdata/units/dehaka/primalmutalisk.jpg" alt="原始异龙">
+                <p>原始异龙</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Created from 2 Primal Hydralisks through Primal Combat.</li>
-                <li>The main work-horse of Dehaka's army.</li>
-                <li>Great all-round unit that works in all situations, although not as effective as more specialized units.</li>
-                <li>"Primal Reconstitution" allows Mutalisks to respawn, and should be obtained before bringing Mutalisks into combat.</li>
-                <li>"Slicing Glaive" upgrade should only be obtained when dealing with <a href="/guides/enemycomps">enemy air compositions</a>.</li>
+                <li>由 2 只原始刺蛇通过原始战斗进化而来。</li>
+                <li>德哈卡军队的主力。</li>
+                <li>用途全面，几乎适用于所有场合，但在特定任务上不如专业单位高效。</li>
+                <li>“原始重建”可使异龙死后复活，应在让异龙投入战斗前完成研究。</li>
+                <li>仅在对抗<a href="/guides/enemycomps">敌方空军阵容</a>时建议研究“切割飞刃”。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades:</p>
+            <p>技能：无</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/dehaka/slicingglaive.png" alt="Slicing Glaive"></td>
-                        <td>Slicing Glaive</td>
-                        <td>Primal Mutalisks deal 100% increased damage against air units.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/dehaka/slicingglaive.png" alt="切割飞刃"></td>
+                        <td>切割飞刃</td>
+                        <td>原始异龙对空中单位造成的伤害提高 100%。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/dehaka/shiftingcarapace.png" alt="Shifting Carapace"></td>
-                        <td>Shifting Carapace</td>
-                        <td>Primal Mutalisks take 50% less damage while moving.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/dehaka/shiftingcarapace.png" alt="变换甲壳"></td>
+                        <td>变换甲壳</td>
+                        <td>原始异龙移动时受到的伤害减少 50%。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/dehaka/primalreconstitution.png" alt="Primal Reconstitution"></td>
-                        <td>Primal Reconstitution</td>
-                        <td>Primal Mutalisks revive on death after a short time. Cannot occur more than once every 60 seconds.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/dehaka/primalreconstitution.png" alt="原始重建"></td>
+                        <td>原始重建</td>
+                        <td>原始异龙死亡后会在短时间内复活。每 60 秒最多触发一次。</td>
                         <td>150/150</td>
-                        <td>90 seconds</td>
+                        <td>90 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -1070,36 +1070,36 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#dehaka/impaler">
-                <img src="/images/commanderdata/units/dehaka/impaler.jpg" alt="Impaler">
-                <p>Impaler</p>
+                <img src="/images/commanderdata/units/dehaka/impaler.jpg" alt="穿刺者">
+                <p>穿刺者</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Created from 2 Primal Hydralisks through Primal Combat.</li>
-                <li>Fantastic siege unit.</li>
-                <li>Can deal great amounts of damage to structures.</li>
-                <li>Has higher attack range than vision range.</li>
+                <li>由 2 只原始刺蛇通过原始战斗进化而来。</li>
+                <li>出色的攻城单位。</li>
+                <li>能对建筑造成大量伤害。</li>
+                <li>攻击射程大于自身视野范围。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades:</p>
+            <p>技能：无</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/dehaka/tenderize.png" alt="Tenderize"></td>
-                        <td>Tenderize</td>
-                        <td>Units hit by Impalers become tenderized. Tenderized units take 200 damage over 10 seconds. A tenderized unit Devoured by Dehaka will invoke 25% of the normal cooldown time.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/dehaka/tenderize.png" alt="嫩化"></td>
+                        <td>嫩化</td>
+                        <td>被穿刺者击中的单位会受到“嫩化”效果，并在 10 秒内受到 200 点伤害。德哈卡吞噬带有“嫩化”效果的单位时，吞噬的冷却时间仅为正常值的 25%。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -1108,98 +1108,98 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#dehaka/primalhost">
-                <img src="/images/commanderdata/units/dehaka/primalhost.jpg" alt="Primal Host">
-                <p>Primal Host</p>
+                <img src="/images/commanderdata/units/dehaka/primalhost.jpg" alt="原始宿主">
+                <p>原始宿主</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Basic unit.</li>
-                <li>Good structure DPS.</li>
-                <li>Useful when trying to lay siege to enemy fortifications.</li>
-                <li>Should be mixed in with its upgraded form, the Creeper Host.</li>
+                <li>基本单位。</li>
+                <li>对建筑的伤害输出较高。</li>
+                <li>适合围攻敌方防御工事。</li>
+                <li>应与进化形态潜地宿主混合使用。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>描述</th>
+                        <th>冷却</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/unitskills/dehaka/spawnprimallocusts.png" alt="Spawn Primal Locusts"></td>
-                        <td>Spawn Primal Locusts</td>
-                        <td>Siege unit that attacks by spawning Primal Locusts. Primal Locusts last 25 seconds.<br><br>Primal Locusts can attack ground units.</td>
-                        <td>30 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/dehaka/spawnprimallocusts.png" alt="生成原始蝗虫"></td>
+                        <td>生成原始蝗虫</td>
+                        <td>通过生成原始蝗虫进行攻击的攻城单位。原始蝗虫持续 25 秒。<br><br>原始蝗虫可以攻击地面单位。</td>
+                        <td>30 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades: None</p>
+            <p>升级：无</p>
         </div>
     </div>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#dehaka/creeperhost">
-                <img src="/images/commanderdata/units/dehaka/creeperhost.jpg" alt="Creeper Host">
-                <p>Creeper Host</p>
+                <img src="/images/commanderdata/units/dehaka/creeperhost.jpg" alt="潜地宿主">
+                <p>潜地宿主</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Created from 2 Primal Hosts through Primal Combat.</li>
-                <li>Good structure DPS.</li>
-                <li>Useful when trying to lay siege to enemy fortifications.</li>
-                <li>Extremely effective on defensive maps.</li>
-                <li>Should be mixed in with its basic form, the Primal Host.</li>
-                <li>"Aerial Burst Sacs" upgrade makes these significantly more effective.</li>
-                <li>Can be useful when dealing with attack waves.</li>
-                <li>Should be made in small quantities.</li>
+                <li>由 2 个原始宿主通过原始战斗进化而来。</li>
+                <li>对建筑的伤害输出较高。</li>
+                <li>适合围攻敌方防御工事。</li>
+                <li>在防御地图上极其有效。</li>
+                <li>应与基础形态原始宿主混合使用。</li>
+                <li>研究“空中爆囊”后作战效率会显著提高。</li>
+                <li>在应对攻击波时非常有用。</li>
+                <li>应少量生产。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>描述</th>
+                        <th>冷却</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/unitskills/dehaka/spawnexplosivecreeper.png" alt="Spawn Explosive Creeper"></td>
-                        <td>Spawn Explosive Creeper</td>
-                        <td>Siege unit that attacks by spawning Explosive Creepers. Creepers last 25 seconds.<br><br>Creepers can attack ground units.</td>
-                        <td>30 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/dehaka/spawnexplosivecreeper.png" alt="生成爆炸爬行者"></td>
+                        <td>生成爆炸爬行者</td>
+                        <td>通过孵化爆炸爬行者进行攻击的攻城单位。爆炸爬行者持续 25 秒。<br><br>爆炸爬行者可以攻击地面单位。</td>
+                        <td>30 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/dehaka/aerialburstsacs.png" alt="Aerial Burst Sacs"></td>
-                        <td>Aerial Burst Sacs</td>
-                        <td>Allows the Creeper Host's Creepers to target air units and increases their movement speed.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/dehaka/aerialburstsacs.png" alt="空中爆囊"></td>
+                        <td>空中爆囊</td>
+                        <td>使潜地宿主的爆炸爬行者可以攻击空中单位，并提高其移动速度。</td>
                         <td>150/150</td>
-                        <td>90 seconds</td>
+                        <td>90 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -1208,68 +1208,68 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#dehaka/primalultralisk">
-                <img src="/images/commanderdata/units/dehaka/primalultralisk.jpg" alt="Primal Ultralisk">
-                <p>Primal Ultralisk</p>
+                <img src="/images/commanderdata/units/dehaka/primalultralisk.jpg" alt="原始雷兽">
+                <p>原始雷兽</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Basic unit.</li>
-                <li>Not commonly used, due to their high price.</li>
+                <li>基本单位。</li>
+                <li>由于价格昂贵，不常用。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>描述</th>
+                        <th>冷却</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="unlockable autocast">
-                        <td><img src="/images/commanderdata/unitskills/dehaka/brutalcharge.png" alt="Brutal Charge"></td>
-                        <td>Brutal Charge</td>
-                        <td>Charge to target location knocking back units in the area and dealing 25 damage.</td>
-                        <td>10 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/dehaka/brutalcharge.png" alt="残酷冲锋"></td>
+                        <td>残酷冲锋</td>
+                        <td>冲向目标位置，击退该区域内的单位并造成 25 点伤害。</td>
+                        <td>10 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/dehaka/brutalcharge.png" alt="Brutal Charge"></td>
-                        <td>Brutal Charge</td>
-                        <td>Primal Ultralisks can charge to a target location, knocking back units in the area and dealing 25 damage.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/dehaka/brutalcharge.png" alt="残酷冲锋"></td>
+                        <td>残酷冲锋</td>
+                        <td>原始雷兽可以冲向目标位置，击退该区域内的单位并造成 25 点伤害。</td>
                         <td>50/50</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/dehaka/healingadaptation.png" alt="Healing Adaptation"></td>
-                        <td>Healing Adaptation</td>
-                        <td>Primal Ultralisks and Tyrannozors regenerate life quickly when out of combat (10HP/s).</td>
+                        <td><img src="/images/commanderdata/unitupgrades/dehaka/healingadaptation.png" alt="治疗适应"></td>
+                        <td>治疗适应</td>
+                        <td>原始雷兽和暴龙兽脱离战斗时会快速恢复生命值（10 点/秒）。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/dehaka/impalingstrike.png" alt="Impaling Strike"></td>
-                        <td>Impaling Strike</td>
-                        <td>Primal Ultralisk and Tyrannozor melee attacks have a 20% chance to stun for 2 seconds.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/dehaka/impalingstrike.png" alt="穿刺打击"></td>
+                        <td>穿刺打击</td>
+                        <td>原始雷兽和暴龙兽的近战攻击有 20% 几率使目标眩晕 2 秒。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -1278,181 +1278,181 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#dehaka/tyrannozor">
-                <img src="/images/commanderdata/units/dehaka/tyrannozor.jpg" alt="Tyrannozor">
-                <p>Tyrannozor</p>
+                <img src="/images/commanderdata/units/dehaka/tyrannozor.jpg" alt="暴龙兽">
+                <p>暴龙兽</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Created from 2 Primal Ultralisks through Primal Combat.</li>
-                <li>Extremely expensive unit.</li>
-                <li>Rarely used due to its high cost, and its roles being filled by much cheaper units.</li>
-                <li>Can be used to spawn-camp enemies with the Barrage of Spikes upgrade researched.</li>
+                <li>由 2 只原始雷兽通过原始战斗进化而来。</li>
+                <li>极其昂贵的单位。</li>
+                <li>造价过高，且更便宜的单位也能承担其战场职责，因此很少使用。</li>
+                <li>研究尖刺弹幕后，可用于压制敌人的出生点。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
                 <table class="unitSkills">
                     <thead>
                         <tr>
-                            <th>Skill</th>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Cooldown</th>
-                            <th>Energy Cost</th>
+                            <th>技能</th>
+                            <th>名称</th>
+                            <th>描述</th>
+                            <th>冷却</th>
+                            <th>能量消耗</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="unlockable autocast">
-                            <td><img src="/images/commanderdata/unitskills/dehaka/barrageofspikes.png" alt="Barrage of Spikes"></td>
-                            <td>Barrage of Spikes</td>
-                            <td>Unleash a Barrage of Spikes, dealing 100 damage to enemy ground and air units around the Tyrannozor.</td>
-                            <td>10 seconds</td>
+                            <td><img src="/images/commanderdata/unitskills/dehaka/barrageofspikes.png" alt="尖刺弹幕"></td>
+                            <td>尖刺弹幕</td>
+                            <td>释放尖刺弹幕，对暴龙兽周围的敌方地面和空中单位造成 100 点伤害。</td>
+                            <td>10 秒</td>
                             <td>0</td>
                         </tr>
                     </tbody>
                 </table>
-                <p>Upgrades:</p>
+                <p>升级：</p>
                 <table class="unitUpgrades">
                     <thead>
                         <tr>
-                            <th>Upgrade</th>
-                            <th>Name</th>
-                            <th>Effect</th>
-                            <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                            <th>Research Time</th>
+                            <th>升级</th>
+                            <th>名称</th>
+                            <th>效果</th>
+                            <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                            <th>研究时间</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><img src="/images/commanderdata/unitupgrades/dehaka/impalingstrike.png" alt="Impaling Strike"></td>
-                            <td>Impaling Strike</td>
-                            <td>Primal Ultralisk and Tyrannozor melee attacks have a 20% chance to stun for 2 seconds.</td>
+                            <td><img src="/images/commanderdata/unitupgrades/dehaka/impalingstrike.png" alt="穿刺打击"></td>
+                            <td>穿刺打击</td>
+                            <td>原始雷兽和暴龙兽的近战攻击有 20% 几率使目标眩晕 2 秒。</td>
                             <td>100/100</td>
-                            <td>60 seconds</td>
+                            <td>60 秒</td>
                         </tr>
                         <tr>
-                            <td><img src="/images/commanderdata/unitupgrades/dehaka/barrageofspikes.png" alt="Barrage of Spikes"></td>
-                            <td>Barrage of Spikes</td>
-                            <td>Tyrannozors can unleash a Barrage of Spikes, dealing 100 damage to nearby enemy ground and air units.</td>
+                            <td><img src="/images/commanderdata/unitupgrades/dehaka/barrageofspikes.png" alt="尖刺弹幕"></td>
+                            <td>尖刺弹幕</td>
+                            <td>暴龙兽可以释放尖刺弹幕，对附近敌方地面和空中单位造成 100 点伤害。</td>
                             <td>100/100</td>
-                            <td>60 seconds</td>
+                            <td>60 秒</td>
                         </tr>
                         <tr>
-                            <td><img src="/images/commanderdata/unitupgrades/dehaka/healingadaptation.png" alt="Healing Adaptation"></td>
-                            <td>Healing Adaptation</td>
-                            <td>Primal Ultralisks and Tyrannozors regenerate life quickly when out of combat (10HP/s).</td>
+                            <td><img src="/images/commanderdata/unitupgrades/dehaka/healingadaptation.png" alt="治疗适应"></td>
+                            <td>治疗适应</td>
+                            <td>原始雷兽和暴龙兽脱离战斗时会快速恢复生命值（10 点/秒）。</td>
                             <td>100/100</td>
-                            <td>60 seconds</td>
+                            <td>60 秒</td>
                         </tr>
                         <tr>
-                            <td><img src="/images/commanderdata/unitupgrades/dehaka/tyrantsprotection.png" alt="Tyrant's Protection"></td>
-                            <td>Tyrant's Protection</td>
-                            <td>Tyrannozors grants nearby friendly units 2 armor.</td>
+                            <td><img src="/images/commanderdata/unitupgrades/dehaka/tyrantsprotection.png" alt="暴君的保护"></td>
+                            <td>暴君的保护</td>
+                            <td>暴龙兽为附近的友方单位提供 2 点护甲。</td>
                             <td>100/100</td>
-                            <td>60 seconds</td>
+                            <td>60 秒</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
     </div>
-    <h2 id="buildOrder">Build Order</h2>
-    <p>Below is the standard economic build order for Dehaka. For more information on how to read and construct your own build orders, please check the <a href="/guides/buildordertheory">Build Order Theory</a> page.</p>
+    <h2 id="buildOrder">建造顺序</h2>
+    <p>以下是德哈卡的标准经济建造顺序。有关建造顺序的阅读方法和编排思路，请参阅<a href="/guides/buildordertheory">建造顺序理论</a>。</p>
     <p class="buildOrder">
-        23 Extractor<br>
-        23 Primal Warden<br>
-        25 Extractor<br>
-        29 Glevig's Den<br>
-        29 2x Zerglings -> Rocks<br>
-        Primal Warden -> Rocks<br>
-        31 Primal Hive
+        23 萃取房<br>
+        23 原始守卫<br>
+        25 萃取房<br>
+        29 格利维格之巢<br>
+        29 2 只原始跳虫 → 岩石<br>
+        原始守卫 → 岩石<br>
+        31 原始主巢
     </p>
-    <h2 id="guide">Gameplay Guide</h2>
-    <h3>Playstyle Traps</h3>
-    <p>Most inexperienced Dehaka players will use the Dehaka hero unit to clear rocks as soon as he spawns, known in the co-op community as "Rockslapping". This is an extremely inefficient use of Dehaka, as enemies are at their weakest at the start of the game. A much more effective use for Dehaka would be to move near enemy camps and lure some of the units away and kill them. This allows you to gather Essence and level Dehaka up, allowing for greater pushing potential, survivability, and map clearing.</p>
-    <h3>Essence Calculation</h3>
-    <p>Essence drops are calculated as follows:</p>
+    <h2 id="guide">游戏指南</h2>
+    <h3>玩法误区</h3>
+    <p>许多经验不足的德哈卡玩家会在英雄一登场时就用他清理岩石，合作模式社区称这种做法为“拍石头”。这对德哈卡而言效率极低，因为游戏开局时敌人最弱。更有效的做法是靠近敌方营地，引出一部分单位并将其击杀。这样可以收集精华、提升德哈卡等级，从而增强推进能力、生存能力与清图效率。</p>
+    <h3>精华计算</h3>
+    <p>精华掉落量按以下规则计算：</p>
     <ul>
-        <li>If the unit is a Critter or the unit's supply is less than 1, base drop is 1</li>
-        <li>If the unit is a Hybrid, base drop is 12</li>
-        <li>If the unit's supply is more than 4, base drop is 12</li>
-        <li>Otherwise, base drop is 2 x Unit Supply</li>
+        <li>若目标是小动物，或其人口低于 1，基础掉落量为 1</li>
+        <li>若目标是混合体，基础掉落量为 12</li>
+        <li>若目标人口高于 4，基础掉落量为 12</li>
+        <li>其他情况下，基础掉落量为单位人口的 2 倍</li>
     </ul>
-    <h3>Dehaka Skill Point Upgrades</h3>
-    <p>The table below shows all the skill point upgrades available for Dehaka and their effects:</p>
+    <h3>德哈卡技能点升级</h3>
+    <p>下表列出了德哈卡可用的全部技能点升级及其效果：</p>
     <table>
         <thead>
             <tr>
-                <th>Icon</th>
-                <th>Name</th>
-                <th>Description</th>
+                <th>图标</th>
+                <th>名称</th>
+                <th>描述</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/hero/dehaka/leap.png" alt="Leap"></td>
-                <td>Leap</td>
-                <td>Dehaka leaps to the target location, dealing 25 + 50% weapon damage to all enemy ground units in the area.<br><br><b>Level 2</b> - Leap range increased by 6, Damage increased to 25 + 75% weapon damage.<br><br><b>Level 3</b> - Each enemy hit also grants Dehaka 1 armor for 2 seconds.</td>
+                <td><img src="/images/commanderdata/hero/dehaka/leap.png" alt="飞跃"></td>
+                <td>飞跃</td>
+                <td>德哈卡跃向目标位置，对区域内所有敌方地面单位造成 25 + 50% 武器伤害。<br><br><b>等级 2</b> - 飞跃距离增加 6，伤害提高至 25 + 75% 武器伤害。<br><br><b>等级 3</b> - 每命中一个敌人，德哈卡还会获得 1 点护甲，持续 2 秒。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/dehaka/intimidatingroar.png" alt="Intimidating Roar"></td>
-                <td>Intimidating Roar</td>
-                <td>Dehaka intimidates nearby enemies, reducing their movement speed by 75% and attack speed by 25% for 15 seconds.<br><br><b>Level 2</b> - Enemies affected by Intimidating Roar also cannot use abilities that cost energy.<br><br><b>Level 3</b> - Enemies affected by Intimidating Roar also have armor reduced by 2.</td>
+                <td><img src="/images/commanderdata/hero/dehaka/intimidatingroar.png" alt="威吓咆哮"></td>
+                <td>威吓咆哮</td>
+                <td>德哈卡威吓附近敌人，使其移动速度降低 75%、攻击速度降低 25%，持续 15 秒。<br><br><b>等级 2</b> - 受到威吓咆哮影响的敌人还无法使用消耗能量的技能。<br><br><b>等级 3</b> - 受到威吓咆哮影响的敌人还会降低 2 点护甲。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/dehaka/devour.png" alt="Devour"></td>
-                <td>Devour</td>
-                <td>Dehaka instantly kills the target enemy to heal 5% Life and gain passive abilities based on the enemy type for 15 seconds. The cooldown is based on the amount of life the enemy has when killed.<br><br><b>Level 2</b> - Passive bonuses last 25 seconds. Range increased by 3<br><br><b>Level 3</b> - Cooldown reduced by 20%. Range increased by 3.</td>
+                <td><img src="/images/commanderdata/hero/dehaka/devour.png" alt="吞噬"></td>
+                <td>吞噬</td>
+                <td>德哈卡立即击杀目标敌人，恢复 5% 生命值，并根据敌人类型获得持续 15 秒的被动增益。冷却时间取决于目标被击杀时的生命值。<br><br><b>等级 2</b> - 被动增益持续 25 秒，施法距离增加 3。<br><br><b>等级 3</b> - 冷却时间缩短 20%，施法距离增加 3。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/dehaka/scorchingbreath.png" alt="Scorching Breath"></td>
-                <td>Scorching Breath</td>
-                <td>Dehaka's fiery breath scorches the earth, dealing weapon damage to all enemy ground units in its path.</td>
+                <td><img src="/images/commanderdata/hero/dehaka/scorchingbreath.png" alt="灼热吐息"></td>
+                <td>灼热吐息</td>
+                <td>德哈卡喷出烈焰灼烧地面，对路径上的所有敌方地面单位造成武器伤害。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/dehaka/primalregeneration.png" alt="Primal Regeneration"></td>
-                <td>Primal Regeneration</td>
-                <td>Dehaka passively heals all allied units nearby.<br><br><b>Level 2</b> - 2 life per second.<br><br><b>Level 3</b> - 3 life per second.</td>
+                <td><img src="/images/commanderdata/hero/dehaka/primalregeneration.png" alt="原始再生"></td>
+                <td>原始再生</td>
+                <td>德哈卡被动治疗附近所有友方单位。<br><br><b>等级 2</b> - 每秒恢复 2 点生命值。<br><br><b>等级 3</b> - 每秒恢复 3 点生命值。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/dehaka/keensenses.png" alt="Keen Senses"></td>
-                <td>Keen Senses</td>
-                <td>Allows Dehaka to detect cloaked, burrowed, and hallucinated units.</td>
+                <td><img src="/images/commanderdata/hero/dehaka/keensenses.png" alt="敏锐感知"></td>
+                <td>敏锐感知</td>
+                <td>使德哈卡能够探测隐形、潜地和幻象单位。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/dehaka/chitinousplating.png" alt="Chitinous Plating"></td>
-                <td>Chitinous Plating</td>
-                <td>Increases Dehaka's armor by 3.</td>
+                <td><img src="/images/commanderdata/hero/dehaka/chitinousplating.png" alt="几丁质甲壳"></td>
+                <td>几丁质甲壳</td>
+                <td>使德哈卡的护甲提高 3 点。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/dehaka/deadlyreach.png" alt="Deadly Reach"></td>
-                <td>Deadly Reach</td>
-                <td>Allows Dehaka to attack air units.</td>
+                <td><img src="/images/commanderdata/hero/dehaka/deadlyreach.png" alt="致命触及"></td>
+                <td>致命触及</td>
+                <td>使德哈卡能够攻击空中单位。</td>
             </tr>
         </tbody>
     </table>
-    <h3>Dehaka Stat Point Allocation Order</h3>
-    <p>Below is the recommended order for allocating Dehaka's stat points. Essence drops at a rate of 2 Essence per supply of unit killed. Hybrids drop 12 Essence.</p>
+    <h3>德哈卡属性点分配顺序</h3>
+    <p>以下是德哈卡属性点的推荐分配顺序。每击杀相当于 1 补给的敌方单位，会掉落 2 点精华；混合体则会掉落 12 点精华。</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Level</th>
-                <th>Allocate to</th>
-                <th>Cumulative Essence Required</th>
+                <th>等级</th>
+                <th>分配给</th>
+                <th>累计所需精华</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>1</td>
-                <td>Leap + Devour</td>
+                <td>飞跃 + 吞噬</td>
                 <td>15</td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>Intimidating Roar</td>
+                <td>威吓咆哮</td>
                 <td>45</td>
             </tr>
             <tr>
                 <td>3</td>
-                <td>Devour</td>
+                <td>吞噬</td>
                 <td>90</td>
             </tr>
             <tr>
@@ -1462,199 +1462,199 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
             <tr>
                 <td>5</td>
-                <td>Chitinous Plating + Keen Senses</td>
+                <td>几丁质甲壳 + 敏锐感知</td>
                 <td>225</td>
             </tr>
             <tr>
                 <td>6</td>
-                <td>Scorching Breath</td>
+                <td>灼热吐息</td>
                 <td>315</td>
             </tr>
             <tr>
                 <td>7</td>
-                <td>Intimidating Roar</td>
+                <td>威吓咆哮</td>
                 <td>420</td>
             </tr>
             <tr>
                 <td>8</td>
-                <td>Devour</td>
+                <td>吞噬</td>
                 <td>540</td>
             </tr>
             <tr>
                 <td>9</td>
-                <td>Leap</td>
+                <td>飞跃</td>
                 <td>675</td>
             </tr>
             <tr>
                 <td>10*</td>
-                <td>Deadly Reach</td>
+                <td>致命触及</td>
                 <td>825</td>
             </tr>
             <tr>
                 <td>11</td>
-                <td>Leap</td>
+                <td>飞跃</td>
                 <td>990</td>
             </tr>
             <tr>
                 <td>12</td>
-                <td>Intimidating Roar</td>
+                <td>威吓咆哮</td>
                 <td>1170</td>
             </tr>
             <tr>
                 <td>13</td>
-                <td>Primal Regeneration</td>
+                <td>原始再生</td>
                 <td>1365</td>
             </tr>
             <tr>
                 <td>14</td>
-                <td>Primal Regeneration</td>
+                <td>原始再生</td>
                 <td>1575</td>
             </tr>
             <tr>
                 <td>15</td>
-                <td>Primal Regeneration</td>
+                <td>原始再生</td>
                 <td>-</td>
             </tr>
         </tbody>
     </table>
-    <p>* At level 10, Dehaka can be hit by air attacks.</p>
-    <h3>Gene Mutations</h3>
-    <p>Every time two units undergo Primal Combat, the resultant unit has a chance of gaining certain Gene Mutation buffs. Each buff has a 20% chance of being gained. The list of units and buffs available for each are shown below:</p>
+    <p>* 德哈卡达到 10 级后会受到对空攻击。</p>
+    <h3>基因突变</h3>
+    <p>每当两个单位进行原始战斗时，进化所得单位都有机会获得特定的基因突变增益。每种增益的获得概率均为 20%。各单位可获得的增益如下：</p>
     <div class="tableContainer">
         <table class="centered">
             <thead>
                 <tr>
-                    <th>Unit</th>
-                    <th><img src="/images/commanderdata/guides/dehaka/adrenalglands.png" alt="Adrenal Glands"></th>
-                    <th><img src="/images/commanderdata/guides/dehaka/carapace.png" alt="Carapace"></th>
-                    <th><img src="/images/commanderdata/guides/dehaka/leeching.png" alt="Leeching"></th>
-                    <th><img src="/images/commanderdata/guides/dehaka/incubationsacs.png" alt="Incubation Sacs"></th>
-                    <th><img src="/images/commanderdata/guides/dehaka/spikedhide.png" alt="Spiked Hide"></th>
+                    <th>单位</th>
+                    <th><img src="/images/commanderdata/guides/dehaka/adrenalglands.png" alt="肾上腺"></th>
+                    <th><img src="/images/commanderdata/guides/dehaka/carapace.png" alt="甲壳"></th>
+                    <th><img src="/images/commanderdata/guides/dehaka/leeching.png" alt="吸血"></th>
+                    <th><img src="/images/commanderdata/guides/dehaka/incubationsacs.png" alt="孵化囊"></th>
+                    <th><img src="/images/commanderdata/guides/dehaka/spikedhide.png" alt="尖刺外皮"></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td></td>
-                    <td>Adrenal Glands</td>
-                    <td>Carapace</td>
-                    <td>Leeching</td>
-                    <td>Incubation Sacs</td>
-                    <td>Spiked Hide</td>
+                    <td>肾上腺</td>
+                    <td>甲壳</td>
+                    <td>吸血</td>
+                    <td>孵化囊</td>
+                    <td>尖刺外皮</td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td>This unit attacks 20% faster.</td>
-                    <td>This unit has 50% more life.</td>
-                    <td>This unit will leech 20% of damage done as life.</td>
-                    <td>This Creeper Host spawns double the amount of Creepers.</td>
-                    <td>Each time this unit takes damage, it shoots a spine back at the attacker that deals 10 damage.</td>
+                    <td>该单位的攻击速度提高 20%。</td>
+                    <td>该单位的生命值提高 50%。</td>
+                    <td>该单位会将造成伤害的 20% 转化为自身生命值。</td>
+                    <td>该潜地宿主生成的爆虫数量翻倍。</td>
+                    <td>该单位每次受到伤害时都会向攻击者射出一根尖刺，造成 10 点伤害。</td>
                 </tr>
                 <tr>
-                    <td>Ravasaur</td>
-                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="Yes"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="Yes"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="Yes"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="No"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="No"></td>
+                    <td>暴掠龙</td>
+                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="是"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="是"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="是"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="否"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="否"></td>
                 </tr>
                 <tr>
-                    <td>Primal Igniter</td>
-                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="Yes"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="Yes"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="Yes"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="No"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="No"></td>
+                    <td>原始点火虫</td>
+                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="是"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="是"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="是"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="否"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="否"></td>
                 </tr>
                 <tr>
-                    <td>Primal Guardian</td>
-                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="Yes"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="Yes"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="Yes"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="No"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="No"></td>
+                    <td>原始守护者</td>
+                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="是"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="是"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="是"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="否"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="否"></td>
                 </tr>
                 <tr>
-                    <td>Primal Mutalisk</td>
-                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="Yes"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="Yes"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="Yes"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="No"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="No"></td>
+                    <td>原始异龙</td>
+                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="是"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="是"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="是"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="否"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="否"></td>
                 </tr>
                 <tr>
-                    <td>Impaler</td>
-                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="Yes"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="Yes"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="Yes"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="No"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="No"></td>
+                    <td>穿刺者</td>
+                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="是"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="是"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="是"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="否"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="否"></td>
                 </tr>
                 <tr>
-                    <td>Creeper Host</td>
-                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="No"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="Yes"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="No"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="Yes"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="No"></td>
+                    <td>潜地宿主</td>
+                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="否"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="是"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="否"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="是"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="否"></td>
                 </tr>
                 <tr>
-                    <td>Tyrannozor</td>
-                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="Yes"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="Yes"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="Yes"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="No"></td>
-                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="Yes"></td>
+                    <td>暴龙兽</td>
+                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="是"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="是"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="是"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/no.png" alt="否"></td>
+                    <td><img src="/images/commanderdata/guides/dehaka/yes.png" alt="是"></td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <h3>Devour Mechanics</h3>
-    <p>Whenever Dehaka devours a unit, a certain cooldown will be applied to Devour. It works as follows:</p>
+    <h3>吞噬机制</h3>
+    <p>每当德哈卡吞噬一个单位时，吞噬会进入相应的冷却时间，规则如下：</p>
     <ul>
-        <li><b>If the unit has 600HP or more:</b> 60 seconds cooldown will be applied.</li>
-        <li><b>If the unit has less than 600 HP:</b> A cooldown of 10% of its HP (in seconds) will be applied.</li>
+        <li><b>若单位拥有 600 点或更多生命值：</b> 冷却时间为 60 秒。</li>
+        <li><b>若单位生命值低于 600：</b> 冷却秒数为其生命值的 10%。</li>
     </ul>
-    <p>Note that if a unit is Tenderized through Dehaka's Impalers, the cooldown will be reduced by 75%. If a Psionic unit has been devoured, a buff reduces cooldowns by 50%.</p>
-    <p>Additionally, units will provide a buff to Dehaka for 25 seconds. The buffs Dehaka gets are dependent on the tags the unit has. These are as follows:</p>
+    <p>请注意，若单位被德哈卡的穿刺者施加“嫩化”，冷却时间会缩短 75%。吞噬灵能单位后获得的增益还会使冷却时间缩短 50%。</p>
+    <p>此外，被吞噬单位会为德哈卡提供持续 25 秒的增益。增益取决于该单位拥有的标签，具体如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Tag</th>
-                <th>Buff</th>
+                <th>标签</th>
+                <th>增益</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Air</td>
-                <td>Gain a ranged attack</td>
+                <td>空中</td>
+                <td>获得远程攻击</td>
             </tr>
             <tr>
-                <td>Armored</td>
-                <td>Gain 30% bonus damage against armored units</td>
+                <td>重甲</td>
+                <td>对重甲单位造成的伤害提高 30%</td>
             </tr>
             <tr>
-                <td>Biological</td>
-                <td>Heal 20% life</td>
+                <td>生物</td>
+                <td>恢复 20% 生命值</td>
             </tr>
             <tr>
-                <td>Light</td>
-                <td>Gain 30% move speed</td>
+                <td>轻甲</td>
+                <td>移动速度提高 30%</td>
             </tr>
             <tr>
-                <td>Massive</td>
-                <td>Gain 3 armor and reflect damage (10 per hit) at attackers</td>
+                <td>重型</td>
+                <td>获得 3 点护甲，并向攻击者反射伤害（每次命中 10 点）</td>
             </tr>
             <tr>
-                <td>Mechanical</td>
-                <td>Gain 30% attack speed</td>
+                <td>机械</td>
+                <td>攻击速度提高 30%</td>
             </tr>
             <tr>
-                <td>Psionic</td>
-                <td>Explode with Psionic Energy (2x Dehaka Weapon damage) and abilities cooldowns halved.</td>
+                <td>灵能</td>
+                <td>爆发灵能能量（造成德哈卡武器伤害的 2 倍），并使技能冷却时间减半。</td>
             </tr>
         </tbody>
     </table>
-    <p>Devouring Psionic units is a critical part of good Dehaka play. Being able to pick out High Templars and other Psionic units from the middle of attack waves to clear them entirely is a key part of this play. Below is a list of the Psionic units that can be found in Amon's army:</p>
+    <p>吞噬灵能单位是玩好德哈卡的关键。能从进攻波中挑出高阶圣堂武士等灵能单位，并借助爆炸清除整波敌军，是这一玩法的核心。以下是埃蒙军队中可能出现的灵能单位：</p>
     <ul>
 
     <?php
@@ -1668,239 +1668,245 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         $out[$unit['race']][] = $unit['name'];
     }
     // very confused how the old code achieved this order
+    $raceNames = [
+        'Protoss' => '星灵',
+        'Terran' => '人类',
+        'Zerg' => '异虫',
+        'Hybrid' => '混合体',
+    ];
     foreach (['Protoss', 'Terran', 'Zerg', 'Hybrid'] as $race) {
-        echo("<li><b>" . $race . ":</b> " . implode(", ", $out[$race]) . "</li>");
+        echo("<li><b>" . $raceNames[$race] . ":</b> " . implode(", ", $out[$race]) . "</li>");
     }
     ?>
 
     </ul>
-    <h3 id="essence">Essence Farming</h3>
-    <p>As soon as Dehaka has spawned, he should be sent towards enemy bases to kill units and gather Essence. Using Dehaka to clear expansion rocks (referred to as "Rockslapping") is one of the most inefficient things a Dehaka player can do, due to Dehaka's low attack speed and low attack damage. The table below provides a guide for the path Dehaka should take on each of the missions to gather Essence as effectively as possible.</p>
+    <h3 id="essence">精华收集</h3>
+    <p>德哈卡一登场就应前往敌方基地击杀单位、收集精华。由于德哈卡早期攻击速度和伤害都很低，用他清理扩张区岩石（俗称“拍石头”）是效率最低的做法之一。下表给出了各任务中德哈卡高效收集精华的推荐路线。</p>
     <table id="essenceOrder">
         <thead>
             <tr>
-                <th>Mission</th>
-                <th>Protoss</th>
-                <th>Terran</th>
-                <th>Zerg</th>
+                <th>任务</th>
+                <th>星灵</th>
+                <th>人类</th>
+                <th>异虫</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><a href="/missions/chainofascension">Chain of Ascension</a></td>
+                <td><a href="/missions/chainofascension">飞升之链</a></td>
                 <td>
-                    <img src="/images/commanderdata/guides/dehaka/coa_protoss.jpg" alt="Chain of Ascension Protoss Essence Farming Order">
-                    <p>Start with the camp in between the two expansions. Use Devour on the Sentries and High Templars to quickly deal splash damage to enemy units before moving on to the camp guarding your expansion.</p>
+                    <img src="/images/commanderdata/guides/dehaka/coa_protoss.jpg" alt="飞升之链 星灵精华收集路线">
+                    <p>从两处扩张区之间的营地开始。吞噬哨兵和高阶圣堂武士，利用范围伤害快速清敌，然后转向守卫己方扩张区的营地。</p>
                 </td>
                 <td>
-                    <img src="/images/commanderdata/guides/dehaka/coa_terran.jpg" alt="Chain of Ascension Terran Essence Farming Order">
-                    <p>The presence of Bunkers make gathering Essence difficult. Clear the Bunker guarding your expansion first, then move towards the central camp to gather more Essence. Focus on the Biological units, rather than the Bunkers.</p>
+                    <img src="/images/commanderdata/guides/dehaka/coa_terran.jpg" alt="飞升之链 人类精华收集路线">
+                    <p>地堡会让精华收集变得困难。先清理守卫扩张区的地堡，再前往中央营地收集更多精华。优先攻击生物单位，不要死磕地堡。</p>
                 </td>
                 <td>
-                    <img src="/images/commanderdata/guides/dehaka/coa_zerg.jpg" alt="Chain of Ascension Zerg Essence Farming Order">
-                    <p>Clear your expansion first, by using Devour on straight on the Ultralisk. The damage reflect will cause the other units around Dehaka to kill themselves, clearing the entire expansion. As units take damage, they may try to kite you, so make sure Dehaka doesn't get lured into the camp in the between the expansions until you are ready.</p>
-                </td>
-            </tr>
-            <tr>
-                <td><a href="/missions/cradleofdeath">Cradle of Death</a></td>
-                <td>
-                    <img src="/images/commanderdata/guides/dehaka/cod_protoss.jpg" alt="Cradle of Death Protoss Essence Farming Order">
-                    <p>Start with the expansion area and Devour Sentries to quickly deal damage to enemy units. Watch out for the Constructs. Then move to the right camp first due to the higher number of biological units.</p>
-                </td>
-                <td>
-                    <img src="/images/commanderdata/guides/dehaka/cod_terran.jpg" alt="Cradle of Death Terran Essence Farming Order">
-                    <p>Start with the expansion area and Devour Medics to reduce healing. Then move to the right camp first due to the presence of biological units.</p>
-                </td>
-                <td>
-                    <img src="/images/commanderdata/guides/dehaka/cod_zerg.jpg" alt="Cradle of Death Zerg Essence Farming Order">
-                    <p>Start with the camp on the right. Weaken the Aberrations and Devour them. With the buff, move to the expansion area and use the damage reflect to quickly kill off defenders.</p>
+                    <img src="/images/commanderdata/guides/dehaka/coa_zerg.jpg" alt="飞升之链 异虫精华收集路线">
+                    <p>先清理扩张区，直接吞噬雷兽。伤害反射会让德哈卡周围的其他单位自相残杀，从而清空整个扩张区。受伤单位可能会风筝你，因此准备好之前不要让德哈卡被引进两处扩张之间的营地。</p>
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/deadofnight">Dead of Night</a>*</td>
+                <td><a href="/missions/cradleofdeath">死亡摇篮</a></td>
                 <td>
-                    <img src="/images/commanderdata/guides/dehaka/don_protoss.jpg" alt="Dead of Night Protoss Essence Farming Order">
-                    <p>Clear the camp to the West of enemy units. Then move South to the camp defenders and then move deeper. Devour Sentries to quickly deal damage to the enemies in the defending camp. During the night, move to the bottom of the ramp to the North-Western area. Several Aberrations will spawn allowing you to level Dehaka quickly.</p>
+                    <img src="/images/commanderdata/guides/dehaka/cod_protoss.jpg" alt="死亡摇篮 星灵精华收集路线">
+                    <p>从扩张区开始，吞噬哨兵以快速伤害敌军，并留意构造体。随后优先前往右侧营地，因为那里的生物单位更多。</p>
                 </td>
                 <td>
-                    <img src="/images/commanderdata/guides/dehaka/don_terran.jpg" alt="Dead of Night Terran Essence Farming Order">
-                    <p>Start with the camp defenders in the South West and then East and clear the small number of defenders there. Then move out and down towards the remaining enemy camp. Devour the units as you destroy the Bunker. During the night, move to the bottom of the ramp to the North-Western area. Several Aberrations will spawn allowing you to level Dehaka quickly.</p>
+                    <img src="/images/commanderdata/guides/dehaka/cod_terran.jpg" alt="死亡摇篮 人类精华收集路线">
+                    <p>从扩张区开始，吞噬医疗兵以降低敌方治疗能力。随后优先前往右侧营地，因为那里有生物单位。</p>
                 </td>
                 <td>
-                    <img src="/images/commanderdata/guides/dehaka/don_zerg.jpg" alt="Dead of Night Zerg Essence Farming Order">
-                    <p>Clear the camp to the West of enemy units. Then move South, working your way across the camp defenders. Weaken Aberrations and use Devour to gain a damage-reflect buff. During the night, move to the bottom of the ramp to the North-Western area. Several Aberrations will spawn allowing you to level Dehaka quickly.</p>
-                </td>
-            </tr>
-            <tr>
-                <td><a href="/missions/lockload">Lock & Load</a></td>
-                <td>
-                    <img src="/images/commanderdata/guides/dehaka/ll_protoss.jpg" alt="Lock & Load Protoss Essence Farming Order">
-                    <p>Clear the units around the central Celestial Lock. Then, creep along the edge of the Northern area of that lock and make your way towards the area outside the Northern Celestial Lock. Clear those units, using the Sentry to help. Then, Deep Tunnel back to your main, and clear the ground units at the Southern Celestial Lock.</p>
-                </td>
-                <td>
-                    <img src="/images/commanderdata/guides/dehaka/ll_terran.jpg" alt="Lock & Load Terran Essence Farming Order">
-                    <p>Clear the units around the Central Celestial Lock. Then lure units away from the Bunkers North of that Lock. Move North and clear the small number of units on the low ground outside the Northern Celestial Lock. Next, Deep Tunnel back to the base. Go the ramp to the Northern Celestial Lock, and lure units away from the camp. Finally, lure units away from the Bunkers and Siege Tanks at the Western Celestial Lock.</p>
-                </td>
-                <td>
-                    <img src="/images/commanderdata/guides/dehaka/ll_zerg.jpg" alt="Lock & Load Zerg Essence Farming Order">
-                    <p>Clear the units to the East of the Centeral Celestial Lock by using the Vipers in that location. Then, clear the units guarding the Central Celestial Lock, weaking the Aberrations and Devouring them to take advantage of the damage reflect buff. Next, move to the Southern Celestial Lock, Devouring Vipers to clear the units there. Finally, move to the ramp for the Northern Celestial Lock, Devouring Infestors to clear units in that area.</p>
+                    <img src="/images/commanderdata/guides/dehaka/cod_zerg.jpg" alt="死亡摇篮 异虫精华收集路线">
+                    <p>从右侧营地开始。先削弱畸变体再将其吞噬，然后带着增益前往扩张区，利用伤害反射快速消灭守军。</p>
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/malwarfare">Malwarfare</a></td>
+                <td><a href="/missions/deadofnight">亡者之夜</a>*</td>
                 <td>
-                    <img src="/images/commanderdata/guides/dehaka/mw_protoss.jpg" alt="Malwarefare Protoss Essence Farming Order">
-                    <p>Clear the units guarding both your expansions first. Then move North, and kill the units near the Cannon by luring them away. Then move East and clear the units in that area. Kill the Immortal first and use Zealots to heal Dehaka.</p>
+                    <img src="/images/commanderdata/guides/dehaka/don_protoss.jpg" alt="亡者之夜 星灵精华收集路线">
+                    <p>清理敌军西侧的营地，然后向南穿过守军继续深入。吞噬哨兵，利用范围伤害快速清理营地。入夜后前往西北区域坡道底部，那里会刷新数只畸变体，可让德哈卡快速升级。</p>
                 </td>
                 <td>
-                    <img src="/images/commanderdata/guides/dehaka/mw_terran.jpg" alt="Lock & Load Terran Essence Farming Order">
-                    <p>Clear the units guarding both your expansions first. Target the Bunkers down, and use the units around to heal Dehaka until the Bunkers are on fire. Allow the Bunkers to burn down while you work away on the other expansion. Once both areas are cleared, move North East and clear the units in that area.</p>
+                    <img src="/images/commanderdata/guides/dehaka/don_terran.jpg" alt="亡者之夜 人类精华收集路线">
+                    <p>先清理西南方营地守军，再向东清掉少量防守单位。随后向外并向下移动至剩余敌方营地，摧毁地堡时吞噬周边单位。入夜后前往西北区域坡道底部，利用刷新的畸变体快速升级。</p>
                 </td>
                 <td>
-                    <img src="/images/commanderdata/guides/dehaka/mw_zerg.jpg" alt="Lock & Load Zerg Essence Farming Order">
-                    <p>Clear the units guarding both your expansions first. Then move North and clear the units there by luring them away from the Spine Crawlers. Then move East and clear that camp.</p>
+                    <img src="/images/commanderdata/guides/dehaka/don_zerg.jpg" alt="亡者之夜 异虫精华收集路线">
+                    <p>清理敌军西侧营地，再向南逐步消灭守军。削弱畸变体后吞噬，以获得伤害反射增益。入夜后前往西北区域坡道底部，利用刷新的畸变体快速升级。</p>
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/minerevacuation">Miner Evacuation</a></td>
+                <td><a href="/missions/lockload">天锁</a></td>
+                <td>
+                    <img src="/images/commanderdata/guides/dehaka/ll_protoss.jpg" alt="天锁 星灵精华收集路线">
+                    <p>清理中央天锁周围的单位，沿天锁北侧边缘潜行至北方天锁外围。借助哨兵清掉守军，然后用深槽虫道返回主基地，清理南方天锁的地面单位。</p>
+                </td>
+                <td>
+                    <img src="/images/commanderdata/guides/dehaka/ll_terran.jpg" alt="天锁 人类精华收集路线">
+                    <p>清理中央天锁周围的单位，再把北侧地堡附近的敌人引出来。向北清理北方天锁外低地上的少量单位，然后用深槽虫道返回基地。前往北方天锁坡道，把敌人引离营地；最后再引出西方天锁附近地堡和攻城坦克旁的单位。</p>
+                </td>
+                <td>
+                    <img src="/images/commanderdata/guides/dehaka/ll_zerg.jpg" alt="天锁 异虫精华收集路线">
+                    <p>借助当地飞蛇清理中央天锁东侧的单位，再削弱并吞噬畸变体，以伤害反射增益清除中央天锁守军。随后前往南方天锁，吞噬飞蛇清敌；最后前往北方天锁坡道，吞噬感染者清理该区域。</p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="/missions/malwarfare">恶意代码</a></td>
+                <td>
+                    <img src="/images/commanderdata/guides/dehaka/mw_protoss.jpg" alt="恶意代码 星灵精华收集路线">
+                    <p>先清理守卫两处扩张区的单位。向北移动，把光子炮附近的单位引出来击杀，再向东清理该区域。优先击杀不朽者，并吞噬狂热者为德哈卡治疗。</p>
+                </td>
+                <td>
+                    <img src="/images/commanderdata/guides/dehaka/mw_terran.jpg" alt="恶意代码 人类精华收集路线">
+                    <p>先清理守卫两处扩张区的单位。集中攻击地堡，并吞噬周边单位维持德哈卡生命，直到地堡起火。让地堡自行烧毁，同时转去处理另一处扩张。两处区域都清空后，前往东北方继续清敌。</p>
+                </td>
+                <td>
+                    <img src="/images/commanderdata/guides/dehaka/mw_zerg.jpg" alt="恶意代码 异虫精华收集路线">
+                    <p>先清理守卫两处扩张区的单位。随后向北，把单位引离脊针爬虫并清除，再向东清理营地。</p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="/missions/minerevacuation">疏散矿工</a></td>
                 <td colspan="3">
-                    <img style="display:block; margin:auto" src="/images/commanderdata/guides/dehaka/me.jpg" alt="Miner Evacuation Essence Farming Order">
-                    <p>Gathering Essence on this map is very difficult, due to the large presence of infested units which do not drop Essence. First, check if there are units near the Evacuation Ship at the East of the expansion. Clear the units there (which consists of Infestors and Aberrations). Then move towards the expansion area. Once cleared, you may move directly North to clear that area, and then to the top-right Evacuation ship area. In the top areas, Infestors are present, which helps clearing those areas.</p>
+                    <img style="display:block; margin:auto" src="/images/commanderdata/guides/dehaka/me.jpg" alt="疏散矿工 精华收集路线">
+                    <p>此图感染单位众多且不会掉落精华，因此收集精华很困难。先检查扩张区东侧的撤离飞船附近是否有单位，清掉那里的感染者和畸变体，再前往扩张区。清空后可直接向北清理，并继续前往右上方撤离飞船区域；上方区域的感染者有助于快速清场。</p>
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/mistopportunities">Mist Opportunities</a></td>
+                <td><a href="/missions/mistopportunities">机会渺茫</a></td>
                 <td>
-                    <img src="/images/commanderdata/guides/dehaka/mo_protoss.jpg" alt="Mist Opportunities Essence Farming Order">
-                    <p>To start, clear the enemies near the first geyser, which includes a Stalker and two Zealots. Then clear the enemies near the first Geyser. Move West and clear the enemies near the next set of geysers, using Devour on Sentries to quickly clear them. If you have more time, you may start clearing the enemies around the camp blocking the third set of geysers. With good timing, you may Devour that Sentry and use its explosion to clear the attack wave too.</p>
+                    <img src="/images/commanderdata/guides/dehaka/mo_protoss.jpg" alt="机会渺茫 精华收集路线">
+                    <p>先清理第一处喷泉附近的一只追猎者和两名狂热者。随后向西清理下一组喷泉附近的敌人，吞噬哨兵快速清场。若时间充裕，可开始清理阻挡第三组喷泉的营地；时机合适时还能吞噬哨兵，用其爆炸顺带消灭进攻波。</p>
                 </td>
                 <td>
-                    <img src="/images/commanderdata/guides/dehaka/mo_terran.jpg" alt="Mist Opportunities Terran Essence Farming Order">
-                    <p>To start, clear the enemies near the first geyser, which includes a Marauder and three marines. Then clear the enemies near the first Geyser. Move West and clear the enemies near the next set of geysers. If you have more time, you may start clearing the enemies around the camp blocking the third set of geysers by luring them away from the Bunker and Siege Tank.</p>
+                    <img src="/images/commanderdata/guides/dehaka/mo_terran.jpg" alt="机会渺茫 人类精华收集路线">
+                    <p>先清理第一处喷泉附近的一名劫掠者和三名陆战队员，再向西清理下一组喷泉附近的敌人。若时间充裕，可把敌人引离地堡和攻城坦克，开始清理阻挡第三组喷泉的营地。</p>
                 </td>
                 <td>
-                    <img src="/images/commanderdata/guides/dehaka/mo_zerg.jpg" alt="Mist Opportunities Zerg Essence Farming Order">
-                    <p>To start, clear the enemies near the first geyser, which includes a Hydralisk and two Roaches. Then clear the enemies near the first Geyser. Move West and clear the enemies near the next set of geysers, skipping the Spine Crawlers. If you have more time, you may start clearing the enemies around the camp blocking the third set of geysers by luring them away from the Spine Crawler.</p>
-                </td>
-            </tr>
-            <tr>
-                <td><a href="/missions/oblivionexpress">Oblivion Express</a></td>
-                <td>
-                    <img src="/images/commanderdata/guides/dehaka/oe_protoss.jpg" alt="Oblivion Express Essence Farming Order">
-                    <p>Clear the small plateau to the East of your main, Devouring the High Templar to quickly clear that enemies in that area. Then move to the base near the start of the middle tracks. Devour the High Templar to quickly clear the defenders, then move South and Devour the High Templar there. Once cleared, move back North, the High Templars would have been re-made, allowing you to gather more Essence. Keep alternating between these two locations.</p>
-                </td>
-                <td>
-                    <img src="/images/commanderdata/guides/dehaka/oe_terran.jpg" alt="Oblivion Express Terran Essence Farming Order">
-                    <p>Clear the small plateau to the East of your main, then clear the small plateau to the South of your main. Once cleared, move to the base at the start of the top set of tracks and slowly work your way through the units. Devour the Ghost to quickly clear the defenders in that location. Beware of the Bunkers and the Siege Tank located on the high ground.</p>
-                </td>
-                <td>
-                    <img src="/images/commanderdata/guides/dehaka/oe_zerg.jpg" alt="Oblivion Express Zerg Essence Farming Order">
-                    <p>Clear the small plateau to the East of your main, Devouring the Infestor to quickly clear that enemies in that area. Then, move North to the base, Devouring the Infestor and weakening the Ultralisk before Devouring it. You will use this damage reflect to weaken the Brood Lord before Devouring it. Watch out for the Corruptor, which will cast Corruption, causing Dehaka to take bonus damage.</p>
+                    <img src="/images/commanderdata/guides/dehaka/mo_zerg.jpg" alt="机会渺茫 异虫精华收集路线">
+                    <p>先清理第一处喷泉附近的一只刺蛇和两只蟑螂，再向西清理下一组喷泉附近的敌人，跳过脊针爬虫。若时间充裕，可把敌人引离脊针爬虫，开始清理阻挡第三组喷泉的营地。</p>
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/partparcel">Part & Parcel</a></td>
+                <td><a href="/missions/oblivionexpress">湮灭快车</a></td>
                 <td>
-                    <img src="/images/commanderdata/guides/dehaka/pp_protoss.jpg" alt="Part & Parcel Essence Farming Order">
-                    <p>Clear the defenders outside the top ramp by luring them away from the Cannon. Then, move North and clear the enemies in that location, using the Sentry to clear them quickly. Once cleared, move to the expansion, using the Sentry there to clear the enemies in that location.</p>
+                    <img src="/images/commanderdata/guides/dehaka/oe_protoss.jpg" alt="湮灭快车 精华收集路线">
+                    <p>清理主基地东侧小高地，吞噬高阶圣堂武士快速清场。随后前往中间轨道起点附近的基地，吞噬高阶圣堂武士清掉守军；向南再吞噬一名。清空后返回北侧，此时高阶圣堂武士会重新训练出来，可继续收集精华。反复往返这两个位置即可。</p>
                 </td>
                 <td>
-                    <img src="/images/commanderdata/guides/dehaka/pp_terran.jpg" alt="Part & Parcel Terran Essence Farming Order">
-                    <p>The presence of Bunkers makes gathering Essence very difficult. Clear the defenders outside the top ramp  by luring them away from the Bunker. Then, move North and clear the enemies in that location. You may then move South and clear the enemies around the Bunker. Alternatively, damaging a Bunker will cause SCV's to be sent from around the map. You may Devour them for HP sustain.</p>
+                    <img src="/images/commanderdata/guides/dehaka/oe_terran.jpg" alt="湮灭快车 人类精华收集路线">
+                    <p>先清理主基地东侧小高地，再清理南侧小高地。随后前往上方轨道起点的基地，逐步消灭单位。吞噬幽灵快速清掉守军，并小心高地上的地堡和攻城坦克。</p>
                 </td>
                 <td>
-                    <img src="/images/commanderdata/guides/dehaka/pp_zerg.jpg" alt="Part & Parcel Zerg Essence Farming Order">
-                    <p>Clear the small group of Roaches outside the bottom ramp, then work your way up North. You may lure enemies away from the Spine Crawler. Once the top defenders are cleared (preferably with the Aberration being Devoured last), you may clear the expansion.</p>
-                </td>
-            </tr>
-            <tr>
-                <td><a href="/missions/riftstokorhal">Rifts to Korhal</a></td>
-                <td>
-                    <img src="/images/commanderdata/guides/dehaka/rtk_protoss.jpg" alt="Rifts to Korhal Essence Farming Order">
-                    <p>Clear the defenders at the first Void Shard location, using the Sentries for AoE. Then move towards the second Void Shard location, luring units away from the Cannons. Beware of the edges of the base, as there are Dark Templars there.</p>
-                </td>
-                <td>
-                    <img src="/images/commanderdata/guides/dehaka/rtk_terran.jpg" alt="Rifts to Korhal Terran Essence Farming Order">
-                    <p>Clear the defenders at the first Void Shard location. Then move towards the second Void Shard location, luring units away from the Bunkers and Siege Tanks.</p>
-                </td>
-                <td>
-                    <img src="/images/commanderdata/guides/dehaka/rtk_zerg.jpg" alt="Rifts to Korhal Zerg Essence Farming Order">
-                    <p>Clear the defenders at the first Void Shard location. Then move towards the second Void Shard location. Lurkers and Swarm Hosts are burrowed, but there are several Infestors which can be Devoured for fast clearing the area.</p>
+                    <img src="/images/commanderdata/guides/dehaka/oe_zerg.jpg" alt="湮灭快车 异虫精华收集路线">
+                    <p>清理主基地东侧小高地，吞噬感染者快速清场。随后向北前往基地，吞噬感染者，并先削弱雷兽再吞噬。利用伤害反射削弱巢虫领主后再将其吞噬。小心腐化者施放“腐化”，这会使德哈卡受到额外伤害。</p>
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/scytheofamon">Scythe of Amon</a></td>
+                <td><a href="/missions/partparcel">聚铁成兵</a></td>
                 <td>
-                    <img src="/images/commanderdata/guides/dehaka/soa_protoss.jpg" alt="Scythe of Amon Essence Farming Order">
-                    <p>Clear the defenders near the first Void Sliver. Watch out for the Photon Cannon near the first Sliver. Then, make your way towards the second Void Sliver, clearing the camp between the two locations. Devour the Aberration for a damage reflect buff to quickly clear the defenders in that location.</p>
+                    <img src="/images/commanderdata/guides/dehaka/pp_protoss.jpg" alt="聚铁成兵 精华收集路线">
+                    <p>把上方坡道外的守军引离光子炮后清掉。随后向北，利用哨兵快速清理当地敌人；再前往扩张区，借助那里的哨兵清场。</p>
                 </td>
                 <td>
-                    <img src="/images/commanderdata/guides/dehaka/soa_terran.jpg" alt="Scythe of Amon Terran Essence Farming Order">
-                    <p>Clear the defenders near the first Void Sliver. Then, make your way towards the second Void Sliver, clearing the camp between the two locations by luring units away from the Bunker.</p>
+                    <img src="/images/commanderdata/guides/dehaka/pp_terran.jpg" alt="聚铁成兵 人类精华收集路线">
+                    <p>地堡会让精华收集变得很困难。先把上方坡道外的守军引离地堡并清除，然后向北继续清敌，再向南清理地堡周围的敌人。也可以攻击地堡，引来地图各处的 SCV，然后吞噬它们维持生命值。</p>
                 </td>
                 <td>
-                    <img src="/images/commanderdata/guides/dehaka/soa_zerg.jpg" alt="Scythe of Amon Zerg Essence Farming Order">
-                    <p>Clear the defenders near the first Void Sliver. Then, make your way towards the second Void Sliver, clearing the camp between the two locations. Devour the Aberration for a damage reflect buff to quickly clear the defenders in that location.</p>
+                    <img src="/images/commanderdata/guides/dehaka/pp_zerg.jpg" alt="聚铁成兵 异虫精华收集路线">
+                    <p>先清理下方坡道外的一小群蟑螂，再一路向北。可把敌人引离脊针爬虫。上方守军清空后（最好最后吞噬畸变体），即可清理扩张区。</p>
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/templeofthepast">Temple of the Past</a></td>
+                <td><a href="/missions/riftstokorhal">克哈裂痕</a></td>
+                <td>
+                    <img src="/images/commanderdata/guides/dehaka/rtk_protoss.jpg" alt="克哈裂痕 精华收集路线">
+                    <p>清理第一处虚空碎片的守军，利用哨兵造成范围伤害。随后前往第二处虚空碎片，把单位引离光子炮。小心基地边缘潜伏的黑暗圣堂武士。</p>
+                </td>
+                <td>
+                    <img src="/images/commanderdata/guides/dehaka/rtk_terran.jpg" alt="克哈裂痕 人类精华收集路线">
+                    <p>清理第一处虚空碎片的守军，随后前往第二处虚空碎片，把单位引离地堡和攻城坦克。</p>
+                </td>
+                <td>
+                    <img src="/images/commanderdata/guides/dehaka/rtk_zerg.jpg" alt="克哈裂痕 异虫精华收集路线">
+                    <p>清理第一处虚空碎片的守军，再前往第二处。潜伏者和虫群宿主处于潜地状态，但当地有数只感染者，吞噬它们可以快速清场。</p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="/missions/scytheofamon">埃蒙之镰</a></td>
+                <td>
+                    <img src="/images/commanderdata/guides/dehaka/soa_protoss.jpg" alt="埃蒙之镰 精华收集路线">
+                    <p>清理第一处虚空裂片附近的守军，小心裂片旁的光子炮。随后前往第二处虚空裂片，并清除两地之间的营地。吞噬畸变体获得伤害反射增益，快速消灭当地守军。</p>
+                </td>
+                <td>
+                    <img src="/images/commanderdata/guides/dehaka/soa_terran.jpg" alt="埃蒙之镰 人类精华收集路线">
+                    <p>清理第一处虚空裂片附近的守军。随后前往第二处，并把单位引离地堡，清除两地之间的营地。</p>
+                </td>
+                <td>
+                    <img src="/images/commanderdata/guides/dehaka/soa_zerg.jpg" alt="埃蒙之镰 异虫精华收集路线">
+                    <p>清理第一处虚空裂片附近的守军。随后前往第二处并清除两地之间的营地。吞噬畸变体获得伤害反射增益，快速消灭当地守军。</p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="/missions/templeofthepast">往日神庙</a></td>
                 <td colspan="3">
-                    <img style="display:block; margin:auto" src="/images/commanderdata/guides/dehaka/totp.jpg" alt="Temple of the Past Essence Farming Order">
-                    <p>Use Deep Tunnel to move Dehaka to the opposite side of the rocks. Then, clear units guarding each of the Zenith stones. If timed correctly, you will be able to intercept the first attack wave with Dehaka using Deep Tunnel. Make sure you target the Zenith Stone on the middle lane last, as this will allow you to intercept the attack wave without having to wait for Deep Tunnel.</p>
+                    <img style="display:block; margin:auto" src="/images/commanderdata/guides/dehaka/totp.jpg" alt="往日神庙 精华收集路线">
+                    <p>使用深槽虫道把德哈卡移动到岩石另一侧，然后清理守卫每块天顶石的单位。时机得当时，可再次使用深槽虫道拦截第一波进攻。最后再攻击中路的天顶石，这样无需等待深槽虫道就能截住进攻波。</p>
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/thevermillionproblem">The Vermillion Problem</a></td>
+                <td><a href="/missions/thevermillionproblem">熔火危机</a></td>
                 <td colspan="2">
-                    <img style="display:block; margin:auto" src="/images/commanderdata/guides/dehaka/tvp.jpg" alt="The Vermillion Problem Protoss and Terran Essence Farming Order">
-                    <p>Use Dehaka to start clearing the expansion. You can use Devour on workers to sustain HP. Continue to clear the expansion until the first attack wave, where you can Deep Tunnel back to intercept it.</p>
+                    <img style="display:block; margin:auto" src="/images/commanderdata/guides/dehaka/tvp.jpg" alt="熔火危机 星灵和人类精华收集路线">
+                    <p>用德哈卡开始清理扩张区，可吞噬工人维持生命值。持续清理到第一波进攻到来，再用深槽虫道返回拦截。</p>
                 </td>
                 <td>
-                    <img style="display:block; margin:auto" src="/images/commanderdata/guides/dehaka/tvp_zerg.jpg" alt="The Vermillion Problem Zerg Essence Farming Order">
-                    <p>In the case of Zerg compositions, it is better to target the island to the West of the expansion first. There are Vipers present in that area, with plenty of Scourge which can be used for quick Devours. Once that area is cleared, you can make your way towards the expansion and start clearing that.</p>
-                </td>
-            </tr>
-            <tr>
-                <td><a href="/missions/voidlaunch">Void Launch</a></td>
-                <td>
-                    <img src="/images/commanderdata/guides/dehaka/vl_protoss.jpg" alt="Void Launch Essence Farming Order">
-                    <p>Clear the final bonus area first by sneaking Dehaka along the edges of the camp guarding that area. Devour the High Templar and Sentry to quickly kill off the units there. Then, exit the same way you entered, and clear the units outside the right base entrance, Devouring the Sentry and weakened Archon. Once cleared, you may clear the second bonus area by Devouring the Sentry and an air unit.</p>
-                </td>
-                <td>
-                    <img src="/images/commanderdata/guides/dehaka/vl_terran.jpg" alt="Void Launch Terran Essence Farming Order">
-                    <p>Bunkers and Siege Tanks make gathering Essence difficult on this map. Clear the units (and Bunker) around the first bonus area, then move East and clear the units in that area too. Try to Devour Ghosts before they use Cloak to take advantage of the AoE damage they cause.</p>
-                </td>
-                <td>
-                    <img src="/images/commanderdata/guides/dehaka/vl_zerg.jpg" alt="Void Launch Zerg Essence Farming Order">
-                    <p>Clear the first bonus area and work your way East. The enemies outside the right entrance consist of Infestors which can be used to quickly clear that area. Near the second bonus area, there is a Viper which can be used to clear, but watch out for the Swarm Hosts.</p>
+                    <img style="display:block; margin:auto" src="/images/commanderdata/guides/dehaka/tvp_zerg.jpg" alt="熔火危机 异虫精华收集路线">
+                    <p>面对异虫阵容时，最好先攻击扩张区西侧的小岛。那里有飞蛇和大量爆蚊，可供快速吞噬。清空该区域后，再前往扩张区开始清理。</p>
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/voidthrashing">Void Thrashing</a></td>
+                <td><a href="/missions/voidlaunch">虚空降临</a></td>
                 <td>
-                    <img src="/images/commanderdata/guides/dehaka/vt_protoss.jpg" alt="Void Thrashing Essence Farming Order">
-                    <p>Clear the defenders outside the first Void Thrasher spawn point. Then move East, clearing the defenders in the enemy camp. Devour Sentries and Archons to quickly clear that area. Move to the entrance of the North base and lure enemy units down the ramp and clear them.</p>
+                    <img src="/images/commanderdata/guides/dehaka/vl_protoss.jpg" alt="虚空降临 精华收集路线">
+                    <p>让德哈卡沿营地边缘潜行，先清理最后一处奖励区域。吞噬高阶圣堂武士和哨兵快速消灭当地单位。按原路离开，再清理右侧基地入口外的单位，吞噬哨兵和被削弱的执政官。清空后，可吞噬哨兵和一个空中单位来清理第二处奖励区域。</p>
                 </td>
                 <td>
-                    <img src="/images/commanderdata/guides/dehaka/vt_terran.jpg" alt="Void Thrashing Terran Essence Farming Order">
-                    <p>Bunkers and Siege Tanks make gathering Essence difficult. Clear the defenders outside the first Void Thrasher spawn point. Then move East, clearing the defenders in the enemy camp. Lure them away from the two Siege Tanks in that location.</p>
+                    <img src="/images/commanderdata/guides/dehaka/vl_terran.jpg" alt="虚空降临 人类精华收集路线">
+                    <p>地堡和攻城坦克使此图很难收集精华。先清理第一处奖励区域周围的单位和地堡，再向东清理该区域。尽量在幽灵隐形前将其吞噬，利用其造成的范围伤害。</p>
                 </td>
                 <td>
-                    <img src="/images/commanderdata/guides/dehaka/vt_zerg.jpg" alt="Void Thrashing Zerg Essence Farming Order">
-                    <p>Clear the defenders outside the first Void Thrasher spawn point. Then move East, clearing the defenders in the enemy camp. Watch out for the Banelings as they can surprise you with their high burst damage. Once those defenders are cleared, move West to the camp outside the second Void Thrasher spawn. Devour Infestors and weakened Aberrations to quickly clear that area.</p>
+                    <img src="/images/commanderdata/guides/dehaka/vl_zerg.jpg" alt="虚空降临 异虫精华收集路线">
+                    <p>清理第一处奖励区域后一路向东。右侧入口外有感染者，可用于快速清场。第二处奖励区域附近有一只飞蛇可供吞噬，但要小心虫群宿主。</p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="/missions/voidthrashing">虚空撕裂</a></td>
+                <td>
+                    <img src="/images/commanderdata/guides/dehaka/vt_protoss.jpg" alt="虚空撕裂 精华收集路线">
+                    <p>清理第一只虚空撕裂者出生点外的守军，随后向东清理敌方营地。吞噬哨兵和执政官快速清场，再前往北侧基地入口，把敌人引下坡道后消灭。</p>
+                </td>
+                <td>
+                    <img src="/images/commanderdata/guides/dehaka/vt_terran.jpg" alt="虚空撕裂 人类精华收集路线">
+                    <p>地堡和攻城坦克会让精华收集变得困难。清理第一只虚空撕裂者出生点外的守军，再向东清理敌方营地，并把敌人引离当地的两辆攻城坦克。</p>
+                </td>
+                <td>
+                    <img src="/images/commanderdata/guides/dehaka/vt_zerg.jpg" alt="虚空撕裂 异虫精华收集路线">
+                    <p>清理第一只虚空撕裂者出生点外的守军，再向东清理敌方营地。小心爆虫的高爆发伤害。清空后向西前往第二只虚空撕裂者出生点外的营地，吞噬感染者和被削弱的畸变体快速清场。</p>
                 </td>
             </tr>
         </tbody>
     </table>
-    <p>* Dehaka has a very high survivability on Dead of Night, due to the large number of low-HP Infested units scattered around the map. While they do not drop Essence, use them to your advantage to keep Dehaka alive while you farm Essence from Amon's units.</p>
-    <h3>Playstyle Tips</h3>
+    <p>* 德哈卡在“亡者之夜”中的生存能力很强，因为地图上散布着大量低生命值的感染单位。它们虽不掉落精华，但可用来维持德哈卡的生命，再从埃蒙单位身上收集精华。</p>
+    <h3>玩法提示</h3>
     <ul>
-        <li>Gather essence with Dehaka as soon as he spawns.</li>
-        <li>Target Psionic units with Dehaka to take advantage of the area damage it causes.</li>
-        <li>Avoid devouring high-HP targets. Weaken units first before devouring them.</li>
-        <li>Greater Primal Wurms do not require vision to be summoned, as long as you can see the terrain. Use them to get vision so you can Deep Tunnel Dehaka over.</li>
-        <li>If Dehaka dies, use drones to instantly respawn him. Each drone reduces Dehaka's respawn time by 24 seconds (-1 second per level for Dehaka). This can have huge negative impact on your economy in the early game, so make sure you don't lose him at the start, when he is at his weakest.</li>
+        <li>德哈卡一登场就开始收集精华。</li>
+        <li>让德哈卡优先吞噬灵能单位，利用其产生的范围伤害。</li>
+        <li>避免吞噬高生命值目标；先削弱单位再将其吞噬。</li>
+        <li>只要地形已探索，即使没有视野也能召唤巨型原始蠕虫。可用它们获取视野，再让德哈卡通过深槽虫道移动过去。</li>
+        <li>若德哈卡阵亡，可消耗工蜂让他立即复活。每只工蜂使复活时间缩短 24 秒（德哈卡每级 -1 秒）。这会在前期严重影响经济，因此德哈卡最弱的开局阶段务必避免阵亡。</li>
     </ul>
 <script src="/scripts/nav.js"></script>
 <?= endContent() ?>

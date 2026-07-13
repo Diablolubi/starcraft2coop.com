@@ -6,9 +6,9 @@ require_once __DIR__ . "/../../includes/wrapper.php";
 require_once "../../includes/switchergenerator.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Mission Guide - Scythe of Amon</title>
-  <meta name="description" content="Starcraft 2 Co-op Mission Guide Scythe of Amon">
-  <meta name="keywords" content="Starcraft co-op guides scythe amon mission">
+  <title>《星际争霸 II》合作任务攻略 - 埃蒙之镰</title>
+  <meta name="description" content="《星际争霸 II》合作任务攻略：埃蒙之镰">
+  <meta name="keywords" content="星际争霸 II 合作任务 埃蒙之镰 攻略">
   <link rel="stylesheet"  media="all" type="text/css" href="/styles/missionstyle.css?v=1.00">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="https://starcraft2coop.com/missions/scytheofamon">
@@ -31,121 +31,121 @@ require_once "../../includes/switchergenerator.php";
     }
   </style>
 <?= startContent() ?>
-    <h1><span class="unbold">Mission:</span> Scythe of Amon</h1>
-    <p id="missionPlace">Xel'Naga Temple</p>
+    <h1><span class="unbold">任务：</span>埃蒙之镰</h1>
+    <p id="missionPlace">萨尔纳加神庙</p>
     <?php include("../../includes/reporterror.php");?>
     <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#misSum">Mission Summary</a></p>
-        <p><a href="#objectives">Objectives</a></p>
-        <p><a href="#idRace">Identifying the Enemy Race</a></p>
-        <p><a href="#sliverGrowth">Void Sliver Growth</a></p>
-        <p><a href="#sliverAbilities">Void Sliver Abilities</a></p>
-        <p><a href="#bonus">Completing the Bonus Objective</a></p>
-        <p><a href="#timings">Timings</a></p>
-        <p><a href="#spawnPoints">Spawn Points</a></p>
-        <p><a href="#misTips">Mission Tips</a></p>
-        <p><a href="#comTips">Commander-Specific Tips</a></p>
+        <h2>本页目录</h2>
+        <p><a href="#misSum">任务概述</a></p>
+        <p><a href="#objectives">任务目标</a></p>
+        <p><a href="#idRace">识别敌方种族</a></p>
+        <p><a href="#sliverGrowth">虚空裂片成长</a></p>
+        <p><a href="#sliverAbilities">虚空裂片技能</a></p>
+        <p><a href="#bonus">完成奖励目标</a></p>
+        <p><a href="#timings">时间点</a></p>
+        <p><a href="#spawnPoints">出生点</a></p>
+        <p><a href="#misTips">任务技巧</a></p>
+        <p><a href="#comTips">指挥官专属技巧</a></p>
     </div>
-    <h2 id="misSum">Mission Summary</h2>
-    <p>Nerazim scout Lyrak has made a startling discovery: Amon’s forces have invaded a xel’naga temple and are using its energies to awaken one of the Dark God’s most powerful creations. Put a stop to their plans by destroying the void slivers while there’s still time.</p>
-    <h2 id="objectives">Objectives</h2>
-    <h3>Primary Objective</h3>
+    <h2 id="misSum">任务概述</h2>
+    <p>奈拉齐姆侦察兵莱拉克发现了惊人的事实：埃蒙的军队入侵了一座萨尔纳加神庙，并利用其中的能量唤醒黑暗之神最强大的造物之一。趁一切还来得及，摧毁虚空裂片，阻止他们的计划。</p>
+    <h2 id="objectives">任务目标</h2>
+    <h3>主要目标</h3>
         <ul>
-            <li>Destroy Void Slivers (5)</li>
-            <li>Do not let the Voidshade Hybrid awaken.</li>
+            <li>摧毁虚空裂片 (5)</li>
+            <li>不得让虚空之影混合体苏醒。</li>
         </ul>
-    <h3>Secondary Objective</h3>
+    <h3>奖励目标</h3>
         <ul>
-            <li>Escort Evacuation Ships (3)</li>
+            <li>护送撤离船 (3)</li>
         </ul>
-    <h2 id="idRace">Identifying the Enemy Race</h2>
-    <p>An important part in Starcraft II co-op is identifying the enemy race, and then the enemy composition. This allows you to effectively counter the attack waves on missions. In other missions, the presence of creep would point towards a Zerg race, while the absence of creep would point towards either Protoss or Terran. Scythe of Amon is the only mission in the game where you can uniquely identify the enemy race by checking creep spread. Press Alt + T to view the creep spread pattern. You'll get one of the following three patterns.</p>
-    <p>Protoss Creep Spread:</p>
-    <img src="/images/missiondata/scytheofamon/creepspread_protoss.jpg" alt="Protoss Creep Spread">
-    <p>Terran Creep Spread:</p>
-    <img src="/images/missiondata/scytheofamon/creepspread_terran.jpg" alt="Terran Creep Spread">
-    <p>Zerg Creep Spread:</p>
-    <img src="/images/missiondata/scytheofamon/creepspread_zerg.jpg" alt="Zerg Creep Spread">
-    <p>A video is below:</p>
+    <h2 id="idRace">识别敌方种族</h2>
+    <p>在《星际争霸 II》合作模式中，识别敌方种族、进而判断敌方部队组合十分重要，这能让你有效克制任务中的进攻波次。在其他任务中，有菌毯意味着敌方是异虫；没有菌毯则意味着敌方可能是星灵或人类。“埃蒙之镰”是游戏中唯一能仅凭菌毯分布准确识别敌方种族的任务。按 Alt + T 查看菌毯分布，你会看到以下三种图案之一。</p>
+    <p>星灵菌毯分布：</p>
+    <img src="/images/missiondata/scytheofamon/creepspread_protoss.jpg" alt="星灵菌毯分布">
+    <p>人类菌毯分布：</p>
+    <img src="/images/missiondata/scytheofamon/creepspread_terran.jpg" alt="人类菌毯分布">
+    <p>异虫菌毯分布：</p>
+    <img src="/images/missiondata/scytheofamon/creepspread_zerg.jpg" alt="异虫菌毯分布">
+    <p>演示视频如下：</p>
     <iframe width="475" height="268" src="https://www.youtube.com/embed/9g-vLQou8-w" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <h2 id="sliverGrowth">Void Sliver Growth</h2>
+    <h2 id="sliverGrowth">虚空裂片成长</h2>
     <?php $mission = "scytheofamon"; ?>
-    <p>Every time a Void Sliver is destroyed, further reinforcements are added to the remaining Void Slivers. Additionally, all other remaining Void Slivers gain 2000 max shields, and their shields refreshed to full. This makes the other slivers more difficult to destroy. The reinforcement growth of each Sliver is shown below.</p>
-    <p>All units present will be Void units and will spawn from the Void Rifts around the Sliver before moving into position. These units can be Dominated and Reclaimed, but cannot be Mind-Controlled by Dark Archons.</p>
-    <p>Sliver 1:</p>
+    <p>每摧毁一个虚空裂片，剩余虚空裂片都会获得更多增援。此外，所有其他虚空裂片的护盾上限增加 2000，并立即恢复全部护盾，因此会变得更难摧毁。各裂片的增援成长如下。</p>
+    <p>出现的所有单位都是虚空单位，它们会从裂片周围的虚空裂隙中生成，再移动到各自位置。这些单位可以被支配和回收，但无法被黑暗执政官精神控制。</p>
+    <p>裂片 1：</p>
     <div class='sliver'>
-        <div id="sliver1Div" class='sliverDiv'><img id ='sliver1Pic' src=' /images/missiondata/scytheofamon/sliver1-0.jpg' alt='Sliver 1'></div>
+        <div id="sliver1Div" class='sliverDiv'><img id ='sliver1Pic' src=' /images/missiondata/scytheofamon/sliver1-0.jpg' alt='裂片 1'></div>
             <div class = 'sliverMinimap'>
                 <form action='#'>
-                    <label><input type='radio' name='sliver1States' value='0' checked>0 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver1States' value='1'>1 Sliver Destroyed</label><br>
-                    <label><input type='radio' name='sliver1States' value='2'>2 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver1States' value='3'>3 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver1States' value='4'>4 Slivers Destroyed</label><br>
+                    <label><input type='radio' name='sliver1States' value='0' checked>已摧毁 0 个裂片</label><br>
+                    <label><input type='radio' name='sliver1States' value='1'>已摧毁 1 个裂片</label><br>
+                    <label><input type='radio' name='sliver1States' value='2'>已摧毁 2 个裂片</label><br>
+                    <label><input type='radio' name='sliver1States' value='3'>已摧毁 3 个裂片</label><br>
+                    <label><input type='radio' name='sliver1States' value='4'>已摧毁 4 个裂片</label><br>
                 </form>
                 <br><br>
-                <div><img src='/images/missiondata/scytheofamon/sliver1minimap.jpg' alt='Base Minimap'></div>
+                <div><img src='/images/missiondata/scytheofamon/sliver1minimap.jpg' alt='基地小地图'></div>
             </div>
     </div>
-    <p>Sliver 2:</p>
+    <p>裂片 2：</p>
     <div class='sliver'>
-        <div id="sliver2Div"  class='sliverDiv'><img id ='sliver2Pic' src=' /images/missiondata/scytheofamon/sliver2-0.jpg' alt='Sliver 2'></div>
+        <div id="sliver2Div"  class='sliverDiv'><img id ='sliver2Pic' src=' /images/missiondata/scytheofamon/sliver2-0.jpg' alt='裂片 2'></div>
             <div class = 'sliverMinimap'>
                 <form action='#'>
-                    <label><input type='radio' name='sliver2States' value='0' checked>0 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver2States' value='1'>1 Sliver Destroyed</label><br>
-                    <label><input type='radio' name='sliver2States' value='2'>2 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver2States' value='3'>3 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver2States' value='4'>4 Slivers Destroyed</label><br>
+                    <label><input type='radio' name='sliver2States' value='0' checked>已摧毁 0 个裂片</label><br>
+                    <label><input type='radio' name='sliver2States' value='1'>已摧毁 1 个裂片</label><br>
+                    <label><input type='radio' name='sliver2States' value='2'>已摧毁 2 个裂片</label><br>
+                    <label><input type='radio' name='sliver2States' value='3'>已摧毁 3 个裂片</label><br>
+                    <label><input type='radio' name='sliver2States' value='4'>已摧毁 4 个裂片</label><br>
                 </form>
                 <br><br>
-                <div><img src='/images/missiondata/scytheofamon/sliver2minimap.jpg' alt='Base Minimap'></div>
+                <div><img src='/images/missiondata/scytheofamon/sliver2minimap.jpg' alt='基地小地图'></div>
             </div>
     </div>
-    <p>Sliver 3:</p>
+    <p>裂片 3：</p>
     <div class='sliver'>
-        <div id="sliver3Div"  class='sliverDiv'><img id ='sliver3Pic' src=' /images/missiondata/scytheofamon/sliver3-0.jpg' alt='Sliver 3'></div>
+        <div id="sliver3Div"  class='sliverDiv'><img id ='sliver3Pic' src=' /images/missiondata/scytheofamon/sliver3-0.jpg' alt='裂片 3'></div>
             <div class = 'sliverMinimap'>
                 <form action='#'>
-                    <label><input type='radio' name='sliver3States' value='0' checked>0 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver3States' value='1'>1 Sliver Destroyed</label><br>
-                    <label><input type='radio' name='sliver3States' value='2'>2 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver3States' value='3'>3 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver3States' value='4'>4 Slivers Destroyed</label><br>
+                    <label><input type='radio' name='sliver3States' value='0' checked>已摧毁 0 个裂片</label><br>
+                    <label><input type='radio' name='sliver3States' value='1'>已摧毁 1 个裂片</label><br>
+                    <label><input type='radio' name='sliver3States' value='2'>已摧毁 2 个裂片</label><br>
+                    <label><input type='radio' name='sliver3States' value='3'>已摧毁 3 个裂片</label><br>
+                    <label><input type='radio' name='sliver3States' value='4'>已摧毁 4 个裂片</label><br>
                 </form>
                 <br><br>
-                <div><img src='/images/missiondata/scytheofamon/sliver3minimap.jpg' alt='Base Minimap'></div>
+                <div><img src='/images/missiondata/scytheofamon/sliver3minimap.jpg' alt='基地小地图'></div>
             </div>
     </div>
-    <p>Sliver 4:</p>
+    <p>裂片 4：</p>
     <div class='sliver'>
-        <div id="sliver4Div"  class='sliverDiv'><img id ='sliver4Pic' src=' /images/missiondata/scytheofamon/sliver4-0.jpg' alt='Sliver 4'></div>
+        <div id="sliver4Div"  class='sliverDiv'><img id ='sliver4Pic' src=' /images/missiondata/scytheofamon/sliver4-0.jpg' alt='裂片 4'></div>
             <div class = 'sliverMinimap'>
                 <form action='#'>
-                    <label><input type='radio' name='sliver4States' value='0' checked>0 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver4States' value='1'>1 Sliver Destroyed</label><br>
-                    <label><input type='radio' name='sliver4States' value='2'>2 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver4States' value='3'>3 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver4States' value='4'>4 Slivers Destroyed</label><br>
+                    <label><input type='radio' name='sliver4States' value='0' checked>已摧毁 0 个裂片</label><br>
+                    <label><input type='radio' name='sliver4States' value='1'>已摧毁 1 个裂片</label><br>
+                    <label><input type='radio' name='sliver4States' value='2'>已摧毁 2 个裂片</label><br>
+                    <label><input type='radio' name='sliver4States' value='3'>已摧毁 3 个裂片</label><br>
+                    <label><input type='radio' name='sliver4States' value='4'>已摧毁 4 个裂片</label><br>
                 </form>
                 <br><br>
-                <div><img src='/images/missiondata/scytheofamon/sliver4minimap.jpg' alt='Base Minimap'></div>
+                <div><img src='/images/missiondata/scytheofamon/sliver4minimap.jpg' alt='基地小地图'></div>
             </div>
     </div>
-    <p>Sliver 5:</p>
+    <p>裂片 5：</p>
     <div class='sliver'>
-        <div id="sliver5Div"  class='sliverDiv'><img id ='sliver5Pic' src=' /images/missiondata/scytheofamon/sliver5-0.jpg' alt='Sliver 5'></div>
+        <div id="sliver5Div"  class='sliverDiv'><img id ='sliver5Pic' src=' /images/missiondata/scytheofamon/sliver5-0.jpg' alt='裂片 5'></div>
             <div class = 'sliverMinimap'>
                 <form action='#'>
-                    <label><input type='radio' name='sliver5States' value='0' checked>0 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver5States' value='1'>1 Sliver Destroyed</label><br>
-                    <label><input type='radio' name='sliver5States' value='2'>2 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver5States' value='3'>3 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver5States' value='4'>4 Slivers Destroyed</label><br>
+                    <label><input type='radio' name='sliver5States' value='0' checked>已摧毁 0 个裂片</label><br>
+                    <label><input type='radio' name='sliver5States' value='1'>已摧毁 1 个裂片</label><br>
+                    <label><input type='radio' name='sliver5States' value='2'>已摧毁 2 个裂片</label><br>
+                    <label><input type='radio' name='sliver5States' value='3'>已摧毁 3 个裂片</label><br>
+                    <label><input type='radio' name='sliver5States' value='4'>已摧毁 4 个裂片</label><br>
                 </form>
                 <br><br>
-                <div><img src='/images/missiondata/scytheofamon/sliver5minimap.jpg' alt='Base Minimap'></div>
+                <div><img src='/images/missiondata/scytheofamon/sliver5minimap.jpg' alt='基地小地图'></div>
             </div>
     </div>
     <script>
@@ -222,48 +222,48 @@ require_once "../../includes/switchergenerator.php";
             newImg.attr('id', 'sliver5Pic');
         })
     </script>
-    <h2 id="sliverAbilities">Void Sliver Abilities</h2>
-    <p>The Void Slivers will cast various abilities as they are attacked. The first Void Sliver will have no abilities. Subsequent Void Slivers will each have a random ability added from the list below. Therefore, Slivers #4 and #5 will have all abilities.</p>
-    <p>The list of abilities are below:</p>
+    <h2 id="sliverAbilities">虚空裂片技能</h2>
+    <p>虚空裂片受到攻击时会施放各种技能。第一个虚空裂片没有技能，后续每个虚空裂片都会从下表中随机新增一种技能。因此，裂片 #4 和 #5 会拥有全部技能。</p>
+    <p>技能列表如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Ability</th>
-                <th>Description</th>
-                <th>Cooldown</th>
+                <th>技能</th>
+                <th>说明</th>
+                <th>冷却时间</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Shockwave</td>
-                <td>Casts an Area of Effect within 11 range of the Void Sliver with a chargeup time of 3 seconds, stunning all units within its range for 2 seconds.</td>
-                <td>14 seconds</td>
+                <td>震荡波</td>
+                <td>在虚空裂片周围 11 射程内施放范围效果，蓄力 3 秒后使范围内所有单位昏迷 2 秒。</td>
+                <td>14 秒</td>
             </tr>
             <tr>
-                <td>Death Grip</td>
-                <td>Creates a Death Grip Crystal within 16 range of the Void Sliver. Void Slivers #4 and #5 will spawn 2 Death Grip Crystals instead of 1 if they have the ability.  Death Grip Crystals disable a set of units whose HP + Shields are less than 800*, and destroys them after 10 seconds unless the crystal is destroyed.</td>
-                <td>60 seconds</td>
+                <td>死亡之握</td>
+                <td>在虚空裂片周围 16 射程内生成一枚死亡之握水晶。若虚空裂片 #4 和 #5 拥有此技能，会生成 2 枚而非 1 枚死亡之握水晶。死亡之握水晶会禁用一组生命值与护盾值之和低于 800* 的单位，并在 10 秒后将其摧毁，除非水晶先被摧毁。</td>
+                <td>60 秒</td>
             </tr>
             <tr>
-                <td>Unstable Energy</td>
-                <td>Deals 100 damage in an area within 18 range of the Void Sliver after 4 seconds.</td>
-                <td>20 seconds</td>
+                <td>不稳定能量</td>
+                <td>造成 100 点范围伤害，作用区域位于虚空裂片周围 18 射程内，效果在 4 秒后触发。</td>
+                <td>20 秒</td>
             </tr>
         </tbody>
     </table>
-    <p>* The Death Grip Crystal target selection code picks a unit and adds its vitality to a pool for counting. If the total vitality in the pool is less than 800, the Death Grip Crystal will pick another target, repeating until the pool goes above 800 vitality. Therefore, it is possible for Death Grip Crystals to capture units that are greater than 800 HP.</p>
-    <h2 id="bonus">Completing the Bonus Objective</h2>
+    <p>* 死亡之握水晶的目标选择代码会选取一个单位，并将其生命值与护盾值之和加入计数池。如果池中总值低于 800，死亡之握水晶会继续选择目标，直至总值超过 800。因此，死亡之握水晶可能捕获生命值超过 800 的单位。</p>
+    <h2 id="bonus">完成奖励目标</h2>
     <div id="objectiveImages">
-        <img src="/images/missiondata/scytheofamon/warpprism.jpg" alt="Warp Prism">
-        <img src="/images/missiondata/scytheofamon/warpprism.jpg" alt="Warp Prism">
-        <img src="/images/missiondata/scytheofamon/warpprism.jpg" alt="Warp Prism">
+        <img src="/images/missiondata/scytheofamon/warpprism.jpg" alt="折跃棱镜">
+        <img src="/images/missiondata/scytheofamon/warpprism.jpg" alt="折跃棱镜">
+        <img src="/images/missiondata/scytheofamon/warpprism.jpg" alt="折跃棱镜">
     </div>
     <div id="globalRaceSelect">
-        <p>Change all base analysis pictures to race:</p>
+        <p>将所有基地分析图片切换为以下种族：</p>
         <form action="#">
-            <input type="radio" name="globalRace" value="protoss" checked>Protoss<br>
-            <input type="radio" name="globalRace" value="terran">Terran<br>
-            <input type="radio" name="globalRace" value="zerg">Zerg<br>
+            <input type="radio" name="globalRace" value="protoss" checked>星灵<br>
+            <input type="radio" name="globalRace" value="terran">人类<br>
+            <input type="radio" name="globalRace" value="zerg">异虫<br>
         </form>
         <script>
             $("input[name='globalRace']").change(function(){
@@ -277,55 +277,55 @@ require_once "../../includes/switchergenerator.php";
             })
         </script>
     </div>
-    <p>The bonus objective requires you to escort a Warp Prism as it attempts to evacuate people. The stopping points of these prisms are within enemy bases. The bases that will be encountered, in the order of the stopping points (assuming the objective doesn't get shot down) is shown below.</p>
-    <p>Stop Point 1:</p>
+    <p>奖励目标要求你护送一艘试图撤离平民的折跃棱镜。这些棱镜的停靠点位于敌方基地内。假设目标没有被击落，按停靠顺序会遇到以下基地。</p>
+    <p>停靠点 1：</p>
     <?php switcher_generator("bonusbase1long") ?>
-    <p>Stop Point 2:</p>
+    <p>停靠点 2：</p>
     <?php switcher_generator("bonusbase2") ?>
-    <p>Stop Point 3:</p>
+    <p>停靠点 3：</p>
     <?php switcher_generator("bonusbase3long") ?>
-    <p>It is also important to note that each stopping point will feature a difference race of enemy units. The race will not match the race of the Attack Waves on this map. However, based on the race of the Attack Waves, you can tell what race of enemy units will be present in each of the three Stopping Points above as follows:</p>
+    <p>还需注意，每个停靠点都会出现不同种族的敌方单位，而且不会与本地图进攻波次的种族完全一致。不过，可以根据进攻波次的种族推断上述三个停靠点各自会出现何种敌人，具体如下：</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Race of attack wave</th>
-                <th>Stop Point 1 Race</th>
-                <th>Stop Point 2 Race</th>
-                <th>Stop Point 3 Race</th>
+                <th>进攻波次种族</th>
+                <th>停靠点 1 种族</th>
+                <th>停靠点 2 种族</th>
+                <th>停靠点 3 种族</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Protoss</td>
-                <td>Zerg</td>
-                <td>Terran</td>
-                <td>Protoss</td>
+                <td>星灵</td>
+                <td>异虫</td>
+                <td>人类</td>
+                <td>星灵</td>
             </tr>
             <tr>
-                <td>Terran</td>
-                <td>Protoss</td>
-                <td>Zerg</td>
-                <td>Terran</td>
+                <td>人类</td>
+                <td>星灵</td>
+                <td>异虫</td>
+                <td>人类</td>
             </tr>
             <tr>
-                <td>Zerg</td>
-                <td>Terran</td>
-                <td>Protoss</td>
-                <td>Zerg</td>
+                <td>异虫</td>
+                <td>人类</td>
+                <td>星灵</td>
+                <td>异虫</td>
             </tr>
         </tbody>
     </table>
-    <p>The first Stopping Point will always be the same area. However, Stopping Points 2 and 3 will be switched, if you destroy Sliver 3 (above) before the objective leaves the first stopping point.</p>
-    <h2 id="timings">Timings</h2>
-    <p>Note: Information on Tech and Strength levels can be found on the <a href="/guides/enemycomps">Enemy Compositions</a> page.</p>
-    <p>The Attack Wave Timings for this mission are:</p>
+    <p>第一个停靠点总是在同一区域。不过，停靠点 2 和 3 的顺序会互换，条件是在奖励目标离开第一个停靠点前摧毁上方的裂片 3。</p>
+    <h2 id="timings">时间点</h2>
+    <p>注意：科技等级与强度等级的说明参见<a href="/guides/enemycomps">敌方部队组合</a>页面。</p>
+    <p>本任务的进攻波次时间为：</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Wave</th>
-                <th>Time</th>
-                <th>Tech Level</th>
-                <th>Strength Level</th>
+                <th>波次</th>
+                <th>时间</th>
+                <th>科技等级</th>
+                <th>强度等级</th>
             </tr>
         </thead>
         <tbody>
@@ -385,13 +385,13 @@ require_once "../../includes/switchergenerator.php";
             </tr>
         </tbody>
     </table>
-    <p>Additionally, some attack waves will also have Hybrids in them. These attack waves, and the number of Hybrids in them is shown below:</p>
+    <p>此外，部分进攻波次还会包含混合体。对应波次及其中的混合体数量如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Wave</th>
-                <th>Minor Hybrid</th>
-                <th>Major Hybrid</th>
+                <th>波次</th>
+                <th>小型混合体</th>
+                <th>大型混合体</th>
             </tr>
         </thead>
         <tbody>
@@ -442,68 +442,68 @@ require_once "../../includes/switchergenerator.php";
             </tr>
         </tbody>
     </table>
-    <p>The types of these Hybrids will depend on the enemy race, as follows:</p>
+    <p>这些混合体的类型取决于敌方种族，具体如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Race</th>
-                <th>Minor Hybrid</th>
-                <th>Major Hybrid</th>
+                <th>种族</th>
+                <th>小型混合体</th>
+                <th>大型混合体</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Protoss</td>
-                <td>Hybrid Destroyer</td>
-                <td>Hybrid Behemoth</td>
+                <td>星灵</td>
+                <td>混合体毁灭者</td>
+                <td>混合体巨兽</td>
             </tr>
             <tr>
-                <td>Terran</td>
-                <td>Hybrid Reaver</td>
-                <td>Hybrid Dominator</td>
+                <td>人类</td>
+                <td>混合体掠夺者</td>
+                <td>混合体支配者</td>
             </tr>
             <tr>
-                <td>Zerg</td>
-                <td>Hybrid Nemesis</td>
-                <td>Hybrid Dominator</td>
+                <td>异虫</td>
+                <td>混合体天罚者</td>
+                <td>混合体支配者</td>
             </tr>
         </tbody>
     </table>
-    <p>The Bonus Objective will move towards a Stopping Point at the following times:</p>
+    <p>奖励目标会在以下时间向停靠点移动：</p>
     <ul>
         <li>7:00</li>
         <li>13:00</li>
         <li>16:00</li>
     </ul>
-    <h2 id="spawnPoints">Spawn Points</h2>
-    <p>Attack Waves spawn from two different sides of the map, each with their own spawn point. Unfortunately, these points are not pathable, and hence, cannot be spawn-camped. However, all attack waves will rally to a Hybrid spawn point. This point <i>can</i> be spawn camped. These spawn points are shown below.</p>
-    <p>Northern Attack Wave:</p>
-    <img src="/images/missiondata/scytheofamon/northernspawnpoint.jpg" alt="Northern Spawn Point">
-    <p>Southern Attack Wave:</p>
-    <img src="/images/missiondata/scytheofamon/southernspawnpoint.jpg" alt="Southern Spawn Point">
-    <h2 id="misTips">Mission Tips</h2>
+    <h2 id="spawnPoints">出生点</h2>
+    <p>进攻波次会从地图两侧生成，各自拥有独立的生成点。遗憾的是，这些位置无法通行，因此不能直接蹲守。不过，所有进攻波次都会前往一处混合体生成点集结，而这个位置<i>可以</i>蹲守。各生成点如下。</p>
+    <p>北侧进攻波次：</p>
+    <img src="/images/missiondata/scytheofamon/northernspawnpoint.jpg" alt="北侧生成点">
+    <p>南侧进攻波次：</p>
+    <img src="/images/missiondata/scytheofamon/southernspawnpoint.jpg" alt="南侧生成点">
+    <h2 id="misTips">任务技巧</h2>
     <ul>
-        <li>Ensure you have adequate troops for later Slivers. Death Grip Crystals can destroy a tiny army instantly.</li>
-        <li>Death Grip Crystals cannot target Heroic units.</li>
-        <li>Death Grip Crystals are considered units, which means they can be targeted by abilities like Snipe and Mind Blast.</li>
-        <li>More skilled players can reverse-clear the mission, starting with the farthest Slivers from the base. This removes those difficult Slivers from play early while they are still weak.</li>
-        <li>It is usually better to clear Sliver 2 and to get access to your expansion early. This is especially useful for commanders that require a strong economy.</li>
+        <li>为后续虚空裂片准备充足部队。死亡之握水晶可以瞬间消灭一支规模很小的军队。</li>
+        <li>死亡之握水晶无法以英雄单位为目标。</li>
+        <li>死亡之握水晶被视为单位，因此可以成为狙击和心灵震爆等技能的目标。</li>
+        <li>熟练玩家可以反向清图，从离基地最远的虚空裂片开始。这样能在那些难缠的裂片尚且较弱时尽早将其移除。</li>
+        <li>通常最好先清除裂片 2，尽早取得分矿。这对于需要强大经济的指挥官尤其有用。</li>
     </ul>
-    <h2 id="comTips">Commander-specific Tips</h2>
+    <h2 id="comTips">指挥官专属技巧</h2>
     <ul>
-        <li><a href="/commanders/abathur">Abathur</a>: Place Toxic Nests on hybrid spawn locations to weaken the attack waves.</li>
-        <li><a href="/commanders/abathur">Abathur</a>: When farming for biomass at the start of the mission, place Toxic Nests near Void Rifts to quickly collect Biomass from Void Rift units.</li>
-        <li><a href="/commanders/alarak">Alarak</a>: Clear the Expansion Sliver first with two photon overcharges.</li>
-        <li><a href="/commanders/artanis">Artanis</a>: Clear the Expansion Sliver first with one Solar Bombardment.</li>
-        <li><a href="/commanders/horner">Han & Horner</a>: Place Mag Mines on hybrid spawn locations to weaken the attack waves.</li>
-        <li><a href="/commanders/karax">Karax</a>: Sneak a probe into the Expansion Sliver location and use photon cannons to destroy it.</li>
-        <li><a href="/commanders/mengsk">Mengsk</a>: Mengsk can speedrun this mission relatively easily by using Bunkers to clear Sliver 4, Nukes to clear Slivers 3 and 5, and Earthsplitters to clear Slivers 1 and 2.</li>
-        <li><a href="/commanders/nova">Nova</a>: The gas at the left of the top expansion can be taken without drawing enemy aggro at the start of the game.</li>
-        <li><a href="/commanders/nova">Nova</a>: If you use Siege Tanks, place Spider Mines on hybrid spawn locations to weaken the attack waves.</li>
-        <li><a href="/commanders/raynor">Raynor</a>: If you use Vultures, place Spider Mines on hybrid spawn locations to weaken the attack waves.</li>
-        <li><a href="/commanders/vorazun">Vorazun</a>: The gas at the left of the top expansion can be taken without drawing enemy aggro at the start of the game.</li>
-        <li><a href="/commanders/vorazun">Vorazun</a>: Place Dark Pylons on each side of the map so you can intercept Attack Waves.</li>
-        <li><a href="/commanders/zeratul">Zeratul</a>: The Void Suppression Crystal can be used to interrupt and disable all Void Sliver abilities.</li>
+        <li><a href="/commanders/abathur">阿巴瑟</a>：在混合体生成位置布置剧毒巢穴，削弱进攻波次。</li>
+        <li><a href="/commanders/abathur">阿巴瑟</a>：任务开始时采集生物质，可在虚空裂隙附近布置剧毒巢穴，快速从裂隙单位身上获取生物质。</li>
+        <li><a href="/commanders/alarak">阿拉纳克</a>：先用两次光子超载清除分矿处的裂片。</li>
+        <li><a href="/commanders/artanis">阿塔尼斯</a>：先用一次太阳能轰炸清除分矿处的裂片。</li>
+        <li><a href="/commanders/horner">汉与霍纳</a>：在混合体生成位置布置磁力地雷，削弱进攻波次。</li>
+        <li><a href="/commanders/karax">凯拉克斯</a>：让探机潜入分矿裂片的位置，再用光子炮将其摧毁。</li>
+        <li><a href="/commanders/mengsk">蒙斯克</a>：蒙斯克可以较轻松地速通本任务：用地堡清除裂片 4，用核弹清除裂片 3 和 5，再用裂地者清除裂片 1 和 2。</li>
+        <li><a href="/commanders/nova">诺娃</a>：游戏开始时，可以采集上方分矿左侧的高能瓦斯而不引起敌军仇恨。</li>
+        <li><a href="/commanders/nova">诺娃</a>：如果使用攻城坦克，请在混合体生成位置布置蜘蛛雷，削弱进攻波次。</li>
+        <li><a href="/commanders/raynor">雷诺</a>：如果使用秃鹫，请在混合体生成位置布置蜘蛛雷，削弱进攻波次。</li>
+        <li><a href="/commanders/vorazun">沃拉尊</a>：游戏开始时，可以采集上方分矿左侧的高能瓦斯而不引起敌军仇恨。</li>
+        <li><a href="/commanders/vorazun">沃拉尊</a>：在地图两侧布置黑暗水晶塔，以便拦截进攻波次。</li>
+        <li><a href="/commanders/zeratul">泽拉图</a>：虚空抑制晶体可以打断并禁用虚空裂片的所有技能。</li>
     </ul>
 <script src="/scripts/nav.js"></script>
 <?= endContent() ?>

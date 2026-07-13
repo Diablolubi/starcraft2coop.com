@@ -5,9 +5,9 @@
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Commander Guide - Han & Horner</title>
-  <meta name="description" content="Starcraft 2 Co-op Commander Guide Han Horner">
-  <meta name="keywords" content="Starcraft co-op guides han horner commander mastery prestige build">
+  <title>星际争霸 2 合作 - 指挥官指南 - 汉与霍纳</title>
+  <meta name="description" content="星际争霸 2 合作模式汉与霍纳指挥官指南">
+  <meta name="keywords" content="星际争霸合作模式指南汉与霍纳指挥官精通威望配兵">
   <link rel="stylesheet"  media="all" type="text/css" href="/styles/commanderstyle.css?v=2">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="https://starcraft2coop.com/commanders/hanhorner">
@@ -18,446 +18,446 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         }
   </style>
   <?= startContent() ?>
-    <div id="tooltip">tooltip</div>
-    <h1><span class="unbold">Commander:</span> Han & Horner</h1>
-    <p id="commanderMotto">Mercenary Leader and Dominion Admiral</p>
+    <div id="tooltip">工具提示</div>
+    <h1><span class="unbold">指挥官：</span> 汉与霍纳</h1>
+    <p id="commanderMotto">佣兵首领与帝国上将</p>
     <?php include("../../includes/reporterror.php");?>
     <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#comSum">Commander Summary</a></p>
-        <p><a href="#levelUnlocks">Level Unlocks</a></p>
-        <p><a href="#achievements">Achievements</a></p>
-        <p><a href="#calldowns">Calldowns</a></p>
-        <p><a href="#leveling">Sub-Ascension Leveling</a></p>
-        <p><a href="#masteries">Masteries</a></p>
-        <p><a href="#prestiges">Prestiges</a></p>
-        <p><a href="#army">Recommended Army Composition</a></p>
-        <p><a href="#units">Combat Units</a></p>
-        <p><a href="#buildOrder">Build Order</a></p>
-        <p><a href="#guide">Gameplay Guide</a></p>
+        <h2>本页内容</h2>
+        <p><a href="#comSum">指挥官概述</a></p>
+        <p><a href="#levelUnlocks">等级解锁</a></p>
+        <p><a href="#achievements">成就</a></p>
+        <p><a href="#calldowns">面板技能</a></p>
+        <p><a href="#leveling">飞升前升级</a></p>
+        <p><a href="#masteries">精通</a></p>
+        <p><a href="#prestiges">威望</a></p>
+        <p><a href="#army">推荐配兵</a></p>
+        <p><a href="#units">作战单位</a></p>
+        <p><a href="#buildOrder">建造顺序</a></p>
+        <p><a href="#guide">游戏指南</a></p>
     </div>
-    <h2 id="comSum">Commander Summary</h2>
-    <p>Han uses her relatively weak mercenaries with Horner's more powerful air units to create a powerful army that complements each other.</p>
-    <h2 id="levelUnlocks">Level Unlocks</h2>
+    <h2 id="comSum">指挥官概述</h2>
+    <p>汉将相对脆弱的佣兵与霍纳更加强大的空军搭配使用，组成一支优势互补的强大部队。</p>
+    <h2 id="levelUnlocks">等级解锁</h2>
     <table class="progressionTable">
         <thead>
             <tr>
-                <th>Level/Icon</th>
-                <th>Name</th>
-                <th>Description</th>
+                <th>等级/图标</th>
+                <th>名称</th>
+                <th>描述</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/progression/horner/hanhorner_01.png" alt = "The Horners"></td>
-                <td>The Horners</td>
+                <td><img src="/images/commanderdata/progression/horner/hanhorner_01.png" alt = "霍纳夫妇"></td>
+                <td>霍纳夫妇</td>
                 <td>
-                    When friendly units are killed, they drop resources for the commander of those units. Matt Horner starts with a Starport that can train elite aircraft.
+                    友方单位阵亡时，会为该单位所属的指挥官掉落资源。马特·霍纳开局拥有一座可训练精英飞行器的星港。
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/horner/hanhorner_02.png" alt = "New Unit: Strike Fighter"></td>
-                <td>New Unit: Strike Fighter</td>
+                <td><img src="/images/commanderdata/progression/horner/hanhorner_02.png" alt = "新单位：打击战机"></td>
+                <td>新单位：打击战机</td>
                 <td>
-                    Unlocks the Strike Fighter Platform and the Precision Strike ability. Launches a Strike Fighter to perform an airstrike against a targeted enemy or location.
+                    解锁打击战机平台和精确打击技能。派出一架打击战机，对指定敌人或位置发动空袭。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/horner/hanhorner_03.png" alt = "Assault Galleon & Raven Upgrade Cache"></td>
-                <td>Assault Galleon & Raven Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/horner/hanhorner_03.png" alt = "突击炮舰与铁鸦升级包"></td>
+                <td>突击炮舰与铁鸦升级包</td>
                 <td>
-                   Unlocks the following upgrades:
+                   解锁以下升级：
                    <ul>
-                       <li>Assault Galleons can be individually upgraded with Hangar Bays that automatically build and launch Fighter Drones</li>
-                       <li>Theia Raven's Analyze Weakness can target 2 additional units.</li>
+                       <li>每艘突击炮舰均可单独加装机库，自动制造并放出战斗无人机。</li>
+                       <li>忒伊亚铁鸦的弱点分析可以额外指定 2 个单位。</li>
                    </ul>
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/horner/hanhorner_04.png" alt = "Merc Upgrade Cache"></td>
-                <td>Merc Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/horner/hanhorner_04.png" alt = "佣兵升级包"></td>
+                <td>佣兵升级包</td>
                 <td>
-                    Unlocks the following upgrades at the Engineering Bay:
+                    在工程站解锁以下升级：
                     <ul>
-                        <li>Increases the movement speed of Reapers, and grants them the ability to fly for 10 seconds.</li>
-                        <li>Widow Mine range is increased by 50%, and can burrow and unburrow much faster.</li>
+                        <li>提高收割者的移动速度，并使其可以飞行 10 秒。</li>
+                        <li>寡妇雷的射程提高 50%，潜地和钻出速度大幅加快。</li>
                     </ul>
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/horner/hanhorner_05.png" alt = "Call in the Fleet"></td>
-                <td>Call in the Fleet</td>
+                <td><img src="/images/commanderdata/progression/horner/hanhorner_05.png" alt = "呼叫舰队"></td>
+                <td>呼叫舰队</td>
                 <td>
-                    Unlocks the ability to call in close planetary support from Horner's Armada. The Armada does massive damage to random enemy units in the target area.
+                    解锁呼叫霍纳舰队进行近地支援的能力。舰队会对目标区域内的随机敌方单位造成巨额伤害。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/horner/hanhorner_06.png" alt = "Impatience"></td>
-                <td>Impatience</td>
+                <td><img src="/images/commanderdata/progression/horner/hanhorner_06.png" alt = "急不可耐"></td>
+                <td>急不可耐</td>
                 <td>
-                    Mira's Unit Build and Research times are reduced by 30%.
+                    米拉单位的建造和研发时间缩短 30%。
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/horner/hanhorner_07.png" alt = "Dominion Starport Upgrade Cache"></td>
-                <td>Dominion Starport Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/horner/hanhorner_07.png" alt = "帝国星港升级包"></td>
+                <td>帝国星港升级包</td>
                 <td>
-                    Unlocks the following upgrades at the Starport Tech Lab:
+                    在星港科技实验室解锁以下升级：
                     <ul>
-                        <li>Wraith attack speed increases by 10% with each attack, up to a maximum of 100%.</li>
-                        <li>Attacks from Vikings in Assault Mode Pierce, dealing damage to enemy units behind the target. Transform time reduced by 75%.</li>
+                        <li>怨灵每次攻击都会使攻击速度提高 10%，最多提高 100%。</li>
+                        <li>突击模式下维京战机的攻击可以穿透目标，对目标后方的敌方单位造成伤害。变形时间缩短 75%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/horner/hanhorner_08.png" alt = "His and Hers Supply"></td>
-                <td>His and Hers Supply</td>
+                <td><img src="/images/commanderdata/progression/horner/hanhorner_08.png" alt = "夫妇共享补给"></td>
+                <td>夫妇共享补给</td>
                 <td>
-                    Supply Depots are fitted with Dominion technology, increasing their health and supply by 100%.
+                    补给站采用帝国科技，使其生命值和提供的补给均提高 100%。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/horner/hanhorner_09.png" alt = "Hellion & Hellbat Upgrade Cache"></td>
-                <td>Hellion & Hellbat Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/horner/hanhorner_09.png" alt = "恶火与恶蝠升级包"></td>
+                <td>恶火与恶蝠升级包</td>
                 <td>
-                    Unlocks the following upgrades at the Engineering Bay:
+                    在工程站解锁以下升级：
                     <ul>
-                        <li>Allows the Hellion to use Tar Bombs that deals 20 damage and causes nearby enemies to have their movement speed reduced.</li>
-                        <li>Enables Hellbat to cause enemies to burn.</li>
+                        <li>使恶火可以使用焦油炸弹，造成 20 点伤害并降低附近敌人的移动速度。</li>
+                        <li>使恶蝠能够点燃敌人。</li>
                     </ul>
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/horner/hanhorner_10.png" alt = "Space Station Reallocation"></td>
-                <td>Space Station Reallocation</td>
+                <td><img src="/images/commanderdata/progression/horner/hanhorner_10.png" alt = "空间站迁移"></td>
+                <td>空间站迁移</td>
                 <td>
-                    Unlocks the ability to use Space Station Reallocation. The Space Station deals 500 damage to Heroic targets it contacts, everything else is instantly destroyed. Assault drones will attack nearby targets.
+                    解锁空间站迁移技能。空间站会对接触到的英雄目标造成 500 点伤害，其他目标则会被立即摧毁。突击无人机会攻击附近目标。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/horner/hanhorner_11.png" alt = "Endurance Training"></td>
-                <td>Endurance Training</td>
+                <td><img src="/images/commanderdata/progression/horner/hanhorner_11.png" alt = "耐力训练"></td>
+                <td>耐力训练</td>
                 <td>
-                    Horner's units regenerate health while out of combat.
+                    霍纳的单位脱离战斗后会恢复生命值。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/horner/hanhorner_12.png" alt = "Advanced Weaponry"></td>
-                <td>Advanced Weaponry</td>
+                <td><img src="/images/commanderdata/progression/horner/hanhorner_12.png" alt = "先进武器系统"></td>
+                <td>先进武器系统</td>
                 <td>
-                    Call in the Fleet barrages enemy units with Lasers Batteries and fires Yamato Cannons that prefer high health targets.
+                    呼叫舰队会使用激光炮台轰击敌方单位，并发射优先攻击高生命值目标的大和炮。
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/horner/hanhorner_13.png" alt = "Fusion Core Upgrade Cache"></td>
-                <td>Fusion Core Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/horner/hanhorner_13.png" alt = "聚变芯体升级包"></td>
+                <td>聚变芯体升级包</td>
                 <td>
-                    Unlocks the following upgrades at the Fusion Core:
+                    在聚变芯体解锁以下升级：
                     <ul>
-                        <li>Battlecruiser weapon systems are upgraded to powerful particle cannons.</li>
-                        <li>Strike Fighter Platforms Precision Strikes ignite the target location with napalm.</li>
+                        <li>将战列巡航舰的武器系统升级为威力强大的粒子炮。</li>
+                        <li>打击战机平台的精确打击会用凝固汽油点燃目标区域。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/horner/hanhorner_14.png" alt = "Have a Blast"></td>
-                <td>Have a Blast</td>
+                <td><img src="/images/commanderdata/progression/horner/hanhorner_14.png" alt = "爆炸惊喜"></td>
+                <td>爆炸惊喜</td>
                 <td>
-                    Space Station Reallocation will detonate a nuclear device upon its destruction.
+                    空间站迁移召唤的空间站被摧毁时会引爆一枚核装置。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/horner/hanhorner_15.png" alt = "Significant Others"></td>
-                <td>Significant Others</td>
+                <td><img src="/images/commanderdata/progression/horner/hanhorner_15.png" alt = "另一半的力量"></td>
+                <td>另一半的力量</td>
                 <td>
-                    Your units gain bonuses based on your army composition:
+                    你的单位会根据部队构成获得加成：
                     <ul>
-                        <li>Horner's units gain 0.5% health for each supply of Mira's units.</li>
-                        <li>Mira's units gain 0.5% attack speed for each supply of Horner's units.</li>
+                        <li>米拉单位每占用一点补给，霍纳单位的生命值就提高 0.5%。</li>
+                        <li>霍纳单位每占用一点补给，米拉单位的攻击速度就提高 0.5%。</li>
                     </ul>
                 </td>
             </tr>
         </tbody>
     </table>
-    <p id="powerSpikeInfo">Highlighted rows denote large power spikes for the commander.</p>
-    <h2 id="achievements">Achievements</h2>
-    <p>The commander-specific achievements for Han & Horner are:</p>
+    <p id="powerSpikeInfo">高亮行表示该指挥官实力的大幅提升节点。</p>
+    <h2 id="achievements">成就</h2>
+    <p>汉与霍纳的指挥官专属成就如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Achievement</th>
-                <th>Name</th>
-                <th>Description</th>
+                <th>成就</th>
+                <th>名称</th>
+                <th>描述</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/achievements/horner/diditwork.jpg" alt="Did It Work?"></td>
-                <td>Did It Work?</td>
-                <td>Detonate 5,000 Magnetic Mines.</td>
+                <td><img src="/images/commanderdata/achievements/horner/diditwork.jpg" alt="有用吗？"></td>
+                <td>有用吗？</td>
+                <td>引爆 5,000 枚磁力地雷。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/horner/holymacromony.jpg" alt="Holy Macromony"></td>
-                <td>Holy Macromony</td>
-                <td>Command at least 80 supply worth of Han units and 40 supply worth of Horner units in a single mission on Hard difficulty.</td>
+                <td><img src="/images/commanderdata/achievements/horner/holymacromony.jpg" alt="神圣婚姻"></td>
+                <td>神圣婚姻</td>
+                <td>在困难难度的一场任务中，同时指挥至少占用 80 点补给的汉单位和占用 40 点补给的霍纳单位。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/horner/tilldeathdothempart.jpg" alt="Till Death Do Them Part"></td>
-                <td>Till Death Do Them Part</td>
-                <td>Deal 800,000 combined damage with Call in the Fleet and Space Station Reallocation.</td>
+                <td><img src="/images/commanderdata/achievements/horner/tilldeathdothempart.jpg" alt="至死不渝"></td>
+                <td>至死不渝</td>
+                <td>使用呼叫舰队和空间站迁移累计造成 800,000 点伤害。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/horner/yourethebomb.jpg" alt="You're the Bomb"></td>
-                <td>You're the Bomb</td>
-                <td>Deal 200,000 damage with Precision Strikes.</td>
+                <td><img src="/images/commanderdata/achievements/horner/yourethebomb.jpg" alt="你就是炸弹"></td>
+                <td>你就是炸弹</td>
+                <td>使用精确打击造成 200,000 点伤害。</td>
             </tr>
         </tbody>
     </table>
-    <h2 id="calldowns">Calldowns</h2>
-    <p>The calldowns for Han & Horner, at level 15, with no mastery points added are:</p>
+    <h2 id="calldowns">面板技能</h2>
+    <p>以下是汉与霍纳在 15 级且未分配精通点数时的面板技能：</p>
     <table class="calldownTable">
         <thead>
             <tr>
-                <th>Calldown</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Recommended Usage</th>
-                <th>Numbers</th>
+                <th>面板技能</th>
+                <th>名称</th>
+                <th>描述</th>
+                <th>推荐用法</th>
+                <th>数据</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/abilities/horner/deploymagmines.png" alt = "Deploy Mag Mines"></td>
-                <td>Deploy Mag Mines</td>
-                <td>Deploy 5 Mag Mines to the target location. Mag Mines are triggered by enemy motion and deal 50 damage area damage.</td>
+                <td><img src="/images/commanderdata/abilities/horner/deploymagmines.png" alt = "部署磁力地雷"></td>
+                <td>部署磁力地雷</td>
+                <td>在目标位置部署 5 枚磁力地雷。磁力地雷会被敌人的移动触发，造成 50 点范围伤害。</td>
                 <td>
                     <ul>
-                        <li>Useful for spawn-camping attack waves.</li>
-                        <li>Can sometimes be used aggressively by luring enemies into them.</li>
+                        <li>适合埋伏在进攻波的出生点。</li>
+                        <li>有时也可以主动引诱敌人踩雷。</li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        <li>Coolup: 50 seconds</li>
-                        <li>Cooldown: 50</li>
-                        <li>Max Charges: 5</li>
-                        <li>Arming Time: 10 seconds</li>
-                        <li>Firing Time: 1.5 seconds</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="/images/commanderdata/abilities/horner/precisionstrike.png" alt = "Precision Strike"></td>
-                <td>Precision Strike</td>
-                <td>Requirements: Must have a Strike Fighter Platform<br><br>Sends a Strike Fighter to the target location where it deals 175 (+225 to non-Heroic structures) damage to enemy ground units in the target area.</td>
-                <td>
-                    <ul>
-                        <li>Incredibly effective on <a href="/missions/deadofnight">Dead of Night</a> with the Napalm upgrade, allowing you to destroy multiple buildings with one strike.</li>
-                        <li>Napalm does 10 damage per second for 10 seconds for a total of 100 extra damage.</li>
-                        <li>Useful for weakening enemy fortifications.</li>
-                        <li>For regular missions, roughly 3 is sufficient for taking out high value targets.</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Coolup: 0 seconds</li>
-                        <li>Cooldown: 60 seconds</li>
-                        <li>Cooldown: 120 seconds (if shot down)</li>
-                        <li>Max Platforms: 10</li>
-                        <li>HP: 50</li>
-                        <li>Armor: 2</li>
-                        <li>Takeoff Time: 0.5 seconds</li>
-                        <li>Movement Speed: 30</li>
+                        <li>初始冷却：50 秒</li>
+                        <li>冷却时间：50</li>
+                        <li>最大充能次数：5</li>
+                        <li>启动时间：10 秒</li>
+                        <li>发射时间：1.5 秒</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/abilities/horner/callinthefleet.png" alt = "Call in the Fleet"></td>
-                <td>Call in the Fleet</td>
-                <td>Calls in close planetary support from Horner's Armada. The Armada does massive damage to random enemy units in the target area.</td>
+                <td><img src="/images/commanderdata/abilities/horner/precisionstrike.png" alt = "精确打击"></td>
+                <td>精确打击</td>
+                <td>要求：必须拥有打击战机平台<br><br>派出一架打击战机飞往目标位置，对目标区域内的敌方地面单位造成 175 点伤害（对非英雄建筑 +225）。</td>
                 <td>
                     <ul>
-                        <li>Deals very high single-target damage to multiple units.</li>
-                        <li>Effective for weakening enemy bases.</li>
+                        <li>研发凝固汽油升级后，在<a href="/missions/deadofnight">亡者之夜</a>中极为有效，一次打击即可摧毁多座建筑。</li>
+                        <li>凝固汽油持续 10 秒，每秒造成 10 点伤害，共额外造成 100 点伤害。</li>
+                        <li>适合削弱敌方防御阵地。</li>
+                        <li>在普通任务中，建造约 3 座平台便足以消灭高价值目标。</li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        <li>Coolup: 420 seconds</li>
-                        <li>Cooldown: 360 seconds</li>
+                        <li>初始冷却：0 秒</li>
+                        <li>冷却时间：60 秒</li>
+                        <li>冷却时间：120 秒（若被击落）</li>
+                        <li>平台上限：10</li>
+                        <li>生命值：50</li>
+                        <li>护甲：2</li>
+                        <li>起飞时间：0.5 秒</li>
+                        <li>移动速度：30</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="/images/commanderdata/abilities/horner/callinthefleet.png" alt = "呼叫舰队"></td>
+                <td>呼叫舰队</td>
+                <td>呼叫霍纳舰队进行近地支援。舰队会对目标区域内的随机敌方单位造成巨额伤害。</td>
+                <td>
+                    <ul>
+                        <li>能对多个单位分别造成极高的单体伤害。</li>
+                        <li>能有效削弱敌方基地。</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>初始冷却：420 秒</li>
+                        <li>冷却时间：360 秒</li>
                     </ul>
                 </td>
             </tr>
         </tbody>
         <tr>
-                <td><img src="/images/commanderdata/abilities/horner/spacestationreallocation.png" alt = "Space Station Reallocation"></td>
-                <td>Space Station Reallocation</td>
-                <td>Space Station deals 500 damage to Heroic targets it contacts, everything else is instantly destroyed. Assault drones will attack nearby targets. Lasts for 10 seconds. On death, the station explodes with a nuclear blast, dealing 300 damage (+200 vs structures).</td>
+                <td><img src="/images/commanderdata/abilities/horner/spacestationreallocation.png" alt = "空间站迁移"></td>
+                <td>空间站迁移</td>
+                <td>空间站会对接触到的英雄目标造成 500 点伤害，其他目标则会被立即摧毁。突击无人机会攻击附近目标。持续 10 秒。空间站被摧毁时会发生核爆，造成 300 点伤害（对建筑 +200）。</td>
                 <td>
                     <ul>
-                        <li>Useful for dealing with clumps of enemies.</li>
-                        <li>Draws enemy aggro when landed, which can kill further enemy units after it explodes.</li>
-                        <li>Great for dealing with extremely strong attack waves.</li>
+                        <li>适合处理聚集成群的敌人。</li>
+                        <li>落地后会吸引敌人攻击，爆炸时还能消灭更多敌方单位。</li>
+                        <li>非常适合应对极其强大的进攻波。</li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        <li>Coolup: 300 seconds</li>
-                        <li>Cooldown: 360 seconds</li>
+                        <li>初始冷却：300 秒</li>
+                        <li>冷却时间：360 秒</li>
                     </ul>
                 </td>
             </tr>
         </tbody>
     </table>
-    <h2 id="leveling">Sub-Ascension Leveling</h2>
-    <p>Difficulty: Moderate</p>
-    <p>During early stages of leveling, Han's units are very fragile. However, rushing up to Horner's units will leave you extremely vulnerable in the early game. Therefore, start off with some of Han's units (with Death Effect upgrades researched) and transition into Horner's units as quickly as reasonably possible. To increase effectiveness in the early levels, use Mag-Mines aggressively, by placing them behind your army, just before you push in. You can lure enemy units into the mines to deal damage.</p>
-    <p>While leveling through Mastery levels, allocate points into Power Set 3 in a 2:1 split for the Air Fleet to Mag Mine masteries.</p>
-    <h2 id="masteries">Masteries</h2>
-    <p>Below are the three Power Sets for Han & Horner with the recommended point allocations for each. Note that these are meant to serve a general, all-purpose build that is effective across all maps with no Prestiges selected. You are highly encourged to change these masteries to suit your playstyle and particular challenges you face (e.g. <a href="/resources/weeklymutations">Weekly Mutations</a>).</p>
-    <p>Power Set 1:</p>
+    <h2 id="leveling">飞升前升级</h2>
+    <p>难度：中等</p>
+    <p>升级初期，汉的单位非常脆弱；但如果直接攀科技出霍纳单位，前期又会极度空虚。因此，开局先训练一些汉的单位（并研发死亡效果升级），再尽快合理地转向霍纳单位。低等级时可以更积极地使用磁力地雷来提高作战效率：进攻前把地雷布置在部队后方，再将敌方单位引到地雷上造成伤害。</p>
+    <p>提升巅峰等级时，技能组 3 中空中舰队与磁力地雷两项精通按 2:1 分配点数。</p>
+    <h2 id="masteries">精通</h2>
+    <p>以下是汉与霍纳的三个技能组及各自的推荐点数分配。这套方案是在未选择任何威望时适用于所有地图的通用配置。强烈建议你根据自己的玩法和所面对的具体挑战（例如<a href="/resources/weeklymutations">每周突变</a>）调整精通。</p>
+    <p>技能组 1：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>精通</th>
+                <th>数值</th>
+                <th>推荐投入点数</th>
+                <th>其他考量</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Strike Fighter Area of Effect</td>
-                <td>1% per point<br>30% maximum</td>
+                <td>打击战机作用范围</td>
+                <td>每点 1%<br>最高 30%</td>
                 <td>0</td>
-                <td rowspan="2">The Stronger Death Chance mastery works really well for unit-centric play, which is almost always how Han/Horner plays out, and is therefore recommended.</td>
+                <td rowspan="2">更强死亡效果几率精通非常适合以部队为核心的玩法，而汉与霍纳几乎总是采用这种打法，因此更为推荐。</td>
             </tr>
             <tr>
-                <td>Stronger Death Chance</td>
-                <td>2% per point<br>60% maximum</td>
+                <td>更强死亡效果几率</td>
+                <td>每点 2%<br>最高 60%</td>
                 <td>30</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">The Strike Fighter Area of Effect mastery can be used if the player intends on cheesing various maps (such as <a href="/maps/deadofnight">Dead of Night</a>). However, for all other playstyles, the Stronger Death Chance mastery is better. <a href="https://www.reddit.com/r/starcraft2coop/comments/1s36acy/do_p1_han_horner_and_double_death_chance_mastery/ocd4exs/" target="_blank">TwoTuuu's post details the exact buffs for Stronger Death Chance</a>.</p>
-    <p>Power Set 2:</p>
+    <p class="masterySummary">如果玩家打算在某些地图（例如<a href="/maps/deadofnight">亡者之夜</a>）采用特殊速攻打法，可以选择打击战机作用范围精通。不过对其他所有玩法而言，更强死亡效果几率精通都更优秀。<a href="https://www.reddit.com/r/starcraft2coop/comments/1s36acy/do_p1_han_horner_and_double_death_chance_mastery/ocd4exs/" target="_blank">TwoTuuu 的帖子详细列出了更强死亡效果几率的具体增益</a>。</p>
+    <p>技能组 2：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>精通</th>
+                <th>数值</th>
+                <th>推荐投入点数</th>
+                <th>其他考量</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Significant Other Bonuses</td>
-                <td>0.5% per point<br>15% maximum</td>
+                <td>另一半加成</td>
+                <td>每点 0.5%<br>最高 15%</td>
                 <td>30</td>
-                <td rowspan="2">The Salvage mastery can be useful for players that lose a lot of units throughout the game. It also benefits allies, and allows them to take greater risks with their armies by reducing the cost of losses.</td>
+                <td rowspan="2">对于整场游戏中损失大量单位的玩家，回收精通会很有帮助。它也能让盟友受益，通过降低战损成本，使盟友可以让部队承担更大的风险。</td>
             </tr>
             <tr>
-                <td>Double Salvage Chance</td>
-                <td>2% per point<br>60% maximum</td>
+                <td>双倍回收几率</td>
+                <td>每点 2%<br>最高 60%</td>
                 <td>0</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">The Double Salvage Chance is only useful if players lose a lot of units, which should not be the case for efficient play.</p>
-    <p>Power Set 3:</p>
+    <p class="masterySummary">只有在玩家损失大量单位时，双倍回收几率才有用；而高效作战时通常不应出现这种情况。</p>
+    <p>技能组 3：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>精通</th>
+                <th>数值</th>
+                <th>推荐投入点数</th>
+                <th>其他考量</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Air Fleet Travel Distance</td>
-                <td>2% per point<br>60% maximum</td>
+                <td>空中舰队飞行距离</td>
+                <td>每点 2%<br>最高 60%</td>
                 <td>20</td>
-                <td rowspan="2">It is generally recommended to split points between these two masteries. The exact split depends on how aggressively mines are used, or what the intent of the Air Fleet is (to completely clear, or just weaken).</td>
+                <td rowspan="2">通常建议在这两项精通之间分配点数。具体比例取决于使用地雷时的激进程度，以及使用空中舰队的目的（彻底清场或仅仅削弱敌人）。</td>
             </tr>
             <tr>
-                <td>Mag Mine Charges, Cooldown and Arming Time</td>
-                <td>-1% per point<br>-30% maximum</td>
+                <td>磁力地雷充能次数、冷却时间和启动时间</td>
+                <td>每点 -1%<br>最多 -30%</td>
                 <td>10</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">It is useful to have a higher Mag Mine Charge cap than is provided. Your playstyle will determine how many more you'd like to add.</p>
-    <h2 id="prestiges">Prestiges</h2>
-    <p>Below are the prestiges for Han & Horner. Note that "Effective Level" is the level at which the prestige achieves it full effect.</p>
+    <p class="masterySummary">提高磁力地雷的充能上限很有帮助。具体多投入多少点则取决于你的玩法。</p>
+    <h2 id="prestiges">威望</h2>
+    <p>以下是汉与霍纳的威望。“生效等级”是指该威望能发挥完整效果时的等级。</p>
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P1: <strong>Chaotic Power Couple</strong></td>
+                <td class="prestigeTitle" colspan="2">P1：<strong>混乱情侣</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>Mag Mines arm and fire 80% faster.</li>
-                        <li>Mira's units' on-death effects are 100% more effective.</li>
+                        <li>磁力地雷的启动和发射速度加快 80%。</li>
+                        <li>米拉单位的死亡效果增强 100%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>Horner's units cost 30% more.</li>
+                        <li>霍纳单位的费用提高 30%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>生效等级</th>
                 <td>1</td>
             </tr>
             <tr>
-                <th>Advice</th><td>The increase in the arming speed of the Mag-mines makes this prestige very useful when trying to push into enemy bases, as enemy units usually do not have time to deal with the mines before they become invulnerable. Additionally since Horner's units aren't meant to be massed, but rather provide a strong backbone of support for Han's units, the increase in cost (albeit significant) is worth the benefits of this prestige.</td>
+                <th>建议</th><td>磁力地雷启动速度的提升使这一威望非常适合强攻敌方基地，因为地雷进入无敌状态前，敌方单位通常来不及将其处理掉。此外，霍纳单位本就不适合大量生产，而是作为汉单位的强力支援骨干，因此其费用的显著提高仍然值得用来换取这一威望的优势。</td>
             </tr>
         </tbody>
     </table>
-    <p><b>Effectiveness Bonuses:</b></p>
+    <p><b>效果增强：</b></p>
     <ul>
-        <li>Reaper Mine damage increased by 5</li>
-        <li>Hellion Stim effects doubled</li>
-        <li>Hellbat Fear duration increased by 3 seconds</li>
-        <li>Widow Mine Sentinel Missile damage increased by 10</li>
+        <li>收割者地雷的伤害提高 5 点</li>
+        <li>恶火的兴奋剂效果翻倍</li>
+        <li>恶蝠的恐惧持续时间延长 3 秒</li>
+        <li>寡妇雷的哨兵飞弹伤害提高 10 点</li>
     </ul>
     <br>
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P2: <strong>Wing Commanders</strong></td>
+                <td class="prestigeTitle" colspan="2">P2：<strong>空军司令</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>Horner's units' vespene gas costs reduced by 20% and charge cooldowns reduced by 50%.</li>
+                        <li>霍纳单位的高能瓦斯费用降低 20%，充能冷却时间缩短 50%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>Galleons are capped at 2.</li>
+                        <li>突击炮舰的数量上限为 2 艘。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>生效等级</th>
                 <td>1</td>
             </tr>
             <tr>
-                <th>Advice</th><td>This prestige provides players with the opportunity to mass Horner's units. However, the capping of Galleons at 2 is a significant detriment to the player's earlygame performance, due to the difficulty in being able to rebuild a lost Han army.</td>
+                <th>建议</th><td>这一威望让玩家可以大量生产霍纳单位。然而，突击炮舰上限降至 2 艘会严重削弱玩家的前期表现，因为汉的部队一旦损失就很难重新组建。</td>
             </tr>
         </tbody>
     </table>
@@ -465,41 +465,41 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P3: <strong>Galactic Gunrunners</strong></td>
+                <td class="prestigeTitle" colspan="2">P3：<strong>银河军火商</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>Bombing Platforms are no longer capped.</li>
+                        <li>轰炸平台不再有数量上限。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>Bombing Platforms cost 100% more.</li>
+                        <li>轰炸平台的费用提高 100%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>生效等级</th>
                 <td>13</td>
             </tr>
             <tr>
-                <th>Advice</th><td>This prestige might appear to be extremely powerful, but the increase in the cost of the platforms signficantly slows down a player's ability to build them. Considering that the player will also want to push (since Strike Fighters aren't effective against most mission objectives), and that the platforms can only deal with ground targets, the prestige is not very effective in providing the player with a useful benefit.</td>
+                <th>建议</th><td>这一威望看起来或许极其强大，但平台费用的提高会显著拖慢建造速度。考虑到玩家还需要推进（因为打击战机对大多数任务目标都无效），而且平台只能对付地面目标，这一威望并不能为玩家提供多少实际收益。</td>
             </tr>
         </tbody>
     </table>
-    <p>For general play, Chaotic Power Couple offers a good tradeoff between its advantages and disadvantages by allowing the player to use Mag-mines a lot more aggressively and also improving the death effects of Han's units, while still keeping Horner's units viable.</p>
-    <h2 id="army">Recommended Army Composition</h2>
-    <p>The recommended army composition for Han/Horner is below. Note that this assumes no Prestige talent selected and recommended Mastery Allocations. This is a basic recommendation for your army framework. It is recommended to gain an understanding for each of the units in the <a href="#units">Units</a> section and further add tech units so that you are able to better handle the situations you face.</p>
-    <img class="army" src="/images/commanderdata/units/horner/reaper.jpg" alt="Reaper"><img class="army" src="/images/commanderdata/units/horner/hellion.jpg" alt="Hellion"><img class="army" src="/images/commanderdata/units/horner/asteriawraith.jpg" alt="Asteria Wraith"><img class="army" src="/images/commanderdata/units/horner/theiaraven.jpg" alt="Theia Raven">
-    <p>Reapers should be making up the bulk of your army with Hellions to provide the death effect stim buffs. Additionally, Ravens should also be added in to provide extra damage bonus to Reaper targets.</p>
-    <div class="techContainer"><img class="army" src="/images/commanderdata/units/horner/widowmine.jpg" alt="Widow Mine"><div class="techAdd">+</div></div>
-    <p>If you have access to enemy spawn compositions, you may use Widow Mines to spawn-camp those locations and further reduce damage taken by your army.</p>
-    <div id="tooltip">tooltip</div>
+    <p>一般情况下，混乱情侣的优势与劣势权衡得当：玩家可以更积极地使用磁力地雷，并强化汉单位的死亡效果，同时霍纳单位仍然切实可用。</p>
+    <h2 id="army">推荐配兵</h2>
+    <p>汉与霍纳的推荐配兵如下。请注意，这里假定未选择任何威望天赋，并采用推荐的精通点数分配。这只是部队框架的基础建议。建议先了解<a href="#units">单位</a>章节中的每个单位，再根据需要加入科技单位，以便更好地应对实际局势。</p>
+    <img class="army" src="/images/commanderdata/units/horner/reaper.jpg" alt="收割者"><img class="army" src="/images/commanderdata/units/horner/hellion.jpg" alt="恶火"><img class="army" src="/images/commanderdata/units/horner/asteriawraith.jpg" alt="阿斯特莱亚怨灵"><img class="army" src="/images/commanderdata/units/horner/theiaraven.jpg" alt="忒伊亚铁鸦">
+    <p>收割者应构成部队主体，并搭配恶火来提供死亡效果的兴奋剂增益。此外，还应加入铁鸦，为收割者攻击的目标提供额外伤害加成。</p>
+    <div class="techContainer"><img class="army" src="/images/commanderdata/units/horner/widowmine.jpg" alt="寡妇雷"><div class="techAdd">+</div></div>
+    <p>如果掌握敌方部队的出生位置，可以用寡妇雷埋伏这些地点，进一步减少己方部队承受的伤害。</p>
+    <div id="tooltip">工具提示</div>
     <script>
         $(".army").on('mouseover',function(e){
             var unit = $(this).attr("alt").split(":");
@@ -530,109 +530,109 @@ require_once __DIR__ . "/../../includes/wrapper.php";
 
         });
     </script>
-    <h2 id="units">Combat Units</h2>
-    <p>For more information on Han & Horner's unit stats, comparison between units and upgrade calculations, visit the <a href="/units/#horner">Data Tables</a> page.</p>
-    <p>Han & Horner's combat units are listed below:</p>
+    <h2 id="units">作战单位</h2>
+    <p>有关汉与霍纳的单位数据、单位比较和升级计算等更多信息，请访问<a href="/units/#horner">数据表</a>页面。</p>
+    <p>汉与霍纳的作战单位如下：</p>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#horner/assaultgalleon">
-                <img src="/images/commanderdata/units/horner/assaultgalleon.jpg" alt="Assault Galleon">
-                <p>Assault Galleon</p>
+                <img src="/images/commanderdata/units/horner/assaultgalleon.jpg" alt="突击炮舰">
+                <p>突击炮舰</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Main production structure for Han's units.</li>
-                <li>Only 5 can be present at the same time.</li>
-                <li>Does very low damage.</li>
-                <li>Outranges static defense which makes it effective at clearing contested expansions.</li>
-                <li>Can heal out of Combat if Drone Hangars are installed.</li>
+                <li>汉单位的主要生产建筑。</li>
+                <li>同时最多存在 5 艘。</li>
+                <li>造成的伤害很低。</li>
+                <li>射程超过静态防御建筑，因此能有效清理有敌人驻守的分矿。</li>
+                <li>加装无人机机库后，可以在脱离战斗时恢复生命值。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades:</p>
+            <p>技能：无</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/horner/installdronehangar.png" alt="Install Drone Hangar"></td>
-                        <td>Install Drone Hangar</td>
-                        <td>Retrofits the Assault Galleon with a Drone Hangar bay that automatically builds and deploys Assault drones.<br><br>Assault Drones can attack ground and air units.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/horner/installdronehangar.png" alt="加装无人机机库"></td>
+                        <td>加装无人机机库</td>
+                        <td>为突击炮舰加装无人机机库，可以自动制造并部署突击无人机。<br><br>突击无人机可以攻击地面和空中单位。</td>
                         <td>150/200</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-    <h3>Han's Units:</h3>
+    <h3>汉的单位：</h3>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#horner/reaper">
-                <img src="/images/commanderdata/units/horner/reaper.jpg" alt="Reaper">
-                <p>Reaper</p>
+                <img src="/images/commanderdata/units/horner/reaper.jpg" alt="收割者">
+                <p>收割者</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Great structure DPS.</li>
-                <li>Targets ground, but can be used to take out air units with the "Jet Pack Overdrive" upgrade.</li>
-                <li>Use flying Reapers to kill strong splash Anti-Ground units (e.g. Reavers, Colossi, etc.).</li>
-                <li>Extremely fragile unit.</li>
+                <li>对建筑的伤害输出很高。</li>
+                <li>只能攻击地面，但研发“喷气背包超载”升级后也可以用来消灭空中单位。</li>
+                <li>利用飞行中的收割者消灭强力的对地范围伤害单位（例如掠夺者、巨像等）。</li>
+                <li>极其脆弱。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>描述</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/unitskills/horner/kd8charge.png" alt="KD8 Charge"></td>
-                        <td>KD8 Charge</td>
-                        <td>Explodes after a short delay, doing 10 area damage and knocking back nearby units.</td>
-                        <td>20 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/horner/kd8charge.png" alt="KD8 炸弹"></td>
+                        <td>KD8 炸弹</td>
+                        <td>短暂延迟后爆炸，造成 10 点范围伤害并击退附近单位。</td>
+                        <td>20 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/horner/le9clustercharges.png" alt="LE9 Cluster Charges"></td>
-                        <td>LE9 Cluster Charges</td>
-                        <td>Reduces the cooldown of Reapers' KD8 Charge by 10 seconds. When Reapers are killed, they throw multiple grenades towards the killing unit.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/horner/le9clustercharges.png" alt="LE9 集束炸弹"></td>
+                        <td>LE9 集束炸弹</td>
+                        <td>收割者的 KD8 炸弹冷却时间缩短 10 秒。收割者阵亡时，会向击杀者投掷多枚手雷。</td>
                         <td>50/50</td>
-                        <td>42 seconds</td>
+                        <td>42 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/horner/jetpackoverdrive.png" alt="Jet Pack Overdrive"></td>
-                        <td>Jet Pack Overdrive</td>
-                        <td>Increases the movement speed of Reapers by 50%, and grants them the ability to fly for 10 seconds. Reapers are able to attack air units while flying.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/horner/jetpackoverdrive.png" alt="喷气背包超载"></td>
+                        <td>喷气背包超载</td>
+                        <td>使收割者的移动速度提高 50%，并使其可以飞行 10 秒。收割者在飞行时能够攻击空中单位。</td>
                         <td>100/100</td>
-                        <td>63 seconds</td>
+                        <td>63 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -641,43 +641,43 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#horner/widowmine">
-                <img src="/images/commanderdata/units/horner/widowmine.jpg" alt="Widow Mine">
-                <p>Widow Mine</p>
+                <img src="/images/commanderdata/units/horner/widowmine.jpg" alt="寡妇雷">
+                <p>寡妇雷</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Useful defensive unit, especially with the "Executioner Missile" and the "Black Market Launchers" upgrade.</li>
-                <li>Recommended to combine Widow Mines with Mag Mines for defense.</li>
-                <li>Spread Widow Mines out so multiple mines they do not all get hit by single splash damage effects.</li>
+                <li>实用的防守单位，研发“刽子手飞弹”和“黑市发射器”升级后尤其有效。</li>
+                <li>防守时建议将寡妇雷与磁力地雷搭配使用。</li>
+                <li>将寡妇雷分散布置，避免多枚地雷同时受到一次范围伤害。</li>
             </ul>
-            <p>Skills:</p>
-            <p>Sentinel Missiles: Deals 125 (+35 vs. shields) damage to the primary target and 40 (+40 vs. shields) damage to other targets in a radius of 2, with a cooldown of 29 and a range of 5.</p>
-            <p>Upgrades:</p>
+            <p>技能：</p>
+            <p>哨兵飞弹：对主要目标造成 125 点伤害（对护盾 +35），并对其他目标造成 40 点伤害（对护盾 +40），作用半径为 2。冷却时间为 29，射程为 5。</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/horner/executionermissiles.png" alt="Executioner Missiles"></td>
-                        <td>Executioner Missiles</td>
-                        <td>Reduces the Widow Mine's Sentinel Missile cooldown by 20 seconds. When Widow Mines are killed, they launch 5 Sentinel Missiles at random nearby targets that deal 10 (+10 vs. shields) area damage.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/horner/executionermissiles.png" alt="刽子手飞弹"></td>
+                        <td>刽子手飞弹</td>
+                        <td>寡妇雷的哨兵飞弹冷却时间缩短 20 秒。寡妇雷被摧毁时，会向附近随机目标发射 5 枚哨兵飞弹，造成 10 点范围伤害（对护盾 +10）。</td>
                         <td>50/50</td>
-                        <td>42 seconds</td>
+                        <td>42 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/horner/blackmarketlaunchers.png" alt="Black Market Launchers"></td>
-                        <td>Black Market Launchers</td>
-                        <td>Widow Mines range is increased by 50%, and can burrow and unburrow much faster (almost instantly).</td>
+                        <td><img src="/images/commanderdata/unitupgrades/horner/blackmarketlaunchers.png" alt="黑市发射器"></td>
+                        <td>黑市发射器</td>
+                        <td>寡妇雷的射程提高 50%，潜地和钻出速度大幅加快（几乎瞬间完成）。</td>
                         <td>100/100</td>
-                        <td>63 seconds</td>
+                        <td>63 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -686,62 +686,62 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#horner/hellion">
-                <img src="/images/commanderdata/units/horner/hellion.jpg" alt="Hellion">
-                <p>Hellion</p>
+                <img src="/images/commanderdata/units/horner/hellion.jpg" alt="恶火">
+                <p>恶火</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Useful against armored targets.</li>
-                <li>Small quantities recommended.</li>
-                <li>Usually only made for its death effect.</li>
+                <li>适合对付重甲目标。</li>
+                <li>建议少量生产。</li>
+                <li>通常只为其死亡效果而生产。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>描述</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="unlockable autocast">
-                        <td><img src="/images/commanderdata/unitskills/horner/tarbombs.png" alt="Tar Bombs"></td>
-                        <td>Tar Bombs</td>
-                        <td>Launches a tar bomb that deals 20 damage to the target unit. Nearby enemies have their movement speed reduced by 75% and attack range reduced by 3 for 5 seconds.</td>
-                        <td>10 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/horner/tarbombs.png" alt="焦油炸弹"></td>
+                        <td>焦油炸弹</td>
+                        <td>发射一枚焦油炸弹，对目标单位造成 20 点伤害。附近敌人的移动速度降低 75%、攻击射程缩短 3，持续 5 秒。</td>
+                        <td>10 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/horner/aerosolstimemitters.png" alt="Aerosol Stim Emitters"></td>
-                        <td>Aerosol Stim Emitters</td>
-                        <td>Hellions and Hellbats transform 75% faster. When Hellions are killed, nearby allied units gain 25% movement and 15% attack speed for 15 seconds.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/horner/aerosolstimemitters.png" alt="气雾兴奋剂发射器"></td>
+                        <td>气雾兴奋剂发射器</td>
+                        <td>恶火和恶蝠的变形速度加快 75%。恶火被摧毁时，附近友方单位的移动速度提高 25%、攻击速度提高 15%，持续 15 秒。</td>
                         <td>50/50</td>
-                        <td>42 seconds</td>
+                        <td>42 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/horner/tarbombs.png" alt="Tar Bombs"></td>
-                        <td>Tar Bombs</td>
-                        <td>Hellions can launch a bomb that deals 20 damage to the target unit. Nearby enemies have their movement speed reduced by 75% and attack range reduced by 3 for 5 seconds.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/horner/tarbombs.png" alt="焦油炸弹"></td>
+                        <td>焦油炸弹</td>
+                        <td>恶火可以发射一枚炸弹，对目标单位造成 20 点伤害。附近敌人的移动速度降低 75%、攻击射程缩短 3，持续 5 秒。</td>
                         <td>100/100</td>
-                        <td>63 seconds</td>
+                        <td>63 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -750,164 +750,164 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#horner/hellbat">
-                <img src="/images/commanderdata/units/horner/hellbat.jpg" alt="Hellbat">
-                <p>Hellbat</p>
+                <img src="/images/commanderdata/units/horner/hellbat.jpg" alt="恶蝠">
+                <p>恶蝠</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Generally not made because Reapers fill their intended role well.</li>
-                <li>You can add a few to your composition to take advantage of the fear effect to protect the rest of your army.</li>
+                <li>通常不会生产，因为收割者已经能很好地承担其预定职责。</li>
+                <li>可以在部队中加入少量恶蝠，利用恐惧效果保护其他单位。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades:</p>
+            <p>技能：无</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/horner/aerosolstimemitters.png" alt="Aerosol Stim Emitters"></td>
-                        <td>Aerosol Stim Emitters</td>
-                        <td>Hellions and Hellbats transform 75% faster. When Hellions are killed, nearby allied units gain 25% movement and 15% attack speed for 15 seconds.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/horner/aerosolstimemitters.png" alt="气雾兴奋剂发射器"></td>
+                        <td>气雾兴奋剂发射器</td>
+                        <td>恶火和恶蝠的变形速度加快 75%。恶火被摧毁时，附近友方单位的移动速度提高 25%、攻击速度提高 15%，持续 15 秒。</td>
                         <td>50/50</td>
-                        <td>42 seconds</td>
+                        <td>42 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/horner/wildfireexplosives.png" alt="Wildfire Explosives"></td>
-                        <td>Wildfire Explosives</td>
-                        <td>Hellbat movement speed is increased by 50%. When Hellbats are killed, they ignite the surrounding area. Enemies in the fire run around in fear for 3 seconds.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/horner/wildfireexplosives.png" alt="野火炸药"></td>
+                        <td>野火炸药</td>
+                        <td>恶蝠的移动速度提高 50%。恶蝠被摧毁时会点燃周围区域。火焰中的敌人会因恐惧而四处逃窜 3 秒。</td>
                         <td>50/50</td>
-                        <td>42 seconds</td>
+                        <td>42 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/horner/immolationfluid.png" alt="Immolation Fluid"></td>
-                        <td>Immolation Fluid</td>
-                        <td>Hellbat attacks cause enemies to burn for an additional 50 damage over 5 seconds.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/horner/immolationfluid.png" alt="献祭溶液"></td>
+                        <td>献祭溶液</td>
+                        <td>恶蝠的攻击会使敌人燃烧，额外造成 50 点伤害，持续 5 秒。</td>
                         <td>100/100</td>
-                        <td>63 seconds</td>
+                        <td>63 秒</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-    <h3>Death Effects:</h3>
-    <p>The below table lists out the death effects and the Improved Death Effects (P1) for each of Han's units:</p>
+    <h3>死亡效果：</h3>
+    <p>下表列出了汉的各个单位的死亡效果和强化死亡效果（P1）：</p>
     <table>
         <thead>
             <tr>
-                <th>Unit</th>
-                <th>Upgrade Name</th>
-                <th>Death Effect</th>
-                <th>Improved Death Effect</th>
+                <th>单位</th>
+                <th>升级名称</th>
+                <th>死亡效果</th>
+                <th>强化死亡效果</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Reaper</td>
-                <td>LE9 Cluster Charges</td>
-                <td>Throws 7 cluster charges towards the killing unit.</td>
-                <td>Throws 15 cluster charges towards the killing unit.</td>
+                <td>收割者</td>
+                <td>LE9 集束炸弹</td>
+                <td>向击杀者投掷 7 枚集束炸弹。</td>
+                <td>向击杀者投掷 15 枚集束炸弹。</td>
             </tr>
             <tr>
-                <td>Hellion</td>
-                <td>Aerosol Stim Emitters</td>
-                <td>Nearby allied units gain 25% movement and 15% attack speed for 15 seconds.</td>
-                <td>Nearby allied units gain 50% movement and 30% attack speed for 15 seconds.</td>
+                <td>恶火</td>
+                <td>气雾兴奋剂发射器</td>
+                <td>附近友方单位的移动速度提高 25%、攻击速度提高 15%，持续 15 秒。</td>
+                <td>附近友方单位的移动速度提高 50%、攻击速度提高 30%，持续 15 秒。</td>
             </tr>
             <tr>
-                <td>Hellbat</td>
-                <td>Wildfire Explosives</td>
-                <td>Ignite the surrounding area (radius 4). Enemies in the fire run around in fear for 3 seconds.</td>
-                <td>Ignite the surrounding area (radius 5.66). Enemies in the fire run around in fear for 3 seconds.</td>
+                <td>恶蝠</td>
+                <td>野火炸药</td>
+                <td>点燃周围区域（半径 4）。火焰中的敌人会因恐惧而四处逃窜 3 秒。</td>
+                <td>点燃周围区域（半径 5.66）。火焰中的敌人会因恐惧而四处逃窜 3 秒。</td>
             </tr>
             <tr>
-                <td>Widow Mine</td>
-                <td>Executioner Missiles</td>
-                <td>Launches 5 Sentinel Missiles at random nearby targets that deal 10 (+10 vs. shields) area damage.</td>
-                <td>Launches 10 Sentinel Missiles at random nearby targets that deal 10 (+10 vs. shields) area damage.</td>
+                <td>寡妇雷</td>
+                <td>刽子手飞弹</td>
+                <td>向附近随机目标发射 5 枚哨兵飞弹，造成 10 点范围伤害（对护盾 +10）。</td>
+                <td>向附近随机目标发射 10 枚哨兵飞弹，造成 10 点范围伤害（对护盾 +10）。</td>
             </tr>
         </tbody>
     </table>
-    <h3>Horner Units:</h3>
+    <h3>霍纳的单位：</h3>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#horner/asteriawraith">
-                <img src="/images/commanderdata/units/horner/asteriawraith.jpg" alt="Asteria Wraith">
-                <p>Asteria Wraith</p>
+                <img src="/images/commanderdata/units/horner/asteriawraith.jpg" alt="阿斯特莱亚怨灵">
+                <p>阿斯特莱亚怨灵</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Very powerful with the "Trigger Override" upgrade which can increase its attack speed.</li>
-                <li>Fragile, and draws a lot of aggro, so it is best when combined with other units.</li>
+                <li>研发能够提高攻击速度的“扳机超控”升级后非常强大。</li>
+                <li>本身脆弱且容易吸引大量火力，因此最好与其他单位搭配使用。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>描述</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="unlockable">
-                        <td><img src="/images/commanderdata/unitskills/horner/tacticaljump.png" alt="Tactical Jump"></td>
-                        <td>Tactical Jump</td>
-                        <td>Warps to the target location. Aircraft is invulnerable while warping.</td>
-                        <td>60 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/horner/tacticaljump.png" alt="战术折跃"></td>
+                        <td>战术折跃</td>
+                        <td>折跃至目标位置。飞行器在折跃期间无敌。</td>
+                        <td>60 秒</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/horner/cloak.png" alt="Cloak"></td>
-                        <td>Cloak</td>
-                        <td>Cloaks the unit, preventing enemy units from seeing or attacking it. A cloaked unit will only be revealed by detectors or effects.<br><br>Drains 0.9 energy per second.</td>
-                        <td>0 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/horner/cloak.png" alt="隐形"></td>
+                        <td>隐形</td>
+                        <td>使单位进入隐形状态，敌方单位无法看到或攻击它。只有探测单位或效果才能发现隐形单位。<br><br>每秒消耗 0.9 点能量。</td>
+                        <td>0 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/horner/unregisteredcloakingsystem.png" alt="Unregistered Cloaking System"></td>
-                        <td>Unregistered Cloaking System</td>
-                        <td>Allows Wraiths to remain permanently cloaked.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/horner/unregisteredcloakingsystem.png" alt="未注册隐形系统"></td>
+                        <td>未注册隐形系统</td>
+                        <td>使怨灵可以永久保持隐形状态。</td>
                         <td>100/100</td>
-                        <td>63 seconds</td>
+                        <td>63 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/horner/triggeroverride.png" alt="Trigger Override"></td>
-                        <td>Trigger Override</td>
-                        <td>Wraith attack speed increases by 10% with each attack, up to a maximum of 100%.<br><br>Passive ability.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/horner/triggeroverride.png" alt="扳机超控"></td>
+                        <td>扳机超控</td>
+                        <td>怨灵每次攻击都会使攻击速度提高 10%，最多提高 100%。<br><br>被动技能。</td>
                         <td>100/100</td>
-                        <td>63 seconds</td>
+                        <td>63 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/horner/tacticaljump.png" alt="Tactical Jump"></td>
-                        <td>Tactical Jump</td>
-                        <td>Wraiths, Vikings, and Ravens can use Tactical Jump, warping them to any visible location.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/horner/tacticaljump.png" alt="战术折跃"></td>
+                        <td>战术折跃</td>
+                        <td>怨灵、维京战机和铁鸦可以使用战术折跃，折跃至任意可见位置。</td>
                         <td>150/150</td>
-                        <td>63 seconds</td>
+                        <td>63 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -916,76 +916,76 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#horner/deimosviking">
-                <img src="/images/commanderdata/units/horner/deimosviking.jpg" alt="Deimos Viking">
-                <p>Deimos Viking</p>
+                <img src="/images/commanderdata/units/horner/deimosviking.jpg" alt="戴莫斯维京战机">
+                <p>戴莫斯维京战机</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Generally not recommended for sustained anti-air due to much better alternatives (Wraiths and Battlecruisers).</li>
-                <li>Can provide very good amounts of burst damage with the W.I.L.D Missiles upgrade as long as they are not in sustained combat, or if the autocast on that ability is disabled.</li>
-                <li>Very useful on infested maps with the "Shredder Rounds" which causes Assault Mode Viking attacks to pierce targets.</li>
+                <li>由于存在更好的替代选择（怨灵和战列巡航舰），通常不建议用它持续对空。</li>
+                <li>只要不陷入持续战斗，或关闭该技能的自动施放，研发 W.I.L.D. 飞弹后就能造成很高的爆发伤害。</li>
+                <li>“撕裂弹”可以使突击模式下维京战机的攻击穿透目标，因此在感染地图上非常实用。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>描述</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="unlockable">
-                        <td><img src="/images/commanderdata/unitskills/horner/tacticaljump.png" alt="Tactical Jump"></td>
-                        <td>Tactical Jump</td>
-                        <td>Warps to the target location. Aircraft is invulnerable while warping.</td>
-                        <td>60 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/horner/tacticaljump.png" alt="战术折跃"></td>
+                        <td>战术折跃</td>
+                        <td>折跃至目标位置。飞行器在折跃期间无敌。</td>
+                        <td>60 秒</td>
                         <td>0</td>
                     </tr>
                     <tr class="unlockable autocast">
-                        <td><img src="/images/commanderdata/unitskills/horner/wildmissiles.png" alt="W.I.L.D. Missiles"></td>
-                        <td>W.I.L.D. Missiles</td>
-                        <td>Launches 5 rockets at the target unit. Each rocket deals 25 (40 vs armored) damage.</td>
-                        <td>20 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/horner/wildmissiles.png" alt="W.I.L.D. 飞弹"></td>
+                        <td>W.I.L.D. 飞弹</td>
+                        <td>向目标单位发射 5 枚火箭弹。每枚火箭弹造成 25 点伤害（对重甲单位造成 40 点伤害）。</td>
+                        <td>20 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/horner/wildmissiles.png" alt="W.I.L.D. Missiles"></td>
-                        <td>W.I.L.D. Missiles</td>
-                        <td>Vikings in Fighter Mode can launch 5 rockets at an enemy. Each rocket deals 25 (40 vs armored) damage to the target unit.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/horner/wildmissiles.png" alt="W.I.L.D. 飞弹"></td>
+                        <td>W.I.L.D. 飞弹</td>
+                        <td>战斗机模式下的维京战机可以向敌人发射 5 枚火箭弹。每枚火箭弹对目标单位造成 25 点伤害（对重甲单位造成 40 点伤害）。</td>
                         <td>100/100</td>
-                        <td>63 seconds</td>
+                        <td>63 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/horner/shredderrounds.png" alt="Shredder Rounds"></td>
-                        <td>Shredder Rounds</td>
-                        <td>Attacks from Vikings in Assault Mode pierce, dealing damage to enemy units behind the target. Viking transform time reduced by 75%.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/horner/shredderrounds.png" alt="撕裂弹"></td>
+                        <td>撕裂弹</td>
+                        <td>突击模式下维京战机的攻击可以穿透目标，对目标后方的敌方单位造成伤害。维京战机的变形时间缩短 75%。</td>
                         <td>200/100</td>
-                        <td>63 seconds</td>
+                        <td>63 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/horner/tacticaljump.png" alt="Tactical Jump"></td>
-                        <td>Tactical Jump</td>
-                        <td>Wraiths, Vikings, and Ravens can use Tactical Jump, warping them to any visible location.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/horner/tacticaljump.png" alt="战术折跃"></td>
+                        <td>战术折跃</td>
+                        <td>怨灵、维京战机和铁鸦可以使用战术折跃，折跃至任意可见位置。</td>
                         <td>150/150</td>
-                        <td>63 seconds</td>
+                        <td>63 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -994,69 +994,69 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#horner/theiaraven">
-                <img src="/images/commanderdata/units/horner/theiaraven.jpg" alt="Theia Raven">
-                <p>Theia Raven</p>
+                <img src="/images/commanderdata/units/horner/theiaraven.jpg" alt="忒伊亚铁鸦">
+                <p>忒伊亚铁鸦</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Analyze Weakness is a powerful ability that can massively increase damage taken by enemy units.</li>
-                <li>Recommended to also get the "Multithreaded Sensors" which can increase potential targets of Analyze Weakness to 4.</li>
-                <li>You should have 3-4 Ravens with your army.</li>
+                <li>弱点分析是一项强力技能，能大幅提高敌方单位受到的伤害。</li>
+                <li>还建议研发“多线程传感器”，使弱点分析可以同时指定最多 4 个目标。</li>
+                <li>部队中应配备 3-4 架铁鸦。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>描述</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="unlockable">
-                        <td><img src="/images/commanderdata/unitskills/horner/tacticaljump.png" alt="Tactical Jump"></td>
-                        <td>Tactical Jump</td>
-                        <td>Warps to the target location. Aircraft is invulnerable while warping.</td>
-                        <td>60 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/horner/tacticaljump.png" alt="战术折跃"></td>
+                        <td>战术折跃</td>
+                        <td>折跃至目标位置。飞行器在折跃期间无敌。</td>
+                        <td>60 秒</td>
                         <td>0</td>
                     </tr>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/unitskills/horner/analyzeweakness.png" alt="Analyze Weakness"></td>
-                        <td>Analyze Weakness</td>
-                        <td>All Melee and Ranged attacks against Analyzed units do 3 bonus damage. Effect lasts as long as the Raven remains locked onto the target.</td>
-                        <td>3 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/horner/analyzeweakness.png" alt="弱点分析"></td>
+                        <td>弱点分析</td>
+                        <td>所有针对被分析单位的近战和远程攻击额外造成 3 点伤害。只要铁鸦持续锁定目标，效果就会一直存在。</td>
+                        <td>3 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/horner/multithreadedsensors.png" alt="Multi-Threaded Sensors"></td>
-                        <td>Multi-Threaded Sensors</td>
-                        <td>Ravens can target up to 4 units with Target Lock.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/horner/multithreadedsensors.png" alt="多线程传感器"></td>
+                        <td>多线程传感器</td>
+                        <td>铁鸦可以使用目标锁定同时指定最多 4 个单位。</td>
                         <td>100/100</td>
-                        <td>63 seconds</td>
+                        <td>63 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/horner/tacticaljump.png" alt="Tactical Jump"></td>
-                        <td>Tactical Jump</td>
-                        <td>Wraiths, Vikings, and Ravens can use Tactical Jump, warping them to any visible location.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/horner/tacticaljump.png" alt="战术折跃"></td>
+                        <td>战术折跃</td>
+                        <td>怨灵、维京战机和铁鸦可以使用战术折跃，折跃至任意可见位置。</td>
                         <td>150/150</td>
-                        <td>63 seconds</td>
+                        <td>63 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -1065,82 +1065,82 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#horner/sovereignbattlecruiser">
-                <img src="/images/commanderdata/units/horner/sovereignbattlecruiser.jpg" alt="Sovereign Battlecruiser">
-                <p>Sovereign Battlecruiser</p>
+                <img src="/images/commanderdata/units/horner/sovereignbattlecruiser.jpg" alt="主权战列巡航舰">
+                <p>主权战列巡航舰</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Useful for tanking damage.</li>
-                <li>Overcharged Reactor is a must-get upgrade as it greatly increases damage output.</li>
-                <li>Usually results in overkill, but you should still have a few in your army for high health targets.</li>
+                <li>适合承受伤害。</li>
+                <li>过载反应堆能大幅提高伤害输出，是必备升级。</li>
+                <li>通常会造成伤害溢出，但部队中仍应配备几艘，以对付高生命值目标。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>描述</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/horner/tacticaljump.png" alt="Tactical Jump"></td>
-                        <td>Tactical Jump</td>
-                        <td>Warps to the target location. Aircraft is invulnerable while warping.</td>
-                        <td>60 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/horner/tacticaljump.png" alt="战术折跃"></td>
+                        <td>战术折跃</td>
+                        <td>折跃至目标位置。飞行器在折跃期间无敌。</td>
+                        <td>60 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/horner/overchargedreactor.png" alt="Overcharged Reactor"></td>
-                        <td>Overcharged Reactor</td>
-                        <td>Battlecruiser weapons systems are upgraded to a powerful particle cannon that deals 200 damage per attack.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/horner/overchargedreactor.png" alt="过载反应堆"></td>
+                        <td>过载反应堆</td>
+                        <td>将战列巡航舰的武器系统升级为威力强大的粒子炮，每次攻击造成 200 点伤害。</td>
                         <td>150/150</td>
-                        <td>63 seconds</td>
+                        <td>63 秒</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-    <h2 id="buildOrder">Build Order</h2>
-    <p>Below is the standard economic build order for Han & Horner. For more information on how to read and construct your own build orders, please check the <a href="/guides/buildordertheory">Build Order Theory</a> page.</p>
+    <h2 id="buildOrder">建造顺序</h2>
+    <p>以下是汉与霍纳的标准经济型建造顺序。有关如何阅读并设计自己的建造顺序，请参阅<a href="/guides/buildordertheory">建造顺序理论</a>页面。</p>
     <p class="buildOrder">
-        14 Supply Depot<br>
-        17 Command Center<br>
-        18 Assault Galleon<br>
-        19 Refinery<br>
-        20 Refinery<br>
-        20 2x Hellions -> Rocks<br>
+        14 补给站<br>
+        17 指挥中心<br>
+        18 突击炮舰<br>
+        19 炼油厂<br>
+        20 炼油厂<br>
+        20 2x 恶火 -> 岩石<br>
     </p>
-    <h2 id="guide">Gameplay Guide</h2>
-    <h3>Playstyle Traps</h3>
-    <p>A common trap for Han & Horner players is completely skip on Han's units in favor of Horner's more powerful air units. This can be quite an expensive mistake, as Horner's units, while strong, cannot take prolonged lengths of damage. This is particular true for the Asteria Wraiths, which naturally draw a lot of aggro. Given their high price, the best way to keep them safe is to add some of Han's units into the mix.</p>
-    <p>Additionally, these players will also find that they end up floating a lot of resources, particularly minerals as a result, because of the cooldown-based mechanic behind summoning Horner's units. Thus, it is better to use these spare resources to your advantage by making some of Han's units.</p>
-    <h3>Playstyle Tips</h3>
+    <h2 id="guide">游戏指南</h2>
+    <h3>玩法误区</h3>
+    <p>汉与霍纳玩家常见的误区是完全放弃汉的单位，只使用霍纳更强大的空军。这可能会带来代价高昂的失误，因为霍纳单位虽然强大，却无法长时间承受伤害。阿斯特莱亚怨灵尤其如此，它们天生容易吸引大量火力。考虑到其高昂费用，保护它们的最佳方式是在部队中加入一些汉的单位。</p>
+    <p>此外，由于召唤霍纳单位采用基于冷却时间的机制，这类玩家还会发现自己囤积了大量资源，尤其是晶体矿。因此，最好利用这些闲置资源训练一些汉的单位。</p>
+    <h3>玩法技巧</h3>
     <ul>
-        <li>Place Mag Mines on enemy spawn points to destroy attack waves.</li>
-        <li>Take advantage of the death effects of Han's units.</li>
-        <li>Careful placement of Precision Strike targets can help you weaken enemy forces. On maps like <a href="/missions/deadofnight">Dead of Night</a> you can sometimes hit three buildings with one strike.</li>
-        <li>Build a Supply Depot in front of Mag Mines to draw enemy aggro and keep them still while the Mag Mines trigger.</li>
-        <li>Contrary to the description, Space Station Reallocation does not instantly destroy every non-heroic unit/structure. It deals a total of 5,000 damage to everything it hits.</li>
-        <li>Space Station Reallocation does reduced damage to some non-heroic structures. For example, Zenith Stones on <a href="/missions/templeofthepast">Temple of the Past</a> do not get instantly destroyed by the calldown, despite having no Heroic tag.</li>
+        <li>在敌人的出生点布置磁力地雷，以摧毁进攻波。</li>
+        <li>充分利用汉单位的死亡效果。</li>
+        <li>精心选择精确打击的目标位置，可以削弱敌方部队。在<a href="/missions/deadofnight">亡者之夜</a>等地图中，有时一次打击就能命中三座建筑。</li>
+        <li>在磁力地雷前方建造一座补给站来吸引敌人攻击，使其在地雷触发期间停留不动。</li>
+        <li>与描述不同，空间站迁移不会立即摧毁所有非英雄单位或建筑，而是对命中的一切目标总计造成 5,000 点伤害。</li>
+        <li>空间站迁移对某些非英雄建筑造成的伤害会降低。例如，<a href="/missions/templeofthepast">往日神庙</a>中的天顶石虽然没有英雄标签，却不会被该面板技能立即摧毁。</li>
     </ul>
 <script src="/scripts/nav.js"></script>
 <?= endContent() ?>

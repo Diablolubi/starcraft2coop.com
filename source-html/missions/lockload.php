@@ -6,47 +6,47 @@ require_once __DIR__ . "/../../includes/wrapper.php";
 require_once "../../includes/switchergenerator.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Mission Guide - Lock & Load</title>
-  <meta name="description" content="Starcraft 2 Co-op Mission Guide Lock & Load">
-  <meta name="keywords" content="Starcraft co-op guides lock load mission">
+  <title>《星际争霸 II》合作任务攻略 - 天锁</title>
+  <meta name="description" content="《星际争霸 II》合作任务“天锁”攻略">
+  <meta name="keywords" content="星际争霸 合作模式 攻略 天锁 任务">
   <link rel="stylesheet"  media="all" type="text/css" href="/styles/missionstyle.css?v=1.00">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="https://starcraft2coop.com/missions/lockload">
   <script src="/scripts/preload.js"></script>
 <?= startContent() ?>
-    <h1><span class="unbold">Mission:</span> Lock & Load</h1>
-    <p id="missionPlace">Ulnar</p>
+    <h1><span class="unbold">任务：</span>天锁</h1>
+    <p id="missionPlace">乌尔纳</p>
     <?php include("../../includes/reporterror.php");?>
     <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#misSum">Mission Summary</a></p>
-        <p><a href="#objectives">Objectives</a></p>
-        <p><a href="#baseAnalysis">Enemy Base Analysis</a></p>
-        <p><a href="#bonus">Completing the Bonus Objective</a></p>
-        <p><a href="#timings">Timings</a></p>
-        <p><a href="#spawnPoints">Spawn Points</a></p>
-        <p><a href="#misTips">Mission Tips</a></p>
-        <p><a href="#comTips">Commander-Specific Tips</a></p>
+        <h2>本页目录</h2>
+        <p><a href="#misSum">任务概述</a></p>
+        <p><a href="#objectives">任务目标</a></p>
+        <p><a href="#baseAnalysis">敌方基地分析</a></p>
+        <p><a href="#bonus">完成奖励目标</a></p>
+        <p><a href="#timings">时间点</a></p>
+        <p><a href="#spawnPoints">出生点</a></p>
+        <p><a href="#misTips">任务技巧</a></p>
+        <p><a href="#comTips">指挥官专属技巧</a></p>
     </div>
-    <h2 id="misSum">Mission Summary</h2>
-    <p>Amon seeks to destroy Ulnar before it can be used to open a gate to the Void. You and your ally must take control of the celestial locks before their energies overload.</p>
-    <h2 id="objectives">Objectives</h2>
-    <h3>Primary Objective</h3>
+    <h2 id="misSum">任务概述</h2>
+    <p>埃蒙企图在乌尔纳被用于开启通往虚空的大门之前将其摧毁。你和盟友必须在天锁能量过载之前夺取它们的控制权。</p>
+    <h2 id="objectives">任务目标</h2>
+    <h3>主要目标</h3>
         <ul>
-            <li>Activate Celestial Locks (5)</li>
-            <li>Prevent Lock Overload</li>
+            <li>激活天锁（5）</li>
+            <li>阻止天锁过载</li>
         </ul>
-    <h3>Secondary Objective</h3>
+    <h3>奖励目标</h3>
         <ul>
-            <li>Destroy the Xel'Naga Construct (1)</li>
+            <li>消灭萨尔纳加构造体（1）</li>
         </ul>
-    <h2 id="baseAnalysis">Enemy Base Analysis</h2>
+    <h2 id="baseAnalysis">敌方基地分析</h2>
     <div id="globalRaceSelect">
-        <p>Change all base analysis pictures to race:</p>
+        <p>将所有基地分析图片切换为以下种族：</p>
         <form action="#">
-            <label><input type="radio" name="globalRace" value="protoss" checked>Protoss</label><br>
-            <label><input type="radio" name="globalRace" value="terran">Terran</label><br>
-            <label><input type="radio" name="globalRace" value="zerg">Zerg</label><br>
+            <label><input type="radio" name="globalRace" value="protoss" checked>星灵</label><br>
+            <label><input type="radio" name="globalRace" value="terran">人类</label><br>
+            <label><input type="radio" name="globalRace" value="zerg">异虫</label><br>
         </form>
         <script>
             $("input[name='globalRace']").change(function(){
@@ -61,14 +61,14 @@ require_once "../../includes/switchergenerator.php";
         </script>
     </div>
     <?php $mission = "lockload"; ?>
-    <p>The goal of the mission is to capture all the Celestial Locks before they overload. You capture a Lock by moving a unit and an ally's unit near the Lock. It takes 30 seconds to capture a lock.</p>
-    <p>When the enemy captures a Lock, an overload ticker will start. When the overload ticker reaches 9000, you will fail the mission. Note that in-game, this is shown as a percentage. The speed of the overload changes depending on how many Locks the enemy has captured. The table below summarizes this information.</p>
+    <p>任务目标是在天锁过载之前夺取所有天锁。将你和盟友的单位都移动到天锁附近即可开始占领，占领一座天锁需要 30 秒。</p>
+    <p>敌人占领天锁时，过载计数便会开始。计数达到 9000 时任务失败。请注意，游戏中以百分比显示该进度。过载速度取决于敌方控制的天锁数量，详见下表。</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Captured Locks</th>
-                <th>Ticks per Second</th>
-                <th>Time to Mission Fail</th>
+                <th>敌方控制的天锁</th>
+                <th>每秒计数</th>
+                <th>距离任务失败的时间</th>
             </tr>
         </thead>
         <tbody>
@@ -104,43 +104,43 @@ require_once "../../includes/switchergenerator.php";
             </tr>
         </tbody>
     </table>
-    <p>The first Lock that is captured is usually the middle lock. This is very lightly defended, and usually a hero unit can clear.</p>
+    <p>通常首先占领中央天锁。这里防守非常薄弱，英雄单位一般即可清理。</p>
     <?php switcher_generator("lock_c") ?>
-    <p>The next Lock that is captured is usually either the West or the Southern Lock. The Western Lock is shown below. Note the presence of cloaked/burrowed units.</p>
+    <p>下一座通常是西侧或南侧天锁。下图为西侧天锁，请留意隐形或潜地单位。</p>
     <?php switcher_generator("lock_w") ?>
-    <p>The Southern Lock is shown below. Note the presence of Capital Ships.</p>
+    <p>下图为南侧天锁，请留意主力舰。</p>
     <?php switcher_generator("lock_s") ?>
-    <p>The Eastern Lock is one of the more difficult Locks to capture, due to the presence of Hybrids and high-HP units. You will need to push up one of the two ramps to get to the Lock.</p>
-    <p>If you choose to push from the Southern ramp, there is a small enemy camp in this location as follows. Note the presence of cloaked units.</p>
+    <p>东侧天锁附近有混合体和高生命值单位，是较难占领的天锁之一。你需要从两条坡道中的一条向上推进才能抵达。</p>
+    <p>如果选择从南侧坡道推进，该位置有一处小型敌军营地，如下图所示。请留意隐形单位。</p>
     <?php switcher_generator("lock_e_bottomcamp") ?>
-    <p>If you choose to push from the Northern ramp, there is also a camp, but guarded by two Hybrid Destroyers.</p>
+    <p>如果选择从北侧坡道推进，那里同样有一处营地，但由两个混合体毁灭者把守。</p>
     <?php switcher_generator("lock_e_topcamp") ?>
-    <p>The Eastern Lock is well-defended by Capital Ships and a Hybrid Dominator.</p>
+    <p>东侧天锁由主力舰和一个混合体支配者严密把守。</p>
     <?php switcher_generator("lock_e") ?>
-    <p>The last Lock that has to be captured is the Northern Lock. Like the Eastern Lock, there are two ramps that can be used to access it. The Southern ramp is guarded by a small force of units.</p>
+    <p>最后需要占领的是北侧天锁。与东侧天锁一样，它也有两条可供通行的坡道。南侧坡道由一小支部队把守。</p>
     <?php switcher_generator("lock_n_rampguard") ?>
-    <p>If you choose to go up the Eastern ramp, you can bypass the above force entirely.</p>
+    <p>如果选择从东侧坡道上去，则可以完全绕过上述部队。</p>
     <?php switcher_generator("lock_n") ?>
-    <h2 id="bonus">Completing the Bonus Objective</h2>
+    <h2 id="bonus">完成奖励目标</h2>
     <div id="objectiveImages">
-        <img src="/images/missiondata/lockload/xelnagaconstruct.jpg" alt="Xel'Naga Construct">
+        <img src="/images/missiondata/lockload/xelnagaconstruct.jpg" alt="萨尔纳加构造体">
     </div>
-    <p>The bonus objective requires you to kill the Xel'Naga Construct. The Construct is guarded by a small force of enemy units as shown below.</p>
+    <p>奖励目标要求你消灭萨尔纳加构造体。构造体由一小支敌方部队把守，如下图所示。</p>
     <?php switcher_generator("xelnagaconstruct") ?>
-    <p>The Xel'Naga Construct can be quite difficult to kill in the early game. Usually, it is much easier to kill it on the way to Northern Lock if that is the last Lock to be captured.</p>
-    <h2 id="timings">Timings</h2>
-    <p>Note: Information on Tech and Strength levels can be found on the <a href="/guides/enemycomps">Enemy Compositions</a> page.</p>
-    <p>Enemy attack waves will target certain Locks first. The first player-captured Lock on their list will be their target. If all the Locks on their list are overloaded (ie. enemy-controlled), they will target your base.</p>
-    <p>The attack wave timings, Strength and Tech Levels, and their Lock targets are shown below. Here, "O" stands for the middle lock.</p>
+    <p>萨尔纳加构造体在游戏前期可能很难消灭。如果北侧天锁是最后一座要占领的天锁，通常在前往北侧天锁途中消灭构造体会轻松得多。</p>
+    <h2 id="timings">时间点</h2>
+    <p>注意：科技等级与强度等级的说明可参阅<a href="/guides/enemycomps">敌方阵容</a>页面。</p>
+    <p>敌方进攻波次会优先以特定天锁为目标。他们会选择清单上第一座由玩家控制的天锁；如果清单上的天锁均已过载（即由敌方控制），则会攻击你的基地。</p>
+    <p>进攻波次时间、强度与科技等级以及目标天锁如下。其中“O”代表中央天锁。</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Wave</th>
-                <th>Time</th>
-                <th>Tech Level</th>
-                <th>Strength Level</th>
-                <th>Lock Target Check List</th>
-                <th>Notes</th>
+                <th>波次</th>
+                <th>时间</th>
+                <th>科技等级</th>
+                <th>强度等级</th>
+                <th>目标天锁检查顺序</th>
+                <th>备注</th>
             </tr>
         </thead>
         <tbody>
@@ -150,7 +150,7 @@ require_once "../../includes/switchergenerator.php";
                 <td>1</td>
                 <td>3</td>
                 <td>O</td>
-                <td>Single Wave from the Left</td>
+                <td>来自左侧的单波</td>
             </tr>
             <tr>
                 <td>2</td>
@@ -158,7 +158,7 @@ require_once "../../includes/switchergenerator.php";
                 <td>2</td>
                 <td>4</td>
                 <td>S ⇨ O</td>
-                <td>Single Wave from the Right</td>
+                <td>来自右侧的单波</td>
             </tr>
             <tr>
                 <td>3</td>
@@ -166,7 +166,7 @@ require_once "../../includes/switchergenerator.php";
                 <td>3</td>
                 <td>5</td>
                 <td>N ⇨ W ⇨ O<br>E ⇨ S ⇨ O</td>
-                <td>Double Wave</td>
+                <td>双波</td>
             </tr>
             <tr>
                 <td>4</td>
@@ -174,7 +174,7 @@ require_once "../../includes/switchergenerator.php";
                 <td>3</td>
                 <td>5</td>
                 <td>W ⇨ O<br>S ⇨ O </td>
-                <td>Double Wave</td>
+                <td>双波</td>
             </tr>
             <tr>
                 <td>5</td>
@@ -182,19 +182,19 @@ require_once "../../includes/switchergenerator.php";
                 <td>4</td>
                 <td>6</td>
                 <td>N ⇨ W ⇨ O<br>E ⇨ S</td>
-                <td>Double Wave</td>
+                <td>双波</td>
             </tr>
         </tbody>
     </table>
-    <p>After the 5th attack wave, the subsequent attack waves will follow a fixed pattern, starting from the 19-minute mark as shown below.</p>
+    <p>第 5 波进攻之后，后续波次从第 19 分钟开始遵循下列固定模式。</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Time</th>
-                <th>Tech Level</th>
-                <th>Strength Level</th>
-                <th>Lock Target Check List</th>
-                <th>Notes</th>
+                <th>时间</th>
+                <th>科技等级</th>
+                <th>强度等级</th>
+                <th>目标天锁检查顺序</th>
+                <th>备注</th>
             </tr>
         </thead>
         <tbody>
@@ -203,55 +203,55 @@ require_once "../../includes/switchergenerator.php";
                 <td>5</td>
                 <td>6</td>
                 <td>S<br>W</td>
-                <td>Double Wave</td>
+                <td>双波</td>
             </tr>
             <tr>
                 <td>21:00</td>
                 <td>6</td>
                 <td>6</td>
                 <td>N ⇨ W<br>W ⇨ O</td>
-                <td>Double Wave</td>
+                <td>双波</td>
             </tr>
             <tr>
                 <td>23:00</td>
                 <td>4</td>
                 <td>6</td>
                 <td>W ⇨ O ⇨ S<br>E ⇨ N</td>
-                <td>Double Wave</td>
+                <td>双波</td>
             </tr>
             <tr>
                 <td>25:00</td>
                 <td>4</td>
                 <td>6</td>
                 <td>N ⇨ W<br>E ⇨ S</td>
-                <td>Double Wave</td>
+                <td>双波</td>
             </tr>
         </tbody>
     </table>
-    <p>The pattern above will repeat every 2 minutes indefinitely.</p>
-    <h2 id="spawnPoints">Spawn Points</h2>
-    <p>Attack waves have two gather points each on the left and on the right side of the map. The gather point selected will be the closest to the target. In most cases, the Northern gather point will be selected. The Southern gather point is only selected if the attack wave ends up targeting a player's base.</p>
-    <p>The gather points on the left side of the map are shown below:</p>
-    <img src="/images/missiondata/lockload/leftgatherpoints.jpg" alt="Left Gather Points">
-    <p>The gather points on the right side of the map are shown below:</p>
-    <img src="/images/missiondata/lockload/rightgatherpoints.jpg" alt="Right Gather Points">
-    <h2 id="misTips">Mission Tips</h2>
+    <p>上述模式会每 2 分钟无限重复。</p>
+    <h2 id="spawnPoints">出生点</h2>
+    <p>进攻波次在地图左右两侧各有两个集结点，游戏会选择最靠近目标的集结点。大多数情况下会选择北侧集结点；只有当波次最终以玩家基地为目标时，才会选择南侧集结点。</p>
+    <p>地图左侧的集结点如下：</p>
+    <img src="/images/missiondata/lockload/leftgatherpoints.jpg" alt="左侧集结点">
+    <p>地图右侧的集结点如下：</p>
+    <img src="/images/missiondata/lockload/rightgatherpoints.jpg" alt="右侧集结点">
+    <h2 id="misTips">任务技巧</h2>
     <ul>
-        <li>Place static defenses on each captured Lock to grant you vision so you can defend against attack waves.</li>
+        <li>在每座已占领的天锁旁布置防御建筑以提供视野，方便抵御进攻波次。</li>
     </ul>
-    <h2 id="comTips">Commander-specific Tips</h2>
+    <h2 id="comTips">指挥官专属技巧</h2>
     <ul>
-        <li><a href="/commanders/abathur">Abathur</a>: Place Toxic Nests on the ramps and entrances to captured Locks to defend and get Biomass.</li>
-        <li><a href="/commanders/dehaka">Dehaka</a>: Place a burrowed drone on each captured lock to give you vision for Dehaka's Deep Tunnel ability.</li>
-        <li><a href="/commanders/horner">Han & Horner</a>: Defend ramps and Lock entrances with Mag-Mines.</li>
-        <li><a href="/commanders/karax">Karax</a>: Use your Spear of Adun abilities to capture your expansion at the start of the game.</li>
-        <li><a href="/commanders/kerrigan">Kerrigan</a>: Place an Omega Worm on each captured Lock to give you the mobility to defend against attack waves.</li>
-        <li><a href="/commanders/nova">Nova</a>: If you use Siege Tanks, defend ramps and Lock entrances with Spider Mines.</li>
-        <li><a href="/commanders/raynor">Raynor</a>: If you use Vultures, defend ramps and Lock entrances with Spider Mines.</li>
-        <li><a href="/commanders/stukov">Stukov</a>: Once you have creep spread, move your Infested Colonist Compound to your expansion to minimize travel time of your infested.</li>
-        <li><a href="/commanders/vorazun">Vorazun</a>: Do <i>not</i> use Time Stop on this mission. Using this calldown will cause the enemy AI to wake up and aggressively push locks by units being created from the two side bases, significantly increasing the mission difficulty.</li>
-        <li><a href="/commanders/zagara">Zagara</a>: Build your macro hatcheries at the central Lock for quick reinforcements.</li>
-        <li><a href="/commanders/zeratul">Zeratul</a>: Place a Void Array on each captured Lock to give you the mobility to defend against attack waves.</li>
+        <li><a href="/commanders/abathur">阿巴瑟</a>：在已占领天锁的坡道和入口处布置剧毒巢穴，兼顾防守与获取生物质。</li>
+        <li><a href="/commanders/dehaka">德哈卡</a>：在每座已占领的天锁旁放置一只潜地工蜂，为德哈卡的深槽虫道技能提供视野。</li>
+        <li><a href="/commanders/horner">汉与霍纳</a>：用磁力地雷防守坡道和天锁入口。</li>
+        <li><a href="/commanders/karax">凯拉克斯</a>：游戏开始时用亚顿之矛技能夺取扩张点。</li>
+        <li><a href="/commanders/kerrigan">凯瑞甘</a>：在每座已占领的天锁旁放置欧米伽虫洞，利用机动性抵御进攻波次。</li>
+        <li><a href="/commanders/nova">诺娃</a>：如果使用攻城坦克，请用蜘蛛雷防守坡道和天锁入口。</li>
+        <li><a href="/commanders/raynor">雷诺</a>：如果使用秃鹫，请用蜘蛛雷防守坡道和天锁入口。</li>
+        <li><a href="/commanders/stukov">斯托科夫</a>：菌毯铺开后，将被感染的移民营移动至扩张点，尽量缩短感染部队的行进时间。</li>
+        <li><a href="/commanders/vorazun">沃拉尊</a>：本任务中<i>不要</i>使用时间停止。该召唤技能会唤醒敌方 AI，使两侧基地不断生产单位并主动夺取天锁，从而显著提高任务难度。</li>
+        <li><a href="/commanders/zagara">扎加拉</a>：将用于爆兵的孵化场建在中央天锁旁，以便快速增援。</li>
+        <li><a href="/commanders/zeratul">泽拉图</a>：在每座已占领的天锁旁放置虚空阵列船，利用机动性抵御进攻波次。</li>
     </ul>
 <script src="/scripts/nav.js"></script>
 <?= endContent() ?>

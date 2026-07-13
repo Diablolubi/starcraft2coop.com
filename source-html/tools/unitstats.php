@@ -5,9 +5,9 @@
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Unit Stats</title>
-  <meta name="description" content="A calculator to provide you with unit stats before and after upgrades for every unit in Co-op. Also includes data on Amon's units.">
-  <meta name="keywords" content="Starcraft co-op unit stats">
+  <title>《星际争霸 II》合作任务 - 单位属性</title>
+  <meta name="description" content="查看并比较合作任务中各单位升级前后的属性，也包含埃蒙单位的数据。">
+  <meta name="keywords" content="星际争霸 II, 合作任务, 单位属性, 比较">
   <link rel="canonical" href="https://starcraft2coop.com/tools/unitstats">
   <style>
     @media (max-width: 700px){
@@ -214,29 +214,29 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     }
   </style>
   <?= startContent() ?>
-    <h1>A List of Unit Stats for Player and Amon Units</h1>
+    <h1>玩家与埃蒙单位属性列表</h1>
     <?php include("../../includes/reporterror.php");?>
-    <h2>Unit Comparison</h2>
-    <p>Use the below applet to see single unit stats or compare two units together. Click on a commander, then a unit of theirs to get its stats. To compare two units, select a commander and their unit on the opposite side.</p>
-    <p>Notes about the data:</p>
+    <h2>单位比较</h2>
+    <p>使用下方工具可查看单个单位的属性，或比较两个单位。点击指挥官，再点击其单位即可查看属性；若要比较，请在另一侧选择指挥官及其单位。</p>
+    <p>数据说明：</p>
     <ul>
-        <li>Data only shows base stats and upgrades that affect those base stats. Upgrades that affect skill cooldowns are not displayed.</li>
-        <li>All evolutions (e.g. Abathur's Devourer, Dehaka's Primal Combat units) build times only includes the evolution time, and not the build time of the parent units.</li>
-        <li>Any units with charge-based production (e.g. Artanis) uses the charge cooldown time as the build time. For Stukov, the unit's build time is displayed, and not the charge time.</li>
-        <li>For multiple-spawned units (e.g. Zerglings), resource costs are divided by the number of units spawned.</li>
-        <li>For buffs that have multiple stacks (e.g. Biomass), the maximum buff value will be calculated.</li>
-        <li>Only upgrades that change the units weapon stats are listed. For this reason, damage reduction like Fenix's Network Administrator is not shown.</li>
-        <li>Since numbers are calculated, there may be small rounding errors.</li>
+        <li>数据只显示基础属性，以及会影响这些基础属性的升级。影响技能冷却时间的升级不会显示。</li>
+        <li>所有进化单位（例如阿巴瑟的吞噬者、德哈卡的原始战斗单位）的建造时间只包含进化耗时，不包含前置单位的建造时间。</li>
+        <li>使用充能次数生产的单位（例如阿塔尼斯）以充能冷却时间作为建造时间。斯托科夫的单位显示实际建造时间，而非充能时间。</li>
+        <li>一次生成多个的单位（例如跳虫），资源消耗会除以生成数量。</li>
+        <li>可叠加多层的强化效果（例如生物质）按最大层数计算。</li>
+        <li>只列出会改变单位武器属性的升级。因此，菲尼克斯“网络管理员”等伤害减免效果不会显示。</li>
+        <li>数值由计算得出，可能存在轻微的舍入误差。</li>
     </ul>
-    <div id="tooltip" style="display: none; top: 1601px; left: 667px; position: absolute;"><b>Upgrade Name</b><br><br>Selected upgrade description.</div>
+    <div id="tooltip" style="display: none; top: 1601px; left: 667px; position: absolute;"><b>升级名称</b><br><br>所选升级的说明。</div>
     <div class="tableContainer">
         <table id="unitStats">
             <thead>
                 <tr>
-                    <th class="rotate1"><div><span>Commander</span></div></th>
-                    <th>Unit</th>
-                    <th>Data</th>
-                    <th>Compare</th>
+                    <th class="rotate1"><div><span>指挥官</span></div></th>
+                    <th>单位</th>
+                    <th>数据</th>
+                    <th>比较</th>
                 </tr>
             </thead>
             <tbody>
@@ -244,61 +244,61 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                     <td></td>
                     <td rowspan="19" id="leftList"></td>
                     <td rowspan="19" id="leftStats"></td>
-                    <td rowspan="19" id="comparisonContainer"><button id='clearCompare' type='button'>Clear</button><div id="comparison"></div></td>
+                    <td rowspan="19" id="comparisonContainer"><button id='clearCompare' type='button'>清除</button><div id="comparison"></div></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/raynorportrait.png" alt="Raynor"></td>
+                    <td><img src="/images/commanderportraits/raynorportrait.png" data-commander="Raynor" alt="雷诺"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/kerriganportrait.png" alt="Kerrigan"></td>
+                    <td><img src="/images/commanderportraits/kerriganportrait.png" data-commander="Kerrigan" alt="凯瑞甘"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/artanisportrait.png" alt="Artanis"></td>
+                    <td><img src="/images/commanderportraits/artanisportrait.png" data-commander="Artanis" alt="阿塔尼斯"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/swannportrait.png" alt="Swann"></td>
+                    <td><img src="/images/commanderportraits/swannportrait.png" data-commander="Swann" alt="斯旺"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/zagaraportrait.png" alt="Zagara"></td>
+                    <td><img src="/images/commanderportraits/zagaraportrait.png" data-commander="Zagara" alt="扎加拉"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/vorazunportrait.png" alt="Vorazun"></td>
+                    <td><img src="/images/commanderportraits/vorazunportrait.png" data-commander="Vorazun" alt="沃拉尊"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/karaxportrait.png" alt="Karax"></td>
+                    <td><img src="/images/commanderportraits/karaxportrait.png" data-commander="Karax" alt="凯拉克斯"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/abathurportrait.png" alt="Abathur"></td>
+                    <td><img src="/images/commanderportraits/abathurportrait.png" data-commander="Abathur" alt="阿巴瑟"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/alarakportrait.png" alt="Alarak"></td>
+                    <td><img src="/images/commanderportraits/alarakportrait.png" data-commander="Alarak" alt="阿拉纳克"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/novaportrait.png" alt="Nova"></td>
+                    <td><img src="/images/commanderportraits/novaportrait.png" data-commander="Nova" alt="诺娃"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/stukovportrait.png" alt="Stukov"></td>
+                    <td><img src="/images/commanderportraits/stukovportrait.png" data-commander="Stukov" alt="斯托科夫"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/fenixportrait.png" alt="Fenix"></td>
+                    <td><img src="/images/commanderportraits/fenixportrait.png" data-commander="Fenix" alt="菲尼克斯"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/dehakaportrait.png" alt="Dehaka"></td>
+                    <td><img src="/images/commanderportraits/dehakaportrait.png" data-commander="Dehaka" alt="德哈卡"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/hornerportrait.png" alt="Horner"></td>
+                    <td><img src="/images/commanderportraits/hornerportrait.png" data-commander="Horner" alt="汉与霍纳"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/tychusportrait.png" alt="Tychus"></td>
+                    <td><img src="/images/commanderportraits/tychusportrait.png" data-commander="Tychus" alt="泰凯斯"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/zeratulportrait.png" alt="Zeratul"></td>
+                    <td><img src="/images/commanderportraits/zeratulportrait.png" data-commander="Zeratul" alt="泽拉图"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/stetmannportrait.png" alt="Stetmann"></td>
+                    <td><img src="/images/commanderportraits/stetmannportrait.png" data-commander="Stetmann" alt="斯台特曼"></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/commanderportraits/mengskportrait.png" alt="Mengsk"></td>
+                    <td><img src="/images/commanderportraits/mengskportrait.png" data-commander="Mengsk" alt="蒙斯克"></td>
                 </tr>
             </tbody>
         </table>
@@ -310,14 +310,14 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         var selectedCommanders= ["",""];
         var selectedUnits= ["",""];
         $("#unitStats img").on("click", function(){
-            var selectedCommander = $(this).attr("alt");
+            var selectedCommander = $(this).data("commander");
             $(this).parent().css("background-color", "darkslateblue");
             if (oldtdLeft){
                 oldtdLeft.css("background-color","");
             }
             oldtdLeft=$(this).parent();
             selectedCommanders[0] = selectedCommander;
-            $("#leftList").text("Loading...");
+            $("#leftList").text("正在加载……");
 
             $.ajax({
                 type: 'GET',
@@ -329,12 +329,12 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             });
         });
         $("#unitStats").on("click", "li", function(){
-            var selectedUnit = $(this).text();
+            var selectedUnit = $(this).data("unit");
             var dataColumn;
             var unitColumn;
             var selectedCommander = selectedCommanders[0];
             selectedUnits[0] = selectedUnit;
-            $("#leftStats").text("Loading...");
+            $("#leftStats").text("正在加载……");
             $.ajax({
                 type: 'GET',
                 url: '/scripts/calculatestats.php',
@@ -343,7 +343,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                     response = JSON.parse(response);
                     $("#leftList").find(".upgradesList").remove();
                     $("#leftList").append(response[1]);
-                    $("#leftStats").html("<button id='setCompare' type='button'>Set Compare >></button><br><div id='statsContent'>" + response[0] + "</div>");
+                    $("#leftStats").html("<button id='setCompare' type='button'>设为比较对象 &gt;&gt;</button><br><div id='statsContent'>" + response[0] + "</div>");
                 },
             });
         });
@@ -412,7 +412,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                 url: '/scripts/calculatestats.php',
                 data: jsonobject,
                 success: function(response){
-                    $("#leftStats").html("<button id='setCompare' type='button'>Set Compare >></button><br><div id='statsContent'>" + response + "</div>");
+                    $("#leftStats").html("<button id='setCompare' type='button'>设为比较对象 &gt;&gt;</button><br><div id='statsContent'>" + response + "</div>");
                 }
             })
         });
@@ -427,32 +427,32 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             $("#comparison").html("");
         })
     </script>
-    <h2>Enemy Target Vitalities</h2>
-    <p>Use the below filters to see which enemy units and objectives fall below a certain vitality (HP + Shields). Click on a unit to see its vitality data and associated tags.</p>
-    <p>Race Filters:</p>
+    <h2>敌方目标耐久度</h2>
+    <p>使用下方筛选器查看耐久度（生命值 + 护盾）低于特定数值的敌方单位和任务目标。点击单位可查看其耐久数据与相关标签。</p>
+    <p>种族筛选：</p>
     <p id="raceFilters">
-        <span class="toggle Protoss">Protoss</span>
-        <span class="toggle Terran">Terran</span>
-        <span class="toggle Zerg">Zerg</span>
-        <span class="toggle Hybrid">Hybrid</span>
-        <span class="toggle Infested">Infested</span>
-        <span class="toggle Objective">Objective</span>
-        <span class="toggle Mutator">Mutator</span>
+        <span class="toggle Protoss" data-race="Protoss">星灵</span>
+        <span class="toggle Terran" data-race="Terran">人类</span>
+        <span class="toggle Zerg" data-race="Zerg">异虫</span>
+        <span class="toggle Hybrid" data-race="Hybrid">混合体</span>
+        <span class="toggle Infested" data-race="Infested">感染体</span>
+        <span class="toggle Objective" data-race="Objective">任务目标</span>
+        <span class="toggle Mutator" data-race="Mutator">突变因子</span>
     </p>
     <div id="formElements">
         <table id="amonFilter">
             <tbody>
                 <tr>
-                    <td><label>Min Vitality: </label></td>
+                    <td><label>最低耐久度：</label></td>
                     <td><input type="text" id="minVitality" maxlength="5" size="5"></td>
                 </tr>
                 <tr>
-                    <td><label>Max Vitality: </label></td>
+                    <td><label>最高耐久度：</label></td>
                     <td><input type="text" id="maxVitality" maxlength="5" size="5"></td>
                 </tr>
             </tbody>
         </table>
-        <button id="filter" type="button">Filter</button><button id="reset" type="button">Reset</button>
+        <button id="filter" type="button">筛选</button><button id="reset" type="button">重置</button>
     </div>
     <br><br>
     <script>
@@ -483,8 +483,8 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     </div>
     <script>
         $("#flexContainer").on("click",".content", function(){
-            selectedUnit=$(this).text();
-            $("#dataContainer").text("Loading...");
+            selectedUnit=$(this).data("amon-id");
+            $("#dataContainer").text("正在加载……");
             $.ajax({
                 type: 'GET',
                 url: '../scripts/getamonstats.php',
@@ -512,7 +512,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                         $("#flexContainer").html(response);
                         $(".toggle").each(function(){
                             if($(this).css("opacity")==0.25){
-                                $("#flexContainer").find("." + $(this).text()).css("display","none")
+                                $("#flexContainer").find("." + $(this).data("race")).css("display","none")
                             }
                         })
                     }

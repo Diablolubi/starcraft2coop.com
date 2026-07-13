@@ -5,9 +5,9 @@
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Easter Eggs</title>
-  <meta name="description" content="Easter Eggs are a staple in most video games and Co-op is no different. This page lists out all the Easter Eggs found in Co-op.">
-  <meta name="keywords" content="Starcraft co-op easter eggs">
+  <title>《星际争霸 II》合作任务 - 彩蛋</title>
+  <meta name="description" content="本页列出《星际争霸 II》合作任务中已发现的彩蛋。">
+  <meta name="keywords" content="星际争霸 II, 合作任务, 彩蛋, 隐藏内容">
   <link rel="canonical" href="https://starcraft2coop.com/resources/eastereggs">
   <style>
     .easterEggObject{
@@ -17,55 +17,55 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     }
   </style>
   <?= startContent() ?>
-    <h1>Easter Eggs and Other Hidden Content in Co-op</h1>
+    <h1>合作任务中的彩蛋与其他隐藏内容</h1>
     <?php include("../../includes/reporterror.php");?>
-    <p>A number of Easter Eggs are hidden throughout the Co-op mode content. These are listed below.</p>
-    <h2>Commander-Specific</h2>
-    <h3>Alarak's Crystal</h3>
-    <p>Clicking the crystal in the middle of the calldowns bar (shown below) for Alarak will cause him to say a few things after the 7th click as follows:</p>
-    <img src="/images/eastereggs/alarakcrystal.jpg" alt="Alarak's Topbar Crystal">
+    <p>合作任务模式中隐藏着许多彩蛋，现列于下方。</p>
+    <h2>指挥官专属</h2>
+    <h3>阿拉纳克的水晶</h3>
+    <p>连续点击阿拉纳克面板技能栏中央的水晶（如下图），从第 7 次点击开始，他会依次说出以下台词：</p>
+    <img src="/images/eastereggs/alarakcrystal.jpg" alt="阿拉纳克顶栏水晶">
     <ul>
-        <li>"Oh, that isn't a button, you fool!"</li>
-        <li>"What are you doing? Pay attention to the battle!"</li>
-        <li>"Easily distracted by shiny objects, are you?"</li>
-        <li>"Stop clicking that! You're slow enough as it is!"</li>
-        <li>"Do you think this is some sort of game?"</li>
-        <li>"Hmm... you activated the gem perfectly. Curious..."</li>
+        <li>“哦，那可不是按钮，你这个蠢货！”</li>
+        <li>“你在做什么？专心战斗！”</li>
+        <li>“闪亮的东西很容易让你分心，是吗？”</li>
+        <li>“别再点了！你已经够迟钝了！”</li>
+        <li>“你以为这是什么游戏吗？”</li>
+        <li>“嗯……你完美地激活了宝石。真有意思……”</li>
     </ul>
-    <p>After the last quote, the click counter gets reset and you will need to click a few times again before you cycle through the quotes.</p>
-    <h3>Dehaka Devours Dehaka</h3>
-    <p>When the Heroes from the Storm <a href="/resources/mutators">mutator</a> is active, if you devour the Dehaka with your own Dehaka, your Dehaka will say "Death to the weak!".</p>
-    <h3>Fenix's Name</h3>
-    <p>If you click Fenix 80 times (each click needs to be less than 0.5 seconds away from the previous click) in a row, Fenix will die and will respawn as Talandar.</p>
-    <h3>Fenix's Probius</h3>
-    <p>When you have researched all the Champion A.I. Personalities for the Purifier Conclave and have each of the Champion A.I.'s on the field, the next probe you create from your Nexus will be Probius. He is shown below:</p>
-    <img src="/images/eastereggs/fenixprobius.jpg" alt="Probius">
-    <h2>Map-Specific</h2>
-    <h3><a href="/missions/cradleofdeath">Cradle of Death</a></h3>
-    <p>There is a teleporter near the south-west bonus area. Moving a unit into the square will spawn one of objects in the teleporter.</p>
-    <p>The location is shown below:</p>
-    <img src="/images/eastereggs/cradleofdeatheastereggmap.jpg" alt="Location of the Cradle of Death Easter Egg">
-    <p>The objects that you can get are shown below:</p>
-    <img class="easterEggObject" src="/images/eastereggs/cradleofdeatheasteregg1.jpg" alt="Cradle of Death Easter Egg 1">
-    <img class="easterEggObject" src="/images/eastereggs/cradleofdeatheasteregg2.jpg" alt="Cradle of Death Easter Egg 2">
-    <img class="easterEggObject" src="/images/eastereggs/cradleofdeatheasteregg3.jpg" alt="Cradle of Death Easter Egg 3">
-    <img class="easterEggObject" src="/images/eastereggs/cradleofdeatheasteregg4.jpg" alt="Cradle of Death Easter Egg 4">
-    <img class="easterEggObject" src="/images/eastereggs/cradleofdeatheasteregg5.jpg" alt="Cradle of Death Easter Egg 5">
-    <h3><a href="/missions/partparcel">Part & Parcel</a></h3>
-    <p>Behind the final Hybrid, there are a couple of marines standing there. One is named Buswolley and the other Kionius, named after two people involved in the original map design.</p>
-    <p>Their location is shown below:</p>
-    <img src="/images/eastereggs/partparceleastereggmarinesmap.jpg" alt="Location of the Part & Parcel Marines Easter Egg">
-    <p>Below is what they look like:</p>
-    <img src="/images/eastereggs/partparceleastereggmarines.jpg" alt="Part & Parcel Marines Easter Egg">
-    <p>Additionally, there are some Moebius Employees that say something when they are clicked. They are in a pair, and will spawn in one of three locations on the map, shown below:</p>
-    <img src="/images/eastereggs/partparceleastereggemployeemap.jpg" alt="Locations of the Part & Parcel Employees Easter Egg">
-    <p>Below is what they look like, for each spawn location, from 1-3 respectively:</p>
-    <img class="easterEggObject" src="/images/eastereggs/partparceleastereggemployee1.jpg" alt="Part & Parcel Employees Easter Egg 1">
-    <img class="easterEggObject" src="/images/eastereggs/partparceleastereggemployee2.jpg" alt="Part & Parcel Employees Easter Egg 2">
-    <img class="easterEggObject" src="/images/eastereggs/partparceleastereggemployee3.jpg" alt="Part & Parcel Employees Easter Egg 3">
-    <p>They will provide one of two possible voice lines, below:</p>
+    <p>播放完最后一句台词后，点击计数会重置；再次点击数次即可重新轮播这些台词。</p>
+    <h3>德哈卡吞噬德哈卡</h3>
+    <p>“风暴英雄”<a href="/resources/mutators">突变因子</a>生效时，如果用自己的德哈卡吞噬敌方德哈卡，你的德哈卡会说：“弱者必须死！”</p>
+    <h3>菲尼克斯的名字</h3>
+    <p>连续点击菲尼克斯 80 次（每次点击与上一次的间隔必须少于 0.5 秒），菲尼克斯会死亡，并以塔兰达尔之名重生。</p>
+    <h3>菲尼克斯的普罗比斯</h3>
+    <p>为净化者议会研究全部勇士人工智能人格，并让所有勇士人工智能单位都在场时，下一台从星灵枢纽制造的探机将变为普罗比斯，如下图所示：</p>
+    <img src="/images/eastereggs/fenixprobius.jpg" alt="普罗比斯">
+    <h2>地图专属</h2>
+    <h3><a href="/missions/cradleofdeath">死亡摇篮</a></h3>
+    <p>西南方奖励区域附近有一座传送器。将单位移动到方格中，会使传送器内出现一个随机物体。</p>
+    <p>位置如下所示：</p>
+    <img src="/images/eastereggs/cradleofdeatheastereggmap.jpg" alt="死亡摇篮彩蛋位置">
+    <p>可能出现的物体如下：</p>
+    <img class="easterEggObject" src="/images/eastereggs/cradleofdeatheasteregg1.jpg" alt="死亡摇篮彩蛋 1">
+    <img class="easterEggObject" src="/images/eastereggs/cradleofdeatheasteregg2.jpg" alt="死亡摇篮彩蛋 2">
+    <img class="easterEggObject" src="/images/eastereggs/cradleofdeatheasteregg3.jpg" alt="死亡摇篮彩蛋 3">
+    <img class="easterEggObject" src="/images/eastereggs/cradleofdeatheasteregg4.jpg" alt="死亡摇篮彩蛋 4">
+    <img class="easterEggObject" src="/images/eastereggs/cradleofdeatheasteregg5.jpg" alt="死亡摇篮彩蛋 5">
+    <h3><a href="/missions/partparcel">聚铁成兵</a></h3>
+    <p>最终混合体身后站着两名陆战队员，分别名为 Buswolley 和 Kionius；这两个名字来自参与原始地图设计的两个人。</p>
+    <p>他们的位置如下：</p>
+    <img src="/images/eastereggs/partparceleastereggmarinesmap.jpg" alt="聚铁成兵陆战队员彩蛋位置">
+    <p>他们的外观如下：</p>
+    <img src="/images/eastereggs/partparceleastereggmarines.jpg" alt="聚铁成兵陆战队员彩蛋">
+    <p>此外，还有一些莫比斯员工会在被点击时说话。他们会成对出现在地图上的三个位置之一，如下所示：</p>
+    <img src="/images/eastereggs/partparceleastereggemployeemap.jpg" alt="聚铁成兵员工彩蛋位置">
+    <p>下图依次展示他们在第 1 至第 3 个出现位置的样子：</p>
+    <img class="easterEggObject" src="/images/eastereggs/partparceleastereggemployee1.jpg" alt="聚铁成兵员工彩蛋 1">
+    <img class="easterEggObject" src="/images/eastereggs/partparceleastereggemployee2.jpg" alt="聚铁成兵员工彩蛋 2">
+    <img class="easterEggObject" src="/images/eastereggs/partparceleastereggemployee3.jpg" alt="聚铁成兵员工彩蛋 3">
+    <p>他们会说出以下两组台词之一：</p>
     <ul>
-        <li>"Sometimes, this really feels like a dead-end job"<br>"Oh, I know what you mean. Deader than those Death Shards".</li>
-        <li>"Have you ever wondered what happened to Reigel?"<br>"Not really. It always seemed like he knew more than he let on, though".</li>
+        <li>“有时候，这份工作真让人觉得毫无前途。”<br>“我懂你的意思。比那些死亡碎片还要‘死’。”</li>
+        <li>“你有没有想过莱格尔后来怎么样了？”<br>“没怎么想过。不过他看起来总是知道一些没有说出口的事。”</li>
     </ul>
 <?= endContent() ?>

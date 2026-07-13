@@ -17,9 +17,9 @@ function ensureOverlay(): { overlay: HTMLElement, input: HTMLInputElement, resul
     overlay.id = 'site-search-overlay';
     overlay.hidden = true;
     overlay.innerHTML = `
-        <div class="site-search-dialog" role="dialog" aria-modal="true" aria-label="Site search">
+        <div class="site-search-dialog" role="dialog" aria-modal="true" aria-label="站内搜索">
             <form class="site-search-form" action="/search">
-                <input id="site-search-input" type="search" autocomplete="off" spellcheck="false" placeholder="Search StarCraft II Co-op" aria-label="Search StarCraft II Co-op">
+                <input id="site-search-input" type="search" autocomplete="off" spellcheck="false" placeholder="搜索《星际争霸 II》合作任务" aria-label="搜索《星际争霸 II》合作任务">
             </form>
             <div id="site-search-results" class="site-search-results" aria-live="polite"></div>
         </div>
@@ -44,14 +44,14 @@ function loadRenderer(): Promise<void> {
     if (rendererLoading) return rendererLoading;
 
     const elements = ensureOverlay();
-    elements.results.innerHTML = '<p class="site-search-message">Loading search...</p>';
+    elements.results.innerHTML = '<p class="site-search-message">正在加载搜索……</p>';
     rendererLoading = new Promise<void>((resolve, reject) => {
         const script = document.createElement('script');
         script.src = '/scripts/search-results.js';
         script.async = true;
         script.onload = () => {
             if (!(window as HasSearch).mountSearchResults) {
-                reject(new Error('Search renderer did not initialize.'));
+                reject(new Error('搜索组件未能初始化。'));
                 return;
             }
             (window as HasSearch).mountSearchResults!({
@@ -62,12 +62,12 @@ function loadRenderer(): Promise<void> {
             rendererLoaded = true;
             resolve();
         };
-        script.onerror = () => reject(new Error('Search renderer failed to load.'));
+        script.onerror = () => reject(new Error('搜索组件加载失败。'));
         document.head.append(script);
     }).catch(error => {
         console.error(error);
         rendererLoading = null;
-        elements.results.innerHTML = '<p class="site-search-message">Search failed to load.</p>';
+        elements.results.innerHTML = '<p class="site-search-message">搜索加载失败。</p>';
     });
     return rendererLoading;
 }
@@ -106,7 +106,7 @@ function isSearchOpen(): boolean {
 
 const shortcutModifier = isMac() ? 'Cmd' : 'Ctrl';
 searchButton?.setAttribute('aria-expanded', 'false');
-searchButton?.setAttribute('aria-label', `Search (${shortcutModifier}+K)`);
+searchButton?.setAttribute('aria-label', `搜索（${shortcutModifier}+K）`);
 searchButton?.querySelector<HTMLElement>('.search-shortcut')?.insertAdjacentHTML('afterbegin', `<kbd>${shortcutModifier}</kbd>+<kbd>K</kbd>`);
 searchButton?.addEventListener('click', openSearch);
 

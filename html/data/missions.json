@@ -1,62 +1,62 @@
 [
     {
-        "name": "Chain of Ascension",
+        "name": "升格之链",
         "mutationcount": 12
     },
     {
-        "name": "Cradle of Death",
+        "name": "死亡摇篮",
         "mutationcount": 9
     },
     {
-        "name": "Dead of Night",
+        "name": "亡者之夜",
         "mutationcount": 12
     },
     {
-        "name": "Lock and Load",
+        "name": "天锁",
         "mutationcount": 15
     },
     {
-        "name": "Malwarfare",
+        "name": "恶意代码",
         "mutationcount": 10
     },
     {
-        "name": "Miner Evacuation",
+        "name": "疏散矿工",
         "mutationcount": 12
     },
     {
-        "name": "Mist Opportunities",
+        "name": "机会渺茫",
         "mutationcount": 15
     },
     {
-        "name": "Oblivion Express",
+        "name": "湮灭快车",
         "mutationcount": 13
     },
     {
-        "name": "Part and Parcel",
+        "name": "聚铁成兵",
         "mutationcount": 9
     },
     {
-        "name": "Rifts to Korhal",
+        "name": "克哈裂痕",
         "mutationcount": 14
     },
     {
-        "name": "Scythe of Amon",
+        "name": "埃蒙之镰",
         "mutationcount": 9
     },
     {
-        "name": "Temple of the Past",
+        "name": "往日神庙",
         "mutationcount": 14
     },
     {
-        "name": "The Vermillion Problem",
+        "name": "熔火危机",
         "mutationcount": 12
     },
     {
-        "name": "Void Launch",
+        "name": "虚空降临",
         "mutationcount": 16
     },
     {
-        "name": "Void Thrashing",
+        "name": "虚空撕裂",
         "mutationcount": 12
     }
 ]

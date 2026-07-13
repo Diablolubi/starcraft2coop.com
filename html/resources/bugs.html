@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
@@ -9,115 +9,115 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-    <link rel="stylesheet" href="/styles/global.css?v=70e9bc">
+    <link rel="stylesheet" href="/styles/global.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <title>Starcraft 2 Co-op - Bugs List</title>
-  <meta name="description" content="A list of bugs that are present in the current Starcraft II Co-op Patch">
-  <meta name="keywords" content="Starcraft co-op bugs glitches">
+      <title>《星际争霸2》合作任务 - 错误列表</title>
+  <meta name="description" content="当前《星际争霸二》合作任务版本中存在的错误列表">
+  <meta name="keywords" content="星际争霸 合作任务 错误 故障">
   <link rel="canonical" href="https://starcraft2coop.com/resources/bugs">
   </head>
 <body>
 
 <header id="header">
-    <img src="/images/starcraft2coop.png" alt="Starcraft II Co-op">
+    <img src="/images/starcraft2coop.png" alt="StarCraft II 合作任务">
 </header>
 <script>
 if (document.location.host === 'dev.starcraft2coop.com') {
-    document.write('<div class="construction">THIS IS THE TEST SITE. (<a href="https://starcraft2coop.com">Go to the real site</a>)</div>');
+    document.write('<div class="construction">这里是测试站点。（<a href="https://starcraft2coop.com">前往正式站点</a>）</div>');
 }
 </script>
 <nav id="menu">
 <ul id="topmenu">
-    <li class="normal"><a href="/" title="Home">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>Home</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+    <li class="normal"><a href="/" title="首页">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>首页</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
     </a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-commanders">Commanders</a></li>
-    <li class="highlight"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-resources">Guides</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-missions">Missions</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-about">About</a></li>
-    <li class="normal"><button type="button" id="site-search-button" title="Search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Search</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-commanders">指挥官</a></li>
+    <li class="highlight"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-resources">攻略</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-missions">任务</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-about">关于</a></li>
+    <li class="normal"><button type="button" id="site-search-button" title="搜索">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>搜索</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
         <span class="search-shortcut" aria-hidden="true"></span>
     </button></li>
 </ul>
 <div id="container">
     <div id="commanderList" class="submenu">
-        <a href="/commanders/raynor" class="normal"><img src="/images/commanderportraits/raynorportrait.png" alt="Raynor"></a>
-        <a href="/commanders/kerrigan" class="normal"><img src="/images/commanderportraits/kerriganportrait.png" alt="Kerrigan"></a>
-        <a href="/commanders/artanis" class="normal"><img src="/images/commanderportraits/artanisportrait.png" alt="Artanis"></a>
-        <a href="/commanders/swann" class="normal"><img src="/images/commanderportraits/swannportrait.png" alt="Swann"></a>
-        <a href="/commanders/zagara" class="normal"><img src="/images/commanderportraits/zagaraportrait.png" alt="Zagara"></a>
-        <a href="/commanders/vorazun" class="normal"><img src="/images/commanderportraits/vorazunportrait.png" alt="Vorazun"></a>
-        <a href="/commanders/karax" class="normal"><img src="/images/commanderportraits/karaxportrait.png" alt="Karax"></a>
-        <a href="/commanders/abathur" class="normal"><img src="/images/commanderportraits/abathurportrait.png" alt="Abathur"></a>
-        <a href="/commanders/alarak" class="normal"><img src="/images/commanderportraits/alarakportrait.png" alt="Alarak"></a>
-        <a href="/commanders/nova" class="normal"><img src="/images/commanderportraits/novaportrait.png" alt="Nova"></a>
-        <a href="/commanders/stukov" class="normal"><img src="/images/commanderportraits/stukovportrait.png" alt="Stukov"></a>
-        <a href="/commanders/fenix" class="normal"><img src="/images/commanderportraits/fenixportrait.png" alt="Fenix"></a>
-        <a href="/commanders/dehaka" class="normal"><img src="/images/commanderportraits/dehakaportrait.png" alt="Dehaka"></a>
-        <a href="/commanders/horner" class="normal"><img src="/images/commanderportraits/hornerportrait.png" alt="Han &amp; Horner"></a>
-        <a href="/commanders/tychus" class="normal"><img src="/images/commanderportraits/tychusportrait.png" alt="Tychus"></a>
-        <a href="/commanders/zeratul" class="normal"><img src="/images/commanderportraits/zeratulportrait.png" alt="Zeratul"></a>
-        <a href="/commanders/stetmann" class="normal"><img src="/images/commanderportraits/stetmannportrait.png" alt="Stetmann"></a>
-        <a href="/commanders/mengsk" class="normal"><img src="/images/commanderportraits/mengskportrait.png" alt="Mengsk"></a>
+        <a href="/commanders/raynor" class="normal"><img src="/images/commanderportraits/raynorportrait.png" alt="雷诺"></a>
+        <a href="/commanders/kerrigan" class="normal"><img src="/images/commanderportraits/kerriganportrait.png" alt="凯瑞甘"></a>
+        <a href="/commanders/artanis" class="normal"><img src="/images/commanderportraits/artanisportrait.png" alt="阿塔尼斯"></a>
+        <a href="/commanders/swann" class="normal"><img src="/images/commanderportraits/swannportrait.png" alt="斯旺"></a>
+        <a href="/commanders/zagara" class="normal"><img src="/images/commanderportraits/zagaraportrait.png" alt="扎加拉"></a>
+        <a href="/commanders/vorazun" class="normal"><img src="/images/commanderportraits/vorazunportrait.png" alt="沃拉尊"></a>
+        <a href="/commanders/karax" class="normal"><img src="/images/commanderportraits/karaxportrait.png" alt="凯拉克斯"></a>
+        <a href="/commanders/abathur" class="normal"><img src="/images/commanderportraits/abathurportrait.png" alt="阿巴瑟"></a>
+        <a href="/commanders/alarak" class="normal"><img src="/images/commanderportraits/alarakportrait.png" alt="阿拉纳克"></a>
+        <a href="/commanders/nova" class="normal"><img src="/images/commanderportraits/novaportrait.png" alt="诺娃"></a>
+        <a href="/commanders/stukov" class="normal"><img src="/images/commanderportraits/stukovportrait.png" alt="斯托科夫"></a>
+        <a href="/commanders/fenix" class="normal"><img src="/images/commanderportraits/fenixportrait.png" alt="菲尼克斯"></a>
+        <a href="/commanders/dehaka" class="normal"><img src="/images/commanderportraits/dehakaportrait.png" alt="德哈卡"></a>
+        <a href="/commanders/horner" class="normal"><img src="/images/commanderportraits/hornerportrait.png" alt="汉与霍纳"></a>
+        <a href="/commanders/tychus" class="normal"><img src="/images/commanderportraits/tychusportrait.png" alt="泰凯斯"></a>
+        <a href="/commanders/zeratul" class="normal"><img src="/images/commanderportraits/zeratulportrait.png" alt="泽拉图"></a>
+        <a href="/commanders/stetmann" class="normal"><img src="/images/commanderportraits/stetmannportrait.png" alt="斯台特曼"></a>
+        <a href="/commanders/mengsk" class="normal"><img src="/images/commanderportraits/mengskportrait.png" alt="蒙斯克"></a>
     </div>
     <div id="missionList" class="submenu">
-        <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">Chain of Ascension</div></a>
-        <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">Cradle of Death</div></a>
-        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">Dead of Night</div></a>
-        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">Lock &amp; Load</div></a>
-        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">Malwarfare</div></a>
-        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">Miner Evacuation</div></a>
-        <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">Mist Opportunities</div></a>
-        <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">Oblivion Express</div></a>
-        <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">Part &amp; Parcel</div></a>
-        <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">Rifts to Korhal</div></a>
-        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">Scythe of Amon</div></a>
-        <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">Temple of the Past</div></a>
-        <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">The Vermillion Problem</div></a>
-        <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">Void Launch</div></a>
-        <a href="/missions/voidthrashing" class="normal"><div class="mapImg mapImg-voidthrashing">Void Thrashing</div></a>
+        <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">飞升之链</div></a>
+        <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">死亡摇篮</div></a>
+        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">亡者之夜</div></a>
+        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">天锁</div></a>
+        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">恶意代码</div></a>
+        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">疏散矿工</div></a>
+        <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">机会渺茫</div></a>
+        <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">湮灭快车</div></a>
+        <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">聚铁成兵</div></a>
+        <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">克哈裂痕</div></a>
+        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">埃蒙之镰</div></a>
+        <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">往日神庙</div></a>
+        <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">熔火危机</div></a>
+        <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">虚空降临</div></a>
+        <a href="/missions/voidthrashing" class="normal"><div class="mapImg mapImg-voidthrashing">虚空撕裂</div></a>
     </div>
     <div id="resources" class="submenu">
         <div class="submenu-with-sections"><div class="submenu-section">
-            <strong>Resources:</strong>
+            <strong>资料：</strong>
             <ul>
-                <li class="normal"><a href="/mutators/">Mutators</a></li>
-                <li class="normal"><a href="/resources/weeklymutations">Weekly&nbsp;Mutations</a></li>
-                <li class="normal"><a href="/resources/brutal">Brutal+</a></li>
-                <li class="normal"><a href="/units/">Unit&nbsp;Stats</a></li>
+                <li class="normal"><a href="/mutators/">突变因子</a></li>
+                <li class="normal"><a href="/resources/weeklymutations">每周突变</a></li>
+                <li class="normal"><a href="/resources/brutal">残酷+</a></li>
+                <li class="normal"><a href="/units/">单位数据</a></li>
             </ul>
         </div><div class="submenu-section">
-            <strong>Guides:</strong>
+            <strong>攻略：</strong>
             <ul>
-                <li class="normal"><a href="/guides/buildordertheory">Build&nbsp;Order&nbsp;Theory</a></li>
-                <li class="normal"><a href="/guides/enemycomps">Enemy&nbsp;Compositions</a></li>
-                <li class="normal"><a href="/guides/generaltips">General&nbsp;Tips</a></li>
-                <li class="normal"><a href="/guides/newplayer">New&nbsp;Players</a></li>
-                <li class="normal"><a href="/guides/youtube">Youtube</a></li>
+                <li class="normal"><a href="/guides/buildordertheory">建造顺序理论</a></li>
+                <li class="normal"><a href="/guides/enemycomps">敌方阵容</a></li>
+                <li class="normal"><a href="/guides/generaltips">通用技巧</a></li>
+                <li class="normal"><a href="/guides/newplayer">新手指南</a></li>
+                <li class="normal"><a href="/guides/youtube">YouTube</a></li>
             </ul>
         </div><div class="submenu-section">
-            <strong>Miscellaneous:</strong>
+            <strong>其他：</strong>
             <ul>
-                <li class="normal"><a href="/resources/achievements">Achievements</a></li>
-                <li class="normal"><a href="/resources/ailogic">AI&nbsp;Logic</a></li>
-                <li class="highlight"><a href="/resources/bugs">Bugs</a></li>
-                <li class="normal"><a href="/resources/deathprevention">Death&nbsp;Prevent&nbsp;Effects</a></li>
-                <li class="normal"><a href="/resources/eastereggs">Easter&nbsp;Eggs</a></li>
-                <li class="normal"><a href="/resources/levels">Levels</a></li>
-                <li class="normal"><a href="/resources/patchdata">Patch&nbsp;Data</a></li>
-                <li class="normal"><a href="/tools/downloads">Downloads</a></li>
-                <li class="normal"><a href="/tools/masterybreakpoints">Mastery&nbsp;Breakpoints</a></li>
+                <li class="normal"><a href="/resources/achievements">成就</a></li>
+                <li class="normal"><a href="/resources/ailogic">人工智能逻辑</a></li>
+                <li class="highlight"><a href="/resources/bugs">错误</a></li>
+                <li class="normal"><a href="/resources/deathprevention">免死效果</a></li>
+                <li class="normal"><a href="/resources/eastereggs">彩蛋</a></li>
+                <li class="normal"><a href="/resources/levels">等级</a></li>
+                <li class="normal"><a href="/resources/patchdata">补丁数据</a></li>
+                <li class="normal"><a href="/tools/downloads">下载</a></li>
+                <li class="normal"><a href="/tools/masterybreakpoints">精通阈值</a></li>
             </ul>
         </div></div>
     </div>
     <div id="about" class="submenu">
         <ul>
             <!--<li class="normal"><a href="/about/contact">Contact</a></li>-->
-            <li class="normal"><a href="/about/faq">FAQ</a></li>
-            <li class="normal"><a href="/about/links">Links</a></li>
+            <li class="normal"><a href="/about/faq">常见问题</a></li>
+            <li class="normal"><a href="/about/links">相关链接</a></li>
             <!--li class="normal"><a href="https://www.youtube.com/c/Starcraft2Coop" rel="nofollow">Youtube</a></li-->
-            <li class="normal"><a href="/about/stats">Misc. Stats</a></li>
+            <li class="normal"><a href="/about/stats">杂项统计</a></li>
         </ul>
     </div>
     <!--<div id="imgs">
@@ -168,532 +168,530 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         }
     })(jQuery);
 </script>
-<script src="/scripts/search.js?v=3646f5" defer></script>
+<script src="/scripts/search.js" defer></script>
 <div id="content">
-        <h1>Starcraft Co-op Bugs List</h1>
+        <h1>《星际争霸二》合作任务错误列表</h1>
         <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#core">Game Core</a></p>
-        <p><a href="#amon">Amon</a></p>
-        <p><a href="#abathur">Abathur</a></p>
-        <p><a href="#alarak">Alarak</a></p>
-        <p><a href="#artanis">Artanis</a></p>
-        <p><a href="#dehaka">Dehaka</a></p>
-        <p><a href="#fenix">Fenix</a></p>
-        <p><a href="#horner">Han/Horner</a></p>
-        <p><a href="#karax">Karax</a></p>
-        <p><a href="#kerrigan">Kerrigan</a></p>
-        <p><a href="#mengsk">Mengsk</a></p>
-        <p><a href="#nova">Nova</a></p>
-        <p><a href="#raynor">Raynor</a></p>
-        <p><a href="#stetmann">Stetmann</a></p>
-        <p><a href="#stukov">Stukov</a></p>
-        <p><a href="#swann">Swann</a></p>
-        <p><a href="#tychus">Tychus</a></p>
-        <p><a href="#vorazun">Vorazun</a></p>
-        <p><a href="#zagara">Zagara</a></p>
-        <p><a href="#zeratul">Zeratul</a></p>
-        <p><a href="#missions">Missions</a></p>
-        <p><a href="#mutators">Mutators</a></p>
-        <p><a href="#QOL">Quality of Life</a></p>
-        <p><a href="#aesthetic">Aesthetic</a></p>
+        <h2>本页章节</h2>
+        <p><a href="#core">游戏核心</a></p>
+        <p><a href="#amon">埃蒙</a></p>
+        <p><a href="#abathur">阿巴瑟</a></p>
+        <p><a href="#alarak">阿拉纳克</a></p>
+        <p><a href="#artanis">阿塔尼斯</a></p>
+        <p><a href="#dehaka">德哈卡</a></p>
+        <p><a href="#fenix">菲尼克斯</a></p>
+        <p><a href="#horner">韩与霍纳</a></p>
+        <p><a href="#karax">卡拉克斯</a></p>
+        <p><a href="#kerrigan">凯瑞甘</a></p>
+        <p><a href="#mengsk">蒙斯克</a></p>
+        <p><a href="#nova">诺娃</a></p>
+        <p><a href="#raynor">雷诺</a></p>
+        <p><a href="#stetmann">斯台特曼</a></p>
+        <p><a href="#stukov">斯托科夫</a></p>
+        <p><a href="#swann">斯旺</a></p>
+        <p><a href="#tychus">泰凯斯</a></p>
+        <p><a href="#vorazun">沃拉尊</a></p>
+        <p><a href="#zagara">扎加拉</a></p>
+        <p><a href="#zeratul">泽拉图</a></p>
+        <p><a href="#missions">任务</a></p>
+        <p><a href="#mutators">突变因子</a></p>
+        <p><a href="#QOL">体验优化</a></p>
+        <p><a href="#aesthetic">视觉表现</a></p>
     </div>
-    <h2 id="core">Game Core</h2>
+    <h2 id="core">游戏核心</h2>
     <ul>
-        <li>After Warpgate Research completion, Gateways will automatically transform into Warpgates, even if a unit is in production. That unit's supply and cost is not refunded. Reverting to Gateway will complete production.</li>
-        <li>Aura effects apply with units even if they are inside transports</li>
-        <li>Beam Weapons are unaffected by attack speed buffs.</li>
-        <li>Units with the "Frenzied" passive can get stunned with Stank's Headbutt, Hunterling's Leap Attack and stun abilities from Void Shards and Slivers</li>
-        <li>Players can destroy their initial structures and rebuild them elsewhere on certain missions and stop mutator units such as Propagators from being given a move command to their base</li>
-        <li>Players can play at <a href="https://www.maguro.one/2020/12/mastery-exploit.html" rel="nofollow">180 mastery points</a> by using an arcade exploit</li>
-        <li>Prestiging a commander while the game countdown is active adds experience to the level 1 commander while the player plays at mastery level</li>
-        <li>Score screen displays jumping units (e.g. Raptor-strain Zerglings) as units made</li>
+        <li>完成折跃门研究后，传送门会自动变为折跃门，即使其中正在生产单位。该单位占用的人口与资源不会返还；切换回传送门后会继续完成生产。</li>
+        <li>单位位于运输载具内时，其光环效果仍会生效</li>
+        <li>光束武器不受攻击速度增益影响。</li>
+        <li>拥有“狂暴”被动的单位仍会被畸变巨兽的头槌、猎杀虫的跳跃攻击，以及虚空碎片和虚空裂片的昏迷技能击晕</li>
+        <li>在某些任务中，玩家可以摧毁初始建筑并在其他位置重建，从而阻止传播者等突变因子单位接到前往玩家基地的移动命令</li>
+        <li>玩家可以利用街机漏洞，以<a href="https://www.maguro.one/2020/12/mastery-exploit.html" rel="nofollow">180点精通点数</a>进行游戏</li>
+        <li>在游戏倒计时期间为指挥官启用威望，会让玩家以精通等级游玩，同时将经验计入等级1的指挥官</li>
+        <li>结算界面会把跳跃中的单位（例如迅猛型跳虫）计入已生产单位</li>
     </ul>
-    <h2 id="amon">Amon</h2>
+    <h2 id="amon">埃蒙</h2>
     <ul>
-        <li>Attack Waves take units from the map if they are killed too quickly</li>
-        <li>Attack waves with only air units can take unexpected paths to player's bases</li>
-        <li>Brutal+ Mutations can be stacked with the Weekly Mutation if you retry Brutal+ on the Weekly Mutation tab</li>
-        <li>Casting a Fear debuff on an entire attack wave will cause units in the wave to lose their attack commands after Fear wears off</li>
-        <li>Disruptor's Purification Novas are not cancelled if lifted by Phoenixes</li>
-        <li>Air units can be stuck in a state between Air and Ground if they are ensnared (e.g. from Stukov's Infested Diamondbacks) and then get teleported via triggers (e.g. on Oblivion Express)</li>
-        <li>Ghosts and Wraiths can use Cloak at the start of the mission, but these upgrades are provided at 15:00</li>
-        <li>Hybrid Destroyer's Graviton Prison is not marked as a Stasis ability</li>
-        <li>Raven Seeker Missiles will hit Interceptors if it was the target even if the Interceptor is already inside the Carrier before it hits</li>
+        <li>如果进攻波次被过快消灭，系统会从地图上抽取单位补充波次</li>
+        <li>仅由空中单位组成的进攻波次可能沿异常路线前往玩家基地</li>
+        <li>如果在每周突变标签页重试残酷+，残酷+突变因子可能与每周突变叠加</li>
+        <li>对整个进攻波次施加恐惧减益后，波次中的单位会在恐惧结束时失去攻击命令</li>
+        <li>干扰者被凤凰抬起时，其净化新星不会取消</li>
+        <li>空中单位先被诱捕（例如受到斯托科夫的被感染响尾蛇影响），再由触发器传送（例如在“湮灭快车”中）时，可能卡在空中与地面之间的状态</li>
+        <li>幽灵和怨灵战机可在任务开始时使用隐形，但这些升级要到15:00才会提供</li>
+        <li>混合体毁灭者的重力监牢未被标记为静滞技能</li>
+        <li>如果拦截机是渡鸦追猎者飞弹的目标，即使命中前拦截机已返回航母内部，飞弹仍会命中</li>
     </ul>
-    <h2 id="abathur">Abathur</h2>
+    <h2 id="abathur">阿巴瑟</h2>
     <ul>
-        <li>Base
+        <li>基础内容
             <ul>
-                <li>Swarm Host's Spawn Locust cooldown is based on attack speed.</li>
-                <li>Swarm Host's Spawn Locust cooldown buffed by a Psionic Devouring One (P1) Dehaka reduces the cooldown of the ability, but will not be autocasted.</li>
-                <li>Symbiotes can attack when unit is in transport</li>
-                <li>Symbiotes gets Stetmann's H.U.G.S. Overload shield despite being invulnerable</li>
-                <li>Toxic Nests can be placed on top of Swann Flaming Betties, making them unable to unburrow and attack</li>
+                <li>宿主的孵化蝗虫冷却时间取决于攻击速度。</li>
+                <li>宿主的孵化蝗虫受到灵能吞噬者（P1）德哈卡的冷却增益后，技能冷却时间会缩短，但不会自动施放。</li>
+                <li>单位位于运输载具内时，共生体仍可攻击</li>
+                <li>共生体即使处于无敌状态，仍会获得斯台特曼的“抱抱”超载护盾</li>
+                <li>剧毒巢穴可以放置在斯旺的火焰炮台上方，导致炮台无法钻出地面和攻击</li>
             </ul>
         </li>
-        <li>Mutators
+        <li>突变因子
             <ul>
-                <li>Black Death damage to self is counted for Life Leech bonus provided by Biomass</li>
-                <li>Brutalisks can be Feared, despite having the Frenzied passive</li>
-                <li>Double Edged damage to self is counted for Life Leech bonus provided by Biomass</li>
-                <li>Ravagers are pulled by Fatal Attraction while burrowed</li>
-            </ul>
-        </li>
-    </ul>
-    <h2 id="alarak">Alarak</h2>
-    <ul>
-        <li>Base
-            <ul>
-                <li>Artificer of Souls (P1) can sometimes lose stacks if Supplicants are sacrificed in a single game loop</li>
-                <li>Enemy units knocked into the air by Destruction Wave can heal Alarak through Soul Absorption even if they are not killed</li>
-                <li>Havocs can provide buffs from inside War Prisms</li>
-                <li>If you use /dance with Wrathwalkers, they lose the ability to fire while moving if they move right after dancing</li>
-                <li>Mothership Thermal Lance can auto target Thrasher projectiles and cloaked units if there is at least 1 visible target in its autocast range</li>
-                <li>Slayer Phasing Armor neither cancels Hybrid Destroyer's Graviton Prison nor prevents any damage</li>
-                <li>Structure Overcharge still fires from structures in stasis by a Hybrid Nemesis</li>
-            </ul>
-        </li>
-        <li>Mutators
-            <ul>
-                <li>Alarak's Force Fields do not block Zagara's Baneling Barrage</li>
-                <li>Structure Overcharge can target units with Polarity even though it cannot damage them</li>
+                <li>黑死病造成的自身伤害会计入生物质提供的生命吸取加成</li>
+                <li>尽管拥有狂暴被动，莽兽仍会受到恐惧</li>
+                <li>双刃剑造成的自身伤害会计入生物质提供的生命吸取加成</li>
+                <li>破坏者潜地时会被致命吸引拉动</li>
             </ul>
         </li>
     </ul>
-    <h2 id="artanis">Artanis</h2>
+    <h2 id="alarak">阿拉纳克</h2>
     <ul>
-        <li>Base
+        <li>基础内容
             <ul>
-                <li>Arkship Commandant (P3) Unbound Fanatics do not spawn if Orbital Strikes are targeted on top of structures or sieged Siege Tanks</li>
-                <li>Colossi attacks can kill units that have still not used Guardian Shell</li>
-                <li>Hybrid Behemoths and Hybrid Reavers Consume DNA ability ignores Guardian Shell</li>
-                <li>The lava surge damage on The Vermillion Problem ignores Guardian Shell</li>
+                <li>灵魂巧匠（P1）在同一游戏循环中牺牲多个死徒时，有时会丢失叠加层数</li>
+                <li>被毁灭波击飞的敌方单位即使未被击杀，也可能通过灵魂吸收为阿拉纳克恢复生命值</li>
+                <li>浩劫可在战争棱镜内部提供增益</li>
+                <li>让天罚行者使用/dance后立即移动，会使其失去移动中开火的能力</li>
+                <li>母舰热能长枪的自动施法范围内只要至少有1个可见目标，就可能自动以撕裂者投射物和隐形单位为目标</li>
+                <li>杀戮者的相位护甲既不会解除混合体毁灭者的重力监牢，也无法阻止任何伤害</li>
+                <li>建筑被混合体天罚者置于静滞状态时，建筑超载仍会开火</li>
             </ul>
         </li>
-        <li>Mutators
+        <li>突变因子
             <ul>
-                <li>Black Death damage ignores Guardian Shell</li>
-                <li>Abilities casted by Power Overwhelming ignore Guardian Shell invulnerability and still damage the unit</li>
+                <li>阿拉纳克的力场无法阻挡扎加拉的毒爆虫弹幕</li>
+                <li>建筑超载虽然无法伤害带有极性效果的单位，仍会将其选为目标</li>
             </ul>
         </li>
     </ul>
-    <h2 id="dehaka">Dehaka</h2>
+    <h2 id="artanis">阿塔尼斯</h2>
     <ul>
-        <li>Base
+        <li>基础内容
             <ul>
-                <li>Broodbrother (P3) respawn timer is only based on Dehaka's level</li>
-                <li>Dehaka cannot leap into a group of Siege Tanks</li>
-                <li>Devouring One (P1) Dehaka devours can heal mission objectives like Aurana on Malwarfare, Harvesting Bots on Mist Opportunities, and Miner Evacuation Ships</li>
-                <li>Pack Leaders are not valid targets of Stetmann's H.U.G.S Overload</li>
-                <li>Pack Leaders do not get Zeratul's Void Seeker's Super Cloak</li>
-                <li>Primal Contender (P2) Dehaka can be prevented from despawning by loading him into a Nydus Worm before using Pack Leaders</li>
-                <li>Manually commanding Explosive Creepers to attack ally or your own units will deal 0 damage</li>
-                <li>The range buff that units get when Devouring One (P1) Dehaka devours an air unit is 15 seconds and is unaffected by masteries or Devour level</li>
-                <li>Thorns from Tyrannozors and Dakrun can be blocked by Point Defense Drones</li>
-                <li>When a Dehaka Brother gains the Deadly Reach upgrade with Broodbrother (P3), the other brother gets the upgrade too, regardless of level</li>
-                <li>When Zweihaka spawns, he gets auto-rallied to different locations</li>
+                <li>方舟舰指挥官（P3）的无拘狂热者不会在轨道轰炸以建筑或攻城模式的攻城坦克为目标时生成</li>
+                <li>巨像的攻击可以击杀尚未触发守护之壳的单位</li>
+                <li>混合体巨兽和混合体掠夺者的吞噬DNA技能会无视守护之壳</li>
+                <li>“熔火危机”中的熔岩奔涌伤害会无视守护之壳</li>
             </ul>
         </li>
-        <li>Mutators
+        <li>突变因子
             <ul>
-                <li>Dakrun and Tyrannozors are instantly killed when Double-Edged is active</li>
-                <li>Impalers are pulled by Fatal Attraction while burrowed</li>
+                <li>黑死病伤害会无视守护之壳</li>
+                <li>力量蜕变施放的技能会无视守护之壳提供的无敌效果，仍然对单位造成伤害</li>
             </ul>
         </li>
     </ul>
-    <h2 id="fenix">Fenix</h2>
+    <h2 id="dehaka">德哈卡</h2>
     <ul>
-        <li>Base
+        <li>基础内容
             <ul>
-                <li>Adept Shades can trigger Stasis Wards</li>
-                <li>Adepts and Talis lose their ability to cast shade when they are stasised by Stasis Wards while the Shade is active</li>
-                <li>Akhundelar (P1) Fenix's Cybros Arbiter does not have the same cooldown as the other two suits</li>
-                <li>Disruptors Weapons do not benefit from Vorazun's Strike from the Shadows passive</li>
-                <li>Kaldalis and Warbringer DPS is limited by attack animation and internal weapon delays</li>
-                <li>Kaldalis upon death drops 10 minerals 5 gas when partnered with Han/Horner, despite him not having a gas cost</li>
-                <li>Warbringer ignores armor</li>
+                <li>巢群兄弟（P3）的复活计时只取决于德哈卡的等级</li>
+                <li>德哈卡无法跃入一群攻城坦克之中</li>
+                <li>吞噬者（P1）德哈卡的吞噬可以治疗任务目标，例如“净网行动”中的奥拉娜、“机会渺茫”中的采集机器人，以及“疏散矿工”中的撤离飞船</li>
+                <li>原始首领不是斯台特曼“抱抱”超载的有效目标</li>
+                <li>原始首领无法获得泽拉图虚空寻踪者的超级隐形</li>
+                <li>原始竞争者（P2）德哈卡在使用原始首领前进入坑道虫，可阻止自身消失</li>
+                <li>手动命令爆炸蠕虫攻击盟友或己方单位时会造成0点伤害</li>
+                <li>吞噬者（P1）德哈卡吞噬空中单位后赋予单位的射程增益持续15秒，不受精通或吞噬等级影响</li>
+                <li>暴龙兽和达克伦的尖刺可被定点防御无人机拦截</li>
+                <li>使用巢群兄弟（P3）时，一名德哈卡兄弟获得致命触及升级后，另一名兄弟无论等级如何也会获得该升级</li>
+                <li>双哈卡生成时，会被自动集结到不同位置</li>
             </ul>
         </li>
-        <li>Mutators
+        <li>突变因子
             <ul>
-                <li>AI Champions do not count as Heroic units for Transmutation</li>
-                <li>With Microtransactions, Kaldalis costs gas to command despite not having a gas cost</li>
-                <li>Purifier Conclave does not get targeted by missiles from Missile Command</li>
+                <li>双刃剑生效时，达克伦和暴龙兽会立即死亡</li>
+                <li>穿刺者潜地时会被致命吸引拉动</li>
             </ul>
         </li>
     </ul>
-    <h2 id="horner">Han/Horner</h2>
+    <h2 id="fenix">菲尼克斯</h2>
     <ul>
-        <li>Base
+        <li>基础内容
             <ul>
-                <li>Call in the Fleet does not always travel in the selected direction</li>
-                <li>Flying Reapers do not take damage from Parasitic Bomb casted on them</li>
-                <li>Losing Han units makes Horner units lose some HP</li>
-                <li>Reapers can get stuck in their flying mode</li>
-                <li>Sovereign Battlecruisers deal less damage than stated on the weapon tooltip due to the random delays in the weapon</li>
+                <li>使徒幻象可以触发静滞结界</li>
+                <li>使徒与塔里斯的幻象存在时若被静滞结界定住，会失去施放幻象的能力</li>
+                <li>阿昆德拉（P1）菲尼克斯的赛布罗斯仲裁者与另外两套装甲的冷却时间不同</li>
+                <li>干扰者的武器无法受益于沃拉尊的暗影卫队被动</li>
+                <li>卡达利斯与战争使者的每秒伤害受攻击动画和武器内部延迟限制</li>
+                <li>与韩与霍纳组队时，卡达利斯死亡会掉落10矿物和5瓦斯，尽管他没有瓦斯成本</li>
+                <li>战争使者无视护甲</li>
             </ul>
         </li>
-        <li>Mutators
+        <li>突变因子
             <ul>
-                <li>Missile Command can target the Tech Lab even though it has no HP bar</li>
-                <li>The Starport does not respawn if captured by Amon through Eminent Domain</li>
-                <li>The Starport does not respawn if destroyed by a Propagator</li>
-                <li>Widow Mines are pulled by Fatal Attraction while burrowed</li>
-                <li>Widow Mines lock on and fire at units in Polarity</li>
+                <li>对转化而言，AI勇士不视为英雄单位</li>
+                <li>微交易生效时，命令卡达利斯会消耗瓦斯，尽管他本身没有瓦斯成本</li>
+                <li>净化者议会不会成为飞弹大战的飞弹目标</li>
             </ul>
         </li>
     </ul>
-    <h2 id="karax">Karax</h2>
+    <h2 id="horner">韩与霍纳</h2>
     <ul>
-        <li>Base
+        <li>基础内容
             <ul>
-                <li>Colossus burn damage is counted towards Spear of Adun damage in end of game stats</li>
+                <li>呼叫舰队并不总是沿所选方向移动</li>
+                <li>飞行中的收割者不会受到施加在其身上的寄生炸弹伤害</li>
+                <li>损失韩的单位会使霍纳的单位损失部分生命值</li>
+                <li>收割者可能卡在飞行模式</li>
+                <li>由于武器存在随机延迟，主权战列巡航舰造成的伤害低于武器提示所述数值</li>
             </ul>
         </li>
-        <li>Mutators
+        <li>突变因子
             <ul>
-                <li>All of Karax top bar costs 10 minerals 5 gas per cast with Microtransactions</li>
-                <li>Chokers make Sentinels unable to die while Reconstruction is available</li>
-                <li>Temporal Field makes Sentinels unable to die while Reconstruction is available</li>
+                <li>飞弹大战可以科技实验室为目标，尽管它没有生命条</li>
+                <li>星港被埃蒙通过强制征用占领后不会重生</li>
+                <li>星港被传播者摧毁后不会重生</li>
+                <li>寡妇雷潜地时会被致命吸引拉动</li>
+                <li>寡妇雷会锁定并攻击带有极性效果的单位</li>
             </ul>
         </li>
     </ul>
-    <h2 id="kerrigan">Kerrigan</h2>
+    <h2 id="karax">卡拉克斯</h2>
     <ul>
-        <li>Base
+        <li>基础内容
             <ul>
-                <li>Ally units cannot enter Omega Worm if the ally leaves the game</li>
-                <li>Omega Worms can be healed by Raynor's Medics</li>
-                <li>Immobilization Wave deals 199 damage instead of the expected 200 with 30 points into the Augmented Immobilization Wave Mastery</li>
+                <li>结算统计会把巨像的灼烧伤害计入亚顿之矛伤害</li>
             </ul>
         </li>
-        <li>Mutators
+        <li>突变因子
             <ul>
-                <li>Chokers make Torrasque Ultralisk unable to die while resurrection is available</li>
-                <li>Folly of Man (P2) lightning strikes can hit units under Polarity, stunning them, but not damaging them</li>
-                <li>Kerrigan can get pulled by Fatal Attraction while burrowed, moving her hitbox, but not the model</li>
-                <li>Temporal Field makes Torrasque Ultralisk unable to die while resurrection is available</li>
+                <li>微交易生效时，卡拉克斯所有面板技能每次施放都消耗10矿物和5瓦斯</li>
+                <li>重构可用时，扼杀者会使哨兵无法死亡</li>
+                <li>重构可用时，时间场会使哨兵无法死亡</li>
             </ul>
         </li>
     </ul>
-    <h2 id="mengsk">Mengsk</h2>
+    <h2 id="kerrigan">凯瑞甘</h2>
     <ul>
-        <li>Base
+        <li>基础内容
             <ul>
-                <li>Aegis Guard at Rank 2 will ignore all tags for its Slow debuff</li>
-                <li>Aegis Guard rank 2 splash deals splash damage dependent of main target of attack and not the splash targets themselves</li>
-                <li>Attacks from Bunkers don't draw aggro to Bunkers if they are outside of enemy vision</li>
-                <li>Blackhammer in Overwatch mode hits ground units below targeted air unit</li>
-                <li>Bunkers are immune to Disabling Cloud and Disruption Web</li>
-                <li>Emperor's Shadows do not autocast Labyrinth Cloak when taking damage</li>
-                <li>Laborers can construct structures while carrying crystals on The Vermillion Problem.</li>
-                <li>Principal Proletariat's (P2) Supply cost increase does not count for unlocking "The Best of the Best of the Best, Emperor" achievement</li>
-                <li>Rank 3 Pyrokinetic Immolation from Emperor's Shadow deals 50 damage area of effect when it expires even though the unit has not died</li>
-                <li>Shock Divison + Intercessor deals different damages at different ranks to what is listed on the weapon stat</li>
-                <li>Troopers inside bunkers can pick up dropped weapons</li>
+                <li>盟友离开游戏后，其单位无法进入欧米伽虫洞</li>
+                <li>欧米伽虫洞可以被雷诺的医疗兵治疗</li>
+                <li>定身波造成199点伤害，而非预期的200点，此时强化定身波精通投入了30点</li>
             </ul>
         </li>
-        <li>Mutators
+        <li>突变因子
             <ul>
-                <li>Bunkers do not catch fire with Scorched Earth at melee range</li>
+                <li>复活可用时，扼杀者会使雷兽的暴龙兽形态无法死亡</li>
+                <li>人类之愚（P2）的闪电可命中带有极性效果的单位并使其昏迷，但不会造成伤害</li>
+                <li>凯瑞甘潜地时会被致命吸引拉动，其碰撞箱会移动，但模型不会</li>
+                <li>复活可用时，时间场会使雷兽的暴龙兽形态无法死亡</li>
             </ul>
         </li>
     </ul>
-    <h2 id="nova">Nova</h2>
+    <h2 id="mengsk">蒙斯克</h2>
     <ul>
-        <li>Base
+        <li>基础内容
             <ul>
-                <li>Infiltration Specialist (P3) Nova gets decloaked when firing or sniping if in Vorazun's Dark Pylon range</li>
-                <li>Nova can switch modes and Blink during respawn animation from her beacon</li>
-                <li>Nova Soldier of Fortune (P1) production buff only applies if at least one charge is used</li>
-                <li>Nova's units are not resistant to Stun effects as stated by her level 1 trait, but stun duration is halved</li>
-                <li>Railgun Turrets do not deal damage when they attack a target at maximum range.</li>
+                <li>等级2的帝国卫队施加减速减益时会忽略所有标签</li>
+                <li>等级2帝国卫队的溅射伤害取决于主攻击目标，而非各个被溅射目标本身</li>
+                <li>地堡位于敌方视野外时，从地堡发起的攻击不会将仇恨引向地堡</li>
+                <li>黑色战锤处于监视模式时，会命中目标空中单位下方的地面单位</li>
+                <li>地堡免疫致盲云雾和干扰网</li>
+                <li>帝国暗影受到伤害时不会自动施放迷宫隐形</li>
+                <li>在“熔火危机”中，劳工携带水晶时仍可建造建筑。</li>
+                <li>首席劳工（P2）增加的人口成本不会计入“皇帝陛下，精益求精”成就的解锁条件</li>
+                <li>等级3帝国暗影的热能焚化结束时，即使单位尚未死亡，也会造成50点范围伤害</li>
+                <li>震地部队与中保者组合在不同等级造成的伤害与武器面板所列数值不符</li>
+                <li>地堡内的帝国士兵可以拾取掉落的武器</li>
+            </ul>
+        </li>
+        <li>突变因子
+            <ul>
+                <li>焦土生效时，地堡在近战距离内不会起火</li>
             </ul>
         </li>
     </ul>
-    <h2 id="raynor">Raynor</h2>
+    <h2 id="nova">诺娃</h2>
     <ul>
-        <li>Base
+        <li>基础内容
             <ul>
-                <li>Hyperion has a higher attack speed while moving</li>
-                <li>Raynor Battlecruisers deal less damage than stated on the weapon tooltip due to the random delays in the weapon</li>
-                <li>Medics can heal Spine/Spore Crawlers and Dehaka's Primal Wurms.</li>
-            </ul>
-        </li>
-        <li>Mutators
-            <ul>
-                <li>Hyperion attacks units in Polarity, even though it cannot damage them</li>
-                <li>Hyperion keeps firing when debuffed with Moment of Silence</li>
-                <li>Hyperion keeps firing when Feared</li>
+                <li>潜入专家（P3）诺娃处于沃拉尊黑暗水晶塔范围内时，开火或狙击会解除隐形</li>
+                <li>诺娃在信标处播放重生动画期间可以切换模式和使用闪现</li>
+                <li>财富战士（P1）诺娃的生产增益只有在至少消耗一次充能后才会生效</li>
+                <li>诺娃的单位并不像等级1特性所述那样免疫昏迷效果，但昏迷持续时间会减半</li>
+                <li>磁轨炮台攻击最大射程处的目标时不会造成伤害。</li>
             </ul>
         </li>
     </ul>
-    <h2 id="stetmann">Stetmann</h2>
+    <h2 id="raynor">雷诺</h2>
     <ul>
-        <li>Base
+        <li>基础内容
             <ul>
-                <li>Healing Zones do not heal units during a delay if they have a natural regeneration that occurs after that delay (e.g. Stukov's Apocalisk)</li>
-                <li>Mecha Banelings are immune to the lava surge on The Vermillion Problem when Egonergy Efficient Barrier is researched</li>
-                <li>Mecha Hydralisks' JUICED Payload is unaffected by attack upgrades</li>
-                <li>Mecha Lurkers that are immobilized/stasis'ed while using Tunnel of TERROR are permanently stuck in that state</li>
-                <li>Mecha Ultralisks' Mecha Mooch Module can drain life from friendly mechanical objectives</li>
-                <li>Mecha Zerglings attack with Synthetic Adrenal Pumps upgraded do not consume energy per attack</li>
-                <li>Oil Baron (P3) stacks can be given to Spine and Spore Crawlers</li>
-                <li>Point Defense Drones do not shoot down Super Gary's attacks</li>
+                <li>海伯利昂号移动时攻击速度更高</li>
+                <li>由于武器存在随机延迟，雷诺的战列巡航舰造成的伤害低于武器提示所述数值</li>
+                <li>医疗兵可以治疗脊针爬虫、孢子爬虫和德哈卡的原始蠕虫。</li>
             </ul>
         </li>
-        <li>Mutators
+        <li>突变因子
             <ul>
-                <li>Mecha Banelings are immune to Going Nuclear nukes when Egonergy Efficient Barrier is researched</li>
-                <li>Satellites will only respawn once before being destroyed with Eminent Domain active</li>
+                <li>海伯利昂号虽然无法伤害带有极性效果的单位，仍会攻击它们</li>
+                <li>海伯利昂号受到沉默时刻减益后仍会继续开火</li>
+                <li>海伯利昂号受到恐惧时仍会继续开火</li>
             </ul>
         </li>
     </ul>
-    <h2 id="stukov">Stukov</h2>
+    <h2 id="stetmann">斯台特曼</h2>
     <ul>
-        <li>Base
+        <li>基础内容
             <ul>
-                <li>Cloaked Infested Banshees do not benefit from Vorazun's Strike from the Shadows passive</li>
-                <li>Infest Structure spawns double the Broodlings when used on ally Nydus/Omega Worms</li>
-                <li>Infested Diamondbacks are not affected by the Mech Attack Speed mastery</li>
-                <li>Infested Diamondbacks do not get Vorazun’s Strike from the Shadows passive if they are cloaked</li>
-                <li>Infested Diamondbacks ignore armor</li>
-                <li>Using Chrono Boost on the Infested Colonist Compound does not increase spawn rate</li>
-                <li>Volatile Infested dropped by Infested Tanks on death cost supply</li>
+                <li>如果单位在延迟结束后会触发自然恢复（例如斯托科夫的末日巨兽），治疗区域在该延迟期间不会治疗该单位</li>
+                <li>研究艾能高效屏障后，机械毒爆虫免疫“熔火危机”中的熔岩奔涌</li>
+                <li>机械刺蛇的强化弹头不受攻击升级影响</li>
+                <li>机械潜伏者使用恐惧隧道时若被定身或静滞，会永久卡在该状态</li>
+                <li>机械雷兽的机械掠夺模块可以从友方机械任务目标吸取生命值</li>
+                <li>升级合成肾上腺泵后，机械跳虫攻击时不会消耗能量</li>
+                <li>石油大亨（P3）的层数可以赋予脊针爬虫和孢子爬虫</li>
+                <li>定点防御无人机不会拦截超级盖瑞的攻击</li>
             </ul>
         </li>
-        <li>Mutators
+        <li>突变因子
             <ul>
-                <li>Infested Compound and Infested Bunkers do not spawn Infested while in control of Amon through Eminent Domain</li>
+                <li>研究艾能高效屏障后，机械毒爆虫免疫核弹来袭的核弹</li>
+                <li>强制征用生效时，卫星被摧毁前只会重生一次</li>
             </ul>
         </li>
     </ul>
-    <h2 id="swann">Swann</h2>
+    <h2 id="stukov">斯托科夫</h2>
     <ul>
-        <li>Base
+        <li>基础内容
             <ul>
-                <li>Irridated units inside the transport damages outside the transport</li>
-                <li>Regenerative Bio-Steel upgrade overrides healing for Stetmann's H.U.G.S field</li>
-                <li>SCV's auto construction AI is unpredictable</li>
-                <li>Siege tanks and Thors killed in Hercules will only transform into wreckage form once unloaded</li>
-                <li>Targeting Optics upgrade does not increase Cyclone's Lock-on Range</li>
-                <li>Units lifted by Hybrid Destroyer's Graviton Prison can be loaded into Hercules by manually using the "Load" command on the Hercules</li>
+                <li>隐形的被感染女妖无法受益于沃拉尊的暗影卫队被动</li>
+                <li>感染建筑用于友方坑道虫或欧米伽虫洞时，会生成两倍巢虫</li>
+                <li>被感染响尾蛇不受机械单位攻击速度精通影响</li>
+                <li>被感染响尾蛇隐形时无法获得沃拉尊的暗影卫队被动</li>
+                <li>被感染响尾蛇无视护甲</li>
+                <li>对被感染平民收容所使用时间加速不会提高生成速度</li>
+                <li>被感染攻城坦克死亡时掉落的爆炸感染体会占用人口</li>
             </ul>
         </li>
-        <li>Mutators
+        <li>突变因子
             <ul>
-                <li>Amon's Karax can spawn structures on top of burrowed Flaming Betties</li>
-                <li>Pulse Cannon does not do full damage with Evasive Maneuvers due to it dealing six instances of damage instead of one large damage tick</li>
-                <li>Pulse Cannon does not 1-shot units with Barrier due to it dealing six instances of damage instead of one large damage tick, allowing Barrier to trigger</li>
+                <li>被感染平民收容所和被感染地堡被埃蒙通过强制征用控制时，不会生成感染体</li>
             </ul>
         </li>
     </ul>
-    <h2 id="tychus">Tychus</h2>
+    <h2 id="swann">斯旺</h2>
     <ul>
-        <li>Base
+        <li>基础内容
             <ul>
-                <li>50% outlaw discount does not get removed if an ally Tychus leaves the game before purchasing their first outlaw</li>
-                <li>Nikara cannot heal Archons or Dark Archons without the Procyon Twin Heal Beam Gauntlet upgrade</li>
-                <li>Nikara does not heal Zeratul's Telbrus Legion by beam</li>
-                <li>Waiting on the Custom Mutator selection screen counts as in-game time, allowing Tychus to spawn multiple outlaws as soon as Tychus spawns.</li>
+                <li>运输载具内受到辐射的单位会对载具外造成伤害</li>
+                <li>再生生物钢升级会覆盖斯台特曼“抱抱”区域的治疗</li>
+                <li>SCV的自动建造AI行为难以预测</li>
+                <li>在赫尔克里斯运输机内死亡的攻城坦克和雷神，只有卸载后才会变为残骸形态</li>
+                <li>目标锁定光学系统升级不会提高飓风的锁定射程</li>
+                <li>被混合体毁灭者重力监牢抬起的单位，可以通过手动对赫尔克里斯运输机使用“装载”命令装入其中</li>
             </ul>
         </li>
-        <li>Mutators
+        <li>突变因子
             <ul>
-                <li>Black Death does not kill Outlaws, but leaves them at 1 HP</li>
-                <li>Blaze igniting units with wildfire makes some units respawn infinitely with Just Die! active</li>
-            </ul>
-        </li>
-    </ul>
-    <h2 id="vorazun">Vorazun</h2>
-    <ul>
-        <li>Base
-            <ul>
-                <li>Void Shade units on Scythe of Amon cannot be mind-controlled by Dark Archons</li>
-                <li>Time Stop delays Baneling death</li>
-                <li>With Withering Siphon (P2), Void Stasis on Dark Templars do not work on Hybrids, but does with Shadow Guard</li>
-                <li>With Withering Siphon (P2), Void Thrashers cannot be stunned with Centurions</li>
-            </ul>
-        </li>
-        <li>Mutators
-            <ul>
-                <li>Black Death deals 0.75% damage per tick instead of 1% with Withering Siphon (P2)</li>
-                <li>Hardened Will does not get removed from units while Time Stop is active</li>
-                <li>With Withering Siphon (P2), Black Death does not kill Vorazun's units, but leaves them at 1 HP</li>
-                <li>Vorazun can deal damage to units under Polarity using Withering Siphon (P2) effects</li>
+                <li>埃蒙的卡拉克斯可以在潜地的火焰炮台上方生成建筑</li>
+                <li>由于脉冲炮造成六段伤害而非单次大额伤害，规避机动生效时无法造成完整伤害</li>
+                <li>由于脉冲炮造成六段伤害而非单次大额伤害，会触发屏障，因此无法1击消灭带有屏障的单位</li>
             </ul>
         </li>
     </ul>
-    <h2 id="zagara">Zagara</h2>
+    <h2 id="tychus">泰凯斯</h2>
     <ul>
-        <li>Base
+        <li>基础内容
             <ul>
-                <li>Scourge do not appear on the units lost/made tabs in observer interfaces</li>
+                <li>盟友泰凯斯在购买首名歹徒前离开游戏，50%的歹徒折扣不会移除</li>
+                <li>没有南河三双重治疗光束护手升级时，尼卡拉无法治疗执政官或黑暗执政官</li>
+                <li>尼卡拉不会用光束治疗泽拉图的泰布鲁斯军团</li>
+                <li>在自定义突变因子选择界面等待会计入游戏时间，使泰凯斯生成时可以立即生成多名歹徒。</li>
             </ul>
         </li>
-        <li>Mutators
+        <li>突变因子
             <ul>
-                <li>Zagara while burrowed gets pulled by Fatal Attraction</li>
-                <li>Zagara's Baneling Barrage does Double Edged damage only if the Barrage hits a structure</li>
-            </ul>
-        </li>
-    </ul>
-    <h2 id="zeratul">Zeratul</h2>
-    <ul>
-        <li>Base
-            <ul>
-                <li>Artifacts can be trapped inside a wall of structures on certain maps</li>
-                <li>Orbital Assimilators drop scrap with a Han/Horner ally</li>
-                <li>Avatar of Essence buffs can be stacked using Void Arrays by quickly loading and unloading units</li>
-                <li>Legion calldowns can be have their warp-ins delayed by stasis abilities</li>
-                <li>Losing a Constructs Bay with more than 8 supply of units in a Void Array will cause the Void Array's cargo bar to grow extremely large</li>
-                <li>Herald of the Void Zeratul Tornadoes do not damage units in Time Stop</li>
-                <li>Void Templars gain Void Fury even if Zeratul is not at level 3 as long as the second artifact is picked up</li>
-                <li>Zeratul Avatars do not gain any attack or armor when collecting more than 3 artifacts with the Knowledge Seeker (P2) prestige</li>
-            </ul>
-        </li>
-        <li>Mutators
-            <ul>
-                <li>Avatar of Essence makes units spawned from Aggressive Deployment, Void Rifts, Reanimators drop Biomass and Essence when Devolved</li>
+                <li>黑死病不会杀死歹徒，而会使其剩余1点生命值</li>
+                <li>死了又死生效时，布雷泽用野火点燃单位会使部分单位无限重生</li>
             </ul>
         </li>
     </ul>
-    <h2 id="missions">Missions</h2>
+    <h2 id="vorazun">沃拉尊</h2>
     <ul>
-        <li>Chain of Ascension: All spawned Bonus objectives are auto-completed at the end of the mission</li>
-        <li>Chain of Ascension: Amon does not attack Solarite Cocoons that Elemental casts even if its his own units trapped</li>
-        <li>Chain of Ascension: The Slayn Elemental can trap Amon's units in its Solarite Cocoon</li>
-        <li>Dead of Night: Heavy Weapons Specialist (P1) Swann's Laser Drill does not slow down the Stank.</li>
-        <li>Dead of Night: Hunterlings can stun units with the Frenzied buff</li>
-        <li>Dead of Night: Volatile Infested spawned from the Virophage do not burn up during the day cycle</li>
-        <li>Lock &amp; Load: Vorazun's Time Stop causes the AI to wake up</li>
-        <li>Lock &amp; Load: Polarity removal (e.g. on Wheel of Misfortune mutations) causes the AI to wake up</li>
-        <li>Lock &amp; Load: The Xel'Naga Construct can hit units in transports</li>
-        <li>Miner Evacuation: Abathur's Vipers can use Abduct on ships outside of vision range through fog of war</li>
-        <li>Miner Evacuation: Always plays voice lines that the enemy comp is Terran</li>
-        <li>Miner Evacuation: Blightbringer can be body-blocked, preventing him from exiting the cave and using abilities</li>
-        <li>Miner Evacuation: Blightbringer takes a large amount of damage if Crooked Sam's Demolition Charge detonates while he is burrowed</li>
-        <li>Miner Evacuation: Evacuation Ship models sometimes do not disappear after launch</li>
-        <li>Miner Evacuation: If a Militarized Transport is spawned by the end of ship launch and doesn't reach it, the Transport moves to a player's base and releases reapers there</li>
-        <li>Miner Evacuation: Playing it on Retry Brutal+ will give Infested army composition instead of whatever is listed</li>
-        <li>Miner Evacuation: Reminds players to complete optionals even if they are already complete</li>
-        <li>Miner Evacuation: The Eradicators can be killed before they activate</li>
-        <li>Miner Evacuation: Retrying the mission on Brutal+ difficulty displays "Infested" as the attack wave composition</li>
-        <li>Miner Evacuation: When Eradicators time out, they can be body-blocked from entering the facility and killed, allowing bonus completion after timeout</li>
-        <li>Miner Evacuation: With multiple ships active Infested sometimes head towards wrong ship</li>
-        <li>Mist Opportunities: Killing the bonus objective before Stetmann finishes his line about it makes it unable to be done</li>
-        <li>Oblivion Express: Air components of attack waves get teleported to the gather points once the entire attack wave is formed</li>
-        <li>Oblivion Express: Damage is lost when attacking trains with the Diffusion mutator active</li>
-        <li>Oblivion Express: Just Die! sometimes fails to occur on trains</li>
-        <li>Oblivion Express: Trains do not get the Plague debuff normally, however, if a train is present on the map and Black Death is activated (through Chaos Studios), train carriages will get the Plague debuff.</li>
-        <li>Oblivion Express: Train carriages take 50% damage only when Diffusion is active</li>
-        <li>Rifts to Korhal: Void Shard attacks can be reflected by Zeratul's Xel'Naga Shieldguards</li>
-        <li>Scythe of Amon: Death Grip Crystals are treated as units and not structures</li>
-        <li>Scythe of Amon: Death Grip Crystals outside vision range do not create sprites that link to units that it is targeting</li>
-        <li>Temple of the Past: Drop Attack patterns around the temple are not randomized as is intended with Pattern A</li>
-        <li>Temple of the Past: Hybrids will sometimes fly past the player's base, past the Temple and travel towards the opposite end of the map</li>
-        <li>Temple of the Past: The Temple can spawn at reduced HP if Temporal Field is active</li>
-        <li>The Vermillion Problem: Amon's units are immune to lava surges despite the AI respecting the surges</li>
-        <li>The Vermillion Problem: Lava Bursts from the mutator are treated the same as the Lava Spouts in the mission, triggering Donny Vermillion's voice line</li>
+        <li>基础内容
+            <ul>
+                <li>“埃蒙之镰”中的虚空暗影单位无法被黑暗执政官精神控制</li>
+                <li>时间停止会延迟毒爆虫的死亡</li>
+                <li>使用枯萎虹吸（P2）时，黑暗圣堂武士的虚空静滞对混合体无效，但暗影卫队的虚空静滞有效</li>
+                <li>使用枯萎虹吸（P2）时，百夫长无法击晕虚空撕裂者</li>
+            </ul>
+        </li>
+        <li>突变因子
+            <ul>
+                <li>使用枯萎虹吸（P2）时，黑死病每次造成0.75%伤害，而非1%</li>
+                <li>时间停止生效时，单位的坚毅意志不会移除</li>
+                <li>使用枯萎虹吸（P2）时，黑死病不会杀死沃拉尊的单位，而会使其剩余1点生命值</li>
+                <li>沃拉尊可以利用枯萎虹吸（P2）的效果伤害带有极性效果的单位</li>
+            </ul>
+        </li>
     </ul>
-    <h2 id="mutators">Mutators</h2>
+    <h2 id="zagara">扎加拉</h2>
     <ul>
-        <li>Aggressive Deployment drops will not spawn if a player's only valid drop target is placed over unpathable terrain</li>
-        <li>Using the above bug, Aggressive Deployment will drop a max'ed out wave if it can drop a subsequent wave</li>
-        <li>Angry Turkeys from Turkey Shoot do not get hit by some splash damage effects such as Super Gary's E-Gorbs</li>
-        <li>Boom Bots do not trigger Moment of Silence, despite being Heroic.</li>
-        <li>Double-Edged heals at 8 HP/s instead of the listed 10 HP/s</li>
-        <li>Eminent Domain: Sieged Up Siege Tanks cannot capture structures with Eminent Domain</li>
-        <li>Going Nuclear still hits mineral lines and gasses of player bases and expansions</li>
-        <li>Gift Exchange can roll Overcharged Shuttles on maps where it does nothing</li>
-        <li>Gifts can be claimed by non-units such as Blizzards, Power Fields, Essence Drops, etc.</li>
-        <li>Heroes from the Storm does not spawn Heroes on Miner Evacuation and Scythe of Amon</li>
-        <li>On Wheel of Misfortune mutations, Mineral Shields will activate on all Mineral Patches, regardless of mission time.</li>
-        <li>Missile Command missiles can be Reclaimed and Mind Controlled</li>
-        <li>Moment of Silence pauses Protoss Warp-ins while the debuff lasts</li>
-        <li>Propagators can be path-blocked by workers</li>
-        <li>Shader settings set to Medium and below will cause the Darkness mutator to not work correctly and reveal terrain.</li>
-        <li>Slim Pickings does not reset Mineral counts in Mineral Patches if it gets removed during a Wheel of Misfortune mutation. </li>
-        <li>Speed Freaks speeds up the trains on Oblivion Express if it gets removed during a Wheel of Misfortune mutation.</li>
-        <li>Temporal Field interrupts chanelling abilities.</li>
-        <li>Time Warp interrupts chanelling abilities.</li>
-        <li>Void Reanimators can target units on unpathable terrain that they can't reach, making them get stuck</li>
-        <li>When transmutating an air unit sometimes the unit will transmute to ground unit in an impassable terran and be stuck</li>
-        <li>With Transmutation active, some units transform into tier 1 units due to not having a tier associated with them. eg Mothership and Stank</li>
+        <li>基础内容
+            <ul>
+                <li>监察者界面的单位损失与生产标签页中不会显示爆蚊</li>
+            </ul>
+        </li>
+        <li>突变因子
+            <ul>
+                <li>扎加拉潜地时会被致命吸引拉动</li>
+                <li>扎加拉的毒爆虫弹幕只有命中建筑时才会触发双刃剑伤害</li>
+            </ul>
+        </li>
     </ul>
-    <h2 id="QOL">Quality of Life</h2>
+    <h2 id="zeratul">泽拉图</h2>
     <ul>
-        <li>Abathur: Amon units killed by non-player instances like Thrasher attacks will not drop Biomass</li>
-        <li>Abathur: Burrowed Swarm Hosts and Unburrowed Swarm Hosts are treated as different units when control-clicked</li>
-        <li>Abathur: Swarm Queen Rapid Transfusion autocast does not cast on buildings despite being valid targets</li>
-        <li>Alarak: Alarak becomes fully controllable 3-4 seconds slower than other heroes</li>
-        <li>Alarak: Havocs cannot correctly move command follow allied units even if target lock auto-cast is toggled off</li>
-        <li>Artanis: Orbital strikes remaining charges can be accidently canceled by clicking in fog of war</li>
-        <li>Dehaka: Primal and Creeper Hosts have too high target priority</li>
-        <li>Han/Horner: SCV's constructing Assault Galleons cannot be issued commands to stop construction</li>
-        <li>Karax: Architect of War (P1) structures will start to cause lag if they are attacked for a long period of time</li>
-        <li>Karax: Energizer Reclamation does not break Han/Horner's Raven Analyze Weakness on the targeted unit</li>
-        <li>Karax: Shield Batteries won’t automatically recharge structures that can’t attack</li>
-        <li>Karax: Solar Lance remaining charges can be accidently canceled by clicking in fog of war</li>
-        <li>Mengsk: Troopers may not drop using Drop Pods if there is a structure at the waypoint</li>
-        <li>Mengsk: Labourers converting into Troopers at a Command Center do not drop in the resources they are carrying</li>
-        <li>Nova: Automated Refineries mine at a slower rate compared to Orbital Assimilators</li>
-        <li>Stetmann: Burrowed Mech Lurkers are treated as different units when control-clicked</li>
-        <li>Stukov: Apocalisk does not autocast Cluster Rockets when commanded to attack a specific target</li>
-        <li>Stukov: Stukov cannot root buildings in the fog of war</li>
-        <li>Swann: Swann's Drill does damage at 0.1 second intervals, but is affected by Armor</li>
-        <li>Vorazun: Dark Templar Shadow Fury gets denied casting on high ground</li>
-        <li>Vorazun: Disruption Web is autocasted on targets in stasis</li>
-        <li>Vorazun: Disruptor death animation when it dies during time stop is very slow</li>
-        <li>Zagara: Scourge Nests cannot set rally points until construction is complete</li>
-        <li>Zagara: Queens can Transfuse targets that are already at full HP</li>
-        <li>Zeratul: Death Grip Crystals on Scythe of Amon can destroy Zeratul's Legion Calldowns before they warp in</li>
-        <li>Hybrids on Part and Parcel can teleport onto unpathable terrain, preventing them from being attacked by melee units</li>
-        <li>Boom Bot codes cannot be input too quickly</li>
+        <li>基础内容
+            <ul>
+                <li>在某些地图中，神器可能被困在建筑组成的墙内</li>
+                <li>与韩与霍纳组队时，轨道同化舱会掉落废料</li>
+                <li>快速将单位装入和卸出虚空传送阵，可以叠加精华化身的增益</li>
+                <li>静滞技能会延迟军团召唤的折跃过程</li>
+                <li>虚空传送阵内装有超过8人口的单位时失去构造体设施，会导致传送阵的载货栏变得极长</li>
+                <li>虚空先驱泽拉图的龙卷风无法伤害时间停止中的单位</li>
+                <li>只要拾取第二件神器，即使泽拉图尚未达到等级3，虚空圣堂武士也会获得虚空之怒</li>
+                <li>知识探求者（P2）泽拉图收集超过3件神器后，化身不会再获得攻击力或护甲</li>
+            </ul>
+        </li>
+        <li>突变因子
+            <ul>
+                <li>精华化身使进攻部署、虚空裂隙和复生者生成的单位在退化时掉落生物质和精华</li>
+            </ul>
+        </li>
     </ul>
-    <h2 id="aesthetic">Aesthetic</h2>
+    <h2 id="missions">任务</h2>
     <ul>
-        <li>Abathur: Canceling a morph causes various visual bugs</li>
-        <li>Alarak: Destroyers dont do their attack animation if they start firing while doing their warp animation</li>
-        <li>Alarak: Tyrant Ascendant (P2) plays voice lines for the Summon Death Fleet calldown</li>
-        <li>Alarak: Shadow of Death (P3) plays voice lines for the Summon Death Fleet calldown even if the Mothership has already been summoned</li>
-        <li>Alarak: Transforming a War Prism while in a Time Warp creates a visual discrepancy in the Prism's mode</li>
-        <li>Artanis: Immortals lack death sound</li>
-        <li>Dehaka: Units that get Devouring One (P1) Dehaka's thorns buff, have their spikes come from Dehaka instead of the unit themselves when they get hit</li>
-        <li>Dehaka: When Devouring One (P1) Dehaka dies with the thorns buff, spikes come out of the ground where he died when ally units with thorns buff gets hit</li>
-        <li>Dehaka: Primal Contender (P2) can have a Dehaka burrow animation fail where Dehaka is visable with the Pack Leader but is actually burrowed</li>
-        <li>Dehaka: The Naughty List mutator replaces Dehaka’s level with his killcount</li>
-        <li>Dehaka: Vipers stretch when devoured by Dehaka</li>
-        <li>Fenix: Colossi lack death sound</li>
-        <li>Fenix: Taldarin doesn't use Turret tracking</li>
-        <li>Fenix: Taldarin does not show a visual effect when Barrier is used</li>
-        <li>Han/Horner: Level 1 does not have Strike Fighters unlocked but Horner will sometimes say to build Strike Fighter Platforms</li>
-        <li>Karax: Casting purifier beam too quickly can make the camera zoom out until it is casted again</li>
-        <li>Karax: Colossi and Immortals lack death sound</li>
-        <li>Kerrigan: Casting assimulation aura while leaping can change the visuals of the aura</li>
-        <li>Kerrigan: When Kerrigan uses Leaping Strike on jumping enemies like Hunterlings, she will keep the height she had when she intercepted the unit</li>
-        <li>Kerrigan: When Raptor Zerglings leap, they are counted towards Units Made count</li>
-        <li>Mengsk: Holograms that appear on his Imperial Witnesses after the Amplified Airwaves upgrade has been researched sometimes shoot high up into space</li>
-        <li>Mengsk: Structures do not show burning effect when they have low HP</li>
-        <li>Mengsk: When trasnforming Laborers and Troopers between modes, they are counted towards Units Made count</li>
-        <li>Mengsk: When cloaked units attack for the first time, Mengsk gives the "Attack Wave Incoming" voice line before the "Make Detection" voice line</li>
-        <li>Raynor: If Raynor's Dusk Wings from Banshee Airstrike are hit by a Twister while flying away, a black dropship will appear</li>
-        <li>Stetmann: When playing with Signal Savant (P1), Stetmann gives the "Upgrade Gary" voice line</li>
-        <li>Stukov: Rooting a large number of Infested Bunkers causes the "Large Army Lost" voice line to play</li>
-        <li>Zeratul: Transforming a Void Array while in a Time Warp creates a visual discrepancy in the Array's mode</li>
-        <li>Zeratul: Void Apparitions are counted towards Units Made count</li>
-        <li>When a player unit kills a missile from Missile Command with Just Die! active, the Just Die! respawn animation occurs on the player unit instead of the missile</li>
+        <li>飞升之链：所有已生成的奖励目标会在任务结束时自动完成</li>
+        <li>飞升之链：即使太阳能茧困住了埃蒙自己的单位，埃蒙也不会攻击元素生物施放的太阳能茧</li>
+        <li>飞升之链：斯雷恩元素生物可以用太阳能茧困住埃蒙的单位</li>
+        <li>死亡之夜：重武器专家（P1）斯旺的激光钻机无法使畸变巨兽减速。</li>
+        <li>死亡之夜：猎杀虫可以击晕拥有狂暴增益的单位</li>
+        <li>死亡之夜：病毒吞噬者生成的爆炸感染体不会在白昼周期中烧死</li>
+        <li>天锁：沃拉尊的时间停止会唤醒AI</li>
+        <li>天锁：移除极性（例如在厄运之轮突变中）会唤醒AI</li>
+        <li>天锁：萨尔那加构造体可以命中运输载具内的单位</li>
+        <li>疏散矿工：阿巴瑟的飞蛇可以隔着战争迷雾，对视野外的飞船使用绑架</li>
+        <li>疏散矿工：总会播放敌方部队组成为人族的语音</li>
+        <li>疏散矿工：疫病使者可能被单位堵住，导致其无法离开洞穴和使用技能</li>
+        <li>疏散矿工：疫病使者潜地时，歪嘴山姆的爆破炸药爆炸会对其造成大量伤害</li>
+        <li>疏散矿工：撤离飞船起飞后，其模型有时不会消失</li>
+        <li>疏散矿工：飞船起飞结束时，如果已生成的武装运输船未能抵达，它会前往玩家基地并在那里放出收割者</li>
+        <li>疏散矿工：通过重试残酷+游玩时，敌方部队会变为感染体编成，而非所列编成</li>
+        <li>疏散矿工：即使可选目标已经完成，仍会提醒玩家完成它们</li>
+        <li>疏散矿工：根除者可以在激活前被消灭</li>
+        <li>疏散矿工：以残酷+难度重试任务时，进攻波次编成会显示为“感染体”</li>
+        <li>疏散矿工：根除者超时后，可以堵住其进入设施的路线并将其消灭，从而在超时后完成奖励目标</li>
+        <li>疏散矿工：多艘飞船同时激活时，感染体有时会前往错误的飞船</li>
+        <li>机会渺茫：在斯台特曼说完奖励目标相关台词前将其消灭，会导致该目标无法完成</li>
+        <li>湮灭快车：整个进攻波次形成后，其中的空中单位会被传送到集结点</li>
+        <li>湮灭快车：扩散突变因子生效时，攻击列车会损失伤害</li>
+        <li>湮灭快车：死了又死有时不会在列车上触发</li>
+        <li>湮灭快车：列车通常不会获得瘟疫减益；但地图上存在列车时，若通过混沌工作室激活黑死病，列车车厢会获得瘟疫减益。</li>
+        <li>湮灭快车：只有扩散生效时，列车车厢才会承受50%伤害</li>
+        <li>克哈裂痕：虚空碎片的攻击可被泽拉图的萨尔那加虚空盾卫反射</li>
+        <li>埃蒙之镰：死亡之握水晶被视为单位而非建筑</li>
+        <li>埃蒙之镰：视野外的死亡之握水晶不会生成连接其目标单位的视觉特效</li>
+        <li>往日神庙：神庙周围的空投进攻模式不会按模式A的设计随机化</li>
+        <li>往日神庙：混合体有时会飞过玩家基地和神庙，前往地图另一端</li>
+        <li>往日神庙：时间场生效时，神庙生成时可能缺少部分生命值</li>
+        <li>熔火危机：虽然AI会避让熔岩奔涌，埃蒙的单位却免疫其伤害</li>
+        <li>熔火危机：突变因子的熔岩爆发会被当作任务中的熔岩喷口，从而触发唐尼·沃米利恩的语音</li>
     </ul>
-<script src="/scripts/nav.js?v=fd4985"></script>
+    <h2 id="mutators">突变因子</h2>
+    <ul>
+        <li>玩家唯一有效的投放目标位于不可通行地形上时，进攻部署的空投不会生成</li>
+        <li>利用上述错误，如果进攻部署能够投放后续波次，就会投下一支达到上限的波次</li>
+        <li>火鸡射击中的愤怒火鸡不会被某些溅射伤害命中，例如超级盖瑞的艾能球</li>
+        <li>尽管自爆机器人是英雄单位，却不会触发沉默时刻。</li>
+        <li>双刃剑每秒恢复8点生命值，而非所列的每秒10点生命值</li>
+        <li>强制征用：攻城模式下的攻城坦克无法通过强制征用占领建筑</li>
+        <li>核弹来袭仍会命中玩家主基地和扩张点的矿区与瓦斯设施</li>
+        <li>礼物交换可能在超载穿梭机毫无作用的地图中随机到该效果</li>
+        <li>礼物可被非单位对象领取，例如暴风雪、能量场和精华掉落物等</li>
+        <li>在“疏散矿工”和“埃蒙之镰”中，风暴英雄不会生成英雄</li>
+        <li>在厄运之轮突变中，无论任务时间如何，矿物护盾都会在所有矿区激活。</li>
+        <li>飞弹大战的飞弹可以被回收和精神控制</li>
+        <li>沉默时刻减益持续期间会暂停星灵单位的折跃过程</li>
+        <li>工人可以通过堵路阻挡传播者</li>
+        <li>着色器质量设为中或更低时，黑暗突变因子无法正常工作并会显示地形。</li>
+        <li>厄运之轮突变期间若移除矿藏贫乏，矿区中的矿物数量不会重置。 </li>
+        <li>厄运之轮突变期间若移除速度狂魔，“湮灭快车”的列车速度反而会提高。</li>
+        <li>时间场会打断引导技能。</li>
+        <li>时间扭曲会打断引导技能。</li>
+        <li>虚空复生者可以把无法抵达的不可通行地形上的单位选为目标，导致自身卡住</li>
+        <li>转化空中单位时，该单位有时会在不可通行地形上变为地面单位并卡住</li>
+        <li>转化生效时，部分没有关联阶级的单位会变为阶级1单位，例如母舰和畸变巨兽</li>
+    </ul>
+    <h2 id="QOL">体验优化</h2>
+    <ul>
+        <li>阿巴瑟：被撕裂者攻击等非玩家伤害消灭的埃蒙单位不会掉落生物质</li>
+        <li>阿巴瑟：按住Ctrl单击选择时，潜地与未潜地的宿主会被视为不同单位</li>
+        <li>阿巴瑟：尽管建筑是有效目标，虫群女王的快速输血自动施法不会对建筑使用</li>
+        <li>阿拉纳克：阿拉纳克比其他英雄晚3-4秒才能完全操控</li>
+        <li>阿拉纳克：即使关闭目标锁定自动施法，浩劫也无法通过移动命令正确跟随友方单位</li>
+        <li>阿塔尼斯：在战争迷雾中单击可能意外取消轨道轰炸的剩余充能</li>
+        <li>德哈卡：原始宿主和蠕虫宿主的目标优先级过高</li>
+        <li>韩与霍纳：无法向正在建造突击炮舰的SCV下达停止建造命令</li>
+        <li>卡拉克斯：战争设计师（P1）的建筑长时间受到攻击后会开始导致卡顿</li>
+        <li>卡拉克斯：机械哨兵回收目标单位时，不会解除韩与霍纳渡鸦施加的弱点分析</li>
+        <li>卡拉克斯：护盾充能器不会自动为无法攻击的建筑恢复护盾</li>
+        <li>卡拉克斯：在战争迷雾中单击可能意外取消太阳能长枪的剩余充能</li>
+        <li>蒙斯克：航点处存在建筑时，帝国士兵可能无法通过空投舱投放</li>
+        <li>蒙斯克：劳工在指挥中心转化为帝国士兵时，不会交回携带的资源</li>
+        <li>诺娃：自动精炼厂的采集速度低于轨道同化舱</li>
+        <li>斯台特曼：按住Ctrl单击选择时，潜地的机械潜伏者会被视为不同单位</li>
+        <li>斯托科夫：命令末日巨兽攻击特定目标时，它不会自动施放集束火箭</li>
+        <li>斯托科夫：斯托科夫无法在战争迷雾中扎根建筑</li>
+        <li>斯旺：斯旺的钻机每隔0.1秒造成一次伤害，但会受到护甲影响</li>
+        <li>沃拉尊：黑暗圣堂武士无法对高地施放暗影之怒</li>
+        <li>沃拉尊：干扰网会自动施放在静滞状态的目标上</li>
+        <li>沃拉尊：干扰者在时间停止期间死亡时，死亡动画非常缓慢</li>
+        <li>扎加拉：爆蚊巢在建造完成前无法设置集结点</li>
+        <li>扎加拉：虫后可以对生命值已满的目标使用输血</li>
+        <li>泽拉图：“埃蒙之镰”中的死亡之握水晶可以在泽拉图的军团召唤完成折跃前将其摧毁</li>
+        <li>“聚铁成兵”中的混合体可以传送到不可通行地形上，使近战单位无法攻击它们</li>
+        <li>自爆机器人的代码不能输入得太快</li>
+    </ul>
+    <h2 id="aesthetic">视觉表现</h2>
+    <ul>
+        <li>阿巴瑟：取消变形会导致各种视觉错误</li>
+        <li>阿拉纳克：毁灭者在折跃动画期间开始开火时，不会播放攻击动画</li>
+        <li>阿拉纳克：暴君崛起（P2）会播放召唤死亡舰队面板技能的语音</li>
+        <li>阿拉纳克：死亡阴影（P3）即使已经召唤母舰，仍会播放召唤死亡舰队面板技能的语音</li>
+        <li>阿拉纳克：战争棱镜处于时间扭曲中时切换形态，会导致其模式显示异常</li>
+        <li>阿塔尼斯：不朽者缺少死亡音效</li>
+        <li>德哈卡：获得吞噬者（P1）德哈卡尖刺增益的单位受击时，尖刺会从德哈卡而非该单位自身射出</li>
+        <li>德哈卡：拥有尖刺增益的吞噬者（P1）德哈卡死亡后，带有该增益的友方单位受击时，尖刺会从德哈卡的死亡地点射出</li>
+        <li>德哈卡：原始竞争者（P2）的德哈卡潜地动画可能失败，表现为德哈卡与原始首领一同可见，但实际处于潜地状态</li>
+        <li>德哈卡：淘气名单突变因子会用击杀数替换德哈卡的等级显示</li>
+        <li>德哈卡：飞蛇被德哈卡吞噬时会被拉长</li>
+        <li>菲尼克斯：巨像缺少死亡音效</li>
+        <li>菲尼克斯：塔达林不会使用炮塔追踪</li>
+        <li>菲尼克斯：塔达林使用屏障时不会显示视觉效果</li>
+        <li>韩与霍纳：等级1时尚未解锁突击战机，但霍纳有时会要求建造突击战机平台</li>
+        <li>卡拉克斯：过快施放净化光束可能导致镜头持续拉远，直到再次施放该技能</li>
+        <li>卡拉克斯：巨像和不朽者缺少死亡音效</li>
+        <li>凯瑞甘：跳跃期间施放同化光环会改变光环的视觉表现</li>
+        <li>凯瑞甘：凯瑞甘对猎杀虫等跳跃中的敌人使用跳跃攻击时，会保持拦截目标时的高度</li>
+        <li>凯瑞甘：迅猛型跳虫跳跃时会计入已生产单位数量</li>
+        <li>蒙斯克：研究扩音广播升级后，帝国见证者上显示的全息影像有时会射向高空</li>
+        <li>蒙斯克：建筑生命值较低时不会显示燃烧效果</li>
+        <li>蒙斯克：劳工与帝国士兵切换形态时会计入已生产单位数量</li>
+        <li>蒙斯克：隐形单位首次攻击时，蒙斯克会先播放“进攻波次来袭”语音，再播放“建造反隐”语音</li>
+        <li>雷诺：女妖空袭召唤的黄昏之翼撤离时若被龙卷风命中，会出现一艘黑色运输船</li>
+        <li>斯台特曼：使用信号专家（P1）时，斯台特曼会播放“升级盖瑞”语音</li>
+        <li>斯托科夫：大量被感染地堡扎根时会播放“损失大量部队”语音</li>
+        <li>泽拉图：虚空传送阵处于时间扭曲中时切换形态，会导致其模式显示异常</li>
+        <li>泽拉图：虚空幻象会计入已生产单位数量</li>
+        <li>死了又死生效时，玩家单位消灭飞弹大战的飞弹后，重生动画会出现在玩家单位而非飞弹上</li>
+    </ul>
+<script src="/scripts/nav.js"></script>
 </div>
 
 <div id="footer">
-    <p>Note: All data generated on this site is based on Brutal difficulty. Timings, compositions and other elements may differ on easier difficulty levels.</p>
-    <p>CC-BY-NC-SA-4.0. Originally written by Aommaster. This is a fansite not affiliated with StarCraft 2 or Blizzard Entertainment, Inc.</p>
+    <p>注意：本站生成的所有数据均以“残酷”难度为准；在较低难度下，时间、阵容及其他要素可能有所不同。</p>
+    <p>非官方简体中文翻译站，仅供学习与非商业使用。本站无广告，也不收集用户数据。采用 CC BY-NC-SA 4.0 许可。原作者：Aommaster。本站为粉丝站点，与 StarCraft II 或 Blizzard Entertainment 无隶属关系。</p>
 </div>
 
 </body>
 </html>
-
-    

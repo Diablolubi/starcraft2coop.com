@@ -3,9 +3,9 @@
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-    <title>Starcraft 2 Coop - Page Not Found!</title>
-    <meta name="description" content="Starcraft 2 Co-op Error">
-    <meta name="keywords" content="Starcraft co-op error">
+    <title>StarCraft II 合作任务——找不到页面！</title>
+    <meta name="description" content="StarCraft II 合作任务错误页面">
+    <meta name="keywords" content="StarCraft II 合作任务错误">
     <style>
     p{
         text-align:center;
@@ -38,17 +38,17 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     }
     $val = rand(1, 3);
     if ($val == 1) {
-        echo "<p>You must construct additional pylons!</p>";
-        echo '<img class="errorImg"  src="/images/errors/pylon.jpg" alt="Pylon">';
+        echo "<p>你必须建造更多水晶塔！</p>";
+        echo '<img class="errorImg"  src="/images/errors/pylon.jpg" alt="水晶塔">';
     } elseif ($val == 2) {
-        echo "<p>Additional Supply Depots required!</p>";
-        echo '<img class="errorImg"  src="/images/errors/supplydepot.jpg" alt="Supply Depot">';
+        echo "<p>需要更多补给站！</p>";
+        echo '<img class="errorImg"  src="/images/errors/supplydepot.jpg" alt="补给站">';
     } else {
-        echo "<p>Spawn more Overlords!</p>";
-        echo '<img class="errorImg" src="/images/errors/overlord.jpg" alt="Overlord">';
+        echo "<p>孵化更多王虫！</p>";
+        echo '<img class="errorImg" src="/images/errors/overlord.jpg" alt="王虫">';
     }
     ?>
 
-    <p>(Either that, or the page was not found.)</p>
+    <p>（当然，也可能只是找不到这个页面。）</p>
 
 <?= endContent() ?>

@@ -5,9 +5,9 @@
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Commander Guide - Fenix</title>
-  <meta name="description" content="Starcraft 2 Co-op Commander Guide Fenix">
-  <meta name="keywords" content="Starcraft co-op guides fenix commander mastery prestige build">
+  <title>星际争霸 II 合作任务 - 指挥官攻略 - 菲尼克斯</title>
+  <meta name="description" content="星际争霸 II 合作任务指挥官菲尼克斯攻略">
+  <meta name="keywords" content="星际争霸 合作任务 攻略 菲尼克斯 指挥官 精通 威望 配兵">
   <link rel="stylesheet"  media="all" type="text/css" href="/styles/commanderstyle.css?v=2">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="https://starcraft2coop.com/commanders/fenix">
@@ -18,252 +18,252 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         }
   </style>
   <?= startContent() ?>
-    <div id="tooltip">tooltip</div>
-    <h1><span class="unbold">Commander:</span> Fenix</h1>
-    <p id="commanderMotto">Purifier Executor</p>
+    <div id="tooltip">提示</div>
+    <h1><span class="unbold">指挥官：</span>菲尼克斯</h1>
+    <p id="commanderMotto">净化者执行官</p>
     <?php include("../../includes/reporterror.php");?>
     <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#comSum">Commander Summary</a></p>
-        <p><a href="#levelUnlocks">Level Unlocks</a></p>
-        <p><a href="#achievements">Achievements</a></p>
-        <p><a href="#suits">Fenix Suits</a></p>
-        <p><a href="#leveling">Sub-Ascension Leveling</a></p>
-        <p><a href="#masteries">Masteries</a></p>
-        <p><a href="#prestiges">Prestiges</a></p>
-        <p><a href="#army">Recommended Army Composition</a></p>
-        <p><a href="#units">Combat Units</a></p>
-        <p><a href="#champions">Champion A.I.'s</a></p>
-        <p><a href="#buildOrder">Build Order</a></p>
-        <p><a href="#guide">Gameplay Guide</a></p>
+        <h2>本页章节</h2>
+        <p><a href="#comSum">指挥官概要</a></p>
+        <p><a href="#levelUnlocks">等级解锁</a></p>
+        <p><a href="#achievements">成就</a></p>
+        <p><a href="#suits">菲尼克斯装甲</a></p>
+        <p><a href="#leveling">飞升前升级</a></p>
+        <p><a href="#masteries">精通</a></p>
+        <p><a href="#prestiges">威望</a></p>
+        <p><a href="#army">推荐部队组成</a></p>
+        <p><a href="#units">战斗单位</a></p>
+        <p><a href="#champions">勇士人工智能</a></p>
+        <p><a href="#buildOrder">建造顺序</a></p>
+        <p><a href="#guide">玩法指南</a></p>
     </div>
-    <h2 id="comSum">Commander Summary</h2>
-    <p>Fenix uses a variety of different suits, backed up with an army led by AI Champions to dominate the battlefield.</p>
-    <h2 id="levelUnlocks">Level Unlocks</h2>
+    <h2 id="comSum">指挥官概要</h2>
+    <p>菲尼克斯可切换多种装甲形态，并率领由人工智能勇士带领的部队主宰战场。</p>
+    <h2 id="levelUnlocks">等级解锁</h2>
     <table class="progressionTable">
         <thead>
             <tr>
-                <th>Level/Icon</th>
-                <th>Name</th>
-                <th>Description</th>
+                <th>等级/图标</th>
+                <th>名称</th>
+                <th>说明</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/progression/fenix/fenix_01.png" alt = "Variable Deployment"></td>
-                <td>Variable Deployment</td>
+                <td><img src="/images/commanderdata/progression/fenix/fenix_01.png" alt = "灵活部署"></td>
+                <td>灵活部署</td>
                 <td>
-                    Fenix can warp in anywhere on the battlefield using multiple Armor Suit configurations. Armor Suits only regenerate life and energy while not active on the field.<br><br>The cost of Fenix's combat units is reduced by 20%.
+                    菲尼克斯可使用多种装甲形态折跃至战场上任意位置。装甲未在战场上激活时才会恢复生命值和能量。<br><br>菲尼克斯的战斗单位费用降低20%。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/fenix/fenix_02.png" alt = "Unlock: Purifier Conclave"></td>
-                <td>Unlock: Purifier Conclave</td>
+                <td><img src="/images/commanderdata/progression/fenix/fenix_02.png" alt = "解锁：净化者议会"></td>
+                <td>解锁：净化者议会</td>
                 <td>
-                    Unlocks the Purifier conclave structure, allowing you to research A.I. personalities of Protoss heroes. Once researched, these A.I. Personalities will automatically download into any available host unit.<br><br>AI Personalities unlocked:
+                    解锁净化者议会建筑，可在其中研究星灵英雄的人工智能人格。研究完成后，这些人工智能人格会自动下载至任意可用的宿主单位。<br><br>解锁的人工智能人格：
                     <ul>
-                        <li>Kaldalis - Legionnaire</li>
-                        <li>Talis - Adept</li>
+                        <li>卡尔达利斯 - 军团战士</li>
+                        <li>塔里斯 - 使徒</li>
                     </ul>
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/fenix/fenix_03.png" alt = "Unlock: Cybros Arbiter Suit"></td>
-                <td>Unlock: Cybros Arbiter Suit</td>
+                <td><img src="/images/commanderdata/progression/fenix/fenix_03.png" alt = "解锁：塞布罗斯仲裁者装甲"></td>
+                <td>解锁：塞布罗斯仲裁者装甲</td>
                 <td>
-                   Unlocks the Cybros Arbiter suit. The Cybros Arbiter suit can cloak itself and nearby allies, Recall friendly units to its location, and use Stasis to disable enemy units.
+                   解锁塞布罗斯仲裁者装甲。塞布罗斯仲裁者可使自身和附近友军隐形，将友方单位召回至自身位置，并用静滞力场令敌方单位失去行动能力。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/fenix/fenix_04.png" alt = "Shock Trooper Champion Research Cache"></td>
-                <td>Shock Trooper Champion Research Cache</td>
+                <td><img src="/images/commanderdata/progression/fenix/fenix_04.png" alt = "突击勇士研究包"></td>
+                <td>突击勇士研究包</td>
                 <td>
-                    Unlocks the following upgrades at the Twilight Council:
+                    在暮光议会中解锁以下升级：
                     <ul>
-                        <li>Kaldalis' attacks deal area damage.</li>
-                        <li>Talis' Ricochet Glaive bounces 5 additional times and caused affected units to take bonus damage.</li>
+                        <li>卡尔达利斯的攻击可造成范围伤害。</li>
+                        <li>塔里斯的弹射战刃额外弹射5次，并使受影响的单位受到额外伤害。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/fenix/fenix_05.png" alt = "Champion AI: Taldarin & Mojo"></td>
-                <td>Champion AI: Taldarin & Mojo</td>
+                <td><img src="/images/commanderdata/progression/fenix/fenix_05.png" alt = "勇士人工智能：塔达林与莫乔"></td>
+                <td>勇士人工智能：塔达林与莫乔</td>
                 <td>
-                    Unlocks additional A.I. Personalities at the Purifier Conclave:
+                    在净化者议会中解锁额外的人工智能人格：
                     <ul>
-                        <li>Taldarin - Immortal</li>
-                        <li>Mojo - Scout</li>
+                        <li>塔达林 - 不朽者</li>
+                        <li>莫乔 - 侦察机</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/fenix/fenix_06.png" alt = "Fenix Upgrade Cache"></td>
-                <td>Fenix Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/fenix/fenix_06.png" alt = "菲尼克斯升级包"></td>
+                <td>菲尼克斯升级包</td>
                 <td>
-                    Unlocks the following upgrades at the Forge:
+                    在锻炉中解锁以下升级：
                     <ul>
-                        <li>All Fenix Armor Suits gain +15 attack damage.</li>
-                        <li>Fenix's Cybros Arbiter Suit gains detection.</li>
+                        <li>菲尼克斯的所有装甲形态获得+15攻击伤害。</li>
+                        <li>菲尼克斯的塞布罗斯仲裁者装甲获得探测能力。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/fenix/fenix_07.png" alt = "New Unit: Disruptor"></td>
-                <td>New Unit: Disruptor</td>
+                <td><img src="/images/commanderdata/progression/fenix/fenix_07.png" alt = "新单位：干扰者"></td>
+                <td>新单位：干扰者</td>
                 <td>
-                    Robotic Disruption Unit. Can use Purification Nova to deal heavy area damage. Warped in at the Robotics Facility.<br><br>Can attack ground units.
+                    机械干扰单位。可使用净化新星造成大量范围伤害。可由机械台折跃。<br><br>可攻击地面单位。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/fenix/fenix_08.png" alt = "Champion AI: Warbringer & Clolarion"></td>
-                <td>Champion AI: Warbringer & Clolarion</td>
+                <td><img src="/images/commanderdata/progression/fenix/fenix_08.png" alt = "勇士人工智能：战争使者与克罗拉里昂"></td>
+                <td>勇士人工智能：战争使者与克罗拉里昂</td>
                 <td>
-                    Unlocks additional A.I. Personalities at the Purifier Conclave:
+                    在净化者议会中解锁额外的人工智能人格：
                     <ul>
-                        <li>Warbringer - Colossus</li>
-                        <li>Clolarion - Carrier</li>
+                        <li>战争使者 - 巨像</li>
+                        <li>克罗拉里昂 - 航母</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/fenix/fenix_09.png" alt = "Specialist Upgrade Cache"></td>
-                <td>Specialist Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/fenix/fenix_09.png" alt = "专家升级包"></td>
+                <td>专家升级包</td>
                 <td>
-                    Unlocks the following upgrades:
+                    解锁以下升级：
                     <ul>
-                        <li>Disruptors become permanently cloaked (Researched at the Robotics Bay).</li>
-                        <li>Disruptor Purification Nova explodes twice (Researched at the Robotics Bay).</li>
-                        <li>Conservator Protection Field duration increased by 100% (Researched at the Cybernetics Core).</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr class="spike">
-                <td><img src="/images/commanderdata/progression/fenix/fenix_10.png" alt = "Operational Efficiency"></td>
-                <td>Operational Efficiency</td>
-                <td>
-                    Production and tech structures no longer have tech requirements, have their mineral costs reduced by 50%, and have their gas costs reduced by 100%.
-                </td>
-            </tr>
-            <tr>
-                <td><img src="/images/commanderdata/progression/fenix/fenix_11.png" alt = "Avenging Protocol"></td>
-                <td>Avenging Protocol</td>
-                <td>
-                    Champions gain attack (10% per supply) and movement speed (5% per supply) each time a host shell of their type is destroyed, or a 50% speed increase when they transfer into new host shell. Speed increases can stack up to 200% and last for 20 seconds if not refreshed.
-                </td>
-            </tr>
-            <tr class="spike">
-                <td><img src="/images/commanderdata/progression/fenix/fenix_12.png" alt = "Assault Champion Upgrade Cache"></td>
-                <td>Assault Champion Upgrade Cache</td>
-                <td>
-                    Unlocks the following upgrades:
-                    <ul>
-                        <li>Taldarin's attacks store damage on enemies which is released and does area damage when the unit is killed (Researched at the Robotics Bay).</li>
-                        <li>Allows Mojo to fire a barrage of Anti-Matter Missiles (Researched at the Fleet Beacon).</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="/images/commanderdata/progression/fenix/fenix_13.png" alt = "Rapid Recharge"></td>
-                <td>Rapid Recharge</td>
-                <td>
-                    Fenix Armor Suits that are currently offline regenerate health and shields 20% faster.
-                </td>
-            </tr>
-            <tr class="spike">
-                <td><img src="/images/commanderdata/progression/fenix/fenix_14.png" alt = "Siege Champion Upgrade Cache"></td>
-                <td>Siege Champion Upgrade Cache</td>
-                <td>
-                    Unlocks the following upgrades:
-                    <ul>
-                        <li>Warbringer gains the ability to fire a devastating blast at an enemy unit (Researched at the Robotics Bay).</li>
-                        <li>Clolarion can build Interdictors to bomb enemy units (Researched at the Fleet Beacon).</li>
+                        <li>干扰者永久隐形（在机械研究所中研究）。</li>
+                        <li>干扰者的净化新星会爆炸两次（在机械研究所中研究）。</li>
+                        <li>保护者的保护力场持续时间提高100%（在控制芯核中研究）。</li>
                     </ul>
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/fenix/fenix_15.png" alt = "Tactical Data Web"></td>
-                <td>Tactical Data Web</td>
+                <td><img src="/images/commanderdata/progression/fenix/fenix_10.png" alt = "高效运作"></td>
+                <td>高效运作</td>
                 <td>
-                    Each A.I. Champion's special ability gains a bonus for each active host shell of the same type (up to 20 supply).
+                    生产和科技建筑不再有科技要求，矿物费用降低50%，高能瓦斯费用降低100%。
+                </td>
+            </tr>
+            <tr>
+                <td><img src="/images/commanderdata/progression/fenix/fenix_11.png" alt = "复仇协议"></td>
+                <td>复仇协议</td>
+                <td>
+                    同类型的宿主躯壳每次被摧毁时，勇士都会获得攻击速度（每人口10%）和移动速度（每人口5%）；转移至新宿主躯壳时则获得50%的速度加成。速度加成最多可叠加至200%，若未刷新则持续20秒。
+                </td>
+            </tr>
+            <tr class="spike">
+                <td><img src="/images/commanderdata/progression/fenix/fenix_12.png" alt = "强袭勇士升级包"></td>
+                <td>强袭勇士升级包</td>
+                <td>
+                    解锁以下升级：
+                    <ul>
+                        <li>塔达林的攻击会在敌人身上储存伤害，目标阵亡时释放所储伤害并造成范围伤害（在机械研究所中研究）。</li>
+                        <li>使莫乔能够发射一轮反物质导弹（在舰队航标中研究）。</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="/images/commanderdata/progression/fenix/fenix_13.png" alt = "快速充能"></td>
+                <td>快速充能</td>
+                <td>
+                    当前离线的菲尼克斯装甲恢复生命值和护盾的速度提高20%。
+                </td>
+            </tr>
+            <tr class="spike">
+                <td><img src="/images/commanderdata/progression/fenix/fenix_14.png" alt = "攻城勇士升级包"></td>
+                <td>攻城勇士升级包</td>
+                <td>
+                    解锁以下升级：
+                    <ul>
+                        <li>战争使者获得对敌方单位发射毁灭性能量束的能力（在机械研究所中研究）。</li>
+                        <li>克罗拉里昂可制造禁绝者轰炸敌方单位（在舰队航标中研究）。</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="spike">
+                <td><img src="/images/commanderdata/progression/fenix/fenix_15.png" alt = "战术数据网"></td>
+                <td>战术数据网</td>
+                <td>
+                    每名人工智能勇士的特殊技能都会根据同类型的现役宿主躯壳数量获得加成（最多计算20人口）。
                 </td>
             </tr>
         </tbody>
     </table>
-    <p id="powerSpikeInfo">Highlighted rows denote large power spikes for the commander.</p>
-    <h2 id="achievements">Achievements</h2>
-    <p>The commander-specific achievements for Fenix are:</p>
+    <p id="powerSpikeInfo">高亮行表示该指挥官的重要强势等级。</p>
+    <h2 id="achievements">成就</h2>
+    <p>菲尼克斯的专属成就如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Achievement</th>
-                <th>Name</th>
-                <th>Description</th>
+                <th>成就</th>
+                <th>名称</th>
+                <th>说明</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/achievements/fenix/carrierme.jpg" alt="Carrier Me"></td>
-                <td>Carrier Me</td>
-                <td>Warp in 4 Carriers and complete the Clolarion A.I. research within the first 10 minutes of a Co-op Mission.</td>
+                <td><img src="/images/commanderdata/achievements/fenix/carrierme.jpg" alt="航母护航"></td>
+                <td>航母护航</td>
+                <td>在合作任务开始后的前10分钟内折跃4艘航母，并完成克罗拉里昂人工智能的研究。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/fenix/championsassemble.jpg" alt="Champions Assemble"></td>
-                <td>Champions Assemble</td>
-                <td>Have all 6 champions on the battlefield simultaneously during a Co-op Mission.</td>
+                <td><img src="/images/commanderdata/achievements/fenix/championsassemble.jpg" alt="勇士集结"></td>
+                <td>勇士集结</td>
+                <td>在一场合作任务中，让全部6名勇士同时出现在战场上。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/fenix/suitup.jpg" alt="Suit Up!"></td>
-                <td>Suit Up!</td>
-                <td>Deal 300,000 damage with Fenix in Co-op Missions.</td>
+                <td><img src="/images/commanderdata/achievements/fenix/suitup.jpg" alt="全副武装！"></td>
+                <td>全副武装！</td>
+                <td>在合作任务中使用菲尼克斯造成300,000点伤害。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/fenix/theaipersonalitytest.jpg" alt="The A.I. Personality Test"></td>
-                <td>The A.I. Personality Test</td>
-                <td>Deal 300,000 damage with champions in Co-op Missions.</td>
+                <td><img src="/images/commanderdata/achievements/fenix/theaipersonalitytest.jpg" alt="人工智能人格测试"></td>
+                <td>人工智能人格测试</td>
+                <td>在合作任务中使用勇士造成300,000点伤害。</td>
             </tr>
         </tbody>
     </table>
-    <h2 id="suits">Fenix Suits</h2>
-    <p>Coolup time: 4:00</p>
-    <p>Instead of calldowns, Fenix can deploy one of three different Armor Suits onto the battlefield at any location with vision. There is a 15 second cooldown for suit deployment. Should a suit be destroyed, there is a 180 second cooldown before it can be used again. Each suit is designed for a particular purpose and has its own abilities. These are shown below:</p>
+    <h2 id="suits">菲尼克斯装甲</h2>
+    <p>初始冷却时间：4:00</p>
+    <p>菲尼克斯没有面板召唤技能，而是能在战场上任意有视野的位置部署三种装甲之一。部署装甲有15秒冷却时间。若装甲被摧毁，需等待180秒才能再次使用。每种装甲都针对特定用途设计，并拥有独立技能，详情如下：</p>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#fenix/fenixpraetorarmor">
-                <img src="/images/commanderdata/abilities/fenix/praetorarmor.jpg" alt="Praetor Armor">
-                <p>Praetor Armor</p>
+                <img src="/images/commanderdata/abilities/fenix/praetorarmor.jpg" alt="执政官装甲">
+                <p>执政官装甲</p>
             </a>
         </div>
         <div>
             <table class="unitAbilities">
                 <thead>
                     <tr>
-                        <th>Ability</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/abilities/fenix/thunderouscharge.png" alt="Thunderous Charge"></td>
-                        <td>Thunderous Charge</td>
-                        <td>Fenix charges at the target location, dealing 50 damage and stunning all enemies for 5 seconds.</td>
-                        <td>10 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/fenix/thunderouscharge.png" alt="雷霆冲锋"></td>
+                        <td>雷霆冲锋</td>
+                        <td>菲尼克斯冲向目标位置，造成50点伤害并使所有敌人昏迷5秒。</td>
+                        <td>10秒</td>
                         <td>25</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/abilities/fenix/whirlwind.png" alt="Whirlwind"></td>
-                        <td>Whirlwind</td>
-                        <td>All nearby enemies take 70 damage per second for 3 seconds. Fenix can move while Whirlwind is active.</td>
-                        <td>10 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/fenix/whirlwind.png" alt="旋风斩"></td>
+                        <td>旋风斩</td>
+                        <td>附近所有敌人每秒受到70点伤害，持续3秒。旋风斩激活期间菲尼克斯可以移动。</td>
+                        <td>10秒</td>
                         <td>50</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/abilities/fenix/shieldcapacitor.png" alt="Shield Capacitor"></td>
-                        <td>Shield Capacitor</td>
-                        <td>Fully restores Fenix's shields. autocasting activates Shield Capacitor when Fenix's shields have been depleted.</td>
-                        <td>5 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/fenix/shieldcapacitor.png" alt="护盾电容器"></td>
+                        <td>护盾电容器</td>
+                        <td>完全恢复菲尼克斯的护盾。启用自动施放后，菲尼克斯的护盾耗尽时会激活护盾电容器。</td>
+                        <td>5秒</td>
                         <td>100</td>
                     </tr>
                 </tbody>
@@ -273,41 +273,41 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#fenix/fenixsolaritedragoon">
-                <img src="/images/commanderdata/abilities/fenix/solaritedragoon.jpg" alt="Solarite Dragoon">
-                <p>Solarite Dragoon</p>
+                <img src="/images/commanderdata/abilities/fenix/solaritedragoon.jpg" alt="太阳能龙骑士">
+                <p>太阳能龙骑士</p>
             </a>
         </div>
         <div>
             <table class="unitAbilities">
                 <thead>
                     <tr>
-                        <th>Ability</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/abilities/fenix/solarcannon.png" alt="Solar Cannon"></td>
-                        <td>Solar Cannon</td>
-                        <td>Fires a piercing beam that deals 100 damage to all enemy ground units in its path.</td>
-                        <td>6 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/fenix/solarcannon.png" alt="太阳能加农炮"></td>
+                        <td>太阳能加农炮</td>
+                        <td>发射一道穿透光束，对沿途所有敌方地面单位造成100点伤害。</td>
+                        <td>6秒</td>
                         <td>50</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/abilities/fenix/solariteflare.png" alt="Solarite Flare"></td>
-                        <td>Solarite Flare</td>
-                        <td>Fires an air bursting flare that deals 100 damage to enemy air units.</td>
-                        <td>10 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/fenix/solariteflare.png" alt="太阳能耀斑"></td>
+                        <td>太阳能耀斑</td>
+                        <td>发射在空中爆炸的耀斑，对敌方空中单位造成100点伤害。</td>
+                        <td>10秒</td>
                         <td>50</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/abilities/fenix/arsenalovercharge.png" alt="Arsenal Overcharge"></td>
-                        <td>Arsenal Overcharge</td>
-                        <td>Activating Arsenal Overcharge causes your damaging abilities to have no cooldown for 10 seconds.</td>
-                        <td>120 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/fenix/arsenalovercharge.png" alt="武器库过载"></td>
+                        <td>武器库过载</td>
+                        <td>激活武器库过载后，伤害技能在10秒内没有冷却时间。</td>
+                        <td>120秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
@@ -317,205 +317,205 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#fenix/fenixcybrosarbiter">
-                <img src="/images/commanderdata/abilities/fenix/cybrosarbiter.jpg" alt="Cybros Arbiter">
-                <p>Cybros Arbiter</p>
+                <img src="/images/commanderdata/abilities/fenix/cybrosarbiter.jpg" alt="塞布罗斯仲裁者">
+                <p>塞布罗斯仲裁者</p>
             </a>
         </div>
         <div>
             <table class="unitAbilities">
                 <thead>
                     <tr>
-                        <th>Ability</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/abilities/fenix/stasisfield.png" alt="Stasis Field"></td>
-                        <td>Stasis Field</td>
-                        <td>Places enemy units in target area into stasis for 15 seconds. Units in stasis cannot move, attack, be attacked or be affected by abilities.</td>
-                        <td>10 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/fenix/stasisfield.png" alt="静滞力场"></td>
+                        <td>静滞力场</td>
+                        <td>使目标区域内的敌方单位进入静滞状态，持续15秒。静滞中的单位无法移动、攻击、被攻击或受技能影响。</td>
+                        <td>10秒</td>
                         <td>50</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/abilities/fenix/cloakingfield.png" alt="Enable Cloaking Field"></td>
-                        <td>Enable Cloaking Field</td>
-                        <td>Enable Cloaking Field, cloaking friendly units near Fenix. Costs 5 Energy per second to maintain.</td>
-                        <td>0 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/fenix/cloakingfield.png" alt="启用隐形力场"></td>
+                        <td>启用隐形力场</td>
+                        <td>启用隐形力场，使菲尼克斯附近的友方单位隐形。维持该力场每秒消耗5点能量。</td>
+                        <td>0秒</td>
                         <td>5</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/abilities/fenix/recall.png" alt="Recall"></td>
-                        <td>Recall</td>
-                        <td>Teleports all friendly units in the target area to the location of the Arbiter.</td>
-                        <td>0 seconds</td>
+                        <td><img src="/images/commanderdata/abilities/fenix/recall.png" alt="召回"></td>
+                        <td>召回</td>
+                        <td>将目标区域内的所有友方单位传送至仲裁者所在位置。</td>
+                        <td>0秒</td>
                         <td>100</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-    <p>The upgrades for Fenix are:</p>
+    <p>菲尼克斯的升级如下：</p>
     <table class="heroUpgrades">
         <thead>
             <tr>
-                <th>Upgrade</th>
-                <th>Name</th>
-                <th>Effect</th>
-                <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                <th>Research Time</th>
+                <th>升级</th>
+                <th>名称</th>
+                <th>效果</th>
+                <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="矿物">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                <th>研究时间</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/hero/fenix/purifierarmaments.png" alt="Purifier Armaments"></td>
-                <td>Purifier Armaments</td>
-                <td>All Fenix Armor Suits gain +15 attack damage.</td>
+                <td><img src="/images/commanderdata/hero/fenix/purifierarmaments.png" alt="净化者武装"></td>
+                <td>净化者武装</td>
+                <td>菲尼克斯的所有装甲形态获得+15攻击伤害。</td>
                 <td>75/75</td>
-                <td>90 seconds</td>
+                <td>90秒</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/fenix/observationprotocol.png" alt="Observation Protocol"></td>
-                <td>Observation Protocol</td>
-                <td>Grants Fenix's Cybros Arbiter Suit detection, allowing him to detect cloaked enemies.</td>
+                <td><img src="/images/commanderdata/hero/fenix/observationprotocol.png" alt="观测协议"></td>
+                <td>观测协议</td>
+                <td>使菲尼克斯的塞布罗斯仲裁者装甲获得探测能力，可以发现隐形敌人。</td>
                 <td>50/50</td>
-                <td>60 seconds</td>
+                <td>60秒</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/fenix/astrongheart.png" alt="A Strong Heart"></td>
-                <td>A Strong Heart</td>
-                <td>"I no longer wish to be called by the name Fenix.". Renames "Fenix" to "Talandar". Purely aesthetic.</td>
+                <td><img src="/images/commanderdata/hero/fenix/astrongheart.png" alt="坚定之心"></td>
+                <td>坚定之心</td>
+                <td>“我不想再被称作菲尼克斯。”将“菲尼克斯”更名为“塔兰达”。仅改变外观名称。</td>
                 <td>13/13</td>
-                <td>10 seconds</td>
+                <td>10秒</td>
             </tr>
         </tbody>
     </table>
-    <h2 id="leveling">Sub-Ascension Leveling</h2>
-    <p>Difficulty: Easy</p>
-    <p>Use a mix of units, focusing Adept/Immortal/Carrier during early stages of leveling. Make sure you rely on your Fenix suit abilities as much as possible, to increase the survivability of your army.</p>
-    <p>While leveling through Mastery levels, allocate points into Power Set 3's Initial Starting Supply mastery if you choose to use it.</p>
-    <h2 id="masteries">Masteries</h2>
-    <p>Below are the three Power Sets for Fenix with the recommended point allocations for each. Note that these are meant to serve a general, all-purpose build that is effective across all maps with no Prestiges selected. You are highly encourged to change these masteries to suit your playstyle and particular challenges you face (e.g. <a href="/resources/weeklymutations">Weekly Mutations</a>).</p>
-    <p>Power Set 1:</p>
+    <h2 id="leveling">飞升前升级</h2>
+    <p>难度：简单</p>
+    <p>混合使用多种单位，升级初期重点发展使徒、不朽者和航母。尽可能依靠菲尼克斯的装甲技能，提高部队的生存能力。</p>
+    <p>提升精通等级期间，若准备使用技能组3的初始人口精通，请为其分配点数。</p>
+    <h2 id="masteries">精通</h2>
+    <p>以下是菲尼克斯的三个技能组及各自的推荐点数分配。这是一套未选择任何威望、适用于所有地图的通用配置。强烈建议根据你的玩法和面对的具体挑战（例如<a href="/resources/weeklymutations">每周突变</a>）调整精通。</p>
+    <p>技能组1：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>精通</th>
+                <th>数值</th>
+                <th>推荐点数</th>
+                <th>补充说明</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Fenix Suit Attack Speed</td>
-                <td>2% per point<br>60% maximum</td>
+                <td>菲尼克斯装甲攻击速度</td>
+                <td>每点2%<br>最高60%</td>
                 <td>?</td>
-                <td rowspan="2">If a player actively switches suits often, draining their energy completely with each use, they should consider the Energy Regeneration of the suit.</td>
+                <td rowspan="2">如果玩家频繁主动切换装甲，并在每次使用时耗尽能量，应考虑提高装甲的能量恢复速度。</td>
             </tr>
             <tr>
-                <td>Fenix Suit Offline Energy Regeneration</td>
-                <td>0.75% per point<br>22.5% maximum</td>
-                <td>?</td>
-            </tr>
-        </tbody>
-    </table>
-    <p class="masterySummary">This is a matter of preference, and will depend on your playstyle. If you use Fenix to deal with attack waves, the Energy Regeneration is recommended. However, the Attack Speed mastery is useful when using Fenix combined with your army.</p>
-    <p>Power Set 2:</p>
-    <table class="masteryTable">
-        <thead>
-            <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Champion A.I. Attack Speed</td>
-                <td>1% per point<br>30% maximum</td>
-                <td>?</td>
-                <td rowspan="2">Champion A.I's are extremely powerful and the decision here comes down to ensure they should be able to tank, or if they should be the core damage dealers in Fenix's army.</td>
-            </tr>
-            <tr>
-                <td>Champion A.I Life and Shields</td>
-                <td>2% per point<br>60% maximum</td>
+                <td>菲尼克斯装甲离线能量恢复</td>
+                <td>每点0.75%<br>最高22.5%</td>
                 <td>?</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">This mastery is a matter of preference. The Life and Shield mastery can give Champions like Kaldalis a lot of health, while the Attack Speed mastery can give Champions a lot of additional DPS.</p>
-    <p>Power Set 3:</p>
+    <p class="masterySummary">这一组取决于个人偏好和玩法。如果你用菲尼克斯处理进攻波，推荐能量恢复；如果让菲尼克斯与主力部队协同作战，攻击速度精通会更实用。</p>
+    <p>技能组2：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>精通</th>
+                <th>数值</th>
+                <th>推荐点数</th>
+                <th>补充说明</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Chrono Boost Efficiency</td>
-                <td>1% per point<br>30% maximum</td>
+                <td>勇士人工智能攻击速度</td>
+                <td>每点1%<br>最高30%</td>
+                <td>?</td>
+                <td rowspan="2">勇士人工智能极为强大；选择取决于你希望他们承担伤害，还是成为菲尼克斯部队的核心输出。</td>
+            </tr>
+            <tr>
+                <td>勇士人工智能生命值和护盾</td>
+                <td>每点2%<br>最高60%</td>
+                <td>?</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="masterySummary">这一组同样取决于个人偏好。生命值和护盾精通能让卡尔达利斯等勇士更加耐打，攻击速度精通则能大幅提高勇士的每秒伤害。</p>
+    <p>技能组3：</p>
+    <table class="masteryTable">
+        <thead>
+            <tr>
+                <th>精通</th>
+                <th>数值</th>
+                <th>推荐点数</th>
+                <th>补充说明</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>时空提速效率</td>
+                <td>每点1%<br>最高30%</td>
                 <td>27</td>
-                <td rowspan="2">The extra starting supply can help Fenix focus on rushing out army units and workers faster, by reducing the initial cost commitment to building pylons. However, this has a permanent effect of slowing him down during the later stages of the game due to a weaker Chrono Boost.</td>
+                <td rowspan="2">额外初始人口可减少前期建造水晶塔的资源投入，让菲尼克斯更快生产部队和探机。不过，较弱的时空提速会持续拖慢他在游戏后期的发展。</td>
             </tr>
             <tr>
-                <td>Extra Starting Supply</td>
-                <td>2 per point<br>60 maximum</td>
+                <td>额外初始人口</td>
+                <td>每点2<br>最高60</td>
                 <td>3</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">The point allocation above is provided as a starting point. Depending on the efficiency of your macro, more points in the starting supply will reduce your need to build Pylons, while Chrono Boost efficiency can reduce the time it takes to get out your first Champion.</p>
-    <h2 id="prestiges">Prestiges</h2>
-    <p>Below are the prestiges for Fenix. Note that "Effective Level" is the level at which the prestige achieves it full effect.</p>
+    <p class="masterySummary">以上点数分配可作为起点。根据你的运营效率，为初始人口投入更多点数可减少建造水晶塔的需求，而时空提速效率则能缩短首名勇士成型所需的时间。</p>
+    <h2 id="prestiges">威望</h2>
+    <p>以下是菲尼克斯的威望。“生效等级”指威望发挥完整效果所需的等级。</p>
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P1: <strong>Akhundelar</strong></td>
+                <td class="prestigeTitle" colspan="2">P1：<strong>阿昆德拉尔</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>All Armor Suit damage increased by 100%.</li>
-                        <li>Ability cooldowns reduced by 50%.</li>
-                        <li>Life, shield, and energy regeneration increased by 100% while in storage.</li>
+                        <li>所有装甲形态造成的伤害提高100%。</li>
+                        <li>技能冷却时间缩短50%。</li>
+                        <li>储存期间的生命值、护盾和能量恢复速度提高100%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>All Armor Suit calldown cooldowns increased by 700%.</li>
-                        <li>Each suit can only be sustained for 20 seconds at a time.</li>
+                        <li>所有装甲形态的部署冷却时间延长700%。</li>
+                        <li>每种装甲每次只能维持20秒。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Notes</th>
+                <th>备注</th>
                 <td>
                     <ul>
-                        <li>Suit Cooldown: 2 minutes</li>
-                        <li>Suit Rebuild Time: 5 minutes</li>
-                        <li>Contrary to the description, the Arbiter suit doesn't actually have a cooldown</li>
+                        <li>装甲冷却时间：2分钟</li>
+                        <li>装甲重建时间：5分钟</li>
+                        <li>与说明不同，仲裁者装甲实际上没有冷却时间</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>生效等级</th>
                 <td>1</td>
             </tr>
             <tr>
-                <th>Advice</th><td>Akhundelar allows Fenix to clear entire enemy bases by using carefully-placed abilities. The prestige is extremely powerful, but knowledge of enemy bases and units within them is important to ensure the player selects the correct suit for handling the base. Additionally, losing a suit, especially the Solarite Dragoon can be extremely punishing. The prestige also taxes player's macro abilities because (assuming optimal play) players will be micro'ing suits 50% of the time.</td>
+                <th>建议</th><td>阿昆德拉尔让菲尼克斯能够凭借精准施放的技能清空整座敌方基地。这个威望极为强大，但玩家必须了解敌方基地及其中的单位，才能选择正确装甲加以应对。此外，损失装甲——尤其是太阳能龙骑士——会受到非常严厉的惩罚。这个威望也很考验玩家的运营能力，因为在理想打法下，玩家有50%的时间都要操作装甲。</td>
             </tr>
         </tbody>
     </table>
@@ -523,103 +523,103 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P2: <strong>Network Administrator</strong></td>
+                <td class="prestigeTitle" colspan="2">P2：<strong>网络管理员</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>Tactical Data Web effectiveness increased by 200%.</li>
-                        <li>All combat unit costs reduced by 50%.</li>
+                        <li>战术数据网的效果提高200%。</li>
+                        <li>所有战斗单位的费用降低50%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>All non-heroic combat unit damage reduced by 50% and vitals reduced by 50%.</li>
+                        <li>所有非英雄战斗单位造成的伤害降低50%，生命值和护盾降低50%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Notes</th>
+                <th>备注</th>
                 <td>
                     <ul>
-                        <li>Kaldalis benefits the most from this prestige due to his cleave attack</li>
+                        <li>卡尔达利斯的顺劈攻击让他从此威望中获益最多</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>生效等级</th>
                 <td>15</td>
             </tr>
             <tr>
-                <th>Advice</th><td>This prestige requires a unique playstyle for Fenix. The idea is to have Fenix and his Champion A.I's alongside him on the front line, pushing into enemy bases and dealing with attack waves. Behind them, but away from the heat of the battle, the shells provide quick reinforcements for A.I's once they die on the frontline. Pushing in with the shell army will cause the player to take heavy losses, so adequate management of control groups is a must.</td>
+                <th>建议</th><td>这个威望要求菲尼克斯采用独特的玩法：让菲尼克斯和勇士人工智能并肩冲在前线，推进敌方基地并应对进攻波；宿主躯壳则留在后方、远离激战，在前线勇士阵亡后迅速提供替补。若让躯壳部队一同推进会造成惨重损失，因此必须妥善管理控制编队。</td>
             </tr>
         </tbody>
     </table>
-    <p><b>Effectiveness Bonuses:</b></p>
+    <p><b>效果加成：</b></p>
     <ul>
-        <li>Kaldalis Empowered Blades damage bonus per shell tripled</li>
-        <li>Talis Ricochet Glaive damage bonus per shell tripled</li>
-        <li>Taldarin Gravimetric Overload damage storage bonus per shell tripled</li>
-        <li>Warbringer Purification Blast damage bonus per shell tripled</li>
-        <li>Mojo Suppression Procedure damage bonus per shell tripled</li>
-        <li>Clolarion Interdictor damage bonus per shell tripled</li>
+        <li>卡尔达利斯的强化利刃从每个躯壳获得的伤害加成提高至三倍</li>
+        <li>塔里斯的弹射战刃从每个躯壳获得的伤害加成提高至三倍</li>
+        <li>塔达林的引力过载从每个躯壳获得的伤害储存加成提高至三倍</li>
+        <li>战争使者的净化轰击从每个躯壳获得的伤害加成提高至三倍</li>
+        <li>莫乔的压制程序从每个躯壳获得的伤害加成提高至三倍</li>
+        <li>克罗拉里昂的禁绝者从每个躯壳获得的伤害加成提高至三倍</li>
     </ul>
     <br>
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P3: <strong>Unconquered Spirit</strong></td>
+                <td class="prestigeTitle" colspan="2">P3：<strong>不屈之魂</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>Avenging Protocol effectiveness increased by 100%.</li>
-                        <li>Champion A.I.s that die refund 75% of their base unit cost.</li>
+                        <li>复仇协议的效果提高100%。</li>
+                        <li>勇士人工智能阵亡时返还其基础单位费用的75%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>Champion A.I.s do not gain additional life or shields and have reduced attack range (-2 range).</li>
+                        <li>勇士人工智能不再获得额外生命值或护盾，且攻击射程降低（-2射程）。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Notes</th>
+                <th>备注</th>
                 <td>
                     <ul>
-                        <li>Champion A.I vitality mastery still works, although it should not be used with this prestige</li>
+                        <li>勇士人工智能耐久度精通仍然有效，但不应与此威望搭配使用</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>生效等级</th>
                 <td>11</td>
             </tr>
             <tr>
-                <th>Advice</th><td>This prestige encourages players to take advantage of Avenging Protocol by reducing the Champion A.I. vitality and attack ranges. This forces them to the frontline and makes them easier to kill by Amon's forces. While in theory, this strategy may work, one of the issues that players will face with this prestige is the issue of body-blocking. As A.I Champions get transferred to a new shell, they might find themselves at the back of the army, meaning that Avenging Protocol may wear off by the time they push through to the front to fight. This prestige works well with the Champion A.I attack speed mastery.</td>
+                <th>建议</th><td>这个威望通过降低勇士人工智能的耐久度和攻击射程，鼓励玩家利用复仇协议。这会迫使勇士走上前线，也更容易被埃蒙的部队击杀。理论上这种策略可行，但玩家会遇到单位互相阻挡的问题。人工智能勇士转移至新躯壳后，可能出现在部队后方；等他们挤到前线参战时，复仇协议的效果也许已经消失。此威望适合搭配勇士人工智能攻击速度精通。</td>
             </tr>
         </tbody>
     </table>
-    <p><b>Effectiveness Bonuses:</b></p>
+    <p><b>效果加成：</b></p>
     <ul>
-        <li>Avenging Protocol Attack Speed Bonus doubled</li>
-        <li>Avenging Protocol Movement Speed Bonus doubled</li>
+        <li>复仇协议的攻击速度加成翻倍</li>
+        <li>复仇协议的移动速度加成翻倍</li>
     </ul>
-    <p>For general play, Akhundelar is a good prestige to use. If the player prefers to have an untimed Fenix, they may play without a Prestige Talent selected. For a more challenging play experience, players may try to use Network Administrator.</p>
-    <h2 id="army">Recommended Army Composition</h2>
-    <p>The recommended army composition for Fenix is below. Note that this assumes no Prestige talent selected and recommended Mastery Allocations. This is a basic recommendation for your army framework. It is recommended to gain an understanding for each of the units in the <a href="#units">Units</a> section and further add tech units so that you are able to better handle the situations you face.</p>
-    <img class="army" src="/images/commanderdata/units/fenix/legionnaire.jpg" alt="Legionnaire"><img class="army" src="/images/commanderdata/units/fenix/adept.jpg" alt="Adept"><img class="army" src="/images/commanderdata/units/fenix/immortal.jpg" alt="Immortal"><img class="army" src="/images/commanderdata/units/fenix/colossus.jpg" alt="Colossus"><img class="army" src="/images/commanderdata/units/fenix/scout.jpg" alt="Scout"><img class="army" src="/images/commanderdata/units/fenix/carrier.jpg" alt="Carrier"><img class="army" src="/images/commanderdata/units/fenix/conservator.jpg" alt="Conservator"><br>
-    <img class="army" src="/images/commanderdata/units/fenix/kaldalis.jpg" alt="Kaldalis"><img class="army" src="/images/commanderdata/units/fenix/talis.jpg" alt="Talis"><img class="army" src="/images/commanderdata/units/fenix/taldarin.jpg" alt="Taldarin"><img class="army" src="/images/commanderdata/units/fenix/warbringer.jpg" alt="Warbringer"><img class="army" src="/images/commanderdata/units/fenix/mojo.jpg" alt="Mojo"><img class="army" src="/images/commanderdata/units/fenix/clolarion.jpg" alt="Clolarion">
-    <p>You should be making the full complement of Fenix's units to take advantage of the very powerful Champion AI's along with their Tactical Data Web. Use Conservators to reduce damage taken by your army before you take engagements.</p>
-    <div id="tooltip">tooltip</div>
+    <p>常规玩法推荐使用阿昆德拉尔。如果玩家希望菲尼克斯不受持续时间限制，可以不选择任何威望天赋。若想体验更具挑战性的玩法，可尝试网络管理员。</p>
+    <h2 id="army">推荐部队组成</h2>
+    <p>菲尼克斯的推荐部队组成如下。请注意，这套配置假设未选择威望天赋并采用推荐精通点数。它只是部队框架的基础建议；建议了解<a href="#units">战斗单位</a>章节中的每个单位，并根据局势补充科技单位，以便更好地应对实际情况。</p>
+    <img class="army" src="/images/commanderdata/units/fenix/legionnaire.jpg" alt="军团战士"><img class="army" src="/images/commanderdata/units/fenix/adept.jpg" alt="使徒"><img class="army" src="/images/commanderdata/units/fenix/immortal.jpg" alt="不朽者"><img class="army" src="/images/commanderdata/units/fenix/colossus.jpg" alt="巨像"><img class="army" src="/images/commanderdata/units/fenix/scout.jpg" alt="侦察机"><img class="army" src="/images/commanderdata/units/fenix/carrier.jpg" alt="航母"><img class="army" src="/images/commanderdata/units/fenix/conservator.jpg" alt="保护者"><br>
+    <img class="army" src="/images/commanderdata/units/fenix/kaldalis.jpg" alt="卡尔达利斯"><img class="army" src="/images/commanderdata/units/fenix/talis.jpg" alt="塔里斯"><img class="army" src="/images/commanderdata/units/fenix/taldarin.jpg" alt="塔达林"><img class="army" src="/images/commanderdata/units/fenix/warbringer.jpg" alt="战争使者"><img class="army" src="/images/commanderdata/units/fenix/mojo.jpg" alt="莫乔"><img class="army" src="/images/commanderdata/units/fenix/clolarion.jpg" alt="克罗拉里昂">
+    <p>应生产菲尼克斯的全套单位，以充分发挥强大的勇士人工智能和战术数据网。交战前使用保护者降低部队承受的伤害。</p>
+    <div id="tooltip">提示</div>
     <script>
         $(".army").on('mouseover',function(e){
             var unit = $(this).attr("alt").split(":");
@@ -650,60 +650,60 @@ require_once __DIR__ . "/../../includes/wrapper.php";
 
         });
     </script>
-    <h2 id="units">Combat Units</h2>
-    <p>For more information on Fenix's unit stats, comparison between units and upgrade calculations, visit the <a href="/units/#fenix">Data Tables</a> page.</p>
-    <p>Fenix's combat units are listed below:</p>
+    <h2 id="units">战斗单位</h2>
+    <p>如需了解菲尼克斯的单位属性、单位对比和升级计算，请访问<a href="/units/#fenix">数据表</a>页面。</p>
+    <p>菲尼克斯的战斗单位如下：</p>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#fenix/legionnaire">
-                <img src="/images/commanderdata/units/fenix/legionnaire.jpg" alt="Legionnaire">
-                <p>Legionnaire</p>
+                <img src="/images/commanderdata/units/fenix/legionnaire.jpg" alt="军团战士">
+                <p>军团战士</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Relatively ineffective unit.</li>
-                <li>Generally recommended to make a small number to provide shells for the Kaldalis AI.</li>
+                <li>相对低效的单位。</li>
+                <li>通常只建议生产少量，作为卡尔达利斯人工智能的躯壳。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="unlockable autocast">
-                        <td><img src="/images/commanderdata/unitskills/fenix/charge.png" alt="Charge"></td>
-                        <td>Charge</td>
-                        <td>Intercepts enemy ground units and increases movement speed.</td>
-                        <td>10 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/fenix/charge.png" alt="冲锋"></td>
+                        <td>冲锋</td>
+                        <td>拦截敌方地面单位并提高移动速度。</td>
+                        <td>10秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="矿物">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/fenix/charge.png" alt="Charge"></td>
-                        <td>Charge</td>
-                        <td>Allows Legionnaires to intercept nearby enemies. Also increases the movement speed of Legionnaires by 0.25.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/fenix/charge.png" alt="冲锋"></td>
+                        <td>冲锋</td>
+                        <td>使军团战士可以拦截附近敌人，并使军团战士的移动速度提高0.25。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -712,34 +712,34 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#fenix/adept">
-                <img src="/images/commanderdata/units/fenix/adept.jpg" alt="Adept">
-                <p>Adept</p>
+                <img src="/images/commanderdata/units/fenix/adept.jpg" alt="使徒">
+                <p>使徒</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Should be the core of Fenix's army.</li>
-                <li>Cheap but very effective unit.</li>
+                <li>应作为菲尼克斯部队的核心。</li>
+                <li>价格低廉且十分高效。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades:</p>
+            <p>技能：无</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="矿物">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/fenix/psionicprojection.png" alt="Psionic Projection"></td>
-                        <td>Psionic Projection</td>
-                        <td>Attacks summon an invulnerable Shade that will attack enemies for a short time for 33% damage per shot, 3 shots total.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/fenix/psionicprojection.png" alt="灵能投影"></td>
+                        <td>灵能投影</td>
+                        <td>攻击时召唤一个无敌的影像，短暂攻击敌人，每次射击造成33%的伤害，共射击3次。</td>
                         <td>50/50</td>
-                        <td>60 seconds</td>
+                        <td>60秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -748,56 +748,56 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#fenix/conservator">
-                <img src="/images/commanderdata/units/fenix/conservator.jpg" alt="Conservator">
-                <p>Conservator</p>
+                <img src="/images/commanderdata/units/fenix/conservator.jpg" alt="保护者">
+                <p>保护者</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>A must-have in any army composition.</li>
-                <li>Protective Field reduces all incoming damage to your units.</li>
-                <li>Phasing mode can allow for quick warp reinforcements.</li>
-                <li>Recommended to have at least three in your army for constant Protective Fields.</li>
+                <li>任何部队组成中都不可或缺。</li>
+                <li>保护力场可降低单位承受的所有伤害。</li>
+                <li>相位模式可以让增援单位快速折跃进场。</li>
+                <li>建议部队中至少配备三架，以持续维持保护力场。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/fenix/protectivefield.png" alt="Protective Field"></td>
-                        <td>Protective Field</td>
-                        <td>Creates a shield that reduces all incoming attack damage to friendly units by 35%. Lasts 15 seconds.</td>
-                        <td>20 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/fenix/protectivefield.png" alt="保护力场"></td>
+                        <td>保护力场</td>
+                        <td>生成护盾，使友方单位受到的所有攻击伤害降低35%。持续15秒。</td>
+                        <td>20秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="矿物">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/fenix/optimizedemitters.png" alt="Optimized Emitters"></td>
-                        <td>Optimized Emitters</td>
-                        <td>Increases the duration of the Conservator's Protective Field by 100%.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/fenix/optimizedemitters.png" alt="优化发射器"></td>
+                        <td>优化发射器</td>
+                        <td>使保护者的保护力场持续时间提高100%。</td>
                         <td>50/50</td>
-                        <td>60 seconds</td>
+                        <td>60秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -806,71 +806,71 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#fenix/immortal">
-                <img src="/images/commanderdata/units/fenix/immortal.jpg" alt="Immortal">
-                <p>Immortal</p>
+                <img src="/images/commanderdata/units/fenix/immortal.jpg" alt="不朽者">
+                <p>不朽者</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Powerful, high-damage unit.</li>
-                <li>Recommended to always have them in most of your builds.</li>
-                <li>Great units to counter armored units.</li>
+                <li>强大且伤害很高的单位。</li>
+                <li>大多数部队配置都建议始终配备。</li>
+                <li>非常适合克制重甲单位。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/unitskills/fenix/barrier.png" alt="Barrier"></td>
-                        <td>Barrier</td>
-                        <td>Absorbs up to 100 damage. Lasts for 10 seconds.</td>
-                        <td>60 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/fenix/barrier.png" alt="屏障"></td>
+                        <td>屏障</td>
+                        <td>最多吸收100点伤害，持续10秒。</td>
+                        <td>60秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades: None</p>
+            <p>升级：无</p>
         </div>
     </div>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#fenix/colossus">
-                <img src="/images/commanderdata/units/fenix/colossus.jpg" alt="Colossus">
-                <p>Colossus</p>
+                <img src="/images/commanderdata/units/fenix/colossus.jpg" alt="巨像">
+                <p>巨像</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Build a very small number of them.</li>
-                <li>Splash damage works best against zerg builds.</li>
+                <li>只需生产极少量。</li>
+                <li>范围伤害最适合对付异虫部队。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades:</p>
+            <p>技能：无</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="矿物">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/fenix/extendedthermallance.png" alt="Extended Thermal Lance"></td>
-                        <td>Extended Thermal Lance</td>
-                        <td>Colossi gain +3 range.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/fenix/extendedthermallance.png" alt="延长热能射线枪"></td>
+                        <td>延长热能射线枪</td>
+                        <td>巨像获得+3射程。</td>
                         <td>100/100</td>
-                        <td>90 seconds</td>
+                        <td>90秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -879,62 +879,62 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#fenix/disruptor">
-                <img src="/images/commanderdata/units/fenix/disruptor.jpg" alt="Disruptor">
-                <p>Disruptor</p>
+                <img src="/images/commanderdata/units/fenix/disruptor.jpg" alt="干扰者">
+                <p>干扰者</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Extremely niche unit.</li>
-                <li>High burst damage.</li>
-                <li>Generally not worth making as other units can out-perform them for a lower cost.</li>
+                <li>用途极为有限的单位。</li>
+                <li>爆发伤害很高。</li>
+                <li>通常不值得生产，因为其他单位能以更低费用取得更好效果。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/fenix/purificationnova.png" alt="Purification Nova"></td>
-                        <td>Purification Nova</td>
-                        <td>Shoots out a ball of energy that emits a powerful nova dealing 150 splash damage and an additional 50 shield damage to nearby ground units and structures.</td>
-                        <td>20 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/fenix/purificationnova.png" alt="净化新星"></td>
+                        <td>净化新星</td>
+                        <td>发射一个能量球，释放强力新星，对附近的地面单位和建筑造成150点范围伤害，并额外对护盾造成50点伤害。</td>
+                        <td>20秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="矿物">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/fenix/cloakingmodule.png" alt="Cloaking Module"></td>
-                        <td>Cloaking Module</td>
-                        <td>Permanently cloaks all Disruptors.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/fenix/cloakingmodule.png" alt="隐形模块"></td>
+                        <td>隐形模块</td>
+                        <td>使所有干扰者永久隐形。</td>
                         <td>50/50</td>
-                        <td>60 seconds</td>
+                        <td>60秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/fenix/purificationecho.png" alt="Purification Echo"></td>
-                        <td>Purification Echo</td>
-                        <td>The Disruptor's Purification Nova explodes again after 2 seconds, dealing 75 damage in a larger area.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/fenix/purificationecho.png" alt="净化回响"></td>
+                        <td>净化回响</td>
+                        <td>干扰者的净化新星会在2秒后再次爆炸，在更大范围内造成75点伤害。</td>
                         <td>75/75</td>
-                        <td>90 seconds</td>
+                        <td>90秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -943,34 +943,34 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#fenix/scout">
-                <img src="/images/commanderdata/units/fenix/scout.jpg" alt="Scout">
-                <p>Scout</p>
+                <img src="/images/commanderdata/units/fenix/scout.jpg" alt="侦察机">
+                <p>侦察机</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Does bonus damage to light ground units making them highly effective on infested maps.</li>
-                <li>Does bonus damage to armored air units.</li>
+                <li>对轻甲地面单位造成额外伤害，因此在感染地图中非常有效。</li>
+                <li>对重甲空中单位造成额外伤害。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades:</p>
+            <p>技能：无</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="矿物">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/fenix/combatsensorarray.png" alt="Combat Sensor Array"></td>
-                        <td>Combat Sensor Array</td>
-                        <td>Scouts gain +3 air attack range and +1 ground attack range.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/fenix/combatsensorarray.png" alt="战斗传感器阵列"></td>
+                        <td>战斗传感器阵列</td>
+                        <td>侦察机的对空攻击射程提高3，对地攻击射程提高1。</td>
                         <td>50/50</td>
-                        <td>60 seconds</td>
+                        <td>60秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -979,112 +979,112 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#fenix/carrier">
-                <img src="/images/commanderdata/units/fenix/carrier.jpg" alt="Carrier">
-                <p>Carrier</p>
+                <img src="/images/commanderdata/units/fenix/carrier.jpg" alt="航母">
+                <p>航母</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Interceptors can mess with enemy AI, providing for a great distraction.</li>
+                <li>拦截机能干扰敌方人工智能，是非常有效的诱饵。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/unitskills/fenix/buildinterceptor.png" alt="Build Interceptor"></td>
-                        <td>Build Interceptor</td>
-                        <td>Builds Interceptors that automatically attack the Carrier's target. Carriers may not attack without Interceptors.<br><br>Can attack ground and air units. 8 Interceptors max.</td>
-                        <td>15s</td>
+                        <td><img src="/images/commanderdata/unitskills/fenix/buildinterceptor.png" alt="制造拦截机"></td>
+                        <td>制造拦截机</td>
+                        <td>制造自动攻击航母目标的拦截机。航母没有拦截机时无法攻击。<br><br>可攻击地面和空中单位。最多8架拦截机。</td>
+                        <td>15秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="矿物">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/fenix/gravitoncatapult.png" alt="Graviton Catapult"></td>
-                        <td>Graviton Catapult</td>
-                        <td>Makes the Carrier launch Interceptors more quickly by 100%.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/fenix/gravitoncatapult.png" alt="引力弹射器"></td>
+                        <td>引力弹射器</td>
+                        <td>使航母释放拦截机的速度提高100%。</td>
                         <td>150/150</td>
-                        <td>80 seconds</td>
+                        <td>80秒</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-    <h2 id="champions">Champion A.I.'s</h2>
+    <h2 id="champions">勇士人工智能</h2>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#fenix/kaldalis">
-                <img src="/images/commanderdata/units/fenix/kaldalis.jpg" alt="Kaldalis">
-                <p>Kaldalis</p>
+                <img src="/images/commanderdata/units/fenix/kaldalis.jpg" alt="卡尔达利斯">
+                <p>卡尔达利斯</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Hero Zealot.</li>
-                <li>Very powerful with Avenging Protocol.</li>
-                <li>Empowered Blades Cleave damage applies to primary target as well.</li>
-                <li>Take full advantage of Tactical Data web when using Prestiges.</li>
+                <li>英雄狂热者。</li>
+                <li>配合复仇协议时非常强大。</li>
+                <li>强化利刃的顺劈伤害也会作用于主要目标。</li>
+                <li>使用威望时应充分利用战术数据网。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/unitskills/fenix/engage.png" alt="Engage"></td>
-                        <td>Engage</td>
-                        <td>Kaldalis intercepts the target unit.</td>
-                        <td>5s</td>
+                        <td><img src="/images/commanderdata/unitskills/fenix/engage.png" alt="接战"></td>
+                        <td>接战</td>
+                        <td>卡尔达利斯拦截目标单位。</td>
+                        <td>5秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="矿物">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/fenix/empoweredblades.png" alt="Empowered Blades"></td>
-                        <td>Empowered Blades</td>
-                        <td>Kaldalis' attacks deal area damage.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/fenix/empoweredblades.png" alt="强化利刃"></td>
+                        <td>强化利刃</td>
+                        <td>卡尔达利斯的攻击可造成范围伤害。</td>
                         <td>50/50</td>
-                        <td>60 seconds</td>
+                        <td>60秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -1093,54 +1093,54 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#fenix/talis">
-                <img src="/images/commanderdata/units/fenix/talis.jpg" alt="Talis">
-                <p>Talis</p>
+                <img src="/images/commanderdata/units/fenix/talis.jpg" alt="塔里斯">
+                <p>塔里斯</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Hero Adept.</li>
-                <li>"Ricochet Glaive" upgrade is highly recommended because it causes enemies to take significantly more damage from your units.</li>
+                <li>英雄使徒。</li>
+                <li>强烈推荐“弹射战刃”升级，因为它能使敌人受到你的单位造成的伤害显著提高。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/unitskills/fenix/ricochetglaive.png" alt="Ricochet Glaive"></td>
-                        <td>Ricochet Glaive</td>
-                        <td>An amplified Glaive that ricochets and hits up to 3 enemy units for 25 (35 vs Light) damage each.</td>
-                        <td>5 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/fenix/ricochetglaive.png" alt="弹射战刃"></td>
+                        <td>弹射战刃</td>
+                        <td>投掷强化战刃，在敌人之间弹射，最多命中3个敌方单位，每个目标受到25点（对轻甲35点）伤害。</td>
+                        <td>5秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="矿物">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/fenix/debilitationsystem.png" alt="Debilitation System"></td>
-                        <td>Debilitation System</td>
-                        <td>Talis' Ricochet Glaive bounces 5 additional times and causes every unit hit by Ricochet Glaive to take 5 additional damage for 5 seconds.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/fenix/debilitationsystem.png" alt="弱化系统"></td>
+                        <td>弱化系统</td>
+                        <td>塔里斯的弹射战刃额外弹射5次，并使被弹射战刃命中的每个单位在5秒内受到的伤害提高5点。</td>
                         <td>50/50</td>
-                        <td>60 seconds</td>
+                        <td>60秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -1149,55 +1149,55 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#fenix/taldarin">
-                <img src="/images/commanderdata/units/fenix/taldarin.jpg" alt="Taldarin">
-                <p>Taldarin</p>
+                <img src="/images/commanderdata/units/fenix/taldarin.jpg" alt="塔达林">
+                <p>塔达林</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Hero Immortal.</li>
-                <li>Should be your first Champion out to clear rocks (along with Fenix if the expansion is contested).</li>
-                <li>Synergizes well with splash damage as his auto-attacks pulls enemies closer together.</li>
+                <li>英雄不朽者。</li>
+                <li>应作为首名出场的勇士清理岩石（若分矿有敌人防守，则与菲尼克斯一同清理）。</li>
+                <li>普通攻击会将敌人拉到一起，因此与范围伤害配合良好。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/unitskills/fenix/barrier.png" alt="Barrier"></td>
-                        <td>Barrier</td>
-                        <td>Absorbs up to 200 damage. Lasts for 10 seconds.</td>
-                        <td>60 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/fenix/barrier.png" alt="屏障"></td>
+                        <td>屏障</td>
+                        <td>最多吸收200点伤害，持续10秒。</td>
+                        <td>60秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="矿物">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/fenix/gravimetricoverload.png" alt="Gravimetric Overload"></td>
-                        <td>Gravimetric Overload</td>
-                        <td>Taldarin's attacks store 25% of the damage dealt on the target. When that unit is killed, it explodes, dealing all of the stored damage to nearby enemy units.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/fenix/gravimetricoverload.png" alt="引力过载"></td>
+                        <td>引力过载</td>
+                        <td>塔达林的攻击会在目标身上储存所造成伤害的25%。该单位阵亡时爆炸，对附近敌方单位造成全部已储存伤害。</td>
                         <td>75/75</td>
-                        <td>90 seconds</td>
+                        <td>90秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -1206,55 +1206,55 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#fenix/warbringer">
-                <img src="/images/commanderdata/units/fenix/warbringer.jpg" alt="Warbringer">
-                <p>Warbringer</p>
+                <img src="/images/commanderdata/units/fenix/warbringer.jpg" alt="战争使者">
+                <p>战争使者</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Hero Colossus.</li>
-                <li>Auto-attacks slows down enemy units.</li>
-                <li>Should be the second Champion out to help with early attack waves and pushing.</li>
+                <li>英雄巨像。</li>
+                <li>普通攻击可使敌方单位减速。</li>
+                <li>应作为第二名出场的勇士，帮助应对前期进攻波和推进。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="unlockable autocast">
-                        <td><img src="/images/commanderdata/unitskills/fenix/purificationblast.png" alt="Purification Blast"></td>
-                        <td>Purification Blast</td>
-                        <td>Fire a devastating blast that deals 150 damage the target unit.</td>
-                        <td>5 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/fenix/purificationblast.png" alt="净化轰击"></td>
+                        <td>净化轰击</td>
+                        <td>发射毁灭性能量束，对目标单位造成150点伤害。</td>
+                        <td>5秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="矿物">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/fenix/purificationblast.png" alt="Purification Blast"></td>
-                        <td>Purification Blast</td>
-                        <td>Warbringer fires a devastating blast that deals 150 damage the target unit.</td>
+                        <td><img src="/images/commanderdata/unitskills/fenix/purificationblast.png" alt="净化轰击"></td>
+                        <td>净化轰击</td>
+                        <td>战争使者发射毁灭性能量束，对目标单位造成150点伤害。</td>
                         <td>75/75</td>
-                        <td>90 seconds</td>
+                        <td>90秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -1263,62 +1263,62 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#fenix/mojo">
-                <img src="/images/commanderdata/units/fenix/mojo.jpg" alt="Mojo">
-                <p>Mojo</p>
+                <img src="/images/commanderdata/units/fenix/mojo.jpg" alt="莫乔">
+                <p>莫乔</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Hero Scout.</li>
-                <li>Auto-attacks stuns enemy air units for 2 seconds.</li>
-                <li>Useful for disabling air spellcasters like Battlecruisers.</li>
+                <li>英雄侦察机。</li>
+                <li>普通攻击会使敌方空中单位昏迷2秒。</li>
+                <li>适合限制战列巡航舰等空中施法单位。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="unlockable autocast">
-                        <td><img src="/images/commanderdata/unitskills/fenix/suppressionprocedure.png" alt="Suppression Procedure"></td>
-                        <td>Suppression Procedure</td>
-                        <td>Fire a barrage of Anti-Matter Missiles, dealing 6 (12 vs Armored) area damage and stunning nearby enemy air units for 1 second.</td>
-                        <td>5s</td>
+                        <td><img src="/images/commanderdata/unitskills/fenix/suppressionprocedure.png" alt="压制程序"></td>
+                        <td>压制程序</td>
+                        <td>发射一轮反物质导弹，造成6点（对重甲12点）范围伤害，并使附近敌方空中单位昏迷1秒。</td>
+                        <td>5秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="矿物">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/fenix/combatsensorarray.png" alt="Combat Sensor Array"></td>
-                        <td>Combat Sensor Array</td>
-                        <td>Scouts gain +3 air attack range and +1 ground attack range.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/fenix/combatsensorarray.png" alt="战斗传感器阵列"></td>
+                        <td>战斗传感器阵列</td>
+                        <td>侦察机的对空攻击射程提高3，对地攻击射程提高1。</td>
                         <td>50/50</td>
-                        <td>60 seconds</td>
+                        <td>60秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/fenix/suppressionprocedure.png" alt="Suppression Procedure"></td>
-                        <td>Suppression Procedure</td>
-                        <td>Mojo fires a barrage of Anti-Matter Missiles, dealing area damage and stunning nearby enemy air units for 1 second.</td>
+                        <td><img src="/images/commanderdata/unitskills/fenix/suppressionprocedure.png" alt="压制程序"></td>
+                        <td>压制程序</td>
+                        <td>莫乔发射一轮反物质导弹，造成范围伤害并使附近敌方空中单位昏迷1秒。</td>
                         <td>50/50</td>
-                        <td>60 seconds</td>
+                        <td>60秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -1327,148 +1327,148 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#fenix/clolarion">
-                <img src="/images/commanderdata/units/fenix/clolarion.jpg" alt="Clolarion">
-                <p>Clolarion</p>
+                <img src="/images/commanderdata/units/fenix/clolarion.jpg" alt="克罗拉里昂">
+                <p>克罗拉里昂</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Hero Carrier.</li>
-                <li>Solar Beam can only target enemy air units.</li>
-                <li>Very tanky unit that can be brought to the front of your army for pushes.</li>
+                <li>英雄航母。</li>
+                <li>太阳光束只能以敌方空中单位为目标。</li>
+                <li>生存能力极强，推进时可放在部队前排。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/unitskills/fenix/buildinterceptor.png" alt="Build Interceptor"></td>
-                        <td>Build Interceptor</td>
-                        <td>Builds Interceptors that automatically attack the Carrier's target. Carriers may not attack without Interceptors.<br><br>Can attack ground and air units. 8 Interceptors max.</td>
-                        <td>15s</td>
+                        <td><img src="/images/commanderdata/unitskills/fenix/buildinterceptor.png" alt="制造拦截机"></td>
+                        <td>制造拦截机</td>
+                        <td>制造自动攻击航母目标的拦截机。航母没有拦截机时无法攻击。<br><br>可攻击地面和空中单位。最多8架拦截机。</td>
+                        <td>15秒</td>
                         <td>0</td>
                     </tr>
                     <tr class="unlockable autocast">
-                        <td><img src="/images/commanderdata/unitskills/fenix/buildinterdictor.png" alt="Build Interdictor"></td>
-                        <td>Build Interdictor</td>
-                        <td>Builds Interdictors that automatically bomb enemy ground units for 12 damage.<br><br>Can attack ground units.</td>
-                        <td>15s</td>
+                        <td><img src="/images/commanderdata/unitskills/fenix/buildinterdictor.png" alt="制造禁绝者"></td>
+                        <td>制造禁绝者</td>
+                        <td>制造自动轰炸敌方地面单位的禁绝者，造成12点伤害。<br><br>可攻击地面单位。</td>
+                        <td>15秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="矿物">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/fenix/interdictors.png" alt="Interdictors"></td>
-                        <td>Interdictors</td>
-                        <td>In addition to his Interceptors, Clorarion deploys 2 Interdictors that automatically bomb enemy ground units.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/fenix/interdictors.png" alt="禁绝者"></td>
+                        <td>禁绝者</td>
+                        <td>除拦截机外，克罗拉里昂还会部署2架自动轰炸敌方地面单位的禁绝者。</td>
                         <td>75/75</td>
-                        <td>90 seconds</td>
+                        <td>90秒</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-    <p>The below table lists out the effects of Tactical Data Web on the Champion A.I.'s:</p>
+    <p>下表列出了战术数据网对勇士人工智能的效果：</p>
     <div class="tableContainer">
         <table>
             <thead>
                 <tr>
-                    <th>Champion</th>
-                    <th>Affected Ability</th>
-                    <th>Ability Description</th>
-                    <th>Tactical Data Web Effect</th>
-                    <th>Shells</th>
+                    <th>勇士</th>
+                    <th>受影响技能</th>
+                    <th>技能说明</th>
+                    <th>战术数据网效果</th>
+                    <th>躯壳数</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Kaldalis</td>
-                    <td>Empowered Blades</td>
-                    <td>Kaldalis attacks deal 9 damage to nearby enemy targets.</td>
-                    <td>Empowered Blades deal an additional 4.5 damage for each networked Legionnaire (up to 30 damage).</td>
+                    <td>卡尔达利斯</td>
+                    <td>强化利刃</td>
+                    <td>卡尔达利斯的攻击对附近敌方目标造成9点伤害。</td>
+                    <td>每个接入网络的军团战士使强化利刃额外造成4.5点伤害（最多30点伤害）。</td>
                     <td>7</td>
                 </tr>
                 <tr>
-                    <td>Talis</td>
-                    <td>Ricochet Glaive</td>
-                    <td>An amplified glaive that ricochets and hits up to 3 enemy units for 25 (35 vs light) damage each. 5 second cooldown.</td>
-                    <td>Ricochet Glaive's does an additional 2.5 (3.5 vs Light) damage for each networked Adept (up to 25 (35 vs Light) damage).</td>
+                    <td>塔里斯</td>
+                    <td>弹射战刃</td>
+                    <td>投掷强化战刃，在敌人之间弹射，最多命中3个敌方单位，每个目标受到25点（对轻甲35点）伤害。冷却时间5秒。</td>
+                    <td>每个接入网络的使徒使弹射战刃额外造成2.5点（对轻甲3.5点）伤害（最多25点，对轻甲35点伤害）。</td>
                     <td>10</td>
                 </tr>
                 <tr>
-                    <td>Taldarin</td>
-                    <td>Gravimetric Overload</td>
-                    <td>Each attack stores 25% of the damage dealt on the target. When that unit is killed, it explodes, dealing all of the stored damage to nearby enemies.</td>
-                    <td>Gravimetric Overload stores 10% additional damage per attack for each networked Immortal (up to 50% damage).</td>
+                    <td>塔达林</td>
+                    <td>引力过载</td>
+                    <td>每次攻击会在目标身上储存所造成伤害的25%。该单位阵亡时爆炸，对附近敌人造成全部已储存伤害。</td>
+                    <td>每个接入网络的不朽者使引力过载每次攻击额外储存10%的伤害（最多50%伤害）。</td>
                     <td>5</td>
                 </tr>
                 <tr>
-                    <td>Warbringer</td>
-                    <td>Purification Blast</td>
-                    <td>Fires a devastating blast that deals 150 damage to the target unit. 5 second cooldown.</td>
-                    <td>Purification Blast does an additional 45 damage for each networked Colossus (up to 150 damage).</td>
+                    <td>战争使者</td>
+                    <td>净化轰击</td>
+                    <td>发射毁灭性能量束，对目标单位造成150点伤害。冷却时间5秒。</td>
+                    <td>每个接入网络的巨像使净化轰击额外造成45点伤害（最多150点伤害）。</td>
                     <td>4</td>
                 </tr>
                 <tr>
-                    <td>Mojo</td>
-                    <td>Suppression Procedure</td>
-                    <td>Fires a barrage of Anti-Matter missiles, dealing 6 (12 vs armored) area damage and stunning nearby enemy air units for 1 seconds. 5 second cooldown.</td>
-                    <td>Suppression Procedure does an additional 0.9 (1.8 vs Armored) damage for each networked Scout (up to 6 (12 vs Armored) damage).</td>
+                    <td>莫乔</td>
+                    <td>压制程序</td>
+                    <td>发射一轮反物质导弹，造成6点（对重甲12点）范围伤害，并使附近敌方空中单位昏迷1秒。冷却时间5秒。</td>
+                    <td>每个接入网络的侦察机使压制程序额外造成0.9点（对重甲1.8点）伤害（最多6点，对重甲12点伤害）。</td>
                     <td>7</td>
                 </tr>
                 <tr>
-                    <td>Clolarion</td>
-                    <td>Interdictors</td>
-                    <td>Automatically bombs enemy ground units for 12 damage.</td>
-                    <td>Interdictor damage is increased by 3 for each networked Carrier (up to 10 damage).</td>
+                    <td>克罗拉里昂</td>
+                    <td>禁绝者</td>
+                    <td>自动轰炸敌方地面单位，造成12点伤害。</td>
+                    <td>每艘接入网络的航母使禁绝者的伤害提高3点（最多提高10点）。</td>
                     <td>4</td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <h2 id="buildOrder">Build Order</h2>
-    <p>Below is the standard economic build order for Fenix. For more information on how to read and construct your own build orders, please check the <a href="/guides/buildordertheory">Build Order Theory</a> page.</p>
+    <h2 id="buildOrder">建造顺序</h2>
+    <p>以下是菲尼克斯的标准经济型建造顺序。如需了解如何阅读并设计自己的建造顺序，请查看<a href="/guides/buildordertheory">建造顺序理论</a>页面。</p>
     <p class="buildOrder">
-        15 Pylon<br>
-        16 Assimilator<br>
-        17 Robotics Facility<br>
-        17 Assimilator<br>
-        22 Immortal + AI -> Rocks<br>
-        26 Pylon<br>
-        31 Nexus<br>
+        15 水晶塔<br>
+        16 气矿采集场<br>
+        17 机械台<br>
+        17 气矿采集场<br>
+        22 不朽者 + 人工智能 -> 岩石<br>
+        26 水晶塔<br>
+        31 星灵枢纽<br>
     </p>
-    <h2 id="guide">Gameplay Guide</h2>
-    <h3>Playstyle Traps</h3>
-    <p>A lot of Fenix players will attempt to rush Carriers. This is due to the lack of Tech requirements for Fenix. A player can simply build a Stargate and a Fleet Beacon (at the same time) without having to build a Gateway or a Cybernetics Core. Additionally, Carriers are end-game units that can swarm the enemy when massed. However, the downside to this rush is it significantly slows down the player from expanding - something which is extremely important when trying to mass carriers. Additionally, it foregoes Fenix's other champions, which are extremely powerful in their own right. It is much more effective to do a 6-champion build with a mix of units.</p>
-    <h3>Playstyle Tips</h3>
+    <h2 id="guide">玩法指南</h2>
+    <h3>玩法误区</h3>
+    <p>许多菲尼克斯玩家会尝试速出航母，这是因为菲尼克斯没有科技要求。玩家无需建造传送门或控制芯核，便可直接同时建造星门和舰队航标。此外，航母是后期单位，成群后可以淹没敌人。然而，速出航母会大幅拖慢开分矿，而大量生产航母又极度依赖分矿经济。这种打法也放弃了菲尼克斯其他本就十分强大的勇士。相比之下，使用混合部队并集齐6名勇士要高效得多。</p>
+    <h3>玩法提示</h3>
     <ul>
-        <li>Get Taldarin out as soon as possible to clear your expansion. Back him up with Fenix if the expansion is contested.</li>
-        <li>It is recommended to build 6 gateways to provide you with your Adepts.</li>
-        <li>Aim to only have one Legionnaire (Kaldalis) out at a time to take advantage of the Avenging Protocol stacks.</li>
-        <li>Use the Conservator Protective Field whenever you want to push into enemy bases.</li>
-        <li>Keep changing Fenix Armor Suits so that you are using the one that most effectively serves your need.</li>
-        <li>When using the Praetor Armor, ensure you disable the Whirlwind ability from autocast as this wastes energy and would be much better used if manually controlled.</li>
-        <li>Kaldalis and Warbringer can be limited in terms of their attack speed. The video below explains this further:
+        <li>尽快生产塔达林清理分矿。如果分矿有敌人防守，让菲尼克斯协助他。</li>
+        <li>建议建造6座传送门来生产使徒。</li>
+        <li>尽量让场上一次只有一个军团战士（卡尔达利斯），以利用复仇协议的叠加效果。</li>
+        <li>每当要推进敌方基地时，都应使用保护者的保护力场。</li>
+        <li>持续切换菲尼克斯的装甲形态，确保当前装甲最适合实际需求。</li>
+        <li>使用执政官装甲时，请务必关闭旋风斩的自动施放。自动施放会浪费能量，手动控制能发挥更好的效果。</li>
+        <li>卡尔达利斯和战争使者的攻击速度可能受到限制。下方视频有进一步说明：
             <iframe width="475" height="268" src="https://www.youtube.com/embed/VyUOweN-ymQ" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </li>
     </ul>

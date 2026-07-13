@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
@@ -9,12 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-    <link rel="stylesheet" href="/styles/global.css?v=70e9bc">
+    <link rel="stylesheet" href="/styles/global.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <title>Starcraft 2 Co-op - Commander Guide - Nova</title>
-  <meta name="description" content="Starcraft 2 Co-op Commander Guide Nova">
-  <meta name="keywords" content="Starcraft co-op guides nova commander mastery prestige build">
-  <link rel="stylesheet"  media="all" type="text/css" href="/styles/commanderstyle.css?v=df8ce4?v=2">
+      <title>星际争霸 2 合作任务 - 指挥官攻略 - 诺娃</title>
+  <meta name="description" content="星际争霸 2 合作任务指挥官诺娃攻略">
+  <meta name="keywords" content="星际争霸 合作任务 攻略 诺娃 指挥官 精通 威望 配兵">
+  <link rel="stylesheet"  media="all" type="text/css" href="/styles/commanderstyle.css?v=2">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="https://starcraft2coop.com/commanders/nova">
   <style>
@@ -27,105 +27,105 @@
 <body>
 
 <header id="header">
-    <img src="/images/starcraft2coop.png" alt="Starcraft II Co-op">
+    <img src="/images/starcraft2coop.png" alt="StarCraft II 合作任务">
 </header>
 <script>
 if (document.location.host === 'dev.starcraft2coop.com') {
-    document.write('<div class="construction">THIS IS THE TEST SITE. (<a href="https://starcraft2coop.com">Go to the real site</a>)</div>');
+    document.write('<div class="construction">这里是测试站点。（<a href="https://starcraft2coop.com">前往正式站点</a>）</div>');
 }
 </script>
 <nav id="menu">
 <ul id="topmenu">
-    <li class="normal"><a href="/" title="Home">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>Home</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+    <li class="normal"><a href="/" title="首页">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>首页</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
     </a></li>
-    <li class="highlight"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-commanders">Commanders</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-resources">Guides</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-missions">Missions</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-about">About</a></li>
-    <li class="normal"><button type="button" id="site-search-button" title="Search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Search</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+    <li class="highlight"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-commanders">指挥官</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-resources">攻略</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-missions">任务</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-about">关于</a></li>
+    <li class="normal"><button type="button" id="site-search-button" title="搜索">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>搜索</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
         <span class="search-shortcut" aria-hidden="true"></span>
     </button></li>
 </ul>
 <div id="container">
     <div id="commanderList" class="submenu">
-        <a href="/commanders/raynor" class="normal"><img src="/images/commanderportraits/raynorportrait.png" alt="Raynor"></a>
-        <a href="/commanders/kerrigan" class="normal"><img src="/images/commanderportraits/kerriganportrait.png" alt="Kerrigan"></a>
-        <a href="/commanders/artanis" class="normal"><img src="/images/commanderportraits/artanisportrait.png" alt="Artanis"></a>
-        <a href="/commanders/swann" class="normal"><img src="/images/commanderportraits/swannportrait.png" alt="Swann"></a>
-        <a href="/commanders/zagara" class="normal"><img src="/images/commanderportraits/zagaraportrait.png" alt="Zagara"></a>
-        <a href="/commanders/vorazun" class="normal"><img src="/images/commanderportraits/vorazunportrait.png" alt="Vorazun"></a>
-        <a href="/commanders/karax" class="normal"><img src="/images/commanderportraits/karaxportrait.png" alt="Karax"></a>
-        <a href="/commanders/abathur" class="normal"><img src="/images/commanderportraits/abathurportrait.png" alt="Abathur"></a>
-        <a href="/commanders/alarak" class="normal"><img src="/images/commanderportraits/alarakportrait.png" alt="Alarak"></a>
-        <a href="/commanders/nova" class="highlight"><img src="/images/commanderportraits/novaportrait.png" alt="Nova"></a>
-        <a href="/commanders/stukov" class="normal"><img src="/images/commanderportraits/stukovportrait.png" alt="Stukov"></a>
-        <a href="/commanders/fenix" class="normal"><img src="/images/commanderportraits/fenixportrait.png" alt="Fenix"></a>
-        <a href="/commanders/dehaka" class="normal"><img src="/images/commanderportraits/dehakaportrait.png" alt="Dehaka"></a>
-        <a href="/commanders/horner" class="normal"><img src="/images/commanderportraits/hornerportrait.png" alt="Han &amp; Horner"></a>
-        <a href="/commanders/tychus" class="normal"><img src="/images/commanderportraits/tychusportrait.png" alt="Tychus"></a>
-        <a href="/commanders/zeratul" class="normal"><img src="/images/commanderportraits/zeratulportrait.png" alt="Zeratul"></a>
-        <a href="/commanders/stetmann" class="normal"><img src="/images/commanderportraits/stetmannportrait.png" alt="Stetmann"></a>
-        <a href="/commanders/mengsk" class="normal"><img src="/images/commanderportraits/mengskportrait.png" alt="Mengsk"></a>
+        <a href="/commanders/raynor" class="normal"><img src="/images/commanderportraits/raynorportrait.png" alt="雷诺"></a>
+        <a href="/commanders/kerrigan" class="normal"><img src="/images/commanderportraits/kerriganportrait.png" alt="凯瑞甘"></a>
+        <a href="/commanders/artanis" class="normal"><img src="/images/commanderportraits/artanisportrait.png" alt="阿塔尼斯"></a>
+        <a href="/commanders/swann" class="normal"><img src="/images/commanderportraits/swannportrait.png" alt="斯旺"></a>
+        <a href="/commanders/zagara" class="normal"><img src="/images/commanderportraits/zagaraportrait.png" alt="扎加拉"></a>
+        <a href="/commanders/vorazun" class="normal"><img src="/images/commanderportraits/vorazunportrait.png" alt="沃拉尊"></a>
+        <a href="/commanders/karax" class="normal"><img src="/images/commanderportraits/karaxportrait.png" alt="凯拉克斯"></a>
+        <a href="/commanders/abathur" class="normal"><img src="/images/commanderportraits/abathurportrait.png" alt="阿巴瑟"></a>
+        <a href="/commanders/alarak" class="normal"><img src="/images/commanderportraits/alarakportrait.png" alt="阿拉纳克"></a>
+        <a href="/commanders/nova" class="highlight"><img src="/images/commanderportraits/novaportrait.png" alt="诺娃"></a>
+        <a href="/commanders/stukov" class="normal"><img src="/images/commanderportraits/stukovportrait.png" alt="斯托科夫"></a>
+        <a href="/commanders/fenix" class="normal"><img src="/images/commanderportraits/fenixportrait.png" alt="菲尼克斯"></a>
+        <a href="/commanders/dehaka" class="normal"><img src="/images/commanderportraits/dehakaportrait.png" alt="德哈卡"></a>
+        <a href="/commanders/horner" class="normal"><img src="/images/commanderportraits/hornerportrait.png" alt="汉与霍纳"></a>
+        <a href="/commanders/tychus" class="normal"><img src="/images/commanderportraits/tychusportrait.png" alt="泰凯斯"></a>
+        <a href="/commanders/zeratul" class="normal"><img src="/images/commanderportraits/zeratulportrait.png" alt="泽拉图"></a>
+        <a href="/commanders/stetmann" class="normal"><img src="/images/commanderportraits/stetmannportrait.png" alt="斯台特曼"></a>
+        <a href="/commanders/mengsk" class="normal"><img src="/images/commanderportraits/mengskportrait.png" alt="蒙斯克"></a>
     </div>
     <div id="missionList" class="submenu">
-        <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">Chain of Ascension</div></a>
-        <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">Cradle of Death</div></a>
-        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">Dead of Night</div></a>
-        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">Lock &amp; Load</div></a>
-        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">Malwarfare</div></a>
-        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">Miner Evacuation</div></a>
-        <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">Mist Opportunities</div></a>
-        <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">Oblivion Express</div></a>
-        <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">Part &amp; Parcel</div></a>
-        <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">Rifts to Korhal</div></a>
-        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">Scythe of Amon</div></a>
-        <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">Temple of the Past</div></a>
-        <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">The Vermillion Problem</div></a>
-        <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">Void Launch</div></a>
-        <a href="/missions/voidthrashing" class="normal"><div class="mapImg mapImg-voidthrashing">Void Thrashing</div></a>
+        <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">飞升之链</div></a>
+        <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">死亡摇篮</div></a>
+        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">亡者之夜</div></a>
+        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">天锁</div></a>
+        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">恶意代码</div></a>
+        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">疏散矿工</div></a>
+        <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">机会渺茫</div></a>
+        <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">湮灭快车</div></a>
+        <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">聚铁成兵</div></a>
+        <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">克哈裂痕</div></a>
+        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">埃蒙之镰</div></a>
+        <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">往日神庙</div></a>
+        <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">熔火危机</div></a>
+        <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">虚空降临</div></a>
+        <a href="/missions/voidthrashing" class="normal"><div class="mapImg mapImg-voidthrashing">虚空撕裂</div></a>
     </div>
     <div id="resources" class="submenu">
         <div class="submenu-with-sections"><div class="submenu-section">
-            <strong>Resources:</strong>
+            <strong>资料：</strong>
             <ul>
-                <li class="normal"><a href="/mutators/">Mutators</a></li>
-                <li class="normal"><a href="/resources/weeklymutations">Weekly&nbsp;Mutations</a></li>
-                <li class="normal"><a href="/resources/brutal">Brutal+</a></li>
-                <li class="normal"><a href="/units/">Unit&nbsp;Stats</a></li>
+                <li class="normal"><a href="/mutators/">突变因子</a></li>
+                <li class="normal"><a href="/resources/weeklymutations">每周突变</a></li>
+                <li class="normal"><a href="/resources/brutal">残酷+</a></li>
+                <li class="normal"><a href="/units/">单位数据</a></li>
             </ul>
         </div><div class="submenu-section">
-            <strong>Guides:</strong>
+            <strong>攻略：</strong>
             <ul>
-                <li class="normal"><a href="/guides/buildordertheory">Build&nbsp;Order&nbsp;Theory</a></li>
-                <li class="normal"><a href="/guides/enemycomps">Enemy&nbsp;Compositions</a></li>
-                <li class="normal"><a href="/guides/generaltips">General&nbsp;Tips</a></li>
-                <li class="normal"><a href="/guides/newplayer">New&nbsp;Players</a></li>
-                <li class="normal"><a href="/guides/youtube">Youtube</a></li>
+                <li class="normal"><a href="/guides/buildordertheory">建造顺序理论</a></li>
+                <li class="normal"><a href="/guides/enemycomps">敌方阵容</a></li>
+                <li class="normal"><a href="/guides/generaltips">通用技巧</a></li>
+                <li class="normal"><a href="/guides/newplayer">新手指南</a></li>
+                <li class="normal"><a href="/guides/youtube">YouTube</a></li>
             </ul>
         </div><div class="submenu-section">
-            <strong>Miscellaneous:</strong>
+            <strong>其他：</strong>
             <ul>
-                <li class="normal"><a href="/resources/achievements">Achievements</a></li>
-                <li class="normal"><a href="/resources/ailogic">AI&nbsp;Logic</a></li>
-                <li class="normal"><a href="/resources/bugs">Bugs</a></li>
-                <li class="normal"><a href="/resources/deathprevention">Death&nbsp;Prevent&nbsp;Effects</a></li>
-                <li class="normal"><a href="/resources/eastereggs">Easter&nbsp;Eggs</a></li>
-                <li class="normal"><a href="/resources/levels">Levels</a></li>
-                <li class="normal"><a href="/resources/patchdata">Patch&nbsp;Data</a></li>
-                <li class="normal"><a href="/tools/downloads">Downloads</a></li>
-                <li class="normal"><a href="/tools/masterybreakpoints">Mastery&nbsp;Breakpoints</a></li>
+                <li class="normal"><a href="/resources/achievements">成就</a></li>
+                <li class="normal"><a href="/resources/ailogic">人工智能逻辑</a></li>
+                <li class="normal"><a href="/resources/bugs">错误</a></li>
+                <li class="normal"><a href="/resources/deathprevention">免死效果</a></li>
+                <li class="normal"><a href="/resources/eastereggs">彩蛋</a></li>
+                <li class="normal"><a href="/resources/levels">等级</a></li>
+                <li class="normal"><a href="/resources/patchdata">补丁数据</a></li>
+                <li class="normal"><a href="/tools/downloads">下载</a></li>
+                <li class="normal"><a href="/tools/masterybreakpoints">精通阈值</a></li>
             </ul>
         </div></div>
     </div>
     <div id="about" class="submenu">
         <ul>
             <!--<li class="normal"><a href="/about/contact">Contact</a></li>-->
-            <li class="normal"><a href="/about/faq">FAQ</a></li>
-            <li class="normal"><a href="/about/links">Links</a></li>
+            <li class="normal"><a href="/about/faq">常见问题</a></li>
+            <li class="normal"><a href="/about/links">相关链接</a></li>
             <!--li class="normal"><a href="https://www.youtube.com/c/Starcraft2Coop" rel="nofollow">Youtube</a></li-->
-            <li class="normal"><a href="/about/stats">Misc. Stats</a></li>
+            <li class="normal"><a href="/about/stats">杂项统计</a></li>
         </ul>
     </div>
     <!--<div id="imgs">
@@ -176,409 +176,409 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         }
     })(jQuery);
 </script>
-<script src="/scripts/search.js?v=3646f5" defer></script>
+<script src="/scripts/search.js" defer></script>
 <div id="content">
-        <div id="tooltip">tooltip</div>
-    <h1><span class="unbold">Commander:</span> Nova</h1>
-    <p id="commanderMotto">Dominion Ghost</p>
+        <div id="tooltip">提示</div>
+    <h1><span class="unbold">指挥官：</span>诺娃</h1>
+    <p id="commanderMotto">帝国幽灵</p>
         <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#comSum">Commander Summary</a></p>
-        <p><a href="#levelUnlocks">Level Unlocks</a></p>
-        <p><a href="#achievements">Achievements</a></p>
-        <p><a href="#calldowns">Calldowns</a></p>
-        <p><a href="#leveling">Sub-Ascension Leveling</a></p>
-        <p><a href="#masteries">Masteries</a></p>
-        <p><a href="#prestiges">Prestiges</a></p>
-        <p><a href="#hero">Hero Unit</a></p>
-        <p><a href="#army">Recommended Army Composition</a></p>
-        <p><a href="#units">Combat Units</a></p>
-        <p><a href="#buildOrder">Build Order</a></p>
-        <p><a href="#guide">Gameplay Guide</a></p>
+        <h2>本页目录</h2>
+        <p><a href="#comSum">指挥官概览</a></p>
+        <p><a href="#levelUnlocks">等级解锁</a></p>
+        <p><a href="#achievements">成就</a></p>
+        <p><a href="#calldowns">面板技能</a></p>
+        <p><a href="#leveling">飞升前升级</a></p>
+        <p><a href="#masteries">精通</a></p>
+        <p><a href="#prestiges">威望</a></p>
+        <p><a href="#hero">英雄单位</a></p>
+        <p><a href="#army">推荐配兵</a></p>
+        <p><a href="#units">战斗单位</a></p>
+        <p><a href="#buildOrder">建造顺序</a></p>
+        <p><a href="#guide">玩法攻略</a></p>
     </div>
-    <h2 id="comSum">Commander Summary</h2>
-    <p>Nova is a deadly covert operative that uses highly-trained soldiers to control the battlefield.</p>
-    <h2 id="levelUnlocks">Level Unlocks</h2>
+    <h2 id="comSum">指挥官概览</h2>
+    <p>诺娃是一名致命的隐秘特工，她率领训练有素的精锐士兵掌控战场。</p>
+    <h2 id="levelUnlocks">等级解锁</h2>
     <table class="progressionTable">
         <thead>
             <tr>
-                <th>Level/Icon</th>
-                <th>Name</th>
-                <th>Description</th>
+                <th>等级/图标</th>
+                <th>名称</th>
+                <th>说明</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/progression/nova/nova_01.png" alt = "Covert Ops"></td>
-                <td>Covert Ops</td>
+                <td><img src="/images/commanderdata/progression/nova/nova_01.png" alt = "隐秘行动"></td>
+                <td>隐秘行动</td>
                 <td>
-                    Nova has a 100 supply maximum, but her units and structures have increased life, deal additional damage, and are resistant to stun effects. Trained units are instantly deployed onto the battlefield.
+                    诺娃的人口上限为 100，但她的单位和建筑拥有更高的生命值、能造成额外伤害，并且能够抵抗昏迷效果。训练完成的单位会立即部署到战场上。
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/nova/nova_02.png" alt = "Griffin Airstrike"></td>
-                <td>Griffin Airstrike</td>
+                <td><img src="/images/commanderdata/progression/nova/nova_02.png" alt = "格里芬空袭"></td>
+                <td>格里芬空袭</td>
                 <td>
-                    Unlocks the ability to call down the Griffin, which deploys several explosives along a targeted path. Call down the Griffin from the top panel.
+                    解锁呼叫格里芬号的能力，使其沿指定路径投下多枚炸弹。可从顶部面板呼叫格里芬号。
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/nova/nova_03.png" alt = "Assault Mode"></td>
-                <td>Assault Mode</td>
+                <td><img src="/images/commanderdata/progression/nova/nova_03.png" alt = "突击模式"></td>
+                <td>突击模式</td>
                 <td>
-                   Unlocks the ability to swap between two equipment loadouts in the field. Nova gains access to different abilities and a different weapon with each loadout.
+                   解锁在战场上切换两套装备的能力。每套装备都会为诺娃提供不同的技能和武器。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/nova/nova_04.png" alt = "Barracks Upgrade Cache"></td>
-                <td>Barracks Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/nova/nova_04.png" alt = "兵营升级包"></td>
+                <td>兵营升级包</td>
                 <td>
-                    Unlocks the following upgrades at the Barracks Tech Lab:
+                    在兵营科技实验室解锁以下升级：
                     <ul>
-                        <li>Unlock the Elite Marine's Super Stimpack ability, which increases their attack and movement speeds while healing them over time.</li>
-                        <li>Equip the Marauder Commando with an additional weapon that attacks their current target.</li>
+                        <li>解锁精英陆战队员的超级兴奋剂技能，在持续治疗他们的同时提高其攻击速度和移动速度。</li>
+                        <li>为劫掠者突击队配备一件额外武器，攻击其当前目标。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/nova/nova_05.png" alt = "Tactical Airlift"></td>
-                <td>Tactical Airlift</td>
+                <td><img src="/images/commanderdata/progression/nova/nova_05.png" alt = "战术空运"></td>
+                <td>战术空运</td>
                 <td>
-                    Unlocks the ability to call down the Griffin to rapidly transport your units to a targeted location. Call down the Griffin from the top panel.
+                    解锁呼叫格里芬号将你的单位快速运送至目标位置的能力。可从顶部面板呼叫格里芬号。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/nova/nova_06.png" alt = "Factory Upgrade Cache"></td>
-                <td>Factory Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/nova/nova_06.png" alt = "重工厂升级包"></td>
+                <td>重工厂升级包</td>
                 <td>
-                    Unlocks the following upgrades at the Factory Tech Lab:
+                    在重工厂科技实验室解锁以下升级：
                     <ul>
-                        <li>Enable Hellbat Rangers to leap toward enemy ground units and stun them on impact.</li>
-                        <li>Enable Strike Goliaths to stun enemy mechanical air units and disable their detection.</li>
-                        <li>Increase the Heavy Siege Tank's attack range over time while in Siege Mode.</li>
+                        <li>使恶蝠游骑兵能够跃向敌方地面单位，并在落地时将其昏迷。</li>
+                        <li>使强袭歌利亚能够昏迷敌方机械空中单位，并使其失去侦测能力。</li>
+                        <li>使重型攻城坦克在攻城模式下的攻击射程随时间提高。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/nova/nova_07.png" alt = "Automated Refineries"></td>
-                <td>Automated Refineries</td>
+                <td><img src="/images/commanderdata/progression/nova/nova_07.png" alt = "自动采气厂"></td>
+                <td>自动采气厂</td>
                 <td>
-                    Refineries automatically harvest Vespene Gas without the need for SCV's.
+                    采气厂无需 SCV 即可自动采集高能瓦斯。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/nova/nova_08.png" alt = "Covert Ops Upgrade Cache"></td>
-                <td>Covert Ops Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/nova/nova_08.png" alt = "隐秘行动升级包"></td>
+                <td>隐秘行动升级包</td>
                 <td>
-                    Unlocks an upgrade at the Barracks Tech Lab that enables Spec Ops Ghosts to fire two additional shots when using Snipe.<br><br>Also unlocks an upgrade at the Ghost Academy that increases Nova's life regeneration rate.
+                    在兵营科技实验室解锁一项升级，使特战幽灵使用狙击时额外射击两次。<br><br>同时在幽灵军校解锁一项升级，提高诺娃的生命恢复速度。
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/nova/nova_09.png" alt = "Tac Nuke Strike and Holo Decoy"></td>
-                <td>Tac Nuke Strike and Holo Decoy</td>
+                <td><img src="/images/commanderdata/progression/nova/nova_09.png" alt = "战术核打击与全息诱饵"></td>
+                <td>战术核打击与全息诱饵</td>
                 <td>
-                    Unlocks the Tac Nuke Strike ability, which allows Nova to call down a nuke while in Stealth Mode.<br><br>Also unlocks the Holo Decoy ability, which allows Nova to create a duplicate of herself that will attack on its own while in Assault Mode.
+                    解锁战术核打击技能，使诺娃能在隐形模式下召唤核弹。<br><br>同时解锁全息诱饵技能，使诺娃能在突击模式下制造一个会自主攻击的自身复制体。
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/nova/nova_10.png" alt = "Starport Upgrade Cache"></td>
-                <td>Starport Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/nova/nova_10.png" alt = "星港升级包"></td>
+                <td>星港升级包</td>
                 <td>
-                    Unlocks the following upgrades at the Starport Tech Lab:
+                    在星港科技实验室解锁以下升级：
                     <ul>
-                        <li>Unlock the Covert Banshee's Rocket Barrage ability, which deals damage to all enemy ground units in a target area.</li>
-                        <li>Allow Raid Liberators to transform faster.</li>
-                        <li>Allow Raid Liberators to attack structures while in Defender Mode.</li>
+                        <li>解锁隐秘女妖的火箭弹幕技能，对目标区域内所有敌方地面单位造成伤害。</li>
+                        <li>使突袭解放者能更快地切换模式。</li>
+                        <li>使突袭解放者能在防卫模式下攻击建筑。</li>
                     </ul>
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/nova/nova_11.png" alt = "Research and Development"></td>
-                <td>Research and Development</td>
+                <td><img src="/images/commanderdata/progression/nova/nova_11.png" alt = "研发项目"></td>
+                <td>研发项目</td>
                 <td>
-                    Reduces cost and time required to research upgrades at Tech Labs and the Ghost Academy by 50%.
+                    科技实验室和幽灵军校中升级的研究费用和时间降低 50%。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/nova/nova_12.png" alt = "Raven Upgrade Cache"></td>
-                <td>Raven Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/nova/nova_12.png" alt = "铁鸦升级包"></td>
+                <td>铁鸦升级包</td>
                 <td>
-                    Unlocks the following upgrades at the Starport Tech Lab:
+                    在星港科技实验室解锁以下升级：
                     <ul>
-                        <li>Increase the healing of the Raven Type-II's Bio-Mechanical Repair Drone and allow it to cloak units while healing them.</li>
-                        <li>Allow the Raven Type-II to store 2 additional charges for each of its abilities.</li>
+                        <li>提高铁鸦 II 型生化修复无人机的治疗量，并使其能在治疗单位时令该单位隐形。</li>
+                        <li>使铁鸦 II 型的每项技能都能额外储存 2 次充能。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/nova/nova_13.png" alt = "Military Hardware"></td>
-                <td>Military Hardware</td>
+                <td><img src="/images/commanderdata/progression/nova/nova_13.png" alt = "军用装备"></td>
+                <td>军用装备</td>
                 <td>
-                    Increases Nova's maximum number of Defensive Drone charges by 2 and reduces their cooldown by 30 seconds.
+                    诺娃的防御无人机最大充能次数提高 2，冷却时间缩短 30 秒。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/nova/nova_14.png" alt = "Nova Upgrade Cache"></td>
-                <td>Nova Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/nova/nova_14.png" alt = "诺娃升级包"></td>
+                <td>诺娃升级包</td>
                 <td>
-                    Unlocks the following upgrades at the Ghost Academy:
+                    在幽灵军校解锁以下升级：
                     <ul>
-                        <li>Allow Nova to regain 50% of Snipe's energy cost after killing a unit with it.</li>
-                        <li>Increase the range of Nova's Penetrating Blast.</li>
+                        <li>诺娃使用狙击击杀单位后，返还该技能 50% 的能量消耗。</li>
+                        <li>提高诺娃穿透射击的射程。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/nova/nova_15.png" alt = "Stance Dance"></td>
-                <td>Stance Dance</td>
+                <td><img src="/images/commanderdata/progression/nova/nova_15.png" alt = "姿态舞步"></td>
+                <td>姿态舞步</td>
                 <td>
-                    Reduces the cooldown of Stealth Mode and Assault Mode by 15 seconds. Nova gains maximum energy when switching modes.<br><br>Switching to Stealth Mode grants temporary invulnerability and switching to Assault Mode grants a temporary bonus to damage dealt (100%).
+                    隐形模式和突击模式的冷却时间缩短 15 秒。诺娃切换模式时恢复至最大能量。<br><br>切换至隐形模式时暂时获得无敌；切换至突击模式时，造成的伤害暂时提高 100%。
                 </td>
             </tr>
         </tbody>
     </table>
-    <p id="powerSpikeInfo">Highlighted rows denote large power spikes for the commander.</p>
-    <h2 id="achievements">Achievements</h2>
-    <p>The commander-specific achievements for Nova are:</p>
+    <p id="powerSpikeInfo">高亮行表示该指挥官迎来显著的强度提升。</p>
+    <h2 id="achievements">成就</h2>
+    <p>诺娃的指挥官专属成就如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Achievement</th>
-                <th>Name</th>
-                <th>Description</th>
+                <th>成就</th>
+                <th>名称</th>
+                <th>说明</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/achievements/nova/airraid.jpg" alt="Air Raid"></td>
-                <td>Air Raid</td>
-                <td>Deal 50,000 damage with Griffin Airstrike in Co-op Missions.</td>
+                <td><img src="/images/commanderdata/achievements/nova/airraid.jpg" alt="空袭"></td>
+                <td>空袭</td>
+                <td>在合作任务中使用格里芬空袭造成 50,000 点伤害。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/nova/cloakanddagger.jpg" alt="Cloak and Dagger"></td>
-                <td>Cloak and Dagger</td>
-                <td>Deal 200,000 damage with Nova while she is in Stealth Mode.</td>
+                <td><img src="/images/commanderdata/achievements/nova/cloakanddagger.jpg" alt="斗篷与匕首"></td>
+                <td>斗篷与匕首</td>
+                <td>使用隐形模式下的诺娃造成 200,000 点伤害。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/nova/droneitout.jpg" alt="Drone It Out"></td>
-                <td>Drone It Out</td>
-                <td>Absorb 10,000 damage for your ally with Nova's Defensive Drone in Co-op Missions.</td>
+                <td><img src="/images/commanderdata/achievements/nova/droneitout.jpg" alt="无人机扛住"></td>
+                <td>无人机扛住</td>
+                <td>在合作任务中使用诺娃的防御无人机为盟友吸收 10,000 点伤害。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/nova/ridingshotgun.jpg" alt="Riding Shotgun"></td>
-                <td>Riding Shotgun</td>
-                <td>Deal 200,000 damage with Nova while she is in Assault Mode.</td>
+                <td><img src="/images/commanderdata/achievements/nova/ridingshotgun.jpg" alt="近身火力"></td>
+                <td>近身火力</td>
+                <td>使用突击模式下的诺娃造成 200,000 点伤害。</td>
             </tr>
         </tbody>
     </table>
-    <h2 id="calldowns">Calldowns</h2>
-    <p>The calldowns for Nova, at level 15, with no mastery points added are:</p>
+    <h2 id="calldowns">面板技能</h2>
+    <p>以下是诺娃在 15 级且未分配精通点数时的面板技能：</p>
     <table class="calldownTable">
         <thead>
             <tr>
-                <th>Calldown</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Recommended Usage</th>
-                <th>Numbers</th>
+                <th>面板技能</th>
+                <th>名称</th>
+                <th>说明</th>
+                <th>推荐用法</th>
+                <th>数据</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/abilities/nova/defensivedrone.png" alt = "Defensive Drone"></td>
-                <td>Defensive Drone</td>
-                <td>Provides friendly units with shields that absorb up to 200 damage. Lasts for 60 seconds.</td>
+                <td><img src="/images/commanderdata/abilities/nova/defensivedrone.png" alt = "防御无人机"></td>
+                <td>防御无人机</td>
+                <td>为友方单位提供最多可吸收 200 点伤害的护盾，持续 60 秒。</td>
                 <td>
                     <ul>
-                        <li>Should be used when defending and attacking to protect your army.</li>
-                        <li>Can be used as a distraction to draw aggro away from your air units.</li>
-                        <li>Can also be used to keep vision in an area temporarily.</li>
+                        <li>进攻和防守时都应使用，以保护部队。</li>
+                        <li>可以用来吸引火力，让敌人不再攻击你的空中单位。</li>
+                        <li>也可用于暂时维持某个区域的视野。</li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        <li>Coolup: 60 seconds</li>
-                        <li>Cooldown: 60 seconds</li>
-                        <li>Max Charges: 5</li>
-                        <li>Mineral Cost: 100</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="/images/commanderdata/abilities/nova/griffinairstrike.png" alt = "Griffin Airstrike"></td>
-                <td>Griffin Airstrike</td>
-                <td>Calls down the Griffin to deal 500 damage to all targets in its flight path after a short delay.</td>
-                <td>
-                    <ul>
-                        <li>Great way of dealing with tough attack waves.</li>
-                        <li>Useful for weakening enemy bases before pushing in.</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Coolup: 120 seconds</li>
-                        <li>Cooldown: 30 seconds</li>
-                        <li>Mineral Cost: 1000</li>
+                        <li>初始冷却时间：60 秒</li>
+                        <li>冷却时间：60 秒</li>
+                        <li>最大充能次数：5</li>
+                        <li>晶体矿消耗：100</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/abilities/nova/tacticalairlift.png" alt = "Tactical Airlift"></td>
-                <td>Tactical Airlift</td>
-                <td>Instantly transports friendly units in the target area to a targeted location.</td>
+                <td><img src="/images/commanderdata/abilities/nova/griffinairstrike.png" alt = "格里芬空袭"></td>
+                <td>格里芬空袭</td>
+                <td>呼叫格里芬号，在短暂延迟后对其飞行路径上的所有目标造成 500 点伤害。</td>
                 <td>
                     <ul>
-                        <li>Can be used to move troops to an area with vision.</li>
-                        <li>You have a 20-second window to select the drop-off location.</li>
-                        <li>Can be used to dodge skill shots.</li>
+                        <li>非常适合应对强大的进攻波。</li>
+                        <li>适合在推进前削弱敌方基地。</li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        <li>Coolup: 120 seconds</li>
-                        <li>Cooldown: 120 seconds</li>
-                        <li>Mineral Cost: 200</li>
+                        <li>初始冷却时间：120 秒</li>
+                        <li>冷却时间：30 秒</li>
+                        <li>晶体矿消耗：1000</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/abilities/nova/instantregeneration.png" alt = "Instant Regeneration"></td>
-                <td>Instant Regeneration</td>
-                <td>Requirements:Nova recovering in stasis<br><br>Instantly revives Nova at the target location. Resource cost is determined by the amount of time remaining.</td>
+                <td><img src="/images/commanderdata/abilities/nova/tacticalairlift.png" alt = "战术空运"></td>
+                <td>战术空运</td>
+                <td>立即将目标区域内的友方单位运送至指定位置。</td>
                 <td>
                     <ul>
-                        <li>Cost gets reduced by 5 minerals per second.</li>
-                        <li>Only use it if having Nova on the battlefield is vital.</li>
+                        <li>可将部队转移至有视野的区域。</li>
+                        <li>你有 20 秒时间选择投放位置。</li>
+                        <li>可用于躲避敌方技能。</li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        <li>Mineral Cost: 450</li>
+                        <li>初始冷却时间：120 秒</li>
+                        <li>冷却时间：120 秒</li>
+                        <li>晶体矿消耗：200</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="/images/commanderdata/abilities/nova/instantregeneration.png" alt = "紧急再生"></td>
+                <td>紧急再生</td>
+                <td>要求：诺娃正在静滞状态中恢复<br><br>立即在目标位置复活诺娃。资源费用取决于剩余的恢复时间。</td>
+                <td>
+                    <ul>
+                        <li>费用每秒降低 5 点晶体矿。</li>
+                        <li>只有在诺娃必须立刻重返战场时才使用。</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>晶体矿消耗：450</li>
                     </ul>
                 </td>
             </tr>
 
         </tbody>
     </table>
-    <h2 id="leveling">Sub-Ascension Leveling</h2>
-    <p>Difficulty: Easy</p>
-    <p>Your army composition should be mostly Biological units, with Liberators to help protect your army against enemy ground units. Rely on Griffin Airstrikes and Defensive Drones as much as possible to reduce army losses.</p>
-    <p>While leveling through Mastery levels, allocate points into Power Set 3 in a 2:1 split for Nova's Energy Regeneration to Unit HP Regeneration.</p>
-    <h2 id="masteries">Masteries</h2>
-    <p>Below are the three Power Sets for Nova with the recommended point allocations for each. Note that these are meant to serve a general, all-purpose build that is effective across all maps with no Prestiges selected. You are highly encourged to change these masteries to suit your playstyle and particular challenges you face (e.g. <a href="/resources/weeklymutations">Weekly Mutations</a>).</p>
-    <p>Power Set 1:</p>
+    <h2 id="leveling">飞升前升级</h2>
+    <p>难度：简单</p>
+    <p>部队应以生物单位为主，并用解放者协助抵御敌方地面单位。尽可能多地依靠格里芬空袭和防御无人机来减少部队损失。</p>
+    <p>提升精通等级时，技能组 3 中诺娃能量恢复与单位生命恢复两项精通按 2:1 分配点数。</p>
+    <h2 id="masteries">精通</h2>
+    <p>以下是诺娃的三个技能组及各自的推荐点数分配。这是一套未选择任何威望、适用于所有地图的通用配置。强烈建议你根据自己的玩法和所面对的具体挑战（例如<a href="/resources/weeklymutations">每周突变</a>）调整精通。</p>
+    <p>技能组 1：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>精通</th>
+                <th>数值</th>
+                <th>推荐点数</th>
+                <th>其他考量</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Nuke and Holo Decoy Cooldown</td>
-                <td>-3 sec per point<br>-90 sec maximum</td>
+                <td>核打击与全息诱饵冷却时间</td>
+                <td>每点 -3 秒<br>最多 -90 秒</td>
                 <td>0</td>
-                <td rowspan="2">Due to the high cooldown time of Nuke/Holo Decoy, it is generally not viable to go for the cooldown mastery. However, for players who use this ability liberally, and find they are just short of some time before they can use it again, the mastery might be worth adding a few points into.</td>
+                <td rowspan="2">由于核打击和全息诱饵的基础冷却时间很长，通常不值得选择冷却时间精通。不过，如果玩家频繁使用这些技能，并且经常只差一点时间就能再次施放，也可以考虑投入少量点数。</td>
             </tr>
             <tr>
-                <td>Griffin Airstrike Cost</td>
-                <td>-10 per point<br>-300 maximum</td>
+                <td>格里芬空袭费用</td>
+                <td>每点 -10<br>最多 -300</td>
                 <td>30</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">The reduction to the Nuke cooldown is irrelevant here (and Holo Decoy is not very useful). Griffin Airstrike has a lot more utility.</p>
-    <p>Power Set 2:</p>
+    <p class="masterySummary">核打击冷却时间的缩短在这里无关紧要（全息诱饵也不太实用），格里芬空袭的用途要广泛得多。</p>
+    <p>技能组 2：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>精通</th>
+                <th>数值</th>
+                <th>推荐点数</th>
+                <th>其他考量</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Nova Primary Ability Improvement</td>
-                <td>1.67% per point<br>50% maximum</td>
+                <td>诺娃主要技能强化</td>
+                <td>每点 1.67%<br>最多 50%</td>
                 <td>30</td>
-                <td rowspan="2">The attack speed mastery can benefit units like Siege Tanks and Liberators during long, sustained engagements. If that is required by the player, this mastery might be useful, especially if Nova can 1-shot units like infested anyway.The Primary Ability improvement mastery, however, improves the damage of Snipe, Penetrating Blast, Sabotage Drone and the shield provided by Blink.</td>
+                <td rowspan="2">在长时间的持续作战中，攻击速度精通能让攻城坦克和解放者等单位受益。如果玩家需要这类效果，尤其是在诺娃本就能用 1 次攻击消灭感染者等单位时，这项精通或许有用。不过，主要技能强化精通会提高狙击、穿透射击和破坏无人机的伤害，以及闪现提供的护盾值。</td>
             </tr>
             <tr>
-                <td>Combat Unit Attack Speed</td>
-                <td>+0.5% per point<br>+15% maximum</td>
+                <td>战斗单位攻击速度</td>
+                <td>每点 +0.5%<br>最多 +15%</td>
                 <td>0</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">Increasing Nova's Snipe and Penetrating Blast damage can make a huge difference on the battlefield.</p>
-    <p>Power Set 3:</p>
+    <p class="masterySummary">提高诺娃的狙击和穿透射击伤害，能在战场上带来巨大优势。</p>
+    <p>技能组 3：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>精通</th>
+                <th>数值</th>
+                <th>推荐点数</th>
+                <th>其他考量</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Nova Energy Regeneration</td>
-                <td>1% per point<br>30% maximum</td>
+                <td>诺娃能量恢复</td>
+                <td>每点 1%<br>最多 30%</td>
                 <td>20</td>
-                <td rowspan="2">A split is generally recommended here to ensure units have some healing. Nova's energy regeneration is critical though, as it will allow you to spam her abilities more often.</td>
+                <td rowspan="2">通常建议在两项精通之间分配点数，以确保单位能够获得一定的治疗。不过诺娃的能量恢复至关重要，因为它能让你更频繁地施放她的技能。</td>
             </tr>
             <tr>
-                <td>Unit Life Regeneration</td>
-                <td>0.2 per point<br>6 maximum</td>
+                <td>单位生命恢复</td>
+                <td>每点 0.2<br>最多 6</td>
                 <td>10</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">The split here is to allow your units to regenerate themselves on the battlefield when out of combat, at a reasonable rate while still ensuring Nova has enough energy regeneration to spam skills.</p>
-    <h2 id="prestiges">Prestiges</h2>
-    <p>Below are the prestiges for Nova. Note that "Effective Level" is the level at which the prestige achieves it full effect.</p>
+    <p class="masterySummary">这样分配可让单位脱离战斗后以合理速度自行恢复，同时仍能确保诺娃拥有足够的能量恢复来频繁施放技能。</p>
+    <h2 id="prestiges">威望</h2>
+    <p>以下是诺娃的威望。“生效等级”是指该威望能发挥完整效果时的等级。</p>
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P1: <strong>Soldier of Fortune</strong></td>
+                <td class="prestigeTitle" colspan="2">P1：<strong>佣兵之王</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>Factory and Starport no longer have Tech requirements.</li>
-                        <li>Unit charges accrue 100% faster for the first production structure built.</li>
+                        <li>重工厂和星港不再有科技需求。</li>
+                        <li>首座建造的生产建筑，其单位充能积累速度提高 100%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>Unit charges accrue 50% slower for the second and third production structures built.</li>
+                        <li>第二座和第三座生产建筑的单位充能积累速度降低 50%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Notes</th>
+                <th>备注</th>
                 <td>
                     <ul>
-                        <li>Bonus applies to the first completed structure.</li>
+                        <li>加成作用于最先完工的生产建筑。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>生效等级</th>
                 <td>1</td>
             </tr>
             <tr>
-                <th>Advice</th><td>This prestige allows Nova to accrue charges faster on the production structure of her choice, making this a very versatile prestige. The choice of structure will be heavily dependant on the enemy composition, so early scouting will be important.</td>
+                <th>建议</th><td>这一威望让诺娃选定的生产建筑能更快积累单位充能，因此适应性非常强。选择哪种建筑很大程度上取决于敌方单位构成，所以前期侦察十分重要。</td>
             </tr>
         </tbody>
     </table>
@@ -586,30 +586,30 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P2: <strong>Tactical Dispatcher</strong></td>
+                <td class="prestigeTitle" colspan="2">P2：<strong>战术调度员</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>Tactical Airlift cooldown reduced by 75%.</li>
+                        <li>战术空运的冷却时间缩短 75%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>Griffin Airstrike cooldown increased by 300%.</li>
+                        <li>格里芬空袭的冷却时间延长 300%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>生效等级</th>
                 <td>5</td>
             </tr>
             <tr>
-                <th>Advice</th><td>While map mobility is important, the increase in cooldown of Griffin Airstrike is very detrimental to Nova, as the airstrike is Nova's primary method of weakening enemy bases and attack waves before engaging with her army to minimize losses. This prestige encourages players to engage waves with their armies directly, which can increase losses taken by Nova.</td>
+                <th>建议</th><td>虽然地图机动性很重要，但格里芬空袭冷却时间的增加对诺娃非常不利。空袭是诺娃在部队交战前削弱敌方基地和进攻波、降低战损的主要手段。这个威望迫使玩家让部队直接迎战进攻波，因此可能增加诺娃的损失。</td>
             </tr>
         </tbody>
     </table>
@@ -617,157 +617,157 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P3: <strong>Infiltration Specialist</strong></td>
+                <td class="prestigeTitle" colspan="2">P3：<strong>渗透专家</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>Nova gains permanent Super Cloak.</li>
-                        <li>Her abilities have a 50% increased radius and a 50% reduced cooldown.</li>
+                        <li>诺娃获得永久超级隐形。</li>
+                        <li>她的技能作用半径提高 50%，冷却时间缩短 50%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>Nova cannot switch to her Combat Suit and loses Super Cloak for 4 seconds upon attacking or using Snipe.</li>
+                        <li>诺娃无法切换至作战服，并会在发动攻击或使用狙击后失去超级隐形 4 秒。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>生效等级</th>
                 <td>9</td>
             </tr>
             <tr>
-                <th>Advice</th><td>The loss of the Combat Suit reduces Nova's versatility. The impact of this depends on several factors, like the enemy composition faced, since Nova will usually use the Combat Suit to clear weaker attack waves that are not worth airstriking. However, it does allow Nova to easily clear large swathes of enemy bases with her Nukes and Sabotage Drones. Combined with the Nuke cooldown reduction mastery, this prestige is very powerful.</td>
+                <th>建议</th><td>失去作战服会降低诺娃的适应性，具体影响取决于敌方单位构成等多项因素，因为诺娃通常会用作战服处理不值得动用空袭的较弱进攻波。不过，这个威望也让诺娃能用核打击和破坏无人机轻松清除大片敌方基地。若搭配核打击冷却时间精通，这一威望非常强大。</td>
             </tr>
         </tbody>
     </table>
-    <p>For general play, Soldier of Fortune offers Nova the versatility she needs to be able to handle any mission and attack wave composition. Infiltration Specialist may excel on some maps, but it's efficacy is highly affected by attack wave compositions, and is therefore, not a reliable prestige to be used.</p>
-    <h2 id="hero">Hero Unit</h2>
-    <a class="unitStatsLink" href="/units/#nova/nova"><img id="heroPic" src="/images/commanderdata/hero/nova/nova.jpg" alt="Nova"></a>
-    <p>Spawn time: 4:00</p>
-    <p>Respawn time: 1:30</p>
-    <p>The abilities for Stealth Mode Nova are:</p>
+    <p>常规玩法下，佣兵之王能为诺娃提供应对任何任务和进攻波构成所需的灵活性。渗透专家在某些地图上表现出色，但其效果高度依赖进攻波构成，因此并非稳定可靠的选择。</p>
+    <h2 id="hero">英雄单位</h2>
+    <a class="unitStatsLink" href="/units/#nova/nova"><img id="heroPic" src="/images/commanderdata/hero/nova/nova.jpg" alt="诺娃"></a>
+    <p>登场时间：4:00</p>
+    <p>重生时间：1:30</p>
+    <p>隐形模式下诺娃的技能如下：</p>
     <table class="abilityTable">
         <thead>
             <tr>
-                <th>Ability</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Cooldown</th>
-                <th>Energy Cost</th>
+                <th>技能</th>
+                <th>名称</th>
+                <th>说明</th>
+                <th>冷却时间</th>
+                <th>能量消耗</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/hero/nova/snipe.png" alt = "Snipe"></td>
-                <td>Snipe</td>
-                <td>Deals 200 damage to target enemy ground or air unit from long range (10).<br><br>Can target biological and mechanical units.</td>
-                <td>0 seconds</td>
+                <td><img src="/images/commanderdata/hero/nova/snipe.png" alt = "狙击"></td>
+                <td>狙击</td>
+                <td>从远距离（10）对目标敌方地面或空中单位造成 200 点伤害。<br><br>可对生物单位和机械单位使用。</td>
+                <td>0 秒</td>
                 <td>50</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/nova/sabotagedrone.png" alt = "Sabotage Drone"></td>
-                <td>Sabotage Drone</td>
-                <td>Deploys an undetectable explosive drone that deals 200 damage (400 vs Structure) to enemy ground units in the target area.</td>
-                <td>45 seconds</td>
+                <td><img src="/images/commanderdata/hero/nova/sabotagedrone.png" alt = "破坏无人机"></td>
+                <td>破坏无人机</td>
+                <td>部署一架无法被侦测的爆炸无人机，对目标区域内的敌方地面单位造成 200 点伤害（对建筑 400 点）。</td>
+                <td>45 秒</td>
                 <td>100</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/nova/tacnukestrike.png" alt = "Tac Nuke Strike"></td>
-                <td>Tac Nuke Strike</td>
-                <td>Calls down a Nuclear Strike at the target location, dealing 600 damage in a large radius after 5 seconds.</td>
-                <td>Coolup: 600 seconds<br>Cooldown: 420 seconds</td>
+                <td><img src="/images/commanderdata/hero/nova/tacnukestrike.png" alt = "战术核打击"></td>
+                <td>战术核打击</td>
+                <td>对目标位置发动核打击，5 秒后在大范围内造成 600 点伤害。</td>
+                <td>初始冷却时间：600 秒<br>冷却时间：420 秒</td>
                 <td>0</td>
             </tr>
         </tbody>
     </table>
-    <p>The abilities for Assault Mode Nova are:</p>
+    <p>突击模式下诺娃的技能如下：</p>
     <table class="abilityTable">
         <thead>
             <tr>
-                <th>Ability</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Cooldown</th>
-                <th>Energy Cost</th>
+                <th>技能</th>
+                <th>名称</th>
+                <th>说明</th>
+                <th>冷却时间</th>
+                <th>能量消耗</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/hero/nova/penetratingblast.png" alt = "Penetrating Blast"></td>
-                <td>Penetrating Blast</td>
-                <td>Deals 50 (100 vs Light) damage to enemy ground units in a wide arc.<br><br>Does not damage friendly units.</td>
-                <td>0 seconds</td>
+                <td><img src="/images/commanderdata/hero/nova/penetratingblast.png" alt = "穿透射击"></td>
+                <td>穿透射击</td>
+                <td>对宽阔扇形区域内的敌方地面单位造成 50 点伤害（对轻甲 100 点）。<br><br>不会伤害友方单位。</td>
+                <td>0 秒</td>
                 <td>50</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/nova/blink.png" alt = "Blink"></td>
-                <td>Blink</td>
-                <td>Teleports Nova to a nearby location. Nova gains a temporary shield that absorbs up to 200 damage for 8 seconds.<br><br>Ability regains a charge every 8 seconds. Can store a maximum of 3 charges.</td>
-                <td>8 seconds</td>
+                <td><img src="/images/commanderdata/hero/nova/blink.png" alt = "闪现"></td>
+                <td>闪现</td>
+                <td>将诺娃传送至附近位置。诺娃获得一层持续 8 秒、最多可吸收 200 点伤害的临时护盾。<br><br>技能每 8 秒恢复一次充能，最多可储存 3 次充能。</td>
+                <td>8 秒</td>
                 <td>0</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/nova/holodecoy.png" alt = "Holo Decoy"></td>
-                <td>Holo Decoy</td>
-                <td>Deploys a holographic duplicate of Nova that automatically attacks enemy units. The holo decoy lasts for 60 seconds.</td>
-                <td>Coolup: 600 seconds<br>Cooldown: 420 seconds</td>
+                <td><img src="/images/commanderdata/hero/nova/holodecoy.png" alt = "全息诱饵"></td>
+                <td>全息诱饵</td>
+                <td>部署一个会自动攻击敌方单位的诺娃全息复制体。全息诱饵持续 60 秒。</td>
+                <td>初始冷却时间：600 秒<br>冷却时间：420 秒</td>
                 <td>0</td>
             </tr>
         </tbody>
     </table>
-    <p>The upgrades for Nova are:</p>
+    <p>诺娃的升级如下：</p>
     <table class="heroUpgrades">
         <thead>
             <tr>
-                <th>Upgrade</th>
-                <th>Name</th>
-                <th>Effect</th>
-                <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                <th>Research Time</th>
+                <th>升级</th>
+                <th>名称</th>
+                <th>效果</th>
+                <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                <th>研究时间</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/hero/nova/ghostvisor.png" alt="Ghost Visor"></td>
-                <td>Ghost Visor</td>
-                <td>Grants Nova detection, allowing her to see and track cloaked and burrowed enemy units.</td>
+                <td><img src="/images/commanderdata/hero/nova/ghostvisor.png" alt="幽灵面甲"></td>
+                <td>幽灵面甲</td>
+                <td>使诺娃获得侦测能力，能够发现并锁定隐形和潜地的敌方单位。</td>
                 <td>75/75</td>
-                <td>45 seconds</td>
+                <td>45 秒</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/nova/caduceusreactor.png" alt="Caduceus Reactor"></td>
-                <td>Caduceus Reactor</td>
-                <td>Increases Nova's life regeneration rate to 10.</td>
+                <td><img src="/images/commanderdata/hero/nova/caduceusreactor.png" alt="医疗反应堆"></td>
+                <td>医疗反应堆</td>
+                <td>将诺娃的生命恢复速度提高至 10。</td>
                 <td>75/75</td>
-                <td>45 seconds</td>
+                <td>45 秒</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/nova/operationalefficiency.png" alt="Operational Efficiency"></td>
-                <td>Operational Efficiency</td>
-                <td>Refunds 50% of Snipe's energy cost when Nova uses it to kill an enemy unit.</td>
+                <td><img src="/images/commanderdata/hero/nova/operationalefficiency.png" alt="行动效率"></td>
+                <td>行动效率</td>
+                <td>诺娃使用狙击击杀敌方单位时，返还该技能 50% 的能量消耗。</td>
                 <td>100/100</td>
-                <td>60 seconds</td>
+                <td>60 秒</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/nova/infernalprojectiles.png" alt="Infernal Projectiles"></td>
-                <td>Infernal Projectiles</td>
-                <td>Increases the range of Nova's Penetrating Blast by 2.</td>
+                <td><img src="/images/commanderdata/hero/nova/infernalprojectiles.png" alt="炼狱弹药"></td>
+                <td>炼狱弹药</td>
+                <td>诺娃穿透射击的射程提高 2。</td>
                 <td>100/100</td>
-                <td>60 seconds</td>
+                <td>60 秒</td>
             </tr>
         </tbody>
     </table>
-    <h2 id="army">Recommended Army Composition</h2>
-    <p>The recommended army composition for Nova is below. Note that this assumes no Prestige talent selected and recommended Mastery Allocations. This is a basic recommendation for your army framework. It is recommended to gain an understanding for each of the units in the <a href="#units">Units</a> section and further add tech units so that you are able to better handle the situations you face.</p>
-    <img class="army" src="/images/commanderdata/units/nova/raidliberator.jpg" alt="Raid Liberator"><img class="army" src="/images/commanderdata/units/nova/strikegoliath.jpg" alt="Strike Goliath"><img class="army" src="/images/commanderdata/units/nova/raventypeii.jpg" alt="Raven Type-II">
-    <p>Goliath/Liberator builds for Nova are extremely versatile and allow her to handle a variety of different situations. By making use of Griffin Airstrikes, her army can clear off any left-over forces. Ensure you have Ravens to heal damage on your army.</p>
-    <div class="techContainer"><img class="army" src="/images/commanderdata/units/nova/heavysiegetank.jpg" alt="Heavy Siege Tank"><div class="techAdd">+</div></div>
-    <p>Add Siege Tanks to your army so that you may drop Spider Mines on enemy spawn positions when facing ground-based enemy compositions.</p>
+    <h2 id="army">推荐配兵</h2>
+    <p>诺娃的推荐配兵如下。请注意，这套配置假设未选择任何威望天赋，并采用推荐的精通点数分配。这只是部队框架的基础建议。建议先了解<a href="#units">单位</a>章节中的每个单位，再根据需要加入科技单位，以便更好地应对实际局势。</p>
+    <img class="army" src="/images/commanderdata/units/nova/raidliberator.jpg" alt="突袭解放者"><img class="army" src="/images/commanderdata/units/nova/strikegoliath.jpg" alt="强袭歌利亚"><img class="army" src="/images/commanderdata/units/nova/raventypeii.jpg" alt="铁鸦 II 型">
+    <p>歌利亚/解放者配兵的适应性极强，能让诺娃应对多种不同局势。配合格里芬空袭，部队便可清理残余敌军。务必配备铁鸦来治疗受伤的部队。</p>
+    <div class="techContainer"><img class="army" src="/images/commanderdata/units/nova/heavysiegetank.jpg" alt="重型攻城坦克"><div class="techAdd">+</div></div>
+    <p>面对地面单位为主的敌方阵容时，可在部队中加入攻城坦克，以便在敌人出生点部署蜘蛛雷。</p>
     <script>
         $(".army").on('mouseover',function(e){
             var unit = $(this).attr("alt").split(":");
@@ -798,67 +798,67 @@ if (document.location.host === 'dev.starcraft2coop.com') {
 
         });
     </script>
-    <h2 id="units">Combat Units</h2>
-    <p>For more information on Nova's unit stats, comparison between units and upgrade calculations, visit the <a href="/units/#nova">Data Tables</a> page.</p>
-    <p>Nova's combat units are listed below:</p>
+    <h2 id="units">战斗单位</h2>
+    <p>如需了解诺娃各单位的属性、单位间对比和升级计算，请查看<a href="/units/#nova">数据表</a>页面。</p>
+    <p>诺娃的战斗单位如下：</p>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#nova/elitemarine">
-                <img src="/images/commanderdata/units/nova/elitemarine.jpg" alt="Elite Marine">
-                <p>Elite Marine</p>
+                <img src="/images/commanderdata/units/nova/elitemarine.jpg" alt="精英陆战队员">
+                <p>精英陆战队员</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Does high DPS.</li>
-                <li>Super Stimpack upgrade is vital for survivability.</li>
+                <li>每秒伤害很高。</li>
+                <li>超级兴奋剂升级对生存能力至关重要。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="unlockable autocast">
-                        <td><img src="/images/commanderdata/unitskills/nova/superstimpack.png" alt="Super Stimpack"></td>
-                        <td>Super Stimpack</td>
-                        <td>Heals the Elite Marine for 2 life per second and increases its attack speed by 50% and movement speed by 50% for 15 seconds.</td>
-                        <td>15 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/nova/superstimpack.png" alt="超级兴奋剂"></td>
+                        <td>超级兴奋剂</td>
+                        <td>每秒为精英陆战队员恢复 2 点生命值，并使其攻击速度和移动速度提高 50%，持续 15 秒。</td>
+                        <td>15 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/nova/lasertargetingsystem.png" alt="Laser Targeting System"></td>
-                        <td>Laser Targeting System</td>
-                        <td>Increases the Elite Marine's vision by 2 and its weapon range by 1.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/nova/lasertargetingsystem.png" alt="激光瞄准系统"></td>
+                        <td>激光瞄准系统</td>
+                        <td>精英陆战队员的视野提高 2，武器射程提高 1。</td>
                         <td>50/50</td>
-                        <td>30 seconds</td>
+                        <td>30 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/nova/superstimpack.png" alt="Super Stimpack"></td>
-                        <td>Super Stimpack</td>
-                        <td>Heals the Elite Marine for 2 life per second and increases its attack and movement speeds for 15 seconds.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/nova/superstimpack.png" alt="超级兴奋剂"></td>
+                        <td>超级兴奋剂</td>
+                        <td>每秒为精英陆战队员恢复 2 点生命值，并提高其攻击速度和移动速度，持续 15 秒。</td>
                         <td>75/75</td>
-                        <td>45 seconds</td>
+                        <td>45 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -867,61 +867,61 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#nova/maraudercommando">
-                <img src="/images/commanderdata/units/nova/maraudercommando.jpg" alt="Marauder Commando">
-                <p>Marauder Commando</p>
+                <img src="/images/commanderdata/units/nova/maraudercommando.jpg" alt="劫掠者突击队">
+                <p>劫掠者突击队</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Good against armored targets.</li>
-                <li>Upgrades not necessary.</li>
+                <li>擅长对付重甲目标。</li>
+                <li>不必研究升级。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="unlockable autocast">
-                        <td><img src="/images/commanderdata/unitskills/nova/magrailmunitions.png" alt="Magrail Munitions"></td>
-                        <td>Magrail Munitions</td>
-                        <td>Deals 90 damage to target enemy unit.</td>
-                        <td>30 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/nova/magrailmunitions.png" alt="磁轨弹药"></td>
+                        <td>磁轨弹药</td>
+                        <td>对目标敌方单位造成 90 点伤害。</td>
+                        <td>30 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/nova/suppressionshells.png" alt="Suppression Shells"></td>
-                        <td>Suppression Shells</td>
-                        <td>Units hit by the Marauder Commando have temporarily slowed attack and movement speeds (50%) for 1.5 seconds. Has a reduced effect on heroic units (20%).<br><br>Massive units are immune.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/nova/suppressionshells.png" alt="压制弹药"></td>
+                        <td>压制弹药</td>
+                        <td>被劫掠者突击队命中的单位，其攻击速度和移动速度暂时降低 50%，持续 1.5 秒。对英雄单位的效果降低至 20%。<br><br>重型单位免疫。</td>
                         <td>50/50</td>
-                        <td>30 seconds</td>
+                        <td>30 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/nova/magrailmunitions.png" alt="Magrail Munitions"></td>
-                        <td>Magrail Munitions</td>
-                        <td>Equips Marauder Commandos with an additional weapon that deals 90 damage to their target every 30 seconds.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/nova/magrailmunitions.png" alt="磁轨弹药"></td>
+                        <td>磁轨弹药</td>
+                        <td>为劫掠者突击队配备一件额外武器，每 30 秒对其目标造成 90 点伤害。</td>
                         <td>75/75</td>
-                        <td>45 seconds</td>
+                        <td>45 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -930,69 +930,69 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#nova/specopsghost">
-                <img src="/images/commanderdata/units/nova/specopsghost.jpg" alt="Spec Ops Ghost">
-                <p>Spec Ops Ghost</p>
+                <img src="/images/commanderdata/units/nova/specopsghost.jpg" alt="特战幽灵">
+                <p>特战幽灵</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Provides great burst damage against biological targets.</li>
-                <li>"EMP" can be used against energy-based targets to render them useless, such as Hybrid Dominators.</li>
-                <li>"Triple Tap" can increase the damage they do significantly.</li>
+                <li>对生物目标拥有极强的爆发伤害。</li>
+                <li>“EMP”可用来对付依赖能量的目标，使混合体支配者等单位失去作用。</li>
+                <li>“三连击”可显著提高其伤害。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/unitskills/nova/snipe.png" alt="Snipe"></td>
-                        <td>Snipe</td>
-                        <td>Deals 170 damage to target enemy biological unit.<br><br>Mechanical units are immune.</td>
-                        <td>30 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/nova/snipe.png" alt="狙击"></td>
+                        <td>狙击</td>
+                        <td>对目标敌方生物单位造成 170 点伤害。<br><br>机械单位免疫。</td>
+                        <td>30 秒</td>
                         <td>0</td>
                     </tr>
                     <tr class="unlockable">
-                        <td><img src="/images/commanderdata/unitskills/nova/empround.png" alt="EMP Round"></td>
-                        <td>EMP Round</td>
-                        <td>Deals 100 damage to shields and depletes the energy of enemy units in the target area. Cloaked units are revealed for 10 seconds after being hit.</td>
-                        <td>45 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/nova/empround.png" alt="EMP 弹"></td>
+                        <td>EMP 弹</td>
+                        <td>对目标区域内敌方单位的护盾造成 100 点伤害，并耗尽其能量。隐形单位被命中后会显形 10 秒。</td>
+                        <td>45 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/nova/empround.png" alt="EMP Round"></td>
-                        <td>EMP Round</td>
-                        <td>Allows Spec Ops Ghosts to use EMP Round, which deals 100 damage to shields and depletes the energy of enemy units in the target area. Cloaked units are revealed for 10 seconds after being hit.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/nova/empround.png" alt="EMP 弹"></td>
+                        <td>EMP 弹</td>
+                        <td>使特战幽灵能够使用 EMP 弹，对目标区域内敌方单位的护盾造成 100 点伤害，并耗尽其能量。隐形单位被命中后会显形 10 秒。</td>
                         <td>50/50</td>
-                        <td>30 seconds</td>
+                        <td>30 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/nova/tripletap.png" alt="Triple Tap"></td>
-                        <td>Triple Tap</td>
-                        <td>Spec Ops Ghosts fire 2 additional shots that deal 85 damage each when using Snipe.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/nova/tripletap.png" alt="三连击"></td>
+                        <td>三连击</td>
+                        <td>特战幽灵使用狙击时额外射击 2 次，每次造成 85 点伤害。</td>
                         <td>75/75</td>
-                        <td>45 seconds</td>
+                        <td>45 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -1001,62 +1001,62 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#nova/hellbatranger">
-                <img src="/images/commanderdata/units/nova/hellbatranger.jpg" alt="Hellbat Ranger">
-                <p>Hellbat Ranger</p>
+                <img src="/images/commanderdata/units/nova/hellbatranger.jpg" alt="恶蝠游骑兵">
+                <p>恶蝠游骑兵</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Generally not worth making.</li>
-                <li>They jump out of range of Defensive Drones and end up getting killed.</li>
-                <li>They have poor DPS.</li>
+                <li>通常不值得训练。</li>
+                <li>它们会跳出防御无人机的保护范围，最终白白阵亡。</li>
+                <li>每秒伤害较低。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="unlockable autocast">
-                        <td><img src="/images/commanderdata/unitskills/nova/jumpjetassault.png" alt="Jump Jet Assault"></td>
-                        <td>Jump Jet Assault</td>
-                        <td>Launches the Hellbat Ranger toward nearby enemy ground units. Briefly stuns enemy units on impact and gains +4 armor.</td>
-                        <td>5 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/nova/jumpjetassault.png" alt="喷气跳跃突击"></td>
+                        <td>喷气跳跃突击</td>
+                        <td>使恶蝠游骑兵跃向附近的敌方地面单位。落地时短暂昏迷敌方单位，并获得 +4 护甲。</td>
+                        <td>5 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/nova/infernalpreigniter.png" alt="Infernal Pre-Igniters"></td>
-                        <td>Infernal Pre-Igniter</td>
-                        <td>Hellbat Rangers deal +15 damage to light units in both modes.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/nova/infernalpreigniter.png" alt="炼狱预燃器"></td>
+                        <td>炼狱预燃器</td>
+                        <td>恶蝠游骑兵在两种模式下对轻甲单位的伤害均提高 +15 点。</td>
                         <td>50/50</td>
-                        <td>30 seconds</td>
+                        <td>30 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/nova/jumpjetassault.png" alt="Jump Jet Assault"></td>
-                        <td>Jump Jet Assault</td>
-                        <td>Launches the Hellbat Ranger toward nearby enemy ground units. Briefly stuns enemy units on impact and gains +4 armor.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/nova/jumpjetassault.png" alt="喷气跳跃突击"></td>
+                        <td>喷气跳跃突击</td>
+                        <td>使恶蝠游骑兵跃向附近的敌方地面单位。落地时短暂昏迷敌方单位，并获得 +4 护甲。</td>
                         <td>75/75</td>
-                        <td>45 seconds</td>
+                        <td>45 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -1065,34 +1065,34 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#nova/hellionranger">
-                <img src="/images/commanderdata/units/nova/hellionranger.jpg" alt="Hellion Ranger">
-                <p>Hellion Ranger</p>
+                <img src="/images/commanderdata/units/nova/hellionranger.jpg" alt="恶火游骑兵">
+                <p>恶火游骑兵</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Converted from Hellbat Rangers.</li>
-                <li>Good mobility.</li>
-                <li>Low HP makes them struggle against stronger attack waves.</li>
+                <li>由恶蝠游骑兵转换而来。</li>
+                <li>机动性良好。</li>
+                <li>生命值较低，难以应对更强的进攻波。</li>
             </ul>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/nova/infernalpreigniter.png" alt="Infernal Pre-Igniters"></td>
-                        <td>Infernal Pre-Igniter</td>
-                        <td>Hellbat Rangers deal +15 damage to light units in both modes.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/nova/infernalpreigniter.png" alt="炼狱预燃器"></td>
+                        <td>炼狱预燃器</td>
+                        <td>恶蝠游骑兵在两种模式下对轻甲单位的伤害均提高 +15 点。</td>
                         <td>50/50</td>
-                        <td>30 seconds</td>
+                        <td>30 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -1101,41 +1101,41 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#nova/strikegoliath">
-                <img src="/images/commanderdata/units/nova/strikegoliath.jpg" alt="Strike Goliath">
-                <p>Strike Goliath</p>
+                <img src="/images/commanderdata/units/nova/strikegoliath.jpg" alt="强袭歌利亚">
+                <p>强袭歌利亚</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Useful against air targets, due to its "Lockdown Missiles" upgrade which can stun.</li>
-                <li>Ineffective against ground targets.</li>
+                <li>“锁定飞弹”升级能够造成昏迷，因此适合对付空中目标。</li>
+                <li>对地面目标效果不佳。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades:</p>
+            <p>技能：无</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/nova/aresclasstargetingsystem.png" alt="Ares-Class Targeting System"></td>
-                        <td>Ares-Class Targeting System</td>
-                        <td>Increases the Strike Goliath's anti-air weapon range by 3 and its ground weapon range by 1.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/nova/aresclasstargetingsystem.png" alt="阿瑞斯级瞄准系统"></td>
+                        <td>阿瑞斯级瞄准系统</td>
+                        <td>强袭歌利亚的对空武器射程提高 3，对地武器射程提高 1。</td>
                         <td>50/50</td>
-                        <td>30 seconds</td>
+                        <td>30 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/nova/lockdownmissiles.png" alt="Lockdown Missiles"></td>
-                        <td>Lockdown Missiles</td>
-                        <td>Stuns and disables the detection of mechanical units hit by the Strike Goliath's anti-air attacks for 3 seconds.<br><br>Heroic units are immune.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/nova/lockdownmissiles.png" alt="锁定飞弹"></td>
+                        <td>锁定飞弹</td>
+                        <td>被强袭歌利亚对空攻击命中的机械单位会昏迷并失去侦测能力，持续 3 秒。<br><br>英雄单位免疫。</td>
                         <td>75/75</td>
-                        <td>45 seconds</td>
+                        <td>45 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -1144,61 +1144,61 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#nova/heavysiegetank">
-                <img src="/images/commanderdata/units/nova/heavysiegetank.jpg" alt="Heavy Siege Tank">
-                <p>Heavy Siege Tank</p>
+                <img src="/images/commanderdata/units/nova/heavysiegetank.jpg" alt="重型攻城坦克">
+                <p>重型攻城坦克</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Can deal a large amount of splash damage.</li>
-                <li>Can deploy Spider Mines to further defend a position.</li>
+                <li>能造成大量溅射伤害。</li>
+                <li>可部署蜘蛛雷，进一步加强阵地防御。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="unlockable">
-                        <td><img src="/images/commanderdata/unitskills/nova/deployspidermines.png" alt="Deploy Spider Mines"></td>
-                        <td>Deploy Spider Mines</td>
-                        <td>Spider Mines pursue enemy units that come in range, and detonate for heavy area damage. Buried Spider Mines can only be seen by enemy detectors. (Costs 50 minerals).</td>
-                        <td>30 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/nova/deployspidermines.png" alt="部署蜘蛛雷"></td>
+                        <td>部署蜘蛛雷</td>
+                        <td>蜘蛛雷会追击进入范围的敌方单位，并引爆造成高额范围伤害。潜地的蜘蛛雷只能被敌方侦测单位发现。（消耗 50 点晶体矿。）</td>
+                        <td>30 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/nova/spidermines.png" alt="Spider Mines"></td>
-                        <td>Spider Mines</td>
-                        <td>Allows Heavy Siege Tanks to deploy Spider Mines, which pursue enemy units that come in range, and detonate for heavy area damage. Buried Spider Mines can only be seen by enemy detectors.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/nova/spidermines.png" alt="蜘蛛雷"></td>
+                        <td>蜘蛛雷</td>
+                        <td>使重型攻城坦克能够部署蜘蛛雷。蜘蛛雷会追击进入范围的敌方单位，并引爆造成高额范围伤害。潜地的蜘蛛雷只能被敌方侦测单位发现。</td>
                         <td>50/50</td>
-                        <td>30 seconds</td>
+                        <td>30 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/nova/graduatingrange.png" alt="Graduating Range"></td>
-                        <td>Graduating Range</td>
-                        <td>Increases the Heavy Siege Tank's attack range by 1 every 3 seconds while in Siege Mode, up to a maximum of 5 additional range.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/nova/graduatingrange.png" alt="渐进射程"></td>
+                        <td>渐进射程</td>
+                        <td>重型攻城坦克在攻城模式下每 3 秒提高 1 点攻击射程，最多额外提高 5 点。</td>
                         <td>75/75</td>
-                        <td>45 seconds</td>
+                        <td>45 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -1207,42 +1207,42 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#nova/raidliberator">
-                <img src="/images/commanderdata/units/nova/raidliberator.jpg" alt="Raid Liberator">
-                <p>Raid Liberator</p>
+                <img src="/images/commanderdata/units/nova/raidliberator.jpg" alt="突袭解放者">
+                <p>突袭解放者</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Provides great anti-air and single-target ground damage.</li>
-                <li>"Raid Artillery" upgrade can be obtained if you want to deal damage to structures.</li>
-                <li>"Smart Servos" upgrade is a necessity if you intend on switching modes often.</li>
+                <li>拥有出色的对空伤害和地面单体伤害。</li>
+                <li>若想对建筑造成伤害，可以研究“突袭火炮”升级。</li>
+                <li>若准备频繁切换模式，“智能伺服系统”升级必不可少。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades:</p>
+            <p>技能：无</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/nova/raidartillery.png" alt="Raid Artillery"></td>
-                        <td>Raid Artillery</td>
-                        <td>Allows Raid Liberators to attack structures while in Defender Mode.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/nova/raidartillery.png" alt="突袭火炮"></td>
+                        <td>突袭火炮</td>
+                        <td>使突袭解放者能够在防卫模式下攻击建筑。</td>
                         <td>50/50</td>
-                        <td>30 seconds</td>
+                        <td>30 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/nova/smartservos.png" alt="Smart Servos"></td>
-                        <td>Smart Servos</td>
-                        <td>Allows Raid Liberators to transform between modes four times faster.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/nova/smartservos.png" alt="智能伺服系统"></td>
+                        <td>智能伺服系统</td>
+                        <td>使突袭解放者切换模式的速度提高至原来的四倍。</td>
                         <td>75/75</td>
-                        <td>45 seconds</td>
+                        <td>45 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -1251,61 +1251,61 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#nova/covertbanshee">
-                <img src="/images/commanderdata/units/nova/covertbanshee.jpg" alt="Covert Banshee">
-                <p>Covert Banshee</p>
+                <img src="/images/commanderdata/units/nova/covertbanshee.jpg" alt="隐秘女妖">
+                <p>隐秘女妖</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Generally not made as other units can better fit the role.</li>
-                <li>Can be used against certain ground compositions with the "Rocket Barrage" ability.</li>
+                <li>其他单位通常更能胜任其定位，因此一般不训练。</li>
+                <li>可利用“火箭弹幕”技能对付某些地面单位阵容。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="unlockable autocast">
-                        <td><img src="/images/commanderdata/unitskills/nova/rocketbarrage.png" alt="Rocket Barrage"></td>
-                        <td>Rocket Barrage</td>
-                        <td>Deals 75 damage to enemy ground units in the target area.</td>
-                        <td>15 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/nova/rocketbarrage.png" alt="火箭弹幕"></td>
+                        <td>火箭弹幕</td>
+                        <td>对目标区域内的敌方地面单位造成 75 点伤害。</td>
+                        <td>15 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/nova/advancedcloakingfield.png" alt="Advanced Cloaking Field"></td>
-                        <td>Advanced Cloaking Field</td>
-                        <td>Allows Covert Banshees to remain permanently cloaked.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/nova/advancedcloakingfield.png" alt="高级隐形力场"></td>
+                        <td>高级隐形力场</td>
+                        <td>使隐秘女妖永久保持隐形。</td>
                         <td>50/50</td>
-                        <td>30 seconds</td>
+                        <td>30 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/nova/rocketbarrage.png" alt="Rocket Barrage"></td>
-                        <td>Rocket Barrage</td>
-                        <td>Allows Covert Banshees to use Rocket Barrage, which deals 75 damage to enemy ground units in the target area.</td>
+                        <td><img src="/images/commanderdata/unitskills/nova/rocketbarrage.png" alt="火箭弹幕"></td>
+                        <td>火箭弹幕</td>
+                        <td>使隐秘女妖能够使用火箭弹幕，对目标区域内的敌方地面单位造成 75 点伤害。</td>
                         <td>75/75</td>
-                        <td>45 seconds</td>
+                        <td>45 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -1314,111 +1314,109 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#nova/raventypeii">
-                <img src="/images/commanderdata/units/nova/raventypeii.jpg" alt="Raven Type-II">
-                <p>Raven Type-II</p>
+                <img src="/images/commanderdata/units/nova/raventypeii.jpg" alt="铁鸦 II 型">
+                <p>铁鸦 II 型</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>A must-have in any army composition.</li>
-                <li>Can heal your army with the Bio-Mechanical Repair Drone.</li>
-                <li>Can deploy Railgun turrets to further fortify a position.</li>
-                <li>Predator Missiles can deal a lot of damage, particularly to clumped up enemies.</li>
+                <li>任何配兵都不可或缺。</li>
+                <li>可使用生化修复无人机治疗部队。</li>
+                <li>可部署轨道炮塔，进一步巩固阵地。</li>
+                <li>捕食者飞弹能造成大量伤害，对聚集在一起的敌人尤其有效。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/nova/buildrailgunturret.png" alt="Build Railgun Turret"></td>
-                        <td>Build Railgun Turret</td>
-                        <td>Automated defensive turret. Damages all enemy ground units in a straight line. Lasts for 60 seconds.<br><br>Can attack ground units.</td>
-                        <td>30 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/nova/buildrailgunturret.png" alt="建造轨道炮塔"></td>
+                        <td>建造轨道炮塔</td>
+                        <td>自动化防御炮塔，对一条直线上的所有敌方地面单位造成伤害，持续 60 秒。<br><br>可攻击地面单位。</td>
+                        <td>30 秒</td>
                         <td>0</td>
                     </tr>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/unitskills/nova/deploybiomechanicalrepairdrone.png" alt="Deploy Bio-Mechanical Repair Drone"></td>
-                        <td>Deploy Bio-Mechanical Repair Drone</td>
-                        <td>Heals nearby biological and mechanical units. Lasts for 30 seconds.</td>
-                        <td>60 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/nova/deploybiomechanicalrepairdrone.png" alt="部署生化修复无人机"></td>
+                        <td>部署生化修复无人机</td>
+                        <td>治疗附近的生物单位和机械单位，持续 30 秒。</td>
+                        <td>60 秒</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/nova/predatormissile.png" alt="Predator Missile"></td>
-                        <td>Predator Missile</td>
-                        <td>Deploys a missile that pursues target enemy unit, dealing 100 (+35 vs. shields) damage in a wide radius upon contact.</td>
-                        <td>45 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/nova/predatormissile.png" alt="捕食者飞弹"></td>
+                        <td>捕食者飞弹</td>
+                        <td>发射一枚追踪目标敌方单位的飞弹，命中时在大范围内造成 100 点伤害（对护盾 +35）。</td>
+                        <td>45 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/nova/coverttriage.png" alt="Covert Triage"></td>
-                        <td>Covert Triage</td>
-                        <td>Increases the healing of the Raven Type-II's Bio-Mechanical Repair Drone by 25% and allows it to cloak units that it is currently healing.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/nova/coverttriage.png" alt="隐秘救护"></td>
+                        <td>隐秘救护</td>
+                        <td>铁鸦 II 型生化修复无人机的治疗量提高 25%，并使其能让正在治疗的单位隐形。</td>
                         <td>75/75</td>
-                        <td>45 seconds</td>
+                        <td>45 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/nova/enhancedmanufacturing.png" alt="Enhanced Manufacturing"></td>
-                        <td>Enhanced Manufacturing</td>
-                        <td>Allows the Raven Type-II to store up to 3 charges for each of its abilities.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/nova/enhancedmanufacturing.png" alt="强化制造"></td>
+                        <td>强化制造</td>
+                        <td>使铁鸦 II 型的每项技能都能储存最多 3 次充能。</td>
                         <td>75/75</td>
-                        <td>45 seconds</td>
+                        <td>45 秒</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-    <h2 id="buildOrder">Build Order</h2>
-    <p>Below is the standard economic build order for Nova. For more information on how to read and construct your own build orders, please check the <a href="/guides/buildordertheory">Build Order Theory</a> page.</p>
+    <h2 id="buildOrder">建造顺序</h2>
+    <p>以下是诺娃的标准运营建造顺序。如需进一步了解如何阅读和编排自己的建造顺序，请查看<a href="/guides/buildordertheory">建造顺序原理</a>页面。</p>
     <p class="buildOrder">
-        14 Refinery<br>
-        15 Refinery<br>
-        18 Command Center<br>
-        19 Barracks<br>
-        22 Marines -> Rocks
+        14 采气厂<br>
+        15 采气厂<br>
+        18 指挥中心<br>
+        19 兵营<br>
+        22 陆战队员 -> 岩石
     </p>
-    <h2 id="guide">Gameplay Guide</h2>
-    <h3>Playstyle Traps</h3>
-    <p>Many players prefer to use Assault mode to deal with units when pushing into enemy bases. However, Nova's strength is with her Snipe ability that can be used to target Mechanical units. Use Nova's Snipe to take out high value targets and minimize your army losses. Combined with the "Operational Efficiency" upgrade, you'll be able to clear out a lot of high-damage units very quickly.</p>
-    <h3>Playstyle Tips</h3>
+    <h2 id="guide">玩法攻略</h2>
+    <h3>玩法误区</h3>
+    <p>许多玩家推进敌方基地时，喜欢让诺娃使用突击模式处理敌军。然而，诺娃真正的优势在于她能够对机械单位使用狙击。用狙击消灭高价值目标，从而降低部队损失。搭配“行动效率”升级后，你可以非常迅速地清理大量高伤害单位。</p>
+    <h3>玩法技巧</h3>
     <ul>
-        <li>Use Defensive Drones to protect your units as you defend/attack.</li>
-        <li>Switch modes for Nova often to take advantage of that particular mode's strengths.</li>
-        <li>In general combat, you will want to have Nova in Stealth Mode to snipe key targets.</li>
-        <li>Soften enemy bases with Tac Nuke Strikes and Griffin Air Strikes before pushing in to reduce losses.</li>
-        <li>If using Spider Mines for defense, place them on the top of your ramp so they can take advantage of high-ground vision range.</li>
+        <li>进攻和防守时使用防御无人机保护单位。</li>
+        <li>经常为诺娃切换模式，以充分发挥各模式的优势。</li>
+        <li>在常规战斗中，应让诺娃保持隐形模式，狙杀关键目标。</li>
+        <li>推进前用战术核打击和格里芬空袭削弱敌方基地，减少战损。</li>
+        <li>若使用蜘蛛雷防守，请将其部署在坡道顶部，以利用高地视野优势。</li>
     </ul>
-<script src="/scripts/nav.js?v=fd4985"></script>
+<script src="/scripts/nav.js"></script>
 </div>
 
 <div id="footer">
-    <p>Note: All data generated on this site is based on Brutal difficulty. Timings, compositions and other elements may differ on easier difficulty levels.</p>
-    <p>CC-BY-NC-SA-4.0. Originally written by Aommaster. This is a fansite not affiliated with StarCraft 2 or Blizzard Entertainment, Inc.</p>
+    <p>注意：本站生成的所有数据均以“残酷”难度为准；在较低难度下，时间、阵容及其他要素可能有所不同。</p>
+    <p>非官方简体中文翻译站，仅供学习与非商业使用。本站无广告，也不收集用户数据。采用 CC BY-NC-SA 4.0 许可。原作者：Aommaster。本站为粉丝站点，与 StarCraft II 或 Blizzard Entertainment 无隶属关系。</p>
 </div>
 
 </body>
 </html>
-
-    

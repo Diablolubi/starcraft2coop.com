@@ -6,47 +6,47 @@ require_once __DIR__ . "/../../includes/wrapper.php";
 require_once "../../includes/switchergenerator.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Mission Guide - Void Launch</title>
-  <meta name="description" content="Starcraft 2 Co-op Mission Guide Void Launch">
-  <meta name="keywords" content="Starcraft co-op guides Void Launch mission">
+  <title>《星际争霸 II》合作任务攻略 - 虚空降临</title>
+  <meta name="description" content="《星际争霸 II》合作任务“虚空降临”攻略">
+  <meta name="keywords" content="星际争霸 II, 合作任务, 虚空降临, 攻略">
   <link rel="stylesheet"  media="all" type="text/css" href="/styles/missionstyle.css?v=1.00">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="https://starcraft2coop.com/missions/voidlaunch">
   <script src="/scripts/preload.js"></script>
 <?= startContent() ?>
-    <h1><span class="unbold">Mission:</span> Void Launch</h1>
-    <p id="missionPlace">Kaldir</p>
+    <h1><span class="unbold">任务：</span>虚空降临</h1>
+    <p id="missionPlace">卡迪尔</p>
     <?php include("../../includes/reporterror.php");?>
     <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#misSum">Mission Summary</a></p>
-        <p><a href="#objectives">Objectives</a></p>
-        <p><a href="#baseAnalysis">Enemy Base Analysis</a></p>
-        <p><a href="#bonus">Completing the Bonus Objective</a></p>
-        <p><a href="#timings">Timings</a></p>
-        <p><a href="#spawnPoints">Spawn Points</a></p>
-        <p><a href="#misTips">Mission Tips</a></p>
-        <p><a href="#comTips">Commander-Specific Tips</a></p>
+        <h2>本页章节</h2>
+        <p><a href="#misSum">任务概述</a></p>
+        <p><a href="#objectives">任务目标</a></p>
+        <p><a href="#baseAnalysis">敌方基地分析</a></p>
+        <p><a href="#bonus">完成奖励目标</a></p>
+        <p><a href="#timings">时间点</a></p>
+        <p><a href="#spawnPoints">出生点</a></p>
+        <p><a href="#misTips">任务技巧</a></p>
+        <p><a href="#comTips">指挥官专属技巧</a></p>
     </div>
-    <h2 id="misSum">Mission Summary</h2>
-    <p>Amon is using Kaldir's warp conduits to transport his troops across the sector. Destroy the shuttles carrying the troops before they reach the warp conduits.</p>
-    <h2 id="objectives">Objectives</h2>
-    <h3>Primary Objective</h3>
+    <h2 id="misSum">任务概述</h2>
+    <p>埃蒙正在利用卡迪尔的折跃通道，将部队运送到整个星区。运兵船抵达折跃通道前，将其全部摧毁。</p>
+    <h2 id="objectives">任务目标</h2>
+    <h3>主要目标</h3>
         <ul>
-            <li>Destroy Shuttles (7 Waves).</li>
-            <li>Do Not Allow 5 Shuttles to Escape.</li>
+            <li>摧毁运兵船（7 波）。</li>
+            <li>不能让 5 艘运兵船逃脱。</li>
         </ul>
-    <h3>Secondary Objective</h3>
+    <h3>奖励目标</h3>
         <ul>
-            <li>Escort Scientists to Xel'Naga Shrines (3)</li>
+            <li>护送科学家前往萨尔纳加神殿（3）</li>
         </ul>
-    <h2 id="baseAnalysis">Enemy Base Analysis</h2>
+    <h2 id="baseAnalysis">敌方基地分析</h2>
     <div id="globalRaceSelect">
-        <p>Change all base analysis pictures to race:</p>
+        <p>将所有基地分析图片切换为以下种族：</p>
         <form action="#">
-            <label><input type="radio" name="globalRace" value="protoss" checked>Protoss</label><br>
-            <label><input type="radio" name="globalRace" value="terran">Terran</label><br>
-            <label><input type="radio" name="globalRace" value="zerg">Zerg</label><br>
+            <label><input type="radio" name="globalRace" value="protoss" checked>星灵</label><br>
+            <label><input type="radio" name="globalRace" value="terran">人类</label><br>
+            <label><input type="radio" name="globalRace" value="zerg">异虫</label><br>
         </form>
         <script>
             $("input[name='globalRace']").change(function(){
@@ -61,40 +61,40 @@ require_once "../../includes/switchergenerator.php";
         </script>
     </div>
     <?php $mission = "voidlaunch"; ?>
-    <p>It is not required to push into enemy bases this map. However, it is highly recommended you do so, as it will simplify the mission in the later stages, where shuttles will spawn from multiple bays at the same time. By clearing enemy bases, you can build static defenses at the bays themselves, and spawn-camp the shuttles.</p>
-    <p>The base on the far left is shown below:</p>
+    <p>本地图不要求玩家攻入敌方基地，但强烈建议这样做。任务后期运兵船会同时从多个发射台出现，提前清除敌方基地能大幅降低难度。清除基地后，可以直接在发射台旁建造静态防御，蹲守刚出现的运兵船。</p>
+    <p>最左侧的基地如下所示：</p>
     <?php switcher_generator("leftbaselong") ?>
-    <p>To the East of this base is a smaller base guarding the middle bay. This is the least heavily defended base present. However, it can only be accessed through one of the other two bases:</p>
+    <p>该基地东侧有一座守卫中间发射台的小型基地。这里防守最薄弱，但只能穿过另外两座基地之一才能抵达：</p>
     <?php switcher_generator("midbaselong") ?>
-    <p>The base on the far right is shown below:</p>
+    <p>最右侧的基地如下所示：</p>
     <?php switcher_generator("rightbaselong") ?>
-    <h2 id="bonus">Completing the Bonus Objective</h2>
+    <h2 id="bonus">完成奖励目标</h2>
     <div id="objectiveImages">
-        <img src="/images/missiondata/voidlaunch/researchvessel.jpg" alt="Research Vessel">
-        <img src="/images/missiondata/voidlaunch/researchvessel.jpg" alt="Research Vessel">
-        <img src="/images/missiondata/voidlaunch/researchvessel.jpg" alt="Research Vessel">
+        <img src="/images/missiondata/voidlaunch/researchvessel.jpg" alt="科学船">
+        <img src="/images/missiondata/voidlaunch/researchvessel.jpg" alt="科学船">
+        <img src="/images/missiondata/voidlaunch/researchvessel.jpg" alt="科学船">
     </div>
-    <p>The bonus objective requires you to escort three Research Vessels to the Xel'Naga Shrines on the map, and defend them against a single attack wave targeting them. The locations of the Xel'Naga Shrines are shown below:</p>
-    <p>The first Shrine is guarded by a very small force of enemy units.</p>
+    <p>奖励目标要求护送 3 艘科学船前往地图上的萨尔纳加神殿，并击退一波专门攻击科学船的敌军。各萨尔纳加神殿的位置如下：</p>
+    <p>第一座神殿只有一小股敌军守卫。</p>
     <?php switcher_generator("shrine1") ?>
-    <p>The second Shrine is guarded by a relatively strong force of units.</p>
+    <p>第二座神殿由一支较强的部队守卫。</p>
     <?php switcher_generator("shrine2") ?>
-    <p>The last Shrine is guarded by an enemy camp which will require a significant force to clear.</p>
+    <p>最后一座神殿由一处敌军营地守卫，需要相当规模的部队才能清除。</p>
     <?php switcher_generator("shrine3long") ?>
-    <h2 id="timings">Timings</h2>
-    <p>Note: Information on Tech and Strength levels can be found on the <a href="/guides/enemycomps">Enemy Compositions</a> page.</p>
-    <p>Shuttle Timings, Headings, Escort Strength and Tech Levels for this mission are shown below. Note that wave #7 will occur in one of three different patterns, all listed in the table.</p>
+    <h2 id="timings">时间点</h2>
+    <p>注意：科技等级与强度等级的说明可参阅<a href="/guides/enemycomps">敌方部队组合</a>页面。</p>
+    <p>下表列出本任务运兵船的时间、航向，以及护航部队的强度和科技等级。注意，第 7 波会按三种不同模式之一出现，表中均有列出。</p>
     <div class="tableContainer">
         <table class="centered">
             <thead>
                 <tr>
-                    <th>Wave</th>
-                    <th>Shuttles</th>
-                    <th>Time</th>
-                    <th>Bay</th>
-                    <th>Heading</th>
-                    <th>Tech Level</th>
-                    <th>Strength Level</th>
+                    <th>波次</th>
+                    <th>运兵船</th>
+                    <th>时间</th>
+                    <th>发射台</th>
+                    <th>航向</th>
+                    <th>科技等级</th>
+                    <th>强度等级</th>
                 </tr>
             </thead>
             <tbody>
@@ -102,8 +102,8 @@ require_once "../../includes/switchergenerator.php";
                     <td>1</td>
                     <td>2</td>
                     <td>6:18</td>
-                    <td>Middle</td>
-                    <td>Middle</td>
+                    <td>中间</td>
+                    <td>中间</td>
                     <td>1</td>
                     <td>1</td>
                 </tr>
@@ -111,8 +111,8 @@ require_once "../../includes/switchergenerator.php";
                     <td>2</td>
                     <td>3</td>
                     <td>9:00</td>
-                    <td>Middle</td>
-                    <td>Left or Right</td>
+                    <td>中间</td>
+                    <td>左侧或右侧</td>
                     <td>2</td>
                     <td>2</td>
                 </tr>
@@ -120,8 +120,8 @@ require_once "../../includes/switchergenerator.php";
                     <td>3</td>
                     <td>3</td>
                     <td>12:30</td>
-                    <td>Middle</td>
-                    <td>Right or Left</td>
+                    <td>中间</td>
+                    <td>右侧或左侧</td>
                     <td>3</td>
                     <td>3</td>
                 </tr>
@@ -129,17 +129,17 @@ require_once "../../includes/switchergenerator.php";
                     <td>4</td>
                     <td>3,3</td>
                     <td>15:30</td>
-                    <td>Left,Right or Left,Middle</td>
-                    <td>Left,Middle or Middle,Right</td>
-                    <td>3,4 or 4,3</td>
-                    <td>3,4 or 4,3</td>
+                    <td>左侧、右侧或左侧、中间</td>
+                    <td>左侧、中间或中间、右侧</td>
+                    <td>3,4 或 4,3</td>
+                    <td>3,4 或 4,3</td>
                 </tr>
                 <tr>
                     <td>5</td>
                     <td>2,2,2</td>
                     <td>18:00</td>
-                    <td>Right,Middle,Left</td>
-                    <td>Middle,Middle,Middle</td>
+                    <td>右侧、中间、左侧</td>
+                    <td>中间、中间、中间</td>
                     <td>3,4,3</td>
                     <td>3,4,3</td>
                 </tr>
@@ -147,10 +147,10 @@ require_once "../../includes/switchergenerator.php";
                     <td>6</td>
                     <td>5</td>
                     <td>20:30</td>
-                    <td>Left or Right</td>
-                    <td>Right or Left</td>
-                    <td>6 or 6</td>
-                    <td>6 or 6</td>
+                    <td>左侧或右侧</td>
+                    <td>右侧或左侧</td>
+                    <td>6 或 6</td>
+                    <td>6 或 6</td>
                 </tr>
                 <tr>
                     <td></td>
@@ -165,8 +165,8 @@ require_once "../../includes/switchergenerator.php";
                     <td>7</td>
                     <td>2,3<br>2,3</td>
                     <td>23:00<br>23:45</td>
-                    <td>Middle,Right<br>Middle,Left</td>
-                    <td>Middle,Right<br>Middle,Left</td>
+                    <td>中间、右侧<br>中间、左侧</td>
+                    <td>中间、右侧<br>中间、左侧</td>
                     <td>7,5<br>7,5</td>
                     <td>6,5<br>7,5</td>
                 </tr>
@@ -174,8 +174,8 @@ require_once "../../includes/switchergenerator.php";
                     <td>7</td>
                     <td>2,2<br>3,3</td>
                     <td>23:00<br>23:30<br>23:35</td>
-                    <td>Middle<br>Middle<br>Left,Right</td>
-                    <td>Left/Right<br>Right/Left<br>Middle,Middle</td>
+                    <td>中间<br>中间<br>左侧、右侧</td>
+                    <td>左侧/右侧<br>右侧/左侧<br>中间、中间</td>
                     <td>4<br>6<br>7,7</td>
                     <td>5<br>5<br>6,7</td>
                 </tr>
@@ -183,67 +183,67 @@ require_once "../../includes/switchergenerator.php";
                     <td>7</td>
                     <td>3,3<br>2,2</td>
                     <td>23:00<br>23:40</td>
-                    <td>Left,Right<br>Left,Right</td>
-                    <td>Middle,Middle<br>Left,Right</td>
+                    <td>左侧、右侧<br>左侧、右侧</td>
+                    <td>中间、中间<br>左侧、右侧</td>
                     <td>7,6<br>4,6</td>
                     <td>7,6<br>5,5</td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <p>The Escort Waves select units from a different pool to the regular attack waves. This pool is shown below:</p>
+    <p>护航波次会从不同于常规进攻波次的单位池中选取单位。单位池如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Tech Level</th>
-                <th>Protoss Pool</th>
-                <th>Terran Pool</th>
-                <th>Zerg Pool</th>
+                <th>科技等级</th>
+                <th>星灵单位池</th>
+                <th>人类单位池</th>
+                <th>异虫单位池</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>1</td>
-                <td>Scouts</td>
-                <td>Vikings</td>
-                <td>Mutalisk</td>
+                <td>侦察机</td>
+                <td>维京战机</td>
+                <td>异龙</td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>Scouts / Phoenixes</td>
-                <td>Vikings / Banshees</td>
-                <td>Mutalisk / Corruptor</td>
+                <td>侦察机 / 凤凰战机</td>
+                <td>维京战机 / 女妖</td>
+                <td>异龙 / 腐化者</td>
             </tr>
             <tr>
                 <td>3</td>
-                <td>Scouts / Phoenixes / Hybrid Nemesis</td>
-                <td>Vikings / Banshees / Hybrid Nemesis</td>
-                <td>Mutalisk / Corruptor / Hybrid Nemesis</td>
+                <td>侦察机 / 凤凰战机 / 混合体天罚者</td>
+                <td>维京战机 / 女妖 / 混合体天罚者</td>
+                <td>异龙 / 腐化者 / 混合体天罚者</td>
             </tr>
             <tr>
                 <td>4</td>
-                <td>Void Ray / Phoenixes / Hybrid Nemesis / Oracle</td>
-                <td>Vikings / Banshees / Hybrid Nemesis / Reapers</td>
-                <td>Mutalisk / Corruptor / Hybrid Nemesis / Zergling</td>
+                <td>虚空辉光舰 / 凤凰战机 / 混合体天罚者 / 先知</td>
+                <td>维京战机 / 女妖 / 混合体天罚者 / 收割者</td>
+                <td>异龙 / 腐化者 / 混合体天罚者 / 跳虫</td>
             </tr>
             <tr>
                 <td>5+</td>
-                <td>Void Ray / Phoenixes / Hybrid Nemesis / Oracle / Colossus</td>
-                <td>Vikings / Banshees / Hybrid Nemesis / Battlecruiser</td>
-                <td>Mutalisk / Corruptor / Hybrid Nemesis / Brood Lord</td>
+                <td>虚空辉光舰 / 凤凰战机 / 混合体天罚者 / 先知 / 巨像</td>
+                <td>维京战机 / 女妖 / 混合体天罚者 / 战列巡航舰</td>
+                <td>异龙 / 腐化者 / 混合体天罚者 / 巢虫领主</td>
             </tr>
         </tbody>
     </table>
-    <p>The last wave of Escorts will either contain two Motherships, one Loki, or one Leviathan, per escort, depending on the enemy race.</p>
-    <p>The Attack Wave Timings for this mission are:</p>
+    <p>最后一波护航部队会根据敌方种族，在每支护航队中包含 2 艘母舰、1 艘洛基或 1 只利维坦。</p>
+    <p>本任务的进攻波次时间如下：</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Wave</th>
-                <th>Time</th>
-                <th>Tech Level</th>
-                <th>Strength Level</th>
-                <th>Spawn Point</th>
+                <th>波次</th>
+                <th>时间</th>
+                <th>科技等级</th>
+                <th>强度等级</th>
+                <th>出生点</th>
             </tr>
         </thead>
         <tbody>
@@ -252,80 +252,80 @@ require_once "../../includes/switchergenerator.php";
                 <td>3:00</td>
                 <td>1</td>
                 <td>1</td>
-                <td>Right</td>
+                <td>右侧</td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>5:00</td>
                 <td>2</td>
                 <td>2</td>
-                <td>Left</td>
+                <td>左侧</td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>7:30</td>
                 <td>2</td>
                 <td>2</td>
-                <td>Side of Expansion with most structures</td>
+                <td>分矿建筑最多的一侧</td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>10:00</td>
                 <td>3</td>
                 <td>3</td>
-                <td>Right</td>
+                <td>右侧</td>
             </tr>
             <tr>
                 <td>5</td>
                 <td>11:00</td>
                 <td>3</td>
                 <td>3</td>
-                <td>Left</td>
+                <td>左侧</td>
             </tr>
             <tr>
                 <td>6</td>
                 <td>14:00</td>
                 <td>3</td>
                 <td>3</td>
-                <td>Side of Warp Conduit with most structures</td>
+                <td>折跃通道旁建筑最多的一侧</td>
             </tr>
             <tr>
                 <td>7</td>
                 <td>16:48</td>
                 <td>4</td>
                 <td>4</td>
-                <td>Left</td>
+                <td>左侧</td>
             </tr>
             <tr>
                 <td>8</td>
                 <td>19:18</td>
                 <td>5</td>
                 <td>5</td>
-                <td>Right</td>
+                <td>右侧</td>
             </tr>
             <tr>
                 <td>9</td>
                 <td>21:48</td>
                 <td>6</td>
                 <td>6</td>
-                <td>Right</td>
+                <td>右侧</td>
             </tr>
             <tr>
                 <td>10</td>
                 <td>24:18</td>
                 <td>7</td>
                 <td>7</td>
-                <td>Right</td>
+                <td>右侧</td>
             </tr>
         </tbody>
     </table>
-    <p>Additionally, some attack waves will also have Hybrids in them. These attack waves, and the number of Hybrids in them is shown below:</p>
+    <p>此外，部分进攻波次还会包含混合体。具体波次和混合体数量如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Wave</th>
-                <th>Minor Hybrid</th>
-                <th>Major Hybrid</th>
+                <th>波次</th>
+                <th>小型混合体</th>
+                <th>大型混合体</th>
             </tr>
         </thead>
         <tbody>
@@ -381,34 +381,34 @@ require_once "../../includes/switchergenerator.php";
             </tr>
         </tbody>
     </table>
-    <p>The types of these Hybrids are randomized as follows:</p>
+    <p>这些混合体的类型按以下规则随机选择：</p>
     <ul>
-        <li>50% chance for the Minor Hybrid to be a Hybrid Destroyer or a Hybrid Reaver.</li>
-        <li>50% chance for the Major Hybrid to be a Hybrid Dominator or a Hybrid Behemoth.</li>
+        <li>小型混合体有 50% 几率为混合体毁灭者，另有 50% 几率为混合体掠夺者。</li>
+        <li>大型混合体有 50% 几率为混合体支配者，另有 50% 几率为混合体巨兽。</li>
     </ul>
-    <p>The bonus objectives will start at the following times:</p>
+    <p>各奖励目标会在以下时间开始：</p>
     <ul>
         <li>8:18</li>
         <li>14:48</li>
         <li>19:48</li>
     </ul>
-    <h2 id="spawnPoints">Spawn Points</h2>
-    <p>All the shuttles and their escorts will spawn from the launch bays. However, there are two other spawning points, dedicated for the attack waves that attack player bases. These are located near the two entrances to the enemy bases on the map on either side of the first Xel'Naga Shrine. These are shown below.</p>
-    <img src="/images/missiondata/voidlaunch/attackwavespawnpoints.jpg" alt="Attack Wave Spawn Points">
-    <h2 id="misTips">Mission Tips</h2>
+    <h2 id="spawnPoints">出生点</h2>
+    <p>所有运兵船及其护航部队都会从发射台出现。此外还有两个专供攻击玩家基地的进攻波次使用的出生点，分别位于第一座萨尔纳加神殿两侧、地图上两个敌方基地入口附近，如下所示。</p>
+    <img src="/images/missiondata/voidlaunch/attackwavespawnpoints.jpg" alt="进攻波次出生点">
+    <h2 id="misTips">任务技巧</h2>
     <ul>
-        <li>Clearing the enemy bases early can give you access to two additional expansions for an even greater foothold in the game.</li>
-        <li>Once the enemies around a bay is cleared, build anti-air static defenses to instantly shoot down shuttles as they spawn.</li>
+        <li>尽早清除敌方基地可获得两个额外分矿，为后续作战建立更强的经济基础。</li>
+        <li>清除发射台周围的敌人后，建造对空静态防御，在运兵船出现时立即将其击落。</li>
     </ul>
-    <h2 id="comTips">Commander-specific Tips</h2>
+    <h2 id="comTips">指挥官专属技巧</h2>
     <ul>
-        <li><a href="/commanders/abathur">Abathur</a>: Place Toxic Nests on attack wave spawn locations to weaken them.</li>
-        <li><a href="/commanders/dehaka">Dehaka</a>: Get your early Essence by attacking the enemies near the first Xel'Naga Shrine.</li>
-        <li><a href="/commanders/horner">Han & Horner</a>: Place Mag Mines on attack wave spawn locations to weaken them.</li>
-        <li><a href="/commanders/nova">Nova</a>: If you use Siege Tanks, place Spider-mines on attack wave spawn locations to weaken them.</li>
-        <li><a href="/commanders/raynor">Raynor</a>: If you use Vultures, place Spider-mines on attack wave spawn locations to weaken them.</li>
-        <li><a href="/commanders/vorazun">Vorazun</a>: Place a Dark Pylon at each Conduit to allow you to move your army to intercept multiple shuttles in the same wave.</li>
-        <li><a href="/commanders/zeratul">Zeratul</a>: Zeratul can uniquely identify the enemy race at the start of the game. As usual, if creep is present, the enemy race is Zerg. If the enemy is Protoss, gold floor plates will be present in the enemy base. If concrete panels are present, the enemy is Terran. A video is below:</li>
+        <li><a href="/commanders/abathur">阿巴瑟</a>：在进攻波次的出生位置放置剧毒巢穴以削弱敌军。</li>
+        <li><a href="/commanders/dehaka">德哈卡</a>：攻击第一座萨尔纳加神殿附近的敌军，获取前期精华。</li>
+        <li><a href="/commanders/horner">汉与霍纳</a>：在进攻波次的出生位置放置磁雷以削弱敌军。</li>
+        <li><a href="/commanders/nova">诺娃</a>：使用攻城坦克时，在进攻波次的出生位置布置蜘蛛雷以削弱敌军。</li>
+        <li><a href="/commanders/raynor">雷诺</a>：使用秃鹫战车时，在进攻波次的出生位置布置蜘蛛雷以削弱敌军。</li>
+        <li><a href="/commanders/vorazun">沃拉尊</a>：在每条折跃通道旁放置黑暗水晶塔，以便移动部队并拦截同一波中的多艘运兵船。</li>
+        <li><a href="/commanders/zeratul">泽拉图</a>：泽拉图能在游戏开始时识别敌方种族。与往常一样，有菌毯就表示敌方是异虫；敌方基地有金色地板表示星灵；有混凝土板则表示人类。视频如下：</li>
     </ul>
     <iframe width="475" height="268" src="https://www.youtube.com/embed/YXDuDOIrkro" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <script src="/scripts/nav.js"></script>

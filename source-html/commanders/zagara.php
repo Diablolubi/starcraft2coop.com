@@ -5,9 +5,9 @@
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Commander Guide - Zagara</title>
-  <meta name="description" content="Starcraft 2 Co-op Commander Guide Zagara">
-  <meta name="keywords" content="Starcraft co-op guides zagara commander mastery prestige build">
+  <title>《星际争霸 2》合作任务 - 指挥官攻略 - 扎加拉</title>
+  <meta name="description" content="《星际争霸 2》合作任务扎加拉指挥官攻略">
+  <meta name="keywords" content="星际争霸 II 合作任务 攻略 扎加拉 指挥官 精通 威望 配兵">
   <link rel="stylesheet"  media="all" type="text/css" href="/styles/commanderstyle.css?v=2">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="https://starcraft2coop.com/commanders/zagara">
@@ -18,317 +18,317 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         }
   </style>
   <?= startContent() ?>
-    <div id="tooltip">tooltip</div>
-    <h1><span class="unbold">Commander:</span> Zagara</h1>
-    <p id="commanderMotto">Swarm Broodmother</p>
+    <div id="tooltip">提示</div>
+    <h1><span class="unbold">指挥官：</span>扎加拉</h1>
+    <p id="commanderMotto">虫群之母</p>
     <?php include("../../includes/reporterror.php");?>
     <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#comSum">Commander Summary</a></p>
-        <p><a href="#levelUnlocks">Level Unlocks</a></p>
-        <p><a href="#achievements">Achievements</a></p>
-        <p><a href="#leveling">Sub-Ascension Leveling</a></p>
-        <p><a href="#masteries">Masteries</a></p>
-        <p><a href="#prestiges">Prestiges</a></p>
-        <p><a href="#hero">Hero Unit</a></p>
-        <p><a href="#army">Recommended Army Composition</a></p>
-        <p><a href="#units">Combat Units</a></p>
-        <p><a href="#buildOrder">Build Order</a></p>
-        <p><a href="#guide">Gameplay Guide</a></p>
+        <h2>本页目录</h2>
+        <p><a href="#comSum">指挥官概览</a></p>
+        <p><a href="#levelUnlocks">等级解锁</a></p>
+        <p><a href="#achievements">成就</a></p>
+        <p><a href="#leveling">飞升前升级</a></p>
+        <p><a href="#masteries">精通</a></p>
+        <p><a href="#prestiges">威望</a></p>
+        <p><a href="#hero">英雄单位</a></p>
+        <p><a href="#army">推荐部队组成</a></p>
+        <p><a href="#units">作战单位</a></p>
+        <p><a href="#buildOrder">建造顺序</a></p>
+        <p><a href="#guide">玩法攻略</a></p>
     </div>
-    <h2 id="comSum">Commander Summary</h2>
-    <p>Zagara overwhelms her enemies with cheap and swarmy units that she throws relentlessly at them.</p>
-    <h2 id="levelUnlocks">Level Unlocks</h2>
+    <h2 id="comSum">指挥官概览</h2>
+    <p>扎加拉不断将廉价单位组成的虫群投入战斗，以压倒敌人。</p>
+    <h2 id="levelUnlocks">等级解锁</h2>
     <table class="progressionTable">
         <thead>
             <tr>
-                <th>Level/Icon</th>
-                <th>Name</th>
-                <th>Description</th>
+                <th>等级/图标</th>
+                <th>名称</th>
+                <th>说明</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/progression/zagara/zagara_01.png" alt = "Relentless Swarmer"></td>
-                <td>Relentless Swarmer</td>
+                <td><img src="/images/commanderdata/progression/zagara/zagara_01.png" alt = "不息虫群"></td>
+                <td>不息虫群</td>
                 <td>
-                    Zagara has a 100 supply maximum, but her combat units cost less and morph faster. Drones morph in pairs. Queens cost 1 supply. Larvae spawn at an increased rate.
+                    扎加拉的最大人口为 100，但她的作战单位造价更低、变异速度更快。工蜂每次成对变异。虫后占用 1 人口。幼虫生成速度提高。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/zagara/zagara_02.png" alt = "Infested Drop"></td>
-                <td>Infested Drop</td>
+                <td><img src="/images/commanderdata/progression/zagara/zagara_02.png" alt = "感染空投"></td>
+                <td>感染空投</td>
                 <td>
-                    Zagara can call down Roaches with timed life to any location on the map. Drop-pods deal damage on impact.
+                    扎加拉可以向地图上的任意位置空投有持续时间的蟑螂。空投舱落地时会造成伤害。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/zagara/zagara_03.png" alt = "Inject Larvae"></td>
-                <td>Inject Larvae</td>
+                <td><img src="/images/commanderdata/progression/zagara/zagara_03.png" alt = "注射幼虫"></td>
+                <td>注射幼虫</td>
                 <td>
-                   Increases the number of Larvae produced by the Queen’s Spawn Larvae ability from 4 to 8.
+                   虫后的“孵化幼虫”技能所生成的幼虫数量从 4 只提高至 8 只。
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/zagara/zagara_04.png" alt = "Scourge Upgrade Cache"></td>
-                <td>Scourge Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/zagara/zagara_04.png" alt = "爆蚊升级包"></td>
+                <td>爆蚊升级包</td>
                 <td>
-                    New research available on the Scourge Nest:
+                    爆蚊巢中可研究以下新升级：
                     <ul>
-                        <li>Scourge deal 50% of their attack damage in a small area on death.</li>
-                        <li>Reduces the amount of vespene gas required to morph Scourge by 50.</li>
+                        <li>爆蚊死亡时对小范围内的敌人造成相当于其攻击伤害 50% 的伤害。</li>
+                        <li>爆蚊变异所需的高能瓦斯减少 50。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/zagara/zagara_05.png" alt = "New Unit: Bile Launcher"></td>
-                <td>New Unit: Bile Launcher</td>
+                <td><img src="/images/commanderdata/progression/zagara/zagara_05.png" alt = "新单位：胆汁喷射器"></td>
+                <td>新单位：胆汁喷射器</td>
                 <td>
-                    Unlocks the ability to morph drones into Bile Launchers, defensive structures that deal area damage to ground and air targets.
+                    解锁将工蜂变异为胆汁喷射器的能力。胆汁喷射器是一种可对地面和空中目标造成范围伤害的防御建筑。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/zagara/zagara_06.png" alt = "Zergling Upgrade Cache"></td>
-                <td>Zergling Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/zagara/zagara_06.png" alt = "跳虫升级包"></td>
+                <td>跳虫升级包</td>
                 <td>
-                    New research available on the Spawning Pool:
+                    孵化池中可研究以下新升级：
                     <ul>
-                        <li>Zerglings gain +10 maximum life.</li>
-                        <li>Zergling attacks reduce their target's armor to 0 for 10 seconds.</li>
+                        <li>跳虫的最大生命值提高 10。</li>
+                        <li>跳虫的攻击可使目标的护甲降至 0，持续 10 秒。</li>
                     </ul>
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/zagara/zagara_07.png" alt = "Baneling Nest: Birthing Chamber"></td>
-                <td>Baneling Nest: Birthing Chamber</td>
+                <td><img src="/images/commanderdata/progression/zagara/zagara_07.png" alt = "爆虫巢：育虫室"></td>
+                <td>爆虫巢：育虫室</td>
                 <td>
-                    The Baneling Nest will periodically spawn free Banelings.
+                    爆虫巢会周期性生成免费的爆虫。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/zagara/zagara_08.png" alt = "Incubate Banelings and Scourge"></td>
-                <td>Incubate Banelings and Scourge</td>
+                <td><img src="/images/commanderdata/progression/zagara/zagara_08.png" alt = "孵化爆虫与爆蚊"></td>
+                <td>孵化爆虫与爆蚊</td>
                 <td>
-                    Aberrations spawn 2 Banelings from their corpses when killed. Corruptors spawn 2 Scourge when killed.
+                    畸变体死亡时会从尸体中孵化 2 只爆虫。腐化者死亡时会孵化 2 只爆蚊。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/zagara/zagara_09.png" alt = "Evolution Chamber Upgrade Cache"></td>
-                <td>Evolution Chamber Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/zagara/zagara_09.png" alt = "进化腔升级包"></td>
+                <td>进化腔升级包</td>
                 <td>
-                    New research available on the Evolution Chamber:
+                    进化腔中可研究以下新升级：
                     <ul>
-                        <li>Zagara's attacks deal area damage, splashing to enemy units near her primary target.</li>
-                        <li>Aberrations grant 50% damage reduction to units positioned beneath them.</li>
+                        <li>扎加拉的攻击会造成范围伤害，并波及主目标附近的敌方单位。</li>
+                        <li>畸变体使其身下的单位所受伤害降低 50%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/zagara/zagara_10.png" alt = "Darken the Skies"></td>
-                <td>Darken the Skies</td>
+                <td><img src="/images/commanderdata/progression/zagara/zagara_10.png" alt = "遮天蔽日"></td>
+                <td>遮天蔽日</td>
                 <td>
-                    Increases the number of Roaches spawned by Zagara's Infested Drop ability from 10 to 20.
+                    扎加拉的“感染空投”技能生成的蟑螂数量从 10 只提高至 20 只。
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/zagara/zagara_11.png" alt = "Baneling Nest Upgrade Cache"></td>
-                <td>Baneling Nest Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/zagara/zagara_11.png" alt = "爆虫巢升级包"></td>
+                <td>爆虫巢升级包</td>
                 <td>
-                    New research available on the Baneling Nest:
+                    爆虫巢中可研究以下新升级：
                     <ul>
-                        <li>Increases the Baneling's base attack damage against the primary target by 100%. Splash damage remains the same.</li>
-                        <li>Baneling blast radius increased by 50%.</li>
+                        <li>爆虫对主目标的基础攻击伤害提高 100%。溅射伤害保持不变。</li>
+                        <li>爆虫的爆炸半径扩大 50%。</li>
                     </ul>
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/zagara/zagara_12.png" alt = "Zergling Evolution: Swarmling"></td>
-                <td>Zergling Evolution: Swarmling</td>
+                <td><img src="/images/commanderdata/progression/zagara/zagara_12.png" alt = "跳虫进化：虫群跳虫"></td>
+                <td>跳虫进化：虫群跳虫</td>
                 <td>
-                    Upgrades Zerglings into the Swarmling strain.<br><br>Fast melee unit. Spawns in groups of three. Morphs almost instantly. Can morph into a Baneling.<br><br>Can attack ground units.
+                    将跳虫升级为虫群跳虫品系。<br><br>快速近战单位。每次生成三只。几乎可瞬间完成变异。可变异为爆虫。<br><br>可攻击地面单位。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/zagara/zagara_13.png" alt = "Bile Launcher Upgrade Cache"></td>
-                <td>Bile Launcher Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/zagara/zagara_13.png" alt = "胆汁喷射器升级包"></td>
+                <td>胆汁喷射器升级包</td>
                 <td>
-                    New research available on the Spawning Pool:
+                    孵化池中可研究以下新升级：
                     <ul>
-                        <li>Increases the range of the Bile Launcher's Bombardment.</li>
-                        <li>Reduces the cooldown of the Bile Launcher's Bombardment.</li>
+                        <li>提高胆汁喷射器“轰击”的射程。</li>
+                        <li>缩短胆汁喷射器“轰击”的冷却时间。</li>
                     </ul>
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/zagara/zagara_14.png" alt = "Baneling Evolution: Splitter"></td>
-                <td>Baneling Evolution: Splitter</td>
+                <td><img src="/images/commanderdata/progression/zagara/zagara_14.png" alt = "爆虫进化：分裂虫"></td>
+                <td>爆虫进化：分裂虫</td>
                 <td>
-                    Evolves Zagara's Banelings into the Splitter strain.<br><br>Suicide unit. Deals damage over a small area upon death. Splits into smaller units as it dies.<br><br>Can attack ground units.
+                    将扎加拉的爆虫进化为分裂虫品系。<br><br>自爆单位。死亡时对小范围内的敌人造成伤害，并分裂成更小的单位。<br><br>可攻击地面单位。
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/zagara/zagara_15.png" alt = "Broodmother"></td>
-                <td>Broodmother</td>
+                <td><img src="/images/commanderdata/progression/zagara/zagara_15.png" alt = "虫群之母"></td>
+                <td>虫群之母</td>
                 <td>
-                    Reduces the energy cost of Zagara's Baneling Barrage and Spawn Hunter-Killers abilities by 50%.<br><br>Increases the number of units spawned by Baneling Barrage and Spawn Hunter-Killers by 50%.
+                    扎加拉的“爆虫弹幕”和“召唤猎杀者”技能的能量消耗降低 50%。<br><br>“爆虫弹幕”和“召唤猎杀者”生成的单位数量提高 50%。
                 </td>
             </tr>
         </tbody>
     </table>
-    <p id="powerSpikeInfo">Highlighted rows denote large power spikes for the commander.</p>
-    <h2 id="achievements">Achievements</h2>
-    <p>The commander-specific achievements for Zagara are:</p>
+    <p id="powerSpikeInfo">高亮行表示该指挥官的重要强势等级。</p>
+    <h2 id="achievements">成就</h2>
+    <p>扎加拉的指挥官专属成就如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Achievement</th>
-                <th>Name</th>
-                <th>Description</th>
+                <th>成就</th>
+                <th>名称</th>
+                <th>说明</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/achievements/zagara/bigbangs.jpg" alt="Big Bangs"></td>
-                <td>Big Bangs</td>
-                <td>Destroy 5,000 enemy units with Zagara's Banelings in Co-op Missions.</td>
+                <td><img src="/images/commanderdata/achievements/zagara/bigbangs.jpg" alt="大爆炸"></td>
+                <td>大爆炸</td>
+                <td>在合作任务中使用扎加拉的爆虫消灭 5,000 个敌方单位。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/zagara/massfrenzy.jpg" alt="Mass Frenzy"></td>
-                <td>Mass Frenzy</td>
-                <td>Your ally deals 10,000 damage while Zagara's Mass Frenzy is activated in Co-op Missions.</td>
+                <td><img src="/images/commanderdata/achievements/zagara/massfrenzy.jpg" alt="群体狂暴"></td>
+                <td>群体狂暴</td>
+                <td>在合作任务中，扎加拉的“群体狂暴”生效期间，让盟友造成 10,000 点伤害。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/zagara/queenofdestruction.jpg" alt="Queen of Destruction"></td>
-                <td>Queen of Destruction</td>
-                <td>Kill 500 enemy units in a single mission when playing as Zagara on Hard difficulty.</td>
+                <td><img src="/images/commanderdata/achievements/zagara/queenofdestruction.jpg" alt="毁灭女王"></td>
+                <td>毁灭女王</td>
+                <td>在困难难度下使用扎加拉，单场任务消灭 500 个敌方单位。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/zagara/roachrampage.jpg" alt="Roach Rampage"></td>
-                <td>Roach Rampage</td>
-                <td>Kill 100 enemy units using Zagara's Infested Drop in a single mission on Hard difficulty.</td>
+                <td><img src="/images/commanderdata/achievements/zagara/roachrampage.jpg" alt="蟑螂狂潮"></td>
+                <td>蟑螂狂潮</td>
+                <td>在困难难度下，单场任务使用扎加拉的“感染空投”消灭 100 个敌方单位。</td>
             </tr>
         </tbody>
     </table>
-    <h2 id="leveling">Sub-Ascension Leveling</h2>
-    <p>Difficulty: Very Hard</p>
-    <p>Due the the lack of free Banelings and Swarmlings, Zagara is one of the most difficult commanders to level at lower levels. Take the game extremely slowly to prevent unit loses, morphing Banelings whenever you have resources to spare. Add some Aberrations to your army to provide you with sustained damage.</p>
-    <h2 id="masteries">Masteries</h2>
-    <p>Below are the three Power Sets for Zagara with the recommended point allocations for each. Note that these are meant to serve a general, all-purpose build that is effective across all maps with no Prestiges selected. You are highly encourged to change these masteries to suit your playstyle and particular challenges you face (e.g. <a href="/resources/weeklymutations">Weekly Mutations</a>).</p>
-    <p>Power Set 1:</p>
+    <h2 id="leveling">飞升前升级</h2>
+    <p>难度：非常困难</p>
+    <p>由于缺少免费的爆虫和虫群跳虫，扎加拉是低等级阶段最难练级的指挥官之一。务必稳扎稳打，避免无谓损失，并在资源有余时变异爆虫。部队中可加入一些畸变体，以提供持续伤害。</p>
+    <h2 id="masteries">精通</h2>
+    <p>以下是扎加拉三个技能组的推荐点数分配。请注意，这是一套未选择任何威望、适用于所有地图的通用配置。强烈建议你根据自己的玩法和面对的具体挑战（例如<a href="/resources/weeklymutations">每周突变</a>）调整精通点数。</p>
+    <p>技能组 1：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>技能</th>
+                <th>数值</th>
+                <th>推荐投入点数</th>
+                <th>其他考量</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Zagara and Queen Regen</td>
-                <td>1% per point<br>30% maximum</td>
+                <td>扎加拉和虫后恢复</td>
+                <td>每点 1%<br>最高 30%</td>
                 <td>30</td>
-                <td rowspan="2">Players that actively micro Zagara may be able to trim some points off the Life and Energy mastery to put into Zagara's attack damage to increase her damage output. However, this makes her more fragile, and may prevent her from spamming abilities as often as she can.</td>
+                <td rowspan="2">善于操作扎加拉的玩家可以从生命与能量恢复精通中挪出一些点数，投入扎加拉攻击伤害来提高输出。但这会让她更加脆弱，也可能使她无法频繁施放技能。</td>
             </tr>
             <tr>
-                <td>Zagara Attack Damage</td>
-                <td>1 per point<br>30 maximum</td>
+                <td>扎加拉攻击伤害</td>
+                <td>每点 1<br>最高 30</td>
                 <td>0</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">Zagara has a very low attack speed and low HP to start, making her extremely vulnerable. By putting all the points into Zagara's Life and Energy Regeneration, you can not only increase her survivability but also allow her to spam her abilities, which are the main source of her damage output.</p>
-    <p>Power Set 2:</p>
+    <p class="masterySummary">扎加拉初始攻击速度很慢，生命值也很低，因此非常脆弱。将所有点数投入扎加拉生命与能量恢复，不仅能提高她的生存能力，还能让她频繁施放作为主要伤害来源的技能。</p>
+    <p>技能组 2：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>技能</th>
+                <th>数值</th>
+                <th>推荐投入点数</th>
+                <th>其他考量</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Intensified Frenzy</td>
-                <td>1.5% per point<br>45% maximum</td>
+                <td>强化狂暴</td>
+                <td>每点 1.5%<br>最高 45%</td>
                 <td>30</td>
-                <td rowspan="2">Intensified Frenzy is an extremely powerful buff and generally, it is not viable to pick the other mastery. Players that prefer to use Zerglings instead of Banelings can use the Zergling Evasion can significantly increase the effectiveness of their zerglings.</td>
+                <td rowspan="2">强化狂暴是极其强力的增益，一般不值得选择另一项精通。相比爆虫，更喜欢使用跳虫的玩家可以选择跳虫闪避，显著提高跳虫的效用。</td>
             </tr>
             <tr>
-                <td>Zergling Evasion</td>
-                <td>1.5% per point<br>45% maximum</td>
+                <td>跳虫闪避</td>
+                <td>每点 1.5%<br>最高 45%</td>
                 <td>0</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">Intensified Frenzy is an extremely powerful ability that affects all friendly units, including your ally's. Improving it will improve both you and your ally's effectiveness in the game. Evasion only allows Zerglings to prevent damage, without helping your army kill enemy units.</p>
-    <p>Power Set 3:</p>
+    <p class="masterySummary">强化狂暴非常强大，会影响包括盟友部队在内的所有友方单位。强化它可以同时提升你和盟友的战斗力。闪避只能让跳虫免受部分伤害，并不能帮助部队更快消灭敌人。</p>
+    <p>技能组 3：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>技能</th>
+                <th>数值</th>
+                <th>推荐投入点数</th>
+                <th>其他考量</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Roach Damage and Life</td>
-                <td>2% per point<br>60% maximum</td>
+                <td>蟑螂伤害与生命值</td>
+                <td>每点 2%<br>最高 60%</td>
                 <td>0</td>
-                <td rowspan="2">Zagara's Baneling Barrage is affected by the Baneling damage mastery, which is generally recommended. However, if players find that they are dependent on the Roach Drops to effectively push, they may add a few points in to that mastery to help them.</td>
+                <td rowspan="2">扎加拉的“爆虫弹幕”受爆虫攻击伤害精通影响，因此通常推荐选择这一项。不过，如果玩家发现自己需要依赖蟑螂空投才能有效推进，也可以在蟑螂伤害与生命值中投入一些点数。</td>
             </tr>
             <tr>
-                <td>Baneling Attack Damage</td>
-                <td>1 per point<br>30 maximum</td>
+                <td>爆虫攻击伤害</td>
+                <td>每点 1<br>最高 30</td>
                 <td>30</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">Baneling Attack Damage is the better option here, especially if you use Banelings combined with Frenzy to push into enemy bases.</p>
-    <h2 id="prestiges">Prestiges</h2>
-    <p>Below are the prestiges for Zagara. Note that "Effective Level" is the level at which the prestige achieves it full effect.</p>
+    <p class="masterySummary">爆虫攻击伤害是更好的选择，尤其适合在狂暴效果下利用爆虫推进敌方基地的打法。</p>
+    <h2 id="prestiges">威望</h2>
+    <p>扎加拉的各项威望如下。“完全生效等级”是指该威望发挥完整效果所需的等级。</p>
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P1: <strong>Scourge Queen</strong></td>
+                <td class="prestigeTitle" colspan="2">P1：<strong>爆蚊女王</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>Max supply increased by 50.</li>
-                        <li>Zerglings and Scourge spawn one extra unit per egg.</li>
-                        <li>Baneling Nests will spawn an additional 4 free Banelings and Scourge Nests will spawn 4 free Scourge.</li>
+                        <li>最大人口提高 50。</li>
+                        <li>每颗卵额外孵化一只跳虫或爆蚊。</li>
+                        <li>爆虫巢会额外生成 4 只免费爆虫，爆蚊巢会生成 4 只免费爆蚊。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>Zagara is unavailable.</li>
+                        <li>无法使用扎加拉。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Notes</th>
+                <th>备注</th>
                 <td>
                     <ul>
-                        <li>Zerglings will spawn in 3's from level 1 to level 11</li>
-                        <li>Zerglings will spawn in 4's once Swarmling strain unlocks at level 12</li>
+                        <li>跳虫每次生成 3 只，适用于等级 1 到等级 11。</li>
+                        <li>跳虫每次生成 4 只，等级 12 解锁虫群跳虫品系后生效。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>完全生效等级</th>
                 <td>7</td>
             </tr>
             <tr>
-                <th>Advice</th><td>This prestige sacrifices the hero unit for a higher supply cap as well as the ability to spawn large numbers of units. The loss of Frenzy, which is often used to help her units contact enemy forces through spells does negatively impact this prestige. However, this prestige is able to overcome that by overwhelming enemy forces with units. The costs of this are mitigated by the large number of free units that are spawned throughout the course of the game. If using this Prestige, make sure to adjust your Mastery selections so they are not invested in Zagara or her abilities.</td>
+                <th>建议</th><td>此威望牺牲英雄单位，换取更高的人口上限和大批量生产单位的能力。失去通常用于帮助部队顶着敌方技能接战的狂暴，会带来明显影响；不过，此威望可以凭借海量单位压垮敌军。游戏过程中不断生成的大量免费单位也能抵消一部分损耗。使用此威望时，请调整精通配置，不要将点数投入扎加拉或她的技能。</td>
             </tr>
         </tbody>
     </table>
@@ -336,38 +336,38 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P2: <strong>Mother of Constructs</strong></td>
+                <td class="prestigeTitle" colspan="2">P2：<strong>造物之母</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>Aberrations and Corruptors cost 25% less, gain 50% increased health, and possess greatly increased health regeneration.</li>
+                        <li>畸变体和腐化者的造价降低 25%，生命值提高 50%，生命恢复速度大幅提高。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>No free Banelings.</li>
+                        <li>不再获得免费爆虫。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Notes</th>
+                <th>备注</th>
                 <td>
                     <ul>
-                        <li>Regeneration rate increased by 3</li>
+                        <li>恢复速度提高 3。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>完全生效等级</th>
                 <td>1</td>
             </tr>
             <tr>
-                <th>Advice</th><td>This prestige is a solid prestige that is particularly useful during sub-mastery leveling, as it partially solves the lack of resilience of Zagara's army. The lack of free Banelings means the player will have to think a bit more carefully about how they take engagements and how to most efficiently utilize their Banelings to achieve maximum damage. Note that this does <i>not</i> mean that you should not be investing in some of the smaller units or their upgrades. Banelings, Zerglings and Scourge should be made in tiny quantities, and their important upgrades (e.g. Corrosive Acid, Virulent Spores) should still be obtained, as Aberrations and Corruptors spawn Banelings and Scourge respectively when they die. Remember to adapt your build order such that you're not building a Baneling Nest too early.</td>
+                <th>建议</th><td>此威望表现稳定，在精通前练级阶段尤其有用，因为它在一定程度上解决了扎加拉部队续航能力不足的问题。由于没有免费爆虫，玩家必须更谨慎地选择交战方式，并尽可能高效地使用爆虫来打出最大伤害。请注意，这并<i>不</i>意味着你不该投资小型单位及其升级。仍应少量生产爆虫、跳虫和爆蚊，并研究它们的重要升级（例如“腐蚀强酸”和“剧毒孢子”），因为畸变体和腐化者死亡时会分别生成爆虫和爆蚊。记得调整建造顺序，不要过早建造爆虫巢。</td>
             </tr>
         </tbody>
     </table>
@@ -375,122 +375,122 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P3: <strong>Apex Predator</strong></td>
+                <td class="prestigeTitle" colspan="2">P3：<strong>顶级捕食者</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>Zagara gains reduced ability cooldowns (33% reduction), increased health and energy regeneration, and access to the Deep Tunnel ability.</li>
+                        <li>扎加拉的技能冷却时间缩短（减少 33%），生命与能量恢复速度提高，并获得“深槽虫道”技能。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>Mass Frenzy only affects Zagara and her summoned units.</li>
-                        <li>Combat units cost 25% more.</li>
+                        <li>“群体狂暴”仅影响扎加拉及其召唤单位。</li>
+                        <li>作战单位的造价提高 25%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Notes</th>
+                <th>备注</th>
                 <td>
                     <ul>
-                        <li>Deep Tunnel does not require vision or explored terrain.</li>
-                        <li>Deep Tunnel has a cooldown of 20 seconds.</li>
+                        <li>“深槽虫道”不需要视野，也不要求目标区域已经探索。</li>
+                        <li>“深槽虫道”的冷却时间为 20 秒。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>完全生效等级</th>
                 <td>1</td>
             </tr>
             <tr>
-                <th>Advice</th><td>This prestige vastly improves the hero unit's power level such that she can solo some enemy bases without the help of her army. The Deep Tunnel ability provides Zagara with extreme mobility that is particular useful when trying to deal with <a href="/resources/mutators">mutators</a> such as Void Rifts. However, the downside is fairly impactful. Players that take a lot of inefficient trades may find themselves starved of resources. As such, they'll need to be more careful with how they choose to engage attack waves and push into enemy bases. Avoid using this prestige on sub-mastery Zagara, as the increase in the Energy Regeneration is still not enough to allow Zagara to remain in sustained combat.</td>
+                <th>建议</th><td>此威望大幅增强英雄单位，使她无需部队支援也能独力攻下一些敌方基地。“深槽虫道”为扎加拉提供了极强的机动性，在应对虚空裂隙等<a href="/resources/mutators">突变因子</a>时尤其有用。不过，其劣势同样显著：频繁进行低效交换的玩家很容易耗尽资源。因此，面对进攻波和推进敌方基地时，需要更加谨慎地选择交战方式。精通前的扎加拉应避免使用此威望，因为提高后的能量恢复速度仍不足以支撑她长时间持续作战。</td>
             </tr>
         </tbody>
     </table>
-    <p>While leveling Zagara sub-mastery, the Mother of Constructs prestige should be used, due to the weakness of the hero unit because of the lack of the level 15 Level Unlock. For players that prefer the F2 a-move style of play, playing without a Prestige Talent selected will provide them with all the tools they need to be able to handle any scenario thrown at them. However, players that are a little more proactive and aggressive with their hero units will probably be able to get a lot of value from the Apex Predator prestige.</p>
-    <h2 id="hero">Hero Unit</h2>
-    <a class="unitStatsLink" href="/units/#zagara/zagara"><img id="heroPic" src="/images/commanderdata/hero/zagara/zagara.jpg" alt="Zagara"></a>
-    <p>Spawn time: 4:00</p>
-    <p>Respawn time: 1:00 </p>
-    <p>The abilities for Zagara are:</p>
+    <p>精通前练级时，英雄单位因缺少等级 15 解锁而较为弱势，因此推荐使用“造物之母”威望。偏好 F2 一键框选、平 A 推进的玩家不选择任何威望即可获得应对各种情况所需的完整工具；而操作英雄更加积极、更具进攻性的玩家，通常能从“顶级捕食者”威望中获得很高收益。</p>
+    <h2 id="hero">英雄单位</h2>
+    <a class="unitStatsLink" href="/units/#zagara/zagara"><img id="heroPic" src="/images/commanderdata/hero/zagara/zagara.jpg" alt="扎加拉"></a>
+    <p>生成时间：4:00</p>
+    <p>重生时间：1:00 </p>
+    <p>扎加拉的技能如下：</p>
     <table class="abilityTable">
         <thead>
             <tr>
-                <th>Ability</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Cooldown</th>
-                <th>Energy Cost</th>
+                <th>技能</th>
+                <th>名称</th>
+                <th>说明</th>
+                <th>冷却时间</th>
+                <th>能量消耗</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/hero/zagara/banelingbarrage.png" alt = "Baneling Barrage"></td>
-                <td>Baneling Barrage</td>
-                <td>Launches 6 Banelings towards the target point. Each Baneling explodes for 40 damage (80 vs structures).</td>
-                <td>10 seconds</td>
+                <td><img src="/images/commanderdata/hero/zagara/banelingbarrage.png" alt = "爆虫弹幕"></td>
+                <td>爆虫弹幕</td>
+                <td>向目标地点发射 6 只爆虫。每只爆虫爆炸时造成 40 点伤害（对建筑造成 80 点伤害）。</td>
+                <td>10 秒</td>
                 <td>25</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/zagara/spawnhunterkillers.png" alt = "Spawn Hunter Killers"></td>
-                <td>Spawn Hunter Killers</td>
-                <td>Spawns 6 Hunter Killers at the target point that last 20 seconds.</td>
-                <td>30 seconds</td>
+                <td><img src="/images/commanderdata/hero/zagara/spawnhunterkillers.png" alt = "召唤猎杀者"></td>
+                <td>召唤猎杀者</td>
+                <td>在目标地点生成 6 只猎杀者，持续 20 秒。</td>
+                <td>30 秒</td>
                 <td>30</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/zagara/massfrenzy.png" alt = "Mass Frenzy"></td>
-                <td>Mass Frenzy</td>
-                <td>Grants all friendly units on the map 25% attack speed and 25% movement speed for 15 seconds.</td>
-                <td>90 seconds</td>
+                <td><img src="/images/commanderdata/hero/zagara/massfrenzy.png" alt = "群体狂暴"></td>
+                <td>群体狂暴</td>
+                <td>使地图上的所有友方单位攻击速度提高 25%、移动速度提高 25%，持续 15 秒。</td>
+                <td>90 秒</td>
                 <td>25</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/zagara/infesteddrop.png" alt = "Infested Drop"></td>
-                <td>Infested Drop</td>
-                <td>Calls down 10 drop-pods onto the target area, dealing 50 damage with each drop-pod and spawning a total of 20 Roaches that last 30 seconds.</td>
-                <td>Coolup: 600 seconds<br>Cooldown: 180 seconds</td>
+                <td><img src="/images/commanderdata/hero/zagara/infesteddrop.png" alt = "感染空投"></td>
+                <td>感染空投</td>
+                <td>向目标区域投放 10 个空投舱，每个空投舱造成 50 点伤害，并总共生成 20 只持续 30 秒的蟑螂。</td>
+                <td>初始冷却：600 秒<br>冷却时间：180 秒</td>
                 <td>0</td>
             </tr>
         </tbody>
     </table>
-    <p>The upgrades for Zagara are:</p>
+    <p>扎加拉的升级如下：</p>
     <table class="heroUpgrades">
         <thead>
             <tr>
-                <th>Upgrade</th>
-                <th>Name</th>
-                <th>Effect</th>
-                <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                <th>Research Time</th>
+                <th>升级</th>
+                <th>名称</th>
+                <th>效果</th>
+                <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                <th>研究时间</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/hero/zagara/heroicfortitude.png" alt="Heroic Fortitude"></td>
-                <td>Heroic Fortitude</td>
-                <td>Zagara gains +200 maximum life.<br>Life-regeneration rate increased by 100%.</td>
+                <td><img src="/images/commanderdata/hero/zagara/heroicfortitude.png" alt="英雄体魄"></td>
+                <td>英雄体魄</td>
+                <td>扎加拉的最大生命值提高 200。<br>生命恢复速度提高 100%。</td>
                 <td>100/100</td>
-                <td>60 seconds</td>
+                <td>60 秒</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/hero/zagara/medusablades.png" alt="Medusa Blades"></td>
-                <td>Medusa Blades</td>
-                <td>Zagara's attacks deal area damage, splashing to enemy units near her primary target.</td>
+                <td><img src="/images/commanderdata/hero/zagara/medusablades.png" alt="美杜莎之刃"></td>
+                <td>美杜莎之刃</td>
+                <td>扎加拉的攻击会造成范围伤害，并波及主目标附近的敌方单位。</td>
                 <td>150/150</td>
-                <td>90 seconds</td>
+                <td>90 秒</td>
             </tr>
         </tbody>
     </table>
-    <h2 id="army">Recommended Army Composition</h2>
-    <p>The recommended army composition for Zagara is below. Note that this assumes no Prestige talent selected and recommended Mastery Allocations. This is a basic recommendation for your army framework. It is recommended to gain an understanding for each of the units in the <a href="#units">Units</a> section and further add tech units so that you are able to better handle the situations you face.</p>
-    <img class="army" src="/images/commanderdata/units/zagara/zergling.jpg" alt="Zergling"><img class="army" src="/images/commanderdata/units/zagara/baneling.jpg" alt="Baneling"><img class="army" src="/images/commanderdata/units/zagara/scourge.jpg" alt="Scourge">
-    <p>Zagara should be relying on her cheapest units to push into enemy bases and killing off attack waves. Attack Waves and base pushes should always be done while under the Frenzy from Zagara to prevent excessive losses.</p>
+    <h2 id="army">推荐部队组成</h2>
+    <p>扎加拉的推荐部队组成如下。此配置假定未选择任何威望，并采用推荐的精通点数分配。这只是部队框架的基础建议。建议先了解<a href="#units">作战单位</a>一节中的每种单位，再根据情况补充科技单位，以便更好地应对战局。</p>
+    <img class="army" src="/images/commanderdata/units/zagara/zergling.jpg" alt="跳虫"><img class="army" src="/images/commanderdata/units/zagara/baneling.jpg" alt="爆虫"><img class="army" src="/images/commanderdata/units/zagara/scourge.jpg" alt="爆蚊">
+    <p>扎加拉应依靠最廉价的单位推进敌方基地并消灭进攻波。应始终在扎加拉的狂暴效果下应对进攻波和推进基地，以免遭受过多损失。</p>
     <script>
         $(".army").on('mouseover',function(e){
             var unit = $(this).attr("alt").split(":");
@@ -521,112 +521,112 @@ require_once __DIR__ . "/../../includes/wrapper.php";
 
         });
     </script>
-    <h2 id="units">Combat Units</h2>
-    <p>For more information on Zagara's unit stats, comparison between units and upgrade calculations, visit the <a href="/units/#zagara">Data Tables</a> page.</p>
-    <p>Zagara's combat units are listed below:</p>
+    <h2 id="units">作战单位</h2>
+    <p>如需查看扎加拉单位的详细属性、单位对比和升级计算，请访问<a href="/units/#zagara">数据表</a>页面。</p>
+    <p>扎加拉的作战单位如下：</p>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#zagara/queen">
-                <img src="/images/commanderdata/units/zagara/queen.jpg" alt="Queen">
-                <p>Queen</p>
+                <img src="/images/commanderdata/units/zagara/queen.jpg" alt="虫后">
+                <p>虫后</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Can be used to spread creep and inject larva.</li>
-                <li>Not worth making for larva injects, due to it taking up supply.</li>
+                <li>可用于铺设菌毯和注射幼虫。</li>
+                <li>由于会占用人口，仅为注射幼虫而生产虫后并不划算。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/zagara/spawncreeptumor.png" alt="Spawn Creep Tumor"></td>
-                        <td>Spawn Creep Tumor</td>
-                        <td>A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn additional Creep Tumors.<br><br>Bonus: Zerg move faster on creep.</td>
-                        <td>15 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/zagara/spawncreeptumor.png" alt="生成菌毯肿瘤"></td>
+                        <td>生成菌毯肿瘤</td>
+                        <td>生成一个潜地的菌毯发生源。菌毯可滋养附近的异虫建筑。菌毯肿瘤还可生成更多菌毯肿瘤。<br><br>加成：异虫单位在菌毯上的移动速度更快。</td>
+                        <td>15 秒</td>
                         <td>25</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/zagara/spawnlarva.png" alt="Spawn Larva"></td>
-                        <td>Spawn Larva</td>
-                        <td>Target Hatchery, Lair, or Hive spawns 8 Larvae in 40 seconds.</td>
-                        <td>25 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/zagara/spawnlarva.png" alt="孵化幼虫"></td>
+                        <td>孵化幼虫</td>
+                        <td>使目标孵化场、虫穴或蜂巢在 40 秒内生成 8 只幼虫。</td>
+                        <td>25 秒</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/zagara/transfusion.png" alt="Transfusion"></td>
-                        <td>Transfusion</td>
-                        <td>Instantly restores 125 life to target biological unit or structure.</td>
-                        <td>0 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/zagara/transfusion.png" alt="输血"></td>
+                        <td>输血</td>
+                        <td>立即为目标生物单位或建筑恢复 125 点生命值。</td>
+                        <td>0 秒</td>
                         <td>50</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades: None</p>
+            <p>升级：无</p>
         </div>
     </div>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#zagara/zergling">
-                <img src="/images/commanderdata/units/zagara/zergling.jpg" alt="Zergling">
-                <p>Zergling</p>
+                <img src="/images/commanderdata/units/zagara/zergling.jpg" alt="跳虫">
+                <p>跳虫</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Should be the core unit of Zagara's army.</li>
-                <li>Fragile, but expendable.</li>
-                <li>Very susceptible to splash damage.</li>
+                <li>应作为扎加拉部队的核心单位。</li>
+                <li>脆弱，但可以大量消耗。</li>
+                <li>非常惧怕溅射伤害。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades:</p>
+            <p>技能：无</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zagara/metabolicboost.png" alt="Metabolic Boost"></td>
-                        <td>Metabolic Boost</td>
-                        <td>Increases the movement speed of Zerglings by 60%.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zagara/metabolicboost.png" alt="代谢加速"></td>
+                        <td>代谢加速</td>
+                        <td>跳虫的移动速度提高 60%。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zagara/hardenedcarapace.png" alt="Hardened Carapace"></td>
-                        <td>Hardened Carapace</td>
-                        <td>Zerglings gain +10 maximum life.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zagara/hardenedcarapace.png" alt="硬化甲壳"></td>
+                        <td>硬化甲壳</td>
+                        <td>跳虫的最大生命值提高 10。</td>
                         <td>150/150</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zagara/adrenaloverload.png" alt="Adrenal Overload"></td>
-                        <td>Adrenal Overload</td>
-                        <td>Increases the attack speed of Zerglings by 40%.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zagara/adrenaloverload.png" alt="肾上腺过载"></td>
+                        <td>肾上腺过载</td>
+                        <td>跳虫的攻击速度提高 40%。</td>
                         <td>150/150</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zagara/shreddingclaws.png" alt="Shredding Claws"></td>
-                        <td>Shredding Claws</td>
-                        <td>Zergling attacks reduce their target's armor to 0 for 10 seconds.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zagara/shreddingclaws.png" alt="撕裂之爪"></td>
+                        <td>撕裂之爪</td>
+                        <td>跳虫的攻击可使目标的护甲降至 0，持续 10 秒。</td>
                         <td>150/150</td>
-                        <td>90 seconds</td>
+                        <td>90 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -635,49 +635,49 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#zagara/baneling">
-                <img src="/images/commanderdata/units/zagara/baneling.jpg" alt="Baneling">
-                <p>Baneling</p>
+                <img src="/images/commanderdata/units/zagara/baneling.jpg" alt="爆虫">
+                <p>爆虫</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Should have sufficient numbers in your army.</li>
-                <li>Does great amounts of splash damage.</li>
-                <li>Very susceptible to splash damage.</li>
+                <li>部队中应保持足够数量。</li>
+                <li>可造成大量溅射伤害。</li>
+                <li>非常惧怕溅射伤害。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades:</p>
+            <p>技能：无</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zagara/centrifugalhooks.png" alt="Centrifugal Hooks"></td>
-                        <td>Centrifugal Hooks</td>
-                        <td>Increases the movement speed of Banelings by 15%.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zagara/centrifugalhooks.png" alt="离心钩"></td>
+                        <td>离心钩</td>
+                        <td>爆虫的移动速度提高 15%。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zagara/corrosiveacid.png" alt="Corrosive Acid"></td>
-                        <td>Corrosive Acid</td>
-                        <td>Increases the Baneling's base attack damage against primary target by 100%. Splash damage remains the same.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zagara/corrosiveacid.png" alt="腐蚀强酸"></td>
+                        <td>腐蚀强酸</td>
+                        <td>爆虫对主目标的基础攻击伤害提高 100%。溅射伤害保持不变。</td>
                         <td>150/150</td>
-                        <td>90 seconds</td>
+                        <td>90 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zagara/rupture.png" alt="Rupture"></td>
-                        <td>Rupture</td>
-                        <td>Baneling blast radius increased by 50%.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zagara/rupture.png" alt="破裂"></td>
+                        <td>破裂</td>
+                        <td>爆虫的爆炸半径扩大 50%。</td>
                         <td>150/150</td>
-                        <td>90 seconds</td>
+                        <td>90 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -686,35 +686,35 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#zagara/aberration">
-                <img src="/images/commanderdata/units/zagara/aberration.jpg" alt="Aberration">
-                <p>Aberration</p>
+                <img src="/images/commanderdata/units/zagara/aberration.jpg" alt="畸变体">
+                <p>畸变体</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Useful for lengthy combat situations, like on <a href="/missions/minerevacuation">Miner Evacuation</a>.</li>
-                <li>Given adequate micro "Protective Cover" Upgrade can be used to increase survivability of Zerglings.</li>
-                <li>Spawns Banelings upon death.</li>
+                <li>适合<a href="/missions/minerevacuation">疏散矿工</a>等需要长时间作战的场合。</li>
+                <li>操作得当时，可利用“保护性掩护”升级提高跳虫的生存能力。</li>
+                <li>死亡时生成爆虫。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades:</p>
+            <p>技能：无</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zagara/protectivecover.png" alt="Protective Cover"></td>
-                        <td>Protective Cover</td>
-                        <td>Aberrations grant 50% damage reduction to units positioned beneath them.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zagara/protectivecover.png" alt="保护性掩护"></td>
+                        <td>保护性掩护</td>
+                        <td>畸变体使其身下的单位所受伤害降低 50%。</td>
                         <td>150/150</td>
-                        <td>90 seconds</td>
+                        <td>90 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -723,42 +723,42 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#zagara/scourge">
-                <img src="/images/commanderdata/units/zagara/scourge.jpg" alt="Scourge">
-                <p>Scourge</p>
+                <img src="/images/commanderdata/units/zagara/scourge.jpg" alt="爆蚊">
+                <p>爆蚊</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Powerful anti-air unit.</li>
-                <li>"Simplified Genome" upgrade is a must-get.</li>
-                <li>Very susceptible to splash damage.</li>
+                <li>强力对空单位。</li>
+                <li>“简化基因组”是必升项目。</li>
+                <li>非常惧怕溅射伤害。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades:</p>
+            <p>技能：无</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zagara/virulentspores.png" alt="Virulent Spores"></td>
-                        <td>Virulent Spores</td>
-                        <td>Scourge deal 50% of their attack damage in a small area upon death.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zagara/virulentspores.png" alt="剧毒孢子"></td>
+                        <td>剧毒孢子</td>
+                        <td>爆蚊死亡时对小范围内的敌人造成相当于其攻击伤害 50% 的伤害。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/zagara/simplifiedgenome.png" alt="Simplified Genome"></td>
-                        <td>Simplified Genome</td>
-                        <td>Reduces the amount of vespene gas required to morph Scourge by 50.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/zagara/simplifiedgenome.png" alt="简化基因组"></td>
+                        <td>简化基因组</td>
+                        <td>爆蚊变异所需的高能瓦斯减少 50。</td>
                         <td>150/150</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -767,70 +767,70 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#zagara/corruptor">
-                <img src="/images/commanderdata/units/zagara/corruptor.jpg" alt="Corruptor">
-                <p>Corruptor</p>
+                <img src="/images/commanderdata/units/zagara/corruptor.jpg" alt="腐化者">
+                <p>腐化者</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Useful for its "Corruption" ability which can increase damage taken by enemies by 35%.</li>
-                <li>Spawns Scourge upon death.</li>
+                <li>“腐化”技能非常实用，可使敌人受到的伤害提高 35%。</li>
+                <li>死亡时生成爆蚊。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/zagara/corruption.png" alt="Corruption"></td>
-                        <td>Corruption</td>
-                        <td>Covers the target enemy unit in Zerg slime, increasing the damage taken by 35% for 30 seconds.</td>
-                        <td>15 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/zagara/corruption.png" alt="腐化"></td>
+                        <td>腐化</td>
+                        <td>用异虫黏液覆盖目标敌方单位，使其受到的伤害提高 35%，持续 30 秒。</td>
+                        <td>15 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades: None</p>
+            <p>升级：无</p>
         </div>
     </div>
-    <h2 id="buildOrder">Build Order</h2>
-    <p>Below is the standard economic build order for Zagara. For more information on how to read and construct your own build orders, please check the <a href="/guides/buildordertheory">Build Order Theory</a> page.</p>
+    <h2 id="buildOrder">建造顺序</h2>
+    <p>以下是扎加拉的标准运营建造顺序。如需了解如何阅读和制定自己的建造顺序，请查看<a href="/guides/buildordertheory">建造顺序理论</a>页面。</p>
     <p class="buildOrder">
-        9 Extractor<br>
-        11 Spawning Pool<br>
-        11 Extractor<br>
-        11 Overlord<br>
-        11 Baneling Nest<br>
-        10 Zergling -> Rocks<br>
-        12 Zergling -> Rocks<br>
-        19 Hatchery
+        9 萃取房<br>
+        11 孵化池<br>
+        11 萃取房<br>
+        11 王虫<br>
+        11 爆虫巢<br>
+        10 跳虫 -> 岩石<br>
+        12 跳虫 -> 岩石<br>
+        19 孵化场
     </p>
-    <p>Note: Zagara's drones cost 0.5 supply, but to prevent confusion, supplies in the build order above are shown as the supply you will see in-game.</p>
-    <h2 id="guide">Gameplay Guide</h2>
-    <h3>Playstyle Traps</h3>
-    <p>None</p>
-    <h3>Bile Launchers</h3>
-    <p>Zagara's Bile Launchers are decent static defenses when playing on <a href="/missions/deadofnight">Dead of Night</a>, due to their splash damage. These Bile Launchers have stats and upgrades, shown below:</p>
+    <p>注意：扎加拉的工蜂占用 0.5 人口，但为免混淆，上述建造顺序中的人口数按游戏内实际显示的数值列出。</p>
+    <h2 id="guide">玩法攻略</h2>
+    <h3>常见误区</h3>
+    <p>无</p>
+    <h3>胆汁喷射器</h3>
+    <p>在<a href="/missions/deadofnight">亡者之夜</a>中，扎加拉的胆汁喷射器凭借溅射伤害，是不错的静态防御。胆汁喷射器的属性和升级如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Building</th>
-                <th>Name</th>
-                <th>Stats</th>
+                <th>建筑</th>
+                <th>名称</th>
+                <th>属性</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/guides/zagara/bilelauncher.jpg" alt="Bile Launcher"></td>
-                <td>Bile Launcher</td>
-                <td>HP: 400<br>Damage: 75<br>Range: 15<br>Speed: 7<br>Targets: Air and Ground</td>
+                <td><img src="/images/commanderdata/guides/zagara/bilelauncher.jpg" alt="胆汁喷射器"></td>
+                <td>胆汁喷射器</td>
+                <td>生命值：400<br>伤害：75<br>射程：15<br>速度：7<br>目标：空中和地面</td>
             </tr>
         </tbody>
     </table>
@@ -838,19 +838,19 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="unitSkills">
         <thead>
             <tr>
-                <th>Skill</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Cooldown</th>
-                <th>Energy Cost</th>
+                <th>技能</th>
+                <th>名称</th>
+                <th>说明</th>
+                <th>冷却时间</th>
+                <th>能量消耗</th>
             </tr>
         </thead>
         <tbody>
             <tr class="autocast">
-                <td><img src="/images/commanderdata/unitskills/zagara/bombardment.png" alt="Bombardment"></td>
-                <td>Bombardment</td>
-                <td>Constantly blasts a target area, repeatedly dealing 75 damage to enemy ground and air units.</td>
-                <td>0 seconds</td>
+                <td><img src="/images/commanderdata/unitskills/zagara/bombardment.png" alt="轰击"></td>
+                <td>轰击</td>
+                <td>持续轰炸目标区域，反复对敌方地面和空中单位造成 75 点伤害。</td>
+                <td>0 秒</td>
                 <td>0</td>
             </tr>
         </tbody>
@@ -859,36 +859,36 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="unitUpgrades">
         <thead>
             <tr>
-                <th>Upgrade</th>
-                <th>Name</th>
-                <th>Effect</th>
-                <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                <th>Research Time</th>
+                <th>升级</th>
+                <th>名称</th>
+                <th>效果</th>
+                <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                <th>研究时间</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/unitupgrades/zagara/artilleryducts.png" alt="Artillery Ducts"></td>
-                <td>Artillery Ducts</td>
-                <td>Increases the range of the Bile Launcher's Bombardment by 10.</td>
+                <td><img src="/images/commanderdata/unitupgrades/zagara/artilleryducts.png" alt="炮击管道"></td>
+                <td>炮击管道</td>
+                <td>胆汁喷射器“轰击”的射程提高 10。</td>
                 <td>100/100</td>
-                <td>60 seconds</td>
+                <td>60 秒</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/unitupgrades/zagara/rapidbombardment.png" alt="Rapid Bombardment"></td>
-                <td>Rapid Bombardment</td>
-                <td>Reduces the cooldown of the Bile Launcher's Bombardment.</td>
+                <td><img src="/images/commanderdata/unitupgrades/zagara/rapidbombardment.png" alt="快速轰击"></td>
+                <td>快速轰击</td>
+                <td>缩短胆汁喷射器“轰击”的冷却时间。</td>
                 <td>150/150</td>
-                <td>90 seconds</td>
+                <td>90 秒</td>
             </tr>
         </tbody>
     </table>
-    <h3>Playstyle Tips</h3>
+    <h3>玩法提示</h3>
     <ul>
-        <li>Build at least 4 Hatcheries to provide you with the larva you need to keep you supply-capped. If you find you're floating minerals, build up to two more to allow you to quickly refill your army.</li>
-        <li>Build a single Corruptor and cast Corruption on bonus objective units before running your banelings/scourge into them to maximize damage efficiency.</li>
-        <li>Use Mass Frenzy as much as possible. With a 90 second cooldown, it can be used in most engagements and increase the effectiveness of your army.</li>
-        <li>Cast Infested Drop and Spawn Hunter Killers before you cast Mass Frenzy so the newly-spawned units also get the buff.</li>
+        <li>至少建造 4 座孵化场，以提供维持满人口所需的幼虫。如果晶体矿开始囤积，可再建造最多两座，以便迅速补充部队。</li>
+        <li>生产一只腐化者，并在让爆虫或爆蚊撞向奖励目标单位前对其施放“腐化”，从而最大化伤害效率。</li>
+        <li>尽可能多地使用“群体狂暴”。其冷却时间为 90 秒，绝大多数交战中都能使用，并可提高部队的战斗力。</li>
+        <li>先施放“感染空投”和“召唤猎杀者”，再施放“群体狂暴”，让新生成的单位也能获得增益。</li>
     </ul>
 <script src="/scripts/nav.js"></script>
 <?= endContent() ?>

@@ -14,6 +14,7 @@ import type {
     WeeklyMutation,
     WeeklyMutationList,
 } from './data-types';
+import glossary from '../translation/glossary.json';
 
 const SEARCH_KEYS = [
     { name: 'title', weight: 10 },
@@ -37,7 +38,26 @@ function token(text: string): string {
     if (text === 'Lock and Load') return 'lockload';
     if (text === 'Part and Parcel') return 'partparcel';
 
-    return text.toLowerCase().replace(/[^a-z0-9]+/g, '');
+    return text.toLowerCase().normalize('NFKC').replace(/[^\p{Letter}\p{Number}]+/gu, '');
+}
+
+type GlossarySection = 'commanders' | 'missions' | 'mutators' | 'weekly_mutations';
+
+function glossaryEntry(section: GlossarySection, chinese: string) {
+    return glossary[section].find(entry => entry['zh-CN'] === chinese);
+}
+
+function englishName(section: GlossarySection, chinese: string): string {
+    return glossaryEntry(section, chinese)?.en || chinese;
+}
+
+function englishAliases(section: GlossarySection, chinese: string): string[] {
+    const entry = glossaryEntry(section, chinese);
+    return entry ? [entry.en, ...entry.aliases] : [];
+}
+
+function playerUnitDisplayName(name: string): string {
+    return name.replace(/（[^）]+）$/, '').trim();
 }
 
 function addDocument(documents: SearchDocument[], document: SearchDocument): void {
@@ -69,7 +89,7 @@ function addCommanders(documents: SearchDocument[], commanders: CommanderList): 
             subtitle: commander.motto,
             path: `commanders/${commander.commander}`,
             text: commander.summary,
-            tokens: [commander.commander],
+            tokens: [commander.commander, ...englishAliases('commanders', commander.fullname)],
         });
     }
 }
@@ -80,9 +100,9 @@ function addMutators(documents: SearchDocument[], mutators: MutatorList): void {
             type: 'mutator',
             title: mutator.mutatorname,
             subtitle: 'Mutator',
-            path: `mutators/${token(mutator.mutatorname)}`,
+            path: `mutators/${token(englishName('mutators', mutator.mutatorname))}`,
             text: mutator.mutatordescription,
-            tokens: [`${mutator.mutatorid}`, mutator.abomination ? `brutal+${mutator.abomination}` : ''],
+            tokens: [`${mutator.mutatorid}`, mutator.abomination ? `brutal+${mutator.abomination}` : '', ...englishAliases('mutators', mutator.mutatorname)],
         });
     }
 }
@@ -93,7 +113,8 @@ function addMissions(documents: SearchDocument[], missionNames: MissionNames): v
             type: 'mission',
             title: mission,
             subtitle: 'Mission',
-            path: `missions/${token(mission)}`,
+            path: `missions/${token(englishName('missions', mission))}`,
+            tokens: englishAliases('missions', mission),
         });
     }
 }
@@ -108,7 +129,7 @@ function addWeeklyMutations(documents: SearchDocument[], weeklyMutations: Weekly
         mutators: string[],
     }>();
     for (const mutation of weeklyMutations) {
-        const mutationToken = token(mutation.mutation);
+        const mutationToken = token(englishName('weekly_mutations', mutation.mutation));
         const mutatorNames = mutationMutatorNames(mutation, mutatorsById);
         const merged = mutationsByToken.get(mutationToken) || {
             title: mutation.mutation,
@@ -132,7 +153,7 @@ function addWeeklyMutations(documents: SearchDocument[], weeklyMutations: Weekly
             subtitle: `Weekly Mutation on ${maps.join(', ')}`,
             path: `weeklymutations/${mutationToken}`,
             text: mutatorNames.join(' '),
-            tokens: [...mutation.ids, ...mutation.releaseDates, ...maps, ...mutatorNames],
+            tokens: [...mutation.ids, ...mutation.releaseDates, ...maps, ...mutatorNames, ...englishAliases('weekly_mutations', mutation.title)],
         });
     }
 }
@@ -190,12 +211,12 @@ function addPlayerUnits(documents: SearchDocument[], playerUnits: PlayerUnitList
         seen.add(key);
         addDocument(documents, {
             type: 'playerunit',
-            title: unit.basename,
+            title: playerUnitDisplayName(unit.name),
             subtitle: `${unit.commander} ${unit.tags.includes('Structure') ? 'structure' : 'unit'}`,
             commander: unit.commander,
             path: `units/#${key}`,
             text: unit.notes,
-            tokens: [unit.race, unit.tags, unit.combatunit ? 'combat unit' : 'structure'],
+            tokens: [unit.basename, unit.race, unit.tags, unit.combatunit ? 'combat unit' : 'structure'],
         });
     }
 }
@@ -203,7 +224,7 @@ function addPlayerUnits(documents: SearchDocument[], playerUnits: PlayerUnitList
 function addAmonUnits(documents: SearchDocument[], amonUnits: AmonUnitList): void {
     const seen = new Set<string>();
     for (const unit of amonUnits) {
-        const key = `${token(unit.race)}/${token(unit.name)}`;
+        const key = `${token(unit.race)}/amon${unit.amonid}`;
         if (seen.has(key)) continue;
         seen.add(key);
         const tags = [

@@ -1,5 +1,7 @@
 import mutators from "../../source-data/mutators.json";
 import playerUpgrades from "../../source-data/playerupgrades.json";
+import glossary from "../../translation/glossary.json";
+import { mutatorSlugFromPath } from './tooltip-path';
 
 function token(name: string): string {
     if (name === "Dom. Trooper") return 'dominiontrooper';
@@ -16,7 +18,8 @@ function token(name: string): string {
     return name.toLowerCase().replace(/[^a-z0-9]+/g, "");
 }
 
-const mutatorData = new Map(mutators.map(mutator => [token(mutator.mutatorname), mutator]));
+const mutatorEnglishNames = new Map(glossary.mutators.map(entry => [entry["zh-CN"], entry.en]));
+const mutatorData = new Map(mutators.map(mutator => [token(mutatorEnglishNames.get(mutator.mutatorname) || mutator.mutatorname), mutator]));
 const upgradeData = new Map(playerUpgrades.map(upgrade => [`upgrades/${token(upgrade.commander)}/${upgrade.icon}`, upgrade]));
 let activeTooltipTarget: HTMLElement | null = null;
 
@@ -33,8 +36,7 @@ function tooltipElement(): HTMLElement {
 function mutatorSlug(link: HTMLAnchorElement): string | null {
     const url = new URL(link.href, window.location.href);
     if (url.origin !== window.location.origin) return null;
-    const match = url.pathname.match(/^\/mutators\/([a-z0-9]+)\/?$/);
-    return match?.[1] ?? null;
+    return mutatorSlugFromPath(url.pathname);
 }
 
 function setTooltipPosition(target: HTMLElement): void {

@@ -5,7 +5,7 @@
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-    <title>Starcraft 2 Co-op - Mutators</title>
+    <title>《星际争霸 II》合作任务 - 突变因子</title>
     <link rel="canonical" href="https://starcraft2coop.com/mutators/">
     <style>
         .mutatortiles {
@@ -34,10 +34,10 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         }
     </style>
 <?= startContent() ?>
-    <h1>Mutators</h1>
+    <h1>突变因子</h1>
     <p>
-        <label><input type="radio" name="layout" value="icons" id="icons-option" checked>Icons</label>
-        <label><input type="radio" name="layout" value="table" id="table-option">Table</label>
+        <label><input type="radio" name="layout" value="icons" id="icons-option" checked>图标</label>
+        <label><input type="radio" name="layout" value="table" id="table-option">表格</label>
     </p>
     <ul class="mutatortiles">
     <?php
@@ -45,18 +45,18 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     $mutators = get_mutators();
     usort($mutators, fn($a, $b) => $a['mutatorname'] <=> $b['mutatorname']);
     foreach ($mutators as $mutator) {
-        $filename = strtolower(str_replace("-", '', str_replace(' ', '', $mutator['mutatorname'])));
+        $filename = mutator_token($mutator['mutatorname']);
         echo '<li><a href="/mutators/' . $filename . '"><img src="/images/mutators/' . $filename . '.png" alt="" />' . $mutator['mutatorname'] . '</a></li>' . "\n";
     }
     ?>
     </ul>
     <table class="mutatortable" style="display:none">
         <tr>
-            <th>Mutator</th><th>Description</th><th>Usable in Custom?</th><th>Rollable by Chaos Studios?</th>
+            <th>突变因子</th><th>说明</th><th>可用于自定义模式？</th><th>可由混乱工作室抽取？</th>
         </tr>
     <?php
     foreach ($mutators as $mutator) {
-        $filename = strtolower(str_replace("-", '', str_replace(' ', '', $mutator['mutatorname'])));
+        $filename = mutator_token($mutator['mutatorname']);
         echo '<tr><td style="white-space: nowrap"><a href="/mutators/' . $filename . '" data-no-tooltip><img src="/images/mutators/' . $filename . '.png" alt="" class="miniIcon" />' . $mutator['mutatorname'] . '</a></td><td>' . $mutator['mutatordescription'] . '</td><td style="font-size: 1.5em;text-align: center">' . ($mutator['customusable'] ? '⚙️' : '') . '</td><td style="font-size: 1.5em;text-align: center">' . ($mutator['chaosrollable'] ? '🎲' : '') . '</td></tr>' . "\n";
     }
     ?>
@@ -87,5 +87,5 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         updateTable();
     </script>
     <script src="/scripts/tooltips.js"></script>
-    <p>If you prefer the old layout with everything on one page, <a href="/resources/mutators">it's still available</a>.</p>
+    <p>如果你更喜欢在单页显示全部内容的旧版布局，<a href="/resources/mutators">仍可在此访问</a>。</p>
 <?= endContent() ?>

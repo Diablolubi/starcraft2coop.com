@@ -1,11 +1,11 @@
-<p class="subheading">Detailed Mutator Information</p>
-<p>Heroes will be added to attack waves as the mission goes on using a "Hero Pool" system which keeps track of how many heroes can spawn. The Hero Pool starts at 1. Every time a hero spawns, the Hero Pool gets reduced by 1. At particular mission times, the current value of the Hero Pool is increased as per the following table:</p>
-<p>On Dead Of Night, Nydus unloads are regarded as attack wave spawns and will therefore also spawn Amon heroes.</p>
+<p class="subheading">突变因子详细信息</p>
+<p>随着任务推进，英雄会通过“英雄池”系统加入进攻波次，该系统记录可生成的英雄数量。英雄池初始值为 1。每生成一名英雄，英雄池就减少 1。在特定任务时间，英雄池的当前值会按下表增加：</p>
+<p>在“亡者之夜”中，坑道虫卸载会被视为进攻波次生成，因此也会生成埃蒙英雄。</p>
 <table class="dataTable">
     <thead>
         <tr>
-            <th>Time</th>
-            <th>Count</th>
+            <th>时间</th>
+            <th>增加数量</th>
         </tr>
     </thead>
     <tbody>
@@ -63,399 +63,399 @@
         </tr>
     </tbody>
 </table>
-<p>Every 30 seconds past 20:00, the counter goes up by 1.</p>
-<p>Every attack wave, the Hero Pool will attempt to be depleted and summon the number of heroes in the Hero Pool, subject to the following constraints:</p>
+<p>20:00 后，每经过 30 秒，英雄池增加 1。</p>
+<p>每个进攻波次都会尝试耗尽英雄池，并召唤与英雄池数值相等的英雄，但受以下条件限制：</p>
 <ul>
-    <li>Maximum allowable heroes per attack wave: 6</li>
-    <li>On Mist Opportunities, maximum heroes in a harass wave: 1</li>
-    <li>On Temple of the Past, maximum heroes in side ramp attack wave: 1</li>
-    <li>On Temple of the Past, maximum heroes in North drop attack wave: 0</li>
-    <li>Attack Wave is not an Air Drop attack wave</li>
+    <li>每个进攻波次最多允许 6 名英雄</li>
+    <li>在“机会渺茫”中，每个骚扰波次最多出现 1 名英雄</li>
+    <li>在“虚空降临”中，每个侧面坡道进攻波次最多出现 1 名英雄</li>
+    <li>在“虚空降临”中，北侧空投进攻波次最多出现 0 名英雄</li>
+    <li>该进攻波次不能是空投波次</li>
 </ul>
-<p>Note that heroes will not spawn at the attack wave spawn location, but at the attack wave gather location.</p>
-<p>Heroes are spawned in a particular order for the first 9 spawns as follows:</p>
+<p>请注意，英雄不会在进攻波次的出生点生成，而会在进攻波次的集结点生成。</p>
+<p>前 9 次生成会按以下固定顺序出现英雄：</p>
 <ol>
-    <li>Raynor</li>
-    <li>Tychus</li>
-    <li>Dehaka</li>
-    <li>Karax</li>
-    <li>Nova</li>
-    <li>Zagara</li>
-    <li>Zeratul</li>
-    <li>Artanis</li>
-    <li>Kerrigan</li>
+    <li>雷诺</li>
+    <li>泰凯斯</li>
+    <li>德哈卡</li>
+    <li>凯拉克斯</li>
+    <li>诺娃</li>
+    <li>扎加拉</li>
+    <li>泽拉图</li>
+    <li>阿塔尼斯</li>
+    <li>凯瑞甘</li>
 </ol>
-<p>After the 9th spawn, a random hero will be selected from each set of three heroes (1-3, 4-6, 7-9). For example, spawn #10 will contain either Raynor, Tychus or Dehaka. Spawn #11 will contain either Karax, Nova or Zagara, etc.</p>
-<p>Information on the available heroes is shown below.</p>
-<p><b>Artanis</b></p>
-<img src="/images/mutatordata/hotsartanis.jpg" alt="Heroes From the Storm Artanis">
-<p>HP/Shields: 2000/2000</p>
-<p>Passives:</p>
+<p>第 9 次生成后，会依次从每组 3 名英雄中随机选择一名（1-3、4-6、7-9）。例如，第 #10 次生成会出现雷诺、泰凯斯或德哈卡之一；第 #11 次生成会出现凯拉克斯、诺娃或扎加拉之一，依此类推。</p>
+<p>可用英雄的信息如下。</p>
+<p><b>阿塔尼斯</b></p>
+<img src="/images/mutatordata/hotsartanis.jpg" alt="风暴英雄：阿塔尼斯">
+<p>生命值/护盾：2000/2000</p>
+<p>被动技能：</p>
 <table class="dataTable">
     <thead>
         <tr>
-            <th>Passive</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Cooldown</th>
+            <th>被动技能</th>
+            <th>名称</th>
+            <th>说明</th>
+            <th>冷却时间</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td><img src="/images/mutatordata/amonheroes/resurgence.png" alt="Resurgence"></td>
-            <td>Resurgence</td>
-            <td>Grants Artanis invulnerability for 3 seconds upon taking lethal damage, preventing death and replenishing his Shields and Life. Also releases a large blast of energy that knocks back and deals 100 damage to all nearby enemies. This effect cannot occur more than once every 60 seconds.</td>
-            <td>60 seconds</td>
+            <td><img src="/images/mutatordata/amonheroes/resurgence.png" alt="复苏"></td>
+            <td>复苏</td>
+            <td>受到致命伤害时，使阿塔尼斯获得 3 秒无敌状态，避免死亡并恢复其护盾与生命值。同时释放大型能量冲击，击退附近所有敌人并造成 100 点伤害。该效果每 60 秒最多触发一次。</td>
+            <td>60 秒</td>
         </tr>
     </tbody>
 </table>
-<p>Abilities:</p>
+<p>主动技能：</p>
 <table class="dataTable">
     <thead>
         <tr>
-            <th>Skill</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Cooldown</th>
+            <th>技能</th>
+            <th>名称</th>
+            <th>说明</th>
+            <th>冷却时间</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td><img src="/images/mutatordata/amonheroes/lightningdash.png" alt="Lightning Dash"></td>
-            <td>Lightning Dash</td>
-            <td>Artanis charges forward, unleashing a blast of energy that deals 100 damage to nearby enemies and stuns them for 2 seconds.</td>
-            <td>5 seconds</td>
+            <td><img src="/images/mutatordata/amonheroes/lightningdash.png" alt="闪电冲锋"></td>
+            <td>闪电冲锋</td>
+            <td>阿塔尼斯向前冲锋，释放能量冲击，对附近敌人造成 100 点伤害并使其昏迷 2 秒。</td>
+            <td>5 秒</td>
         </tr>
         <tr>
-            <td><img src="/images/mutatordata/amonheroes/astralwind.png" alt="Astral Wind"></td>
-            <td>Astral Wind</td>
-            <td>Heals Artanis and all nearby friendly units for 300 life and 200 shields.</td>
-            <td>15 seconds</td>
-        </tr>
-    </tbody>
-</table>
-
-<p><b>Dehaka</b></p>
-<img src="/images/mutatordata/hotsdehaka.jpg" alt="Heroes From the Storm Dehaka">
-<p>HP: 1500</p>
-<p>Passives: None</p>
-<p>Abilities:</p>
-<table class="dataTable">
-    <thead>
-        <tr>
-            <th>Skill</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Cooldown</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><img src="/images/mutatordata/amonheroes/drag.png" alt="Drag"></td>
-            <td>Drag</td>
-            <td>Pulls the target to Dehaka's location and temporarily stuns it (5 seconds).</td>
-            <td>10 seconds</td>
-        </tr>
-        <tr>
-            <td><img src="/images/mutatordata/amonheroes/generatespawns.png" alt="Generate Spawns"></td>
-            <td>Generate Spawns</td>
-            <td>Generates two Spawns of Dehaka that deal 100% normal damage but have 50% life. Spawns last 30 seconds.</td>
-            <td>45 seconds</td>
-        </tr>
-        <tr>
-            <td><img src="/images/mutatordata/amonheroes/mend.png" alt="Mend"></td>
-            <td>Mend</td>
-            <td>Heals Dehaka for 150, and heals nearby friendly units for 50. An additional 50% of the amount healed regenerates over 15 seconds.</td>
-            <td>10 seconds</td>
+            <td><img src="/images/mutatordata/amonheroes/astralwind.png" alt="星界之风"></td>
+            <td>星界之风</td>
+            <td>为阿塔尼斯及附近所有友方单位恢复 300 点生命值和 200 点护盾。</td>
+            <td>15 秒</td>
         </tr>
     </tbody>
 </table>
 
-<p><b>Karax</b></p>
-<img src="/images/mutatordata/hotskarax.jpg" alt="Heroes From the Storm Karax">
-<p>HP/Shields: 750/750</p>
-<p>Passives:</p>
+<p><b>德哈卡</b></p>
+<img src="/images/mutatordata/hotsdehaka.jpg" alt="风暴英雄：德哈卡">
+<p>生命值：1500</p>
+<p>被动技能：无</p>
+<p>主动技能：</p>
 <table class="dataTable">
     <thead>
         <tr>
-            <th>Passive</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Cooldown</th>
+            <th>技能</th>
+            <th>名称</th>
+            <th>说明</th>
+            <th>冷却时间</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td><img src="/images/mutatordata/amonheroes/masterphasesmith.png" alt="Master Phase-smith"></td>
-            <td>Master Phase-smith</td>
-            <td>Karax generates a power field similar to a Pylon. Structures within the power field gain 100% attack speed and 900% production speed.</td>
-            <td>0 seconds</td>
-        </tr>
-    </tbody>
-</table>
-<p>Abilities:</p>
-<table class="dataTable">
-    <thead>
-        <tr>
-            <th>Skill</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Cooldown</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><img src="/images/mutatordata/amonheroes/reclamation.png" alt="Reclamation"></td>
-            <td>Reclamation</td>
-            <td>Permanently takes control of target enemy robotic unit or Protoss structure. Robotic units include Sentries, Immortals, Reavers and Colossi.</td>
-            <td>5 seconds</td>
+            <td><img src="/images/mutatordata/amonheroes/drag.png" alt="拖拽"></td>
+            <td>拖拽</td>
+            <td>将目标拖到德哈卡所在位置，并使其暂时昏迷（5 秒）。</td>
+            <td>10 秒</td>
         </tr>
         <tr>
-            <td><img src="/images/mutatordata/amonheroes/phasecannon.png" alt="Phase Cannon"></td>
-            <td>Phase Cannon</td>
-            <td>Phases in a Photon Cannon that lasts for 30 seconds before leaving the battlefield.<br><br>The Photon Cannon must be placed within a power field.</td>
-            <td>10 seconds</td>
+            <td><img src="/images/mutatordata/amonheroes/generatespawns.png" alt="生成分身"></td>
+            <td>生成分身</td>
+            <td>生成两只德哈卡分身，造成 100% 的正常伤害，但只有 50% 的生命值。分身持续 30 秒。</td>
+            <td>45 秒</td>
         </tr>
         <tr>
-            <td><img src="/images/mutatordata/amonheroes/warpinkhydarinmonolith.png" alt="Warp In Khaydarin Monolith"></td>
-            <td>Warp In Khaydarin Monolith</td>
-            <td>Extremely powerful defensive structure. Has superior range and damage, but is very expensive and attacks slowly.<br><br>Can attack ground and air units.</td>
-            <td>10 seconds</td>
+            <td><img src="/images/mutatordata/amonheroes/mend.png" alt="疗愈"></td>
+            <td>疗愈</td>
+            <td>为德哈卡恢复 150 点生命值，并为附近友方单位恢复 50 点生命值。随后在 15 秒内额外恢复治疗量的 50%。</td>
+            <td>10 秒</td>
         </tr>
     </tbody>
 </table>
 
-<p><b>Kerrigan</b></p>
-<img src="/images/mutatordata/hotskerrigan.jpg" alt="Heroes From the Storm Kerrigan">
-<p>HP: 5000</p>
-<p>Passives: None</p>
-<p>Abilities:</p>
+<p><b>凯拉克斯</b></p>
+<img src="/images/mutatordata/hotskarax.jpg" alt="风暴英雄：凯拉克斯">
+<p>生命值/护盾：750/750</p>
+<p>被动技能：</p>
 <table class="dataTable">
     <thead>
         <tr>
-            <th>Skill</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Cooldown</th>
+            <th>被动技能</th>
+            <th>名称</th>
+            <th>说明</th>
+            <th>冷却时间</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td><img src="/images/mutatordata/amonheroes/leapingstrike.png" alt="Leaping Strike"></td>
-            <td>Leaping Strike</td>
-            <td>Kerrigan leaps to her target and deals 150 damage. Can be used without a target to travel quickly.</td>
-            <td>0 seconds</td>
+            <td><img src="/images/mutatordata/amonheroes/masterphasesmith.png" alt="相位技师大师"></td>
+            <td>相位技师大师</td>
+            <td>凯拉克斯会生成一个类似水晶塔的能量场。能量场内的建筑获得 100% 攻击速度和 900% 生产速度。</td>
+            <td>0 秒</td>
+        </tr>
+    </tbody>
+</table>
+<p>主动技能：</p>
+<table class="dataTable">
+    <thead>
+        <tr>
+            <th>技能</th>
+            <th>名称</th>
+            <th>说明</th>
+            <th>冷却时间</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img src="/images/mutatordata/amonheroes/reclamation.png" alt="回收"></td>
+            <td>回收</td>
+            <td>永久控制目标敌方机械单位或星灵建筑。机械单位包括哨兵、不朽者、掠夺者和巨像。</td>
+            <td>5 秒</td>
         </tr>
         <tr>
-            <td><img src="/images/mutatordata/amonheroes/psionicshift.png" alt="Psionic Shift"></td>
-            <td>Psionic Shift</td>
-            <td>Kerrigan dashes through enemies, dealing 50 damage to all enemies in her path.</td>
-            <td>0 seconds</td>
+            <td><img src="/images/mutatordata/amonheroes/phasecannon.png" alt="相位炮"></td>
+            <td>相位炮</td>
+            <td>相位折跃一座光子炮，持续 30 秒后离开战场。<br><br>光子炮必须放置在能量场内。</td>
+            <td>10 秒</td>
         </tr>
         <tr>
-            <td><img src="/images/mutatordata/amonheroes/apocalypse.png" alt="Apocalypse"></td>
-            <td>Apocalypse</td>
-            <td>Deals 300 damage to enemy units and 700 damage to enemy structures in a large area.</td>
-            <td>60 seconds</td>
+            <td><img src="/images/mutatordata/amonheroes/warpinkhydarinmonolith.png" alt="折跃凯达林巨石"></td>
+            <td>折跃凯达林巨石</td>
+            <td>极其强大的防御建筑。射程和伤害出众，但造价非常昂贵且攻击缓慢。<br><br>可以攻击地面和空中单位。</td>
+            <td>10 秒</td>
         </tr>
     </tbody>
 </table>
 
-<p><b>Nova</b></p>
-<img src="/images/mutatordata/hotsnova.jpg" alt="Heroes From the Storm Nova">
-<p>HP: 2250</p>
-<p>Passives: None</p>
-<p>Abilities:</p>
+<p><b>凯瑞甘</b></p>
+<img src="/images/mutatordata/hotskerrigan.jpg" alt="风暴英雄：凯瑞甘">
+<p>生命值：5000</p>
+<p>被动技能：无</p>
+<p>主动技能：</p>
 <table class="dataTable">
     <thead>
         <tr>
-            <th>Skill</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Cooldown</th>
+            <th>技能</th>
+            <th>名称</th>
+            <th>说明</th>
+            <th>冷却时间</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td><img src="/images/mutatordata/amonheroes/snipe.png" alt="Snipe"></td>
-            <td>Snipe</td>
-            <td>Deals 200 damage to target enemy ground or air unit from long range.<br><br>Can target biological and mechanical units.</td>
-            <td>0 seconds</td>
+            <td><img src="/images/mutatordata/amonheroes/leapingstrike.png" alt="跳跃猛击"></td>
+            <td>跳跃猛击</td>
+            <td>凯瑞甘跃向目标并造成 150 点伤害。也可在没有目标时使用，以便快速移动。</td>
+            <td>0 秒</td>
         </tr>
         <tr>
-            <td><img src="/images/mutatordata/amonheroes/nuke.png" alt="Nuke"></td>
-            <td>Nuke</td>
-            <td>Calls down a Nuclear Strike at a target location. Nukes take 5 seconds to land, but they deal up to 600 damage to enemies in a large radius.</td>
-            <td>60 seconds</td>
+            <td><img src="/images/mutatordata/amonheroes/psionicshift.png" alt="灵能位移"></td>
+            <td>灵能位移</td>
+            <td>凯瑞甘冲过敌人，对路径上的所有敌人造成 50 点伤害。</td>
+            <td>0 秒</td>
+        </tr>
+        <tr>
+            <td><img src="/images/mutatordata/amonheroes/apocalypse.png" alt="末日风暴"></td>
+            <td>末日风暴</td>
+            <td>对大范围内的敌方单位造成 300 点伤害，对敌方建筑造成 700 点伤害。</td>
+            <td>60 秒</td>
         </tr>
     </tbody>
 </table>
 
-<p><b>Raynor</b></p>
-<img src="/images/mutatordata/hotsraynor.jpg" alt="Heroes From the Storm Raynor">
-<p>HP: 1000</p>
-<p>Passives: None</p>
-<p>Abilities:</p>
+<p><b>诺娃</b></p>
+<img src="/images/mutatordata/hotsnova.jpg" alt="风暴英雄：诺娃">
+<p>生命值：2250</p>
+<p>被动技能：无</p>
+<p>主动技能：</p>
 <table class="dataTable">
     <thead>
         <tr>
-            <th>Skill</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Cooldown</th>
+            <th>技能</th>
+            <th>名称</th>
+            <th>说明</th>
+            <th>冷却时间</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td><img src="/images/mutatordata/amonheroes/penetratorround.png" alt="Penetrator Round"></td>
-            <td>Penetrator Round</td>
-            <td>After carefully aiming, Raynor fires a Penetrator Round that strikes enemies along its path, dealing 80 damage.</td>
-            <td>20 seconds</td>
+            <td><img src="/images/mutatordata/amonheroes/snipe.png" alt="狙击"></td>
+            <td>狙击</td>
+            <td>从远距离对目标敌方地面或空中单位造成 200 点伤害。<br><br>可以选取生物和机械单位。</td>
+            <td>0 秒</td>
+        </tr>
+        <tr>
+            <td><img src="/images/mutatordata/amonheroes/nuke.png" alt="核打击"></td>
+            <td>核打击</td>
+            <td>在目标位置呼叫核打击。核弹需要 5 秒落地，但可对大范围内的敌人造成至多 600 点伤害。</td>
+            <td>60 秒</td>
         </tr>
     </tbody>
 </table>
 
-<p><b>Tychus</b></p>
-<img src="/images/mutatordata/hotstychus.jpg" alt="Heroes From the Storm Tychus">
-<p>HP: 1000</p>
-<p>Passives:</p>
+<p><b>雷诺</b></p>
+<img src="/images/mutatordata/hotsraynor.jpg" alt="风暴英雄：雷诺">
+<p>生命值：1000</p>
+<p>被动技能：无</p>
+<p>主动技能：</p>
 <table class="dataTable">
     <thead>
         <tr>
-            <th>Skill</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Cooldown</th>
+            <th>技能</th>
+            <th>名称</th>
+            <th>说明</th>
+            <th>冷却时间</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td><img src="/images/mutatordata/amonheroes/hailoflead.png" alt="Hail of Lead"></td>
-            <td>Hail of Lead</td>
-            <td>Tychus' Chaingun deals splash damage (50%) in a small area (1.25 range) around the target.</td>
-            <td>0 seconds</td>
-        </tr>
-    </tbody>
-</table>
-<p>Abilities:</p>
-<table class="dataTable">
-    <thead>
-        <tr>
-            <th>Skill</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Cooldown</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><img src="/images/mutatordata/amonheroes/tossshreddergrenade.png" alt="Toss Shredder Grenade"></td>
-            <td>Toss Shredder Grenade</td>
-            <td>Tosses a grenade that explodes for 80 damage in a small radius (2 range).<br><br>Does not harm friendly units.</td>
-            <td>20 seconds</td>
+            <td><img src="/images/mutatordata/amonheroes/penetratorround.png" alt="贯穿弹"></td>
+            <td>贯穿弹</td>
+            <td>仔细瞄准后，雷诺发射一枚贯穿弹，命中路径上的敌人并造成 80 点伤害。</td>
+            <td>20 秒</td>
         </tr>
     </tbody>
 </table>
 
-<p><b>Zagara</b></p>
-<img src="/images/mutatordata/hotszagara.jpg" alt="Heroes From the Storm Zagara">
-<p>HP: 2250</p>
-<p>Passives: None</p>
-<p>Abilities:</p>
+<p><b>泰凯斯</b></p>
+<img src="/images/mutatordata/hotstychus.jpg" alt="风暴英雄：泰凯斯">
+<p>生命值：1000</p>
+<p>被动技能：</p>
 <table class="dataTable">
     <thead>
         <tr>
-            <th>Skill</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Cooldown</th>
+            <th>技能</th>
+            <th>名称</th>
+            <th>说明</th>
+            <th>冷却时间</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td><img src="/images/mutatordata/amonheroes/banelingbarrage.png" alt="Baneling Barrage"></td>
-            <td>Baneling Barrage</td>
-            <td>Launches 4 Banelings towards the target point. Each Baneling explodes for 40 damage (80 vs structures).</td>
-            <td>10 seconds</td>
+            <td><img src="/images/mutatordata/amonheroes/hailoflead.png" alt="铅弹风暴"></td>
+            <td>铅弹风暴</td>
+            <td>泰凯斯的转管机枪会对目标周围小范围（1.25 射程）造成溅射伤害（50%）。</td>
+            <td>0 秒</td>
         </tr>
+    </tbody>
+</table>
+<p>主动技能：</p>
+<table class="dataTable">
+    <thead>
         <tr>
-            <td><img src="/images/mutatordata/amonheroes/spawnhunterkillers.png" alt="Spawn Hunter Killers"></td>
-            <td>Spawn Hunter Killers</td>
-            <td>Spawns 4 Hunter Killers at the target point that last 20 seconds.</td>
-            <td>30 seconds</td>
+            <th>技能</th>
+            <th>名称</th>
+            <th>说明</th>
+            <th>冷却时间</th>
         </tr>
+    </thead>
+    <tbody>
         <tr>
-            <td><img src="/images/mutatordata/amonheroes/massfrenzy.png" alt="Mass Frenzy"></td>
-            <td>Mass Frenzy</td>
-            <td>Grants all friendly units on the map 25% attack speed and 25% movement speed for 15 seconds.</td>
-            <td>120 seconds</td>
-        </tr>
-        <tr>
-            <td><img src="/images/mutatordata/amonheroes/infesteddrop.png" alt="Infested Drop"></td>
-            <td>Infested Drop</td>
-            <td>Calls down 10 drop-pods onto the target area, dealing 50 damage with each drop-pod and spawning a total of 10 Roaches that last 30 seconds.</td>
-            <td>60 seconds</td>
+            <td><img src="/images/mutatordata/amonheroes/tossshreddergrenade.png" alt="投掷撕裂者手雷"></td>
+            <td>投掷撕裂者手雷</td>
+            <td>投掷一枚手雷，爆炸时对小范围（2 射程）造成 80 点伤害。<br><br>不会伤害友方单位。</td>
+            <td>20 秒</td>
         </tr>
     </tbody>
 </table>
 
-<p><b>Zeratul</b></p>
-<img src="/images/mutatordata/hotszeratul.jpg" alt="Heroes From the Storm Zeratul">
-<p>HP/Shields: 2000/2000</p>
-<p>Passives:</p>
+<p><b>扎加拉</b></p>
+<img src="/images/mutatordata/hotszagara.jpg" alt="风暴英雄：扎加拉">
+<p>生命值：2250</p>
+<p>被动技能：无</p>
+<p>主动技能：</p>
 <table class="dataTable">
     <thead>
         <tr>
-            <th>Skill</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Cooldown</th>
+            <th>技能</th>
+            <th>名称</th>
+            <th>说明</th>
+            <th>冷却时间</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td><img src="/images/mutatordata/amonheroes/permanentlycloaked.png" alt="Permanently Cloaked"></td>
-            <td>Permanently Cloaked</td>
-            <td>Zeratul is permanently cloaked.</td>
-            <td>0 seconds</td>
+            <td><img src="/images/mutatordata/amonheroes/banelingbarrage.png" alt="爆虫弹幕"></td>
+            <td>爆虫弹幕</td>
+            <td>向目标位置发射 4 只爆虫。每只爆虫爆炸时造成 40 点伤害（对建筑为 80）。</td>
+            <td>10 秒</td>
+        </tr>
+        <tr>
+            <td><img src="/images/mutatordata/amonheroes/spawnhunterkillers.png" alt="召唤猎杀者"></td>
+            <td>召唤猎杀者</td>
+            <td>在目标位置生成 4 只猎杀者，持续 20 秒。</td>
+            <td>30 秒</td>
+        </tr>
+        <tr>
+            <td><img src="/images/mutatordata/amonheroes/massfrenzy.png" alt="群体狂暴"></td>
+            <td>群体狂暴</td>
+            <td>使地图上所有友方单位的攻击速度提高 25%、移动速度提高 25%，持续 15 秒。</td>
+            <td>120 秒</td>
+        </tr>
+        <tr>
+            <td><img src="/images/mutatordata/amonheroes/infesteddrop.png" alt="感染空投"></td>
+            <td>感染空投</td>
+            <td>向目标区域投放 10 个空投囊，每个空投囊造成 50 点伤害，并总共生成 10 只持续 30 秒的蟑螂。</td>
+            <td>60 秒</td>
         </tr>
     </tbody>
 </table>
-<p>Abilities:</p>
+
+<p><b>泽拉图</b></p>
+<img src="/images/mutatordata/hotszeratul.jpg" alt="风暴英雄：泽拉图">
+<p>生命值/护盾：2000/2000</p>
+<p>被动技能：</p>
 <table class="dataTable">
     <thead>
         <tr>
-            <th>Skill</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Cooldown</th>
+            <th>技能</th>
+            <th>名称</th>
+            <th>说明</th>
+            <th>冷却时间</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td><img src="/images/mutatordata/amonheroes/blink.png" alt="Blink"></td>
-            <td>Blink</td>
-            <td>Teleports Zeratul to a nearby location.</td>
-            <td>3 seconds</td>
-        </tr>
-        <tr>
-            <td><img src="/images/mutatordata/amonheroes/voidarmor.png" alt="Void Armor"></td>
-            <td>Void Armor</td>
-            <td>Grants nearby friendly units +100 shields for 10 seconds.</td>
-            <td>10 seconds</td>
-        </tr>
-        <tr>
-            <td><img src="/images/mutatordata/amonheroes/shadowblade.png" alt="Shadow Blade"></td>
-            <td>Shadow Blade</td>
-            <td>Slashes an enemy unit for 500 damage.<br><br>Can only target ground units.</td>
-            <td>6 seconds</td>
+            <td><img src="/images/mutatordata/amonheroes/permanentlycloaked.png" alt="永久隐形"></td>
+            <td>永久隐形</td>
+            <td>泽拉图永久处于隐形状态。</td>
+            <td>0 秒</td>
         </tr>
     </tbody>
 </table>
-<p class="subheading">Commander-specific Tips</p>
+<p>主动技能：</p>
+<table class="dataTable">
+    <thead>
+        <tr>
+            <th>技能</th>
+            <th>名称</th>
+            <th>说明</th>
+            <th>冷却时间</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img src="/images/mutatordata/amonheroes/blink.png" alt="闪现"></td>
+            <td>闪现</td>
+            <td>将泽拉图传送到附近位置。</td>
+            <td>3 秒</td>
+        </tr>
+        <tr>
+            <td><img src="/images/mutatordata/amonheroes/voidarmor.png" alt="虚空护甲"></td>
+            <td>虚空护甲</td>
+            <td>使附近友方单位获得 +100 点护盾，持续 10 秒。</td>
+            <td>10 秒</td>
+        </tr>
+        <tr>
+            <td><img src="/images/mutatordata/amonheroes/shadowblade.png" alt="暗影之刃"></td>
+            <td>暗影之刃</td>
+            <td>斩击一个敌方单位，造成 500 点伤害。<br><br>只能选取地面单位。</td>
+            <td>6 秒</td>
+        </tr>
+    </tbody>
+</table>
+<p class="subheading">指挥官专属提示</p>
 <ul>
-    <li>Dehaka: Dehaka can Devour Amon's Dehaka (with an <a href="/resources/eastereggs">Easter Egg</a> voice line). He cannot Devour other heroes.</li>
-    <li>Dehaka: Dakrun's knockback can cancel Kerrigan's Apocalypse and Nova's Nuke.</li>
-    <li>Tychus: Crooked Sam's Moebius Restraint Matrix upgrade can be used to stun Amon Heroes with his Demolition Charge.</li>
-    <li>Vorazun: Oracle Stasis Wards can be used to disable Heroes. Combine with the Stasis Calibration upgrade to be able to attack them while in stasis.</li>
+    <li>德哈卡：德哈卡可以吞噬埃蒙的德哈卡（并触发一句<a href="/resources/eastereggs">彩蛋</a>语音），但无法吞噬其他英雄。</li>
+    <li>德哈卡：达克伦的击退可以打断凯瑞甘的末日风暴和诺娃的核打击。</li>
+    <li>泰凯斯：升级萨姆的莫比斯拘束矩阵后，可用爆破装药击晕埃蒙英雄。</li>
+    <li>沃拉尊：先知的静滞结界可以禁用英雄。配合静滞校准升级，即可攻击处于静滞状态的英雄。</li>
 </ul>

@@ -1,0 +1,2134 @@
+{
+  "commanders": [
+    {
+      "en": "Abathur",
+      "zh-CN": "阿巴瑟",
+      "aliases": [
+        "Abathur"
+      ]
+    },
+    {
+      "en": "Alarak",
+      "zh-CN": "阿拉纳克",
+      "aliases": [
+        "Alarak"
+      ]
+    },
+    {
+      "en": "Artanis",
+      "zh-CN": "阿塔尼斯",
+      "aliases": [
+        "Artanis"
+      ]
+    },
+    {
+      "en": "Dehaka",
+      "zh-CN": "德哈卡",
+      "aliases": [
+        "Dehaka"
+      ]
+    },
+    {
+      "en": "Fenix",
+      "zh-CN": "菲尼克斯",
+      "aliases": [
+        "Fenix"
+      ]
+    },
+    {
+      "en": "Han and Horner",
+      "zh-CN": "汉与霍纳",
+      "aliases": [
+        "Han and Horner"
+      ]
+    },
+    {
+      "en": "Karax",
+      "zh-CN": "凯拉克斯",
+      "aliases": [
+        "Karax"
+      ]
+    },
+    {
+      "en": "Kerrigan",
+      "zh-CN": "凯瑞甘",
+      "aliases": [
+        "Kerrigan"
+      ]
+    },
+    {
+      "en": "Mengsk",
+      "zh-CN": "蒙斯克",
+      "aliases": [
+        "Mengsk"
+      ]
+    },
+    {
+      "en": "Nova",
+      "zh-CN": "诺娃",
+      "aliases": [
+        "Nova"
+      ]
+    },
+    {
+      "en": "Raynor",
+      "zh-CN": "雷诺",
+      "aliases": [
+        "Raynor"
+      ]
+    },
+    {
+      "en": "Stetmann",
+      "zh-CN": "斯台特曼",
+      "aliases": [
+        "Stetmann"
+      ]
+    },
+    {
+      "en": "Stukov",
+      "zh-CN": "斯托科夫",
+      "aliases": [
+        "Stukov"
+      ]
+    },
+    {
+      "en": "Swann",
+      "zh-CN": "斯旺",
+      "aliases": [
+        "Swann"
+      ]
+    },
+    {
+      "en": "Tychus",
+      "zh-CN": "泰凯斯",
+      "aliases": [
+        "Tychus"
+      ]
+    },
+    {
+      "en": "Vorazun",
+      "zh-CN": "沃拉尊",
+      "aliases": [
+        "Vorazun"
+      ]
+    },
+    {
+      "en": "Zagara",
+      "zh-CN": "扎加拉",
+      "aliases": [
+        "Zagara"
+      ]
+    },
+    {
+      "en": "Zeratul",
+      "zh-CN": "泽拉图",
+      "aliases": [
+        "Zeratul"
+      ]
+    }
+  ],
+  "commander_terms": [
+    { "en": "Biomass", "zh-CN": "生物质", "aliases": ["Biomass"] },
+    { "en": "Ultimate Evolution", "zh-CN": "终极进化", "aliases": ["Ultimate Evolution"] },
+    { "en": "Toxic Nest", "zh-CN": "剧毒巢穴", "aliases": ["Toxic Nest"] },
+    { "en": "Brutalisk", "zh-CN": "莽兽", "aliases": ["Brutalisk"] },
+    { "en": "Leviathan", "zh-CN": "利维坦", "aliases": ["Leviathan"] },
+    { "en": "Corrosive Bile", "zh-CN": "腐蚀胆汁", "aliases": ["Corrosive Bile"] },
+    { "en": "Deep Tunnel", "zh-CN": "深槽虫道", "aliases": ["Deep Tunnel"] },
+    { "en": "Disabling Cloud", "zh-CN": "蔽目毒云", "aliases": ["Disabling Cloud"] },
+    { "en": "Parasitic Bomb", "zh-CN": "寄生炸弹", "aliases": ["Parasitic Bomb"] },
+    { "en": "Essence", "zh-CN": "精华", "aliases": ["Essence"] },
+    { "en": "Greater Primal Wurm", "zh-CN": "巨型原始蠕虫", "aliases": ["Greater Primal Wurm"] },
+    { "en": "Primal Pack Leader", "zh-CN": "原始族群首领", "aliases": ["Primal Pack Leader"] },
+    { "en": "Intimidating Roar", "zh-CN": "威吓咆哮", "aliases": ["Intimidating Roar"] },
+    { "en": "Scorching Breath", "zh-CN": "灼热吐息", "aliases": ["Scorching Breath"] },
+    { "en": "Spear of Adun", "zh-CN": "亚顿之矛", "aliases": ["Spear of Adun"] },
+    { "en": "Orbital Strike", "zh-CN": "轨道轰炸", "aliases": ["Orbital Strike"] },
+    { "en": "Solar Lance", "zh-CN": "太阳能射线", "aliases": ["Solar Lance"] },
+    { "en": "Purifier Beam", "zh-CN": "净化光束", "aliases": ["Purifier Beam"] },
+    { "en": "Chrono Boost", "zh-CN": "时空提速", "aliases": ["Chrono Boost"] },
+    { "en": "Guardian Shell", "zh-CN": "守护之壳", "aliases": ["Guardian Shell"] },
+    { "en": "Emergency Recall", "zh-CN": "紧急召回", "aliases": ["Emergency Recall"] },
+    { "en": "Time Stop", "zh-CN": "时间停止", "aliases": ["Time Stop"] },
+    { "en": "Shadow Guard", "zh-CN": "暗影卫队", "aliases": ["Shadow Guard"] },
+    { "en": "Dark Pylon", "zh-CN": "黑暗水晶塔", "aliases": ["Dark Pylon"] },
+    { "en": "Infested Civilian", "zh-CN": "被感染的平民", "aliases": ["Infested Civilian"] },
+    { "en": "Infested Marine", "zh-CN": "被感染的陆战队员", "aliases": ["Infested Marine"] },
+    { "en": "Explosive Infested", "zh-CN": "易爆感染体", "aliases": ["Explosive Infested"] },
+    { "en": "Stetellite", "zh-CN": "艾星", "aliases": ["Stetellite"] },
+    { "en": "Stetzone", "zh-CN": "爱心区域", "aliases": ["Stetzone"] },
+    { "en": "Egonergy", "zh-CN": "艾能", "aliases": ["Egonergy"] },
+    { "en": "Xel'Naga Shieldguard", "zh-CN": "萨尔纳加光盾卫士", "aliases": ["Xel'Naga Shieldguard"] },
+    { "en": "Xel'Naga Enforcer", "zh-CN": "萨尔纳加执行者", "aliases": ["Xel'Naga Enforcer"] },
+    { "en": "Xel'Naga Ambusher", "zh-CN": "萨尔纳加伏击者", "aliases": ["Xel'Naga Ambusher"] },
+    { "en": "Xel'Naga Watcher", "zh-CN": "萨尔纳加观察者", "aliases": ["Xel'Naga Watcher"] },
+    { "en": "Void Array", "zh-CN": "虚空阵列船", "aliases": ["Void Array"] },
+    { "en": "Shadow Cleave", "zh-CN": "暗影顺劈", "aliases": ["Shadow Cleave"] },
+    { "en": "Void Seeker", "zh-CN": "虚空寻觅者号", "aliases": ["Void Seeker"] },
+    { "en": "Anakh'Sun", "zh-CN": "黎明使徒", "aliases": ["Anakh'Sun"] },
+    { "en": "Knowledge Seeker", "zh-CN": "知识探求者", "aliases": ["Knowledge Seeker"] },
+    { "en": "Herald of the Void", "zh-CN": "虚空先驱", "aliases": ["Herald of the Void"] }
+  ],
+  "missions": [
+    {
+      "en": "Chain of Ascension",
+      "zh-CN": "升格之链",
+      "aliases": [
+        "Chain of Ascension"
+      ]
+    },
+    {
+      "en": "Cradle of Death",
+      "zh-CN": "死亡摇篮",
+      "aliases": [
+        "Cradle of Death"
+      ]
+    },
+    {
+      "en": "Dead of Night",
+      "zh-CN": "亡者之夜",
+      "aliases": [
+        "Dead of Night"
+      ]
+    },
+    {
+      "en": "Lock & Load",
+      "zh-CN": "天锁",
+      "aliases": [
+        "Lock & Load"
+      ]
+    },
+    {
+      "en": "Malwarfare",
+      "zh-CN": "恶意代码",
+      "aliases": [
+        "Malwarfare"
+      ]
+    },
+    {
+      "en": "Miner Evacuation",
+      "zh-CN": "疏散矿工",
+      "aliases": [
+        "Miner Evacuation"
+      ]
+    },
+    {
+      "en": "Mist Opportunities",
+      "zh-CN": "机会渺茫",
+      "aliases": [
+        "Mist Opportunities"
+      ]
+    },
+    {
+      "en": "Oblivion Express",
+      "zh-CN": "湮灭快车",
+      "aliases": [
+        "Oblivion Express"
+      ]
+    },
+    {
+      "en": "Part and Parcel",
+      "zh-CN": "聚铁成兵",
+      "aliases": [
+        "Part and Parcel"
+      ]
+    },
+    {
+      "en": "Rifts to Korhal",
+      "zh-CN": "克哈裂痕",
+      "aliases": [
+        "Rifts to Korhal"
+      ]
+    },
+    {
+      "en": "Scythe of Amon",
+      "zh-CN": "埃蒙之镰",
+      "aliases": [
+        "Scythe of Amon"
+      ]
+    },
+    {
+      "en": "Temple of the Past",
+      "zh-CN": "往日神庙",
+      "aliases": [
+        "Temple of the Past"
+      ]
+    },
+    {
+      "en": "The Vermillion Problem",
+      "zh-CN": "熔火危机",
+      "aliases": [
+        "The Vermillion Problem"
+      ]
+    },
+    {
+      "en": "Void Launch",
+      "zh-CN": "虚空降临",
+      "aliases": [
+        "Void Launch"
+      ]
+    },
+    {
+      "en": "Void Thrashing",
+      "zh-CN": "虚空撕裂",
+      "aliases": [
+        "Void Thrashing"
+      ]
+    }
+  ],
+  "mission_terms": [
+    { "en": "Mission Summary", "zh-CN": "任务概述", "aliases": ["Mission Summary"] },
+    { "en": "Primary Objective", "zh-CN": "主要目标", "aliases": ["Primary Objective"] },
+    { "en": "Secondary Objective", "zh-CN": "奖励目标", "aliases": ["Secondary Objective"] },
+    { "en": "Bonus Objective", "zh-CN": "奖励目标", "aliases": ["Bonus Objective"] },
+    { "en": "Enemy Base Analysis", "zh-CN": "敌方基地分析", "aliases": ["Enemy Base Analysis"] },
+    { "en": "Attack Wave", "zh-CN": "进攻波次", "aliases": ["Attack Wave"] },
+    { "en": "Spawn Point", "zh-CN": "出生点", "aliases": ["Spawn Point"] },
+    { "en": "Tech Level", "zh-CN": "科技等级", "aliases": ["Tech Level"] },
+    { "en": "Strength Level", "zh-CN": "强度等级", "aliases": ["Strength Level"] },
+    { "en": "Main Base", "zh-CN": "主基地", "aliases": ["Main Base"] },
+    { "en": "Expansion", "zh-CN": "分矿", "aliases": ["Expansion"] },
+    { "en": "Hybrid", "zh-CN": "混合体", "aliases": ["Hybrid"] },
+    { "en": "Hybrid Destroyer", "zh-CN": "混合体毁灭者", "aliases": ["Hybrid Destroyer"] },
+    { "en": "Hybrid Reaver", "zh-CN": "混合体掠夺者", "aliases": ["Hybrid Reaver"] },
+    { "en": "Hybrid Dominator", "zh-CN": "混合体支配者", "aliases": ["Hybrid Dominator"] },
+    { "en": "Hybrid Behemoth", "zh-CN": "混合体巨兽", "aliases": ["Hybrid Behemoth"] },
+    { "en": "Xel'Naga Shrine", "zh-CN": "萨尔纳加神殿", "aliases": ["Xel'Naga Shrine"] },
+    { "en": "Void Thrasher", "zh-CN": "虚空撕裂者", "aliases": ["Void Thrasher"] },
+    { "en": "Warp Conduit", "zh-CN": "折跃通道", "aliases": ["Warp Conduit"] },
+    { "en": "Research Vessel", "zh-CN": "科学船", "aliases": ["Research Vessel"] },
+    { "en": "Xenon Crystal", "zh-CN": "氙晶体", "aliases": ["Xenon Crystal"] },
+    { "en": "Molten Salamander", "zh-CN": "熔岩蜥蜴", "aliases": ["Molten Salamander"] },
+    { "en": "Void Sliver", "zh-CN": "虚空裂片", "aliases": ["Void Sliver"] },
+    { "en": "Hybrid Nemesis", "zh-CN": "混合体天罚者", "aliases": ["Hybrid Nemesis"] },
+    { "en": "Celestial Lock", "zh-CN": "天锁", "aliases": ["Celestial Lock"] }
+  ],
+  "mutators": [
+    {
+      "en": "Afraid of the Dark",
+      "zh-CN": "漆黑一片",
+      "aliases": [
+        "Afraid of the Dark"
+      ]
+    },
+    {
+      "en": "Aggressive Deployment",
+      "zh-CN": "强势部署",
+      "aliases": [
+        "Aggressive Deployment"
+      ]
+    },
+    {
+      "en": "Alien Incubation",
+      "zh-CN": "异形孵化",
+      "aliases": [
+        "Alien Incubation"
+      ]
+    },
+    {
+      "en": "Avenger",
+      "zh-CN": "复仇者",
+      "aliases": [
+        "Avenger"
+      ]
+    },
+    {
+      "en": "Barrier",
+      "zh-CN": "屏障",
+      "aliases": [
+        "Barrier"
+      ]
+    },
+    {
+      "en": "Black Death",
+      "zh-CN": "黑死病",
+      "aliases": [
+        "Black Death"
+      ]
+    },
+    {
+      "en": "Blizzard",
+      "zh-CN": "暴风雪",
+      "aliases": [
+        "Blizzard"
+      ]
+    },
+    {
+      "en": "Chaos Studios",
+      "zh-CN": "混乱工作室",
+      "aliases": [
+        "Chaos Studios"
+      ]
+    },
+    {
+      "en": "Concussive Attacks",
+      "zh-CN": "震荡攻击",
+      "aliases": [
+        "Concussive Attacks"
+      ]
+    },
+    {
+      "en": "Darkness",
+      "zh-CN": "黑暗",
+      "aliases": [
+        "Darkness"
+      ]
+    },
+    {
+      "en": "Diffusion",
+      "zh-CN": "扩散",
+      "aliases": [
+        "Diffusion"
+      ]
+    },
+    {
+      "en": "Double Edged",
+      "zh-CN": "双刃剑",
+      "aliases": [
+        "Double Edged"
+      ]
+    },
+    {
+      "en": "Eminent Domain",
+      "zh-CN": "强占地盘",
+      "aliases": [
+        "Eminent Domain"
+      ]
+    },
+    {
+      "en": "Evasive Maneuvers",
+      "zh-CN": "闪避机动",
+      "aliases": [
+        "Evasive Maneuvers"
+      ]
+    },
+    {
+      "en": "Fatal Attraction",
+      "zh-CN": "致命吸引",
+      "aliases": [
+        "Fatal Attraction"
+      ]
+    },
+    {
+      "en": "Fear",
+      "zh-CN": "恐惧",
+      "aliases": [
+        "Fear"
+      ]
+    },
+    {
+      "en": "Fireworks",
+      "zh-CN": "烟花表演",
+      "aliases": [
+        "Fireworks"
+      ]
+    },
+    {
+      "en": "Gift Exchange",
+      "zh-CN": "礼物交换",
+      "aliases": [
+        "Gift Exchange"
+      ]
+    },
+    {
+      "en": "Going Nuclear",
+      "zh-CN": "核弹来袭",
+      "aliases": [
+        "Going Nuclear"
+      ]
+    },
+    {
+      "en": "Hardened Will",
+      "zh-CN": "坚定意志",
+      "aliases": [
+        "Hardened Will"
+      ]
+    },
+    {
+      "en": "Heroes from the Storm",
+      "zh-CN": "风暴英雄",
+      "aliases": [
+        "Heroes from the Storm"
+      ]
+    },
+    {
+      "en": "Inspiration",
+      "zh-CN": "鼓舞人心",
+      "aliases": [
+        "Inspiration"
+      ]
+    },
+    {
+      "en": "Just Die",
+      "zh-CN": "就是死不了",
+      "aliases": [
+        "Just Die"
+      ]
+    },
+    {
+      "en": "Kill Bots",
+      "zh-CN": "杀戮机器人",
+      "aliases": [
+        "Kill Bots"
+      ]
+    },
+    {
+      "en": "Laser Drill",
+      "zh-CN": "激光钻机",
+      "aliases": [
+        "Laser Drill"
+      ]
+    },
+    {
+      "en": "Lava Burst",
+      "zh-CN": "熔岩爆裂",
+      "aliases": [
+        "Lava Burst"
+      ]
+    },
+    {
+      "en": "Life Leech",
+      "zh-CN": "生命汲取",
+      "aliases": [
+        "Life Leech"
+      ]
+    },
+    {
+      "en": "Long Range",
+      "zh-CN": "超远射程",
+      "aliases": [
+        "Long Range"
+      ]
+    },
+    {
+      "en": "Lucky Envelopes",
+      "zh-CN": "幸运红包",
+      "aliases": [
+        "Lucky Envelopes"
+      ]
+    },
+    {
+      "en": "Mag-nificent",
+      "zh-CN": "磁力惊人",
+      "aliases": [
+        "Mag-nificent"
+      ]
+    },
+    {
+      "en": "Micro Transactions",
+      "zh-CN": "微交易",
+      "aliases": [
+        "Micro Transactions"
+      ]
+    },
+    {
+      "en": "Mineral Shields",
+      "zh-CN": "矿物护盾",
+      "aliases": [
+        "Mineral Shields"
+      ]
+    },
+    {
+      "en": "Minesweeper",
+      "zh-CN": "扫雷专家",
+      "aliases": [
+        "Minesweeper"
+      ]
+    },
+    {
+      "en": "Missile Command",
+      "zh-CN": "导弹指挥",
+      "aliases": [
+        "Missile Command"
+      ]
+    },
+    {
+      "en": "Moment of Silence",
+      "zh-CN": "静默时刻",
+      "aliases": [
+        "Moment of Silence"
+      ]
+    },
+    {
+      "en": "Mutually Assured Destruction",
+      "zh-CN": "相互保证毁灭",
+      "aliases": [
+        "Mutually Assured Destruction"
+      ]
+    },
+    {
+      "en": "Naughty List",
+      "zh-CN": "淘气名单",
+      "aliases": [
+        "Naughty List"
+      ]
+    },
+    {
+      "en": "Orbital Strike",
+      "zh-CN": "轨道轰炸",
+      "aliases": [
+        "Orbital Strike"
+      ]
+    },
+    {
+      "en": "Outbreak",
+      "zh-CN": "感染爆发",
+      "aliases": [
+        "Outbreak"
+      ]
+    },
+    {
+      "en": "Photon Overload",
+      "zh-CN": "光子超载",
+      "aliases": [
+        "Photon Overload"
+      ]
+    },
+    {
+      "en": "Polarity",
+      "zh-CN": "极性互换",
+      "aliases": [
+        "Polarity"
+      ]
+    },
+    {
+      "en": "Power Overwhelming",
+      "zh-CN": "势不可挡",
+      "aliases": [
+        "Power Overwhelming"
+      ]
+    },
+    {
+      "en": "Propagators",
+      "zh-CN": "传播者",
+      "aliases": [
+        "Propagators"
+      ]
+    },
+    {
+      "en": "Purifier Beam",
+      "zh-CN": "净化光束",
+      "aliases": [
+        "Purifier Beam"
+      ]
+    },
+    {
+      "en": "Random",
+      "zh-CN": "随机",
+      "aliases": [
+        "Random"
+      ]
+    },
+    {
+      "en": "Scorched Earth",
+      "zh-CN": "焦土政策",
+      "aliases": [
+        "Scorched Earth"
+      ]
+    },
+    {
+      "en": "Self Destruction",
+      "zh-CN": "自毁程序",
+      "aliases": [
+        "Self Destruction"
+      ]
+    },
+    {
+      "en": "Sharing is Caring",
+      "zh-CN": "有福同享",
+      "aliases": [
+        "Sharing is Caring"
+      ]
+    },
+    {
+      "en": "Shortsighted",
+      "zh-CN": "近视眼",
+      "aliases": [
+        "Shortsighted"
+      ]
+    },
+    {
+      "en": "Slim Pickings",
+      "zh-CN": "资源短缺",
+      "aliases": [
+        "Slim Pickings"
+      ]
+    },
+    {
+      "en": "Speed Freaks",
+      "zh-CN": "极速狂飙",
+      "aliases": [
+        "Speed Freaks"
+      ]
+    },
+    {
+      "en": "Temporal Field",
+      "zh-CN": "时空力场",
+      "aliases": [
+        "Temporal Field"
+      ]
+    },
+    {
+      "en": "Time Warp",
+      "zh-CN": "时间扭曲",
+      "aliases": [
+        "Time Warp"
+      ]
+    },
+    {
+      "en": "Transmutation",
+      "zh-CN": "转化",
+      "aliases": [
+        "Transmutation"
+      ]
+    },
+    {
+      "en": "Trick or Treat",
+      "zh-CN": "不给糖就捣蛋",
+      "aliases": [
+        "Trick or Treat"
+      ]
+    },
+    {
+      "en": "Turkey Shoot",
+      "zh-CN": "火鸡射击",
+      "aliases": [
+        "Turkey Shoot"
+      ]
+    },
+    {
+      "en": "Twister",
+      "zh-CN": "龙卷风",
+      "aliases": [
+        "Twister"
+      ]
+    },
+    {
+      "en": "Vertigo",
+      "zh-CN": "眩晕",
+      "aliases": [
+        "Vertigo"
+      ]
+    },
+    {
+      "en": "Void Reanimators",
+      "zh-CN": "虚空复生者",
+      "aliases": [
+        "Void Reanimators"
+      ]
+    },
+    {
+      "en": "Void Rifts",
+      "zh-CN": "虚空裂隙",
+      "aliases": [
+        "Void Rifts"
+      ]
+    },
+    {
+      "en": "Walking Infested",
+      "zh-CN": "行尸走肉",
+      "aliases": [
+        "Walking Infested"
+      ]
+    },
+    {
+      "en": "We Move Unseen",
+      "zh-CN": "隐形行动",
+      "aliases": [
+        "We Move Unseen"
+      ]
+    },
+    {
+      "en": "Boom Bots",
+      "zh-CN": "爆破机器人",
+      "aliases": [
+        "Boom Bots"
+      ]
+    }
+  ],
+  "races": [
+    {
+      "en": "Terran",
+      "zh-CN": "人类",
+      "aliases": [
+        "Terran"
+      ]
+    },
+    {
+      "en": "Zerg",
+      "zh-CN": "异虫",
+      "aliases": [
+        "Zerg"
+      ]
+    },
+    {
+      "en": "Protoss",
+      "zh-CN": "星灵",
+      "aliases": [
+        "Protoss"
+      ]
+    }
+  ],
+  "attributes": [
+    {
+      "en": "Health",
+      "zh-CN": "生命值",
+      "aliases": [
+        "Health"
+      ]
+    },
+    {
+      "en": "Shields",
+      "zh-CN": "护盾",
+      "aliases": [
+        "Shields"
+      ]
+    },
+    {
+      "en": "Armor",
+      "zh-CN": "护甲",
+      "aliases": [
+        "Armor"
+      ]
+    },
+    {
+      "en": "Damage",
+      "zh-CN": "伤害",
+      "aliases": [
+        "Damage"
+      ]
+    },
+    {
+      "en": "Attack Speed",
+      "zh-CN": "攻击速度",
+      "aliases": [
+        "Attack Speed"
+      ]
+    },
+    {
+      "en": "Movement Speed",
+      "zh-CN": "移动速度",
+      "aliases": [
+        "Movement Speed"
+      ]
+    },
+    {
+      "en": "Range",
+      "zh-CN": "射程",
+      "aliases": [
+        "Range"
+      ]
+    },
+    {
+      "en": "Energy",
+      "zh-CN": "能量",
+      "aliases": [
+        "Energy"
+      ]
+    },
+    {
+      "en": "Cooldown",
+      "zh-CN": "冷却时间",
+      "aliases": [
+        "Cooldown"
+      ]
+    },
+    {
+      "en": "Biological",
+      "zh-CN": "生物单位",
+      "aliases": [
+        "Biological"
+      ]
+    },
+    {
+      "en": "Mechanical",
+      "zh-CN": "机械单位",
+      "aliases": [
+        "Mechanical"
+      ]
+    },
+    {
+      "en": "Psionic",
+      "zh-CN": "灵能单位",
+      "aliases": [
+        "Psionic"
+      ]
+    },
+    {
+      "en": "Armored",
+      "zh-CN": "重甲",
+      "aliases": [
+        "Armored"
+      ]
+    },
+    {
+      "en": "Light",
+      "zh-CN": "轻甲",
+      "aliases": [
+        "Light"
+      ]
+    },
+    {
+      "en": "Massive",
+      "zh-CN": "重型",
+      "aliases": [
+        "Massive"
+      ]
+    },
+    {
+      "en": "Heroic",
+      "zh-CN": "英雄",
+      "aliases": [
+        "Heroic"
+      ]
+    },
+    {
+      "en": "Structure",
+      "zh-CN": "建筑",
+      "aliases": [
+        "Structure"
+      ]
+    },
+    {
+      "en": "Air",
+      "zh-CN": "空中",
+      "aliases": [
+        "Air"
+      ]
+    },
+    {
+      "en": "Ground",
+      "zh-CN": "地面",
+      "aliases": [
+        "Ground"
+      ]
+    }
+  ],
+  "weekly_mutations": [
+    {
+      "en": "Train of the Dead",
+      "zh-CN": "亡者列车",
+      "aliases": [
+        "Train of the Dead"
+      ]
+    },
+    {
+      "en": "First Strike",
+      "zh-CN": "先发制人",
+      "aliases": [
+        "First Strike"
+      ]
+    },
+    {
+      "en": "Time Lock",
+      "zh-CN": "时空枷锁",
+      "aliases": [
+        "Time Lock"
+      ]
+    },
+    {
+      "en": "Bad Weather",
+      "zh-CN": "恶劣天气",
+      "aliases": [
+        "Bad Weather"
+      ]
+    },
+    {
+      "en": "Whiteout",
+      "zh-CN": "雪茫危机",
+      "aliases": [
+        "Whiteout"
+      ]
+    },
+    {
+      "en": "War Is Hell",
+      "zh-CN": "战场炼狱",
+      "aliases": [
+        "War Is Hell"
+      ]
+    },
+    {
+      "en": "Temple of Pain",
+      "zh-CN": "痛苦神庙",
+      "aliases": [
+        "Temple of Pain"
+      ]
+    },
+    {
+      "en": "Spear of Your Doom",
+      "zh-CN": "末日之矛",
+      "aliases": [
+        "Spear of Your Doom"
+      ]
+    },
+    {
+      "en": "Special Delivery",
+      "zh-CN": "特别快递",
+      "aliases": [
+        "Special Delivery"
+      ]
+    },
+    {
+      "en": "Urban Warfare",
+      "zh-CN": "城市巷战",
+      "aliases": [
+        "Urban Warfare"
+      ]
+    },
+    {
+      "en": "Wheel of Misfortune",
+      "zh-CN": "灾难之轮",
+      "aliases": [
+        "Wheel of Misfortune"
+      ]
+    },
+    {
+      "en": "Perfect Storm",
+      "zh-CN": "完美风暴",
+      "aliases": [
+        "Perfect Storm"
+      ]
+    },
+    {
+      "en": "Boom Town",
+      "zh-CN": "全面核战",
+      "aliases": [
+        "Boom Town"
+      ]
+    },
+    {
+      "en": "Dark Ritual",
+      "zh-CN": "黑暗仪式",
+      "aliases": [
+        "Dark Ritual"
+      ]
+    },
+    {
+      "en": "Out of Order",
+      "zh-CN": "完全失控",
+      "aliases": [
+        "Out of Order"
+      ]
+    },
+    {
+      "en": "Burning Legion",
+      "zh-CN": "燃烧军团",
+      "aliases": [
+        "Burning Legion"
+      ]
+    },
+    {
+      "en": "Triple Threat",
+      "zh-CN": "三重威胁",
+      "aliases": [
+        "Triple Threat"
+      ]
+    },
+    {
+      "en": "World on Fire",
+      "zh-CN": "烈焰战场",
+      "aliases": [
+        "World on Fire"
+      ]
+    },
+    {
+      "en": "Flipping Out",
+      "zh-CN": "失心疯",
+      "aliases": [
+        "Flipping Out"
+      ]
+    },
+    {
+      "en": "Growing Threat",
+      "zh-CN": "威胁递增",
+      "aliases": [
+        "Growing Threat"
+      ]
+    },
+    {
+      "en": "Miner Concerns",
+      "zh-CN": "资源危机",
+      "aliases": [
+        "Miner Concerns"
+      ]
+    },
+    {
+      "en": "Diplomatic Immunity",
+      "zh-CN": "外交豁免",
+      "aliases": [
+        "Diplomatic Immunity"
+      ]
+    },
+    {
+      "en": "Breath of Destruction",
+      "zh-CN": "造恶之息",
+      "aliases": [
+        "Breath of Destruction"
+      ]
+    },
+    {
+      "en": "Fright Night",
+      "zh-CN": "惊魂之夜",
+      "aliases": [
+        "Fright Night"
+      ]
+    },
+    {
+      "en": "Conflagration",
+      "zh-CN": "玩火自焚",
+      "aliases": [
+        "Conflagration"
+      ]
+    },
+    {
+      "en": "Explosive Results",
+      "zh-CN": "天轰地爆",
+      "aliases": [
+        "Explosive Results"
+      ]
+    },
+    {
+      "en": "Fowl Play",
+      "zh-CN": "捉鸡行动",
+      "aliases": [
+        "Fowl Play"
+      ]
+    },
+    {
+      "en": "Power Trip",
+      "zh-CN": "能量超负",
+      "aliases": [
+        "Power Trip"
+      ]
+    },
+    {
+      "en": "Shir Chaos",
+      "zh-CN": "拉克希尔大乱斗",
+      "aliases": [
+        "Shir Chaos"
+      ]
+    },
+    {
+      "en": "Survival of the Fittest",
+      "zh-CN": "适者生存",
+      "aliases": [
+        "Survival of the Fittest"
+      ]
+    },
+    {
+      "en": "Violent Night",
+      "zh-CN": "暴力之夜",
+      "aliases": [
+        "Violent Night"
+      ]
+    },
+    {
+      "en": "Rumble in the Jungle",
+      "zh-CN": "丛林激斗",
+      "aliases": [
+        "Rumble in the Jungle"
+      ]
+    },
+    {
+      "en": "The Ultimate Price",
+      "zh-CN": "终极代价",
+      "aliases": [
+        "The Ultimate Price"
+      ]
+    },
+    {
+      "en": "Cremation",
+      "zh-CN": "火葬仪式",
+      "aliases": [
+        "Cremation"
+      ]
+    },
+    {
+      "en": "Shields Up!",
+      "zh-CN": "高举盾牌！",
+      "aliases": [
+        "Shields Up!"
+      ]
+    },
+    {
+      "en": "Ulnar New Year",
+      "zh-CN": "乌历新年",
+      "aliases": [
+        "Ulnar New Year"
+      ]
+    },
+    {
+      "en": "Sick Micro",
+      "zh-CN": "死疫横生",
+      "aliases": [
+        "Sick Micro"
+      ]
+    },
+    {
+      "en": "Blast from the Past",
+      "zh-CN": "旧忆重惊",
+      "aliases": [
+        "Blast from the Past"
+      ]
+    },
+    {
+      "en": "Portal Power",
+      "zh-CN": "星门异动",
+      "aliases": [
+        "Portal Power"
+      ]
+    },
+    {
+      "en": "Hostile Takeover",
+      "zh-CN": "强行霸占",
+      "aliases": [
+        "Hostile Takeover"
+      ]
+    },
+    {
+      "en": "Grave Danger",
+      "zh-CN": "死亡危机",
+      "aliases": [
+        "Grave Danger"
+      ]
+    },
+    {
+      "en": "The Injustice League",
+      "zh-CN": "黑暗时刻",
+      "aliases": [
+        "The Injustice League"
+      ]
+    },
+    {
+      "en": "No Money, More Problems",
+      "zh-CN": "没钱麻烦大了",
+      "aliases": [
+        "No Money, More Problems"
+      ]
+    },
+    {
+      "en": "Field of Screams",
+      "zh-CN": "雷鸣弹啸",
+      "aliases": [
+        "Field of Screams"
+      ]
+    },
+    {
+      "en": "The Quick and the Dead",
+      "zh-CN": "疫鬼狂潮",
+      "aliases": [
+        "The Quick and the Dead"
+      ]
+    },
+    {
+      "en": "Out of Sight",
+      "zh-CN": "隐形威胁",
+      "aliases": [
+        "Out of Sight"
+      ]
+    },
+    {
+      "en": "Frostbite",
+      "zh-CN": "噬骨之寒",
+      "aliases": [
+        "Frostbite"
+      ]
+    },
+    {
+      "en": "Certain Demise",
+      "zh-CN": "无间死局",
+      "aliases": [
+        "Certain Demise"
+      ]
+    },
+    {
+      "en": "Delivery Guaranteed",
+      "zh-CN": "火线快递",
+      "aliases": [
+        "Delivery Guaranteed"
+      ]
+    },
+    {
+      "en": "Dead Heat",
+      "zh-CN": "烈火金刚",
+      "aliases": [
+        "Dead Heat"
+      ]
+    },
+    {
+      "en": "Cold is the Void",
+      "zh-CN": "寒冷即是虚空",
+      "aliases": [
+        "Cold is the Void"
+      ]
+    },
+    {
+      "en": "Futile Resistance",
+      "zh-CN": "异形进击",
+      "aliases": [
+        "Futile Resistance"
+      ]
+    },
+    {
+      "en": "Hard Target",
+      "zh-CN": "硬骨头",
+      "aliases": [
+        "Hard Target"
+      ]
+    },
+    {
+      "en": "Charnel House",
+      "zh-CN": "疫区逃生",
+      "aliases": [
+        "Charnel House"
+      ]
+    },
+    {
+      "en": "Slow and Steady",
+      "zh-CN": "步步为营",
+      "aliases": [
+        "Slow and Steady"
+      ]
+    },
+    {
+      "en": "Instant Karma",
+      "zh-CN": "现世现报",
+      "aliases": [
+        "Instant Karma"
+      ]
+    },
+    {
+      "en": "Worn Out Welcome",
+      "zh-CN": "仁至义尽",
+      "aliases": [
+        "Worn Out Welcome"
+      ]
+    },
+    {
+      "en": "Moths to the Flame",
+      "zh-CN": "飞蛾扑火",
+      "aliases": [
+        "Moths to the Flame"
+      ]
+    },
+    {
+      "en": "Fear and Lava",
+      "zh-CN": "火海惊魂",
+      "aliases": [
+        "Fear and Lava"
+      ]
+    },
+    {
+      "en": "Kill Bot Wars",
+      "zh-CN": "机器人大战",
+      "aliases": [
+        "Kill Bot Wars"
+      ]
+    },
+    {
+      "en": "Magnetic Attraction",
+      "zh-CN": "磁性牵引",
+      "aliases": [
+        "Magnetic Attraction"
+      ]
+    },
+    {
+      "en": "Death from Below",
+      "zh-CN": "地发杀机",
+      "aliases": [
+        "Death from Below"
+      ]
+    },
+    {
+      "en": "Watch the Skies",
+      "zh-CN": "天发杀机",
+      "aliases": [
+        "Watch the Skies"
+      ]
+    },
+    {
+      "en": "Think Fast",
+      "zh-CN": "兵贵神速",
+      "aliases": [
+        "Think Fast"
+      ]
+    },
+    {
+      "en": "What Goes Around",
+      "zh-CN": "自作自受",
+      "aliases": [
+        "What Goes Around"
+      ]
+    },
+    {
+      "en": "Bannable Offense",
+      "zh-CN": "封禁行为",
+      "aliases": [
+        "Bannable Offense"
+      ]
+    },
+    {
+      "en": "Masters of Midnight",
+      "zh-CN": "午夜大师",
+      "aliases": [
+        "Masters of Midnight"
+      ]
+    },
+    {
+      "en": "Night Drive",
+      "zh-CN": "雷场夜战",
+      "aliases": [
+        "Night Drive"
+      ]
+    },
+    {
+      "en": "Get Out More",
+      "zh-CN": "极限压迫",
+      "aliases": [
+        "Get Out More"
+      ]
+    },
+    {
+      "en": "Quick Killers",
+      "zh-CN": "杀劫迫临",
+      "aliases": [
+        "Quick Killers"
+      ]
+    },
+    {
+      "en": "Unstable Environment",
+      "zh-CN": "时空气象战",
+      "aliases": [
+        "Unstable Environment"
+      ]
+    },
+    {
+      "en": "Rest in Peace",
+      "zh-CN": "死亡无声",
+      "aliases": [
+        "Rest in Peace"
+      ]
+    },
+    {
+      "en": "Endless Infection",
+      "zh-CN": "无尽感染",
+      "aliases": [
+        "Endless Infection"
+      ]
+    },
+    {
+      "en": "Battle Hardened",
+      "zh-CN": "顽强作战",
+      "aliases": [
+        "Battle Hardened"
+      ]
+    },
+    {
+      "en": "Chilling Adaptation",
+      "zh-CN": "寒冷适应",
+      "aliases": [
+        "Chilling Adaptation"
+      ]
+    },
+    {
+      "en": "Price of Progress",
+      "zh-CN": "进步的代价",
+      "aliases": [
+        "Price of Progress"
+      ]
+    },
+    {
+      "en": "Negative Reinforcement",
+      "zh-CN": "消极增员",
+      "aliases": [
+        "Negative Reinforcement"
+      ]
+    },
+    {
+      "en": "Retribution",
+      "zh-CN": "报应不爽",
+      "aliases": [
+        "Retribution"
+      ]
+    },
+    {
+      "en": "Rise from the Ashes",
+      "zh-CN": "灰烬重生",
+      "aliases": [
+        "Rise from the Ashes"
+      ]
+    },
+    {
+      "en": "Warp Zone",
+      "zh-CN": "扭曲空间",
+      "aliases": [
+        "Warp Zone"
+      ]
+    },
+    {
+      "en": "Well Trained",
+      "zh-CN": "训练有素",
+      "aliases": [
+        "Well Trained"
+      ]
+    },
+    {
+      "en": "Doomsday Report",
+      "zh-CN": "末日报告",
+      "aliases": [
+        "Doomsday Report"
+      ]
+    },
+    {
+      "en": "Safety Violation",
+      "zh-CN": "安全违规",
+      "aliases": [
+        "Safety Violation"
+      ]
+    },
+    {
+      "en": "Temple of Rebirth",
+      "zh-CN": "重生神殿",
+      "aliases": [
+        "Temple of Rebirth"
+      ]
+    },
+    {
+      "en": "Overclocked",
+      "zh-CN": "疯狂超频",
+      "aliases": [
+        "Overclocked"
+      ]
+    },
+    {
+      "en": "Attrition Warfare",
+      "zh-CN": "消耗战",
+      "aliases": [
+        "Attrition Warfare"
+      ]
+    },
+    {
+      "en": "Together Forever",
+      "zh-CN": "永不分离",
+      "aliases": [
+        "Together Forever"
+      ]
+    },
+    {
+      "en": "Specter of Death",
+      "zh-CN": "死亡鬼影",
+      "aliases": [
+        "Specter of Death"
+      ]
+    },
+    {
+      "en": "Distant Threat",
+      "zh-CN": "远距威胁",
+      "aliases": [
+        "Distant Threat"
+      ]
+    },
+    {
+      "en": "Radiation Zone",
+      "zh-CN": "辐射区",
+      "aliases": [
+        "Radiation Zone"
+      ]
+    },
+    {
+      "en": "Inner Power",
+      "zh-CN": "心灵力量",
+      "aliases": [
+        "Inner Power"
+      ]
+    },
+    {
+      "en": "Moving Fees",
+      "zh-CN": "调遣军费",
+      "aliases": [
+        "Moving Fees"
+      ]
+    },
+    {
+      "en": "Memorable Boss",
+      "zh-CN": "梦魇敌酋",
+      "aliases": [
+        "Memorable Boss"
+      ]
+    },
+    {
+      "en": "Flip My Base",
+      "zh-CN": "基地翻转",
+      "aliases": [
+        "Flip My Base"
+      ]
+    },
+    {
+      "en": "Firewall",
+      "zh-CN": "防火墙",
+      "aliases": [
+        "Firewall"
+      ]
+    },
+    {
+      "en": "Death and Taxes",
+      "zh-CN": "死亡税金",
+      "aliases": [
+        "Death and Taxes"
+      ]
+    },
+    {
+      "en": "Rubber and Glue",
+      "zh-CN": "感痛身受",
+      "aliases": [
+        "Rubber and Glue"
+      ]
+    },
+    {
+      "en": "Hell Train",
+      "zh-CN": "地狱列车",
+      "aliases": [
+        "Hell Train"
+      ]
+    },
+    {
+      "en": "Infection Detected",
+      "zh-CN": "感染危机",
+      "aliases": [
+        "Infection Detected"
+      ]
+    },
+    {
+      "en": "Opportunities Unleashed",
+      "zh-CN": "机会尽出",
+      "aliases": [
+        "Opportunities Unleashed"
+      ]
+    },
+    {
+      "en": "One For All",
+      "zh-CN": "一将千军",
+      "aliases": [
+        "One For All"
+      ]
+    },
+    {
+      "en": "Experimental Artillery",
+      "zh-CN": "实验巨炮",
+      "aliases": [
+        "Experimental Artillery"
+      ]
+    },
+    {
+      "en": "Nuclear Family",
+      "zh-CN": "核族入侵",
+      "aliases": [
+        "Nuclear Family"
+      ]
+    },
+    {
+      "en": "Die Together",
+      "zh-CN": "同归于尽",
+      "aliases": [
+        "Die Together"
+      ]
+    },
+    {
+      "en": "Burning Evacuation",
+      "zh-CN": "烈火营救",
+      "aliases": [
+        "Burning Evacuation"
+      ]
+    },
+    {
+      "en": "Assembly of Vengeance",
+      "zh-CN": "复仇者集结",
+      "aliases": [
+        "Assembly of Vengeance"
+      ]
+    },
+    {
+      "en": "Railroad Switch",
+      "zh-CN": "铁轨换线",
+      "aliases": [
+        "Railroad Switch"
+      ]
+    },
+    {
+      "en": "Hostile Territory",
+      "zh-CN": "敌对领地",
+      "aliases": [
+        "Hostile Territory"
+      ]
+    },
+    {
+      "en": "Media Blackout",
+      "zh-CN": "媒体抹黑",
+      "aliases": [
+        "Media Blackout"
+      ]
+    },
+    {
+      "en": "Thunder Dome",
+      "zh-CN": "雷霆穹顶",
+      "aliases": [
+        "Thunder Dome"
+      ]
+    },
+    {
+      "en": "Dodge This",
+      "zh-CN": "躲灾避祸",
+      "aliases": [
+        "Dodge This"
+      ]
+    },
+    {
+      "en": "Binary Choice",
+      "zh-CN": "二元选择",
+      "aliases": [
+        "Binary Choice"
+      ]
+    },
+    {
+      "en": "The Ascended",
+      "zh-CN": "升格蜕变",
+      "aliases": [
+        "The Ascended"
+      ]
+    },
+    {
+      "en": "Enhanced Defenses",
+      "zh-CN": "森严壁垒",
+      "aliases": [
+        "Enhanced Defenses"
+      ]
+    },
+    {
+      "en": "Double Trouble",
+      "zh-CN": "双重麻烦",
+      "aliases": [
+        "Double Trouble"
+      ]
+    },
+    {
+      "en": "And Drops And Rifts",
+      "zh-CN": "星沉地裂",
+      "aliases": [
+        "And Drops And Rifts"
+      ]
+    },
+    {
+      "en": "Catch the Train",
+      "zh-CN": "赶夜车",
+      "aliases": [
+        "Catch the Train"
+      ]
+    },
+    {
+      "en": "Temple of Terror",
+      "zh-CN": "恐惧神庙",
+      "aliases": [
+        "Temple of Terror"
+      ]
+    },
+    {
+      "en": "Shining Bright",
+      "zh-CN": "光炫神迷",
+      "aliases": [
+        "Shining Bright"
+      ]
+    },
+    {
+      "en": "Endless Sparkles",
+      "zh-CN": "无尽花火",
+      "aliases": [
+        "Endless Sparkles"
+      ]
+    },
+    {
+      "en": "Graveyard Shift",
+      "zh-CN": "坟场夜班",
+      "aliases": [
+        "Graveyard Shift"
+      ]
+    },
+    {
+      "en": "Robotic Revival",
+      "zh-CN": "机器重生",
+      "aliases": [
+        "Robotic Revival"
+      ]
+    },
+    {
+      "en": "Secret Storm",
+      "zh-CN": "秘密突击",
+      "aliases": [
+        "Secret Storm"
+      ]
+    },
+    {
+      "en": "Undermined",
+      "zh-CN": "暗地破坏",
+      "aliases": [
+        "Undermined"
+      ]
+    },
+    {
+      "en": "Astigmatism",
+      "zh-CN": "散光",
+      "aliases": [
+        "Astigmatism"
+      ]
+    },
+    {
+      "en": "Never Say Die",
+      "zh-CN": "永不言死",
+      "aliases": [
+        "Never Say Die"
+      ]
+    },
+    {
+      "en": "Medieval Times",
+      "zh-CN": "中世纪",
+      "aliases": [
+        "Medieval Times"
+      ]
+    },
+    {
+      "en": "Onslaught",
+      "zh-CN": "全力猛攻",
+      "aliases": [
+        "Onslaught"
+      ]
+    },
+    {
+      "en": "Equivalent Exchange",
+      "zh-CN": "等价交换",
+      "aliases": [
+        "Equivalent Exchange"
+      ]
+    },
+    {
+      "en": "Encroaching Madness",
+      "zh-CN": "迫近的疯狂",
+      "aliases": [
+        "Encroaching Madness"
+      ]
+    },
+    {
+      "en": "Season of Giving",
+      "zh-CN": "感恩季",
+      "aliases": [
+        "Season of Giving"
+      ]
+    },
+    {
+      "en": "Choices Choices",
+      "zh-CN": "决择抉择",
+      "aliases": [
+        "Choices Choices"
+      ]
+    },
+    {
+      "en": "Inordinate Response",
+      "zh-CN": "过度反应",
+      "aliases": [
+        "Inordinate Response"
+      ]
+    },
+    {
+      "en": "By Fire Be Purged",
+      "zh-CN": "火焰净化",
+      "aliases": [
+        "By Fire Be Purged"
+      ]
+    },
+    {
+      "en": "Timely Reinforcements",
+      "zh-CN": "极速增援",
+      "aliases": [
+        "Timely Reinforcements"
+      ]
+    },
+    {
+      "en": "Blind Tribute",
+      "zh-CN": "盲目进贡",
+      "aliases": [
+        "Blind Tribute"
+      ]
+    },
+    {
+      "en": "Barrier to Entry",
+      "zh-CN": "进击壁垒",
+      "aliases": [
+        "Barrier to Entry"
+      ]
+    },
+    {
+      "en": "Like Swatting Insects",
+      "zh-CN": "虫人海啸",
+      "aliases": [
+        "Like Swatting Insects"
+      ]
+    },
+    {
+      "en": "Getting Along",
+      "zh-CN": "心有灵犀",
+      "aliases": [
+        "Getting Along"
+      ]
+    },
+    {
+      "en": "Knock Knock",
+      "zh-CN": "夜半敲门",
+      "aliases": [
+        "Knock Knock"
+      ]
+    },
+    {
+      "en": "Dance Dance Evolution",
+      "zh-CN": "舞舞生疯",
+      "aliases": [
+        "Dance Dance Evolution"
+      ]
+    },
+    {
+      "en": "Train of Pain",
+      "zh-CN": "痛苦列车",
+      "aliases": [
+        "Train of Pain"
+      ]
+    },
+    {
+      "en": "Resilient Rifts",
+      "zh-CN": "刚硬裂隙",
+      "aliases": [
+        "Resilient Rifts"
+      ]
+    },
+    {
+      "en": "Chain Explosion",
+      "zh-CN": "爆炸之链",
+      "aliases": [
+        "Chain Explosion"
+      ]
+    },
+    {
+      "en": "Call It a Comeback",
+      "zh-CN": "噩梦重临",
+      "aliases": [
+        "Call It a Comeback"
+      ]
+    },
+    {
+      "en": "Explosive Hunt",
+      "zh-CN": "排爆行动",
+      "aliases": [
+        "Explosive Hunt"
+      ]
+    },
+    {
+      "en": "Tax Day",
+      "zh-CN": "缴税日",
+      "aliases": [
+        "Tax Day"
+      ]
+    },
+    {
+      "en": "Aggressive Recruitment",
+      "zh-CN": "侵袭强征",
+      "aliases": [
+        "Aggressive Recruitment"
+      ]
+    },
+    {
+      "en": "Scary Scavengers",
+      "zh-CN": "坟场拾荒",
+      "aliases": [
+        "Scary Scavengers"
+      ]
+    },
+    {
+      "en": "Call of the Void",
+      "zh-CN": "虚空召唤",
+      "aliases": [
+        "Call of the Void"
+      ]
+    },
+    {
+      "en": "In the Name of Love",
+      "zh-CN": "因爱之名",
+      "aliases": [
+        "In the Name of Love"
+      ]
+    },
+    {
+      "en": "Locked and Loaded",
+      "zh-CN": "锁定击发",
+      "aliases": [
+        "Locked and Loaded"
+      ]
+    },
+    {
+      "en": "Of Mines and Miners",
+      "zh-CN": "雷劫难逃",
+      "aliases": [
+        "Of Mines and Miners"
+      ]
+    },
+    {
+      "en": "The League of Vermillians",
+      "zh-CN": "恶棍联盟",
+      "aliases": [
+        "The League of Vermillians"
+      ]
+    },
+    {
+      "en": "Operation Cooperation",
+      "zh-CN": "合作无间",
+      "aliases": [
+        "Operation Cooperation"
+      ]
+    },
+    {
+      "en": "Hot n Cold",
+      "zh-CN": "冰火之歌",
+      "aliases": [
+        "Hot n Cold"
+      ]
+    },
+    {
+      "en": "What We Do in the Shadows",
+      "zh-CN": "吸血鬼生活",
+      "aliases": [
+        "What We Do in the Shadows"
+      ]
+    },
+    {
+      "en": "Hardware Malfunction",
+      "zh-CN": "硬件故障",
+      "aliases": [
+        "Hardware Malfunction"
+      ]
+    },
+    {
+      "en": "Shared Pain",
+      "zh-CN": "分担痛苦",
+      "aliases": [
+        "Shared Pain"
+      ]
+    },
+    {
+      "en": "The Longest Night",
+      "zh-CN": "漫漫长夜",
+      "aliases": [
+        "The Longest Night"
+      ]
+    },
+    {
+      "en": "The Quick and the Undead",
+      "zh-CN": "迅捷亡尸",
+      "aliases": [
+        "The Quick and the Undead"
+      ]
+    },
+    {
+      "en": "Decade of Decadence",
+      "zh-CN": "征战十年",
+      "aliases": [
+        "Decade of Decadence"
+      ]
+    },
+    {
+      "en": "Bubble Pop",
+      "zh-CN": "泡泡世界",
+      "aliases": [
+        "Bubble Pop"
+      ]
+    },
+    {
+      "en": "Coordinated Defense",
+      "zh-CN": "协同防御",
+      "aliases": [
+        "Coordinated Defense"
+      ]
+    },
+    {
+      "en": "Beggars Can't Be Choosers",
+      "zh-CN": "饥不择食",
+      "aliases": [
+        "Beggars Can't Be Choosers"
+      ]
+    },
+    {
+      "en": "My Bots",
+      "zh-CN": "我的机器人！",
+      "aliases": [
+        "My Bots"
+      ]
+    },
+    {
+      "en": "Multitasking Trainer",
+      "zh-CN": "多线操作训练",
+      "aliases": [
+        "Multitasking Trainer"
+      ]
+    },
+    {
+      "en": "Hello My Old Friend",
+      "zh-CN": "老友重聚",
+      "aliases": [
+        "Hello My Old Friend"
+      ]
+    },
+    {
+      "en": "Of One Mind",
+      "zh-CN": "万众一心",
+      "aliases": [
+        "Of One Mind"
+      ]
+    },
+    {
+      "en": "Blasting Off Again",
+      "zh-CN": "发射升空",
+      "aliases": [
+        "Blasting Off Again"
+      ]
+    },
+    {
+      "en": "Enter the Nexus",
+      "zh-CN": "进入时空枢纽",
+      "aliases": [
+        "Enter the Nexus"
+      ]
+    },
+    {
+      "en": "Death is Fleeting",
+      "zh-CN": "死亡转瞬即逝",
+      "aliases": [
+        "Death is Fleeting"
+      ]
+    },
+    {
+      "en": "Mass Manufacturing",
+      "zh-CN": "批量生产",
+      "aliases": [
+        "Mass Manufacturing"
+      ]
+    },
+    {
+      "en": "Fire in the Hole",
+      "zh-CN": "小心手雷",
+      "aliases": [
+        "Fire in the Hole"
+      ]
+    },
+    {
+      "en": "Sudden but Inevitable",
+      "zh-CN": "突然却不可避免",
+      "aliases": [
+        "Sudden but Inevitable"
+      ]
+    }
+  ]
+}

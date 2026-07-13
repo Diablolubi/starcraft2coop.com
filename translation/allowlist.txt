@@ -1,0 +1,122 @@
+StarCraft II
+Blizzard Entertainment
+PvE
+DPS
+APM
+YouTube
+Discord
+GitHub
+CC BY-NC-SA 4.0
+Aommaster
+Serine
+CtG0526
+Reddit
+starcraft2coop.com
+Starcraft2coop.com
+StarCraft
+Battle.net
+Maguro
+Sintharius
+eViLLiNg
+macissammich
+Ancalagon
+My Documents\Starcraft II\Accounts\[Random Number]\Hotkeys
+[Your Username].SC2Hotkeys
+[Settings]
+[Hotkeys]
+[Commands]
+HHBomberAreaBomb
+HHBomberPlatform
+TargetChoose
+LeftMouseButton
+Alt
+II
+AI
+DNA
+DoT
+SCV
+Shift
+Artosis
+TwoTuuu
+EMP
+HP
+CPO-7
+UMI-C
+KMC
+ESC
+Rmin
+Rmax
+Wmax
+HPmax
+KD9a
+G7
+SA-55
+M34
+D99
+XCMC-670
+X-71
+M.A.L.I.C.E.
+T4
+N3
+XM-77
+ITC-E
+GDM
+HERC
+ARES
+Subreddit
+PayPal
+Ziemson
+Spohky
+Hunter
+SticksBender
+Buswolley
+Kionius
+Python
+S2Protocol
+Pip
+CRDS
+PHP
+Galaxy
+.NET
+OpenCV
+Twitch
+reCAPTCHA
+Google
+CtG
+Ctrl
+/dance
+ID
+ITCE
+Versions
+output.txt
+pip install s2protocol
+pip install s2protocol --upgrade
+{distance to closest unit}
+{Mission Minutes Elapsed}
+{Unit}
+[supply cost + 1]
+Damage
+Supply
+width
+height
+Untransportable
+Map Boss
+MapBoss
+raynor
+kerrigan
+artanis
+swann
+zagara
+vorazun
+karax
+abathur
+alarak
+nova
+stukov
+fenix
+dehaka
+horner
+tychus
+zeratul
+stetmann
+mengsk

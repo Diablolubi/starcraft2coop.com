@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet" href="/styles/global.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <title>StarCraft II 合作任务——指挥官攻略、任务数据及更多内容！</title>
+    <meta name="description" content="全面的 StarCraft II 合作任务资料站，提供指挥官攻略、任务数据、单位数据、突变信息等内容！">
+    <meta name="keywords" content="StarCraft II 合作任务攻略">
+    <link rel="canonical" href="https://starcraft2coop.com">
+
+    <style>
+        @media (min-width: 701px){
+            #updateTable td:nth-child(1){
+                width:120px;
+            }
+        }
+        @media (max-width: 700px){
+            #updateTable td:nth-child(1){
+                width:35%;
+            }
+        }
+        .left-column{
+            text-align: left;
+            white-space: nowrap;
+        }
+        #updateTable td, #updateTable th{
+            border:none;
+        }
+        #service{
+            padding:0.5rem;
+            display:inline-block;
+            font-size:0.85rem;
+            border:1px solid white;
+        }
+        #homeMutationTable td:nth-child(4){
+            min-width:180px;
+        }
+    </style>
+</head>
+<body>
+
+<header id="header">
+    <img src="/images/starcraft2coop.png" alt="StarCraft II 合作任务">
+</header>
+<script>
+if (document.location.host === 'dev.starcraft2coop.com') {
+    document.write('<div class="construction">这里是测试站点。（<a href="https://starcraft2coop.com">前往正式站点</a>）</div>');
+}
+</script>
+<nav id="menu">
+<ul id="topmenu">
+    <li class="highlight"><a href="/" title="首页">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>首页</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+    </a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-commanders">指挥官</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-resources">攻略</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-missions">任务</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-about">关于</a></li>
+    <li class="normal"><button type="button" id="site-search-button" title="搜索">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>搜索</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+        <span class="search-shortcut" aria-hidden="true"></span>
+    </button></li>
+</ul>
+<div id="container">
+    <div id="commanderList" class="submenu">
+        <a href="/commanders/raynor" class="normal"><img src="/images/commanderportraits/raynorportrait.png" alt="雷诺"></a>
+        <a href="/commanders/kerrigan" class="normal"><img src="/images/commanderportraits/kerriganportrait.png" alt="凯瑞甘"></a>
+        <a href="/commanders/artanis" class="normal"><img src="/images/commanderportraits/artanisportrait.png" alt="阿塔尼斯"></a>
+        <a href="/commanders/swann" class="normal"><img src="/images/commanderportraits/swannportrait.png" alt="斯旺"></a>
+        <a href="/commanders/zagara" class="normal"><img src="/images/commanderportraits/zagaraportrait.png" alt="扎加拉"></a>
+        <a href="/commanders/vorazun" class="normal"><img src="/images/commanderportraits/vorazunportrait.png" alt="沃拉尊"></a>
+        <a href="/commanders/karax" class="normal"><img src="/images/commanderportraits/karaxportrait.png" alt="凯拉克斯"></a>
+        <a href="/commanders/abathur" class="normal"><img src="/images/commanderportraits/abathurportrait.png" alt="阿巴瑟"></a>
+        <a href="/commanders/alarak" class="normal"><img src="/images/commanderportraits/alarakportrait.png" alt="阿拉纳克"></a>
+        <a href="/commanders/nova" class="normal"><img src="/images/commanderportraits/novaportrait.png" alt="诺娃"></a>
+        <a href="/commanders/stukov" class="normal"><img src="/images/commanderportraits/stukovportrait.png" alt="斯托科夫"></a>
+        <a href="/commanders/fenix" class="normal"><img src="/images/commanderportraits/fenixportrait.png" alt="菲尼克斯"></a>
+        <a href="/commanders/dehaka" class="normal"><img src="/images/commanderportraits/dehakaportrait.png" alt="德哈卡"></a>
+        <a href="/commanders/horner" class="normal"><img src="/images/commanderportraits/hornerportrait.png" alt="汉与霍纳"></a>
+        <a href="/commanders/tychus" class="normal"><img src="/images/commanderportraits/tychusportrait.png" alt="泰凯斯"></a>
+        <a href="/commanders/zeratul" class="normal"><img src="/images/commanderportraits/zeratulportrait.png" alt="泽拉图"></a>
+        <a href="/commanders/stetmann" class="normal"><img src="/images/commanderportraits/stetmannportrait.png" alt="斯台特曼"></a>
+        <a href="/commanders/mengsk" class="normal"><img src="/images/commanderportraits/mengskportrait.png" alt="蒙斯克"></a>
+    </div>
+    <div id="missionList" class="submenu">
+        <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">飞升之链</div></a>
+        <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">死亡摇篮</div></a>
+        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">亡者之夜</div></a>
+        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">天锁</div></a>
+        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">恶意代码</div></a>
+        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">疏散矿工</div></a>
+        <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">机会渺茫</div></a>
+        <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">湮灭快车</div></a>
+        <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">聚铁成兵</div></a>
+        <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">克哈裂痕</div></a>
+        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">埃蒙之镰</div></a>
+        <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">往日神庙</div></a>
+        <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">熔火危机</div></a>
+        <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">虚空降临</div></a>
+        <a href="/missions/voidthrashing" class="normal"><div class="mapImg mapImg-voidthrashing">虚空撕裂</div></a>
+    </div>
+    <div id="resources" class="submenu">
+        <div class="submenu-with-sections"><div class="submenu-section">
+            <strong>资料：</strong>
+            <ul>
+                <li class="normal"><a href="/mutators/">突变因子</a></li>
+                <li class="normal"><a href="/resources/weeklymutations">每周突变</a></li>
+                <li class="normal"><a href="/resources/brutal">残酷+</a></li>
+                <li class="normal"><a href="/units/">单位数据</a></li>
+            </ul>
+        </div><div class="submenu-section">
+            <strong>攻略：</strong>
+            <ul>
+                <li class="normal"><a href="/guides/buildordertheory">建造顺序理论</a></li>
+                <li class="normal"><a href="/guides/enemycomps">敌方阵容</a></li>
+                <li class="normal"><a href="/guides/generaltips">通用技巧</a></li>
+                <li class="normal"><a href="/guides/newplayer">新手指南</a></li>
+                <li class="normal"><a href="/guides/youtube">YouTube</a></li>
+            </ul>
+        </div><div class="submenu-section">
+            <strong>其他：</strong>
+            <ul>
+                <li class="normal"><a href="/resources/achievements">成就</a></li>
+                <li class="normal"><a href="/resources/ailogic">人工智能逻辑</a></li>
+                <li class="normal"><a href="/resources/bugs">错误</a></li>
+                <li class="normal"><a href="/resources/deathprevention">免死效果</a></li>
+                <li class="normal"><a href="/resources/eastereggs">彩蛋</a></li>
+                <li class="normal"><a href="/resources/levels">等级</a></li>
+                <li class="normal"><a href="/resources/patchdata">补丁数据</a></li>
+                <li class="normal"><a href="/tools/downloads">下载</a></li>
+                <li class="normal"><a href="/tools/masterybreakpoints">精通阈值</a></li>
+            </ul>
+        </div></div>
+    </div>
+    <div id="about" class="submenu">
+        <ul>
+            <!--<li class="normal"><a href="/about/contact">Contact</a></li>-->
+            <li class="normal"><a href="/about/faq">常见问题</a></li>
+            <li class="normal"><a href="/about/links">相关链接</a></li>
+            <!--li class="normal"><a href="https://www.youtube.com/c/Starcraft2Coop" rel="nofollow">Youtube</a></li-->
+            <li class="normal"><a href="/about/stats">杂项统计</a></li>
+        </ul>
+    </div>
+    <!--<div id="imgs">
+        <a href="https://www.youtube.com/c/Starcraft2Coop" rel="nofollow"><img src="/images/links/yt.png" alt="Youtube"></a>
+        <a href="https://www.patreon.com/starcraft2coop" rel="nofollow"><img src="/images/links/patreon.png" alt="Patreon"></a>
+        <a href="https://www.twitch.tv/aommaster" rel="nofollow"><img src="/images/links/twitch.png" alt="Twitch"></a>
+        <a href="https://discord.gg/AbFXRAB" rel="nofollow"><img src="/images/links/discord.png" alt="Discord"></a>
+    </div>-->
+</div>
+</nav>
+<script>
+    (function($) {
+        function openSubmenu(event, elem){
+            if (event) event.preventDefault();
+            if (!elem) elem = event.currentTarget;
+            var alreadyOpen = $(elem).hasClass('open');
+
+            $('#topmenu a').removeClass('open');
+            $(".submenu").hide();
+
+            if (alreadyOpen) return;
+
+            $(elem).addClass('open');
+            switch (elem.id.slice(13)){
+                case "commanders":
+                    $("#commanderList").show();
+                    break;
+                case "missions":
+                    $("#missionList").show();
+                    break;
+                case "resources":
+                    $("#resources").show();
+                    break;
+                case "about":
+                    $("#about").show();
+                    break;
+            }
+        }
+        window.openSubmenu = openSubmenu;
+        if (document.location.pathname === "/") {
+            $('#submenu-link-commanders').each(function () {
+                openSubmenu(null, this);
+            });
+        } else {
+            $('#topmenu li.highlight a').each(function () {
+                openSubmenu(null, this);
+            });
+        }
+    })(jQuery);
+</script>
+<script src="/scripts/search.js" defer></script>
+<div id="content">
+        <h1>StarCraft II 合作任务</h1>
+    <details>
+        <summary>这是什么网站？</summary>
+        <p>StarCraft II 是 Blizzard Entertainment 推出的一款即时战略游戏，也是史上最成功的即时战略游戏之一。2015 年，StarCraft II 推出了合作任务模式：两名玩家在任务中并肩对抗埃蒙。游戏提供多位风格各异的指挥官和众多可选地图。</p>
+        <p>本站汇集 StarCraft II 合作任务社区整理的各类资料，旨在通过深入分析指挥官与地图，并提供应对游戏中棘手局面的技巧，帮助玩家提升水平。</p>
+        <p>StarCraft II 目前可以免费游玩。合作任务模式中有三位指挥官完全免费，其余指挥官可免费游玩至 5 级。如果你是新玩家，请查看<a href="/guides/newplayer">新手指南</a>，挑选自己的第一位指挥官。也可以阅读<a href="guides/generaltips">通用技巧</a>，了解开始游玩该模式时非常实用的建议。</p>
+        <p>前往 StarCraft II <a href="https://starcraft2.com" rel="nofollow">官方网站</a>，加入对抗埃蒙的战斗！</p>
+    </details>
+    <h2>每周突变</h2>
+    <div class="tableContainer">
+        <table id="homeMutationTable">
+            <thead>
+                <tr>
+                    <th>周次</th>
+                    <th>名称</th>
+                    <th>地图</th>
+                    <th colspan="3">突变因子</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+<td class="left-column">本周</td>
+<td><strong>烈火营救</strong></td>
+<td><div class="mapImg mapImg-minerevacuation">疏散矿工</div></td>
+<td><a href="/mutators/avenger"><img class="miniIcon" src="/images/mutators/avenger.png" alt="">复仇者</a></td><td>
+<a href="/mutators/eminentdomain"><img class="miniIcon" src="/images/mutators/eminentdomain.png" alt="">强占地盘</a></td><td>
+<a href="/mutators/scorchedearth"><img class="miniIcon" src="/images/mutators/scorchedearth.png" alt="">焦土政策</a></td>
+</tr>
+                <tr><td colspan="6"><span id="nextMutationCountdown" data-next-mutation-start="1784541600000"></span></td></tr>
+                <tr>
+<td class="left-column">Jul 20</td>
+<td><strong>复仇者集结</strong></td>
+<td><div class="mapImg mapImg-templeofthepast">往日神庙</div></td>
+<td><a href="/mutators/avenger"><img class="miniIcon" src="/images/mutators/avenger.png" alt="">复仇者</a></td><td>
+<a href="/mutators/heroesfromthestorm"><img class="miniIcon" src="/images/mutators/heroesfromthestorm.png" alt="">风暴英雄</a></td><td>
+</td>
+</tr>
+                <tr>
+<td class="left-column">Jul 27</td>
+<td><strong>铁轨换线</strong></td>
+<td><div class="mapImg mapImg-oblivionexpress">湮灭快车</div></td>
+<td><a href="/mutators/justdie"><img class="miniIcon" src="/images/mutators/justdie.png" alt="">就是死不了</a></td><td>
+<a href="/mutators/polarity"><img class="miniIcon" src="/images/mutators/polarity.png" alt="">极性互换</a></td><td>
+</td>
+</tr>
+                <tr>
+<td class="left-column">Aug 3</td>
+<td><strong>敌对领地</strong></td>
+<td><div class="mapImg mapImg-deadofnight">亡者之夜</div></td>
+<td><a href="/mutators/barrier"><img class="miniIcon" src="/images/mutators/barrier.png" alt="">屏障</a></td><td>
+<a href="/mutators/photonoverload"><img class="miniIcon" src="/images/mutators/photonoverload.png" alt="">光子超载</a></td><td>
+<a href="/mutators/poweroverwhelming"><img class="miniIcon" src="/images/mutators/poweroverwhelming.png" alt="">势不可挡</a></td>
+</tr>
+                <tr><td colspan="6"><p><a href="/resources/weeklymutations#thisweek">查看更多周次</a></p></td></tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        (function() {
+            var countdown = document.getElementById("nextMutationCountdown");
+            var nextMutationStart = parseInt(countdown.getAttribute("data-next-mutation-start"), 10);
+
+            function pluralize(value, unit) {
+                if (!value) return "";
+                return value + " " + unit;
+            }
+
+            function updateNextMutationCountdown() {
+                var remainingSeconds = Math.floor((nextMutationStart - Date.now()) / 1000);
+                if (remainingSeconds <= 0) {
+                    countdown.textContent = "下一轮突变已经开始。";
+                    return;
+                }
+                var days = Math.floor(remainingSeconds / 86400);
+                remainingSeconds %= 86400;
+                var hours = Math.floor(remainingSeconds / 3600);
+                remainingSeconds %= 3600;
+                var minutes = Math.floor(remainingSeconds / 60);
+                var seconds = remainingSeconds % 60;
+                countdown.textContent = "距离下一轮突变开始还有 " +
+                    pluralize(days, "天") + " " +
+                    hours + ":" +
+                    `${minutes}`.padStart(2, "0") + ":" +
+                    `${seconds}`.padStart(2, "0");
+            }
+
+            updateNextMutationCountdown();
+            setInterval(updateNextMutationCountdown, 1000);
+        }());
+    </script>
+    <script src="/scripts/tooltips.js"></script>
+    <h2>社区链接</h2>
+    <ul>
+        <li><a href="https://discord.gg/VQnXMdm">StarCraft II 合作任务 Discord 社区</a></li>
+        <li><a href="https://reddit.com/r/starcraft2coop">/r/starcraft2coop Reddit 社区</a></li>
+    </ul>
+    <h2>最新动态：</h2>
+    <table>
+        <tr>
+            <td class="left-column">
+                <p>2026-05-18</p>
+            </td>
+            <td>
+                <p>首页已经重新设计，并新增了<a href="/units/">单位数据页面</a>。</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="left-column">
+                <p>2026-05-07</p>
+            </td>
+            <td>
+                <p>我一直在努力完善本站：更新了威望建议，现在可以更方便地跳转到本周突变；菜单导航也已改版，突变因子页面则经过了全面重做。</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="left-column">
+                <p>2026-03-21</p>
+            </td>
+            <td>
+                <p>starcraft2coop.com 将继续运行！遗憾的是，账户和录像分析器已无法使用。</p>
+                <p>本站源代码现已<a href="https://github.com/SerineMolecule/starcraft2coop.com" target="_blank">发布在 GitHub</a>，欢迎参与改进。</p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="footer">
+    <p>注意：本站生成的所有数据均以“残酷”难度为准；在较低难度下，时间、阵容及其他要素可能有所不同。</p>
+    <p>非官方简体中文翻译站，仅供学习与非商业使用。本站无广告，也不收集用户数据。采用 CC BY-NC-SA 4.0 许可。原作者：Aommaster。本站为粉丝站点，与 StarCraft II 或 Blizzard Entertainment 无隶属关系。</p>
+</div>
+
+</body>
+</html>

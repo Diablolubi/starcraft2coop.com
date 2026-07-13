@@ -1,6 +1,6 @@
 import { expect, test } from "bun:test";
 
-import { UnitStats } from "./units";
+import { unitToken, UnitStats } from "./units";
 import type { Token } from "./units";
 
 function upgradedUnit(
@@ -60,4 +60,9 @@ test("Fenix Cybros Arbiter with 30 Suit Attack Speed cooldown is 0.94", () => {
         masteries: { "Suit Attack Speed": 30 },
     });
     expect(arbiter.modes[""]!.attackspeed).toBeCloseTo(0.94);
+});
+
+test("Chinese and English Marine names resolve to the same stable unit token", () => {
+    expect(unitToken("陆战队员")).toBe("marine");
+    expect(unitToken("Marine")).toBe("marine");
 });

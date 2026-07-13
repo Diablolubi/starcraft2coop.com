@@ -10,7 +10,7 @@ if (!isset($_GET['maxvitality']) && !isset($_GET['minvitality'])) {
     // do nothing
 } else {
     if (!ctype_digit($_GET['maxvitality']) || !ctype_digit($_GET['minvitality'])) {
-        echo("Error!");
+        echo("错误！");
         die();
     }
     if (strlen($_GET['maxvitality'] > 6)) {
@@ -30,6 +30,6 @@ usort($units, fn($a, $b) => strtolower($a['name']) <=> strtolower($b['name']));
 
 $outputString = "";
 foreach ($units as $row) {
-    $outputString .= "<div class='content " . $row['race'] . "'>" . $row['name'] . "</div>";
+    $outputString .= "<div class='content " . $row['race'] . "' data-amon-id='" . $row['amonid'] . "'>" . $row['name'] . "</div>";
 }
 echo $outputString;

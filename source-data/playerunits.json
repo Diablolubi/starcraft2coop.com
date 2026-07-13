@@ -2,7 +2,7 @@
   {
     "unitid": 1,
     "basename": "Roach",
-    "name": "Roach",
+    "name": "蟑螂",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -32,7 +32,7 @@
   {
     "unitid": 2,
     "basename": "Ravager",
-    "name": "Ravager",
+    "name": "破坏者",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -62,7 +62,7 @@
   {
     "unitid": 3,
     "basename": "Swarm Host",
-    "name": "Swarm Host",
+    "name": "虫群宿主",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -92,7 +92,7 @@
   {
     "unitid": 4,
     "basename": "Locust",
-    "name": "Locust",
+    "name": "蝗虫",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -122,7 +122,7 @@
   {
     "unitid": 5,
     "basename": "Mutalisk",
-    "name": "Mutalisk",
+    "name": "异龙",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -147,12 +147,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "Bounce Damage:<br>{5,3,[3,1,1]}<br>Damage Upgrade:<br>{0.333,0.111,[0,0,0]}"
+    "notes": "弹射伤害：<br>{5,3,[3,1,1]}<br>伤害升级：<br>{0.333,0.111,[0,0,0]}"
   },
   {
     "unitid": 6,
     "basename": "Guardian",
-    "name": "Guardian",
+    "name": "守护者",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -182,7 +182,7 @@
   {
     "unitid": 7,
     "basename": "Devourer",
-    "name": "Devourer",
+    "name": "吞噬者",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -212,7 +212,7 @@
   {
     "unitid": 8,
     "basename": "Devourer",
-    "name": "Devourer",
+    "name": "吞噬者",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -242,7 +242,7 @@
   {
     "unitid": 9,
     "basename": "Viper",
-    "name": "Viper",
+    "name": "飞蛇",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -272,7 +272,7 @@
   {
     "unitid": 10,
     "basename": "Viper",
-    "name": "Viper",
+    "name": "飞蛇",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -302,7 +302,7 @@
   {
     "unitid": 11,
     "basename": "Swarm Queen",
-    "name": "Swarm Queen (Air)",
+    "name": "虫群女王（空中）",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -332,7 +332,7 @@
   {
     "unitid": 12,
     "basename": "Swarm Queen",
-    "name": "Swarm Queen (Ground)",
+    "name": "虫群女王（地面）",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -362,7 +362,7 @@
   {
     "unitid": 13,
     "basename": "Swarm Queen",
-    "name": "Swarm Queen (Ground)",
+    "name": "虫群女王（地面）",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -392,7 +392,7 @@
   {
     "unitid": 14,
     "basename": "Brutalisk",
-    "name": "Brutalisk (Ground)",
+    "name": "莽兽（对地）",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -422,7 +422,7 @@
   {
     "unitid": 15,
     "basename": "Brutalisk",
-    "name": "Brutalisk (Air)",
+    "name": "莽兽（对空）",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -452,7 +452,7 @@
   {
     "unitid": 16,
     "basename": "Leviathan",
-    "name": "Leviathan (Ground)",
+    "name": "利维坦（对地）",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -482,7 +482,7 @@
   {
     "unitid": 17,
     "basename": "Leviathan",
-    "name": "Leviathan (Air)",
+    "name": "利维坦（对空）",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -512,7 +512,7 @@
   {
     "unitid": 18,
     "basename": "Leviathan",
-    "name": "Leviathan (Air)",
+    "name": "利维坦（对空）",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -542,7 +542,7 @@
   {
     "unitid": 19,
     "basename": "Supplicant",
-    "name": "Supplicant",
+    "name": "死徒",
     "commander": "Alarak",
     "race": "Protoss",
     "combatunit": 1,
@@ -572,7 +572,7 @@
   {
     "unitid": 20,
     "basename": "Slayer",
-    "name": "Slayer",
+    "name": "杀戮者",
     "commander": "Alarak",
     "race": "Protoss",
     "combatunit": 1,
@@ -602,7 +602,7 @@
   {
     "unitid": 21,
     "basename": "Slayer",
-    "name": "Slayer",
+    "name": "杀戮者",
     "commander": "Alarak",
     "race": "Protoss",
     "combatunit": 1,
@@ -632,7 +632,7 @@
   {
     "unitid": 22,
     "basename": "Ascendant",
-    "name": "Ascendant",
+    "name": "飞升者",
     "commander": "Alarak",
     "race": "Protoss",
     "combatunit": 1,
@@ -662,7 +662,7 @@
   {
     "unitid": 23,
     "basename": "Vanguard",
-    "name": "Vanguard",
+    "name": "先锋",
     "commander": "Alarak",
     "race": "Protoss",
     "combatunit": 1,
@@ -692,7 +692,7 @@
   {
     "unitid": 24,
     "basename": "Wrathwalker",
-    "name": "Wrathwalker",
+    "name": "天罚行者",
     "commander": "Alarak",
     "race": "Protoss",
     "combatunit": 1,
@@ -722,7 +722,7 @@
   {
     "unitid": 25,
     "basename": "Wrathwalker",
-    "name": "Wrathwalker",
+    "name": "天罚行者",
     "commander": "Alarak",
     "race": "Protoss",
     "combatunit": 1,
@@ -752,7 +752,7 @@
   {
     "unitid": 26,
     "basename": "Havoc",
-    "name": "Havoc",
+    "name": "浩劫",
     "commander": "Alarak",
     "race": "Protoss",
     "combatunit": 0,
@@ -782,7 +782,7 @@
   {
     "unitid": 27,
     "basename": "War Prism",
-    "name": "War Prism",
+    "name": "折跃棱镜",
     "commander": "Alarak",
     "race": "Protoss",
     "combatunit": 1,
@@ -812,7 +812,7 @@
   {
     "unitid": 28,
     "basename": "Zealot",
-    "name": "Zealot",
+    "name": "狂热者",
     "commander": "Artanis",
     "race": "Protoss",
     "combatunit": 1,
@@ -842,7 +842,7 @@
   {
     "unitid": 29,
     "basename": "Dragoon",
-    "name": "Dragoon",
+    "name": "龙骑士",
     "commander": "Artanis",
     "race": "Protoss",
     "combatunit": 1,
@@ -872,7 +872,7 @@
   {
     "unitid": 30,
     "basename": "Dragoon",
-    "name": "Dragoon",
+    "name": "龙骑士",
     "commander": "Artanis",
     "race": "Protoss",
     "combatunit": 1,
@@ -902,7 +902,7 @@
   {
     "unitid": 31,
     "basename": "High Templar",
-    "name": "High Templar",
+    "name": "高阶圣堂武士",
     "commander": "Artanis",
     "race": "Protoss",
     "combatunit": 1,
@@ -927,12 +927,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": 1,
-    "notes": "Psionic Storm: Creates a storm of psionic energy that lasts 4 seconds, causing up to 80 damage to all enemy units in the target area. Does not damage friendly units."
+    "notes": "灵能风暴：制造一场持续 4 秒的灵能风暴，对目标区域内所有敌方单位最多造成 80 点伤害。不会伤害友方单位。"
   },
   {
     "unitid": 32,
     "basename": "Archon",
-    "name": "Archon",
+    "name": "执政官",
     "commander": "Artanis",
     "race": "Protoss",
     "combatunit": 1,
@@ -957,12 +957,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": 1,
-    "notes": "Psionic Storm: Creates a storm of psionic energy that lasts 4 seconds, causing up to 80 damage to all enemy units in the target area. Does not damage friendly units."
+    "notes": "灵能风暴：制造一场持续 4 秒的灵能风暴，对目标区域内所有敌方单位最多造成 80 点伤害。不会伤害友方单位。"
   },
   {
     "unitid": 33,
     "basename": "Archon",
-    "name": "Archon",
+    "name": "执政官",
     "commander": "Artanis",
     "race": "Protoss",
     "combatunit": 1,
@@ -992,7 +992,7 @@
   {
     "unitid": 34,
     "basename": "Immortal",
-    "name": "Immortal",
+    "name": "不朽者",
     "commander": "Artanis",
     "race": "Protoss",
     "combatunit": 1,
@@ -1022,7 +1022,7 @@
   {
     "unitid": 35,
     "basename": "Immortal",
-    "name": "Immortal",
+    "name": "不朽者",
     "commander": "Artanis",
     "race": "Protoss",
     "combatunit": 1,
@@ -1052,7 +1052,7 @@
   {
     "unitid": 36,
     "basename": "Reaver",
-    "name": "Reaver",
+    "name": "金甲虫",
     "commander": "Artanis",
     "race": "Protoss",
     "combatunit": 1,
@@ -1082,7 +1082,7 @@
   {
     "unitid": 37,
     "basename": "Reaver",
-    "name": "Reaver",
+    "name": "金甲虫",
     "commander": "Artanis",
     "race": "Protoss",
     "combatunit": 1,
@@ -1112,7 +1112,7 @@
   {
     "unitid": 38,
     "basename": "Phoenix",
-    "name": "Phoenix",
+    "name": "凤凰战机",
     "commander": "Artanis",
     "race": "Protoss",
     "combatunit": 1,
@@ -1142,7 +1142,7 @@
   {
     "unitid": 39,
     "basename": "Phoenix",
-    "name": "Phoenix",
+    "name": "凤凰战机",
     "commander": "Artanis",
     "race": "Protoss",
     "combatunit": 1,
@@ -1172,7 +1172,7 @@
   {
     "unitid": 40,
     "basename": "Tempest",
-    "name": "Tempest (Ground)",
+    "name": "风暴战舰（对地）",
     "commander": "Artanis",
     "race": "Protoss",
     "combatunit": 1,
@@ -1202,7 +1202,7 @@
   {
     "unitid": 41,
     "basename": "Tempest",
-    "name": "Tempest (Air)",
+    "name": "风暴战舰（对空）",
     "commander": "Artanis",
     "race": "Protoss",
     "combatunit": 1,
@@ -1232,7 +1232,7 @@
   {
     "unitid": 42,
     "basename": "Mothership",
-    "name": "Mothership",
+    "name": "母舰",
     "commander": "Alarak",
     "race": "Protoss",
     "combatunit": 1,
@@ -1262,7 +1262,7 @@
   {
     "unitid": 43,
     "basename": "Destroyer",
-    "name": "Destroyer",
+    "name": "毁灭者",
     "commander": "Alarak",
     "race": "Protoss",
     "combatunit": 1,
@@ -1287,12 +1287,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": 1,
-    "notes": "Bounce Damage:<br>\r\n1 Bounce: 1<br>\r\n2 Bounces: 1 (+1 vs. Armored)<br>\r\n3 Bounces: 1 (+2 vs. Armored)<br>\r\nNo upgrade bonus"
+    "notes": "弹射伤害：<br>\r\n第 1 次弹射：1<br>\r\n第 2 次弹射：1（对重甲 +1）<br>\r\n第 3 次弹射：1（对重甲 +2）<br>\r\n无升级加成"
   },
   {
     "unitid": 44,
     "basename": "Destroyer",
-    "name": "Destroyer",
+    "name": "毁灭者",
     "commander": "Alarak",
     "race": "Protoss",
     "combatunit": 1,
@@ -1317,12 +1317,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": 1,
-    "notes": "Bounce Damage:<br>\r\n1 Bounce: 1<br>\r\n2 Bounces: 1 (+1 vs. Armored)<br>\r\n3 Bounces: 1 (+2 vs. Armored)<br>\r\nNo upgrade bonus"
+    "notes": "弹射伤害：<br>\r\n第 1 次弹射：1<br>\r\n第 2 次弹射：1（对重甲 +1）<br>\r\n第 3 次弹射：1（对重甲 +2）<br>\r\n无升级加成"
   },
   {
     "unitid": 45,
     "basename": "Alarak",
-    "name": "Alarak (Ground)",
+    "name": "阿拉纳克（对地）",
     "commander": "Alarak",
     "race": "Protoss",
     "combatunit": 1,
@@ -1352,7 +1352,7 @@
   {
     "unitid": 46,
     "basename": "Alarak",
-    "name": "Alarak (Air)",
+    "name": "阿拉纳克（对空）",
     "commander": "Alarak",
     "race": "Protoss",
     "combatunit": 1,
@@ -1382,7 +1382,7 @@
   {
     "unitid": 47,
     "basename": "Primal Zergling",
-    "name": "Primal Zergling",
+    "name": "原始跳虫",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -1407,12 +1407,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "Primal Contender stat changes only apply to those spawned by Glevig"
+    "notes": "“原始挑战者”的属性改动只适用于格利维格生成的单位"
   },
   {
     "unitid": 48,
     "basename": "Ravasaur",
-    "name": "Ravasaur",
+    "name": "暴掠龙",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -1442,7 +1442,7 @@
   {
     "unitid": 49,
     "basename": "Primal Roach",
-    "name": "Primal Roach",
+    "name": "原始蟑螂",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -1467,12 +1467,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "Primal Contender stat changes only apply to those spawned by Glevig"
+    "notes": "“原始挑战者”的属性改动只适用于格利维格生成的单位"
   },
   {
     "unitid": 50,
     "basename": "Primal Igniter",
-    "name": "Primal Igniter",
+    "name": "原始点火虫",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -1502,7 +1502,7 @@
   {
     "unitid": 51,
     "basename": "Primal Guardian",
-    "name": "Primal Guardian",
+    "name": "原始守护者",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -1532,7 +1532,7 @@
   {
     "unitid": 52,
     "basename": "Primal Hydralisk",
-    "name": "Primal Hydralisk",
+    "name": "原始刺蛇",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -1557,12 +1557,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "Primal Contender stat changes only apply to those spawned by Glevig"
+    "notes": "“原始挑战者”的属性改动只适用于格利维格生成的单位"
   },
   {
     "unitid": 53,
     "basename": "Primal Mutalisk",
-    "name": "Primal Mutalisk (Ground)",
+    "name": "原始异龙（对地）",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -1587,12 +1587,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "(Standard)<br>Bounce Damage:<br>{5,2}<br>Damage Upgrade:<br>{0.555,0.222}<br><br>(Slicing Glaive Air)<br>Bounce Damage:<br>{9,3}<br>Damage Upgrade:<br>{1,0.5}"
+    "notes": "（标准）<br>弹射伤害：<br>{5,2}<br>伤害升级：<br>{0.555,0.222}<br><br>（空中切割战刃）<br>弹射伤害：<br>{9,3}<br>伤害升级：<br>{1,0.5}"
   },
   {
     "unitid": 54,
     "basename": "Impaler",
-    "name": "Impaler",
+    "name": "穿刺者",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -1622,7 +1622,7 @@
   {
     "unitid": 55,
     "basename": "Impaler",
-    "name": "Impaler",
+    "name": "穿刺者",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -1652,7 +1652,7 @@
   {
     "unitid": 56,
     "basename": "Primal Host",
-    "name": "Primal Host",
+    "name": "原始宿主",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -1682,7 +1682,7 @@
   {
     "unitid": 57,
     "basename": "Primal Locust",
-    "name": "Primal Locust",
+    "name": "原始蝗虫",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -1707,12 +1707,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "Primal Contender stat changes only apply to those spawned by Murvar"
+    "notes": "“原始挑战者”的属性改动只适用于穆瓦尔生成的单位"
   },
   {
     "unitid": 58,
     "basename": "Creeper Host",
-    "name": "Creeper Host",
+    "name": "潜地宿主",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -1742,7 +1742,7 @@
   {
     "unitid": 59,
     "basename": "Explosive Creeper",
-    "name": "Explosive Creeper (Ground)",
+    "name": "爆炸蠕虫（对地）",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -1767,12 +1767,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "Primal Contender stat changes only apply to those spawned by Murvar"
+    "notes": "“原始挑战者”的属性改动只适用于穆瓦尔生成的单位"
   },
   {
     "unitid": 60,
     "basename": "Explosive Creeper",
-    "name": "Explosive Creeper (Ground)",
+    "name": "爆炸蠕虫（对地）",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -1797,12 +1797,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "Primal Contender stat changes only apply to those spawned by Murvar"
+    "notes": "“原始挑战者”的属性改动只适用于穆瓦尔生成的单位"
   },
   {
     "unitid": 61,
     "basename": "Primal Ultralisk",
-    "name": "Primal Ultralisk",
+    "name": "原始雷兽",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -1832,7 +1832,7 @@
   {
     "unitid": 62,
     "basename": "Tyrannozor",
-    "name": "Tyrannozor (Ground)",
+    "name": "暴龙兽（对地）",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -1862,7 +1862,7 @@
   {
     "unitid": 63,
     "basename": "Tyrannozor",
-    "name": "Tyrannozor (Air)",
+    "name": "暴龙兽（对空）",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -1892,7 +1892,7 @@
   {
     "unitid": 64,
     "basename": "Greater Primal Wurm",
-    "name": "Greater Primal Wurm",
+    "name": "巨型原始蠕虫",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -1922,7 +1922,7 @@
   {
     "unitid": 65,
     "basename": "Glevig",
-    "name": "Glevig",
+    "name": "格利维格",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -1952,7 +1952,7 @@
   {
     "unitid": 66,
     "basename": "Murvar",
-    "name": "Murvar",
+    "name": "穆瓦尔",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -1982,7 +1982,7 @@
   {
     "unitid": 67,
     "basename": "Dakrun",
-    "name": "Dakrun",
+    "name": "达克伦",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -2012,7 +2012,7 @@
   {
     "unitid": 68,
     "basename": "Legionnaire",
-    "name": "Legionnaire",
+    "name": "军团战士",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2042,7 +2042,7 @@
   {
     "unitid": 69,
     "basename": "Adept",
-    "name": "Adept (Unit)",
+    "name": "使徒（单位）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2072,7 +2072,7 @@
   {
     "unitid": 70,
     "basename": "Adept",
-    "name": "Adept (Unit)",
+    "name": "使徒（单位）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2102,7 +2102,7 @@
   {
     "unitid": 71,
     "basename": "Conservator",
-    "name": "Conservator",
+    "name": "保护者",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2132,7 +2132,7 @@
   {
     "unitid": 72,
     "basename": "Immortal",
-    "name": "Immortal",
+    "name": "不朽者",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2162,7 +2162,7 @@
   {
     "unitid": 73,
     "basename": "Immortal",
-    "name": "Immortal",
+    "name": "不朽者",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2192,7 +2192,7 @@
   {
     "unitid": 74,
     "basename": "Colossus",
-    "name": "Colossus",
+    "name": "巨像",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2222,7 +2222,7 @@
   {
     "unitid": 75,
     "basename": "Disruptor",
-    "name": "Disruptor",
+    "name": "干扰者",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2247,12 +2247,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": 1,
-    "notes": "Purification Nova: Shoots out a ball of energy that emits a powerful nova dealing 150 splash damage and an additional 50 shield damage to nearby ground units and structures. Cooldown: 20 seconds."
+    "notes": "净化新星：射出一枚能量球，释放强力新星，对附近地面单位和建筑造成 150 点溅射伤害，并对护盾额外造成 50 点伤害。冷却时间：20 秒。"
   },
   {
     "unitid": 76,
     "basename": "Scout",
-    "name": "Scout (Air)",
+    "name": "侦察机（对空）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2282,7 +2282,7 @@
   {
     "unitid": 77,
     "basename": "Scout",
-    "name": "Scout (Air)",
+    "name": "侦察机（对空）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2312,7 +2312,7 @@
   {
     "unitid": 78,
     "basename": "Scout",
-    "name": "Scout (Ground)",
+    "name": "侦察机（对地）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2342,7 +2342,7 @@
   {
     "unitid": 79,
     "basename": "Scout",
-    "name": "Scout (Ground)",
+    "name": "侦察机（对地）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2372,7 +2372,7 @@
   {
     "unitid": 80,
     "basename": "Carrier",
-    "name": "Carrier (Interceptor)",
+    "name": "航空母舰（拦截机）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2397,12 +2397,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": 1,
-    "notes": "Carriers have 8 Interceptors."
+    "notes": "航空母舰拥有 8 架拦截机。"
   },
   {
     "unitid": 81,
     "basename": "Kaldalis",
-    "name": "Kaldalis",
+    "name": "卡尔达利斯",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2432,7 +2432,7 @@
   {
     "unitid": 82,
     "basename": "Talis",
-    "name": "Talis (Unit)",
+    "name": "塔里斯（单位）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2462,7 +2462,7 @@
   {
     "unitid": 83,
     "basename": "Talis",
-    "name": "Talis (Unit)",
+    "name": "塔里斯（单位）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2492,7 +2492,7 @@
   {
     "unitid": 84,
     "basename": "Taldarin",
-    "name": "Taldarin",
+    "name": "塔达林",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2522,7 +2522,7 @@
   {
     "unitid": 85,
     "basename": "Taldarin",
-    "name": "Taldarin",
+    "name": "塔达林",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2552,7 +2552,7 @@
   {
     "unitid": 86,
     "basename": "Warbringer",
-    "name": "Warbringer",
+    "name": "战争使者",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2582,7 +2582,7 @@
   {
     "unitid": 87,
     "basename": "Mojo",
-    "name": "Mojo (Air)",
+    "name": "莫乔（对空）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2612,7 +2612,7 @@
   {
     "unitid": 88,
     "basename": "Mojo",
-    "name": "Mojo (Air)",
+    "name": "莫乔（对空）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2642,7 +2642,7 @@
   {
     "unitid": 89,
     "basename": "Mojo",
-    "name": "Mojo (Ground)",
+    "name": "莫乔（对地）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2672,7 +2672,7 @@
   {
     "unitid": 90,
     "basename": "Mojo",
-    "name": "Mojo (Ground)",
+    "name": "莫乔（对地）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2702,7 +2702,7 @@
   {
     "unitid": 91,
     "basename": "Clolarion",
-    "name": "Clolarion (Interceptor)",
+    "name": "克罗拉里昂（拦截机）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2727,12 +2727,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": 1,
-    "notes": "Clolarion has 8 Interceptors and 2 Interdictors."
+    "notes": "克罗拉里昂拥有 8 架拦截机和 2 架禁绝者。"
   },
   {
     "unitid": 92,
     "basename": "Clolarion",
-    "name": "Clolarion (Interdictor)",
+    "name": "克罗拉里昂（禁绝者）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2757,12 +2757,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": 1,
-    "notes": "Clolarion has 8 Interceptors and 2 Interdictors."
+    "notes": "克罗拉里昂拥有 8 架拦截机和 2 架禁绝者。"
   },
   {
     "unitid": 93,
     "basename": "Clolarion",
-    "name": "Clolarion (Weapon)",
+    "name": "克罗拉里昂（武器）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2787,12 +2787,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": 1,
-    "notes": "Clolarion has 8 Interceptors and 2 Interdictors."
+    "notes": "克罗拉里昂拥有 8 架拦截机和 2 架禁绝者。"
   },
   {
     "unitid": 94,
     "basename": "Clolarion",
-    "name": "Clolarion (Weapon)",
+    "name": "克罗拉里昂（武器）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2817,12 +2817,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": 1,
-    "notes": "Clolarion has 8 Interceptors and 2 Interdictors."
+    "notes": "克罗拉里昂拥有 8 架拦截机和 2 架禁绝者。"
   },
   {
     "unitid": 95,
     "basename": "Fenix Praetor Armor",
-    "name": "Fenix Praetor Armor",
+    "name": "菲尼克斯执政官装甲",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2852,7 +2852,7 @@
   {
     "unitid": 96,
     "basename": "Fenix Solarite Dragoon",
-    "name": "Fenix Solarite Dragoon",
+    "name": "菲尼克斯太阳能龙骑士",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2882,7 +2882,7 @@
   {
     "unitid": 97,
     "basename": "Fenix Cybros Arbiter",
-    "name": "Fenix Cybros Arbiter",
+    "name": "菲尼克斯塞布罗斯仲裁者",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -2912,7 +2912,7 @@
   {
     "unitid": 98,
     "basename": "Assault Galleon",
-    "name": "Assault Galleon",
+    "name": "突击炮舰",
     "commander": "Horner",
     "race": "Terran",
     "combatunit": 1,
@@ -2942,7 +2942,7 @@
   {
     "unitid": 99,
     "basename": "Hangar Bay",
-    "name": "Hangar Bay (Assault Drones)",
+    "name": "机库（突击无人机）",
     "commander": "Horner",
     "race": "Terran",
     "combatunit": 1,
@@ -2967,12 +2967,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "Hangar Bays have 6 Assault Drones."
+    "notes": "无人机机库拥有 6 架突击无人机。"
   },
   {
     "unitid": 100,
     "basename": "Reaper",
-    "name": "Reaper (Ground)",
+    "name": "收割者（对地）",
     "commander": "Horner",
     "race": "Terran",
     "combatunit": 1,
@@ -3002,7 +3002,7 @@
   {
     "unitid": 101,
     "basename": "Reaper",
-    "name": "Reaper (Structure)",
+    "name": "收割者（对建筑）",
     "commander": "Horner",
     "race": "Terran",
     "combatunit": 1,
@@ -3032,7 +3032,7 @@
   {
     "unitid": 102,
     "basename": "Widow Mine",
-    "name": "Widow Mine",
+    "name": "寡妇雷",
     "commander": "Horner",
     "race": "Terran",
     "combatunit": 1,
@@ -3057,12 +3057,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "Deals 125 (+35 vs. shields) damage to the primary target and 40 (+40 vs. shields) damage to other targets in a radius of 2, with a cooldown of 29 and a range of 5."
+    "notes": "对主要目标造成 125 点伤害（对护盾 +35），并对其他目标造成 40 点伤害（对护盾 +40），作用半径为 2。冷却时间为 29，射程为 5。"
   },
   {
     "unitid": 103,
     "basename": "Hellion",
-    "name": "Hellion",
+    "name": "恶火",
     "commander": "Horner",
     "race": "Terran",
     "combatunit": 1,
@@ -3092,7 +3092,7 @@
   {
     "unitid": 104,
     "basename": "Hellion",
-    "name": "Hellion",
+    "name": "恶火",
     "commander": "Horner",
     "race": "Terran",
     "combatunit": 1,
@@ -3122,7 +3122,7 @@
   {
     "unitid": 105,
     "basename": "Hellbat",
-    "name": "Hellbat",
+    "name": "恶蝠",
     "commander": "Horner",
     "race": "Terran",
     "combatunit": 1,
@@ -3152,7 +3152,7 @@
   {
     "unitid": 106,
     "basename": "Hellbat",
-    "name": "Hellbat",
+    "name": "恶蝠",
     "commander": "Horner",
     "race": "Terran",
     "combatunit": 1,
@@ -3182,7 +3182,7 @@
   {
     "unitid": 107,
     "basename": "Asteria Wraith",
-    "name": "Asteria Wraith",
+    "name": "阿斯特莱亚怨灵",
     "commander": "Horner",
     "race": "Terran",
     "combatunit": 1,
@@ -3212,7 +3212,7 @@
   {
     "unitid": 108,
     "basename": "Deimos Viking",
-    "name": "Deimos Viking (Fighter)",
+    "name": "戴莫斯维京战机（战机模式）",
     "commander": "Horner",
     "race": "Terran",
     "combatunit": 1,
@@ -3242,7 +3242,7 @@
   {
     "unitid": 109,
     "basename": "Deimos Viking",
-    "name": "Deimos Viking (Fighter)",
+    "name": "戴莫斯维京战机（战机模式）",
     "commander": "Horner",
     "race": "Terran",
     "combatunit": 1,
@@ -3272,7 +3272,7 @@
   {
     "unitid": 110,
     "basename": "Deimos Viking",
-    "name": "Deimos Viking (Assault)",
+    "name": "戴莫斯维京战机（突击模式）",
     "commander": "Horner",
     "race": "Terran",
     "combatunit": 1,
@@ -3302,7 +3302,7 @@
   {
     "unitid": 111,
     "basename": "Sovereign Battlecruiser",
-    "name": "Sovereign Battlecruiser",
+    "name": "主权战列巡航舰",
     "commander": "Horner",
     "race": "Terran",
     "combatunit": 1,
@@ -3332,7 +3332,7 @@
   {
     "unitid": 112,
     "basename": "Theia Raven",
-    "name": "Theia Raven",
+    "name": "忒伊亚铁鸦",
     "commander": "Horner",
     "race": "Terran",
     "combatunit": 0,
@@ -3362,7 +3362,7 @@
   {
     "unitid": 113,
     "basename": "Sentinel",
-    "name": "Sentinel",
+    "name": "哨兵",
     "commander": "Karax",
     "race": "Protoss",
     "combatunit": 1,
@@ -3392,7 +3392,7 @@
   {
     "unitid": 114,
     "basename": "Energizer",
-    "name": "Energizer",
+    "name": "激励者",
     "commander": "Karax",
     "race": "Protoss",
     "combatunit": 1,
@@ -3422,7 +3422,7 @@
   {
     "unitid": 115,
     "basename": "Immortal",
-    "name": "Immortal",
+    "name": "不朽者",
     "commander": "Karax",
     "race": "Protoss",
     "combatunit": 1,
@@ -3452,7 +3452,7 @@
   {
     "unitid": 116,
     "basename": "Immortal",
-    "name": "Immortal",
+    "name": "不朽者",
     "commander": "Karax",
     "race": "Protoss",
     "combatunit": 1,
@@ -3482,7 +3482,7 @@
   {
     "unitid": 117,
     "basename": "Colossus",
-    "name": "Colossus",
+    "name": "巨像",
     "commander": "Karax",
     "race": "Protoss",
     "combatunit": 1,
@@ -3512,7 +3512,7 @@
   {
     "unitid": 118,
     "basename": "Mirage",
-    "name": "Mirage",
+    "name": "幻影",
     "commander": "Karax",
     "race": "Protoss",
     "combatunit": 1,
@@ -3542,7 +3542,7 @@
   {
     "unitid": 119,
     "basename": "Mirage",
-    "name": "Mirage",
+    "name": "幻影",
     "commander": "Karax",
     "race": "Protoss",
     "combatunit": 1,
@@ -3572,7 +3572,7 @@
   {
     "unitid": 120,
     "basename": "Carrier",
-    "name": "Carrier (Interceptor)",
+    "name": "航空母舰（拦截机）",
     "commander": "Karax",
     "race": "Protoss",
     "combatunit": 1,
@@ -3597,12 +3597,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": 1,
-    "notes": "Carriers have 8 Interceptors."
+    "notes": "航空母舰拥有 8 架拦截机。"
   },
   {
     "unitid": 121,
     "basename": "Queen",
-    "name": "Queen (Air)",
+    "name": "虫后（对空）",
     "commander": "Kerrigan",
     "race": "Zerg",
     "combatunit": 1,
@@ -3632,7 +3632,7 @@
   {
     "unitid": 122,
     "basename": "Queen",
-    "name": "Queen (Ground)",
+    "name": "虫后（对地）",
     "commander": "Kerrigan",
     "race": "Zerg",
     "combatunit": 1,
@@ -3662,7 +3662,7 @@
   {
     "unitid": 123,
     "basename": "Queen",
-    "name": "Queen (Ground)",
+    "name": "虫后（对地）",
     "commander": "Kerrigan",
     "race": "Zerg",
     "combatunit": 1,
@@ -3692,7 +3692,7 @@
   {
     "unitid": 124,
     "basename": "Zergling",
-    "name": "Zergling",
+    "name": "跳虫",
     "commander": "Kerrigan",
     "race": "Zerg",
     "combatunit": 1,
@@ -3722,7 +3722,7 @@
   {
     "unitid": 125,
     "basename": "Hydralisk",
-    "name": "Hydralisk",
+    "name": "刺蛇",
     "commander": "Kerrigan",
     "race": "Zerg",
     "combatunit": 1,
@@ -3752,7 +3752,7 @@
   {
     "unitid": 126,
     "basename": "Lurker",
-    "name": "Lurker",
+    "name": "潜伏者",
     "commander": "Kerrigan",
     "race": "Zerg",
     "combatunit": 1,
@@ -3782,7 +3782,7 @@
   {
     "unitid": 127,
     "basename": "Lurker",
-    "name": "Lurker",
+    "name": "潜伏者",
     "commander": "Kerrigan",
     "race": "Zerg",
     "combatunit": 1,
@@ -3812,7 +3812,7 @@
   {
     "unitid": 128,
     "basename": "Ultralisk",
-    "name": "Ultralisk",
+    "name": "雷兽",
     "commander": "Kerrigan",
     "race": "Zerg",
     "combatunit": 1,
@@ -3842,7 +3842,7 @@
   {
     "unitid": 129,
     "basename": "Mutalisk",
-    "name": "Mutalisk",
+    "name": "异龙",
     "commander": "Kerrigan",
     "race": "Zerg",
     "combatunit": 1,
@@ -3867,12 +3867,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "Bounce Damage:<br>{5,3,[3,1,1]}<br>\r\nSevering Glave:<br>{9,9,[9,9,9]}<br>Damage Upgrade:<br>{0.333,0.111,[0,0,0]}"
+    "notes": "弹射伤害：<br>{5,3,[3,1,1]}<br>\r\n切割战刃：<br>{9,9,[9,9,9]}<br>伤害升级：<br>{0.333,0.111,[0,0,0]}"
   },
   {
     "unitid": 130,
     "basename": "Brood Lord",
-    "name": "Brood Lord",
+    "name": "巢虫领主",
     "commander": "Kerrigan",
     "race": "Zerg",
     "combatunit": 1,
@@ -3897,12 +3897,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "Brood Lords fire two Broodlings at once"
+    "notes": "巢虫领主每次会同时发射两只巢虫"
   },
   {
     "unitid": 131,
     "basename": "Broodling",
-    "name": "Broodling",
+    "name": "巢虫",
     "commander": "Kerrigan",
     "race": "Zerg",
     "combatunit": 1,
@@ -3932,7 +3932,7 @@
   {
     "unitid": 132,
     "basename": "Kerrigan",
-    "name": "Kerrigan",
+    "name": "凯瑞甘",
     "commander": "Kerrigan",
     "race": "Zerg",
     "combatunit": 1,
@@ -3962,7 +3962,7 @@
   {
     "unitid": 133,
     "basename": "Elite Marine",
-    "name": "Elite Marine",
+    "name": "精英陆战队员",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -3992,7 +3992,7 @@
   {
     "unitid": 134,
     "basename": "Marauder Commando",
-    "name": "Marauder Commando",
+    "name": "劫掠者突击队",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -4022,7 +4022,7 @@
   {
     "unitid": 135,
     "basename": "Marauder Commando",
-    "name": "Marauder Commando",
+    "name": "劫掠者突击队",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -4052,7 +4052,7 @@
   {
     "unitid": 136,
     "basename": "Spec Ops Ghost",
-    "name": "Spec Ops Ghost",
+    "name": "特战幽灵",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -4082,7 +4082,7 @@
   {
     "unitid": 137,
     "basename": "Spec Ops Ghost",
-    "name": "Spec Ops Ghost",
+    "name": "特战幽灵",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -4112,7 +4112,7 @@
   {
     "unitid": 138,
     "basename": "Hellbat Ranger",
-    "name": "Hellbat Ranger",
+    "name": "恶蝠游骑兵",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -4142,7 +4142,7 @@
   {
     "unitid": 139,
     "basename": "Hellbat Ranger",
-    "name": "Hellbat Ranger",
+    "name": "恶蝠游骑兵",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -4172,7 +4172,7 @@
   {
     "unitid": 140,
     "basename": "Hellion Ranger",
-    "name": "Hellion Ranger",
+    "name": "恶火游骑兵",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -4202,7 +4202,7 @@
   {
     "unitid": 141,
     "basename": "Hellion Ranger",
-    "name": "Hellion Ranger",
+    "name": "恶火游骑兵",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -4232,7 +4232,7 @@
   {
     "unitid": 142,
     "basename": "Strike Goliath",
-    "name": "Strike Goliath (Air)",
+    "name": "强袭歌利亚（对空）",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -4262,7 +4262,7 @@
   {
     "unitid": 143,
     "basename": "Strike Goliath",
-    "name": "Strike Goliath (Air)",
+    "name": "强袭歌利亚（对空）",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -4292,7 +4292,7 @@
   {
     "unitid": 144,
     "basename": "Strike Goliath",
-    "name": "Strike Goliath (Ground)",
+    "name": "强袭歌利亚（对地）",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -4322,7 +4322,7 @@
   {
     "unitid": 145,
     "basename": "Heavy Siege Tank",
-    "name": "Heavy Siege Tank (Tank Mode)",
+    "name": "重型攻城坦克（坦克模式）",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -4352,7 +4352,7 @@
   {
     "unitid": 146,
     "basename": "Heavy Siege Tank",
-    "name": "Heavy Siege Tank (Tank Mode)",
+    "name": "重型攻城坦克（坦克模式）",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -4382,7 +4382,7 @@
   {
     "unitid": 147,
     "basename": "Heavy Siege Tank",
-    "name": "Heavy Siege Tank (Siege Mode)",
+    "name": "重型攻城坦克（攻城模式）",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -4412,7 +4412,7 @@
   {
     "unitid": 148,
     "basename": "Heavy Siege Tank",
-    "name": "Heavy Siege Tank (Siege Mode)",
+    "name": "重型攻城坦克（攻城模式）",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -4442,7 +4442,7 @@
   {
     "unitid": 149,
     "basename": "Raid Liberator",
-    "name": "Raid Liberator (Fighter Mode)",
+    "name": "突袭解放者（战机模式）",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -4472,7 +4472,7 @@
   {
     "unitid": 150,
     "basename": "Raid Liberator",
-    "name": "Raid Liberator (Defender Mode)",
+    "name": "突袭解放者（防卫模式）",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -4502,7 +4502,7 @@
   {
     "unitid": 151,
     "basename": "Covert Banshee",
-    "name": "Covert Banshee",
+    "name": "隐秘女妖",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -4532,7 +4532,7 @@
   {
     "unitid": 152,
     "basename": "Raven Type II",
-    "name": "Raven Type II",
+    "name": "铁鸦 II 型",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 0,
@@ -4562,7 +4562,7 @@
   {
     "unitid": 153,
     "basename": "Nova",
-    "name": "Nova (Stealth Mode)",
+    "name": "诺娃（隐秘模式）",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -4592,7 +4592,7 @@
   {
     "unitid": 154,
     "basename": "Nova",
-    "name": "Nova (Assault Mode)",
+    "name": "诺娃（突击模式）",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -4622,7 +4622,7 @@
   {
     "unitid": 155,
     "basename": "Nova",
-    "name": "Nova (Assault Mode)",
+    "name": "诺娃（突击模式）",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -4652,7 +4652,7 @@
   {
     "unitid": 156,
     "basename": "Marine",
-    "name": "Marine",
+    "name": "陆战队员",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 1,
@@ -4682,7 +4682,7 @@
   {
     "unitid": 157,
     "basename": "Marauder",
-    "name": "Marauder",
+    "name": "劫掠者",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 1,
@@ -4712,7 +4712,7 @@
   {
     "unitid": 158,
     "basename": "Marauder",
-    "name": "Marauder",
+    "name": "劫掠者",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 1,
@@ -4742,7 +4742,7 @@
   {
     "unitid": 159,
     "basename": "Firebat",
-    "name": "Firebat",
+    "name": "火蝠",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 1,
@@ -4772,7 +4772,7 @@
   {
     "unitid": 160,
     "basename": "Firebat",
-    "name": "Firebat",
+    "name": "火蝠",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 1,
@@ -4802,7 +4802,7 @@
   {
     "unitid": 161,
     "basename": "Medic",
-    "name": "Medic",
+    "name": "医疗兵",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 0,
@@ -4832,7 +4832,7 @@
   {
     "unitid": 162,
     "basename": "Vulture",
-    "name": "Vulture",
+    "name": "秃鹫",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 1,
@@ -4862,7 +4862,7 @@
   {
     "unitid": 163,
     "basename": "Vulture",
-    "name": "Vulture",
+    "name": "秃鹫",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 1,
@@ -4892,7 +4892,7 @@
   {
     "unitid": 164,
     "basename": "Siege Tank",
-    "name": "Siege Tank (Tank Mode)",
+    "name": "攻城坦克（坦克模式）",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 1,
@@ -4922,7 +4922,7 @@
   {
     "unitid": 165,
     "basename": "Siege Tank",
-    "name": "Siege Tank (Tank Mode)",
+    "name": "攻城坦克（坦克模式）",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 1,
@@ -4952,7 +4952,7 @@
   {
     "unitid": 166,
     "basename": "Siege Tank",
-    "name": "Siege Tank (Siege Mode)",
+    "name": "攻城坦克（攻城模式）",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 1,
@@ -4982,7 +4982,7 @@
   {
     "unitid": 167,
     "basename": "Siege Tank",
-    "name": "Siege Tank (Siege Mode)",
+    "name": "攻城坦克（攻城模式）",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 1,
@@ -5012,7 +5012,7 @@
   {
     "unitid": 168,
     "basename": "Viking",
-    "name": "Viking (Fighter Mode)",
+    "name": "维京战机（战机模式）",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 1,
@@ -5042,7 +5042,7 @@
   {
     "unitid": 169,
     "basename": "Viking",
-    "name": "Viking (Fighter Mode)",
+    "name": "维京战机（战机模式）",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 1,
@@ -5072,7 +5072,7 @@
   {
     "unitid": 170,
     "basename": "Viking",
-    "name": "Viking (Assault Mode)",
+    "name": "维京战机（突击模式）",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 1,
@@ -5102,7 +5102,7 @@
   {
     "unitid": 171,
     "basename": "Banshee",
-    "name": "Banshee",
+    "name": "女妖",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 1,
@@ -5132,7 +5132,7 @@
   {
     "unitid": 172,
     "basename": "Battlecruiser",
-    "name": "Battlecruiser (Ground)",
+    "name": "战列巡航舰（对地）",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 1,
@@ -5162,7 +5162,7 @@
   {
     "unitid": 173,
     "basename": "Battlecruiser",
-    "name": "Battlecruiser (Air)",
+    "name": "战列巡航舰（对空）",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 1,
@@ -5192,7 +5192,7 @@
   {
     "unitid": 174,
     "basename": "Hyperion",
-    "name": "Hyperion (Ground)",
+    "name": "休伯利安号（对地）",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 1,
@@ -5222,7 +5222,7 @@
   {
     "unitid": 175,
     "basename": "Hyperion",
-    "name": "Hyperion (Air)",
+    "name": "休伯利安号（对空）",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 1,
@@ -5252,7 +5252,7 @@
   {
     "unitid": 176,
     "basename": "Dusk Wings",
-    "name": "Dusk Wings",
+    "name": "黄昏之翼",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 1,
@@ -5282,7 +5282,7 @@
   {
     "unitid": 177,
     "basename": "Infested Marine",
-    "name": "Infested Marine",
+    "name": "被感染的陆战队员",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 1,
@@ -5312,7 +5312,7 @@
   {
     "unitid": 178,
     "basename": "Infested Trooper",
-    "name": "Infested Trooper",
+    "name": "被感染的士兵",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 1,
@@ -5342,7 +5342,7 @@
   {
     "unitid": 179,
     "basename": "Infested Civilian",
-    "name": "Infested Civilian",
+    "name": "被感染的平民",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 1,
@@ -5372,7 +5372,7 @@
   {
     "unitid": 180,
     "basename": "Volatile Infested",
-    "name": "Volatile Infested",
+    "name": "易爆感染体",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 1,
@@ -5402,7 +5402,7 @@
   {
     "unitid": 181,
     "basename": "Volatile Infested",
-    "name": "Volatile Infested",
+    "name": "易爆感染体",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 1,
@@ -5432,7 +5432,7 @@
   {
     "unitid": 182,
     "basename": "Infested Bunker",
-    "name": "Infested Bunker",
+    "name": "被感染的地堡",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 1,
@@ -5457,12 +5457,12 @@
     "hpbonus": 0.00,
     "armorbonus": 0,
     "shieldbonus": null,
-    "notes": "Weapon is affected by Vehicle upgrades."
+    "notes": "武器受载具升级影响。"
   },
   {
     "unitid": 183,
     "basename": "Infested Diamondback",
-    "name": "Infested Diamondback",
+    "name": "被感染的响尾蛇",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 1,
@@ -5492,7 +5492,7 @@
   {
     "unitid": 184,
     "basename": "Infested Diamondback",
-    "name": "Infested Diamondback",
+    "name": "被感染的响尾蛇",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 1,
@@ -5522,7 +5522,7 @@
   {
     "unitid": 185,
     "basename": "Infested Siege Tank",
-    "name": "Infested Siege Tank (Uprooted Tentacles)",
+    "name": "被感染的攻城坦克（拔起触手）",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 1,
@@ -5547,12 +5547,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "Tentacle Damage is affected by Armory upgrades. Volatile damage is affected by Engineering Bay upgrades."
+    "notes": "触手伤害受军械库升级影响。易爆感染体伤害受工程站升级影响。"
   },
   {
     "unitid": 186,
     "basename": "Infested Siege Tank",
-    "name": "Infested Siege Tank (Uprooted Tentacles)",
+    "name": "被感染的攻城坦克（拔起触手）",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 1,
@@ -5577,12 +5577,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "Tentacle Damage is affected by Armory upgrades. Volatile damage is affected by Engineering Bay upgrades."
+    "notes": "触手伤害受军械库升级影响。易爆感染体伤害受工程站升级影响。"
   },
   {
     "unitid": 187,
     "basename": "Infested Siege Tank",
-    "name": "Infested Siege Tank (Rooted)",
+    "name": "被感染的攻城坦克（扎根）",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 1,
@@ -5607,12 +5607,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "Tentacle Damage is affected by Armory upgrades. Volatile damage is affected by Engineering Bay upgrades."
+    "notes": "触手伤害受军械库升级影响。易爆感染体伤害受工程站升级影响。"
   },
   {
     "unitid": 188,
     "basename": "Infested Siege Tank",
-    "name": "Infested Siege Tank (Rooted)",
+    "name": "被感染的攻城坦克（扎根）",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 1,
@@ -5637,12 +5637,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "Tentacle Damage is affected by Armory upgrades. Volatile damage is affected by Engineering Bay upgrades."
+    "notes": "触手伤害受军械库升级影响。易爆感染体伤害受工程站升级影响。"
   },
   {
     "unitid": 189,
     "basename": "Infested Siege Tank",
-    "name": "Infested Siege Tank (Rooted Tentacles)",
+    "name": "被感染的攻城坦克（扎根触手）",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 1,
@@ -5667,12 +5667,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "Tentacle Damage is affected by Armory upgrades. Volatile damage is affected by Engineering Bay upgrades."
+    "notes": "触手伤害受军械库升级影响。易爆感染体伤害受工程站升级影响。"
   },
   {
     "unitid": 190,
     "basename": "Infested Siege Tank",
-    "name": "Infested Siege Tank (Rooted Tentacles)",
+    "name": "被感染的攻城坦克（扎根触手）",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 1,
@@ -5697,12 +5697,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "Tentacle Damage is affected by Armory upgrades. Volatile damage is affected by Engineering Bay upgrades."
+    "notes": "触手伤害受军械库升级影响。易爆感染体伤害受工程站升级影响。"
   },
   {
     "unitid": 191,
     "basename": "Infested Liberator",
-    "name": "Infested Liberator",
+    "name": "被感染的解放者",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 1,
@@ -5732,7 +5732,7 @@
   {
     "unitid": 192,
     "basename": "Infested Banshee",
-    "name": "Infested Banshee",
+    "name": "被感染的女妖",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 1,
@@ -5762,7 +5762,7 @@
   {
     "unitid": 193,
     "basename": "Brood Queen",
-    "name": "Brood Queen",
+    "name": "巢虫女王",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 1,
@@ -5792,7 +5792,7 @@
   {
     "unitid": 194,
     "basename": "Brood Queen",
-    "name": "Brood Queen",
+    "name": "巢虫女王",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 1,
@@ -5822,7 +5822,7 @@
   {
     "unitid": 195,
     "basename": "Apocalisk",
-    "name": "Apocalisk",
+    "name": "末日巨兽",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 1,
@@ -5852,7 +5852,7 @@
   {
     "unitid": 196,
     "basename": "Aleksander",
-    "name": "Aleksander (Ground)",
+    "name": "亚历山大号（对地）",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 1,
@@ -5882,7 +5882,7 @@
   {
     "unitid": 197,
     "basename": "Aleksander",
-    "name": "Aleksander (Air)",
+    "name": "亚历山大号（对空）",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 1,
@@ -5912,7 +5912,7 @@
   {
     "unitid": 198,
     "basename": "Hellbat",
-    "name": "Hellbat",
+    "name": "恶蝠",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -5942,7 +5942,7 @@
   {
     "unitid": 199,
     "basename": "Hellbat",
-    "name": "Hellbat",
+    "name": "恶蝠",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -5972,7 +5972,7 @@
   {
     "unitid": 200,
     "basename": "Goliath",
-    "name": "Goliath (Air)",
+    "name": "歌利亚（对空）",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -6002,7 +6002,7 @@
   {
     "unitid": 201,
     "basename": "Goliath",
-    "name": "Goliath (Air)",
+    "name": "歌利亚（对空）",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -6032,7 +6032,7 @@
   {
     "unitid": 202,
     "basename": "Goliath",
-    "name": "Goliath (Ground)",
+    "name": "歌利亚（对地）",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -6062,7 +6062,7 @@
   {
     "unitid": 203,
     "basename": "Siege Tank",
-    "name": "Siege Tank (Tank Mode)",
+    "name": "攻城坦克（坦克模式）",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -6092,7 +6092,7 @@
   {
     "unitid": 204,
     "basename": "Siege Tank",
-    "name": "Siege Tank (Tank Mode)",
+    "name": "攻城坦克（坦克模式）",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -6122,7 +6122,7 @@
   {
     "unitid": 205,
     "basename": "Siege Tank",
-    "name": "Siege Tank (Siege Mode)",
+    "name": "攻城坦克（攻城模式）",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -6152,7 +6152,7 @@
   {
     "unitid": 206,
     "basename": "Siege Tank",
-    "name": "Siege Tank (Siege Mode)",
+    "name": "攻城坦克（攻城模式）",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -6182,7 +6182,7 @@
   {
     "unitid": 207,
     "basename": "Cyclone",
-    "name": "Cyclone",
+    "name": "飓风",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -6212,7 +6212,7 @@
   {
     "unitid": 208,
     "basename": "Thor",
-    "name": "Thor (Air)",
+    "name": "雷神（对空）",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -6242,7 +6242,7 @@
   {
     "unitid": 209,
     "basename": "Thor",
-    "name": "Thor (Air)",
+    "name": "雷神（对空）",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -6272,7 +6272,7 @@
   {
     "unitid": 210,
     "basename": "Thor",
-    "name": "Thor (Ground)",
+    "name": "雷神（对地）",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -6302,7 +6302,7 @@
   {
     "unitid": 211,
     "basename": "Hellion",
-    "name": "Hellion",
+    "name": "恶火",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -6332,7 +6332,7 @@
   {
     "unitid": 212,
     "basename": "Hellion",
-    "name": "Hellion",
+    "name": "恶火",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -6362,7 +6362,7 @@
   {
     "unitid": 213,
     "basename": "Wraith",
-    "name": "Wraith (Air)",
+    "name": "怨灵（对空）",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -6392,7 +6392,7 @@
   {
     "unitid": 214,
     "basename": "Wraith",
-    "name": "Wraith (Air)",
+    "name": "怨灵（对空）",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -6422,7 +6422,7 @@
   {
     "unitid": 215,
     "basename": "Wraith",
-    "name": "Wraith (Ground)",
+    "name": "怨灵（对地）",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -6452,7 +6452,7 @@
   {
     "unitid": 216,
     "basename": "Hercules",
-    "name": "Hercules",
+    "name": "大力神运输机",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 0,
@@ -6482,7 +6482,7 @@
   {
     "unitid": 217,
     "basename": "Science Vessel",
-    "name": "Science Vessel",
+    "name": "科学船",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 0,
@@ -6512,7 +6512,7 @@
   {
     "unitid": 218,
     "basename": "Tychus Findlay",
-    "name": "Tychus Findlay",
+    "name": "泰凯斯·芬利",
     "commander": "Tychus",
     "race": "Terran",
     "combatunit": 1,
@@ -6542,7 +6542,7 @@
   {
     "unitid": 219,
     "basename": "Crooked Sam",
-    "name": "Crooked Sam",
+    "name": "歪嘴山姆",
     "commander": "Tychus",
     "race": "Terran",
     "combatunit": 1,
@@ -6572,7 +6572,7 @@
   {
     "unitid": 220,
     "basename": "James Sirius Sykes",
-    "name": "James Sirius Sykes",
+    "name": "詹姆斯“天狼星”赛克斯",
     "commander": "Tychus",
     "race": "Terran",
     "combatunit": 1,
@@ -6602,7 +6602,7 @@
   {
     "unitid": 221,
     "basename": "Miles Blaze Lewis",
-    "name": "Miles Blaze Lewis",
+    "name": "迈尔斯“烈焰”刘易斯",
     "commander": "Tychus",
     "race": "Terran",
     "combatunit": 1,
@@ -6632,7 +6632,7 @@
   {
     "unitid": 222,
     "basename": "Miles Blaze Lewis",
-    "name": "Miles Blaze Lewis",
+    "name": "迈尔斯“烈焰”刘易斯",
     "commander": "Tychus",
     "race": "Terran",
     "combatunit": 1,
@@ -6662,7 +6662,7 @@
   {
     "unitid": 223,
     "basename": "Rob Cannonball Boswell",
-    "name": "Rob Cannonball Boswell",
+    "name": "罗伯“炮弹”博斯韦尔",
     "commander": "Tychus",
     "race": "Terran",
     "combatunit": 1,
@@ -6692,7 +6692,7 @@
   {
     "unitid": 224,
     "basename": "Vega",
-    "name": "Vega",
+    "name": "维嘉",
     "commander": "Tychus",
     "race": "Terran",
     "combatunit": 1,
@@ -6722,7 +6722,7 @@
   {
     "unitid": 225,
     "basename": "Vega",
-    "name": "Vega",
+    "name": "维嘉",
     "commander": "Tychus",
     "race": "Terran",
     "combatunit": 1,
@@ -6752,7 +6752,7 @@
   {
     "unitid": 226,
     "basename": "Nux",
-    "name": "Nux",
+    "name": "纳克斯",
     "commander": "Tychus",
     "race": "Terran",
     "combatunit": 1,
@@ -6782,7 +6782,7 @@
   {
     "unitid": 227,
     "basename": "Lt Layna Nikara",
-    "name": "Lt Layna Nikara",
+    "name": "莱娜·尼卡拉中尉",
     "commander": "Tychus",
     "race": "Terran",
     "combatunit": 1,
@@ -6812,7 +6812,7 @@
   {
     "unitid": 228,
     "basename": "Centurion",
-    "name": "Centurion",
+    "name": "百夫长",
     "commander": "Vorazun",
     "race": "Protoss",
     "combatunit": 1,
@@ -6842,7 +6842,7 @@
   {
     "unitid": 229,
     "basename": "Stalker",
-    "name": "Stalker",
+    "name": "追猎者",
     "commander": "Vorazun",
     "race": "Protoss",
     "combatunit": 1,
@@ -6872,7 +6872,7 @@
   {
     "unitid": 230,
     "basename": "Stalker",
-    "name": "Stalker",
+    "name": "追猎者",
     "commander": "Vorazun",
     "race": "Protoss",
     "combatunit": 1,
@@ -6902,7 +6902,7 @@
   {
     "unitid": 231,
     "basename": "Dark Templar",
-    "name": "Dark Templar",
+    "name": "黑暗圣堂武士",
     "commander": "Vorazun",
     "race": "Protoss",
     "combatunit": 1,
@@ -6932,7 +6932,7 @@
   {
     "unitid": 232,
     "basename": "Dark Archon",
-    "name": "Dark Archon",
+    "name": "黑暗执政官",
     "commander": "Vorazun",
     "race": "Protoss",
     "combatunit": 1,
@@ -6962,7 +6962,7 @@
   {
     "unitid": 233,
     "basename": "Corsair",
-    "name": "Corsair",
+    "name": "海盗船",
     "commander": "Vorazun",
     "race": "Protoss",
     "combatunit": 1,
@@ -6992,7 +6992,7 @@
   {
     "unitid": 234,
     "basename": "Corsair",
-    "name": "Corsair",
+    "name": "海盗船",
     "commander": "Vorazun",
     "race": "Protoss",
     "combatunit": 1,
@@ -7022,7 +7022,7 @@
   {
     "unitid": 235,
     "basename": "Void Ray",
-    "name": "Void Ray",
+    "name": "虚空辉光舰",
     "commander": "Vorazun",
     "race": "Protoss",
     "combatunit": 1,
@@ -7052,7 +7052,7 @@
   {
     "unitid": 236,
     "basename": "Void Ray",
-    "name": "Void Ray",
+    "name": "虚空辉光舰",
     "commander": "Vorazun",
     "race": "Protoss",
     "combatunit": 1,
@@ -7082,7 +7082,7 @@
   {
     "unitid": 237,
     "basename": "Oracle",
-    "name": "Oracle (Pulsar Beam)",
+    "name": "先知（脉冲光束）",
     "commander": "Vorazun",
     "race": "Protoss",
     "combatunit": 1,
@@ -7112,7 +7112,7 @@
   {
     "unitid": 238,
     "basename": "Oracle",
-    "name": "Oracle (Pulsar Beam)",
+    "name": "先知（脉冲光束）",
     "commander": "Vorazun",
     "race": "Protoss",
     "combatunit": 1,
@@ -7142,7 +7142,7 @@
   {
     "unitid": 239,
     "basename": "Shadow Guard",
-    "name": "Shadow Guard",
+    "name": "暗影卫队",
     "commander": "Vorazun",
     "race": "Protoss",
     "combatunit": 1,
@@ -7202,7 +7202,7 @@
   {
     "unitid": 241,
     "basename": "Queen",
-    "name": "Queen (Air)",
+    "name": "虫后（对空）",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 1,
@@ -7232,7 +7232,7 @@
   {
     "unitid": 242,
     "basename": "Queen",
-    "name": "Queen (Ground)",
+    "name": "虫后（对地）",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 1,
@@ -7262,7 +7262,7 @@
   {
     "unitid": 243,
     "basename": "Queen",
-    "name": "Queen (Ground)",
+    "name": "虫后（对地）",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 1,
@@ -7292,7 +7292,7 @@
   {
     "unitid": 244,
     "basename": "Zergling",
-    "name": "Zergling",
+    "name": "跳虫",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 1,
@@ -7322,7 +7322,7 @@
   {
     "unitid": 245,
     "basename": "Baneling",
-    "name": "Baneling",
+    "name": "爆虫",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 1,
@@ -7352,7 +7352,7 @@
   {
     "unitid": 246,
     "basename": "Baneling",
-    "name": "Baneling",
+    "name": "爆虫",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 1,
@@ -7382,7 +7382,7 @@
   {
     "unitid": 247,
     "basename": "Baneling Spawn",
-    "name": "Baneling Spawn",
+    "name": "爆虫（生成）",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 1,
@@ -7412,7 +7412,7 @@
   {
     "unitid": 248,
     "basename": "Baneling Spawn",
-    "name": "Baneling Spawn",
+    "name": "爆虫（生成）",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 1,
@@ -7442,7 +7442,7 @@
   {
     "unitid": 249,
     "basename": "Aberration",
-    "name": "Aberration",
+    "name": "畸变体",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 1,
@@ -7472,7 +7472,7 @@
   {
     "unitid": 250,
     "basename": "Aberration",
-    "name": "Aberration",
+    "name": "畸变体",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 1,
@@ -7502,7 +7502,7 @@
   {
     "unitid": 251,
     "basename": "Scourge",
-    "name": "Scourge",
+    "name": "爆蚊",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 1,
@@ -7532,7 +7532,7 @@
   {
     "unitid": 252,
     "basename": "Corruptor",
-    "name": "Corruptor",
+    "name": "腐化者",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 1,
@@ -7562,7 +7562,7 @@
   {
     "unitid": 253,
     "basename": "Corruptor",
-    "name": "Corruptor",
+    "name": "腐化者",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 1,
@@ -7592,7 +7592,7 @@
   {
     "unitid": 254,
     "basename": "Zagara",
-    "name": "Zagara",
+    "name": "扎加拉",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 1,
@@ -7622,7 +7622,7 @@
   {
     "unitid": 255,
     "basename": "Hunter Killer",
-    "name": "Hunter Killer",
+    "name": "猎杀者",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 1,
@@ -7652,7 +7652,7 @@
   {
     "unitid": 256,
     "basename": "Roach",
-    "name": "Roach",
+    "name": "蟑螂",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 1,
@@ -7682,7 +7682,7 @@
   {
     "unitid": 257,
     "basename": "XelNaga Ambusher",
-    "name": "XelNaga Ambusher",
+    "name": "萨尔纳加伏击者",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -7712,7 +7712,7 @@
   {
     "unitid": 258,
     "basename": "XelNaga Ambusher",
-    "name": "XelNaga Ambusher",
+    "name": "萨尔纳加伏击者",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -7742,7 +7742,7 @@
   {
     "unitid": 259,
     "basename": "XelNaga Shieldguard",
-    "name": "XelNaga Shieldguard",
+    "name": "萨尔纳加光盾卫士",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -7772,7 +7772,7 @@
   {
     "unitid": 260,
     "basename": "Void Templar",
-    "name": "Void Templar",
+    "name": "虚空圣堂武士",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -7802,7 +7802,7 @@
   {
     "unitid": 261,
     "basename": "XelNaga Enforcer",
-    "name": "XelNaga Enforcer (Air)",
+    "name": "萨尔纳加执行者（对空）",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -7832,7 +7832,7 @@
   {
     "unitid": 262,
     "basename": "XelNaga Enforcer",
-    "name": "XelNaga Enforcer (Air)",
+    "name": "萨尔纳加执行者（对空）",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -7862,7 +7862,7 @@
   {
     "unitid": 263,
     "basename": "XelNaga Enforcer",
-    "name": "XelNaga Enforcer (Ground)",
+    "name": "萨尔纳加执行者（对地）",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -7892,7 +7892,7 @@
   {
     "unitid": 264,
     "basename": "XelNaga Enforcer",
-    "name": "XelNaga Enforcer (Ground)",
+    "name": "萨尔纳加执行者（对地）",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -7922,7 +7922,7 @@
   {
     "unitid": 265,
     "basename": "XelNaga Abrogator",
-    "name": "XelNaga Abrogator",
+    "name": "萨尔纳加禁绝者",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -7952,7 +7952,7 @@
   {
     "unitid": 266,
     "basename": "XelNaga Void Array",
-    "name": "XelNaga Void Array",
+    "name": "萨尔纳加虚空阵列船",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -7982,7 +7982,7 @@
   {
     "unitid": 267,
     "basename": "Zealot",
-    "name": "Zealot",
+    "name": "狂热者",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -8012,7 +8012,7 @@
   {
     "unitid": 268,
     "basename": "Telbrus",
-    "name": "Telbrus",
+    "name": "特布鲁斯",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -8037,12 +8037,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": 1,
-    "notes": "Each artifact fragment collected adds +100 Shields and +100 energy."
+    "notes": "每收集一块神器碎片，便会增加 +100 点护盾和 +100 点能量。"
   },
   {
     "unitid": 269,
     "basename": "Void Ray",
-    "name": "Void Ray",
+    "name": "虚空辉光舰",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -8072,7 +8072,7 @@
   {
     "unitid": 270,
     "basename": "Void Ray",
-    "name": "Void Ray",
+    "name": "虚空辉光舰",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -8102,7 +8102,7 @@
   {
     "unitid": 271,
     "basename": "Zoraya",
-    "name": "Zoraya",
+    "name": "佐拉亚",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -8127,12 +8127,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": 1,
-    "notes": "Each artifact fragment collected adds +100 Shields."
+    "notes": "每收集一块神器碎片，便会增加 +100 点护盾。"
   },
   {
     "unitid": 272,
     "basename": "Zoraya",
-    "name": "Zoraya",
+    "name": "佐拉亚",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -8157,12 +8157,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": 1,
-    "notes": "Each artifact fragment collected adds +100 Shields."
+    "notes": "每收集一块神器碎片，便会增加 +100 点护盾。"
   },
   {
     "unitid": 273,
     "basename": "Dark Archon",
-    "name": "Dark Archon",
+    "name": "黑暗执政官",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -8192,7 +8192,7 @@
   {
     "unitid": 274,
     "basename": "Serdath",
-    "name": "Serdath",
+    "name": "塞达斯",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -8217,12 +8217,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": 1,
-    "notes": "Each artifact fragment collected adds +100 Shields."
+    "notes": "每收集一块神器碎片，便会增加 +100 点护盾。"
   },
   {
     "unitid": 275,
     "basename": "Zeratul",
-    "name": "Zeratul (Ground)",
+    "name": "泽拉图（对地）",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -8252,7 +8252,7 @@
   {
     "unitid": 276,
     "basename": "Zeratul",
-    "name": "Zeratul (Air)",
+    "name": "泽拉图（对空）",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -8282,7 +8282,7 @@
   {
     "unitid": 277,
     "basename": "Primal Wurm",
-    "name": "Primal Wurm",
+    "name": "原始蠕虫",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -8312,7 +8312,7 @@
   {
     "unitid": 278,
     "basename": "Photon Cannon",
-    "name": "Photon Cannon",
+    "name": "光子炮",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -8342,7 +8342,7 @@
   {
     "unitid": 279,
     "basename": "Spine Crawler",
-    "name": "Spine Crawler (Rooted)",
+    "name": "脊针爬虫（扎根）",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -8372,7 +8372,7 @@
   {
     "unitid": 280,
     "basename": "Spine Crawler",
-    "name": "Spine Crawler (Rooted)",
+    "name": "脊针爬虫（扎根）",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -8402,7 +8402,7 @@
   {
     "unitid": 281,
     "basename": "Spine Crawler",
-    "name": "Spine Crawler (Uprooted)",
+    "name": "脊针爬虫（拔起）",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -8432,7 +8432,7 @@
   {
     "unitid": 282,
     "basename": "Spore Crawler",
-    "name": "Spore Crawler (Rooted)",
+    "name": "孢子爬虫（扎根）",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -8462,7 +8462,7 @@
   {
     "unitid": 283,
     "basename": "Spore Crawler",
-    "name": "Spore Crawler (Uprooted)",
+    "name": "孢子爬虫（拔起）",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -8492,7 +8492,7 @@
   {
     "unitid": 284,
     "basename": "Missile Turret",
-    "name": "Missile Turret",
+    "name": "导弹塔",
     "commander": "Horner",
     "race": "Terran",
     "combatunit": 1,
@@ -8522,7 +8522,7 @@
   {
     "unitid": 285,
     "basename": "Photon Cannon",
-    "name": "Photon Cannon",
+    "name": "光子炮",
     "commander": "Alarak",
     "race": "Protoss",
     "combatunit": 1,
@@ -8552,7 +8552,7 @@
   {
     "unitid": 286,
     "basename": "Photon Cannon",
-    "name": "Photon Cannon",
+    "name": "光子炮",
     "commander": "Karax",
     "race": "Protoss",
     "combatunit": 1,
@@ -8582,7 +8582,7 @@
   {
     "unitid": 287,
     "basename": "Khaydarin Monolith",
-    "name": "Khaydarin Monolith",
+    "name": "凯达林巨石",
     "commander": "Karax",
     "race": "Protoss",
     "combatunit": 1,
@@ -8612,7 +8612,7 @@
   {
     "unitid": 288,
     "basename": "Spine Crawler",
-    "name": "Spine Crawler (Rooted)",
+    "name": "脊针爬虫（扎根）",
     "commander": "Kerrigan",
     "race": "Zerg",
     "combatunit": 1,
@@ -8642,7 +8642,7 @@
   {
     "unitid": 289,
     "basename": "Spine Crawler",
-    "name": "Spine Crawler (Rooted)",
+    "name": "脊针爬虫（扎根）",
     "commander": "Kerrigan",
     "race": "Zerg",
     "combatunit": 1,
@@ -8672,7 +8672,7 @@
   {
     "unitid": 290,
     "basename": "Spine Crawler",
-    "name": "Spine Crawler (Uprooted)",
+    "name": "脊针爬虫（拔起）",
     "commander": "Kerrigan",
     "race": "Zerg",
     "combatunit": 1,
@@ -8702,7 +8702,7 @@
   {
     "unitid": 291,
     "basename": "Spore Crawler",
-    "name": "Spore Crawler (Rooted)",
+    "name": "孢子爬虫（扎根）",
     "commander": "Kerrigan",
     "race": "Zerg",
     "combatunit": 1,
@@ -8732,7 +8732,7 @@
   {
     "unitid": 292,
     "basename": "Spore Crawler",
-    "name": "Spore Crawler (Uprooted)",
+    "name": "孢子爬虫（拔起）",
     "commander": "Kerrigan",
     "race": "Zerg",
     "combatunit": 1,
@@ -8762,7 +8762,7 @@
   {
     "unitid": 293,
     "basename": "Railgun Turret",
-    "name": "Railgun Turret",
+    "name": "轨道炮台",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -8792,7 +8792,7 @@
   {
     "unitid": 294,
     "basename": "Missile Turret",
-    "name": "Missile Turret",
+    "name": "导弹塔",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -8822,7 +8822,7 @@
   {
     "unitid": 295,
     "basename": "Observer",
-    "name": "Observer (Observation Mode)",
+    "name": "侦测器（观察模式）",
     "commander": "Artanis",
     "race": "Protoss",
     "combatunit": 0,
@@ -8852,7 +8852,7 @@
   {
     "unitid": 296,
     "basename": "Observer",
-    "name": "Observer (Surveillance Mode)",
+    "name": "侦测器（监视模式）",
     "commander": "Artanis",
     "race": "Protoss",
     "combatunit": 0,
@@ -8882,7 +8882,7 @@
   {
     "unitid": 297,
     "basename": "Observer",
-    "name": "Observer (Observation Mode)",
+    "name": "侦测器（观察模式）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 0,
@@ -8912,7 +8912,7 @@
   {
     "unitid": 298,
     "basename": "Observer",
-    "name": "Observer (Surveillance Mode)",
+    "name": "侦测器（监视模式）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 0,
@@ -8942,7 +8942,7 @@
   {
     "unitid": 299,
     "basename": "Observer",
-    "name": "Observer (Observation Mode)",
+    "name": "侦测器（观察模式）",
     "commander": "Karax",
     "race": "Protoss",
     "combatunit": 0,
@@ -8972,7 +8972,7 @@
   {
     "unitid": 300,
     "basename": "Observer",
-    "name": "Observer (Surveillance Mode)",
+    "name": "侦测器（监视模式）",
     "commander": "Karax",
     "race": "Protoss",
     "combatunit": 0,
@@ -9002,7 +9002,7 @@
   {
     "unitid": 301,
     "basename": "Missile Turret",
-    "name": "Missile Turret",
+    "name": "导弹塔",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 1,
@@ -9032,7 +9032,7 @@
   {
     "unitid": 302,
     "basename": "Infested Missile Turret",
-    "name": "Infested Missile Turret (Rooted)",
+    "name": "被感染的导弹塔（扎根）",
     "commander": "Stukov",
     "race": "Terran",
     "combatunit": 1,
@@ -9062,7 +9062,7 @@
   {
     "unitid": 303,
     "basename": "Infested Missile Turret",
-    "name": "Infested Missile Turret (Uprooted)",
+    "name": "被感染的导弹塔（拔起）",
     "commander": "Stukov",
     "race": "Terran",
     "combatunit": 1,
@@ -9092,7 +9092,7 @@
   {
     "unitid": 304,
     "basename": "Flaming Betty",
-    "name": "Flaming Betty",
+    "name": "火焰贝蒂",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -9122,7 +9122,7 @@
   {
     "unitid": 305,
     "basename": "Flaming Betty",
-    "name": "Flaming Betty",
+    "name": "火焰贝蒂",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -9152,7 +9152,7 @@
   {
     "unitid": 306,
     "basename": "Spinning Dizzy",
-    "name": "Spinning Dizzy (Attack 1)",
+    "name": "旋转迪兹（攻击 1）",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -9182,7 +9182,7 @@
   {
     "unitid": 307,
     "basename": "Spinning Dizzy",
-    "name": "Spinning Dizzy (Attack 2)",
+    "name": "旋转迪兹（攻击 2）",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -9212,7 +9212,7 @@
   {
     "unitid": 308,
     "basename": "Blaster Billy",
-    "name": "Blaster Billy",
+    "name": "爆破比利",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -9242,7 +9242,7 @@
   {
     "unitid": 309,
     "basename": "Blaster Billy",
-    "name": "Blaster Billy",
+    "name": "爆破比利",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -9272,7 +9272,7 @@
   {
     "unitid": 310,
     "basename": "Photon Cannon",
-    "name": "Photon Cannon",
+    "name": "光子炮",
     "commander": "Vorazun",
     "race": "Protoss",
     "combatunit": 1,
@@ -9302,7 +9302,7 @@
   {
     "unitid": 311,
     "basename": "Spine Crawler",
-    "name": "Spine Crawler (Rooted)",
+    "name": "脊针爬虫（扎根）",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 1,
@@ -9332,7 +9332,7 @@
   {
     "unitid": 312,
     "basename": "Spine Crawler",
-    "name": "Spine Crawler (Rooted)",
+    "name": "脊针爬虫（扎根）",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 1,
@@ -9362,7 +9362,7 @@
   {
     "unitid": 313,
     "basename": "Spine Crawler",
-    "name": "Spine Crawler (Uprooted)",
+    "name": "脊针爬虫（拔起）",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 1,
@@ -9392,7 +9392,7 @@
   {
     "unitid": 314,
     "basename": "Spore Crawler",
-    "name": "Spore Crawler (Rooted)",
+    "name": "孢子爬虫（扎根）",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 1,
@@ -9422,7 +9422,7 @@
   {
     "unitid": 315,
     "basename": "Spore Crawler",
-    "name": "Spore Crawler (Uprooted)",
+    "name": "孢子爬虫（拔起）",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 1,
@@ -9452,7 +9452,7 @@
   {
     "unitid": 316,
     "basename": "AutoTurret",
-    "name": "AutoTurret",
+    "name": "自动炮台",
     "commander": "Tychus",
     "race": "Terran",
     "combatunit": 1,
@@ -9482,7 +9482,7 @@
   {
     "unitid": 317,
     "basename": "Tesseract Cannon",
-    "name": "Tesseract Cannon",
+    "name": "超维空间炮",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -9512,7 +9512,7 @@
   {
     "unitid": 318,
     "basename": "XelNaga Watcher",
-    "name": "XelNaga Watcher (Watcher Mode)",
+    "name": "萨尔纳加观察者（观察者模式）",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 0,
@@ -9542,7 +9542,7 @@
   {
     "unitid": 319,
     "basename": "XelNaga Watcher",
-    "name": "XelNaga Watcher (Surveillance Mode)",
+    "name": "萨尔纳加观察者（监视模式）",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 0,
@@ -9572,7 +9572,7 @@
   {
     "unitid": 320,
     "basename": "Overlord",
-    "name": "Overlord",
+    "name": "王虫",
     "commander": "Kerrigan",
     "race": "Zerg",
     "combatunit": 0,
@@ -9602,7 +9602,7 @@
   {
     "unitid": 321,
     "basename": "Overseer",
-    "name": "Overseer (Normal)",
+    "name": "监察王虫（普通模式）",
     "commander": "Kerrigan",
     "race": "Zerg",
     "combatunit": 0,
@@ -9632,7 +9632,7 @@
   {
     "unitid": 322,
     "basename": "Overseer",
-    "name": "Overseer (Oversight)",
+    "name": "监察王虫（监视模式）",
     "commander": "Kerrigan",
     "race": "Zerg",
     "combatunit": 0,
@@ -9662,7 +9662,7 @@
   {
     "unitid": 323,
     "basename": "Overlord",
-    "name": "Overlord",
+    "name": "王虫",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 0,
@@ -9692,7 +9692,7 @@
   {
     "unitid": 324,
     "basename": "Overseer",
-    "name": "Overseer (Normal)",
+    "name": "监察王虫（普通模式）",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 0,
@@ -9722,7 +9722,7 @@
   {
     "unitid": 325,
     "basename": "Overseer",
-    "name": "Overseer (Oversight)",
+    "name": "监察王虫（监视模式）",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 0,
@@ -9752,7 +9752,7 @@
   {
     "unitid": 326,
     "basename": "Overlord",
-    "name": "Overlord",
+    "name": "王虫",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 0,
@@ -9782,7 +9782,7 @@
   {
     "unitid": 327,
     "basename": "Overseer",
-    "name": "Overseer (Normal)",
+    "name": "监察王虫（普通模式）",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 0,
@@ -9812,7 +9812,7 @@
   {
     "unitid": 328,
     "basename": "Overseer",
-    "name": "Overseer (Oversight)",
+    "name": "监察王虫（监视模式）",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 0,
@@ -9842,7 +9842,7 @@
   {
     "unitid": 329,
     "basename": "Overlord",
-    "name": "Overlord",
+    "name": "王虫",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 0,
@@ -9872,7 +9872,7 @@
   {
     "unitid": 330,
     "basename": "Overseer",
-    "name": "Overseer (Normal)",
+    "name": "监察王虫（普通模式）",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 0,
@@ -9902,7 +9902,7 @@
   {
     "unitid": 331,
     "basename": "Overseer",
-    "name": "Overseer (Oversight)",
+    "name": "监察王虫（监视模式）",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 0,
@@ -9932,7 +9932,7 @@
   {
     "unitid": 332,
     "basename": "Tesseract Monolith",
-    "name": "Tesseract Monolith",
+    "name": "超维空间巨石",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -9962,7 +9962,7 @@
   {
     "unitid": 333,
     "basename": "Kev Rattlesnake West",
-    "name": "Kev Rattlesnake West",
+    "name": "凯夫“响尾蛇”韦斯特",
     "commander": "Tychus",
     "race": "Terran",
     "combatunit": 1,
@@ -9992,7 +9992,7 @@
   {
     "unitid": 334,
     "basename": "Kev Rattlesnake West",
-    "name": "Kev Rattlesnake West",
+    "name": "凯夫“响尾蛇”韦斯特",
     "commander": "Tychus",
     "race": "Terran",
     "combatunit": 1,
@@ -10022,7 +10022,7 @@
   {
     "unitid": 335,
     "basename": "Avatar of Form",
-    "name": "Avatar of Form",
+    "name": "形体化身",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -10052,7 +10052,7 @@
   {
     "unitid": 336,
     "basename": "Avatar of Essence",
-    "name": "Avatar of Essence",
+    "name": "精华化身",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -10082,7 +10082,7 @@
   {
     "unitid": 337,
     "basename": "Charged Crystal",
-    "name": "Charged Crystal",
+    "name": "充能水晶",
     "commander": "Zeratul",
     "race": "Protoss",
     "combatunit": 1,
@@ -10112,7 +10112,7 @@
   {
     "unitid": 338,
     "basename": "Odin",
-    "name": "Odin (Air)",
+    "name": "奥丁（对空）",
     "commander": "Tychus",
     "race": "Terran",
     "combatunit": 1,
@@ -10142,7 +10142,7 @@
   {
     "unitid": 339,
     "basename": "Odin",
-    "name": "Odin (Ground)",
+    "name": "奥丁（对地）",
     "commander": "Tychus",
     "race": "Terran",
     "combatunit": 1,
@@ -10172,7 +10172,7 @@
   {
     "unitid": 340,
     "basename": "Odin",
-    "name": "Odin (Ground)",
+    "name": "奥丁（对地）",
     "commander": "Tychus",
     "race": "Terran",
     "combatunit": 1,
@@ -10202,7 +10202,7 @@
   {
     "unitid": 341,
     "basename": "Shield Battery",
-    "name": "Shield Battery",
+    "name": "护盾充能器",
     "commander": "Karax",
     "race": "Protoss",
     "combatunit": 0,
@@ -10232,7 +10232,7 @@
   {
     "unitid": 342,
     "basename": "Warhound Turret",
-    "name": "Warhound Turret",
+    "name": "战狼炮台",
     "commander": "Tychus",
     "race": "Terran",
     "combatunit": 1,
@@ -10262,7 +10262,7 @@
   {
     "unitid": 343,
     "basename": "Holo Decoy",
-    "name": "Holo Decoy",
+    "name": "全息诱饵",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -10292,7 +10292,7 @@
   {
     "unitid": 344,
     "basename": "Photon Cannon",
-    "name": "Photon Cannon",
+    "name": "光子炮",
     "commander": "Artanis",
     "race": "Protoss",
     "combatunit": 1,
@@ -10322,7 +10322,7 @@
   {
     "unitid": 345,
     "basename": "Broodling",
-    "name": "Broodling",
+    "name": "巢虫",
     "commander": "Abathur",
     "race": "Zerg",
     "combatunit": 1,
@@ -10352,7 +10352,7 @@
   {
     "unitid": 346,
     "basename": "Broodling",
-    "name": "Broodling",
+    "name": "巢虫",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 1,
@@ -10382,7 +10382,7 @@
   {
     "unitid": 347,
     "basename": "Broodling",
-    "name": "Broodling",
+    "name": "巢虫",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 1,
@@ -10412,7 +10412,7 @@
   {
     "unitid": 348,
     "basename": "Bile Launcher",
-    "name": "Bile Launcher",
+    "name": "胆汁喷射器",
     "commander": "Zagara",
     "race": "Zerg",
     "combatunit": 1,
@@ -10442,7 +10442,7 @@
   {
     "unitid": 349,
     "basename": "Flying Broodling",
-    "name": "Flying Broodling",
+    "name": "飞行巢虫",
     "commander": "Stukov",
     "race": "Zerg",
     "combatunit": 1,
@@ -10472,7 +10472,7 @@
   {
     "unitid": 350,
     "basename": "Mecha Zergling",
-    "name": "Mecha Zergling",
+    "name": "机械跳虫",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -10502,7 +10502,7 @@
   {
     "unitid": 351,
     "basename": "Mecha Baneling",
-    "name": "Mecha Baneling",
+    "name": "机械爆虫",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -10532,7 +10532,7 @@
   {
     "unitid": 352,
     "basename": "Mecha Baneling",
-    "name": "Mecha Baneling",
+    "name": "机械爆虫",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -10562,7 +10562,7 @@
   {
     "unitid": 353,
     "basename": "Mecha Hydralisk",
-    "name": "Mecha Hydralisk (Normal Attack)",
+    "name": "机械刺蛇（普通攻击）",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -10587,12 +10587,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "Erudition Missiles deal 100% bonus damage with JUICE."
+    "notes": "处于 J.U.I.C.E. 配置时，博学导弹额外造成 100% 伤害。"
   },
   {
     "unitid": 354,
     "basename": "Mecha Lurker",
-    "name": "Mecha Lurker",
+    "name": "机械潜伏者",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -10622,7 +10622,7 @@
   {
     "unitid": 355,
     "basename": "Mecha Lurker",
-    "name": "Mecha Lurker",
+    "name": "机械潜伏者",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -10652,7 +10652,7 @@
   {
     "unitid": 356,
     "basename": "Mecha Corruptor",
-    "name": "Mecha Corruptor",
+    "name": "机械腐化者",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -10682,7 +10682,7 @@
   {
     "unitid": 357,
     "basename": "Mecha Battlecarrier Lord",
-    "name": "Mecha Battlecarrier Lord (Mecha Locusceptor)",
+    "name": "机械巢式战列空母（机械蝗虫拦截机）",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -10707,12 +10707,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "Mecha Battlecarrier Lords have 6 Mecha Locusceptors."
+    "notes": "机械巢式战列空母拥有 6 架机械蝗虫拦截机。"
   },
   {
     "unitid": 358,
     "basename": "Mecha Battlecarrier Lord",
-    "name": "Mecha Battlecarrier Lord (Mecha Broodling Strike)",
+    "name": "机械巢式战列空母（机械巢虫打击）",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -10737,12 +10737,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "Mecha Battlecarrier Lords have 6 Mecha Locusceptors."
+    "notes": "机械巢式战列空母拥有 6 架机械蝗虫拦截机。"
   },
   {
     "unitid": 359,
     "basename": "Mecha Broodling",
-    "name": "Mecha Broodling",
+    "name": "机械巢虫",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -10772,7 +10772,7 @@
   {
     "unitid": 360,
     "basename": "Mecha Infestor",
-    "name": "Mecha Infestor (Unburrowed)",
+    "name": "机械感染者（未潜地）",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 0,
@@ -10802,7 +10802,7 @@
   {
     "unitid": 361,
     "basename": "Mecha Roach",
-    "name": "Mecha Roach",
+    "name": "机械蟑螂",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -10832,7 +10832,7 @@
   {
     "unitid": 362,
     "basename": "Mecha Roach",
-    "name": "Mecha Roach",
+    "name": "机械蟑螂",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -10862,7 +10862,7 @@
   {
     "unitid": 363,
     "basename": "Mecha Ravager",
-    "name": "Mecha Ravager",
+    "name": "机械破坏者",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -10892,7 +10892,7 @@
   {
     "unitid": 364,
     "basename": "Mecha Ultralisk",
-    "name": "Mecha Ultralisk",
+    "name": "机械雷兽",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -10922,7 +10922,7 @@
   {
     "unitid": 365,
     "basename": "Gary",
-    "name": "Gary",
+    "name": "盖瑞",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -10952,7 +10952,7 @@
   {
     "unitid": 366,
     "basename": "Super Gary",
-    "name": "Super Gary",
+    "name": "超级盖瑞",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -10982,7 +10982,7 @@
   {
     "unitid": 367,
     "basename": "Mecha Hydralisk",
-    "name": "Mecha Hydralisk (Erudition Missiles)",
+    "name": "机械刺蛇（博学导弹）",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -11007,12 +11007,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "Erudition Missiles deal 100% bonus damage with JUICE."
+    "notes": "处于 J.U.I.C.E. 配置时，博学导弹额外造成 100% 伤害。"
   },
   {
     "unitid": 368,
     "basename": "Mecha Hydralisk",
-    "name": "Mecha Hydralisk (Erudition Missiles)",
+    "name": "机械刺蛇（博学导弹）",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -11037,12 +11037,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "Erudition Missiles deal 100% bonus damage with JUICE."
+    "notes": "处于 J.U.I.C.E. 配置时，博学导弹额外造成 100% 伤害。"
   },
   {
     "unitid": 369,
     "basename": "Mecha Spine Crawler",
-    "name": "Mecha Spine Crawler (Rooted)",
+    "name": "机械脊针爬虫（扎根）",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -11072,7 +11072,7 @@
   {
     "unitid": 370,
     "basename": "Mecha Spine Crawler",
-    "name": "Mecha Spine Crawler (Rooted)",
+    "name": "机械脊针爬虫（扎根）",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -11102,7 +11102,7 @@
   {
     "unitid": 371,
     "basename": "Mecha Spine Crawler",
-    "name": "Mecha Spine Crawler (Uprooted)",
+    "name": "机械脊针爬虫（拔起）",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -11132,7 +11132,7 @@
   {
     "unitid": 372,
     "basename": "Mecha Spore Crawler",
-    "name": "Mecha Spore Crawler (Rooted)",
+    "name": "机械孢子爬虫（扎根）",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -11162,7 +11162,7 @@
   {
     "unitid": 373,
     "basename": "Mecha Spore Crawler",
-    "name": "Mecha Spore Crawler (Uprooted)",
+    "name": "机械孢子爬虫（拔起）",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -11192,7 +11192,7 @@
   {
     "unitid": 374,
     "basename": "Drakken Laser Drill",
-    "name": "Drakken Laser Drill (Level 0)",
+    "name": "德拉肯激光钻机（等级 0）",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -11222,7 +11222,7 @@
   {
     "unitid": 375,
     "basename": "Drakken Laser Drill",
-    "name": "Drakken Laser Drill (Level 1)",
+    "name": "德拉肯激光钻机（等级 1）",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -11252,7 +11252,7 @@
   {
     "unitid": 376,
     "basename": "Drakken Laser Drill",
-    "name": "Drakken Laser Drill (Level 2)",
+    "name": "德拉肯激光钻机（等级 2）",
     "commander": "Swann",
     "race": "Terran",
     "combatunit": 1,
@@ -11282,7 +11282,7 @@
   {
     "unitid": 377,
     "basename": "Bunker",
-    "name": "Bunker",
+    "name": "地堡",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 1,
@@ -11307,12 +11307,12 @@
     "hpbonus": 0.00,
     "armorbonus": 0,
     "shieldbonus": null,
-    "notes": "Gives +1 range to units inside."
+    "notes": "使内部单位的射程 +1。"
   },
   {
     "unitid": 378,
     "basename": "Spider Mine",
-    "name": "Spider Mine",
+    "name": "蜘蛛雷",
     "commander": "Raynor",
     "race": "Terran",
     "combatunit": 1,
@@ -11337,12 +11337,12 @@
     "hpbonus": 0.00,
     "armorbonus": 0,
     "shieldbonus": null,
-    "notes": "Weapon stats listed are for its ability and not its equipped weapon.<br>Explosion: 50% splash up to radius 1.7, 25% splash up to radius 2.33."
+    "notes": "列出的武器属性对应其技能，而非装备的武器。<br>爆炸：造成 50% 溅射伤害，最大半径为 1.7；造成 25% 溅射伤害，最大半径为 2.33。"
   },
   {
     "unitid": 379,
     "basename": "Spider Mine",
-    "name": "Spider Mine",
+    "name": "蜘蛛雷",
     "commander": "Nova",
     "race": "Terran",
     "combatunit": 1,
@@ -11367,12 +11367,12 @@
     "hpbonus": 0.00,
     "armorbonus": 0,
     "shieldbonus": null,
-    "notes": "Weapon stats listed are for its ability and not its equipped weapon. Dropped in sets of three.<br>Explosion: 50% splash up to radius 1.7, 25% splash up to radius 2.33."
+    "notes": "列出的武器属性对应其技能，而非装备的武器。每次投放三枚。<br>爆炸：造成 50% 溅射伤害，最大半径为 1.7；造成 25% 溅射伤害，最大半径为 2.33。"
   },
   {
     "unitid": 380,
     "basename": "Dom. Trooper",
-    "name": "Dom. Trooper",
+    "name": "帝国冲锋队",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -11402,7 +11402,7 @@
   {
     "unitid": 381,
     "basename": "Dom. Assault Trooper",
-    "name": "Dom. Assault Trooper",
+    "name": "帝国突击手冲锋队",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -11432,7 +11432,7 @@
   {
     "unitid": 382,
     "basename": "Dom. Flame Trooper",
-    "name": "Dom. Flame Trooper",
+    "name": "帝国火焰器冲锋队",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -11462,7 +11462,7 @@
   {
     "unitid": 383,
     "basename": "Dom. Flame Trooper",
-    "name": "Dom. Flame Trooper",
+    "name": "帝国火焰器冲锋队",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -11492,7 +11492,7 @@
   {
     "unitid": 384,
     "basename": "Dom. Rocket Trooper",
-    "name": "Dom. Rocket Trooper (Air)",
+    "name": "帝国火箭筒冲锋队（对空）",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -11522,7 +11522,7 @@
   {
     "unitid": 385,
     "basename": "Dom. Rocket Trooper",
-    "name": "Dom. Rocket Trooper (Air)",
+    "name": "帝国火箭筒冲锋队（对空）",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -11552,7 +11552,7 @@
   {
     "unitid": 386,
     "basename": "Dom. Rocket Trooper",
-    "name": "Dom. Rocket Trooper (Ground)",
+    "name": "帝国火箭筒冲锋队（对地）",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -11582,7 +11582,7 @@
   {
     "unitid": 387,
     "basename": "Aegis Guard",
-    "name": "Aegis Guard",
+    "name": "壁垒卫士",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -11612,7 +11612,7 @@
   {
     "unitid": 388,
     "basename": "Aegis Guard",
-    "name": "Aegis Guard",
+    "name": "壁垒卫士",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -11642,7 +11642,7 @@
   {
     "unitid": 389,
     "basename": "Emperors Shadow",
-    "name": "Emperors Shadow",
+    "name": "元首鬼影",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -11672,7 +11672,7 @@
   {
     "unitid": 390,
     "basename": "Emperors Shadow",
-    "name": "Emperors Shadow",
+    "name": "元首鬼影",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -11702,7 +11702,7 @@
   {
     "unitid": 391,
     "basename": "Shock Division",
-    "name": "Shock Division (Tank Mode)",
+    "name": "冲击分队（坦克模式）",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -11732,7 +11732,7 @@
   {
     "unitid": 392,
     "basename": "Shock Division",
-    "name": "Shock Division (Tank Mode)",
+    "name": "冲击分队（坦克模式）",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -11762,7 +11762,7 @@
   {
     "unitid": 393,
     "basename": "Shock Division",
-    "name": "Shock Division (Siege Mode)",
+    "name": "冲击分队（攻城模式）",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -11792,7 +11792,7 @@
   {
     "unitid": 394,
     "basename": "Shock Division",
-    "name": "Shock Division (Siege Mode)",
+    "name": "冲击分队（攻城模式）",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -11822,7 +11822,7 @@
   {
     "unitid": 395,
     "basename": "Blackhammer",
-    "name": "Blackhammer (Walker Mode Air)",
+    "name": "黑色战锤（行走模式对空）",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -11852,7 +11852,7 @@
   {
     "unitid": 396,
     "basename": "Blackhammer",
-    "name": "Blackhammer (Walker Mode Air)",
+    "name": "黑色战锤（行走模式对空）",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -11882,7 +11882,7 @@
   {
     "unitid": 397,
     "basename": "Blackhammer",
-    "name": "Blackhammer (Walker Mode Ground)",
+    "name": "黑色战锤（行走模式对地）",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -11912,7 +11912,7 @@
   {
     "unitid": 398,
     "basename": "Blackhammer",
-    "name": "Blackhammer (Overwatch Mode)",
+    "name": "黑色战锤（监视模式）",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -11942,7 +11942,7 @@
   {
     "unitid": 399,
     "basename": "Sky Fury",
-    "name": "Sky Fury (Fighter Mode)",
+    "name": "天空之怒（战机模式）",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -11972,7 +11972,7 @@
   {
     "unitid": 400,
     "basename": "Sky Fury",
-    "name": "Sky Fury (Fighter Mode)",
+    "name": "天空之怒（战机模式）",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -12002,7 +12002,7 @@
   {
     "unitid": 401,
     "basename": "Sky Fury",
-    "name": "Sky Fury (Assault Mode)",
+    "name": "天空之怒（突击模式）",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -12032,7 +12032,7 @@
   {
     "unitid": 402,
     "basename": "Imperial Intercessor",
-    "name": "Imperial Intercessor",
+    "name": "帝国仲裁机",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 0,
@@ -12057,12 +12057,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "This unit has no rank."
+    "notes": "该单位没有军阶。"
   },
   {
     "unitid": 403,
     "basename": "Imperial Witness",
-    "name": "Imperial Witness",
+    "name": "帝国见证者",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 0,
@@ -12087,12 +12087,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "This unit has no rank."
+    "notes": "该单位没有军阶。"
   },
   {
     "unitid": 404,
     "basename": "Pride of Augustgrad",
-    "name": "Pride of Augustgrad (Ground)",
+    "name": "奥古斯特格勒的骄傲（对地）",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -12122,7 +12122,7 @@
   {
     "unitid": 405,
     "basename": "Missile Turret",
-    "name": "Missile Turret",
+    "name": "导弹塔",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -12152,7 +12152,7 @@
   {
     "unitid": 406,
     "basename": "Earthsplitter Ordnance",
-    "name": "Earthsplitter Ordnance",
+    "name": "大地碎裂炮",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -12177,12 +12177,12 @@
     "hpbonus": 0.00,
     "armorbonus": 0,
     "shieldbonus": null,
-    "notes": "Up to 4 Conscripts can be loaded into the structure, each increasing the number of volleys in 30 seconds by 1."
+    "notes": "该建筑最多可装载 4 名征召兵；在 30 秒内，每名征召兵会使齐射次数增加 1 次。"
   },
   {
     "unitid": 407,
     "basename": "Enthralled Zergling",
-    "name": "Enthralled Zergling",
+    "name": "被奴役的跳虫",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -12212,7 +12212,7 @@
   {
     "unitid": 408,
     "basename": "Enthralled Hydralisk",
-    "name": "Enthralled Hydralisk",
+    "name": "被奴役的刺蛇",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -12242,7 +12242,7 @@
   {
     "unitid": 409,
     "basename": "Enthralled Mutalisk",
-    "name": "Enthralled Mutalisk",
+    "name": "被奴役的异龙",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -12267,12 +12267,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "Bounce Damage:<br>{3,1}<br>Damage Upgrade:<br>{0.333,0.111}"
+    "notes": "弹射伤害：<br>{3,1}<br>伤害升级：<br>{0.333,0.111}"
   },
   {
     "unitid": 410,
     "basename": "Enthralled Ultralisk",
-    "name": "Enthralled Ultralisk",
+    "name": "被奴役的雷兽",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -12302,7 +12302,7 @@
   {
     "unitid": 411,
     "basename": "Pride of Augustgrad",
-    "name": "Pride of Augustgrad (Air)",
+    "name": "奥古斯特格勒的骄傲（对空）",
     "commander": "Mengsk",
     "race": "Terran",
     "combatunit": 1,
@@ -12332,7 +12332,7 @@
   {
     "unitid": 412,
     "basename": "Mecha Overlord",
-    "name": "Mecha Overlord",
+    "name": "机械王虫",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -12362,7 +12362,7 @@
   {
     "unitid": 413,
     "basename": "Mecha Overseer",
-    "name": "Mecha Overseer (Normal)",
+    "name": "机械监察王虫（普通模式）",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -12392,7 +12392,7 @@
   {
     "unitid": 414,
     "basename": "Mecha Overseer",
-    "name": "Mecha Overseer (Oversight)",
+    "name": "机械监察王虫（监视模式）",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 1,
@@ -12422,7 +12422,7 @@
   {
     "unitid": 415,
     "basename": "Adept",
-    "name": "Adept (Shade)",
+    "name": "使徒（灵能传送）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -12452,7 +12452,7 @@
   {
     "unitid": 416,
     "basename": "Adept",
-    "name": "Adept (Shade)",
+    "name": "使徒（灵能传送）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -12482,7 +12482,7 @@
   {
     "unitid": 417,
     "basename": "Primal Mutalisk",
-    "name": "Primal Mutalisk (Air)",
+    "name": "原始异龙（对空）",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -12507,12 +12507,12 @@
     "hpbonus": 0.00,
     "armorbonus": 1,
     "shieldbonus": null,
-    "notes": "(Standard)<br>Bounce Damage:<br>{5,2}<br>Damage Upgrade:<br>{0.555,0.222}<br><br>(Slicing Glaive Air)<br>Bounce Damage:<br>{9,3}<br>Damage Upgrade:<br>{1,0.5}"
+    "notes": "（标准）<br>弹射伤害：<br>{5,2}<br>伤害升级：<br>{0.555,0.222}<br><br>（空中切割战刃）<br>弹射伤害：<br>{9,3}<br>伤害升级：<br>{1,0.5}"
   },
   {
     "unitid": 418,
     "basename": "Explosive Creeper",
-    "name": "Explosive Creeper (Air)",
+    "name": "爆炸蠕虫（对空）",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -12542,7 +12542,7 @@
   {
     "unitid": 419,
     "basename": "Talis",
-    "name": "Talis (Shade)",
+    "name": "塔里斯（灵能传送）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -12572,7 +12572,7 @@
   {
     "unitid": 420,
     "basename": "Talis",
-    "name": "Talis (Shade)",
+    "name": "塔里斯（灵能传送）",
     "commander": "Fenix",
     "race": "Protoss",
     "combatunit": 1,
@@ -12602,7 +12602,7 @@
   {
     "unitid": 421,
     "basename": "Unbound Fanatic",
-    "name": "Unbound Fanatic",
+    "name": "无拘狂热者",
     "commander": "Artanis",
     "race": "Protoss",
     "combatunit": 1,
@@ -12627,12 +12627,12 @@
     "hpbonus": 0.00,
     "armorbonus": 0,
     "shieldbonus": 0,
-    "notes": "Starts at 3/3/3 upgrade level"
+    "notes": "初始即拥有 3/3/3 级升级"
   },
   {
     "unitid": 422,
     "basename": "Unbound Fanatic",
-    "name": "Unbound Fanatic",
+    "name": "无拘狂热者",
     "commander": "Artanis",
     "race": "Protoss",
     "combatunit": 1,
@@ -12657,12 +12657,12 @@
     "hpbonus": 0.00,
     "armorbonus": 0,
     "shieldbonus": 0,
-    "notes": "Starts at 3/3/3 upgrade level"
+    "notes": "初始即拥有 3/3/3 级升级"
   },
   {
     "unitid": 423,
     "basename": "Primal Hive",
-    "name": "Primal Hive",
+    "name": "原始主巢",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -12692,7 +12692,7 @@
   {
     "unitid": 424,
     "basename": "Primal Warden",
-    "name": "Primal Warden",
+    "name": "原始守卫",
     "commander": "Dehaka",
     "race": "Zerg",
     "combatunit": 1,
@@ -12722,7 +12722,7 @@
   {
     "unitid": 425,
     "basename": "Mecha Infestor",
-    "name": "Mecha Infestor (Burrowed)",
+    "name": "机械感染者（潜地）",
     "commander": "Stetmann",
     "race": "Zerg",
     "combatunit": 0,

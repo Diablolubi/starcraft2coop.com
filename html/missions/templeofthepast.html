@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
@@ -9,15 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-    <link rel="stylesheet" href="/styles/global.css?v=70e9bc">
+    <link rel="stylesheet" href="/styles/global.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <title>Starcraft 2 Co-op - Mission Guide - Temple of the Past</title>
-  <meta name="description" content="Starcraft 2 Co-op Mission Guide Temple of the Past">
-  <meta name="keywords" content="Starcraft co-op guides temple past mission">
-  <link rel="stylesheet"  media="all" type="text/css" href="/styles/missionstyle.css?v=e0ba7b?v=1.00">
+      <title>《星际争霸 II》合作任务攻略 - 往日神庙</title>
+  <meta name="description" content="《星际争霸 II》合作任务攻略：往日神庙">
+  <meta name="keywords" content="星际争霸 II 合作任务 往日神庙 攻略">
+  <link rel="stylesheet"  media="all" type="text/css" href="/styles/missionstyle.css?v=1.00">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="https://starcraft2coop.com/missions/templeofthepast">
-  <script src="/scripts/preload.js?v=0264fe"></script>
+  <script src="/scripts/preload.js"></script>
   <style>
     .arrow{
         font-size:1.8em;
@@ -32,105 +32,105 @@
 <body>
 
 <header id="header">
-    <img src="/images/starcraft2coop.png" alt="Starcraft II Co-op">
+    <img src="/images/starcraft2coop.png" alt="StarCraft II 合作任务">
 </header>
 <script>
 if (document.location.host === 'dev.starcraft2coop.com') {
-    document.write('<div class="construction">THIS IS THE TEST SITE. (<a href="https://starcraft2coop.com">Go to the real site</a>)</div>');
+    document.write('<div class="construction">这里是测试站点。（<a href="https://starcraft2coop.com">前往正式站点</a>）</div>');
 }
 </script>
 <nav id="menu">
 <ul id="topmenu">
-    <li class="normal"><a href="/" title="Home">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>Home</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+    <li class="normal"><a href="/" title="首页">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>首页</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
     </a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-commanders">Commanders</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-resources">Guides</a></li>
-    <li class="highlight"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-missions">Missions</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-about">About</a></li>
-    <li class="normal"><button type="button" id="site-search-button" title="Search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Search</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-commanders">指挥官</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-resources">攻略</a></li>
+    <li class="highlight"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-missions">任务</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-about">关于</a></li>
+    <li class="normal"><button type="button" id="site-search-button" title="搜索">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>搜索</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
         <span class="search-shortcut" aria-hidden="true"></span>
     </button></li>
 </ul>
 <div id="container">
     <div id="commanderList" class="submenu">
-        <a href="/commanders/raynor" class="normal"><img src="/images/commanderportraits/raynorportrait.png" alt="Raynor"></a>
-        <a href="/commanders/kerrigan" class="normal"><img src="/images/commanderportraits/kerriganportrait.png" alt="Kerrigan"></a>
-        <a href="/commanders/artanis" class="normal"><img src="/images/commanderportraits/artanisportrait.png" alt="Artanis"></a>
-        <a href="/commanders/swann" class="normal"><img src="/images/commanderportraits/swannportrait.png" alt="Swann"></a>
-        <a href="/commanders/zagara" class="normal"><img src="/images/commanderportraits/zagaraportrait.png" alt="Zagara"></a>
-        <a href="/commanders/vorazun" class="normal"><img src="/images/commanderportraits/vorazunportrait.png" alt="Vorazun"></a>
-        <a href="/commanders/karax" class="normal"><img src="/images/commanderportraits/karaxportrait.png" alt="Karax"></a>
-        <a href="/commanders/abathur" class="normal"><img src="/images/commanderportraits/abathurportrait.png" alt="Abathur"></a>
-        <a href="/commanders/alarak" class="normal"><img src="/images/commanderportraits/alarakportrait.png" alt="Alarak"></a>
-        <a href="/commanders/nova" class="normal"><img src="/images/commanderportraits/novaportrait.png" alt="Nova"></a>
-        <a href="/commanders/stukov" class="normal"><img src="/images/commanderportraits/stukovportrait.png" alt="Stukov"></a>
-        <a href="/commanders/fenix" class="normal"><img src="/images/commanderportraits/fenixportrait.png" alt="Fenix"></a>
-        <a href="/commanders/dehaka" class="normal"><img src="/images/commanderportraits/dehakaportrait.png" alt="Dehaka"></a>
-        <a href="/commanders/horner" class="normal"><img src="/images/commanderportraits/hornerportrait.png" alt="Han &amp; Horner"></a>
-        <a href="/commanders/tychus" class="normal"><img src="/images/commanderportraits/tychusportrait.png" alt="Tychus"></a>
-        <a href="/commanders/zeratul" class="normal"><img src="/images/commanderportraits/zeratulportrait.png" alt="Zeratul"></a>
-        <a href="/commanders/stetmann" class="normal"><img src="/images/commanderportraits/stetmannportrait.png" alt="Stetmann"></a>
-        <a href="/commanders/mengsk" class="normal"><img src="/images/commanderportraits/mengskportrait.png" alt="Mengsk"></a>
+        <a href="/commanders/raynor" class="normal"><img src="/images/commanderportraits/raynorportrait.png" alt="雷诺"></a>
+        <a href="/commanders/kerrigan" class="normal"><img src="/images/commanderportraits/kerriganportrait.png" alt="凯瑞甘"></a>
+        <a href="/commanders/artanis" class="normal"><img src="/images/commanderportraits/artanisportrait.png" alt="阿塔尼斯"></a>
+        <a href="/commanders/swann" class="normal"><img src="/images/commanderportraits/swannportrait.png" alt="斯旺"></a>
+        <a href="/commanders/zagara" class="normal"><img src="/images/commanderportraits/zagaraportrait.png" alt="扎加拉"></a>
+        <a href="/commanders/vorazun" class="normal"><img src="/images/commanderportraits/vorazunportrait.png" alt="沃拉尊"></a>
+        <a href="/commanders/karax" class="normal"><img src="/images/commanderportraits/karaxportrait.png" alt="凯拉克斯"></a>
+        <a href="/commanders/abathur" class="normal"><img src="/images/commanderportraits/abathurportrait.png" alt="阿巴瑟"></a>
+        <a href="/commanders/alarak" class="normal"><img src="/images/commanderportraits/alarakportrait.png" alt="阿拉纳克"></a>
+        <a href="/commanders/nova" class="normal"><img src="/images/commanderportraits/novaportrait.png" alt="诺娃"></a>
+        <a href="/commanders/stukov" class="normal"><img src="/images/commanderportraits/stukovportrait.png" alt="斯托科夫"></a>
+        <a href="/commanders/fenix" class="normal"><img src="/images/commanderportraits/fenixportrait.png" alt="菲尼克斯"></a>
+        <a href="/commanders/dehaka" class="normal"><img src="/images/commanderportraits/dehakaportrait.png" alt="德哈卡"></a>
+        <a href="/commanders/horner" class="normal"><img src="/images/commanderportraits/hornerportrait.png" alt="汉与霍纳"></a>
+        <a href="/commanders/tychus" class="normal"><img src="/images/commanderportraits/tychusportrait.png" alt="泰凯斯"></a>
+        <a href="/commanders/zeratul" class="normal"><img src="/images/commanderportraits/zeratulportrait.png" alt="泽拉图"></a>
+        <a href="/commanders/stetmann" class="normal"><img src="/images/commanderportraits/stetmannportrait.png" alt="斯台特曼"></a>
+        <a href="/commanders/mengsk" class="normal"><img src="/images/commanderportraits/mengskportrait.png" alt="蒙斯克"></a>
     </div>
     <div id="missionList" class="submenu">
-        <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">Chain of Ascension</div></a>
-        <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">Cradle of Death</div></a>
-        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">Dead of Night</div></a>
-        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">Lock &amp; Load</div></a>
-        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">Malwarfare</div></a>
-        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">Miner Evacuation</div></a>
-        <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">Mist Opportunities</div></a>
-        <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">Oblivion Express</div></a>
-        <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">Part &amp; Parcel</div></a>
-        <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">Rifts to Korhal</div></a>
-        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">Scythe of Amon</div></a>
-        <a href="/missions/templeofthepast" class="highlight"><div class="mapImg mapImg-templeofthepast">Temple of the Past</div></a>
-        <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">The Vermillion Problem</div></a>
-        <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">Void Launch</div></a>
-        <a href="/missions/voidthrashing" class="normal"><div class="mapImg mapImg-voidthrashing">Void Thrashing</div></a>
+        <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">飞升之链</div></a>
+        <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">死亡摇篮</div></a>
+        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">亡者之夜</div></a>
+        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">天锁</div></a>
+        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">恶意代码</div></a>
+        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">疏散矿工</div></a>
+        <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">机会渺茫</div></a>
+        <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">湮灭快车</div></a>
+        <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">聚铁成兵</div></a>
+        <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">克哈裂痕</div></a>
+        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">埃蒙之镰</div></a>
+        <a href="/missions/templeofthepast" class="highlight"><div class="mapImg mapImg-templeofthepast">往日神庙</div></a>
+        <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">熔火危机</div></a>
+        <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">虚空降临</div></a>
+        <a href="/missions/voidthrashing" class="normal"><div class="mapImg mapImg-voidthrashing">虚空撕裂</div></a>
     </div>
     <div id="resources" class="submenu">
         <div class="submenu-with-sections"><div class="submenu-section">
-            <strong>Resources:</strong>
+            <strong>资料：</strong>
             <ul>
-                <li class="normal"><a href="/mutators/">Mutators</a></li>
-                <li class="normal"><a href="/resources/weeklymutations">Weekly&nbsp;Mutations</a></li>
-                <li class="normal"><a href="/resources/brutal">Brutal+</a></li>
-                <li class="normal"><a href="/units/">Unit&nbsp;Stats</a></li>
+                <li class="normal"><a href="/mutators/">突变因子</a></li>
+                <li class="normal"><a href="/resources/weeklymutations">每周突变</a></li>
+                <li class="normal"><a href="/resources/brutal">残酷+</a></li>
+                <li class="normal"><a href="/units/">单位数据</a></li>
             </ul>
         </div><div class="submenu-section">
-            <strong>Guides:</strong>
+            <strong>攻略：</strong>
             <ul>
-                <li class="normal"><a href="/guides/buildordertheory">Build&nbsp;Order&nbsp;Theory</a></li>
-                <li class="normal"><a href="/guides/enemycomps">Enemy&nbsp;Compositions</a></li>
-                <li class="normal"><a href="/guides/generaltips">General&nbsp;Tips</a></li>
-                <li class="normal"><a href="/guides/newplayer">New&nbsp;Players</a></li>
-                <li class="normal"><a href="/guides/youtube">Youtube</a></li>
+                <li class="normal"><a href="/guides/buildordertheory">建造顺序理论</a></li>
+                <li class="normal"><a href="/guides/enemycomps">敌方阵容</a></li>
+                <li class="normal"><a href="/guides/generaltips">通用技巧</a></li>
+                <li class="normal"><a href="/guides/newplayer">新手指南</a></li>
+                <li class="normal"><a href="/guides/youtube">YouTube</a></li>
             </ul>
         </div><div class="submenu-section">
-            <strong>Miscellaneous:</strong>
+            <strong>其他：</strong>
             <ul>
-                <li class="normal"><a href="/resources/achievements">Achievements</a></li>
-                <li class="normal"><a href="/resources/ailogic">AI&nbsp;Logic</a></li>
-                <li class="normal"><a href="/resources/bugs">Bugs</a></li>
-                <li class="normal"><a href="/resources/deathprevention">Death&nbsp;Prevent&nbsp;Effects</a></li>
-                <li class="normal"><a href="/resources/eastereggs">Easter&nbsp;Eggs</a></li>
-                <li class="normal"><a href="/resources/levels">Levels</a></li>
-                <li class="normal"><a href="/resources/patchdata">Patch&nbsp;Data</a></li>
-                <li class="normal"><a href="/tools/downloads">Downloads</a></li>
-                <li class="normal"><a href="/tools/masterybreakpoints">Mastery&nbsp;Breakpoints</a></li>
+                <li class="normal"><a href="/resources/achievements">成就</a></li>
+                <li class="normal"><a href="/resources/ailogic">人工智能逻辑</a></li>
+                <li class="normal"><a href="/resources/bugs">错误</a></li>
+                <li class="normal"><a href="/resources/deathprevention">免死效果</a></li>
+                <li class="normal"><a href="/resources/eastereggs">彩蛋</a></li>
+                <li class="normal"><a href="/resources/levels">等级</a></li>
+                <li class="normal"><a href="/resources/patchdata">补丁数据</a></li>
+                <li class="normal"><a href="/tools/downloads">下载</a></li>
+                <li class="normal"><a href="/tools/masterybreakpoints">精通阈值</a></li>
             </ul>
         </div></div>
     </div>
     <div id="about" class="submenu">
         <ul>
             <!--<li class="normal"><a href="/about/contact">Contact</a></li>-->
-            <li class="normal"><a href="/about/faq">FAQ</a></li>
-            <li class="normal"><a href="/about/links">Links</a></li>
+            <li class="normal"><a href="/about/faq">常见问题</a></li>
+            <li class="normal"><a href="/about/links">相关链接</a></li>
             <!--li class="normal"><a href="https://www.youtube.com/c/Starcraft2Coop" rel="nofollow">Youtube</a></li-->
-            <li class="normal"><a href="/about/stats">Misc. Stats</a></li>
+            <li class="normal"><a href="/about/stats">杂项统计</a></li>
         </ul>
     </div>
     <!--<div id="imgs">
@@ -181,39 +181,39 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         }
     })(jQuery);
 </script>
-<script src="/scripts/search.js?v=3646f5" defer></script>
+<script src="/scripts/search.js" defer></script>
 <div id="content">
-        <h1><span class="unbold">Mission:</span> Temple of the Past</h1>
-    <p id="missionPlace">Shakuras</p>
+        <h1><span class="unbold">任务：</span>往日神庙</h1>
+    <p id="missionPlace">夏库拉斯</p>
         <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#misSum">Mission Summary</a></p>
-        <p><a href="#objectives">Objectives</a></p>
-        <p><a href="#baseAnalysis">Enemy Base Analysis</a></p>
-        <p><a href="#bonus">Completing the Bonus Objective</a></p>
-        <p><a href="#timings">Timings</a></p>
-        <p><a href="#spawnPoints">Spawn Points</a></p>
-        <p><a href="#misTips">Mission Tips</a></p>
-        <p><a href="#comTips">Commander-Specific Tips</a></p>
+        <h2>本页目录</h2>
+        <p><a href="#misSum">任务概述</a></p>
+        <p><a href="#objectives">任务目标</a></p>
+        <p><a href="#baseAnalysis">敌方基地分析</a></p>
+        <p><a href="#bonus">完成奖励目标</a></p>
+        <p><a href="#timings">时间点</a></p>
+        <p><a href="#spawnPoints">出生点</a></p>
+        <p><a href="#misTips">任务技巧</a></p>
+        <p><a href="#comTips">指挥官专属技巧</a></p>
     </div>
-    <h2 id="misSum">Mission Summary</h2>
-    <p>The xel'naga temple on Shakuras is under assault. Build your defenses and hold out against the enemy's siege.</p>
-    <h2 id="objectives">Objectives</h2>
-    <h3>Primary Objective</h3>
+    <h2 id="misSum">任务概述</h2>
+    <p>夏库拉斯上的萨尔纳加神庙正遭受袭击。构筑防御，抵挡敌人的围攻。</p>
+    <h2 id="objectives">任务目标</h2>
+    <h3>主要目标</h3>
         <ul>
-            <li>Defend the Temple (26:00)</li>
+            <li>保卫神庙 (26:00)</li>
         </ul>
-    <h3>Secondary Objective</h3>
+    <h3>奖励目标</h3>
         <ul>
-            <li>Destroy the Zenith Stones (3)</li>
+            <li>摧毁天顶石 (3)</li>
         </ul>
-    <h2 id="baseAnalysis">Enemy Base Analysis</h2>
+    <h2 id="baseAnalysis">敌方基地分析</h2>
     <div id="globalRaceSelect">
-        <p>Change all base analysis pictures to race:</p>
+        <p>将所有基地分析图片切换为以下种族：</p>
         <form action="#">
-            <label><input type="radio" name="globalRace" value="protoss" checked>Protoss</label><br>
-            <label><input type="radio" name="globalRace" value="terran">Terran</label><br>
-            <label><input type="radio" name="globalRace" value="zerg">Zerg</label><br>
+            <label><input type="radio" name="globalRace" value="protoss" checked>星灵</label><br>
+            <label><input type="radio" name="globalRace" value="terran">人类</label><br>
+            <label><input type="radio" name="globalRace" value="zerg">异虫</label><br>
         </form>
         <script>
             $("input[name='globalRace']").change(function(){
@@ -227,44 +227,44 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             })
         </script>
     </div>
-        <p>You are not required to push into enemy bases on Temple of the Past. However, it is highly recommend you do so for the following reasons:</p>
+        <p>在“往日神庙”中，你不必攻入敌方基地，但出于以下原因，强烈建议这样做：</p>
     <ul>
-        <li>Destroying the enemy bases prevents them from adding static defenses that will eventually creep up to your ramps.</li>
-        <li>It allows you to easily access the Void Thrashers that will spawn on the map without losing any troops in the process, especially if you clear it early when the enemy is at its weakest.</li>
-        <li>You can spawn-camp attack waves with calldowns to weaken them before you engage them with your main force.</li>
-        <li>The bases are very lightly defended and very easy to clear.</li>
+        <li>摧毁敌方基地可以阻止敌人增建静态防御，避免这些防线最终推进到你的斜坡前。</li>
+        <li>这样可以轻松接近地图上生成的虚空撕裂者，而无需在途中损失部队；尤其是趁敌人最弱时尽早清除基地，效果更佳。</li>
+        <li>可以用顶栏技能蹲守进攻波次的生成点，在主力部队交战前先削弱敌军。</li>
+        <li>这些基地防守十分薄弱，很容易清除。</li>
     </ul>
-    <p>There are three bases to clear, one for each of the ramps leading to the temple. These are shown below. Note: These are the starting configurations of the enemy bases. As time progresses in the mission, more static defense will be made. It is best to clear them as quickly as possible.</p>
-    <p>Middle Base:</p>
-    <div class='switcher'><div class='long' id='basemidlongdiv'><img id ='basemidlong' src=' /images/missiondata/templeofthepast/basemidlong_protoss.jpg' alt='basemidlong Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='basemidlong' value='protoss' checked>Protoss</label><br><label><input type='radio' name='basemidlong' value='terran'>Terran</label><br><label><input type='radio' name='basemidlong' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/templeofthepast/basemidlongminimap.jpg' alt='basemidlong Minimap'></div></div></div><script>$("input[name='basemidlong']").change(function(){var race= $(this).val();var oldImg = $('#basemidlong');var img = new Image();img.src = '/images/missiondata/templeofthepast/basemidlong_'+ race + '.jpg';var newImg = $(img).hide();$('#basemidlongdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'basemidlong');return false;});var imgList=[];imgList.push('/images/missiondata/templeofthepast/basemidlong_protoss.jpg');imgList.push('/images/missiondata/templeofthepast/basemidlong_terran.jpg');imgList.push('/images/missiondata/templeofthepast/basemidlong_zerg.jpg');preload(imgList);</script>    <p>Top Base:</p>
-    <div class='switcher'><div class='basePic' id='basetopdiv'><img id ='basetop' src=' /images/missiondata/templeofthepast/basetop_protoss.jpg' alt='basetop Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='basetop' value='protoss' checked>Protoss</label><br><label><input type='radio' name='basetop' value='terran'>Terran</label><br><label><input type='radio' name='basetop' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/templeofthepast/basetopminimap.jpg' alt='basetop Minimap'></div></div></div><script>$("input[name='basetop']").change(function(){var race= $(this).val();var oldImg = $('#basetop');var img = new Image();img.src = '/images/missiondata/templeofthepast/basetop_'+ race + '.jpg';var newImg = $(img).hide();$('#basetopdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'basetop');return false;});var imgList=[];imgList.push('/images/missiondata/templeofthepast/basetop_protoss.jpg');imgList.push('/images/missiondata/templeofthepast/basetop_terran.jpg');imgList.push('/images/missiondata/templeofthepast/basetop_zerg.jpg');preload(imgList);</script>    <p>Bottom Base:</p>
-    <div class='switcher'><div class='long' id='basebottomlongdiv'><img id ='basebottomlong' src=' /images/missiondata/templeofthepast/basebottomlong_protoss.jpg' alt='basebottomlong Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='basebottomlong' value='protoss' checked>Protoss</label><br><label><input type='radio' name='basebottomlong' value='terran'>Terran</label><br><label><input type='radio' name='basebottomlong' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/templeofthepast/basebottomlongminimap.jpg' alt='basebottomlong Minimap'></div></div></div><script>$("input[name='basebottomlong']").change(function(){var race= $(this).val();var oldImg = $('#basebottomlong');var img = new Image();img.src = '/images/missiondata/templeofthepast/basebottomlong_'+ race + '.jpg';var newImg = $(img).hide();$('#basebottomlongdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'basebottomlong');return false;});var imgList=[];imgList.push('/images/missiondata/templeofthepast/basebottomlong_protoss.jpg');imgList.push('/images/missiondata/templeofthepast/basebottomlong_terran.jpg');imgList.push('/images/missiondata/templeofthepast/basebottomlong_zerg.jpg');preload(imgList);</script>    <p>If you like, you can also clear the base from which the drops come from. However, there is no advantage to doing so, and you will require to fly units over, or warp/teleport them in at that location.</p>
-    <div class='switcher'><div class='long' id='basedroplongdiv'><img id ='basedroplong' src=' /images/missiondata/templeofthepast/basedroplong_protoss.jpg' alt='basedroplong Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='basedroplong' value='protoss' checked>Protoss</label><br><label><input type='radio' name='basedroplong' value='terran'>Terran</label><br><label><input type='radio' name='basedroplong' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/templeofthepast/basedroplongminimap.jpg' alt='basedroplong Minimap'></div></div></div><script>$("input[name='basedroplong']").change(function(){var race= $(this).val();var oldImg = $('#basedroplong');var img = new Image();img.src = '/images/missiondata/templeofthepast/basedroplong_'+ race + '.jpg';var newImg = $(img).hide();$('#basedroplongdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'basedroplong');return false;});var imgList=[];imgList.push('/images/missiondata/templeofthepast/basedroplong_protoss.jpg');imgList.push('/images/missiondata/templeofthepast/basedroplong_terran.jpg');imgList.push('/images/missiondata/templeofthepast/basedroplong_zerg.jpg');preload(imgList);</script>    <h2 id="bonus">Completing the Bonus Objective</h2>
+    <p>共有三座基地需要清除，分别对应通往神庙的三条斜坡，如下所示。注意：图中是敌方基地的初始配置。随着任务时间推移，敌人会建造更多静态防御，因此最好尽快将其清除。</p>
+    <p>中间基地：</p>
+    <div class='switcher'><div class='long' id='basemidlongdiv'><img id ='basemidlong' src=' /images/missiondata/templeofthepast/basemidlong_protoss.jpg' alt='basemidlong Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='basemidlong' value='protoss' checked>Protoss</label><br><label><input type='radio' name='basemidlong' value='terran'>Terran</label><br><label><input type='radio' name='basemidlong' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/templeofthepast/basemidlongminimap.jpg' alt='basemidlong Minimap'></div></div></div><script>$("input[name='basemidlong']").change(function(){var race= $(this).val();var oldImg = $('#basemidlong');var img = new Image();img.src = '/images/missiondata/templeofthepast/basemidlong_'+ race + '.jpg';var newImg = $(img).hide();$('#basemidlongdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'basemidlong');return false;});var imgList=[];imgList.push('/images/missiondata/templeofthepast/basemidlong_protoss.jpg');imgList.push('/images/missiondata/templeofthepast/basemidlong_terran.jpg');imgList.push('/images/missiondata/templeofthepast/basemidlong_zerg.jpg');preload(imgList);</script>    <p>上方基地：</p>
+    <div class='switcher'><div class='basePic' id='basetopdiv'><img id ='basetop' src=' /images/missiondata/templeofthepast/basetop_protoss.jpg' alt='basetop Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='basetop' value='protoss' checked>Protoss</label><br><label><input type='radio' name='basetop' value='terran'>Terran</label><br><label><input type='radio' name='basetop' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/templeofthepast/basetopminimap.jpg' alt='basetop Minimap'></div></div></div><script>$("input[name='basetop']").change(function(){var race= $(this).val();var oldImg = $('#basetop');var img = new Image();img.src = '/images/missiondata/templeofthepast/basetop_'+ race + '.jpg';var newImg = $(img).hide();$('#basetopdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'basetop');return false;});var imgList=[];imgList.push('/images/missiondata/templeofthepast/basetop_protoss.jpg');imgList.push('/images/missiondata/templeofthepast/basetop_terran.jpg');imgList.push('/images/missiondata/templeofthepast/basetop_zerg.jpg');preload(imgList);</script>    <p>下方基地：</p>
+    <div class='switcher'><div class='long' id='basebottomlongdiv'><img id ='basebottomlong' src=' /images/missiondata/templeofthepast/basebottomlong_protoss.jpg' alt='basebottomlong Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='basebottomlong' value='protoss' checked>Protoss</label><br><label><input type='radio' name='basebottomlong' value='terran'>Terran</label><br><label><input type='radio' name='basebottomlong' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/templeofthepast/basebottomlongminimap.jpg' alt='basebottomlong Minimap'></div></div></div><script>$("input[name='basebottomlong']").change(function(){var race= $(this).val();var oldImg = $('#basebottomlong');var img = new Image();img.src = '/images/missiondata/templeofthepast/basebottomlong_'+ race + '.jpg';var newImg = $(img).hide();$('#basebottomlongdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'basebottomlong');return false;});var imgList=[];imgList.push('/images/missiondata/templeofthepast/basebottomlong_protoss.jpg');imgList.push('/images/missiondata/templeofthepast/basebottomlong_terran.jpg');imgList.push('/images/missiondata/templeofthepast/basebottomlong_zerg.jpg');preload(imgList);</script>    <p>如果愿意，也可以清除空投部队出发的基地。不过这样做没有实际收益，而且必须让空中单位飞过去，或将部队折跃、传送到那里。</p>
+    <div class='switcher'><div class='long' id='basedroplongdiv'><img id ='basedroplong' src=' /images/missiondata/templeofthepast/basedroplong_protoss.jpg' alt='basedroplong Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='basedroplong' value='protoss' checked>Protoss</label><br><label><input type='radio' name='basedroplong' value='terran'>Terran</label><br><label><input type='radio' name='basedroplong' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/templeofthepast/basedroplongminimap.jpg' alt='basedroplong Minimap'></div></div></div><script>$("input[name='basedroplong']").change(function(){var race= $(this).val();var oldImg = $('#basedroplong');var img = new Image();img.src = '/images/missiondata/templeofthepast/basedroplong_'+ race + '.jpg';var newImg = $(img).hide();$('#basedroplongdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'basedroplong');return false;});var imgList=[];imgList.push('/images/missiondata/templeofthepast/basedroplong_protoss.jpg');imgList.push('/images/missiondata/templeofthepast/basedroplong_terran.jpg');imgList.push('/images/missiondata/templeofthepast/basedroplong_zerg.jpg');preload(imgList);</script>    <h2 id="bonus">完成奖励目标</h2>
     <div id="objectiveImages">
-        <img src="/images/missiondata/templeofthepast/zenithstone.jpg" alt="Zenith Stone">
-        <img src="/images/missiondata/templeofthepast/zenithstone.jpg" alt="Zenith Stone">
-        <img src="/images/missiondata/templeofthepast/zenithstone.jpg" alt="Zenith Stone">
+        <img src="/images/missiondata/templeofthepast/zenithstone.jpg" alt="天顶石">
+        <img src="/images/missiondata/templeofthepast/zenithstone.jpg" alt="天顶石">
+        <img src="/images/missiondata/templeofthepast/zenithstone.jpg" alt="天顶石">
     </div>
-    <p>The bonus objective requires you to destroy the three Zenith Stones on the map. Each Zenith Stone is located off each path leading to the temple. The locations are shown below:</p>
-    <img src="/images/missiondata/templeofthepast/zenithstonelocations.jpg" alt="Minimap of Zenith Stone locations">
-    <p>The Zenith Stones are present from the start of the game. They will be revealed to the player either when the player gets within 15 range of any of the stones or when 9 minutes have elapsed. There is no time limit to destroy the stones. The stones are guarded by a very small force. Additionally, they will cast Psionic Storms in random areas around them when their HP drops to below 50%.</p>
-    <h2 id="timings">Timings</h2>
-    <p>Note: Information on Tech and Strength levels can be found on the <a href="/guides/enemycomps">Enemy Compositions</a> page. If Strength and Tech levels differ between attack waves occurring at the same time, they will be separated with commas respectively.</p>
-    <p>There are two patterns on this mission. The patterns are shown below. Attack directions show you to direction the attack wave moves in.</p>
+    <p>奖励目标要求你摧毁地图上的三块天顶石。每块天顶石都位于一条通往神庙的道路旁，位置如下：</p>
+    <img src="/images/missiondata/templeofthepast/zenithstonelocations.jpg" alt="天顶石位置小地图">
+    <p>天顶石从游戏开始时就已存在。当玩家进入任意天顶石周围 15 射程内，或游戏经过 9 分钟后，它们便会显现。摧毁天顶石没有时间限制。每块石头只有一小股敌军守卫；此外，当生命值降至 50% 以下时，它们会在周围随机区域施放灵能风暴。</p>
+    <h2 id="timings">时间点</h2>
+    <p>注意：科技等级与强度等级的说明参见<a href="/guides/enemycomps">敌方部队组合</a>页面。如果同一时间出现的进攻波次具有不同的强度等级和科技等级，则会分别用逗号分隔。</p>
+    <p>本任务有两种模式，如下所示。进攻方向表示进攻波次的移动方向。</p>
     <div class="tableContainer">
         <table class="centered">
             <tbody class="topAlign">
                 <tr>
                     <td>
-                        <p><b>Pattern A:</b> This will come with an attack warning at 3:15</p>
+                        <p><b>模式 A：</b>将在 3:15 发出进攻警告</p>
                         <table class="centered directions">
                             <thead>
                                 <tr>
-                                    <th>Time</th>
-                                    <th>Tech Level</th>
-                                    <th>Strength Level</th>
-                                    <th>Direction</th>
-                                    <th>Notes</th>
+                                    <th>时间</th>
+                                    <th>科技等级</th>
+                                    <th>强度等级</th>
+                                    <th>方向</th>
+                                    <th>备注</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -287,7 +287,7 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                                     <td>2</td>
                                     <td>2</td>
                                     <td><span class="arrow">↗</span></td>
-                                    <td>1 Minor Hybrid</td>
+                                    <td>1 个小型混合体</td>
                                 </tr>
                                 <tr>
                                     <td>6:45</td>
@@ -308,7 +308,7 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                                     <td>2</td>
                                     <td>2</td>
                                     <td><span class="arrow">↗</span></td>
-                                    <td>Thrasher + Attack Wave</td>
+                                    <td>虚空撕裂者 + 进攻波次</td>
                                 </tr>
                                 <tr>
                                     <td>9:00</td>
@@ -322,7 +322,7 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                                     <td>4,2</td>
                                     <td>3,3</td>
                                     <td><span class="arrow">↘↖</span></td>
-                                    <td>1 Minor Hybrid for Player 1</td>
+                                    <td>玩家 1：1 个小型混合体</td>
                                 </tr>
                                 <tr>
                                     <td>11:00</td>
@@ -357,63 +357,63 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                                     <td>-</td>
                                     <td>-</td>
                                     <td><span class="arrow">↖</span></td>
-                                    <td>Thrasher Only</td>
+                                    <td>仅虚空撕裂者</td>
                                 </tr>
                                 <tr>
                                     <td>15:00</td>
                                     <td>3</td>
                                     <td>3</td>
                                     <td><span class="arrow">↙</span></td>
-                                    <td>Air Drop<br>1 Hybrid Nemesis</td>
+                                    <td>空投<br>1 个混合体天罚者</td>
                                 </tr>
                                 <tr>
                                     <td>15:20</td>
                                     <td>4</td>
                                     <td>4</td>
                                     <td><span class="arrow">↙</span></td>
-                                    <td>Air Drop<br>1 Hybrid Nemesis</td>
+                                    <td>空投<br>1 个混合体天罚者</td>
                                 </tr>
                                 <tr>
                                     <td>16:10</td>
                                     <td>2</td>
                                     <td>2</td>
                                     <td><span class="arrow">↙</span></td>
-                                    <td>Drop Pod/Warp-in</td>
+                                    <td>空投舱/折跃</td>
                                 </tr>
                                 <tr>
                                     <td>16:40</td>
                                     <td>3</td>
                                     <td>3</td>
                                     <td><span class="arrow">↙</span></td>
-                                    <td>Drop Pod/Warp-in</td>
+                                    <td>空投舱/折跃</td>
                                 </tr>
                                 <tr>
                                     <td>16:55</td>
                                     <td>-</td>
                                     <td>-</td>
                                     <td><span class="arrow">↘</span></td>
-                                    <td>Thrasher Only</td>
+                                    <td>仅虚空撕裂者</td>
                                 </tr>
                                 <tr>
                                     <td>18:00</td>
                                     <td>5</td>
                                     <td>5</td>
                                     <td><span class="arrow">↘</span></td>
-                                    <td>3 Minor Hybrid<br>1 Hybrid Nemesis<br>1 Major Hybrid</td>
+                                    <td>3 个小型混合体<br>1 个混合体天罚者<br>1 个大型混合体</td>
                                 </tr>
                                 <tr>
                                     <td>18:15</td>
                                     <td>3</td>
                                     <td>5</td>
                                     <td><span class="arrow">↖</span></td>
-                                    <td>3 Minor Hybrid<br>1 Hybrid Nemesis<br>1 Major Hybrid</td>
+                                    <td>3 个小型混合体<br>1 个混合体天罚者<br>1 个大型混合体</td>
                                 </tr>
                                 <tr>
                                     <td>19:15</td>
                                     <td>4</td>
                                     <td>4</td>
                                     <td><span class="arrow">↙</span></td>
-                                    <td>Air Drop</td>
+                                    <td>空投</td>
                                 </tr>
                                 <tr>
                                     <td>20:00</td>
@@ -427,28 +427,28 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                                     <td>3</td>
                                     <td>3</td>
                                     <td><span class="arrow">↙↙</span></td>
-                                    <td>Double Drop Pod/Warp-in</td>
+                                    <td>双重空投舱/折跃</td>
                                 </tr>
                                 <tr>
                                     <td>20:45</td>
                                     <td>2,4</td>
                                     <td>3,3</td>
                                     <td><span class="arrow">↖↖</span></td>
-                                    <td>Double Drop Pod/Warp-in</td>
+                                    <td>双重空投舱/折跃</td>
                                 </tr>
                                 <tr>
                                     <td>21:15</td>
                                     <td>3</td>
                                     <td>3</td>
                                     <td><span class="arrow">↗↗</span></td>
-                                    <td>Double Drop Pod/Warp-in</td>
+                                    <td>双重空投舱/折跃</td>
                                 </tr>
                                 <tr>
                                     <td>21:30</td>
                                     <td>2</td>
                                     <td>3</td>
-                                    <td><span class="arrow">↙↙</span> or <span class="arrow">↖↖</span> or <span class="arrow">↗↗</span></td>
-                                    <td>Double Drop Pod/Warp-in</td>
+                                    <td><span class="arrow">↙↙</span> 或 <span class="arrow">↖↖</span> 或 <span class="arrow">↗↗</span></td>
+                                    <td>双重空投舱/折跃</td>
                                 </tr>
                                 <tr>
                                     <td>22:00</td>
@@ -462,21 +462,21 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                                     <td>4,6</td>
                                     <td>5,5</td>
                                     <td><span class="arrow">↘↖</span></td>
-                                    <td>Double Thrasher + Attack Wave</td>
+                                    <td>双重虚空撕裂者 + 进攻波次</td>
                                 </tr>
                                 <tr>
                                     <td>23:30</td>
                                     <td>5</td>
                                     <td>5</td>
                                     <td><span class="arrow">↘</span></td>
-                                    <td>4 Minor Hybrid<br>2 Hybrid Nemesis<br>1 Major Hybrid</td>
+                                    <td>4 个小型混合体<br>2 个混合体天罚者<br>1 个大型混合体</td>
                                 </tr>
                                 <tr>
                                     <td>23:40</td>
                                     <td>3</td>
                                     <td>5</td>
                                     <td><span class="arrow">↖</span></td>
-                                    <td>3 Minor Hybrid<br>2 Hybrid Nemesis<br>1 Major Hybrid</td>
+                                    <td>3 个小型混合体<br>2 个混合体天罚者<br>1 个大型混合体</td>
                                 </tr>
                                 <tr>
                                     <td>24:40</td>
@@ -489,15 +489,15 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                         </table>
                     </td>
                     <td>
-                        <p><b>Pattern B:</b> This will come with an attack warning at 3:10</p>
+                        <p><b>模式 B：</b>将在 3:10 发出进攻警告</p>
                         <table class="centered directions">
                             <thead>
                                 <tr>
-                                    <th>Time</th>
-                                    <th>Tech Level</th>
-                                    <th>Strength Level</th>
-                                    <th>Direction</th>
-                                    <th>Notes</th>
+                                    <th>时间</th>
+                                    <th>科技等级</th>
+                                    <th>强度等级</th>
+                                    <th>方向</th>
+                                    <th>备注</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -520,7 +520,7 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                                     <td>2</td>
                                     <td>2</td>
                                     <td><span class="arrow">↗</span></td>
-                                    <td>1 Minor Hybrid</td>
+                                    <td>1 个小型混合体</td>
                                 </tr>
                                 <tr>
                                     <td>6:45</td>
@@ -541,28 +541,28 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                                     <td>-</td>
                                     <td>-</td>
                                     <td><span class="arrow">↗</span></td>
-                                    <td>Thrasher Only</td>
+                                    <td>仅虚空撕裂者</td>
                                 </tr>
                                 <tr>
                                     <td>9:00</td>
                                     <td>3</td>
                                     <td>3</td>
-                                    <td><span class="arrow">↘</span> or <span class="arrow">↖</span></td>
-                                    <td>Two 3/3 Attack Waves together</td>
+                                    <td><span class="arrow">↘</span> 或 <span class="arrow">↖</span></td>
+                                    <td>两支 3/3 进攻波次同时出现</td>
                                 </tr>
                                 <tr>
                                     <td>10:00</td>
                                     <td>4,2</td>
                                     <td>3,3</td>
                                     <td><span class="arrow">↘↖</span></td>
-                                    <td>1 Minor Hybrid for Player 1<br>2 Minor Hybrid for Player 2</td>
+                                    <td>玩家 1：1 个小型混合体<br>玩家 2：2 个小型混合体</td>
                                 </tr>
                                 <tr>
                                     <td>11:00</td>
                                     <td>4</td>
                                     <td>4</td>
-                                    <td><span class="arrow">↖</span> or <span class="arrow">↘</span></td>
-                                    <td>Two 4/4 Attack Waves together</td>
+                                    <td><span class="arrow">↖</span> 或 <span class="arrow">↘</span></td>
+                                    <td>两支 4/4 进攻波次同时出现</td>
                                 </tr>
                                 <tr>
                                     <td>12:00</td>
@@ -576,7 +576,7 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                                     <td>4</td>
                                     <td>4</td>
                                     <td><span class="arrow">↗</span></td>
-                                    <td>3 Minor Hybrid</td>
+                                    <td>3 个小型混合体</td>
                                 </tr>
                                 <tr>
                                     <td>13:35</td>
@@ -590,105 +590,105 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                                     <td>-</td>
                                     <td>-</td>
                                     <td><span class="arrow">↖</span></td>
-                                    <td>Thrasher Only</td>
+                                    <td>仅虚空撕裂者</td>
                                 </tr>
                                 <tr>
                                     <td>15:00</td>
                                     <td>2</td>
                                     <td>2</td>
                                     <td><span class="arrow">↙</span></td>
-                                    <td>Drop Pod/Warp-in</td>
+                                    <td>空投舱/折跃</td>
                                 </tr>
                                 <tr>
                                     <td>15:30</td>
                                     <td>3</td>
                                     <td>3</td>
                                     <td><span class="arrow">↙</span></td>
-                                    <td>Drop Pod/Warp-in</td>
+                                    <td>空投舱/折跃</td>
                                 </tr>
                                 <tr>
                                     <td>15:45</td>
                                     <td>-</td>
                                     <td>-</td>
                                     <td><span class="arrow">↘</span></td>
-                                    <td>Thrasher Only</td>
+                                    <td>仅虚空撕裂者</td>
                                 </tr>
                                 <tr>
                                     <td>16:35</td>
                                     <td>3</td>
                                     <td>3</td>
                                     <td><span class="arrow">↙</span></td>
-                                    <td>Air Drop<br>1 Hybrid Nemesis</td>
+                                    <td>空投<br>1 个混合体天罚者</td>
                                 </tr>
                                 <tr>
                                     <td>16:55</td>
                                     <td>4</td>
                                     <td>4</td>
                                     <td><span class="arrow">↙</span></td>
-                                    <td>Air Drop<br>1 Hybrid Nemesis</td>
+                                    <td>空投<br>1 个混合体天罚者</td>
                                 </tr>
                                 <tr>
                                     <td>18:00</td>
                                     <td>5</td>
                                     <td>5</td>
-                                    <td><span class="arrow">↘</span> or <span class="arrow">↗</span></td>
-                                    <td>3 Minor Hybrid<br>1 Hybrid Nemesis<br>1 Major Hybrid</td>
+                                    <td><span class="arrow">↘</span> 或 <span class="arrow">↗</span></td>
+                                    <td>3 个小型混合体<br>1 个混合体天罚者<br>1 个大型混合体</td>
                                 </tr>
                                 <tr>
                                     <td>18:15</td>
                                     <td>3</td>
                                     <td>5</td>
-                                    <td><span class="arrow">↖</span> or <span class="arrow">↗</span></td>
-                                    <td>3 Minor Hybrid<br>1 Hybrid Nemesis<br>1 Major Hybrid</td>
+                                    <td><span class="arrow">↖</span> 或 <span class="arrow">↗</span></td>
+                                    <td>3 个小型混合体<br>1 个混合体天罚者<br>1 个大型混合体</td>
                                 </tr>
                                 <tr>
                                     <td>19:15</td>
                                     <td>4</td>
                                     <td>4</td>
                                     <td><span class="arrow">↙</span></td>
-                                    <td>Air Drop</td>
+                                    <td>空投</td>
                                 </tr>
                                 <tr>
                                     <td>20:00</td>
                                     <td>4</td>
                                     <td>5</td>
                                     <td><span class="arrow">↗</span></td>
-                                    <td>Thrasher + Attack Wave<br>3 Minor Hybrid<br>1 Major Hybrid</td>
+                                    <td>虚空撕裂者 + 进攻波次<br>3 个小型混合体<br>1 个大型混合体</td>
                                 </tr>
                                 <tr>
                                     <td>20:20</td>
                                     <td>3</td>
                                     <td>3</td>
                                     <td><span class="arrow">↙</span></td>
-                                    <td>Air Drop<br>1 Hybrid Nemesis</td>
+                                    <td>空投<br>1 个混合体天罚者</td>
                                 </tr>
                                 <tr>
                                     <td>20:40</td>
                                     <td>2</td>
                                     <td>3</td>
                                     <td><span class="arrow">↙</span></td>
-                                    <td>Air Drop<br>1 Hybrid Nemesis</td>
+                                    <td>空投<br>1 个混合体天罚者</td>
                                 </tr>
                                 <tr>
                                     <td>22:30</td>
                                     <td>4,6</td>
                                     <td>5,5</td>
                                     <td><span class="arrow">↘↖</span></td>
-                                    <td>Double Thrasher + Attack Wave</td>
+                                    <td>双重虚空撕裂者 + 进攻波次</td>
                                 </tr>
                                 <tr>
                                     <td>23:30</td>
                                     <td>5</td>
                                     <td>5</td>
                                     <td><span class="arrow">↘</span></td>
-                                    <td>4 Minor Hybrid<br>2 Hybrid Nemesis<br>1 Major Hybrid</td>
+                                    <td>4 个小型混合体<br>2 个混合体天罚者<br>1 个大型混合体</td>
                                 </tr>
                                 <tr>
                                     <td>23:40</td>
                                     <td>3</td>
                                     <td>5</td>
                                     <td><span class="arrow">↖</span></td>
-                                    <td>3 Minor Hybrid<br>2 Hybrid Nemesis<br>1 Major Hybrid</td>
+                                    <td>3 个小型混合体<br>2 个混合体天罚者<br>1 个大型混合体</td>
                                 </tr>
                                 <tr>
                                     <td>24:40</td>
@@ -704,95 +704,93 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             </tbody>
         </table>
     </div>
-    <p>Some attack waves will also have Hybrids in them. The types of these Hybrids will depend on the enemy race as well as the pattern, as follows:</p>
+    <p>部分进攻波次还会包含混合体，其类型取决于敌方种族与任务模式，具体如下：</p>
     <table>
         <tr>
-            <th colspan="3">Pattern A</th>
-            <th colspan="3">Pattern B</th>
+            <th colspan="3">模式 A</th>
+            <th colspan="3">模式 B</th>
         </tr>
         <tr>
-            <th>Race</th>
-            <th>Minor Hybrid</th>
-            <th>Major Hybrid</th>
-            <th>Race</th>
-            <th>Minor Hybrid</th>
-            <th>Major Hybrid</th>
+            <th>种族</th>
+            <th>小型混合体</th>
+            <th>大型混合体</th>
+            <th>种族</th>
+            <th>小型混合体</th>
+            <th>大型混合体</th>
         </tr>
         <tbody>
             <tr>
-                <td>Protoss</td>
-                <td>Hybrid Reaver</td>
-                <td>Hybrid Behemoth</td>
-                <td>Protoss</td>
-                <td>Hybrid Nemesis</td>
-                <td>Hybrid Dominator</td>
+                <td>星灵</td>
+                <td>混合体掠夺者</td>
+                <td>混合体巨兽</td>
+                <td>星灵</td>
+                <td>混合体天罚者</td>
+                <td>混合体支配者</td>
             </tr>
             <tr>
-                <td>Terran (50%)</td>
-                <td>Hybrid Destroyer</td>
-                <td>Hybrid Behemoth</td>
-                <td>Terran (50%)</td>
-                <td>Hybrid Nemesis</td>
-                <td>Hybrid Behemoth</td>
+                <td>人类 (50%)</td>
+                <td>混合体毁灭者</td>
+                <td>混合体巨兽</td>
+                <td>人类 (50%)</td>
+                <td>混合体天罚者</td>
+                <td>混合体巨兽</td>
             </tr>
             <tr>
-                <td>Terran (50%)</td>
-                <td>Hybrid Reaver</td>
-                <td>Hybrid Dominator</td>
-                <td>Terran (50%)</td>
-                <td>Hybrid Nemesis</td>
-                <td>Hybrid Dominator</td>
+                <td>人类 (50%)</td>
+                <td>混合体掠夺者</td>
+                <td>混合体支配者</td>
+                <td>人类 (50%)</td>
+                <td>混合体天罚者</td>
+                <td>混合体支配者</td>
             </tr>
             <tr>
-                <td>Zerg</td>
-                <td>Hybrid Destroyer</td>
-                <td>Hybrid Dominator</td>
-                <td>Zerg</td>
-                <td>Hybrid Nemesis</td>
-                <td>Hybrid Behemoth</td>
+                <td>异虫</td>
+                <td>混合体毁灭者</td>
+                <td>混合体支配者</td>
+                <td>异虫</td>
+                <td>混合体天罚者</td>
+                <td>混合体巨兽</td>
             </tr>
         </tbody>
     </table>
-    <h2 id="spawnPoints">Spawn Points</h2>
-    <p>There are two types of spawn points of interest in this mission:</p>
+    <h2 id="spawnPoints">出生点</h2>
+    <p>本任务有两类值得关注的生成点：</p>
     <ul>
-        <li><b>Attack Wave Spawn Points:</b> These are where the Attack Waves that travel towards the temple spawn. There are four spawn points, one for each side of the temple (three ramps and one drop attack).</li>
-        <li><b>Drop/Warp-in Locations:</b> These are part of the mid-game where Terran/Zerg forces will drop and Protoss forces will warp in. There are four possible drop/warp-in locations.</li>
+        <li><b>进攻波次生成点：</b>前往神庙的进攻波次会在这里生成。共有四个生成点，分别对应神庙的各个方向（三条斜坡和一次空投进攻）。</li>
+        <li><b>空投/折跃位置：</b>任务中期，人类和异虫部队会空投至此，星灵部队则会折跃进入。共有四个可能的空投/折跃位置。</li>
     </ul>
-    <p>Top Attack Wave Spawn Point:</p>
-    <img src="/images/missiondata/templeofthepast/topspawnpoint.jpg" alt="Top Attack Wave Spawn Point">
-    <p>Middle Attack Wave Spawn Point:</p>
-    <img src="/images/missiondata/templeofthepast/midspawnpoint.jpg" alt="Middle Attack Wave Spawn Point">
-    <p>Bottom Attack Wave Spawn Point:</p>
-    <img src="/images/missiondata/templeofthepast/bottomspawnpoint.jpg" alt="Bottom Attack Wave Spawn Point">
-    <p>Drop Attack Wave Spawn Point:</p>
-    <img src="/images/missiondata/templeofthepast/dropspawnpoint.jpg" alt="Drop Attack Wave Spawn Point">
-    <p>The locations for Drop Attacks and Warp-ins are shown below:</p>
-    <img src="/images/missiondata/templeofthepast/warpinlocations.jpg" alt="Drop Pod/Warp-in Locations">
-    <h2 id="misTips">Mission Tips</h2>
+    <p>上方进攻波次生成点：</p>
+    <img src="/images/missiondata/templeofthepast/topspawnpoint.jpg" alt="上方进攻波次生成点">
+    <p>中间进攻波次生成点：</p>
+    <img src="/images/missiondata/templeofthepast/midspawnpoint.jpg" alt="中间进攻波次生成点">
+    <p>下方进攻波次生成点：</p>
+    <img src="/images/missiondata/templeofthepast/bottomspawnpoint.jpg" alt="下方进攻波次生成点">
+    <p>空投进攻波次生成点：</p>
+    <img src="/images/missiondata/templeofthepast/dropspawnpoint.jpg" alt="空投进攻波次生成点">
+    <p>空投进攻与折跃位置如下：</p>
+    <img src="/images/missiondata/templeofthepast/warpinlocations.jpg" alt="空投舱/折跃位置">
+    <h2 id="misTips">任务技巧</h2>
     <ul>
-        <li>Try to clear the enemy bases around the map as early as possible to simplify the mission.</li>
-        <li>Build anti-air defenses and (if applicable) place Overlords around the temple when playing against Zerg compositions with Scourge to prevent them from targeting the temple.</li>
+        <li>尽量尽早清除地图周围的敌方基地，以降低任务难度。</li>
+        <li>面对包含爆蚊的异虫部队组合时，请修建对空防御，并在适用时于神庙周围布置王虫，防止爆蚊攻击神庙。</li>
     </ul>
-    <h2 id="comTips">Commander-specific Tips</h2>
+    <h2 id="comTips">指挥官专属技巧</h2>
     <ul>
-        <li><a href="/commanders/abathur">Abathur</a>: Place Toxic Nests in front of the rocks on the middle lane to kill the early attack waves and stall them before they break the rocks.</li>
-        <li><a href="/commanders/abathur">Abathur</a>: Place Toxic Nests on attack wave spawn locations to weaken them.</li>
-        <li><a href="/commanders/dehaka">Dehaka</a>: Get early Essence by killing the enemies at each of the Zenith Stones. Use Deep Tunnel or jump over the rocks to access them.</li>
-        <li><a href="/commanders/horner">Han & Horner</a>: Place Mag Mines in front of the rocks on the middle lane to kill the early attack waves and stall them before they break the rocks.</li>
-        <li><a href="/commanders/horner">Han & Horner</a>: Place Mag Mines on attack wave spawn locations to weaken them.</li>
-        <li><a href="/commanders/nova">Nova</a>: If you use Siege Tanks, place Spider-mines on attack wave and Thrasher spawn locations to weaken them.</li>
-        <li><a href="/commanders/raynor">Raynor</a>: If you use Vultures, place Spider-mines on attack wave and Thrasher spawn locations to weaken them.</li>
+        <li><a href="/commanders/abathur">阿巴瑟</a>：在中路岩石前布置剧毒巢穴，消灭早期进攻波次，并在它们打破岩石前拖延时间。</li>
+        <li><a href="/commanders/abathur">阿巴瑟</a>：在进攻波次生成位置布置剧毒巢穴，以削弱敌军。</li>
+        <li><a href="/commanders/dehaka">德哈卡</a>：消灭每块天顶石旁的敌人，尽早获取精华。使用深槽虫道或跳过岩石即可抵达这些位置。</li>
+        <li><a href="/commanders/horner">汉与霍纳</a>：在中路岩石前布置磁力地雷，消灭早期进攻波次，并在它们打破岩石前拖延时间。</li>
+        <li><a href="/commanders/horner">汉与霍纳</a>：在进攻波次生成位置布置磁力地雷，以削弱敌军。</li>
+        <li><a href="/commanders/nova">诺娃</a>：如果使用攻城坦克，请在进攻波次和虚空撕裂者的生成位置布置蜘蛛雷，以削弱敌军。</li>
+        <li><a href="/commanders/raynor">雷诺</a>：如果使用秃鹫，请在进攻波次和虚空撕裂者的生成位置布置蜘蛛雷，以削弱敌军。</li>
     </ul>
-<script src="/scripts/nav.js?v=fd4985"></script>
+<script src="/scripts/nav.js"></script>
 </div>
 
 <div id="footer">
-    <p>Note: All data generated on this site is based on Brutal difficulty. Timings, compositions and other elements may differ on easier difficulty levels.</p>
-    <p>CC-BY-NC-SA-4.0. Originally written by Aommaster. This is a fansite not affiliated with StarCraft 2 or Blizzard Entertainment, Inc.</p>
+    <p>注意：本站生成的所有数据均以“残酷”难度为准；在较低难度下，时间、阵容及其他要素可能有所不同。</p>
+    <p>非官方简体中文翻译站，仅供学习与非商业使用。本站无广告，也不收集用户数据。采用 CC BY-NC-SA 4.0 许可。原作者：Aommaster。本站为粉丝站点，与 StarCraft II 或 Blizzard Entertainment 无隶属关系。</p>
 </div>
 
 </body>
 </html>
-
-    

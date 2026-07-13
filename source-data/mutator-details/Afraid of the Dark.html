@@ -1,36 +1,36 @@
-<p class="subheading">Detailed Mutator Information</p>
-<p>The vision range of Afraid of the Dark is highly reduced. Below is an example of what it looks like:</p>
-<img src="/images/mutatordata/afraidofthedark.jpg" alt="Afraid of the Dark Vision Range">
-<p>Notice how the Probe lies outside the vision range. This means that it can be attacked and not be able to attack back. Units can only attack if they have vision provided by your camera.</p>
-<p>Vision Ranges are listed below:</p>
+<p class="subheading">突变因子详细信息</p>
+<p>漆黑一片会大幅缩小视野范围，效果示例如下：</p>
+<img src="/images/mutatordata/afraidofthedark.jpg" alt="漆黑一片的视野范围">
+<p>请注意，探机位于视野范围之外。这意味着它可能受到攻击却无法还击。只有获得玩家镜头提供的视野时，单位才能发动攻击。</p>
+<p>各类视野范围如下：</p>
 <table class="dataTable centered">
     <thead>
         <tr>
-            <th>Unit/Structure</th>
-            <th>Vision Range</th>
-            <th>Example</th>
+            <th>单位/建筑</th>
+            <th>视野范围</th>
+            <th>示例</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>Primary Structure</td>
+            <td>主基地建筑</td>
             <td>7</td>
-            <td><img src="/images/mutatordata/afraidofthedarktownhall.jpg" alt="Afraid of the Dark Vision Range for Primary Structures"></td>
+            <td><img src="/images/mutatordata/afraidofthedarktownhall.jpg" alt="漆黑一片中主基地建筑的视野范围"></td>
         </tr>
         <tr>
-            <td>Any other structure</td>
+            <td>其他任意建筑</td>
             <td>2</td>
-            <td><img src="/images/mutatordata/afraidofthedarkstructure.jpg" alt="Afraid of the Dark Vision Range for Other Structures"></td>
+            <td><img src="/images/mutatordata/afraidofthedarkstructure.jpg" alt="漆黑一片中其他建筑的视野范围"></td>
         </tr>
         <tr>
-            <td>Unit</td>
+            <td>单位</td>
             <td>0</td>
-            <td><img src="/images/mutatordata/afraidofthedarkunit.jpg" alt="Afraid of the Dark Vision Range for Units"></td>
+            <td><img src="/images/mutatordata/afraidofthedarkunit.jpg" alt="漆黑一片中单位的视野范围"></td>
         </tr>
         <tr>
-            <td>Camera<br>(Hover to play clip.<br>Please provide time<br>for clip to load.)</td>
+            <td>镜头<br>（悬停播放动画。<br>请等待动画<br>加载完成。）</td>
             <td>4 + 3(1-{distance to closest unit}/12)</td>
-            <td><img id="afraidofthedarkHover" src="/images/mutatordata/afraidofthedarkcamerastatic.jpg" alt="Afraid of the Dark Vision Range for Player Cameras"></td>
+            <td><img id="afraidofthedarkHover" src="/images/mutatordata/afraidofthedarkcamerastatic.jpg" alt="漆黑一片中玩家镜头的视野范围"></td>
             <script>
                 $("#afraidofthedarkHover").hover(function(){
                     $(this).attr("src", function(index, attr){
@@ -45,17 +45,17 @@
         </tr>
     </tbody>
 </table>
-<p>Any units with a Map Boss tag will not be affected by the mutator. These are usually mission-specific units, such as the Artifact Truck on Cradle of Death and Terrazine Harvesters on Mist Opportunities.</p>
-<p>Attack wave and Objective ping markers will not be shown on the minimap.</p>
-<p class="subheading">Commander-specific Tips</p>
+<p>任何带有 Map Boss 标签的单位都不受该突变因子影响。这些通常是任务专属单位，例如“死亡摇篮”中的神器卡车和“机会渺茫”中的地嗪采集机器人。</p>
+<p>进攻波次和目标的信号标记不会显示在小地图上。</p>
+<p class="subheading">指挥官专属技巧</p>
 <ul>
-    <li>Dehaka: Dehaka's Pack Leaders are Map Bosses and therefore retain their regular vision.</li>
-    <li>Han/Horner: Horner's Call in the Fleet ability generates its own vision circle as it moves through strafing area.</li>
-    <li>Mengsk: Earthsplitter Bombardments provide vision regardless of camera position.</li>
-    <li>Raynor: Raynor's Scans can provide temporary vision for the duration of the scan.</li>
-    <li>Stukov: Brood Queen's Ocular Symbiote ability increases vision for units.</li>
-    <li>Stukov: Units mind-controlled by the Aleksander retain their full vision.</li>
-    <li>Zeratul: Afraid of the Dark disables Zeratul's map-wide terrain vision. You may need to use Rally Points to find the Artifact Fragments, shown below:<br>
+    <li>德哈卡：德哈卡的族群首领属于 Map Boss，因此保留正常视野。</li>
+    <li>汉与霍纳：霍纳的呼叫舰队技能扫射经过目标区域时，会自行生成一圈视野。</li>
+    <li>蒙斯克：无论镜头位于何处，裂地者轰炸都会提供视野。</li>
+    <li>雷诺：雷诺的扫描会在持续期间提供临时视野。</li>
+    <li>斯托科夫：虫群女王的视觉共生技能可以提高单位视野。</li>
+    <li>斯托科夫：被亚历山大号精神控制的单位会保留完整视野。</li>
+    <li>泽拉图：漆黑一片会禁用泽拉图的全地图地形视野。你可能需要使用集结点寻找神器碎片，如下所示：<br>
     <iframe width="475" height="268" src="https://www.youtube.com/embed/h0OZG494TCY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </li>
 </ul>

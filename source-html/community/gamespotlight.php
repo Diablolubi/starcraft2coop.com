@@ -5,20 +5,20 @@
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Game Spotlight</title>
-  <meta name="description" content="This is the submission page to get games that feature a high skill level casted.">
-  <meta name="keywords" content="Starcraft co-op special games casts spotlight">
+  <title>《星际争霸 II》合作任务 - 精彩对局</title>
+  <meta name="description" content="精彩对局栏目收录并解说展现高水平操作的合作任务录像。">
+  <meta name="keywords" content="星际争霸 II, 合作任务, 精彩对局, 解说">
   <link rel="canonical" href="https://starcraft2coop.com/community/gamespotlight">
   <script>
         function validate() {
           var x = $('#gsForm [name=file]').val()
           if (x == "") {
-              alert("File not selected");
+              alert("尚未选择文件");
               return false;
           }
           var x = $('#gsForm [name=desc]').val()
           if (x == "") {
-              alert("Description is blank");
+              alert("说明不能为空");
               return false;
           }
       }
@@ -27,8 +27,8 @@ require_once __DIR__ . "/../../includes/wrapper.php";
 
     </style>
   <?= startContent() ?>
-    <h1>Game Spotlight</h1>
-    <p>Game Spotlight is a special non-routine series of game casts from some of the best Co-op players in the community. The videos provide a glimpse of what Co-op looks like at the highest levels of play and show how top Co-op players handle difficult situations. Each game will be casted with added "Did You Know" facts scattered throughout the video. A full playlist is below:</p>
+    <h1>精彩对局</h1>
+    <p>“精彩对局”是不定期推出的特别解说系列，内容来自社区中部分顶尖合作任务玩家。这些视频展现最高水平下的合作任务玩法，以及高手如何处理困难局面。每场对局的解说中还会穿插“你知道吗？”小知识。完整播放列表如下：</p>
     <iframe width="480" height="270" src="https://www.youtube.com/embed/videoseries?list=PL-U97hco2Fu5f0jQ_vfclXCclVMgw6Ktn" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     <!--
     <p>If you have a game that displays a high level of skill, or one that features a very unusual strategy, then you are welcome to submit the replay for casting. Before submitting a replay, please consider the following:</p>
@@ -97,5 +97,5 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <a href="https://policies.google.com/privacy">Privacy Policy</a> and
     <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
     </form>-->
-    <p>Submissions are now closed. Thank you.</p>
+    <p>投稿现已关闭，感谢支持。</p>
 <?= endContent() ?>

@@ -6,9 +6,9 @@ require_once __DIR__ . "/../../includes/wrapper.php";
 require_once "../../includes/switchergenerator.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Mission Guide - Void Thrashing</title>
-  <meta name="description" content="Starcraft 2 Co-op Mission Guide Void Thrasing">
-  <meta name="keywords" content="Starcraft co-op guides void thrashing mission">
+  <title>《星际争霸 II》合作任务攻略 - 虚空撕裂</title>
+  <meta name="description" content="《星际争霸 II》合作任务“虚空撕裂”攻略">
+  <meta name="keywords" content="星际争霸 II, 合作任务, 虚空撕裂, 攻略">
   <link rel="stylesheet"  media="all" type="text/css" href="/styles/missionstyle.css?v=1.00">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="https://starcraft2coop.com/missions/voidthrashing">
@@ -19,39 +19,39 @@ require_once "../../includes/switchergenerator.php";
     }
   </style>
 <?= startContent() ?>
-    <h1><span class="unbold">Mission:</span> Void Thrashing</h1>
-    <p id="missionPlace">Char</p>
+    <h1><span class="unbold">任务：</span>虚空撕裂</h1>
+    <p id="missionPlace">查尔</p>
     <?php include("../../includes/reporterror.php");?>
     <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#misSum">Mission Summary</a></p>
-        <p><a href="#objectives">Objectives</a></p>
-        <p><a href="#baseAnalysis">Enemy Base Analysis</a></p>
-        <p><a href="#bonus">Completing the Bonus Objective</a></p>
-        <p><a href="#timings">Timings</a></p>
-        <p><a href="#spawnPoints">Spawn Points</a></p>
-        <p><a href="#misTips">Mission Tips</a></p>
-        <p><a href="#comTips">Commander-Specific Tips</a></p>
+        <h2>本页章节</h2>
+        <p><a href="#misSum">任务概述</a></p>
+        <p><a href="#objectives">任务目标</a></p>
+        <p><a href="#baseAnalysis">敌方基地分析</a></p>
+        <p><a href="#bonus">完成奖励目标</a></p>
+        <p><a href="#timings">时间点</a></p>
+        <p><a href="#spawnPoints">出生点</a></p>
+        <p><a href="#misTips">任务技巧</a></p>
+        <p><a href="#comTips">指挥官专属技巧</a></p>
     </div>
-    <h2 id="misSum">Mission Summary</h2>
-    <p>Void thrashers are surfacing on Char. Work together and destroy them before Sgt. Hammer's fortress falls to their ruthless assault.</p>
-    <h2 id="objectives">Objectives</h2>
-    <h3>Primary Objective</h3>
+    <h2 id="misSum">任务概述</h2>
+    <p>虚空撕裂者正在查尔现身。请通力合作，在铁锤中士的要塞被它们的猛烈攻势摧毁前消灭它们。</p>
+    <h2 id="objectives">任务目标</h2>
+    <h3>主要目标</h3>
         <ul>
-            <li>Kill the Void Thrashers (10)</li>
-            <li>Sgt. Hammer's Fortress Must Survive</li>
+            <li>消灭虚空撕裂者（10）</li>
+            <li>铁锤中士的要塞必须存活</li>
         </ul>
-    <h3>Secondary Objective</h3>
+    <h3>奖励目标</h3>
         <ul>
-            <li>Destroy the Archangel (1)</li>
+            <li>摧毁大天使（1）</li>
         </ul>
-    <h2 id="baseAnalysis">Enemy Base Analysis</h2>
+    <h2 id="baseAnalysis">敌方基地分析</h2>
     <div id="globalRaceSelect">
-        <p>Change all base analysis pictures to race:</p>
+        <p>将所有基地分析图片切换为以下种族：</p>
         <form action="#">
-            <label><input type="radio" name="globalRace" value="protoss" checked>Protoss</label><br>
-            <label><input type="radio" name="globalRace" value="terran">Terran</label><br>
-            <label><input type="radio" name="globalRace" value="zerg">Zerg</label><br>
+            <label><input type="radio" name="globalRace" value="protoss" checked>星灵</label><br>
+            <label><input type="radio" name="globalRace" value="terran">人类</label><br>
+            <label><input type="radio" name="globalRace" value="zerg">异虫</label><br>
         </form>
         <script>
             $("input[name='globalRace']").change(function(){
@@ -66,36 +66,36 @@ require_once "../../includes/switchergenerator.php";
         </script>
     </div>
     <?php $mission = "voidthrashing"; ?>
-    <p>The first Void Thrasher on Void Thrashing is guarded by a very small force of enemy units. This area is shown below.</p>
+    <p>“虚空撕裂”中的第一只虚空撕裂者只有一小支敌军守卫。该区域如下所示。</p>
     <?php switcher_generator("thrasher1") ?>
-    <p>The path to the second set of Void Thrashers is guarded by an enemy camp. This is shown below:</p>
+    <p>通往第二批虚空撕裂者的道路上有一处敌军营地，如下所示：</p>
     <?php switcher_generator("thrasher2camp") ?>
-    <p>Once the camp has been cleared out, the second Set of Void Thrashers are guarded by a strong enemy force.</p>
+    <p>清除该营地后，还需击败守卫第二批虚空撕裂者的强大敌军。</p>
     <?php switcher_generator("thrasher2") ?>
-    <p>Once this set of Void Thrashers are cleared, the third set are also guarded by a camp of enemy units.</p>
+    <p>消灭这批虚空撕裂者后，通往第三批撕裂者的道路同样有一处敌军营地。</p>
     <?php switcher_generator("thrasher3camp") ?>
-    <p>Once this camp is cleared, the third Set of Void Thrashers can be cleared.</p>
+    <p>清除该营地后，即可消灭第三批虚空撕裂者。</p>
     <?php switcher_generator("thrasher3") ?>
-    <p>The Final Set of Void Thrashers are in a heavily fortified enemy base. This is shown below:</p>
+    <p>最后一批虚空撕裂者位于防守严密的敌方基地中，如下所示：</p>
     <?php switcher_generator("thrasher4long") ?>
-    <h2 id="bonus">Completing the Bonus Objective</h2>
+    <h2 id="bonus">完成奖励目标</h2>
     <div id="objectiveImages">
-        <img src="/images/missiondata/voidthrashing/archangel.jpg" alt="Archangel">
+        <img src="/images/missiondata/voidthrashing/archangel.jpg" alt="大天使">
     </div>
-    <p>The bonus objective requires you to destroy the Archangel. The Archangel is an enemy unit with an Area-of-Effect attack. The Archangel is guarded by an enemy force, shown below. The bonus objective is always present on the map, so it will trigger whenever a player gets vision or after a certain amount of time has elapsed.</p>
+    <p>奖励目标要求你摧毁大天使。大天使是拥有范围攻击的敌方单位，其守卫部队如下所示。奖励目标始终存在于地图上，因此玩家取得该区域视野或经过一定时间后就会触发。</p>
     <?php switcher_generator("archangel") ?>
-    <p>When the Archangel gets to below 50% HP, it will switch to Fighter mode and fly to another area of the map. With high burst damage, it is very possible to destroy the Archangel before it flies away. The below minimap shows where it ends up after flying away.</p>
+    <p>大天使的生命值降至 50% 以下时，会切换为战斗机模式并飞往地图上的另一处区域。爆发伤害足够高时，完全可以在它飞走前将其摧毁。下方小地图显示了它飞走后的落点。</p>
     <?php switcher_generator("archangelescape") ?>
-    <p>Note that this can happen several times. The escape location will alternate between the two places until the Archangel is destroyed.</p>
-    <h2 id="timings">Timings</h2>
-    <p>Note: Information on Tech and Strength levels can be found on the <a href="/guides/enemycomps">Enemy Compositions</a> page.</p>
-    <p>Void Thrashers will spawn if the total HP and Shields (vitality) of all units and buildings around the Void Thrashers reaches 50% relative to when the game started.</p>
-    <p>Additionally, the each set of Void Thrashers will spawn at a given time, regardless of the state of the mission. These timings are:</p>
+    <p>注意：这一过程可能发生数次。在大天使被摧毁前，它会在两个逃离地点之间交替移动。</p>
+    <h2 id="timings">时间点</h2>
+    <p>注意：科技等级与强度等级的说明可参阅<a href="/guides/enemycomps">敌方部队组合</a>页面。</p>
+    <p>当虚空撕裂者周围所有单位和建筑的生命值与护盾值（总耐久）降至游戏开始时的 50% 时，虚空撕裂者便会出现。</p>
+    <p>此外，无论任务进度如何，每一批虚空撕裂者都会在指定时间出现。时间如下：</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Set</th>
-                <th>Spawn Time</th>
+                <th>批次</th>
+                <th>出现时间</th>
             </tr>
         </thead>
         <tbody>
@@ -117,19 +117,19 @@ require_once "../../includes/switchergenerator.php";
             </tr>
         </tbody>
     </table>
-    <p>There are two patterns for attack waves in this mission, with different timings. The Attack Wave Timings for this mission are:</p>
+    <p>本任务有两种进攻波次模式，时间点各不相同。进攻波次时间如下：</p>
     <table class="centered">
         <tbody class="topAlign">
             <tr>
                 <td>
-                    <p><b>Pattern A:</b></p>
+                    <p><b>模式 A：</b></p>
                     <table class="centered">
                         <thead>
                             <tr>
-                                <th>Time</th>
-                                <th>Tech Level</th>
-                                <th>Strength Level</th>
-                                <th>Spawn Point</th>
+                                <th>时间</th>
+                                <th>科技等级</th>
+                                <th>强度等级</th>
+                                <th>出生点</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -137,62 +137,62 @@ require_once "../../includes/switchergenerator.php";
                                 <td>3:00</td>
                                 <td>1</td>
                                 <td>1</td>
-                                <td>Right</td>
+                                <td>右侧</td>
                             </tr>
                             <tr>
                                 <td>6:00</td>
                                 <td>2</td>
                                 <td>2</td>
-                                <td>Right</td>
+                                <td>右侧</td>
                             </tr>
                             <tr>
                                 <td>9:00</td>
                                 <td>3</td>
                                 <td>3</td>
-                                <td>Left</td>
+                                <td>左侧</td>
                             </tr>
                             <tr>
                                 <td>12:00</td>
                                 <td>4</td>
                                 <td>4</td>
-                                <td>Left</td>
+                                <td>左侧</td>
                             </tr>
                             <tr>
                                 <td>15:00</td>
                                 <td>5</td>
                                 <td>5</td>
-                                <td>Right</td>
+                                <td>右侧</td>
                             </tr>
                             <tr>
                                 <td>18:00</td>
                                 <td>6</td>
                                 <td>6</td>
-                                <td>Right</td>
+                                <td>右侧</td>
                             </tr>
                             <tr>
                                 <td>21:00</td>
                                 <td>7</td>
                                 <td>7</td>
-                                <td>Left</td>
+                                <td>左侧</td>
                             </tr>
                             <tr>
                                 <td>24:00</td>
                                 <td>7</td>
                                 <td>7</td>
-                                <td>Right</td>
+                                <td>右侧</td>
                             </tr>
                         </tbody>
                     </table>
                 </td>
                 <td>
-                    <p><b>Pattern B:</b></p>
+                    <p><b>模式 B：</b></p>
                     <table class="centered">
                         <thead>
                             <tr>
-                                <th>Time</th>
-                                <th>Tech Level</th>
-                                <th>Strength Level</th>
-                                <th>Spawn Point</th>
+                                <th>时间</th>
+                                <th>科技等级</th>
+                                <th>强度等级</th>
+                                <th>出生点</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -200,49 +200,49 @@ require_once "../../includes/switchergenerator.php";
                                 <td>4:00</td>
                                 <td>1</td>
                                 <td>2</td>
-                                <td>Left</td>
+                                <td>左侧</td>
                             </tr>
                             <tr>
                                 <td>8:00</td>
                                 <td>2</td>
                                 <td>3</td>
-                                <td>Right</td>
+                                <td>右侧</td>
                             </tr>
                             <tr>
                                 <td>10:00</td>
                                 <td>3</td>
                                 <td>3</td>
-                                <td>Left</td>
+                                <td>左侧</td>
                             </tr>
                             <tr>
                                 <td>14:00</td>
                                 <td>4</td>
                                 <td>5</td>
-                                <td>Left</td>
+                                <td>左侧</td>
                             </tr>
                             <tr>
                                 <td>16:00</td>
                                 <td>5</td>
                                 <td>4</td>
-                                <td>Right</td>
+                                <td>右侧</td>
                             </tr>
                             <tr>
                                 <td>20:00</td>
                                 <td>6</td>
                                 <td>7</td>
-                                <td>Left</td>
+                                <td>左侧</td>
                             </tr>
                             <tr>
                                 <td>22:00</td>
                                 <td>7</td>
                                 <td>7</td>
-                                <td>Right</td>
+                                <td>右侧</td>
                             </tr>
                             <tr>
                                 <td>26:00</td>
                                 <td>7</td>
                                 <td>7</td>
-                                <td>Left</td>
+                                <td>左侧</td>
                             </tr>
                         </tbody>
                     </table>
@@ -250,24 +250,24 @@ require_once "../../includes/switchergenerator.php";
             </tr>
         </tbody>
     </table>
-    <p>If players have not gotten vision of the Archangel after 13:30, the bonus objective will start.</p>
-    <h2 id="spawnPoints">Spawn Points</h2>
-    <p>There are two spawn points for attack waves on this map.</p>
-    <p>Left Spawn Point (near second set of Void Thrashers):</p>
-    <img src="/images/missiondata/voidthrashing/leftspawnpoint.jpg" alt="Left Spawn Point">
-    <p>Right Spawn Point (near bonus area):</p>
-    <img src="/images/missiondata/voidthrashing/rightspawnpoint.jpg" alt="Right Spawn Point">
-    <h2 id="misTips">Mission Tips</h2>
+    <p>如果玩家在 13:30 后仍未取得大天使的视野，奖励目标便会开始。</p>
+    <h2 id="spawnPoints">出生点</h2>
+    <p>本地图的进攻波次有两个出生点。</p>
+    <p>左侧出生点（第二批虚空撕裂者附近）：</p>
+    <img src="/images/missiondata/voidthrashing/leftspawnpoint.jpg" alt="左侧出生点">
+    <p>右侧出生点（奖励区域附近）：</p>
+    <img src="/images/missiondata/voidthrashing/rightspawnpoint.jpg" alt="右侧出生点">
+    <h2 id="misTips">任务技巧</h2>
     <ul>
-        <li>This mission is very short, and rewards aggressive play because of weak enemy defenses.</li>
+        <li>本任务非常短，而且敌方防御薄弱，因此积极进攻会获得更好效果。</li>
     </ul>
-    <h2 id="comTips">Commander-specific Tips</h2>
+    <h2 id="comTips">指挥官专属技巧</h2>
     <ul>
-        <li><a href="/commanders/abathur">Abathur</a>: Place Toxic Nests on attack wave spawn locations to weaken them.</li>
-        <li><a href="/commanders/horner">Han & Horner</a>: Place Mag Mines on attack wave spawn locations to weaken them.</li>
-        <li><a href="/commanders/nova">Nova</a>: If you use Siege Tanks, place Spider-mines on attack wave spawn locations to weaken them.</li>
-        <li><a href="/commanders/raynor">Raynor</a>: If you use Vultures, place Spider-mines on attack wave spawn locations to weaken them.</li>
-        <li><a href="/commanders/stukov">Stukov</a>: Move your Infested Colonist Compound to the first Void Thrasher location after it is killed for quick reinforcements.</li>
+        <li><a href="/commanders/abathur">阿巴瑟</a>：在进攻波次的出生位置放置剧毒巢穴以削弱敌军。</li>
+        <li><a href="/commanders/horner">汉与霍纳</a>：在进攻波次的出生位置放置磁雷以削弱敌军。</li>
+        <li><a href="/commanders/nova">诺娃</a>：使用攻城坦克时，在进攻波次的出生位置布置蜘蛛雷以削弱敌军。</li>
+        <li><a href="/commanders/raynor">雷诺</a>：使用秃鹫战车时，在进攻波次的出生位置布置蜘蛛雷以削弱敌军。</li>
+        <li><a href="/commanders/stukov">斯托科夫</a>：消灭第一只虚空撕裂者后，将被感染的移民营移动到其位置，以便快速增援。</li>
     </ul>
 <script src="/scripts/nav.js"></script>
 <?= endContent() ?>

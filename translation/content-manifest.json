@@ -1,0 +1,805 @@
+{
+  "files": [
+    {
+      "domain": "shared",
+      "path": "includes/wrapper.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/about/contact.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/about/faq.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/about/links.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/about/stats.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/account.php",
+      "status": "translated"
+    },
+    {
+      "domain": "commanders",
+      "path": "source-html/commanders/abathur.php",
+      "status": "translated"
+    },
+    {
+      "domain": "commanders",
+      "path": "source-html/commanders/alarak.php",
+      "status": "translated"
+    },
+    {
+      "domain": "commanders",
+      "path": "source-html/commanders/artanis.php",
+      "status": "translated"
+    },
+    {
+      "domain": "commanders",
+      "path": "source-html/commanders/dehaka.php",
+      "status": "translated"
+    },
+    {
+      "domain": "commanders",
+      "path": "source-html/commanders/fenix.php",
+      "status": "translated"
+    },
+    {
+      "domain": "commanders",
+      "path": "source-html/commanders/horner.php",
+      "status": "translated"
+    },
+    {
+      "domain": "commanders",
+      "path": "source-html/commanders/karax.php",
+      "status": "translated"
+    },
+    {
+      "domain": "commanders",
+      "path": "source-html/commanders/kerrigan.php",
+      "status": "translated"
+    },
+    {
+      "domain": "commanders",
+      "path": "source-html/commanders/mengsk.php",
+      "status": "translated"
+    },
+    {
+      "domain": "commanders",
+      "path": "source-html/commanders/nova.php",
+      "status": "translated"
+    },
+    {
+      "domain": "commanders",
+      "path": "source-html/commanders/raynor.php",
+      "status": "translated"
+    },
+    {
+      "domain": "commanders",
+      "path": "source-html/commanders/stetmann.php",
+      "status": "translated"
+    },
+    {
+      "domain": "commanders",
+      "path": "source-html/commanders/stukov.php",
+      "status": "translated"
+    },
+    {
+      "domain": "commanders",
+      "path": "source-html/commanders/swann.php",
+      "status": "translated"
+    },
+    {
+      "domain": "commanders",
+      "path": "source-html/commanders/tychus.php",
+      "status": "translated"
+    },
+    {
+      "domain": "commanders",
+      "path": "source-html/commanders/vorazun.php",
+      "status": "translated"
+    },
+    {
+      "domain": "commanders",
+      "path": "source-html/commanders/zagara.php",
+      "status": "translated"
+    },
+    {
+      "domain": "commanders",
+      "path": "source-html/commanders/zeratul.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/community/gamespotlight.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/community/mythbusters.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/community/rockslappingchampions.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/community/tournament/archive.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/community/tournament/index.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/community/tournament/registrationclosed.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/community/tournament/registrationopen.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/community/tournament/signup.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/community/tournament/summary/2019-10.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/ctg/index.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/ctg/selector.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/discord.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/errors/404.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/guides/buildordertheory.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/guides/enemycomps.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/guides/generaltips.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/guides/newplayer.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/guides/youtube.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/index.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/mining.php",
+      "status": "translated"
+    },
+    {
+      "domain": "missions",
+      "path": "source-html/missions/chainofascension.php",
+      "status": "translated"
+    },
+    {
+      "domain": "missions",
+      "path": "source-html/missions/cradleofdeath.php",
+      "status": "translated"
+    },
+    {
+      "domain": "missions",
+      "path": "source-html/missions/deadofnight.php",
+      "status": "translated"
+    },
+    {
+      "domain": "missions",
+      "path": "source-html/missions/lockload.php",
+      "status": "translated"
+    },
+    {
+      "domain": "missions",
+      "path": "source-html/missions/malwarfare.php",
+      "status": "translated"
+    },
+    {
+      "domain": "missions",
+      "path": "source-html/missions/minerevacuation.php",
+      "status": "translated"
+    },
+    {
+      "domain": "missions",
+      "path": "source-html/missions/mistopportunities.php",
+      "status": "translated"
+    },
+    {
+      "domain": "missions",
+      "path": "source-html/missions/oblivionexpress.php",
+      "status": "translated"
+    },
+    {
+      "domain": "missions",
+      "path": "source-html/missions/partparcel.php",
+      "status": "translated"
+    },
+    {
+      "domain": "missions",
+      "path": "source-html/missions/riftstokorhal.php",
+      "status": "translated"
+    },
+    {
+      "domain": "missions",
+      "path": "source-html/missions/scytheofamon.php",
+      "status": "translated"
+    },
+    {
+      "domain": "missions",
+      "path": "source-html/missions/templeofthepast.php",
+      "status": "translated"
+    },
+    {
+      "domain": "missions",
+      "path": "source-html/missions/thevermillionproblem.php",
+      "status": "translated"
+    },
+    {
+      "domain": "missions",
+      "path": "source-html/missions/voidlaunch.php",
+      "status": "translated"
+    },
+    {
+      "domain": "missions",
+      "path": "source-html/missions/voidthrashing.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/mutators/index.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/privacy.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/resources/achievements.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/resources/ailogic.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/resources/brutal.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/resources/bugs.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/resources/deathprevention.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/resources/eastereggs.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/resources/levels.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/resources/mutators.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/resources/patchdata.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/resources/weeklymutations.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/scripts/calculatebreakpoints.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/scripts/calculatestats.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/scripts/generatemutation.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/scripts/generaterclist.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/scripts/generatetable.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/scripts/getamonstats.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/tools/downloads.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/tools/masterybreakpoints.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/tools/replayanalyzer.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/tools/unitstats.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/units/index.php",
+      "status": "translated"
+    },
+    {
+      "domain": "pages",
+      "path": "source-html/youtube.php",
+      "status": "translated"
+    },
+    {
+      "domain": "data",
+      "path": "source-data/amonunits.json",
+      "status": "translated"
+    },
+    {
+      "domain": "data",
+      "path": "source-data/brutalplus.json",
+      "status": "translated"
+    },
+    {
+      "domain": "data",
+      "path": "source-data/commandersummaries.json",
+      "status": "translated"
+    },
+    {
+      "domain": "data",
+      "path": "source-data/missionnames.json",
+      "status": "translated"
+    },
+    {
+      "domain": "data",
+      "path": "source-data/mutationcycle.json",
+      "status": "translated"
+    },
+    {
+      "domain": "data",
+      "path": "source-data/mutatorcommandertips.json",
+      "status": "translated"
+    },
+    {
+      "domain": "data",
+      "path": "source-data/mutatorinteractions.json",
+      "status": "translated"
+    },
+    {
+      "domain": "data",
+      "path": "source-data/mutators.json",
+      "status": "translated"
+    },
+    {
+      "domain": "data",
+      "path": "source-data/patchdata.json",
+      "status": "translated"
+    },
+    {
+      "domain": "data",
+      "path": "source-data/playertalents.json",
+      "status": "translated"
+    },
+    {
+      "domain": "data",
+      "path": "source-data/playerunits.json",
+      "status": "translated"
+    },
+    {
+      "domain": "data",
+      "path": "source-data/playerupgrades.json",
+      "status": "translated"
+    },
+    {
+      "domain": "data",
+      "path": "source-data/weeklymutations.json",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Afraid of the Dark.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Aggressive Deployment.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Alien Incubation.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Avenger.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Barrier.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Black Death.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Blizzard.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Boom Bots.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Chaos Studios.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Concussive Attacks.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Darkness.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Diffusion.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Double Edged.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Eminent Domain.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Evasive Maneuvers.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Fatal Attraction.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Fear.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Fireworks.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Gift Exchange.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Going Nuclear.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Hardened Will.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Heroes from the Storm.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Inspiration.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Just Die.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Kill Bots.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Laser Drill.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Lava Burst.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Life Leech.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Long Range.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Lucky Envelopes.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Mag-nificent.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Micro Transactions.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Mineral Shields.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Minesweeper.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Missile Command.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Moment of Silence.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Mutually Assured Destruction.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Naughty List.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Orbital Strike.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Outbreak.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Photon Overload.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Polarity.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Power Overwhelming.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Propagators.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Purifier Beam.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Random.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Scorched Earth.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Self Destruction.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Sharing is Caring.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Shortsighted.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Slim Pickings.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Speed Freaks.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Temporal Field.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Time Warp.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Transmutation.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Trick or Treat.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Turkey Shoot.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Twister.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Vertigo.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Void Reanimators.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Void Rifts.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/Walking Infested.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/We Move Unseen.html",
+      "status": "translated"
+    },
+    {
+      "domain": "mutators",
+      "path": "source-data/mutator-details/safetyzones.html",
+      "status": "translated"
+    }
+  ],
+  "commit": "0f18e89693e25ae942ab89747b63e659e8d4473e"
+}

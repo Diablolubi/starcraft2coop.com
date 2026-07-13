@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="robots" content="index, follow">
@@ -7,7 +7,7 @@
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"/>
 <link rel='shortcut icon' href='/images/favicon.ico' type='image/x-icon' />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <title>Starcraft 2 Co-op - CtG's Mutation Commander List</title>
+  <title>《星际争霸 II》合作任务 - CtG 突变任务指挥官列表</title>
     <style>
         body{
             background:url("../images/ctg/bg.jpg");
@@ -101,11 +101,12 @@
     require_once __DIR__ . '/../../includes/queries.php';
     $mutators = get_mutators();
     $mutations = get_weeklymutations();
-    $mutations = array_filter($mutations, fn($mutation) => $mutation['mutation'] != 'Sudden But Inevitable');
+    $mutations = array_filter($mutations, fn($mutation) => original_name('weekly_mutations', $mutation['mutation']) != 'Sudden But Inevitable');
+    foreach ($mutators as &$mutator) {
+        $mutator['slug'] = mutator_token($mutator['mutatorname']);
+    }
     foreach ($mutations as &$row) {
-        if ($row['map'] == "Lock and Load") {
-            $row['map'] = "Lock Load";
-        }
+        $row['maptoken'] = mission_token($row['map']);
     }
     ?>
     <div id="mutatorsList" class="hidden">
@@ -164,12 +165,12 @@
             var mutationIndex = $(this).prop('selectedIndex') - 1;
             var selectedMutation = mutationsList[mutationIndex];
 
-            var mapFile = "../images/ctg/" + selectedMutation.map.replace(/ /g,'').toLowerCase() +".png";
+            var mapFile = "../images/ctg/" + selectedMutation.maptoken +".png";
             elem.find(".map").attr('src', mapFile);
 
             var totalabom = 0;
             if(selectedMutation.mut01 !=null){
-                var mutationFile = "/images/mutators/"+ mutatorsList[selectedMutation.mut01-1].mutatorname.replace(/ /g,'').toLowerCase() +".png";
+                var mutationFile = "/images/mutators/"+ mutatorsList[selectedMutation.mut01-1].slug +".png";
                 totalabom+=parseInt(mutatorsList[selectedMutation.mut01-1].abomination);
                 elem.find(".mut1icon").attr('src', mutationFile);
                 elem.find(".mut1desc").html("<b class='mutname'>" + mutatorsList[selectedMutation.mut01-1].mutatorname + "</b><br>" + mutatorsList[selectedMutation.mut01-1].mutatordescription);
@@ -179,7 +180,7 @@
                 elem.find(".mut1desc").text("");
             }
             if(selectedMutation.mut02 !=null){
-                var mutationFile = "/images/mutators/"+ mutatorsList[selectedMutation.mut02-1].mutatorname.replace(/ /g,'').toLowerCase() +".png";
+                var mutationFile = "/images/mutators/"+ mutatorsList[selectedMutation.mut02-1].slug +".png";
                 elem.find(".mut2icon").attr('src', mutationFile);
                 elem.find(".mut2desc").html("<b class='mutname'>" + mutatorsList[selectedMutation.mut02-1].mutatorname + "</b><br>" + mutatorsList[selectedMutation.mut02-1].mutatordescription);
                 totalabom+=parseInt(mutatorsList[selectedMutation.mut02-1].abomination);
@@ -189,7 +190,7 @@
                 elem.find(".mut2desc").text("");
             }
             if(selectedMutation.mut03 !=null){
-                var mutationFile = "/images/mutators/"+ mutatorsList[selectedMutation.mut03-1].mutatorname.replace(/ /g,'').toLowerCase() +".png";
+                var mutationFile = "/images/mutators/"+ mutatorsList[selectedMutation.mut03-1].slug +".png";
                 elem.find(".mut3icon").attr('src', mutationFile);
                 elem.find(".mut3desc").html("<b class='mutname'>" + mutatorsList[selectedMutation.mut03-1].mutatorname + "</b><br>" + mutatorsList[selectedMutation.mut03-1].mutatordescription);
                 totalabom+=parseInt(mutatorsList[selectedMutation.mut03-1].abomination);

@@ -1,22 +1,22 @@
-<?php
+<?php /** @generateStatic */
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-    <title>Starcraft 2 Co-op - Weekly Mutations</title>
-    <meta name="description" content="Starcraft 2 Co-op Weekly Mutations">
-    <meta name="keywords" content="Starcraft co-op guides weekly mutations">
+    <title>《星际争霸2》合作任务 - 每周突变</title>
+    <meta name="description" content="《星际争霸2》合作任务每周突变">
+    <meta name="keywords" content="星际争霸 合作任务 攻略 每周突变">
     <link rel="canonical" href="https://starcraft2coop.com/resources/weeklymutations">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <script>
       function validate() {
           var x = $('#mutationForm [name=file]').val()
           if (x == "") {
-              alert("File not selected");
+              alert("未选择文件");
               return false;
           }
           var x = $('#mutationForm [name=desc]').val()
           if (x == "") {
-              alert("Description is blank");
+              alert("说明不能为空");
               return false;
           }
       }
@@ -318,43 +318,43 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         }
     </style>
 <?= startContent() ?>
-    <h1>A List of Weekly Mutations With Difficulties</h1>
+    <h1>每周突变及难度列表</h1>
     <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#guide">Weekly Mutation Beginner's Guide</a></p>
-        <p><a href="#cycle">Weekly Mutations Cycle</a></p>
-        <p><a href="#past">Casted Weekly Mutations</a></p>
+        <h2>本页章节</h2>
+        <p><a href="#guide">每周突变新手指南</a></p>
+        <p><a href="#cycle">每周突变循环</a></p>
+        <p><a href="#past">带解说的每周突变</a></p>
     </div>
-    <h2 id="guide">Weekly Mutation Beginner's Guide</h2>
-    <p>Weekly Mutations are, as the name suggests, mutations that appear as weekly challenges. Completing the weekly challenge offers an experience bounty, depending on the difficulty level completed. These bounties are shown below:</p>
+    <h2 id="guide">每周突变新手指南</h2>
+    <p>顾名思义，每周突变是以每周挑战形式出现的突变任务。完成每周挑战可根据所选难度获得经验悬赏，具体如下：</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Difficulty</th>
-                <th>Bounty</th>
+                <th>难度</th>
+                <th>悬赏</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Casual</td>
+                <td>休闲</td>
                 <td>25,000</td>
             </tr>
             <tr>
-                <td>Normal</td>
+                <td>普通</td>
                 <td>35,000</td>
             </tr>
             <tr>
-                <td>Hard</td>
+                <td>困难</td>
                 <td>50,000</td>
             </tr>
             <tr>
-                <td>Brutal</td>
+                <td>残酷</td>
                 <td>75,000</td>
             </tr>
         </tbody>
     </table>
-    <p>Completing a Weekly Mutation on a difficulty level will unlock the bounties for all difficulties below. For example, completing a Weekly Mutation on Brutal difficulty (commonly known as a "Brutation"), will give you 185,000. You can only earn each weekly bounty once.</p>
-    <p>For a brief description of each mutator, hover over its icon. For details, please go to the <a href="/resources/mutators">Mutators</a> page.</p>
+    <p>完成某一难度的每周突变，也会解锁所有更低难度的悬赏。例如，以残酷难度完成每周突变（俗称“残酷突变”）可获得185,000点经验。每项每周悬赏只能领取一次。</p>
+    <p>将鼠标悬停在突变因子图标上可查看简介。详情请参阅<a href="/resources/mutators">突变因子</a>页面。</p>
     <ul>
     </ul>
 
@@ -372,18 +372,18 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             return false;
         });
     </script>
-    <div id="tooltip">tooltip</div>
+    <div id="tooltip">提示</div>
 
-    <h2 id="cycle">Weekly Mutations Cycle</h2>
-    <p>The weekly mutations follow a fixed cycle as shown below. The <a href="#thisweek">current mutation for this week</a> is highlighted in green.</p>
+    <h2 id="cycle">每周突变循环</h2>
+    <p>每周突变按下表所示的固定循环出现，<a href="#thisweek">本周当前突变</a>以绿色高亮。</p>
     <table id="mutationCycle">
             <thead>
                 <tr id="columnNames">
-                    <th>Name</th>
-                    <th>Map</th>
-                    <th>Mutator 1</th>
-                    <th>Mutator 2</th>
-                    <th>Mutator 3</th>
+                    <th>名称</th>
+                    <th>地图</th>
+                    <th>突变因子1</th>
+                    <th>突变因子2</th>
+                    <th>突变因子3</th>
                 </tr>
             </thead>
             <tbody>
@@ -409,7 +409,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
 
     function weeklyMutationMutatorLink(array $mutator): string
     {
-        $filename = token($mutator['mutatorname']);
+        $filename = mutator_token($mutator['mutatorname']);
         return "<a href=\"/mutators/" . $filename . "\"><img class=\"miniIcon\" src=\"/images/mutators/" .
             $filename . ".png\" alt=\"\">" . $mutator['mutatorname'] . "</a>";
     }
@@ -420,17 +420,17 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     [$currentWeekIndex] = get_currentmutationcycle();
 
     foreach ($cycleList as $rowIndex => $row) {
-        $classVals = str_replace("and", "", str_replace(' ', '', strtolower($row["map"])));
+        $classVals = mission_token($row["map"]);
         $score = 0;
         $unknown = false;
         if ($row["mut01"]) {
-            $classVals .= " " . str_replace(' ', '', strtolower($mutators[intval($row["mut01"]) - 1]['mutatorname']));
+            $classVals .= " " . mutator_token($mutators[intval($row["mut01"]) - 1]['mutatorname']);
         }
         if ($row["mut02"]) {
-            $classVals .= " " . str_replace(' ', '', strtolower($mutators[intval($row["mut02"]) - 1]['mutatorname']));
+            $classVals .= " " . mutator_token($mutators[intval($row["mut02"]) - 1]['mutatorname']);
         }
         if ($row["mut03"]) {
-            $classVals .= " " . str_replace(' ', '', strtolower($mutators[intval($row["mut03"]) - 1]['mutatorname']));
+            $classVals .= " " . mutator_token($mutators[intval($row["mut03"]) - 1]['mutatorname']);
         }
         [$diff, $diffString] = getDiffString($row["brutalplus"]);
         $classVals .= " brutal" . $diff;
@@ -441,7 +441,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         echo "<td class='ribbon'>" . $row["mutation"] . "<div class='ribbon" . $diff . "'>" . $diffString . "</div></td>\n";
 
         if ($row["map"]) {
-            echo "<td><div class='mapImg mapImg-" . str_replace("and", "", str_replace(' ', '', strtolower($row["map"]))) . "'>" . htmlspecialchars(mapDisplayName($row["map"])) . "</div></td>\n";
+            echo "<td><div class='mapImg mapImg-" . mission_token($row["map"]) . "'>" . htmlspecialchars(mapDisplayName($row["map"])) . "</div></td>\n";
         } else {
             echo "<td></td>\n";
         }
@@ -467,48 +467,42 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     ?>
     </tbody>
     <table>
-    <h2 id="past">Casted Weekly Mutations</h2>
-    <p>The list of weekly mutations is shown below:</p>
-    <p>Filters (click a filter to remove):</p>
-    <div id="maps"><p>Map: <select id="mapselect">
+    <h2 id="past">带解说的每周突变</h2>
+    <p>每周突变列表如下：</p>
+    <p>筛选条件（点击即可移除）：</p>
+    <div id="maps"><p>地图: <select id="mapselect">
         <?php
         foreach (get_missions() as $row) {
-            $string = str_replace(" ", "", $row['name']);
-            $string = str_replace("and", "", $string);
-            $string = str_replace("&", "", $string);
-            echo("<option value='" . strtolower($string) . "'>" . $row['name'] . "</option>");
+            echo("<option value='" . mission_token($row['name']) . "'>" . $row['name'] . "</option>");
         }
         ?>
         </select>
-        <button type="button" id="addmap">Add</button>
+        <button type="button" id="addmap">添加</button>
         </p>
     </div>
-    <div id="mutators"><p>Mutators: <select id="mutatorselect">
+    <div id="mutators"><p>突变因子： <select id="mutatorselect">
         <?php
         foreach (get_mutators() as $row) {
-            $string = $row['mutatorname'];
-            $string = str_replace(" ", "", $string);
-            $string = str_replace("&", "", $string);
-            echo("<option value='" . strtolower($string) . "'>" . $row['mutatorname'] . "</option>");
+            echo("<option value='" . mutator_token($row['mutatorname']) . "'>" . $row['mutatorname'] . "</option>");
         }
         ?>
         </select>
-        <button type="button" id="addmutator">Add</button>
+        <button type="button" id="addmutator">添加</button>
         </p>
     </div>
-    <div id="difficultyLevel"><p>Difficulty: <select id="difficultyselect"><option value='0'>?</option>
+    <div id="difficultyLevel"><p>难度: <select id="difficultyselect"><option value='0'>?</option>
         <?php
         foreach ($difficultyArray as $row) {
-            echo("<option value='" . $row['difficulty'] . "'>Brutal+" . $row['difficulty'] . "</option>");
+            echo("<option value='" . $row['difficulty'] . "'>残酷+" . $row['difficulty'] . "</option>");
         }
         ?>
         </select>
-        <button type="button" id="adddifficulty">Add</button>
+        <button type="button" id="adddifficulty">添加</button>
         </p>
     </div>
     <p>
         <!--button type="button" id="filter">Filter</button-->
-        <button type="button" id="clear">Clear Filters</button>
+        <button type="button" id="clear">清除筛选</button>
     </p>
     <script>
         $("#addmap").click(function(){
@@ -611,34 +605,38 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div id="player">
         <iframe id="video" width="640" height="360" src="about:blank" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
-    <p><span id="filterCount">0</span> Mutations listed</p>
+    <p><span id="filterCount">0</span> 项突变</p>
     <div class="tableContainer">
         <table id="mutationList">
             <thead>
                 <tr id="castedColumnNames">
-                    <th>Release Date</th>
-                    <th>Name</th>
-                    <th>Map</th>
-                    <th>Mutator 1</th>
-                    <th>Mutator 2</th>
-                    <th>Mutator 3</th>
+                    <th>发布日期</th>
+                    <th>名称</th>
+                    <th>地图</th>
+                    <th>突变因子1</th>
+                    <th>突变因子2</th>
+                    <th>突变因子3</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
                 $weeklyList = get_weeklymutations();
+                $difficultyByMutationId = [];
+                foreach (get_mutationcycle() as $cycleRow) {
+                    $difficultyByMutationId[(int)$cycleRow['mutationid']] = $cycleRow['brutalplus'] ?? 0;
+                }
                 foreach ($weeklyList as $row) {
-                    $classVals = str_replace("and", "", str_replace(' ', '', strtolower($row["map"])));
+                    $classVals = mission_token($row["map"]);
                     if ($row["mut01"]) {
-                        $classVals .= " " . str_replace(' ', '', strtolower($mutators[intval($row["mut01"]) - 1]['mutatorname']));
+                        $classVals .= " " . mutator_token($mutators[intval($row["mut01"]) - 1]['mutatorname']);
                     }
                     if ($row["mut02"]) {
-                        $classVals .= " " . str_replace(' ', '', strtolower($mutators[intval($row["mut02"]) - 1]['mutatorname']));
+                        $classVals .= " " . mutator_token($mutators[intval($row["mut02"]) - 1]['mutatorname']);
                     }
                     if ($row["mut03"]) {
-                        $classVals .= " " . str_replace(' ', '', strtolower($mutators[intval($row["mut03"]) - 1]['mutatorname']));
+                        $classVals .= " " . mutator_token($mutators[intval($row["mut03"]) - 1]['mutatorname']);
                     }
-                    [$diff, $diffString] = getDiffString($row["brutalplus"]);
+                    [$diff, $diffString] = getDiffString($difficultyByMutationId[(int)$row['mutationid']] ?? 0);
                     $classVals .= " brutal" . $diff;
                     echo "<tr class='" . $classVals . "'>\n";
                     echo "<td class='ribbon'>" . $row["releasedate"] . "<div class='ribbon" . $diff . "'>" . $diffString . "</div></td>\n";
@@ -649,7 +647,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                     }
 
                     if ($row["map"]) {
-                        echo "<td><div class='mapImg mapImg-" . str_replace("and", "", str_replace(' ', '', strtolower($row["map"]))) . "'>" . htmlspecialchars(mapDisplayName($row["map"])) . "</div></td>\n";
+                        echo "<td><div class='mapImg mapImg-" . mission_token($row["map"]) . "'>" . htmlspecialchars(mapDisplayName($row["map"])) . "</div></td>\n";
                     } else {
                         echo "<td></td>\n";
                     }

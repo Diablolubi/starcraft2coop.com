@@ -5,9 +5,9 @@
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Commander Guide - Abathur</title>
-  <meta name="description" content="Starcraft 2 Co-op Commander Guide Abathur">
-  <meta name="keywords" content="Starcraft co-op guides abathur commander mastery prestige build">
+  <title>星际争霸 II 合作任务 - 指挥官攻略 - 阿巴瑟</title>
+  <meta name="description" content="星际争霸 II 合作任务指挥官阿巴瑟攻略">
+  <meta name="keywords" content="星际争霸 合作任务 攻略 阿巴瑟 指挥官 精通 威望 配兵">
   <link rel="stylesheet"  media="all" type="text/css" href="/styles/commanderstyle.css?v=2">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="https://starcraft2coop.com/commanders/abathur">
@@ -18,380 +18,366 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         }
   </style>
   <?= startContent() ?>
-    <div id="tooltip">tooltip</div>
-    <h1><span class="unbold">Commander:</span> Abathur</h1>
-    <p id="commanderMotto">Evolution Master</p>
+    <div id="tooltip">提示</div>
+    <h1><span class="unbold">指挥官：</span>阿巴瑟</h1>
+    <p id="commanderMotto">进化大师</p>
     <?php include("../../includes/reporterror.php");?>
     <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#comSum">Commander Summary</a></p>
-        <p><a href="#levelUnlocks">Level Unlocks</a></p>
-        <p><a href="#achievements">Achievements</a></p>
-        <p><a href="#calldowns">Calldowns</a></p>
-        <p><a href="#leveling">Sub-Ascension Leveling</a></p>
-        <p><a href="#masteries">Masteries</a></p>
-        <p><a href="#prestiges">Prestiges</a></p>
-        <p><a href="#army">Recommended Army Composition</a></p>
-        <p><a href="#units">Combat Units</a></p>
-        <p><a href="#buildOrder">Build Order</a></p>
-        <p><a href="#guide">Gameplay Guide</a></p>
-        <p><a href="#biomass">Biomass Farming</a></p>
+        <h2>本页章节</h2>
+        <p><a href="#comSum">指挥官概述</a></p>
+        <p><a href="#levelUnlocks">等级解锁</a></p>
+        <p><a href="#achievements">成就</a></p>
+        <p><a href="#calldowns">面板技能</a></p>
+        <p><a href="#leveling">飞升前升级</a></p>
+        <p><a href="#masteries">精通</a></p>
+        <p><a href="#prestiges">威望</a></p>
+        <p><a href="#army">推荐部队组成</a></p>
+        <p><a href="#units">作战单位</a></p>
+        <p><a href="#buildOrder">建造顺序</a></p>
+        <p><a href="#guide">玩法攻略</a></p>
+        <p><a href="#biomass">生物质收集</a></p>
     </div>
-    <h2 id="comSum">Commander Summary</h2>
-    <p>Abathur uses biomass collected from the enemy's fallen units to enhance his own units. Some units can evolve into Ultimate Evolutions - massive units that can lead the charge against Amon.</p>
-    <h2 id="levelUnlocks">Level Unlocks</h2>
+    <h2 id="comSum">指挥官概述</h2>
+    <p>阿巴瑟会从阵亡的敌方单位身上收集生物质，以强化自己的单位。部分单位可以进化为终极进化体——能够带头冲击埃蒙大军的巨型单位。</p>
+    <h2 id="levelUnlocks">等级解锁</h2>
     <table class="progressionTable">
         <thead>
             <tr>
-                <th>Level/Icon</th>
-                <th>Name</th>
-                <th>Description</th>
+                <th>等级/图标</th>
+                <th>名称</th>
+                <th>说明</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/progression/abathur/abathur_01.png" alt = "Biomass Harvester"></td>
-                <td>Biomass Harvester</td>
+                <td><img src="/images/commanderdata/progression/abathur/abathur_01.png" alt = "生物质收割者"></td>
+                <td>生物质收割者</td>
                 <td>
                     <ul>
-                        <li>Abathur's units gain increased life, attack speed, and energy regeneration by collecting Biomass from fallen enemies.</li>
-                        <li>Roaches do not cost vespene gas.</li>
-                        <li>Larvae spawn at an increased rate.</li>
+                        <li>阿巴瑟的单位从阵亡敌人身上收集生物质后，可提升生命值、攻击速度和能量恢复速度。</li>
+                        <li>蟑螂不消耗高能瓦斯。</li>
+                        <li>幼虫的孵化速度加快。</li>
                     </ul>
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/abathur/abathur_02.png" alt = "Ultimate Evolution"></td>
-                <td>Ultimate Evolution</td>
+                <td><img src="/images/commanderdata/progression/abathur/abathur_02.png" alt = "终极进化"></td>
+                <td>终极进化</td>
                 <td>
-                    Unlocks the ability for ground units with 100 stacks of Biomass to evolve into Brutalisks. Air units with 100 stacks of Biomass evolve into Leviathans.
+                    解锁能力：拥有 100 层生物质的地面单位可以进化为莽兽，拥有 100 层生物质的空中单位可以进化为利维坦。
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/abathur/abathur_03.png" alt = "Virulent Nests"></td>
-                <td>Virulent Nests</td>
+                <td><img src="/images/commanderdata/progression/abathur/abathur_03.png" alt = "剧毒巢穴"></td>
+                <td>剧毒巢穴</td>
                 <td>
-                   Enemies damaged by Toxic Nests drop additional biomass and have attack and movement speeds slowed. Toxic Nests have a chance to respawn on death. Toxic Nests cannot be targeted by the enemy.
+                   被剧毒巢穴伤害的敌人会掉落额外生物质，且攻击速度和移动速度降低。剧毒巢穴被摧毁后有几率重生，并且无法被敌人选为目标。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/abathur/abathur_04.png" alt = "Roach Warren Upgrade Cache"></td>
-                <td>Roach Warren Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/abathur/abathur_04.png" alt = "蟑螂温室升级包"></td>
+                <td>蟑螂温室升级包</td>
                 <td>
-                    Unlocks the following upgrades at the Roach Warren:
+                    在蟑螂温室中解锁以下升级：
                     <ul>
-                        <li>Roaches gain +6 armor when under 50% life.</li>
-                        <li>Increase the damage of Ravager's Corrosive Bile ability by 40.</li>
+                        <li>蟑螂的生命值低于 50% 时，护甲提高 6 点。</li>
+                        <li>破坏者的腐蚀胆汁技能伤害提高 40 点。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/abathur/abathur_05.png" alt = "Improved Mend"></td>
-                <td>Improved Mend</td>
+                <td><img src="/images/commanderdata/progression/abathur/abathur_05.png" alt = "强化愈合"></td>
+                <td>强化愈合</td>
                 <td>
-                    Mend can store up to 3 charges and its cooldown is reduced by 30 seconds.
+                    愈合最多可储存 3 次使用次数，冷却时间缩短 30 秒。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/abathur/abathur_06.png" alt = "Evolution Chamber Upgrade Cache"></td>
-                <td>Evolution Chamber Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/abathur/abathur_06.png" alt = "进化腔升级包"></td>
+                <td>进化腔升级包</td>
                 <td>
-                    Unlocks the following upgrade at the Evolution chamber:
+                    在进化腔中解锁以下升级：
                     <ul>
-                        <li>Allow Hatcheries, Lairs and Hives to birth two Swarm Queens simultaneously.</li>
-                        <li>Increase the healing of the Swarm Queen's Rapid Transfusion by 10 and allow it to heal both biological and mechanical units.</li>
+                        <li>使孵化场、虫穴和蜂巢可以同时孵化两只虫群女王。</li>
+                        <li>虫群女王的快速输血治疗量提高 10 点，并可同时治疗生物单位和机械单位。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/abathur/abathur_07.png" alt = "Biomass Recovery"></td>
-                <td>Biomass Recovery</td>
+                <td><img src="/images/commanderdata/progression/abathur/abathur_07.png" alt = "生物质回收"></td>
+                <td>生物质回收</td>
                 <td>
-                    When killed, your units have a 50% chance to drop all their Biomass.
+                    你的单位死亡时有 50% 几率掉落其全部生物质。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/abathur/abathur_08.png" alt = "New Unit: Viper"></td>
-                <td>New Unit: Viper</td>
+                <td><img src="/images/commanderdata/progression/abathur/abathur_08.png" alt = "新单位：飞蛇"></td>
+                <td>新单位：飞蛇</td>
                 <td>
-                    Flying caster. Able to manipulate battlefield conditions. Can use Parasitic Bomb, Consumption, Disabling Cloud, and Abduct abilities.<br><br>Can attack air units.
+                    空中施法单位，能够操控战场局势。可以使用寄生炸弹、吞噬、蔽目毒云和绑架技能。<br><br>可攻击空中单位。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/abathur/abathur_09.png" alt = "Infestation Pit Upgrade Cache"></td>
-                <td>Infestation Pit Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/abathur/abathur_09.png" alt = "感染深渊升级包"></td>
+                <td>感染深渊升级包</td>
                 <td>
-                    Unlocks the following upgrades at the Infestation pit:
+                    在感染深渊中解锁以下升级：
                     <ul>
-                        <li>Unlock the Swarm host's Deep Tunnel ability, which allows it to quickly burrow to a target location.</li>
-                        <li>Unlock the Viper's Paralytic Barbs ability, which increased the stun duration of Abduct.</li>
+                        <li>解锁虫群宿主的深槽虫道技能，使其能够快速潜地前往目标位置。</li>
+                        <li>解锁飞蛇的麻痹倒刺技能，延长绑架造成的昏迷时间。</li>
                     </ul>
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/abathur/abathur_10.png" alt = "Symbiote"></td>
-                <td>Symbiote</td>
+                <td><img src="/images/commanderdata/progression/abathur/abathur_10.png" alt = "共生体"></td>
+                <td>共生体</td>
                 <td>
-                    Brutalisks and Leviathans gain Symbiotes that follow them, attacking enemies and protecting their host with a damage absorbing shell.
+                    莽兽和利维坦获得跟随它们的共生体，共生体会攻击敌人，并以吸收伤害的甲壳保护宿主。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/abathur/abathur_11.png" alt = "Spire Upgrade Cache"></td>
-                <td>Spire Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/abathur/abathur_11.png" alt = "尖塔升级包"></td>
+                <td>尖塔升级包</td>
                 <td>
-                    Unlocks the following upgrades at the Spire and Greater spire:
+                    在尖塔和巨型尖塔中解锁以下升级：
                     <ul>
-                        <li>Increase the Guardian attack range.</li>
-                        <li>Enable the Devourer's attacks to deal area damage.</li>
-                        <li>Upgrade the Mutalisk's attacks to deal 100% bonus damage to armored units.</li>
+                        <li>提高守护者的攻击射程。</li>
+                        <li>使吞噬者的攻击造成范围伤害。</li>
+                        <li>使异龙的攻击对重甲单位造成 100% 额外伤害。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/abathur/abathur_12.png" alt = "Mutagenic Potential"></td>
-                <td>Mutagenic Potential</td>
+                <td><img src="/images/commanderdata/progression/abathur/abathur_12.png" alt = "诱变潜能"></td>
+                <td>诱变潜能</td>
                 <td>
-                    Ravager, Guardian, Devourer morph times and resource costs reduced by 50%.
+                    破坏者、守护者和吞噬者的变异时间与资源消耗降低 50%。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/abathur/abathur_13.png" alt = "Locust Injection"></td>
-                <td>Locust Injection</td>
+                <td><img src="/images/commanderdata/progression/abathur/abathur_13.png" alt = "蝗虫注入"></td>
+                <td>蝗虫注入</td>
                 <td>
-                    Enemy units have a chance to spawn friendly Locusts upon death.
+                    敌方单位死亡时有几率生成友方蝗虫。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/abathur/abathur_14.png" alt = "Roach Evolution: Vile"></td>
-                <td>Roach Evolution: Vile</td>
+                <td><img src="/images/commanderdata/progression/abathur/abathur_14.png" alt = "蟑螂进化：邪恶虫种"></td>
+                <td>蟑螂进化：邪恶虫种</td>
                 <td>
-                    Upgrades Abathur's Roaches to the Vile Strain.<br><br>Assault unit. Regenerates life quickly while burrowed. Attacks debilitate the target, slowing its attack and movement speeds (by 75%).<br><br>Can attack ground units.
+                    将阿巴瑟的蟑螂升级为邪恶虫种。<br><br>突击单位。潜地时可快速恢复生命值。攻击会削弱目标，使其攻击速度和移动速度降低 75%。<br><br>可攻击地面单位。
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/abathur/abathur_15.png" alt = "Biotic Leech"></td>
-                <td>Biotic Leech</td>
+                <td><img src="/images/commanderdata/progression/abathur/abathur_15.png" alt = "生质汲取"></td>
+                <td>生质汲取</td>
                 <td>
-                    Abathur's units heal themselves for 1% of the damage they deal per stack of Biomass they possess.
+                    阿巴瑟的单位每拥有一层生物质，便会以其造成伤害的 1% 治疗自身。
                 </td>
             </tr>
         </tbody>
     </table>
-    <p id="powerSpikeInfo">Highlighted rows denote large power spikes for the commander.</p>
-    <h2 id="achievements">Achievements</h2>
-    <p>The commander-specific achievements for Abathur are:</p>
+    <p id="powerSpikeInfo">高亮行表示该指挥官获得显著强度提升的等级。</p>
+    <h2 id="achievements">成就</h2>
+    <p>阿巴瑟的指挥官专属成就如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Achievement</th>
-                <th>Name</th>
-                <th>Description</th>
+                <th>成就</th>
+                <th>名称</th>
+                <th>说明</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/achievements/abathur/biggame.jpg" alt="Big Game"></td>
-                <td>Big Game</td>
-                <td>Deal 500,000 damage with Brutalisks or Leviathans in Co-op Missions.</td>
+                <td><img src="/images/commanderdata/achievements/abathur/biggame.jpg" alt="大家伙"></td>
+                <td>大家伙</td>
+                <td>在合作任务中使用莽兽或利维坦造成 500,000 点伤害。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/abathur/morphology.jpg" alt="Morphology"></td>
-                <td>Morphology</td>
-                <td>Morph 50 Ravagers, Devourers, or Guardians in a single mission on Hard difficulty.</td>
+                <td><img src="/images/commanderdata/achievements/abathur/morphology.jpg" alt="形态学"></td>
+                <td>形态学</td>
+                <td>在困难难度的一场任务中变异出 50 个破坏者、吞噬者或守护者。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/abathur/symbiosis.jpg" alt="Symbiosis"></td>
-                <td>Symbiosis</td>
-                <td>Heal 50,000 life on allied units with Abathur's Mend in Co-op Missions.</td>
+                <td><img src="/images/commanderdata/achievements/abathur/symbiosis.jpg" alt="共生关系"></td>
+                <td>共生关系</td>
+                <td>在合作任务中使用阿巴瑟的愈合为盟友单位恢复 50,000 点生命值。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/abathur/toxicity.jpg" alt="Toxicity"></td>
-                <td>Toxicity</td>
-                <td>Deal 25,000 damage with Toxic Nests on Hard difficulty in Co-op Missions.</td>
+                <td><img src="/images/commanderdata/achievements/abathur/toxicity.jpg" alt="剧毒无比"></td>
+                <td>剧毒无比</td>
+                <td>在困难难度的合作任务中使用剧毒巢穴造成 25,000 点伤害。</td>
             </tr>
         </tbody>
     </table>
-    <h2 id="calldowns">Calldowns</h2>
-    <p>The calldowns for Abathur, at level 15, with no mastery points added are:</p>
+    <h2 id="calldowns">面板技能</h2>
+    <p>15 级且未分配精通点数时，阿巴瑟的面板技能如下：</p>
     <table class="calldownTable">
         <thead>
             <tr>
-                <th>Calldown</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Recommended Usage</th>
-                <th>Numbers</th>
+                <th>面板技能</th>
+                <th>名称</th>
+                <th>说明</th>
+                <th>推荐用法</th>
+                <th>数值</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/abilities/abathur/spawntoxicnest.png" alt = "Spawn Toxic Nest"></td>
-                <td>Spawn Toxic Nest</td>
-                <td>Spawns a Toxic Nest that generates creep at the select location. Deals damage and slows when enemies walk over them. Enemies damaged with Toxic Nests drop additional biomass. Toxic Nests have a chance to respawn.</td>
+                <td><img src="/images/commanderdata/abilities/abathur/spawntoxicnest.png" alt = "孵化剧毒巢穴"></td>
+                <td>孵化剧毒巢穴</td>
+                <td>在选定位置孵化一个会生成菌毯的剧毒巢穴。敌人踩中时会受到伤害并被减速。被剧毒巢穴伤害的敌人会掉落额外生物质。剧毒巢穴被摧毁后有几率重生。</td>
                 <td>
                     <ul>
-                        <li>Spawn Toxic Nests at the start of the game and lure enemies with a Roach or Spore Crawler into them to get your first Ultimate Evolution up.</li>
-                        <li>Place Toxic Nests over enemy spawn locations to instantly kill attack waves.</li>
-                        <li>Put Toxic Nests in paths of attack waves to weaken them.</li>
-                        <li>Place one Toxic Nest between your expansion's rocks and mineral patch so that two spine crawlers can be placed to clear the rocks.</li>
+                        <li>游戏开始时孵化剧毒巢穴，再用蟑螂或孢子爬虫把敌人引入其中，尽快获得第一个终极进化体。</li>
+                        <li>把剧毒巢穴放在敌人出生点上，瞬间消灭进攻波次。</li>
+                        <li>把剧毒巢穴放在进攻波次的行进路线上，以削弱敌军。</li>
+                        <li>在分矿岩石与矿区之间放置一个剧毒巢穴，以便摆下两根脊针爬虫清理岩石。</li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        <li>Coolup: 5 charges to start</li>
-                        <li>Cooldown: 20 seconds</li>
-                        <li>Max Charges: 5</li>
-                        <li>Spawn Time: 15 seconds</li>
-                        <li>Damage: 125</li>
-                        <li>Mov. Spd. Slow: 75%</li>
-                        <li>Atk Spd. Slow: 75%</li>
-                        <li>Slow Duration: 5 seconds</li>
-                        <li>Respawn Chance: 60%</li>
-                        <li>Additional Biomass: 50%</li>
+                        <li>初始充能：5 次</li>
+                        <li>冷却时间：20 秒</li>
+                        <li>最大充能：5 次</li>
+                        <li>孵化时间：15 秒</li>
+                        <li>伤害：125</li>
+                        <li>移动速度降低：75%</li>
+                        <li>攻击速度降低：75%</li>
+                        <li>减速持续时间：5 秒</li>
+                        <li>重生几率：60%</li>
+                        <li>额外生物质：50%</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/abilities/abathur/mend.png" alt = "Mend"></td>
-                <td>Mend</td>
-                <td>Heal all allied units and structures instantly and provides a heal over time for a small period of time.</td>
+                <td><img src="/images/commanderdata/abilities/abathur/mend.png" alt = "愈合"></td>
+                <td>愈合</td>
+                <td>立即治疗所有友方单位和建筑，并在短时间内持续恢复生命值。</td>
                 <td>
                     <ul>
-                        <li>Useful when taking long engages or when trying to push consistently on maps.</li>
+                        <li>适合长时间交战或需要在地图上持续推进时使用。</li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        <li>Coolup: 3 charges to start</li>
-                        <li>Cooldown: 120 seconds</li>
-                        <li>Initial heal: 100HP</li>
-                        <li>Gradual heal: 50HP</li>
-                        <li>Heal duration: 10 seconds</li>
+                        <li>初始充能：3 次</li>
+                        <li>冷却时间：120 秒</li>
+                        <li>初始治疗：100HP</li>
+                        <li>持续治疗：50HP</li>
+                        <li>治疗持续时间：10 秒</li>
                     </ul>
                 </td>
             </tr>
         </tbody>
     </table>
-    <p>Note: Biomass drops at a rate of 2.5 biomass per supply of unit killed.</p>
-    <h2 id="leveling">Sub-Ascension Leveling</h2>
-    <p>Difficulty: Easy</p>
-    <p>The hardest part of leveling Abathur is level 1, where he doesn't have access to his Ultimate Evolutions, which grant a massive power spike to the commander. At this level, build a Roach/Ravager/Queen composition to start. Mutalisks are not too great, because they don't have the life leech from biomass gathering, which makes them very fragile.</p>
-    <p>While leveling through Mastery levels, allocate points with an equal split on Power Set 3.</p>
-    <h2 id="masteries">Masteries</h2>
-    <p>Below are the three Power Sets for Abathur with the recommended point allocations for each. Note that these are meant to serve a general, all-purpose build that is effective across all maps with no Prestiges selected. You are highly encourged to change these masteries to suit your playstyle and particular challenges you face (e.g. <a href="/resources/weeklymutations">Weekly Mutations</a>).</p>
-    <p>Power Set 1:</p>
+    <p>注意：消灭单位时，单位每占用一点补给，就会掉落 2.5 点生物质。</p>
+    <h2 id="leveling">飞升前升级</h2>
+    <p>难度：简单</p>
+    <p>阿巴瑟升级过程中最困难的是 1 级，此时还无法使用能带来巨大强度提升的终极进化。这个等级建议先使用蟑螂/破坏者/虫群女王组合。异龙表现不佳，因为它们尚未获得收集生物质带来的生命汲取，生存能力很弱。</p>
+    <p>提升精通等级期间，将技能组 3 的点数平均分配。</p>
+    <h2 id="masteries">精通</h2>
+    <p>以下是阿巴瑟的三个技能组及各自的推荐点数分配。请注意，这是未选择任何威望时适用于所有地图的通用方案。强烈建议你根据自己的玩法和面临的具体挑战（例如<a href="/resources/weeklymutations">每周突变</a>）调整精通。</p>
+    <p>技能组 1：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>能力</th><th>数值</th><th>推荐点数</th><th>进一步考虑</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Toxic Nest Damage</td>
-                <td>2% per point<br>60% maximum</td>
+                <td>剧毒巢穴伤害</td>
+                <td>每点 2%<br>最高 60%</td>
                 <td>30</td>
-                <td rowspan="2">Points can be added to Mend Healing Duration if you would like to get more out of the healing and find it is useful. A possible optimization that can be made is to use the Toxic Nest Damage to 1-shot up to a particular unit and then put the remaining points into the Mend Healing Duration mastery. You may optimize using the <a href="/tools/masterybreakpoints">Mastery Breakpoints Calculator</a>.</td>
+                <td rowspan="2">如果你希望愈合发挥更大作用且确实常用，可以将点数投入愈合治疗持续时间。一种优化方式是把剧毒巢穴伤害加到刚好能秒杀某种单位，再将剩余点数投入愈合治疗持续时间。你可以使用<a href="/tools/masterybreakpoints">精通阈值计算器</a>进行优化。</td>
             </tr>
             <tr>
-                <td>Mend Healing Duration</td>
-                <td>10% per point<br>300% maximum</td>
+                <td>愈合治疗持续时间</td><td>每点 10%<br>最高 300%</td>
                 <td>0</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">Toxic Nest Damage is generally the better choice for an all-round build. Since Queens can fill the role of healing with Abathur, all points should be added to Toxic Nest Damage.</p>
-    <p>Power Set 2:</p>
+    <p class="masterySummary">对通用方案而言，剧毒巢穴伤害通常是更好的选择。阿巴瑟可以用虫群女王承担治疗职责，因此应将全部点数投入剧毒巢穴伤害。</p>
+    <p>技能组 2：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>能力</th><th>数值</th><th>推荐点数</th><th>进一步考虑</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Symbiote Ability Improvement</td>
-                <td>3.33% per point<br>99.9% maximum</td>
+                <td>共生体技能强化</td><td>每点 3.33%<br>最高 99.9%</td>
                 <td>30</td>
-                <td rowspan="2">The Double Biomass Chance mastery can allow you to get your Ultimate Evolutions faster. It also gives you max biomass units faster, which can be incredibly powerful. If you find you struggle with biomass, putting some points into this mastery might help.</td>
+                <td rowspan="2">双倍生物质几率可让你更快获得终极进化体，也能更快培养出生物质满层单位，效果非常强大。如果你觉得生物质不足，可以考虑投入部分点数。</td>
             </tr>
             <tr>
-                <td>Double Biomass Chance</td>
-                <td>1.5% per point<br>45% maximum</td>
+                <td>双倍生物质几率</td><td>每点 1.5%<br>最高 45%</td>
                 <td>0</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">By playing efficiently, biomass should never be a problem. Additionally, biomass is critical at the early stages in the game as you get your Ultimate Evolutions out, after which they can handle the mission fine. With effective usage of Toxic Nests, you should have more than enough biomass to get your first Ultimate Evolution out and snowball the game.</p>
-    <p>Power Set 3:</p>
+    <p class="masterySummary">只要操作得当，生物质就不应成为问题。生物质主要在前期用于获得终极进化体；它们成型后便足以应对任务。有效利用剧毒巢穴即可获得足够生物质，做出首个终极进化体并滚起雪球。</p>
+    <p>技能组 3：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>能力</th><th>数值</th><th>推荐点数</th><th>进一步考虑</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Toxic Nests Maximum Charges and Cooldown</td>
-                <td>1 per point<br>30 maximum</td>
+                <td>剧毒巢穴最大充能和冷却时间</td><td>每点 1<br>最高 30</td>
                 <td>15</td>
-                <td rowspan="2">There should always be a split between these two unless you find you're lacking Toxic Nests. The best way is to find a balance between the cooldown and charges of Toxic Nests and your playstyle.</td>
+                <td rowspan="2">除非你一直缺少剧毒巢穴，否则应在两项之间分配点数。最佳做法是根据自己的玩法，在剧毒巢穴的冷却时间与充能次数之间找到平衡。</td>
             </tr>
             <tr>
-                <td>Structure Morph and Evolution Rate</td>
-                <td>-2% per point<br>-60% maximum</td>
+                <td>建筑变异与进化速度</td><td>每点 -2%<br>最高 -60%</td>
                 <td>15</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">Having more Toxic Nests available to you is good, which is why points are added in the first mastery. However, at max level, the Toxic Nest charges you get are way too high to be used efficiently, and so, the other mastery is used to spend the remainder of points.</p>
-    <h2 id="prestiges">Prestiges</h2>
-    <p>Below are the prestiges for Abathur. Note that "Effective Level" is the level at which the prestige achieves it full effect.</p>
+    <p class="masterySummary">更多可用的剧毒巢穴很有帮助，所以要为第一项投入点数。但加满后充能次数过多，难以有效用完，因此剩余点数投入另一项。</p>
+    <h2 id="prestiges">威望</h2>
+    <p>以下是阿巴瑟的各项威望。“完全生效等级”指该威望发挥全部效果时所需的等级。</p>
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P1: <strong>Essence Hoarder</strong></td>
+                <td class="prestigeTitle" colspan="2">P1：<strong>精华搜集者</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>Combat units can hold an additional 25 Biomass and have an additional 50% chance to drop their Biomass upon death.</li>
+                        <li>作战单位可额外储存 25 点生物质，且死亡时掉落生物质的几率额外提高 50%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>Ultimate Evolutions are unavailable.</li>
+                        <li>无法使用终极进化。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Notes</th>
+                <th>备注</th>
                 <td>
                     <ul>
-                        <li>Stacks additively with the Biomass Recovery Level 7 Unlock Talent, providing 100% chance to drop Biomass.</li>
-                        <li>Biomass bonuses also extend linearly through the extra 25 Biomass collected.</li>
+                        <li>与 7 级解锁的生物质回收以加法叠加，使掉落生物质的几率达到 100%。</li>
+                        <li>生物质加成也会随额外收集的 25 点生物质线性提高。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>完全生效等级</th>
                 <td>7</td>
             </tr>
             <tr>
-                <th>Advice</th><td>This prestige is very useful while leveling sub-mastery Abathur in the early levels as Ultimate Evolutions are not very strong without their Symbiotes which unlock at level 10. However, at Mastery level, this prestige remove Abathur's extremely powerful early-game and mobility, and should be avoided. This prestige works well against <a href="/resources/mutators">mutators</a> like Black Death, which heavily punishes Ultimate Evolutions.</td>
+                <th>建议</th><td>飞升前低等级升级时，这项威望很有用，因为终极进化体在 10 级解锁共生体前并不强。但进入精通等级后，它会剥夺阿巴瑟极其强势的前期能力与机动性，应尽量避免使用。面对黑死病这类会严重克制终极进化体的<a href="/resources/mutators">突变因子</a>时，这项威望表现不错。</td>
             </tr>
         </tbody>
     </table>
@@ -399,39 +385,39 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P2: <strong>Tunneling Horror</strong></td>
+                <td class="prestigeTitle" colspan="2">P2：<strong>隧道惊魂</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>Locusts have 50% increased attack range, movement speed, and duration.</li>
-                        <li>The Deep Tunnel upgrade no longer requires Hive, no longer requires vision, and can be used by Roaches and Ravagers.</li>
+                        <li>蝗虫的攻击射程、移动速度和持续时间提高 50%。</li>
+                        <li>深槽虫道升级不再需要蜂巢和视野，并且蟑螂与破坏者也可使用。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>Combat units cost 25% more vespene gas.</li>
+                        <li>作战单位的高能瓦斯消耗提高 25%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Notes</th>
+                <th>备注</th>
                 <td>
                     <ul>
-                        <li>Locusts spawned by the Level 13 unlock also get the prestige buffs</li>
+                        <li>13 级解锁效果生成的蝗虫也会获得威望强化。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>完全生效等级</th>
                 <td>9</td>
             </tr>
             <tr>
-                <th>Advice</th><td>This prestige allows Abathur to move his entire Roach/Ravager army through the Deep Tunnel ability as well as providing buffs to his Swarm Host's Locusts. In general, it isn't very useful, as attack waves can be intercepted by Brutalisks and Toxic Nests. However, this prestige does open up some creative methods that will allow the Abathur player to snipe objectives if they choose to go for a pure ground army, with minimal cost increase to them.</td>
+                <th>建议</th><td>这项威望可让阿巴瑟通过深槽虫道转移整支蟑螂/破坏者部队，同时强化虫群宿主的蝗虫。总体而言用途不大，因为莽兽和剧毒巢穴已经能够拦截进攻波次。不过，它也提供了一些富有创意的打法：选择纯地面部队时，只需付出很小的成本增幅，便可突袭任务目标。</td>
             </tr>
         </tbody>
     </table>
@@ -439,52 +425,52 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P3: <strong>The Limitless</strong></td>
+                <td class="prestigeTitle" colspan="2">P3：<strong>无尽进化</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>The number of Ultimate Evolutions is no longer limited to 3.</li>
+                        <li>终极进化体的数量不再限制为 3 个。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>Ultimate Evolution requires 200 Biomass.</li>
-                        <li>Biomass is less powerful.</li>
+                        <li>终极进化需要 200 点生物质。</li>
+                        <li>生物质的效果减弱。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Notes</th>
+                <th>备注</th>
                 <td>
                     <ul>
-                        <li>Benefits gained per Biomass pickup is halved. At 200 Biomass, bonuses match Biomass bonuses of other prestiges at 100 Biomass.</li>
+                        <li>每点生物质提供的收益减半。达到 200 点生物质时，加成等同于其他威望下 100 点生物质的加成。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>完全生效等级</th>
                 <td>2</td>
             </tr>
             <tr>
-                <th>Advice</th><td>At first glance, this prestige might look great, but it actually slows down Abathur's powerful earlygame, which is one of his greatest strengths. Abathur's power lies in his ability to clear missions as quickly as possible. This prestige will work well on missions with a fixed time, assuming the Abathur player is active with their Biomass collection, but it should not be the go-to pick for Abathur.</td>
+                <th>建议</th><td>这项威望乍看很强，实际上却拖慢了阿巴瑟最具优势的强势前期。阿巴瑟的强大之处在于能尽快完成任务。在固定时长的任务中，只要积极收集生物质，这项威望会有不错表现，但不应作为阿巴瑟的常规首选。</td>
             </tr>
         </tbody>
     </table>
-    <p>While leveling Sub-mastery, Essence Hoarder will allow Abathur to recover all the Biomass his army drops after level 7, making it a great choice for general play. Post-mastery, a player can either choose no Prestige talent or Tunneling Horror, depending on their intended playstyle to help them carry them to victory.</p>
-    <h2 id="army">Recommended Army Composition</h2>
-    <p>The recommended army composition for Abathur is below. Note that this assumes no Prestige talent selected and recommended Mastery Allocations. This is a basic recommendation for your army framework. It is recommended to gain an understanding for each of the units in the <a href="#units">Units</a> section and further add tech units so that you are able to better handle the situations you face.</p>
-    <img class="army" src="/images/commanderdata/units/abathur/brutalisk.jpg" alt="Brutalisk"><img class="army" src="/images/commanderdata/units/abathur/leviathan.jpg" alt="Leviathan"><img class="army" src="/images/commanderdata/units/abathur/mutalisk.jpg" alt="Mutalisk">
-    <p>Ultimate Evolutions should make up the core of your army and should be rushed out as soon as possible, as they are significantly stronger than any other unit in Abathur's arsenal. After that, gas income can be spent on upgrades and Mutalisks.</p>
-    <div class="techContainer"><img class="army" src="/images/commanderdata/units/abathur/swarmqueen.jpg" alt="Swarm Queen"><div class="techAdd">+</div></div>
-    <p>Add Swarm Queens to your army to gain additional healing for your units.</p>
-    <div class="techContainer"><img class="army" src="/images/commanderdata/units/abathur/devourer.jpg" alt="Devourer"><div class="techAdd">+</div></div>
-    <p>Add Devourers to your army when dealing with armored air units to provide you with armor-shred as well as anti-air splash damage.</p>
-    <div id="tooltip">tooltip</div>
+    <p>飞升前升级时，达到 7 级后精华搜集者可让阿巴瑟回收部队掉落的全部生物质，是通用玩法的优秀选择。进入精通等级后，玩家可以根据预期玩法选择不使用威望或使用隧道惊魂，以帮助自己取得胜利。</p>
+    <h2 id="army">推荐部队组成</h2>
+    <p>阿巴瑟的推荐部队组成如下。该方案假设未选择威望，并采用推荐的精通分配。这只是部队框架的基础建议。建议先了解<a href="#units">单位</a>章节中的各个单位，再根据所处局势加入科技单位。</p>
+    <img class="army" src="/images/commanderdata/units/abathur/brutalisk.jpg" alt="莽兽"><img class="army" src="/images/commanderdata/units/abathur/leviathan.jpg" alt="利维坦"><img class="army" src="/images/commanderdata/units/abathur/mutalisk.jpg" alt="异龙">
+    <p>终极进化体应当构成部队核心，并应尽快成型，因为它们远强于阿巴瑟的其他单位。之后可将瓦斯收入用于升级和生产异龙。</p>
+    <div class="techContainer"><img class="army" src="/images/commanderdata/units/abathur/swarmqueen.jpg" alt="虫群女王"><div class="techAdd">+</div></div>
+    <p>向部队中加入虫群女王，为单位提供额外治疗。</p>
+    <div class="techContainer"><img class="army" src="/images/commanderdata/units/abathur/devourer.jpg" alt="吞噬者"><div class="techAdd">+</div></div>
+    <p>面对重甲空中单位时加入吞噬者，以削减护甲并提供对空范围伤害。</p>
+    <div id="tooltip">提示</div>
     <script>
         $(".army").on('mouseover',function(e){
             var unit = $(this).attr("alt").split(":");
@@ -515,63 +501,53 @@ require_once __DIR__ . "/../../includes/wrapper.php";
 
         });
     </script>
-    <h2 id="units">Combat Units</h2>
-    <p>For more information on Abathur's unit stats, comparison between units and upgrade calculations, visit the <a href="/units/#abathur">Data Tables</a> page.</p>
-    <p>Abathur's combat units are listed below:</p>
+    <h2 id="units">作战单位</h2>
+    <p>有关阿巴瑟单位属性、单位对比及升级计算的更多信息，请参阅<a href="/units/#abathur">数据表</a>页面。</p>
+    <p>阿巴瑟的作战单位如下：</p>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#abathur/roach">
-                <img src="/images/commanderdata/units/abathur/roach.jpg" alt="Roach">
-                <p>Roach</p>
+                <img src="/images/commanderdata/units/abathur/roach.jpg" alt="蟑螂">
+                <p>蟑螂</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>They can sometimes be used effectively on infested maps with the Hydriodic Bile upgrade which will increase its damage against light targets.</li>
-                <li>Use these to produce your brutalisks due to their low mineral cost.</li>
-                <li>Roaches can be used to lure early attack waves into Toxic Nests.</li>
-                <li>When fully upgraded, max biomass roaches can have up to 15 armor (1 base, 3 from upgrades, 5 from biomass, 6 from Adaptive Plating).</li>
+                <li>在感染地图上，研究氢碘胆汁以提高对轻甲目标的伤害后，有时能发挥不错的效果。</li>
+                <li>蟑螂矿物消耗低，适合用于进化莽兽。</li>
+                <li>可以用蟑螂把前期进攻波次引入剧毒巢穴。</li>
+                <li>完全升级且生物质满层的蟑螂最多可拥有 15 点护甲（基础 1、升级 3、生物质 5、适应性甲壳 6）。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades:</p>
+            <p>技能：无</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th><th>名称</th><th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="矿物">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/abathur/glialreconstitution.png" alt="Glial Reconstitution"></td>
-                        <td>Glial Reconstitution</td>
-                        <td>Increases the movement speed of Roaches by 33%.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/abathur/glialreconstitution.png" alt="代谢加速"></td><td>代谢加速</td><td>蟑螂的移动速度提高 33%。</td>
                         <td>100/100</td>
-                        <td>110 seconds</td>
+                        <td>110 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/abathur/tunnelingclaws.png" alt="Tunneling Claws"></td>
-                        <td>Tunneling Claws</td>
-                        <td>Enables Roaches to move while burrowed. Increases the life-regeneration rate of burrowed Roaches by 5.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/abathur/tunnelingclaws.png" alt="潜地之爪"></td><td>潜地之爪</td><td>使蟑螂可以在潜地时移动，并使潜地蟑螂的生命恢复速度提高 5 点。</td>
                         <td>100/100</td>
-                        <td>110 seconds</td>
+                        <td>110 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/abathur/hydriodicbile.png" alt="Hydriodic Bile"></td>
-                        <td>Hydriodic Bile</td>
-                        <td>Roach gains +8 damage vs. light units.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/abathur/hydriodicbile.png" alt="氢碘胆汁"></td><td>氢碘胆汁</td><td>蟑螂对轻甲单位的伤害提高 8 点。</td>
                         <td>100/100</td>
-                        <td>110 seconds</td>
+                        <td>110 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/abathur/adaptiveplating.png" alt="Adaptive Plating"></td>
-                        <td>Adaptive Plating</td>
-                        <td>Roach gains +6 armor when life is under 50%.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/abathur/adaptiveplating.png" alt="适应性甲壳"></td><td>适应性甲壳</td><td>蟑螂生命值低于 50% 时获得 6 点护甲。</td>
                         <td>100/100</td>
-                        <td>110 seconds</td>
+                        <td>110 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -580,64 +556,46 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#abathur/ravager">
-                <img src="/images/commanderdata/units/abathur/ravager.jpg" alt="Ravager">
-                <p>Ravager</p>
+                <img src="/images/commanderdata/units/abathur/ravager.jpg" alt="破坏者"><p>破坏者</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Morphed from Roaches.</li>
-                <li>Ravagers can be used to snipe cloaked units if you don't have detection.</li>
-                <li>Very large and can sometimes body-block a ground army.</li>
-                <li>Very powerful when both upgrades are researched.</li>
-                <li>Ability should be bound to <a href="/guides/generaltips">Rapidfire</a>.</li>
+                <li>由蟑螂变异而成。</li><li>没有反隐能力时，可用破坏者狙杀隐形单位。</li><li>体型很大，有时会堵住地面部队。</li><li>研究两项升级后非常强大。</li><li>应将技能绑定为<a href="/guides/generaltips">快速施法</a>。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th><th>名称</th><th>说明</th><th>冷却时间</th><th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/abathur/corrosivebile.png" alt="Corrosive Bile"></td>
-                        <td>Corrosive Bile</td>
-                        <td>Launch a missile at the target location, dealing 60 damage to enemy units in the area upon impact.<br><br>Can destroy Protoss Force Fields.</td>
-                        <td>10 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/abathur/corrosivebile.png" alt="腐蚀胆汁"></td><td>腐蚀胆汁</td><td>向目标位置发射一枚飞弹，命中时对区域内敌方单位造成 60 点伤害。<br><br>可以摧毁星灵的力场。</td><td>10 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th><th>名称</th><th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="矿物">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/abathur/bloatedbileducts.png" alt="Bloated Bile Ducts"></td>
-                        <td>Bloated Bile Ducts</td>
-                        <td>Ravager Corrosive Bile impact size is increased by 200%.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/abathur/bloatedbileducts.png" alt="膨胀胆管"></td><td>膨胀胆管</td><td>破坏者腐蚀胆汁的命中范围扩大 200%。</td>
                         <td>150/150</td>
-                        <td>90 seconds</td>
+                        <td>90 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/abathur/potentbile.png" alt="Potent Bile"></td>
-                        <td>Potent Bile</td>
-                        <td>Ravager Corrosive Bile damage is increased by 40.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/abathur/potentbile.png" alt="强效胆汁"></td><td>强效胆汁</td><td>破坏者腐蚀胆汁的伤害提高 40 点。</td>
                         <td>200/200</td>
-                        <td>120 seconds</td>
+                        <td>120 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -646,73 +604,52 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#abathur/swarmhost">
-                <img src="/images/commanderdata/units/abathur/swarmhost.jpg" alt="Swarm Host">
-                <p>Swarm Host</p>
+                <img src="/images/commanderdata/units/abathur/swarmhost.jpg" alt="虫群宿主"><p>虫群宿主</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Powerful defensive unit.</li>
-                <li>Swarm hosts can also be used to push into enemy defenses.</li>
-                <li>Deep Tunnel will give them mobility to intercept attack waves.</li>
-                <li>Due to high gas costs and short locust life, massing them is usually not viable.</li>
-                <li>They are extremely effective on defensive maps.</li>
-                <li>Micro will be required, as they hold a higher aggro priority compared to their locusts.</li>
-                <li>Attack Speed buffs will reduce Spawn Locust cooldown.</li>
+                <li>强大的防御单位。</li><li>也可用于推进敌方防线。</li><li>深槽虫道提供拦截进攻波次所需的机动性。</li><li>由于瓦斯消耗高且蝗虫存活时间短，通常不适合大量生产。</li><li>在防守型地图上极其有效。</li><li>其仇恨优先级高于蝗虫，需要微操保护。</li><li>攻击速度加成会缩短孵化蝗虫的冷却时间。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th><th>名称</th><th>说明</th><th>冷却时间</th><th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/unitskills/abathur/spawnlocusts.png" alt="Spawn Locusts"></td>
-                        <td>Spawn Locusts</td>
-                        <td>Sends Locusts to target location.</td>
+                        <td><img src="/images/commanderdata/unitskills/abathur/spawnlocusts.png" alt="孵化蝗虫"></td><td>孵化蝗虫</td><td>派遣蝗虫前往目标位置。</td>
                         <td>15s</td>
                         <td>0</td>
                     </tr>
                     <tr class="unlockable">
-                        <td><img src="/images/commanderdata/unitskills/abathur/deeptunnel.png" alt="Deep Tunnel"></td>
-                        <td>Deep Tunnel</td>
-                        <td>Quickly burrow to a target visible location.</td>
-                        <td>30 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/abathur/deeptunnel.png" alt="深槽虫道"></td><td>深槽虫道</td><td>快速潜地前往视野内的目标位置。</td><td>30 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th><th>名称</th><th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="矿物">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/abathur/pressurizedglands.png" alt="Pressurized Glands"></td>
-                        <td>Pressurized Glands</td>
-                        <td>Locusts can attack both ground and air units.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/abathur/pressurizedglands.png" alt="加压腺体"></td><td>加压腺体</td><td>蝗虫可以攻击地面和空中单位。</td>
                         <td>200/200</td>
-                        <td>120 seconds</td>
+                        <td>120 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/abathur/deeptunnel.png" alt="Deep Tunnel"></td>
-                        <td>Deep Tunnel</td>
-                        <td>Allows Swarm Hosts to quickly burrow to any visible location on the map.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/abathur/deeptunnel.png" alt="深槽虫道"></td>
+                        <td>深槽虫道</td><td>使虫群宿主可以快速潜地前往地图上任意视野内位置。</td>
                         <td>200/200</td>
-                        <td>120 seconds</td>
+                        <td>120 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -721,49 +658,40 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#abathur/mutalisk">
-                <img src="/images/commanderdata/units/abathur/mutalisk.jpg" alt="Mutalisk">
-                <p>Mutalisk</p>
+                <img src="/images/commanderdata/units/abathur/mutalisk.jpg" alt="异龙"><p>异龙</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Should be the core unit in Abathur's army composition.</li>
-                <li>Extremely weak without biomass.</li>
-                <li>Maxed biomass mutalisks can wipe entire attack waves of clumped up units.</li>
+                <li>应作为阿巴瑟部队组成的核心单位。</li><li>没有生物质时极其脆弱。</li><li>生物质满层的异龙可以消灭聚成一团的整支进攻波次。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades:</p>
+            <p>技能：无</p><p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th><th>名称</th><th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="矿物">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/abathur/rapidregeneration.png" alt="Rapid Regeneration"></td>
-                        <td>Rapid Regeneration</td>
-                        <td>Mutalisks regenerate life quickly while out of combat.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/abathur/rapidregeneration.png" alt="快速恢复"></td>
+                        <td>快速恢复</td><td>异龙脱离战斗时会快速恢复生命值。</td>
                         <td>150/150</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/abathur/viciousglave.png" alt="Vicious Glave"></td>
-                        <td>Vicious Glave</td>
-                        <td>The Mutalisk's attack bounces three additional times, hitting up to six targets. Bounces also travel farther.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/abathur/viciousglave.png" alt="恶毒弹射"></td>
+                        <td>恶毒弹射</td><td>异龙的攻击额外弹射三次，最多命中六个目标，且弹射距离更远。</td>
                         <td>150/150</td>
-                        <td>90 seconds</td>
+                        <td>90 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/abathur/sunderingglave.png" alt="Sundering Glave"></td>
-                        <td>Sundering Glave</td>
-                        <td>Mutalisks deal 100% bonus damage vs. armored units.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/abathur/sunderingglave.png" alt="裂甲弹射"></td>
+                        <td>裂甲弹射</td><td>异龙对重甲单位造成 100% 额外伤害。</td>
                         <td>200/200</td>
-                        <td>120 seconds</td>
+                        <td>120 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -772,36 +700,28 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#abathur/guardian">
-                <img src="/images/commanderdata/units/abathur/guardian.jpg" alt="Guardian">
-                <p>Guardian</p>
+                <img src="/images/commanderdata/units/abathur/guardian.jpg" alt="守护者"><p>守护者</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Morphed from Mutalisks.</li>
-                <li>Anti-ground siege unit.</li>
-                <li>Guardians have long range, but lower DPS than mutalisks.</li>
-                <li>Useful on defensive maps.</li>
+                <li>由异龙变异而成。</li><li>对地攻城单位。</li><li>守护者射程很远，但每秒伤害低于异龙。</li><li>适合防守型地图。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades:</p>
+            <p>技能：无</p><p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th><th>名称</th><th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="矿物">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/abathur/prolongeddispersion.png" alt="Prolonged Dispersion"></td>
-                        <td>Prolonged Dispersion</td>
-                        <td>Guardian attack range is increased by 3.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/abathur/prolongeddispersion.png" alt="延长喷射"></td>
+                        <td>延长喷射</td><td>守护者的攻击射程提高 3。</td>
                         <td>200/200</td>
-                        <td>90 seconds</td>
+                        <td>90 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -810,55 +730,44 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#abathur/devourer">
-                <img src="/images/commanderdata/units/abathur/devourer.jpg" alt="Devourer">
-                <p>Devourer</p>
+                <img src="/images/commanderdata/units/abathur/devourer.jpg" alt="吞噬者"><p>吞噬者</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Morphed from the mutalisk.</li>
-                <li>Anti-air unit.</li>
-                <li>Corrosive Spray upgrade upgrades its attack to an AoE, which can devastate air compositions.</li>
+                <li>由异龙变异而成。</li><li>对空单位。</li><li>腐蚀喷射升级可使攻击变为范围伤害，对空军组合极具毁灭性。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th><th>名称</th><th>说明</th><th>冷却时间</th><th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/unitskills/abathur/corrosiveacid.png" alt="Corrosive Acid"></td>
-                        <td>Corrosive Acid</td>
-                        <td>Launches acid at all enemy units in the target area, reducing their attack speed by 12.5% and armor by 3. Stacks 3 times.</td>
+                        <td><img src="/images/commanderdata/unitskills/abathur/corrosiveacid.png" alt="腐蚀酸液"></td>
+                        <td>腐蚀酸液</td><td>向目标区域内所有敌方单位喷射酸液，使其攻击速度降低 12.5%、护甲降低 3 点。最多叠加 3 次。</td>
                         <td>45s</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th><th>名称</th><th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="矿物">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/abathur/corrosivespray.png" alt="Corrosive Spray"></td>
-                        <td>Corrosive Spray</td>
-                        <td>Devourer attacks will now deal area damage.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/abathur/corrosivespray.png" alt="腐蚀喷射"></td>
+                        <td>腐蚀喷射</td><td>吞噬者的攻击现在会造成范围伤害。</td>
                         <td>200/200</td>
-                        <td>90 seconds</td>
+                        <td>90 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -867,86 +776,68 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#abathur/viper">
-                <img src="/images/commanderdata/units/abathur/viper.jpg" alt="Viper">
-                <p>Viper</p>
+                <img src="/images/commanderdata/units/abathur/viper.jpg" alt="飞蛇"><p>飞蛇</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Crowd-control unit.</li>
-                <li>Disabling cloud is a powerful ability to disable enemy ground units.</li>
-                <li>Abduct can be used to pull Siege tanks, Carriers and other large units into your army to be focus-fired.</li>
-                <li>Parasitic Bomb ability is not as effective as using Devourers for anti-air.</li>
-                <li>Virulent Microbes ability is a must-get to increase Viper range.</li>
-                <li>Disable automatic evolution to prevent Vipers from evolving into Leviathans, wasting valuable gas.</li>
+                <li>群体控制单位。</li><li>蔽目毒云是瘫痪敌方地面单位的强力技能。</li><li>可用绑架把攻城坦克、航母等大型单位拉入己方部队中集火。</li><li>寄生炸弹的对空效果不如吞噬者。</li><li>必须研究剧毒微生物，以提高飞蛇的施法距离。</li><li>关闭自动进化，避免飞蛇进化为利维坦而浪费宝贵瓦斯。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th><th>名称</th><th>说明</th><th>冷却时间</th><th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/abathur/abduct.png" alt="Abduct"></td>
-                        <td>Abduct</td>
-                        <td>Pulls target unit to the Viper. Enemy is stunned for 1 second.</td>
-                        <td>0 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/abathur/abduct.png" alt="绑架"></td>
+                        <td>绑架</td><td>将目标单位拉向飞蛇。敌人昏迷 1 秒。</td>
+                        <td>0 秒</td>
                         <td>25</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/abathur/disablingcloud.png" alt="Disabling Cloud"></td>
-                        <td>Disabling Cloud</td>
-                        <td>Creates a cloud that slows movement speed (-50%) and prevents enemy units and structures from attacking and using energy-based abilities. Lasts for 10 seconds.</td>
-                        <td>0 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/abathur/disablingcloud.png" alt="蔽目毒云"></td>
+                        <td>蔽目毒云</td><td>制造一片毒云，使移动速度降低 50%，并阻止敌方单位和建筑攻击或使用耗能技能。持续 10 秒。</td>
+                        <td>0 秒</td>
                         <td>75</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/abathur/consumption.png" alt="Consumption"></td>
-                        <td>Consumption</td>
-                        <td>Drains up to 75 life from a friendly Zerg unit and gives the Viper 2 energy for each point of life drained.</td>
-                        <td>10 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/abathur/consumption.png" alt="吞噬"></td>
+                        <td>吞噬</td><td>从一个友方异虫单位身上吸取最多 75 点生命值，每吸取一点生命值便为飞蛇恢复 2 点能量。</td>
+                        <td>10 秒</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/abathur/parasiticbomb.png" alt="Parasitic Bomb"></td>
-                        <td>Parasitic Bomb</td>
-                        <td>Creates a parasitic cloud of radius 3 that deals 90 damage over 10 seconds to the target and enemy air units nearby. If the target dies, the cloud remains in the air where the enemy died until it expires.<br><br>Cannot target ground units or structures.</td>
-                        <td>0 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/abathur/parasiticbomb.png" alt="寄生炸弹"></td>
+                        <td>寄生炸弹</td><td>制造半径为 3 的寄生云雾，在 10 秒内对目标及附近敌方空中单位造成 90 点伤害。目标死亡后，云雾会留在其死亡位置直至消散。<br><br>无法以地面单位或建筑为目标。</td>
+                        <td>0 秒</td>
                         <td>125</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th><th>名称</th><th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="矿物">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/abathur/virulentmicrobes.png" alt="Virulent Microbes"></td>
-                        <td>Virulent Microbes</td>
-                        <td>All Viper abilities gain +4 cast range.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/abathur/virulentmicrobes.png" alt="剧毒微生物"></td>
+                        <td>剧毒微生物</td><td>飞蛇所有技能的施法距离提高 4。</td>
                         <td>50/50</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/abathur/paralyticbarbs.png" alt="Paralytic Barbs"></td>
-                        <td>Paralytic Barbs</td>
-                        <td>Viper Abduct stuns units for an additional 5 seconds.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/abathur/paralyticbarbs.png" alt="麻痹倒刺"></td>
+                        <td>麻痹倒刺</td><td>飞蛇的绑架使单位额外昏迷 5 秒。</td>
                         <td>150/150</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -955,68 +846,56 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#abathur/swarmqueen">
-                <img src="/images/commanderdata/units/abathur/swarmqueen.jpg" alt="Swarm Queen">
-                <p>Swarm Queen</p>
+                <img src="/images/commanderdata/units/abathur/swarmqueen.jpg" alt="虫群女王"><p>虫群女王</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Does not have movement speed penalty off creep.</li>
-                <li>Can provide healing support for your army.</li>
+                <li>离开菌毯后不会受到移动速度惩罚。</li><li>可以为部队提供治疗支援。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th><th>名称</th><th>说明</th><th>冷却时间</th><th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/abathur/spawncreeptumor.png" alt="Spawn Creep Tumor"></td>
-                        <td>Spawn Creep Tumor</td>
-                        <td>A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn additional Creep Tumors.<br><br>Bonus: Zerg move faster on creep.</td>
+                        <td><img src="/images/commanderdata/unitskills/abathur/spawncreeptumor.png" alt="孵化菌毯肿瘤"></td>
+                        <td>孵化菌毯肿瘤</td><td>潜地的菌毯生成器。菌毯为附近异虫建筑提供养分。菌毯肿瘤可以孵化更多菌毯肿瘤。<br><br>加成：异虫在菌毯上移动更快。</td>
                         <td>3s</td>
                         <td>0</td>
                     </tr>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/unitskills/abathur/rapidtransfusion.png" alt="Rapid Transfusion"></td>
-                        <td>Rapid Transfusion</td>
-                        <td>Heals a biological unit or structure for 25 life over time.</td>
+                        <td><img src="/images/commanderdata/unitskills/abathur/rapidtransfusion.png" alt="快速输血"></td>
+                        <td>快速输血</td><td>持续为一个生物单位或建筑恢复 25 点生命值。</td>
                         <td>3s</td>
                         <td>10</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th><th>名称</th><th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="矿物">/<img src="/images/commanderdata/unitupgrades/icongas_zerg.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/abathur/biomechanicaltransfusion.png" alt="Bio-Mechanical Transfusion"></td>
-                        <td>Bio-Mechanical Transfusion</td>
-                        <td>Increases the healing of the Swarm Queen's Rapid Transfusion by 10 and allows it to heal mechanical units and structures.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/abathur/biomechanicaltransfusion.png" alt="生化机械输血"></td>
+                        <td>生化机械输血</td><td>虫群女王快速输血的治疗量提高 10 点，并使其可以治疗机械单位和建筑。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/abathur/incubationchamber.png" alt="Incubation Chamber"></td>
-                        <td>Incubation Chamber</td>
-                        <td>Allows Hatcheries, Lairs and Hives to birth two Swarm Queens simultaneously.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/abathur/incubationchamber.png" alt="孵化室"></td>
+                        <td>孵化室</td><td>使孵化场、虫穴和蜂巢可以同时孵化两只虫群女王。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60 秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -1025,302 +904,240 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#abathur/brutalisk">
-                <img src="/images/commanderdata/units/abathur/brutalisk.jpg" alt="Brutalisk">
-                <p>Brutalisk</p>
+                <img src="/images/commanderdata/units/abathur/brutalisk.jpg" alt="莽兽"><p>莽兽</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Powerful ground Ultimate Evolution.</li>
-                <li>Evolves from ground units. Recommended to evolve from roaches.</li>
-                <li>Frontal cleave attack is splash, which can be effected to clear swarms of enemies.</li>
-                <li>Vulnerable to units that deal extra damage to armored units like Immortals.</li>
-                <li>Deep Tunnel ability only has a 10-second cooldown which gives Brutalisks extremely good mobility even without vision.</li>
+                <li>强大的地面终极进化体。</li><li>由地面单位进化而成，推荐使用蟑螂。</li><li>正面顺劈攻击会造成范围伤害，能有效清理成群敌人。</li><li>容易受到不朽者等对重甲造成额外伤害的单位克制。</li><li>深槽虫道仅有 10 秒冷却时间，即使没有视野也赋予莽兽极强的机动性。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th><th>名称</th><th>说明</th><th>冷却时间</th><th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/abathur/deeptunnel.png" alt="Deep Tunnel"></td>
-                        <td>Deep Tunnel</td>
-                        <td>Quickly burrow to target location.</td>
-                        <td>10 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/abathur/deeptunnel.png" alt="深槽虫道"></td>
+                        <td>深槽虫道</td><td>快速潜地前往目标位置。</td>
+                        <td>10 秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades: None</p>
+            <p>升级：无</p>
         </div>
     </div>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#abathur/leviathan">
-                <img src="/images/commanderdata/units/abathur/leviathan.jpg" alt="Leviathan">
-                <p>Leviathan</p>
+                <img src="/images/commanderdata/units/abathur/leviathan.jpg" alt="利维坦"><p>利维坦</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Powerful air Ultimate Evolution.</li>
-                <li>Evolves from air units. Recommended to evolve from mutalisks.</li>
-                <li>Due to tech requirements, it is recommended to get Brutalisks first.</li>
+                <li>强大的空中终极进化体。</li><li>由空中单位进化而成，推荐使用异龙。</li><li>由于科技需求较高，建议先获得莽兽。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades: None</p>
+            <p>技能：无</p><p>升级：无</p>
         </div>
     </div>
     <div class="leftImage">
         <div class="imageContainer">
-            <img src="/images/commanderdata/units/abathur/symbiote.jpg" alt="Symbiote">
-            <p>Symbiote</p>
+            <img src="/images/commanderdata/units/abathur/symbiote.jpg" alt="共生体">
+            <p>共生体</p>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Accompanies Ultimate Evolutions, dealing damage and providing defensive buffs.</li>
-                <li>Can provide a 200HP shell that lasts for 8 seconds (without masteries). 20 second cooldown.</li>
-                <li>Deals 20 DPS to a unit within 6 range (without masteries).</li>
-                <li>Forces all aggro'ed enemy units within 8 range to attack the Ultimate Evolution instead of other allied units.</li>
+                <li>伴随终极进化体，造成伤害并提供防御增益。</li><li>可提供 200HP、持续 8 秒的甲壳（不计精通），冷却时间 20 秒。</li><li>对 6 射程内的一个单位造成 20 DPS（不计精通）。</li><li>迫使 8 射程内所有已被吸引仇恨的敌方单位攻击终极进化体，而非其他友方单位。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades: None</p>
+            <p>技能：无</p><p>升级：无</p>
         </div>
     </div>
-    <h2 id="buildOrder">Build Order</h2>
-    <p>Below is the standard economic build order for Abathur. For more information on how to read and construct your own build orders, please check the <a href="/guides/buildordertheory">Build Order Theory</a> page.</p>
+    <h2 id="buildOrder">建造顺序</h2>
+    <p>以下是阿巴瑟的标准经济型建造顺序。有关如何阅读和编制建造顺序的更多信息，请参阅<a href="/guides/buildordertheory">建造顺序理论</a>页面。</p>
     <p class="buildOrder">
-        14 Overlord<br>
-        17 Roach Warren<br>
-        20 Spine Crawler<br>
-        19 Spine Crawler<br>
-        18 Extractor<br>
-        17 Extractor<br>
-        20 Roach<br>
-        22 Overlord<br>
-        22 Hatchery<br>
-        22 Extractor<br>
-        22 Extractor
+        14 王虫<br>
+        17 蟑螂温室<br>
+        20 脊针爬虫<br>
+        19 脊针爬虫<br>
+        18 萃取房<br>
+        17 萃取房<br>
+        20 蟑螂<br>
+        22 王虫<br>
+        22 孵化场<br>
+        22 萃取房<br>
+        22 萃取房
     </p>
-    <h2 id="guide">Gameplay Guide</h2>
-    <h3>Playstyle Traps</h3>
-    <p>A common trap for Abathur players is to go for a mass Roach build. While Roaches can potentially reach 15 armor, they do not deal a lot of damage and can have a lot of trouble dealing with attack waves and objectives.</p>
-    <p>Additionally, the mass Roach build cannot deal with air units, causing players to resort to converting some Roaches to Ravagers. Ravagers can, however, work well, given a player has sufficient experience. Effectively dealing with air unit using Corrosive Bile will require a little practice.</p>
-    <h3>Biomass Calculation</h3>
-    <p>Biomass drops are calculated as follows:</p>
+    <h2 id="guide">玩法攻略</h2><h3>玩法陷阱</h3>
+    <p>阿巴瑟玩家常见的误区是大量生产蟑螂。蟑螂虽然最多可达到 15 点护甲，但伤害不高，面对进攻波次和任务目标时往往十分吃力。</p>
+    <p>此外，纯蟑螂无法应对空中单位，迫使玩家把部分蟑螂变异为破坏者。不过经验足够时，破坏者确实能有不错表现；要用腐蚀胆汁有效处理空中单位，需要一些练习。</p>
+    <h3>生物质计算</h3><p>生物质掉落量按以下方式计算：</p>
     <ol>
-        <li>Calculate the Base Biomass drop:
+        <li>计算基础生物质掉落量：
             <ul>
-                <li>If the unit is a Critter, base drop is 1</li>
-                <li>If the unit is a Hybrid, base drop is 12</li>
-                <li>If the unit's supply is more than 4, base drop is 12</li>
-                <li>Otherwise, base drop is 2 x Unit Supply</li>
+                <li>若单位是小动物，基础掉落量为 1</li><li>若单位是混合体，基础掉落量为 12</li><li>若单位补给大于 4，基础掉落量为 12</li><li>否则，基础掉落量为 2 x 单位补给</li>
             </ul>
         </li>
-        <li>Calculate the Bonus Multiplier:
+        <li>计算额外倍率：
             <ul>
-                <li>Bonus multiplier is set at 1</li>
-                <li>If the unit was damaged by a Toxic Nest, bonus multipler is 1.5</li>
-                <li>Override the bonus multiplier with a value of 2 with a random chance based on the Double Biomass Chance Mastery allocation</li>
+                <li>额外倍率初始设为 1</li><li>若单位曾被剧毒巢穴伤害，额外倍率为 1.5</li><li>根据双倍生物质几率的精通点数，随机将额外倍率覆盖为 2</li>
             </ul>
         </li>
-        <li>Calculate the Difficulty Multiplier:
+        <li>计算难度倍率：
             <ul>
-                <li>For Brutal difficulty, this is 1.25</li>
+                <li>残酷难度下为 1.25</li>
             </ul>
         </li>
     </ol>
-    <p>The Biomass dropped is the Base Biomass Drop x Bonus Multiplier x Difficulty Multiplier</p>
-    <h3>Biomass Effects</h3>
-    <p>Units can collect Biomass drops (up to a maximum of 100) to become stronger. The effects of 100 Biomass are shown below for each of Abathur's units:</p>
+    <p>生物质掉落量 = 基础生物质掉落量 x 额外倍率 x 难度倍率</p><h3>生物质效果</h3>
+    <p>单位可以收集生物质（最多 100 点）来强化自身。阿巴瑟各单位拥有 100 点生物质时的效果如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Unit</th>
-                <th>Max Biomass Effect</th>
+                <th>单位</th><th>生物质满层效果</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Roach</td>
-                <td>300% Life<br>100% Attack Speed<br>+5 Armor<br>100% Biotic Leech</td>
+                <td>蟑螂</td><td>300% 生命值<br>100% 攻击速度<br>+5 护甲<br>100% 生质汲取</td>
             </tr>
             <tr>
-                <td>Ravager</td>
-                <td>300% Life<br>100% Attack Speed<br>100% Biotic Leech<br>50% Corrosive Bile Cooldown</td>
+                <td>破坏者</td><td>300% 生命值<br>100% 攻击速度<br>100% 生质汲取<br>腐蚀胆汁冷却时间缩短 50%</td>
             </tr>
             <tr>
-                <td>Swarm Host</td>
-                <td>300% Life<br>50% "Spawn Locusts" Cooldown</td>
+                <td>虫群宿主</td><td>300% 生命值<br>“孵化蝗虫”冷却时间缩短 50%</td>
             </tr>
             <tr>
-                <td>Locust*</td>
-                <td>300% Life<br>100% Attack Speed<br>100% Biotic Leech</td>
+                <td>蝗虫*</td><td>300% 生命值<br>100% 攻击速度<br>100% 生质汲取</td>
             </tr>
             <tr>
-                <td>Mutalisk</td>
-                <td>300% Life<br>100% Attack Speed<br>100% Biotic Leech</td>
+                <td>异龙</td><td>300% 生命值<br>100% 攻击速度<br>100% 生质汲取</td>
             </tr>
             <tr>
-                <td>Guardian</td>
-                <td>300% Life<br>100% Attack Speed<br>100% Biotic Leech</td>
+                <td>守护者</td><td>300% 生命值<br>100% 攻击速度<br>100% 生质汲取</td>
             </tr>
             <tr>
-                <td>Devourer</td>
-                <td>300% Life<br>100% Attack Speed<br>100% Biotic Leech</td>
+                <td>吞噬者</td><td>300% 生命值<br>100% 攻击速度<br>100% 生质汲取</td>
             </tr>
             <tr>
-                <td>Viper</td>
-                <td>300% Life<br>100% Attack Speed<br>100% Biotic Leech<br>500% Energy Regeneration</td>
+                <td>飞蛇</td><td>300% 生命值<br>100% 攻击速度<br>100% 生质汲取<br>500% 能量恢复</td>
             </tr>
             <tr>
-                <td>Swarm Queen</td>
-                <td>300% Life<br>100% Attack Speed<br>100% Biotic Leech<br>500% Energy Regeneration</td>
+                <td>虫群女王</td><td>300% 生命值<br>100% 攻击速度<br>100% 生质汲取<br>500% 能量恢复</td>
             </tr>
         </tbody>
     </table>
-    <p>*Locust buff based on parent Swarm Host biomass.</p>
-    <h3>Toxic Nest Usage</h3>
-    <p>When Toxic Nests are placed on the ground, they detonate as soon as enemy units touch them. This is sometimes suboptimal and it may be worth setting up a few nests to manual detonation by right-clicking the Detonate ability. The reason is shown below.</p>
-    <p>When a stream of enemies run towards a nest, the nest will detonate when the first one (the one leading the group) touches the nest, as shown below:</p>
-    <img src="/images/commanderdata/guides/abathur/autonestbefore.jpg" alt="Before automatic detonation of Toxic Nest">
-    <p>The result is a highly reduced amount of biomass gained, because only a few units are killed and not all of the Nest's Area of Effect is utilized. Additionally, the units in the attack wave may still be alive.</p>
-    <img src="/images/commanderdata/guides/abathur/autonestafter.jpg" alt="After automatic detonation of Toxic Nest">
-    <p>A more efficient use of the Toxic Nest is to detonate it when the attack wave is in the middle of the nest. This maximizes the damage of the nest. It is recommended to re-enable automatic detonation to detonate the nests, rather than manually detonating nests in a group to prevent you from detonating unncessary nests.</p>
-    <img src="/images/commanderdata/guides/abathur/manualnestbefore.jpg" alt="Before manual detonation of Toxic Nest">
-    <p>The result is significantly more biomass obtained. It is possible to wipe out small attack waves with a single nest.</p>
-    <img src="/images/commanderdata/guides/abathur/manualnestafter.jpg" alt="After manual detonation of Toxic Nest">
-    <p>When placing several nests, it is recommended to use a checkerboard pattern for nests to maximize nest damage cover and minimize unnecessary overlap of the nest damage area.</p>
-    <p>A video is below:</p>
+    <p>*蝗虫的强化取决于其所属虫群宿主的生物质。</p><h3>剧毒巢穴用法</h3>
+    <p>剧毒巢穴放到地面后，会在敌方单位碰到时立即引爆。这有时并非最优做法，可以右键点击“引爆”技能，将部分巢穴设为手动引爆。原因如下。</p>
+    <p>当一队敌人冲向巢穴时，最前方的敌人一碰到巢穴便会将其引爆，如下图所示：</p><img src="/images/commanderdata/guides/abathur/autonestbefore.jpg" alt="剧毒巢穴自动引爆前">
+    <p>这样只会消灭少量单位，无法充分利用巢穴的范围伤害，所得生物质大幅减少，而且进攻波次的单位可能仍然存活。</p><img src="/images/commanderdata/guides/abathur/autonestafter.jpg" alt="剧毒巢穴自动引爆后">
+    <p>更高效的用法是在进攻波次位于巢穴中央时将其引爆，从而最大化巢穴伤害。建议重新启用自动引爆来触发巢穴，不要在一组巢穴中手动引爆，以免引爆不必要的巢穴。</p><img src="/images/commanderdata/guides/abathur/manualnestbefore.jpg" alt="剧毒巢穴手动引爆前">
+    <p>这样能获得多得多的生物质，甚至可用单个巢穴消灭小型进攻波次。</p><img src="/images/commanderdata/guides/abathur/manualnestafter.jpg" alt="剧毒巢穴手动引爆后">
+    <p>放置多个巢穴时，建议采用棋盘格布局，最大化伤害覆盖并减少伤害区域不必要的重叠。</p><p>演示视频如下：</p>
     <iframe width="475" height="268" src="https://www.youtube.com/embed/jxEJVn_s5FE" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <h3 id="biomass">Biomass Farming</h3>
-    <p>This section provides the recommended location to farm Biomass on all the maps currently present in Co-op. The most efficient farming technique is to place your Toxic Nests down, disable the automatic detonation on the nests, and use a Spore Crawler to lure units into the nests. Usually, the first attack wave will spawn near where you are farming, allowing you to clear it too. Once you have your first Brutalisk, you can use it to lure to farm additional Biomass.</p>
-    <p>In general, Zerg provides the easiest Biomass farming, due to the large presence of weak units. Terran is most difficult, due to the fact that units are normally hiding inside Bunkers.</p>
+    <h3 id="biomass">生物质收集</h3><p>本节列出当前所有合作任务地图的推荐生物质收集位置。最高效的方法是放下剧毒巢穴、关闭自动引爆，再用孢子爬虫把单位引入巢穴。第一波敌军通常会在收集点附近出现，因此也能顺便清理。获得第一个莽兽后，可改用它引怪并继续收集生物质。</p><p>总体而言，异虫有大量脆弱单位，最容易收集生物质；人类单位通常躲在地堡内，因此最难。</p>
     <table>
         <thead>
             <tr>
-                <th>Mission</th>
-                <th>Farming Location</th>
+                <th>任务</th><th>收集位置</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><a href="/missions/chainofascension">Chain of Ascension</a><br /><br />
-                    <img src="/images/commanderdata/guides/abathur/coa.jpg" alt="Chain of Ascension Biomass Farming Location">
+                <td><a href="/missions/chainofascension">飞升之链</a><br /><br /><img src="/images/commanderdata/guides/abathur/coa.jpg" alt="飞升之链生物质收集位置">
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/cradleofdeath">Cradle of Death</a></td>
+                <td><a href="/missions/cradleofdeath">死亡摇篮</a></td>
                 <td>
-                    <img src="/images/commanderdata/guides/abathur/cod.jpg" alt="Cradle of Death Biomass Farming Location">
+                    <img src="/images/commanderdata/guides/abathur/cod.jpg" alt="死亡摇篮生物质收集位置">
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/deadofnight">Dead of Night</a></td>
+                <td><a href="/missions/deadofnight">亡者之夜</a></td>
                 <td>
-                    <img src="/images/commanderdata/guides/abathur/don.jpg" alt="Dead of Night Biomass Farming Location">
+                    <img src="/images/commanderdata/guides/abathur/don.jpg" alt="亡者之夜生物质收集位置">
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/lockload">Lock & Load</a></td>
+                <td><a href="/missions/lockload">天锁</a></td>
                 <td>
-                    <img src="/images/commanderdata/guides/abathur/ll.jpg" alt="Lock & Load Biomass Farming Location">
+                    <img src="/images/commanderdata/guides/abathur/ll.jpg" alt="天锁生物质收集位置">
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/malwarfare">Malwarfare</a></td>
+                <td><a href="/missions/malwarfare">恶意代码</a></td>
                 <td>
-                    <img src="/images/commanderdata/guides/abathur/mw.jpg" alt="Malwarefare Biomass Farming Location">
+                    <img src="/images/commanderdata/guides/abathur/mw.jpg" alt="恶意代码生物质收集位置">
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/minerevacuation">Miner Evacuation</a></td>
+                <td><a href="/missions/minerevacuation">疏散矿工</a></td>
                 <td>
-                    <img src="/images/commanderdata/guides/abathur/me.jpg" alt="Miner Evacuation Biomass Farming Location">
+                    <img src="/images/commanderdata/guides/abathur/me.jpg" alt="疏散矿工生物质收集位置">
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/mistopportunities">Mist Opportunities</a></td>
+                <td><a href="/missions/mistopportunities">机会渺茫</a></td>
                 <td>
-                    <img src="/images/commanderdata/guides/abathur/mo.jpg" alt="Mist Opportunities Essence Farming Order">
+                    <img src="/images/commanderdata/guides/abathur/mo.jpg" alt="机会渺茫生物质收集顺序">
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/oblivionexpress">Oblivion Express</a></td>
+                <td><a href="/missions/oblivionexpress">湮灭快车</a></td>
                 <td>
-                    <img src="/images/commanderdata/guides/abathur/oe.jpg" alt="Oblivion Express Essence Farming Order">
-                    <p>This is a risky approach due to the presence of air units. The goal is to kill off enough ground units to produce 100 Biomass so that a Brutalisk may be made to take care of the air units. If you are uncomfortable with this method, farm Biomass near the top left camp entrance and wait for the attack wave.</p>
+                    <img src="/images/commanderdata/guides/abathur/oe.jpg" alt="湮灭快车生物质收集顺序"><p>由于存在空中单位，这种方法有一定风险。目标是消灭足够多的地面单位，获得 100 点生物质并进化出莽兽来处理空军。如果不习惯这种方法，可在左上方营地入口附近收集生物质并等待进攻波次。</p>
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/partparcel">Part & Parcel</a></td>
+                <td><a href="/missions/partparcel">聚铁成兵</a></td>
                 <td>
-                    <img src="/images/commanderdata/guides/abathur/pp.jpg" alt="Part & Parcel Essence Farming Order">
-                    <p>Enemy race will determine where to gather Biomass. These areas are shown in the image.</p>
+                    <img src="/images/commanderdata/guides/abathur/pp.jpg" alt="聚铁成兵生物质收集顺序"><p>生物质收集位置取决于敌方种族，具体区域如图所示。</p>
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/riftstokorhal">Rifts to Korhal</a></td>
+                <td><a href="/missions/riftstokorhal">克哈裂痕</a></td>
                 <td>
-                    <img src="/images/commanderdata/guides/abathur/rtk.jpg" alt="Rifts to Korhal Essence Farming Order">
+                    <img src="/images/commanderdata/guides/abathur/rtk.jpg" alt="克哈裂痕生物质收集顺序">
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/scytheofamon">Scythe of Amon</a></td>
+                <td><a href="/missions/scytheofamon">埃蒙之镰</a></td>
                 <td>
-                    <img src="/images/commanderdata/guides/abathur/soa.jpg" alt="Scythe of Amon Essence Farming Order">
-                    <p>Clear out the enemy camp outside Player 2's base first to give you a small amount of Biomass. Continue luring units that are spawned from the expansion Sliver's Void Rifts.</p>
+                    <img src="/images/commanderdata/guides/abathur/soa.jpg" alt="埃蒙之镰生物质收集顺序"><p>先清理玩家 2 基地外的敌方营地，获得少量生物质。随后继续引诱分矿虚空碎片裂隙中生成的单位。</p>
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/templeofthepast">Temple of the Past</a></td>
+                <td><a href="/missions/templeofthepast">往日神庙</a></td>
                 <td>
-                    <img src="/images/commanderdata/guides/abathur/totp.jpg" alt="Temple of the Past Essence Farming Order">
-                    <p>Place Toxic Nests in front of the middle lane's rocks to clear the attack wave before they deal damage to the rocks.</p>
+                    <img src="/images/commanderdata/guides/abathur/totp.jpg" alt="往日神庙生物质收集顺序"><p>在中路岩石前放置剧毒巢穴，在进攻波次对岩石造成伤害前将其消灭。</p>
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/thevermillionproblem">The Vermillion Problem</a></td>
+                <td><a href="/missions/thevermillionproblem">熔火危机</a></td>
                 <td>
-                    <img src="/images/commanderdata/guides/abathur/tvp.jpg" alt="The Vermillion Problem Biomass Farming Location">
-                    <p>Against Terran, you may farm Biomass from the island on the left first before moving to the central island.</p>
+                    <img src="/images/commanderdata/guides/abathur/tvp.jpg" alt="熔火危机生物质收集位置"><p>面对人类时，可以先在左侧岛屿收集生物质，再前往中央岛屿。</p>
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/voidlaunch">Void Launch</a></td>
+                <td><a href="/missions/voidlaunch">虚空降临</a></td>
                 <td>
-                    <img src="/images/commanderdata/guides/abathur/vl.jpg" alt="Void Launch Essence Farming Order">
-                    <p>After you clear the units in the marked area, place Toxic Nests near the spawning location to clear the attack wave.</p>
+                    <img src="/images/commanderdata/guides/abathur/vl.jpg" alt="虚空降临生物质收集顺序"><p>清理标记区域内的单位后，在出生点附近放置剧毒巢穴以消灭进攻波次。</p>
                 </td>
             </tr>
             <tr>
-                <td><a href="/missions/voidthrashing">Void Thrashing</a></td>
+                <td><a href="/missions/voidthrashing">虚空撕裂</a></td>
                 <td>
-                    <img src="/images/commanderdata/guides/abathur/vt.jpg" alt="Void Thrashing Essence Farming Order">
+                    <img src="/images/commanderdata/guides/abathur/vt.jpg" alt="虚空撕裂生物质收集顺序">
                 </td>
             </tr>
         </tbody>
     </table>
-    <h3>Playstyle Tips</h3>
+    <h3>玩法提示</h3>
     <ul>
-        <li>At the start of the game, spawn Toxic Nests and use a Roach or Spore crawler to lure enemies into them to get your Ultimate Evolution out as fast as possible.</li>
-        <li>Clear your expansion with two spine crawlers and a Toxic Nest to spread creep for them.</li>
-        <li>Always aim to have all six Ultimate Evolutions out, starting with at least one Brutalisk.</li>
-        <li>Focus your biomass collecting on one unit at the start of the game, rather than spreading it out across all your units to speed up getting your Ultimate Evolutions.</li>
-        <li>Keep Brutalisks away from units that deal bonus damage to armored units like Immortals.</li>
-        <li>Add Swarm Queens to enhance survivability of your army.</li>
-        <li>Use Devourers to counter air compositions.</li>
-        <li>Often with Abathur, you will float minerals. Make Spine and Spore Crawlers (with creep from Toxic Nests) at strategic locations as a mineral dump.</li>
-        <li>More skilled players can disable the Toxic Nest auto-detonate and re-anable it when enemies clump over the nests to increase nest efficiency.</li>
-        <li>More skilled players can add two to four Vipers to their composition and make use of Disabling Cloud and Abduct.</li>
-        <li>Loading units into Nydus Worms will prevent them from taking DoT (damage over time) damage.</li>
+        <li>游戏开始时孵化剧毒巢穴，用蟑螂或孢子爬虫把敌人引入其中，尽快获得终极进化体。</li><li>用两根脊针爬虫清理分矿，并用剧毒巢穴为其铺设菌毯。</li><li>始终以集齐全部六个终极进化体为目标，并先获得至少一个莽兽。</li><li>游戏开始时集中让一个单位收集生物质，不要分散给所有单位，以加快获得终极进化体。</li><li>让莽兽远离不朽者等对重甲造成额外伤害的单位。</li><li>加入虫群女王，提高部队生存能力。</li><li>使用吞噬者克制空军组合。</li><li>阿巴瑟经常会积压矿物，可在战略位置建造脊针爬虫和孢子爬虫（利用剧毒巢穴的菌毯）来消耗矿物。</li><li>熟练玩家可以关闭剧毒巢穴自动引爆，等敌人在巢穴上聚集后再重新启用，以提高巢穴效率。</li><li>熟练玩家可在部队中加入两到四条飞蛇，并使用蔽目毒云和绑架。</li><li>把单位装入坑道虫可防止其受到 DoT（持续伤害）。</li>
     </ul>
 <script src="/scripts/nav.js"></script>
 <?= endContent() ?>

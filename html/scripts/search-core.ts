@@ -43,12 +43,13 @@ function compareResults(a: FuseResult<SearchDocument>, b: FuseResult<SearchDocum
 }
 
 function titleMatchRank(document: SearchDocument, normalizedQuery: string): number {
-    const normalizedTitle = token(document.title);
-    if (normalizedTitle.startsWith(normalizedQuery)) return 0;
-    if (normalizedTitle.includes(normalizedQuery)) return 1;
-    return 2;
+    const candidates = [document.title, ...(document.tokens || [])].map(token).filter(Boolean);
+    if (candidates.some(candidate => candidate === normalizedQuery)) return 0;
+    if (candidates.some(candidate => candidate.startsWith(normalizedQuery))) return 1;
+    if (candidates.some(candidate => candidate.includes(normalizedQuery))) return 2;
+    return 3;
 }
 
 function token(text: string): string {
-    return text.toLowerCase().replace(/[^a-z0-9]+/g, '');
+    return text.toLowerCase().normalize('NFKC').replace(/[^\p{Letter}\p{Number}]+/gu, '');
 }

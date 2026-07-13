@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
@@ -9,115 +9,115 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-    <link rel="stylesheet" href="/styles/global.css?v=70e9bc">
+    <link rel="stylesheet" href="/styles/global.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <title>Starcraft 2 Co-op - Tournament</title>
-    <meta name="description" content="Information on the one-of-a-kind Co-op Tournament, which features two teams of two battling it out in mutliple-round mutation games.">
-    <meta name="keywords" content="Starcraft co-op tournament">
+        <title>《星际争霸 II》合作任务 - 锦标赛</title>
+    <meta name="description" content="独特的合作任务锦标赛：两支双人队伍在多轮突变任务中展开较量。">
+    <meta name="keywords" content="星际争霸 II, 合作任务, 锦标赛">
     <link rel="canonical" href="https://starcraft2coop.com/community/tournament/signup">
 </head>
 <body>
 
 <header id="header">
-    <img src="/images/starcraft2coop.png" alt="Starcraft II Co-op">
+    <img src="/images/starcraft2coop.png" alt="StarCraft II 合作任务">
 </header>
 <script>
 if (document.location.host === 'dev.starcraft2coop.com') {
-    document.write('<div class="construction">THIS IS THE TEST SITE. (<a href="https://starcraft2coop.com">Go to the real site</a>)</div>');
+    document.write('<div class="construction">这里是测试站点。（<a href="https://starcraft2coop.com">前往正式站点</a>）</div>');
 }
 </script>
 <nav id="menu">
 <ul id="topmenu">
-    <li class="normal"><a href="/" title="Home">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>Home</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+    <li class="normal"><a href="/" title="首页">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>首页</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
     </a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-commanders">Commanders</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-resources">Guides</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-missions">Missions</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-about">About</a></li>
-    <li class="normal"><button type="button" id="site-search-button" title="Search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Search</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-commanders">指挥官</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-resources">攻略</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-missions">任务</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-about">关于</a></li>
+    <li class="normal"><button type="button" id="site-search-button" title="搜索">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>搜索</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
         <span class="search-shortcut" aria-hidden="true"></span>
     </button></li>
 </ul>
 <div id="container">
     <div id="commanderList" class="submenu">
-        <a href="/commanders/raynor" class="normal"><img src="/images/commanderportraits/raynorportrait.png" alt="Raynor"></a>
-        <a href="/commanders/kerrigan" class="normal"><img src="/images/commanderportraits/kerriganportrait.png" alt="Kerrigan"></a>
-        <a href="/commanders/artanis" class="normal"><img src="/images/commanderportraits/artanisportrait.png" alt="Artanis"></a>
-        <a href="/commanders/swann" class="normal"><img src="/images/commanderportraits/swannportrait.png" alt="Swann"></a>
-        <a href="/commanders/zagara" class="normal"><img src="/images/commanderportraits/zagaraportrait.png" alt="Zagara"></a>
-        <a href="/commanders/vorazun" class="normal"><img src="/images/commanderportraits/vorazunportrait.png" alt="Vorazun"></a>
-        <a href="/commanders/karax" class="normal"><img src="/images/commanderportraits/karaxportrait.png" alt="Karax"></a>
-        <a href="/commanders/abathur" class="normal"><img src="/images/commanderportraits/abathurportrait.png" alt="Abathur"></a>
-        <a href="/commanders/alarak" class="normal"><img src="/images/commanderportraits/alarakportrait.png" alt="Alarak"></a>
-        <a href="/commanders/nova" class="normal"><img src="/images/commanderportraits/novaportrait.png" alt="Nova"></a>
-        <a href="/commanders/stukov" class="normal"><img src="/images/commanderportraits/stukovportrait.png" alt="Stukov"></a>
-        <a href="/commanders/fenix" class="normal"><img src="/images/commanderportraits/fenixportrait.png" alt="Fenix"></a>
-        <a href="/commanders/dehaka" class="normal"><img src="/images/commanderportraits/dehakaportrait.png" alt="Dehaka"></a>
-        <a href="/commanders/horner" class="normal"><img src="/images/commanderportraits/hornerportrait.png" alt="Han &amp; Horner"></a>
-        <a href="/commanders/tychus" class="normal"><img src="/images/commanderportraits/tychusportrait.png" alt="Tychus"></a>
-        <a href="/commanders/zeratul" class="normal"><img src="/images/commanderportraits/zeratulportrait.png" alt="Zeratul"></a>
-        <a href="/commanders/stetmann" class="normal"><img src="/images/commanderportraits/stetmannportrait.png" alt="Stetmann"></a>
-        <a href="/commanders/mengsk" class="normal"><img src="/images/commanderportraits/mengskportrait.png" alt="Mengsk"></a>
+        <a href="/commanders/raynor" class="normal"><img src="/images/commanderportraits/raynorportrait.png" alt="雷诺"></a>
+        <a href="/commanders/kerrigan" class="normal"><img src="/images/commanderportraits/kerriganportrait.png" alt="凯瑞甘"></a>
+        <a href="/commanders/artanis" class="normal"><img src="/images/commanderportraits/artanisportrait.png" alt="阿塔尼斯"></a>
+        <a href="/commanders/swann" class="normal"><img src="/images/commanderportraits/swannportrait.png" alt="斯旺"></a>
+        <a href="/commanders/zagara" class="normal"><img src="/images/commanderportraits/zagaraportrait.png" alt="扎加拉"></a>
+        <a href="/commanders/vorazun" class="normal"><img src="/images/commanderportraits/vorazunportrait.png" alt="沃拉尊"></a>
+        <a href="/commanders/karax" class="normal"><img src="/images/commanderportraits/karaxportrait.png" alt="凯拉克斯"></a>
+        <a href="/commanders/abathur" class="normal"><img src="/images/commanderportraits/abathurportrait.png" alt="阿巴瑟"></a>
+        <a href="/commanders/alarak" class="normal"><img src="/images/commanderportraits/alarakportrait.png" alt="阿拉纳克"></a>
+        <a href="/commanders/nova" class="normal"><img src="/images/commanderportraits/novaportrait.png" alt="诺娃"></a>
+        <a href="/commanders/stukov" class="normal"><img src="/images/commanderportraits/stukovportrait.png" alt="斯托科夫"></a>
+        <a href="/commanders/fenix" class="normal"><img src="/images/commanderportraits/fenixportrait.png" alt="菲尼克斯"></a>
+        <a href="/commanders/dehaka" class="normal"><img src="/images/commanderportraits/dehakaportrait.png" alt="德哈卡"></a>
+        <a href="/commanders/horner" class="normal"><img src="/images/commanderportraits/hornerportrait.png" alt="汉与霍纳"></a>
+        <a href="/commanders/tychus" class="normal"><img src="/images/commanderportraits/tychusportrait.png" alt="泰凯斯"></a>
+        <a href="/commanders/zeratul" class="normal"><img src="/images/commanderportraits/zeratulportrait.png" alt="泽拉图"></a>
+        <a href="/commanders/stetmann" class="normal"><img src="/images/commanderportraits/stetmannportrait.png" alt="斯台特曼"></a>
+        <a href="/commanders/mengsk" class="normal"><img src="/images/commanderportraits/mengskportrait.png" alt="蒙斯克"></a>
     </div>
     <div id="missionList" class="submenu">
-        <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">Chain of Ascension</div></a>
-        <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">Cradle of Death</div></a>
-        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">Dead of Night</div></a>
-        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">Lock &amp; Load</div></a>
-        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">Malwarfare</div></a>
-        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">Miner Evacuation</div></a>
-        <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">Mist Opportunities</div></a>
-        <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">Oblivion Express</div></a>
-        <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">Part &amp; Parcel</div></a>
-        <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">Rifts to Korhal</div></a>
-        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">Scythe of Amon</div></a>
-        <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">Temple of the Past</div></a>
-        <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">The Vermillion Problem</div></a>
-        <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">Void Launch</div></a>
-        <a href="/missions/voidthrashing" class="normal"><div class="mapImg mapImg-voidthrashing">Void Thrashing</div></a>
+        <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">飞升之链</div></a>
+        <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">死亡摇篮</div></a>
+        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">亡者之夜</div></a>
+        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">天锁</div></a>
+        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">恶意代码</div></a>
+        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">疏散矿工</div></a>
+        <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">机会渺茫</div></a>
+        <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">湮灭快车</div></a>
+        <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">聚铁成兵</div></a>
+        <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">克哈裂痕</div></a>
+        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">埃蒙之镰</div></a>
+        <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">往日神庙</div></a>
+        <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">熔火危机</div></a>
+        <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">虚空降临</div></a>
+        <a href="/missions/voidthrashing" class="normal"><div class="mapImg mapImg-voidthrashing">虚空撕裂</div></a>
     </div>
     <div id="resources" class="submenu">
         <div class="submenu-with-sections"><div class="submenu-section">
-            <strong>Resources:</strong>
+            <strong>资料：</strong>
             <ul>
-                <li class="normal"><a href="/mutators/">Mutators</a></li>
-                <li class="normal"><a href="/resources/weeklymutations">Weekly&nbsp;Mutations</a></li>
-                <li class="normal"><a href="/resources/brutal">Brutal+</a></li>
-                <li class="normal"><a href="/units/">Unit&nbsp;Stats</a></li>
+                <li class="normal"><a href="/mutators/">突变因子</a></li>
+                <li class="normal"><a href="/resources/weeklymutations">每周突变</a></li>
+                <li class="normal"><a href="/resources/brutal">残酷+</a></li>
+                <li class="normal"><a href="/units/">单位数据</a></li>
             </ul>
         </div><div class="submenu-section">
-            <strong>Guides:</strong>
+            <strong>攻略：</strong>
             <ul>
-                <li class="normal"><a href="/guides/buildordertheory">Build&nbsp;Order&nbsp;Theory</a></li>
-                <li class="normal"><a href="/guides/enemycomps">Enemy&nbsp;Compositions</a></li>
-                <li class="normal"><a href="/guides/generaltips">General&nbsp;Tips</a></li>
-                <li class="normal"><a href="/guides/newplayer">New&nbsp;Players</a></li>
-                <li class="normal"><a href="/guides/youtube">Youtube</a></li>
+                <li class="normal"><a href="/guides/buildordertheory">建造顺序理论</a></li>
+                <li class="normal"><a href="/guides/enemycomps">敌方阵容</a></li>
+                <li class="normal"><a href="/guides/generaltips">通用技巧</a></li>
+                <li class="normal"><a href="/guides/newplayer">新手指南</a></li>
+                <li class="normal"><a href="/guides/youtube">YouTube</a></li>
             </ul>
         </div><div class="submenu-section">
-            <strong>Miscellaneous:</strong>
+            <strong>其他：</strong>
             <ul>
-                <li class="normal"><a href="/resources/achievements">Achievements</a></li>
-                <li class="normal"><a href="/resources/ailogic">AI&nbsp;Logic</a></li>
-                <li class="normal"><a href="/resources/bugs">Bugs</a></li>
-                <li class="normal"><a href="/resources/deathprevention">Death&nbsp;Prevent&nbsp;Effects</a></li>
-                <li class="normal"><a href="/resources/eastereggs">Easter&nbsp;Eggs</a></li>
-                <li class="normal"><a href="/resources/levels">Levels</a></li>
-                <li class="normal"><a href="/resources/patchdata">Patch&nbsp;Data</a></li>
-                <li class="normal"><a href="/tools/downloads">Downloads</a></li>
-                <li class="normal"><a href="/tools/masterybreakpoints">Mastery&nbsp;Breakpoints</a></li>
+                <li class="normal"><a href="/resources/achievements">成就</a></li>
+                <li class="normal"><a href="/resources/ailogic">人工智能逻辑</a></li>
+                <li class="normal"><a href="/resources/bugs">错误</a></li>
+                <li class="normal"><a href="/resources/deathprevention">免死效果</a></li>
+                <li class="normal"><a href="/resources/eastereggs">彩蛋</a></li>
+                <li class="normal"><a href="/resources/levels">等级</a></li>
+                <li class="normal"><a href="/resources/patchdata">补丁数据</a></li>
+                <li class="normal"><a href="/tools/downloads">下载</a></li>
+                <li class="normal"><a href="/tools/masterybreakpoints">精通阈值</a></li>
             </ul>
         </div></div>
     </div>
     <div id="about" class="submenu">
         <ul>
             <!--<li class="normal"><a href="/about/contact">Contact</a></li>-->
-            <li class="normal"><a href="/about/faq">FAQ</a></li>
-            <li class="normal"><a href="/about/links">Links</a></li>
+            <li class="normal"><a href="/about/faq">常见问题</a></li>
+            <li class="normal"><a href="/about/links">相关链接</a></li>
             <!--li class="normal"><a href="https://www.youtube.com/c/Starcraft2Coop" rel="nofollow">Youtube</a></li-->
-            <li class="normal"><a href="/about/stats">Misc. Stats</a></li>
+            <li class="normal"><a href="/about/stats">杂项统计</a></li>
         </ul>
     </div>
     <!--<div id="imgs">
@@ -168,297 +168,296 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         }
     })(jQuery);
 </script>
-<script src="/scripts/search.js?v=3646f5" defer></script>
+<script src="/scripts/search.js" defer></script>
 <div id="content">
-        <h1>The Co-Op Tournament</h1>
-    <p>The Co-Op tournament is designed to test the limits of players' skill, knowledge and map awareness in Starcraft II Co-op mode. Currently, there is a $100 prize given to the winning team ($50 each player).</p>
-    <p>You may visit the <a href="archive">Archive</a> to see how the past tournaments played out, download replays of all the games, and view the casted VODs for each game of the event.</p>
-    <h2>Rules</h2>
-    <h3>Gameplay Rules</h3>
+        <h1>合作任务锦标赛</h1>
+    <p>合作任务锦标赛旨在考验玩家在《星际争霸 II》合作任务模式中的操作、知识与地图意识极限。目前，获胜队伍可获得 $100 奖金（每名玩家 $50）。</p>
+    <p>你可以访问<a href="archive">存档</a>，查看往届锦标赛进程、下载全部对局录像，并观看每场比赛的解说录像。</p>
+    <h2>规则</h2>
+    <h3>游戏规则</h3>
     <ul>
-        <li>All games are played on Brutal difficulty.</li>
-        <li>Both teams start with 4 points in their point pool.</li>
-        <li>Both teams start with 1 life.</li>
-        <li>Participants may allocate their Prestiges and Mastery points to best suit the mutators they face.</li>
-        <li>Players may pause a game as many times as they wish.</li>
+        <li>所有对局均使用残酷难度。</li>
+        <li>两支队伍的点数池初始均为 4 点。</li>
+        <li>两支队伍初始均有 1 条命。</li>
+        <li>参赛者可根据面对的突变因子调整威望与精通点数。</li>
+        <li>玩家可按需暂停对局，次数不限。</li>
     </ul>
-    <h3>Banned Elements</h3>
+    <h3>禁用内容</h3>
     <ul>
-        <li>Fatal Attraction, Microtransactions, Polarity and Vertigo may not be selected.</li>
-        <li>The following mutator combinations are banned and may not be used by any team:
+        <li>不得选择“致命吸引”“微交易”“极性”与“眩晕”。</li>
+        <li>以下突变因子组合被禁用，任何队伍都不得使用：
             <ul>
-                <li>Boom Bots + Speed Freaks</li>
-                <li>Diffusion + Life Leech + Shortsighted</li>
-                <li>Minesweeper + Void Reanimators</li>
-                <li>Propagators + Shortsighted + Speed Freaks</li>
+                <li>爆破机器人 + 极速狂飙</li>
+                <li>扩散 + 生命汲取 + 近视眼</li>
+                <li>扫雷专家 + 虚空复生者</li>
+                <li>传播者 + 近视眼 + 极速狂飙</li>
             </ul>
         </li>
-        <li>The following map/mutator combinations are banned and may not be used by any team:
+        <li>以下地图与突变因子组合被禁用，任何队伍都不得使用：
             <ul>
-                <li>Heroes from the Storm + Miner Evacuation</li>
-                <li>Heroes from the Storm + Scythe of Amon</li>
+                <li>风暴英雄 + 疏散矿工</li>
+                <li>风暴英雄 + 埃蒙之镰</li>
             </ul>
         </li>
-        <li>The following cheeses may not be used by any team:
+        <li>任何队伍都不得使用以下取巧战术：
             <ul>
-                <li>Base lift-off cheese</li>
-                <li>Dead of Night Tower Cheese</li>
-                <li>Raynor/Vorazun invincible Cloaked units.</li>
-                <li>Han/Horner Hidden Galleons</li>
+                <li>升起基地规避攻击</li>
+                <li>“亡者之夜”防御塔取巧战术</li>
+                <li>雷诺/沃拉尊的无敌隐形单位</li>
+                <li>汉/霍纳隐藏突击舰</li>
             </ul>
         </li>
-        <li>If unsure, Teams should check with the administrator if a strategy is allowed before confirming their picks.</li>
+        <li>如有疑问，队伍应在确认选择前向管理员核实某项战术是否允许。</li>
     </ul>
-    <h3>Tournament format</h3>
+    <h3>锦标赛赛制</h3>
     <ul>
-        <li>The tournament takes place with two teams of two players and will be played across multiple rounds.</li>
-        <li>A round takes place in the following manner:
+        <li>锦标赛由两支双人队伍参加，共进行多轮比赛。</li>
+        <li>每轮按以下方式进行：
             <ul>
-                <li>Every round, each team will play a mutator set assigned to them by the opposing team.</li>
-                <li>Teams take turns in adding a mutator to the set the opposing team will play.</li>
-                <li>Once a mutator is selected, it cannot be selected by any team for the current and the subsequent round.</li>
-                <li>As an in-game limitation, a maximum of 10 mutators may be selected.</li>
-                <li>When mutators are selected and given to the other team, that team selects a map to play that mutator set.</li>
-                <li>Once a map is selected, it may not be played until all other maps in the map pool have been played by that team.</li>
-                <li>Once a commander is selected, it may not be played until all other commanders have been played by that team. If a player does not have a commander purchased, they will need to play it at level 5.</li>
-                <li>Each team will attempt to successfully complete the mission. Bonus objectives are not required.</li>
-                <li>If an attempt fails, the team will lose a life and the team will have to try again with the same commanders/mission/mutator selection. They may change Prestige and Mastery Points allocation in between attempts.</li>
-                <li>Points do not carry over.</li>
-                <li>Point pools refill each round.</li>
-                <li>On victory, that team gets 2 points added to their point pool.</li>
-                <li>Completing ALL bonus objectives gives 1 bonus life to that team.</li>
+                <li>每轮中，每支队伍都要挑战由对手指定的突变因子组合。</li>
+                <li>两队轮流向对方要挑战的组合中加入一个突变因子。</li>
+                <li>某个突变因子一经选择，本轮及下一轮中任何队伍都不能再次选择。</li>
+                <li>受游戏限制，最多可选择 10 个突变因子。</li>
+                <li>突变因子组合交给对方后，对方选择用于挑战该组合的地图。</li>
+                <li>某张地图一经选择，在该队伍完成地图池中的所有其他地图前不能再次使用。</li>
+                <li>某名指挥官一经选择，在该队伍使用过所有其他指挥官前不能再次使用。若玩家未购买某名指挥官，则需使用其 5 级试玩版本。</li>
+                <li>每支队伍都要尝试完成任务，不要求完成奖励目标。</li>
+                <li>挑战失败后，队伍失去 1 条命，并必须使用相同的指挥官、任务和突变因子组合重试；两次尝试之间可调整威望和精通点数。</li>
+                <li>点数不会结转至下一轮。</li>
+                <li>每轮开始时点数池都会补满。</li>
+                <li>获胜后，该队伍的点数池增加 2 点。</li>
+                <li>完成全部奖励目标可为队伍增加 1 条命。</li>
             </ul>
-        <li>The winning team is the team that wins a round when the other team loses.</li>
-        <li>In the case that both teams lose a round, the team with the greatest mission progress (in percentage completion) before defeat is the team that wins the tournament. Mission progress is described in the section below.</li>
-        <li>To prevent stalemates, if a mission lasts longer than 45:00 in-game time, it will be considered a loss and mission progress will be measured from that time.</li>
-        <li>If an ally disconnects, the other person will have to complete the mission by themself. They may use their ally's units and resources as they see fit. If both players disconnect, the game will be considered a loss.</li>
+        <li>一支队伍赢得某轮且另一支队伍失败时，该队伍即为最终胜者。</li>
+        <li>如果两队在同一轮均告失败，则落败前任务进度（完成百分比）更高的队伍赢得锦标赛。任务进度的定义见下节。</li>
+        <li>为防止僵局，若任务游戏时间超过 45:00，则视为失败，并按该时刻的任务进度计算。</li>
+        <li>如果一名盟友断线，另一名玩家必须独自完成任务，并可自行使用盟友的单位和资源。如果两名玩家都断线，则该局视为失败。</li>
     </ul>
-    <h3>Mission Progress</h3>
-    <p>In case both teams lose their runs, a "Mission Effort" score will be determined based on the mission progress. The below table outlines how the Mission Effort Score will be determined.</p>
+    <h3>任务进度</h3>
+    <p>如果两支队伍均挑战失败，将根据任务进度计算“任务努力度”分数。下表说明分数的计算指标。</p>
     <table>
         <thead>
             <tr>
-                <th>Mission</th>
-                <th>Metric</th>
-                <th>Total</th>
+                <th>任务</th>
+                <th>指标</th>
+                <th>总量</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><a href="/missions/chainofascension">Chain of Ascension</a></td>
-                <td>Maximum waypoint along the path</td>
+                <td><a href="/missions/chainofascension">升格之链</a></td>
+                <td>沿路线到达的最远路径点</td>
                 <td>18</td>
             </tr>
             <tr>
-                <td><a href="/missions/cradleofdeath">Cradle of Death</a></td>
-                <td>Facilities destroyed</td>
+                <td><a href="/missions/cradleofdeath">死亡摇篮</a></td>
+                <td>摧毁的设施</td>
                 <td>4</td>
             </tr>
             <tr>
-                <td><a href="/missions/deadofnight">Dead of Night</a></td>
-                <td>Infested Structures destroyed</td>
+                <td><a href="/missions/deadofnight">亡者之夜</a></td>
+                <td>摧毁的被感染建筑</td>
                 <td>151</td>
             </tr>
             <tr>
-                <td><a href="/missions/lockload">Lock & Load</a></td>
-                <td>Maximum Celestial Locks captured</td>
+                <td><a href="/missions/lockload">天锁</a></td>
+                <td>占领天锁的最高数量</td>
                 <td>5</td>
             </tr>
             <tr>
-                <td><a href="/missions/malwarfare">Malwarfare</a></td>
-                <td>Security Terminals Purged</td>
+                <td><a href="/missions/malwarfare">恶意代码</a></td>
+                <td>完成净化的安全终端</td>
                 <td>5</td>
             </tr>
             <tr>
-                <td><a href="/missions/minerevacuation">Miner Evacuation</a></td>
-                <td>Evacuation Ships saved</td>
+                <td><a href="/missions/minerevacuation">疏散矿工</a></td>
+                <td>救下的撤离飞船</td>
                 <td>5</td>
             </tr>
             <tr>
-                <td><a href="/missions/mistopportunities">Mist Opportunities</a></td>
-                <td>Waves guarded</td>
+                <td><a href="/missions/mistopportunities">机会渺茫</a></td>
+                <td>完成护送的波次</td>
                 <td>5</td>
             </tr>
             <tr>
-                <td><a href="/missions/oblivionexpress">Oblivion Express</a></td>
-                <td>Trains destroyed</td>
+                <td><a href="/missions/oblivionexpress">湮灭快车</a></td>
+                <td>摧毁的列车</td>
                 <td>9</td>
             </tr>
             <tr>
-                <td><a href="/missions/partparcel">Part & Parcel</a></td>
-                <td>Hybrids killed</td>
+                <td><a href="/missions/partparcel">聚铁成兵</a></td>
+                <td>消灭的混合体</td>
                 <td>3</td>
             </tr>
             <tr>
-                <td><a href="/missions/riftstokorhal">Rifts to Korhal</a></td>
-                <td>Void Shards destroyed</td>
+                <td><a href="/missions/riftstokorhal">克哈裂痕</a></td>
+                <td>摧毁的虚空碎片</td>
                 <td>10</td>
             </tr>
             <tr>
-                <td><a href="/missions/scytheofamon">Scythe of Amon</a></td>
-                <td>Void Slivers destroyed</td>
+                <td><a href="/missions/scytheofamon">埃蒙之镰</a></td>
+                <td>摧毁的虚空裂片</td>
                 <td>5</td>
             </tr>
             <tr>
-                <td><a href="/missions/templeofthepast">Temple of the Past</a></td>
-                <td>Time temple is alive</td>
+                <td><a href="/missions/templeofthepast">往日神庙</a></td>
+                <td>神庙存活时间</td>
                 <td>26:00</td>
             </tr>
             <tr>
-                <td><a href="/missions/thevermillionproblem">The Vermillion Problem</a></td>
-                <td>Crystals deposited</td>
+                <td><a href="/missions/thevermillionproblem">熔火危机</a></td>
+                <td>送回的晶体</td>
                 <td>20</td>
             </tr>
             <tr>
-                <td><a href="/missions/voidlaunch">Void Launch</a></td>
-                <td>Shuttles destroyed</td>
+                <td><a href="/missions/voidlaunch">虚空降临</a></td>
+                <td>摧毁的运兵船</td>
                 <td>35</td>
             </tr>
             <tr>
-                <td><a href="/missions/voidthrashing">Void Thrashing</a></td>
-                <td>Void Thrashers killed</td>
+                <td><a href="/missions/voidthrashing">虚空撕裂</a></td>
+                <td>消灭的虚空撕裂者</td>
                 <td>10</td>
             </tr>
         </tbody>
     </table>
-    <h3>Abilities</h3>
-    <p>In addition to the standard rules, each tournament will provide teams with three abilities that they can use (once per tournament) to help progress through the tournament. The abilities will be randomly selected from the list below.</p>
+    <h3>能力</h3>
+    <p>除标准规则外，每届锦标赛还会为队伍提供 3 项能力，每项在整届比赛中只能使用一次，以帮助队伍推进赛程。这些能力会从下表中随机选取。</p>
     <table>
         <thead>
             <tr>
-                <th>Ability</th>
-                <th>Name</th>
-                <th>Description</th>
+                <th>能力</th>
+                <th>名称</th>
+                <th>说明</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/tournament/veto.png" alt="Standard Veto"></td>
-                <td>Mutator Veto</td>
-                <td>Remove a mutator from the set.</td>
+                <td><img src="/images/tournament/veto.png" alt="标准否决"></td>
+                <td>否决突变因子</td>
+                <td>从组合中移除一个突变因子。</td>
             </tr>
             <tr>
-                <td><img src="/images/tournament/cveto.png" alt="Commander Veto"></td>
-                <td>Commander Veto</td>
-                <td>Prevent the opposing team from using a certain commander for a round. Can only be used as long as they have at least three commanders in their commander pool.</td>
+                <td><img src="/images/tournament/cveto.png" alt="否决指挥官"></td>
+                <td>否决指挥官</td>
+                <td>阻止对方队伍在一轮中使用某名指挥官。仅当其指挥官池中至少还有 3 名指挥官时才能使用。</td>
             </tr>
             <tr>
-                <td><img src="/images/tournament/mveto.png" alt="Map Veto"></td>
-                <td>Map Veto</td>
-                <td>Prevent the opposing team from playing a certain map for a round. Can only be used as long as they have at least two maps in their map pool.</td>
+                <td><img src="/images/tournament/mveto.png" alt="否决地图"></td>
+                <td>否决地图</td>
+                <td>阻止对方队伍在一轮中使用某张地图。仅当其地图池中至少还有 2 张地图时才能使用。</td>
             </tr>
             <tr>
-                <td><img src="/images/tournament/race.png" alt="Race to Victory"></td>
-                <td>Race to Victory</td>
-                <td>Allows a team to reroll the map until they face off against a specific race as shown by the in-game Enemy Composition Identification.</td>
+                <td><img src="/images/tournament/race.png" alt="竞速胜利"></td>
+                <td>竞速胜利</td>
+                <td>允许队伍反复重开地图，直到遇到游戏内“敌方部队组合识别”所显示的指定种族。</td>
             </tr>
             <tr>
-                <td><img src="/images/tournament/replay.png" alt="Map Replay"></td>
-                <td>Map Replay</td>
-                <td>Allows the team to play an already-played map.</td>
+                <td><img src="/images/tournament/replay.png" alt="重玩地图"></td>
+                <td>重玩地图</td>
+                <td>允许队伍再次游玩已经使用过的地图。</td>
             </tr>
             <tr>
-                <td><img src="/images/tournament/simplify.png" alt="Simplify"></td>
-                <td>Simplify</td>
-                <td>Allows the team to play the round on Hard difficulty instead of Brutal.</td>
+                <td><img src="/images/tournament/simplify.png" alt="简化"></td>
+                <td>简化</td>
+                <td>允许队伍在困难难度而非残酷难度下进行本轮。</td>
             </tr>
         </tbody>
     </table>
-    <h3>Mutator Costs</h3>
-    <p>The costs of the mutators is as follows:</p>
+    <h3>突变因子点数</h3>
+    <p>各突变因子的点数如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Mutator</th>
-                <th>Cost</th>
+                <th>突变因子</th>
+                <th>点数</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td>Aggressive Deployment</td><td>4</td></tr>
-            <tr><td>Alien Incubation</td><td>1</td></tr>
-            <tr><td>Avenger</td><td>3</td></tr>
-            <tr><td>Barrier</td><td>1</td></tr>
-            <tr><td>Black Death</td><td>4</td></tr>
-            <tr><td>Blizzard</td><td>2</td></tr>
-            <tr><td>Boom Bots</td><td>6</td></tr>
-            <tr><td>Concussive Attacks</td><td>1</td></tr>
-            <tr><td>Darkness</td><td>1</td></tr>
-            <tr><td>Diffusion</td><td>4</td></tr>
-            <tr><td>Double-edged</td><td>4</td></tr>
-            <tr><td>Eminent Domain</td><td>1</td></tr>
-            <tr><td>Evasive Maneuvers</td><td>2</td></tr>
-            <tr><td>Fear</td><td>2</td></tr>
-            <tr><td>Going Nuclear</td><td>3</td></tr>
-            <tr><td>Hardened Will</td><td>1</td></tr>
-            <tr><td>Heroes from the Storm</td><td>6</td></tr>
-            <tr><td>Inspiration</td><td>2</td></tr>
-            <tr><td>Just Die!</td><td>4</td></tr>
-            <tr><td>Kill Bots</td><td>4</td></tr>
-            <tr><td>Laser Drill</td><td>2</td></tr>
-            <tr><td>Lava Burst</td><td>1</td></tr>
-            <tr><td>Life Leech</td><td>1</td></tr>
-            <tr><td>Long Range</td><td>2</td></tr>
-            <tr><td>Mag-nificent</td><td>2</td></tr>
-            <tr><td>Mineral Shields</td><td>1</td></tr>
-            <tr><td>Minesweeper</td><td>3</td></tr>
-            <tr><td>Missile Command</td><td>3</td></tr>
-            <tr><td>Moment of Silence</td><td>2</td></tr>
-            <tr><td>Mutually Assured Destruction</td><td>2</td></tr>
-            <tr><td>Orbital Strike</td><td>1</td></tr>
-            <tr><td>Outbreak</td><td>2</td></tr>
-            <tr><td>Photon Overload</td><td>1</td></tr>
-            <tr><td>Power Overwhelming</td><td>4</td></tr>
-            <tr><td>Propagators</td><td>4</td></tr>
-            <tr><td>Purifier Beam</td><td>1</td></tr>
-            <tr><td>Scorched Earth</td><td>1</td></tr>
-            <tr><td>Self Destruction</td><td>2</td></tr>
-            <tr><td>Shortsighted</td><td>3</td></tr>
-            <tr><td>Slim Pickings</td><td>4</td></tr>
-            <tr><td>Speed Freaks</td><td>2</td></tr>
-            <tr><td>Temporal Field</td><td>1</td></tr>
-            <tr><td>Time Warp</td><td>1</td></tr>
-            <tr><td>Transmutation</td><td>4</td></tr>
-            <tr><td>Twister</td><td>1</td></tr>
-            <tr><td>Void Reanimators</td><td>4</td></tr>
-            <tr><td>Void Rifts</td><td>6</td></tr>
-            <tr><td>Walking Infested</td><td>1</td></tr>
-            <tr><td>We Move Unseen</td><td>2</td></tr>
+            <tr><td>强势部署</td><td>4</td></tr>
+            <tr><td>异形孵化</td><td>1</td></tr>
+            <tr><td>复仇者</td><td>3</td></tr>
+            <tr><td>屏障</td><td>1</td></tr>
+            <tr><td>黑死病</td><td>4</td></tr>
+            <tr><td>暴风雪</td><td>2</td></tr>
+            <tr><td>爆破机器人</td><td>6</td></tr>
+            <tr><td>震荡攻击</td><td>1</td></tr>
+            <tr><td>黑暗</td><td>1</td></tr>
+            <tr><td>扩散</td><td>4</td></tr>
+            <tr><td>双刃剑</td><td>4</td></tr>
+            <tr><td>强占地盘</td><td>1</td></tr>
+            <tr><td>闪避机动</td><td>2</td></tr>
+            <tr><td>恐惧</td><td>2</td></tr>
+            <tr><td>核弹来袭</td><td>3</td></tr>
+            <tr><td>坚定意志</td><td>1</td></tr>
+            <tr><td>风暴英雄</td><td>6</td></tr>
+            <tr><td>鼓舞人心</td><td>2</td></tr>
+            <tr><td>就是死不了</td><td>4</td></tr>
+            <tr><td>杀戮机器人</td><td>4</td></tr>
+            <tr><td>激光钻机</td><td>2</td></tr>
+            <tr><td>熔岩爆裂</td><td>1</td></tr>
+            <tr><td>生命汲取</td><td>1</td></tr>
+            <tr><td>超远射程</td><td>2</td></tr>
+            <tr><td>磁力惊人</td><td>2</td></tr>
+            <tr><td>矿物护盾</td><td>1</td></tr>
+            <tr><td>扫雷专家</td><td>3</td></tr>
+            <tr><td>导弹指挥</td><td>3</td></tr>
+            <tr><td>静默时刻</td><td>2</td></tr>
+            <tr><td>相互保证毁灭</td><td>2</td></tr>
+            <tr><td>轨道轰炸</td><td>1</td></tr>
+            <tr><td>感染爆发</td><td>2</td></tr>
+            <tr><td>光子超载</td><td>1</td></tr>
+            <tr><td>势不可挡</td><td>4</td></tr>
+            <tr><td>传播者</td><td>4</td></tr>
+            <tr><td>净化光束</td><td>1</td></tr>
+            <tr><td>焦土政策</td><td>1</td></tr>
+            <tr><td>自毁程序</td><td>2</td></tr>
+            <tr><td>近视眼</td><td>3</td></tr>
+            <tr><td>资源短缺</td><td>4</td></tr>
+            <tr><td>极速狂飙</td><td>2</td></tr>
+            <tr><td>时空力场</td><td>1</td></tr>
+            <tr><td>时间扭曲</td><td>1</td></tr>
+            <tr><td>转化</td><td>4</td></tr>
+            <tr><td>龙卷风</td><td>1</td></tr>
+            <tr><td>虚空复生者</td><td>4</td></tr>
+            <tr><td>虚空裂隙</td><td>6</td></tr>
+            <tr><td>行尸走肉</td><td>1</td></tr>
+            <tr><td>隐形行动</td><td>2</td></tr>
         </tbody>
     </table>
-    <h3>Good Sportsmanship</h3>
-    <p>As with all esports tournaments, players are expected to demonstrate good sportsmanship. This means, but it is not limited to:</p>
+    <h3>良好体育精神</h3>
+    <p>与所有电子竞技赛事一样，参赛者应展现良好体育精神，包括但不限于：</p>
     <ul>
-        <li>All participants are expected to conduct themselves in a respectful and professional manner.</li>
-        <li>Any form of cheating will instantly cause the cheating team to forfeit the tournament. Both players will no longer be allowed to participate in future tournaments. Cheating includes the use of modified maps, hacks and other unauthorized software.</li>
+        <li>所有参赛者都应以尊重他人且专业的方式行事。</li>
+        <li>任何形式的作弊都会立即导致作弊队伍被取消比赛资格，两名玩家也不得参加后续锦标赛。作弊包括使用修改地图、外挂及其他未经授权的软件。</li>
     </ul>
-    <h3>For Participants</h3>
-    <p>If you are participating in this tournament, please take note of the points below to ensure the tournament runs as smoothly as possible:</p>
+    <h3>参赛者须知</h3>
+    <p>如参加本届锦标赛，请注意以下事项，以确保赛事顺利进行：</p>
     <ul>
-        <li>It is highly advisable to have a backup partner in case your partner is not able to appear.</li>
-        <li>If your partner does not appear, you may use any method you wish to find a co-op partner (e.g. Discord, Co-op Subreddit, in-game chat, etc.).</li>
-        <li>Once a team plays a game, that team is expected to compete throughout the tournament. No partner swaps are allowed.</li>
-        <li>Should a partner leave in the middle of the tournament, the remaining player will be expected to complete the rest of the missions on their own. They may select their ally's commander/masteries (subject to tournament rules) and may use a 4-base economy as well.</li>
-        <li>You are free to use voice chat to communicate with your ally, although using in-game pings and chat is preferred, to allow viewers to follow your plans.</li>
-        <li>You may play on any server you wish.</li>
-        <li>You will be provided access to a private channel, along with the other team's players. Use this to:
+        <li>强烈建议准备一名替补搭档，以防原搭档无法到场。</li>
+        <li>如果搭档未到场，可使用任意方式寻找合作任务搭档（例如 Discord、合作任务 Subreddit、游戏内聊天等）。</li>
+        <li>队伍一旦开始比赛，就应以同一阵容完成整届锦标赛，不得更换搭档。</li>
+        <li>如果搭档在锦标赛中途退出，剩余玩家必须独自完成后续任务。他们可以选择盟友的指挥官与精通配置（须遵守赛事规则），也可以使用四矿经济。</li>
+        <li>可以使用语音聊天与盟友沟通，但更推荐使用游戏内信号和聊天，以便观众理解你们的计划。</li>
+        <li>可以在任意服务器参赛。</li>
+        <li>你和对方队伍的玩家将获得一个私密频道，用于：
             <ol>
-                <li>Select your final choice for which mutators you'd like the other team to play.</li>
-                <li>Select any abilities you would like to use (if needed).</li>
-                <li>Post an end-of-game screenshot just before the victory screen and the replay file.</li>
+                <li>确认希望对方队伍挑战的突变因子最终组合。</li>
+                <li>选择要使用的能力（如需要）。</li>
+                <li>发布胜利画面出现前的对局结束截图与录像文件。</li>
             </ol>
         </li>
-        <li>Please ensure you have Replays enabled. Replays of all the games in the tournament will be posted after the tournament ends.</li>
-        <li>Payment will be made via Paypal. If you prefer payment in the form of an electronic gift card or giftable in-game items (such as commanders), you may request that.</li>
+        <li>请确保已启用录像功能。锦标赛结束后会发布全部对局录像。</li>
+        <li>奖金通过 PayPal 支付。如希望改为电子礼品卡或可赠送的游戏内物品（例如指挥官），可以提出申请。</li>
     </ul>
-    <h3>Registration</h3>
-    <p>Unfortunately, registrations are now closed. Please check back later for the next registration wave.</p></div>
+    <h3>报名</h3>
+    <p>很遗憾，报名现已关闭。请稍后再来查看下一轮报名。</p>
+</div>
 
 <div id="footer">
-    <p>Note: All data generated on this site is based on Brutal difficulty. Timings, compositions and other elements may differ on easier difficulty levels.</p>
-    <p>CC-BY-NC-SA-4.0. Originally written by Aommaster. This is a fansite not affiliated with StarCraft 2 or Blizzard Entertainment, Inc.</p>
+    <p>注意：本站生成的所有数据均以“残酷”难度为准；在较低难度下，时间、阵容及其他要素可能有所不同。</p>
+    <p>非官方简体中文翻译站，仅供学习与非商业使用。本站无广告，也不收集用户数据。采用 CC BY-NC-SA 4.0 许可。原作者：Aommaster。本站为粉丝站点，与 StarCraft II 或 Blizzard Entertainment 无隶属关系。</p>
 </div>
 
 </body>
 </html>
-
-    

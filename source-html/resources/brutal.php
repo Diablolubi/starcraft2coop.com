@@ -5,9 +5,9 @@
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Brutal+ Difficulty</title>
-  <meta name="description" content="Starcraft 2 Co-op Brutal+ Difficulty Mutators">
-  <meta name="keywords" content="Starcraft co-op brutal difficulty mutators">
+  <title>《星际争霸 II》合作任务 - 残酷+难度</title>
+  <meta name="description" content="《星际争霸 II》合作任务残酷+难度与突变因子">
+  <meta name="keywords" content="星际争霸 II, 合作任务, 残酷+, 突变因子">
   <link rel="canonical" href="https://starcraft2coop.com/resources/brutal">
   <style>
     #points{
@@ -50,20 +50,20 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     }
   </style>
   <?= startContent() ?>
-    <h1>Brutal+ Difficulty: Mutation Cost Brackets and Templates</h1>
+    <h1>残酷+难度：突变因子点数区间与模板</h1>
     <?php include("../../includes/reporterror.php");?>
-    <p>Brutal+ is considered an "Extended Difficulty". That is, missions will take place on the regular Brutal difficulty. However, in addition to the standard mission mechanics, a certain number of random <a href="mutators">mutators</a> are added to your game. You may queue into random queue on Brutal+ difficulty, as long as the commander you are queueing in with is at Level 15. For Brutal+2 and higher, you will require a person in your party to play.</p>
-    <p>To learn more about how Brutal+ difficulty mutators are selected, you may watch the video below. The video goes over what Mutation Templates are, how the different mutator possibility counts are calculated mathematically and then how the weightings are rebalanced to be more in line with Blizzard's design intent.</p>
+    <p>残酷+属于“扩展难度”：任务仍以普通残酷难度进行，但除标准任务机制外，还会加入一定数量的随机<a href="mutators">突变因子</a>。只要所用指挥官达到 15 级，就能加入残酷+的随机匹配；残酷+2 及以上难度则必须与队伍中的另一名玩家组队游玩。</p>
+    <p>如需了解残酷+如何选择突变因子，可观看下方视频。视频会介绍突变任务模板、如何用数学方法计算不同的突变因子组合数量，以及如何重新平衡权重，使其更接近暴雪的设计意图。</p>
     <iframe width="475" height="268" src="https://www.youtube.com/embed/9jfWuM215_c" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <p>The number of mutators that will be selected is between two and four. Each difficulty level is assigned a total number of points, which corresponds to the total mutation difficulty. The point/mutator brackets for each difficulty level is shown below. Note that the mutator counts for generated Brutal+ mutations are not evenly distributed. You are more likely to see 2 and 3-mutator games than 4 mutator games, as is Blizzard's desgin intent. For more information, please watch the video above.</p>
+    <p>系统会选取 2 至 4 个突变因子。每个难度等级都有一个总点数区间，对应突变任务的整体难度。各难度的点数与突变因子数量区间如下。注意，残酷+生成的突变因子数量并非均匀分布；按暴雪的设计意图，出现 2 个或 3 个突变因子的概率高于 4 个。详情请观看上方视频。</p>
     <table id="limits" class="centered">
         <thead>
             <tr>
-                <th>Difficulty</th>
-                <th>Min. Points</th>
-                <th>Max. Points</th>
-                <th>Min. Mutators</th>
-                <th>Max. Mutators</th>
+                <th>难度</th>
+                <th>最低点数</th>
+                <th>最高点数</th>
+                <th>最少突变因子</th>
+                <th>最多突变因子</th>
             </tr>
         </thead>
         <tbody>
@@ -77,14 +77,14 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             ?>
         </tbody>
     </table>
-    <p>Each mutator in the game is assigned a point cost that corresponds to its difficulty level. For more information on mutators, you may check the <a href="mutators">Mutators page</a>, which contains a lot of mutator-specific information such as their internal mechanics and also provide some commander-specific tips on how to handle them. The list of mutators and their associated point costs are shown below.</p>
-    <p>Click the column headers to sort Ascending/Descending by that column. Click a row to toggle that row and calculate the total cost of a selected set of mutators.</p>
+    <p>游戏中的每个突变因子都按其难度分配了点数。更多信息可参阅<a href="mutators">突变因子页面</a>，其中包含内部机制和各指挥官应对技巧等详细内容。突变因子及其点数如下。</p>
+    <p>点击列标题可按该列升序或降序排列。点击某行可切换选中状态，并计算所选突变因子的总点数。</p>
 
     <table id="points">
         <thead>
             <tr>
-                <th id="col1">Mutator <div class="sort"><img src="/images/asc.png" alt="Sorted Ascending"><img src="/images/desc.png" alt="Sorted Descending" style="display:none"></div></th>
-                <th id="col2">Cost <div class="sort"><img src="/images/asc.png" alt="Sorted Ascending" style="display:none"><img src="/images/desc.png" alt="Sorted Descending" style="display:none"></div></th>
+                <th id="col1">突变因子 <div class="sort"><img src="/images/asc.png" alt="按升序排列" data-sort-direction="asc"><img src="/images/desc.png" alt="按降序排列" data-sort-direction="desc" style="display:none"></div></th>
+                <th id="col2">点数 <div class="sort"><img src="/images/asc.png" alt="按升序排列" data-sort-direction="asc" style="display:none"><img src="/images/desc.png" alt="按降序排列" data-sort-direction="desc" style="display:none"></div></th>
             </tr>
         </thead>
         <tbody>
@@ -105,7 +105,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             ?>
         </tbody>
     </table>
-    <div id="totalCost">Total Cost</div>
+    <div id="totalCost">总点数</div>
     <script>
         $('#points th').click(function(){
             var table = $(this).parents('table').eq(0)
@@ -115,7 +115,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             $(this).find('img').each(function(){
                if($(this).is(':visible')){
                    iconVisible = true;
-                   if ($(this).attr('alt')=="Sorted Ascending"){
+                   if ($(this).data('sort-direction')==="asc"){
                        sortedAsc = true;
                    }
                }
@@ -137,7 +137,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                 var totalCost = 0;
                 $('.toggled').each(function(){
                     totalCost += parseInt($(this).find('td:nth-child(2)').text());
-                    $("#totalCost").text("Total Cost: " + totalCost);
+                    $("#totalCost").text("总点数：" + totalCost);
                 })
                 $("#totalCost").css('display', 'inline');
             }
@@ -175,21 +175,21 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         }
         function getCellValue(row, index){ return $(row).children('td').eq(index).text() }
     </script>
-    <p>You may use the demo below to simulate random mutator templates at different difficulty levels. Simply select your intended Brutal+ difficulty level and press Go. The algorithm used very closely matches the algorithm that the Starcraft II engine uses to generate the mutations, with a few optimizations to speed up the code, given that this is coded in PHP and not Galaxy. When a mutation set has been provided, you will also be given the total point cost of all the mutators in your set.</p>
+    <p>可使用下方演示模拟不同难度的随机突变任务模板。选择所需的残酷+难度并点击“生成”即可。该算法非常接近《星际争霸 II》引擎生成突变任务时所用的算法；由于这里使用 PHP 而非 Galaxy 编写，仅做了少量性能优化。生成突变因子组合后，还会显示其总点数。</p>
     <form action='#'>
         <select id="difficultyLevel">
-            <option value="1">Brutal+1</option>
-            <option value="2">Brutal+2</option>
-            <option value="3">Brutal+3</option>
-            <option value="4">Brutal+4</option>
-            <option value="5">Brutal+5</option>
-            <option value="6">Brutal+6</option>
+            <option value="1">残酷+1</option>
+            <option value="2">残酷+2</option>
+            <option value="3">残酷+3</option>
+            <option value="4">残酷+4</option>
+            <option value="5">残酷+5</option>
+            <option value="6">残酷+6</option>
         </select>
-        <input type="submit" value="Go" id="generateMutation">
+        <input type="submit" value="生成" id="generateMutation">
     </form>
-    <div id="tooltip">tooltip</div>
+    <div id="tooltip">提示</div>
     <div id="mutationBox">
-        <p>Mutators (<span id="cost">0</span> Points):</p>
+        <p>突变因子（<span id="cost">0</span> 点）：</p>
         <div id="randomMutation">
         </div>
     </div>
@@ -198,7 +198,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             event.preventDefault();
             $("#cost").text("?");
             $("#randomMutation").empty();
-            $("#randomMutation").append("<p>Loading...</p>");
+            $("#randomMutation").append("<p>正在加载……</p>");
             var difficultyLevel = parseInt($("#difficultyLevel").val());
 
             $.ajax({

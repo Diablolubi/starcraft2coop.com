@@ -18,6 +18,39 @@ const AMON_UNIT_TYPES = [
     "Mutator"
 ];
 
+const AMON_UNIT_TYPE_LABELS: Record<string, string> = {
+    Protoss: "星灵",
+    Terran: "人类",
+    Zerg: "异虫",
+    Hybrid: "混合体",
+    Infested: "被感染者",
+    Objective: "任务目标",
+    Mutator: "突变因子",
+};
+
+const TAG_LABELS: Record<string, string> = {
+    Light: "轻甲", Armored: "重甲", Biological: "生物", Mechanical: "机械",
+    Psionic: "灵能", Heroic: "英雄", Massive: "重型", Structure: "建筑",
+    Flyer: "空中单位",
+};
+
+const MODE_IDS: Record<string, string> = {
+    "（对空）": "(Air)", "（对地）": "(Ground)", "（单位）": "(Unit)",
+    "（拦截机）": "(Interceptor)", "（禁绝者）": "(Interdictor)", "（武器）": "(Weapon)",
+    "（突击无人机）": "(Assault Drones)", "（对建筑）": "(Structure)",
+    "（防卫模式）": "(Defender Mode)", "（隐秘模式）": "(Stealth Mode)",
+    "（拔起触手）": "(Uprooted Tentacles)", "（扎根触手）": "(Rooted Tentacles)",
+    "（扎根）": "(Rooted)", "（拔起）": "(Uprooted)", "（脉冲光束）": "(Pulsar Beam)",
+    "（观察模式）": "(Observation Mode)", "（攻击 1）": "(Attack 1)", "（攻击 2）": "(Attack 2)",
+    "（观察者模式）": "(Watcher Mode)", "（普通模式）": "(Normal)",
+    "（普通攻击）": "(Normal Attack)", "（机械蝗虫拦截机）": "(Mecha Locusceptor)",
+    "（机械巢虫打击）": "(Mecha Broodling Strike)", "（未潜地）": "(Unburrowed)",
+    "（潜地）": "(Burrowed)", "（博学导弹）": "(Erudition Missiles)",
+    "（等级 0）": "(Level 0)", "（等级 1）": "(Level 1)", "（等级 2）": "(Level 2)",
+    "（行走模式对空）": "(Walker Mode Air)", "（行走模式对地）": "(Walker Mode Ground)",
+    "（灵能传送）": "(Shade)", "（攻城模式）": "(Siege Mode)", "（坦克模式）": "(Tank Mode)",
+};
+
 function token(text: string): Token {
     if (text === "Dom. Trooper") return 'dominiontrooper';
     if (text === "Dom. Assault Trooper") return 'dominionassaulttrooper';
@@ -33,6 +66,43 @@ function token(text: string): Token {
     return text.toLowerCase().replace(/[^a-z0-9]+/g, "") as Token;
 }
 export type Token = Lowercase<string>;
+
+function displayBaseName(name: string): string {
+    return name.replace(/（[^）]+）$/, "").trim();
+}
+
+function modeId(name: string, basename: string): string {
+    const suffix = name.match(/（[^）]+）$/)?.[0] || "";
+    if (!suffix) return "";
+    if (suffix === "（战机模式）") return basename === "Deimos Viking" ? "(Fighter)" : "(Fighter Mode)";
+    if (suffix === "（突击模式）") return basename === "Deimos Viking" ? "(Assault)" : "(Assault Mode)";
+    if (suffix === "（监视模式）") {
+        if (basename === "Blackhammer") return "(Overwatch Mode)";
+        if (basename.includes("Observer") || basename === "XelNaga Watcher") return "(Surveillance Mode)";
+        return "(Oversight)";
+    }
+    return MODE_IDS[suffix] || suffix;
+}
+
+export function unitToken(name: string): Token {
+    const normalized = name.trim().toLocaleLowerCase();
+    const playerUnit = playerUnits.find(unit =>
+        unit.basename.toLocaleLowerCase() === normalized || displayBaseName(unit.name).toLocaleLowerCase() === normalized
+    );
+    if (playerUnit) return token(playerUnit.basename);
+    const amonUnit = amonUnits.find(unit => unit.name.toLocaleLowerCase() === normalized);
+    if (amonUnit) return `amon${amonUnit.amonid}` as Token;
+    return token(name);
+}
+
+function modifierEnabled(values: Record<string, boolean>, stableKey: string): boolean {
+    return !!values[stableKey] || Object.entries(values).some(([key, enabled]) => enabled && token(key) === stableKey);
+}
+
+function modifierLevel(values: Record<string, number>, stableKey: string): number {
+    if (values[stableKey]) return values[stableKey];
+    return Object.entries(values).find(([key, level]) => level && token(key) === stableKey)?.[1] ?? 0;
+}
 
 interface UnitModifiers {
     commander: Token;
@@ -87,7 +157,7 @@ class Units extends preact.Component {
     }
     override render() {
         if (this.state.error) {
-            return <p>Error: <pre style="color: #ff6633;">{this.state.error}</pre></p>;
+            return <p>错误：<pre style="color: #ff6633;">{this.state.error}</pre></p>;
         }
         return (
             <table class="units">
@@ -109,7 +179,7 @@ class CommanderSelector extends preact.Component<{ commander: string | null }> {
     override render() {
         return (
             <td class="units-commander-selector">
-                <p class="units-head"><em>Commanders</em></p>
+                <p class="units-head"><em>指挥官</em></p>
                 <ul class="units-nav">
                     {commandersummaries.map((commander) => (
                         <li><a href={`#${token(commander.commander)}`} aria-selected={this.isSelected(commander.commander)}>
@@ -118,10 +188,10 @@ class CommanderSelector extends preact.Component<{ commander: string | null }> {
                         </a></li>
                     ))}
                 </ul>
-                <p class="units-head"><em>Amon</em></p>
+                <p class="units-head"><em>埃蒙</em></p>
                 <ul class="units-nav">
                     {AMON_UNIT_TYPES.map((type) => (
-                        <li><a href={`#${token(type)}`} aria-selected={this.isSelected(type)}>{type}</a></li>
+                        <li><a href={`#${token(type)}`} aria-selected={this.isSelected(type)}>{AMON_UNIT_TYPE_LABELS[type]}</a></li>
                     ))}
                 </ul>
             </td>
@@ -136,52 +206,52 @@ class UnitSelector extends preact.Component<{ commander: Token | null, unit: Tok
     override render() {
         if (this.props.commander === null) {
             return <td class="units-unit-selector">
-                <p><big>&larr;</big> Select a commander</p>
+                <p><big>&larr;</big> 请选择指挥官</p>
             </td>;
         }
-        const normalUnits = [];
-        const heroes = [];
-        const structures = [];
+        const normalUnits: { token: Token, label: string }[] = [];
+        const heroes: { token: Token, label: string }[] = [];
+        const structures: { token: Token, label: string }[] = [];
 
         const usedUnits = new Set<string>();
         for (const playerUnit of playerUnits.filter((unit) => token(unit.commander) === this.props.commander)) {
             if (usedUnits.has(playerUnit.basename)) continue;
             usedUnits.add(playerUnit.basename);
             if (playerUnit.tags.includes("Structure")) {
-                structures.push(playerUnit.basename)
+                structures.push({ token: token(playerUnit.basename), label: displayBaseName(playerUnit.name) })
             } else if (playerUnit.tags.includes("Heroic")) {
-                heroes.push(playerUnit.basename)
+                heroes.push({ token: token(playerUnit.basename), label: displayBaseName(playerUnit.name) })
             } else {
-                normalUnits.push(playerUnit.basename)
+                normalUnits.push({ token: token(playerUnit.basename), label: displayBaseName(playerUnit.name) })
             }
         }
         for (const amonUnit of amonUnits.filter((unit) => token(unit.race) === this.props.commander)) {
             if (amonUnit.structure) {
-                structures.push(amonUnit.name)
+                structures.push({ token: `amon${amonUnit.amonid}` as Token, label: amonUnit.name })
             } else if (amonUnit.heroic) {
-                heroes.push(amonUnit.name)
+                heroes.push({ token: `amon${amonUnit.amonid}` as Token, label: amonUnit.name })
             } else {
-                normalUnits.push(amonUnit.name)
+                normalUnits.push({ token: `amon${amonUnit.amonid}` as Token, label: amonUnit.name })
             }
         }
         return (
             <td class="units-unit-selector">
-                {!!normalUnits.length && <p class="units-head"><em>Units</em></p>}
+                {!!normalUnits.length && <p class="units-head"><em>单位</em></p>}
                 {!!normalUnits.length && <ul class="units-nav">
                     {normalUnits.map((unit) => (
-                        <li><a href={`#${token(this.props.commander!)}/${token(unit)}`} aria-selected={this.isSelected(unit)}>{unit}</a></li>
+                        <li><a href={`#${this.props.commander!}/${unit.token}`} aria-selected={this.props.unit === unit.token || undefined}>{unit.label}</a></li>
                     ))}
                 </ul>}
-                {!!heroes.length && <p class="units-head"><em>Heroes</em></p>}
+                {!!heroes.length && <p class="units-head"><em>英雄</em></p>}
                 {!!heroes.length && <ul class="units-nav">
                     {heroes.map((hero) => (
-                        <li><a href={`#${token(this.props.commander!)}/${token(hero)}`} aria-selected={this.isSelected(hero)}>{hero}</a></li>
+                        <li><a href={`#${this.props.commander!}/${hero.token}`} aria-selected={this.props.unit === hero.token || undefined}>{hero.label}</a></li>
                     ))}
                 </ul>}
-                {!!structures.length && <p class="units-head"><em>Structures</em></p>}
+                {!!structures.length && <p class="units-head"><em>建筑</em></p>}
                 {!!structures.length && <ul class="units-nav">
                     {structures.map((structure) => (
-                        <li><a href={`#${token(this.props.commander!)}/${token(structure)}`} aria-selected={this.isSelected(structure)}>{structure}</a></li>
+                        <li><a href={`#${this.props.commander!}/${structure.token}`} aria-selected={this.props.unit === structure.token || undefined}>{structure.label}</a></li>
                     ))}
                 </ul>}
             </td>
@@ -191,6 +261,7 @@ class UnitSelector extends preact.Component<{ commander: Token | null, unit: Tok
 
 interface Unit {
     name: string;
+    basename: string;
     commander: string;
     race: string;
     mcost: number;
@@ -215,6 +286,7 @@ interface Unit {
 /** partial of PlayerUnit */
 interface UnitMode {
     modeName: string | null;
+    displayName: string | null;
 
     // defensive
     armor?: number;
@@ -241,10 +313,10 @@ export class UnitStats extends preact.Component<{
         masteryInputs?: Record<string, string> | null;
     } = {};
     renderAmonUnit(): preact.ComponentChildren {
-        const amonUnit = amonUnits.find(unit => token(unit.name) === this.props.modifiers!.unit);
+        const amonUnit = amonUnits.find(unit => `amon${unit.amonid}` === this.props.modifiers!.unit);
         if (!amonUnit) {
             return (
-                <td>Unit not found</td>
+                <td>未找到单位</td>
             );
         }
         const tags = [
@@ -262,12 +334,12 @@ export class UnitStats extends preact.Component<{
             <td class="units-unit">
                 <p><strong>{amonUnit.name}</strong></p>
                 <p>
-                    (Amon unit)
+                    （埃蒙单位）
                 </p>
                 <ul class="units-stats">
-                    <li class="units-hp"><span class="unbold">HP:</span> {amonUnit.hp} {!!amonUnit.armor && <><span class="unbold">| Armor: </span>{amonUnit.armor}</>}</li>
-                    {!!amonUnit.shields && <li class="units-shields"><span class="unbold">Shields:</span> {amonUnit.shields} {!!amonUnit.shieldarmor && <><span class="unbold">| Shield Armor: </span>{amonUnit.shieldarmor}</>}</li>}
-                    <li><span class="unbold">Tags:</span> {tags.join(", ")}</li>
+                    <li class="units-hp"><span class="unbold">生命值：</span> {amonUnit.hp} {!!amonUnit.armor && <><span class="unbold">| 护甲：</span>{amonUnit.armor}</>}</li>
+                    {!!amonUnit.shields && <li class="units-shields"><span class="unbold">护盾：</span> {amonUnit.shields} {!!amonUnit.shieldarmor && <><span class="unbold">| 护盾护甲：</span>{amonUnit.shieldarmor}</>}</li>}
+                    <li><span class="unbold">标签：</span> {tags.map(tag => TAG_LABELS[tag as string] || tag).join("、")}</li>
                 </ul>
             </td>
         );
@@ -280,7 +352,8 @@ export class UnitStats extends preact.Component<{
         }
         const modes: Record<string, UnitMode> = {};
         for (const selected of selectedUnits) {
-            const mode = selected.name.replace(selected.basename, '').trim() || "";
+            const mode = modeId(selected.name, selected.basename);
+            const displayMode = selected.name.match(/（[^）]+）$/)?.[0] || "";
             if (modes[mode]) {
                 if (!selected.attribute) throw new Error(`duplicate entry ${selected.name}`);
                 modes[mode].attributedamage ||= {};
@@ -292,6 +365,7 @@ export class UnitStats extends preact.Component<{
 
                 const unitMode: UnitMode = modes[mode] = {
                     modeName: mode || null,
+                    displayName: displayMode || null,
                 };
                 if (selected.armor !== selectedUnit.armor) unitMode.armor = selected.armor;
                 if (selected.shieldarmor !== selectedUnit.shieldarmor) unitMode.shieldarmor = selected.shieldarmor;
@@ -309,7 +383,8 @@ export class UnitStats extends preact.Component<{
             }
         }
         const unit: Unit = {
-            name: selectedUnit.basename,
+            name: displayBaseName(selectedUnit.name),
+            basename: selectedUnit.basename,
             commander: selectedUnit.commander,
             race: selectedUnit.race,
             mcost: selectedUnit.mcost,
@@ -463,12 +538,12 @@ export class UnitStats extends preact.Component<{
 
         const metaUpgrades: { [upgrade: string]: [PlayerTalent, level: number | null][] } = {};
 
-        if (unit.name === 'Sky Fury') {
+        if (unit.basename === 'Sky Fury') {
             delete upgradedUnit.modes['(Fighter Mode)']!.attributedamage!['Armored'];
             upgradedUnit.modes['(Fighter Mode)']!.attributedamage!['']!.damage = 21;
         }
         for (const upgrade of playerUpgrades as PlayerUpgrade[]) {
-            if (!modifiers.upgrades[upgrade.name]) continue;
+            if (!modifierEnabled(modifiers.upgrades, upgrade.icon)) continue;
             if (modifiers.unit !== token(upgrade.unit)) continue;
             if (modifiers.commander !== token(upgrade.commander)) continue;
             if (upgrade.upgradetype !== 'preupgrade') continue;
@@ -479,11 +554,12 @@ export class UnitStats extends preact.Component<{
             if (talent.talenttype !== 'mastery') continue;
             if (modifiers.unit !== token(talent.unit)) continue;
             if (modifiers.commander !== token(talent.commander)) continue;
-            const level = modifiers.masteries[talent.name];
+            const level = modifierLevel(modifiers.masteries, talent.nameid);
             if (!level) continue;
             if (talent.modifierupgrade) {
-                if (!modifiers.upgrades[talent.modifierupgrade]) continue;
-                (metaUpgrades[talent.modifierupgrade] ||= []).push([talent, level]);
+                const modifierUpgrade = token(talent.modifierupgrade);
+                if (!modifierEnabled(modifiers.upgrades, modifierUpgrade)) continue;
+                (metaUpgrades[modifierUpgrade] ||= []).push([talent, level]);
                 continue;
             }
 
@@ -491,12 +567,13 @@ export class UnitStats extends preact.Component<{
         }
         for (const talent of playerTalents as PlayerTalent[]) {
             if (talent.talenttype !== 'prestige') continue;
-            if (!modifiers.prestiges[talent.name]) continue;
+            if (!modifierEnabled(modifiers.prestiges, talent.nameid)) continue;
             if (modifiers.unit !== token(talent.unit)) continue;
             if (modifiers.commander !== token(talent.commander)) continue;
             if (talent.modifierupgrade) {
-                if (!modifiers.upgrades[talent.modifierupgrade]) continue;
-                (metaUpgrades[talent.modifierupgrade] ||= []).push([talent, null]);
+                const modifierUpgrade = token(talent.modifierupgrade);
+                if (!modifierEnabled(modifiers.upgrades, modifierUpgrade)) continue;
+                (metaUpgrades[modifierUpgrade] ||= []).push([talent, null]);
                 continue;
             }
 
@@ -533,24 +610,24 @@ export class UnitStats extends preact.Component<{
             }
         }
         if (levels.artifacts) {
-            if (token(unit.name) === 'zeratul') {
+            if (token(unit.basename) === 'zeratul') {
                 upgradedUnit.shields += levels.artifacts * 50;
             }
-            if (['telbrus', 'zoraya', 'serdath'].includes(token(unit.name))) {
+            if (['telbrus', 'zoraya', 'serdath'].includes(token(unit.basename))) {
                 upgradedUnit.shields += levels.artifacts * 100;
                 if (upgradedUnit.energy) upgradedUnit.energy += levels.artifacts * 100;
             }
         }
 
         for (let upgrade of playerUpgrades as PlayerUpgrade[]) {
-            if (!modifiers.upgrades[upgrade.name]) continue;
+            if (!modifierEnabled(modifiers.upgrades, upgrade.icon)) continue;
             if (modifiers.unit !== token(upgrade.unit)) continue;
             if (modifiers.commander !== token(upgrade.commander)) continue;
             if (upgrade.upgradetype !== 'upgrade') continue;
 
-            if (metaUpgrades[upgrade.name]) {
+            if (metaUpgrades[upgrade.icon]) {
                 upgrade = { ...upgrade };
-                for (const [metaUpgrade, level] of metaUpgrades[upgrade.name]!) {
+                for (const [metaUpgrade, level] of metaUpgrades[upgrade.icon]!) {
                     if (upgrade.modifier !== metaUpgrade.modifier) continue;
                     upgrade.value = this.applyModifier(upgrade.value, metaUpgrade, level, false);
                 }
@@ -559,14 +636,14 @@ export class UnitStats extends preact.Component<{
         }
         for (const talent of playerTalents as PlayerTalent[]) {
             if (talent.talenttype !== 'post') continue;
-            if (!modifiers.prestiges[talent.name]) continue;
+            if (!modifierEnabled(modifiers.prestiges, talent.nameid)) continue;
             if (modifiers.unit !== token(talent.unit)) continue;
             if (modifiers.commander !== token(talent.commander)) continue;
-            if (talent.modifierupgrade && !modifiers.upgrades[talent.modifierupgrade]) continue;
+            if (talent.modifierupgrade && !modifierEnabled(modifiers.upgrades, token(talent.modifierupgrade))) continue;
 
             this.applyUpgrade(talent, upgradedUnit);
         }
-        if (modifiers.upgrades['Redline Power Cells']) {
+        if (modifierEnabled(modifiers.upgrades, 'redlinepowercells')) {
             upgradedUnit.modes['']!.attributedamage!['']!.damage += 60;
         }
 
@@ -581,13 +658,13 @@ export class UnitStats extends preact.Component<{
         const prestiges: UnitModifiers['prestiges'] = {};
         let upgradeLevels: UnitModifiers['upgradeLevels'] = {};
         for (const upgrade of upgradesList) {
-            upgrades[upgrade.name] = false;
+            upgrades[upgrade.icon] = false;
         }
         for (const talent of talentsList) {
             if (talent.talenttype === 'mastery') {
-                masteries[talent.name] = 0;
+                masteries[talent.nameid] = 0;
             } else {
-                prestiges[talent.name] = false;
+                prestiges[talent.nameid] = false;
             }
         }
 
@@ -620,7 +697,11 @@ export class UnitStats extends preact.Component<{
 
         const upgradeData = new Map(
             playerUpgrades.filter((u) => token(u.commander) === modifiers.commander && token(u.unit) === modifiers.unit)
-                .map((u) => [u.name, { tooltip: `upgrades/${token(u.commander)}/${u.icon}`, icon: u.icon, unit: u.unit }])
+                .map((u) => [u.icon, { name: u.name, tooltip: `upgrades/${token(u.commander)}/${u.icon}`, icon: u.icon, unit: u.unit }])
+        );
+        const talentData = new Map(
+            playerTalents.filter((talent) => token(talent.commander) === modifiers.commander && token(talent.unit) === modifiers.unit)
+                .map(talent => [talent.nameid, talent.name])
         );
         const upgradeIcon = (upgrade: string) => {
             const data = upgradeData.get(upgrade);
@@ -632,39 +713,39 @@ export class UnitStats extends preact.Component<{
         return (
             <form class="units-modifiers">
                 {!!upgrades.length && (<fieldset>
-                    <legend>Upgrades</legend>
-                    {upgrades.map((upgrade) => <div><label data-tooltip={upgradeData.get(upgrade)?.tooltip}><input type="checkbox" value={upgrade} onChange={this.onCheckUpgrade} checked={modifiers.upgrades[upgrade]} /> <img src={upgradeIcon(upgrade)} alt="" width={20} height={20} /> {upgrade}</label></div>)}
+                    <legend>升级</legend>
+                    {upgrades.map((upgrade) => <div><label data-tooltip={upgradeData.get(upgrade)?.tooltip}><input type="checkbox" value={upgrade} onChange={this.onCheckUpgrade} checked={modifiers.upgrades[upgrade]} /> <img src={upgradeIcon(upgrade)} alt="" width={20} height={20} /> {upgradeData.get(upgrade)?.name}</label></div>)}
                 </fieldset>)}
                 {'weapon' in modifiers.upgradeLevels && (<fieldset>
-                    <legend>Weapons</legend>
+                    <legend>武器</legend>
                     {upgradeLevels.map(level => <label><input type="radio" name={`weapon-${this.props.formKey}`} value={level} onChange={this.onCheckUpgradeLevel} checked={modifiers.upgradeLevels.weapon === level} /> {level}</label>)}
                 </fieldset>)}
                 {'armor' in modifiers.upgradeLevels && (<fieldset>
-                    <legend>Armor</legend>
+                    <legend>护甲</legend>
                     {upgradeLevels.map(level => <label><input type="radio" name={`armor-${this.props.formKey}`} value={level} onChange={this.onCheckUpgradeLevel} checked={modifiers.upgradeLevels.armor === level} /> {level}</label>)}
                 </fieldset>)}
                 {'shields' in modifiers.upgradeLevels && (<fieldset>
-                    <legend>Shields</legend>
+                    <legend>护盾</legend>
                     {upgradeLevels.map(level => <label><input type="radio" name={`shields-${this.props.formKey}`} value={level} onChange={this.onCheckUpgradeLevel} checked={modifiers.upgradeLevels.shields === level} /> {level}</label>)}
                 </fieldset>)}
                 {'rank' in modifiers.upgradeLevels && (<fieldset>
-                    <legend>Rank</legend>
+                    <legend>军衔</legend>
                     {upgradeLevels.map(level => <label><input type="radio" name={`rank-${this.props.formKey}`} value={level} onChange={this.onCheckUpgradeLevel} checked={modifiers.upgradeLevels.rank === level} /> {level}</label>)}
                 </fieldset>)}
                 {'artifacts' in modifiers.upgradeLevels && (<fieldset>
-                    <legend>Artifact fragments collected</legend>
+                    <legend>已收集神器碎片</legend>
                     {upgradeLevels.map(level => <label><input type="radio" name={`artifacts-${this.props.formKey}`} value={level} onChange={this.onCheckUpgradeLevel} checked={modifiers.upgradeLevels.artifacts === level} /> {level}</label>)}
                 </fieldset>)}
                 {!!masteries.length && (<fieldset>
-                    <legend>Masteries</legend>
+                    <legend>精通</legend>
                     {masteries.map((talent) => <div><label>
                         <input type="range" name={talent} value={modifiers.masteries[talent]} onInput={this.onChangeMastery} min={0} max={30} step={1} /><br />
-                        <input type="number" name={talent} value={this.state.masteryInputs?.[talent] ?? modifiers.masteries[talent]} onInput={this.onInputMastery} onBlur={this.onBlurMastery} min={0} max={30} step={1} /> {talent}
+                        <input type="number" name={talent} value={this.state.masteryInputs?.[talent] ?? modifiers.masteries[talent]} onInput={this.onInputMastery} onBlur={this.onBlurMastery} min={0} max={30} step={1} /> {talentData.get(talent)}
                     </label></div>)}
                 </fieldset>)}
                 {!!prestiges.length && (<fieldset>
-                    <legend>Prestiges</legend>
-                    {prestiges.map((talent) => <div><label><input type="checkbox" value={talent} onChange={this.onCheckPrestige} checked={modifiers.prestiges[talent]} /> {talent}</label></div>)}
+                    <legend>威望</legend>
+                    {prestiges.map((talent) => <div><label><input type="checkbox" value={talent} onChange={this.onCheckPrestige} checked={modifiers.prestiges[talent]} /> {talentData.get(talent)}</label></div>)}
                 </fieldset>)}
             </form>
         );
@@ -752,7 +833,7 @@ export class UnitStats extends preact.Component<{
     }
     renderMode(mode: UnitMode, baseMode: UnitMode, baseUnit: Unit) {
         return <>
-            <p class="units-head">{mode.modeName || "Weapon"}</p>
+            <p class="units-head">{mode.displayName || "武器"}</p>
             <ul class="units-mode-stats">
                 {!!mode.attributedamage && <>
                     {Object.entries(mode.attributedamage || {}).map(([attribute, damage]) => {
@@ -760,18 +841,18 @@ export class UnitStats extends preact.Component<{
                         const baseDamage = baseMode.attributedamage?.[attribute]?.damage ?? baseMode.attributedamage?.['']?.damage ?? 0;
                         const baseDps = UnitStats.calculateDps(baseDamage, baseMode.attacks!, baseMode.attackspeed!);
                         const noDps = ['Baneling', 'Baneling Spawn', 'Scourge', 'Volatile Infested', 'Spider Mine', 'Explosive Creeper'];
-                        const dpsMessage = (!noDps.includes(baseUnit.name)) ? <> ({this.renderValue(+dps.toFixed(2), +baseDps.toFixed(2))} DPS)</> : '';
+                        const dpsMessage = (!noDps.includes(baseUnit.basename)) ? <>（{this.renderValue(+dps.toFixed(2), +baseDps.toFixed(2))} DPS）</> : '';
                         return <li>
-                            <span class="unbold">{attribute ? `vs. ${attribute}:` : 'Damage:'}</span> {this.renderValue(damage.damage, baseDamage)}{dpsMessage}
+                            <span class="unbold">{attribute ? `对${TAG_LABELS[attribute] || attribute}：` : '伤害：'}</span> {this.renderValue(damage.damage, baseDamage)}{dpsMessage}
                         </li>;
                     })}
-                    {(mode.attacks! > 1 || baseMode.attacks! > 1) && <li><span class="unbold">Hits:</span> {this.renderValue(mode.attacks!, baseMode.attacks!)}</li>}
-                    <li><span class="unbold">Cooldown:</span> {this.renderValue(mode.attackspeed!, baseMode.attackspeed!)}</li>
-                    <li><span class="unbold">Range:</span> {this.renderValue(mode.atkrange!, baseMode.atkrange!)}</li>
+                    {(mode.attacks! > 1 || baseMode.attacks! > 1) && <li><span class="unbold">攻击次数：</span> {this.renderValue(mode.attacks!, baseMode.attacks!)}</li>}
+                    <li><span class="unbold">攻击间隔：</span> {this.renderValue(mode.attackspeed!, baseMode.attackspeed!)}</li>
+                    <li><span class="unbold">射程：</span> {this.renderValue(mode.atkrange!, baseMode.atkrange!)}</li>
                 </>}
-                {mode.armor !== undefined && <li><span class="unbold">Armor:</span> {this.renderValue(mode.armor, baseMode.armor ?? baseUnit.armor)}</li>}
-                {mode.movementspeed !== undefined && <li><span class="unbold">Move speed:</span> {this.renderValue(mode.movementspeed, baseMode.movementspeed ?? baseUnit.movementspeed)}</li>}
-                {mode.sightrange !== undefined && <li><span class="unbold">Vision:</span> {this.renderValue(mode.sightrange, baseMode.sightrange ?? baseUnit.sightrange)}</li>}
+                {mode.armor !== undefined && <li><span class="unbold">护甲：</span> {this.renderValue(mode.armor, baseMode.armor ?? baseUnit.armor)}</li>}
+                {mode.movementspeed !== undefined && <li><span class="unbold">移动速度：</span> {this.renderValue(mode.movementspeed, baseMode.movementspeed ?? baseUnit.movementspeed)}</li>}
+                {mode.sightrange !== undefined && <li><span class="unbold">视野：</span> {this.renderValue(mode.sightrange, baseMode.sightrange ?? baseUnit.sightrange)}</li>}
             </ul>
         </>;
     }
@@ -856,7 +937,7 @@ export class UnitStats extends preact.Component<{
         const modifiers = this.props.modifiers;
         if (!modifiers) {
             return <td class="units-unit">
-                <p><big>&larr;</big> Select a unit</p>
+                <p><big>&larr;</big> 请选择单位</p>
             </td>;
         }
         const baseUnit = UnitStats.getUnit(modifiers);
@@ -869,33 +950,33 @@ export class UnitStats extends preact.Component<{
         return (
             <td class="units-unit">
                 {this.props.onClickClose && <button type="button" class="units-sidebutton" onClick={this.props.onClickClose}>&times;</button>}
-                {this.props.onClickCompare && <button type="button" class="units-sidebutton" onClick={this.props.onClickCompare}>Compare →</button>}
+                {this.props.onClickCompare && <button type="button" class="units-sidebutton" onClick={this.props.onClickCompare}>比较 →</button>}
                 {this.renderImage(unit)}
                 <p><strong>{unit.name}</strong></p>
                 {(unit.mcost || unit.vcost || unit.buildtime || unit.supply) ? <p>
-                    <img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals:" /> {this.renderValue(unit.mcost, baseUnit.mcost)} { }
-                    <img src={`/images/commanderdata/unitupgrades/icongas_${race}.png`} alt="Gas:" /> {this.renderValue(unit.vcost, baseUnit.vcost)} { }
-                    <img src={`/images/commanderdata/unitupgrades/icontime_${race}.png`} alt="Build Time:" /> {this.renderValue(unit.buildtime, baseUnit.buildtime)} { }
-                    <img src={`/images/commanderdata/unitupgrades/iconsupply_${race}.png`} alt="Supply:" /> {this.renderValue(unit.supply, baseUnit.supply)}
+                    <img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿：" /> {this.renderValue(unit.mcost, baseUnit.mcost)} { }
+                    <img src={`/images/commanderdata/unitupgrades/icongas_${race}.png`} alt="高能瓦斯：" /> {this.renderValue(unit.vcost, baseUnit.vcost)} { }
+                    <img src={`/images/commanderdata/unitupgrades/icontime_${race}.png`} alt="建造时间：" /> {this.renderValue(unit.buildtime, baseUnit.buildtime)} { }
+                    <img src={`/images/commanderdata/unitupgrades/iconsupply_${race}.png`} alt="补给：" /> {this.renderValue(unit.supply, baseUnit.supply)}
                 </p> : <p>
-                    (No cost)
+                    （无费用）
                 </p>}
                 <ul class="units-stats">
                     <li class="units-hp">
-                        <span class="unbold">HP:</span> {this.renderValue(unit.hp, baseUnit.hp)}
-                        {!!unit.armor && <> <span class="unbold">| Armor:</span> {this.renderValue(unit.armor, baseUnit.armor)}</>}
+                        <span class="unbold">生命值：</span> {this.renderValue(unit.hp, baseUnit.hp)}
+                        {!!unit.armor && <> <span class="unbold">| 护甲：</span> {this.renderValue(unit.armor, baseUnit.armor)}</>}
                     </li>
                     {!!unit.shields && <li class="units-shields">
-                        <span class="unbold">Shields:</span> {this.renderValue(unit.shields, baseUnit.shields)}
-                        {!!unit.shieldarmor && <> <span class="unbold">| Shield Armor:</span> {this.renderValue(unit.shieldarmor, baseUnit.shieldarmor)}</>}
+                        <span class="unbold">护盾：</span> {this.renderValue(unit.shields, baseUnit.shields)}
+                        {!!unit.shieldarmor && <> <span class="unbold">| 护盾护甲：</span> {this.renderValue(unit.shieldarmor, baseUnit.shieldarmor)}</>}
                     </li>}
-                    {!!unit.energy && <li class="units-energy"><span class="unbold">Energy:</span> {this.renderValue(unit.energy, baseUnit.energy)}</li>}
-                    <li><span class="unbold">Move speed:</span> {this.renderValue(unit.movementspeed, baseUnit.movementspeed)}</li>
-                    <li><span class="unbold">Vision:</span> {this.renderValue(unit.sightrange, baseUnit.sightrange)}</li>
-                    <li><span class="unbold">Tags:</span> {unit.tags.join(", ") || "(None)"}</li>
+                    {!!unit.energy && <li class="units-energy"><span class="unbold">能量：</span> {this.renderValue(unit.energy, baseUnit.energy)}</li>}
+                    <li><span class="unbold">移动速度：</span> {this.renderValue(unit.movementspeed, baseUnit.movementspeed)}</li>
+                    <li><span class="unbold">视野：</span> {this.renderValue(unit.sightrange, baseUnit.sightrange)}</li>
+                    <li><span class="unbold">标签：</span> {unit.tags.map(tag => TAG_LABELS[tag] || tag).join("、") || "（无）"}</li>
                 </ul>
                 {Object.values(unit.modes).map((mode) => this.renderMode(mode, baseUnit.modes[mode.modeName || '']!, baseUnit))}
-                {unit.notes && <p><span class="unbold">Notes:</span><br />{unit.notes.split("<br>").map((note) => <div>{note}</div>)}</p>}
+                {unit.notes && <p><span class="unbold">备注：</span><br />{unit.notes.split("<br>").map((note) => <div>{note}</div>)}</p>}
                 {this.renderUpgrades()}
             </td>
         );

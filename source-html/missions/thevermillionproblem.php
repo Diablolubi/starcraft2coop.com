@@ -6,9 +6,9 @@ require_once __DIR__ . "/../../includes/wrapper.php";
 require_once "../../includes/switchergenerator.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Mission Guide - The Vermillion Problem</title>
-  <meta name="description" content="Starcraft 2 Co-op Mission Guide The Vermillion Problem">
-  <meta name="keywords" content="Starcraft co-op guides Vermillion Problem mission">
+  <title>《星际争霸 II》合作任务攻略 - 熔火危机</title>
+  <meta name="description" content="《星际争霸 II》合作任务“熔火危机”攻略">
+  <meta name="keywords" content="星际争霸 II, 合作任务, 熔火危机, 攻略">
   <link rel="stylesheet"  media="all" type="text/css" href="/styles/missionstyle.css?v=1.00">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="https://starcraft2coop.com/missions/thevermillionproblem">
@@ -31,40 +31,40 @@ require_once "../../includes/switchergenerator.php";
       }
   </style>
 <?= startContent() ?>
-    <h1><span class="unbold">Mission:</span> The Vermillion Problem</h1>
-    <p id="missionPlace">Veridia Prime</p>
+    <h1><span class="unbold">任务：</span>熔火危机</h1>
+    <p id="missionPlace">维里迪亚主星</p>
     <?php include("../../includes/reporterror.php");?>
     <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#misSum">Mission Summary</a></p>
-        <p><a href="#objectives">Objectives</a></p>
-        <p><a href="#baseAnalysis">Enemy Base Analysis</a></p>
-        <p><a href="#bonus">Completing the Bonus Objective</a></p>
-        <p><a href="#timings">Timings</a></p>
-        <p><a href="#spawnPoints">Spawn Points</a></p>
-        <p><a href="#crystalSpawn">Crystal Spawn Order</a></p>
-        <p><a href="#misTips">Mission Tips</a></p>
-        <p><a href="#comTips">Commander-Specific Tips</a></p>
+        <h2>本页章节</h2>
+        <p><a href="#misSum">任务概述</a></p>
+        <p><a href="#objectives">任务目标</a></p>
+        <p><a href="#baseAnalysis">敌方基地分析</a></p>
+        <p><a href="#bonus">完成奖励目标</a></p>
+        <p><a href="#timings">时间点</a></p>
+        <p><a href="#spawnPoints">出生点</a></p>
+        <p><a href="#crystalSpawn">晶体出现顺序</a></p>
+        <p><a href="#misTips">任务技巧</a></p>
+        <p><a href="#comTips">指挥官专属技巧</a></p>
     </div>
-    <h2 id="misSum">Mission Summary</h2>
-    <p>Amon has incited volcanic eruptions that are destroying Veridia Prime. Gather the crystals required to reactivate the environmental stabilizers and restore the planet before it is obliterated.</p>
-    <h2 id="objectives">Objectives</h2>
-    <h3>Primary Objective</h3>
+    <h2 id="misSum">任务概述</h2>
+    <p>埃蒙引发的火山喷发正在摧毁维里迪亚主星。收集重新启动环境稳定器所需的晶体，在星球毁灭前恢复其环境。</p>
+    <h2 id="objectives">任务目标</h2>
+    <h3>主要目标</h3>
         <ul>
-            <li>Collect Xenon Crystals (20).</li>
-            <li>Do Not Allow Planet to Explode.</li>
+            <li>收集氙晶体（20）。</li>
+            <li>不要让星球爆炸。</li>
         </ul>
-    <h3>Secondary Objective</h3>
+    <h3>奖励目标</h3>
         <ul>
-            <li>Kill the Molten Salamander (1)</li>
+            <li>消灭熔岩蜥蜴（1）</li>
         </ul>
-    <h2 id="baseAnalysis">Enemy Base Analysis</h2>
+    <h2 id="baseAnalysis">敌方基地分析</h2>
     <div id="globalRaceSelect">
-        <p>Change all base analysis pictures to race:</p>
+        <p>将所有基地分析图片切换为以下种族：</p>
         <form action="#">
-            <label><input type="radio" name="globalRace" value="protoss" checked>Protoss</label><br>
-            <label><input type="radio" name="globalRace" value="terran">Terran</label><br>
-            <label><input type="radio" name="globalRace" value="zerg">Zerg</label><br>
+            <label><input type="radio" name="globalRace" value="protoss" checked>星灵</label><br>
+            <label><input type="radio" name="globalRace" value="terran">人类</label><br>
+            <label><input type="radio" name="globalRace" value="zerg">异虫</label><br>
         </form>
         <script>
             $("input[name='globalRace']").change(function(){
@@ -79,50 +79,50 @@ require_once "../../includes/switchergenerator.php";
         </script>
     </div>
     <?php $mission = "thevermillionproblem"; ?>
-    <p>Pushing into enemy bases is a key part of play on The Vermillion Problem, because most crystals will spawn behind enemy lines.</p>
-    <p>The first base you will be pushing into will be the one at your expansion. It is guarded by a small force of units, so you will need a small army or a hero unit to clear it.</p>
-    <p>Beweare of the small force of units guarding the northern ramp (not shown below). This force of units is based on the race, and consists of the following:</p>
+    <p>在“熔火危机”中，攻入敌方基地是关键环节，因为大多数晶体都会出现在敌后。</p>
+    <p>首先要进攻的是分矿处的基地。那里只有一小支部队防守，用少量部队或英雄单位即可清除。</p>
+    <p>注意守卫北侧斜坡的小股部队（下图未显示）。该部队随敌方种族而异，组成如下：</p>
     <ul>
-        <li><b>Protoss:</b> Three Stalkers</li>
-        <li><b>Terran:</b> Three Goliaths</li>
-        <li><b>Zerg:</b> Two Ravagers and Eight Zerglings</li>
+        <li><b>星灵：</b>3 个追猎者</li>
+        <li><b>人类：</b>3 个歌利亚</li>
+        <li><b>异虫：</b>2 个破坏者和 8 只跳虫</li>
     </ul>
     <?php switcher_generator("expansionlong") ?>
-    <p>At this point, the bases you will clear will usually depend on where the crystals spawn, rather than a particular order.</p>
-    <p>The base to the West is usually the most lightly defended base after the expansion. It is shown below:</p>
+    <p>此后通常要根据晶体的出现位置决定清理哪些基地，而非遵循固定顺序。</p>
+    <p>除分矿外，西侧基地通常防守最薄弱，如下所示：</p>
     <?php switcher_generator("wbase") ?>
-    <p>The next base usually captured is the base to the North. It is slightly more heavily defended, but should be relatively easy to capture.</p>
+    <p>接下来通常会攻占北侧基地。其防守稍强，但仍相对容易拿下。</p>
     <?php switcher_generator("nbaselong") ?>
-    <p>Due to the flow of the mission, there will be a lava surge by the time this base is cleared. It is usually optimal to continue pushing downwards to the North-East base. Watch out for the Hybrid Dominator in this area.</p>
+    <p>按任务节奏，清除该基地时会遇到一次熔岩喷发。通常最好继续向下方的东北基地推进。注意该区域的混合体支配者。</p>
     <?php switcher_generator("nebase") ?>
-    <p>The rest of the bases do require some strong forces in order to clear. The base to the South-West is probably the easiest of the remaining bases that can have crystals near them.</p>
+    <p>清除其余基地需要较强的部队。在附近可能出现晶体的剩余基地中，西南基地大概最容易攻克。</p>
     <?php switcher_generator("swbaselong") ?>
-    <p>If you choose to push East from this base towards the bonus objective, you'll need to destroy a small enemy camp. Note that the ramp from the opposite side of this island is unguarded and you can reach the bonus objective without fighting enemy units.</p>
+    <p>如果选择从该基地向东推进至奖励目标，就需要摧毁一处小型敌军营地。注意，这座岛另一侧的斜坡无人防守，可以避开敌军直接到达奖励目标。</p>
     <?php switcher_generator("bonuscamp") ?>
-    <p>If you push East from your expansion, there are a patches of enemies present. The first is a camp of units.</p>
+    <p>从分矿向东推进时会遇到数股敌军，首先是一处部队营地。</p>
     <?php switcher_generator("ebasecamp") ?>
-    <p>If you follow the path up North, you'll get to the enemy base.</p>
+    <p>沿道路向北即可到达敌方基地。</p>
     <?php switcher_generator("ebaselong") ?>
-    <p>Just South of this base, there is a small enclave of enemies.</p>
+    <p>该基地正南方还有一小片敌军据点。</p>
     <?php switcher_generator("eenclavelong") ?>
-    <h2 id="bonus">Completing the Bonus Objective</h2>
+    <h2 id="bonus">完成奖励目标</h2>
     <div id="objectiveImages">
-        <img src="/images/missiondata/thevermillionproblem/moltensalamander.jpg" alt="Molten Salamander">
+        <img src="/images/missiondata/thevermillionproblem/moltensalamander.jpg" alt="熔岩蜥蜴">
     </div>
-    <p>The bonus objective requires you to kill the Molten Salamander that spawns in the marked location below.</p>
-    <img src="/images/missiondata/thevermillionproblem/moltensalamanderspawnlocation.jpg" alt="Minimap of Molten Salamander spawn location">
-    <h2 id="timings">Timings</h2>
-    <p>Note: Information on Tech and Strength levels can be found on the <a href="/guides/enemycomps">Enemy Compositions</a> page.</p>
-    <p>Some attack waves in this mission have variance associated with their spawn timings. That is, attack waves have a little bit of randomness as to when they will spawn. The attack wave timings and variances are shown below. A variance of 1:30 seconds means attack waves can spawn anywhere from 1:30 <i>before</i> the attack wave timing to 1:30 <i>after</i> the attack wave timing.</p>
-    <p>The Attack Wave Timings for this mission are:</p>
+    <p>奖励目标要求你消灭在下方标记位置出现的熔岩蜥蜴。</p>
+    <img src="/images/missiondata/thevermillionproblem/moltensalamanderspawnlocation.jpg" alt="熔岩蜥蜴出现位置的小地图">
+    <h2 id="timings">时间点</h2>
+    <p>注意：科技等级与强度等级的说明可参阅<a href="/guides/enemycomps">敌方部队组合</a>页面。</p>
+    <p>本任务部分进攻波次的出现时间存在偏差，即具体出现时间带有一定随机性。下表列出波次时间及其偏差。偏差为 1:30 表示波次可能在标示时间<i>之前</i> 1:30 到<i>之后</i> 1:30 之间的任意时刻出现。</p>
+    <p>本任务的进攻波次时间如下：</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Wave</th>
-                <th>Time</th>
-                <th>Tech Level</th>
-                <th>Strength Level</th>
-                <th>Target</th>
+                <th>波次</th>
+                <th>时间</th>
+                <th>科技等级</th>
+                <th>强度等级</th>
+                <th>目标</th>
             </tr>
         </thead>
         <tbody>
@@ -131,93 +131,93 @@ require_once "../../includes/switchergenerator.php";
                 <td>3:30</td>
                 <td>1</td>
                 <td>1</td>
-                <td>Main</td>
+                <td>主基地</td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>6:00</td>
                 <td>2</td>
                 <td>2</td>
-                <td>Main</td>
+                <td>主基地</td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>9:00 ± 1:30</td>
                 <td>3</td>
                 <td>4</td>
-                <td>Expansion</td>
+                <td>分矿</td>
             </tr>
             <tr>
                 <td>4*</td>
                 <td>12:00 ± 1:30</td>
                 <td>3</td>
                 <td>4</td>
-                <td>Expansion</td>
+                <td>分矿</td>
             </tr>
             <tr>
                 <td>5</td>
                 <td>15:00 ± 1:30</td>
                 <td>5</td>
                 <td>5</td>
-                <td>Main</td>
+                <td>主基地</td>
             </tr>
             <tr>
                 <td>6</td>
                 <td>18:00 ± 1:30</td>
                 <td>5</td>
                 <td>5</td>
-                <td>Main</td>
+                <td>主基地</td>
             </tr>
             <tr>
                 <td>7</td>
                 <td>21:00 ± 1:30</td>
                 <td>5</td>
                 <td>5</td>
-                <td>Expansion</td>
+                <td>分矿</td>
             </tr>
             <tr>
                 <td>8</td>
                 <td>24:00 ± 1:30</td>
                 <td>6</td>
                 <td>6</td>
-                <td>Expansion</td>
+                <td>分矿</td>
             </tr>
             <tr>
                 <td>9</td>
                 <td>27:00</td>
                 <td>5</td>
                 <td>5</td>
-                <td>Expansion</td>
+                <td>分矿</td>
             </tr>
         </tbody>
     </table>
-    <p>* Attack wave #4 is a multi-pronged attack wave that will have attacking units spawn from two different locations.</p>
-    <p>The final attack wave will repeat every two minutes until the end of the mission.</p>
-    <p>The Molten Salamander will start to spawn every lava surge after 11:00.</p>
-    <h2 id="spawnPoints">Spawn Points</h2>
-    <p>The spawn points for attack waves are shown below.</p>
-    <p>Attack Wave Spawn Location (West Base):</p>
-    <img src="/images/missiondata/thevermillionproblem/wattackwavespawn.jpg" alt="West Attack Wave Spawn">
-    <p>Attack Wave Spawn Location (East Base, usually not cleared because crystals do not spawn there):</p>
-    <img src="/images/missiondata/thevermillionproblem/eattackwavespawn.jpg" alt="East Attack Wave Spawn">
-    <p>Attack Wave Spawn Location (South, near Bonus Objective):</p>
-    <img src="/images/missiondata/thevermillionproblem/sattackwavespawn.jpg" alt="South Attack Wave Spawn">
-    <p>Crystals also have certain spawn locations. However, at each collection stage, crystals can spawn in more than 10 individual locations, making it infeasible to list them all out individually. Addtionally, spawn locations are randomized as the mission progresses.</p>
-    <h2 id="crystalSpawn">Crystal Spawn Order</h2>
-    <p>The spawn order and locations of the Xenon Crystals can be viewed below. This may be useful when playing against <a href="/resources/mutators">mutators</a> that hide the crystal locations on the minimap, such as Darkness.</p>
+    <p>* 第 4 波是多路进攻，进攻单位会从两个不同位置出现。</p>
+    <p>最后一波进攻会每两分钟重复一次，直至任务结束。</p>
+    <p>11:00 后，熔岩蜥蜴会在每次熔岩喷发时开始出现。</p>
+    <h2 id="spawnPoints">出生点</h2>
+    <p>进攻波次的出生点如下所示。</p>
+    <p>进攻波次出生位置（西侧基地）：</p>
+    <img src="/images/missiondata/thevermillionproblem/wattackwavespawn.jpg" alt="西侧进攻波次出生点">
+    <p>进攻波次出生位置（东侧基地；由于晶体不会在那里出现，通常不会清理）：</p>
+    <img src="/images/missiondata/thevermillionproblem/eattackwavespawn.jpg" alt="东侧进攻波次出生点">
+    <p>进攻波次出生位置（南侧，奖励目标附近）：</p>
+    <img src="/images/missiondata/thevermillionproblem/sattackwavespawn.jpg" alt="南侧进攻波次出生点">
+    <p>晶体也有特定的出现位置。不过，每个收集阶段都可能在 10 个以上的独立位置出现晶体，无法逐一列出。此外，随着任务推进，出现位置会随机变化。</p>
+    <h2 id="crystalSpawn">晶体出现顺序</h2>
+    <p>下方可查看氙晶体的出现顺序和位置。面对会在小地图上隐藏晶体位置的<a href="/resources/mutators">突变因子</a>（例如“黑暗”）时，这些信息可能很有用。</p>
     <div id="spawnView">
-        <img id="base"  src="/images/missiondata/thevermillionproblem/mapbase.jpg" alt="Terrain">
-        <img id="spawn" src="/images/missiondata/thevermillionproblem/spawn_01.png" alt="Spawn Overlay">
+        <img id="base"  src="/images/missiondata/thevermillionproblem/mapbase.jpg" alt="地形">
+        <img id="spawn" src="/images/missiondata/thevermillionproblem/spawn_01.png" alt="出生点叠加层">
         <form action='#'>
-            <label><input type='radio' name='spawn' value='1' checked>Spawn 1</label><br>
-            <label><input type='radio' name='spawn' value='2'>Spawn 2</label><br>
-            <label><input type='radio' name='spawn' value='3'>Spawn 3</label><br>
-            <label><input type='radio' name='spawn' value='4'>Spawn 4</label><br>
-            <label><input type='radio' name='spawn' value='5'>Spawn 5</label><br>
-            <label><input type='radio' name='spawn' value='6'>Spawn 6</label><br>
-            <label><input type='radio' name='spawn' value='7'>Spawn 7</label><br>
-            <label><input type='radio' name='spawn' value='8'>Spawn 8</label><br>
-            <label><input type='radio' name='spawn' value='9'>Spawn 9</label><br>
+            <label><input type='radio' name='spawn' value='1' checked>第 1 批</label><br>
+            <label><input type='radio' name='spawn' value='2'>第 2 批</label><br>
+            <label><input type='radio' name='spawn' value='3'>第 3 批</label><br>
+            <label><input type='radio' name='spawn' value='4'>第 4 批</label><br>
+            <label><input type='radio' name='spawn' value='5'>第 5 批</label><br>
+            <label><input type='radio' name='spawn' value='6'>第 6 批</label><br>
+            <label><input type='radio' name='spawn' value='7'>第 7 批</label><br>
+            <label><input type='radio' name='spawn' value='8'>第 8 批</label><br>
+            <label><input type='radio' name='spawn' value='9'>第 9 批</label><br>
         </form>
     </div>
     <script>
@@ -241,23 +241,23 @@ require_once "../../includes/switchergenerator.php";
             return false;
         })
     </script>
-    <h2 id="misTips">Mission Tips</h2>
+    <h2 id="misTips">任务技巧</h2>
     <ul>
-        <li>Ensure you have adequate defenses in your main and expansion for the attack waves.</li>
-        <li>Pay attention to your army as you push into enemy defenses due to the large number of Hybrid Dominators present on this map.</li>
-        <li>All crystals from the 3rd spawn will come with a small harass force. Ensure you clear them out before you send your workers to pick up the crystal. These forces do not spawn immediately with the crystal, and have some travel time before they arrive.</li>
+        <li>确保主基地和分矿有足够防御来应对进攻波次。</li>
+        <li>本地图有大量混合体支配者，攻入敌方防线时要留意自己的部队。</li>
+        <li>从第 3 批开始，每颗晶体都会伴随一小股骚扰部队。派工人拾取晶体前务必先消灭它们。这些部队不会与晶体同时出现，而是经过一段移动时间后抵达。</li>
     </ul>
-    <h2 id="comTips">Commander-specific Tips</h2>
+    <h2 id="comTips">指挥官专属技巧</h2>
     <ul>
-        <li><a href="/commanders/abathur">Abathur</a>: Place Toxic Nests on spawn locations to weaken attack waves.</li>
-        <li><a href="/commanders/horner">Han & Horner</a>: Place Mag Mines on spawn locations to weaken attack waves.</li>
-        <li><a href="/commanders/kerrigan">Kerrigan</a>: Place Omega Worms on each of the islands to help you and your ally intercept attack waves and crystals in a timely manner.</li>
-        <li><a href="/commanders/nova">Nova</a>: If you use Siege Tanks, place Spider-mines on spawn locations to weaken attack waves.</li>
-        <li><a href="/commanders/raynor">Raynor</a>: If you use Vultures, place Spider-mines on spawn locations to weaken attack waves.</li>
-        <li><a href="/commanders/stetmann">Stetmann</a>: Use the Speed Stetzone to return crystals faster.</li>
-        <li><a href="/commanders/stukov">Stukov</a>: Once you have creep spread, move your Infested Colonist Compound to your Expansion area.</li>
-        <li><a href="/commanders/zagara">Zagara</a>: Build your macro hatcheries at your expansion for quick reinforcements.</li>
-        <li><a href="/commanders/zeratul">Zeratul</a>: Place a Void Array on each of the islands to help you intercept attack waves and crystals in a timely manner.</li>
+        <li><a href="/commanders/abathur">阿巴瑟</a>：在出生点放置剧毒巢穴以削弱进攻波次。</li>
+        <li><a href="/commanders/horner">汉与霍纳</a>：在出生点放置磁雷以削弱进攻波次。</li>
+        <li><a href="/commanders/kerrigan">凯瑞甘</a>：在每座岛上放置欧米伽虫洞，帮助你和盟友及时拦截进攻波次并收集晶体。</li>
+        <li><a href="/commanders/nova">诺娃</a>：使用攻城坦克时，在出生点布置蜘蛛雷以削弱进攻波次。</li>
+        <li><a href="/commanders/raynor">雷诺</a>：使用秃鹫战车时，在出生点布置蜘蛛雷以削弱进攻波次。</li>
+        <li><a href="/commanders/stetmann">斯台特曼</a>：使用“艾的急切”爱心区域更快送回晶体。</li>
+        <li><a href="/commanders/stukov">斯托科夫</a>：菌毯铺开后，将被感染的移民营移动到分矿区域。</li>
+        <li><a href="/commanders/zagara">扎加拉</a>：在分矿建造用于暴兵的孵化场，以便快速增援。</li>
+        <li><a href="/commanders/zeratul">泽拉图</a>：在每座岛上放置一艘虚空阵列船，帮助你及时拦截进攻波次并收集晶体。</li>
     </ul>
 <script src="/scripts/nav.js"></script>
 <?= endContent() ?>

@@ -1,1 +1,1 @@
-<p>Unfortunately, registrations are now closed. Please check back later for the next registration wave.</p>
+<p>很遗憾，报名现已关闭。请稍后再来查看下一轮报名。</p>

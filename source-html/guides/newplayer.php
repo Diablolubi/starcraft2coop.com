@@ -5,9 +5,9 @@
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Commander Selection Guide</title>
-  <meta name="description" content="Starcraft 2 Co-op Commander Selection Guide for new players, providing information on strengths and weaknesses of commanders.">
-  <meta name="keywords" content="Starcraft co-op guides commander selection">
+  <title>StarCraft II 合作任务——指挥官选择指南</title>
+  <meta name="description" content="面向新玩家的 StarCraft II 合作任务指挥官选择指南，介绍各位指挥官的优缺点。">
+  <meta name="keywords" content="StarCraft II 合作任务攻略 指挥官选择">
   <link rel="canonical" href="https://starcraft2coop.com/guides/newplayer">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <style>
@@ -92,10 +92,10 @@ require_once __DIR__ . "/../../includes/wrapper.php";
   </style>
 
   <?= startContent() ?>
-    <div id="tooltip">tooltip</div>
-    <h1>New Player Commander Selection</h1>
-    <p>While assigning arbitrary metrics for commanders and giving them a score from 1 to 5 is extremely subjective, the page below hopes to serve as a rough guide as to what each commander's power level and playstyle is, to allow new players to make a more informed decision as to which commander to play. It is highly advisable to read through the individual commander pages to see what abilities they have available to them, what strategies they utilize and what units they have to make a better informed decision. Additionally, players new to Co-op are advised to check the <a href="/guides/generaltips">General Tips</a> page to get some insight on some good strategies to use in Co-op.</p>
-    <p>Additionally, participating in the community is another great way of learning about commanders and different playstyles. You may check out the <a href="/about/links">Links</a> page to find more Starcraft II Co-op Community content. Lastly, asking good questions and having an open-minded approach and a willingness to learn will take you a long way to improving your Co-op gameplay.</p>
+    <div id="tooltip">提示</div>
+    <h1>新玩家指挥官选择指南</h1>
+    <p>为指挥官设定任意指标并按 1 到 5 分打分，本身有很强的主观性。本页仅希望粗略展示各位指挥官的实力与玩法风格，帮助新玩家更有依据地选择想玩的指挥官。强烈建议阅读各个指挥官的专属页面，了解其可用技能、常用策略和麾下单位，从而作出更明智的选择。此外，合作任务新玩家也可以查看<a href="/guides/generaltips">通用技巧</a>页面，了解一些实用策略。</p>
+    <p>参与社区交流也是了解指挥官和不同玩法风格的好方法。你可以查看<a href="/about/links">相关链接</a>页面，寻找更多 StarCraft II 合作任务社区内容。最后，善于提出好问题、保持开放心态并愿意学习，会让你在提升合作任务水平的路上走得更远。</p>
     <div id="commanderSelection">
         <?php
 
@@ -111,61 +111,61 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div id="commanderPanel">
         <div id="stats">
             <div id="commanderName">
-                <h2>Raynor</h2>
+                <h2>雷诺</h2>
             </div>
             <div id="commanderMotto">
-                <p>Renegade Commander</p>
+                <p>反抗军指挥官</p>
             </div>
             <div id="bars">
                 <div id="statDifficulty" class="barContainer">
-                    <div class="description">How easy the commander is to play assuming they carry their<br>own weight in the mission. Optimal play is not required.</div>
-                    <p>Ease of Play</p>
+                    <div class="description">以能够承担任务中应尽的职责为标准，衡量指挥官的上手难度；<br>不要求达到最优操作。</div>
+                    <p>上手难度</p>
                     <div class="barTrack"><div class="currentProgress"></div></div>
                 </div>
                 <div id="statLeveling" class="barContainer">
-                    <div class="description">How powerful the commander is as they level through<br>both, sub-Mastery and sub-Ascension levels.</div>
-                    <p>Sub-Ascension Power</p>
+                    <div class="description">衡量指挥官在升级过程中、尚未达到精通和<br>巅峰等级时的实力。</div>
+                    <p>巅峰等级前实力</p>
                     <div class="barTrack"><div class="currentProgress"></div></div>
                 </div>
                 <div id="statPowerNew" class="barContainer">
-                    <div class="description">Power level shown by the commander<br>from inexperienced co-op players.</div>
-                    <p>Power Level for Beginners</p>
+                    <div class="description">衡量缺乏经验的合作任务玩家<br>使用该指挥官时能发挥出的实力。</div>
+                    <p>新手实力</p>
                     <div class="barTrack"><div class="currentProgress"></div></div>
                 </div>
                 <div id="statPowerVeteran" class="barContainer">
-                    <div class="description">Power level shown by the commander<br>from experienced co-op players.</div>
-                    <p>Power Level for Veterans</p>
+                    <div class="description">衡量经验丰富的合作任务玩家<br>使用该指挥官时能发挥出的实力。</div>
+                    <p>老手实力</p>
                     <div class="barTrack"><div class="currentProgress"></div></div>
                 </div>
                 <div id="statEarly" class="barContainer">
-                    <div class="description">Amount of support the commander can offer towards<br>the mission objective in the early game.</div>
-                    <p>Early Game Strength</p>
+                    <div class="description">衡量指挥官在游戏前期能为<br>任务目标提供多少帮助。</div>
+                    <p>前期实力</p>
                     <div class="barTrack"><div class="currentProgress"></div></div>
                 </div>
                 <div id="statMacro" class="barContainer">
-                    <div class="description">The simplicity of the macro required to keep the commander<br>effective and ramping throughout the mission.</div>
-                    <p>Ease of Macro</p>
+                    <div class="description">衡量要让指挥官在整场任务中保持效率并持续发展，<br>所需宏观运营的简易程度。</div>
+                    <p>运营难度</p>
                     <div class="barTrack"><div class="currentProgress"></div></div>
                 </div>
                 <div id="statMicro" class="barContainer">
-                    <div class="description">The simplicity of the micro required to keep<br>the commander at a high level play.</div>
-                    <p>Ease of Micro</p>
+                    <div class="description">衡量要让指挥官保持高水平发挥<br>所需微操的简易程度。</div>
+                    <p>微操难度</p>
                     <div class="barTrack"><div class="currentProgress"></div></div>
                 </div>
                 <div id="statMutation" class="barContainer">
-                    <div class="description">How effectively the commander adapts<br>to all the mutators in the game.</div>
-                    <p>Mutation Versatility</p>
+                    <div class="description">衡量指挥官适应游戏中<br>各类突变因子的能力。</div>
+                    <p>突变适应性</p>
                     <div class="barTrack"><div class="currentProgress"></div></div>
                 </div>
                 <div id="statSpeed" class="barContainer">
-                    <div class="description">How fast the commander is able to reach their desired<br>composition to handle the objective and attack waves.</div>
-                    <p>Ramp Up Speed</p>
+                    <div class="description">衡量指挥官多快能组建理想阵容，<br>以应对任务目标和进攻波次。</div>
+                    <p>成型速度</p>
                     <div class="barTrack"><div class="currentProgress"></div></div>
                 </div>
             </div>
         </div>
         <div id="commanderImage">
-            <img id="commanderPic" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" alt="Commander Image">
+            <img id="commanderPic" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" alt="指挥官图片">
         </div>
     </div>
     <div id="commanderDescription">
@@ -214,7 +214,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                         $(".currentProgress").eq(i).animate({width: stats[i]*20 + "%"});
                         $(".currentProgress").eq(i).css("background-color", colorArray[stats[i]-1]);
                     });
-                    $("#commanderDescription").html(val.summary).append(" Visit their commander page <a href='/commanders/" + commander + "'>here</a> to learn more.");
+                    $("#commanderDescription").html(val.summary).append(" 请前往该指挥官的<a href='/commanders/" + commander + "'>专属页面</a>了解更多信息。");
                 }
             });
         }

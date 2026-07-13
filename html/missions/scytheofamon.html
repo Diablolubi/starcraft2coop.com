@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
@@ -9,15 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-    <link rel="stylesheet" href="/styles/global.css?v=70e9bc">
+    <link rel="stylesheet" href="/styles/global.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <title>Starcraft 2 Co-op - Mission Guide - Scythe of Amon</title>
-  <meta name="description" content="Starcraft 2 Co-op Mission Guide Scythe of Amon">
-  <meta name="keywords" content="Starcraft co-op guides scythe amon mission">
-  <link rel="stylesheet"  media="all" type="text/css" href="/styles/missionstyle.css?v=e0ba7b?v=1.00">
+      <title>《星际争霸 II》合作任务攻略 - 埃蒙之镰</title>
+  <meta name="description" content="《星际争霸 II》合作任务攻略：埃蒙之镰">
+  <meta name="keywords" content="星际争霸 II 合作任务 埃蒙之镰 攻略">
+  <link rel="stylesheet"  media="all" type="text/css" href="/styles/missionstyle.css?v=1.00">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="https://starcraft2coop.com/missions/scytheofamon">
-  <script src="/scripts/preload.js?v=0264fe"></script>
+  <script src="/scripts/preload.js"></script>
   <style>
     .sliver{
         margin-bottom:50px;
@@ -39,105 +39,105 @@
 <body>
 
 <header id="header">
-    <img src="/images/starcraft2coop.png" alt="Starcraft II Co-op">
+    <img src="/images/starcraft2coop.png" alt="StarCraft II 合作任务">
 </header>
 <script>
 if (document.location.host === 'dev.starcraft2coop.com') {
-    document.write('<div class="construction">THIS IS THE TEST SITE. (<a href="https://starcraft2coop.com">Go to the real site</a>)</div>');
+    document.write('<div class="construction">这里是测试站点。（<a href="https://starcraft2coop.com">前往正式站点</a>）</div>');
 }
 </script>
 <nav id="menu">
 <ul id="topmenu">
-    <li class="normal"><a href="/" title="Home">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>Home</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+    <li class="normal"><a href="/" title="首页">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>首页</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
     </a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-commanders">Commanders</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-resources">Guides</a></li>
-    <li class="highlight"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-missions">Missions</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-about">About</a></li>
-    <li class="normal"><button type="button" id="site-search-button" title="Search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Search</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-commanders">指挥官</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-resources">攻略</a></li>
+    <li class="highlight"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-missions">任务</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-about">关于</a></li>
+    <li class="normal"><button type="button" id="site-search-button" title="搜索">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>搜索</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
         <span class="search-shortcut" aria-hidden="true"></span>
     </button></li>
 </ul>
 <div id="container">
     <div id="commanderList" class="submenu">
-        <a href="/commanders/raynor" class="normal"><img src="/images/commanderportraits/raynorportrait.png" alt="Raynor"></a>
-        <a href="/commanders/kerrigan" class="normal"><img src="/images/commanderportraits/kerriganportrait.png" alt="Kerrigan"></a>
-        <a href="/commanders/artanis" class="normal"><img src="/images/commanderportraits/artanisportrait.png" alt="Artanis"></a>
-        <a href="/commanders/swann" class="normal"><img src="/images/commanderportraits/swannportrait.png" alt="Swann"></a>
-        <a href="/commanders/zagara" class="normal"><img src="/images/commanderportraits/zagaraportrait.png" alt="Zagara"></a>
-        <a href="/commanders/vorazun" class="normal"><img src="/images/commanderportraits/vorazunportrait.png" alt="Vorazun"></a>
-        <a href="/commanders/karax" class="normal"><img src="/images/commanderportraits/karaxportrait.png" alt="Karax"></a>
-        <a href="/commanders/abathur" class="normal"><img src="/images/commanderportraits/abathurportrait.png" alt="Abathur"></a>
-        <a href="/commanders/alarak" class="normal"><img src="/images/commanderportraits/alarakportrait.png" alt="Alarak"></a>
-        <a href="/commanders/nova" class="normal"><img src="/images/commanderportraits/novaportrait.png" alt="Nova"></a>
-        <a href="/commanders/stukov" class="normal"><img src="/images/commanderportraits/stukovportrait.png" alt="Stukov"></a>
-        <a href="/commanders/fenix" class="normal"><img src="/images/commanderportraits/fenixportrait.png" alt="Fenix"></a>
-        <a href="/commanders/dehaka" class="normal"><img src="/images/commanderportraits/dehakaportrait.png" alt="Dehaka"></a>
-        <a href="/commanders/horner" class="normal"><img src="/images/commanderportraits/hornerportrait.png" alt="Han &amp; Horner"></a>
-        <a href="/commanders/tychus" class="normal"><img src="/images/commanderportraits/tychusportrait.png" alt="Tychus"></a>
-        <a href="/commanders/zeratul" class="normal"><img src="/images/commanderportraits/zeratulportrait.png" alt="Zeratul"></a>
-        <a href="/commanders/stetmann" class="normal"><img src="/images/commanderportraits/stetmannportrait.png" alt="Stetmann"></a>
-        <a href="/commanders/mengsk" class="normal"><img src="/images/commanderportraits/mengskportrait.png" alt="Mengsk"></a>
+        <a href="/commanders/raynor" class="normal"><img src="/images/commanderportraits/raynorportrait.png" alt="雷诺"></a>
+        <a href="/commanders/kerrigan" class="normal"><img src="/images/commanderportraits/kerriganportrait.png" alt="凯瑞甘"></a>
+        <a href="/commanders/artanis" class="normal"><img src="/images/commanderportraits/artanisportrait.png" alt="阿塔尼斯"></a>
+        <a href="/commanders/swann" class="normal"><img src="/images/commanderportraits/swannportrait.png" alt="斯旺"></a>
+        <a href="/commanders/zagara" class="normal"><img src="/images/commanderportraits/zagaraportrait.png" alt="扎加拉"></a>
+        <a href="/commanders/vorazun" class="normal"><img src="/images/commanderportraits/vorazunportrait.png" alt="沃拉尊"></a>
+        <a href="/commanders/karax" class="normal"><img src="/images/commanderportraits/karaxportrait.png" alt="凯拉克斯"></a>
+        <a href="/commanders/abathur" class="normal"><img src="/images/commanderportraits/abathurportrait.png" alt="阿巴瑟"></a>
+        <a href="/commanders/alarak" class="normal"><img src="/images/commanderportraits/alarakportrait.png" alt="阿拉纳克"></a>
+        <a href="/commanders/nova" class="normal"><img src="/images/commanderportraits/novaportrait.png" alt="诺娃"></a>
+        <a href="/commanders/stukov" class="normal"><img src="/images/commanderportraits/stukovportrait.png" alt="斯托科夫"></a>
+        <a href="/commanders/fenix" class="normal"><img src="/images/commanderportraits/fenixportrait.png" alt="菲尼克斯"></a>
+        <a href="/commanders/dehaka" class="normal"><img src="/images/commanderportraits/dehakaportrait.png" alt="德哈卡"></a>
+        <a href="/commanders/horner" class="normal"><img src="/images/commanderportraits/hornerportrait.png" alt="汉与霍纳"></a>
+        <a href="/commanders/tychus" class="normal"><img src="/images/commanderportraits/tychusportrait.png" alt="泰凯斯"></a>
+        <a href="/commanders/zeratul" class="normal"><img src="/images/commanderportraits/zeratulportrait.png" alt="泽拉图"></a>
+        <a href="/commanders/stetmann" class="normal"><img src="/images/commanderportraits/stetmannportrait.png" alt="斯台特曼"></a>
+        <a href="/commanders/mengsk" class="normal"><img src="/images/commanderportraits/mengskportrait.png" alt="蒙斯克"></a>
     </div>
     <div id="missionList" class="submenu">
-        <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">Chain of Ascension</div></a>
-        <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">Cradle of Death</div></a>
-        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">Dead of Night</div></a>
-        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">Lock &amp; Load</div></a>
-        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">Malwarfare</div></a>
-        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">Miner Evacuation</div></a>
-        <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">Mist Opportunities</div></a>
-        <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">Oblivion Express</div></a>
-        <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">Part &amp; Parcel</div></a>
-        <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">Rifts to Korhal</div></a>
-        <a href="/missions/scytheofamon" class="highlight"><div class="mapImg mapImg-scytheofamon">Scythe of Amon</div></a>
-        <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">Temple of the Past</div></a>
-        <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">The Vermillion Problem</div></a>
-        <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">Void Launch</div></a>
-        <a href="/missions/voidthrashing" class="normal"><div class="mapImg mapImg-voidthrashing">Void Thrashing</div></a>
+        <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">飞升之链</div></a>
+        <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">死亡摇篮</div></a>
+        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">亡者之夜</div></a>
+        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">天锁</div></a>
+        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">恶意代码</div></a>
+        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">疏散矿工</div></a>
+        <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">机会渺茫</div></a>
+        <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">湮灭快车</div></a>
+        <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">聚铁成兵</div></a>
+        <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">克哈裂痕</div></a>
+        <a href="/missions/scytheofamon" class="highlight"><div class="mapImg mapImg-scytheofamon">埃蒙之镰</div></a>
+        <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">往日神庙</div></a>
+        <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">熔火危机</div></a>
+        <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">虚空降临</div></a>
+        <a href="/missions/voidthrashing" class="normal"><div class="mapImg mapImg-voidthrashing">虚空撕裂</div></a>
     </div>
     <div id="resources" class="submenu">
         <div class="submenu-with-sections"><div class="submenu-section">
-            <strong>Resources:</strong>
+            <strong>资料：</strong>
             <ul>
-                <li class="normal"><a href="/mutators/">Mutators</a></li>
-                <li class="normal"><a href="/resources/weeklymutations">Weekly&nbsp;Mutations</a></li>
-                <li class="normal"><a href="/resources/brutal">Brutal+</a></li>
-                <li class="normal"><a href="/units/">Unit&nbsp;Stats</a></li>
+                <li class="normal"><a href="/mutators/">突变因子</a></li>
+                <li class="normal"><a href="/resources/weeklymutations">每周突变</a></li>
+                <li class="normal"><a href="/resources/brutal">残酷+</a></li>
+                <li class="normal"><a href="/units/">单位数据</a></li>
             </ul>
         </div><div class="submenu-section">
-            <strong>Guides:</strong>
+            <strong>攻略：</strong>
             <ul>
-                <li class="normal"><a href="/guides/buildordertheory">Build&nbsp;Order&nbsp;Theory</a></li>
-                <li class="normal"><a href="/guides/enemycomps">Enemy&nbsp;Compositions</a></li>
-                <li class="normal"><a href="/guides/generaltips">General&nbsp;Tips</a></li>
-                <li class="normal"><a href="/guides/newplayer">New&nbsp;Players</a></li>
-                <li class="normal"><a href="/guides/youtube">Youtube</a></li>
+                <li class="normal"><a href="/guides/buildordertheory">建造顺序理论</a></li>
+                <li class="normal"><a href="/guides/enemycomps">敌方阵容</a></li>
+                <li class="normal"><a href="/guides/generaltips">通用技巧</a></li>
+                <li class="normal"><a href="/guides/newplayer">新手指南</a></li>
+                <li class="normal"><a href="/guides/youtube">YouTube</a></li>
             </ul>
         </div><div class="submenu-section">
-            <strong>Miscellaneous:</strong>
+            <strong>其他：</strong>
             <ul>
-                <li class="normal"><a href="/resources/achievements">Achievements</a></li>
-                <li class="normal"><a href="/resources/ailogic">AI&nbsp;Logic</a></li>
-                <li class="normal"><a href="/resources/bugs">Bugs</a></li>
-                <li class="normal"><a href="/resources/deathprevention">Death&nbsp;Prevent&nbsp;Effects</a></li>
-                <li class="normal"><a href="/resources/eastereggs">Easter&nbsp;Eggs</a></li>
-                <li class="normal"><a href="/resources/levels">Levels</a></li>
-                <li class="normal"><a href="/resources/patchdata">Patch&nbsp;Data</a></li>
-                <li class="normal"><a href="/tools/downloads">Downloads</a></li>
-                <li class="normal"><a href="/tools/masterybreakpoints">Mastery&nbsp;Breakpoints</a></li>
+                <li class="normal"><a href="/resources/achievements">成就</a></li>
+                <li class="normal"><a href="/resources/ailogic">人工智能逻辑</a></li>
+                <li class="normal"><a href="/resources/bugs">错误</a></li>
+                <li class="normal"><a href="/resources/deathprevention">免死效果</a></li>
+                <li class="normal"><a href="/resources/eastereggs">彩蛋</a></li>
+                <li class="normal"><a href="/resources/levels">等级</a></li>
+                <li class="normal"><a href="/resources/patchdata">补丁数据</a></li>
+                <li class="normal"><a href="/tools/downloads">下载</a></li>
+                <li class="normal"><a href="/tools/masterybreakpoints">精通阈值</a></li>
             </ul>
         </div></div>
     </div>
     <div id="about" class="submenu">
         <ul>
             <!--<li class="normal"><a href="/about/contact">Contact</a></li>-->
-            <li class="normal"><a href="/about/faq">FAQ</a></li>
-            <li class="normal"><a href="/about/links">Links</a></li>
+            <li class="normal"><a href="/about/faq">常见问题</a></li>
+            <li class="normal"><a href="/about/links">相关链接</a></li>
             <!--li class="normal"><a href="https://www.youtube.com/c/Starcraft2Coop" rel="nofollow">Youtube</a></li-->
-            <li class="normal"><a href="/about/stats">Misc. Stats</a></li>
+            <li class="normal"><a href="/about/stats">杂项统计</a></li>
         </ul>
     </div>
     <!--<div id="imgs">
@@ -188,121 +188,121 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         }
     })(jQuery);
 </script>
-<script src="/scripts/search.js?v=3646f5" defer></script>
+<script src="/scripts/search.js" defer></script>
 <div id="content">
-        <h1><span class="unbold">Mission:</span> Scythe of Amon</h1>
-    <p id="missionPlace">Xel'Naga Temple</p>
+        <h1><span class="unbold">任务：</span>埃蒙之镰</h1>
+    <p id="missionPlace">萨尔纳加神庙</p>
         <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#misSum">Mission Summary</a></p>
-        <p><a href="#objectives">Objectives</a></p>
-        <p><a href="#idRace">Identifying the Enemy Race</a></p>
-        <p><a href="#sliverGrowth">Void Sliver Growth</a></p>
-        <p><a href="#sliverAbilities">Void Sliver Abilities</a></p>
-        <p><a href="#bonus">Completing the Bonus Objective</a></p>
-        <p><a href="#timings">Timings</a></p>
-        <p><a href="#spawnPoints">Spawn Points</a></p>
-        <p><a href="#misTips">Mission Tips</a></p>
-        <p><a href="#comTips">Commander-Specific Tips</a></p>
+        <h2>本页目录</h2>
+        <p><a href="#misSum">任务概述</a></p>
+        <p><a href="#objectives">任务目标</a></p>
+        <p><a href="#idRace">识别敌方种族</a></p>
+        <p><a href="#sliverGrowth">虚空裂片成长</a></p>
+        <p><a href="#sliverAbilities">虚空裂片技能</a></p>
+        <p><a href="#bonus">完成奖励目标</a></p>
+        <p><a href="#timings">时间点</a></p>
+        <p><a href="#spawnPoints">出生点</a></p>
+        <p><a href="#misTips">任务技巧</a></p>
+        <p><a href="#comTips">指挥官专属技巧</a></p>
     </div>
-    <h2 id="misSum">Mission Summary</h2>
-    <p>Nerazim scout Lyrak has made a startling discovery: Amon’s forces have invaded a xel’naga temple and are using its energies to awaken one of the Dark God’s most powerful creations. Put a stop to their plans by destroying the void slivers while there’s still time.</p>
-    <h2 id="objectives">Objectives</h2>
-    <h3>Primary Objective</h3>
+    <h2 id="misSum">任务概述</h2>
+    <p>奈拉齐姆侦察兵莱拉克发现了惊人的事实：埃蒙的军队入侵了一座萨尔纳加神庙，并利用其中的能量唤醒黑暗之神最强大的造物之一。趁一切还来得及，摧毁虚空裂片，阻止他们的计划。</p>
+    <h2 id="objectives">任务目标</h2>
+    <h3>主要目标</h3>
         <ul>
-            <li>Destroy Void Slivers (5)</li>
-            <li>Do not let the Voidshade Hybrid awaken.</li>
+            <li>摧毁虚空裂片 (5)</li>
+            <li>不得让虚空之影混合体苏醒。</li>
         </ul>
-    <h3>Secondary Objective</h3>
+    <h3>奖励目标</h3>
         <ul>
-            <li>Escort Evacuation Ships (3)</li>
+            <li>护送撤离船 (3)</li>
         </ul>
-    <h2 id="idRace">Identifying the Enemy Race</h2>
-    <p>An important part in Starcraft II co-op is identifying the enemy race, and then the enemy composition. This allows you to effectively counter the attack waves on missions. In other missions, the presence of creep would point towards a Zerg race, while the absence of creep would point towards either Protoss or Terran. Scythe of Amon is the only mission in the game where you can uniquely identify the enemy race by checking creep spread. Press Alt + T to view the creep spread pattern. You'll get one of the following three patterns.</p>
-    <p>Protoss Creep Spread:</p>
-    <img src="/images/missiondata/scytheofamon/creepspread_protoss.jpg" alt="Protoss Creep Spread">
-    <p>Terran Creep Spread:</p>
-    <img src="/images/missiondata/scytheofamon/creepspread_terran.jpg" alt="Terran Creep Spread">
-    <p>Zerg Creep Spread:</p>
-    <img src="/images/missiondata/scytheofamon/creepspread_zerg.jpg" alt="Zerg Creep Spread">
-    <p>A video is below:</p>
+    <h2 id="idRace">识别敌方种族</h2>
+    <p>在《星际争霸 II》合作模式中，识别敌方种族、进而判断敌方部队组合十分重要，这能让你有效克制任务中的进攻波次。在其他任务中，有菌毯意味着敌方是异虫；没有菌毯则意味着敌方可能是星灵或人类。“埃蒙之镰”是游戏中唯一能仅凭菌毯分布准确识别敌方种族的任务。按 Alt + T 查看菌毯分布，你会看到以下三种图案之一。</p>
+    <p>星灵菌毯分布：</p>
+    <img src="/images/missiondata/scytheofamon/creepspread_protoss.jpg" alt="星灵菌毯分布">
+    <p>人类菌毯分布：</p>
+    <img src="/images/missiondata/scytheofamon/creepspread_terran.jpg" alt="人类菌毯分布">
+    <p>异虫菌毯分布：</p>
+    <img src="/images/missiondata/scytheofamon/creepspread_zerg.jpg" alt="异虫菌毯分布">
+    <p>演示视频如下：</p>
     <iframe width="475" height="268" src="https://www.youtube.com/embed/9g-vLQou8-w" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <h2 id="sliverGrowth">Void Sliver Growth</h2>
-        <p>Every time a Void Sliver is destroyed, further reinforcements are added to the remaining Void Slivers. Additionally, all other remaining Void Slivers gain 2000 max shields, and their shields refreshed to full. This makes the other slivers more difficult to destroy. The reinforcement growth of each Sliver is shown below.</p>
-    <p>All units present will be Void units and will spawn from the Void Rifts around the Sliver before moving into position. These units can be Dominated and Reclaimed, but cannot be Mind-Controlled by Dark Archons.</p>
-    <p>Sliver 1:</p>
+    <h2 id="sliverGrowth">虚空裂片成长</h2>
+        <p>每摧毁一个虚空裂片，剩余虚空裂片都会获得更多增援。此外，所有其他虚空裂片的护盾上限增加 2000，并立即恢复全部护盾，因此会变得更难摧毁。各裂片的增援成长如下。</p>
+    <p>出现的所有单位都是虚空单位，它们会从裂片周围的虚空裂隙中生成，再移动到各自位置。这些单位可以被支配和回收，但无法被黑暗执政官精神控制。</p>
+    <p>裂片 1：</p>
     <div class='sliver'>
-        <div id="sliver1Div" class='sliverDiv'><img id ='sliver1Pic' src=' /images/missiondata/scytheofamon/sliver1-0.jpg' alt='Sliver 1'></div>
+        <div id="sliver1Div" class='sliverDiv'><img id ='sliver1Pic' src=' /images/missiondata/scytheofamon/sliver1-0.jpg' alt='裂片 1'></div>
             <div class = 'sliverMinimap'>
                 <form action='#'>
-                    <label><input type='radio' name='sliver1States' value='0' checked>0 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver1States' value='1'>1 Sliver Destroyed</label><br>
-                    <label><input type='radio' name='sliver1States' value='2'>2 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver1States' value='3'>3 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver1States' value='4'>4 Slivers Destroyed</label><br>
+                    <label><input type='radio' name='sliver1States' value='0' checked>已摧毁 0 个裂片</label><br>
+                    <label><input type='radio' name='sliver1States' value='1'>已摧毁 1 个裂片</label><br>
+                    <label><input type='radio' name='sliver1States' value='2'>已摧毁 2 个裂片</label><br>
+                    <label><input type='radio' name='sliver1States' value='3'>已摧毁 3 个裂片</label><br>
+                    <label><input type='radio' name='sliver1States' value='4'>已摧毁 4 个裂片</label><br>
                 </form>
                 <br><br>
-                <div><img src='/images/missiondata/scytheofamon/sliver1minimap.jpg' alt='Base Minimap'></div>
+                <div><img src='/images/missiondata/scytheofamon/sliver1minimap.jpg' alt='基地小地图'></div>
             </div>
     </div>
-    <p>Sliver 2:</p>
+    <p>裂片 2：</p>
     <div class='sliver'>
-        <div id="sliver2Div"  class='sliverDiv'><img id ='sliver2Pic' src=' /images/missiondata/scytheofamon/sliver2-0.jpg' alt='Sliver 2'></div>
+        <div id="sliver2Div"  class='sliverDiv'><img id ='sliver2Pic' src=' /images/missiondata/scytheofamon/sliver2-0.jpg' alt='裂片 2'></div>
             <div class = 'sliverMinimap'>
                 <form action='#'>
-                    <label><input type='radio' name='sliver2States' value='0' checked>0 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver2States' value='1'>1 Sliver Destroyed</label><br>
-                    <label><input type='radio' name='sliver2States' value='2'>2 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver2States' value='3'>3 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver2States' value='4'>4 Slivers Destroyed</label><br>
+                    <label><input type='radio' name='sliver2States' value='0' checked>已摧毁 0 个裂片</label><br>
+                    <label><input type='radio' name='sliver2States' value='1'>已摧毁 1 个裂片</label><br>
+                    <label><input type='radio' name='sliver2States' value='2'>已摧毁 2 个裂片</label><br>
+                    <label><input type='radio' name='sliver2States' value='3'>已摧毁 3 个裂片</label><br>
+                    <label><input type='radio' name='sliver2States' value='4'>已摧毁 4 个裂片</label><br>
                 </form>
                 <br><br>
-                <div><img src='/images/missiondata/scytheofamon/sliver2minimap.jpg' alt='Base Minimap'></div>
+                <div><img src='/images/missiondata/scytheofamon/sliver2minimap.jpg' alt='基地小地图'></div>
             </div>
     </div>
-    <p>Sliver 3:</p>
+    <p>裂片 3：</p>
     <div class='sliver'>
-        <div id="sliver3Div"  class='sliverDiv'><img id ='sliver3Pic' src=' /images/missiondata/scytheofamon/sliver3-0.jpg' alt='Sliver 3'></div>
+        <div id="sliver3Div"  class='sliverDiv'><img id ='sliver3Pic' src=' /images/missiondata/scytheofamon/sliver3-0.jpg' alt='裂片 3'></div>
             <div class = 'sliverMinimap'>
                 <form action='#'>
-                    <label><input type='radio' name='sliver3States' value='0' checked>0 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver3States' value='1'>1 Sliver Destroyed</label><br>
-                    <label><input type='radio' name='sliver3States' value='2'>2 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver3States' value='3'>3 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver3States' value='4'>4 Slivers Destroyed</label><br>
+                    <label><input type='radio' name='sliver3States' value='0' checked>已摧毁 0 个裂片</label><br>
+                    <label><input type='radio' name='sliver3States' value='1'>已摧毁 1 个裂片</label><br>
+                    <label><input type='radio' name='sliver3States' value='2'>已摧毁 2 个裂片</label><br>
+                    <label><input type='radio' name='sliver3States' value='3'>已摧毁 3 个裂片</label><br>
+                    <label><input type='radio' name='sliver3States' value='4'>已摧毁 4 个裂片</label><br>
                 </form>
                 <br><br>
-                <div><img src='/images/missiondata/scytheofamon/sliver3minimap.jpg' alt='Base Minimap'></div>
+                <div><img src='/images/missiondata/scytheofamon/sliver3minimap.jpg' alt='基地小地图'></div>
             </div>
     </div>
-    <p>Sliver 4:</p>
+    <p>裂片 4：</p>
     <div class='sliver'>
-        <div id="sliver4Div"  class='sliverDiv'><img id ='sliver4Pic' src=' /images/missiondata/scytheofamon/sliver4-0.jpg' alt='Sliver 4'></div>
+        <div id="sliver4Div"  class='sliverDiv'><img id ='sliver4Pic' src=' /images/missiondata/scytheofamon/sliver4-0.jpg' alt='裂片 4'></div>
             <div class = 'sliverMinimap'>
                 <form action='#'>
-                    <label><input type='radio' name='sliver4States' value='0' checked>0 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver4States' value='1'>1 Sliver Destroyed</label><br>
-                    <label><input type='radio' name='sliver4States' value='2'>2 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver4States' value='3'>3 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver4States' value='4'>4 Slivers Destroyed</label><br>
+                    <label><input type='radio' name='sliver4States' value='0' checked>已摧毁 0 个裂片</label><br>
+                    <label><input type='radio' name='sliver4States' value='1'>已摧毁 1 个裂片</label><br>
+                    <label><input type='radio' name='sliver4States' value='2'>已摧毁 2 个裂片</label><br>
+                    <label><input type='radio' name='sliver4States' value='3'>已摧毁 3 个裂片</label><br>
+                    <label><input type='radio' name='sliver4States' value='4'>已摧毁 4 个裂片</label><br>
                 </form>
                 <br><br>
-                <div><img src='/images/missiondata/scytheofamon/sliver4minimap.jpg' alt='Base Minimap'></div>
+                <div><img src='/images/missiondata/scytheofamon/sliver4minimap.jpg' alt='基地小地图'></div>
             </div>
     </div>
-    <p>Sliver 5:</p>
+    <p>裂片 5：</p>
     <div class='sliver'>
-        <div id="sliver5Div"  class='sliverDiv'><img id ='sliver5Pic' src=' /images/missiondata/scytheofamon/sliver5-0.jpg' alt='Sliver 5'></div>
+        <div id="sliver5Div"  class='sliverDiv'><img id ='sliver5Pic' src=' /images/missiondata/scytheofamon/sliver5-0.jpg' alt='裂片 5'></div>
             <div class = 'sliverMinimap'>
                 <form action='#'>
-                    <label><input type='radio' name='sliver5States' value='0' checked>0 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver5States' value='1'>1 Sliver Destroyed</label><br>
-                    <label><input type='radio' name='sliver5States' value='2'>2 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver5States' value='3'>3 Slivers Destroyed</label><br>
-                    <label><input type='radio' name='sliver5States' value='4'>4 Slivers Destroyed</label><br>
+                    <label><input type='radio' name='sliver5States' value='0' checked>已摧毁 0 个裂片</label><br>
+                    <label><input type='radio' name='sliver5States' value='1'>已摧毁 1 个裂片</label><br>
+                    <label><input type='radio' name='sliver5States' value='2'>已摧毁 2 个裂片</label><br>
+                    <label><input type='radio' name='sliver5States' value='3'>已摧毁 3 个裂片</label><br>
+                    <label><input type='radio' name='sliver5States' value='4'>已摧毁 4 个裂片</label><br>
                 </form>
                 <br><br>
-                <div><img src='/images/missiondata/scytheofamon/sliver5minimap.jpg' alt='Base Minimap'></div>
+                <div><img src='/images/missiondata/scytheofamon/sliver5minimap.jpg' alt='基地小地图'></div>
             </div>
     </div>
     <script>
@@ -379,48 +379,48 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             newImg.attr('id', 'sliver5Pic');
         })
     </script>
-    <h2 id="sliverAbilities">Void Sliver Abilities</h2>
-    <p>The Void Slivers will cast various abilities as they are attacked. The first Void Sliver will have no abilities. Subsequent Void Slivers will each have a random ability added from the list below. Therefore, Slivers #4 and #5 will have all abilities.</p>
-    <p>The list of abilities are below:</p>
+    <h2 id="sliverAbilities">虚空裂片技能</h2>
+    <p>虚空裂片受到攻击时会施放各种技能。第一个虚空裂片没有技能，后续每个虚空裂片都会从下表中随机新增一种技能。因此，裂片 #4 和 #5 会拥有全部技能。</p>
+    <p>技能列表如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Ability</th>
-                <th>Description</th>
-                <th>Cooldown</th>
+                <th>技能</th>
+                <th>说明</th>
+                <th>冷却时间</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Shockwave</td>
-                <td>Casts an Area of Effect within 11 range of the Void Sliver with a chargeup time of 3 seconds, stunning all units within its range for 2 seconds.</td>
-                <td>14 seconds</td>
+                <td>震荡波</td>
+                <td>在虚空裂片周围 11 射程内施放范围效果，蓄力 3 秒后使范围内所有单位昏迷 2 秒。</td>
+                <td>14 秒</td>
             </tr>
             <tr>
-                <td>Death Grip</td>
-                <td>Creates a Death Grip Crystal within 16 range of the Void Sliver. Void Slivers #4 and #5 will spawn 2 Death Grip Crystals instead of 1 if they have the ability.  Death Grip Crystals disable a set of units whose HP + Shields are less than 800*, and destroys them after 10 seconds unless the crystal is destroyed.</td>
-                <td>60 seconds</td>
+                <td>死亡之握</td>
+                <td>在虚空裂片周围 16 射程内生成一枚死亡之握水晶。若虚空裂片 #4 和 #5 拥有此技能，会生成 2 枚而非 1 枚死亡之握水晶。死亡之握水晶会禁用一组生命值与护盾值之和低于 800* 的单位，并在 10 秒后将其摧毁，除非水晶先被摧毁。</td>
+                <td>60 秒</td>
             </tr>
             <tr>
-                <td>Unstable Energy</td>
-                <td>Deals 100 damage in an area within 18 range of the Void Sliver after 4 seconds.</td>
-                <td>20 seconds</td>
+                <td>不稳定能量</td>
+                <td>造成 100 点范围伤害，作用区域位于虚空裂片周围 18 射程内，效果在 4 秒后触发。</td>
+                <td>20 秒</td>
             </tr>
         </tbody>
     </table>
-    <p>* The Death Grip Crystal target selection code picks a unit and adds its vitality to a pool for counting. If the total vitality in the pool is less than 800, the Death Grip Crystal will pick another target, repeating until the pool goes above 800 vitality. Therefore, it is possible for Death Grip Crystals to capture units that are greater than 800 HP.</p>
-    <h2 id="bonus">Completing the Bonus Objective</h2>
+    <p>* 死亡之握水晶的目标选择代码会选取一个单位，并将其生命值与护盾值之和加入计数池。如果池中总值低于 800，死亡之握水晶会继续选择目标，直至总值超过 800。因此，死亡之握水晶可能捕获生命值超过 800 的单位。</p>
+    <h2 id="bonus">完成奖励目标</h2>
     <div id="objectiveImages">
-        <img src="/images/missiondata/scytheofamon/warpprism.jpg" alt="Warp Prism">
-        <img src="/images/missiondata/scytheofamon/warpprism.jpg" alt="Warp Prism">
-        <img src="/images/missiondata/scytheofamon/warpprism.jpg" alt="Warp Prism">
+        <img src="/images/missiondata/scytheofamon/warpprism.jpg" alt="折跃棱镜">
+        <img src="/images/missiondata/scytheofamon/warpprism.jpg" alt="折跃棱镜">
+        <img src="/images/missiondata/scytheofamon/warpprism.jpg" alt="折跃棱镜">
     </div>
     <div id="globalRaceSelect">
-        <p>Change all base analysis pictures to race:</p>
+        <p>将所有基地分析图片切换为以下种族：</p>
         <form action="#">
-            <input type="radio" name="globalRace" value="protoss" checked>Protoss<br>
-            <input type="radio" name="globalRace" value="terran">Terran<br>
-            <input type="radio" name="globalRace" value="zerg">Zerg<br>
+            <input type="radio" name="globalRace" value="protoss" checked>星灵<br>
+            <input type="radio" name="globalRace" value="terran">人类<br>
+            <input type="radio" name="globalRace" value="zerg">异虫<br>
         </form>
         <script>
             $("input[name='globalRace']").change(function(){
@@ -434,52 +434,52 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             })
         </script>
     </div>
-    <p>The bonus objective requires you to escort a Warp Prism as it attempts to evacuate people. The stopping points of these prisms are within enemy bases. The bases that will be encountered, in the order of the stopping points (assuming the objective doesn't get shot down) is shown below.</p>
-    <p>Stop Point 1:</p>
-    <div class='switcher'><div class='long' id='bonusbase1longdiv'><img id ='bonusbase1long' src=' /images/missiondata/scytheofamon/bonusbase1long_protoss.jpg' alt='bonusbase1long Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='bonusbase1long' value='protoss' checked>Protoss</label><br><label><input type='radio' name='bonusbase1long' value='terran'>Terran</label><br><label><input type='radio' name='bonusbase1long' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/scytheofamon/bonusbase1longminimap.jpg' alt='bonusbase1long Minimap'></div></div></div><script>$("input[name='bonusbase1long']").change(function(){var race= $(this).val();var oldImg = $('#bonusbase1long');var img = new Image();img.src = '/images/missiondata/scytheofamon/bonusbase1long_'+ race + '.jpg';var newImg = $(img).hide();$('#bonusbase1longdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'bonusbase1long');return false;});var imgList=[];imgList.push('/images/missiondata/scytheofamon/bonusbase1long_protoss.jpg');imgList.push('/images/missiondata/scytheofamon/bonusbase1long_terran.jpg');imgList.push('/images/missiondata/scytheofamon/bonusbase1long_zerg.jpg');preload(imgList);</script>    <p>Stop Point 2:</p>
-    <div class='switcher'><div class='basePic' id='bonusbase2div'><img id ='bonusbase2' src=' /images/missiondata/scytheofamon/bonusbase2_protoss.jpg' alt='bonusbase2 Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='bonusbase2' value='protoss' checked>Protoss</label><br><label><input type='radio' name='bonusbase2' value='terran'>Terran</label><br><label><input type='radio' name='bonusbase2' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/scytheofamon/bonusbase2minimap.jpg' alt='bonusbase2 Minimap'></div></div></div><script>$("input[name='bonusbase2']").change(function(){var race= $(this).val();var oldImg = $('#bonusbase2');var img = new Image();img.src = '/images/missiondata/scytheofamon/bonusbase2_'+ race + '.jpg';var newImg = $(img).hide();$('#bonusbase2div').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'bonusbase2');return false;});var imgList=[];imgList.push('/images/missiondata/scytheofamon/bonusbase2_protoss.jpg');imgList.push('/images/missiondata/scytheofamon/bonusbase2_terran.jpg');imgList.push('/images/missiondata/scytheofamon/bonusbase2_zerg.jpg');preload(imgList);</script>    <p>Stop Point 3:</p>
-    <div class='switcher'><div class='long' id='bonusbase3longdiv'><img id ='bonusbase3long' src=' /images/missiondata/scytheofamon/bonusbase3long_protoss.jpg' alt='bonusbase3long Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='bonusbase3long' value='protoss' checked>Protoss</label><br><label><input type='radio' name='bonusbase3long' value='terran'>Terran</label><br><label><input type='radio' name='bonusbase3long' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/scytheofamon/bonusbase3longminimap.jpg' alt='bonusbase3long Minimap'></div></div></div><script>$("input[name='bonusbase3long']").change(function(){var race= $(this).val();var oldImg = $('#bonusbase3long');var img = new Image();img.src = '/images/missiondata/scytheofamon/bonusbase3long_'+ race + '.jpg';var newImg = $(img).hide();$('#bonusbase3longdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'bonusbase3long');return false;});var imgList=[];imgList.push('/images/missiondata/scytheofamon/bonusbase3long_protoss.jpg');imgList.push('/images/missiondata/scytheofamon/bonusbase3long_terran.jpg');imgList.push('/images/missiondata/scytheofamon/bonusbase3long_zerg.jpg');preload(imgList);</script>    <p>It is also important to note that each stopping point will feature a difference race of enemy units. The race will not match the race of the Attack Waves on this map. However, based on the race of the Attack Waves, you can tell what race of enemy units will be present in each of the three Stopping Points above as follows:</p>
+    <p>奖励目标要求你护送一艘试图撤离平民的折跃棱镜。这些棱镜的停靠点位于敌方基地内。假设目标没有被击落，按停靠顺序会遇到以下基地。</p>
+    <p>停靠点 1：</p>
+    <div class='switcher'><div class='long' id='bonusbase1longdiv'><img id ='bonusbase1long' src=' /images/missiondata/scytheofamon/bonusbase1long_protoss.jpg' alt='bonusbase1long Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='bonusbase1long' value='protoss' checked>Protoss</label><br><label><input type='radio' name='bonusbase1long' value='terran'>Terran</label><br><label><input type='radio' name='bonusbase1long' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/scytheofamon/bonusbase1longminimap.jpg' alt='bonusbase1long Minimap'></div></div></div><script>$("input[name='bonusbase1long']").change(function(){var race= $(this).val();var oldImg = $('#bonusbase1long');var img = new Image();img.src = '/images/missiondata/scytheofamon/bonusbase1long_'+ race + '.jpg';var newImg = $(img).hide();$('#bonusbase1longdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'bonusbase1long');return false;});var imgList=[];imgList.push('/images/missiondata/scytheofamon/bonusbase1long_protoss.jpg');imgList.push('/images/missiondata/scytheofamon/bonusbase1long_terran.jpg');imgList.push('/images/missiondata/scytheofamon/bonusbase1long_zerg.jpg');preload(imgList);</script>    <p>停靠点 2：</p>
+    <div class='switcher'><div class='basePic' id='bonusbase2div'><img id ='bonusbase2' src=' /images/missiondata/scytheofamon/bonusbase2_protoss.jpg' alt='bonusbase2 Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='bonusbase2' value='protoss' checked>Protoss</label><br><label><input type='radio' name='bonusbase2' value='terran'>Terran</label><br><label><input type='radio' name='bonusbase2' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/scytheofamon/bonusbase2minimap.jpg' alt='bonusbase2 Minimap'></div></div></div><script>$("input[name='bonusbase2']").change(function(){var race= $(this).val();var oldImg = $('#bonusbase2');var img = new Image();img.src = '/images/missiondata/scytheofamon/bonusbase2_'+ race + '.jpg';var newImg = $(img).hide();$('#bonusbase2div').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'bonusbase2');return false;});var imgList=[];imgList.push('/images/missiondata/scytheofamon/bonusbase2_protoss.jpg');imgList.push('/images/missiondata/scytheofamon/bonusbase2_terran.jpg');imgList.push('/images/missiondata/scytheofamon/bonusbase2_zerg.jpg');preload(imgList);</script>    <p>停靠点 3：</p>
+    <div class='switcher'><div class='long' id='bonusbase3longdiv'><img id ='bonusbase3long' src=' /images/missiondata/scytheofamon/bonusbase3long_protoss.jpg' alt='bonusbase3long Picture'></div><div class = 'baseMinimap'><form action='#'><label><input type='radio' name='bonusbase3long' value='protoss' checked>Protoss</label><br><label><input type='radio' name='bonusbase3long' value='terran'>Terran</label><br><label><input type='radio' name='bonusbase3long' value='zerg'>Zerg</label><br></form><br><br><div><img src='/images/missiondata/scytheofamon/bonusbase3longminimap.jpg' alt='bonusbase3long Minimap'></div></div></div><script>$("input[name='bonusbase3long']").change(function(){var race= $(this).val();var oldImg = $('#bonusbase3long');var img = new Image();img.src = '/images/missiondata/scytheofamon/bonusbase3long_'+ race + '.jpg';var newImg = $(img).hide();$('#bonusbase3longdiv').append(img);oldImg.stop(true).fadeOut(500, function() {   $(this).remove();});newImg.fadeIn(500);newImg.attr('id', 'bonusbase3long');return false;});var imgList=[];imgList.push('/images/missiondata/scytheofamon/bonusbase3long_protoss.jpg');imgList.push('/images/missiondata/scytheofamon/bonusbase3long_terran.jpg');imgList.push('/images/missiondata/scytheofamon/bonusbase3long_zerg.jpg');preload(imgList);</script>    <p>还需注意，每个停靠点都会出现不同种族的敌方单位，而且不会与本地图进攻波次的种族完全一致。不过，可以根据进攻波次的种族推断上述三个停靠点各自会出现何种敌人，具体如下：</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Race of attack wave</th>
-                <th>Stop Point 1 Race</th>
-                <th>Stop Point 2 Race</th>
-                <th>Stop Point 3 Race</th>
+                <th>进攻波次种族</th>
+                <th>停靠点 1 种族</th>
+                <th>停靠点 2 种族</th>
+                <th>停靠点 3 种族</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Protoss</td>
-                <td>Zerg</td>
-                <td>Terran</td>
-                <td>Protoss</td>
+                <td>星灵</td>
+                <td>异虫</td>
+                <td>人类</td>
+                <td>星灵</td>
             </tr>
             <tr>
-                <td>Terran</td>
-                <td>Protoss</td>
-                <td>Zerg</td>
-                <td>Terran</td>
+                <td>人类</td>
+                <td>星灵</td>
+                <td>异虫</td>
+                <td>人类</td>
             </tr>
             <tr>
-                <td>Zerg</td>
-                <td>Terran</td>
-                <td>Protoss</td>
-                <td>Zerg</td>
+                <td>异虫</td>
+                <td>人类</td>
+                <td>星灵</td>
+                <td>异虫</td>
             </tr>
         </tbody>
     </table>
-    <p>The first Stopping Point will always be the same area. However, Stopping Points 2 and 3 will be switched, if you destroy Sliver 3 (above) before the objective leaves the first stopping point.</p>
-    <h2 id="timings">Timings</h2>
-    <p>Note: Information on Tech and Strength levels can be found on the <a href="/guides/enemycomps">Enemy Compositions</a> page.</p>
-    <p>The Attack Wave Timings for this mission are:</p>
+    <p>第一个停靠点总是在同一区域。不过，停靠点 2 和 3 的顺序会互换，条件是在奖励目标离开第一个停靠点前摧毁上方的裂片 3。</p>
+    <h2 id="timings">时间点</h2>
+    <p>注意：科技等级与强度等级的说明参见<a href="/guides/enemycomps">敌方部队组合</a>页面。</p>
+    <p>本任务的进攻波次时间为：</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Wave</th>
-                <th>Time</th>
-                <th>Tech Level</th>
-                <th>Strength Level</th>
+                <th>波次</th>
+                <th>时间</th>
+                <th>科技等级</th>
+                <th>强度等级</th>
             </tr>
         </thead>
         <tbody>
@@ -539,13 +539,13 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             </tr>
         </tbody>
     </table>
-    <p>Additionally, some attack waves will also have Hybrids in them. These attack waves, and the number of Hybrids in them is shown below:</p>
+    <p>此外，部分进攻波次还会包含混合体。对应波次及其中的混合体数量如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Wave</th>
-                <th>Minor Hybrid</th>
-                <th>Major Hybrid</th>
+                <th>波次</th>
+                <th>小型混合体</th>
+                <th>大型混合体</th>
             </tr>
         </thead>
         <tbody>
@@ -596,78 +596,76 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             </tr>
         </tbody>
     </table>
-    <p>The types of these Hybrids will depend on the enemy race, as follows:</p>
+    <p>这些混合体的类型取决于敌方种族，具体如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Race</th>
-                <th>Minor Hybrid</th>
-                <th>Major Hybrid</th>
+                <th>种族</th>
+                <th>小型混合体</th>
+                <th>大型混合体</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Protoss</td>
-                <td>Hybrid Destroyer</td>
-                <td>Hybrid Behemoth</td>
+                <td>星灵</td>
+                <td>混合体毁灭者</td>
+                <td>混合体巨兽</td>
             </tr>
             <tr>
-                <td>Terran</td>
-                <td>Hybrid Reaver</td>
-                <td>Hybrid Dominator</td>
+                <td>人类</td>
+                <td>混合体掠夺者</td>
+                <td>混合体支配者</td>
             </tr>
             <tr>
-                <td>Zerg</td>
-                <td>Hybrid Nemesis</td>
-                <td>Hybrid Dominator</td>
+                <td>异虫</td>
+                <td>混合体天罚者</td>
+                <td>混合体支配者</td>
             </tr>
         </tbody>
     </table>
-    <p>The Bonus Objective will move towards a Stopping Point at the following times:</p>
+    <p>奖励目标会在以下时间向停靠点移动：</p>
     <ul>
         <li>7:00</li>
         <li>13:00</li>
         <li>16:00</li>
     </ul>
-    <h2 id="spawnPoints">Spawn Points</h2>
-    <p>Attack Waves spawn from two different sides of the map, each with their own spawn point. Unfortunately, these points are not pathable, and hence, cannot be spawn-camped. However, all attack waves will rally to a Hybrid spawn point. This point <i>can</i> be spawn camped. These spawn points are shown below.</p>
-    <p>Northern Attack Wave:</p>
-    <img src="/images/missiondata/scytheofamon/northernspawnpoint.jpg" alt="Northern Spawn Point">
-    <p>Southern Attack Wave:</p>
-    <img src="/images/missiondata/scytheofamon/southernspawnpoint.jpg" alt="Southern Spawn Point">
-    <h2 id="misTips">Mission Tips</h2>
+    <h2 id="spawnPoints">出生点</h2>
+    <p>进攻波次会从地图两侧生成，各自拥有独立的生成点。遗憾的是，这些位置无法通行，因此不能直接蹲守。不过，所有进攻波次都会前往一处混合体生成点集结，而这个位置<i>可以</i>蹲守。各生成点如下。</p>
+    <p>北侧进攻波次：</p>
+    <img src="/images/missiondata/scytheofamon/northernspawnpoint.jpg" alt="北侧生成点">
+    <p>南侧进攻波次：</p>
+    <img src="/images/missiondata/scytheofamon/southernspawnpoint.jpg" alt="南侧生成点">
+    <h2 id="misTips">任务技巧</h2>
     <ul>
-        <li>Ensure you have adequate troops for later Slivers. Death Grip Crystals can destroy a tiny army instantly.</li>
-        <li>Death Grip Crystals cannot target Heroic units.</li>
-        <li>Death Grip Crystals are considered units, which means they can be targeted by abilities like Snipe and Mind Blast.</li>
-        <li>More skilled players can reverse-clear the mission, starting with the farthest Slivers from the base. This removes those difficult Slivers from play early while they are still weak.</li>
-        <li>It is usually better to clear Sliver 2 and to get access to your expansion early. This is especially useful for commanders that require a strong economy.</li>
+        <li>为后续虚空裂片准备充足部队。死亡之握水晶可以瞬间消灭一支规模很小的军队。</li>
+        <li>死亡之握水晶无法以英雄单位为目标。</li>
+        <li>死亡之握水晶被视为单位，因此可以成为狙击和心灵震爆等技能的目标。</li>
+        <li>熟练玩家可以反向清图，从离基地最远的虚空裂片开始。这样能在那些难缠的裂片尚且较弱时尽早将其移除。</li>
+        <li>通常最好先清除裂片 2，尽早取得分矿。这对于需要强大经济的指挥官尤其有用。</li>
     </ul>
-    <h2 id="comTips">Commander-specific Tips</h2>
+    <h2 id="comTips">指挥官专属技巧</h2>
     <ul>
-        <li><a href="/commanders/abathur">Abathur</a>: Place Toxic Nests on hybrid spawn locations to weaken the attack waves.</li>
-        <li><a href="/commanders/abathur">Abathur</a>: When farming for biomass at the start of the mission, place Toxic Nests near Void Rifts to quickly collect Biomass from Void Rift units.</li>
-        <li><a href="/commanders/alarak">Alarak</a>: Clear the Expansion Sliver first with two photon overcharges.</li>
-        <li><a href="/commanders/artanis">Artanis</a>: Clear the Expansion Sliver first with one Solar Bombardment.</li>
-        <li><a href="/commanders/horner">Han & Horner</a>: Place Mag Mines on hybrid spawn locations to weaken the attack waves.</li>
-        <li><a href="/commanders/karax">Karax</a>: Sneak a probe into the Expansion Sliver location and use photon cannons to destroy it.</li>
-        <li><a href="/commanders/mengsk">Mengsk</a>: Mengsk can speedrun this mission relatively easily by using Bunkers to clear Sliver 4, Nukes to clear Slivers 3 and 5, and Earthsplitters to clear Slivers 1 and 2.</li>
-        <li><a href="/commanders/nova">Nova</a>: The gas at the left of the top expansion can be taken without drawing enemy aggro at the start of the game.</li>
-        <li><a href="/commanders/nova">Nova</a>: If you use Siege Tanks, place Spider Mines on hybrid spawn locations to weaken the attack waves.</li>
-        <li><a href="/commanders/raynor">Raynor</a>: If you use Vultures, place Spider Mines on hybrid spawn locations to weaken the attack waves.</li>
-        <li><a href="/commanders/vorazun">Vorazun</a>: The gas at the left of the top expansion can be taken without drawing enemy aggro at the start of the game.</li>
-        <li><a href="/commanders/vorazun">Vorazun</a>: Place Dark Pylons on each side of the map so you can intercept Attack Waves.</li>
-        <li><a href="/commanders/zeratul">Zeratul</a>: The Void Suppression Crystal can be used to interrupt and disable all Void Sliver abilities.</li>
+        <li><a href="/commanders/abathur">阿巴瑟</a>：在混合体生成位置布置剧毒巢穴，削弱进攻波次。</li>
+        <li><a href="/commanders/abathur">阿巴瑟</a>：任务开始时采集生物质，可在虚空裂隙附近布置剧毒巢穴，快速从裂隙单位身上获取生物质。</li>
+        <li><a href="/commanders/alarak">阿拉纳克</a>：先用两次光子超载清除分矿处的裂片。</li>
+        <li><a href="/commanders/artanis">阿塔尼斯</a>：先用一次太阳能轰炸清除分矿处的裂片。</li>
+        <li><a href="/commanders/horner">汉与霍纳</a>：在混合体生成位置布置磁力地雷，削弱进攻波次。</li>
+        <li><a href="/commanders/karax">凯拉克斯</a>：让探机潜入分矿裂片的位置，再用光子炮将其摧毁。</li>
+        <li><a href="/commanders/mengsk">蒙斯克</a>：蒙斯克可以较轻松地速通本任务：用地堡清除裂片 4，用核弹清除裂片 3 和 5，再用裂地者清除裂片 1 和 2。</li>
+        <li><a href="/commanders/nova">诺娃</a>：游戏开始时，可以采集上方分矿左侧的高能瓦斯而不引起敌军仇恨。</li>
+        <li><a href="/commanders/nova">诺娃</a>：如果使用攻城坦克，请在混合体生成位置布置蜘蛛雷，削弱进攻波次。</li>
+        <li><a href="/commanders/raynor">雷诺</a>：如果使用秃鹫，请在混合体生成位置布置蜘蛛雷，削弱进攻波次。</li>
+        <li><a href="/commanders/vorazun">沃拉尊</a>：游戏开始时，可以采集上方分矿左侧的高能瓦斯而不引起敌军仇恨。</li>
+        <li><a href="/commanders/vorazun">沃拉尊</a>：在地图两侧布置黑暗水晶塔，以便拦截进攻波次。</li>
+        <li><a href="/commanders/zeratul">泽拉图</a>：虚空抑制晶体可以打断并禁用虚空裂片的所有技能。</li>
     </ul>
-<script src="/scripts/nav.js?v=fd4985"></script>
+<script src="/scripts/nav.js"></script>
 </div>
 
 <div id="footer">
-    <p>Note: All data generated on this site is based on Brutal difficulty. Timings, compositions and other elements may differ on easier difficulty levels.</p>
-    <p>CC-BY-NC-SA-4.0. Originally written by Aommaster. This is a fansite not affiliated with StarCraft 2 or Blizzard Entertainment, Inc.</p>
+    <p>注意：本站生成的所有数据均以“残酷”难度为准；在较低难度下，时间、阵容及其他要素可能有所不同。</p>
+    <p>非官方简体中文翻译站，仅供学习与非商业使用。本站无广告，也不收集用户数据。采用 CC BY-NC-SA 4.0 许可。原作者：Aommaster。本站为粉丝站点，与 StarCraft II 或 Blizzard Entertainment 无隶属关系。</p>
 </div>
 
 </body>
 </html>
-
-    

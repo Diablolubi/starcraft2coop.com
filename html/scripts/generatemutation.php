@@ -1,18 +1,18 @@
 <?php
 
 if (!isset($_GET['difficulty'])) {
-    echo("Error!");
+    echo("错误！");
     die();
 }
 
 if (!ctype_digit($_GET['difficulty'])) {
-    echo("Error!");
+    echo("错误！");
     die();
 }
 
 $difficulty = intval($_GET['difficulty']);
 if ($difficulty < 1 || $difficulty > 6) {
-    echo("Error!");
+    echo("错误！");
     die();
 }
 

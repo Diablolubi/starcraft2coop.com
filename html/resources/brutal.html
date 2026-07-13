@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
@@ -9,11 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-    <link rel="stylesheet" href="/styles/global.css?v=70e9bc">
+    <link rel="stylesheet" href="/styles/global.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <title>Starcraft 2 Co-op - Brutal+ Difficulty</title>
-  <meta name="description" content="Starcraft 2 Co-op Brutal+ Difficulty Mutators">
-  <meta name="keywords" content="Starcraft co-op brutal difficulty mutators">
+      <title>《星际争霸 II》合作任务 - 残酷+难度</title>
+  <meta name="description" content="《星际争霸 II》合作任务残酷+难度与突变因子">
+  <meta name="keywords" content="星际争霸 II, 合作任务, 残酷+, 突变因子">
   <link rel="canonical" href="https://starcraft2coop.com/resources/brutal">
   <style>
     #points{
@@ -59,105 +59,105 @@
 <body>
 
 <header id="header">
-    <img src="/images/starcraft2coop.png" alt="Starcraft II Co-op">
+    <img src="/images/starcraft2coop.png" alt="StarCraft II 合作任务">
 </header>
 <script>
 if (document.location.host === 'dev.starcraft2coop.com') {
-    document.write('<div class="construction">THIS IS THE TEST SITE. (<a href="https://starcraft2coop.com">Go to the real site</a>)</div>');
+    document.write('<div class="construction">这里是测试站点。（<a href="https://starcraft2coop.com">前往正式站点</a>）</div>');
 }
 </script>
 <nav id="menu">
 <ul id="topmenu">
-    <li class="normal"><a href="/" title="Home">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>Home</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+    <li class="normal"><a href="/" title="首页">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>首页</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
     </a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-commanders">Commanders</a></li>
-    <li class="highlight"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-resources">Guides</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-missions">Missions</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-about">About</a></li>
-    <li class="normal"><button type="button" id="site-search-button" title="Search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Search</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-commanders">指挥官</a></li>
+    <li class="highlight"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-resources">攻略</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-missions">任务</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-about">关于</a></li>
+    <li class="normal"><button type="button" id="site-search-button" title="搜索">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>搜索</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
         <span class="search-shortcut" aria-hidden="true"></span>
     </button></li>
 </ul>
 <div id="container">
     <div id="commanderList" class="submenu">
-        <a href="/commanders/raynor" class="normal"><img src="/images/commanderportraits/raynorportrait.png" alt="Raynor"></a>
-        <a href="/commanders/kerrigan" class="normal"><img src="/images/commanderportraits/kerriganportrait.png" alt="Kerrigan"></a>
-        <a href="/commanders/artanis" class="normal"><img src="/images/commanderportraits/artanisportrait.png" alt="Artanis"></a>
-        <a href="/commanders/swann" class="normal"><img src="/images/commanderportraits/swannportrait.png" alt="Swann"></a>
-        <a href="/commanders/zagara" class="normal"><img src="/images/commanderportraits/zagaraportrait.png" alt="Zagara"></a>
-        <a href="/commanders/vorazun" class="normal"><img src="/images/commanderportraits/vorazunportrait.png" alt="Vorazun"></a>
-        <a href="/commanders/karax" class="normal"><img src="/images/commanderportraits/karaxportrait.png" alt="Karax"></a>
-        <a href="/commanders/abathur" class="normal"><img src="/images/commanderportraits/abathurportrait.png" alt="Abathur"></a>
-        <a href="/commanders/alarak" class="normal"><img src="/images/commanderportraits/alarakportrait.png" alt="Alarak"></a>
-        <a href="/commanders/nova" class="normal"><img src="/images/commanderportraits/novaportrait.png" alt="Nova"></a>
-        <a href="/commanders/stukov" class="normal"><img src="/images/commanderportraits/stukovportrait.png" alt="Stukov"></a>
-        <a href="/commanders/fenix" class="normal"><img src="/images/commanderportraits/fenixportrait.png" alt="Fenix"></a>
-        <a href="/commanders/dehaka" class="normal"><img src="/images/commanderportraits/dehakaportrait.png" alt="Dehaka"></a>
-        <a href="/commanders/horner" class="normal"><img src="/images/commanderportraits/hornerportrait.png" alt="Han &amp; Horner"></a>
-        <a href="/commanders/tychus" class="normal"><img src="/images/commanderportraits/tychusportrait.png" alt="Tychus"></a>
-        <a href="/commanders/zeratul" class="normal"><img src="/images/commanderportraits/zeratulportrait.png" alt="Zeratul"></a>
-        <a href="/commanders/stetmann" class="normal"><img src="/images/commanderportraits/stetmannportrait.png" alt="Stetmann"></a>
-        <a href="/commanders/mengsk" class="normal"><img src="/images/commanderportraits/mengskportrait.png" alt="Mengsk"></a>
+        <a href="/commanders/raynor" class="normal"><img src="/images/commanderportraits/raynorportrait.png" alt="雷诺"></a>
+        <a href="/commanders/kerrigan" class="normal"><img src="/images/commanderportraits/kerriganportrait.png" alt="凯瑞甘"></a>
+        <a href="/commanders/artanis" class="normal"><img src="/images/commanderportraits/artanisportrait.png" alt="阿塔尼斯"></a>
+        <a href="/commanders/swann" class="normal"><img src="/images/commanderportraits/swannportrait.png" alt="斯旺"></a>
+        <a href="/commanders/zagara" class="normal"><img src="/images/commanderportraits/zagaraportrait.png" alt="扎加拉"></a>
+        <a href="/commanders/vorazun" class="normal"><img src="/images/commanderportraits/vorazunportrait.png" alt="沃拉尊"></a>
+        <a href="/commanders/karax" class="normal"><img src="/images/commanderportraits/karaxportrait.png" alt="凯拉克斯"></a>
+        <a href="/commanders/abathur" class="normal"><img src="/images/commanderportraits/abathurportrait.png" alt="阿巴瑟"></a>
+        <a href="/commanders/alarak" class="normal"><img src="/images/commanderportraits/alarakportrait.png" alt="阿拉纳克"></a>
+        <a href="/commanders/nova" class="normal"><img src="/images/commanderportraits/novaportrait.png" alt="诺娃"></a>
+        <a href="/commanders/stukov" class="normal"><img src="/images/commanderportraits/stukovportrait.png" alt="斯托科夫"></a>
+        <a href="/commanders/fenix" class="normal"><img src="/images/commanderportraits/fenixportrait.png" alt="菲尼克斯"></a>
+        <a href="/commanders/dehaka" class="normal"><img src="/images/commanderportraits/dehakaportrait.png" alt="德哈卡"></a>
+        <a href="/commanders/horner" class="normal"><img src="/images/commanderportraits/hornerportrait.png" alt="汉与霍纳"></a>
+        <a href="/commanders/tychus" class="normal"><img src="/images/commanderportraits/tychusportrait.png" alt="泰凯斯"></a>
+        <a href="/commanders/zeratul" class="normal"><img src="/images/commanderportraits/zeratulportrait.png" alt="泽拉图"></a>
+        <a href="/commanders/stetmann" class="normal"><img src="/images/commanderportraits/stetmannportrait.png" alt="斯台特曼"></a>
+        <a href="/commanders/mengsk" class="normal"><img src="/images/commanderportraits/mengskportrait.png" alt="蒙斯克"></a>
     </div>
     <div id="missionList" class="submenu">
-        <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">Chain of Ascension</div></a>
-        <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">Cradle of Death</div></a>
-        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">Dead of Night</div></a>
-        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">Lock &amp; Load</div></a>
-        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">Malwarfare</div></a>
-        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">Miner Evacuation</div></a>
-        <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">Mist Opportunities</div></a>
-        <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">Oblivion Express</div></a>
-        <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">Part &amp; Parcel</div></a>
-        <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">Rifts to Korhal</div></a>
-        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">Scythe of Amon</div></a>
-        <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">Temple of the Past</div></a>
-        <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">The Vermillion Problem</div></a>
-        <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">Void Launch</div></a>
-        <a href="/missions/voidthrashing" class="normal"><div class="mapImg mapImg-voidthrashing">Void Thrashing</div></a>
+        <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">飞升之链</div></a>
+        <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">死亡摇篮</div></a>
+        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">亡者之夜</div></a>
+        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">天锁</div></a>
+        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">恶意代码</div></a>
+        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">疏散矿工</div></a>
+        <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">机会渺茫</div></a>
+        <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">湮灭快车</div></a>
+        <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">聚铁成兵</div></a>
+        <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">克哈裂痕</div></a>
+        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">埃蒙之镰</div></a>
+        <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">往日神庙</div></a>
+        <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">熔火危机</div></a>
+        <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">虚空降临</div></a>
+        <a href="/missions/voidthrashing" class="normal"><div class="mapImg mapImg-voidthrashing">虚空撕裂</div></a>
     </div>
     <div id="resources" class="submenu">
         <div class="submenu-with-sections"><div class="submenu-section">
-            <strong>Resources:</strong>
+            <strong>资料：</strong>
             <ul>
-                <li class="normal"><a href="/mutators/">Mutators</a></li>
-                <li class="normal"><a href="/resources/weeklymutations">Weekly&nbsp;Mutations</a></li>
-                <li class="highlight"><a href="/resources/brutal">Brutal+</a></li>
-                <li class="normal"><a href="/units/">Unit&nbsp;Stats</a></li>
+                <li class="normal"><a href="/mutators/">突变因子</a></li>
+                <li class="normal"><a href="/resources/weeklymutations">每周突变</a></li>
+                <li class="highlight"><a href="/resources/brutal">残酷+</a></li>
+                <li class="normal"><a href="/units/">单位数据</a></li>
             </ul>
         </div><div class="submenu-section">
-            <strong>Guides:</strong>
+            <strong>攻略：</strong>
             <ul>
-                <li class="normal"><a href="/guides/buildordertheory">Build&nbsp;Order&nbsp;Theory</a></li>
-                <li class="normal"><a href="/guides/enemycomps">Enemy&nbsp;Compositions</a></li>
-                <li class="normal"><a href="/guides/generaltips">General&nbsp;Tips</a></li>
-                <li class="normal"><a href="/guides/newplayer">New&nbsp;Players</a></li>
-                <li class="normal"><a href="/guides/youtube">Youtube</a></li>
+                <li class="normal"><a href="/guides/buildordertheory">建造顺序理论</a></li>
+                <li class="normal"><a href="/guides/enemycomps">敌方阵容</a></li>
+                <li class="normal"><a href="/guides/generaltips">通用技巧</a></li>
+                <li class="normal"><a href="/guides/newplayer">新手指南</a></li>
+                <li class="normal"><a href="/guides/youtube">YouTube</a></li>
             </ul>
         </div><div class="submenu-section">
-            <strong>Miscellaneous:</strong>
+            <strong>其他：</strong>
             <ul>
-                <li class="normal"><a href="/resources/achievements">Achievements</a></li>
-                <li class="normal"><a href="/resources/ailogic">AI&nbsp;Logic</a></li>
-                <li class="normal"><a href="/resources/bugs">Bugs</a></li>
-                <li class="normal"><a href="/resources/deathprevention">Death&nbsp;Prevent&nbsp;Effects</a></li>
-                <li class="normal"><a href="/resources/eastereggs">Easter&nbsp;Eggs</a></li>
-                <li class="normal"><a href="/resources/levels">Levels</a></li>
-                <li class="normal"><a href="/resources/patchdata">Patch&nbsp;Data</a></li>
-                <li class="normal"><a href="/tools/downloads">Downloads</a></li>
-                <li class="normal"><a href="/tools/masterybreakpoints">Mastery&nbsp;Breakpoints</a></li>
+                <li class="normal"><a href="/resources/achievements">成就</a></li>
+                <li class="normal"><a href="/resources/ailogic">人工智能逻辑</a></li>
+                <li class="normal"><a href="/resources/bugs">错误</a></li>
+                <li class="normal"><a href="/resources/deathprevention">免死效果</a></li>
+                <li class="normal"><a href="/resources/eastereggs">彩蛋</a></li>
+                <li class="normal"><a href="/resources/levels">等级</a></li>
+                <li class="normal"><a href="/resources/patchdata">补丁数据</a></li>
+                <li class="normal"><a href="/tools/downloads">下载</a></li>
+                <li class="normal"><a href="/tools/masterybreakpoints">精通阈值</a></li>
             </ul>
         </div></div>
     </div>
     <div id="about" class="submenu">
         <ul>
             <!--<li class="normal"><a href="/about/contact">Contact</a></li>-->
-            <li class="normal"><a href="/about/faq">FAQ</a></li>
-            <li class="normal"><a href="/about/links">Links</a></li>
+            <li class="normal"><a href="/about/faq">常见问题</a></li>
+            <li class="normal"><a href="/about/links">相关链接</a></li>
             <!--li class="normal"><a href="https://www.youtube.com/c/Starcraft2Coop" rel="nofollow">Youtube</a></li-->
-            <li class="normal"><a href="/about/stats">Misc. Stats</a></li>
+            <li class="normal"><a href="/about/stats">杂项统计</a></li>
         </ul>
     </div>
     <!--<div id="imgs">
@@ -208,40 +208,40 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         }
     })(jQuery);
 </script>
-<script src="/scripts/search.js?v=3646f5" defer></script>
+<script src="/scripts/search.js" defer></script>
 <div id="content">
-        <h1>Brutal+ Difficulty: Mutation Cost Brackets and Templates</h1>
-        <p>Brutal+ is considered an "Extended Difficulty". That is, missions will take place on the regular Brutal difficulty. However, in addition to the standard mission mechanics, a certain number of random <a href="mutators">mutators</a> are added to your game. You may queue into random queue on Brutal+ difficulty, as long as the commander you are queueing in with is at Level 15. For Brutal+2 and higher, you will require a person in your party to play.</p>
-    <p>To learn more about how Brutal+ difficulty mutators are selected, you may watch the video below. The video goes over what Mutation Templates are, how the different mutator possibility counts are calculated mathematically and then how the weightings are rebalanced to be more in line with Blizzard's design intent.</p>
+        <h1>残酷+难度：突变因子点数区间与模板</h1>
+        <p>残酷+属于“扩展难度”：任务仍以普通残酷难度进行，但除标准任务机制外，还会加入一定数量的随机<a href="mutators">突变因子</a>。只要所用指挥官达到 15 级，就能加入残酷+的随机匹配；残酷+2 及以上难度则必须与队伍中的另一名玩家组队游玩。</p>
+    <p>如需了解残酷+如何选择突变因子，可观看下方视频。视频会介绍突变任务模板、如何用数学方法计算不同的突变因子组合数量，以及如何重新平衡权重，使其更接近暴雪的设计意图。</p>
     <iframe width="475" height="268" src="https://www.youtube.com/embed/9jfWuM215_c" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <p>The number of mutators that will be selected is between two and four. Each difficulty level is assigned a total number of points, which corresponds to the total mutation difficulty. The point/mutator brackets for each difficulty level is shown below. Note that the mutator counts for generated Brutal+ mutations are not evenly distributed. You are more likely to see 2 and 3-mutator games than 4 mutator games, as is Blizzard's desgin intent. For more information, please watch the video above.</p>
+    <p>系统会选取 2 至 4 个突变因子。每个难度等级都有一个总点数区间，对应突变任务的整体难度。各难度的点数与突变因子数量区间如下。注意，残酷+生成的突变因子数量并非均匀分布；按暴雪的设计意图，出现 2 个或 3 个突变因子的概率高于 4 个。详情请观看上方视频。</p>
     <table id="limits" class="centered">
         <thead>
             <tr>
-                <th>Difficulty</th>
-                <th>Min. Points</th>
-                <th>Max. Points</th>
-                <th>Min. Mutators</th>
-                <th>Max. Mutators</th>
+                <th>难度</th>
+                <th>最低点数</th>
+                <th>最高点数</th>
+                <th>最少突变因子</th>
+                <th>最多突变因子</th>
             </tr>
         </thead>
         <tbody>
             <tr><td>1</td><td>4</td><td>6</td><td>2</td><td>3</td></tr><tr><td>2</td><td>7</td><td>8</td><td>2</td><td>3</td></tr><tr><td>3</td><td>9</td><td>10</td><td>2</td><td>3</td></tr><tr><td>4</td><td>11</td><td>12</td><td>2</td><td>3</td></tr><tr><td>5</td><td>15</td><td>16</td><td>2</td><td>4</td></tr><tr><td>6</td><td>19</td><td>20</td><td>2</td><td>4</td></tr>        </tbody>
     </table>
-    <p>Each mutator in the game is assigned a point cost that corresponds to its difficulty level. For more information on mutators, you may check the <a href="mutators">Mutators page</a>, which contains a lot of mutator-specific information such as their internal mechanics and also provide some commander-specific tips on how to handle them. The list of mutators and their associated point costs are shown below.</p>
-    <p>Click the column headers to sort Ascending/Descending by that column. Click a row to toggle that row and calculate the total cost of a selected set of mutators.</p>
+    <p>游戏中的每个突变因子都按其难度分配了点数。更多信息可参阅<a href="mutators">突变因子页面</a>，其中包含内部机制和各指挥官应对技巧等详细内容。突变因子及其点数如下。</p>
+    <p>点击列标题可按该列升序或降序排列。点击某行可切换选中状态，并计算所选突变因子的总点数。</p>
 
     <table id="points">
         <thead>
             <tr>
-                <th id="col1">Mutator <div class="sort"><img src="/images/asc.png" alt="Sorted Ascending"><img src="/images/desc.png" alt="Sorted Descending" style="display:none"></div></th>
-                <th id="col2">Cost <div class="sort"><img src="/images/asc.png" alt="Sorted Ascending" style="display:none"><img src="/images/desc.png" alt="Sorted Descending" style="display:none"></div></th>
+                <th id="col1">突变因子 <div class="sort"><img src="/images/asc.png" alt="按升序排列" data-sort-direction="asc"><img src="/images/desc.png" alt="按降序排列" data-sort-direction="desc" style="display:none"></div></th>
+                <th id="col2">点数 <div class="sort"><img src="/images/asc.png" alt="按升序排列" data-sort-direction="asc" style="display:none"><img src="/images/desc.png" alt="按降序排列" data-sort-direction="desc" style="display:none"></div></th>
             </tr>
         </thead>
         <tbody>
-            <tr><td>Aggressive Deployment</td><td>3</td></tr><tr><td>Alien Incubation</td><td>2</td></tr><tr><td>Avenger</td><td>5</td></tr><tr><td>Barrier</td><td>2</td></tr><tr><td>Black Death</td><td>7</td></tr><tr><td>Blizzard</td><td>4</td></tr><tr><td>Boom Bots</td><td>10</td></tr><tr><td>Concussive Attacks</td><td>1</td></tr><tr><td>Darkness</td><td>2</td></tr><tr><td>Diffusion</td><td>3</td></tr><tr><td>Double Edged</td><td>3</td></tr><tr><td>Eminent Domain</td><td>1</td></tr><tr><td>Evasive Maneuvers</td><td>1</td></tr><tr><td>Fatal Attraction</td><td>3</td></tr><tr><td>Fear</td><td>3</td></tr><tr><td>Going Nuclear</td><td>3</td></tr><tr><td>Hardened Will</td><td>2</td></tr><tr><td>Heroes from the Storm</td><td>10</td></tr><tr><td>Inspiration</td><td>2</td></tr><tr><td>Just Die</td><td>7</td></tr><tr><td>Kill Bots</td><td>6</td></tr><tr><td>Laser Drill</td><td>2</td></tr><tr><td>Lava Burst</td><td>3</td></tr><tr><td>Life Leech</td><td>1</td></tr><tr><td>Long Range</td><td>2</td></tr><tr><td>Mag-nificent</td><td>4</td></tr><tr><td>Micro Transactions</td><td>5</td></tr><tr><td>Mineral Shields</td><td>2</td></tr><tr><td>Minesweeper</td><td>6</td></tr><tr><td>Missile Command</td><td>3</td></tr><tr><td>Moment of Silence</td><td>2</td></tr><tr><td>Mutually Assured Destruction</td><td>5</td></tr><tr><td>Orbital Strike</td><td>1</td></tr><tr><td>Outbreak</td><td>3</td></tr><tr><td>Photon Overload</td><td>1</td></tr><tr><td>Polarity</td><td>7</td></tr><tr><td>Power Overwhelming</td><td>5</td></tr><tr><td>Propagators</td><td>8</td></tr><tr><td>Purifier Beam</td><td>2</td></tr><tr><td>Scorched Earth</td><td>2</td></tr><tr><td>Self Destruction</td><td>3</td></tr><tr><td>Shortsighted</td><td>1</td></tr><tr><td>Slim Pickings</td><td>5</td></tr><tr><td>Speed Freaks</td><td>2</td></tr><tr><td>Temporal Field</td><td>1</td></tr><tr><td>Time Warp</td><td>1</td></tr><tr><td>Transmutation</td><td>7</td></tr><tr><td>Twister</td><td>2</td></tr><tr><td>Void Reanimators</td><td>5</td></tr><tr><td>Void Rifts</td><td>10</td></tr><tr><td>Walking Infested</td><td>2</td></tr><tr><td>We Move Unseen</td><td>3</td></tr>        </tbody>
+            <tr><td>传播者</td><td>8</td></tr><tr><td>光子超载</td><td>1</td></tr><tr><td>净化光束</td><td>2</td></tr><tr><td>势不可挡</td><td>5</td></tr><tr><td>双刃剑</td><td>3</td></tr><tr><td>坚定意志</td><td>2</td></tr><tr><td>复仇者</td><td>5</td></tr><tr><td>导弹指挥</td><td>3</td></tr><tr><td>就是死不了</td><td>7</td></tr><tr><td>屏障</td><td>2</td></tr><tr><td>异形孵化</td><td>2</td></tr><tr><td>强势部署</td><td>3</td></tr><tr><td>强占地盘</td><td>1</td></tr><tr><td>微交易</td><td>5</td></tr><tr><td>恐惧</td><td>3</td></tr><tr><td>感染爆发</td><td>3</td></tr><tr><td>扩散</td><td>3</td></tr><tr><td>扫雷专家</td><td>6</td></tr><tr><td>时空力场</td><td>1</td></tr><tr><td>时间扭曲</td><td>1</td></tr><tr><td>暴风雪</td><td>4</td></tr><tr><td>杀戮机器人</td><td>6</td></tr><tr><td>极性互换</td><td>7</td></tr><tr><td>极速狂飙</td><td>2</td></tr><tr><td>核弹来袭</td><td>3</td></tr><tr><td>激光钻机</td><td>2</td></tr><tr><td>焦土政策</td><td>2</td></tr><tr><td>熔岩爆裂</td><td>3</td></tr><tr><td>爆破机器人</td><td>10</td></tr><tr><td>生命汲取</td><td>1</td></tr><tr><td>相互保证毁灭</td><td>5</td></tr><tr><td>矿物护盾</td><td>2</td></tr><tr><td>磁力惊人</td><td>4</td></tr><tr><td>自毁程序</td><td>3</td></tr><tr><td>致命吸引</td><td>3</td></tr><tr><td>虚空复生者</td><td>5</td></tr><tr><td>虚空裂隙</td><td>10</td></tr><tr><td>行尸走肉</td><td>2</td></tr><tr><td>资源短缺</td><td>5</td></tr><tr><td>超远射程</td><td>2</td></tr><tr><td>轨道轰炸</td><td>1</td></tr><tr><td>转化</td><td>7</td></tr><tr><td>近视眼</td><td>1</td></tr><tr><td>闪避机动</td><td>1</td></tr><tr><td>隐形行动</td><td>3</td></tr><tr><td>震荡攻击</td><td>1</td></tr><tr><td>静默时刻</td><td>2</td></tr><tr><td>风暴英雄</td><td>10</td></tr><tr><td>黑暗</td><td>2</td></tr><tr><td>黑死病</td><td>7</td></tr><tr><td>鼓舞人心</td><td>2</td></tr><tr><td>龙卷风</td><td>2</td></tr>        </tbody>
     </table>
-    <div id="totalCost">Total Cost</div>
+    <div id="totalCost">总点数</div>
     <script>
         $('#points th').click(function(){
             var table = $(this).parents('table').eq(0)
@@ -251,7 +251,7 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             $(this).find('img').each(function(){
                if($(this).is(':visible')){
                    iconVisible = true;
-                   if ($(this).attr('alt')=="Sorted Ascending"){
+                   if ($(this).data('sort-direction')==="asc"){
                        sortedAsc = true;
                    }
                }
@@ -273,7 +273,7 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                 var totalCost = 0;
                 $('.toggled').each(function(){
                     totalCost += parseInt($(this).find('td:nth-child(2)').text());
-                    $("#totalCost").text("Total Cost: " + totalCost);
+                    $("#totalCost").text("总点数：" + totalCost);
                 })
                 $("#totalCost").css('display', 'inline');
             }
@@ -311,21 +311,21 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         }
         function getCellValue(row, index){ return $(row).children('td').eq(index).text() }
     </script>
-    <p>You may use the demo below to simulate random mutator templates at different difficulty levels. Simply select your intended Brutal+ difficulty level and press Go. The algorithm used very closely matches the algorithm that the Starcraft II engine uses to generate the mutations, with a few optimizations to speed up the code, given that this is coded in PHP and not Galaxy. When a mutation set has been provided, you will also be given the total point cost of all the mutators in your set.</p>
+    <p>可使用下方演示模拟不同难度的随机突变任务模板。选择所需的残酷+难度并点击“生成”即可。该算法非常接近《星际争霸 II》引擎生成突变任务时所用的算法；由于这里使用 PHP 而非 Galaxy 编写，仅做了少量性能优化。生成突变因子组合后，还会显示其总点数。</p>
     <form action='#'>
         <select id="difficultyLevel">
-            <option value="1">Brutal+1</option>
-            <option value="2">Brutal+2</option>
-            <option value="3">Brutal+3</option>
-            <option value="4">Brutal+4</option>
-            <option value="5">Brutal+5</option>
-            <option value="6">Brutal+6</option>
+            <option value="1">残酷+1</option>
+            <option value="2">残酷+2</option>
+            <option value="3">残酷+3</option>
+            <option value="4">残酷+4</option>
+            <option value="5">残酷+5</option>
+            <option value="6">残酷+6</option>
         </select>
-        <input type="submit" value="Go" id="generateMutation">
+        <input type="submit" value="生成" id="generateMutation">
     </form>
-    <div id="tooltip">tooltip</div>
+    <div id="tooltip">提示</div>
     <div id="mutationBox">
-        <p>Mutators (<span id="cost">0</span> Points):</p>
+        <p>突变因子（<span id="cost">0</span> 点）：</p>
         <div id="randomMutation">
         </div>
     </div>
@@ -334,7 +334,7 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             event.preventDefault();
             $("#cost").text("?");
             $("#randomMutation").empty();
-            $("#randomMutation").append("<p>Loading...</p>");
+            $("#randomMutation").append("<p>正在加载……</p>");
             var difficultyLevel = parseInt($("#difficultyLevel").val());
 
             $.ajax({
@@ -389,7 +389,7 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         }
 
         function generateMutation(template){
-            const mutatorArray = [[],["Concussive Attacks","Eminent Domain","Evasive Maneuvers","Life Leech","Orbital Strike","Photon Overload","Shortsighted","Temporal Field","Time Warp"],["Alien Incubation","Barrier","Darkness","Hardened Will","Inspiration","Laser Drill","Long Range","Mineral Shields","Moment of Silence","Purifier Beam","Scorched Earth","Speed Freaks","Twister","Walking Infested"],["Aggressive Deployment","Diffusion","Double Edged","Fatal Attraction","Fear","Going Nuclear","Lava Burst","Missile Command","Outbreak","Self Destruction","We Move Unseen"],["Blizzard","Mag-nificent"],["Avenger","Micro Transactions","Mutually Assured Destruction","Power Overwhelming","Slim Pickings","Void Reanimators"],["Kill Bots","Minesweeper"],["Black Death","Just Die","Polarity","Transmutation"],["Propagators"],[],["Boom Bots","Heroes from the Storm","Void Rifts"]];
+            const mutatorArray = [[],["\u5149\u5b50\u8d85\u8f7d","\u5f3a\u5360\u5730\u76d8","\u65f6\u7a7a\u529b\u573a","\u65f6\u95f4\u626d\u66f2","\u751f\u547d\u6c72\u53d6","\u8f68\u9053\u8f70\u70b8","\u8fd1\u89c6\u773c","\u95ea\u907f\u673a\u52a8","\u9707\u8361\u653b\u51fb"],["\u51c0\u5316\u5149\u675f","\u575a\u5b9a\u610f\u5fd7","\u5c4f\u969c","\u5f02\u5f62\u5b75\u5316","\u6781\u901f\u72c2\u98d9","\u6fc0\u5149\u94bb\u673a","\u7126\u571f\u653f\u7b56","\u77ff\u7269\u62a4\u76fe","\u884c\u5c38\u8d70\u8089","\u8d85\u8fdc\u5c04\u7a0b","\u9759\u9ed8\u65f6\u523b","\u9ed1\u6697","\u9f13\u821e\u4eba\u5fc3","\u9f99\u5377\u98ce"],["\u53cc\u5203\u5251","\u5bfc\u5f39\u6307\u6325","\u5f3a\u52bf\u90e8\u7f72","\u6050\u60e7","\u611f\u67d3\u7206\u53d1","\u6269\u6563","\u6838\u5f39\u6765\u88ad","\u7194\u5ca9\u7206\u88c2","\u81ea\u6bc1\u7a0b\u5e8f","\u81f4\u547d\u5438\u5f15","\u9690\u5f62\u884c\u52a8"],["\u66b4\u98ce\u96ea","\u78c1\u529b\u60ca\u4eba"],["\u52bf\u4e0d\u53ef\u6321","\u590d\u4ec7\u8005","\u5fae\u4ea4\u6613","\u76f8\u4e92\u4fdd\u8bc1\u6bc1\u706d","\u865a\u7a7a\u590d\u751f\u8005","\u8d44\u6e90\u77ed\u7f3a"],["\u626b\u96f7\u4e13\u5bb6","\u6740\u622e\u673a\u5668\u4eba"],["\u5c31\u662f\u6b7b\u4e0d\u4e86","\u6781\u6027\u4e92\u6362","\u8f6c\u5316","\u9ed1\u6b7b\u75c5"],["\u4f20\u64ad\u8005"],[],["\u7206\u7834\u673a\u5668\u4eba","\u865a\u7a7a\u88c2\u9699","\u98ce\u66b4\u82f1\u96c4"]];
             var cost = 0;
             var costString = '';
             $("#randomMutation").empty();
@@ -423,15 +423,13 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         }
 
     </script>
-<script src="/scripts/tooltips.js?v=6bc4c4"></script>
+<script src="/scripts/tooltips.js"></script>
 </div>
 
 <div id="footer">
-    <p>Note: All data generated on this site is based on Brutal difficulty. Timings, compositions and other elements may differ on easier difficulty levels.</p>
-    <p>CC-BY-NC-SA-4.0. Originally written by Aommaster. This is a fansite not affiliated with StarCraft 2 or Blizzard Entertainment, Inc.</p>
+    <p>注意：本站生成的所有数据均以“残酷”难度为准；在较低难度下，时间、阵容及其他要素可能有所不同。</p>
+    <p>非官方简体中文翻译站，仅供学习与非商业使用。本站无广告，也不收集用户数据。采用 CC BY-NC-SA 4.0 许可。原作者：Aommaster。本站为粉丝站点，与 StarCraft II 或 Blizzard Entertainment 无隶属关系。</p>
 </div>
 
 </body>
 </html>
-
-    

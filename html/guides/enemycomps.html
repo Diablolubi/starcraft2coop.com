@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-    <link rel="stylesheet" href="/styles/global.css?v=70e9bc">
+    <link rel="stylesheet" href="/styles/global.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <title>Starcraft 2 Co-op - Enemy Compositions</title>
-  <meta name="description" content="Starcraft 2 Co-op Enemy Compositions. Learn about Hybrids and the different units in Amon's attack waves.">
-  <meta name="keywords" content="Starcraft co-op guides enemy compositions">
+      <title>StarCraft II 合作任务——敌方阵容</title>
+  <meta name="description" content="StarCraft II 合作任务敌方阵容指南：了解混合体以及埃蒙进攻波中的各类单位。">
+  <meta name="keywords" content="星际争霸 合作任务 指南 敌方阵容">
   <link rel="canonical" href="https://starcraft2coop.com/guides/enemycomps">
-  <script src="/scripts/preload.js?v=0264fe"></script>
+  <script src="/scripts/preload.js"></script>
   <style>
     @media (min-width: 701px){
         #compDiv{
@@ -85,105 +85,105 @@
 <body>
 
 <header id="header">
-    <img src="/images/starcraft2coop.png" alt="Starcraft II Co-op">
+    <img src="/images/starcraft2coop.png" alt="StarCraft II 合作任务">
 </header>
 <script>
 if (document.location.host === 'dev.starcraft2coop.com') {
-    document.write('<div class="construction">THIS IS THE TEST SITE. (<a href="https://starcraft2coop.com">Go to the real site</a>)</div>');
+    document.write('<div class="construction">这里是测试站点。（<a href="https://starcraft2coop.com">前往正式站点</a>）</div>');
 }
 </script>
 <nav id="menu">
 <ul id="topmenu">
-    <li class="normal"><a href="/" title="Home">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>Home</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+    <li class="normal"><a href="/" title="首页">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>首页</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
     </a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-commanders">Commanders</a></li>
-    <li class="highlight"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-resources">Guides</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-missions">Missions</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-about">About</a></li>
-    <li class="normal"><button type="button" id="site-search-button" title="Search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Search</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-commanders">指挥官</a></li>
+    <li class="highlight"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-resources">攻略</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-missions">任务</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-about">关于</a></li>
+    <li class="normal"><button type="button" id="site-search-button" title="搜索">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>搜索</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
         <span class="search-shortcut" aria-hidden="true"></span>
     </button></li>
 </ul>
 <div id="container">
     <div id="commanderList" class="submenu">
-        <a href="/commanders/raynor" class="normal"><img src="/images/commanderportraits/raynorportrait.png" alt="Raynor"></a>
-        <a href="/commanders/kerrigan" class="normal"><img src="/images/commanderportraits/kerriganportrait.png" alt="Kerrigan"></a>
-        <a href="/commanders/artanis" class="normal"><img src="/images/commanderportraits/artanisportrait.png" alt="Artanis"></a>
-        <a href="/commanders/swann" class="normal"><img src="/images/commanderportraits/swannportrait.png" alt="Swann"></a>
-        <a href="/commanders/zagara" class="normal"><img src="/images/commanderportraits/zagaraportrait.png" alt="Zagara"></a>
-        <a href="/commanders/vorazun" class="normal"><img src="/images/commanderportraits/vorazunportrait.png" alt="Vorazun"></a>
-        <a href="/commanders/karax" class="normal"><img src="/images/commanderportraits/karaxportrait.png" alt="Karax"></a>
-        <a href="/commanders/abathur" class="normal"><img src="/images/commanderportraits/abathurportrait.png" alt="Abathur"></a>
-        <a href="/commanders/alarak" class="normal"><img src="/images/commanderportraits/alarakportrait.png" alt="Alarak"></a>
-        <a href="/commanders/nova" class="normal"><img src="/images/commanderportraits/novaportrait.png" alt="Nova"></a>
-        <a href="/commanders/stukov" class="normal"><img src="/images/commanderportraits/stukovportrait.png" alt="Stukov"></a>
-        <a href="/commanders/fenix" class="normal"><img src="/images/commanderportraits/fenixportrait.png" alt="Fenix"></a>
-        <a href="/commanders/dehaka" class="normal"><img src="/images/commanderportraits/dehakaportrait.png" alt="Dehaka"></a>
-        <a href="/commanders/horner" class="normal"><img src="/images/commanderportraits/hornerportrait.png" alt="Han &amp; Horner"></a>
-        <a href="/commanders/tychus" class="normal"><img src="/images/commanderportraits/tychusportrait.png" alt="Tychus"></a>
-        <a href="/commanders/zeratul" class="normal"><img src="/images/commanderportraits/zeratulportrait.png" alt="Zeratul"></a>
-        <a href="/commanders/stetmann" class="normal"><img src="/images/commanderportraits/stetmannportrait.png" alt="Stetmann"></a>
-        <a href="/commanders/mengsk" class="normal"><img src="/images/commanderportraits/mengskportrait.png" alt="Mengsk"></a>
+        <a href="/commanders/raynor" class="normal"><img src="/images/commanderportraits/raynorportrait.png" alt="雷诺"></a>
+        <a href="/commanders/kerrigan" class="normal"><img src="/images/commanderportraits/kerriganportrait.png" alt="凯瑞甘"></a>
+        <a href="/commanders/artanis" class="normal"><img src="/images/commanderportraits/artanisportrait.png" alt="阿塔尼斯"></a>
+        <a href="/commanders/swann" class="normal"><img src="/images/commanderportraits/swannportrait.png" alt="斯旺"></a>
+        <a href="/commanders/zagara" class="normal"><img src="/images/commanderportraits/zagaraportrait.png" alt="扎加拉"></a>
+        <a href="/commanders/vorazun" class="normal"><img src="/images/commanderportraits/vorazunportrait.png" alt="沃拉尊"></a>
+        <a href="/commanders/karax" class="normal"><img src="/images/commanderportraits/karaxportrait.png" alt="凯拉克斯"></a>
+        <a href="/commanders/abathur" class="normal"><img src="/images/commanderportraits/abathurportrait.png" alt="阿巴瑟"></a>
+        <a href="/commanders/alarak" class="normal"><img src="/images/commanderportraits/alarakportrait.png" alt="阿拉纳克"></a>
+        <a href="/commanders/nova" class="normal"><img src="/images/commanderportraits/novaportrait.png" alt="诺娃"></a>
+        <a href="/commanders/stukov" class="normal"><img src="/images/commanderportraits/stukovportrait.png" alt="斯托科夫"></a>
+        <a href="/commanders/fenix" class="normal"><img src="/images/commanderportraits/fenixportrait.png" alt="菲尼克斯"></a>
+        <a href="/commanders/dehaka" class="normal"><img src="/images/commanderportraits/dehakaportrait.png" alt="德哈卡"></a>
+        <a href="/commanders/horner" class="normal"><img src="/images/commanderportraits/hornerportrait.png" alt="汉与霍纳"></a>
+        <a href="/commanders/tychus" class="normal"><img src="/images/commanderportraits/tychusportrait.png" alt="泰凯斯"></a>
+        <a href="/commanders/zeratul" class="normal"><img src="/images/commanderportraits/zeratulportrait.png" alt="泽拉图"></a>
+        <a href="/commanders/stetmann" class="normal"><img src="/images/commanderportraits/stetmannportrait.png" alt="斯台特曼"></a>
+        <a href="/commanders/mengsk" class="normal"><img src="/images/commanderportraits/mengskportrait.png" alt="蒙斯克"></a>
     </div>
     <div id="missionList" class="submenu">
-        <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">Chain of Ascension</div></a>
-        <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">Cradle of Death</div></a>
-        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">Dead of Night</div></a>
-        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">Lock &amp; Load</div></a>
-        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">Malwarfare</div></a>
-        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">Miner Evacuation</div></a>
-        <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">Mist Opportunities</div></a>
-        <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">Oblivion Express</div></a>
-        <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">Part &amp; Parcel</div></a>
-        <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">Rifts to Korhal</div></a>
-        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">Scythe of Amon</div></a>
-        <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">Temple of the Past</div></a>
-        <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">The Vermillion Problem</div></a>
-        <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">Void Launch</div></a>
-        <a href="/missions/voidthrashing" class="normal"><div class="mapImg mapImg-voidthrashing">Void Thrashing</div></a>
+        <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">飞升之链</div></a>
+        <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">死亡摇篮</div></a>
+        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">亡者之夜</div></a>
+        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">天锁</div></a>
+        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">恶意代码</div></a>
+        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">疏散矿工</div></a>
+        <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">机会渺茫</div></a>
+        <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">湮灭快车</div></a>
+        <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">聚铁成兵</div></a>
+        <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">克哈裂痕</div></a>
+        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">埃蒙之镰</div></a>
+        <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">往日神庙</div></a>
+        <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">熔火危机</div></a>
+        <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">虚空降临</div></a>
+        <a href="/missions/voidthrashing" class="normal"><div class="mapImg mapImg-voidthrashing">虚空撕裂</div></a>
     </div>
     <div id="resources" class="submenu">
         <div class="submenu-with-sections"><div class="submenu-section">
-            <strong>Resources:</strong>
+            <strong>资料：</strong>
             <ul>
-                <li class="normal"><a href="/mutators/">Mutators</a></li>
-                <li class="normal"><a href="/resources/weeklymutations">Weekly&nbsp;Mutations</a></li>
-                <li class="normal"><a href="/resources/brutal">Brutal+</a></li>
-                <li class="normal"><a href="/units/">Unit&nbsp;Stats</a></li>
+                <li class="normal"><a href="/mutators/">突变因子</a></li>
+                <li class="normal"><a href="/resources/weeklymutations">每周突变</a></li>
+                <li class="normal"><a href="/resources/brutal">残酷+</a></li>
+                <li class="normal"><a href="/units/">单位数据</a></li>
             </ul>
         </div><div class="submenu-section">
-            <strong>Guides:</strong>
+            <strong>攻略：</strong>
             <ul>
-                <li class="normal"><a href="/guides/buildordertheory">Build&nbsp;Order&nbsp;Theory</a></li>
-                <li class="highlight"><a href="/guides/enemycomps">Enemy&nbsp;Compositions</a></li>
-                <li class="normal"><a href="/guides/generaltips">General&nbsp;Tips</a></li>
-                <li class="normal"><a href="/guides/newplayer">New&nbsp;Players</a></li>
-                <li class="normal"><a href="/guides/youtube">Youtube</a></li>
+                <li class="normal"><a href="/guides/buildordertheory">建造顺序理论</a></li>
+                <li class="highlight"><a href="/guides/enemycomps">敌方阵容</a></li>
+                <li class="normal"><a href="/guides/generaltips">通用技巧</a></li>
+                <li class="normal"><a href="/guides/newplayer">新手指南</a></li>
+                <li class="normal"><a href="/guides/youtube">YouTube</a></li>
             </ul>
         </div><div class="submenu-section">
-            <strong>Miscellaneous:</strong>
+            <strong>其他：</strong>
             <ul>
-                <li class="normal"><a href="/resources/achievements">Achievements</a></li>
-                <li class="normal"><a href="/resources/ailogic">AI&nbsp;Logic</a></li>
-                <li class="normal"><a href="/resources/bugs">Bugs</a></li>
-                <li class="normal"><a href="/resources/deathprevention">Death&nbsp;Prevent&nbsp;Effects</a></li>
-                <li class="normal"><a href="/resources/eastereggs">Easter&nbsp;Eggs</a></li>
-                <li class="normal"><a href="/resources/levels">Levels</a></li>
-                <li class="normal"><a href="/resources/patchdata">Patch&nbsp;Data</a></li>
-                <li class="normal"><a href="/tools/downloads">Downloads</a></li>
-                <li class="normal"><a href="/tools/masterybreakpoints">Mastery&nbsp;Breakpoints</a></li>
+                <li class="normal"><a href="/resources/achievements">成就</a></li>
+                <li class="normal"><a href="/resources/ailogic">人工智能逻辑</a></li>
+                <li class="normal"><a href="/resources/bugs">错误</a></li>
+                <li class="normal"><a href="/resources/deathprevention">免死效果</a></li>
+                <li class="normal"><a href="/resources/eastereggs">彩蛋</a></li>
+                <li class="normal"><a href="/resources/levels">等级</a></li>
+                <li class="normal"><a href="/resources/patchdata">补丁数据</a></li>
+                <li class="normal"><a href="/tools/downloads">下载</a></li>
+                <li class="normal"><a href="/tools/masterybreakpoints">精通阈值</a></li>
             </ul>
         </div></div>
     </div>
     <div id="about" class="submenu">
         <ul>
             <!--<li class="normal"><a href="/about/contact">Contact</a></li>-->
-            <li class="normal"><a href="/about/faq">FAQ</a></li>
-            <li class="normal"><a href="/about/links">Links</a></li>
+            <li class="normal"><a href="/about/faq">常见问题</a></li>
+            <li class="normal"><a href="/about/links">相关链接</a></li>
             <!--li class="normal"><a href="https://www.youtube.com/c/Starcraft2Coop" rel="nofollow">Youtube</a></li-->
-            <li class="normal"><a href="/about/stats">Misc. Stats</a></li>
+            <li class="normal"><a href="/about/stats">杂项统计</a></li>
         </ul>
     </div>
     <!--<div id="imgs">
@@ -234,144 +234,144 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         }
     })(jQuery);
 </script>
-<script src="/scripts/search.js?v=3646f5" defer></script>
+<script src="/scripts/search.js" defer></script>
 <div id="content">
-        <h1>Enemy Compositions: Units in Attack Waves and Hybrid Data</h1>
+        <h1>敌方阵容：进攻波单位与混合体数据</h1>
         <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#genNotes">General Notes</a></p>
-        <p><a href="#race">Enemy Race</a></p>
-        <p><a href="#composition">Composition</a></p>
-        <p><a href="#tech">Tech Level</a></p>
-        <p><a href="#strength">Strength Level</a></p>
-        <p><a href="#limits">Unit Limits</a></p>
-        <p><a href="#demo">Putting it All Together</a></p>
-        <p><a href="#upgrades">Upgrades</a></p>
-        <p><a href="#hybrids">Hybrids</a></p>
+        <h2>本页目录</h2>
+        <p><a href="#genNotes">概要说明</a></p>
+        <p><a href="#race">敌方种族</a></p>
+        <p><a href="#composition">阵容</a></p>
+        <p><a href="#tech">科技等级</a></p>
+        <p><a href="#strength">强度等级</a></p>
+        <p><a href="#limits">单位数量限制</a></p>
+        <p><a href="#demo">综合演示</a></p>
+        <p><a href="#upgrades">升级</a></p>
+        <p><a href="#hybrids">混合体</a></p>
     </div>
-    <h2 id="genNotes">General Notes</h2>
-    <p>Throughout any mission, you will need to deal with attack waves that target your base, expansion or your objective. There are a number of factors that affect the type and quantity of units in these attack waves. These factors are:</p>
+    <h2 id="genNotes">概要说明</h2>
+    <p>在任何任务中，你都需要应对袭击基地、分矿或任务目标的进攻波。进攻波的单位类型和数量受以下因素影响：</p>
     <ul>
-        <li><b>Enemy Race</b>: This is the most obvious one. Units in attack waves will belong to the race of the enemy you're facing against. The only exception to this rule is on <a href="/missions/cradleofdeath">Cradle of Death</a>, where your truck will get attacked by units of a second race as well.</li>
-        <li><b>Composition</b>: Enemy races have certain pre-determined compositions at the start of the game. The composition will determine which units you will see in attack waves. For example, if you are dealing with a Bio Terran composition, you won't see Battlecruisers in attack waves.</li>
-        <li><b>Tech Level</b>: The Tech Level determines the highest tier of units you will face. For example, attack waves of low Tech Levels might only include Zerglings. However, higher Tech Levels may include Brood Lords. Tech Levels range from 1-7.</li>
-        <li><b>Strength Level</b>: The Strength level affects the number of units in the attack wave. Strength Levels range from 1-7.</li>
+        <li><b>敌方种族</b>：这是最直观的因素。进攻波中的单位属于当前敌人的种族。唯一的例外是<a href="/missions/cradleofdeath">死亡摇篮</a>：你的卡车还会受到第二个种族单位的攻击。</li>
+        <li><b>阵容</b>：游戏开始时会确定一种预设阵容，它决定进攻波中出现哪些单位。例如，人类生化阵容的进攻波中不会出现战列巡航舰。</li>
+        <li><b>科技等级</b>：决定你会遇到的最高阶单位。低科技等级的进攻波可能只有跳虫，而较高等级可能出现巢虫领主。范围为 1-7。</li>
+        <li><b>强度等级</b>：影响进攻波中的单位数量，范围为 1-7。</li>
     </ul>
-    <p>As the mission progresses, both, Tech Level and Strength Level of the attack waves increase, making the attack waves strong and more potent.</p>
-    <h2 id="race">Enemy Race</h2>
-    <p>You will face enemies of a single race (Protoss, Terran or Zerg) in a mission (barring <a href="/missions/cradleofdeath">Cradle of Death</a>). This race is predetermined at the start of the game. To determine if the enemy race is Zerg, press Alt + T. If the enemy race is Zerg, you will see creep spread on the minimap.</p>
-    <p>On <a href="/missions/cradleofdeath">Cradle of Death</a>, only attack waves that attack your truck will contain units of a second race.</p>
-    <h2 id="composition">Composition</h2>
-    <p>The Protoss compositions you can face (along with the strongest tech units) are as follows:</p>
+    <p>随着任务推进，进攻波的科技等级与强度等级都会提升，使其越来越强大。</p>
+    <h2 id="race">敌方种族</h2>
+    <p>除<a href="/missions/cradleofdeath">死亡摇篮</a>外，每个任务中你只会面对一个种族（星灵、人类或异虫）。该种族在游戏开始时便已确定。要判断敌方是否为异虫，可按 Alt + T；若是异虫，小地图上会显示菌毯蔓延。</p>
+    <p>在<a href="/missions/cradleofdeath">死亡摇篮</a>中，只有袭击卡车的进攻波会包含第二个种族的单位。</p>
+    <h2 id="composition">阵容</h2>
+    <p>可能遇到的星灵阵容（及其最高科技单位）如下：</p>
     <ul>
-        <li><b>Gateway:</b> A composition that relies mostly on gateway units for AoE's and damage.</li>
-        <li><b>RoboColossus:</b> Uses Colossi for AoE's and sentries for controlling the enemy's army.</li>
-        <li><b>RoboReaver:</b> A high damage composition made to destroy enemy bases quickly.</li>
-        <li><b>SkytossCarrier:</b> A carrier-based composition to overwhelm enemy forces.</li>
-        <li><b>SkytossTempest:</b> An air-siege build effective at taking down enemy structures.</li>
-        <li><b>Techy:</b> Contains a mix of Protoss units from different tech buildings.</li>
-        <li><b>Classic Protoss Ground:</b> Ground Protoss composition based on units in Brood War.</li>
-        <li><b>Classic Protoss Air:</b> Air Protoss composition based on units in Brood War.</li>
+        <li><b>传送门：</b>主要依靠传送门单位造成范围伤害和输出。</li>
+        <li><b>机械巨像：</b>使用巨像造成范围伤害，并由哨兵控制敌军。</li>
+        <li><b>机械金甲虫：</b>高伤害阵容，旨在快速摧毁敌方基地。</li>
+        <li><b>黄金舰队航母：</b>以航空母舰为核心，凭借数量压倒敌军。</li>
+        <li><b>黄金舰队风暴战舰：</b>空中攻城阵容，擅长摧毁敌方建筑。</li>
+        <li><b>混合科技：</b>混编来自不同科技建筑的星灵单位。</li>
+        <li><b>经典星灵地面：</b>以《母巢之战》单位为基础的星灵地面阵容。</li>
+        <li><b>经典星灵空军：</b>以《母巢之战》单位为基础的星灵空军阵容。</li>
     </ul>
-    <p>The Terran compositions you can face (along with the strongest tech units) are as follows:</p>
+    <p>可能遇到的人类阵容（及其最高科技单位）如下：</p>
     <ul>
-        <li><b>BioMechStar:</b> A build focused on biological units backed up with some factory and air units.</li>
-        <li><b>MechStarport:</b> A Mech Terran build, relying on Factory units.</li>
-        <li><b>ShadowTech:</b> A build which attacks enemies from a distance.</li>
-        <li><b>SkyTerran:</b> An air Terran build, relying on Starport units for damage.</li>
-        <li><b>Classic Terran Bio:</b> Terran composition based on Biological units in Brood War.</li>
-        <li><b>Classic Terran Mech:</b> Terran composition based on Mechanical units in Brood War.</li>
+        <li><b>生化机械空军：</b>以生物单位为主，并辅以工厂与空中单位。</li>
+        <li><b>机械星港：</b>依靠重工厂单位的人类机械化阵容。</li>
+        <li><b>暗影科技：</b>从远距离攻击敌人的阵容。</li>
+        <li><b>人类空军：</b>依靠星港单位输出的空军阵容。</li>
+        <li><b>经典人类生化：</b>以《母巢之战》生物单位为基础的人类阵容。</li>
+        <li><b>经典人类机械：</b>以《母巢之战》机械单位为基础的人类阵容。</li>
     </ul>
-    <p>The Zerg compositions you can face (along with the strongest tech units) are as follows:</p>
+    <p>可能遇到的异虫阵容（及其最高科技单位）如下：</p>
     <ul>
-        <li><b>Ground:</b> Uses Zerg ground units to lay siege to enemy bases.</li>
-        <li><b>MutaLing:</b> A Mutalisk/Zergling-based composition.</li>
-        <li><b>Swarmy:</b> A build that relies on overwhelming the enemy with units.</li>
-        <li><b>Classic Zerg Ground:</b> Ground Zerg composition based on units in Brood War.</li>
-        <li><b>Classic Zerg Air:</b> Air Zerg composition based on units in Brood War.</li>
+        <li><b>地面：</b>使用异虫地面单位围攻敌方基地。</li>
+        <li><b>飞龙跳虫：</b>以异龙和跳虫为核心的阵容。</li>
+        <li><b>虫群：</b>依靠海量单位淹没敌人的阵容。</li>
+        <li><b>经典异虫地面：</b>以《母巢之战》单位为基础的异虫地面阵容。</li>
+        <li><b>经典异虫空军：</b>以《母巢之战》单位为基础的异虫空军阵容。</li>
     </ul>
-    <p>Note that the above names do not appear on the enemy composition indicator in-game. The names used in-game are custom titles used to describe the composition. These titles will be listed in the following section.</p>
-    <h2 id="tech">Tech Level</h2>
-    <div id="tooltip">tooltip</div>
-    <p>The Tech level determines how far up the Tech Tree the enemy is. Higher Tech Levels will result in more Tech Units present in the attack waves. Tech Levels range on a scale from 1-7.</p>
-    <p>Hover over a unit's icon to show its name.</p>
-    <p>The Protoss units in attack waves across Tech levels is shown below:</p>
+    <p>请注意，上述名称不会显示在游戏内的敌方阵容指示器中。游戏会使用自定义标题描述阵容，下一节将列出这些标题。</p>
+    <h2 id="tech">科技等级</h2>
+    <div id="tooltip">提示</div>
+    <p>科技等级决定敌人在科技树上的发展程度。科技等级越高，进攻波中的高科技单位越多。科技等级范围为 1-7。</p>
+    <p>将鼠标悬停在单位图标上即可显示其名称。</p>
+    <p>下表列出了各科技等级下星灵进攻波中的单位：</p>
     <div class="tableContainer">
         <table class="techLevelTable">
             <thead>
                 <tr>
-                    <th>Tech Level</th>
-                    <th><span class="faded">Gateway</span><br>Masters and Machines</th>
-                    <th><span class="faded">RoboColossus</span><br>Towering Walkers</th>
-                    <th><span class="faded">RoboReaver</span><br>Disruptive Artillery</th>
-                    <th><span class="faded">SkytossCarrier</span><br>Hope of the Khalai</th>
-                    <th><span class="faded">SkytossTempest</span><br>Siege of Storms</th>
-                    <th><span class="faded">Techy</span><br>Shadow Disruption</th>
+                    <th>科技等级</th>
+                    <th><span class="faded">传送门</span><br>大师与机械</th>
+                    <th><span class="faded">机械巨像</span><br>高耸行者</th>
+                    <th><span class="faded">机械金甲虫</span><br>毁灭火炮</th>
+                    <th><span class="faded">黄金舰队航母</span><br>卡莱之光</th>
+                    <th><span class="faded">黄金舰队风暴战舰</span><br>风暴围城</th>
+                    <th><span class="faded">混合科技</span><br>暗影破坏</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"></td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"></td>
-                    <td><img src="/images/comps/unitimages/adept.png" alt="Adept"></td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"></td>
-                    <td><img src="/images/comps/unitimages/adept.png" alt="Adept"></td>
-                    <td><img src="/images/comps/unitimages/adept.png" alt="Adept"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"></td>
+                    <td><img src="/images/comps/unitimages/adept.png" alt="使徒"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"></td>
+                    <td><img src="/images/comps/unitimages/adept.png" alt="使徒"></td>
+                    <td><img src="/images/comps/unitimages/adept.png" alt="使徒"></td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"><img src="/images/comps/unitimages/stalker.png" alt="Stalker"></td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"><img src="/images/comps/unitimages/sentry.png" alt="Sentry"></td>
-                    <td><img src="/images/comps/unitimages/adept.png" alt="Adept"><img src="/images/comps/unitimages/sentry.png" alt="Sentry"></td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"><img src="/images/comps/unitimages/scout.png" alt="Scout"></td>
-                    <td><img src="/images/comps/unitimages/adept.png" alt="Adept"><img src="/images/comps/unitimages/phoenix.png" alt="Phoenix"></td>
-                    <td><img src="/images/comps/unitimages/adept.png" alt="Adept"><img src="/images/comps/unitimages/stalker.png" alt="Stalker"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"><img src="/images/comps/unitimages/stalker.png" alt="追猎者"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"><img src="/images/comps/unitimages/sentry.png" alt="哨兵"></td>
+                    <td><img src="/images/comps/unitimages/adept.png" alt="使徒"><img src="/images/comps/unitimages/sentry.png" alt="哨兵"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"><img src="/images/comps/unitimages/scout.png" alt="侦察机"></td>
+                    <td><img src="/images/comps/unitimages/adept.png" alt="使徒"><img src="/images/comps/unitimages/phoenix.png" alt="凤凰"></td>
+                    <td><img src="/images/comps/unitimages/adept.png" alt="使徒"><img src="/images/comps/unitimages/stalker.png" alt="追猎者"></td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"><img src="/images/comps/unitimages/stalker.png" alt="Stalker"><img src="/images/comps/unitimages/hightemplar.png" alt="High Templar"></td>
-                    <td><img src="/images/comps/unitimages/immortal.png" alt="Immortal"><img src="/images/comps/unitimages/sentry.png" alt="Sentry"></td>
-                    <td><img src="/images/comps/unitimages/adept.png" alt="Adept"><img src="/images/comps/unitimages/immortal.png" alt="Immortal"></td>
-                    <td><img src="/images/comps/unitimages/stalker.png" alt="Stalker"><img src="/images/comps/unitimages/scout.png" alt="Scout"></td>
-                    <td><img src="/images/comps/unitimages/adept.png" alt="Adept"><img src="/images/comps/unitimages/phoenix.png" alt="Phoenix"></td>
-                    <td><img src="/images/comps/unitimages/adept.png" alt="Adept"><img src="/images/comps/unitimages/stalker.png" alt="Stalker"><img src="/images/comps/unitimages/sentry.png" alt="Sentry"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"><img src="/images/comps/unitimages/stalker.png" alt="追猎者"><img src="/images/comps/unitimages/hightemplar.png" alt="高阶圣堂武士"></td>
+                    <td><img src="/images/comps/unitimages/immortal.png" alt="不朽者"><img src="/images/comps/unitimages/sentry.png" alt="哨兵"></td>
+                    <td><img src="/images/comps/unitimages/adept.png" alt="使徒"><img src="/images/comps/unitimages/immortal.png" alt="不朽者"></td>
+                    <td><img src="/images/comps/unitimages/stalker.png" alt="追猎者"><img src="/images/comps/unitimages/scout.png" alt="侦察机"></td>
+                    <td><img src="/images/comps/unitimages/adept.png" alt="使徒"><img src="/images/comps/unitimages/phoenix.png" alt="凤凰"></td>
+                    <td><img src="/images/comps/unitimages/adept.png" alt="使徒"><img src="/images/comps/unitimages/stalker.png" alt="追猎者"><img src="/images/comps/unitimages/sentry.png" alt="哨兵"></td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td><img src="/images/comps/unitimages/immortal.png" alt="Immortal"><img src="/images/comps/unitimages/stalker.png" alt="Stalker"><img src="/images/comps/unitimages/hightemplar.png" alt="High Templar"></td>
-                    <td><img src="/images/comps/unitimages/immortal.png" alt="Immortal"><img src="/images/comps/unitimages/zealot.png" alt="Zealot"><img src="/images/comps/unitimages/scout.png" alt="Scout"></td>
-                    <td><img src="/images/comps/unitimages/adept.png" alt="Adept"><img src="/images/comps/unitimages/immortal.png" alt="Immortal"><img src="/images/comps/unitimages/scout.png" alt="Scout"></td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"><img src="/images/comps/unitimages/scout.png" alt="Scout"><img src="/images/comps/unitimages/oracle.png" alt="Oracle"></td>
-                    <td><img src="/images/comps/unitimages/stalker.png" alt="Stalker"><img src="/images/comps/unitimages/phoenix.png" alt="Phoenix"><img src="/images/comps/unitimages/oracle.png" alt="Oracle"></td>
-                    <td><img src="/images/comps/unitimages/adept.png" alt="Adept"><img src="/images/comps/unitimages/stalker.png" alt="Stalker"><img src="/images/comps/unitimages/sentry.png" alt="Sentry"><img src="/images/comps/unitimages/darktemplar.png" alt="Dark Templar"></td>
+                    <td><img src="/images/comps/unitimages/immortal.png" alt="不朽者"><img src="/images/comps/unitimages/stalker.png" alt="追猎者"><img src="/images/comps/unitimages/hightemplar.png" alt="高阶圣堂武士"></td>
+                    <td><img src="/images/comps/unitimages/immortal.png" alt="不朽者"><img src="/images/comps/unitimages/zealot.png" alt="狂热者"><img src="/images/comps/unitimages/scout.png" alt="侦察机"></td>
+                    <td><img src="/images/comps/unitimages/adept.png" alt="使徒"><img src="/images/comps/unitimages/immortal.png" alt="不朽者"><img src="/images/comps/unitimages/scout.png" alt="侦察机"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"><img src="/images/comps/unitimages/scout.png" alt="侦察机"><img src="/images/comps/unitimages/oracle.png" alt="先知"></td>
+                    <td><img src="/images/comps/unitimages/stalker.png" alt="追猎者"><img src="/images/comps/unitimages/phoenix.png" alt="凤凰"><img src="/images/comps/unitimages/oracle.png" alt="先知"></td>
+                    <td><img src="/images/comps/unitimages/adept.png" alt="使徒"><img src="/images/comps/unitimages/stalker.png" alt="追猎者"><img src="/images/comps/unitimages/sentry.png" alt="哨兵"><img src="/images/comps/unitimages/darktemplar.png" alt="黑暗圣堂武士"></td>
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"><img src="/images/comps/unitimages/stalker.png" alt="Stalker"><img src="/images/comps/unitimages/hightemplar.png" alt="High Templar"><img src="/images/comps/unitimages/archon.png" alt="Archon"></td>
-                    <td><img src="/images/comps/unitimages/sentry.png" alt="Sentry"><img src="/images/comps/unitimages/zealot.png" alt="Zealot"><img src="/images/comps/unitimages/scout.png" alt="Scout"><img src="/images/comps/unitimages/colossus.png" alt="Colossus"></td>
-                    <td><img src="/images/comps/unitimages/adept.png" alt="Adept"><img src="/images/comps/unitimages/sentry.png" alt="Sentry"><img src="/images/comps/unitimages/disruptor.png" alt="Disruptor"><img src="/images/comps/unitimages/reaver.png" alt="Reaver"></td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"><img src="/images/comps/unitimages/voidray.png" alt="Void Ray"></td>
-                    <td><img src="/images/comps/unitimages/adept.png" alt="Adept"><img src="/images/comps/unitimages/voidray.png" alt="Void Ray"></td>
-                    <td><img src="/images/comps/unitimages/adept.png" alt="Adept"><img src="/images/comps/unitimages/phoenix.png" alt="Phoenix"><img src="/images/comps/unitimages/sentry.png" alt="Sentry"><img src="/images/comps/unitimages/darktemplar.png" alt="Dark Templar"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"><img src="/images/comps/unitimages/stalker.png" alt="追猎者"><img src="/images/comps/unitimages/hightemplar.png" alt="高阶圣堂武士"><img src="/images/comps/unitimages/archon.png" alt="执政官"></td>
+                    <td><img src="/images/comps/unitimages/sentry.png" alt="哨兵"><img src="/images/comps/unitimages/zealot.png" alt="狂热者"><img src="/images/comps/unitimages/scout.png" alt="侦察机"><img src="/images/comps/unitimages/colossus.png" alt="巨像"></td>
+                    <td><img src="/images/comps/unitimages/adept.png" alt="使徒"><img src="/images/comps/unitimages/sentry.png" alt="哨兵"><img src="/images/comps/unitimages/disruptor.png" alt="干扰者"><img src="/images/comps/unitimages/reaver.png" alt="金甲虫"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"><img src="/images/comps/unitimages/voidray.png" alt="虚空辉光舰"></td>
+                    <td><img src="/images/comps/unitimages/adept.png" alt="使徒"><img src="/images/comps/unitimages/voidray.png" alt="虚空辉光舰"></td>
+                    <td><img src="/images/comps/unitimages/adept.png" alt="使徒"><img src="/images/comps/unitimages/phoenix.png" alt="凤凰"><img src="/images/comps/unitimages/sentry.png" alt="哨兵"><img src="/images/comps/unitimages/darktemplar.png" alt="黑暗圣堂武士"></td>
                 </tr>
                 <tr>
                     <td>6</td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"><img src="/images/comps/unitimages/stalker.png" alt="Stalker"><img src="/images/comps/unitimages/colossus.png" alt="Colossus"><img src="/images/comps/unitimages/archon.png" alt="Archon"></td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"><img src="/images/comps/unitimages/scout.png" alt="Scout"><img src="/images/comps/unitimages/colossus.png" alt="Colossus"></td>
-                    <td><img src="/images/comps/unitimages/adept.png" alt="Adept"><img src="/images/comps/unitimages/scout.png" alt="Scout"><img src="/images/comps/unitimages/disruptor.png" alt="Disruptor"><img src="/images/comps/unitimages/reaver.png" alt="Reaver"></td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"><img src="/images/comps/unitimages/oracle.png" alt="Oracle"><img src="/images/comps/unitimages/carrier.png" alt="Carrier"></td>
-                    <td><img src="/images/comps/unitimages/adept.png" alt="Adept"><img src="/images/comps/unitimages/oracle.png" alt="Oracle"><img src="/images/comps/unitimages/tempest.png" alt="Tempest"></td>
-                    <td><img src="/images/comps/unitimages/adept.png" alt="Adept"><img src="/images/comps/unitimages/stalker.png" alt="Stalker"><img src="/images/comps/unitimages/sentry.png" alt="Sentry"><img src="/images/comps/unitimages/darktemplar.png" alt="Dark Templar"><img src="/images/comps/unitimages/disruptor.png" alt="Disruptor"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"><img src="/images/comps/unitimages/stalker.png" alt="追猎者"><img src="/images/comps/unitimages/colossus.png" alt="巨像"><img src="/images/comps/unitimages/archon.png" alt="执政官"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"><img src="/images/comps/unitimages/scout.png" alt="侦察机"><img src="/images/comps/unitimages/colossus.png" alt="巨像"></td>
+                    <td><img src="/images/comps/unitimages/adept.png" alt="使徒"><img src="/images/comps/unitimages/scout.png" alt="侦察机"><img src="/images/comps/unitimages/disruptor.png" alt="干扰者"><img src="/images/comps/unitimages/reaver.png" alt="金甲虫"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"><img src="/images/comps/unitimages/oracle.png" alt="先知"><img src="/images/comps/unitimages/carrier.png" alt="航空母舰"></td>
+                    <td><img src="/images/comps/unitimages/adept.png" alt="使徒"><img src="/images/comps/unitimages/oracle.png" alt="先知"><img src="/images/comps/unitimages/tempest.png" alt="风暴战舰"></td>
+                    <td><img src="/images/comps/unitimages/adept.png" alt="使徒"><img src="/images/comps/unitimages/stalker.png" alt="追猎者"><img src="/images/comps/unitimages/sentry.png" alt="哨兵"><img src="/images/comps/unitimages/darktemplar.png" alt="黑暗圣堂武士"><img src="/images/comps/unitimages/disruptor.png" alt="干扰者"></td>
                 </tr>
                 <tr>
                     <td>7</td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"><img src="/images/comps/unitimages/stalker.png" alt="Stalker"><img src="/images/comps/unitimages/colossus.png" alt="Colossus"><img src="/images/comps/unitimages/hightemplar.png" alt="High Templar"><img src="/images/comps/unitimages/immortal.png" alt="Immortal"></td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"><img src="/images/comps/unitimages/sentry.png" alt="Sentry"><img src="/images/comps/unitimages/colossus.png" alt="Colossus"><img src="/images/comps/unitimages/immortal.png" alt="Immortal"></td>
-                    <td><img src="/images/comps/unitimages/sentry.png" alt="Sentry"><img src="/images/comps/unitimages/immortal.png" alt="Immortal"><img src="/images/comps/unitimages/disruptor.png" alt="Disruptor"><img src="/images/comps/unitimages/reaver.png" alt="Reaver"></td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"><img src="/images/comps/unitimages/oracle.png" alt="Oracle"><img src="/images/comps/unitimages/carrier.png" alt="Carrier"><img src="/images/comps/unitimages/voidray.png" alt="Void Ray"></td>
-                    <td><img src="/images/comps/unitimages/adept.png" alt="Adept"><img src="/images/comps/unitimages/oracle.png" alt="Oracle"><img src="/images/comps/unitimages/tempest.png" alt="Tempest"><img src="/images/comps/unitimages/voidray.png" alt="Void Ray"></td>
-                    <td><img src="/images/comps/unitimages/adept.png" alt="Adept"><img src="/images/comps/unitimages/phoenix.png" alt="Phoenix"><img src="/images/comps/unitimages/sentry.png" alt="Sentry"><img src="/images/comps/unitimages/darktemplar.png" alt="Dark Templar"><img src="/images/comps/unitimages/disruptor.png" alt="Disruptor"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"><img src="/images/comps/unitimages/stalker.png" alt="追猎者"><img src="/images/comps/unitimages/colossus.png" alt="巨像"><img src="/images/comps/unitimages/hightemplar.png" alt="高阶圣堂武士"><img src="/images/comps/unitimages/immortal.png" alt="不朽者"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"><img src="/images/comps/unitimages/sentry.png" alt="哨兵"><img src="/images/comps/unitimages/colossus.png" alt="巨像"><img src="/images/comps/unitimages/immortal.png" alt="不朽者"></td>
+                    <td><img src="/images/comps/unitimages/sentry.png" alt="哨兵"><img src="/images/comps/unitimages/immortal.png" alt="不朽者"><img src="/images/comps/unitimages/disruptor.png" alt="干扰者"><img src="/images/comps/unitimages/reaver.png" alt="金甲虫"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"><img src="/images/comps/unitimages/oracle.png" alt="先知"><img src="/images/comps/unitimages/carrier.png" alt="航空母舰"><img src="/images/comps/unitimages/voidray.png" alt="虚空辉光舰"></td>
+                    <td><img src="/images/comps/unitimages/adept.png" alt="使徒"><img src="/images/comps/unitimages/oracle.png" alt="先知"><img src="/images/comps/unitimages/tempest.png" alt="风暴战舰"><img src="/images/comps/unitimages/voidray.png" alt="虚空辉光舰"></td>
+                    <td><img src="/images/comps/unitimages/adept.png" alt="使徒"><img src="/images/comps/unitimages/phoenix.png" alt="凤凰"><img src="/images/comps/unitimages/sentry.png" alt="哨兵"><img src="/images/comps/unitimages/darktemplar.png" alt="黑暗圣堂武士"><img src="/images/comps/unitimages/disruptor.png" alt="干扰者"></td>
                 </tr>
             </tbody>
         </table>
@@ -380,215 +380,110 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         <table class="techLevelTable">
             <thead>
                 <tr>
-                    <th>Tech Level</th>
-                    <th><span class="faded">GroundClassic</span><br>Vanguard of Aiur</th>
-                    <th><span class="faded">AirClassic</span><br>Fleet of the Matriarch</th>
+                    <th>科技等级</th>
+                    <th><span class="faded">经典地面</span><br>艾尔先锋</th>
+                    <th><span class="faded">经典空军</span><br>族母舰队</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"></td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"></td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"><img src="/images/comps/unitimages/dragoon.png" alt="Dragoon"></td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"><img src="/images/comps/unitimages/scout.png" alt="Scout"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"><img src="/images/comps/unitimages/dragoon.png" alt="龙骑士"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"><img src="/images/comps/unitimages/scout.png" alt="侦察机"></td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"><img src="/images/comps/unitimages/dragoon.png" alt="Dragoon"><img src="/images/comps/unitimages/hightemplar.png" alt="High Templar"></td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"><img src="/images/comps/unitimages/scout.png" alt="Scout"><img src="/images/comps/unitimages/corsair.png" alt="Corsair"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"><img src="/images/comps/unitimages/dragoon.png" alt="龙骑士"><img src="/images/comps/unitimages/hightemplar.png" alt="高阶圣堂武士"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"><img src="/images/comps/unitimages/scout.png" alt="侦察机"><img src="/images/comps/unitimages/corsair.png" alt="海盗船"></td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td><img src="/images/comps/unitimages/dragoon.png" alt="Dragoon"><img src="/images/comps/unitimages/reaver.png" alt="Reaver"></td>
-                    <td><img src="/images/comps/unitimages/scout.png" alt="Scout"><img src="/images/comps/unitimages/corsair.png" alt="Corsair"></td>
+                    <td><img src="/images/comps/unitimages/dragoon.png" alt="龙骑士"><img src="/images/comps/unitimages/reaver.png" alt="金甲虫"></td>
+                    <td><img src="/images/comps/unitimages/scout.png" alt="侦察机"><img src="/images/comps/unitimages/corsair.png" alt="海盗船"></td>
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"><img src="/images/comps/unitimages/hightemplar.png" alt="High Templar"><img src="/images/comps/unitimages/archon.png" alt="Archon"><img src="/images/comps/unitimages/reaver.png" alt="Reaver"></td>
-                    <td><img src="/images/comps/unitimages/scout.png" alt="Scout"><img src="/images/comps/unitimages/carrier.png" alt="Carrier"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"><img src="/images/comps/unitimages/hightemplar.png" alt="高阶圣堂武士"><img src="/images/comps/unitimages/archon.png" alt="执政官"><img src="/images/comps/unitimages/reaver.png" alt="金甲虫"></td>
+                    <td><img src="/images/comps/unitimages/scout.png" alt="侦察机"><img src="/images/comps/unitimages/carrier.png" alt="航空母舰"></td>
                 </tr>
                 <tr>
                     <td>6</td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"><img src="/images/comps/unitimages/dragoon.png" alt="Dragoon"><img src="/images/comps/unitimages/hightemplar.png" alt="High Templar"><img src="/images/comps/unitimages/arbiter.png" alt="Arbiter"></td>
-                    <td><img src="/images/comps/unitimages/scout.png" alt="Scout"><img src="/images/comps/unitimages/carrier.png" alt="Carrier"><img src="/images/comps/unitimages/arbiter.png" alt="Arbiter"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"><img src="/images/comps/unitimages/dragoon.png" alt="龙骑士"><img src="/images/comps/unitimages/hightemplar.png" alt="高阶圣堂武士"><img src="/images/comps/unitimages/arbiter.png" alt="仲裁者"></td>
+                    <td><img src="/images/comps/unitimages/scout.png" alt="侦察机"><img src="/images/comps/unitimages/carrier.png" alt="航空母舰"><img src="/images/comps/unitimages/arbiter.png" alt="仲裁者"></td>
                 </tr>
                 <tr>
                     <td>7</td>
-                    <td><img src="/images/comps/unitimages/zealot.png" alt="Zealot"><img src="/images/comps/unitimages/dragoon.png" alt="Dragoon"><img src="/images/comps/unitimages/hightemplar.png" alt="High Templar"><img src="/images/comps/unitimages/archon.png" alt="Archon"><img src="/images/comps/unitimages/reaver.png" alt="Reaver"><img src="/images/comps/unitimages/arbiter.png" alt="Arbiter"></td>
-                    <td><img src="/images/comps/unitimages/scout.png" alt="Scout"><img src="/images/comps/unitimages/corsair.png" alt="Corsair"><img src="/images/comps/unitimages/carrier.png" alt="Carrier"><img src="/images/comps/unitimages/arbiter.png" alt="Arbiter"></td>
+                    <td><img src="/images/comps/unitimages/zealot.png" alt="狂热者"><img src="/images/comps/unitimages/dragoon.png" alt="龙骑士"><img src="/images/comps/unitimages/hightemplar.png" alt="高阶圣堂武士"><img src="/images/comps/unitimages/archon.png" alt="执政官"><img src="/images/comps/unitimages/reaver.png" alt="金甲虫"><img src="/images/comps/unitimages/arbiter.png" alt="仲裁者"></td>
+                    <td><img src="/images/comps/unitimages/scout.png" alt="侦察机"><img src="/images/comps/unitimages/corsair.png" alt="海盗船"><img src="/images/comps/unitimages/carrier.png" alt="航空母舰"><img src="/images/comps/unitimages/arbiter.png" alt="仲裁者"></td>
             </tbody>
         </table>
     </div>
-    <p>The Terran units in attack waves across Tech levels is shown below. If a tech level contains more than one row, you'll get either one of the compositions:</p>
+    <p>下表列出了各科技等级下人类进攻波中的单位。若某科技等级包含多行，则会随机采用其中一种组合：</p>
     <div class="tableContainer">
         <table class="techLevelTable">
             <thead>
                 <tr>
-                    <th>Tech Level</th>
-                    <th><span class="faded">BioMechStar</span><br>Raiding Party</th>
-                    <th><span class="faded">MechStarport</span><br>Machines of War</th>
-                    <th><span class="faded">ShadowTech</span><br>Shadow Tech</th>
-                    <th><span class="faded">SkyTerran</span><br>Dominion Battlegroup</th>
+                    <th>科技等级</th>
+                    <th><span class="faded">生化机械空军</span><br>突袭小队</th>
+                    <th><span class="faded">机械星港</span><br>战争机器</th>
+                    <th><span class="faded">暗影科技</span><br>暗影科技</th>
+                    <th><span class="faded">人类空军</span><br>帝国战斗群</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td><img src="/images/comps/unitimages/marine.png" alt="Marine"><img src="/images/comps/unitimages/medic.png" alt="Medic"></td>
-                    <td><img src="/images/comps/unitimages/hellion.png" alt="Hellion"></td>
-                    <td><img src="/images/comps/unitimages/reaper.png" alt="Reaper"></td>
-                    <td><img src="/images/comps/unitimages/viking.png" alt="Viking"></td>
+                    <td><img src="/images/comps/unitimages/marine.png" alt="陆战队员"><img src="/images/comps/unitimages/medic.png" alt="医疗兵"></td>
+                    <td><img src="/images/comps/unitimages/hellion.png" alt="恶火"></td>
+                    <td><img src="/images/comps/unitimages/reaper.png" alt="死神"></td>
+                    <td><img src="/images/comps/unitimages/viking.png" alt="维京战机"></td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td><img src="/images/comps/unitimages/marine.png" alt="Marine"><img src="/images/comps/unitimages/medic.png" alt="Medic"><img src="/images/comps/unitimages/marauder.png" alt="Marauder"></td>
-                    <td><img src="/images/comps/unitimages/goliath.png" alt="Goliath"><img src="/images/comps/unitimages/hellion.png" alt="Hellion"><br><img src="/images/comps/unitimages/warhound.png" alt="Warhound"><img src="/images/comps/unitimages/hellion.png" alt="Hellion"></td>
-                    <td><img src="/images/comps/unitimages/reaper.png" alt="Reaper"><img src="/images/comps/unitimages/marauder.png" alt="Marauder"></td>
-                    <td><img src="/images/comps/unitimages/viking.png" alt="Viking"><img src="/images/comps/unitimages/banshee.png" alt="Banshee"></td>
+                    <td><img src="/images/comps/unitimages/marine.png" alt="陆战队员"><img src="/images/comps/unitimages/medic.png" alt="医疗兵"><img src="/images/comps/unitimages/marauder.png" alt="劫掠者"></td>
+                    <td><img src="/images/comps/unitimages/goliath.png" alt="歌利亚"><img src="/images/comps/unitimages/hellion.png" alt="恶火"><br><img src="/images/comps/unitimages/warhound.png" alt="战狼"><img src="/images/comps/unitimages/hellion.png" alt="恶火"></td>
+                    <td><img src="/images/comps/unitimages/reaper.png" alt="死神"><img src="/images/comps/unitimages/marauder.png" alt="劫掠者"></td>
+                    <td><img src="/images/comps/unitimages/viking.png" alt="维京战机"><img src="/images/comps/unitimages/banshee.png" alt="女妖"></td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td><img src="/images/comps/unitimages/medic.png" alt="Medic"><img src="/images/comps/unitimages/marauder.png" alt="Marauder"><img src="/images/comps/unitimages/firebat.png" alt="Firebat"></td>
-                    <td><img src="/images/comps/unitimages/goliath.png" alt="Goliath"><img src="/images/comps/unitimages/siegetank.png" alt="Siege Tank"><img src="/images/comps/unitimages/hellbat.png" alt="Hellbat"><br><img src="/images/comps/unitimages/warhound.png" alt="Warhound"><img src="/images/comps/unitimages/siegetank.png" alt="Siege Tank"><img src="/images/comps/unitimages/hellbat.png" alt="Hellbat"></td>
-                    <td><img src="/images/comps/unitimages/reaper.png" alt="Reaper"><img src="/images/comps/unitimages/marauder.png" alt="Marauder"><img src="/images/comps/unitimages/liberator.png" alt="Liberator"></td>
-                    <td><img src="/images/comps/unitimages/viking.png" alt="Viking"><img src="/images/comps/unitimages/marine.png" alt="Marine"><br><img src="/images/comps/unitimages/banshee.png" alt="Banshee"><img src="/images/comps/unitimages/marine.png" alt="Marine"></td>
+                    <td><img src="/images/comps/unitimages/medic.png" alt="医疗兵"><img src="/images/comps/unitimages/marauder.png" alt="劫掠者"><img src="/images/comps/unitimages/firebat.png" alt="火蝠"></td>
+                    <td><img src="/images/comps/unitimages/goliath.png" alt="歌利亚"><img src="/images/comps/unitimages/siegetank.png" alt="攻城坦克"><img src="/images/comps/unitimages/hellbat.png" alt="恶蝠"><br><img src="/images/comps/unitimages/warhound.png" alt="战狼"><img src="/images/comps/unitimages/siegetank.png" alt="攻城坦克"><img src="/images/comps/unitimages/hellbat.png" alt="恶蝠"></td>
+                    <td><img src="/images/comps/unitimages/reaper.png" alt="死神"><img src="/images/comps/unitimages/marauder.png" alt="劫掠者"><img src="/images/comps/unitimages/liberator.png" alt="解放者"></td>
+                    <td><img src="/images/comps/unitimages/viking.png" alt="维京战机"><img src="/images/comps/unitimages/marine.png" alt="陆战队员"><br><img src="/images/comps/unitimages/banshee.png" alt="女妖"><img src="/images/comps/unitimages/marine.png" alt="陆战队员"></td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td><img src="/images/comps/unitimages/marine.png" alt="Marine"><img src="/images/comps/unitimages/ghost.png" alt="Ghost"><img src="/images/comps/unitimages/medivac.png" alt="Medivac"><img src="/images/comps/unitimages/siegetank.png" alt="Siege Tank"></td>
-                    <td><img src="/images/comps/unitimages/goliath.png" alt="Goliath"><img src="/images/comps/unitimages/siegetank.png" alt="Siege Tank"><img src="/images/comps/unitimages/hellbat.png" alt="Hellbat"><img src="/images/comps/unitimages/widowmine.png" alt="Widow Mine"><br><img src="/images/comps/unitimages/warhound.png" alt="Warhound"><img src="/images/comps/unitimages/siegetank.png" alt="Siege Tank"><img src="/images/comps/unitimages/hellbat.png" alt="Hellbat"><img src="/images/comps/unitimages/widowmine.png" alt="Widow Mine"></td>
-                    <td><img src="/images/comps/unitimages/reaper.png" alt="Reaper"><img src="/images/comps/unitimages/marauder.png" alt="Marauder"><img src="/images/comps/unitimages/liberator.png" alt="Liberator"><br><img src="/images/comps/unitimages/reaper.png" alt="Reaper"><img src="/images/comps/unitimages/marauder.png" alt="Marauder"><img src="/images/comps/unitimages/cyclone.png" alt="Cyclone"></td>
-                    <td><img src="/images/comps/unitimages/viking.png" alt="Viking"><img src="/images/comps/unitimages/banshee.png" alt="Banshee"><img src="/images/comps/unitimages/marine.png" alt="Marine"><br><img src="/images/comps/unitimages/viking.png" alt="Viking"><img src="/images/comps/unitimages/liberator.png" alt="Liberator"><img src="/images/comps/unitimages/marine.png" alt="Marine"></td>
+                    <td><img src="/images/comps/unitimages/marine.png" alt="陆战队员"><img src="/images/comps/unitimages/ghost.png" alt="幽灵"><img src="/images/comps/unitimages/medivac.png" alt="医疗运输机"><img src="/images/comps/unitimages/siegetank.png" alt="攻城坦克"></td>
+                    <td><img src="/images/comps/unitimages/goliath.png" alt="歌利亚"><img src="/images/comps/unitimages/siegetank.png" alt="攻城坦克"><img src="/images/comps/unitimages/hellbat.png" alt="恶蝠"><img src="/images/comps/unitimages/widowmine.png" alt="寡妇雷"><br><img src="/images/comps/unitimages/warhound.png" alt="战狼"><img src="/images/comps/unitimages/siegetank.png" alt="攻城坦克"><img src="/images/comps/unitimages/hellbat.png" alt="恶蝠"><img src="/images/comps/unitimages/widowmine.png" alt="寡妇雷"></td>
+                    <td><img src="/images/comps/unitimages/reaper.png" alt="死神"><img src="/images/comps/unitimages/marauder.png" alt="劫掠者"><img src="/images/comps/unitimages/liberator.png" alt="解放者"><br><img src="/images/comps/unitimages/reaper.png" alt="死神"><img src="/images/comps/unitimages/marauder.png" alt="劫掠者"><img src="/images/comps/unitimages/cyclone.png" alt="飓风"></td>
+                    <td><img src="/images/comps/unitimages/viking.png" alt="维京战机"><img src="/images/comps/unitimages/banshee.png" alt="女妖"><img src="/images/comps/unitimages/marine.png" alt="陆战队员"><br><img src="/images/comps/unitimages/viking.png" alt="维京战机"><img src="/images/comps/unitimages/liberator.png" alt="解放者"><img src="/images/comps/unitimages/marine.png" alt="陆战队员"></td>
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td><img src="/images/comps/unitimages/marine.png" alt="Marine"><img src="/images/comps/unitimages/marauder.png" alt="Marauder"><img src="/images/comps/unitimages/medivac.png" alt="Medivac"><img src="/images/comps/unitimages/siegetank.png" alt="Siege Tank"></td>
-                    <td><img src="/images/comps/unitimages/goliath.png" alt="Goliath"><img src="/images/comps/unitimages/siegetank.png" alt="Siege Tank"><img src="/images/comps/unitimages/sciencevessel.png" alt="Science Vessel"><img src="/images/comps/unitimages/widowmine.png" alt="Widow Mine"><br><img src="/images/comps/unitimages/warhound.png" alt="Warhound"><img src="/images/comps/unitimages/siegetank.png" alt="Siege Tank"><img src="/images/comps/unitimages/sciencevessel.png" alt="Science Vessel"><img src="/images/comps/unitimages/widowmine.png" alt="Widow Mine"></td>
-                    <td><img src="/images/comps/unitimages/raven.png" alt="Raven"><img src="/images/comps/unitimages/marauder.png" alt="Marauder"><img src="/images/comps/unitimages/liberator.png" alt="Liberator"><img src="/images/comps/unitimages/cyclone.png" alt="Cyclone"></td>
-                    <td><img src="/images/comps/unitimages/viking.png" alt="Viking"><img src="/images/comps/unitimages/banshee.png" alt="Banshee"><img src="/images/comps/unitimages/raven.png" alt="Raven"><img src="/images/comps/unitimages/liberator.png" alt="Liberator"></td>
+                    <td><img src="/images/comps/unitimages/marine.png" alt="陆战队员"><img src="/images/comps/unitimages/marauder.png" alt="劫掠者"><img src="/images/comps/unitimages/medivac.png" alt="医疗运输机"><img src="/images/comps/unitimages/siegetank.png" alt="攻城坦克"></td>
+                    <td><img src="/images/comps/unitimages/goliath.png" alt="歌利亚"><img src="/images/comps/unitimages/siegetank.png" alt="攻城坦克"><img src="/images/comps/unitimages/sciencevessel.png" alt="科学船"><img src="/images/comps/unitimages/widowmine.png" alt="寡妇雷"><br><img src="/images/comps/unitimages/warhound.png" alt="战狼"><img src="/images/comps/unitimages/siegetank.png" alt="攻城坦克"><img src="/images/comps/unitimages/sciencevessel.png" alt="科学船"><img src="/images/comps/unitimages/widowmine.png" alt="寡妇雷"></td>
+                    <td><img src="/images/comps/unitimages/raven.png" alt="铁鸦"><img src="/images/comps/unitimages/marauder.png" alt="劫掠者"><img src="/images/comps/unitimages/liberator.png" alt="解放者"><img src="/images/comps/unitimages/cyclone.png" alt="飓风"></td>
+                    <td><img src="/images/comps/unitimages/viking.png" alt="维京战机"><img src="/images/comps/unitimages/banshee.png" alt="女妖"><img src="/images/comps/unitimages/raven.png" alt="铁鸦"><img src="/images/comps/unitimages/liberator.png" alt="解放者"></td>
                 </tr>
                 <tr>
                     <td>6</td>
-                    <td><img src="/images/comps/unitimages/marine.png" alt="Marine"><img src="/images/comps/unitimages/marauder.png" alt="Marauder"><img src="/images/comps/unitimages/ghost.png" alt="Ghost"><img src="/images/comps/unitimages/siegetank.png" alt="Siege Tank"><img src="/images/comps/unitimages/sciencevessel.png" alt="Science Vessel"></td>
-                    <td><img src="/images/comps/unitimages/goliath.png" alt="Goliath"><img src="/images/comps/unitimages/thor.png" alt="Thor"><img src="/images/comps/unitimages/sciencevessel.png" alt="Science Vessel"><img src="/images/comps/unitimages/widowmine.png" alt="Widow Mine"><br><img src="/images/comps/unitimages/warhound.png" alt="Warhound"><img src="/images/comps/unitimages/thor.png" alt="Thor"><img src="/images/comps/unitimages/sciencevessel.png" alt="Science Vessel"><img src="/images/comps/unitimages/widowmine.png" alt="Widow Mine"></td>
-                    <td><img src="/images/comps/unitimages/raven.png" alt="Raven"><img src="/images/comps/unitimages/marauder.png" alt="Marauder"><img src="/images/comps/unitimages/battlecruiser.png" alt="Battlecruiser"><img src="/images/comps/unitimages/cyclone.png" alt="Cyclone"></td>
-                    <td><img src="/images/comps/unitimages/banshee.png" alt="Banshee"><img src="/images/comps/unitimages/raven.png" alt="Raven"><img src="/images/comps/unitimages/liberator.png" alt="Liberator"><img src="/images/comps/unitimages/battlecruiser.png" alt="Battlecruiser"><img src="/images/comps/unitimages/marine.png" alt="Marine"><br><img src="/images/comps/unitimages/viking.png" alt="Viking"><img src="/images/comps/unitimages/raven.png" alt="Raven"><img src="/images/comps/unitimages/liberator.png" alt="Liberator"><img src="/images/comps/unitimages/battlecruiser.png" alt="Battlecruiser"><img src="/images/comps/unitimages/marine.png" alt="Marine"></td>
+                    <td><img src="/images/comps/unitimages/marine.png" alt="陆战队员"><img src="/images/comps/unitimages/marauder.png" alt="劫掠者"><img src="/images/comps/unitimages/ghost.png" alt="幽灵"><img src="/images/comps/unitimages/siegetank.png" alt="攻城坦克"><img src="/images/comps/unitimages/sciencevessel.png" alt="科学船"></td>
+                    <td><img src="/images/comps/unitimages/goliath.png" alt="歌利亚"><img src="/images/comps/unitimages/thor.png" alt="雷神"><img src="/images/comps/unitimages/sciencevessel.png" alt="科学船"><img src="/images/comps/unitimages/widowmine.png" alt="寡妇雷"><br><img src="/images/comps/unitimages/warhound.png" alt="战狼"><img src="/images/comps/unitimages/thor.png" alt="雷神"><img src="/images/comps/unitimages/sciencevessel.png" alt="科学船"><img src="/images/comps/unitimages/widowmine.png" alt="寡妇雷"></td>
+                    <td><img src="/images/comps/unitimages/raven.png" alt="铁鸦"><img src="/images/comps/unitimages/marauder.png" alt="劫掠者"><img src="/images/comps/unitimages/battlecruiser.png" alt="战列巡航舰"><img src="/images/comps/unitimages/cyclone.png" alt="飓风"></td>
+                    <td><img src="/images/comps/unitimages/banshee.png" alt="女妖"><img src="/images/comps/unitimages/raven.png" alt="铁鸦"><img src="/images/comps/unitimages/liberator.png" alt="解放者"><img src="/images/comps/unitimages/battlecruiser.png" alt="战列巡航舰"><img src="/images/comps/unitimages/marine.png" alt="陆战队员"><br><img src="/images/comps/unitimages/viking.png" alt="维京战机"><img src="/images/comps/unitimages/raven.png" alt="铁鸦"><img src="/images/comps/unitimages/liberator.png" alt="解放者"><img src="/images/comps/unitimages/battlecruiser.png" alt="战列巡航舰"><img src="/images/comps/unitimages/marine.png" alt="陆战队员"></td>
                 </tr>
                 <tr>
                     <td>7</td>
-                    <td><img src="/images/comps/unitimages/marine.png" alt="Marine"><img src="/images/comps/unitimages/battlecruiser.png" alt="Battlecruiser"><img src="/images/comps/unitimages/ghost.png" alt="Ghost"><img src="/images/comps/unitimages/siegetank.png" alt="Siege Tank"><img src="/images/comps/unitimages/sciencevessel.png" alt="Science Vessel"></td>
-                    <td><img src="/images/comps/unitimages/siegetank.png" alt="Siege Tank"><img src="/images/comps/unitimages/thor.png" alt="Thor"><img src="/images/comps/unitimages/sciencevessel.png" alt="Science Vessel"></td>
-                    <td><img src="/images/comps/unitimages/raven.png" alt="Raven"><img src="/images/comps/unitimages/marauder.png" alt="Marauder"><img src="/images/comps/unitimages/battlecruiser.png" alt="Battlecruiser"><img src="/images/comps/unitimages/cyclone.png" alt="Cyclone"><img src="/images/comps/unitimages/liberator.png" alt="Liberator"></td>
-                    <td><img src="/images/comps/unitimages/viking.png" alt="Viking"><img src="/images/comps/unitimages/banshee.png" alt="Banshee"><img src="/images/comps/unitimages/raven.png" alt="Raven"><img src="/images/comps/unitimages/battlecruiser.png" alt="Battlecruiser"><br><img src="/images/comps/unitimages/viking.png" alt="Viking"><img src="/images/comps/unitimages/liberator.png" alt="Liberator"><img src="/images/comps/unitimages/raven.png" alt="Raven"><img src="/images/comps/unitimages/battlecruiser.png" alt="Battlecruiser"></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="tableContainer">
-        <table class="techLevelTable">
-            <thead>
-                <tr>
-                    <th>Tech Level</th>
-                    <th><span class="faded">BioClassic</span><br>Classic Infantry</th>
-                    <th><span class="faded">MechClassic</span><br>Classic Mech</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td><img src="/images/comps/unitimages/marine.png" alt="Marine"></td>
-                    <td><img src="/images/comps/unitimages/vulture.png" alt="Vulture"></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td><img src="/images/comps/unitimages/marine.png" alt="Marine"><img src="/images/comps/unitimages/medic.png" alt="Medic"></td>
-                    <td><img src="/images/comps/unitimages/vulture.png" alt="Vulture"><img src="/images/comps/unitimages/goliath.png" alt="Goliath"></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td><img src="/images/comps/unitimages/marine.png" alt="Marine"><img src="/images/comps/unitimages/medic.png" alt="Medic"><img src="/images/comps/unitimages/firebat.png" alt="Firebat"></td>
-                    <td><img src="/images/comps/unitimages/vulture.png" alt="Vulture"><img src="/images/comps/unitimages/goliath.png" alt="Goliath"><img src="/images/comps/unitimages/wraith.png" alt="Wraith"></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td><img src="/images/comps/unitimages/marine.png" alt="Marine"><img src="/images/comps/unitimages/medic.png" alt="Medic"><img src="/images/comps/unitimages/siegetank.png" alt="Siege Tank"></td>
-                    <td><img src="/images/comps/unitimages/vulture.png" alt="Vulture"><img src="/images/comps/unitimages/goliath.png" alt="Goliath"><img src="/images/comps/unitimages/wraith.png" alt="Wraith"><img src="/images/comps/unitimages/siegetank.png" alt="Siege Tank"></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td><img src="/images/comps/unitimages/marine.png" alt="Marine"><img src="/images/comps/unitimages/medic.png" alt="Medic"><img src="/images/comps/unitimages/siegetank.png" alt="Siege Tank"><img src="/images/comps/unitimages/ghost.png" alt="Ghost"></td>
-                    <td><img src="/images/comps/unitimages/vulture.png" alt="Vulture"><img src="/images/comps/unitimages/goliath.png" alt="Goliath"><img src="/images/comps/unitimages/siegetank.png" alt="Siege Tank"><img src="/images/comps/unitimages/battlecruiser.png" alt="Battlecruiser"></td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td><img src="/images/comps/unitimages/marine.png" alt="Marine"><img src="/images/comps/unitimages/medic.png" alt="Medic"><img src="/images/comps/unitimages/firebat.png" alt="Firebat"><img src="/images/comps/unitimages/siegetank.png" alt="Siege Tank"><img src="/images/comps/unitimages/sciencevessel.png" alt="Science Vessel"></td>
-                    <td><img src="/images/comps/unitimages/goliath.png" alt="Goliath"><img src="/images/comps/unitimages/battlecruiser.png" alt="Battlecruiser"><img src="/images/comps/unitimages/sciencevessel.png" alt="Science Vessel"></td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td><img src="/images/comps/unitimages/marine.png" alt="Marine"><img src="/images/comps/unitimages/medic.png" alt="Medic"><img src="/images/comps/unitimages/siegetank.png" alt="Siege Tank"><img src="/images/comps/unitimages/ghost.png" alt="Ghost"><img src="/images/comps/unitimages/sciencevessel.png" alt="Science Vessel"></td>
-                    <td><img src="/images/comps/unitimages/goliath.png" alt="Goliath"><img src="/images/comps/unitimages/siegetank.png" alt="Siege Tank"><img src="/images/comps/unitimages/battlecruiser.png" alt="Battlecruiser"><img src="/images/comps/unitimages/sciencevessel.png" alt="Science Vessel"></td>
-            </tbody>
-        </table>
-    </div>
-    <p>Some attack waves will have one of two unit types (denoted by the "or"). There is a 50% chance that either will appear in the attack wave, and only one type will appear per wave.</p>
-    <p>The Zerg units in attack waves across Tech levels is shown below:</p>
-    <div class="tableContainer">
-        <table class="techLevelTable">
-            <thead>
-                <tr>
-                    <th>Tech Level</th>
-                    <th><span class="faded">Ground</span><br>Ravaging Infestation</th>
-                    <th><span class="faded">MutaLing</span><br>Broodling Corruption</th>
-                    <th><span class="faded">Swarmy</span><br>Explosive Threats</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td><img src="/images/comps/unitimages/roach.png" alt="Roach"></td>
-                    <td><img src="/images/comps/unitimages/zergling.png" alt="Zergling"></td>
-                    <td><img src="/images/comps/unitimages/zergling.png" alt="Zergling"></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td><img src="/images/comps/unitimages/roach.png" alt="Roach"><img src="/images/comps/unitimages/zergling.png" alt="Zergling"></td>
-                    <td><img src="/images/comps/unitimages/zergling.png" alt="Zergling"><img src="/images/comps/unitimages/mutalisk.png" alt="Mutalisk"></td>
-                    <td><img src="/images/comps/unitimages/zergling.png" alt="Zergling"><img src="/images/comps/unitimages/baneling.png" alt="Baneling"></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td><img src="/images/comps/unitimages/roach.png" alt="Roach"><img src="/images/comps/unitimages/hydralisk.png" alt="Hydralisk"></td>
-                    <td><img src="/images/comps/unitimages/zergling.png" alt="Zergling"><img src="/images/comps/unitimages/mutalisk.png" alt="Mutalisk"><img src="/images/comps/unitimages/baneling.png" alt="Baneling"></td>
-                    <td><img src="/images/comps/unitimages/zergling.png" alt="Zergling"><img src="/images/comps/unitimages/aberration.png" alt="Aberration"><img src="/images/comps/unitimages/scourge.png" alt="Scourge"><img src="/images/comps/unitimages/viper.png" alt="Viper"><img src="/images/comps/unitimages/mutalisk.png" alt="Mutalisk"></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td><img src="/images/comps/unitimages/roach.png" alt="Roach"><img src="/images/comps/unitimages/hydralisk.png" alt="Hydralisk"><img src="/images/comps/unitimages/ravager.png" alt="Ravager"><img src="/images/comps/unitimages/lurker.png" alt="lurker"></td>
-                    <td><img src="/images/comps/unitimages/zergling.png" alt="Zergling"><img src="/images/comps/unitimages/mutalisk.png" alt="Mutalisk"><img src="/images/comps/unitimages/infestor.png" alt="Infestor"></td>
-                    <td><img src="/images/comps/unitimages/zergling.png" alt="Zergling"><img src="/images/comps/unitimages/aberration.png" alt="Aberration"><img src="/images/comps/unitimages/scourge.png" alt="Scourge"><img src="/images/comps/unitimages/swarmhost.png" alt="Swarm Host"><img src="/images/comps/unitimages/mutalisk.png" alt="Mutalisk"></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td><img src="/images/comps/unitimages/roach.png" alt="Roach"><img src="/images/comps/unitimages/hydralisk.png" alt="Hydralisk"><img src="/images/comps/unitimages/infestor.png" alt="Infestor"><img src="/images/comps/unitimages/lurker.png" alt="lurker"></td>
-                    <td><img src="/images/comps/unitimages/zergling.png" alt="Zergling"><img src="/images/comps/unitimages/mutalisk.png" alt="Mutalisk"><img src="/images/comps/unitimages/infestor.png" alt="Infestor"><img src="/images/comps/unitimages/corruptor.png" alt="Corruptor"></td>
-                    <td><img src="/images/comps/unitimages/zergling.png" alt="Zergling"><img src="/images/comps/unitimages/aberration.png" alt="Aberration"><img src="/images/comps/unitimages/scourge.png" alt="Scourge"><img src="/images/comps/unitimages/viper.png" alt="Viper"><img src="/images/comps/unitimages/mutalisk.png" alt="Mutalisk"><img src="/images/comps/unitimages/baneling.png" alt="Baneling"></td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td><img src="/images/comps/unitimages/roach.png" alt="Roach"><img src="/images/comps/unitimages/hydralisk.png" alt="Hydralisk"><img src="/images/comps/unitimages/infestor.png" alt="Infestor"><img src="/images/comps/unitimages/ravager.png" alt="Ravager"><img src="/images/comps/unitimages/ultralisk.png" alt="Ultralisk"></td>
-                    <td><img src="/images/comps/unitimages/zergling.png" alt="Zergling"><img src="/images/comps/unitimages/mutalisk.png" alt="Mutalisk"><img src="/images/comps/unitimages/infestor.png" alt="Infestor"><img src="/images/comps/unitimages/broodlord.png" alt="Brood Lord"></td>
-                    <td><img src="/images/comps/unitimages/zergling.png" alt="Zergling"><img src="/images/comps/unitimages/swarmhost.png" alt="Swarm Host"><img src="/images/comps/unitimages/scourge.png" alt="Scourge"><img src="/images/comps/unitimages/viper.png" alt="Viper"><img src="/images/comps/unitimages/mutalisk.png" alt="Mutalisk"><img src="/images/comps/unitimages/baneling.png" alt="Baneling"></td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td><img src="/images/comps/unitimages/roach.png" alt="Roach"><img src="/images/comps/unitimages/hydralisk.png" alt="Hydralisk"><img src="/images/comps/unitimages/infestor.png" alt="Infestor"><img src="/images/comps/unitimages/ravager.png" alt="Ravager"><img src="/images/comps/unitimages/ultralisk.png" alt="Ultralisk"></td>
-                    <td><img src="/images/comps/unitimages/corruptor.png" alt="Corruptor"><img src="/images/comps/unitimages/mutalisk.png" alt="Mutalisk"><img src="/images/comps/unitimages/infestor.png" alt="Infestor"><img src="/images/comps/unitimages/broodlord.png" alt="Brood Lord"></td>
-                    <td><img src="/images/comps/unitimages/aberration.png" alt="Aberration"><img src="/images/comps/unitimages/swarmhost.png" alt="Swarm Host"><img src="/images/comps/unitimages/scourge.png" alt="Scourge"><img src="/images/comps/unitimages/viper.png" alt="Viper"><img src="/images/comps/unitimages/mutalisk.png" alt="Mutalisk"><img src="/images/comps/unitimages/baneling.png" alt="Baneling"></td>
+                    <td><img src="/images/comps/unitimages/marine.png" alt="陆战队员"><img src="/images/comps/unitimages/battlecruiser.png" alt="战列巡航舰"><img src="/images/comps/unitimages/ghost.png" alt="幽灵"><img src="/images/comps/unitimages/siegetank.png" alt="攻城坦克"><img src="/images/comps/unitimages/sciencevessel.png" alt="科学船"></td>
+                    <td><img src="/images/comps/unitimages/siegetank.png" alt="攻城坦克"><img src="/images/comps/unitimages/thor.png" alt="雷神"><img src="/images/comps/unitimages/sciencevessel.png" alt="科学船"></td>
+                    <td><img src="/images/comps/unitimages/raven.png" alt="铁鸦"><img src="/images/comps/unitimages/marauder.png" alt="劫掠者"><img src="/images/comps/unitimages/battlecruiser.png" alt="战列巡航舰"><img src="/images/comps/unitimages/cyclone.png" alt="飓风"><img src="/images/comps/unitimages/liberator.png" alt="解放者"></td>
+                    <td><img src="/images/comps/unitimages/viking.png" alt="维京战机"><img src="/images/comps/unitimages/banshee.png" alt="女妖"><img src="/images/comps/unitimages/raven.png" alt="铁鸦"><img src="/images/comps/unitimages/battlecruiser.png" alt="战列巡航舰"><br><img src="/images/comps/unitimages/viking.png" alt="维京战机"><img src="/images/comps/unitimages/liberator.png" alt="解放者"><img src="/images/comps/unitimages/raven.png" alt="铁鸦"><img src="/images/comps/unitimages/battlecruiser.png" alt="战列巡航舰"></td>
                 </tr>
             </tbody>
         </table>
@@ -597,49 +492,154 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         <table class="techLevelTable">
             <thead>
                 <tr>
-                    <th>Tech Level</th>
-                    <th><span class="faded">GroundClassic</span><br>Invasionary Swarm</th>
-                    <th><span class="faded">AirClassic</span><br>Devouring Scourge</th>
+                    <th>科技等级</th>
+                    <th><span class="faded">经典生化</span><br>经典步兵</th>
+                    <th><span class="faded">经典机械</span><br>经典机械</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td><img src="/images/comps/unitimages/zergling.png" alt="Zergling"></td>
-                    <td><img src="/images/comps/unitimages/zergling.png" alt="Zergling"></td>
+                    <td><img src="/images/comps/unitimages/marine.png" alt="陆战队员"></td>
+                    <td><img src="/images/comps/unitimages/vulture.png" alt="秃鹫"></td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td><img src="/images/comps/unitimages/zergling.png" alt="Zergling"><img src="/images/comps/unitimages/hydralisk.png" alt="Hydralisk"></td>
-                    <td><img src="/images/comps/unitimages/zergling.png" alt="Zergling"><img src="/images/comps/unitimages/mutalisk.png" alt="Mutalisk"></td>
+                    <td><img src="/images/comps/unitimages/marine.png" alt="陆战队员"><img src="/images/comps/unitimages/medic.png" alt="医疗兵"></td>
+                    <td><img src="/images/comps/unitimages/vulture.png" alt="秃鹫"><img src="/images/comps/unitimages/goliath.png" alt="歌利亚"></td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td><img src="/images/comps/unitimages/zergling.png" alt="Zergling"><img src="/images/comps/unitimages/hydralisk.png" alt="Hydralisk"><img src="/images/comps/unitimages/lurker.png" alt="Lurker"></td>
-                    <td><img src="/images/comps/unitimages/zergling.png" alt="Zergling"><img src="/images/comps/unitimages/mutalisk.png" alt="Mutalisk"><img src="/images/comps/unitimages/scourge.png" alt="Scourge"><img src="/images/comps/unitimages/broodqueen.png" alt="Brood Queen"></td>
+                    <td><img src="/images/comps/unitimages/marine.png" alt="陆战队员"><img src="/images/comps/unitimages/medic.png" alt="医疗兵"><img src="/images/comps/unitimages/firebat.png" alt="火蝠"></td>
+                    <td><img src="/images/comps/unitimages/vulture.png" alt="秃鹫"><img src="/images/comps/unitimages/goliath.png" alt="歌利亚"><img src="/images/comps/unitimages/wraith.png" alt="怨灵"></td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td><img src="/images/comps/unitimages/hydralisk.png" alt="Hydralisk"><img src="/images/comps/unitimages/lurker.png" alt="Lurker"></td>
-                    <td><img src="/images/comps/unitimages/zergling.png" alt="Zergling"><img src="/images/comps/unitimages/mutalisk.png" alt="Mutalisk"><img src="/images/comps/unitimages/scourge.png" alt="Scourge"><img src="/images/comps/unitimages/guardian.png" alt="Guardian"></td>
+                    <td><img src="/images/comps/unitimages/marine.png" alt="陆战队员"><img src="/images/comps/unitimages/medic.png" alt="医疗兵"><img src="/images/comps/unitimages/siegetank.png" alt="攻城坦克"></td>
+                    <td><img src="/images/comps/unitimages/vulture.png" alt="秃鹫"><img src="/images/comps/unitimages/goliath.png" alt="歌利亚"><img src="/images/comps/unitimages/wraith.png" alt="怨灵"><img src="/images/comps/unitimages/siegetank.png" alt="攻城坦克"></td>
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td><img src="/images/comps/unitimages/hydralisk.png" alt="Hydralisk"><img src="/images/comps/unitimages/lurker.png" alt="Lurker"><img src="/images/comps/unitimages/broodqueen.png" alt="Brood Queen"></td>
-                    <td><img src="/images/comps/unitimages/mutalisk.png" alt="Mutalisk"><img src="/images/comps/unitimages/guardian.png" alt="Guardian"><img src="/images/comps/unitimages/devourer.png" alt="Devourer"></td>
+                    <td><img src="/images/comps/unitimages/marine.png" alt="陆战队员"><img src="/images/comps/unitimages/medic.png" alt="医疗兵"><img src="/images/comps/unitimages/siegetank.png" alt="攻城坦克"><img src="/images/comps/unitimages/ghost.png" alt="幽灵"></td>
+                    <td><img src="/images/comps/unitimages/vulture.png" alt="秃鹫"><img src="/images/comps/unitimages/goliath.png" alt="歌利亚"><img src="/images/comps/unitimages/siegetank.png" alt="攻城坦克"><img src="/images/comps/unitimages/battlecruiser.png" alt="战列巡航舰"></td>
                 </tr>
                 <tr>
                     <td>6</td>
-                    <td><img src="/images/comps/unitimages/zergling.png" alt="Zergling"><img src="/images/comps/unitimages/hydralisk.png" alt="Hydralisk"><img src="/images/comps/unitimages/ultralisk.png" alt="Ultralisk"></td>
-                    <td><img src="/images/comps/unitimages/mutalisk.png" alt="Mutalisk"><img src="/images/comps/unitimages/guardian.png" alt="Guardian"><img src="/images/comps/unitimages/devourer.png" alt="Devourer"><img src="/images/comps/unitimages/broodqueen.png" alt="Brood Queen"></td>
+                    <td><img src="/images/comps/unitimages/marine.png" alt="陆战队员"><img src="/images/comps/unitimages/medic.png" alt="医疗兵"><img src="/images/comps/unitimages/firebat.png" alt="火蝠"><img src="/images/comps/unitimages/siegetank.png" alt="攻城坦克"><img src="/images/comps/unitimages/sciencevessel.png" alt="科学船"></td>
+                    <td><img src="/images/comps/unitimages/goliath.png" alt="歌利亚"><img src="/images/comps/unitimages/battlecruiser.png" alt="战列巡航舰"><img src="/images/comps/unitimages/sciencevessel.png" alt="科学船"></td>
                 </tr>
                 <tr>
                     <td>7</td>
-                    <td><img src="/images/comps/unitimages/zergling.png" alt="Zergling"><img src="/images/comps/unitimages/hydralisk.png" alt="Hydralisk"><img src="/images/comps/unitimages/lurker.png" alt="Lurker"><img src="/images/comps/unitimages/ultralisk.png" alt="Ultralisk"><img src="/images/comps/unitimages/broodqueen.png" alt="Brood Queen"></td>
-                    <td><img src="/images/comps/unitimages/guardian.png" alt="Guardian"><img src="/images/comps/unitimages/devourer.png" alt="Devourer"><img src="/images/comps/unitimages/scourge.png" alt="Scourge"><img src="/images/comps/unitimages/broodqueen.png" alt="Brood Queen"></td>
+                    <td><img src="/images/comps/unitimages/marine.png" alt="陆战队员"><img src="/images/comps/unitimages/medic.png" alt="医疗兵"><img src="/images/comps/unitimages/siegetank.png" alt="攻城坦克"><img src="/images/comps/unitimages/ghost.png" alt="幽灵"><img src="/images/comps/unitimages/sciencevessel.png" alt="科学船"></td>
+                    <td><img src="/images/comps/unitimages/goliath.png" alt="歌利亚"><img src="/images/comps/unitimages/siegetank.png" alt="攻城坦克"><img src="/images/comps/unitimages/battlecruiser.png" alt="战列巡航舰"><img src="/images/comps/unitimages/sciencevessel.png" alt="科学船"></td>
             </tbody>
         </table>
-        <p>Note that AirClassic Tech Level 4 features a different type of Guardian to the higher tech level waves. This Guardian has an attack speed of 3 instead of 2 featured in other waves, as well as a lower attack damage. As a result, this Guardian will attack slightly slower.</p>
+    </div>
+    <p>部分进攻波会在两种单位类型中任选其一（以“或”标示）。两者各有 50% 概率出现，且每波只会出现其中一种。</p>
+    <p>下表列出了各科技等级下异虫进攻波中的单位：</p>
+    <div class="tableContainer">
+        <table class="techLevelTable">
+            <thead>
+                <tr>
+                    <th>科技等级</th>
+                    <th><span class="faded">地面</span><br>肆虐虫灾</th>
+                    <th><span class="faded">飞龙跳虫</span><br>巢虫腐化</th>
+                    <th><span class="faded">虫群</span><br>爆炸威胁</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="/images/comps/unitimages/roach.png" alt="蟑螂"></td>
+                    <td><img src="/images/comps/unitimages/zergling.png" alt="跳虫"></td>
+                    <td><img src="/images/comps/unitimages/zergling.png" alt="跳虫"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="/images/comps/unitimages/roach.png" alt="蟑螂"><img src="/images/comps/unitimages/zergling.png" alt="跳虫"></td>
+                    <td><img src="/images/comps/unitimages/zergling.png" alt="跳虫"><img src="/images/comps/unitimages/mutalisk.png" alt="异龙"></td>
+                    <td><img src="/images/comps/unitimages/zergling.png" alt="跳虫"><img src="/images/comps/unitimages/baneling.png" alt="爆虫"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="/images/comps/unitimages/roach.png" alt="蟑螂"><img src="/images/comps/unitimages/hydralisk.png" alt="刺蛇"></td>
+                    <td><img src="/images/comps/unitimages/zergling.png" alt="跳虫"><img src="/images/comps/unitimages/mutalisk.png" alt="异龙"><img src="/images/comps/unitimages/baneling.png" alt="爆虫"></td>
+                    <td><img src="/images/comps/unitimages/zergling.png" alt="跳虫"><img src="/images/comps/unitimages/aberration.png" alt="畸变体"><img src="/images/comps/unitimages/scourge.png" alt="爆蚊"><img src="/images/comps/unitimages/viper.png" alt="飞蛇"><img src="/images/comps/unitimages/mutalisk.png" alt="异龙"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><img src="/images/comps/unitimages/roach.png" alt="蟑螂"><img src="/images/comps/unitimages/hydralisk.png" alt="刺蛇"><img src="/images/comps/unitimages/ravager.png" alt="破坏者"><img src="/images/comps/unitimages/lurker.png" alt="潜伏者"></td>
+                    <td><img src="/images/comps/unitimages/zergling.png" alt="跳虫"><img src="/images/comps/unitimages/mutalisk.png" alt="异龙"><img src="/images/comps/unitimages/infestor.png" alt="感染者"></td>
+                    <td><img src="/images/comps/unitimages/zergling.png" alt="跳虫"><img src="/images/comps/unitimages/aberration.png" alt="畸变体"><img src="/images/comps/unitimages/scourge.png" alt="爆蚊"><img src="/images/comps/unitimages/swarmhost.png" alt="虫群宿主"><img src="/images/comps/unitimages/mutalisk.png" alt="异龙"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><img src="/images/comps/unitimages/roach.png" alt="蟑螂"><img src="/images/comps/unitimages/hydralisk.png" alt="刺蛇"><img src="/images/comps/unitimages/infestor.png" alt="感染者"><img src="/images/comps/unitimages/lurker.png" alt="潜伏者"></td>
+                    <td><img src="/images/comps/unitimages/zergling.png" alt="跳虫"><img src="/images/comps/unitimages/mutalisk.png" alt="异龙"><img src="/images/comps/unitimages/infestor.png" alt="感染者"><img src="/images/comps/unitimages/corruptor.png" alt="腐化者"></td>
+                    <td><img src="/images/comps/unitimages/zergling.png" alt="跳虫"><img src="/images/comps/unitimages/aberration.png" alt="畸变体"><img src="/images/comps/unitimages/scourge.png" alt="爆蚊"><img src="/images/comps/unitimages/viper.png" alt="飞蛇"><img src="/images/comps/unitimages/mutalisk.png" alt="异龙"><img src="/images/comps/unitimages/baneling.png" alt="爆虫"></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><img src="/images/comps/unitimages/roach.png" alt="蟑螂"><img src="/images/comps/unitimages/hydralisk.png" alt="刺蛇"><img src="/images/comps/unitimages/infestor.png" alt="感染者"><img src="/images/comps/unitimages/ravager.png" alt="破坏者"><img src="/images/comps/unitimages/ultralisk.png" alt="雷兽"></td>
+                    <td><img src="/images/comps/unitimages/zergling.png" alt="跳虫"><img src="/images/comps/unitimages/mutalisk.png" alt="异龙"><img src="/images/comps/unitimages/infestor.png" alt="感染者"><img src="/images/comps/unitimages/broodlord.png" alt="巢虫领主"></td>
+                    <td><img src="/images/comps/unitimages/zergling.png" alt="跳虫"><img src="/images/comps/unitimages/swarmhost.png" alt="虫群宿主"><img src="/images/comps/unitimages/scourge.png" alt="爆蚊"><img src="/images/comps/unitimages/viper.png" alt="飞蛇"><img src="/images/comps/unitimages/mutalisk.png" alt="异龙"><img src="/images/comps/unitimages/baneling.png" alt="爆虫"></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><img src="/images/comps/unitimages/roach.png" alt="蟑螂"><img src="/images/comps/unitimages/hydralisk.png" alt="刺蛇"><img src="/images/comps/unitimages/infestor.png" alt="感染者"><img src="/images/comps/unitimages/ravager.png" alt="破坏者"><img src="/images/comps/unitimages/ultralisk.png" alt="雷兽"></td>
+                    <td><img src="/images/comps/unitimages/corruptor.png" alt="腐化者"><img src="/images/comps/unitimages/mutalisk.png" alt="异龙"><img src="/images/comps/unitimages/infestor.png" alt="感染者"><img src="/images/comps/unitimages/broodlord.png" alt="巢虫领主"></td>
+                    <td><img src="/images/comps/unitimages/aberration.png" alt="畸变体"><img src="/images/comps/unitimages/swarmhost.png" alt="虫群宿主"><img src="/images/comps/unitimages/scourge.png" alt="爆蚊"><img src="/images/comps/unitimages/viper.png" alt="飞蛇"><img src="/images/comps/unitimages/mutalisk.png" alt="异龙"><img src="/images/comps/unitimages/baneling.png" alt="爆虫"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="tableContainer">
+        <table class="techLevelTable">
+            <thead>
+                <tr>
+                    <th>科技等级</th>
+                    <th><span class="faded">经典地面</span><br>侵袭虫群</th>
+                    <th><span class="faded">经典空军</span><br>吞噬天灾</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="/images/comps/unitimages/zergling.png" alt="跳虫"></td>
+                    <td><img src="/images/comps/unitimages/zergling.png" alt="跳虫"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="/images/comps/unitimages/zergling.png" alt="跳虫"><img src="/images/comps/unitimages/hydralisk.png" alt="刺蛇"></td>
+                    <td><img src="/images/comps/unitimages/zergling.png" alt="跳虫"><img src="/images/comps/unitimages/mutalisk.png" alt="异龙"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="/images/comps/unitimages/zergling.png" alt="跳虫"><img src="/images/comps/unitimages/hydralisk.png" alt="刺蛇"><img src="/images/comps/unitimages/lurker.png" alt="潜伏者"></td>
+                    <td><img src="/images/comps/unitimages/zergling.png" alt="跳虫"><img src="/images/comps/unitimages/mutalisk.png" alt="异龙"><img src="/images/comps/unitimages/scourge.png" alt="爆蚊"><img src="/images/comps/unitimages/broodqueen.png" alt="巢穴女王"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><img src="/images/comps/unitimages/hydralisk.png" alt="刺蛇"><img src="/images/comps/unitimages/lurker.png" alt="潜伏者"></td>
+                    <td><img src="/images/comps/unitimages/zergling.png" alt="跳虫"><img src="/images/comps/unitimages/mutalisk.png" alt="异龙"><img src="/images/comps/unitimages/scourge.png" alt="爆蚊"><img src="/images/comps/unitimages/guardian.png" alt="守护者"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><img src="/images/comps/unitimages/hydralisk.png" alt="刺蛇"><img src="/images/comps/unitimages/lurker.png" alt="潜伏者"><img src="/images/comps/unitimages/broodqueen.png" alt="巢穴女王"></td>
+                    <td><img src="/images/comps/unitimages/mutalisk.png" alt="异龙"><img src="/images/comps/unitimages/guardian.png" alt="守护者"><img src="/images/comps/unitimages/devourer.png" alt="吞噬者"></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><img src="/images/comps/unitimages/zergling.png" alt="跳虫"><img src="/images/comps/unitimages/hydralisk.png" alt="刺蛇"><img src="/images/comps/unitimages/ultralisk.png" alt="雷兽"></td>
+                    <td><img src="/images/comps/unitimages/mutalisk.png" alt="异龙"><img src="/images/comps/unitimages/guardian.png" alt="守护者"><img src="/images/comps/unitimages/devourer.png" alt="吞噬者"><img src="/images/comps/unitimages/broodqueen.png" alt="巢穴女王"></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><img src="/images/comps/unitimages/zergling.png" alt="跳虫"><img src="/images/comps/unitimages/hydralisk.png" alt="刺蛇"><img src="/images/comps/unitimages/lurker.png" alt="潜伏者"><img src="/images/comps/unitimages/ultralisk.png" alt="雷兽"><img src="/images/comps/unitimages/broodqueen.png" alt="巢穴女王"></td>
+                    <td><img src="/images/comps/unitimages/guardian.png" alt="守护者"><img src="/images/comps/unitimages/devourer.png" alt="吞噬者"><img src="/images/comps/unitimages/scourge.png" alt="爆蚊"><img src="/images/comps/unitimages/broodqueen.png" alt="巢穴女王"></td>
+            </tbody>
+        </table>
+        <p>请注意，经典空军科技等级 4 使用的守护者与更高科技等级进攻波中的不同。该守护者的攻击间隔为 3，而其他波次中的为 2，且攻击伤害也更低，因此其攻击速度稍慢。</p>
     </div>
     <script>
         $(".techLevelTable img").on('mouseover',function(e){
@@ -656,15 +656,15 @@ if (document.location.host === 'dev.starcraft2coop.com') {
 
         });
     </script>
-    <h2 id="strength">Strength Level</h2>
-    <p>The Strength Level determines the quantity of units in the attack wave. The in-game generation of the attack waves is randomized. That is, while the Tech Level and Strength Level are fixed, there is a little bit of allowable variance in the attack wave composition. As a result, attack waves are not always the same. Some may have more Liberators, with fewer Cyclones, for instance.</p>
-    <p>However, the Strength Level is linked to a resource cost for the attack wave. Attack waves will not exceed a certain resource cost, depending on the Strength Level. The below table shows the estimated maximum resource cost for each Strength Level.</p>
-    <p>Attack Wave Strength Level Resource Costs:</p>
+    <h2 id="strength">强度等级</h2>
+    <p>强度等级决定进攻波中的单位数量。游戏会随机生成进攻波：虽然科技等级和强度等级固定，但阵容允许存在少量变化，因此每次进攻波并不完全相同。例如，某一波中可能有更多解放者，但飓风更少。</p>
+    <p>不过，强度等级与进攻波的资源造价相关。进攻波不会超过该强度等级对应的资源造价上限。下表给出了各强度等级的估算最大资源造价。</p>
+    <p>进攻波各强度等级的资源造价：</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Strength Level</th>
-                <th>Maximum Resource Cost</th>
+                <th>强度等级</th>
+                <th>最大资源造价</th>
             </tr>
         </thead>
         <tbody>
@@ -698,63 +698,63 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             </tr>
         </tbody>
     </table>
-    <h2 id="limits">Unit Limits</h2>
-    <p>Attack waves have certain limits as to how many of a particular unit can appear. This strengthens the overall power of the attack wave because it prevents massing a single tech-unit which can easily be countered.</p>
-    <p>Not all units have limits. The units that are limited are usually spellcasters. The list of limited units is below:</p>
+    <h2 id="limits">单位数量限制</h2>
+    <p>进攻波会限制某些单位的出现数量。这能避免大量生成容易被针对的单一科技单位，从而提高进攻波的整体战斗力。</p>
+    <p>并非所有单位都有限制；受限的通常是施法单位。具体如下：</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Unit</th>
-                <th>Limit per Wave</th>
+                <th>单位</th>
+                <th>每波上限</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Corsair</td>
+                <td>海盗船</td>
                 <td>5</td>
             </tr>
             <tr>
-                <td>High Templar</td>
+                <td>高阶圣堂武士</td>
                 <td>3</td>
             </tr>
             <tr>
-                <td>Infestor</td>
+                <td>感染者</td>
                 <td>5</td>
             </tr>
             <tr>
-                <td>Sentry</td>
+                <td>哨兵</td>
                 <td>4</td>
             </tr>
             <tr>
-                <td>Viper</td>
+                <td>飞蛇</td>
                 <td>2</td>
             </tr>
         </tbody>
     </table>
-    <h2 id="demo">Putting it All Together</h2>
-    <p>You can use the demo below to see the impact of both, Tech Level and Strength Level on attack waves for all different compositions. Here, Strength Levels will match Tech Levels, as is common with most attack waves in the game.</p>
+    <h2 id="demo">综合演示</h2>
+    <p>你可以通过下方演示查看科技等级和强度等级对不同阵容进攻波的影响。此处强度等级与科技等级相同，这也是游戏中大多数进攻波的常见设置。</p>
     <div id="compDemo">
         <form action='#'>
             <select id="enemyComp">
-                <option value="gateway">Protoss Gateway</option>
-                <option value="robocolossus">Protoss RoboColossus</option>
-                <option value="roboreaver">Protoss RoboReaver</option>
-                <option value="skytosscarrier">Protoss SkytossCarrier</option>
-                <option value="skytosstempest">Protoss SkytossTempest</option>
-                <option value="techy">Protoss Techy</option>
-                <option value="groundclassicp">Protoss GroundClassic</option>
-                <option value="airclassicp">Protoss AirClassic</option>
-                <option value="biomechstar">Terran BioMechStar</option>
-                <option value="mechstarport">Terran MechStarport</option>
-                <option value="shadowtech">Terran ShadowTech</option>
-                <option value="skyterran">Terran SkyTerran</option>
-                <option value="bioclassic">Terran BioClassic</option>
-                <option value="mechclassic">Terran MechClassic</option>
-                <option value="groundzerg">Zerg Ground</option>
-                <option value="mutaling">Zerg MutaLing</option>
-                <option value="swarmy">Zerg Swarmy</option>
-                <option value="groundclassicz">Zerg GroundClassic</option>
-                <option value="airclassicz">Zerg AirClassic</option>
+                <option value="gateway">星灵 传送门</option>
+                <option value="robocolossus">星灵 机械巨像</option>
+                <option value="roboreaver">星灵 机械金甲虫</option>
+                <option value="skytosscarrier">星灵 黄金舰队航母</option>
+                <option value="skytosstempest">星灵 黄金舰队风暴战舰</option>
+                <option value="techy">星灵 混合科技</option>
+                <option value="groundclassicp">星灵 经典地面</option>
+                <option value="airclassicp">星灵 经典空军</option>
+                <option value="biomechstar">人类 生化机械空军</option>
+                <option value="mechstarport">人类 机械星港</option>
+                <option value="shadowtech">人类 暗影科技</option>
+                <option value="skyterran">人类 空军</option>
+                <option value="bioclassic">人类 经典生化</option>
+                <option value="mechclassic">人类 经典机械</option>
+                <option value="groundzerg">异虫 地面</option>
+                <option value="mutaling">异虫 飞龙跳虫</option>
+                <option value="swarmy">异虫 虫群</option>
+                <option value="groundclassicz">异虫 经典地面</option>
+                <option value="airclassicz">异虫 经典空军</option>
             </select>
             <select id="powerLevel">
                 <option value="1">1</option>
@@ -767,7 +767,7 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             </select>
         </form>
         <div id="compDiv">
-            <img id="compPreview" src="/images/comps/gateway1.jpg" alt="Enemy Composition Example">
+            <img id="compPreview" src="/images/comps/gateway1.jpg" alt="敌方阵容示例">
         </div>
     </div>
     <script>
@@ -799,20 +799,20 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             updateImage();
         });
     </script>
-    <h2 id="upgrades">Upgrades</h2>
-    <p>As the mission progresses, the AI will automatically complete research. This naturally scales up the difficulty of the mission as time goes on. The timings are listed below:</p>
-    <h3>Protoss Upgrades</h3>
-    <h4>Protoss Power Level Upgrades</h4>
+    <h2 id="upgrades">升级</h2>
+    <p>随着任务推进，AI 会自动完成升级研究，使任务难度随时间自然提升。具体时间如下：</p>
+    <h3>星灵升级</h3>
+    <h4>星灵攻防等级升级</h4>
     <div class="tableContainer">
         <table class="centered">
             <thead>
                 <tr>
-                    <th>Level</th>
-                    <th>Ground Weapons</th>
-                    <th>Ground Armor</th>
-                    <th>Shields</th>
-                    <th>Air Weapons</th>
-                    <th>Air Armor</th>
+                    <th>等级</th>
+                    <th>地面武器</th>
+                    <th>地面护甲</th>
+                    <th>护盾</th>
+                    <th>空中武器</th>
+                    <th>空中护甲</th>
                 </tr>
             </thead>
             <tbody>
@@ -843,54 +843,54 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             </tbody>
         </table>
     </div>
-    <h4>Protoss Skill Research</h4>
+    <h4>星灵技能研究</h4>
     <table>
         <thead>
             <tr>
-                <th>Research</th>
-                <th>Time</th>
+                <th>研究项目</th>
+                <th>时间</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Colossus - Extended Thermal Lance</td>
+                <td>巨像 - 延展热能长枪</td>
                 <td>10:00</td>
             </tr>
             <tr>
-                <td>Corsair - Disruption Web</td>
+                <td>海盗船 - 干扰网</td>
                 <td>12:00</td>
             </tr>
             <tr>
-                <td>Dragoon - Singularity Charge</td>
+                <td>龙骑士 - 奇点充能</td>
                 <td>10:00</td>
             </tr>
             <tr>
-                <td>High Templar - Psionic Storm</td>
+                <td>高阶圣堂武士 - 灵能风暴</td>
                 <td>10:00</td>
             </tr>
             <tr>
-                <td>Stalker - Blink</td>
+                <td>追猎者 - 闪现</td>
                 <td>8:00</td>
             </tr>
             <tr>
-                <td>Zealot - Charge</td>
+                <td>狂热者 - 冲锋</td>
                 <td>8:00</td>
             </tr>
         </tbody>
     </table>
-    <h3>Terran Upgrades</h3>
-    <h4>Terran Power Level Upgrades</h4>
+    <h3>人类升级</h3>
+    <h4>人类攻防等级升级</h4>
     <div class="tableContainer">
         <table class="centered">
             <thead>
                 <tr>
-                    <th>Level</th>
-                    <th>Infantry Weapons</th>
-                    <th>Infantry Armor</th>
-                    <th>Ship Weapons</th>
-                    <th>Ship Armor</th>
-                    <th>Vehicle Weapons</th>
-                    <th>Vehicle Armor</th>
+                    <th>等级</th>
+                    <th>步兵武器</th>
+                    <th>步兵护甲</th>
+                    <th>舰船武器</th>
+                    <th>舰船护甲</th>
+                    <th>载具武器</th>
+                    <th>载具护甲</th>
                 </tr>
             </thead>
             <tbody>
@@ -924,73 +924,73 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             </tbody>
         </table>
     </div>
-    <h4>Terran Skill Research</h4>
+    <h4>人类技能研究</h4>
     <table>
         <thead>
             <tr>
-                <th>Research</th>
-                <th>Time</th>
+                <th>研究项目</th>
+                <th>时间</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Banshee - Cloaking Field</td>
+                <td>女妖 - 隐形力场</td>
                 <td>12:00</td>
             </tr>
             <tr>
-                <td>Command Center - Orbital Command</td>
+                <td>指挥中心 - 轨道控制基地</td>
                 <td>10:00</td>
             </tr>
             <tr>
-                <td>Cyclone - Mag-Field Accelerator</td>
+                <td>飓风 - 磁场加速器</td>
                 <td>10:00</td>
             </tr>
             <tr>
-                <td>Firebat - Stimpack</td>
+                <td>火蝠 - 兴奋剂</td>
                 <td>10:00</td>
             </tr>
             <tr>
-                <td>Goliath - Ares-Class Targeting System</td>
+                <td>歌利亚 - 阿瑞斯级瞄准系统</td>
                 <td>10:00</td>
             </tr>
             <tr>
-                <td>Hellion - Infernal Pre-igniter</td>
+                <td>恶火 - 地狱预燃器</td>
                 <td>10:00</td>
             </tr>
             <tr>
-                <td>Marauder - Concussive Shells</td>
+                <td>劫掠者 - 震撼弹</td>
                 <td>8:00</td>
             </tr>
             <tr>
-                <td>Marauder - Stimpack</td>
+                <td>劫掠者 - 兴奋剂</td>
                 <td>10:00</td>
             </tr>
             <tr>
-                <td>Marine - Combat Shield</td>
+                <td>陆战队员 - 战斗护盾</td>
                 <td>8:00</td>
             </tr>
             <tr>
-                <td>Marine - Stimpack</td>
+                <td>陆战队员 - 兴奋剂</td>
                 <td>10:00</td>
             </tr>
             <tr>
-                <td>Science Vessel - Defensive Matrix</td>
+                <td>科学船 - 防御矩阵</td>
                 <td>0:00</td>
             </tr>
         </tbody>
     </table>
-    <h3>Zerg Upgrades</h3>
-    <h4>Zerg Power Level Upgrades</h4>
+    <h3>异虫升级</h3>
+    <h4>异虫攻防等级升级</h4>
     <div class="tableContainer">
         <table class="centered">
             <thead>
                 <tr>
-                    <th>Level</th>
-                    <th>Melee Attacks</th>
-                    <th>Missile Attacks</th>
-                    <th>Ground Carapace</th>
-                    <th>Flyer Attacks</th>
-                    <th>Flyer Carapace</th>
+                    <th>等级</th>
+                    <th>近战攻击</th>
+                    <th>远程攻击</th>
+                    <th>地面单位甲壳</th>
+                    <th>飞行单位攻击</th>
+                    <th>飞行单位甲壳</th>
                 </tr>
             </thead>
             <tbody>
@@ -1021,74 +1021,74 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             </tbody>
         </table>
     </div>
-    <h4>Zerg Skill Research</h4>
+    <h4>异虫技能研究</h4>
     <table>
         <thead>
             <tr>
-                <th>Research</th>
-                <th>Time</th>
+                <th>研究项目</th>
+                <th>时间</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Baneling - Centrifugal Hooks</td>
+                <td>爆虫 - 离心钩</td>
                 <td>10:00</td>
             </tr>
             <tr>
-                <td>Hydralisk - Muscular Augments</td>
+                <td>刺蛇 - 肌肉增强</td>
                 <td>10:00</td>
             </tr>
             <tr>
-                <td>Roach - Glial Reconstitution</td>
+                <td>蟑螂 - 胶质重构</td>
                 <td>8:00</td>
             </tr>
             <tr>
-                <td>Roach - Tunneling Claws</td>
+                <td>蟑螂 - 掘地之爪</td>
                 <td>12:00</td>
             </tr>
             <tr>
-                <td>Ultralisk - Chitinous Plating</td>
+                <td>雷兽 - 几丁质护甲</td>
                 <td>10:00</td>
             </tr>
             <tr>
-                <td>Zergling - Adrenal Glands</td>
+                <td>跳虫 - 肾上腺</td>
                 <td>10:00</td>
             </tr>
             <tr>
-                <td>Zergling - Metabolic Boost</td>
+                <td>跳虫 - 代谢加速</td>
                 <td>8:00</td>
             </tr>
         </tbody>
     </table>
-    <h2 id="hybrids">Hybrids</h2>
-    <p>Attack waves may be accompanied by Hybrids in varying numbers, depending on the mission. Hybrids are added to attack waves independent of enemy composition or Strength/Tech level. Instead, Hybrids are added to attack waves as part of the mission design. There are five different hybrids that may accompany attack waves. These are listed below, along with any abilities they may have.</p>
+    <h2 id="hybrids">混合体</h2>
+    <p>根据任务不同，进攻波可能伴随数量不等的混合体。混合体的加入与敌方阵容、强度等级或科技等级无关，而是由任务设计决定。共有五种混合体可能随进攻波出现，其能力如下。</p>
     <div class="leftImage">
         <div class="imageContainer">
-            <img src="/images/comps/hybrids/hybriddestroyer.jpg" alt="Hybrid Destroyer">
-            <p>Hybrid<br>Destroyer</p>
+            <img src="/images/comps/hybrids/hybriddestroyer.jpg" alt="混合体毁灭者">
+            <p>混合体<br>毁灭者</p>
         </div>
         <div class="descContainer">
-            <p>Deals damage over time using its Graviton Prison ability.</p>
-            <p>Skills:</p>
+            <p>使用引力牢笼技能持续造成伤害。</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Stats</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>数据</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/comps/hybrids/gravitonprison.png" alt="Graviton Prison"></td>
-                        <td>Graviton Prison</td>
-                        <td>Makes the target unit float in the air, disabling its abilities.</td>
+                        <td><img src="/images/comps/hybrids/gravitonprison.png" alt="引力牢笼"></td>
+                        <td>引力牢笼</td>
+                        <td>使目标单位浮空并禁用其技能。</td>
                         <td>
                             <ul>
-                                <li>Range: 8</li>
-                                <li>Total Damage: 60</li>
-                                <li>Time: 4s</li>
+                                <li>射程： 8</li>
+                                <li>总伤害： 60</li>
+                                <li>持续时间： 4 秒</li>
                             </ul>
                         </td>
                     </tr>
@@ -1098,33 +1098,33 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     </div>
     <div class="leftImage">
         <div class="imageContainer">
-            <img src="/images/comps/hybrids/hybridreaver.jpg" alt="Hybrid Reaver">
-            <p>Hybrid<br>Reaver</p>
+            <img src="/images/comps/hybrids/hybridreaver.jpg" alt="混合体掠夺者">
+            <p>混合体<br>掠夺者</p>
         </div>
         <div class="descContainer">
-            <p>Can heal itself using its Consume DNA ability.</p>
-            <p>Skills:</p>
+            <p>可使用吞噬 DNA 技能治疗自身。</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Stats</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>数据</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/comps/hybrids/consumedna.png" alt="Consume DNA"></td>
-                        <td>Consume DNA</td>
-                        <td>Absorbs the target unit's life essence.</td>
+                        <td><img src="/images/comps/hybrids/consumedna.png" alt="吞噬 DNA"></td>
+                        <td>吞噬 DNA</td>
+                        <td>吸收目标单位的生命精华。</td>
                         <td>
                             <ul>
-                                <li>Cooldown: 10s</li>
-                                <li>Range: 5</li>
-                                <li>Total Damage: 100</li>
-                                <li>Heal: 50</li>
-                                <li>Time: 1 second</li>
+                                <li>冷却时间： 10 秒</li>
+                                <li>射程： 5</li>
+                                <li>总伤害： 100</li>
+                                <li>治疗量： 50</li>
+                                <li>持续时间： 1 秒</li>
                             </ul>
                         </td>
                     </tr>
@@ -1134,29 +1134,29 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     </div>
     <div class="leftImage">
         <div class="imageContainer">
-            <img src="/images/comps/hybrids/hybridnemesis.jpg" alt="Hybrid Nemesis">
-            <p>Hybrid<br>Nemesis</p>
+            <img src="/images/comps/hybrids/hybridnemesis.jpg" alt="混合体天罚者">
+            <p>混合体<br>天罚者</p>
         </div>
         <div class="descContainer">
-            <p>Air Hybrid that can disable structures with its Phase Shift ability.</p>
-            <p>Skills:</p>
+            <p>空中混合体，可用相位转移技能使建筑失效。</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Stats</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>数据</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/comps/hybrids/phaseshift.png" alt="Phase Shift"></td>
-                        <td>Phase Shift</td>
-                        <td>Causes the targeted unit to phase out for 10 seconds. Phased units are immune to all damage and most effects, but they are unable to attack or use abilities.</td>
+                        <td><img src="/images/comps/hybrids/phaseshift.png" alt="相位转移"></td>
+                        <td>相位转移</td>
+                        <td>使目标单位进入相位状态 10 秒。相位状态下的单位免疫所有伤害和大多数效果，但无法攻击或使用技能。</td>
                         <td>
                             <ul>
-                                <li>Cooldown: 10s</li>
+                                <li>冷却时间： 10 秒</li>
                             </ul>
                         </td>
                     </tr>
@@ -1166,47 +1166,47 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     </div>
     <div class="leftImage">
         <div class="imageContainer">
-            <img src="/images/comps/hybrids/hybridbehemoth.jpg" alt="Hybrid Behemoth">
-            <p>Hybrid<br>Behemoth</p>
+            <img src="/images/comps/hybrids/hybridbehemoth.jpg" alt="混合体巨兽">
+            <p>混合体<br>巨兽</p>
         </div>
         <div class="descContainer">
-            <p>Units close to the hybrid can be slowed down.</p>
-            <p>Skills:</p>
+            <p>靠近该混合体的单位会被减速。</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Stats</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>数据</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/comps/hybrids/constrictingslime.png" alt="Constricting Slime"></td>
-                        <td>Constricting Slime</td>
-                        <td>Sprays slime on nearby enemies, slowing them for 5 seconds.</td>
+                        <td><img src="/images/comps/hybrids/constrictingslime.png" alt="束缚黏液"></td>
+                        <td>束缚黏液</td>
+                        <td>向附近敌人喷射黏液，使其减速 5 秒。</td>
                         <td>
                             <ul>
-                                <li>Cooldown: 15s</li>
-                                <li>Range: 6</li>
-                                <li>Total Damage: 5 (10 vs. Armored)</li>
-                                <li>Reduction: 50%</li>
-                                <li>Time: 5 seconds</li>
+                                <li>冷却时间： 15 秒</li>
+                                <li>射程： 6</li>
+                                <li>总伤害： 5（对重甲为 10）</li>
+                                <li>减速幅度： 50%</li>
+                                <li>持续时间： 5 秒</li>
                             </ul>
                         </td>
                     </tr>
                     <tr>
-                        <td><img src="/images/comps/hybrids/consumedna.png" alt="Consume DNA"></td>
-                        <td>Consume DNA</td>
-                        <td>Absorbs the target unit's life essence.</td>
+                        <td><img src="/images/comps/hybrids/consumedna.png" alt="吞噬 DNA"></td>
+                        <td>吞噬 DNA</td>
+                        <td>吸收目标单位的生命精华。</td>
                         <td>
                             <ul>
-                                <li>Cooldown: 10s</li>
-                                <li>Range: 5</li>
-                                <li>Total Damage: 100</li>
-                                <li>Heal: 50</li>
-                                <li>Time: 1 second</li>
+                                <li>冷却时间： 10 秒</li>
+                                <li>射程： 5</li>
+                                <li>总伤害： 100</li>
+                                <li>治疗量： 50</li>
+                                <li>持续时间： 1 秒</li>
                             </ul>
                         </td>
                     </tr>
@@ -1216,48 +1216,48 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     </div>
     <div class="leftImage">
         <div class="imageContainer">
-            <img src="/images/comps/hybrids/hybriddominator.jpg" alt="Hybrid Dominator">
-            <p>Hybrid<br>Dominator</p>
+            <img src="/images/comps/hybrids/hybriddominator.jpg" alt="混合体支配者">
+            <p>混合体<br>支配者</p>
         </div>
         <div class="descContainer">
-            <p>Powerful spell-casting Hybrid.</p>
-            <p>Skills:</p>
+            <p>强大的施法型混合体。</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Stats</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>数据</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/comps/hybrids/plasmablast.png" alt="Plasma Blast"></td>
-                        <td>Plasma Blast</td>
-                        <td>Shoots a ball of bio-plasma toward a target, causing 260 damage.</td>
+                        <td><img src="/images/comps/hybrids/plasmablast.png" alt="等离子爆裂"></td>
+                        <td>等离子爆裂</td>
+                        <td>向目标发射一团生物等离子体，造成 260 点伤害。</td>
                         <td>
                             <ul>
-                                <li>Cooldown: 3s</li>
-                                <li>Energy: 25</li>
-                                <li>Charge Time: 3s</li>
-                                <li>Target Range: 10</li>
-                                <li>Impact Range: 20</li>
-                                <li>100% damage to target</li>
-                                <li>75% Damage from 0 to 0.1 range</li>
-                                <li>25% Damage from 0.1 to 0.2 range</li>
+                                <li>冷却时间： 3 秒</li>
+                                <li>能量： 25</li>
+                                <li>蓄力时间： 3 秒</li>
+                                <li>目标射程： 10</li>
+                                <li>冲击范围： 20</li>
+                                <li>对目标造成 100% 伤害</li>
+                                <li>距离 0 至 0.1 时造成 75% 伤害</li>
+                                <li>距离 0.1 至 0.2 时造成 25% 伤害</li>
                             </ul>
                         </td>
                     </tr>
                     <tr>
-                        <td><img src="/images/comps/hybrids/psionicstorm.png" alt="Psionic Storm"></td>
-                        <td>Psionic Storm</td>
-                        <td>Creates a storm of psionic energy that lasts 4 seconds, causing up to 80 damage to all enemy units in the target area. Does not damage friendly units.</td>
+                        <td><img src="/images/comps/hybrids/psionicstorm.png" alt="灵能风暴"></td>
+                        <td>灵能风暴</td>
+                        <td>制造持续 4 秒的灵能风暴，对目标区域内所有敌方单位最多造成 80 点伤害，不会伤害友方单位。</td>
                         <td>
                             <ul>
-                                <li>Cooldown: 8s</li>
-                                <li>Energy: 25</li>
-                                <li>Cast Range: 9</li>
+                                <li>冷却时间： 8 秒</li>
+                                <li>能量： 25</li>
+                                <li>施法距离： 9</li>
                             </ul>
                         </td>
                     </tr>
@@ -1265,15 +1265,13 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             </table>
         </div>
     </div>
-<script src="/scripts/nav.js?v=fd4985"></script>
+<script src="/scripts/nav.js"></script>
 </div>
 
 <div id="footer">
-    <p>Note: All data generated on this site is based on Brutal difficulty. Timings, compositions and other elements may differ on easier difficulty levels.</p>
-    <p>CC-BY-NC-SA-4.0. Originally written by Aommaster. This is a fansite not affiliated with StarCraft 2 or Blizzard Entertainment, Inc.</p>
+    <p>注意：本站生成的所有数据均以“残酷”难度为准；在较低难度下，时间、阵容及其他要素可能有所不同。</p>
+    <p>非官方简体中文翻译站，仅供学习与非商业使用。本站无广告，也不收集用户数据。采用 CC BY-NC-SA 4.0 许可。原作者：Aommaster。本站为粉丝站点，与 StarCraft II 或 Blizzard Entertainment 无隶属关系。</p>
 </div>
 
 </body>
 </html>
-
-    

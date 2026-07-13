@@ -5,8 +5,8 @@ http_response_code(410);
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-    <title>Starcraft 2 Co-op - Replay Analyzer</title>
+    <title>《星际争霸 II》合作任务 - 录像分析器</title>
 <?= startContent() ?>
-    <h1>Co-op Replay Analyzer</h1>
-    <p>Sorry, the replay analyzer is no longer available.</p>
+    <h1>合作任务录像分析器</h1>
+    <p>抱歉，录像分析器已停止提供。</p>
 <?= endContent() ?>

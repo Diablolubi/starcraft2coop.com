@@ -170,7 +170,7 @@ if (isset($_POST['ability'])) {
         $unitArray = [];
 
         foreach ($units as $row) {
-            $unitArray[$row['race']][] = [$row['hp'] + $row['shields'], $row['name'], $row['light'], $row['structure']];
+            $unitArray[$row['race']][] = [$row['hp'] + $row['shields'], $row['name'], $row['light'], $row['structure'], token($row['_original_name'])];
         }
         $returnArray[] = $spammable;
         $returnArray[] = $affectedByArmor;
@@ -179,8 +179,8 @@ if (isset($_POST['ability'])) {
         $returnArray[] = $unitArray;
         print(json_encode($returnArray));
     } else {
-        print("Error!");
+        print("错误！");
     }
 } else {
-    print("Error!");
+    print("错误！");
 }

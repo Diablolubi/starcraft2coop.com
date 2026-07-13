@@ -1,19 +1,19 @@
-<p class="subheading">Detailed Mutator Information</p>
-<p>Players start with 50 supply and will need to kill Turkeys on the map in order to raise the supply cap.</p>
-<p>The max supply will be reduced every variable interval. The interval is based on the supply. Supply drops by 1 every 250/[Supply]. So, at 250 supply, you will lose 1 Supply/per second.</p>
-<p>If players have more supply than they have available, their units will start taking damage after 3 seconds unless they gather more supply. The player whose units will take damage is the player who is currently using the bigger share of the supply. If they are both using the same supply, a player is randomly picked to take damage. Every second, a random unit from that player will take 20 damage. If the player stays above supply cap, the number of units that take damage is increased by 1 every 3 seconds. Combat units are first to take damage. Once all combat units are taking damage, workers will start to take damage.</p>
-<p>Initially, 30 turkeys spawn on the map within 7 and 40 range of the player bases. Every 8 seconds, two turkeys will spawn on the map, at least 20 units away from a player's current camera location.</p>
-<p>When a turkey is killed, any turkey within 10 range will target the player. Each turkey provides 2 supply. A turkey is shown below.</p>
-<img src="/images/mutatordata/turkeyshootturkey.jpg" alt="Turkey">
-<p>Turkeys deal 8 damage (16 vs. Structures) every 1.5 seconds and have 10 HP and 0 armor.</p>
-<h2>On Oblivion Express</h2>
-<p>This mutator occurred on a <a href="weeklymutations">weekly mutation</a> which was played on Oblivion Express called "Fowl Play". When trains are destroyed, they normally spawn 5 regular turkeys per carriage (either 7 or 13 carriages per train). However, specific train waves would spawn infested turkeys. The details are shown below:</p>
+<p class="subheading">突变因子详细信息</p>
+<p>玩家初始拥有 50 补给，必须消灭地图上的火鸡来提高补给上限。</p>
+<p>补给上限会按可变间隔降低，间隔取决于当前补给。每经过 250/[Supply] 秒，补给降低 1。因此，在 250 补给时，每秒会损失 1 点补给。</p>
+<p>如果玩家的已用补给超过可用补给，且未能获得更多补给，单位会在 3 秒后开始受到伤害。当前占用更多共享补给的玩家会承受伤害；若双方占用相同，则随机选择一名玩家。每秒该玩家的一个随机单位受到 20 点伤害。如果持续超过补给上限，每 3 秒受伤单位数增加 1。作战单位优先受伤；当所有作战单位都在受伤后，工人也会开始受伤。</p>
+<p>最初会在玩家基地 7 至 40 射程内生成 30 只火鸡。之后每 8 秒生成两只火鸡，且距离玩家当前镜头位置至少 20。</p>
+<p>火鸡被消灭时，10 射程内的所有火鸡都会攻击玩家。每只火鸡提供 2 点补给。火鸡如下图所示。</p>
+<img src="/images/mutatordata/turkeyshootturkey.jpg" alt="火鸡">
+<p>火鸡每 1.5 秒造成 8 点伤害（对建筑为 16），拥有 10 点生命值和 0 点护甲。</p>
+<h2>湮灭快车中的情况</h2>
+<p>该突变因子曾出现在“湮灭快车”的<a href="weeklymutations">每周突变</a>“鸡飞狗跳”中。列车被摧毁时，通常每节车厢会生成 5 只普通火鸡（每列列车有 7 或 13 节车厢）。但特定列车波次会生成被感染的火鸡，详情如下：</p>
 <table class="dataTable centered">
     <thead>
         <tr>
-            <th>Train Wave</th>
-            <th>Infested Turkeys Per Carriage</th>
-            <th>Total Spawned</th>
+            <th>列车波次</th>
+            <th>每节车厢的被感染火鸡数</th>
+            <th>生成总数</th>
         </tr>
     </thead>
     <tbody>
@@ -29,9 +29,9 @@
         </tr>
     </tbody>
 </table>
-<p>Infested Turkeys do not generate supply when killed. An infested turkey is shown below:</p>
-<img src="/images/mutatordata/turkeyshootinfestedturkey.jpg" alt="Infested Turkey">
-<p>Infested Turkeys deal 0 damage (70 vs structures) every 2 seconds and have 150 HP and 1 armor.</p>
-<p>When the 6th train wave is destroyed, the Turking will spawn. The Turking is shown below:</p>
-<img src="/images/mutatordata/turkeyshootturking.jpg" alt="Turking">
-<p>The Turking deal 250 damage (500 vs structures) every 2 seconds and has 6000 HP and 3 armor. It has an ability "Terrifying Gobble" with a 30-second cooldown that fear all player units within 11 range.</p>
+<p>被感染的火鸡被消灭时不会提供补给。被感染的火鸡如下图所示：</p>
+<img src="/images/mutatordata/turkeyshootinfestedturkey.jpg" alt="被感染的火鸡">
+<p>被感染的火鸡每 2 秒造成 0 点伤害（对建筑为 70），拥有 150 点生命值和 1 点护甲。</p>
+<p>第 6 个列车波次被摧毁时，会生成火鸡王。火鸡王如下图所示：</p>
+<img src="/images/mutatordata/turkeyshootturking.jpg" alt="火鸡王">
+<p>火鸡王每 2 秒造成 250 点伤害（对建筑为 500），拥有 6000 点生命值和 3 点护甲。它拥有冷却时间为 30 秒的“恐怖咯咯叫”技能，可使 11 射程内的所有玩家单位陷入恐惧。</p>

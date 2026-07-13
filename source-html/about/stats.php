@@ -5,9 +5,9 @@
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Statistics</title>
-  <meta name="description" content="Various statistics related to starcraft2coop.com and Starcraft II content, such as mutator frequency counts in Weekly Mutations.">
-  <meta name="keywords" content="Starcraft co-op stats">
+  <title>StarCraft II 合作任务——统计数据</title>
+  <meta name="description" content="与 starcraft2coop.com 和 StarCraft II 内容相关的各类统计数据，例如每周突变中各突变因子的出现次数。">
+  <meta name="keywords" content="StarCraft II 合作任务统计">
   <link rel="canonical" href="https://starcraft2coop.com/resources/stats">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
   <script src="/scripts/chartcolors.js"></script>
@@ -31,7 +31,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     }
   </style>
   <?= startContent() ?>
-    <h1>Site-Specific and Co-op Related Statistics</h1>
+    <h1>本站与合作任务相关统计</h1>
     <?php
 
     require_once __DIR__ . '/../../includes/queries.php';
@@ -56,41 +56,41 @@ require_once __DIR__ . "/../../includes/wrapper.php";
 
     function statsMutatorToken(string $name): string
     {
-        return preg_replace('/[^a-z0-9]+/', '', strtolower($name));
+        return mutator_token($name);
     }
     ?>
     <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#general">General</a></p>
-        <p><a href="#site">Site-Specific</a></p>
-        <p><a href="#weeklyMutations">Weekly Mutations</a></p>
-        <p><a href="#rc">Rockslapping Champions</a></p>
+        <h2>本页目录</h2>
+        <p><a href="#general">常规统计</a></p>
+        <p><a href="#site">本站统计</a></p>
+        <p><a href="#weeklyMutations">每周突变</a></p>
+        <p><a href="#rc">拍石冠军</a></p>
         <p></p>
     </div>
-    <div id="tooltip">tooltip</div>
-    <h2 id="general">General</h2>
-    <p>These statistics are directly related to the Co-op game mode and do not include any community-made content. Please note that as new content gets added, these statistics may not be accurate until the entire site has been updated to reflect the new patch. When this happens, a post will be made on the front page of the site, notifying readers of this.</p>
-    <p>Total Commanders: <?= count(get_commanders()) ?></p>
-    <p>Total Missions: <?= count(get_missions()) ?></p>
-    <p>Total Mutators: <?= count(get_mutators()) ?></p>
-    <h2 id="site">Site-Specific</h2>
-    <p>These statistics provide you with a bit of a behind-the-scenes look at starcraft2coop.com. There is a lot of data that is stored in the site's databases that allow users to pull useful information when they wish, such as mutator interactions. A lot of this data is automatically pulled and presented to readers in an easy-to-find manner, such as on the <a href="/resources/weeklymutations">Weekly Mutations</a> page.</p>
-    <p>Total Mutator Interactions: <?= $mutatorInteractionCount ?></p>
-    <p>Commander Tips for Mutators: <?= $mutatorCommanderTipsCount ?></p>
-    <p>Patches Recognized by Analyzer: <?= $patchCount ?></p>
-    <h2 id="weeklyMutations">Weekly Mutations</h2>
-    <p>These are some interesting statistics from all <a href="/resources/weeklymutations">Weekly Mutations</a> that have been released to date including the current Weekly Mutation. Statistics include the most and least frequent mutators. Occasionally, Weekly Mutations are repeated, which can offset counts. Hence, statistics will be analyzed with and without these repeats.</p>
-    <p>Total Weekly Mutations: <?= $weeklyMutationCount ?></p>
-    <p>Wheel of Misfortune Count: <?= $WOMCount ?></p>
-    <p>Most Frequent Missions: </p>
+    <div id="tooltip">提示</div>
+    <h2 id="general">常规统计</h2>
+    <p>这些统计数据直接与合作任务模式相关，不包括任何社区制作内容。请注意，加入新内容后，在全站更新以适配新补丁之前，这些数据可能不够准确。出现这种情况时，我们会在网站首页发布消息提醒读者。</p>
+    <p>指挥官总数：<?= count(get_commanders()) ?></p>
+    <p>任务总数：<?= count(get_missions()) ?></p>
+    <p>突变因子总数：<?= count(get_mutators()) ?></p>
+    <h2 id="site">本站统计</h2>
+    <p>这些统计可以让你一窥 starcraft2coop.com 的幕后。本站数据库保存了大量数据，方便用户按需查询突变因子互动等实用信息。其中很多数据会自动提取，并以容易查找的方式呈现给读者，例如<a href="/resources/weeklymutations">每周突变</a>页面。</p>
+    <p>突变因子互动总数：<?= $mutatorInteractionCount ?></p>
+    <p>指挥官应对突变因子技巧数：<?= $mutatorCommanderTipsCount ?></p>
+    <p>分析器可识别补丁数：<?= $patchCount ?></p>
+    <h2 id="weeklyMutations">每周突变</h2>
+    <p>以下是截至目前（包括当前一期）所有<a href="/resources/weeklymutations">每周突变</a>的一些有趣统计，包括出现频率最高和最低的突变因子。每周突变偶尔会重复，可能影响计数，因此统计会分别考虑包含和排除重复期数的情况。</p>
+    <p>每周突变总数：<?= $weeklyMutationCount ?></p>
+    <p>厄运之轮出现次数：<?= $WOMCount ?></p>
+    <p>出现最频繁的任务：</p>
     <table>
         <thead>
             <tr>
-                <th colspan=2>Per cycle</th>
+                <th colspan=2>每个周期</th>
             </tr>
             <tr>
-                <th>Map</th>
-                <th>Appearances</th>
+                <th>地图</th>
+                <th>出现次数</th>
             </tr>
         </thead>
         <tbody>
@@ -104,21 +104,21 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             ?>
         </tbody>
     </table>
-    <p>Most Frequent Mutators:</p>
+    <p>出现最频繁的突变因子：</p>
     <table>
         <thead>
             <tr>
-                <th colspan=2>Per cycle</th>
+                <th colspan=2>每个周期</th>
             </tr>
             <tr>
-                <th>Mutator</th>
-                <th>Appearances</th>
+                <th>突变因子</th>
+                <th>出现次数</th>
             </tr>
         </thead>
         <tbody>
             <?php
             foreach ($sortedMutators as $mutator) {
-                if ($mutator['mutatorname'] === 'Random') {
+                if (original_name('mutators', $mutator['mutatorname']) === 'Random') {
                     continue;
                 }
                 echo("<tr>");
@@ -132,14 +132,14 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         </tbody>
     </table>
 
-    <h2 id="community">Community Stats</h2>
-        <p>Note: Data generated from replays uploaded to the site, back when replay uploading was supported. Replay uploading is no longer supported.<br>
-        Data generated on: 2024-05-04 04:00:01<br>
-        Total replays counted: 255876</p>
+    <h2 id="community">社区统计</h2>
+        <p>注意：数据来自本站过去支持上传录像时收到的录像；目前已不再支持录像上传。<br>
+        数据生成时间：2024-05-04 04:00:01<br>
+        统计录像总数：255876</p>
     <div class="infoIcon">
-        <p class="subheading">Total Games Counted Across Servers</p>
-        <img src="/images/replayanalyzer/info.png" alt="Info">
-        <span class="tooltip">This is the number of games played per server.</span>
+        <p class="subheading">各服务器统计对局总数</p>
+        <img src="/images/replayanalyzer/info.png" alt="信息">
+        <span class="tooltip">各服务器进行的对局数量。</span>
     </div>
         <div class="chart">
         <canvas id="communityServerGamesChart" width="500" height="250"></canvas>
@@ -149,7 +149,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         var myChart = new Chart(ctx, {
             type: 'pie',
             data: {
-                labels: ["Asia","CN","EU","NA"],
+                labels: ["亚洲","中国","欧洲","北美"],
                 datasets: [{
                     data: [15069,379,98577,141851],
                     backgroundColor:[colorAsia,colorCN,colorEU,colorNA],
@@ -185,7 +185,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                             });
                             var currentValue = dataset.data[tooltipItem.index];
                             var percentage = Math.floor(((currentValue/total) * 100)+0.5);
-                            return currentValue + " games played (" + percentage + "%)";
+                            return currentValue + " 场对局（" + percentage + "%）";
                         }
                     }
                 }
@@ -193,9 +193,9 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         });
     </script>
     <div class="infoIcon">
-        <p class="subheading">Total Games Counted Across Commanders</p>
-        <img src="/images/replayanalyzer/info.png" alt="Info">
-        <span class="tooltip">This is the number of games played per commander sorted by decreasing popularity.</span>
+        <p class="subheading">各指挥官统计对局总数</p>
+        <img src="/images/replayanalyzer/info.png" alt="信息">
+        <span class="tooltip">各指挥官的对局数量，按热门程度从高到低排列。</span>
     </div>
         <div class="chart">
         <canvas id="communityCommanderGamesChart" width="500" height="250"></canvas>
@@ -205,7 +205,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         var myChart = new Chart(ctx, {
             type: 'pie',
             data: {
-                labels: ["Tychus","Dehaka","Abathur","Mengsk","Stukov","Nova","Zagara","Kerrigan","Stetmann","Karax","Zeratul","Raynor","Horner","Swann","Alarak","Artanis","Fenix","Vorazun"],
+                labels: ["泰凯斯","德哈卡","阿巴瑟","蒙斯克","斯托科夫","诺娃","扎加拉","凯瑞甘","斯台特曼","凯拉克斯","泽拉图","雷诺","霍纳","斯旺","阿拉纳克","阿塔尼斯","菲尼克斯","沃拉尊"],
                 datasets: [{
                     data: [22401,21504,18877,18129,17699,17045,13926,13667,12726,12652,12405,11676,11272,10949,10783,10224,10200,9741],
                     backgroundColor:[tychusColor,dehakaColor,abathurColor,mengskColor,stukovColor,novaColor,zagaraColor,kerriganColor,stetmannColor,karaxColor,zeratulColor,raynorColor,hornerColor,swannColor,alarakColor,artanisColor,fenixColor,vorazunColor],
@@ -229,7 +229,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                             });
                             var currentValue = dataset.data[tooltipItem.index];
                             var percentage = Math.floor(((currentValue/total) * 100)+0.5);
-                            return currentValue + " games played (" + percentage + "%)";
+                            return currentValue + " 场对局（" + percentage + "%）";
                         }
                     }
                 }
@@ -237,9 +237,9 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         });
     </script>
     <div class="infoIcon">
-        <p class="subheading">Total Games Counted Across Missions</p>
-        <img src="/images/replayanalyzer/info.png" alt="Info">
-        <span class="tooltip">This is the number of games played per mission sorted by decreasing popoularity.</span>
+        <p class="subheading">各任务统计对局总数</p>
+        <img src="/images/replayanalyzer/info.png" alt="信息">
+        <span class="tooltip">各任务的对局数量，按热门程度从高到低排列。</span>
     </div>
         <div class="chart">
         <canvas id="communityMissionGamesChart" width="500" height="250"></canvas>
@@ -249,7 +249,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         var myChart = new Chart(ctx, {
             type: 'pie',
             data: {
-                labels: ["Void Thrashing","Oblivion Express","Dead of Night","Rifts to Korhal","Temple of the Past","Void Launch","Lock & Load","Mist Opportunities","Malwarfare","Miner Evacuation","Chain of Ascension","Scythe of Amon","Part and Parcel","The Vermillion Problem","Cradle of Death"],
+                labels: ["虚空撕裂","湮灭快车","亡者之夜","克哈裂痕","往日神庙","虚空降临","天锁","机会渺茫","恶意代码","疏散矿工","飞升之链","埃蒙之镰","聚铁成兵","熔火危机","死亡摇篮"],
                 datasets: [{
                     data: [32228,23680,23455,18090,16890,16778,15438,15280,14686,14258,14094,14016,13475,12605,10903],
                     backgroundColor:[missionColors[0],missionColors[1],missionColors[2],missionColors[3],missionColors[4],missionColors[5],missionColors[6],missionColors[7],missionColors[8],missionColors[9],missionColors[10],missionColors[11],missionColors[12],missionColors[13],missionColors[14]],
@@ -273,7 +273,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                             });
                             var currentValue = dataset.data[tooltipItem.index];
                             var percentage = Math.floor(((currentValue/total) * 100)+0.5);
-                            return currentValue + " games played (" + percentage + "%)";
+                            return currentValue + " 场对局（" + percentage + "%）";
                         }
                     }
                 }
@@ -281,9 +281,9 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         });
     </script>
     <div class="infoIcon">
-        <p class="subheading">Total Games Counted Across Difficulties</p>
-        <img src="/images/replayanalyzer/info.png" alt="Info">
-        <span class="tooltip">This is the number of games played per difficulty.</span>
+        <p class="subheading">各难度统计对局总数</p>
+        <img src="/images/replayanalyzer/info.png" alt="信息">
+        <span class="tooltip">各难度下进行的对局数量。</span>
     </div>
         <div class="chart">
         <canvas id="communityDifficultyGamesChart" width="500" height="250"></canvas>
@@ -293,7 +293,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         var myChart = new Chart(ctx, {
             type: 'pie',
             data: {
-                labels: ["Casual (0.66%)","Normal (3.39%)","Hard (11.81%)","Brutal (72.71%)","Brutal1 (7.2%)","Brutal2 (0.74%)","Brutal3 (1.06%)","Brutal4 (1.85%)","Brutal5 (0.27%)","Brutal6 (0.31%)"],
+                labels: ["休闲（0.66%）","普通（3.39%）","困难（11.81%）","残酷（72.71%）","残酷+1（7.2%）","残酷+2（0.74%）","残酷+3（1.06%）","残酷+4（1.85%）","残酷+5（0.27%）","残酷+6（0.31%）"],
                 datasets: [{
                     data: [1686,8678,30211,186037,18421,1902,2707,4744,687,803],
                     backgroundColor:[casualColor,normalColor,hardColor,brutalColor,brutal1Color,brutal2Color,brutal3Color,brutal4Color,brutal5Color,brutal6Color],
@@ -321,7 +321,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                             });
                             var currentValue = dataset.data[tooltipItem.index];
                             var percentage = Math.floor(((currentValue/total) * 100)+0.5);
-                            return currentValue + " games played (" + percentage + "%)";
+                            return currentValue + " 场对局（" + percentage + "%）";
                         }
                     }
                 }
@@ -329,9 +329,9 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         });
     </script>
     <div class="infoIcon">
-        <p class="subheading">Total Games Counted Across Enemy Compositions</p>
-        <img src="/images/replayanalyzer/info.png" alt="Info">
-        <span class="tooltip">This is the number of games played per enemy composition faced where the composition could be identified.</span>
+        <p class="subheading">各敌方阵容统计对局总数</p>
+        <img src="/images/replayanalyzer/info.png" alt="信息">
+        <span class="tooltip">在能够识别敌方阵容的对局中，面对各阵容的对局数量。</span>
     </div>
         <div class="chart">
         <canvas id="communityCompGamesChart" width="500" height="250"></canvas>
@@ -341,7 +341,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         var myChart = new Chart(ctx, {
             type: 'pie',
             data: {
-                labels: ["Protoss Compositions","Masters and Machines","Towering Walkers","Disruptive Artillery","Hope of the Khalai","Siege of Storms","Shadow Disruption","Vanguard of Aiur","Fleet of the Matriarch","Terran Compositions","Raiding Party","Machines of War","Shadow Tech","Dominion Battlegroup","Classic Infantry","Classic Mech","Zerg Compositions","Ravaging Infestation","Broodling Corruption","Explosive Threats","Invasionary Swarm","Devouring Scourge"],
+                labels: ["星灵阵容","大师与机械","高耸行者","毁灭火炮","卡莱之光","风暴围城","暗影破坏","艾尔先锋","族母舰队","人类阵容","突袭小队","战争机器","暗影科技","帝国战斗群","经典步兵","经典机械","异虫阵容","肆虐虫灾","巢虫腐化","爆炸威胁","侵袭虫群","吞噬天灾"],
                 datasets: [{
                     data: [0,10931,10915,10772,10220,10793,11077,9379,9006,0,14508,14671,14770,15006,12410,12501,0,18049,17088,18199,15046,14354],
                     backgroundColor:compColors,
@@ -355,7 +355,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                     labels:{
                         fontColor: "white",
                         filter: function(legendItem, chartData) {
-                            if(legendItem.text.includes("Compositions")){
+                            if(legendItem.text.includes("阵容")){
                                 return true;
                             }
                             else{
@@ -367,12 +367,12 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                         var index = legendItem.datasetIndex;
                         var ci = this.chart;;
                         var meta = ci.getDatasetMeta(0)
-                        if(legendItem.text.includes("Protoss")){
+                        if(legendItem.text.includes("星灵")){
                             for(var i=0;i<9;i++){
                                 meta.data[i].hidden = !meta.data[i].hidden;
                             }
                         }
-                        else if(legendItem.text.includes("Terran")){
+                        else if(legendItem.text.includes("人类")){
                             for(var i=9;i<16;i++){
                                 meta.data[i].hidden = !meta.data[i].hidden;
                             }
@@ -399,7 +399,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                             });
                             var currentValue = dataset.data[tooltipItem.index];
                             var percentage = Math.floor(((currentValue/total) * 100)+0.5);
-                            return currentValue + " games played (" + percentage + "%)";
+                            return currentValue + " 场对局（" + percentage + "%）";
                         }
                     }
                 }
@@ -407,9 +407,9 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         });
     </script>
     <div class="infoIcon">
-        <p class="subheading">Commander Win Rates</p>
-        <img src="/images/replayanalyzer/info.png" alt="Info">
-        <span class="tooltip">This is the win rate per commander sorted by decreasing win rate.</span>
+        <p class="subheading">指挥官胜率</p>
+        <img src="/images/replayanalyzer/info.png" alt="信息">
+        <span class="tooltip">各指挥官的胜率，按胜率从高到低排列。</span>
     </div>
         <div class="chart">
         <canvas id="communityCommanderWinRateChart" width="600" height="400"></canvas>
@@ -419,7 +419,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ["Dehaka","Zeratul","Nova","Fenix","Artanis","Horner","Abathur","Alarak","Kerrigan","Stetmann","Mengsk","Zagara","Karax","Swann","Tychus","Vorazun","Stukov","Raynor"],
+                labels: ["德哈卡","泽拉图","诺娃","菲尼克斯","阿塔尼斯","霍纳","阿巴瑟","阿拉纳克","凯瑞甘","斯台特曼","蒙斯克","扎加拉","凯拉克斯","斯旺","泰凯斯","沃拉尊","斯托科夫","雷诺"],
                 datasets: [{
                     data: [19884,11408,15612,9257,9268,10147,16891,9642,12166,11277,15989,12271,11139,9610,19642,8492,15167,9785],
                     backgroundColor: winColor,
@@ -462,14 +462,14 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                                 var currentWins = tooltipItem.yLabel;
                                 var totalGames = currentWins + data.datasets[1].data[tooltipItem.index];
                                 var percentage = Math.floor(((currentWins/totalGames) * 100)+0.5);
-                                return(currentWins + " wins (" + percentage + "% winrate)");
+                                return(currentWins + " 场胜利（胜率 " + percentage + "%）");
                             }
                             else{
                                 var currentLosses = tooltipItem.yLabel;
                                 var totalGames = currentLosses + data.datasets[0].data[tooltipItem.index];
                                 var wins = totalGames - currentLosses;
                                 var percentage = Math.floor(((wins/totalGames) * 100)+0.5);
-                                return(currentLosses + " losses (" + percentage + "% winrate)");
+                                return(currentLosses + " 场失败（胜率 " + percentage + "%）");
                             }
                         }
                     }
@@ -478,9 +478,9 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         });
     </script>
     <div class="infoIcon">
-        <p class="subheading">Mission Win Rates</p>
-        <img src="/images/replayanalyzer/info.png" alt="Info">
-        <span class="tooltip">This is the win rate per mission sorted by decreasing win rate.</span>
+        <p class="subheading">任务胜率</p>
+        <img src="/images/replayanalyzer/info.png" alt="信息">
+        <span class="tooltip">各任务的胜率，按胜率从高到低排列。</span>
     </div>
         <div class="chart">
         <canvas id="communityMissionWinRateChart" width="600" height="400"></canvas>
@@ -490,7 +490,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ["Lock & Load","Void Thrashing","Rifts to Korhal","The Vermillion Problem","Void Launch","Dead of Night","Part and Parcel","Miner Evacuation","Cradle of Death","Oblivion Express","Temple of the Past","Malwarfare","Mist Opportunities","Scythe of Amon","Chain of Ascension"],
+                labels: ["天锁","虚空撕裂","克哈裂痕","熔火危机","虚空降临","亡者之夜","聚铁成兵","疏散矿工","死亡摇篮","湮灭快车","往日神庙","恶意代码","机会渺茫","埃蒙之镰","飞升之链"],
                 datasets: [{
                     data: [14555,30327,16529,11441,15155,21170,12111,12648,9619,20865,14410,12366,12861,11768,11822],
                     backgroundColor: winColor,
@@ -533,14 +533,14 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                                 var currentWins = tooltipItem.yLabel;
                                 var totalGames = currentWins + data.datasets[1].data[tooltipItem.index];
                                 var percentage = Math.floor(((currentWins/totalGames) * 100)+0.5);
-                                return(currentWins + " wins (" + percentage + "% winrate)");
+                                return(currentWins + " 场胜利（胜率 " + percentage + "%）");
                             }
                             else{
                                 var currentLosses = tooltipItem.yLabel;
                                 var totalGames = currentLosses + data.datasets[0].data[tooltipItem.index];
                                 var wins = totalGames - currentLosses;
                                 var percentage = Math.floor(((wins/totalGames) * 100)+0.5);
-                                return(currentLosses + " losses (" + percentage + "% winrate)");
+                                return(currentLosses + " 场失败（胜率 " + percentage + "%）");
                             }
                         }
                     }
@@ -549,9 +549,9 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         });
     </script>
     <div class="infoIcon">
-        <p class="subheading">Enemy Composition Win Rates</p>
-        <img src="/images/replayanalyzer/info.png" alt="Info">
-        <span class="tooltip">This is the win rate per enemy composition where the composition could be identified sorted by decreasing win rate.</span>
+        <p class="subheading">敌方阵容胜率</p>
+        <img src="/images/replayanalyzer/info.png" alt="信息">
+        <span class="tooltip">能够识别阵容时，各敌方阵容对应的胜率，按胜率从高到低排列。</span>
     </div>
         <div class="chart">
         <canvas id="communityCompWinRateChart" width="600" height="400"></canvas>
@@ -561,7 +561,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ["Devouring Scourge","Shadow Disruption","Hope of the Khalai","Siege of Storms","Classic Infantry","Raiding Party","Invasionary Swarm","Broodling Corruption","Towering Walkers","Masters and Machines","Fleet of the Matriarch","Disruptive Artillery","Machines of War","Ravaging Infestation","Classic Mech","Vanguard of Aiur","Explosive Threats","Dominion Battlegroup","Shadow Tech"],
+                labels: ["吞噬天灾","暗影破坏","卡莱之光","风暴围城","经典步兵","突袭小队","侵袭虫群","巢虫腐化","高耸行者","大师与机械","族母舰队","毁灭火炮","战争机器","肆虐虫灾","经典机械","艾尔先锋","爆炸威胁","帝国战斗群","暗影科技"],
                 datasets: [{
                     data: [13304,10183,9365,9862,11338,13219,13704,15533,9884,9886,8130,9686,13118,16116,11059,8290,16032,13171,12873],
                     backgroundColor: winColor,
@@ -604,14 +604,14 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                                 var currentWins = tooltipItem.yLabel;
                                 var totalGames = currentWins + data.datasets[1].data[tooltipItem.index];
                                 var percentage = Math.floor(((currentWins/totalGames) * 100)+0.5);
-                                return(currentWins + " wins (" + percentage + "% winrate)");
+                                return(currentWins + " 场胜利（胜率 " + percentage + "%）");
                             }
                             else{
                                 var currentLosses = tooltipItem.yLabel;
                                 var totalGames = currentLosses + data.datasets[0].data[tooltipItem.index];
                                 var wins = totalGames - currentLosses;
                                 var percentage = Math.floor(((wins/totalGames) * 100)+0.5);
-                                return(currentLosses + " losses (" + percentage + "% winrate)");
+                                return(currentLosses + " 场失败（胜率 " + percentage + "%）");
                             }
                         }
                     }
@@ -620,31 +620,31 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         });
     </script>
     <div class="infoIcon">
-        <p class="subheading">Fastest Clear Times (Brutal)</p>
-        <img src="/images/replayanalyzer/info.png" alt="Info">
-        <span class="tooltip">This is fastest time to win a mission that can be rushed to completion on Brutal difficulty.</span>
+        <p class="subheading">最快通关时间（残酷）</p>
+        <img src="/images/replayanalyzer/info.png" alt="信息">
+        <span class="tooltip">在残酷难度下，可以速通的任务所记录到的最快胜利时间。</span>
     </div>
     <table>
         <thead>
             <tr>
-                <th>Mission Name</th>
-                <th>Clear Time</th>
+                <th>任务名称</th>
+                <th>通关时间</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td>Lock & Load</td><td>05:33</td></tr><tr><td>Void Thrashing</td><td>06:30</td></tr><tr><td>Scythe of Amon</td><td>07:15</td></tr><tr><td>Rifts to Korhal</td><td>08:20</td></tr><tr><td>Chain of Ascension</td><td>09:25</td></tr><tr><td>Miner Evacuation</td><td>09:51</td></tr><tr><td>Dead of Night</td><td>10:44</td></tr><tr><td>Cradle of Death</td><td>11:02</td></tr><tr><td>Part and Parcel</td><td>14:22</td></tr>        </tbody>
+            <tr><td>天锁</td><td>05:33</td></tr><tr><td>虚空撕裂</td><td>06:30</td></tr><tr><td>埃蒙之镰</td><td>07:15</td></tr><tr><td>克哈裂痕</td><td>08:20</td></tr><tr><td>飞升之链</td><td>09:25</td></tr><tr><td>疏散矿工</td><td>09:51</td></tr><tr><td>亡者之夜</td><td>10:44</td></tr><tr><td>死亡摇篮</td><td>11:02</td></tr><tr><td>聚铁成兵</td><td>14:22</td></tr>        </tbody>
     </table>
-    <h2 id="rc">Rockslapping Champions</h2>
-    <p>The flagship series of the site, these statistics gather information for some commonly-asked questions about the series. This also serves as a page that frequent submitters can use to try and one-up each other!</p>
-    <p>Note: Score is calculated as +1.0 for a full episode feature and +0.5 for a compilation feature. If a submitter gets multiple features in a single compilation, they will receive multiple +0.5 points to reflect each of their submissions.</p>
-    <p>For more information on Rockslapping Champions and links to the videos, please visit <a href="/community/rockslappingchampions">this page</a>.</p>
-    <p>Top Contributors:</p>
+    <h2 id="rc">拍石冠军</h2>
+    <p>这是本站的招牌系列。以下统计汇总了该系列中一些常见问题的相关信息，也能让经常投稿的玩家互相比拼，看看谁更胜一筹！</p>
+    <p>注意：完整单集收录计 +1.0 分，合集收录计 +0.5 分。如果同一位投稿者在一部合集中多次入选，则每份投稿分别获得 +0.5 分。</p>
+    <p>若要了解“拍石冠军”的更多信息并查看视频链接，请访问<a href="/community/rockslappingchampions">此页面</a>。</p>
+    <p>投稿次数最多的玩家：</p>
     <table>
         <thead>
             <tr>
-                <th>Player</th>
-                <th>Score</th>
-                <th>Total Episodes</th>
+                <th>玩家</th>
+                <th>得分</th>
+                <th>总集数</th>
             </tr>
         </thead>
         <tbody>
@@ -656,21 +656,21 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         </tbody>
     </table>
 
-    <p>Rockslappingiest Commanders:</p>
+    <p>最会拍石头的指挥官：</p>
     <table>
         <thead>
             <tr>
-                <th>Commander</th>
-                <th>Score</th>
-                <th>Total Episodes</th>
+                <th>指挥官</th>
+                <th>得分</th>
+                <th>总集数</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td>Raynor</td><td class=centered>16.5</td><td class=centered>19</td><tr>
-<tr><td>Artanis</td><td class=centered>15.0</td><td class=centered>16</td><tr>
-<tr><td>Tychus</td><td class=centered>12.5</td><td class=centered>15</td><tr>
-<tr><td>Vorazun</td><td class=centered>12.0</td><td class=centered>14</td><tr>
-<tr><td>Dehaka</td><td class=centered>12.0</td><td class=centered>15</td><tr>
+            <tr><td>雷诺</td><td class=centered>16.5</td><td class=centered>19</td><tr>
+<tr><td>阿塔尼斯</td><td class=centered>15.0</td><td class=centered>16</td><tr>
+<tr><td>泰凯斯</td><td class=centered>12.5</td><td class=centered>15</td><tr>
+<tr><td>沃拉尊</td><td class=centered>12.0</td><td class=centered>14</td><tr>
+<tr><td>德哈卡</td><td class=centered>12.0</td><td class=centered>15</td><tr>
         </tbody>
     </table>
     <script>

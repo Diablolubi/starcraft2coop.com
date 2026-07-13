@@ -5,6 +5,36 @@ function token(string $name): string
     return preg_replace('/[^a-z0-9]+/', '', strtolower($name));
 }
 
+function original_name(string $section, string $localizedName): string
+{
+    static $glossary = null;
+    if ($glossary === null) {
+        $path = __DIR__ . '/../translation/glossary.json';
+        $glossary = json_decode(file_get_contents($path), true, flags: JSON_THROW_ON_ERROR);
+    }
+    foreach ($glossary[$section] ?? [] as $entry) {
+        if ($entry['zh-CN'] === $localizedName) {
+            return $entry['en'];
+        }
+    }
+    return $localizedName;
+}
+
+function mutator_token(string $name): string
+{
+    return token(original_name('mutators', $name));
+}
+
+function mission_token(string $name): string
+{
+    return token(original_name('missions', $name));
+}
+
+function weekly_mutation_token(string $name): string
+{
+    return token(original_name('weekly_mutations', $name));
+}
+
 /**
  * Thumbnail images all use & ("Lock & Load", "Part & Parcel"), so the
  * Ctrl+F-able hidden overlay text needs to match.
@@ -119,7 +149,45 @@ function get_currentmutationcycle(): array
 function get_amonunits(): array
 {
     $json = file_get_contents(__DIR__ . '/../html/data/amonunits.json');
-    return json_decode($json, true);
+    return with_original_names('source-data/amonunits.json', json_decode($json, true));
+}
+
+function get_amonunit(int $amonId): ?array
+{
+    foreach (get_amonunits() as $unit) {
+        if ((int)$unit['amonid'] === $amonId) {
+            return $unit;
+        }
+    }
+    return null;
+}
+
+function with_original_names(string $relativePath, array $data): array
+{
+    static $snapshots = null;
+    if ($snapshots === null) {
+        $baseline = json_decode(
+            file_get_contents(__DIR__ . '/../translation/baseline.json'),
+            true,
+            flags: JSON_THROW_ON_ERROR
+        );
+        $snapshots = [];
+        foreach ($baseline['files'] as $snapshot) {
+            if (isset($snapshot['data'])) {
+                $snapshots[$snapshot['path']] = $snapshot['data'];
+            }
+        }
+    }
+    $original = $snapshots[$relativePath] ?? [];
+    if (count($original) !== count($data)) {
+        throw new RuntimeException("Translation baseline does not match $relativePath");
+    }
+    foreach ($data as $index => &$row) {
+        if (isset($row['name'], $original[$index]['name'])) {
+            $row['_original_name'] = $original[$index]['name'];
+        }
+    }
+    return $data;
 }
 
 /**
@@ -128,7 +196,7 @@ function get_amonunits(): array
 function get_playerunits(): array
 {
     $json = file_get_contents(__DIR__ . '/../html/data/playerunits.json');
-    return json_decode($json, true);
+    return with_original_names('source-data/playerunits.json', json_decode($json, true));
 }
 
 /**
@@ -137,7 +205,7 @@ function get_playerunits(): array
 function get_playerupgrades(): array
 {
     $json = file_get_contents(__DIR__ . '/../html/data/playerupgrades.json');
-    return json_decode($json, true);
+    return with_original_names('source-data/playerupgrades.json', json_decode($json, true));
 }
 
 /**
@@ -146,7 +214,19 @@ function get_playerupgrades(): array
 function get_playertalents(): array
 {
     $json = file_get_contents(__DIR__ . '/../html/data/playertalents.json');
-    return json_decode($json, true);
+    return with_original_names('source-data/playertalents.json', json_decode($json, true));
+}
+
+function get_playerunit_display_names(string $commander): array
+{
+    $names = [];
+    foreach (get_playerunits() as $unit) {
+        if (strcasecmp($unit['commander'], $commander) !== 0 || isset($names[$unit['basename']])) {
+            continue;
+        }
+        $names[$unit['basename']] = preg_replace('/（[^）]+）$/u', '', $unit['name']);
+    }
+    return $names;
 }
 
 /**
@@ -189,7 +269,7 @@ function get_playerunit_stats(string $commander, string $basename): array
         $groups[$unit['name']]['damage'][] = $unit['damage'];
         $groups[$unit['name']]['attackbonus'][] = $unit['attackbonus'];
     }
-    ksort($groups, SORT_STRING);
+    uasort($groups, fn($a, $b) => $a['_original_name'] <=> $b['_original_name']);
     return array_values($groups);
 }
 
@@ -309,6 +389,7 @@ function normalize_playerupgrade_for_calculator(array $upgrade): array
     return [
         'unit' => $upgrade['unit'],
         'name' => $upgrade['name'],
+        '_original_name' => $upgrade['_original_name'],
         'modifier' => $upgrade['modifier'],
         'modifier2' => $upgrade['modifiermode'] ?? '',
         'modifier3' => $upgrade['modifiertag'] ?? '',

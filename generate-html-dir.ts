@@ -1,25 +1,26 @@
 #!/usr/bin/env bun
-import { $, Glob } from "bun";
+import { Glob } from "bun";
+import { cp, rm } from "node:fs/promises";
 
-$.cwd(import.meta.dir);
+process.chdir(import.meta.dir);
 
 const scanner = new Glob('!{files,images,.dh-diag}');
 for await (const file of scanner.scan({cwd: "html", dot: true, onlyFiles: false})) {
     // console.log(file);
-    await $`rm -rf html/${file}`;
+    await rm(`html/${file}`, { recursive: true, force: true });
 }
 
-await $`cp -r source-html/. html/`;
+await cp('source-html', 'html', { recursive: true });
 
 for (const pattern of ['**/*.test.{ts,tsx,js,jsx}', '**/*.spec.{ts,tsx,js,jsx}']) {
     const testScanner = new Glob(pattern);
     for await (const file of testScanner.scan({cwd: "html", onlyFiles: true})) {
-        await $`rm -f html/${file}`;
+        await rm(`html/${file}`, { force: true });
     }
 }
 
-await $`./source-data/build.ts`;
-await $`./source-data/build-mutators.ts`;
+await import('./source-data/build');
+await import('./source-data/build-mutators');
 
 await Bun.build({
     entrypoints: [

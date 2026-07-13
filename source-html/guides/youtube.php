@@ -5,14 +5,14 @@
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - YouTube</title>
+  <title>StarCraft II 合作任务——YouTube</title>
 <?= startContent() ?>
     <h1>YouTube</h1>
-    <p>We have several guides on YouTube:</p>
+    <p>我们在 YouTube 上发布了多个系列：</p>
         <ul>
-            <li><a href="/community/gamespotlight">Game Spotlight</a> - a special non-routine series of game casts from some of the best Co-op players in the community.</li>
-            <li><a href="/community/mythbusters">Mythbusters</a> - takes theories and myths from the co-op community and puts them to the test</li>
-            <li><a href="/community/rockslappingchampions">Rockslapping Champions</a> - a comedy series of co-op games casted where a player has demonstrated poor decision-making and strategic-thinking ability</li>
-            <li><a href="https://www.youtube.com/c/starcraft2coop">Entire Starcraft2coop.com YouTube Channel</a></li>
+            <li><a href="/community/gamespotlight">精彩对局</a>——特别选播社区顶尖合作任务玩家的精彩比赛。</li>
+            <li><a href="/community/mythbusters">流言终结者</a>——实际检验合作任务社区中的各种理论与传言。</li>
+            <li><a href="/community/rockslappingchampions">拍石冠军</a>——解说那些暴露出糟糕决策和战略思考能力的合作任务对局，是一档喜剧系列。</li>
+            <li><a href="https://www.youtube.com/c/starcraft2coop">Starcraft2coop.com 完整 YouTube 频道</a></li>
     </ul>
 <?= endContent() ?>

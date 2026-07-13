@@ -5,9 +5,9 @@
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Commander Guide - Mengsk</title>
-  <meta name="description" content="Starcraft 2 Co-op Commander Guide Mengsk">
-  <meta name="keywords" content="Starcraft co-op guides mengsk commander mastery prestige build">
+  <title>《星际争霸 2》合作任务 - 指挥官攻略 - 蒙斯克</title>
+  <meta name="description" content="《星际争霸 2》合作任务蒙斯克指挥官攻略">
+  <meta name="keywords" content="星际争霸 合作任务 攻略 蒙斯克 指挥官 精通 威望 配兵">
   <link rel="stylesheet"  media="all" type="text/css" href="/styles/commanderstyle.css?v=2">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="https://starcraft2coop.com/commanders/mengsk">
@@ -60,408 +60,408 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         }
   </style>
   <?= startContent() ?>
-    <div id="tooltip">tooltip</div>
-    <h1><span class="unbold">Commander:</span> Mengsk</h1>
-    <p id="commanderMotto">Emperor of the Dominion</p>
+    <div id="tooltip">提示</div>
+    <h1><span class="unbold">指挥官：</span>蒙斯克</h1>
+    <p id="commanderMotto">帝国元首</p>
     <?php include("../../includes/reporterror.php");?>
     <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#comSum">Commander Summary</a></p>
-        <p><a href="#levelUnlocks">Level Unlocks</a></p>
-        <p><a href="#achievements">Achievements</a></p>
-        <p><a href="#calldowns">Calldowns</a></p>
-        <p><a href="#leveling">Sub-Ascension Leveling</a></p>
-        <p><a href="#masteries">Masteries</a></p>
-        <p><a href="#prestiges">Prestiges</a></p>
-        <p><a href="#army">Recommended Army Composition</a></p>
-        <p><a href="#units">Combat Units</a></p>
-        <p><a href="#buildOrder">Build Order</a></p>
-        <p><a href="#guide">Gameplay Guide</a></p>
-        <p><a href="#fastexpand">Fast Expanding</a></p>
-        <p><a href="#videos">Video Guides</a></p>
+        <h2>本页目录</h2>
+        <p><a href="#comSum">指挥官概述</a></p>
+        <p><a href="#levelUnlocks">等级解锁</a></p>
+        <p><a href="#achievements">成就</a></p>
+        <p><a href="#calldowns">面板技能</a></p>
+        <p><a href="#leveling">飞升前升级</a></p>
+        <p><a href="#masteries">精通</a></p>
+        <p><a href="#prestiges">威望</a></p>
+        <p><a href="#army">推荐部队组成</a></p>
+        <p><a href="#units">作战单位</a></p>
+        <p><a href="#buildOrder">建造顺序</a></p>
+        <p><a href="#guide">玩法攻略</a></p>
+        <p><a href="#fastexpand">快速开矿</a></p>
+        <p><a href="#videos">视频攻略</a></p>
     </div>
-    <h2 id="comSum">Commander Summary</h2>
-    <p>Mengsk uses an army of conscripted workers and soldiers to bolster his defenses backed up by powerful units from his Royal Guard and Artillery fire from the large distances.</p>
-    <h2 id="levelUnlocks">Level Unlocks</h2>
+    <h2 id="comSum">指挥官概述</h2>
+    <p>蒙斯克以征召而来的劳工和士兵巩固防线，再辅以强大的皇家卫队单位和远距离炮火支援。</p>
+    <h2 id="levelUnlocks">等级解锁</h2>
     <table class="progressionTable">
         <thead>
             <tr>
-                <th>Level/Icon</th>
-                <th>Name</th>
-                <th>Description</th>
+                <th>等级/图标</th>
+                <th>名称</th>
+                <th>说明</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/progression/mengsk/mengsk_01.png" alt = "Law and Order"></td>
-                <td>Law and Order</td>
+                <td><img src="/images/commanderdata/progression/mengsk/mengsk_01.png" alt = "法律与秩序"></td>
+                <td>法律与秩序</td>
                 <td>
-                    Mengsk conscripts Dominion Laborers instead of SCVs to work and Dominion Troopers instead of Marines to fight. His Royal Guard units can level up, gaining new abilities and improvements to existing abilities.
+                    蒙斯克征召帝国劳工代替SCV采集资源，并征召帝国冲锋队代替陆战队员作战。他的皇家卫队单位可以提升军阶，获得新技能并强化已有技能。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/mengsk/mengsk_02.png" alt = "Expanded Arsenal"></td>
-                <td>Expanded Arsenal</td>
+                <td><img src="/images/commanderdata/progression/mengsk/mengsk_02.png" alt = "扩展武器库"></td>
+                <td>扩展武器库</td>
                 <td>
-                    Allows Troopers to equip CPO-7 Salamander Flamethrowers and Hailstorm Launchers.
+                    允许冲锋队装备CPO-7“火蜥蜴”火焰喷射器和“冰雹”发射器。
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/mengsk/mengsk_03.png" alt = "New Unit: Earthsplitter Ordnance"></td>
-                <td>New Unit: Earthsplitter Ordnance</td>
+                <td><img src="/images/commanderdata/progression/mengsk/mengsk_03.png" alt = "新单位：大地碎裂炮"></td>
+                <td>新单位：大地碎裂炮</td>
                 <td>
-                   Randomly bombards near a target location, dealing damage to ground units in the area. Enables Contaminated Strike from the top panel.<br><br>Can attack ground units.
+                   在目标位置附近随机进行轰炸，对区域内的地面单位造成伤害。解锁顶部面板的“辐射打击”。<br><br>可以攻击地面单位。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/mengsk/mengsk_04.png" alt = "Contaminated Strike"></td>
-                <td>Contaminated Strike</td>
+                <td><img src="/images/commanderdata/progression/mengsk/mengsk_04.png" alt = "辐射打击"></td>
+                <td>辐射打击</td>
                 <td>
-                    Unlocks the ability to launch experimental payloads, fired from your Earthsplitter Ordnance randomly near a target area.
+                    解锁发射实验性弹头的能力，由大地碎裂炮向目标区域附近随机开火。
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/mengsk/mengsk_05.png" alt = "Unquestioned Authority"></td>
-                <td>Unquestioned Authority</td>
+                <td><img src="/images/commanderdata/progression/mengsk/mengsk_05.png" alt = "绝对权威"></td>
+                <td>绝对权威</td>
                 <td>
-                    Indoctrinated Laborers, Indoctrinated Troopers, and Royal Guards provide Imperial Support, which increases Imperial Mandate generation. Unlocks the Amplified Airwaves upgrade, which doubles the Imperial Support provided by Indoctrinated Laborers and Troopers (Researched at the Fusion Core).
+                    接受教导的劳工、冲锋队和皇家卫队会提供帝国支持度，从而提高天命皇权的生成速度。解锁“放大电波”升级，使接受教导的劳工和冲锋队提供的帝国支持度加倍（在聚变芯体中研究）。
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/mengsk/mengsk_06.png" alt = "Engineering Bay Upgrade Cache"></td>
-                <td>Engineering Bay Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/mengsk/mengsk_06.png" alt = "工程站升级包"></td>
+                <td>工程站升级包</td>
                 <td>
-                    Unlocks the following upgrades at the Engineering Bay:
+                    在工程站中解锁下列升级：
                     <ul>
-                        <li>Further increases the range of units within Supply Bunkers by +1.</li>
-                        <li>Increases the range of the Earthsplitter Ordnance's Bombardment ability by +25.</li>
+                        <li>使补给地堡内单位的射程额外提高1。</li>
+                        <li>使大地碎裂炮“轰击”技能的射程提高25。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/mengsk/mengsk_07.png" alt = "Wolves of War"></td>
-                <td>Wolves of War</td>
+                <td><img src="/images/commanderdata/progression/mengsk/mengsk_07.png" alt = "战争恶狼"></td>
+                <td>战争恶狼</td>
                 <td>
-                    Dogs of War now deploys additional Mutalisks and Ultralisks at higher Imperial Mandate levels.
+                    “战争恶犬”会随天命皇权等级提高而额外部署异龙和雷兽。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/mengsk/mengsk_08.png" alt = "Basic Royal Guard Upgrade Cache"></td>
-                <td>Basic Royal Guard Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/mengsk/mengsk_08.png" alt = "皇家卫队基础升级包"></td>
+                <td>皇家卫队基础升级包</td>
                 <td>
-                    Unlocks the following upgrades:
+                    解锁下列升级：
                     <ul>
-                        <li>Allows Aegis Guard to slow enemy units with their attack (Researched at the Royal Academy).</li>
-                        <li>Allows Shock Division in Siege Mode to fire at enemy air units while picked up by an Imperial Intercessor (Researched at the Armory).</li>
-                        <li>Increases the movement speed of Sky Furies (Researched at the Fusion Core).</li>
+                        <li>使壁垒卫士的攻击可以减速敌方单位（在皇家军校中研究）。</li>
+                        <li>使攻城模式下的冲击分队在被帝国仲裁机吊挂时可以攻击敌方空中单位（在军械库中研究）。</li>
+                        <li>提高天空之怒的移动速度（在聚变芯体中研究）。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/mengsk/mengsk_09.png" alt = "New Unit: Blackhammer"></td>
-                <td>New Unit: Blackhammer</td>
+                <td><img src="/images/commanderdata/progression/mengsk/mengsk_09.png" alt = "新单位：黑色战锤"></td>
+                <td>新单位：黑色战锤</td>
                 <td>
-                    Royal Guard heavy assault mech. Can use Overwatch Mode. Built from the Factory.<br><br>Can attack ground and air units.
+                    皇家卫队重型突击机甲。可以使用掩护射击模式。在重工厂中建造。<br><br>可以攻击地面和空中单位。
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/mengsk/mengsk_10.png" alt = "Nuclear Annihilation"></td>
-                <td>Nuclear Annihilation</td>
+                <td><img src="/images/commanderdata/progression/mengsk/mengsk_10.png" alt = "核弹天劫"></td>
+                <td>核弹天劫</td>
                 <td>
-                    Unlocks the ability to call down a rain of Tactical Missiles followed by a Nuclear Missile. Activate Nuclear Annihilation from the top panel.
+                    解锁召唤战术导弹雨并以一枚核弹收尾的能力。可从顶部面板发动“核弹天劫”。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/mengsk/mengsk_11.png" alt = "Psychoactive Payload"></td>
-                <td>Psychoactive Payload</td>
+                <td><img src="/images/commanderdata/progression/mengsk/mengsk_11.png" alt = "神经毒素弹头"></td>
+                <td>神经毒素弹头</td>
                 <td>
-                    Contaminated Strike now Fears enemy units on impact, causing them to run around in panic.
+                    “辐射打击”命中时会使敌方单位陷入恐惧，令其惊慌逃窜。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/mengsk/mengsk_12.png" alt = "New Unit: Pride of Augustgrad"></td>
-                <td>New Unit: Pride of Augustgrad</td>
+                <td><img src="/images/commanderdata/progression/mengsk/mengsk_12.png" alt = "新单位：奥古斯特格勒的骄傲"></td>
+                <td>新单位：奥古斯特格勒的骄傲</td>
                 <td>
-                   Powerful Royal Guard warship. Can use Yamato Cannon and Tactical Jump. Built from the Starport.<br><br>Can attack ground and air units.
+                   强大的皇家卫队战舰。可以使用大和炮与战术折跃。在星港中建造。<br><br>可以攻击地面和空中单位。
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/mengsk/mengsk_13.png" alt = "Complete Annihilation"></td>
-                <td>Complete Annihilation</td>
+                <td><img src="/images/commanderdata/progression/mengsk/mengsk_13.png" alt = "彻底毁灭"></td>
+                <td>彻底毁灭</td>
                 <td>
-                    Increased the number of Tactical Missiles dropped by Nuclear Annihilation from 20 to 40.
+                    将“核弹天劫”投下的战术导弹数量从20枚提高至40枚。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/mengsk/mengsk_14.png" alt = "Advanced Royal Guard Upgrade Cache"></td>
-                <td>Advanced Royal Guard Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/mengsk/mengsk_14.png" alt = "皇家卫队高级升级包"></td>
+                <td>皇家卫队高级升级包</td>
                 <td>
-                    Unlocks the following upgrades:
+                    解锁下列升级：
                     <ul>
-                        <li>Allows Emperor's Shadows to fire Tactical Missile Strikes without channeling (Researched at the Royal Academy).</li>
-                        <li>Blackhammers grant 5 armor to units positioned beneath them. (Researched at the Armory).</li>
-                        <li>Pride of Augustgrads grant +1 attack range to nearby friendly ranged ground units. (Researched at the Fusion Core).</li>
+                        <li>使元首鬼影无需引导即可发射战术导弹打击（在皇家军校中研究）。</li>
+                        <li>黑色战锤使其下方单位的护甲提高5点（在军械库中研究）。</li>
+                        <li>奥古斯特格勒的骄傲使附近友方远程地面单位的攻击射程提高1（在聚变芯体中研究）。</li>
                     </ul>
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/mengsk/mengsk_15.png" alt = "Promotion Granted"></td>
-                <td>Promotion Granted</td>
+                <td><img src="/images/commanderdata/progression/mengsk/mengsk_15.png" alt = "保证晋升"></td>
+                <td>保证晋升</td>
                 <td>
-                    Royal Guards can now attain Rank 3, gaining the following abilities
+                    皇家卫队现在可以晋升至3级军阶，并获得下列能力：
                     <ul>
-                        <li>Aegis Guards can greatly increase their attack speed.</li>
-                        <li>The Emperor's Shadow's Pyrokinetic Immolation causes an explosion when the target dies. Units take damage from the Emperor's Shadow's EMP Blast equal to the amount of energy drained.</li>
-                        <li>Increases the Shock Division's attack's area of effect radius in Siege Mode.</li>
-                        <li>Increases the attack speed of Blackhammers in Overwatch Mode.</li>
-                        <li>Grants Sky Furies a chance to evade enemy attacks in Fighter Mode. When Sky Furies take fatal damage in Assault Mode, they transform to Fighter Mode and gain a barrier.</li>
-                        <li>Allows the Pride of Augustgrad's Yamato Cannon to fire three times in rapid succession.</li>
+                        <li>壁垒卫士可以大幅提高自身攻击速度。</li>
+                        <li>元首鬼影的“焰能爆燃”会在目标死亡时引发爆炸。“EMP震爆”还会根据吸取的能量值对单位造成等量伤害。</li>
+                        <li>扩大冲击分队在攻城模式下攻击的作用范围。</li>
+                        <li>提高黑色战锤在掩护射击模式下的攻击速度。</li>
+                        <li>使天空之怒在战机模式下有几率闪避敌方攻击。天空之怒在突击模式下受到致命伤害时，会变形为战机模式并获得一道屏障。</li>
+                        <li>使奥古斯特格勒的骄傲的大和炮可以连续快速开火三次。</li>
                     </ul>
                 </td>
             </tr>
         </tbody>
     </table>
-    <p id="powerSpikeInfo">Highlighted rows denote large power spikes for the commander.</p>
-    <h2 id="achievements">Achievements</h2>
-    <p>The commander-specific achievements for Mengsk are:</p>
+    <p id="powerSpikeInfo">高亮行表示该指挥官获得了显著的强度提升。</p>
+    <h2 id="achievements">成就</h2>
+    <p>蒙斯克的指挥官专属成就如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Achievement</th>
-                <th>Name</th>
-                <th>Description</th>
+                <th>成就</th>
+                <th>名称</th>
+                <th>说明</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/achievements/mengsk/earthbroken.jpg" alt="Earthbroken"></td>
-                <td>Earthbroken</td>
-                <td>Deal 200,000 damage with Earthsplitter Ordnance bombardments.</td>
+                <td><img src="/images/commanderdata/achievements/mengsk/earthbroken.jpg" alt="八字克土"></td>
+                <td>八字克土</td>
+                <td>使用大地碎裂炮的轰击造成200,000点伤害。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/mengsk/iamthelaw.jpg" alt="I Am the Law"></td>
-                <td>I Am the Law</td>
-                <td>Kill 2000 enemy units in total with Contaminated Strike, Dogs of War, and Nuclear Annihilation.</td>
+                <td><img src="/images/commanderdata/achievements/mengsk/iamthelaw.jpg" alt="我就是王法"></td>
+                <td>我就是王法</td>
+                <td>使用“辐射打击”“战争恶犬”和“核弹天劫”累计消灭2000个敌方单位。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/mengsk/thebestemperor.jpg" alt="The Best of the Best of the Best, Emperor"></td>
-                <td>The Best of the Best of the Best, Emperor</td>
-                <td>Reach Rank 3 with at least 50 supply of Royal Guard units simultaneously on Hard difficulty.</td>
+                <td><img src="/images/commanderdata/achievements/mengsk/thebestemperor.jpg" alt="文武双全英明神武泰伦明灯大帝"></td>
+                <td>文武双全英明神武泰伦明灯大帝</td>
+                <td>在困难难度中，将至少50补给单位的皇家卫队同时晋升至3级军阶。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/mengsk/thiswasyourrifle.jpg" alt="This Was Your Rifle"></td>
-                <td>This Was Your Rifle</td>
-                <td>Pick up 500 weapons with Dominion Troopers.</td>
+                <td><img src="/images/commanderdata/achievements/mengsk/thiswasyourrifle.jpg" alt="枪就是你的生命"></td>
+                <td>枪就是你的生命</td>
+                <td>让帝国冲锋队拾取500件武器。</td>
             </tr>
         </tbody>
     </table>
-    <h2 id="calldowns">Calldowns</h2>
-    <p>The calldowns for Mengsk, at level 15, with no mastery points added are:</p>
+    <h2 id="calldowns">面板技能</h2>
+    <p>15级且未分配精通点数时，蒙斯克的面板技能如下：</p>
     <table class="calldownTable">
         <thead>
             <tr>
-                <th>Calldown</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Recommended Usage</th>
-                <th>Numbers</th>
+                <th>面板技能</th>
+                <th>名称</th>
+                <th>说明</th>
+                <th>推荐用法</th>
+                <th>数值</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/abilities/mengsk/forcedconscription.png" alt = "Forced Conscription"></td>
-                <td>Forced Conscription</td>
-                <td>Drops a Supply Bunker from orbit along with 6 unfortunate Trooper souls to man it.</td>
+                <td><img src="/images/commanderdata/abilities/mengsk/forcedconscription.png" alt = "强制征召"></td>
+                <td>强制征召</td>
+                <td>从轨道空投一座补给地堡，里面还有6名不幸的冲锋队员值守。</td>
                 <td>
                     <ul>
-                        <li>If the Mandate mastery has been selected, a fast expand is possible very early in the game.</li>
-                        <li>Useful for dropping in the field to convert Troopers back to Laborers to help repair units.</li>
-                        <li>Can be dropped without vision as long as terrain is explored.</li>
-                        <li>Salvage Bunkers that won't be used for extra resources.</li>
+                        <li>若选择了天命皇权精通，便可在游戏极早期快速开矿。</li>
+                        <li>可将其空投至前线，把冲锋队变回劳工以协助维修单位。</li>
+                        <li>只要地形已经探索，即使没有视野也可以空投。</li>
+                        <li>回收不再使用的地堡以获得额外资源。</li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        <li>Charge Cooldown: 60 seconds</li>
-                        <li>Mandate Required: 25</li>
-                        <li>Construction Time: 3 seconds</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="/images/commanderdata/abilities/mengsk/contaminatedstrike.png" alt = "Contaminated Strike"></td>
-                <td>Contaminated Strike</td>
-                <td>Loads all your Earthsplitter Ordnance with an experimental payload to target any area on the map. Payloads randomly land near the target area, causing enemies to run in fear and saturating the area in irradiated biomaterial, causing all enemies who enter to take 5 damage per second. Affected units cannot cloak.</td>
-                <td>
-                    <ul>
-                        <li>Useful for dropping on an attack wave or enemy base before pushing in.</li>
-                        <li>Only fears enemies that are hit by the initial strike. Enemies that walk into the cloud are not feared.</li>
-                        <li>Fear will cancel any current orders a unit has, which means attack waves hit by Contaminated Strike will stop moving towards player bases.</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Cooldown: 30 seconds</li>
-                        <li>Mandate Required: 25</li>
+                        <li>充能冷却时间：60秒</li>
+                        <li>所需天命皇权：25</li>
+                        <li>建造时间：3秒</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/abilities/mengsk/dogsofwar1.png" alt = "Dogs of War (Level 1)"><img src="/images/commanderdata/abilities/mengsk/dogsofwar2.png" alt = "Dogs of War (Level 2)"><img src="/images/commanderdata/abilities/mengsk/dogsofwar3.png" alt = "Dogs of War (Level 3)"><img src="/images/commanderdata/abilities/mengsk/dogsofwar4.png" alt = "Dogs of War (Level 4"></td>
-                <td>Dogs of War</td>
-                <td>Deploys 30 enthralled Zerglings at the target location that last for 60 seconds. Enthralled zerg will seek out and attack the nearest enemy.<br><br>Deploys additional enthralled zerg based on Imperial Mandate.<br><br>50%: Deploys 10 additional Hydralisks.<br>75%: Deploys 10 additional Mutalisks.<br>100%: Deploys 5 additional Ultralisks.</td>
+                <td><img src="/images/commanderdata/abilities/mengsk/contaminatedstrike.png" alt = "辐射打击"></td>
+                <td>辐射打击</td>
+                <td>为所有大地碎裂炮装填实验性弹头，可瞄准地图上的任意区域。弹头会随机落在目标区域附近，使敌人在恐惧中四处逃窜，并让该区域充满受辐射的生物质。所有进入其中的敌人每秒受到5点伤害，且受影响的单位无法隐形。</td>
                 <td>
                     <ul>
-                        <li>Can be used in place of one Bunker on some fast expands (see Gameplay Guide), although not recommended as it is less efficient.</li>
-                        <li>Great for drawing aggro of enemy units while your army attacks from behind the line of Zerg.</li>
+                        <li>适合在推进前投向进攻波次或敌方基地。</li>
+                        <li>只有被第一轮打击命中的敌人才会陷入恐惧；后来走进毒云的敌人不会恐惧。</li>
+                        <li>恐惧会取消单位当前的命令，因此被“辐射打击”命中的进攻波次会停止向玩家基地移动。</li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        <li>Cooldown: 180 seconds</li>
-                        <li>Mandate Required: 25</li>
+                        <li>冷却时间：30秒</li>
+                        <li>所需天命皇权：25</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/abilities/mengsk/nuclearannihilation.png" alt = "Nuclear Annihilation"></td>
-                <td>Nuclear Annihilation</td>
-                <td>Blankets a target area with a seemingly endless barrage of 40 Tactical Missiles, each dealing 150(+100 vs. structures) damage in a small area, followed by a Nuclear Missile, which deals 500(+300 vs. structures) damage in a large area.</td>
+                <td><img src="/images/commanderdata/abilities/mengsk/dogsofwar1.png" alt = "战争恶犬（等级1）"><img src="/images/commanderdata/abilities/mengsk/dogsofwar2.png" alt = "战争恶犬（等级2）"><img src="/images/commanderdata/abilities/mengsk/dogsofwar3.png" alt = "战争恶犬（等级3）"><img src="/images/commanderdata/abilities/mengsk/dogsofwar4.png" alt = "战争恶犬（等级4）"></td>
+                <td>战争恶犬</td>
+                <td>在目标位置部署30只被奴役的跳虫，持续60秒。被奴役的异虫会寻找并攻击最近的敌人。<br><br>根据天命皇权额外部署被奴役的异虫。<br><br>50%：额外部署10只刺蛇。<br>75%：额外部署10只异龙。<br>100%：额外部署5只雷兽。</td>
                 <td>
                     <ul>
-                        <li>Very powerful splash damage that can be used to clear out enemy bases.</li>
-                        <li>Get vision of the center of enemy bases with Earthsplitter Ordnances before using this calldown.</li>
+                        <li>在部分地图快速开矿时可用来代替一座地堡（参见玩法攻略），但效率较低，不推荐这样做。</li>
+                        <li>非常适合吸引敌方单位火力，让你的部队在异虫阵线后方输出。</li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        <li>Cooldown: 300 seconds</li>
-                        <li>Mandate Required: 100</li>
+                        <li>冷却时间：180秒</li>
+                        <li>所需天命皇权：25</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="/images/commanderdata/abilities/mengsk/nuclearannihilation.png" alt = "核弹天劫"></td>
+                <td>核弹天劫</td>
+                <td>以仿佛无穷无尽的40枚战术导弹覆盖目标区域，每枚导弹对小范围造成150（对建筑+100）点伤害，随后再投下一枚核弹，对大范围造成500（对建筑+300）点伤害。</td>
+                <td>
+                    <ul>
+                        <li>范围伤害极高，可用于清理敌方基地。</li>
+                        <li>使用此技能前，先用大地碎裂炮取得敌方基地中心的视野。</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>冷却时间：300秒</li>
+                        <li>所需天命皇权：100</li>
                     </ul>
                 </td>
             </tr>
         </tbody>
     </table>
-    <h2 id="leveling">Sub-Ascension Leveling</h2>
-    <p>Difficulty: Moderate</p>
-    <p>Prior to gaining access to Earthsplitter Ordnances, Mengsk levelling can be extremely difficult, as it makes it impossible for him to take engagements without losing his army. Once Ordnances are unlocked, they should be used to weaken enemy bases and attack waves before pushing in. Shock Divisions should be used to provide damage, with Troopers in the front to keep enemy units off them.</p>
-    <h2 id="masteries">Masteries</h2>
-    <p>Below are the three Power Sets for Mengsk with the recommended point allocations for each. Note that these are meant to serve a general, all-purpose build that is effective across all maps with no Prestiges selected. You are highly encourged to change these masteries to suit your playstyle and particular challenges you face (e.g. <a href="/resources/weeklymutations">Weekly Mutations</a>).</p>
-    <p>Power Set 1:</p>
+    <h2 id="leveling">飞升前升级</h2>
+    <p>难度：中等</p>
+    <p>在解锁大地碎裂炮之前，蒙斯克升级会非常困难，因为他几乎无法在交战中做到部队无损。解锁大地碎裂炮后，应在推进前用它削弱敌方基地与进攻波次。由冲锋队在前排阻挡敌军，再让冲击分队提供伤害。</p>
+    <h2 id="masteries">精通</h2>
+    <p>以下是蒙斯克的三个技能组及各自推荐的点数分配。这套分配是一种通用配置，适用于未选择威望的大多数地图。强烈建议你根据自己的玩法和面对的具体挑战（例如<a href="/resources/weeklymutations">每周突变</a>）调整精通。</p>
+    <p>技能组1：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>能力</th>
+                <th>数值</th>
+                <th>推荐投入点数</th>
+                <th>其他考量</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Laborer and Trooper Imperial Support</td>
-                <td>1% per point<br>30% maximum</td>
+                <td>劳工与冲锋队帝国支持度</td>
+                <td>每点1%<br>最高30%</td>
                 <td>30</td>
-                <td rowspan="2">The extremely high cost of the Royal Guard, combined with the relatively low rate of Mandate generation by them makes the Royal Guard mastery very uncompetitive. This is because players will always have access to Laborers and Troopers, which generate a lot more Mandate when around an Imperial Witness.</td>
+                <td rowspan="2">皇家卫队造价极高，而产生天命皇权的效率相对较低，因此皇家卫队精通竞争力很弱。玩家始终可以使用劳工和冲锋队，它们在帝国见证者附近能产生更多天命皇权。</td>
             </tr>
             <tr>
-                <td>Royal Guard Imperial Support</td>
-                <td>1% per point<br>30% maximum</td>
+                <td>皇家卫队帝国支持度</td>
+                <td>每点1%<br>最高30%</td>
                 <td>0</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">Given the varied playstyles, the Laborer mastery is a better pick here because it provides a benefit regardless of the playstyle used, allowing the commander to be effective on all maps.</p>
-    <p>Power Set 2:</p>
+    <p class="masterySummary">考虑到蒙斯克玩法多样，劳工精通是更好的选择，因为无论采用何种玩法都能受益，让指挥官在所有地图上都保持效能。</p>
+    <p>技能组2：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>能力</th>
+                <th>数值</th>
+                <th>推荐投入点数</th>
+                <th>其他考量</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Terrible Damage</td>
-                <td>1% per point<br>30% maximum</td>
+                <td>成吨伤害</td>
+                <td>每点1%<br>最高30%</td>
                 <td>?</td>
-                <td rowspan="2">The Terrible Damage mastery can be used for a more topbar-centric focused build, assuming a maximum amount of Mandate generation, while the Royal Guard Cost allows you to increase the quantity of Royal Guard units in your army.</td>
+                <td rowspan="2">在天命皇权生成速度最大化的前提下，“成吨伤害”精通适合更依赖顶部面板技能的玩法；“皇家卫队费用”则能让部队中容纳更多皇家卫队单位。</td>
             </tr>
             <tr>
-                <td>Royal Guard Cost</td>
-                <td>-0.66% per point<br>-20% maximum</td>
+                <td>皇家卫队费用</td>
+                <td>每点-0.66%<br>最高-20%</td>
                 <td>?</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">If the player chooses to use the Dogs of War ability frequently (and potentially in fast expands if they struggle with the multitasking), the Terrible Damage would be a more beneficial pick for them. Otherwise, the Royal Guard Cost is the better choice here as it allows you to directly strengthen your army.</p>
-    <p>Power Set 3:</p>
+    <p class="masterySummary">如果玩家经常使用“战争恶犬”（多线操作吃力时也可能用它来快速开矿），选择“成吨伤害”会更有收益。否则，“皇家卫队费用”是更好的选择，因为它能直接强化你的部队。</p>
+    <p>技能组3：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>能力</th>
+                <th>数值</th>
+                <th>推荐投入点数</th>
+                <th>其他考量</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Starting Imperial Mandate</td>
-                <td>1 per point<br>30 maximum</td>
+                <td>起始天命皇权</td>
+                <td>每点1<br>最高30</td>
                 <td>30</td>
-                <td rowspan="2">The Guard Experience Gain rate mastery can be used to allow you to quickly level up Royal Guard units to gain access to their Rank-3 bonuses, while the Starting Mandate provides more early-game possibilities for the commander.</td>
+                <td rowspan="2">“皇家卫队经验获取速度”精通可以让皇家卫队快速升级，尽早获得3级军阶加成；“起始天命皇权”则为指挥官提供更多前期选择。</td>
             </tr>
             <tr>
-                <td>Royal Guard Experience Gain Rate</td>
-                <td>0.5% per point<br>15% maximum</td>
+                <td>皇家卫队经验获取速度</td>
+                <td>每点0.5%<br>最高15%</td>
                 <td>0</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">The Starting Imperial Mandate is the better choice here because it provides Mengsk with access to two Supply Bunkers at the 2 minute mark, allowing him to fast expand and build his economy.</p>
-    <h2 id="prestiges">Prestiges</h2>
-    <p>Below are the prestiges for Mengsk. Note that "Effective Level" is the level at which the prestige achieves it full effect.</p>
+    <p class="masterySummary">“起始天命皇权”是更好的选择，因为它能让蒙斯克在2分钟时使用两座补给地堡，从而快速开矿并发展经济。</p>
+    <h2 id="prestiges">威望</h2>
+    <p>以下是蒙斯克的威望。“生效等级”指该威望发挥完整效果时所需的等级。</p>
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P1: <strong>Toxic Tyrant</strong></td>
+                <td class="prestigeTitle" colspan="2">P1：<strong>毒性暴君</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>Contaminated Strike's fear lasts 200% longer, its damage-over-time effect additionally increases damage received by 25%, its cost is reduced by 20%, and its cooldown is reduced by 66%.</li>
-                        <li>Troopers provide Imperial Support while operating Earthsplitter Ordnance.</li>
+                        <li>“辐射打击”的恐惧持续时间延长200%；其持续伤害效果还会使目标受到的伤害提高25%；技能消耗降低20%，冷却时间缩短66%。</li>
+                        <li>冲锋队操作大地碎裂炮时会提供帝国支持度。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>Nuclear Annihilation is unavailable.</li>
+                        <li>无法使用“核弹天劫”。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Notes</th>
+                <th>说明</th>
                 <td>
                     <ul>
-                        <li>Mandate Generation will only work after getting the Unquestioned Authority Level 5 Unlock</li>
-                        <li>Amplified Airwaves affects Troopers inside Earthsplitters</li>
-                        <li>Troopers inside Earthsplitters do not need a Witness to generate extra Mandate.</li>
+                        <li>只有获得5级解锁项“绝对权威”后，天命皇权生成效果才会生效。</li>
+                        <li>“放大电波”会影响大地碎裂炮内的冲锋队。</li>
+                        <li>大地碎裂炮内的冲锋队无需帝国见证者也能额外生成天命皇权。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>生效等级</th>
                 <td>11</td>
             </tr>
             <tr>
-                <th>Advice</th><td>This prestige works best when a player decides to use Earthsplitters as part of their strategy. While Nuclear Annihilation is unavailable, Contaminated Strike can be used on top of enemy bases, just before Mengsk's army pushes in. Fear and the increased damage received can be used to launch very effective assaults on enemy bases. This prestige also further simplifies dealing with attack waves. Not only does Fear break the AI move command of the attack wave, but the extra damage bonus dealt makes it easier to kill off the units while under the effect.</td>
+                <th>建议</th><td>当玩家把大地碎裂炮纳入战术体系时，此威望的表现最佳。虽然无法使用“核弹天劫”，但可以在蒙斯克的部队推进前对敌方基地施放“辐射打击”。恐惧和易伤效果能让进攻敌方基地变得极为高效。此威望也进一步简化了进攻波次的处理：恐惧不仅会打断进攻波次AI的移动命令，额外的增伤也能让你更轻松地在效果持续期间消灭敌军。</td>
             </tr>
         </tbody>
     </table>
@@ -469,38 +469,38 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P2: <strong>Principal Proletariat</strong></td>
+                <td class="prestigeTitle" colspan="2">P2：<strong>底层的力量</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>Royal Guard vespene gas costs reduced by 25% and XP gain increased by 100%.</li>
+                        <li>皇家卫队的高能瓦斯费用降低25%，经验获取量提高100%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>Royal Guard mineral costs increased by 100% and supply cost increased by 50%.</li>
+                        <li>皇家卫队的晶体矿费用提高100%，补给消耗提高50%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Notes</th>
+                <th>说明</th>
                 <td>
                     <ul>
-                        <li>Royal Guard Cost stacks multiplicatively with the Royal Guard Cost Reduction mastery.</li>
+                        <li>此威望的皇家卫队费用与“皇家卫队费用”精通以乘法方式叠加。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>生效等级</th>
                 <td>1</td>
             </tr>
             <tr>
-                <th>Advice</th><td>This prestige allows a player to focus on a mass Royal Guard build by allowing them to quickly get Royal Guards out at the start of the game, thus helping their early game. This prestige works well with the Royal Guard Cost reduction mastery and really well with the Royal Guard Imperial Mandate Support mastery, resulting in one of the highest Mandate generation rates possible, due to increased Royal Guard Supply costs.</td>
+                <th>建议</th><td>此威望让玩家可以专注于量产皇家卫队：游戏开局便能迅速生产皇家卫队，从而改善前期表现。它与“皇家卫队费用”精通配合良好，与“皇家卫队帝国支持度”精通的配合则更加出色。由于皇家卫队的补给消耗提高，两者结合能达到游戏中最高的天命皇权生成速度之一。</td>
             </tr>
         </tbody>
     </table>
@@ -508,53 +508,53 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P3: <strong>Merchant of Death</strong></td>
+                <td class="prestigeTitle" colspan="2">P3：<strong>死亡贩子</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>Equipped Troopers activate a self-destruct mechanism in their weapons upon death.</li>
-                        <li>Trooper weapons cost 40 minerals and 20 vespene gas.</li>
+                        <li>装备武器的冲锋队死亡时会启动武器的自毁机制。</li>
+                        <li>冲锋队武器的费用变为40点晶体矿和20点高能瓦斯。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>Troopers no longer drop weapons.</li>
-                        <li>Imperial Intercessors are unavailable.</li>
+                        <li>冲锋队不再掉落武器。</li>
+                        <li>无法使用帝国仲裁机。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Notes</th>
+                <th>说明</th>
                 <td>
                     <ul>
-                        <li>The weapon deals 150 damage (+100 vs. Structures) within a range of 1.5</li>
-                        <li>Weapon will search for a target within 12 range</li>
-                        <li>Vision required for weapon to find target</li>
-                        <li>Weapon will denotate after 2 seconds if no target is found</li>
-                        <li>Weapon can target air units as well</li>
-                        <li>Troopers can be converted back to Laborers to repair each other</li>
+                        <li>武器会对1.5范围内造成150（对建筑+100）点伤害。</li>
+                        <li>武器会在12射程内搜索目标。</li>
+                        <li>武器需要视野才能发现目标。</li>
+                        <li>若未找到目标，武器会在2秒后引爆。</li>
+                        <li>武器也可以瞄准空中单位。</li>
+                        <li>冲锋队可以变回劳工，彼此维修。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>生效等级</th>
                 <td>2</td>
             </tr>
             <tr>
-                <th>Advice</th><td>This prestige allows Mengsk to quickly ramp up his earlygame DPS, by providing a large cost reduction to equipping improved weapons to his troopers. Due to the lack of Intercessors, any damage taken by Mengsk's Aegis Guard and Emperor's Shadows is permanent, while Troopers need to be converted back to Laborers to repair themselves. Thus, Bunker play is encouraged to reduce damage taken by the army. Players will also need to be careful while pushing into bases and attack waves. It is recommended to use calldowns or Earthsplitters to first soften up enemy forces before cleaning up with the army to reduce damage taken. Additionally, a few Troopers can be sacrificed into an attack wave to weaken it. However, pay attention to the army footprint. Waves that spread out over a large area result in much less efficient trades than those that are clumped up. Troops should also not be suicided into enemy bases, as explosions from weapons will probably only kill a single unit at a time.</td>
+                <th>建议</th><td>此威望大幅降低为冲锋队装备强化武器的费用，使蒙斯克能迅速提高前期每秒伤害。由于没有帝国仲裁机，壁垒卫士与元首鬼影受到的伤害无法恢复，冲锋队则需要变回劳工才能互相维修。因此建议围绕地堡作战，以减少部队承受的伤害。推进敌方基地或进攻波次时也要谨慎：建议先用面板技能或大地碎裂炮削弱敌军，再由部队收尾，从而降低战损。也可以牺牲少量冲锋队来削弱进攻波次，但要留意敌军阵型占地范围。分散在大范围内的波次会让交换效率远低于聚成一团的波次。也不要让冲锋队冲进敌方基地送死，因为武器爆炸很可能一次只能消灭一个单位。</td>
             </tr>
         </tbody>
     </table>
-    <p>All of Mengsk's prestiges are viable, depending on the player's preferred playstyle. However, for general play, Merchant of Death offers Mengsk the versatility in being able to deal with a wide variety of situations. While upgraded troopers are slightly more expensive, they pay back in dividends by increasing your overall effectiveness in trading with Amon.</p>
-    <h2 id="army">Recommended Army Composition</h2>
-    <p>The recommended army composition for Mengsk is below. Note that this assumes no Prestige talent selected and recommended Mastery Allocations. This is a basic recommendation for your army framework. It is recommended to gain an understanding for each of the units in the <a href="#units">Units</a> section and further add tech units so that you are able to better handle the situations you face.</p>
-    <img class="army" src="/images/commanderdata/units/mengsk/dominionassaulttrooper.jpg" alt="Dominion Assault Trooper"><img class="army" src="/images/commanderdata/units/mengsk/dominionrockettrooper.jpg" alt="Dominion Rocket Trooper"><img class="army" src="/images/commanderdata/units/mengsk/aegisguard.jpg" alt="Aegis Guard"><img class="army" src="/images/commanderdata/units/mengsk/imperialintercessor.jpg" alt="Imperial Intercessor"><img  class="army" src="/images/commanderdata/units/mengsk/prideofaugustgrad.jpg" alt="Pride of Augustgrad"><img class="army"  src="/images/commanderdata/units/mengsk/imperialwitness.jpg" alt="Imperial Witness">
-    <p>A mix of different trooper types is important. Assault Troopers deal damage while Rocket Troopers handle air units with ease. The ratio of each will depend on the enemy composition and map objectives. Use Aegis Guards to tank for the troopers and Imperial Intercessors to heal damaged units. Tech up to a Pride of Augustgrad for powerful wave-handling abilities. Remember to put Imperial Witnesses into Patriot mode for extra buffs to your army.</p>
+    <p>蒙斯克的所有威望都有可用之处，具体取决于玩家偏好的玩法。不过在常规游戏中，“死亡贩子”使蒙斯克能灵活应对多种局面。虽然强化冲锋队的造价略有提高，但它们能提升你与埃蒙换兵时的整体效率，回报十分可观。</p>
+    <h2 id="army">推荐部队组成</h2>
+    <p>蒙斯克的推荐部队组成如下。此处假定未选择威望，并采用推荐精通分配。这只是部队框架的基础建议。建议先了解<a href="#units">单位</a>章节中的各个单位，再根据实际局势加入科技单位，以便更好地应对挑战。</p>
+    <img class="army" src="/images/commanderdata/units/mengsk/dominionassaulttrooper.jpg" alt="帝国突击手冲锋队"><img class="army" src="/images/commanderdata/units/mengsk/dominionrockettrooper.jpg" alt="帝国火箭筒冲锋队"><img class="army" src="/images/commanderdata/units/mengsk/aegisguard.jpg" alt="壁垒卫士"><img class="army" src="/images/commanderdata/units/mengsk/imperialintercessor.jpg" alt="帝国仲裁机"><img  class="army" src="/images/commanderdata/units/mengsk/prideofaugustgrad.jpg" alt="奥古斯特格勒的骄傲"><img class="army"  src="/images/commanderdata/units/mengsk/imperialwitness.jpg" alt="帝国见证者">
+    <p>混编不同类型的冲锋队十分重要。突击手冲锋队负责输出，火箭筒冲锋队则能轻松处理空中单位，两者比例取决于敌方部队组成和地图目标。用壁垒卫士为冲锋队承担伤害，并让帝国仲裁机治疗受伤单位。尽快攀升科技生产奥古斯特格勒的骄傲，以获得强大的进攻波次处理能力。记得让帝国见证者进入爱国者模式，为部队提供额外增益。</p>
     <script>
         $(".army").on('mouseover',function(e){
             var unit = $(this).attr("alt").split(":");
@@ -586,146 +586,146 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         });
     </script>
 
-    <h2 id="units">Combat Units</h2>
-    <p>For more information on Mengsk's unit stats, comparison between units and upgrade calculations, visit the <a href="/units/#mengsk">Data Tables</a> page.</p>
-    <p>Mengsk's combat units are listed below:</p>
+    <h2 id="units">作战单位</h2>
+    <p>有关蒙斯克单位属性、单位间对比与升级计算的更多信息，请参阅<a href="/units/#mengsk">数据表</a>页面。</p>
+    <p>蒙斯克的作战单位如下：</p>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#mengsk/dominiontrooper">
-                <img src="/images/commanderdata/units/mengsk/dominiontrooper.jpg" alt="Dominion Trooper">
-                <p>Dominion Trooper</p>
+                <img src="/images/commanderdata/units/mengsk/dominiontrooper.jpg" alt="帝国冲锋队">
+                <p>帝国冲锋队</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>The most basic unit available to Mengsk.</li>
-                <li>Can be equipped with one of three weapons to increase its stats and damage bonuses.</li>
-                <li>Useful for defending the first attack wave on most missions if loaded into a Bunker.</li>
+                <li>蒙斯克最基础的作战单位。</li>
+                <li>可以装备三种武器之一，以提高属性并获得伤害加成。</li>
+                <li>在大多数任务中，驻入地堡后可用于防守第一波进攻。</li>
             </ul>
         </div>
     </div>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#mengsk/dominionassaulttrooper">
-                <img src="/images/commanderdata/units/mengsk/dominionassaulttrooper.jpg" alt="Dominion Assault Trooper">
-                <p>Dominion Assault Trooper</p>
+                <img src="/images/commanderdata/units/mengsk/dominionassaulttrooper.jpg" alt="帝国突击手冲锋队">
+                <p>帝国突击手冲锋队</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Good all-round damage output.</li>
-                <li>Has double the damage output of a regular Dominion Trooper.</li>
+                <li>全能型输出单位。</li>
+                <li>伤害输出是普通帝国冲锋队的两倍。</li>
             </ul>
         </div>
     </div>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#mengsk/dominionflametrooper">
-                <img src="/images/commanderdata/units/mengsk/dominionflametrooper.jpg" alt="Dominion Flame Trooper">
-                <p>Dominion Flame Trooper</p>
+                <img src="/images/commanderdata/units/mengsk/dominionflametrooper.jpg" alt="帝国火焰器冲锋队">
+                <p>帝国火焰器冲锋队</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Has much more HP than other Troopers and starts with 1 armor.</li>
-                <li>Useful for dealing with clumps of Light units like Zerg.</li>
+                <li>生命值远高于其他冲锋队，且初始拥有1点护甲。</li>
+                <li>适合对付成群的轻甲单位，例如异虫部队。</li>
             </ul>
         </div>
     </div>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#mengsk/dominionrockettrooper">
-                <img src="/images/commanderdata/units/mengsk/dominionrockettrooper.jpg" alt="Dominion Rocket Trooper">
-                <p>Dominion Rocket Trooper</p>
+                <img src="/images/commanderdata/units/mengsk/dominionrockettrooper.jpg" alt="帝国火箭筒冲锋队">
+                <p>帝国火箭筒冲锋队</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Has a very powerful anti-air attack that deals bonus to Armored air targets.</li>
-                <li>Still uses the same unupgraded weapon as Trooper for anti-ground attack.</li>
+                <li>拥有非常强力的对空攻击，并对重甲空中目标造成额外伤害。</li>
+                <li>攻击地面单位时仍使用冲锋队原本未强化的武器。</li>
             </ul>
         </div>
     </div>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#mengsk/aegisguard">
-                <img src="/images/commanderdata/units/mengsk/aegisguard.jpg" alt="Aegis Guard">
-                <p>Aegis Guard</p>
+                <img src="/images/commanderdata/units/mengsk/aegisguard.jpg" alt="壁垒卫士">
+                <p>壁垒卫士</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Useful for tanking for other units on the frontline.</li>
-                <li>Damage against Armored targets is great, especially with the High-Grade Stimpacks unlocked.</li>
-                <li>Rank 2 upgrade enables them to be highly effective against waves with many low HP units like Zerg and Classic Bio.</li>
-                <li>Rank 2 splash damage is based on the armor type of the primary target, and ignores armor of units that take splash damage.</li>
+                <li>适合在前线为其他单位承担伤害。</li>
+                <li>对重甲目标伤害出色，解锁“高级兴奋剂”后尤其如此。</li>
+                <li>2级军阶升级使其能高效应对包含大量低生命值单位的波次，例如异虫或经典生化部队。</li>
+                <li>2级军阶的溅射伤害取决于主目标的护甲类型，并会无视受到溅射伤害单位的护甲。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Rank Required</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>所需军阶</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/unitskills/mengsk/highgradestimpacks.png" alt="High-Grade Stimpacks"></td>
-                        <td>High-Grade Stimpacks</td>
-                        <td>Increases attack speed by 200% for 10 seconds.</td>
-                        <td>30 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/mengsk/highgradestimpacks.png" alt="高级兴奋剂"></td>
+                        <td>高级兴奋剂</td>
+                        <td>攻击速度提高200%，持续10秒。</td>
+                        <td>30秒</td>
                         <td>3</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/incapacitatorshells.png" alt="Incapacitator Shells"></td>
-                        <td>Incapacitator Shells</td>
-                        <td>Allows the Aegis Guard's attacks to slow enemy units (-60% movement speed for 3 seconds).</td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/incapacitatorshells.png" alt="制残弹"></td>
+                        <td>制残弹</td>
+                        <td>使壁垒卫士的攻击可以减速敌方单位（移动速度降低60%，持续3秒）。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60秒</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Rank Unlocks:</p>
+            <p>军阶解锁：</p>
             <table class="rankTable">
                 <thead>
                     <tr>
-                        <th>Rank</th>
-                        <th>Total Experience</th>
-                        <th>Rank Bonus</th>
+                        <th>军阶</th>
+                        <th>总经验值</th>
+                        <th>军阶加成</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
                         <td>1200</td>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/aegisbarrier.png" alt="Aegis Barrier"><p><b>Aegis Barrier: </b>Grants the Aegis Guard a shield that absorbs 300 damage. When the shield takes fatal damage, it releases a pulse of energy that knocks back nearby ground units. This shield refreshes to full every 60 seconds.</p></td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/aegisbarrier.png" alt="壁垒屏障"><p><b>壁垒屏障：</b>为壁垒卫士提供一道可吸收300点伤害的护盾。护盾被击破时会释放能量脉冲，击退附近地面单位。该护盾每60秒恢复至满值。</p></td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>4000</td>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="Veterancy"><p>Attacks create a cone of shrapnel, dealing 20% damage to enemies behind the target.</p></td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="精英化"><p>攻击会形成锥形弹片，对目标身后的敌人造成20%伤害。</p></td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>8800</td>
-                        <td><img src="/images/commanderdata/unitskills/mengsk/highgradestimpacks.png" alt="High-Grade Stimpacks"><p><b>High-Grade Stimpacks: </b>Increases attack speed by 200% for 10 seconds.</p></td>
+                        <td><img src="/images/commanderdata/unitskills/mengsk/highgradestimpacks.png" alt="高级兴奋剂"><p><b>高级兴奋剂：</b>攻击速度提高200%，持续10秒。</p></td>
                     </tr>
                 </tbody>
             </table>
@@ -734,104 +734,104 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#mengsk/emperorsshadow">
-                <img src="/images/commanderdata/units/mengsk/emperorsshadow.jpg" alt="Emperor's Shadow">
-                <p>Emperor's Shadow</p>
+                <img src="/images/commanderdata/units/mengsk/emperorsshadow.jpg" alt="元首鬼影">
+                <p>元首鬼影</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Tactical Missile Strike is not a very useful ability due to its small size.</li>
-                <li>Pyrokinetic Immolation can be used to deal with small Biological waves, such as Zerglings.</li>
-                <li>EMP Blast is important when dealing with high damage output Mechanical unit compositions.</li>
-                <li>Multiple Royal Academies will allow Ghosts to have several Nukes available to launch.</li>
+                <li>“战术飞弹打击”的作用范围较小，实用性不高。</li>
+                <li>“焰能爆燃”可用于处理跳虫等小规模生物单位波次。</li>
+                <li>面对高伤害机械单位组成时，“EMP震爆”十分重要。</li>
+                <li>建造多座皇家军校可让元首鬼影拥有多枚可供发射的核弹。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Rank Required</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>所需军阶</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/mengsk/pyrokineticimmolation.png" alt="Pyrokinetic Immolation"></td>
-                        <td>Pyrokinetic Immolation</td>
-                        <td>Immolates a target Biological enemy for 20 seconds, dealing 20 damage per second to themselves and nearby Biological enemies. Can be set to Autocast. Requires 75 energy.</td>
-                        <td>5 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/mengsk/pyrokineticimmolation.png" alt="焰能爆燃"></td>
+                        <td>焰能爆燃</td>
+                        <td>点燃一名敌方生物单位，持续20秒，每秒对目标自身及附近敌方生物单位造成20点伤害。可以设为自动施放。消耗75点能量。</td>
+                        <td>5秒</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/mengsk/empblast.png" alt="EMP Blast"></td>
-                        <td>EMP Blast</td>
-                        <td>Deals 100 damage to shields and depletes the energy of enemy units in the target area. Stuns Mechanical units for 1 second. Cloaked units are revealed for 10 seconds after being hit. Can be set to Autocast. Requires 75 energy.</td>
-                        <td>8 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/mengsk/empblast.png" alt="EMP震爆"></td>
+                        <td>EMP震爆</td>
+                        <td>对目标区域内敌方单位的护盾造成100点伤害并耗尽其能量。使机械单位昏迷1秒。隐形单位被命中后会显形10秒。可以设为自动施放。消耗75点能量。</td>
+                        <td>8秒</td>
                         <td>0</td>
                     </tr>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/unitskills/mengsk/labyrinthcloak.png" alt="Labyrinth Cloak"></td>
-                        <td>Labyrinth Cloak</td>
-                        <td>Prevents the Emperor's Shadow from taking any damage for 10 seconds after being attacked. Cannot occur more than once every 30 seconds.</td>
-                        <td>30 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/mengsk/labyrinthcloak.png" alt="迷宫式隐形迷彩"></td>
+                        <td>迷宫式隐形迷彩</td>
+                        <td>元首鬼影受到攻击后，10秒内免受任何伤害。该效果每30秒只能触发一次。</td>
+                        <td>30秒</td>
                         <td>1</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/mengsk/tacticalmissilestrike.png" alt="Tactical Missile Strike"></td>
-                        <td>Tactical Missile Strike</td>
-                        <td>Calls down a Tactical Missile Strike at a target location. Tactical Missiles take 4 seconds to land, but they deal up to 150 (+100 vs. structures) damage to enemies in a small radius. (100% damage within 1.5 range of the hit, 50% from 1.5 to 2.0 range)<br><br>Cooldown is time to build one missile.</td>
-                        <td>90 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/mengsk/tacticalmissilestrike.png" alt="战术飞弹打击"></td>
+                        <td>战术飞弹打击</td>
+                        <td>在目标位置召唤一次战术飞弹打击。战术飞弹需要4秒落地，但会对小范围内敌人造成最多150（对建筑+100）点伤害。（命中点1.5范围内造成100%伤害，1.5至2.0范围造成50%伤害。）<br><br>冷却时间即制造一枚飞弹所需的时间。</td>
+                        <td>90秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/sovereigntacticalmissiles.png" alt="Sovereign Tactical Missiles"></td>
-                        <td>Sovereign Tactical Missiles</td>
-                        <td>Emperor's Shadows no longer need to channel the Tactical Missile Strike ability.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/sovereigntacticalmissiles.png" alt="元首战术飞弹"></td>
+                        <td>元首战术飞弹</td>
+                        <td>元首鬼影施放“战术飞弹打击”时不再需要引导。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60秒</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Rank Unlocks:</p>
+            <p>军阶解锁：</p>
             <table class="rankTable">
                 <thead>
                     <tr>
-                        <th>Rank</th>
-                        <th>Total Experience</th>
-                        <th>Rank Bonus</th>
+                        <th>军阶</th>
+                        <th>总经验值</th>
+                        <th>军阶加成</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
                         <td>1200</td>
-                        <td><img src="/images/commanderdata/unitskills/mengsk/labyrinthcloak.png" alt="Labyrinth Cloak"><p><b>Labyrinth Cloak: </b>Prevents the Emperor's Shadow from taking any damage for 10 seconds after being attacked. Cannot occur more than once every 30 seconds.</p></td>
+                        <td><img src="/images/commanderdata/unitskills/mengsk/labyrinthcloak.png" alt="迷宫式隐形迷彩"><p><b>迷宫式隐形迷彩：</b>元首鬼影受到攻击后，10秒内免受任何伤害。该效果每30秒只能触发一次。</p></td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>4000</td>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="Veterancy"><p>Increases Pyrokinetic Immolation periodic damage by 50%. Increases EMP Blast stun duration by 1 second.</p></td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="精英化"><p>“焰能爆燃”的周期伤害提高50%。“EMP震爆”的昏迷时间延长1秒。</p></td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>8800</td>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="Veterancy"><p>Upon target's death, Pyrokinetic Immolation deals 50 damage to nearby enemies. EMP Blast drains all of the target's energy and deals damage equal to that amount.</p></td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="精英化"><p>目标死亡时，“焰能爆燃”会对附近敌人造成50点伤害。“EMP震爆”会吸取目标的全部能量，并造成与吸取量相等的伤害。</p></td>
                     </tr>
                 </tbody>
             </table>
@@ -840,68 +840,68 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#mengsk/shockdivision">
-                <img src="/images/commanderdata/units/mengsk/shockdivision.jpg" alt="Shock Division">
-                <p>Shock Division</p>
+                <img src="/images/commanderdata/units/mengsk/shockdivision.jpg" alt="冲击分队">
+                <p>冲击分队</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Useful when being placed behind Bunkers to deal with ground-based attack waves.</li>
-                <li>Can be used as an anti-air option when loaded sieged onto a Medivac.</li>
-                <li>Damage output in a Medivac is out-performed by much better anti-air options, such as Blackhammers and Prides of Augustgrad.</li>
+                <li>部署在地堡后方时，适合应对以地面单位为主的进攻波次。</li>
+                <li>以攻城模式吊挂在帝国仲裁机下方时，可作为对空选择。</li>
+                <li>吊挂时的伤害输出不如黑色战锤和奥古斯特格勒的骄傲等更优秀的对空单位。</li>
             </ul>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/armamentstabilizers.png" alt="Armament Stabilizers"></td>
-                        <td>Armament Stabilizers</td>
-                        <td>Allows Shock Divisions in Siege Mode to fire at air units at a reduced rate (66%) while being carried by an Imperial Intercessor.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/armamentstabilizers.png" alt="武器稳定器"></td>
+                        <td>武器稳定器</td>
+                        <td>使攻城模式下的冲击分队被帝国仲裁机吊挂时，能以较低的射速（66%）攻击空中单位。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/smartservos.png" alt="Smart Servos"></td>
-                        <td>Smart Servos</td>
-                        <td>Reduces the transformation time (by 66%) of Shock Divisions, Blackhammers, and Sky Furies.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/smartservos.png" alt="智能伺服器"></td>
+                        <td>智能伺服器</td>
+                        <td>使冲击分队、黑色战锤和天空之怒的变形时间缩短66%。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60秒</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Rank Unlocks:</p>
+            <p>军阶解锁：</p>
             <table class="rankTable">
                 <thead>
                     <tr>
-                        <th>Rank</th>
-                        <th>Total Experience</th>
-                        <th>Rank Bonus</th>
+                        <th>军阶</th>
+                        <th>总经验值</th>
+                        <th>军阶加成</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
                         <td>1800</td>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/shockandawe.png" alt="Shock and Awe"><p><b>Shock and Awe: </b>In Siege Mode, this unit's attacks now stun enemy units for 1 second. Can only occur once every 5 seconds on each unit.<br><br>Massive and Heroic units are slowed.</p></td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/shockandawe.png" alt="震撼与敬畏"><p><b>震撼与敬畏：</b>在攻城模式下，该单位的攻击会使敌方单位昏迷1秒。对每个单位每5秒只能触发一次。<br><br>重型和英雄单位只会被减速。</p></td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>6000</td>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="Veterancy"><p>Increases vision and attack range by 2 in Siege Mode.</p></td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="精英化"><p>在攻城模式下，视野与攻击射程提高2。</p></td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>13200</td>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="Veterancy"><p>Increases the area of sieged attacks by 40%.</p></td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="精英化"><p>攻城模式下攻击的作用范围扩大40%。</p></td>
                     </tr>
                 </tbody>
             </table>
@@ -910,67 +910,67 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#mengsk/blackhammer">
-                <img src="/images/commanderdata/units/mengsk/blackhammer.jpg" alt="Blackhammer">
-                <p>Blackhammer</p>
+                <img src="/images/commanderdata/units/mengsk/blackhammer.jpg" alt="黑色战锤">
+                <p>黑色战锤</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Good tank unit for the frontline with decent anti-ground damage.</li>
-                <li>Overwatch mode is a great way of dealing with large numbers of low HP air units.</li>
+                <li>适合在前线承受伤害，对地输出也相当不错。</li>
+                <li>掩护射击模式非常适合处理大量低生命值空中单位。</li>
             </ul>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/bulwarkfield.png" alt="Bulwark Field"></td>
-                        <td>Bulwark Field</td>
-                        <td>Blackhammers provide nearby friendly ground units (within 5 range) +5 armor.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/bulwarkfield.png" alt="壁垒场"></td>
+                        <td>壁垒场</td>
+                        <td>黑色战锤使附近（5范围内）的友方地面单位获得+5护甲。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/smartservos.png" alt="Smart Servos"></td>
-                        <td>Smart Servos</td>
-                        <td>Reduces the transformation time (by 66%) of Shock Divisions, Blackhammers, and Sky Furies.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/smartservos.png" alt="智能伺服器"></td>
+                        <td>智能伺服器</td>
+                        <td>使冲击分队、黑色战锤和天空之怒的变形时间缩短66%。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60秒</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Rank Unlocks:</p>
+            <p>军阶解锁：</p>
             <table class="rankTable">
                 <thead>
                     <tr>
-                        <th>Rank</th>
-                        <th>Total Experience</th>
-                        <th>Rank Bonus</th>
+                        <th>军阶</th>
+                        <th>总经验值</th>
+                        <th>军阶加成</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
                         <td>2400</td>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="Veterancy"><p>Increases the area of effect of Overwatch Mode by 50%.</p></td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="精英化"><p>掩护射击模式的作用范围扩大50%。</p></td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>8000</td>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="Veterancy"><p>Increases the range of Overwatch Mode by 2.</p></td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="精英化"><p>掩护射击模式的射程提高2。</p></td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>17600</td>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="Veterancy"><p>Increases attack speed in Overwatch Mode by 33%.</p></td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="精英化"><p>掩护射击模式下的攻击速度提高33%。</p></td>
                     </tr>
                 </tbody>
             </table>
@@ -979,69 +979,69 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#mengsk/skyfury">
-                <img src="/images/commanderdata/units/mengsk/skyfury.jpg" alt="Sky Fury">
-                <p>Sky Fury</p>
+                <img src="/images/commanderdata/units/mengsk/skyfury.jpg" alt="天空之怒">
+                <p>天空之怒</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Too expensive given its role, which is overshadowed by other Mengsk units.</li>
-                <li>Can be used to deal with Massive targets after reaching Rank 1.</li>
-                <li>At Rank 2, it's DPS increases when its mode is changed for 5 seconds, which can be used to provide bursts of damage.</li>
+                <li>相较于其定位，造价过高，而且作用被蒙斯克的其他单位盖过。</li>
+                <li>达到1级军阶后，可用于对付重型目标。</li>
+                <li>达到2级军阶后，每次切换模式都会使其伤害输出提高5秒，可用于打出爆发伤害。</li>
             </ul>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/aesirturbines.png" alt="Aesir Turbines"></td>
-                        <td>Aesir Turbines</td>
-                        <td>Increases the movement speed of Sky Furies by 55%.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/aesirturbines.png" alt="亚萨涡轮机"></td>
+                        <td>亚萨涡轮机</td>
+                        <td>使天空之怒的移动速度提高55%。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/smartservos.png" alt="Smart Servos"></td>
-                        <td>Smart Servos</td>
-                        <td>Reduces the transformation time (by 66%) of Shock Divisions, Blackhammers, and Sky Furies.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/smartservos.png" alt="智能伺服器"></td>
+                        <td>智能伺服器</td>
+                        <td>使冲击分队、黑色战锤和天空之怒的变形时间缩短66%。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60秒</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Rank Unlocks:</p>
+            <p>军阶解锁：</p>
             <table class="rankTable">
                 <thead>
                     <tr>
-                        <th>Rank</th>
-                        <th>Total Experience</th>
-                        <th>Rank Bonus</th>
+                        <th>军阶</th>
+                        <th>总经验值</th>
+                        <th>军阶加成</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
                         <td>1200</td>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="Veterancy"><p>Deals bonus damage (50) to Massive targets.</p></td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="精英化"><p>对重型目标造成50点额外伤害。</p></td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>4000</td>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/tacticalrealignment.png" alt="Tactical Realignment"><p><b>Tactical Realignment: </b>After transforming, this unit gains 50% increased attack damage for 5 seconds. Cannot occur more than once every 15 seconds.</p></td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/tacticalrealignment.png" alt="战术调整"><p><b>战术调整：</b>变形后，该单位的攻击伤害提高50%，持续5秒。该效果每15秒只能触发一次。</p></td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>8800</td>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/evasivemaneuvers.png" alt="Evasive Maneuvers"><p><b>Evasive Maneuvers: </b>This unit has a 50% chance to evade attacks.</p><br><br>
-                        <img src="/images/commanderdata/unitupgrades/mengsk/phoenixprotocol.png" alt="Phoenix Protocol"><p><b>Phoenix Protocol: </b>When this unit takes fatal damage, the Sky Fury transforms to Fighter mode and temporarily gains a barrier that absorbs 400 damage for 15 seconds. Can only occur once every 90 seconds.</p></td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/evasivemaneuvers.png" alt="闪避机动"><p><b>闪避机动：</b>该单位有50%的几率闪避攻击。</p><br><br>
+                        <img src="/images/commanderdata/unitupgrades/mengsk/phoenixprotocol.png" alt="不死鸟协议"><p><b>不死鸟协议：</b>该单位受到致命伤害时，天空之怒会变形为战机模式，并暂时获得一道可吸收400点伤害、持续15秒的屏障。该效果每90秒只能触发一次。</p></td>
                     </tr>
                 </tbody>
             </table>
@@ -1050,68 +1050,68 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#mengsk/imperialintercessor">
-                <img src="/images/commanderdata/units/mengsk/imperialintercessor.jpg" alt="Imperial Intercessor">
-                <p>Imperial Intercessor</p>
+                <img src="/images/commanderdata/units/mengsk/imperialintercessor.jpg" alt="帝国仲裁机">
+                <p>帝国仲裁机</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Important unit for keeping Troopers alive in battle.</li>
-                <li>Both upgrades are very useful to improving the effectiveness and survivability of the Intercessor.</li>
+                <li>让冲锋队在战斗中存活的重要单位。</li>
+                <li>两项升级都能显著提高仲裁机的效能与生存能力。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Rank Required</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>所需军阶</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/unitskills/mengsk/heal.png" alt="Heal"></td>
-                        <td>Heal</td>
-                        <td>Heals a friendly biological target.<br><br>Heals 9 life per 3 energy.</td>
-                        <td>0 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/mengsk/heal.png" alt="治疗"></td>
+                        <td>治疗</td>
+                        <td>治疗一个友方生物目标。<br><br>每消耗3点能量恢复9点生命值。</td>
+                        <td>0秒</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/mengsk/igniteafterburners.png" alt="Ignite Afterburners"></td>
-                        <td>Ignite Afterburners</td>
-                        <td>Increases this unit's movement speed by 70% for 8 seconds.</td>
-                        <td>15 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/mengsk/igniteafterburners.png" alt="后燃推进系统"></td>
+                        <td>后燃推进系统</td>
+                        <td>该单位的移动速度提高70%，持续8秒。</td>
+                        <td>15秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/dualresuscitators.png" alt="Dual Resuscitators"></td>
-                        <td>Dual Resuscitators</td>
-                        <td>Allows Imperial Intercessors to heal two targets at the same time.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/dualresuscitators.png" alt="双重复苏器"></td>
+                        <td>双重复苏器</td>
+                        <td>使帝国仲裁机可以同时治疗两个目标。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/scatterveil.png" alt="Scatter Veil"></td>
-                        <td>Scatter Veil</td>
-                        <td>Allows Imperial Intercessors to permanently cloak and provides them with a shield that absorbs 100 damage.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/scatterveil.png" alt="散射帷幕"></td>
+                        <td>散射帷幕</td>
+                        <td>使帝国仲裁机永久隐形，并获得一道可吸收100点伤害的护盾。</td>
                         <td>50/50</td>
-                        <td>60 seconds</td>
+                        <td>60秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -1120,36 +1120,36 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#mengsk/imperialwitness">
-                <img src="/images/commanderdata/units/mengsk/imperialwitness.jpg" alt="Imperial Witness">
-                <p>Imperial Witness</p>
+                <img src="/images/commanderdata/units/mengsk/imperialwitness.jpg" alt="帝国见证者">
+                <p>帝国见证者</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>A critical unit for Mandate generation for Mengsk.</li>
-                <li>Players should try to rush this unit and place it in Patriot Mode over their own mineral lines.</li>
-                <li>Should not be placed on ally mineral lines as it does not generate Mandate, and movement speed increases do not raise resource income after saturation.</li>
-                <li>Can be put into Patriot Mode in the battlefield over areas you will be fighting in to take advantage of the movement speed and attack speed buffs.</li>
-                <li>Provides 20% Attack Speed and Movement Speed buff when in Patriot mode (15 range).</li>
+                <li>蒙斯克生成天命皇权的关键单位。</li>
+                <li>玩家应尽快生产该单位，并让它在自己的矿区上方进入爱国者模式。</li>
+                <li>不要放在盟友矿区上方，因为这样无法生成天命皇权，而且矿区饱和后，移动速度提升也不会增加资源收入。</li>
+                <li>也可让它在战场交战区域上方进入爱国者模式，以利用移动速度和攻击速度增益。</li>
+                <li>爱国者模式下为15范围内单位提供20%攻击速度与移动速度加成。</li>
             </ul>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/amplifiedairwaves.png" alt="Amplified Airwaves"></td>
-                        <td>Amplfied Airwaves</td>
-                        <td>Doubles the Imperial Support Laborers and Troopers provide when affected by the Imperial Witness's Indoctrinate ability.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/amplifiedairwaves.png" alt="放大电波"></td>
+                        <td>放大电波</td>
+                        <td>使受到帝国见证者“教导”影响的劳工与冲锋队提供的帝国支持度加倍。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -1158,132 +1158,132 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#mengsk/prideofaugustgrad">
-                <img src="/images/commanderdata/units/mengsk/prideofaugustgrad.jpg" alt="Pride of Augustgrad">
-                <p>Pride of Augustgrad</p>
+                <img src="/images/commanderdata/units/mengsk/prideofaugustgrad.jpg" alt="奥古斯特格勒的骄傲">
+                <p>奥古斯特格勒的骄傲</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Great unit for dealing with clumps of enemy units in attack waves.</li>
-                <li>Yamato Cannon will retarget units once Rank 3 is reached, preventing overkilling a unit.</li>
+                <li>非常适合处理进攻波次中聚成一团的敌方单位。</li>
+                <li>达到3级军阶后，大和炮会重新选择目标，避免对单个单位伤害溢出。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Rank Required</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>所需军阶</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/mengsk/yamatocannon.png" alt="Yamato Cannon"></td>
-                        <td>Yamato Cannon</td>
-                        <td>Blasts a target with a devastating plasma cannon, causing 300 damage.</td>
-                        <td>120 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/mengsk/yamatocannon.png" alt="大和炮"></td>
+                        <td>大和炮</td>
+                        <td>使用毁灭性的等离子炮轰击目标，造成300点伤害。</td>
+                        <td>120秒</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitskills/mengsk/tacticaljump.png" alt="Tactical Jump"></td>
-                        <td>Tactical Jump</td>
-                        <td>Warps to the target location. Battlecruiser is invulnerable while warping.</td>
-                        <td>60 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/mengsk/tacticaljump.png" alt="战术跳跃"></td>
+                        <td>战术跳跃</td>
+                        <td>跃迁至目标位置。战列巡航舰在跃迁期间无敌。</td>
+                        <td>60秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_terran.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/fieldassisttargetingsystem.png" alt="Field-Assist Targeting System"></td>
-                        <td>Field-Assist Targeting System</td>
-                        <td>Allows Pride of Augustgrad to grant nearby friendly ranged ground units +1 increased range.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/fieldassisttargetingsystem.png" alt="战场辅助瞄准系统"></td>
+                        <td>战场辅助瞄准系统</td>
+                        <td>使奥古斯特格勒的骄傲可以让附近友方远程地面单位的射程提高1。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60秒</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Rank Unlocks:</p>
+            <p>军阶解锁：</p>
             <table class="rankTable">
                 <thead>
                     <tr>
-                        <th>Rank</th>
-                        <th>Total Experience</th>
-                        <th>Rank Bonus</th>
+                        <th>军阶</th>
+                        <th>总经验值</th>
+                        <th>军阶加成</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
                         <td>3000</td>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="Veterancy"><p>Yamato Cannon and Tactical Jump hold an additional charge.</p></td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="精英化"><p>大和炮与战术跳跃可额外储存一次充能。</p></td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>10000</td>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="Veterancy"><p>Yamato Cannon deals damage in an area around the target.</p></td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="精英化"><p>大和炮会对目标周围区域造成伤害。</p></td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>22000</td>
-                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="Veterancy"><p>Yamato Cannon fires 2 additional times, choosing new targets.</p></td>
+                        <td><img src="/images/commanderdata/unitupgrades/mengsk/veterancy.png" alt="精英化"><p>大和炮额外开火2次，并选择新的目标。</p></td>
                 </tbody>
             </table>
         </div>
     </div>
-    <h2 id="buildOrder">Build Order</h2>
-    <p>Below is the standard economic build order for Mengsk. For more information on how to read and construct your own build orders, please check the <a href="/guides/buildordertheory">Build Order Theory</a> page.</p>
+    <h2 id="buildOrder">建造顺序</h2>
+    <p>以下是蒙斯克的标准经济建造顺序。有关如何阅读及编写自己的建造顺序，请参阅<a href="/guides/buildordertheory">建造顺序理论</a>页面。</p>
     <p class="buildOrder">
-        13 Bunker Calldown at Expo<br>
-        24 Bunker keeping 16 laborers on Main<br>
-        25 Unload expo bunker + clear rocks<br>
-        28 4 Laborers -> Expo<br>
-        30 Enlistment Center with 4 Laborers<br>
-        32 Troopers to Laborers to fast-build expo<br>
-        32 Bunker Calldown, Unload to Laborer<br>
-        38 Refinery with 3 Laborers<br>
-        38 Refinery with 3 Laborers<br>
-        39 Refinery with 3 Laborers<br>
-        41 Refinery with 3 Laborers<br>
-        45 Barracks with 8 Laborers<br>
-        50 Factory with 8 Laborers<br>
-        53 Starport with 8 Laborers<br>
-        56 Imperial Witness<br>
+        13补给：在分矿空投地堡<br>
+        24补给：建造地堡，主矿保留16名劳工<br>
+        25补给：卸下分矿地堡内单位并清理岩石<br>
+        28补给：派4名劳工前往分矿<br>
+        30补给：用4名劳工建造征兵中心<br>
+        32补给：将冲锋队变为劳工，快速建造分矿基地<br>
+        32补给：空投地堡，卸下单位并转为劳工<br>
+        38补给：用3名劳工建造精炼厂<br>
+        38补给：用3名劳工建造精炼厂<br>
+        39补给：用3名劳工建造精炼厂<br>
+        41补给：用3名劳工建造精炼厂<br>
+        45补给：用8名劳工建造兵营<br>
+        50补给：用8名劳工建造重工厂<br>
+        53补给：用8名劳工建造星港<br>
+        56补给：生产帝国见证者<br>
     </p>
-    <h2 id="guide">Gameplay Guide</h2>
-    <h3>Playstyle Traps</h3>
-    <p>Weapon upgrades for Troopers may seem expensive, but they can greatly increase the unit's performance in combat. Make sure to utilize any floating minerals to upgrade Trooper weapons where possible.</p>
-    <p>Finally, it can be very tempting to try and build many of the Royal Guard units. Doing so means that the experience you get from kills is split among more units, slowing down their levelling up through Ranks. While for smaller units (such as the Aegis Guard), it might not be too impactful, it can be very problematic for larger units such as the Pride of Augustgrad. These units gain a significant power spike at Rank 3 and is potentially the rank where they become invaluable. Having several Prides of Augustgrad, combined with their high levelling experience can prevent a player from reaching the rank which makes them important units.</p>
-    <h3>Unit Ranks</h3>
-    <p>Mengsk's Royal Guard units have a Veterancy mechanic that allows them to level up as enemy units are killed around the map. Once a certain amount of experience is reached, the unit ranks up, gaining access to additional skills or bonuses. The leveling up mechanics works as follows:</p>
+    <h2 id="guide">玩法攻略</h2>
+    <h3>玩法误区</h3>
+    <p>冲锋队的武器升级看似昂贵，却能大幅提高单位的作战表现。若有闲置晶体矿，务必尽可能用于升级冲锋队武器。</p>
+    <p>另一个常见诱惑是生产大量皇家卫队单位。这样会使击杀敌人获得的经验分摊给更多单位，拖慢它们提升军阶的速度。对壁垒卫士等小型单位而言，影响或许不大；但对奥古斯特格勒的骄傲等大型单位来说，问题会非常严重。这些单位在3级军阶时会获得显著强化，甚至到这一军阶才真正体现不可替代的价值。若同时拥有多艘奥古斯特格勒的骄傲，再加上它们极高的升级经验需求，玩家可能始终无法升到使其发挥关键作用的军阶。</p>
+    <h3>单位军阶</h3>
+    <p>蒙斯克的皇家卫队拥有精英化机制。地图各处有敌方单位被消灭时，它们便可获得经验。积累到一定经验后，单位会提升军阶，解锁额外技能或加成。升级机制如下：</p>
     <ul>
-        <li>When an enemy unit is killed, 100 experience per supply cost of unit killed is "dropped".</li>
-        <li>If the unit is a non-Heroic unit with 0 supply cost, it will drop no experience.</li>
-        <li>If the unit is a Heroic unit with 0 supply cost, it will drop 800 experience.</li>
-        <li>Dropped experience is equally split among all eligible units (Royal Guard, not at max rank) within 15 range of the unit killed.</li>
-        <li>If there are no eligible units within 15 range of the unit killed, all eligible units on the map get an equal split of the dropped experience.</li>
-        <li>Once a Royal Guard unit has reached maximum rank, it is removed from the pool of eligible units so as to not waste experience.</li>
+        <li>敌方单位被消灭时，每点被消灭单位的补给消耗会“掉落”100点经验。</li>
+        <li>若该单位不是英雄单位且补给消耗为0，则不掉落经验。</li>
+        <li>若该单位是英雄单位且补给消耗为0，则掉落800点经验。</li>
+        <li>掉落的经验由被消灭单位15范围内所有符合条件的单位（尚未满级的皇家卫队）平均分配。</li>
+        <li>若被消灭单位15范围内没有符合条件的单位，则由地图上所有符合条件的单位平均分配经验。</li>
+        <li>皇家卫队达到最高军阶后，会从符合条件的单位池中移除，以免浪费经验。</li>
     </ul>
-    <h3>Laborer Multi-building</h3>
-    <p>Mengsk can send multiple Laborers to build a structure. The time taken to complete a structure based on the number of Laborers building is as follows:</p>
+    <h3>多名劳工协同建造</h3>
+    <p>蒙斯克可以派多名劳工共同建造一座建筑。不同劳工数量对应的建筑完成时间如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Laborers</th>
-                <th>Build Time (%)</th>
+                <th>劳工数</th>
+                <th>建造时间（%）</th>
             </tr>
         </thead>
         <tbody>
@@ -1329,30 +1329,30 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
         </tbody>
     </table>
-    <h3 id="fastexpand">Fast Expanding</h3>
-    <p>With 30 points into the Starting Mandate Mastery, Mengsk has access to one of the following listed combinations of calldown usage once he hits 50 Mandate, which is when double-Bunker expands begin. Single bunker expands can be done at the start of the game.</p>
+    <h3 id="fastexpand">快速开矿</h3>
+    <p>在“起始天命皇权”精通投入30点后，蒙斯克达到50点天命皇权时便可使用下列任意一种面板技能组合，从而开始双地堡开矿。单地堡开矿则可在游戏开始时进行。</p>
     <ul>
-        <li>Two Bunkers</li>
-        <li>One Bunker, One Level 1 Dogs of War</li>
-        <li>One Level 2 Dogs of War</li>
+        <li>两座地堡</li>
+        <li>一座地堡，加一次1级“战争恶犬”</li>
+        <li>一次2级“战争恶犬”</li>
     </ul>
-    <p>The most optimal expands (shown below) will require the player to use the Bunker calldown as much as possible, while shying away from using the Zerg calldown. This is because the Bunker calldown provides the player with extra Troopers which can then be converted back to Laborers for saturating the expansion. However, if the player finds these expands difficult, a Zerg calldown instead of a Bunker may help (although they have not been tested).</p>
-    <p>Below are pictures that show how to fast-expand on maps. These require a lot of practice to pull off, but can put you ahead economically.</p>
+    <p>下方展示的最优开矿方式要求玩家尽量多用地堡面板技能，并避免使用异虫面板技能。原因是空投地堡会额外提供冲锋队，它们可变回劳工以迅速让分矿满采。不过，若玩家觉得这些开矿操作太难，也可以尝试用异虫面板技能代替一座地堡（但这些方案尚未经过测试）。</p>
+    <p>下方图片展示了各地图的快速开矿方式。这些操作需要大量练习才能稳定完成，但能让你取得经济优势。</p>
     <table id="fastExpoTable">
         <thead>
             <tr>
-                <th>Map</th>
-                <th>Player 1 Expansion</th>
-                <th>Player 2 Expansion</th>
+                <th>地图</th>
+                <th>玩家1分矿</th>
+                <th>玩家2分矿</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><a href="/missions/chainofascension">Chain of Ascension</a><br /><br />
+                <td><a href="/missions/chainofascension">飞升之链</a><br /><br />
                     <form action='#'>
-                        <label><input type='radio' name='coa' value='protoss' checked>Protoss</label><br>
-                        <label><input type='radio' name='coa' value='terran'>Terran</label><br>
-                        <label><input type='radio' name='coa' value='zerg'>Zerg</label><br></form>
+                        <label><input type='radio' name='coa' value='protoss' checked>星灵</label><br>
+                        <label><input type='radio' name='coa' value='terran'>人类</label><br>
+                        <label><input type='radio' name='coa' value='zerg'>异虫</label><br></form>
                     <script>
                         var imgList=[];
                         imgList.push('/images/commanderdata/guides/mengsk/fastexpand_coa_protoss_1.jpg');
@@ -1388,27 +1388,27 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                         })
                     </script>
                 </td>
-                <td><div class="fastExpand" id="coa1div"><img id="coa1" src="/images/commanderdata/guides/mengsk/fastexpand_coa_protoss_1.jpg" alt="Player 1 Fast Expand on Chain of Ascension"></div></td>
-                <td><div class="fastExpand" id="coa2div"><img id="coa2" src="/images/commanderdata/guides/mengsk/fastexpand_coa_protoss_2.jpg" alt="Player 2 Fast Expand on Chain of Ascension"></div></td>
+                <td><div class="fastExpand" id="coa1div"><img id="coa1" src="/images/commanderdata/guides/mengsk/fastexpand_coa_protoss_1.jpg" alt="飞升之链玩家1快速开矿"></div></td>
+                <td><div class="fastExpand" id="coa2div"><img id="coa2" src="/images/commanderdata/guides/mengsk/fastexpand_coa_protoss_2.jpg" alt="飞升之链玩家2快速开矿"></div></td>
             </tr>
             <tr>
-                <td><a href="/missions/cradleofdeath">Cradle of Death</a></td>
-                <td class="centered" colspan="2">Not worth fast expanding as risks are too high to lose Troopers and Bunkers.</td>
+                <td><a href="/missions/cradleofdeath">死亡摇篮</a></td>
+                <td class="centered" colspan="2">快速开矿不值得，损失冲锋队和地堡的风险太高。</td>
             </tr>
             <tr>
-                <td><a href="/missions/deadofnight">Dead of Night</a></td>
-                <td class="centered" colspan="2">No contested expansion</td>
+                <td><a href="/missions/deadofnight">亡者之夜</a></td>
+                <td class="centered" colspan="2">分矿无人驻守</td>
             </tr>
             <tr>
-                <td><a href="/missions/lockload">Lock &amp; Load</a></td>
-                <td class="centered" colspan="2">No contested expansion</td>
+                <td><a href="/missions/lockload">天锁</a></td>
+                <td class="centered" colspan="2">分矿无人驻守</td>
             </tr>
             <tr>
-                <td><a href="/missions/malwarfare">Malwarfare</a>*<br /><br />
+                <td><a href="/missions/malwarfare">恶意代码</a>*<br /><br />
                     <form action='#'>
-                        <label><input type='radio' name='mw' value='protoss' checked>Protoss</label><br>
-                        <label><input type='radio' name='mw' value='terran'>Terran</label><br>
-                        <label><input type='radio' name='mw' value='zerg'>Zerg</label><br></form>
+                        <label><input type='radio' name='mw' value='protoss' checked>星灵</label><br>
+                        <label><input type='radio' name='mw' value='terran'>人类</label><br>
+                        <label><input type='radio' name='mw' value='zerg'>异虫</label><br></form>
                     <script>
                         var imgList=[];
                         imgList.push('/images/commanderdata/guides/mengsk/fastexpand_mw_protoss_1.jpg');
@@ -1444,27 +1444,27 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                         })
                     </script>
                 </td>
-                <td><div class="fastExpand" id="mw1div"><img id="mw1" src="/images/commanderdata/guides/mengsk/fastexpand_mw_protoss_1.jpg" alt="Player 1 Fast Expand on Malwarfare"></div></td>
-                <td><div class="fastExpand" id="mw2div"><img id="mw2" src="/images/commanderdata/guides/mengsk/fastexpand_mw_protoss_2.jpg" alt="Player 2 Fast Expand on Malwarfare"></div></td>
+                <td><div class="fastExpand" id="mw1div"><img id="mw1" src="/images/commanderdata/guides/mengsk/fastexpand_mw_protoss_1.jpg" alt="恶意代码玩家1快速开矿"></div></td>
+                <td><div class="fastExpand" id="mw2div"><img id="mw2" src="/images/commanderdata/guides/mengsk/fastexpand_mw_protoss_2.jpg" alt="恶意代码玩家2快速开矿"></div></td>
             </tr>
             <tr>
-                <td><a href="/missions/minerevacuation">Miner Evacuation</a></td>
-                <td colspan="2"><div class="fastExpand"><img id="me1" src="/images/commanderdata/guides/mengsk/fastexpand_me.jpg" alt="Fast Expand on Miner Evacuation"></div></td>
+                <td><a href="/missions/minerevacuation">疏散矿工</a></td>
+                <td colspan="2"><div class="fastExpand"><img id="me1" src="/images/commanderdata/guides/mengsk/fastexpand_me.jpg" alt="疏散矿工快速开矿"></div></td>
             </tr>
             <tr>
-                <td><a href="/missions/mistopportunities">Mist Opportunities</a></td>
-                <td class="centered" colspan="2">No contested expansion</td>
+                <td><a href="/missions/mistopportunities">机会渺茫</a></td>
+                <td class="centered" colspan="2">分矿无人驻守</td>
             </tr>
             <tr>
-                <td><a href="/missions/oblivionexpress">Oblivion Express</a></td>
-                <td class="centered" colspan="2">No contested expansion</td>
+                <td><a href="/missions/oblivionexpress">湮灭快车</a></td>
+                <td class="centered" colspan="2">分矿无人驻守</td>
             </tr>
             <tr>
-                <td><a href="/missions/partparcel">Part & Parcel</a>*<br /><br />
+                <td><a href="/missions/partparcel">聚铁成兵</a>*<br /><br />
                     <form action='#'>
-                        <label><input type='radio' name='pp' value='protoss' checked>Protoss</label><br>
-                        <label><input type='radio' name='pp' value='terran'>Terran</label><br>
-                        <label><input type='radio' name='pp' value='zerg'>Zerg</label><br></form>
+                        <label><input type='radio' name='pp' value='protoss' checked>星灵</label><br>
+                        <label><input type='radio' name='pp' value='terran'>人类</label><br>
+                        <label><input type='radio' name='pp' value='zerg'>异虫</label><br></form>
                     <script>
                         var imgList=[];
                         imgList.push('/images/commanderdata/guides/mengsk/fastexpand_pp_protoss.jpg');
@@ -1487,26 +1487,26 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                         })
                     </script>
                 </td>
-                <td colspan="2"><div class="fastExpand" id="pp1div"><img id="pp1" src="/images/commanderdata/guides/mengsk/fastexpand_pp_protoss.jpg" alt="Fast Expand on Part & Parcel"></div></td>
+                <td colspan="2"><div class="fastExpand" id="pp1div"><img id="pp1" src="/images/commanderdata/guides/mengsk/fastexpand_pp_protoss.jpg" alt="聚铁成兵快速开矿"></div></td>
             </tr>
             <tr>
-                <td><a href="/missions/riftstokorhal">Rifts to Korhal</a></td>
-                <td class="centered" colspan="2">No contested expansion</td>
+                <td><a href="/missions/riftstokorhal">克哈裂痕</a></td>
+                <td class="centered" colspan="2">分矿无人驻守</td>
             </tr>
             <tr>
-                <td><a href="/missions/scytheofamon">Scythe of Amon</a></td>
-                <td colspan="2"><div class="fastExpand"><img id="soa1" src="/images/commanderdata/guides/mengsk/fastexpand_soa.jpg" alt="Fast Expand on Scythe of Amon"></div><p>Note: Fast expanding on this mission slows your mission completion time. Use the Bunker calldowns on Sliver #4 (South West) and clear those. Slivers #3 (North) and #5 (North West) can be cleared with your Nuclear Annihilation ability. Slivers #1 (Base) and #2(Expansion) can be cleared with Earthsplitters that you will build throughout the course of the mission.</p></td>
+                <td><a href="/missions/scytheofamon">埃蒙之镰</a></td>
+                <td colspan="2"><div class="fastExpand"><img id="soa1" src="/images/commanderdata/guides/mengsk/fastexpand_soa.jpg" alt="埃蒙之镰快速开矿"></div><p>注意：在此任务中快速开矿会拖慢任务完成速度。使用地堡面板技能清理4号裂片（西南）。3号（北）与5号（西北）裂片可用“核弹天劫”清理。1号（主基地）与2号（分矿）裂片则可用任务过程中建造的大地碎裂炮清理。</p></td>
             </tr>
             <tr>
-                <td><a href="/missions/templeofthepast">Temple of the Past</a></td>
-                <td class="centered" colspan="2">No contested expansion</td>
+                <td><a href="/missions/templeofthepast">往日神庙</a></td>
+                <td class="centered" colspan="2">分矿无人驻守</td>
             </tr>
             <tr>
-                <td><a href="/missions/thevermillionproblem">The Vermillion Problem</a><br /><br />
+                <td><a href="/missions/thevermillionproblem">熔火危机</a><br /><br />
                     <form action='#'>
-                        <label><input type='radio' name='tvp' value='protoss' checked>Protoss</label><br>
-                        <label><input type='radio' name='tvp' value='terran'>Terran</label><br>
-                        <label><input type='radio' name='tvp' value='zerg'>Zerg</label><br></form>
+                        <label><input type='radio' name='tvp' value='protoss' checked>星灵</label><br>
+                        <label><input type='radio' name='tvp' value='terran'>人类</label><br>
+                        <label><input type='radio' name='tvp' value='zerg'>异虫</label><br></form>
                     <script>
                         var imgList=[];
                         imgList.push('/images/commanderdata/guides/mengsk/fastexpand_tvp_protoss.jpg');
@@ -1528,107 +1528,107 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                         })
                     </script>
                 </td>
-                <td colspan="2"><div class="fastExpand" id="tvp1div"><img id="tvp1" src="/images/commanderdata/guides/mengsk/fastexpand_tvp_protoss.jpg" alt="Fast Expand on The Vermillion Problem"></div></td>
+                <td colspan="2"><div class="fastExpand" id="tvp1div"><img id="tvp1" src="/images/commanderdata/guides/mengsk/fastexpand_tvp_protoss.jpg" alt="熔火危机快速开矿"></div></td>
             </tr>
             <tr>
-                <td><a href="/missions/voidlaunch">Void Launch</a></td>
-                <td class="centered" colspan="2">No contested expansion</td>
+                <td><a href="/missions/voidlaunch">虚空降临</a></td>
+                <td class="centered" colspan="2">分矿无人驻守</td>
             </tr>
             <tr>
-                <td><a href="/missions/voidthrashing">Void Thrashing</a></td>
-                <td class="centered" colspan="2">No contested expansion</td>
+                <td><a href="/missions/voidthrashing">虚空撕裂</a></td>
+                <td class="centered" colspan="2">分矿无人驻守</td>
             </tr>
         </tbody>
     </table>
-    <p>*Due to how lightly this mission is contested, only one Bunker is required, allowing you to place your second Bunker at your main, unloading, and converting the Troopers to Laborers to further saturate your main mineral line.</p>
-    <h3>Earthsplitters</h3>
-    <p>Earthsplitters are a key part of Mengsk gameplay. They are used to soften attack waves and enemy bases, allowing Mengsk's more fragile army of conscripts to take more favourable engagements. Mengsk's Earthsplitters have the following upgrades available to them:</p>
+    <p>*由于这些任务的分矿驻军很少，只需一座地堡即可清理。因此可将第二座地堡投在主矿，卸下冲锋队并将其变为劳工，进一步加快主矿饱和。</p>
+    <h3>大地碎裂炮</h3>
+    <p>大地碎裂炮是蒙斯克玩法的核心组成部分。它们用于削弱进攻波次和敌方基地，让蒙斯克较为脆弱的征召部队能在更有利的条件下交战。大地碎裂炮可以使用下列升级：</p>
     <table class="unitUpgrades">
         <thead>
             <tr>
-                <th>Upgrade</th>
-                <th>Name</th>
-                <th>Effect</th>
-                <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                <th>Research Time</th>
+                <th>升级</th>
+                <th>名称</th>
+                <th>效果</th>
+                <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                <th>研究时间</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/unitupgrades/mengsk/neosteelfortifiedarmor.png" alt="Neosteel Fortified Armor"></td>
-                <td>Neosteel Fortified Armor</td>
-                <td>Increases the life (+200HP) and armor (+2) of Supply Bunkers, Missile Turrets, and Earthsplitter Ordnance.</td>
+                <td><img src="/images/commanderdata/unitupgrades/mengsk/neosteelfortifiedarmor.png" alt="新钢强化装甲"></td>
+                <td>新钢强化装甲</td>
+                <td>使补给地堡、导弹塔和大地碎裂炮的生命值（+200）与护甲（+2）提高。</td>
                 <td>100/100</td>
-                <td>90 seconds</td>
+                <td>90秒</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/unitupgrades/mengsk/hemisphericaccelerants.png" alt="Hemispheric Accelerants"></td>
-                <td>Hemispheric Accelerants</td>
-                <td>Increases the range of the Earthsplitter Ordnanace's Bombardment ability by +25.</td>
+                <td><img src="/images/commanderdata/unitupgrades/mengsk/hemisphericaccelerants.png" alt="半球加速剂"></td>
+                <td>半球加速剂</td>
+                <td>使大地碎裂炮“轰击”技能的射程提高25。</td>
                 <td>150/150</td>
-                <td>90 seconds</td>
+                <td>90秒</td>
             </tr>
         </tbody>
     </table>
-    <p>In addition to upgrades, loading conscripts (either Troopers or Laborers) into Earthsplitter Ordnances increases the number of artillery volleys by one per each loaded conscript in every 30 seconds. The table below summarizes this information:</p>
+    <p>除升级外，让征召单位（冲锋队或劳工）进入大地碎裂炮后，每装载一名征召单位，每30秒内的炮击轮数便增加一轮。下表汇总了相关数据：</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Loaded Conscripts</th>
-                <th>Volleys/30seconds</th>
-                <th>Time Between Volleys</th>
+                <th>装载的征召单位数</th>
+                <th>每30秒炮击轮数</th>
+                <th>炮击间隔</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>0</td>
                 <td>1</td>
-                <td>30 seconds</td>
+                <td>30秒</td>
             </tr>
             <tr>
                 <td>1</td>
                 <td>2</td>
-                <td>15 seconds</td>
+                <td>15秒</td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>3</td>
-                <td>10 seconds</td>
+                <td>10秒</td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>4</td>
-                <td>7.5 seconds</td>
+                <td>7.5秒</td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>5</td>
-                <td>6 seconds</td>
+                <td>6秒</td>
             </tr>
         </tbody>
     </table>
-    <p>Earthsplitters have an element of randomness to them. Upon selection of an area of bombard, an Earthsplitter will randomly select one area of 3 units radius that is within 7.5 range of the selected area. Before the strike, vision of 4 radius will be provided. The Earthsplitter will deal 100 damage in that area on impact. The image below shows the approximate sizes involved:</p>
-    <img src="/images/commanderdata/guides/mengsk/artillerysizes.jpg" alt="Mengsk Artillery Sizes">
-    <p>The areas denoted in the picture above are as follows:</p>
+    <p>大地碎裂炮的攻击带有随机性。选择轰击区域后，大地碎裂炮会在所选位置7.5范围内随机选取一个半径为3的区域。炮弹命中前会提供半径4的视野，命中时对该区域造成100点伤害。下图展示了涉及范围的大致大小：</p>
+    <img src="/images/commanderdata/guides/mengsk/artillerysizes.jpg" alt="蒙斯克火炮作用范围">
+    <p>上图标示的区域含义如下：</p>
     <ul>
-        <li><span style="color:red">Red Area:</span> The area over which a bombardment will be randomly selected, assuming the Pylon was targeted as the center.</li>
-        <li><span style="color:yellow">Yellow Area:</span> The area over which the artillery can deal damage, assuming the bombardment center was selected at the edge of the red area.</li>
-        <li><span style="color:limegreen">Green Area:</span> Size of the bombardment. All enemy ground units within this area will take 100 damage.</li>
+        <li><span style="color:red">红色区域：</span>假设以水晶塔为目标中心，轰击中心可能随机落入的区域。</li>
+        <li><span style="color:yellow">黄色区域：</span>假设轰击中心选在红色区域边缘，火炮可能造成伤害的区域。</li>
+        <li><span style="color:limegreen">绿色区域：</span>单次轰击的大小。该区域内所有敌方地面单位都会受到100点伤害。</li>
     </ul>
-    <p>The table below provides calculated data on various probabilities of the Artillery bombardment with different numbers of Earthsplitters. The measured parameters are:</p>
+    <p>下表给出了不同数量大地碎裂炮进行火炮轰击时各项概率的计算数据。测量参数如下：</p>
     <ul>
-        <li><b>Earthsplitter Count:</b> The number of Earthsplitters in play.</li>
-        <li><b>Chance of Overlap:</b> The chance that there will be at least two shells that have some common overlap in area.</li>
-        <li><b>Expected Overlap:</b> The expected number of shells that will overlap in one volley.</li>
-        <li><b>Average Bombardment Cover:</b> Percentage of the total area (Red and Yellow zone) that is covered by the bombardment.</li>
+        <li><b>大地碎裂炮数量：</b>场上的大地碎裂炮数量。</li>
+        <li><b>重叠概率：</b>至少有两枚炮弹的作用区域相互重叠的概率。</li>
+        <li><b>预期重叠数：</b>一轮炮击中预计会发生重叠的炮弹数量。</li>
+        <li><b>平均轰击覆盖率：</b>轰击所覆盖的总区域（红色与黄色区域）百分比。</li>
     </ul>
     <table class="centered">
         <thead>
             <tr>
-                <th>Earthsplitter Count</th>
-                <th>Chance of Overlap</th>
-                <th>Expected Overlaps</th>
-                <th>Average Bombardment Cover</th>
+                <th>大地碎裂炮数量</th>
+                <th>重叠概率</th>
+                <th>预期重叠数</th>
+                <th>平均轰击覆盖率</th>
             </tr>
         </thead>
         <tbody>
@@ -1653,29 +1653,29 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             <tr><td>20</td><td>100%</td><td>8.09</td><td>66%</td></tr>
         </tbody>
     </table>
-    <p>The table below shows probabilities and expected number of hits on targets of various sizes per volley. For reference, the following objectives' radii are provided:</p>
+    <p>下表显示每轮炮击命中不同大小目标的概率与预期命中次数。以下列出部分任务目标的半径作为参考：</p>
     <ul>
-        <li>Extraction Device (<a href="/missions/mistopportunities">Mist Opportunities</a>): 3.50</li>
-        <li>Gatekeeper Construct (<a href="/missions/cradleofdeath">Cradle of Death</a>): 1.75</li>
-        <li>Moebius Hybrid Experiment (<a href="/missions/partparcel">Part and Parcel</a>): 0.75</li>
-        <li>Void Rift (<a href="/resources/mutators">Mutators</a>): 1.00</li>
-        <li>Void Shard (<a href="/missions/riftstokorhal">Rifts to Korhal</a>): 4.50</li>
-        <li>Void Sliver (<a href="/missions/scytheofamon">Scythe of Amon</a>): 4.50</li>
-        <li>Void Thrasher (<a href="/missions/templeofthepast">Temple of the Past</a> and <a href="/missions/voidthrashing">Void Thrashing</a>): 2.50</li>
-        <li>Xel'Naga Construct (<a href="/missions/lockload">Lock & Load</a>): 0.75</li>
+        <li>采集装置（<a href="/missions/mistopportunities">机会渺茫</a>）：3.50</li>
+        <li>守门者构造体（<a href="/missions/cradleofdeath">死亡摇篮</a>）：1.75</li>
+        <li>莫比斯混合体实验体（<a href="/missions/partparcel">聚铁成兵</a>）：0.75</li>
+        <li>虚空裂隙（<a href="/resources/mutators">突变因子</a>）：1.00</li>
+        <li>虚空碎片（<a href="/missions/riftstokorhal">克哈裂痕</a>）：4.50</li>
+        <li>虚空裂片（<a href="/missions/scytheofamon">埃蒙之镰</a>）：4.50</li>
+        <li>虚空撕裂者（<a href="/missions/templeofthepast">往日神庙</a>和<a href="/missions/voidthrashing">虚空撕裂</a>）：2.50</li>
+        <li>萨尔纳加构造体（<a href="/missions/lockload">天锁</a>）：0.75</li>
     </ul>
     <table class="centered">
         <thead>
             <tr>
-                <th>Earthsplitter Count</th>
-                <th colspan="2">Point Target</th>
-                <th colspan="2">1 Radius</th>
-                <th colspan="2">2 Radius</th>
-                <th colspan="2">2.5 Radius</th>
+                <th>大地碎裂炮数量</th>
+                <th colspan="2">点目标</th>
+                <th colspan="2">半径1</th>
+                <th colspan="2">半径2</th>
+                <th colspan="2">半径2.5</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td></td><td>Hit Chance</td><td>Expected Hits</td><td>Hit Chance</td><td>Expected Hits</td><td>Hit Chance</td><td>Expected Hits</td><td>Hit Chance</td><td>Expected Hits</td></tr>
+            <tr><td></td><td>命中概率</td><td>预期命中次数</td><td>命中概率</td><td>预期命中次数</td><td>命中概率</td><td>预期命中次数</td><td>命中概率</td><td>预期命中次数</td></tr>
             <tr><td>2</td><td>29%</td><td>0.32</td><td>48%</td><td>0.57</td><td>69%</td><td>0.89</td><td>78%</td><td>1.07</td></tr> <tr><td>3</td><td>41%</td><td>0.48</td><td>64%</td><td>0.86</td><td>83%</td><td>1.34</td><td>90%</td><td>1.62</td></tr>
             <tr><td>4</td><td>50%</td><td>0.64</td><td>74%</td><td>1.14</td><td>91%</td><td>1.78</td><td>96%</td><td>2.15</td></tr>
             <tr><td>5</td><td>58%</td><td>0.80</td><td>81%</td><td>1.42</td><td>95%</td><td>2.22</td><td>98%</td><td>2.69</td></tr>
@@ -1696,30 +1696,30 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             <tr><td>20</td><td>97%</td><td>3.20</td><td>100%</td><td>5.69</td><td>100%</td><td>8.89</td><td>100%</td><td>10.76</td></tr>
         </tbody>
     </table>
-    <p>Note that if a unit's radius is 4 or above, the artillery is guaranteed to hit it with each volley.</p>
-    <p>If you are interested in learning more about how this data was generated, you may watch the video below:</p>
+    <p>请注意，若单位半径为4或更大，则每轮炮击都必定命中该单位。</p>
+    <p>若想进一步了解这些数据的生成方式，可以观看下方视频：</p>
     <iframe width="475" height="268" src="https://www.youtube.com/embed/yL6FQIlkE30" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <h3>Mandate Generation</h3>
-    <p>Mandate is the Mengsk equivalent of energy that some of the Protoss commanders have. It is generated by increasing your "Imperial Support". The amount of total Imperial Support, divided by 240, gives your Mandate generation per second. Imperial Support is created in three ways:</p>
+    <h3>天命皇权生成</h3>
+    <p>天命皇权相当于部分星灵指挥官所拥有的能量。提高“帝国支持度”即可生成天命皇权。帝国支持度总值除以240，便是每秒生成的天命皇权。帝国支持度有三种来源：</p>
     <ul>
-        <li>A base amount: 40</li>
-        <li>Royal Guard units: Base of 100% of supply cost. Increases by 50% per rank gained, for maximum of 250% of supply cost at Rank 3.</li>
-        <li>Indoctrinated Conscripts: Indoctrination occurs under a Witness in Patriot mode at 1 per supply, or 2 per supply if Amplified Airwaves is researched.</li>
+        <li>基础值：40</li>
+        <li>皇家卫队单位：基础值为补给消耗的100%。每提升一级军阶增加50%，在3级军阶时最高达到补给消耗的250%。</li>
+        <li>接受教导的征召单位：帝国见证者处于爱国者模式时会教导下方单位，每点补给提供1点；研究“放大电波”后，每点补给提供2点。</li>
     </ul>
-    <p>With the Trooper Mandate mastery and Amplified Airwaves, the approximate Imperial Support for two fully saturated bases is 154 (0.6 Mandate/second). Without the upgrade, the Imperial Support is 64 (0.27 Mandate/second).</p>
-    <h3>Playstyle Tips</h3>
+    <p>拥有冲锋队天命皇权精通与“放大电波”时，两座完全满采基地可提供约154点帝国支持度（每秒0.6点天命皇权）。没有该升级时，帝国支持度为64（每秒0.27点天命皇权）。</p>
+    <h3>玩法提示</h3>
     <ul>
-        <li>Try to rush the Imperial Witness as quickly as possible, as the Mandate generation it provides will allow you to spam your calldowns more frequently.</li>
-        <li>When playing on a mission that requires pushing deeper into the map, salvage Earthsplitters and move them closer towards the front line.</li>
-        <li>Units loaded into structures (e.g. Bunkers and Earthsplitters) do not generate Mandate from the Imperial Witness.</li>
-        <li>When loading Troopers into Earthsplitters, ensure that the Troopers do not have weapons equipped. Equipped weapons do not provide any benefits to Earthsplitters.</li>
-        <li>Make sure to upgrade Troopers' weapons before loading them into Bunkers to take advantage of the increased attack damage.</li>
-        <li>Troopers can build combat structures. Use them to build Bunkers or Earthsplitters in the field, fast-building them with multiple Troopers.</li>
-        <li>Aim to have 3-4 Enlistment Centers in the mid-late game to quickly reinforce Troopers after taking engagements</li>
-        <li>If a Trooper with a weapon is killed, the dropped weapon will remain on the ground for 300 seconds before despawning and refunding 120 minerals.</li>
+        <li>尽快生产帝国见证者，其提供的天命皇权生成能力能让你更频繁地使用面板技能。</li>
+        <li>在需要不断深入地图推进的任务中，回收大地碎裂炮，再到更靠近前线的位置重建。</li>
+        <li>进入建筑（例如地堡和大地碎裂炮）的单位不会通过帝国见证者生成天命皇权。</li>
+        <li>让冲锋队进入大地碎裂炮时，确保它们没有装备武器。装备的武器不会为大地碎裂炮带来任何收益。</li>
+        <li>让冲锋队进入地堡前，务必升级其武器，以利用提高后的攻击伤害。</li>
+        <li>冲锋队可以建造作战建筑。让它们在前线建造地堡或大地碎裂炮，并派多名冲锋队加速建造。</li>
+        <li>中后期争取拥有3至4座征兵中心，以便在交战损失后迅速补充冲锋队。</li>
+        <li>装备武器的冲锋队被消灭后，掉落的武器会在地面保留300秒，随后消失并返还120点晶体矿。</li>
     </ul>
-    <h2 id="videos">Video Guides</h2>
-    <p>The below videos demonstrate the various fast expands explained earlier. Note that as of patch 4.11.3, Mengsk's Starting Mandate Mastery has been modified which means the two Bunkers cannot be dropped at the start of the game. For double Bunker expands, you will need to wait (~2 mins) before both Bunkers can be placed. For single Bunker expands, the mineral line will not be saturated at the start of the game.</p>
+    <h2 id="videos">视频攻略</h2>
+    <p>下方视频演示了前文介绍的各种快速开矿方式。请注意，从4.11.3补丁起，蒙斯克的“起始天命皇权”精通已经调整，游戏开始时无法直接空投两座地堡。采用双地堡开矿时，需要等待约2分钟才能部署两座地堡。采用单地堡开矿时，开局无法立即让矿区满采。</p>
     <iframe width="950" height="535" src="https://www.youtube.com/embed/videoseries?list=PL-U97hco2Fu67esg6PKcDnh9ejc_3UZ7p" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <script src="/scripts/nav.js"></script>
 <?= endContent() ?>

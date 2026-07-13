@@ -5,53 +5,53 @@
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Mission Guide - Miner Evacuation</title>
-  <meta name="description" content="Starcraft 2 Co-op Mission Guide Miner Evacuation">
-  <meta name="keywords" content="Starcraft co-op guides miner evacuation mission">
+  <title>《星际争霸 II》合作任务攻略 - 疏散矿工</title>
+  <meta name="description" content="《星际争霸 II》合作任务攻略：疏散矿工">
+  <meta name="keywords" content="星际争霸 II 合作任务 疏散矿工 攻略">
   <link rel="stylesheet"  media="all" type="text/css" href="/styles/missionstyle.css?v=1.00">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="https://starcraft2coop.com/missions/minerevacuation">
   <script src="/scripts/preload.js"></script>
   <?= startContent() ?>
-    <h1><span class="unbold">Mission:</span> Miner Evacuation</h1>
-    <p id="missionPlace">Jarban</p>
+    <h1><span class="unbold">任务：</span>疏散矿工</h1>
+    <p id="missionPlace">贾尔班</p>
     <?php include("../../includes/reporterror.php");?>
     <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#misSum">Mission Summary</a></p>
-        <p><a href="#objectives">Objectives</a></p>
-        <p><a href="#evacShip">Evacuation Ship Locations and Order</a></p>
-        <p><a href="#bonus">Completing the Bonus Objective</a></p>
-        <p><a href="#timings">Timings</a></p>
-        <p><a href="#spawnPoints">Spawn Points</a></p>
-        <p><a href="#misTips">Mission Tips</a></p>
-        <p><a href="#comTips">Commander-Specific Tips</a></p>
+        <h2>本页目录</h2>
+        <p><a href="#misSum">任务概述</a></p>
+        <p><a href="#objectives">任务目标</a></p>
+        <p><a href="#evacShip">撤离船位置与顺序</a></p>
+        <p><a href="#bonus">完成奖励目标</a></p>
+        <p><a href="#timings">时间点</a></p>
+        <p><a href="#spawnPoints">出生点</a></p>
+        <p><a href="#misTips">任务技巧</a></p>
+        <p><a href="#comTips">指挥官专属技巧</a></p>
     </div>
-    <h2 id="misSum">Mission Summary</h2>
-    <p>Infestation runs rampant throughout one of Kel-Moria’s remote mining colonies. Debra Greene, leader of the local miner’s guild, is determined to get her people to safety. Fight off both Amon and the infested to aid the evacuation. </p>
-    <h2 id="objectives">Objectives</h2>
-    <h3>Primary Objective</h3>
+    <h2 id="misSum">任务概述</h2>
+    <p>凯莫瑞安联合体的一座偏远采矿殖民地正遭受感染肆虐。当地矿工工会领袖黛布拉·格林决心将矿工们安全撤离。击退埃蒙的军队与感染体，协助他们完成撤离。</p>
+    <h2 id="objectives">任务目标</h2>
+    <h3>主要目标</h3>
         <ul>
-            <li>Protect Colony Ships while they take off (5)</li>
-            <li>Do not allow 2 ships to be destroyed</li>
+            <li>殖民船起飞时保护它们 (5)</li>
+            <li>不得让 2 艘船被摧毁</li>
         </ul>
-    <h3>Secondary Objective</h3>
+    <h3>奖励目标</h3>
         <ul>
-            <li>Kill the Blightbringer (1)</li>
-            <li>Destroy the Eradicators (2)</li>
+            <li>消灭疫病使者 (1)</li>
+            <li>摧毁根除者 (2)</li>
         </ul>
-    <h2 id="evacShip">Evacuation Ship Locations and Order</h2>
+    <h2 id="evacShip">撤离船位置与顺序</h2>
     <?php $mission = "minerevacuation"; ?>
-    <p>There are no enemy bases on this map, and so, base analysis is not required. However, ships launch in a semi-random order, which requires you to push into small enemy camps.</p>
-    <p>There are a total of 9 ships present on the map. The locations of these ships is shown below.</p>
-    <img src="/images/missiondata/minerevacuation/evacuationshiplocations.jpg" alt="Locations of Evacuation Ships">
-    <p>When playing on Brutal difficulty, Ship #1 is automatically destroyed at the start of the game.</p>
-    <p>Next, either ships 2, 3, or 6 are destroyed. There is a certain chance that certain ships will be destroyed. These chances are listed below.</p>
+    <p>这张地图上没有敌方基地，因此无需分析基地。不过，船只会按半随机顺序起飞，你必须推进并清理若干小型敌方营地。</p>
+    <p>地图上共有 9 艘船，其位置如下所示。</p>
+    <img src="/images/missiondata/minerevacuation/evacuationshiplocations.jpg" alt="撤离船的位置">
+    <p>在残酷难度下，1 号船会在游戏开始时自动被摧毁。</p>
+    <p>接下来，2、3 或 6 号船中的一艘会被摧毁。各艘船被摧毁的概率如下。</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Ship</th>
-                <th>Chance to be Destroyed</th>
+                <th>船只</th>
+                <th>被摧毁概率</th>
             </tr>
         </thead>
         <tbody>
@@ -69,12 +69,12 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
         </tbody>
     </table>
-    <p>Next, either ships 4, 7, or 9 are destroyed. There is a certain chance that certain ships will be destroyed. These chances are listed below.</p>
+    <p>随后，4、7 或 9 号船中的一艘会被摧毁。各艘船被摧毁的概率如下。</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Ship</th>
-                <th>Chance to be Destroyed</th>
+                <th>船只</th>
+                <th>被摧毁概率</th>
             </tr>
         </thead>
         <tbody>
@@ -92,12 +92,12 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
         </tbody>
     </table>
-    <p>At the start of the game, the ships are assigned to a launch priority. This is the order of beacons you will see on the map as you launch ships. The order is semi-randomized and is shown below. Note that if a ship is destroyed, it is skipped and the next one selected.</p>
+    <p>游戏开始时，船只会被分配起飞优先级。这决定了你发射船只时地图上信标出现的顺序。该顺序为半随机，具体如下。请注意，已被摧毁的船只会被跳过，系统将选择下一艘。</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Order</th>
-                <th>Ship(s)</th>
+                <th>顺序</th>
+                <th>船只</th>
             </tr>
         </thead>
         <tbody>
@@ -127,32 +127,32 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
         </tbody>
     </table>
-    <h2 id="bonus">Completing the Bonus Objective</h2>
+    <h2 id="bonus">完成奖励目标</h2>
     <div id="objectiveImages">
-        <img src="/images/missiondata/minerevacuation/blightbringer.jpg" alt="Blightbringer">
-        <img src="/images/missiondata/minerevacuation/eradicator.jpg" alt="Eradicator">
-        <img src="/images/missiondata/minerevacuation/eradicator.jpg" alt="Eradicator">
+        <img src="/images/missiondata/minerevacuation/blightbringer.jpg" alt="疫病使者">
+        <img src="/images/missiondata/minerevacuation/eradicator.jpg" alt="根除者">
+        <img src="/images/missiondata/minerevacuation/eradicator.jpg" alt="根除者">
     </div>
-    <p>There are two bonus objectives on the map. The first one requires you to kill Blightbringer. Blightbringer has a parasitic bomb attack, so you'll want to pay attention if you choose to engage him with an air army. Ground armies are vulnerable to his spray attack, your constant attention is important.</p>
-    <p>The Eradicators are much more dangerous. One Eradicator has an air attack, which it targets using many circular markers on the ground. The other Eradicator deals damage in a straight line and can decimate ground armies. It is best to engage the Eradicators with air units to prevent losing your army.</p>
-    <p>The locations for BlightBringer (in yellow) and the Eradicators (in green) are shown below.</p>
-    <img src="/images/missiondata/minerevacuation/bonusobjectivelocations.jpg" alt="Locations of the Bonus Objectives">
-    <h2 id="timings">Timings</h2>
-    <p>Note: Information on Tech and Strength levels can be found on the <a href="/guides/enemycomps">Enemy Compositions</a> page.</p>
-    <p>There are three types of timings that are of interest in this mission:</p>
+    <p>地图上有两个奖励目标。第一个要求你消灭疫病使者。疫病使者拥有寄生炸弹攻击，因此如果选择用空军与之交战，请密切注意部队。地面部队则很容易遭受其喷吐攻击，同样需要持续关注。</p>
+    <p>根除者要危险得多。其中一个会发动对空攻击，并通过地面上的多个圆形标记指示目标；另一个会沿直线造成伤害，足以重创地面部队。最好使用空中单位迎战根除者，以免损失整支军队。</p>
+    <p>疫病使者（黄色）和根除者（绿色）的位置如下所示。</p>
+    <img src="/images/missiondata/minerevacuation/bonusobjectivelocations.jpg" alt="奖励目标的位置">
+    <h2 id="timings">时间点</h2>
+    <p>注意：科技等级与强度等级的说明参见<a href="/guides/enemycomps">敌方部队组合</a>页面。</p>
+    <p>本任务有三类值得关注的时间点：</p>
     <ul>
-        <li><b>Attack Waves:</b> These are attack waves that target your main and your expansion.</li>
-        <li><b>Panic Events:</b> If ships are not launched within a certain amount of time, they will panic and force-launch.</li>
-        <li><b>Claimer Waves:</b> These are attack waves that are sent to target specific ships.</li>
+        <li><b>进攻波次：</b>以你的主基地和分矿为目标的进攻波次。</li>
+        <li><b>恐慌事件：</b>若船只未在规定时间内发射，它们会陷入恐慌并强制起飞。</li>
+        <li><b>夺船波次：</b>被派往攻击特定船只的进攻波次。</li>
     </ul>
-    <p>The timings, Strength and Tech levels for the attack waves is shown below.</p>
+    <p>进攻波次的时间、强度等级和科技等级如下所示。</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Wave</th>
-                <th>Time</th>
-                <th>Tech Level</th>
-                <th>Strength Level</th>
+                <th>波次</th>
+                <th>时间</th>
+                <th>科技等级</th>
+                <th>强度等级</th>
             </tr>
         </thead>
         <tbody>
@@ -200,12 +200,12 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
         </tbody>
     </table>
-    <p>If ships are not launched fast enough, a ship will start to panic and force a launch. This forces players to play more aggressively. Launching a ship early will cancel that panic time. This can be useful for avoiding harder ships. The panic times are shown below.</p>
+    <p>如果船只未能及时发射，其中一艘会开始恐慌并强制起飞，迫使玩家更积极地推进。提前发射一艘船会取消对应的恐慌计时，这可用于避开更难防守的船只。恐慌时间如下。</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Ship</th>
-                <th>Panic Time</th>
+                <th>船只</th>
+                <th>恐慌时间</th>
             </tr>
         </thead>
         <tbody>
@@ -239,14 +239,14 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
         </tbody>
     </table>
-    <p>Claimer waves will target ships in an attempt to destroy them. The timings, Strength and Tech Levels of these waves is shown below.</p>
+    <p>夺船波次会以船只为目标并试图将其摧毁。这些波次的时间、强度等级和科技等级如下。</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Wave</th>
-                <th>Time</th>
-                <th>Tech Level</th>
-                <th>Strength Level</th>
+                <th>波次</th>
+                <th>时间</th>
+                <th>科技等级</th>
+                <th>强度等级</th>
             </tr>
         </thead>
         <tbody>
@@ -282,21 +282,21 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
         </tbody>
     </table>
-    <p>Bonus objectives will spawn at 9:00 and 15:00. There is a 66% chance that Blightbringer will spawn first.</p>
-    <h2 id="spawnPoints">Spawn Points</h2>
-    <p>All Attack and Claimer Waves spawn from the edge of the map. Attack Waves have three spawn points and Claimer waves have nine spawn points. This makes it extremely impractical to spawn-camp the spawn points to take out the wave before they reach their target.</p>
-    <h2 id="misTips">Mission Tips</h2>
+    <p>奖励目标会在 9:00 和 15:00 出现。疫病使者有 66% 的概率先出现。</p>
+    <h2 id="spawnPoints">出生点</h2>
+    <p>所有进攻波次和夺船波次都从地图边缘生成。进攻波次有三个生成点，夺船波次则有九个，因此几乎无法通过蹲守生成点来提前消灭波次。</p>
+    <h2 id="misTips">任务技巧</h2>
     <ul>
-        <li>Pay attention to the minimap for Claimer waves. They can destroy a ship without you noticing.</li>
-        <li>Do not engage the Eradicators with a full ground army. One of the Eradicators has a deadly ground attack.</li>
-        <li>All attack waves after the first wave will target your expansion, so ensure you have ample defenses there.</li>
+        <li>留意小地图上的夺船波次；它们可能在你没有察觉时摧毁船只。</li>
+        <li>不要用整支地面部队迎战根除者，其中一个根除者拥有致命的对地攻击。</li>
+        <li>第一波之后的所有进攻波次都会攻击你的分矿，请确保那里有充足的防御。</li>
     </ul>
-    <h2 id="comTips">Commander-specific Tips</h2>
+    <h2 id="comTips">指挥官专属技巧</h2>
     <ul>
-        <li><a href="/commanders/kerrigan">Kerrigan</a>: Use Omega Worms to quickly reinforce your army as well as provide detection for Infested Banshees.</li>
-        <li><a href="/commanders/stukov">Stukov</a>: Once you have creep spread, move your Infested Colonist Compound to your expansion to minimize travel time of your infested.</li>
-        <li><a href="/commanders/vorazun">Vorazun</a>: Time-Stop will delay the launch sequence of the ship as well. Ie. while it does freeze everything on the map, the countdown timer for launch of the ships will also stop for the duration of Time-Stop.</li>
-        <li><a href="/commanders/zeratul">Zeratul</a>: Use Void Arrays to quickly reinforce your army.</li>
+        <li><a href="/commanders/kerrigan">凯瑞甘</a>：使用欧米伽虫洞快速增援部队，并为被感染的女妖提供反隐。</li>
+        <li><a href="/commanders/stukov">斯托科夫</a>：菌毯铺开后，将被感染的移民营移到分矿，以缩短感染体的行进时间。</li>
+        <li><a href="/commanders/vorazun">沃拉尊</a>：时间停止也会延缓船只的发射流程。它冻结地图上所有事物的同时，船只的发射倒计时也会在时间停止持续期间暂停。</li>
+        <li><a href="/commanders/zeratul">泽拉图</a>：使用虚空阵列船快速增援部队。</li>
     </ul>
 <script src="/scripts/nav.js"></script>
 <?= endContent() ?>

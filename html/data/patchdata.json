@@ -3,19 +3,19 @@
         "build": 52910,
         "version": "3.13.0",
         "link": 20721907,
-        "notes": "New Commander: Fenix"
+        "notes": "新指挥官：菲尼克斯"
     },
     {
         "build": 53644,
         "version": "3.14.0",
         "link": 20799759,
-        "notes": "Co-op bug fixes"
+        "notes": "合作任务错误修复"
     },
     {
         "build": 54518,
         "version": "3.15.0",
         "link": 20861966,
-        "notes": "Carrier/Swarm Host AI targeting change"
+        "notes": "航空母舰/虫群宿主人工智能目标选择改动"
     },
     {
         "build": 54724,
@@ -27,7 +27,7 @@
         "build": 55505,
         "version": "3.16.0",
         "link": 20859948,
-        "notes": "Abathur revamp|Swann revamp|Zagara revamp"
+        "notes": "阿巴瑟重做|斯旺重做|扎加拉重做"
     },
     {
         "build": 55958,
@@ -39,7 +39,7 @@
         "build": 56787,
         "version": "3.17.0",
         "link": 21018734,
-        "notes": "New Commander: Dehaka|New Feature: Ascension|New Mission: Malwarfare|Fenix buffs"
+        "notes": "新指挥官：德哈卡|新功能：飞升|新任务：恶意代码|菲尼克斯加强"
     },
     {
         "build": 57218,
@@ -51,13 +51,13 @@
         "build": 57507,
         "version": "3.18.0",
         "link": 21033998,
-        "notes": "New Mutators: Inspiration, Hardened Will, Kill Bots, Moment of Silence, Life Leech|Dehaka bug fixes"
+        "notes": "新突变因子：鼓舞人心、坚定意志、杀戮机器人、静默时刻、生命汲取|德哈卡错误修复"
     },
     {
         "build": 58400,
         "version": "3.19.0",
         "link": 21042161,
-        "notes": "Small Co-op changes"
+        "notes": "小型合作任务改动"
     },
     {
         "build": 58600,
@@ -69,7 +69,7 @@
         "build": 59587,
         "version": "4.0.0",
         "link": 21183638,
-        "notes": "New Commander: Han and Horner|New Mission: Part and Parcel"
+        "notes": "新指挥官：汉与霍纳|新任务：聚铁成兵"
     },
     {
         "build": 59729,
@@ -87,7 +87,7 @@
         "build": 60196,
         "version": "4.1.0",
         "link": 21313391,
-        "notes": "Small Co-op changes"
+        "notes": "小型合作任务改动"
     },
     {
         "build": 60321,
@@ -111,19 +111,19 @@
         "build": 61545,
         "version": "4.1.4",
         "link": 21313391,
-        "notes": "Han and Horner bug fixes"
+        "notes": "汉与霍纳错误修复"
     },
     {
         "build": 62347,
         "version": "4.2.0",
         "link": 21534738,
-        "notes": "Co-op revamp"
+        "notes": "合作任务重做"
     },
     {
         "build": 62848,
         "version": "4.2.1",
         "link": 21590509,
-        "notes": "Co-op bug fixes"
+        "notes": "合作任务错误修复"
     },
     {
         "build": 63454,
@@ -141,13 +141,13 @@
         "build": 64128,
         "version": "4.2.4",
         "link": 21700683,
-        "notes": "Artanis revamp|Raynor revamp|Swann revamp"
+        "notes": "阿塔尼斯重做|雷诺重做|斯旺重做"
     },
     {
         "build": 64469,
         "version": "4.3.0",
         "link": 21728663,
-        "notes": "Co-op bug fixes"
+        "notes": "合作任务错误修复"
     },
     {
         "build": 65094,
@@ -165,19 +165,19 @@
         "build": 65895,
         "version": "4.4.0",
         "link": 21870976,
-        "notes": "New Mission: Cradle of Death|Kerrigan revamp|Nova revamp|Zagara revamp"
+        "notes": "新任务：死亡摇篮|凯瑞甘重做|诺娃重做|扎加拉重做"
     },
     {
         "build": 66668,
         "version": "4.4.1",
         "link": 21965053,
-        "notes": "Co-op bug fixes"
+        "notes": "合作任务错误修复"
     },
     {
         "build": 67188,
         "version": "4.5.0",
         "link": 22023343,
-        "notes": "Co-op bug fixes"
+        "notes": "合作任务错误修复"
     },
     {
         "build": 67344,
@@ -189,25 +189,25 @@
         "build": 67926,
         "version": "4.6.0",
         "link": 22467379,
-        "notes": "New Commander: Tychus|Abathur revamp|Alarak revamp|Vorazun revamp"
+        "notes": "新指挥官：泰凯斯|阿巴瑟重做|阿拉纳克重做|沃拉尊重做"
     },
     {
         "build": 68195,
         "version": "4.6.1",
         "link": 22492977,
-        "notes": "Tychus bug fixes"
+        "notes": "泰凯斯错误修复"
     },
     {
         "build": 69232,
         "version": "4.6.2",
         "link": 22548751,
-        "notes": "Co-op bug fixes"
+        "notes": "合作任务错误修复"
     },
     {
         "build": 70154,
         "version": "4.7.0",
         "link": 22764996,
-        "notes": "New Commander: Zeratul"
+        "notes": "新指挥官：泽拉图"
     },
     {
         "build": 70326,
@@ -219,13 +219,13 @@
         "build": 71061,
         "version": "4.8.0",
         "link": 22837870,
-        "notes": "Co-op bug fixes"
+        "notes": "合作任务错误修复"
     },
     {
         "build": 71523,
         "version": "4.8.1",
         "link": 22862446,
-        "notes": "Co-op bug fixes"
+        "notes": "合作任务错误修复"
     },
     {
         "build": 71663,
@@ -237,19 +237,19 @@
         "build": 72282,
         "version": "4.8.3",
         "link": 22883350,
-        "notes": "Co-op bug fixes"
+        "notes": "合作任务错误修复"
     },
     {
         "build": 73286,
         "version": "4.8.4",
         "link": 22933133,
-        "notes": "Co-op bug fixes"
+        "notes": "合作任务错误修复"
     },
     {
         "build": 73559,
         "version": "4.8.5",
         "link": 22938864,
-        "notes": "Co-op bug fixes"
+        "notes": "合作任务错误修复"
     },
     {
         "build": 73620,
@@ -261,31 +261,31 @@
         "build": 74071,
         "version": "4.9.0",
         "link": 22989880,
-        "notes": "New Commander: Stetmann|Dehaka revamp|Stukov revamp"
+        "notes": "新指挥官：斯台特曼|德哈卡重做|斯托科夫重做"
     },
     {
         "build": 74456,
         "version": "4.9.1",
         "link": 23015443,
-        "notes": "Stetmann bug fixes"
+        "notes": "斯台特曼错误修复"
     },
     {
         "build": 74741,
         "version": "4.9.2",
         "link": 23016011,
-        "notes": "Amon revamp"
+        "notes": "埃蒙重做"
     },
     {
         "build": 75025,
         "version": "4.9.3",
         "link": 23049576,
-        "notes": "Cradle of Death revamp"
+        "notes": "死亡摇篮重做"
     },
     {
         "build": 75689,
         "version": "4.10.0",
         "link": 23091081,
-        "notes": "Co-op bug fixes"
+        "notes": "合作任务错误修复"
     },
     {
         "build": 75800,
@@ -309,13 +309,13 @@
         "build": 76811,
         "version": "4.10.4",
         "link": 23188507,
-        "notes": "Co-op bug fixes"
+        "notes": "合作任务错误修复"
     },
     {
         "build": 77379,
         "version": "4.11.0",
         "link": 23227811,
-        "notes": "New Commander: Mengsk|New Feature: Brutal+ Difficulty"
+        "notes": "新指挥官：蒙斯克|新功能：残酷+难度"
     },
     {
         "build": 77474,
@@ -327,19 +327,19 @@
         "build": 77535,
         "version": "4.11.2",
         "link": 23239991,
-        "notes": "Mengsk bug fixes"
+        "notes": "蒙斯克错误修复"
     },
     {
         "build": 77661,
         "version": "4.11.3",
         "link": 23230078,
-        "notes": "Stetmann revamp|Tychus revamp|Zeratul revamp"
+        "notes": "斯台特曼重做|泰凯斯重做|泽拉图重做"
     },
     {
         "build": 78285,
         "version": "4.11.4",
         "link": 23312740,
-        "notes": "Han and Horner revamp|Karax revamp|Stukov revamp|Swann revamp"
+        "notes": "汉与霍纳重做|凯拉克斯重做|斯托科夫重做|斯旺重做"
     },
     {
         "build": 79998,
@@ -357,7 +357,7 @@
         "build": 80949,
         "version": "5.0.0",
         "link": 23482838,
-        "notes": "Commander Prestige|Boombots Mutator added"
+        "notes": "指挥官威望|新增爆破机器人突变因子"
     },
     {
         "build": 81009,
@@ -369,19 +369,19 @@
         "build": 81102,
         "version": "5.0.2",
         "link": 23495670,
-        "notes": "Prestige bug fixes"
+        "notes": "威望错误修复"
     },
     {
         "build": 81433,
         "version": "5.0.3",
         "link": 23492556,
-        "notes": "Prestige revamp|Co-op bug fixes"
+        "notes": "威望重做|合作任务错误修复"
     },
     {
         "build": 82457,
         "version": "5.0.4",
         "link": 23557934,
-        "notes": "Co-op bug fixes"
+        "notes": "合作任务错误修复"
     },
     {
         "build": 82893,
@@ -417,6 +417,6 @@
         "build": 88500,
         "version": "5.0.10",
         "link": 23826546,
-        "notes": "Co-op bug fixes"
+        "notes": "合作任务错误修复"
     }
 ]

@@ -6,47 +6,47 @@ require_once __DIR__ . "/../../includes/wrapper.php";
 require_once "../../includes/switchergenerator.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Mission Guide - Oblivion Express</title>
-  <meta name="description" content="Starcraft 2 Co-op Mission Guide Oblivion Express">
-  <meta name="keywords" content="Starcraft co-op guides oblivion express mission">
+  <title>《星际争霸 II》合作任务攻略 - 湮灭快车</title>
+  <meta name="description" content="《星际争霸 II》合作任务攻略：湮灭快车">
+  <meta name="keywords" content="星际争霸 II 合作任务 湮灭快车 攻略">
   <link rel="stylesheet"  media="all" type="text/css" href="/styles/missionstyle.css?v=1.00">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="https://starcraft2coop.com/missions/oblivionexpress">
   <script src="/scripts/preload.js"></script>
 <?= startContent() ?>
-    <h1><span class="unbold">Mission:</span> Oblivion Express</h1>
-    <p id="missionPlace">Tarsonis</p>
+    <h1><span class="unbold">任务：</span>湮灭快车</h1>
+    <p id="missionPlace">塔桑尼斯</p>
     <?php include("../../includes/reporterror.php");?>
     <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#misSum">Mission Summary</a></p>
-        <p><a href="#objectives">Objectives</a></p>
-        <p><a href="#baseAnalysis">Enemy Base Analysis</a></p>
-        <p><a href="#bonus">Completing the Bonus Objective</a></p>
-        <p><a href="#timings">Timings</a></p>
-        <p><a href="#spawnPoints">Spawn Points</a></p>
-        <p><a href="#misTips">Mission Tips</a></p>
-        <p><a href="#comTips">Commander-Specific Tips</a></p>
+        <h2>本页目录</h2>
+        <p><a href="#misSum">任务概述</a></p>
+        <p><a href="#objectives">任务目标</a></p>
+        <p><a href="#baseAnalysis">敌方基地分析</a></p>
+        <p><a href="#bonus">完成奖励目标</a></p>
+        <p><a href="#timings">时间点</a></p>
+        <p><a href="#spawnPoints">出生点</a></p>
+        <p><a href="#misTips">任务技巧</a></p>
+        <p><a href="#comTips">指挥官专属技巧</a></p>
     </div>
-    <h2 id="misSum">Mission Summary</h2>
-    <p>Moebius Corps is moving trains of unrevealed cargo across the surface of Tarsonis. Join forces with your ally and intercept the trains before they can escape.</p>
-    <h2 id="objectives">Objectives</h2>
-    <h3>Primary Objective</h3>
+    <h2 id="misSum">任务概述</h2>
+    <p>莫比斯军团正在用列车将不明货物运过塔桑尼斯地表。与盟友并肩作战，在列车逃脱前将其截停。</p>
+    <h2 id="objectives">任务目标</h2>
+    <h3>主要目标</h3>
         <ul>
-            <li>Destroy Moebius Corps Trains (9)</li>
-            <li>Do not allow 2 Trains to escape</li>
+            <li>摧毁莫比斯军团列车 (9)</li>
+            <li>不得让 2 列列车逃脱</li>
         </ul>
-    <h3>Secondary Objective</h3>
+    <h3>奖励目标</h3>
         <ul>
-            <li>Destroy Fast Train on the Bottom Line</li>
+            <li>摧毁下方轨道上的高速列车</li>
         </ul>
-    <h2 id="baseAnalysis">Enemy Base Analysis</h2>
+    <h2 id="baseAnalysis">敌方基地分析</h2>
     <div id="globalRaceSelect">
-        <p>Change all base analysis pictures to race:</p>
+        <p>将所有基地分析图片切换为以下种族：</p>
         <form action="#">
-            <label><input type="radio" name="globalRace" value="protoss" checked>Protoss</label><br>
-            <label><input type="radio" name="globalRace" value="terran">Terran</label><br>
-            <label><input type="radio" name="globalRace" value="zerg">Zerg</label><br>
+            <label><input type="radio" name="globalRace" value="protoss" checked>星灵</label><br>
+            <label><input type="radio" name="globalRace" value="terran">人类</label><br>
+            <label><input type="radio" name="globalRace" value="zerg">异虫</label><br>
         </form>
         <script>
             $("input[name='globalRace']").change(function(){
@@ -61,200 +61,200 @@ require_once "../../includes/switchergenerator.php";
         </script>
     </div>
     <?php $mission = "oblivionexpress"; ?>
-    <p>During normal playthroughs of Oblivion Express, you are not required to push into enemy bases. However, if you would like to finish the mission in the fastest possible time, or find that you are bored idling, you can push into the two bases on the left of the map to spawn-camp the trains.</p>
-    <p>The main objective will either spawn on the top rail or the middle rail. The paths these main objectives will take is shown below.</p>
-    <img src="/images/missiondata/oblivionexpress/mainobjectivepath.jpg" alt="Paths Taken by the Main Objectives">
-    <p>The top base is shown below.</p>
+    <p>正常游玩“湮灭快车”时，你无需攻入敌方基地。不过，如果想尽快完成任务，或是不想原地等待，可以推进至地图左侧的两个基地，蹲守列车生成点。</p>
+    <p>主要目标会在上方或中间轨道生成，其行进路线如下所示。</p>
+    <img src="/images/missiondata/oblivionexpress/mainobjectivepath.jpg" alt="主要目标的行进路线">
+    <p>上方基地如下所示。</p>
     <?php switcher_generator("topbaselong") ?>
-    <p>The bottom base is shown below.</p>
+    <p>下方基地如下所示。</p>
     <?php switcher_generator("bottombaselong") ?>
-    <h2 id="bonus">Completing the Bonus Objective</h2>
-    <p>The bonus objective requires you to kill two fast trains that will spawn on the bottom rail. The path these bonus objectives will take is shown below.</p>
-    <img src="/images/missiondata/oblivionexpress/bonusobjectivepath.jpg" alt="Path Taken by the Bonus Objectives">
-    <h2 id="timings">Timings</h2>
-    <p>Note: Information on Tech and Strength levels can be found on the <a href="/guides/enemycomps">Enemy Compositions</a> page.</p>
-    <p>There are two timings of interest in this mission:</p>
+    <h2 id="bonus">完成奖励目标</h2>
+    <p>奖励目标要求你摧毁两列在下方轨道生成的高速列车。它们的行进路线如下所示。</p>
+    <img src="/images/missiondata/oblivionexpress/bonusobjectivepath.jpg" alt="奖励目标的行进路线">
+    <h2 id="timings">时间点</h2>
+    <p>注意：科技等级与强度等级的说明参见<a href="/guides/enemycomps">敌方部队组合</a>页面。</p>
+    <p>本任务有两类值得关注的时间点：</p>
     <ul>
-        <li><b>Train Timings:</b> These are the spawn times of the trains and their locations.</li>
-        <li><b>Attack Waves:</b> These are attack waves that target your base</li>
+        <li><b>列车时间：</b>列车的生成时间和位置。</li>
+        <li><b>进攻波次：</b>以你的基地为目标的进攻波次。</li>
     </ul>
-    <p>The spawn timings, spawning rail of the trains and Strength and Tech Level of the protective detail is shown below.</p>
+    <p>列车的生成时间、所在轨道，以及护卫部队的强度等级和科技等级如下。</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Train(s)</th>
-                <th>Time</th>
-                <th>Rail</th>
-                <th>Tech Level</th>
-                <th>Strength Level</th>
+                <th>列车</th>
+                <th>时间</th>
+                <th>轨道</th>
+                <th>科技等级</th>
+                <th>强度等级</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>1</td>
                 <td>5:00</td>
-                <td>Top</td>
+                <td>上方</td>
                 <td>2</td>
                 <td>2</td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>8:00</td>
-                <td>Mid</td>
+                <td>中间</td>
                 <td>3</td>
                 <td>4</td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>11:00</td>
-                <td>Top</td>
+                <td>上方</td>
                 <td>4</td>
                 <td>5</td>
             </tr>
             <tr>
                 <td>4,5</td>
                 <td>14:00</td>
-                <td>Top/Mid</td>
+                <td>上方/中间</td>
                 <td>6</td>
                 <td>6</td>
             </tr>
             <tr>
                 <td>6</td>
                 <td>17:00</td>
-                <td>Mid</td>
+                <td>中间</td>
                 <td>7</td>
                 <td>6</td>
             </tr>
             <tr>
                 <td>7,8</td>
                 <td>20:00</td>
-                <td>Top/Mid</td>
+                <td>上方/中间</td>
                 <td>5</td>
                 <td>5</td>
             </tr>
             <tr>
                 <td>9</td>
                 <td>23:00</td>
-                <td>Mid</td>
+                <td>中间</td>
                 <td>7</td>
                 <td>7</td>
             </tr>
             <tr>
                 <td>10</td>
                 <td>25:00</td>
-                <td>Top/Mid</td>
+                <td>上方/中间</td>
                 <td>7</td>
                 <td>7</td>
             </tr>
         </tbody>
     </table>
-    <p>The spawn timings, direction, Strength and Tech Level of the attack waves is shown below. The directions denote which ramp the attack waves will push. Note that North attack waves will target your expansion.</p>
+    <p>进攻波次的生成时间、方向、强度等级和科技等级如下。方向表示进攻波次会从哪条斜坡推进。请注意，北侧进攻波次会以你的分矿为目标。</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Wave</th>
-                <th>Time</th>
-                <th>Attack Direction</th>
-                <th>Tech Level</th>
-                <th>Strength Level</th>
+                <th>波次</th>
+                <th>时间</th>
+                <th>进攻方向</th>
+                <th>科技等级</th>
+                <th>强度等级</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>1</td>
                 <td>4:00</td>
-                <td>North</td>
+                <td>北</td>
                 <td>1</td>
                 <td>1</td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>6:00</td>
-                <td>South</td>
+                <td>南</td>
                 <td>2</td>
                 <td>2</td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>7:00</td>
-                <td>North</td>
+                <td>北</td>
                 <td>1</td>
                 <td>1</td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>10:00</td>
-                <td>South</td>
+                <td>南</td>
                 <td>3</td>
                 <td>3</td>
             </tr>
             <tr>
                 <td>5</td>
                 <td>13:00</td>
-                <td>North</td>
+                <td>北</td>
                 <td>4</td>
                 <td>4</td>
             </tr>
             <tr>
                 <td>6</td>
                 <td>16:00</td>
-                <td>North</td>
+                <td>北</td>
                 <td>5</td>
                 <td>5</td>
             </tr>
             <tr>
                 <td>7</td>
                 <td>19:00</td>
-                <td>South</td>
+                <td>南</td>
                 <td>6</td>
                 <td>6</td>
             </tr>
             <tr>
                 <td>8</td>
                 <td>22:00</td>
-                <td>North</td>
+                <td>北</td>
                 <td>7</td>
                 <td>7</td>
             </tr>
             <tr>
                 <td>9</td>
                 <td>24:00</td>
-                <td>South</td>
+                <td>南</td>
                 <td>7</td>
                 <td>7</td>
             </tr>
         </tbody>
     </table>
-    <p>The bonus objectives will spawn at 12:00 and 21:00 respectively.</p>
-    <h2 id="spawnPoints">Spawn Points</h2>
-    <p>The spawn points for attack waves and escort waves are different.</p>
-    <p>The attack wave gather points are dependent on which side the attack wave comes from. The Northern gather point is shown below. This is, in essence, the start of the top rail.</p>
-    <img src="/images/missiondata/oblivionexpress/northerngatherpoint.jpg" alt="Northern Gather Point">
-    <p>The Southern gather point is shown below. This is, in essence, the end of the bottom rail.</p>
-    <img src="/images/missiondata/oblivionexpress/southerngatherpoint.jpg" alt="Southern Gather Point">
-    <p>Train escorts all have a single spawn position before they spread to guard the train. The spawn positions of the ground escorts are right outside the little warehouses on the map. All units, including air units spawn at these warehouses. However, after roughly 8 seconds, they will teleport to the Air Spawn point, a little distance away.</p>
-    <p>For the top rail, the spawn points for the escorts are shown below.</p>
-    <img src="/images/missiondata/oblivionexpress/topescortspawnpoint.jpg" alt="Spawn Points of the Top Escort">
-    <p>For the middle rail, the spawn points for the escorts are shown below.</p>
-    <img src="/images/missiondata/oblivionexpress/midescortspawnpoint.jpg" alt="Spawn Points of the Middle Escort">
-    <h2 id="misTips">Mission Tips</h2>
+    <p>两个奖励目标会分别在 12:00 和 21:00 生成。</p>
+    <h2 id="spawnPoints">出生点</h2>
+    <p>进攻波次与护卫波次使用不同的生成点。</p>
+    <p>进攻波次的集结点取决于其来袭方向。北侧集结点如下所示，实质上就是上方轨道的起点。</p>
+    <img src="/images/missiondata/oblivionexpress/northerngatherpoint.jpg" alt="北侧集结点">
+    <p>南侧集结点如下所示，实质上就是下方轨道的终点。</p>
+    <img src="/images/missiondata/oblivionexpress/southerngatherpoint.jpg" alt="南侧集结点">
+    <p>列车护卫在分散开来保护列车之前，都只会从一个位置生成。地面护卫的生成点就在地图上的小仓库外。包括空中单位在内的所有单位都会在这些仓库处生成，不过大约 8 秒后，空中单位会传送至不远处的空中生成点。</p>
+    <p>上方轨道的护卫生成点如下。</p>
+    <img src="/images/missiondata/oblivionexpress/topescortspawnpoint.jpg" alt="上方轨道护卫生成点">
+    <p>中间轨道的护卫生成点如下。</p>
+    <img src="/images/missiondata/oblivionexpress/midescortspawnpoint.jpg" alt="中间轨道护卫生成点">
+    <h2 id="misTips">任务技巧</h2>
     <ul>
-        <li>If you choose to build static defense, build it in the area west of your main, where both rails move towards each other.</li>
+        <li>如果选择修建静态防御，请将其建在主基地西侧、两条轨道相互靠近的区域。</li>
     </ul>
-    <h2 id="comTips">Commander-specific Tips</h2>
+    <h2 id="comTips">指挥官专属技巧</h2>
     <ul>
-        <li><a href="/commanders/abathur">Abathur</a>: Place Toxic Nests outside the north ramp and lure the first attack wave into it to get biomass.</li>
-        <li><a href="/commanders/artanis">Artanis</a>: If you choose to use Tempests on this mission, the Disintegration ability can be used on each train carriage, compounding the total damage you can do to the train.</li>
-        <li><a href="/commanders/dehaka">Dehaka</a>: If you choose to use Impalers, the "Tenderize" upgrade is highly recommended as it can be applied on each train carriage, compounding the total damage you can do to the train.</li>
-        <li><a href="/commanders/horner">Han & Horner</a>: You can use one of your calldowns for each train spawn to destroy the escort wave.</li>
-        <li><a href="/commanders/horner">Han & Horner</a>: Strike-Fighter platforms with the Napalm upgrade can be used to deal continuous damage to the trains.</li>
-        <li><a href="/commanders/horner">Han & Horner</a>: Place Mag-Mines on the gather point of the middle rail to clear out air attack waves. 2 sets for Protoss, 3 for Terran and 1 for Zerg.</li>
-        <li><a href="/commanders/karax">Karax</a>: You can clear all the rocks on your expansion if you target the area between the main and the gas rocks at 10 shots each.</li>
-        <li><a href="/commanders/karax">Karax</a>: An upgraded Solar Lance can destroy the first train.</li>
-        <li><a href="/commanders/karax">Karax</a>: Orbital Strikes can be used to clear out air attack waves when they teleport to the their gather points because they clump up.</li>
-        <li><a href="/commanders/swann">Swann</a>: With correct positioning of Concentrated Beam, you can wipe out a train escort as soon as it spawns, when they are all clumped up together.</li>
-        <li><a href="/commanders/swann">Swann</a>: A properly positioned Concentrated Beam with full points into the Width mastery can 1-shot the first train and all the escorts.</li>
-        <li><a href="/commanders/tychus">Tychus</a>: Crooked Sam can place a demolition charge on each train carriage, making him a fantastic source of DPS.</li>
+        <li><a href="/commanders/abathur">阿巴瑟</a>：在北侧斜坡外布置剧毒巢穴，将第一波敌军引入其中以获取生物质。</li>
+        <li><a href="/commanders/artanis">阿塔尼斯</a>：如果本任务使用风暴战舰，可对每节车厢分别施放分解，从而叠加对整列列车造成的总伤害。</li>
+        <li><a href="/commanders/dehaka">德哈卡</a>：如果使用穿刺者，强烈建议研究“软化”升级；它可以分别作用于每节车厢，从而叠加对整列列车造成的总伤害。</li>
+        <li><a href="/commanders/horner">汉与霍纳</a>：每次列车生成时都可以使用一个顶栏技能摧毁护卫波次。</li>
+        <li><a href="/commanders/horner">汉与霍纳</a>：研究凝固汽油弹升级的打击战斗机平台可以持续对列车造成伤害。</li>
+        <li><a href="/commanders/horner">汉与霍纳</a>：在中间轨道的集结点布置磁力地雷，以清除空中进攻波次。对星灵使用 2 组，对人类使用 3 组，对异虫使用 1 组。</li>
+        <li><a href="/commanders/karax">凯拉克斯</a>：每次以 10 发攻击瞄准主矿岩石和高能瓦斯岩石之间的区域，即可清除分矿处的所有岩石。</li>
+        <li><a href="/commanders/karax">凯拉克斯</a>：升级后的太阳能射线可以摧毁第一列列车。</li>
+        <li><a href="/commanders/karax">凯拉克斯</a>：空中进攻波次传送至集结点时会挤在一起，可用轨道轰炸将其清除。</li>
+        <li><a href="/commanders/swann">斯旺</a>：正确放置集中光束，便能在列车护卫刚生成、全部挤在一起时将其消灭。</li>
+        <li><a href="/commanders/swann">斯旺</a>：位置正确的集中光束配合加满的宽度精通，可以用 1 次攻击摧毁第一列列车及其所有护卫。</li>
+        <li><a href="/commanders/tychus">泰凯斯</a>：响尾蛇萨姆可以在每节车厢上分别安放爆破装药，是极佳的伤害输出来源。</li>
     </ul>
 <script src="/scripts/nav.js"></script>
 <?= endContent() ?>

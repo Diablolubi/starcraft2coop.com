@@ -5,9 +5,9 @@
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Downloads</title>
-  <meta name="description" content="A list of free tools and software for community use. Some programming experience will be required in order to utilize the code provided.">
-  <meta name="keywords" content="Starcraft co-op downloads">
+  <title>《星际争霸 II》合作任务 - 下载</title>
+  <meta name="description" content="供社区免费使用的工具和软件列表；使用所提供的代码需要一定编程经验。">
+  <meta name="keywords" content="星际争霸 II, 合作任务, 工具, 下载">
   <link rel="canonical" href="https://starcraft2coop.com/tools/downloads">
   <style>
         #output{
@@ -18,23 +18,23 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         }
   </style>
   <?= startContent() ?>
-    <h1>Downloads (Co-op Assistant and Replay Parsing Script)</h1>
+    <h1>下载（合作任务助手与录像解析脚本）</h1>
     <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#coopassistant">Co-op Overlay</a></p>
+        <h2>本页章节</h2>
+        <p><a href="#coopassistant">合作任务叠加界面</a></p>
         <!--
         <p><a href="#coopassistant">Co-op Assistant</a></p>
         <p><a href="#download1">Download</a></p>
         <p><a href="#usage1">Usage Notes</a></p>
         <p><a href="#config1">Configuring the Program</a></p>-->
-        <p><a href="#replaySummarizer">Co-op Replay Data Summarizer</a></p>
-        <p><a href="#download2">Download</a></p>
-        <p><a href="#usage2">Usage Notes</a></p>
-        <p><a href="#updates2">Updates</a></p>
-        <p><a href="#other2">Other Notes</a></p>
+        <p><a href="#replaySummarizer">合作任务录像数据汇总器</a></p>
+        <p><a href="#download2">下载</a></p>
+        <p><a href="#usage2">使用说明</a></p>
+        <p><a href="#updates2">更新</a></p>
+        <p><a href="#other2">其他说明</a></p>
     </div>
-    <h2 id="coopassistant">Co-op Overlay</h2>
-    <p><a href="https://github.com/FluffyMaguro/SC2_Coop_overlay" rel="nofollow">Maguro's Coop Overlay</a> is recommended for viewing game statistics and automatically uploading replay files to the site.</p>
+    <h2 id="coopassistant">合作任务叠加界面</h2>
+    <p>推荐使用<a href="https://github.com/FluffyMaguro/SC2_Coop_overlay" rel="nofollow">Maguro 的合作任务叠加界面</a>查看游戏统计信息，并自动将录像文件上传至网站。</p>
     <!--
     <h2 id="coopassistant">Co-op Assistant</h2>
     <p>This is a Windows application that provides two pieces of functionality which can be turned on/off as required:</p>
@@ -128,37 +128,37 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
     </form>
     -->
-    <h2 id="replaySummarizer">Co-op Replay Data Summarizer</h2>
-    <p>This is a Python script which takes a Replays folder and generates a delimited text file summarizing the replay data for co-op games, which can be imported for further data analysis. Below is an example of the output:</p>
+    <h2 id="replaySummarizer">合作任务录像数据汇总器</h2>
+    <p>这是一个 Python 脚本，可读取录像文件夹并生成分隔符文本文件，汇总合作任务录像数据，供导入后进一步分析。输出示例如下：</p>
     <div id="output">
-        <p>Date Played&#9;Map&#9;Commander&#9;Level&#9;Ally Commander&#9;Ally Level&#9;Game Type&#9;Result&#9;Game Length<br>
-            2019-02-18&#9;Chain of Ascension&#9;Horner&#9;0&#9;Stukov&#9;34&#9;Standard&#9;Lose&#9;1552<br>
-            2019-02-15&#9;Cradle of Death&#9;Karax&#9;0&#9;Abathur&#9;25&#9;Standard&#9;Win&#9;1359<br>
-            2019-02-15&#9;Cradle of Death&#9;Vorazun&#9;0&#9;Zeratul&#9;0&#9;Standard&#9;Win&#9;1538<br>
-            2019-02-27&#9;Temple of the Past&#9;Horner&#9;71&#9;Karax&#9;1000&#9;Mutators&#9;Win&#9;1591<br>
-            2019-02-24&#9;The Vermillion Problem&#9;Dehaka&#9;57&#9;Raynor&#9;0&#9;Standard&#9;Lose&#9;1536<br>
-            2019-02-17&#9;Void Launch&#9;Swann&#9;0&#9;Fenix&#9;73&#9;Standard&#9;Win&#9;1465</p>
+        <p>游玩日期&#9;地图&#9;指挥官&#9;等级&#9;盟友指挥官&#9;盟友等级&#9;游戏类型&#9;结果&#9;游戏时长<br>
+            2019-02-18&#9;升格之链&#9;霍纳&#9;0&#9;斯托科夫&#9;34&#9;标准&#9;失败&#9;1552<br>
+            2019-02-15&#9;死亡摇篮&#9;凯拉克斯&#9;0&#9;阿巴瑟&#9;25&#9;标准&#9;胜利&#9;1359<br>
+            2019-02-15&#9;死亡摇篮&#9;沃拉尊&#9;0&#9;泽拉图&#9;0&#9;标准&#9;胜利&#9;1538<br>
+            2019-02-27&#9;往日神庙&#9;霍纳&#9;71&#9;凯拉克斯&#9;1000&#9;突变因子&#9;胜利&#9;1591<br>
+            2019-02-24&#9;熔火危机&#9;德哈卡&#9;57&#9;雷诺&#9;0&#9;标准&#9;失败&#9;1536<br>
+            2019-02-17&#9;虚空降临&#9;斯旺&#9;0&#9;菲尼克斯&#9;73&#9;标准&#9;胜利&#9;1465</p>
     </div>
-    <h2 id="download2">Download Links</h2>
-    <p><a href="/files/CRDS.py" download>Download CRDS</a></p>
-    <h2 id="usage2">Usage Notes</h2>
+    <h2 id="download2">下载链接</h2>
+    <p><a href="/files/CRDS.py" download>下载 CRDS</a></p>
+    <h2 id="usage2">使用说明</h2>
     <ul>
-        <li>You will require Python 2, as S2Protocol has been written under that version of Python. You can download Python from <a href="https://www.python.org/downloads/release/python-2718/">here</a>. Make sure to select the appropriate installer for your system.</li>
-        <li>You will need to have Python's S2Protocol installed in order for this script to work. You can get it from <a href="https://github.com/Blizzard/s2protocol" rel="nofollow">here</a>. If you have Pip, you may use "pip install s2protocol" to install S2Protocol.</li>
-        <li>Make sure you specify your replay folder path and player name correctly. An incorrect player name may cause issues in determining which commander you are playing.</li>
-        <li>On completion of the script, a file named "output.txt" will be created in the folder the script was run with the summarized data.</li>
-        <li>Replay parsing should not take more than a second, as only the simple data is being read.</li>
-        <li>You may modify the script to parse Ladder game information as well. However, this script is only provided as-is, and support is only available for Co-op games. Support for advanced parsing of Co-op game data will not be provided.</li>
+        <li>该脚本需要 Python 2，因为 S2Protocol 使用此版本的 Python 编写。可从<a href="https://www.python.org/downloads/release/python-2718/">这里</a>下载 Python，请为你的系统选择合适的安装程序。</li>
+        <li>脚本需要安装 Python 的 S2Protocol，可从<a href="https://github.com/Blizzard/s2protocol" rel="nofollow">这里</a>获取。如果已安装 Pip，可执行“pip install s2protocol”安装 S2Protocol。</li>
+        <li>请确保录像文件夹路径和玩家名称填写正确。错误的玩家名称可能导致脚本无法判断你使用的指挥官。</li>
+        <li>脚本完成后，会在运行目录创建名为“output.txt”的汇总数据文件。</li>
+        <li>由于只读取简单数据，解析一份录像通常不应超过一秒。</li>
+        <li>你也可以修改脚本来解析天梯对局信息。不过该脚本按现状提供，且只支持合作任务；不提供合作任务录像数据的高级解析支持。</li>
     </ul>
-    <h2 id="updates2">Updates</h2>
+    <h2 id="updates2">更新</h2>
     <ul>
-        <li>Whenever a new version of Starcraft gets released (major or minor patch), you may need to update S2Protocol. You may do so by copying any newly-added protocol files from the Github to the Versions folder of S2Protocol, or if you used Pip, you can use "pip install s2protocol --upgrade".</li>
-        <li>Sometimes, S2Protocol may not be updated, which means you can use the last protocol version for the latest build. Simply copy and rename the last protocol file as the last build ID and the parser should work fine. This is because the Protocols are very rarely updated and most are copies of the older versions. The advantage to this is that it is possible that older Protocol versions can work with newer replay files.</li>
-        <li>The above issue has occurred before and may occur for older replay files. If you notice that you are missing a protocol version, you may use the steps above to solve the problem.</li>
+        <li>《星际争霸 II》发布新版本（主要或次要补丁）时，可能需要更新 S2Protocol。可将 GitHub 上新增的协议文件复制到 S2Protocol 的 Versions 文件夹；如果使用 Pip 安装，也可执行“pip install s2protocol --upgrade”。</li>
+        <li>S2Protocol 有时不会及时更新，此时可将上一个协议版本用于最新构建。只需复制最后一个协议文件，并将副本重命名为最新构建 ID，解析器通常即可正常工作。协议很少改动，大多数新版本只是旧版的副本，因此旧协议也可能兼容较新的录像文件。</li>
+        <li>上述情况过去也曾发生，处理旧录像文件时同样可能遇到。如果发现缺少某个协议版本，可按上述步骤解决。</li>
     </ul>
-    <h2 id="other2">Other Notes</h2>
+    <h2 id="other2">其他说明</h2>
     <ul>
-        <li>Map names will be affected by language localization. That is, the map names will be displayed in the language the game was played in when the replay was created.</li>
+        <li>地图名称会受游戏语言影响，即按创建录像时所用游戏语言显示。</li>
     </ul>
 <script src="/scripts/nav.js"></script>
 <?= endContent() ?>

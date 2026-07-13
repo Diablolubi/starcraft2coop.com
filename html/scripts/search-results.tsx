@@ -8,15 +8,15 @@ import searchIndexData from '../../html/data/search-index.json';
 const MAX_RESULTS = 10;
 
 const TYPE_LABELS: Record<SearchDocument['type'], string> = {
-    commander: 'Commander',
-    mutator: 'Mutator',
-    mission: 'Mission',
-    weeklymutation: 'Weekly',
-    upgrade: 'Upgrade',
-    talent: 'Talent',
-    prestige: 'Prestige',
-    playerunit: 'Unit',
-    amonunit: 'Amon Unit',
+    commander: '指挥官',
+    mutator: '突变因子',
+    mission: '任务',
+    weeklymutation: '每周突变',
+    upgrade: '升级',
+    talent: '天赋',
+    prestige: '威望',
+    playerunit: '单位',
+    amonunit: '埃蒙单位',
 };
 
 function resolveSearchPath(document: SearchDocument): string {
@@ -155,21 +155,21 @@ class SearchResults extends preact.Component<{
 
     override render(): preact.ComponentChildren {
         if (this.state.status === 'loading') {
-            return <p class="site-search-message">Loading search...</p>;
+            return <p class="site-search-message">正在加载搜索……</p>;
         }
         if (this.state.status === 'error') {
-            return <p class="site-search-message">Search failed to load: {this.state.error}</p>;
+            return <p class="site-search-message">搜索加载失败：{this.state.error}</p>;
         }
 
         const query = this.state.query;
         if (!query.trim()) {
             return (
                 <div class="site-search-message">
-                    <p>Type to search commanders, units, missions, mutators, and weekly mutations.</p>
+                    <p>输入关键词，搜索指挥官、单位、任务、突变因子和每周突变。</p>
                     <p class="site-search-key-guides">
-                        <span><kbd>↑</kbd><kbd>↓</kbd> Select</span>
-                        <span><kbd>Enter</kbd> Open</span>
-                        <span><kbd>Esc</kbd> Close</span>
+                        <span><kbd>↑</kbd><kbd>↓</kbd> 选择</span>
+                        <span><kbd>Enter</kbd> 打开</span>
+                        <span><kbd>Esc</kbd> 关闭</span>
                     </p>
                 </div>
             );
@@ -177,11 +177,11 @@ class SearchResults extends preact.Component<{
 
         const results = this.state.results;
         if (!results.length) {
-            return <p class="site-search-message">No results found.</p>;
+            return <p class="site-search-message">未找到结果。</p>;
         }
 
         return (
-            <ul class="site-search-list" role="listbox" aria-label="Search results">
+            <ul class="site-search-list" role="listbox" aria-label="搜索结果">
                 {results.map((document, index) => (
                     <li class="site-search-result" role="option" aria-selected={index === this.state.activeIndex}>
                         <a

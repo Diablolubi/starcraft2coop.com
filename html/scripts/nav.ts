@@ -19,7 +19,7 @@ function initNav() {
         a.textContent = heading.textContent;
         a.className = heading.tagName.toLowerCase();
         if (heading.id === 'thisweek') {
-            a.textContent = 'This week\'s mutation';
+            a.textContent = '本周突变';
             a.className = 'h3';
         }
         li.append(a);
@@ -29,8 +29,8 @@ function initNav() {
 
     const nav = document.createElement('nav');
     nav.id = 'toc';
-    nav.ariaLabel = 'Contents';
-    nav.innerHTML = '<a class="nav-show" href="#nav-show">Contents</a>';
+    nav.ariaLabel = '目录';
+    nav.innerHTML = '<a class="nav-show" href="#nav-show">目录</a>';
     nav.append(toc);
 
     document.getElementById('content')?.classList.add('has-toc');

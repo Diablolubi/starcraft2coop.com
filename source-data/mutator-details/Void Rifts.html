@@ -1,18 +1,18 @@
-<p class="subheading">Detailed Mutator Information</p>
-<p>Void Rifts have 500 HP with 1 armor. They spawn random enemy units as time progresses. An image of a Void Rift is shown below:</p>
-<img src="/images/mutatordata/voidrift.jpg" alt="Void Rift">
-<p>Before 8:00, the Void Rifts will only spawn between 30 and 80 range away from the players' starting location. After that, they can spawn anywhere on the map. There are also other limitations as to where they will spawn:</p>
+<p class="subheading">突变因子详细信息</p>
+<p>虚空裂隙拥有 500 点生命值和 1 点护甲，并会随着时间推移生成随机敌方单位。虚空裂隙如下图所示：</p>
+<img src="/images/mutatordata/voidrift.jpg" alt="虚空裂隙">
+<p>8:00 前，虚空裂隙只会在玩家起始位置 30 至 80 射程外生成；之后可以在地图任意位置生成。此外，生成位置还有以下限制：</p>
 <ul>
-    <li>They cannot spawn within 10 range of a resource patch.</li>
-    <li>They cannot spawn within 20 range of another Void Rift.</li>
-    <li>There can only be a maximum of 3 enemy units within 10 range of the intended Void Rift Spawn point.</li>
+    <li>不能在资源点周围 10 射程内生成。</li>
+    <li>不能在另一道虚空裂隙周围 20 射程内生成。</li>
+    <li>预定生成点周围 10 射程内最多只能存在 3 个敌方单位。</li>
 </ul>
-<p>The Void Rift spawn timings and number of rifts are shown below:</p>
+<p>虚空裂隙的生成时间和数量如下：</p>
 <table class="dataTable centered">
     <thead>
         <tr>
-            <th>Mission Time</th>
-            <th>Number Spawned</th>
+            <th>任务时间</th>
+            <th>生成数量</th>
         </tr>
     </thead>
     <tbody>
@@ -38,71 +38,71 @@
         </tr>
     </tbody>
 </table>
-<p>At this point, 4 Void Rifts will spawn every 1:30.</p>
-<p>There are two particular timings of interest for Void Rifts:</p>
+<p>此后每 1:30 会生成 4 道虚空裂隙。</p>
+<p>虚空裂隙有两类值得关注的时间机制：</p>
 <ul>
-    <li><b>Trickle:</b> This is a small trickle of a fixed number of units.</li>
-    <li><b>Spawn:</b> Spawn waves occur much less frequently but slowly grow in power if the Void Rift is not destroyed.</li>
+    <li><b>涓流：</b>少量固定数量的单位持续出现。</li>
+    <li><b>生成波次：</b>出现频率低得多，但如果虚空裂隙没有被摧毁，强度会逐渐提高。</li>
 </ul>
-<h3>Trickle</h3>
-<p>Trickle occurs every 24 seconds in Custom Mutator mode and every 12 seconds in <a href="weeklymutations">Weekly Mutations</a>. The trickle is randomized every time the Void Rift wants to spawn units. It also depends on which mode is being played. This is detailed below:</p>
+<h3>涓流</h3>
+<p>自定义突变模式中每 24 秒出现一次涓流，<a href="weeklymutations">每周突变</a>中则每 12 秒一次。虚空裂隙每次准备生成单位时都会随机选择涓流类型，具体还取决于当前模式：</p>
 <table class="dataTable">
     <thead>
         <tr>
-            <th>Variant</th>
-            <th>Custom Mode</th>
-            <th>Weekly Mutation</th>
+            <th>变体</th>
+            <th>自定义模式</th>
+            <th>每周突变</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>1</td>
-            <td>1 Roach</td>
-            <td>2 Zerglings</td>
+            <td>1 只蟑螂</td>
+            <td>2 只跳虫</td>
         </tr>
         <tr>
             <td>2</td>
-            <td>1 Marauder</td>
-            <td>1 Marine</td>
+            <td>1 名劫掠者</td>
+            <td>1 名陆战队员</td>
         </tr>
         <tr>
             <td>3</td>
-            <td>1 Zealot</td>
-            <td>1 Zealot*</td>
+            <td>1 名狂热者</td>
+            <td>1 名狂热者*</td>
         </tr>
     </tbody>
 </table>
-<p>*This causes the next trickle to occur after 24 seconds instead of 12 seconds.</p>
-<h3>Spawn</h3>
-<p>The first Spawn wave occurs 30 seconds after the Void Rift has spawned. Subsequent waves will spawn in intervals of 90 seconds each. Only certain units can be spawned from the Void Rifts. These are listed below:</p>
+<p>*这会使下一次涓流在 24 秒后而不是 12 秒后出现。</p>
+<h3>生成波次</h3>
+<p>虚空裂隙生成 30 秒后会出现第一个生成波次，后续波次每隔 90 秒出现一次。虚空裂隙只能生成以下特定单位：</p>
 <ol>
-    <li>Zergling</li>
-    <li>Baneling</li>
-    <li>Roach</li>
-    <li>Hydralisk</li>
-    <li>Marine</li>
-    <li>Marauder</li>
-    <li>Hellion</li>
-    <li>Adept</li>
-    <li>Zealot</li>
-    <li>Stalker</li>
-    <li>Siege Tank</li>
-    <li>Immortal</li>
-    <li>Ravager</li>
-    <li>Mutalisk</li>
-    <li>Void Ray</li>
-    <li>Banshee</li>
-    <li>High Templar</li>
-    <li>Raven</li>
-    <li>Infestor</li>
-    <li>Hybrid Destroyer</li>
+    <li>跳虫</li>
+    <li>爆虫</li>
+    <li>蟑螂</li>
+    <li>刺蛇</li>
+    <li>陆战队员</li>
+    <li>劫掠者</li>
+    <li>恶火战车</li>
+    <li>使徒</li>
+    <li>狂热者</li>
+    <li>追猎者</li>
+    <li>攻城坦克</li>
+    <li>不朽者</li>
+    <li>破坏者</li>
+    <li>异龙</li>
+    <li>虚空辉光舰</li>
+    <li>女妖</li>
+    <li>高阶圣堂武士</li>
+    <li>铁鸦</li>
+    <li>感染虫</li>
+    <li>混合体毁灭者</li>
 </ol>
-<p>The mission time has a big effect on what can spawn from the Void Rifts. Void Rift spawns are limited by a resource cost. Each spawn will only have a maximum Mineral + Vespene cost, as detailed below:</p>
+<p>任务时间会显著影响虚空裂隙可生成的单位。生成波次受资源造价限制，每波单位的矿物 + 高能瓦斯总造价上限如下：</p>
 <table class="dataTable centered">
     <thead>
         <tr>
-            <th>Mission Time</th>
-            <th>Resource Cost</th>
+            <th>任务时间</th>
+            <th>资源造价</th>
         </tr>
     </thead>
     <tbody>
@@ -120,12 +120,12 @@
         </tr>
     </tbody>
 </table>
-<p>The mission time also determines what units can spawn. Notice how the list provided earlier is numbered. Void Rifts can only spawn the following units (based on their index) depending on the mission time:</p>
+<p>任务时间也决定可生成的单位。请注意上方列表带有编号；虚空裂隙只能根据任务时间生成以下编号范围内的单位：</p>
 <table class="dataTable centered">
     <thead>
         <tr>
-            <th>Mission Time</th>
-            <th>Possible Spawns</th>
+            <th>任务时间</th>
+            <th>可生成编号</th>
         </tr>
     </thead>
     <tbody>
@@ -143,24 +143,24 @@
         </tr>
     </tbody>
 </table>
-<p class="subheading">Commander-specific Tips</p>
+<p class="subheading">指挥官专属技巧</p>
 <ul>
-    <li>Abathur: Units spawned from the Void Rifts do not drop Biomass.</li>
-    <li>Abathur: Use Brutalisks' Deep Tunnel ability to snipe Void Rifts as it does not require vision.</li>
-    <li>Artanis: Spread Observers around the map and use five Orbital Strikes to clear out a single Void Rift.</li>
-    <li>Dehaka: Units spawned from the Void Rifts do not drop Essence.</li>
-    <li>Dehaka: Try to explore the entire map, which will allow you to drop Greater Primal Wurms to handle Void Rifts.</li>
-    <li>Han/Horner: Three Precision Strikes can kill a Void Rift. With the Napalm upgrade, two can clear a Void Rift, given enough time.</li>
-    <li>Karax: Level 2 Solar Efficiency + max'ed Chrono Wave Energy Regeneration mastery will allow Karax to have enough energy to snipe all Void Rifts as they spawn.</li>
-    <li>Karax: Spread Observers around the map and use five Orbital Strikes to clear out each Void Rift.</li>
-    <li>Kerrigan: Units spawned from the Void Rifts drop resource pickups from Assimilation Aura.</li>
-    <li>Kerrigan: Use Kerrigan's Leap ability to get past enemy bases so you can snipe Void Rifts as they spawn.</li>
-    <li>Mengsk: Units spawned from the Void Rifts do not provide Royal Guard experience.</li>
-    <li>Nova: One Sabotage Drone can 1-shot a Void Rift with 15 points in the Primary Ability Improvement Mastery.</li>
-    <li>Raynor: Build extra Orbital Command Centers to allow you to scan on Void Rifts when they spawn to provide vision for you and your ally to clear them.</li>
-    <li>Swann: Use a Tactical Jump from a Hercules to gain vision of a Void Rift. Set it on "Hold Position", then manually target the Void Rift with the Drill to clear it.</li>
-    <li>Vorazun: Time Stop delays Void Rifts timings.</li>
-    <li>Zagara: Roach Drops do not require vision and can be used to snipe inaccessible Void Rifts.</li>
-    <li>Zagara: Use Apex Predator's Zagara's Deep Tunnel ability to get quickly get to Void Rifts.</li>
-    <li>Zeratul: Spread Observers around the map and use Projections to kill Void Rifts. Three projections can kill a Void Rift as soon as it spawns.</li>
+    <li>阿巴瑟：虚空裂隙生成的单位不会掉落生物质。</li>
+    <li>阿巴瑟：莽兽的深槽虫道无需视野，可以用来突袭虚空裂隙。</li>
+    <li>阿塔尼斯：在地图各处散布观察者，用五次轨道轰炸清除一道虚空裂隙。</li>
+    <li>德哈卡：虚空裂隙生成的单位不会掉落精华。</li>
+    <li>德哈卡：尽量探索整张地图，以便投放巨型原始蠕虫处理虚空裂隙。</li>
+    <li>汉与霍纳：三次精确打击可以摧毁一道虚空裂隙；研究凝固汽油弹后，只要时间充足，两次即可清除。</li>
+    <li>凯拉克斯：2 级太阳能效率 + 加满的时空波动能量恢复精通，能让凯拉克斯拥有足够能量，在所有虚空裂隙生成时将其摧毁。</li>
+    <li>凯拉克斯：在地图各处散布观察者，用五次轨道轰炸清除每道虚空裂隙。</li>
+    <li>凯瑞甘：虚空裂隙生成的单位会掉落同化光环产生的资源拾取物。</li>
+    <li>凯瑞甘：使用凯瑞甘的飞跃越过敌方基地，在虚空裂隙生成时将其摧毁。</li>
+    <li>蒙斯克：虚空裂隙生成的单位不会提供皇家卫队经验值。</li>
+    <li>诺娃：主要技能强化精通投入 15 点后，一个破坏无人机即可一击摧毁虚空裂隙。</li>
+    <li>雷诺：额外建造轨道指挥中心，在虚空裂隙生成时扫描，为你和盟友提供清除所需的视野。</li>
+    <li>斯旺：让大力神执行战术折跃，获取虚空裂隙视野。将其设为“原地防守”，再手动让钻机瞄准并清除裂隙。</li>
+    <li>沃拉尊：时间停止会延迟虚空裂隙的生成时间。</li>
+    <li>扎加拉：空投蟑螂无需视野，可用于摧毁难以接近的虚空裂隙。</li>
+    <li>扎加拉：使用顶级捕食者威望下扎加拉的深槽虫道快速抵达虚空裂隙。</li>
+    <li>泽拉图：在地图各处散布观察者，并用投影摧毁虚空裂隙。三个投影可以在裂隙刚生成时将其消灭。</li>
 </ul>

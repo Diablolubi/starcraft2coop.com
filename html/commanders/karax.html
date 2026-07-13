@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
@@ -9,15 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-    <link rel="stylesheet" href="/styles/global.css?v=70e9bc">
+    <link rel="stylesheet" href="/styles/global.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <title>Starcraft 2 Co-op - Commander Guide - Karax</title>
-  <meta name="description" content="Starcraft 2 Co-op Commander Guide Karax">
-  <meta name="keywords" content="Starcraft co-op guides karax commander mastery prestige build">
-  <link rel="stylesheet"  media="all" type="text/css" href="/styles/commanderstyle.css?v=df8ce4?v=2">
+      <title>《星际争霸II》合作任务 - 指挥官攻略 - 凯拉克斯</title>
+  <meta name="description" content="《星际争霸II》合作任务凯拉克斯指挥官攻略">
+  <meta name="keywords" content="星际争霸 合作任务 攻略 凯拉克斯 指挥官 精通 威望 配兵">
+  <link rel="stylesheet"  media="all" type="text/css" href="/styles/commanderstyle.css?v=2">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="https://starcraft2coop.com/commanders/karax">
-  <script src="/scripts/preload.js?v=0264fe"></script>
+  <script src="/scripts/preload.js"></script>
   <style>
         @media (min-width: 701px){
             .fastExpand{
@@ -60,105 +60,105 @@
 <body>
 
 <header id="header">
-    <img src="/images/starcraft2coop.png" alt="Starcraft II Co-op">
+    <img src="/images/starcraft2coop.png" alt="StarCraft II 合作任务">
 </header>
 <script>
 if (document.location.host === 'dev.starcraft2coop.com') {
-    document.write('<div class="construction">THIS IS THE TEST SITE. (<a href="https://starcraft2coop.com">Go to the real site</a>)</div>');
+    document.write('<div class="construction">这里是测试站点。（<a href="https://starcraft2coop.com">前往正式站点</a>）</div>');
 }
 </script>
 <nav id="menu">
 <ul id="topmenu">
-    <li class="normal"><a href="/" title="Home">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>Home</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+    <li class="normal"><a href="/" title="首页">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><title>首页</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
     </a></li>
-    <li class="highlight"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-commanders">Commanders</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-resources">Guides</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-missions">Missions</a></li>
-    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-about">About</a></li>
-    <li class="normal"><button type="button" id="site-search-button" title="Search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Search</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+    <li class="highlight"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-commanders">指挥官</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-resources">攻略</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-missions">任务</a></li>
+    <li class="normal"><a href="/" onclick="javascript:openSubmenu(event);" id="submenu-link-about">关于</a></li>
+    <li class="normal"><button type="button" id="site-search-button" title="搜索">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>搜索</title><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
         <span class="search-shortcut" aria-hidden="true"></span>
     </button></li>
 </ul>
 <div id="container">
     <div id="commanderList" class="submenu">
-        <a href="/commanders/raynor" class="normal"><img src="/images/commanderportraits/raynorportrait.png" alt="Raynor"></a>
-        <a href="/commanders/kerrigan" class="normal"><img src="/images/commanderportraits/kerriganportrait.png" alt="Kerrigan"></a>
-        <a href="/commanders/artanis" class="normal"><img src="/images/commanderportraits/artanisportrait.png" alt="Artanis"></a>
-        <a href="/commanders/swann" class="normal"><img src="/images/commanderportraits/swannportrait.png" alt="Swann"></a>
-        <a href="/commanders/zagara" class="normal"><img src="/images/commanderportraits/zagaraportrait.png" alt="Zagara"></a>
-        <a href="/commanders/vorazun" class="normal"><img src="/images/commanderportraits/vorazunportrait.png" alt="Vorazun"></a>
-        <a href="/commanders/karax" class="highlight"><img src="/images/commanderportraits/karaxportrait.png" alt="Karax"></a>
-        <a href="/commanders/abathur" class="normal"><img src="/images/commanderportraits/abathurportrait.png" alt="Abathur"></a>
-        <a href="/commanders/alarak" class="normal"><img src="/images/commanderportraits/alarakportrait.png" alt="Alarak"></a>
-        <a href="/commanders/nova" class="normal"><img src="/images/commanderportraits/novaportrait.png" alt="Nova"></a>
-        <a href="/commanders/stukov" class="normal"><img src="/images/commanderportraits/stukovportrait.png" alt="Stukov"></a>
-        <a href="/commanders/fenix" class="normal"><img src="/images/commanderportraits/fenixportrait.png" alt="Fenix"></a>
-        <a href="/commanders/dehaka" class="normal"><img src="/images/commanderportraits/dehakaportrait.png" alt="Dehaka"></a>
-        <a href="/commanders/horner" class="normal"><img src="/images/commanderportraits/hornerportrait.png" alt="Han &amp; Horner"></a>
-        <a href="/commanders/tychus" class="normal"><img src="/images/commanderportraits/tychusportrait.png" alt="Tychus"></a>
-        <a href="/commanders/zeratul" class="normal"><img src="/images/commanderportraits/zeratulportrait.png" alt="Zeratul"></a>
-        <a href="/commanders/stetmann" class="normal"><img src="/images/commanderportraits/stetmannportrait.png" alt="Stetmann"></a>
-        <a href="/commanders/mengsk" class="normal"><img src="/images/commanderportraits/mengskportrait.png" alt="Mengsk"></a>
+        <a href="/commanders/raynor" class="normal"><img src="/images/commanderportraits/raynorportrait.png" alt="雷诺"></a>
+        <a href="/commanders/kerrigan" class="normal"><img src="/images/commanderportraits/kerriganportrait.png" alt="凯瑞甘"></a>
+        <a href="/commanders/artanis" class="normal"><img src="/images/commanderportraits/artanisportrait.png" alt="阿塔尼斯"></a>
+        <a href="/commanders/swann" class="normal"><img src="/images/commanderportraits/swannportrait.png" alt="斯旺"></a>
+        <a href="/commanders/zagara" class="normal"><img src="/images/commanderportraits/zagaraportrait.png" alt="扎加拉"></a>
+        <a href="/commanders/vorazun" class="normal"><img src="/images/commanderportraits/vorazunportrait.png" alt="沃拉尊"></a>
+        <a href="/commanders/karax" class="highlight"><img src="/images/commanderportraits/karaxportrait.png" alt="凯拉克斯"></a>
+        <a href="/commanders/abathur" class="normal"><img src="/images/commanderportraits/abathurportrait.png" alt="阿巴瑟"></a>
+        <a href="/commanders/alarak" class="normal"><img src="/images/commanderportraits/alarakportrait.png" alt="阿拉纳克"></a>
+        <a href="/commanders/nova" class="normal"><img src="/images/commanderportraits/novaportrait.png" alt="诺娃"></a>
+        <a href="/commanders/stukov" class="normal"><img src="/images/commanderportraits/stukovportrait.png" alt="斯托科夫"></a>
+        <a href="/commanders/fenix" class="normal"><img src="/images/commanderportraits/fenixportrait.png" alt="菲尼克斯"></a>
+        <a href="/commanders/dehaka" class="normal"><img src="/images/commanderportraits/dehakaportrait.png" alt="德哈卡"></a>
+        <a href="/commanders/horner" class="normal"><img src="/images/commanderportraits/hornerportrait.png" alt="汉与霍纳"></a>
+        <a href="/commanders/tychus" class="normal"><img src="/images/commanderportraits/tychusportrait.png" alt="泰凯斯"></a>
+        <a href="/commanders/zeratul" class="normal"><img src="/images/commanderportraits/zeratulportrait.png" alt="泽拉图"></a>
+        <a href="/commanders/stetmann" class="normal"><img src="/images/commanderportraits/stetmannportrait.png" alt="斯台特曼"></a>
+        <a href="/commanders/mengsk" class="normal"><img src="/images/commanderportraits/mengskportrait.png" alt="蒙斯克"></a>
     </div>
     <div id="missionList" class="submenu">
-        <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">Chain of Ascension</div></a>
-        <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">Cradle of Death</div></a>
-        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">Dead of Night</div></a>
-        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">Lock &amp; Load</div></a>
-        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">Malwarfare</div></a>
-        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">Miner Evacuation</div></a>
-        <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">Mist Opportunities</div></a>
-        <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">Oblivion Express</div></a>
-        <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">Part &amp; Parcel</div></a>
-        <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">Rifts to Korhal</div></a>
-        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">Scythe of Amon</div></a>
-        <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">Temple of the Past</div></a>
-        <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">The Vermillion Problem</div></a>
-        <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">Void Launch</div></a>
-        <a href="/missions/voidthrashing" class="normal"><div class="mapImg mapImg-voidthrashing">Void Thrashing</div></a>
+        <a href="/missions/chainofascension" class="normal"><div class="mapImg mapImg-chainofascension">飞升之链</div></a>
+        <a href="/missions/cradleofdeath" class="normal"><div class="mapImg mapImg-cradleofdeath">死亡摇篮</div></a>
+        <a href="/missions/deadofnight" class="normal"><div class="mapImg mapImg-deadofnight">亡者之夜</div></a>
+        <a href="/missions/lockload" class="normal"><div class="mapImg mapImg-lockload">天锁</div></a>
+        <a href="/missions/malwarfare" class="normal"><div class="mapImg mapImg-malwarfare">恶意代码</div></a>
+        <a href="/missions/minerevacuation" class="normal"><div class="mapImg mapImg-minerevacuation">疏散矿工</div></a>
+        <a href="/missions/mistopportunities" class="normal"><div class="mapImg mapImg-mistopportunities">机会渺茫</div></a>
+        <a href="/missions/oblivionexpress" class="normal"><div class="mapImg mapImg-oblivionexpress">湮灭快车</div></a>
+        <a href="/missions/partparcel" class="normal"><div class="mapImg mapImg-partparcel">聚铁成兵</div></a>
+        <a href="/missions/riftstokorhal" class="normal"><div class="mapImg mapImg-riftstokorhal">克哈裂痕</div></a>
+        <a href="/missions/scytheofamon" class="normal"><div class="mapImg mapImg-scytheofamon">埃蒙之镰</div></a>
+        <a href="/missions/templeofthepast" class="normal"><div class="mapImg mapImg-templeofthepast">往日神庙</div></a>
+        <a href="/missions/thevermillionproblem" class="normal"><div class="mapImg mapImg-thevermillionproblem">熔火危机</div></a>
+        <a href="/missions/voidlaunch" class="normal"><div class="mapImg mapImg-voidlaunch">虚空降临</div></a>
+        <a href="/missions/voidthrashing" class="normal"><div class="mapImg mapImg-voidthrashing">虚空撕裂</div></a>
     </div>
     <div id="resources" class="submenu">
         <div class="submenu-with-sections"><div class="submenu-section">
-            <strong>Resources:</strong>
+            <strong>资料：</strong>
             <ul>
-                <li class="normal"><a href="/mutators/">Mutators</a></li>
-                <li class="normal"><a href="/resources/weeklymutations">Weekly&nbsp;Mutations</a></li>
-                <li class="normal"><a href="/resources/brutal">Brutal+</a></li>
-                <li class="normal"><a href="/units/">Unit&nbsp;Stats</a></li>
+                <li class="normal"><a href="/mutators/">突变因子</a></li>
+                <li class="normal"><a href="/resources/weeklymutations">每周突变</a></li>
+                <li class="normal"><a href="/resources/brutal">残酷+</a></li>
+                <li class="normal"><a href="/units/">单位数据</a></li>
             </ul>
         </div><div class="submenu-section">
-            <strong>Guides:</strong>
+            <strong>攻略：</strong>
             <ul>
-                <li class="normal"><a href="/guides/buildordertheory">Build&nbsp;Order&nbsp;Theory</a></li>
-                <li class="normal"><a href="/guides/enemycomps">Enemy&nbsp;Compositions</a></li>
-                <li class="normal"><a href="/guides/generaltips">General&nbsp;Tips</a></li>
-                <li class="normal"><a href="/guides/newplayer">New&nbsp;Players</a></li>
-                <li class="normal"><a href="/guides/youtube">Youtube</a></li>
+                <li class="normal"><a href="/guides/buildordertheory">建造顺序理论</a></li>
+                <li class="normal"><a href="/guides/enemycomps">敌方阵容</a></li>
+                <li class="normal"><a href="/guides/generaltips">通用技巧</a></li>
+                <li class="normal"><a href="/guides/newplayer">新手指南</a></li>
+                <li class="normal"><a href="/guides/youtube">YouTube</a></li>
             </ul>
         </div><div class="submenu-section">
-            <strong>Miscellaneous:</strong>
+            <strong>其他：</strong>
             <ul>
-                <li class="normal"><a href="/resources/achievements">Achievements</a></li>
-                <li class="normal"><a href="/resources/ailogic">AI&nbsp;Logic</a></li>
-                <li class="normal"><a href="/resources/bugs">Bugs</a></li>
-                <li class="normal"><a href="/resources/deathprevention">Death&nbsp;Prevent&nbsp;Effects</a></li>
-                <li class="normal"><a href="/resources/eastereggs">Easter&nbsp;Eggs</a></li>
-                <li class="normal"><a href="/resources/levels">Levels</a></li>
-                <li class="normal"><a href="/resources/patchdata">Patch&nbsp;Data</a></li>
-                <li class="normal"><a href="/tools/downloads">Downloads</a></li>
-                <li class="normal"><a href="/tools/masterybreakpoints">Mastery&nbsp;Breakpoints</a></li>
+                <li class="normal"><a href="/resources/achievements">成就</a></li>
+                <li class="normal"><a href="/resources/ailogic">人工智能逻辑</a></li>
+                <li class="normal"><a href="/resources/bugs">错误</a></li>
+                <li class="normal"><a href="/resources/deathprevention">免死效果</a></li>
+                <li class="normal"><a href="/resources/eastereggs">彩蛋</a></li>
+                <li class="normal"><a href="/resources/levels">等级</a></li>
+                <li class="normal"><a href="/resources/patchdata">补丁数据</a></li>
+                <li class="normal"><a href="/tools/downloads">下载</a></li>
+                <li class="normal"><a href="/tools/masterybreakpoints">精通阈值</a></li>
             </ul>
         </div></div>
     </div>
     <div id="about" class="submenu">
         <ul>
             <!--<li class="normal"><a href="/about/contact">Contact</a></li>-->
-            <li class="normal"><a href="/about/faq">FAQ</a></li>
-            <li class="normal"><a href="/about/links">Links</a></li>
+            <li class="normal"><a href="/about/faq">常见问题</a></li>
+            <li class="normal"><a href="/about/links">相关链接</a></li>
             <!--li class="normal"><a href="https://www.youtube.com/c/Starcraft2Coop" rel="nofollow">Youtube</a></li-->
-            <li class="normal"><a href="/about/stats">Misc. Stats</a></li>
+            <li class="normal"><a href="/about/stats">杂项统计</a></li>
         </ul>
     </div>
     <!--<div id="imgs">
@@ -209,411 +209,411 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         }
     })(jQuery);
 </script>
-<script src="/scripts/search.js?v=3646f5" defer></script>
+<script src="/scripts/search.js" defer></script>
 <div id="content">
-        <div id="tooltip">tooltip</div>
-    <h1><span class="unbold">Commander:</span> Karax</h1>
-    <p id="commanderMotto">Khalai Phase-Smith</p>
+        <div id="tooltip">提示</div>
+    <h1><span class="unbold">指挥官：</span>凯拉克斯</h1>
+    <p id="commanderMotto">卡莱相位工匠</p>
         <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#comSum">Commander Summary</a></p>
-        <p><a href="#levelUnlocks">Level Unlocks</a></p>
-        <p><a href="#achievements">Achievements</a></p>
-        <p><a href="#calldowns">Calldowns</a></p>
-        <p><a href="#leveling">Sub-Ascension Leveling</a></p>
-        <p><a href="#masteries">Masteries</a></p>
-        <p><a href="#prestiges">Prestiges</a></p>
-        <p><a href="#army">Recommended Army Composition</a></p>
-        <p><a href="#units">Combat Units</a></p>
-        <p><a href="#buildOrder">Build Order</a></p>
-        <p><a href="#guide">Gameplay Guide</a></p>
-        <p><a href="#fastexpand">Fast Expanding</a></p>
-        <p><a href="#videos">Video Guides</a></p>
+        <h2>本页章节</h2>
+        <p><a href="#comSum">指挥官概要</a></p>
+        <p><a href="#levelUnlocks">等级解锁</a></p>
+        <p><a href="#achievements">成就</a></p>
+        <p><a href="#calldowns">面板技能</a></p>
+        <p><a href="#leveling">飞升前升级</a></p>
+        <p><a href="#masteries">精通</a></p>
+        <p><a href="#prestiges">威望</a></p>
+        <p><a href="#army">推荐部队组成</a></p>
+        <p><a href="#units">战斗单位</a></p>
+        <p><a href="#buildOrder">建造顺序</a></p>
+        <p><a href="#guide">玩法指南</a></p>
+        <p><a href="#fastexpand">快速开矿</a></p>
+        <p><a href="#videos">视频攻略</a></p>
     </div>
-    <h2 id="comSum">Commander Summary</h2>
-    <p>Karax uses powerful static defenses backed up by robotic units and the Spear of Adun to control the battlefield.</p>
-    <h2 id="levelUnlocks">Level Unlocks</h2>
+    <h2 id="comSum">指挥官概要</h2>
+    <p>凯拉克斯以强大的防御建筑为核心，辅以机械部队和亚顿之矛掌控战场。</p>
+    <h2 id="levelUnlocks">等级解锁</h2>
     <table class="progressionTable">
         <thead>
             <tr>
-                <th>Level/Icon</th>
-                <th>Name</th>
-                <th>Description</th>
+                <th>等级/图标</th>
+                <th>名称</th>
+                <th>说明</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/progression/karax/karax_01.png" alt = "Master Machinist"></td>
-                <td>Master Machinist</td>
+                <td><img src="/images/commanderdata/progression/karax/karax_01.png" alt = "机械大师"></td>
+                <td>机械大师</td>
                 <td>
-                    Karax's combat units have 50% increased life, but cost 30% more. Orbital Strike no longer has a cooldown or a charge count, and now costs 5 energy per shot.
+                    凯拉克斯的战斗单位生命值提高50%，但费用增加30%。轨道轰炸不再有冷却时间和使用次数限制，每次射击消耗5点能量。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/karax/karax_02.png" alt = "Spear of Adun: Chrono Field"></td>
-                <td>Spear of Adun: Chrono Field</td>
+                <td><img src="/images/commanderdata/progression/karax/karax_02.png" alt = "亚顿之矛：时空力场"></td>
+                <td>亚顿之矛：时空力场</td>
                 <td>
-                    Increases the production speeds of all friendly structures by 15%.<br><br>Passive ability.
+                    所有友方建筑的生产速度提高15%。<br><br>被动技能。
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/karax/karax_03.png" alt = "New unit: Khaydarin Monolith"></td>
-                <td>New unit: Khaydarin Monolith</td>
+                <td><img src="/images/commanderdata/progression/karax/karax_03.png" alt = "新单位：凯达林巨石"></td>
+                <td>新单位：凯达林巨石</td>
                 <td>
-                   Extremely powerful defensive structure. Has superior range and damage, but is very expensive and attacks slowly.<br><br>Can attack ground and air units.
+                   威力极强的防御建筑。射程远、伤害高，但造价昂贵且攻击缓慢。<br><br>可攻击地面和空中单位。
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/karax/karax_04.png" alt = "Twilight Council Upgrade Cache"></td>
-                <td>Twilight Council Upgrade Cache</td>
+                <td><img src="/images/commanderdata/progression/karax/karax_04.png" alt = "暮光议会升级包"></td>
+                <td>暮光议会升级包</td>
                 <td>
-                    Unlocks the following upgrades at the Twilight Council:
+                    在暮光议会中解锁以下升级：
                     <ul>
-                        <li>Enable Sentinels to automatically revive themselves when killed.</li>
-                        <li>Allow Energizers to temporarily take control of enemy mechanical units.</li>
-                        <li>Increase energy regeneration for Energizers and Shield Batteries by 200%.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr class="spike">
-                <td><img src="/images/commanderdata/progression/karax/karax_05.png" alt = "Spear of Adun: Chrono Overload"></td>
-                <td>Spear of Adun: Chrono Overload</td>
-                <td>
-                    Chrono Wave now increases the production speed of all friendly structures to 500% for 20 seconds.
-                </td>
-            </tr>
-            <tr class="spike">
-                <td><img src="/images/commanderdata/progression/karax/karax_06.png" alt = "Forge Upgrade Cache"></td>
-                <td>Forge Upgrade Cache</td>
-                <td>
-                    Unlocks the following upgrade at the Forge:
-                    <ul>
-                        <li>Increase the range of Photon Cannons, Khaydarin Monoliths, and Shield Batteries by 2.</li>
-                        <li>Increase the attack speed of Photon Cannons and Khaydarin Monoliths by 25%.</li>
-                        <li>Allow Shield Batteries to grant structures a damage absorption barrier.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="/images/commanderdata/progression/karax/karax_07.png" alt = "Spear of Adun: Reconstruction Beam"></td>
-                <td>Spear of Adun: Reconstruction Beam</td>
-                <td>
-                    Friendly mechanical units and structures are automatically repaired over time . Up to 3 targets can be repaired at once.<br><br>Passive ability.<br><br>Units are repaired at 5HP/second while Structures are repaired at 10HP/second.
-                </td>
-            </tr>
-            <tr>
-                <td><img src="/images/commanderdata/progression/karax/karax_08.png" alt = "Solar Forge Upgrade Cache 1"></td>
-                <td>Solar Forge Upgrade Cache 1</td>
-                <td>
-                    Unlocks the following upgrades at the Solar Forge:
-                    <ul>
-                        <li>Allow Reconstruction Beam to affect additional targets.</li>
-                        <li>Solar Efficiency level 3.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="/images/commanderdata/progression/karax/karax_09.png" alt = "Robotics Bay Upgrade Cache"></td>
-                <td>Robotics Bay Upgrade Cache</td>
-                <td>
-                    Unlocks the following upgrades at the Robotics Bay:
-                    <ul>
-                        <li>Unlock the Immortal's Shadow Cannon ability, which deals 320 damage to an enemy ground or air unit.</li>
-                        <li>Enable the Colossus's attacks to set fire to the ground for additional damage over time.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="/images/commanderdata/progression/karax/karax_10.png" alt = "Spear of Adun: Purifier Beam"></td>
-                <td>Spear of Adun: Purifier Beam</td>
-                <td>
-                    Fires a beam that deals 750 (1500 vs armored) damage over 15 seconds. The beam will auto-acquire targets if not manually controlled.
-                </td>
-            </tr>
-            <tr class="spike">
-                <td><img src="/images/commanderdata/progression/karax/karax_11.png" alt = "Khalai Ingenuity"></td>
-                <td>Khalai Ingenuity</td>
-                <td>
-                    Pylons, Photon Cannons, Khaydarin Monoliths, and Shield Batteries warp in instantly.
-                </td>
-            </tr>
-            <tr>
-                <td><img src="/images/commanderdata/progression/karax/karax_12.png" alt = "Solar Forge Upgrade Cache 2"></td>
-                <td>Solar Forge Upgrade Cache 2</td>
-                <td>
-                   Unlocks the following upgrades at the Solar Forge:
-                    <ul>
-                        <li>Enable Orbital Strike to stun enemies in the target area.</li>
-                        <li>Enable Solar Lance to set fire to the ground for additional damage over time.</li>
+                        <li>哨兵阵亡时可自动复活。</li>
+                        <li>激励者可暂时控制敌方机械单位。</li>
+                        <li>激励者和护盾充能器的能量恢复速度提高200%。</li>
                     </ul>
                 </td>
             </tr>
             <tr class="spike">
-                <td><img src="/images/commanderdata/progression/karax/karax_13.png" alt = "Spear of Adun: Purifier Protocol"></td>
-                <td>Spear of Adun: Purifier Protocol</td>
+                <td><img src="/images/commanderdata/progression/karax/karax_05.png" alt = "亚顿之矛：时空过载"></td>
+                <td>亚顿之矛：时空过载</td>
                 <td>
-                    Increases the Purifier Beam's movement speed by 200% and its duration by 5 seconds.
+                    时空波现在会使所有友方建筑的生产速度提高至500%，持续20秒。
                 </td>
             </tr>
-            <tr>
-                <td><img src="/images/commanderdata/progression/karax/karax_14.png" alt = "Fleet Beacon Upgrade Cache"></td>
-                <td>Fleet Beacon Upgrade Cache</td>
+            <tr class="spike">
+                <td><img src="/images/commanderdata/progression/karax/karax_06.png" alt = "锻炉升级包"></td>
+                <td>锻炉升级包</td>
                 <td>
-                    Unlocks the following upgrades at the Fleet Beacon:
+                    在锻炉中解锁以下升级：
                     <ul>
-                        <li>Allow Mirages to become temporarily invulnerable after taking damage.</li>
-                        <li>Allow Carriers to automatically repair nearby mechanical units.</li>
+                        <li>光子炮、凯达林巨石和护盾充能器的射程提高2。</li>
+                        <li>光子炮和凯达林巨石的攻击速度提高25%。</li>
+                        <li>护盾充能器可为建筑提供吸收伤害的屏障。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/progression/karax/karax_15.png" alt = "Unity Barrierh"></td>
-                <td>Unity Barrier</td>
+                <td><img src="/images/commanderdata/progression/karax/karax_07.png" alt = "亚顿之矛：重构光束"></td>
+                <td>亚顿之矛：重构光束</td>
                 <td>
-                    All friendly units gain a barrier that will block an attack or spell that deals at least 20 damage. This barrier is gained upon the unit's creation and can only be gained once every 240 seconds.
+                    自动持续修复友方机械单位和建筑。最多可同时修复3个目标。<br><br>被动技能。<br><br>单位每秒恢复5点生命值，建筑每秒恢复10点生命值。
+                </td>
+            </tr>
+            <tr>
+                <td><img src="/images/commanderdata/progression/karax/karax_08.png" alt = "太阳能锻炉升级包1"></td>
+                <td>太阳能锻炉升级包1</td>
+                <td>
+                    在太阳能锻炉中解锁以下升级：
+                    <ul>
+                        <li>重构光束可影响更多目标。</li>
+                        <li>太阳能效率等级3。</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="/images/commanderdata/progression/karax/karax_09.png" alt = "机械研究所升级包"></td>
+                <td>机械研究所升级包</td>
+                <td>
+                    在机械研究所中解锁以下升级：
+                    <ul>
+                        <li>解锁不朽者的暗影炮技能，对一个敌方地面或空中单位造成320点伤害。</li>
+                        <li>巨像的攻击会点燃地面，持续造成额外伤害。</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="/images/commanderdata/progression/karax/karax_10.png" alt = "亚顿之矛：净化光束"></td>
+                <td>亚顿之矛：净化光束</td>
+                <td>
+                    发射一道光束，在15秒内造成750点伤害（对重甲造成1500点伤害）。若未手动控制，光束会自动搜寻目标。
+                </td>
+            </tr>
+            <tr class="spike">
+                <td><img src="/images/commanderdata/progression/karax/karax_11.png" alt = "卡莱巧思"></td>
+                <td>卡莱巧思</td>
+                <td>
+                    水晶塔、光子炮、凯达林巨石和护盾充能器可立即折跃完成。
+                </td>
+            </tr>
+            <tr>
+                <td><img src="/images/commanderdata/progression/karax/karax_12.png" alt = "太阳能锻炉升级包2"></td>
+                <td>太阳能锻炉升级包2</td>
+                <td>
+                   在太阳能锻炉中解锁以下升级：
+                    <ul>
+                        <li>轨道轰炸可使目标区域内的敌人昏迷。</li>
+                        <li>太阳能长枪可点燃地面，持续造成额外伤害。</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="spike">
+                <td><img src="/images/commanderdata/progression/karax/karax_13.png" alt = "亚顿之矛：净化协议"></td>
+                <td>亚顿之矛：净化协议</td>
+                <td>
+                    净化光束的移动速度提高200%，持续时间延长5秒。
+                </td>
+            </tr>
+            <tr>
+                <td><img src="/images/commanderdata/progression/karax/karax_14.png" alt = "舰队航标升级包"></td>
+                <td>舰队航标升级包</td>
+                <td>
+                    在舰队航标中解锁以下升级：
+                    <ul>
+                        <li>幻影受到伤害后可暂时进入无敌状态。</li>
+                        <li>航母可自动修复附近的机械单位。</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="/images/commanderdata/progression/karax/karax_15.png" alt = "统合屏障"></td>
+                <td>统合屏障</td>
+                <td>
+                    所有友方单位获得一道屏障，可阻挡一次至少造成20点伤害的攻击或法术。单位创建时获得此屏障，且每240秒只能获得一次。
                 </td>
             </tr>
         </tbody>
     </table>
-    <p id="powerSpikeInfo">Highlighted rows denote large power spikes for the commander.</p>
-    <h2 id="achievements">Achievements</h2>
-    <p>The commander-specific achievements for Karax are:</p>
+    <p id="powerSpikeInfo">高亮行表示该指挥官的重要强势期。</p>
+    <h2 id="achievements">成就</h2>
+    <p>凯拉克斯的指挥官专属成就如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Achievement</th>
-                <th>Name</th>
-                <th>Description</th>
+                <th>成就</th>
+                <th>名称</th>
+                <th>说明</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/achievements/karax/fastfriends.jpg" alt="Fast Friends"></td>
-                <td>Fast Friends</td>
-                <td>Use Chrono Wave to speed up the training of 500 of your ally's units in Co-op Missions.</td>
+                <td><img src="/images/commanderdata/achievements/karax/fastfriends.jpg" alt="快速之友"></td>
+                <td>快速之友</td>
+                <td>在合作任务中使用时空波加速盟友500个单位的训练。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/karax/scorchedearth.jpg" alt="Scorched Earth"></td>
-                <td>Scorched Earth</td>
-                <td>Kill 200 enemy units with Karax's Solar Lance in a single mission on Hard difficulty.</td>
+                <td><img src="/images/commanderdata/achievements/karax/scorchedearth.jpg" alt="焦土"></td>
+                <td>焦土</td>
+                <td>在困难难度的一场任务中，使用凯拉克斯的太阳能长枪消灭200个敌方单位。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/karax/targetpurified.jpg" alt="Target Purified"></td>
-                <td>Target Purified</td>
-                <td>Kill 50 enemy units with a single strike of Karax's Purifier Beam on Hard difficulty.</td>
+                <td><img src="/images/commanderdata/achievements/karax/targetpurified.jpg" alt="目标已净化"></td>
+                <td>目标已净化</td>
+                <td>在困难难度下，用凯拉克斯的一次净化光束消灭50个敌方单位。</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/achievements/karax/towerdefense.jpg" alt="Tower Defense"></td>
-                <td>Tower Defense</td>
-                <td>Kill 1,000 enemy units with Karax's defensive structures in Co-op Missions.</td>
+                <td><img src="/images/commanderdata/achievements/karax/towerdefense.jpg" alt="塔防"></td>
+                <td>塔防</td>
+                <td>在合作任务中使用凯拉克斯的防御建筑消灭1,000个敌方单位。</td>
             </tr>
         </tbody>
     </table>
-    <h2 id="calldowns">Calldowns</h2>
-    <p>The calldowns for Karax, at level 15, with no mastery points added are:</p>
+    <h2 id="calldowns">面板技能</h2>
+    <p>凯拉克斯在15级且未分配精通点数时的面板技能如下：</p>
     <table class="calldownTable">
         <thead>
             <tr>
-                <th>Calldown</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Recommended Usage</th>
-                <th>Numbers</th>
+                <th>面板技能</th>
+                <th>名称</th>
+                <th>说明</th>
+                <th>推荐用法</th>
+                <th>数值</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/abilities/karax/orbitalstrike.png" alt = "Orbital Strike"></td>
-                <td>Orbital Strike</td>
-                <td>Fires lasers onto the battlefield from orbit, each of them dealing 50 (100 vs armored units) area damage.</td>
+                <td><img src="/images/commanderdata/abilities/karax/orbitalstrike.png" alt = "轨道轰炸"></td>
+                <td>轨道轰炸</td>
+                <td>从轨道向战场发射激光，每发造成50点范围伤害（对重甲单位造成100点）。</td>
                 <td>
                     <ul>
-                        <li>Should be used to clear expansions and expand early.</li>
-                        <li>Great for clumped up enemies.</li>
-                        <li>Useful for removing key units from attack waves.</li>
-                        <li>Good for dealing with air units when you do not have anti-air.</li>
+                        <li>可用于清理分矿点并尽早开矿。</li>
+                        <li>非常适合对付聚集的敌人。</li>
+                        <li>适合消灭进攻波中的关键单位。</li>
+                        <li>缺少对空火力时可用来处理空中单位。</li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        <li>Cooldown: 0 seconds</li>
-                        <li>Energy Required: 5</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="/images/commanderdata/abilities/karax/solarlance.png" alt = "Solar Lance"></td>
-                <td>Solar Lance</td>
-                <td>Strafes the target area with 3 laser beams dealing 200 damage with each beam.</td>
-                <td>
-                    <ul>
-                        <li>Good for dealing with difficult attack waves.</li>
-                        <li>Great for pushing into enemy bases and taking out key targets.</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Cooldown: 120 seconds</li>
-                        <li>Energy Required: 50</li>
+                        <li>冷却时间：0秒</li>
+                        <li>所需能量：5</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/abilities/karax/chronowave.png" alt = "Chrono Wave"></td>
-                <td>Chrono Wave</td>
-                <td>Increases the production speeds of all friendly structures to 500% for 20 seconds</td>
+                <td><img src="/images/commanderdata/abilities/karax/solarlance.png" alt = "太阳能长枪"></td>
+                <td>太阳能长枪</td>
+                <td>以3道激光扫射目标区域，每道造成200点伤害。</td>
                 <td>
                     <ul>
-                        <li>Should be used as soon as it is off cooldown.</li>
-                        <li>The first Chrono Wave should be used to help you saturate both your main and your expansion.</li>
+                        <li>适合处理棘手的进攻波。</li>
+                        <li>非常适合推进敌方基地并摧毁关键目标。</li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        <li>Coolup: 300 seconds</li>
-                        <li>Cooldown: 240 seconds</li>
+                        <li>冷却时间：120秒</li>
+                        <li>所需能量：50</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/abilities/karax/purifierbeam.png" alt = "Purifier Beam"></td>
-                <td>Purifier Beam</td>
-                <td>Fires a beam that deals 1000 (2000 vs Armored) damage over 20 seconds. The beam will auto-acquire targets if not manually controlled.</td>
+                <td><img src="/images/commanderdata/abilities/karax/chronowave.png" alt = "时空波"></td>
+                <td>时空波</td>
+                <td>使所有友方建筑的生产速度提高至500%，持续20秒。</td>
                 <td>
                     <ul>
-                        <li>Good to use in heavily fortified bases.</li>
+                        <li>冷却结束后应尽快使用。</li>
+                        <li>第一次时空波应帮助主矿和分矿尽快补满采集单位。</li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        <li>Coolup: 450 seconds</li>
-                        <li>Cooldown: 360 seconds</li>
+                        <li>初始冷却：300秒</li>
+                        <li>冷却时间：240秒</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="/images/commanderdata/abilities/karax/purifierbeam.png" alt = "净化光束"></td>
+                <td>净化光束</td>
+                <td>发射一道光束，在20秒内造成1000点伤害（对重甲造成2000点）。若未手动控制，光束会自动搜寻目标。</td>
+                <td>
+                    <ul>
+                        <li>适合用于防守严密的基地。</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>初始冷却：450秒</li>
+                        <li>冷却时间：360秒</li>
                     </ul>
                 </td>
             </tr>
         </tbody>
     </table>
-    <h2 id="leveling">Sub-Ascension Leveling</h2>
-    <p>Difficulty: Hard</p>
-    <p>Karax is difficult to level due to the fact that he cannot instantly warp in cannons and static defense, as it standard in his gameplay, while having extremely expensive units. Rely on Sentinels, Immortals and Energizers as part of your army composition. Take the mission slow to reduce unnecessary losses. Rely on your Spear of Adun abilities as much as possible to weaken enemy bases and attack waves.</p>
-    <h2 id="masteries">Masteries</h2>
-    <p>Below are the three Power Sets for Karax with the recommended point allocations for each. Note that these are meant to serve a general, all-purpose build that is effective across all maps with no Prestiges selected. You are highly encourged to change these masteries to suit your playstyle and particular challenges you face (e.g. <a href="/resources/weeklymutations">Weekly Mutations</a>).</p>
-    <p>Power Set 1:</p>
+    <h2 id="leveling">飞升前升级</h2>
+    <p>难度：困难</p>
+    <p>凯拉克斯升级较为困难：他尚不能像常规玩法那样瞬间折跃光子炮等防御建筑，单位造价又极其昂贵。部队应以哨兵、不朽者和激励者为主。稳步推进任务，减少不必要的损失，并尽量依靠亚顿之矛技能削弱敌方基地和进攻波。</p>
+    <h2 id="masteries">精通</h2>
+    <p>以下是凯拉克斯三个技能组的推荐点数分配。这是一套未选择威望时适用于所有地图的通用配置。强烈建议根据自己的玩法和所面对的具体挑战（例如<a href="/resources/weeklymutations">每周突变</a>）调整精通。</p>
+    <p>技能组1：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>精通</th>
+                <th>数值</th>
+                <th>推荐投入点数</th>
+                <th>其他考量</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Combat Unit Life and Shields</td>
-                <td>1% per point<br>30% maximum</td>
+                <td>战斗单位生命值和护盾</td>
+                <td>每点1%<br>最高30%</td>
                 <td>?</td>
-                <td rowspan="2">Players that utilize a lot of Tower pushing strategies will find benefit in the Structure mastery, whereas players that utilize a lot of Karax's units will find the Unit Life mastery more useful. Additionally, the Unit Life mastery is multiplicative, which means it compounds directly with the initial 50% Life increase from Karax's talent. A full mastery would give a unit 95% additional HP.</td>
+                <td rowspan="2">经常采用炮台推进的玩家更适合建筑精通，大量使用凯拉克斯部队的玩家则更适合单位生命精通。此外，单位生命加成为乘算，会与凯拉克斯天赋初始的50%生命加成直接叠乘。点满后单位可获得95%的额外生命值。</td>
             </tr>
             <tr>
-                <td>Structure Life and Shields</td>
-                <td>2% per point<br>60% maximum</td>
+                <td>建筑生命值和护盾</td>
+                <td>每点2%<br>最高60%</td>
                 <td>?</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">These masteries depend on your playstyle. If you prefer doing builds which utilize a lot of static defense, the Structure Life mastery is a better option. However, due to the nature of co-op and how aggressive play is rewarded, the Combat Unit Life mastery is a better pick here for general play.</p>
-    <p>Power Set 2:</p>
+    <p class="masterySummary">选择取决于你的玩法。若偏好大量防御建筑，建筑生命精通更合适；但合作任务更鼓励主动进攻，因此通用玩法更推荐战斗单位生命精通。</p>
+    <p>技能组2：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>精通</th>
+                <th>数值</th>
+                <th>推荐投入点数</th>
+                <th>其他考量</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Repair Beam Healing Rate</td>
-                <td>3% per point<br>90% maximum</td>
+                <td>修复光束治疗速度</td>
+                <td>每点3%<br>最高90%</td>
                 <td>?</td>
-                <td rowspan="2">This is mostly a playstyle choice. The Chrono Wave Energy Regeneration mastery can help players who rely a lot on the Spear of Adun's abilities to weaken attack waves and enemy entrenchments before they engage with their army. The Repair Beam healing mastery can help in moments where a player is required to have long engagements and sustained combat. It can provide the healing required to prevent players from losing units more frequently.</td>
+                <td rowspan="2">这主要取决于玩法。时空波能量恢复精通适合经常依靠亚顿之矛先削弱进攻波和敌方阵地再投入部队的玩家；修复光束治疗精通则适合长时间交战，可提供持续治疗并减少单位损失。</td>
             </tr>
             <tr>
-                <td>Chrono Wave Energy Regeneration</td>
-                <td>3 per point<br>90 maximum</td>
+                <td>时空波能量恢复</td>
+                <td>每点3<br>最高90</td>
                 <td>?</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">The choice of this mastery will depend on the player's playstyle and choice of prestige, as both are competitive choices.</p>
-    <p>Power Set 3:</p>
+    <p class="masterySummary">两项都很有竞争力，应根据玩法和所选威望决定。</p>
+    <p>技能组3：</p>
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>Power</th>
-                <th>Value</th>
-                <th>Recommended Points to Add</th>
-                <th>Further Considerations</th>
+                <th>精通</th>
+                <th>数值</th>
+                <th>推荐投入点数</th>
+                <th>其他考量</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Chrono Boost Efficiency</td>
-                <td>1% per point<br>30% maximum</td>
+                <td>时空提速效率</td>
+                <td>每点1%<br>最高30%</td>
                 <td>0</td>
-                <td rowspan="2">The Chrono Boost mastery can allow Karax to complete his researches and get units out at a very fast pace. However, this may hurt his ability to fast expand if too many points are added to that mastery.</td>
+                <td rowspan="2">时空提速精通能让凯拉克斯更快完成研究并训练单位，但投入过多点数会影响其快速开矿能力。</td>
             </tr>
             <tr>
-                <td>Initial and Maximum Spear of Adun Energy</td>
-                <td>+3 per point<br>+90 maximum</td>
+                <td>亚顿之矛初始及最大能量</td>
+                <td>每点+3<br>最高+90</td>
                 <td>30</td>
             </tr>
         </tbody>
     </table>
-    <p class="masterySummary">The Initial energy here is the best choice because it allows Karax to fast-expand on almost all maps with minimal issues.</p>
-    <h2 id="prestiges">Prestiges</h2>
-    <p>Below are the prestiges for Karax. Note that "Effective Level" is the level at which the prestige achieves it full effect.</p>
+    <p class="masterySummary">初始能量是最佳选择，因为它让凯拉克斯几乎能在所有地图上顺利快速开矿。</p>
+    <h2 id="prestiges">威望</h2>
+    <p>凯拉克斯的威望如下。“生效等级”是指该威望完全发挥效果时所需的等级。</p>
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P1: <strong>Architect of War</strong></td>
+                <td class="prestigeTitle" colspan="2">P1：<strong>战争设计师</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>Repair Beam is 100% more effective and can target twice as many structures.</li>
-                        <li>Unity Barrier affects defensive structures and its cooldown is reduced by 75%.</li>
-                        <li>Chrono Boost, Chrono Wave, and Chrono Field affect defensive structures, increasing their rate of attack.</li>
+                        <li>修复光束的效果提高100%，可作用于两倍数量的建筑。</li>
+                        <li>统合屏障可作用于防御建筑，冷却时间缩短75%。</li>
+                        <li>时空提速、时空波和时空力场可作用于防御建筑，提高其攻击速度。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>Repair Beam may only target structures. Unity Barrier no longer affects units.</li>
+                        <li>修复光束只能以建筑为目标。统合屏障不再影响单位。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Notes</th>
+                <th>备注</th>
                 <td>
                     <ul>
-                        <li>Prestige and Mastery applied to base healing rate (5/10), then a compounding of prestige+mastery is applied at 0.05/0.1 per mastery point</li>
-                        <li>Chrono Boost and Chrono Wave can be used on ally defenses as well</li>
-                        <li>Chrono Field doesn't have an effect on ally defenses</li>
+                        <li>威望和精通先作用于基础治疗速度（5/10），之后威望与精通按每点精通0.05/0.1进行叠乘</li>
+                        <li>时空提速和时空波也可用于盟友的防御建筑</li>
+                        <li>时空力场不会影响盟友的防御建筑</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>生效等级</th>
                 <td>15</td>
             </tr>
             <tr>
-                <th>Advice</th><td>Due to the fact that the Repair Beam only unlocks at level 7 and the Unity Barrier at level 15, this prestige has no disadvantage until level 7 and should be used until that level. This prestige encourages a static defense-style play for Karax by empowering his structures with various chrono abilities and healing. However, due to the nature of co-op, defensive-style play is not rewarded and this prestige, albeit well-tailored for this type of play, does not help the player get any additional value.</td>
+                <th>建议</th><td>修复光束在7级才解锁，统合屏障则在15级解锁，因此该威望在7级前没有劣势，升级时可一直使用到该等级。此威望以各种时空技能和治疗强化建筑，鼓励凯拉克斯采用防御建筑玩法。但合作任务并不奖励被动防守，所以即使它非常契合这种玩法，也无法为玩家带来额外收益。</td>
             </tr>
         </tbody>
     </table>
@@ -621,30 +621,30 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P2: <strong>Templar Apparent</strong></td>
+                <td class="prestigeTitle" colspan="2">P2：<strong>圣堂显圣</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>Combat unit cost reduced by 40%.</li>
+                        <li>战斗单位费用降低40%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>Photon Cannons and Khaydarin Monoliths are unavailable.</li>
+                        <li>无法使用光子炮和凯达林巨石。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>生效等级</th>
                 <td>1</td>
             </tr>
             <tr>
-                <th>Advice</th><td>This prestige puts Karax in a great position to build units, and this does not only include Carriers, which can now be rushed out quickly with this Prestige. Karax is able to build up a reasonable mass of units quickly, at the cost of static defense. This does mean that on missions where static defense is required (e.g. <a href="/missions/oblivionexpress">Oblivion Express</a> vs. Terran to stop Nukes), he will need to resort to other methods of detecting cloaked attackers at his base.</td>
+                <th>建议</th><td>此威望非常适合凯拉克斯训练部队，而且并非只利好可以快速成型的航母。他能以失去防御建筑为代价迅速集结一支规模可观的部队。这也意味着，在必须依赖防御建筑的任务中（例如<a href="/missions/oblivionexpress">湮灭快车</a>对人类，需要阻止核弹），他必须另寻办法侦测基地中的隐形袭击者。</td>
             </tr>
         </tbody>
     </table>
@@ -652,42 +652,42 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P3: <strong>Solarite Celestial</strong></td>
+                <td class="prestigeTitle" colspan="2">P3：<strong>太阳能天尊</strong></td>
             </tr>
             <tr>
-                <th>Advantages</th>
+                <th>优势</th>
                 <td>
                     <ul>
-                        <li>Orbital Strike and Solar Lance energy cost reduced by 40%.</li>
-                        <li>Solar Lance and Purifier Beam cooldowns reduced by 50%.</li>
+                        <li>轨道轰炸和太阳能长枪的能量消耗降低40%。</li>
+                        <li>太阳能长枪和净化光束的冷却时间缩短50%。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Disadvantages</th>
+                <th>劣势</th>
                 <td>
                     <ul>
-                        <li>Chrono Boost, Chrono Wave, and Chrono Field are unavailable.</li>
+                        <li>无法使用时空提速、时空波和时空力场。</li>
                     </ul>
                 </td>
             </tr>
             <tr>
-                <th>Effective Level</th>
+                <th>生效等级</th>
                 <td>10</td>
             </tr>
             <tr>
-                <th>Advice</th><td>This prestige improves Karax's Spear of Adun abilities at the cost of him losing his ramp up capabilities. The Spear of Adun is a key pillar in good Karax play, and players that know how to use the Spear of Adun to its maximum potential can gain a lot of value from this prestige. Due to the highly reduced costs of Spear of Adun abilities, players do not need to rely on the Chrono abilities in order to get a reasonably-sized army out in the early game. Instead, a small handful of units are more than enough, as the Spear of Adun becomes the primary damage dealer in the mission. This prestige emphasizes Spear of Adun play, and players will need to get familiar with this style of play in order to utilize this prestige to its maximum potential.</td>
+                <th>建议</th><td>此威望以牺牲凯拉克斯的发展能力为代价强化亚顿之矛技能。亚顿之矛是凯拉克斯优秀玩法的核心，懂得充分发挥它潜力的玩家能从该威望中获得很高收益。由于技能消耗大幅降低，玩家无需依赖时空技能在前期组建一支规模可观的部队，少量单位就已足够，因为亚顿之矛会成为任务中的主要伤害来源。此威望强调亚顿之矛玩法，玩家需要熟悉这种风格才能充分发挥其潜力。</td>
             </tr>
         </tbody>
     </table>
-    <p>P2 (Templar Apparent) puts Karax in the perfect position to be a reasonably powerful commander by reducing the cost of his once-expensive units. This allows for Karax to develop an early-game presence, and opens up a variety of playstyles that were prohibitive due to high unit costs. This prestige is the recommended prestige for general Karax play.</p>
-    <h2 id="army">Recommended Army Composition</h2>
-    <p>The recommended army composition for Karax is below. Note that this assumes no Prestige talent selected and recommended Mastery Allocations. This is a basic recommendation for your army framework. It is recommended to gain an understanding for each of the units in the <a href="#units">Units</a> section and further add tech units so that you are able to better handle the situations you face.</p>
-    <img class="army" src="/images/commanderdata/units/karax/sentinel.jpg" alt="Sentinel"><img class="army" src="/images/commanderdata/units/karax/energizer.jpg" alt="Energizer"><img class="army" src="/images/commanderdata/units/karax/immortal.jpg" alt="Immortal">
-    <p>Immortals are the primary damage-dealers for Karax. Use Sentinels to tank for Immortals while the Immortals deal damage from behind. This build does not have any anti-air, and you will need to use your Spear of Adun and Shadow Cannons to kill off air units. Additionally, when fighting against Mechanical compositions, Energizers should also be used to reclaim some of those units.</p>
-    <div class="techContainer"><img class="army" src="/images/commanderdata/units/karax/colossus.jpg" alt="Colossus"><div class="techAdd">+</div></div>
-    <p>Add Colossi to your army for extra splash damage that cannot be handled sustainably by your Spear of Adun abilities.</p>
-    <div id="tooltip">tooltip</div>
+    <p>P2（圣堂显圣）通过降低原本昂贵的单位费用，让凯拉克斯成为实力均衡的强力指挥官。他因此能在前期形成战力，也能采用许多此前因单位费用过高而难以实现的玩法。通用凯拉克斯玩法推荐选择此威望。</p>
+    <h2 id="army">推荐部队组成</h2>
+    <p>以下是凯拉克斯的推荐部队组成，假定未选择威望并采用推荐精通分配。这只是部队框架的基础建议；请先了解<a href="#units">单位</a>章节中的各个单位，再按实际情况补充科技单位。</p>
+    <img class="army" src="/images/commanderdata/units/karax/sentinel.jpg" alt="哨兵"><img class="army" src="/images/commanderdata/units/karax/energizer.jpg" alt="激励者"><img class="army" src="/images/commanderdata/units/karax/immortal.jpg" alt="不朽者">
+    <p>不朽者是凯拉克斯的主要伤害来源。用哨兵在前方承伤，让不朽者在后方输出。该配兵没有对空能力，需要利用亚顿之矛和暗影炮消灭空中单位。对抗机械单位组成时，也应使用激励者回收其中一部分单位。</p>
+    <div class="techContainer"><img class="army" src="/images/commanderdata/units/karax/colossus.jpg" alt="巨像"><div class="techAdd">+</div></div>
+    <p>加入巨像，以提供亚顿之矛无法持续承担的额外范围伤害。</p>
+    <div id="tooltip">提示</div>
     <script>
         $(".army").on('mouseover',function(e){
             var unit = $(this).attr("alt").split(":");
@@ -718,67 +718,67 @@ if (document.location.host === 'dev.starcraft2coop.com') {
 
         });
     </script>
-    <h2 id="units">Combat Units</h2>
-    <p>For more information on Karax's unit stats, comparison between units and upgrade calculations, visit the <a href="/units/#karax">Data Tables</a> page.</p>
-    <p>Karax's combat units are listed below:</p>
+    <h2 id="units">战斗单位</h2>
+    <p>有关凯拉克斯单位属性、单位对比和升级计算的更多信息，请参阅<a href="/units/#karax">数据表</a>页面。</p>
+    <p>凯拉克斯的战斗单位如下：</p>
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#karax/sentinel">
-                <img src="/images/commanderdata/units/karax/sentinel.jpg" alt="Sentinel">
-                <p>Sentinel</p>
+                <img src="/images/commanderdata/units/karax/sentinel.jpg" alt="哨兵">
+                <p>哨兵</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Not very useful if you want to deal DPS.</li>
-                <li>Good units to tank while more expensive units in the back deal damage.</li>
+                <li>不适合作为伤害输出单位。</li>
+                <li>适合在前方承伤，让后方更昂贵的单位输出。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="unlockable autocast">
-                        <td><img src="/images/commanderdata/unitskills/karax/charge.png" alt="Charge"></td>
-                        <td>Charge</td>
-                        <td>Intercepts enemy ground units and increases movement speed.</td>
-                        <td>10 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/karax/charge.png" alt="冲锋"></td>
+                        <td>冲锋</td>
+                        <td>拦截敌方地面单位并提高移动速度。</td>
+                        <td>10秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/karax/charge.png" alt="Charge"></td>
-                        <td>Charge</td>
-                        <td>Allows Sentinels to intercept nearby enemies. Also increases the movement speed of Sentinels by 0.25.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/karax/charge.png" alt="冲锋"></td>
+                        <td>冲锋</td>
+                        <td>使哨兵能够拦截附近的敌人，并使哨兵的移动速度提高0.25。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/karax/reconstruction.png" alt="Reconstruction"></td>
-                        <td>Reconstruction</td>
-                        <td>Sentinels are revived when killed. This effect can only occur once every 120 seconds.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/karax/reconstruction.png" alt="重构"></td>
+                        <td>重构</td>
+                        <td>哨兵阵亡后复活。此效果每120秒只能触发一次。</td>
                         <td>100/100</td>
-                        <td>90 seconds</td>
+                        <td>90秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -787,70 +787,70 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#karax/energizer">
-                <img src="/images/commanderdata/units/karax/energizer.jpg" alt="Energizer">
-                <p>Energizer</p>
+                <img src="/images/commanderdata/units/karax/energizer.jpg" alt="激励者">
+                <p>激励者</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Extremely powerful and versatile unit.</li>
-                <li>Can be used to reinforce your army through warp-ins.</li>
-                <li>They increase the attack and movement speed of your units and structures through Chrono Beam.</li>
-                <li>"Reclamation" is great when dealing with mechanical <a href="/guides/enemycomps">compositions</a> like Air Terran.</li>
+                <li>极其强大且用途广泛。</li>
+                <li>可通过折跃为部队提供增援。</li>
+                <li>利用时空光束提高单位和建筑的攻击速度与移动速度。</li>
+                <li>“回收”非常适合对付人类空军等机械<a href="/guides/enemycomps">单位组成</a>。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/unitskills/karax/chronobeam.png" alt="Chrono Beam"></td>
-                        <td>Chrono Beam</td>
-                        <td>Friendly target gains 25% attack speed and 50% movement speed for 10 seconds.</td>
-                        <td>0 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/karax/chronobeam.png" alt="时空光束"></td>
+                        <td>时空光束</td>
+                        <td>友方目标的攻击速度提高25%、移动速度提高50%，持续10秒。</td>
+                        <td>0秒</td>
                         <td>3</td>
                     </tr>
                     <tr class="unlockable">
-                        <td><img src="/images/commanderdata/unitskills/karax/reclamation.png" alt="Reclamation"></td>
-                        <td>Reclamation</td>
-                        <td>Temporarily takes control of target enemy mechanical unit. Reclaimed units self-destruct after 120 seconds.</td>
-                        <td>120 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/karax/reclamation.png" alt="回收"></td>
+                        <td>回收</td>
+                        <td>暂时控制目标敌方机械单位。回收的单位会在120秒后自毁。</td>
+                        <td>120秒</td>
                         <td>50</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/karax/rapidrecharging.png" alt="Rapid Recharging"></td>
-                        <td>Rapid Recharging</td>
-                        <td>Increases the energy regeneration rate of Energizers and Shield Batteries by 200%.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/karax/rapidrecharging.png" alt="快速充能"></td>
+                        <td>快速充能</td>
+                        <td>激励者和护盾充能器的能量恢复速度提高200%。</td>
                         <td>100/100</td>
-                        <td>90 seconds</td>
+                        <td>90秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/karax/reclamation.png" alt="Reclamation"></td>
-                        <td>Reclamation</td>
-                        <td>Energizers gain the ability to temporarily take control of enemy mechanical units. Reclaimed units self-destruct after 120 seconds.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/karax/reclamation.png" alt="回收"></td>
+                        <td>回收</td>
+                        <td>激励者可暂时控制敌方机械单位。回收的单位会在120秒后自毁。</td>
                         <td>150/150</td>
-                        <td>120 seconds</td>
+                        <td>120秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -859,61 +859,61 @@ if (document.location.host === 'dev.starcraft2coop.com') {
    <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#karax/immortal">
-                <img src="/images/commanderdata/units/karax/immortal.jpg" alt="Immortal">
-                <p>Immortal</p>
+                <img src="/images/commanderdata/units/karax/immortal.jpg" alt="不朽者">
+                <p>不朽者</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Powerful unit that deals great damage to structures and armored targets.</li>
-                <li>Shadow Cannon is a good ability that can help Immortals burst down units and deal with air targets.</li>
+                <li>强力单位，可对建筑和重甲目标造成高额伤害。</li>
+                <li>暗影炮能帮助不朽者快速击杀单位并对付空中目标。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/unitskills/karax/barrier.png" alt="Barrier"></td>
-                        <td>Barrier</td>
-                        <td>Absorbs up to 100 damage. Lasts for 10 seconds.</td>
-                        <td>60 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/karax/barrier.png" alt="屏障"></td>
+                        <td>屏障</td>
+                        <td>最多吸收100点伤害，持续10秒。</td>
+                        <td>60秒</td>
                         <td>0</td>
                     </tr>
                     <tr class="unlockable">
-                        <td><img src="/images/commanderdata/unitskills/karax/shadowcannon.png" alt="Shadow Cannon"></td>
-                        <td>Shadow Cannon</td>
-                        <td>Deal 320 damage to target unit or structure.<br><br>Can target ground and air units.</td>
-                        <td>45 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/karax/shadowcannon.png" alt="暗影炮"></td>
+                        <td>暗影炮</td>
+                        <td>对目标单位或建筑造成320点伤害。<br><br>可对地面和空中单位使用。</td>
+                        <td>45秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/karax/shadowcannon.png" alt="Shadow Cannon"></td>
-                        <td>Shadow Cannon</td>
-                        <td>Allows Immortals to use Shadow Cannon. Deals 320 damage to target unit or structure.<br><br>Can target ground and air units.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/karax/shadowcannon.png" alt="暗影炮"></td>
+                        <td>暗影炮</td>
+                        <td>使不朽者能够使用暗影炮，对目标单位或建筑造成320点伤害。<br><br>可对地面和空中单位使用。</td>
                         <td>100/100</td>
-                        <td>120 seconds</td>
+                        <td>120秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -922,40 +922,40 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#karax/colossus">
-                <img src="/images/commanderdata/units/karax/colossus.jpg" alt="Colossus">
-                <p>Colossus</p>
+                <img src="/images/commanderdata/units/karax/colossus.jpg" alt="巨像">
+                <p>巨像</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Niche unit that's usually good on infested maps.</li>
+                <li>用途较为专门，通常适合感染者地图。</li>
             </ul>
-            <p>Skills: None</p>
-            <p>Upgrades:</p>
+            <p>技能：无</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/karax/extendedthermallance.png" alt="Extended Thermal Lance"></td>
-                        <td>Extended Thermal Lance</td>
-                        <td>Colossi gain +3 range.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/karax/extendedthermallance.png" alt="加长型热能长枪"></td>
+                        <td>加长型热能长枪</td>
+                        <td>巨像的射程提高3。</td>
                         <td>100/100</td>
-                        <td>90 seconds</td>
+                        <td>90秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/karax/firebeam.png" alt="Fire Beam"></td>
-                        <td>Fire Beam</td>
-                        <td>Upgrades the damage dealt by Colossi and causes their attacks to set fire to the ground, dealing an additional 150 damage to enemy ground units in the area over 5 seconds.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/karax/firebeam.png" alt="烈焰光束"></td>
+                        <td>烈焰光束</td>
+                        <td>提高巨像造成的伤害，并使其攻击点燃地面，在5秒内对区域内的敌方地面单位额外造成150点伤害。</td>
                         <td>100/100</td>
-                        <td>120 seconds</td>
+                        <td>120秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -964,60 +964,60 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#karax/mirage">
-                <img src="/images/commanderdata/units/karax/mirage.jpg" alt="Mirage">
-                <p>Mirage</p>
+                <img src="/images/commanderdata/units/karax/mirage.jpg" alt="幻影">
+                <p>幻影</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>Generally not worth making due to its weakness against armored targets.</li>
+                <li>对重甲目标较弱，通常不值得生产。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/unitskills/karax/gravitonbeam.png" alt="Graviton Beam"></td>
-                        <td>Graviton Beam</td>
-                        <td>Makes the target unit float in the air, disabling its abilities. Effect lasts up to 10 seconds.<br><br>Massive units are immune.</td>
-                        <td>30 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/karax/gravitonbeam.png" alt="引力光束"></td>
+                        <td>引力光束</td>
+                        <td>使目标单位悬浮在空中并禁用其技能，最多持续10秒。<br><br>重型单位免疫。</td>
+                        <td>30秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/karax/anionpulsecrystals.png" alt="Anion Pulse-Crystals"></td>
-                        <td>Anion Pulse-Crystals</td>
-                        <td>Mirages gain +2 range.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/karax/anionpulsecrystals.png" alt="阴离子脉冲水晶"></td>
+                        <td>阴离子脉冲水晶</td>
+                        <td>幻影的射程提高2。</td>
                         <td>100/100</td>
-                        <td>60 seconds</td>
+                        <td>60秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/karax/phasingarmor.png" alt="Phasing Armor"></td>
-                        <td>Phasing Armor</td>
-                        <td>Prevents Mirages from taking damage for 2 seconds after being attacked. Cannot occur more than once every 5 seconds.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/karax/phasingarmor.png" alt="相位装甲"></td>
+                        <td>相位装甲</td>
+                        <td>幻影受到攻击后的2秒内免受伤害。此效果每5秒最多触发一次。</td>
                         <td>100/100</td>
-                        <td>90 seconds</td>
+                        <td>90秒</td>
                     </tr>
                 </tbody>
             </table>
@@ -1026,266 +1026,266 @@ if (document.location.host === 'dev.starcraft2coop.com') {
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#karax/carrier">
-                <img src="/images/commanderdata/units/karax/carrier.jpg" alt="Carrier">
-                <p>Carrier</p>
+                <img src="/images/commanderdata/units/karax/carrier.jpg" alt="航母">
+                <p>航母</p>
             </a>
         </div>
         <div class="descContainer">
             <ul>
-                <li>High DPS with the Graviton Warp Catapult upgrade.</li>
-                <li>Recommended when using the Templar Apparent prestige.</li>
+                <li>研究引力折跃弹射器后拥有很高的伤害输出。</li>
+                <li>使用圣堂显圣威望时推荐生产。</li>
             </ul>
-            <p>Skills:</p>
+            <p>技能：</p>
             <table class="unitSkills">
                 <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Cooldown</th>
-                        <th>Energy Cost</th>
+                        <th>技能</th>
+                        <th>名称</th>
+                        <th>说明</th>
+                        <th>冷却时间</th>
+                        <th>能量消耗</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="autocast">
-                        <td><img src="/images/commanderdata/unitskills/karax/buildinterceptor.png" alt="Build Interceptor"></td>
-                        <td>Build Interceptor</td>
-                        <td>Builds Interceptors that automatically attack the Carrier's target. Carriers may not attack without Interceptors.<br><br>Can attack ground and air units. 8 Interceptors max.</td>
-                        <td>10 seconds</td>
+                        <td><img src="/images/commanderdata/unitskills/karax/buildinterceptor.png" alt="建造拦截机"></td>
+                        <td>建造拦截机</td>
+                        <td>建造会自动攻击航母目标的拦截机。没有拦截机时航母无法攻击。<br><br>可攻击地面和空中单位，最多拥有8架拦截机。</td>
+                        <td>10秒</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-            <p>Upgrades:</p>
+            <p>升级：</p>
             <table class="unitUpgrades">
                 <thead>
                     <tr>
-                        <th>Upgrade</th>
-                        <th>Name</th>
-                        <th>Effect</th>
-                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                        <th>Research Time</th>
+                        <th>升级</th>
+                        <th>名称</th>
+                        <th>效果</th>
+                        <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                        <th>研究时间</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/karax/repairdrones.png" alt="Repair Drones"></td>
-                        <td>Repair Drones</td>
-                        <td>Carriers gain two repair drones that automatically heal nearby friendly mechanical units.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/karax/repairdrones.png" alt="修理无人机"></td>
+                        <td>修理无人机</td>
+                        <td>航母获得两架修理无人机，可自动修复附近的友方机械单位。</td>
                         <td>100/100</td>
-                        <td>120 seconds</td>
+                        <td>120秒</td>
                     </tr>
                     <tr>
-                        <td><img src="/images/commanderdata/unitupgrades/karax/gravitonwarpcatapult.png" alt="Graviton Warp Catapult"></td>
-                        <td>Graviton Warp Catapult</td>
-                        <td>Makes the Carrier launch Interceptors more quickly and increases Interceptor attack speed by 25%.</td>
+                        <td><img src="/images/commanderdata/unitupgrades/karax/gravitonwarpcatapult.png" alt="引力折跃弹射器"></td>
+                        <td>引力折跃弹射器</td>
+                        <td>使航母更快放出拦截机，并使拦截机的攻击速度提高25%。</td>
                         <td>150/150</td>
-                        <td>120 seconds</td>
+                        <td>120秒</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-    <h2 id="buildOrder">Build Order</h2>
-    <p>Below is the standard economic build order for Karax. For more information on how to read and construct your own build orders, please check the <a href="/guides/buildordertheory">Build Order Theory</a> page.</p>
+    <h2 id="buildOrder">建造顺序</h2>
+    <p>以下是凯拉克斯的标准经济型建造顺序。有关如何阅读和编排建造顺序的更多信息，请参阅<a href="/guides/buildordertheory">建造顺序理论</a>页面。</p>
     <p class="buildOrder">
-        20x Orbital Strike -> Rocks<br>
-        15 Nexus<br>
-        15 Pylon<br>
-        17 Assimilator<br>
-        18 Assimilator<br>
-        20 Forge<br>
-        26 Cannon -> Gas Rock<br>
-        32 Cannon -> Gas Rock
+        20次轨道轰炸 -> 岩石<br>
+        15星灵枢纽<br>
+        15水晶塔<br>
+        17吸纳舱<br>
+        18吸纳舱<br>
+        20锻炉<br>
+        26光子炮 -> 瓦斯岩石<br>
+        32光子炮 -> 瓦斯岩石
     </p>
-    <h2 id="guide">Gameplay Guide</h2>
-    <h3>Playstyle Traps</h3>
-    <p>A common trap for Karax players is to rush to a Mass Carrier build. While Carriers are highly effective on most missions, rushing Carriers without assisting your ally can lose you the game, especially when early-game objectives are slightly more challenging.</p>
-    <p>A more effective playstyle is to build static defenses to guard/push into objectives while you tech up to Carriers. This reduces the pressure on your ally, and can guarantee a victory.</p>
-    <h3>Tower Pushing</h3>
-    <p>Karax has a few static defense structures available to him. These are shown below:</p>
+    <h2 id="guide">玩法指南</h2>
+    <h3>玩法误区</h3>
+    <p>凯拉克斯玩家常见的误区之一是急于转型航母海。航母在大多数任务中都非常强大，但如果一味速出航母而不协助盟友，就可能输掉游戏，尤其是在前期目标较难处理时。</p>
+    <p>更有效的玩法是建造防御建筑来守卫目标或向目标推进，同时逐步攀升科技转型航母。这样可以减轻盟友的压力，并确保取得胜利。</p>
+    <h3>塔推</h3>
+    <p>凯拉克斯可以使用以下几种防御建筑：</p>
     <table>
         <thead>
             <tr>
-                <th>Building</th>
-                <th>Name</th>
-                <th>Stats</th>
+                <th>建筑</th>
+                <th>名称</th>
+                <th>属性</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/guides/karax/photoncannon.jpg" alt="Photon Cannon"></td>
-                <td>Photon Cannon</td>
-                <td>Detector<br>HP: 150<br>Shield: 150<br>Damage: 20<br>Range: 7<br>Speed: 1.25</td>
+                <td><img src="/images/commanderdata/guides/karax/photoncannon.jpg" alt="光子炮"></td>
+                <td>光子炮</td>
+                <td>侦测单位<br>生命值：150<br>护盾：150<br>伤害：20<br>射程：7<br>攻击速度：1.25</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/guides/karax/khaydarinmonolith.jpg" alt="Khaydarin Monolith"></td>
-                <td>Khaydarin Monolith</td>
-                <td>HP: 100<br>Shield: 200<br>Damage: 100<br>Range: 13<br>Speed: 3</td>
+                <td><img src="/images/commanderdata/guides/karax/khaydarinmonolith.jpg" alt="凯达林巨石"></td>
+                <td>凯达林巨石</td>
+                <td>生命值：100<br>护盾：200<br>伤害：100<br>射程：13<br>攻击速度：3</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/guides/karax/shieldbattery.jpg" alt="Shield Battery"></td>
-                <td>Shield Battery</td>
-                <td>HP: 200<br>Shield: 200<br>Energy: 200<br>Range: 4<br>3 Shield/1 energy</td>
+                <td><img src="/images/commanderdata/guides/karax/shieldbattery.jpg" alt="护盾充能器"></td>
+                <td>护盾充能器</td>
+                <td>生命值：200<br>护盾：200<br>能量：200<br>射程：4<br>每1点能量恢复3点护盾</td>
             </tr>
         </tbody>
     </table>
-    <p>One of the advantages of Karax is his ability to instantly warp in Pylons and static defense at a position. This allows for an unorthodox playstyle where you use Probes to push into enemy bases, while being backed up by the Spear of Adun.</p>
-    <p>This playstyle does require practice, but at high levels of play, can be very effective and a lot of fun, even though it may not be as effective as pushing with an army. When building up static defense at an area, it's important to first consider the reason for that defense. This will affect how many structures you build and how you lay them out.</p>
-    <p>For standard pushes into enemy bases, it is often best just to build a Pylon and a few Photon Cannons so that you can clear the enemies guarding it. After all, these defenses will not be used after the base has been cleared.</p>
-    <p>However, if you intend to building defenses to defend against attack waves, then more knowledge of Attack Wave timings and compositions is required. The below gives you an example of how to set up a defensive area with Karax:</p>
-    <img src="/images/commanderdata/guides/karax/staticdefense.jpg" alt="Static Defense">
-    <p>There are a few things to note here:</p>
+    <p>凯拉克斯的一项优势是能在指定位置瞬间折跃水晶塔和防御建筑。这让他可以采用一种非常规玩法：派探机向敌方基地推进，同时利用亚顿之矛提供支援。</p>
+    <p>这种玩法确实需要练习，但在高水平操作下既有效又有趣，尽管它可能不如用部队推进。当你在某一区域建立防御阵地时，首先应考虑这些防御的用途，因为这会影响建筑的数量和布局。</p>
+    <p>常规推进敌方基地时，通常只需建造一座水晶塔和几座光子炮，清除守卫基地的敌人即可。毕竟基地清理完毕后，这些防御建筑便不会再发挥作用。</p>
+    <p>不过，如果你打算用防御建筑抵挡进攻波，就需要进一步了解进攻波的时间和组成。以下是凯拉克斯防御阵地的一种布置示例：</p>
+    <img src="/images/commanderdata/guides/karax/staticdefense.jpg" alt="防御阵地">
+    <p>这里有几点需要注意：</p>
     <ul>
-        <li>Notice the Shield Batteries are placed <i>in front</i> of the Photon Cannons. This will force enemy units to move around the Shield Battery to destroy the Cannons once they get targeted.</li>
-        <li>The types of structures you will build will solely depend on the enemies you are trying to defend against:
+        <li>注意护盾充能器放在光子炮的<i>前方</i>。敌方单位开始攻击后，必须绕过护盾充能器才能摧毁光子炮。</li>
+        <li>建筑类型完全取决于需要防御的敌人：
             <ul>
-                <li>Khaydarin Monoliths for dealing with high-HP targets.</li>
-                <li>Photon Cannons for all else.</li>
+                <li>用凯达林巨石对付高生命值目标。</li>
+                <li>用光子炮对付其他目标。</li>
             </ul>
-        You will need to vary the number and type of structures you build accordingly to ensure that the defense holds.
+        你需要相应调整建筑的数量和类型，确保防线能够坚守。
         </li>
-        <li>The Energizer in the middle is placed into Phasing mode, reducing its aggro index, making it less likely to be targeted by enemies.</li>
-        <li>The spaces in between the structures on the frontline (Shield Batteries and Photon Cannons) is minimal to prevent enemy units from getting a wrap-around, reducing their effectiveness.</li>
+        <li>中央的激励者已切换至相位模式，这会降低其仇恨值，使其不易被敌人选为目标。</li>
+        <li>前排建筑（护盾充能器和光子炮）之间的间隙尽可能小，以防敌方单位绕至侧后方，削弱防线效果。</li>
     </ul>
-    <p>Karax has upgrades that can improve his static defense. The upgrades are listed below:</p>
+    <p>凯拉克斯拥有以下可强化防御建筑的升级：</p>
     <table class="unitUpgrades">
         <thead>
             <tr>
-                <th>Upgrade</th>
-                <th>Name</th>
-                <th>Effect</th>
-                <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                <th>Research Time</th>
+                <th>升级</th>
+                <th>名称</th>
+                <th>效果</th>
+                <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                <th>研究时间</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/unitupgrades/karax/rapidrecharging.png" alt="Rapid Recharging"></td>
-                <td>Rapid Recharging</td>
-                <td>Increases the energy regeneration rate of Energizers and Shield Batteries by 200%.</td>
+                <td><img src="/images/commanderdata/unitupgrades/karax/rapidrecharging.png" alt="快速充能"></td>
+                <td>快速充能</td>
+                <td>激励者和护盾充能器的能量恢复速度提高200%。</td>
                 <td>100/100</td>
-                <td>90 seconds</td>
+                <td>90秒</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/unitupgrades/karax/enhancedtargeting.png" alt="Enhanced Targeting"></td>
-                <td>Enhanced Targeting</td>
-                <td>Photon Cannons, Khaydarin Monoliths, and Shield Batteries gain +2 range.</td>
+                <td><img src="/images/commanderdata/unitupgrades/karax/enhancedtargeting.png" alt="强化瞄准"></td>
+                <td>强化瞄准</td>
+                <td>光子炮、凯达林巨石和护盾充能器的射程提高2。</td>
                 <td>100/100</td>
-                <td>120 seconds</td>
+                <td>120秒</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/unitupgrades/karax/optimizedordnance.png" alt="Optimized Ordnance"></td>
-                <td>Optimized Ordnance</td>
-                <td>Increases the attack speed of Photon Cannons and Khaydarin Monoliths by 25%.</td>
+                <td><img src="/images/commanderdata/unitupgrades/karax/optimizedordnance.png" alt="优化弹药"></td>
+                <td>优化弹药</td>
+                <td>光子炮和凯达林巨石的攻击速度提高25%。</td>
                 <td>100/100</td>
-                <td>120 seconds</td>
+                <td>120秒</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/unitupgrades/karax/fortificationbarrier.png" alt="Fortification Barrier"></td>
-                <td>Fortification Barrier</td>
-                <td>Allows Shield Batteries to grant target structures a barrier that absorbs up to 100 damage for 10 seconds.</td>
+                <td><img src="/images/commanderdata/unitupgrades/karax/fortificationbarrier.png" alt="强化屏障"></td>
+                <td>强化屏障</td>
+                <td>使护盾充能器能够为目标建筑提供一道屏障，在10秒内最多吸收100点伤害。</td>
                 <td>100/100</td>
-                <td>60 seconds</td>
+                <td>60秒</td>
             </tr>
         </tbody>
     </table>
-    <p>In addition to these upgrades, his static defenses are affected by Protoss Shield upgrades. They are not affected by armor or attack upgrades, however.</p>
-    <p>Static Defense should be backed up by Spear of Adun abilities. For example, the Spear of Adun should be used to weaken enemy forces, reducing the losses on Static Defense. Karax has a number of upgrades that can improve the performance of the Spear of Adun.</p>
+    <p>除上述升级外，他的防御建筑也会受到星灵护盾升级的加成，但不会受到护甲或攻击升级的影响。</p>
+    <p>防御建筑应配合亚顿之矛技能使用。例如，可先用亚顿之矛削弱敌军，以减少防御建筑的损失。凯拉克斯拥有多项可以强化亚顿之矛的升级。</p>
     <table class="unitUpgrades">
         <thead>
             <tr>
-                <th>Upgrade</th>
-                <th>Name</th>
-                <th>Effect</th>
-                <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                <th>Research Time</th>
+                <th>升级</th>
+                <th>名称</th>
+                <th>效果</th>
+                <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                <th>研究时间</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="/images/commanderdata/unitupgrades/karax/advancedrepairsystems.png" alt="Advanced Repair Systems"></td>
-                <td>Advanced Repair Systems</td>
-                <td>Allows the Spear of Adun's Reconstruction Beam to affect additional targets, for a total of up to 5.</td>
+                <td><img src="/images/commanderdata/unitupgrades/karax/advancedrepairsystems.png" alt="高级修复系统"></td>
+                <td>高级修复系统</td>
+                <td>使亚顿之矛的重构光束可以作用于更多目标，最多同时作用于5个目标。</td>
                 <td>150/150</td>
-                <td>90 seconds</td>
+                <td>90秒</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/unitupgrades/karax/phasedetonation.png" alt="Phase Detonation"></td>
-                <td>Phase Detonation</td>
-                <td>The Spear of Adun's Orbital Strike stuns enemy units in the target area for 1.5 seconds.</td>
+                <td><img src="/images/commanderdata/unitupgrades/karax/phasedetonation.png" alt="相位爆破"></td>
+                <td>相位爆破</td>
+                <td>亚顿之矛的轨道轰炸会使目标区域内的敌方单位昏迷1.5秒。</td>
                 <td>150/150</td>
-                <td>120 seconds</td>
+                <td>120秒</td>
             </tr>
             <tr>
-                <td><img src="/images/commanderdata/unitupgrades/karax/solarflare.png" alt="Solar Flare"></td>
-                <td>Solar Flare</td>
-                <td>The Spear of Adun's Solar Lance sets fire to the ground along its path, dealing 600 extra damage over 20 seconds.</td>
+                <td><img src="/images/commanderdata/unitupgrades/karax/solarflare.png" alt="太阳耀斑"></td>
+                <td>太阳耀斑</td>
+                <td>亚顿之矛的太阳能长枪会点燃沿途地面，在20秒内额外造成600点伤害。</td>
                 <td>150/150</td>
-                <td>120 seconds</td>
+                <td>120秒</td>
             </tr>
         </tbody>
     </table>
-    <h3>Solar Efficiency Levels</h3>
-    <p>The table below summarizes the different Solar Efficiency levels available to Karax. Note that the base energy regeneration is roughly 16 energy/minute.</p>
+    <h3>太阳能效率等级</h3>
+    <p>下表汇总了凯拉克斯可用的各级太阳能效率。请注意，基础能量恢复速度约为16点能量/分钟。</p>
     <div class="tableContainer">
         <table>
             <thead>
                 <tr>
-                    <th>Level</th>
-                    <th>Requirements</th>
-                    <th>Bonus Energy</th>
-                    <th>Total Energy Gain</th>
-                    <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="Minerals">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="Gas"></th>
-                    <th>Research Time</th>
+                    <th>等级</th>
+                    <th>需求</th>
+                    <th>额外能量</th>
+                    <th>总能量恢复</th>
+                    <th><img src="/images/commanderdata/unitupgrades/iconmineral.png" alt="晶体矿">/<img src="/images/commanderdata/unitupgrades/icongas_protoss.png" alt="高能瓦斯"></th>
+                    <th>研究时间</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>1</td>
                     <td></td>
-                    <td>1 energy/6 seconds</td>
-                    <td>26 energy/minute</td>
+                    <td>1点能量/6秒</td>
+                    <td>26点能量/分钟</td>
                     <td>100/100</td>
-                    <td>90 seconds</td>
+                    <td>90秒</td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>Twilight Council</td>
-                    <td>3 energy/6 seconds</td>
-                    <td>46 energy/minute</td>
+                    <td>暮光议会</td>
+                    <td>3点能量/6秒</td>
+                    <td>46点能量/分钟</td>
                     <td>150/150</td>
-                    <td>120 seconds</td>
+                    <td>120秒</td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>Fleet Beacon/Robotics Bay</td>
-                    <td>6 energy/6 seconds</td>
-                    <td>76 energy/minute</td>
+                    <td>舰队航标/机械研究所</td>
+                    <td>6点能量/6秒</td>
+                    <td>76点能量/分钟</td>
                     <td>200/200</td>
-                    <td>180 seconds</td>
+                    <td>180秒</td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <h3 id="fastexpand">Fast Expanding</h3>
-    <p>On certain maps with a small number of enemies and structures blocking expansions, Karax can fast expand. These fast expand techniques are difficult as most of the time, Solar Lance will be shot into the dark and therefore will require a lot of practice.</p>
-    <p>Below are pictures that show how to fast-expand on maps. These require a lot of practice to pull off, but can put you ahead economically.</p>
+    <h3 id="fastexpand">快速开矿</h3>
+    <p>在某些只有少量敌人和建筑阻挡分矿的地图上，凯拉克斯可以快速开矿。这些技巧难度较高，因为大多数时候需要向战争迷雾中发射太阳能长枪，因此需要大量练习。</p>
+    <p>以下图片展示了各地图的快速开矿方法。这些操作需要大量练习才能掌握，但可以让你在经济上取得领先。</p>
     <table id="fastExpoTable">
         <thead>
             <tr>
-                <th>Map</th>
-                <th>Player 1 Expansion</th>
-                <th>Player 2 Expansion</th>
+                <th>地图</th>
+                <th>玩家1分矿</th>
+                <th>玩家2分矿</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><a href="/missions/chainofascension">Chain of Ascension</a><br /><br />
+                <td><a href="/missions/chainofascension">飞升之链</a><br /><br />
                     <form action='#'>
-                        <label><input type='radio' name='coa' value='protoss' checked>Protoss</label><br>
-                        <label><input type='radio' name='coa' value='terran'>Terran</label><br>
-                        <label><input type='radio' name='coa' value='zerg'>Zerg</label><br></form>
+                        <label><input type='radio' name='coa' value='protoss' checked>星灵</label><br>
+                        <label><input type='radio' name='coa' value='terran'>人类</label><br>
+                        <label><input type='radio' name='coa' value='zerg'>异虫</label><br></form>
                     <script>
                         var imgList=[];
                         imgList.push('/images/commanderdata/guides/karax/fastexpand_coa_protoss_1.jpg');
@@ -1321,27 +1321,27 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                         })
                     </script>
                 </td>
-                <td><div class="fastExpand" id="coa1div"><img id="coa1" src="/images/commanderdata/guides/karax/fastexpand_coa_protoss_1.jpg" alt="Player 1 Fast Expand on Chain of Ascension"></div></td>
-                <td><div class="fastExpand" id="coa2div"><img id="coa2" src="/images/commanderdata/guides/karax/fastexpand_coa_protoss_2.jpg" alt="Player 2 Fast Expand on Chain of Ascension"></div></td>
+                <td><div class="fastExpand" id="coa1div"><img id="coa1" src="/images/commanderdata/guides/karax/fastexpand_coa_protoss_1.jpg" alt="飞升之链玩家1快速开矿"></div></td>
+                <td><div class="fastExpand" id="coa2div"><img id="coa2" src="/images/commanderdata/guides/karax/fastexpand_coa_protoss_2.jpg" alt="飞升之链玩家2快速开矿"></div></td>
             </tr>
             <tr>
-                <td><a href="/missions/cradleofdeath">Cradle of Death</a></td>
-                <td class="centered" colspan="2">Run both trucks straight past the forward construct towards the two Beacon Constructs. Use Orbital Strikes to kill the Beacon Constructs and trigger the first objective explosion. This will clear the expansion and the forward construct as well.</td>
+                <td><a href="/missions/cradleofdeath">死亡摇篮</a></td>
+                <td class="centered" colspan="2">让两辆卡车径直绕过前方构造体，驶向两座信标构造体。使用轨道轰炸摧毁信标构造体并触发第一个任务目标的爆炸，这会同时清理分矿和前方构造体。</td>
             </tr>
             <tr>
-                <td><a href="/missions/deadofnight">Dead of Night</a></td>
-                <td class="centered" colspan="2">No contested expansion</td>
+                <td><a href="/missions/deadofnight">亡者之夜</a></td>
+                <td class="centered" colspan="2">分矿无敌人驻守</td>
             </tr>
             <tr>
-                <td><a href="/missions/lockload">Lock &amp; Load</a></td>
-                <td class="centered" colspan="2">No contested expansion</td>
+                <td><a href="/missions/lockload">天锁</a></td>
+                <td class="centered" colspan="2">分矿无敌人驻守</td>
             </tr>
             <tr>
-                <td><a href="/missions/malwarfare">Malwarfare</a><br /><br />
+                <td><a href="/missions/malwarfare">恶意代码</a><br /><br />
                     <form action='#'>
-                        <label><input type='radio' name='mw' value='protoss' checked>Protoss</label><br>
-                        <label><input type='radio' name='mw' value='terran'>Terran</label><br>
-                        <label><input type='radio' name='mw' value='zerg'>Zerg</label><br></form>
+                        <label><input type='radio' name='mw' value='protoss' checked>星灵</label><br>
+                        <label><input type='radio' name='mw' value='terran'>人类</label><br>
+                        <label><input type='radio' name='mw' value='zerg'>异虫</label><br></form>
                     <script>
                         var imgList=[];
                         imgList.push('/images/commanderdata/guides/karax/fastexpand_mw_protoss_1.jpg');
@@ -1377,27 +1377,27 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                         })
                     </script>
                 </td>
-                <td><div class="fastExpand" id="mw1div"><img id="mw1" src="/images/commanderdata/guides/karax/fastexpand_mw_protoss_1.jpg" alt="Player 1 Fast Expand on Malwarfare"></div></td>
-                <td><div class="fastExpand" id="mw2div"><img id="mw2" src="/images/commanderdata/guides/karax/fastexpand_mw_protoss_2.jpg" alt="Player 2 Fast Expand on Malwarfare"></div></td>
+                <td><div class="fastExpand" id="mw1div"><img id="mw1" src="/images/commanderdata/guides/karax/fastexpand_mw_protoss_1.jpg" alt="恶意代码玩家1快速开矿"></div></td>
+                <td><div class="fastExpand" id="mw2div"><img id="mw2" src="/images/commanderdata/guides/karax/fastexpand_mw_protoss_2.jpg" alt="恶意代码玩家2快速开矿"></div></td>
             </tr>
             <tr>
-                <td><a href="/missions/minerevacuation">Miner Evacuation</a></td>
-                <td class="centered" colspan="2">No simple fast expand exists. It is best to cannon-rush the expansion if you wish to take an early expansion.</td>
+                <td><a href="/missions/minerevacuation">疏散矿工</a></td>
+                <td class="centered" colspan="2">没有简单的快速开矿方法。如果想尽早开出分矿，最好用光子炮推进并清理分矿。</td>
             </tr>
             <tr>
-                <td><a href="/missions/mistopportunities">Mist Opportunities</a></td>
-                <td class="centered" colspan="2">No contested expansion</td>
+                <td><a href="/missions/mistopportunities">机会渺茫</a></td>
+                <td class="centered" colspan="2">分矿无敌人驻守</td>
             </tr>
             <tr>
-                <td><a href="/missions/oblivionexpress">Oblivion Express</a></td>
-                <td class="centered" colspan="2">No contested expansion</td>
+                <td><a href="/missions/oblivionexpress">湮灭快车</a></td>
+                <td class="centered" colspan="2">分矿无敌人驻守</td>
             </tr>
             <tr>
-                <td><a href="/missions/partparcel">Part &amp; Parcel</a><br /><br />
+                <td><a href="/missions/partparcel">聚铁成兵</a><br /><br />
                     <form action='#'>
-                        <label><input type='radio' name='pp' value='protoss' checked>Protoss</label><br>
-                        <label><input type='radio' name='pp' value='terran'>Terran</label><br>
-                        <label><input type='radio' name='pp' value='zerg'>Zerg</label><br></form>
+                        <label><input type='radio' name='pp' value='protoss' checked>星灵</label><br>
+                        <label><input type='radio' name='pp' value='terran'>人类</label><br>
+                        <label><input type='radio' name='pp' value='zerg'>异虫</label><br></form>
                     <script>
                         var imgList=[];
                         imgList.push('/images/commanderdata/guides/karax/fastexpand_pp_protoss.jpg');
@@ -1420,55 +1420,53 @@ if (document.location.host === 'dev.starcraft2coop.com') {
                         })
                     </script>
                 </td>
-                <td colspan="2"><div class="fastExpand" id="pp1div"><img id="pp1" src="/images/commanderdata/guides/karax/fastexpand_pp_protoss.jpg" alt="Fast Expand on Part & Parcel"></div></td>
+                <td colspan="2"><div class="fastExpand" id="pp1div"><img id="pp1" src="/images/commanderdata/guides/karax/fastexpand_pp_protoss.jpg" alt="聚铁成兵快速开矿"></div></td>
             </tr>
             <tr>
-                <td><a href="/missions/riftstokorhal">Rifts to Korhal</a></td>
-                <td class="centered" colspan="2">No contested expansion</td>
+                <td><a href="/missions/riftstokorhal">克哈裂痕</a></td>
+                <td class="centered" colspan="2">分矿无敌人驻守</td>
             </tr>
             <tr>
-                <td><a href="/missions/scytheofamon">Scythe of Amon</a></td>
-                <td class="centered" colspan="2">No simple fast expand exists. It is best to cannon-rush the expansion if you wish to take an early expansion. Make sure to use Solar Lances to clear the Void Rift before you start building Cannons.</td>
+                <td><a href="/missions/scytheofamon">埃蒙之镰</a></td>
+                <td class="centered" colspan="2">没有简单的快速开矿方法。如果想尽早开出分矿，最好用光子炮推进并清理分矿。开始建造光子炮前，务必先用太阳能长枪摧毁虚空裂隙。</td>
             </tr>
             <tr>
-                <td><a href="/missions/templeofthepast">Temple of the Past</a></td>
-                <td class="centered" colspan="2">No contested expansion</td>
+                <td><a href="/missions/templeofthepast">往日神庙</a></td>
+                <td class="centered" colspan="2">分矿无敌人驻守</td>
             </tr>
             <tr>
-                <td><a href="/missions/thevermillionproblem">The Vermillion Problem</a></td>
-                <td class="centered" colspan="2">No simple fast expand exists. It is best to cannon-rush the expansion if you wish to take an early expansion.</td>
+                <td><a href="/missions/thevermillionproblem">熔火危机</a></td>
+                <td class="centered" colspan="2">没有简单的快速开矿方法。如果想尽早开出分矿，最好用光子炮推进并清理分矿。</td>
             </tr>
             <tr>
-                <td><a href="/missions/voidlaunch">Void Launch</a></td>
-                <td class="centered" colspan="2">No contested expansion</td>
+                <td><a href="/missions/voidlaunch">虚空降临</a></td>
+                <td class="centered" colspan="2">分矿无敌人驻守</td>
             </tr>
             <tr>
-                <td><a href="/missions/voidthrashing">Void Thrashing</a></td>
-                <td class="centered" colspan="2">No contested expansion</td>
+                <td><a href="/missions/voidthrashing">虚空撕裂</a></td>
+                <td class="centered" colspan="2">分矿无敌人驻守</td>
             </tr>
         </tbody>
     </table>
-    <h3>Playstyle Tips</h3>
+    <h3>玩法技巧</h3>
     <ul>
-        <li>Provide your ally with a 5-to-10 second notification before you use Chrono Wave. It is a powerful ability that can get you ahead in the game and solidify a victory.</li>
-        <li>At the start of the game, clear your expansion with the starting Spear of Adun energy, whether or not it is contested.</li>
-        <li>Energizers draw a lot of natural aggro. Put them into Phasing mode when making long pushes to reduce their chance of being attacked.</li>
-        <li>Chronoboosting the Solar Forge does not increase the Spear of Adun's Energy regeneration rate.</li>
-        <li>Solar Efficiency 1 is a must-get upgrade. Solar Efficiency 2 should be obtained if you require some support from the Spear of Adun. Solar Efficiency 3 should be obtained in very niche circumstances.</li>
-        <li>Hold Shift when Orbital Strike is selected and press any key <a href="/guides/generaltips">bound to Rapidfire</a> to fire Orbital Strikes without delay in between shots.</li>
+        <li>使用时空波前提前5至10秒通知盟友。这项强力技能可以帮助你们在游戏中取得领先并奠定胜局。</li>
+        <li>游戏开始时，无论分矿是否有敌人驻守，都应使用初始的亚顿之矛能量清理分矿。</li>
+        <li>激励者很容易吸引敌人的仇恨。长距离推进时将其切换至相位模式，以降低被攻击的概率。</li>
+        <li>对太阳能锻炉使用时空提速不会提高亚顿之矛的能量恢复速度。</li>
+        <li>太阳能效率等级1是必升项目。如果需要亚顿之矛提供一定支援，应研究太阳能效率等级2；只有在非常特殊的情况下才应研究等级3。</li>
+        <li>选中轨道轰炸后按住Shift，再按下任意<a href="/guides/generaltips">绑定了快速施法</a>的按键，即可连续发射轨道轰炸，射击之间不会有延迟。</li>
     </ul>
-    <h2 id="videos">Video Guides</h2>
-    <p>The below videos demonstrate the various fast expands explained earlier. These fast expands are much more difficult to pull off, because you will be shooting your Solar Lances into the fog of war and will require a lot of practice.</p>
+    <h2 id="videos">视频指南</h2>
+    <p>以下视频演示了前文介绍的各种快速开矿方法。由于需要向战争迷雾中发射太阳能长枪，这些快速开矿操作难度很高，需要大量练习。</p>
     <iframe width="950" height="535" src="https://www.youtube.com/embed/videoseries?list=PL-U97hco2Fu6-eOs3pg4Bvvn27uuvClBW" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<script src="/scripts/nav.js?v=fd4985"></script>
+<script src="/scripts/nav.js"></script>
 </div>
 
 <div id="footer">
-    <p>Note: All data generated on this site is based on Brutal difficulty. Timings, compositions and other elements may differ on easier difficulty levels.</p>
-    <p>CC-BY-NC-SA-4.0. Originally written by Aommaster. This is a fansite not affiliated with StarCraft 2 or Blizzard Entertainment, Inc.</p>
+    <p>注意：本站生成的所有数据均以“残酷”难度为准；在较低难度下，时间、阵容及其他要素可能有所不同。</p>
+    <p>非官方简体中文翻译站，仅供学习与非商业使用。本站无广告，也不收集用户数据。采用 CC BY-NC-SA 4.0 许可。原作者：Aommaster。本站为粉丝站点，与 StarCraft II 或 Blizzard Entertainment 无隶属关系。</p>
 </div>
 
 </body>
 </html>
-
-    

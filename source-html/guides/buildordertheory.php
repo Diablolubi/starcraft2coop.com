@@ -5,9 +5,9 @@
 require_once __DIR__ . "/../../includes/wrapper.php";
 ?>
 <?= startHead() ?>
-  <title>Starcraft 2 Co-op - Build Order Theory</title>
-  <meta name="description" content="Learn how to make your own Co-op build orders and adapt your build to face challenges like mutators and weekly mutations.">
-  <meta name="keywords" content="Starcraft co-op guides build order theory">
+  <title>StarCraft II 合作任务——建造顺序理论</title>
+  <meta name="description" content="学习如何制定自己的合作任务建造顺序，并调整流程以应对突变因子和每周突变等挑战。">
+  <meta name="keywords" content="星际争霸合作任务指南建造顺序理论">
   <link rel="canonical" href="https://starcraft2coop.com/guides/buildordertheory">
   <style>
         .centered{
@@ -35,381 +35,381 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         }
   </style>
   <?= startContent() ?>
-    <h1>Build Order Theory: How to Develop Your Own Build Orders</h1>
+    <h1>建造顺序理论：如何制定自己的建造顺序</h1>
     <?php include("../../includes/reporterror.php");?>
     <div id="links">
-        <h2>Sections on this Page</h2>
-        <p><a href="#what">What is a Build Order</a></p>
-        <p><a href="#spending">Spending Resources</a></p>
-        <p><a href="#coreConcept">Core Concept: Making Workers</a></p>
-        <p><a href="#concept1">Concept #1: Using Calldowns</a></p>
-        <p><a href="#concept2">Concept #2: When to Take Gas</a></p>
-        <p><a href="#concept3">Concept #3: Primary Structure Placement</a></p>
-        <p><a href="#concept4">Concept #4: Combat Units</a></p>
-        <p><a href="#concept5">Concept #5: Static Defenses</a></p>
-        <p><a href="#theory">Theory: Mining Rates</a></p>
-        <p><a href="#break1">Breaking Concept #3</a></p>
-        <p><a href="#break2">Breaking the Core Concept</a></p>
-        <p><a href="#testing">Testing Build Orders</a></p>
-        <p><a href="#constructing">Constructing Build Orders</a></p>
-        <p><a href="#closing">Closing Notes</a></p>
+        <h2>本页章节</h2>
+        <p><a href="#what">什么是建造顺序</a></p>
+        <p><a href="#spending">资源分配</a></p>
+        <p><a href="#coreConcept">核心概念：生产工人</a></p>
+        <p><a href="#concept1">概念 #1：使用面板技能</a></p>
+        <p><a href="#concept2">概念 #2：何时采气</a></p>
+        <p><a href="#concept3">概念 #3：主基地建筑的位置</a></p>
+        <p><a href="#concept4">概念 #4：作战单位</a></p>
+        <p><a href="#concept5">概念 #5：静态防御</a></p>
+        <p><a href="#theory">理论：采集速率</a></p>
+        <p><a href="#break1">打破概念 #3</a></p>
+        <p><a href="#break2">打破核心概念</a></p>
+        <p><a href="#testing">测试建造顺序</a></p>
+        <p><a href="#constructing">制定建造顺序</a></p>
+        <p><a href="#closing">结语</a></p>
     </div>
-    <h2 id="what">What is a Build Order</h2>
-    <p>Before you start to develop your own build order, it is first important to understand what a build order is and what its purpose is. A build order provides a player with a set of actions that they should follow at the start of the game. These actions will include things like when to make a worker, or when to put down a building.</p>
-    <p>The reasoning behind this is that games all start with the same state. Therefore, there is a theoretical set of actions that can be taken such that a particular state of the player's situation is highly optimized. For example, a player can follow an economy-focused build order, and after a certain amount of time, they would have maximized their economic potential, far more than a player not following the build order.</p>
-    <p>Build orders are extremely precise. They require very particular timings and repetition for practice. Players with excellent macro abilities can benefit a lot from build orders. This is because they float very minimal quantities of resources and play efficiently. For example, Speedrunners can benefit greatly from a good build order due to the repetitive requirement of their gameplay.</p>
-    <p>However, build order theory can benefit a large number of players interested in learning the intricate details of the game who want to improve their gameplay. Knowing how build orders are generated can allow players to adapt to new situations that may arise in a game. For example, when facing particular <a href="/resources/mutators">Mutators</a>, knowledge of build order theory can come in handy.</p>
-    <p>Below is an example of a build order. This one is for Nova's opening:</p>
+    <h2 id="what">什么是建造顺序</h2>
+    <p>开始制定自己的建造顺序之前，首先要理解什么是建造顺序，以及它有什么用途。建造顺序为玩家提供一套游戏开局时应当依次执行的操作，例如何时生产工人、何时建造建筑。</p>
+    <p>其原理在于，每局游戏都从相同的状态开始。因此理论上存在一套操作，可以高度优化玩家在某一时刻所处的局面。例如，玩家遵循一套经济型建造顺序，一段时间后便能最大限度地发挥经济潜力，远超没有遵循该顺序的玩家。</p>
+    <p>建造顺序非常精确，需要严格把握时间点，并通过反复练习来熟悉。宏观运营出色的玩家能从中受益良多，因为他们几乎不囤积资源，游戏效率很高。例如，速通玩家的流程需要不断重复，因此优秀的建造顺序尤其有用。</p>
+    <p>不过，建造顺序理论也能帮助许多希望钻研游戏细节、提升水平的玩家。了解建造顺序的制定方法，可以让玩家适应游戏中出现的新情况。例如，面对特定<a href="/resources/mutators">突变因子</a>时，相关理论就会派上用场。</p>
+    <p>下面是一套建造顺序示例，这是诺娃的开局：</p>
     <p class="buildOrder">
-        14 Refinery<br>
-        15 Refinery<br>
-        18 Commander Center<br>
-        19 Barracks<br>
-        22 Marines -> Gas -> Main<br>
+        14 精炼厂<br>
+        15 精炼厂<br>
+        18 指挥中心<br>
+        19 兵营<br>
+        22 陆战队员 -> 气矿石 -> 主矿石<br>
     </p>
-    <p>The numbers on the left show the supply a particular action is taken at. It is assumed that any unaccounted supply goes into making workers. So, in this scenario, the player would continue making workers until they are at 14 supply. Then they would spend 100 minerals on making an Automated Refinery, etc. On the last line, says at 22 supply, drop marines and use them to break the gas rocks first, before breaking the main rocks.</p>
-    <p>All build orders follow a similar format. Some may use the more condensed arrow notation, some may be more wordy. However, they all convey the same thing: a set of actions a player should take to optimize their early game.</p>
-    <p>There are certain limitations to build orders in Co-op. For one, Missions can have varying degrees of how contested an expansion is. For example, expanding on <a href="/missions/malwarfare">Malwarfare</a> is significantly easier than expanding on <a href="/missions/cradleofdeath">Cradle of Death</a>. You will need a signficantly larger army to expand on the latter, which means your build order will have to be different. Listing build orders for every possible scenario is extremely difficult.</p>
-    <p>What this guide aims to do is give players a rough framework on how to come up with a build order on the spot that addresses their particular needs by providing them with information on how to manage their economy.</p>
-    <p>Note that all builds were done on <a href="/missions/oblivionexpress">Oblivion Express</a>, so timings to move the workers to the expansion may vary depending on the mission.</p>
-    <h2 id="spending">Spending Resources</h2>
-    <p>In Starcraft II, you can spend resources across three different channels. These are:</p>
+    <p>左侧数字表示执行相应操作时的人口数。未特别说明的人口默认用于生产工人。因此在这个例子中，玩家会持续生产工人直到 14 人口，再花费 100 晶体矿建造自动精炼厂，依此类推。最后一行表示在 22 人口时空投陆战队员，先用他们摧毁气矿石，再摧毁主矿石。</p>
+    <p>所有建造顺序的格式都大同小异。有些会采用更精简的箭头记法，有些则会写得更详细，但表达的内容相同：玩家应当执行一系列操作，以优化前期流程。</p>
+    <p>合作任务中的建造顺序存在一定局限。不同任务中，分矿受到敌人把守的程度各不相同。例如，在<a href="/missions/malwarfare">恶意代码</a>中开分矿，远比在<a href="/missions/cradleofdeath">死亡摇篮</a>中容易；后者需要规模大得多的部队，因此建造顺序也必须有所不同。要为每种可能的情况分别列出建造顺序极其困难。</p>
+    <p>本指南旨在介绍经济管理方法，为玩家提供一个大致框架，帮助大家根据具体需求临场制定建造顺序。</p>
+    <p>请注意，所有流程均在<a href="/missions/oblivionexpress">湮灭快车</a>上测试，因此把工人派往分矿的时间点可能会因任务而异。</p>
+    <h2 id="spending">资源分配</h2>
+    <p>在《星际争霸 II》中，资源可以投入三个不同方面：</p>
     <ul>
-        <li>Economy: These are units/structures that further contribute to the enhancement of your economy. These include:
+        <li>经济：进一步提升经济的单位或建筑，包括：
             <ul>
-                <li>Primary Structures (Nexus, Command Center, Hatchery)</li>
-                <li>Vespene Collection Structures (Assimilator, Refinery, Extractor)</li>
-                <li>Workers (Probes, SCVs, Drones)</li>
-                <li>Supply Structures/Units (Pylon, Supply Depot, Overlord)</li>
-                <li>Queens</li>
+                <li>主基地建筑（星灵枢纽、指挥中心、孵化场）</li>
+                <li>瓦斯采集建筑（吸纳舱、精炼厂、萃取房）</li>
+                <li>工人（探机、太空工程车、工蜂）</li>
+                <li>人口建筑或单位（水晶塔、补给站、王虫）</li>
+                <li>虫后</li>
             </ul>
         </li>
-        <li>Tech: These are upgrades/structures that progress your in-game technology level. These include:
+        <li>科技：推进游戏内科技水平的升级或建筑，包括：
             <ul>
-                <li>Combat unit-producing structures (e.g. Gateways, Barracks)</li>
-                <li>Research structures (e.g. Forge, Engineering Bay, Evolution Chamber)</li>
-                <li>Attack/Armor/Shield/Unit-specific Upgrades</li>
+                <li>生产作战单位的建筑（如传送门、兵营）</li>
+                <li>研究建筑（如锻炉、工程站、进化腔）</li>
+                <li>攻击、护甲、护盾及单位专属升级</li>
             </ul>
         </li>
-        <li>Army Units: These are units that will engage in combat.</li>
+        <li>作战单位：直接参与战斗的单位。</li>
     </ul>
-    <p>The goal of a build order is to optimize the spending across these three categories such that:</p>
+    <p>建造顺序的目标，是优化上述三类资源投入，从而确保：</p>
         <ol type="1">
-            <li>You do not lose to any early-game aggression in the form of attack waves.</li>
-            <li>You are able to comfortably complete the mission objectives.</li>
-            <li>You are in the best possible place economically at a certain point in the game.</li>
+            <li>不会被前期攻击波击败。</li>
+            <li>能够从容完成任务目标。</li>
+            <li>在游戏的某个时间点达到尽可能理想的经济状态。</li>
         </ol>
-    <h2 id="coreConcept">Core Concept: Making Workers</h2>
-    <p>Since workers improve your economy, it follows logically that you should be making workers consistently until you reach saturation across both your bases. In fact, this is the core concept behind most (if not all) build orders. By paying attention to your macro to ensure that all your primary structures are producing workers, you can improve your in-game economic state immensely.</p>
-    <p>However, making workers has a cost associated with it. Consistently making workers without doing anything else can cause two problems:</p>
+    <h2 id="coreConcept">核心概念：生产工人</h2>
+    <p>工人能提升经济，因此理所当然应当持续生产工人，直到两个基地都达到满负荷。事实上，这正是绝大多数（乃至所有）建造顺序的核心概念。做好宏观运营，确保所有主基地建筑都在生产工人，可以极大改善游戏中的经济状况。</p>
+    <p>但生产工人也需要花费资源。如果只顾持续生产工人而不做其他事情，会引发两个问题：</p>
     <ol type="1">
-        <li>It leaves you vulnerable to attack, especially when attack waves arrive early, like on <a href="/missions/riftstokorhal">Rifts to Korhal</a>.</li>
-        <li>It prevents you from Teching up, weakening your army, and potentially preventing you from expanding.</li>
+        <li>容易遭到攻击，尤其是在<a href="/missions/riftstokorhal">克哈裂痕</a>这类攻击波来得很早的任务中。</li>
+        <li>会妨碍科技发展，削弱部队，甚至可能使你无法开分矿。</li>
     </ol>
-    <p>Therefore, part of the resources you get need to be spend on Teching up, expanding and making an army. Usually, the resources you spend will be your "floating" resources. That is, resources that you do not need to maintain a single worker in production in your primary structure.</p>
-    <h2 id="concept1">Concept #1: Using Calldowns</h2>
-    <p>Calldowns are a unique aspect to Co-op. Calldowns can significantly impact a commander's build order. They can allow commanders to expand much quicker than normal, because most calldowns are free, and players are only sacrificing a cooldown charge for it.</p>
-    <p>A small note to make here is that players must ask whether using the calldown to fast-expand is worth it, given their in-game situation. Most of the time, the answer is "yes", but players will have to evaluate this for themselves given their situation (for example, custom <a href="/resources/mutators">Mutators</a>).</p>
-    <p>With that in mind, we can now come up with a reasonably decent Zeratul build. Note that this includes the Legion cost reduction mastery (the Legion will cost 540 minerals to summon), as outlined in the <a href="/commanders/zeratul">Zeratul</a> page.</p>
+    <p>因此，获得的部分资源需要投入科技、扩张和部队生产。通常应当使用的是“余钱”，也就是在主基地建筑中维持一个工人持续生产后剩余的资源。</p>
+    <h2 id="concept1">概念 #1：使用面板技能</h2>
+    <p>面板技能是合作任务的独特机制，能够显著影响指挥官的建造顺序。大多数面板技能不消耗资源，玩家只需付出一次冷却次数，因此可以借助它们更快地开分矿。</p>
+    <p>不过，玩家仍须根据当前局势判断，使用面板技能速开分矿是否值得。大多数时候答案是“值得”，但面对不同情况（例如自定义<a href="/resources/mutators">突变因子</a>）时，仍需自行权衡。</p>
+    <p>据此，我们可以制定一套相当不错的泽拉图流程。请注意，这套流程包含“召唤军团消耗降低”精通（召唤军团需要 540 晶体矿），详见<a href="/commanders/zeratul">泽拉图</a>页面。</p>
     <p class="buildOrder">
-        19 Probe -> Expo<br>
-        20 Zoraya Legion<br>
-        21 Nexus<br>
+        19 探机 -> 分矿<br>
+        20 佐拉亚军团<br>
+        21 星灵枢纽<br>
     </p>
     <p class="buildOrderExp">
-        Gets vision of the Expo<br>
-        Concept #1<br>
+        获得分矿视野<br>
+        概念 #1<br>
         <br>
     </p>
-    <h2 id="concept2">Concept #2: When to Take Gas</h2>
-    <p>As a general rule of thumb, whenever gasses are automated, it is better to take the gasses first using floating resources, before attempting to expand.</p>
-    <p>Additionally, you also want to ensure that your mineral line does not get over-saturated. More than the maximum number of workers on a mineral line means that you have workers that are doing nothing. It would be much better if they were collecting gas instead. Therefore, under certain conditions, gas collection structures need to be constructed so they can prevent oversaturation of the mineral line.</p>
-    <p>With that in mind, we can now come up with a reasonably decent Vorazun build. Note that this assumes at least 8 points into the Initial Spear of Adun Energy, to get Shadow Guard out as soon as it comes off cooldown.</p>
+    <h2 id="concept2">概念 #2：何时采气</h2>
+    <p>一般来说，只要瓦斯能够自动采集，就应先用余钱建造采气建筑，再尝试开分矿。</p>
+    <p>此外，还要避免晶体矿区过度饱和。工人数超过矿区上限，就会有人无事可做；让他们去采集瓦斯显然更好。因此在某些情况下，需要建造采气建筑来防止晶体矿区过度饱和。</p>
+    <p>据此，我们可以制定一套相当不错的沃拉尊流程。此流程假设“初始亚顿之矛能量”至少投入 8 点，以便暗影卫队冷却一结束就能立即使用。</p>
     <p class="buildOrder">
-        13 Dark Pylon<br>
-        15 Assimilator<br>
-        16 Assimilator<br>
-        18 Gateway<br>
-        19 Pylon<br>
-        22 Change Rally to Expansion<br>
-        23 Cybernetics Core<br>
-        27 Shadowguard -> Gas -> Main<br>
-        28 Twilight + Warp Gate<br>
-        29 Assimilators + Nexus
+        13 黑暗水晶塔<br>
+        15 吸纳舱<br>
+        16 吸纳舱<br>
+        18 传送门<br>
+        19 水晶塔<br>
+        22 将集结点改到分矿<br>
+        23 控制芯核<br>
+        27 暗影卫队 -> 气矿石 -> 主矿石<br>
+        28 暮光议会 + 折跃门<br>
+        29 吸纳舱 + 星灵枢纽
     </p>
     <p class="buildOrderExp">
-        Concept #1<br>
-        Concept #2<br>
-        Concept #2<br>
-        Core Concept<br>
-        Prevent Supply Block<br>
-        Main is Saturated<br>
-        Core Concept<br>
-        Concept #1/Concept #2<br>
-        Core Concept<br>
-        Concept #2
+        概念 #1<br>
+        概念 #2<br>
+        概念 #2<br>
+        核心概念<br>
+        防止卡人口<br>
+        主矿已饱和<br>
+        核心概念<br>
+        概念 #1/概念 #2<br>
+        核心概念<br>
+        概念 #2
     </p>
-    <h2 id="concept3">Concept #3: Primary Structure Placement</h2>
-    <p>Terrans have an advantage which allows them to move their structures after construction. This comes in handy for slower Terrans, as it allows them to pre-build their Command Centers near the expansion rocks. During this time, they can tech up, build up a small force of units, and use that force to clear the expansion rocks. In general, if you are playing Terran, it is always better to spend your first floating resources on a Supply Depot (to keep being able to produce workers), and then on a Command Center.</p>
-    <p>Protoss commanders are not as lucky. The Nexus is solely used for the production of workers, and constructing an additional Nexus, purely for the use of it's Chrono Boost is not recommended. A Protoss commander will have to clear their gas rocks before they put down their Nexus.</p>
-    <p>With that in mind, we can now come up with a reasonably decent Nova build.</p>
+    <h2 id="concept3">概念 #3：主基地建筑的位置</h2>
+    <p>人类拥有一项优势：建筑完工后可以移动。这对节奏较慢的人类指挥官非常实用，他们可以预先在分矿石附近建造指挥中心，同时发展科技、组建一支小部队，再用这支部队清理分矿石。通常来说，使用人类时最好把第一笔余钱花在补给站上（以便继续生产工人），随后再建造指挥中心。</p>
+    <p>星灵指挥官就没这么幸运了。星灵枢纽只用于生产工人，不建议仅仅为了使用时空提速而额外建造一个星灵枢纽。星灵指挥官必须先清理气矿石，才能在分矿放下星灵枢纽。</p>
+    <p>据此，我们可以制定一套相当不错的诺娃流程。</p>
     <p class="buildOrder">
-        14 Refinery<br>
-        15 Refinery<br>
-        18 SCV -> Expo<br>
-        19 Command Center<br>
-        20 Barracks<br>
-        24 Marines -> Gas -> Main
+        14 精炼厂<br>
+        15 精炼厂<br>
+        18 太空工程车 -> 分矿<br>
+        19 指挥中心<br>
+        20 兵营<br>
+        24 陆战队员 -> 气矿石 -> 主矿石
     </p>
     <p class="buildOrderExp">
-        Concept #2<br>
-        Concept #2<br>
-        Get SCV into position<br>
-        Concept #3<br>
+        概念 #2<br>
+        概念 #2<br>
+        让太空工程车提前就位<br>
+        概念 #3<br>
         <br>
-        Concept #2
+        概念 #2
     </p>
-    <h2 id="concept4">Concept #4: Combat Units</h2>
-    <p>As mentioned in the previous section, Protoss commanders do not have the luxury of pre-building their structures and relocating them. Therefore, they will have to resort to the use of their calldowns or army units. For commanders that do not have calldowns that can be used to clear the Expansion, getting army units out as fast as possible with floating resources is vital.</p>
-    <p>With that in mind, we can now come up with a reasonably decent Artanis build. Note that this includes all mastery points into the Chrono Boost mastery, as outlined in the <a href="/commanders/artanis">Artanis</a> page.</p>
+    <h2 id="concept4">概念 #4：作战单位</h2>
+    <p>如上一节所述，星灵指挥官无法预先建好建筑再将其移到别处，因此只能借助面板技能或作战单位。对于没有面板技能可用于清理分矿的指挥官来说，尽快用余钱生产作战单位至关重要。</p>
+    <p>据此，我们可以制定一套相当不错的阿塔尼斯流程。请注意，这套流程将全部精通点投入“时空提速”，详见<a href="/commanders/artanis">阿塔尼斯</a>页面。</p>
     <p class="buildOrder">
-        Project Power Field<br>
-        16 Gateway<br>
-        18 Pylon<br>
-        19 Assimilator<br>
-        20 Assimilator<br>
-        22 Zealot -> Expo<br>
-        Chrono Gateway<br>
-        Project Power Field -> Expo<br>
-        25 Zealot<br>
-        28 Zealot<br>
-        33 Nexus<br>
-        34 Cybernetics Core
+        投射能量场<br>
+        16 传送门<br>
+        18 水晶塔<br>
+        19 吸纳舱<br>
+        20 吸纳舱<br>
+        22 狂热者 -> 分矿<br>
+        时空提速传送门<br>
+        投射能量场 -> 分矿<br>
+        25 狂热者<br>
+        28 狂热者<br>
+        33 星灵枢纽<br>
+        34 控制芯核
     </p>
     <p class="buildOrderExp">
-        Project Power Field<br>
-        Concept #4<br>
-        Power requirement<br>
-        Concept #2<br>
-        Concept #2<br>
-        Concept #4<br>
-        Concept #4<br>
-        Concept #1<br>
-        Concept #4<br>
-        Concept #4<br>
+        投射能量场<br>
+        概念 #4<br>
+        能量场需求<br>
+        概念 #2<br>
+        概念 #2<br>
+        概念 #4<br>
+        概念 #4<br>
+        概念 #1<br>
+        概念 #4<br>
+        概念 #4<br>
         <br>
-        Core Concept
+        核心概念
     </p>
-    <h2 id="concept5">Concept #5: Static Defenses</h2>
-    <p>Static defense can be used to clear an expansion. Terran commanders should particularly consider this as an option, as static defenses can be salvaged. This means a player simply "locks up" some of their resources for a short amount of time before getting them back again. This is particularly useful for commanders that do not have high tech requirements, or those that require the expansion to prop up an expensive production.</p>
-    <p>With that in mind, we can now come up with a reasonably decent Tychus build.</p>
+    <h2 id="concept5">概念 #5：静态防御</h2>
+    <p>静态防御可以用来清理分矿。人类指挥官尤其应当考虑这一选择，因为静态防御可以回收。这相当于玩家仅在短时间内“占用”一部分资源，之后还能将其收回。对于科技需求不高，或必须依靠分矿来支撑昂贵生产的指挥官来说，这一点尤其有用。</p>
+    <p>据此，我们可以制定一套相当不错的泰凯斯流程。</p>
     <p class="buildOrder">
-        17 Command Center<br>
-        18 Refinery<br>
-        19 Refinery<br>
-        20 Engineering Bay<br>
-        22 2x Turrets -> Rocks
+        17 指挥中心<br>
+        18 精炼厂<br>
+        19 精炼厂<br>
+        20 工程站<br>
+        22 2 座自动炮台 -> 矿石
     </p>
     <p class="buildOrderExp">
-        Concept #3<br>
-        Concept #2<br>
-        Concept #2<br>
-        Concept #5<br>
-        Concept #5
+        概念 #3<br>
+        概念 #2<br>
+        概念 #2<br>
+        概念 #5<br>
+        概念 #5
     </p>
-    <h2 id="theory">Theory: Mining Rates</h2>
-    <p>Each Worker mines roughly 40 resources (minerals or gas) per minute. Let's examine what happens when we assign different numbers of workers to a single patch of resources.</p>
+    <h2 id="theory">理论：采集速率</h2>
+    <p>每名工人每分钟大约采集 40 资源（晶体矿或瓦斯）。下面看看为单个资源点分配不同数量的工人时会发生什么。</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Workers</th>
-                <th>Expected Gather Rate</th>
-                <th>Actual Gather Rate</th>
-                <th>Efficiency</th>
+                <th>工人数</th>
+                <th>预期采集速率</th>
+                <th>实际采集速率</th>
+                <th>效率</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>1</td>
-                <td>40/min</td>
-                <td>40/min</td>
+                <td>40/分钟</td>
+                <td>40/分钟</td>
                 <td>100%</td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>80/min</td>
-                <td>80/min</td>
+                <td>80/分钟</td>
+                <td>80/分钟</td>
                 <td>100%</td>
             </tr>
             <tr>
                 <td>3</td>
-                <td>120/min</td>
-                <td>104/min</td>
+                <td>120/分钟</td>
+                <td>104/分钟</td>
                 <td>87%</td>
             </tr>
         </tbody>
     </table>
-    <p>At first glance, this drop-off seems odd. So let's look at what workers do when they harvest a resource. The logic applies to both, minerals and gas, but as workers tend to stack when harvesting minerals, we will examine workers harvesting Vespene, which makes the cause much easier to see.</p>
-    <img src="/images/buildorder/2workermining.gif" alt="2 Worker Mining Animation">
-    <img src="/images/buildorder/3workermining.gif" alt="3 Worker Mining Animation">
-    <p>Notice that there is a Probe that sits idle on the 3-Working Mining (right) for a short period of time. You might guess that mineral patches may have different mining rates, depending on the small variation in distance between them and the Primary Structure, and you'd be correct.</p>
-    <p>Workers mine at approximately 40 minerals per minute for the first two workers, when none are idle. When the third worker is added, the distance of the patch becomes a factor. The below table gives a rough idea for the mining rate increase provided by last worker.</p>
+    <p>乍看之下，这种效率下降有些奇怪。我们来看看工人采集资源时究竟在做什么。这套原理对晶体矿和瓦斯都适用，但工人在采集晶体矿时往往会重叠，因此这里观察瓦斯采集，更容易看清原因。</p>
+    <img src="/images/buildorder/2workermining.gif" alt="2 名工人采矿动画">
+    <img src="/images/buildorder/3workermining.gif" alt="3 名工人采矿动画">
+    <p>可以看到，在右侧 3 名工人采集的动画中，有一台探机会短暂闲置。你或许会猜到，不同晶体矿簇的采集速率可能有所差异，取决于它们与主基地建筑之间细微的距离差别——事实的确如此。</p>
+    <p>前两名工人都不会闲置，每人每分钟大约采集 40 晶体矿。加入第三名工人后，资源点距离便会产生影响。下表大致列出了最后一名工人带来的采集速率增幅。</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Distance</th>
-                <th>Mining Increase</th>
+                <th>距离</th>
+                <th>采集增幅</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Far</td>
+                <td>远</td>
                 <td>30</td>
             </tr>
             <tr>
-                <td>Near</td>
+                <td>近</td>
                 <td>6</td>
             </tr>
         </tbody>
     </table>
-    <p>This is important because there are two gather rates in the game. An <i>Optimal Gather Rate</i>, where all workers are gathering resources at 100% efficiency, and a <i>Maximum Gather Rate</i>, where workers are gathering resources at the fastest possible rate allowable. The number displayed above your Primary Structure relates to the Maximum Mining Rate. Assigning more workers to the resource patches will not yield gains. That is, it is assigning 3 workers per resource patch. Additionally, the gather efficiencies on saturated (3 worker) resource patches are affected by <i>distance</i> to the Primary Structure. The shorter the distance, the more idle time workers have, and the less efficient their mining.</p>
-    <p>This knowledge can help players optimize their builds. Players can choose to go only produce workers to reach the Optimal Gather Rate at the start of their build, freeing up resources to tech up, build an army, or expand, before going up to the Maximum Gather Rate. Note that you should always aim to reach full saturation on both your bases. <i>When</i> you reach that saturation will be up to you to decide. The sooner, the better.</p>
-    <p>One additional note: because mineral patches are at different distances from the primary structure, the Maximum Gather Rate will require a slightly lower number of workers than then three workers per patch. Usually, a 19/21 saturation is enough to reach the Maximum Gather Rate.</p>
-    <p>Given this information, it is also optimal to transfer workers from a saturated Main base to a freshly-completed Expansion in order to take advantage of the Optimal Gather Rate.</p>
-    <p>The following video covers Mining Rates in a lot more detail:</p>
+    <p>这一点很重要，因为游戏中存在两种采集速率：一种是<i>最佳采集速率</i>，此时所有工人都以 100% 的效率采集资源；另一种是<i>最大采集速率</i>，此时资源以游戏允许的最快速度被采集。主基地建筑上方显示的数字对应最大采集速率。达到该数值后，再为资源点分配更多工人也不会带来收益，也就是每个资源点分配 3 名工人。此外，达到饱和（3 名工人）的资源点，其采集效率还会受其与主基地建筑间<i>距离</i>的影响。距离越短，工人闲置时间越长，采集效率越低。</p>
+    <p>这些知识可以帮助玩家优化流程。开局时可以只生产足以达到最佳采集速率的工人，先腾出资源发展科技、组建部队或开分矿，之后再提升到最大采集速率。请注意，最终始终应以两个基地都完全饱和为目标。至于<i>何时</i>达到饱和，则由你自行决定——自然是越早越好。</p>
+    <p>还有一点：由于不同晶体矿簇与主基地建筑的距离各异，达到最大采集速率所需的工人数会略少于每个矿簇 3 名工人的总数。通常 19/21 的饱和度就足以达到最大采集速率。</p>
+    <p>根据以上信息，为了利用最佳采集速率，把工人从已经饱和的主矿转移到刚建成的分矿也是最优选择。</p>
+    <p>以下视频更详细地讲解了采集速率：</p>
     <iframe width="475" height="268" src="https://www.youtube.com/embed/MdSETBPwXIM" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <p>On certain maps, Vespene Geysers may require four workers to reach the maximum mining rate. These geysers are:</p>
+    <p>在某些地图上，瓦斯气泉可能需要 4 名工人才能达到最大采集速率。这些气泉如下：</p>
     <table>
         <thead>
             <tr>
-                <th>Map</th>
-                <th>Geyser</th>
+                <th>地图</th>
+                <th>气泉</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Malwarfare</td>
-                <td>Player 1 Expansion (Top-left)</td>
+                <td>净网行动</td>
+                <td>玩家 1 分矿（左上）</td>
             </tr>
             <tr>
-                <td>Miner Evacuation</td>
-                <td>Player 1 Expansion (Bottom-Left)<br>Player 2 Expansion (Top-Right)</td>
+                <td>矿工疏散</td>
+                <td>玩家 1 分矿（左下）<br>玩家 2 分矿（右上）</td>
             </tr>
             <tr>
-                <td>Mist Opportunities</td>
-                <td>Player 2 Expansion (Bottom-Left)</td>
+                <td>机会渺茫</td>
+                <td>玩家 2 分矿（左下）</td>
             </tr>
             <tr>
-                <td>Oblivion Express</td>
-                <td>Player 1 Main (Top-Left)</td>
+                <td>湮灭快车</td>
+                <td>玩家 1 主矿（左上）</td>
             </tr>
             <tr>
-                <td>Rifts to Korhal</td>
-                <td>Player 1 Main (Bottom-Left)</td>
+                <td>克哈裂痕</td>
+                <td>玩家 1 主矿（左下）</td>
             </tr>
             <tr>
-                <td>Temple of the Past</td>
-                <td>Player 1 Main (Bottom-Left)<br>Player 1 Expansion (Top-left)<br>Player 2 Expansion (Bottom-Left)<br>Player 2 Expansion (Bottom-Right)</td>
+                <td>往日神庙</td>
+                <td>玩家 1 主矿（左下）<br>玩家 1 分矿（左上）<br>玩家 2 分矿（左下）<br>玩家 2 分矿（右下）</td>
             </tr>
             <tr>
-                <td>Void Launch</td>
-                <td>Player 1 Expansion (Bottom-Left)<br>Player 2 Expansion (Bottom-Right)</td>
+                <td>虚空降临</td>
+                <td>玩家 1 分矿（左下）<br>玩家 2 分矿（右下）</td>
             </tr>
             <tr>
-                <td>Void Thrashing</td>
-                <td>Player 1 Main (Top-Left)<br>Player 1 Expansion (Bottom-left)<br>Player 2 Expansion (Bottom-Right)</td>
+                <td>虚空撕裂</td>
+                <td>玩家 1 主矿（左上）<br>玩家 1 分矿（左下）<br>玩家 2 分矿（右下）</td>
             </tr>
         </tbody>
     </table>
-    <h2 id="break1">Breaking Concept #3</h2>
-    <h3>Macro Hatcheries</h3>
-    <p>Certain Zerg commanders, such as <a href="/commanders/kerrigan">Kerrigan</a>, rely on "Macro Hatcheries". These are Hatcheries used solely for the production of larva, instead of relying on Queens, which take up supply. As a result, Kerrigan normally requires several Hatcheries to attain maximum production efficiency. Therefore, Kerrigan can get away with putting down an initial Hatchery next to the gas rocks and start semi-long distance mining from that Hatchery. After the rocks are cleared, a third Hatchery is placed, completing Kerrigan's production and economic requirements.</p>
-    <p>Below is a Kerrigan build order, taking advantage of Optimal Gather Rates and Macro Hatcheries.</p>
+    <h2 id="break1">打破概念 #3</h2>
+    <h3>运营型孵化场</h3>
+    <p>某些异虫指挥官（如<a href="/commanders/kerrigan">凯瑞甘</a>）依赖“运营型孵化场”。这些孵化场只用于生产幼虫，无需依赖占用人口的虫后。因此，凯瑞甘通常需要多个孵化场才能达到最高生产效率。她可以先在气矿石旁放下一个孵化场，并以此进行半远距离采矿；清理矿石后，再放下第三个孵化场，从而满足生产和经济需求。</p>
+    <p>下面是一套利用最佳采集速率和运营型孵化场的凯瑞甘建造顺序。</p>
     <p class="buildOrder">
-        14 Overlord<br>
-        14 Hatchery<br>
-        19 Extractor<br>
-        21 Extractor<br>
-        24 Hatchery<br>
-        28 Spawning Pool<br>
-        33 Overlord<br>
-        Kerrigan -> Rocks
+        14 王虫<br>
+        14 孵化场<br>
+        19 萃取房<br>
+        21 萃取房<br>
+        24 孵化场<br>
+        28 孵化池<br>
+        33 王虫<br>
+        凯瑞甘 -> 矿石
     </p>
     <p class="buildOrderExp">
-        Prevent Supply Block<br>
-        Break Concept #3<br>
-        Concept #2<br>
-        Concept #2<br>
-        Break Concept #3<br>
-        Core Concept<br>
-        Prevent Supply Block<br>
-        Kerrigan breaks rocks
+        防止卡人口<br>
+        打破概念 #3<br>
+        概念 #2<br>
+        概念 #2<br>
+        打破概念 #3<br>
+        核心概念<br>
+        防止卡人口<br>
+        凯瑞甘清理矿石
     </p>
-    <h3>Accelerated Production</h3>
-    <p>Commanders like <a href="/commanders/zagara">Zagara</a> and <a href="/commanders/abathur">Abathur</a> have accelerated production. That is, they produce units in large quantities quickly (as is the case for Zagara) or have an accelerated Larva spawn rate (as is the case with Abathur). In these instances, it is better for the player to either forego a macro hatchery entirely (for Abathur) or delay it until the mid-game (Zagara).</p>
-    <p>Additionally, because they are able to produce units quickly, they are able to saturate their resource harvesting quickly, adding further importance to taking their expansion quickly. As a result, an optimal Zagara build spawns a few zerglings to clear the rocks, before saturation of the main mineral line. Likewise, Abathur builds two Spine Crawlers to clear the rocks before saturation of the main mineral line.</p>
-    <p><a href="/commanders/swann">Swann</a> is another commander that breaks Concept #3 too. One would expect Swann to pre-build his Command Center next to the expansion rocks before breaking them, but there are two factors that make this strategy suboptimal:</p>
+    <h3>加速生产</h3>
+    <p><a href="/commanders/zagara">扎加拉</a>和<a href="/commanders/abathur">阿巴瑟</a>等指挥官拥有加速生产能力，也就是能快速大批量生产单位（扎加拉），或拥有更快的幼虫生成速度（阿巴瑟）。在这种情况下，玩家最好完全放弃运营型孵化场（阿巴瑟），或将其推迟到游戏中期（扎加拉）。</p>
+    <p>此外，他们能够快速生产单位，也能迅速让资源采集达到饱和，因此尽早拿下分矿更加重要。最优的扎加拉流程会在主矿区饱和前生产几只跳虫清理矿石；同理，阿巴瑟会在主矿区饱和前建造两根脊针爬虫来清理矿石。</p>
+    <p><a href="/commanders/swann">斯旺</a>也是一位打破概念 #3 的指挥官。通常会认为斯旺应当先在分矿石旁建好指挥中心，再清理矿石；但有两个因素使这一策略并非最优：</p>
     <ol type="1">
-        <li>Swann has great turrets that can break the rocks quickly</li>
-        <li>Swann can assign multiple SCV's to the same structure to construct it faster</li>
+        <li>斯旺拥有能快速摧毁矿石的强力炮台</li>
+        <li>斯旺可以让多台太空工程车共同建造同一建筑，从而加快施工</li>
     </ol>
-    <p>Thus, what a Swann player has is access to a turret that can be built quickly to take out the rocks, salvage that turret, and then build a Command Center really quickly. Therefore, Concept #5 takes over, due to this unique set of circumstances, which is reflected in the Swann build order:</p>
+    <p>因此，斯旺玩家可以快速建造炮台摧毁矿石，回收炮台后再迅速建造指挥中心。在这种独特条件下，概念 #5 取而代之，具体体现在以下斯旺建造顺序中：</p>
     <p class="buildOrder">
-        14 Supply Depot<br>
-        16 Factory (4 SCV's)<br>
-        18 Billy (4 SCV's)<br>
-        18 Billy (4 SCV's)<br>
-        21 Command Center (8 SCV's)
+        14 补给站<br>
+        16 重工厂（4 台太空工程车）<br>
+        18 比利炮台（4 台太空工程车）<br>
+        18 比利炮台（4 台太空工程车）<br>
+        21 指挥中心（8 台太空工程车）
     </p>
     <p class="buildOrderExp">
-        Prevent Supply Block<br>
+        防止卡人口<br>
         <br>
-        Target main rocks<br>
-        and salvage one after<br>
+        攻击主矿石<br>
+        随后回收其中一个<br>
         <br>
     </p>
-    <h2 id="break2">Breaking the Core Concept</h2>
-    <p>Given the knowledge of Optimal vs. Maximum gather rates, Karax has a very interesting potential build order. Note that this includes all mastery points into the Initial Spear of Adun Energy mastery, as outlined in the <a href="/commanders/karax">Karax</a> page.</p>
+    <h2 id="break2">打破核心概念</h2>
+    <p>了解最佳与最大采集速率后，凯拉克斯便有一套非常有趣的潜在建造顺序。请注意，这套流程将全部精通点投入“初始亚顿之矛能量”，详见<a href="/commanders/karax">凯拉克斯</a>页面。</p>
     <p class="buildOrder">
-        14 Pylon<br>
-        14 Probe<br>
-        Probe -> Expo<br>
-        Orbital Strike -> Expo<br>
-        15 Nexus<br>
+        14 水晶塔<br>
+        14 探机<br>
+        探机 -> 分矿<br>
+        轨道轰炸 -> 分矿<br>
+        15 星灵枢纽<br>
     </p>
     <p class="buildOrderExp">
-        Prevent Supply Block<br>
-        Go up to 15 Workers<br>
-        Get vision<br>
-        20 shots clear rocks<br>
+        防止卡人口<br>
+        工人数提升到 15<br>
+        获得视野<br>
+        20 发炮击清理矿石<br>
         <br>
     </p>
-    <p>This particular build allows you to put your Nexus down at a blazingly fast 1:04 seconds, and is the fastest possible expand for an uncontested expansion in the game. We'll now look at how to compare build orders to one another.</p>
-    <h2 id="testing">Testing Build Orders</h2>
-    <p>Given the above Karax build, we would like to test it and see how well it fares, as compared to continuosly making Probes until you float 400 minerals for a Nexus.</p>
-    <p>The general methodology is to simply go in-game and test it. Execute both build orders perfectly, and see where they get you at a certain amount of time. Make sure to take a full account of structures and extra units created, and adjust your resource values accordingly when doing the comparison.</p>
-    <p>A cutoff point of between 6:00 and 7:00 is normally chosen for the test, as those are key points in the game: the start of the mid-game. This point in time will transition you into more difficult attack waves and objectives. This time also ensures both Primary Structures have reached saturation. This means that resource gains henceforth will be exactly the same per minute.</p>
-    <p>For the Karax build above, we'll test it at the 6:30 mark. For simplicity, we won't be building any tech structures, and only enough Pylons to ensure we do not get supply-blocked.</p>
+    <p>这套流程可以让你以惊人的速度在 1:04 放下星灵枢纽，是游戏中无人把守分矿的最快扩张方式。下面看看如何比较不同建造顺序。</p>
+    <h2 id="testing">测试建造顺序</h2>
+    <p>对于上述凯拉克斯流程，我们需要测试其表现，并与持续生产探机、直到攒够 400 晶体矿再建造星灵枢纽的流程比较。</p>
+    <p>通用方法很简单：进入游戏实际测试。完美执行两套建造顺序，比较它们在同一时间点达到的状态。务必完整统计已建造的建筑和额外单位，并在比较时相应调整资源数值。</p>
+    <p>测试通常选择 6:00 至 7:00 之间作为截止点，因为这是游戏进入中期的关键阶段：攻击波和任务目标会变得更难。到这一时间点，两个主基地建筑也都已达到饱和，意味着此后每分钟的资源收入将完全相同。</p>
+    <p>对于上述凯拉克斯流程，我们在 6:30 时进行测试。为简化流程，不建造任何科技建筑，只建造足够避免卡人口的水晶塔。</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Build</th>
-                <th>Nexus Down</th>
-                <th>Full Saturation</th>
-                <th>Minerals</th>
-                <th>Gas</th>
+                <th>流程</th>
+                <th>星灵枢纽落地</th>
+                <th>完全饱和</th>
+                <th>晶体矿</th>
+                <th>瓦斯</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Ultra-fast</td>
+                <td>极速</td>
                 <td>1:04</td>
                 <td>5:25</td>
                 <td>6150</td>
                 <td>1788</td>
             </tr>
             <tr>
-                <td>Normal</td>
+                <td>常规</td>
                 <td>1:39</td>
                 <td>5:35</td>
                 <td>6550</td>
@@ -417,36 +417,36 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
         </tbody>
     </table>
-    <p>It is always important to report your saturation time. This is because it means all your income can now be spent on either army or tech units, rather than improving the economy. Additionally, you should always separate mineral and gas collected, as builds may gather the same <i>quantity</i> of resources, but in vastly different ratios.</p>
-    <p>Testing build orders is a laborious process. Make sure you repeat the exact build multiple times. If you make any mistakes (assigning a worker to the wrong resource, delaying worker production, etc.), you should restart and try again.</p>
-    <h2 id="constructing">Constructing Build Orders</h2>
-    <p>Given all the concepts and theory, we will now construct and fine-tune a build order for Alarak. The methodology will be as follows:</p>
+    <p>报告达到饱和的时间始终很重要，因为从此以后，全部收入都可以用于部队或科技，而不必再投入经济。此外，应当始终分别统计采集到的晶体矿和瓦斯，因为不同流程采集的资源<i>总量</i>可能相同，但两者比例却大相径庭。</p>
+    <p>测试建造顺序是一项繁琐的工作。务必将完全相同的流程重复多次。只要出现任何失误（例如把工人分配到错误资源、延误工人生产等），就应重新开始测试。</p>
+    <h2 id="constructing">制定建造顺序</h2>
+    <p>结合以上概念与理论，下面为阿拉纳克制定并微调一套建造顺序。方法如下：</p>
     <ol type="1">
-        <li>Expand Method</li>
-        <li>Monitor resource counts in a basic build</li>
-        <li>Minimize resource float</li>
+        <li>确定扩张方式</li>
+        <li>监控基础流程中的资源数量</li>
+        <li>尽量减少资源余量</li>
     </ol>
-    <p>We can repeat step #3 above until we have tightented the build order so as to have almost no resources floating. We can also use it to see if we should allocate our workers to different resources instead.</p>
-    <h3>Expand Method</h3>
-    <p>As per Concept #1, we want to use calldowns if possible. Alarak has a great calldown for this: his Structure Overcharge. From the <a href="/commanders/alarak">Alarak</a> page, we know that the Structure Overcharge will be available at 90 seconds.</p>
-    <p>The next question is, what structure do we want to use to expand? A Pylon is the obvious go-to choice here, as it is both cheap, and required in the early game. Therefore, you won't be wasting resources on structures you don't need.</p>
-    <p>Next, we ask the question: "Will this be the first Pylon we construct? Or will this be a new pylon?". The first Pylon we construct will be very early the in game (at roughly 0:25). Sending a probe to construct the Pylon and then wait there (you will need to maintain vision of the expansion) is extremely wasteful. Therefore, we will construct a new pylon and overcharge that.</p>
-    <p>So we now have a plan. Put down a Pylon near the main. Wait until Structure Overcharge is almost ready. Send a Probe over to the expansion. Put a Pylon down and overcharge it instantly. Once the rocks are clear, put down the Nexus. We now execute this build and monitor our resources (listing the timing we get an extra 50 resources of each type floating).</p>
-    <h3>Monitor resource counts in a basic build</h3>
-    <p>The build we will be executing is this:</p>
+    <p>可以反复执行上述第 #3 步，直到建造顺序足够紧凑，几乎不再囤积资源。借此也可以判断是否应把工人重新分配到其他资源上。</p>
+    <h3>确定扩张方式</h3>
+    <p>根据概念 #1，应尽可能使用面板技能。阿拉纳克有一个非常适合扩张的面板技能：建筑超载。根据<a href="/commanders/alarak">阿拉纳克</a>页面的信息，建筑超载将在 90 秒时可用。</p>
+    <p>接下来的问题是：用哪种建筑扩张？水晶塔显然是首选，因为它既便宜，又是前期必需的建筑，不会把资源浪费在无用建筑上。</p>
+    <p>然后要问：“这是我们建造的第一个水晶塔，还是新建一个水晶塔？”第一个水晶塔会在游戏很早期（约 0:25）建造。让探机造好水晶塔后一直等在那里（必须维持分矿视野）极其浪费。因此，我们会新建一个水晶塔，并对它使用建筑超载。</p>
+    <p>现在计划已经确定：在主矿附近放下一个水晶塔；等待建筑超载即将就绪；派一台探机前往分矿；放下水晶塔并立刻对其使用建筑超载；矿石清理完毕后放下星灵枢纽。接下来执行这套流程并监控资源（记录每种资源每多余 50 点时的时间）。</p>
+    <h3>监控基础流程中的资源数量</h3>
+    <p>要执行的流程如下：</p>
     <p class="buildOrder">
-        14 Pylon<br>
-        18 Pylon at rocks<br>
-        Overcharge<br>
-        20 Nexus
+        14 水晶塔<br>
+        18 矿石旁水晶塔<br>
+        建筑超载<br>
+        20 星灵枢纽
     </p>
-    <p>After executing this build perfectly, and monitoring the resource floats, we get a table like this:</p>
+    <p>完美执行这套流程并监控资源余量后，会得到如下表格：</p>
     <table class="centered">
         <thead>
             <tr>
-                <th>Time</th>
-                <th>Mineral Float</th>
-                <th>Gas Float</th>
+                <th>时间</th>
+                <th>晶体矿余量</th>
+                <th>瓦斯余量</th>
             </tr>
         </thead>
         <tbody>
@@ -542,58 +542,58 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
         </tbody>
     </table>
-    <p>At the 2-minute mark, a Nexus is put down, leaving a float of 100 minerals.</p>
-    <h3>Minimize Resource Float</h3>
-    <p>We are now in a position to optimize resource float. Remember that we need to "float" 400 minerals by the time the rocks are cleared so we can put down the Nexus. Anything extra is actual resource float. Since we are floating 100 minerals at the end of the build, opting to invest in Tech is not viable. The tech does not help use clear the expansion any faster. So instead, we should opt to invest in economy instead. Therefore, we should build an Assimilator whenever we are able to do so without affecting our Probe production.</p>
-    <p>We can get the exact timing this happens on: the point in the table where all resource floats are always above the 75 minerals required to build the Assimilator. This occurs at 0:41. From that point, we subtract 75 minerals from all the subsequent rows. We then repeat this process to optimize. Remember that once you reassign workers, you will need to re-run the build and re-collect the resource float values. A full example is shown below:</p>
+    <p>在 2 分钟时放下星灵枢纽，还剩余 100 晶体矿。</p>
+    <h3>尽量减少资源余量</h3>
+    <p>现在可以开始优化资源余量。请记住，矿石清理完毕时需要“攒下”400 晶体矿，才能放下星灵枢纽；超出这一数额的才是真正的资源余量。流程结束时还剩余 100 晶体矿，但将其投入科技并不可行，因为科技无法帮助我们更快清理分矿。因此应当投资经济：只要不影响探机生产，就建造吸纳舱。</p>
+    <p>我们可以找到这一操作的准确时间点：在表格中寻找从此以后资源余量始终高于建造吸纳舱所需 75 晶体矿的位置，也就是 0:41。从该行开始，将之后每一行的晶体矿减去 75，再重复这一过程进行优化。请记住，重新分配工人后，需要重新执行流程并重新收集资源余量数据。完整示例如下：</p>
     <div class="tableContainer">
         <table class="centered">
             <tr>
                 <td colspan="3">
                     <p class="tableBuildOrder">
-                        14 Pylon<br>
-                        18 Pylon<br>
-                        Overcharge<br>
-                        20 Nexus<br>
-                        Probes->Assimilator
+                        14 水晶塔<br>
+                        18 水晶塔<br>
+                        建筑超载<br>
+                        20 星灵枢纽<br>
+                        探机->吸纳舱
                     </p>
                 </td>
                 <td></td>
                 <td colspan="3">
                     <p class="tableBuildOrder">
-                        14 Pylon<br>
-                        15 Assimilator<br>
-                        18 Pylon<br>
-                        Overcharge<br>
-                        20 Nexus<br>
-                        Probes->Assimilator
+                        14 水晶塔<br>
+                        15 吸纳舱<br>
+                        18 水晶塔<br>
+                        建筑超载<br>
+                        20 星灵枢纽<br>
+                        探机->吸纳舱
                     </p>
                 </td>
                 <td></td>
                 <td colspan="3">
                     <p class="tableBuildOrder">
-                        14 Pylon<br>
-                        15 Assimilator<br>
-                        18 Pylon<br>
-                        Overcharge<br>
-                        20 Nexus<br>
-                        Probes->Assimilator<br>
-                        21 Assimilator
+                        14 水晶塔<br>
+                        15 吸纳舱<br>
+                        18 水晶塔<br>
+                        建筑超载<br>
+                        20 星灵枢纽<br>
+                        探机->吸纳舱<br>
+                        21 吸纳舱
                     </p>
                 </td>
             </tr>
             <tr>
-                <th>Time</th>
-                <th>Mineral Float</th>
-                <th>Gas Float</th>
+                <th>时间</th>
+                <th>晶体矿余量</th>
+                <th>瓦斯余量</th>
                 <th></th>
-                <th>Time</th>
-                <th>Mineral Float</th>
-                <th>Gas Float</th>
+                <th>时间</th>
+                <th>晶体矿余量</th>
+                <th>瓦斯余量</th>
                 <th></th>
-                <th>Time</th>
-                <th>Mineral Float</th>
-                <th>Gas Float</th>
+                <th>时间</th>
+                <th>晶体矿余量</th>
+                <th>瓦斯余量</th>
             </tr>
             <tr>
                 <td>0:37</td>
@@ -830,17 +830,17 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                 <td>0</td>
             </tr>
             <tr>
-                <td colspan="3">This is the basic build. Single Pylon to prevent a supply block and another Pylon to overcharge and clear the expansion.</td>
+                <td colspan="3">这是基础流程。一个水晶塔用于防止卡人口，另一个水晶塔用于建筑超载并清理分矿。</td>
                 <td></td>
-                <td colspan="3">To minimize float before the Expansion is taken, we put down an Assimilator as early as possible. We do not put Probes on that Assimilator, because we still need the minerals to build the Nexus.</td>
+                <td colspan="3">为了尽量减少拿下分矿前的资源余量，我们尽早放下吸纳舱。暂时不派探机采气，因为仍需要晶体矿建造星灵枢纽。</td>
                 <td></td>
-                <td colspan="3">After the Nexus comes down, we float 100 more minerals. We can choose to wait to build a Gateway, or strengthen our economy by putting down another Assimilator. Here, an Assimilator is put down.</td>
+                <td colspan="3">星灵枢纽落地后，还会多出 100 晶体矿。可以等待建造传送门，也可以再放下一个吸纳舱来强化经济。这里选择建造吸纳舱。</td>
         </table>
     </div>
-    <h2 id="closing">Closing Notes</h2>
-    <p>The build orders presented and demonstrated on this page work well for maps with an uncontested expansion. That is, there are no enemy forces guarding the expansion. Players will have to modify their builds accordingly to account for any enemy forces at the expansion. The degree to which the build has to be modified depends on the type and quantity of forces present.</p>
-    <p>It is because of this that following build orders blindly without consideration of why certain actions are taken is not recommended. Players can get a lot more value out of build orders if they understand the core theory behind it - something which this guide aims to do.</p>
-    <p>At the end of the day, taking an expansion and saturating it as fast as possible will yield the best possible results. How to do that, given a set of circumstances, whether it is a mission or a mutator, is up to the player.</p>
-    <p>Build orders are mostly tried and tested several times before an optimal build order is achieved. Players are advised to constantly question and attempt to fine-tune their build orders if they wish to arrive at a perfectly optimal build.</p>
+    <h2 id="closing">结语</h2>
+    <p>本页介绍和演示的建造顺序适用于分矿无人把守的地图，也就是没有敌军守卫分矿。若分矿存在敌军，玩家必须相应调整流程；调整幅度取决于敌军的类型和数量。</p>
+    <p>正因如此，不建议盲目照搬建造顺序而不思考各项操作背后的原因。理解建造顺序的核心理论，能让玩家从中获得更多价值——这也正是本指南的目标。</p>
+    <p>归根结底，尽快拿下分矿并使其达到饱和，才能获得最佳效果。至于在具体情况下如何做到这一点，无论面对任务还是突变因子，都要由玩家自行判断。</p>
+    <p>建造顺序通常要经过多次尝试和测试，才能得到最优流程。若想获得真正完美的建造顺序，建议玩家不断质疑并尝试微调自己的流程。</p>
 <script src="/scripts/nav.js"></script>
 <?= endContent() ?>
