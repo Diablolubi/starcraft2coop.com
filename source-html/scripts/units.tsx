@@ -993,7 +993,10 @@ export class UnitStats extends preact.Component<{
 
 if (typeof document !== "undefined") {
     const root = document.getElementById("units")!;
-    const renderUnits = () => preact.render(<Units />, root);
+    const renderUnits = () => {
+        ((window as typeof window & { __unitsRenderHashes?: string[] }).__unitsRenderHashes ??= []).push(window.location.hash);
+        return preact.render(<Units />, root);
+    };
     window.addEventListener("hashchange", renderUnits);
     renderUnits();
     let attempts = 0;
