@@ -1,6 +1,6 @@
 import { expect, test } from "bun:test";
 
-import { unitToken, UnitStats } from "./units";
+import { parseUnitHash, unitToken, UnitStats } from "./units";
 import type { Token } from "./units";
 
 function upgradedUnit(
@@ -65,4 +65,10 @@ test("Fenix Cybros Arbiter with 30 Suit Attack Speed cooldown is 0.94", () => {
 test("Chinese and English Marine names resolve to the same stable unit token", () => {
     expect(unitToken("陆战队员")).toBe("marine");
     expect(unitToken("Marine")).toBe("marine");
+});
+
+test("unit hash keeps commander and unit selection together", () => {
+    expect(parseUnitHash("#raynor/marine")).toEqual({ commander: "raynor", unit: "marine" });
+    expect(parseUnitHash("#raynor")).toEqual({ commander: "raynor", unit: null });
+    expect(parseUnitHash("")).toEqual({ commander: null, unit: null });
 });

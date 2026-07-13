@@ -67,6 +67,14 @@ function token(text: string): Token {
 }
 export type Token = Lowercase<string>;
 
+export function parseUnitHash(hash: string): { commander: Token | null, unit: Token | null } {
+    const [commander, unit] = hash.replace(/^#/, "").split("/");
+    return {
+        commander: commander || null,
+        unit: unit || null,
+    };
+}
+
 function displayBaseName(name: string): string {
     return name.replace(/（[^）]+）$/, "").trim();
 }
@@ -133,12 +141,9 @@ class Units extends preact.Component {
         this.updateStateFromHash();
     }
     updateStateFromHash(): void {
-        const hash = window.location.hash.slice(1);
-        const [commander, unit] = hash.split("/");
-        this.setState({ commander: commander || null, unit: unit || null });
-        if (commander && unit) {
-            this.setState({ modifiers: UnitStats.modifiers(commander as Token, unit as Token) });
-        }
+        const { commander, unit } = parseUnitHash(window.location.hash);
+        const modifiers = commander && unit ? UnitStats.modifiers(commander, unit) : null;
+        this.setState({ commander, unit, modifiers, compareModifiers: null });
     }
     onSetModifiers = (modifiers: Partial<UnitModifiers>) => {
         this.setState({ modifiers: { ...this.state.modifiers, ...modifiers } });
