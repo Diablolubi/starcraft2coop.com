@@ -68,7 +68,10 @@ function token(text: string): Token {
 export type Token = Lowercase<string>;
 
 export function parseUnitHash(hash: string): { commander: Token | null, unit: Token | null } {
-    const [commander, unit] = hash.replace(/^#/, "").split("/");
+    const raw = hash.startsWith("#") ? hash.slice(1) : hash;
+    const separator = raw.indexOf("/");
+    const commander = separator >= 0 ? raw.slice(0, separator) : raw;
+    const unit = separator >= 0 ? raw.slice(separator + 1) : "";
     return {
         commander: commander || null,
         unit: unit || null,
@@ -994,8 +997,6 @@ export class UnitStats extends preact.Component<{
 if (typeof document !== "undefined") {
     const root = document.getElementById("units")!;
     const renderUnits = () => {
-        const selection = parseUnitHash(window.location.hash);
-        root.setAttribute("data-unit-debug", `${window.location.hash}|${selection.commander ?? ""}|${selection.unit ?? ""}`);
         return preact.render(<Units />, root);
     };
     window.addEventListener("hashchange", renderUnits);
