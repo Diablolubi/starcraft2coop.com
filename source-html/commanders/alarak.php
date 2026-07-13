@@ -1040,11 +1040,11 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <p>以下是阿拉纳克的标准经济建造顺序。如需了解如何阅读和编制自己的建造顺序，请查看<a href="/guides/buildordertheory">建造顺序理论</a>页面。</p>
     <p class="buildOrder">
         14 水晶塔<br>
-        15 吸纳舱（不派探机）<br>
+        15 吸收站（不派探机）<br>
         18 水晶塔（超载）<br>
         20 星灵枢纽<br>
-        探机 -> 吸纳舱<br>
-        21 吸纳舱<br>
+        探机 -> 吸收站<br>
+        21 吸收站<br>
         22 传送门
     </p>
     <h2 id="guide">玩法攻略</h2>

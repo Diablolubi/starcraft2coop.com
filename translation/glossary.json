@@ -144,7 +144,7 @@
     { "en": "Scorching Breath", "zh-CN": "灼热吐息", "aliases": ["Scorching Breath"] },
     { "en": "Spear of Adun", "zh-CN": "亚顿之矛", "aliases": ["Spear of Adun"] },
     { "en": "Orbital Strike", "zh-CN": "轨道轰炸", "aliases": ["Orbital Strike"] },
-    { "en": "Solar Lance", "zh-CN": "太阳能射线", "aliases": ["Solar Lance"] },
+    { "en": "Solar Lance", "zh-CN": "太阳能长枪", "aliases": ["Solar Lance"] },
     { "en": "Purifier Beam", "zh-CN": "净化光束", "aliases": ["Purifier Beam"] },
     { "en": "Chrono Boost", "zh-CN": "时空提速", "aliases": ["Chrono Boost"] },
     { "en": "Guardian Shell", "zh-CN": "守护之壳", "aliases": ["Guardian Shell"] },
@@ -2130,5 +2130,48 @@
         "Sudden but Inevitable"
       ]
     }
+  ],
+  "units": [
+    { "en": "Sentry", "zh-CN": "机械哨兵", "aliases": ["Sentry"] },
+    { "en": "Marine", "zh-CN": "陆战队员", "aliases": ["Marine"] },
+    { "en": "Marauder", "zh-CN": "劫掠者", "aliases": ["Marauder"] },
+    { "en": "Siege Tank", "zh-CN": "攻城坦克", "aliases": ["Siege Tank"] },
+    { "en": "Medivac", "zh-CN": "医疗运输机", "aliases": ["Medivac"] },
+    { "en": "Viking", "zh-CN": "维京战机", "aliases": ["Viking"] },
+    { "en": "Zealot", "zh-CN": "狂热者", "aliases": ["Zealot"] },
+    { "en": "Adept", "zh-CN": "使徒", "aliases": ["Adept"] },
+    { "en": "Stalker", "zh-CN": "追猎者", "aliases": ["Stalker"] },
+    { "en": "Immortal", "zh-CN": "不朽者", "aliases": ["Immortal"] },
+    { "en": "Colossus", "zh-CN": "巨像", "aliases": ["Colossus"] },
+    { "en": "Warp Prism", "zh-CN": "折跃棱镜", "aliases": ["Warp Prism", "War Prism"] },
+    { "en": "Void Ray", "zh-CN": "虚空辉光舰", "aliases": ["Void Ray"] },
+    { "en": "Carrier", "zh-CN": "航空母舰", "aliases": ["Carrier"] },
+    { "en": "Oracle", "zh-CN": "先知", "aliases": ["Oracle"] },
+    { "en": "Roach", "zh-CN": "蟑螂", "aliases": ["Roach"] },
+    { "en": "Zergling", "zh-CN": "跳虫", "aliases": ["Zergling"] },
+    { "en": "Hydralisk", "zh-CN": "刺蛇", "aliases": ["Hydralisk"] },
+    { "en": "Mutalisk", "zh-CN": "异龙", "aliases": ["Mutalisk"] },
+    { "en": "Infestor", "zh-CN": "感染者", "aliases": ["Infestor"] },
+    { "en": "Swarm Host", "zh-CN": "虫群宿主", "aliases": ["Swarm Host"] }
+  ],
+  "buildings": [
+    { "en": "Command Center", "zh-CN": "指挥中心", "aliases": ["Command Center"] },
+    { "en": "Barracks", "zh-CN": "兵营", "aliases": ["Barracks"] },
+    { "en": "Factory", "zh-CN": "军工厂", "aliases": ["Factory"] },
+    { "en": "Starport", "zh-CN": "星港", "aliases": ["Starport"] },
+    { "en": "Nexus", "zh-CN": "星灵枢纽", "aliases": ["Nexus"] },
+    { "en": "Gateway", "zh-CN": "传送门", "aliases": ["Gateway"] },
+    { "en": "Warp Gate", "zh-CN": "折跃门", "aliases": ["Warp Gate"] },
+    { "en": "Pylon", "zh-CN": "水晶塔", "aliases": ["Pylon"] },
+    { "en": "Assimilator", "zh-CN": "吸收站", "aliases": ["Assimilator"] },
+    { "en": "Extractor", "zh-CN": "萃取巢", "aliases": ["Extractor"] },
+    { "en": "Missile Turret", "zh-CN": "导弹塔", "aliases": ["Missile Turret"] },
+    { "en": "Spine Crawler", "zh-CN": "脊针爬虫", "aliases": ["Spine Crawler"] },
+    { "en": "Spore Crawler", "zh-CN": "孢子爬虫", "aliases": ["Spore Crawler"] },
+    { "en": "Shield Battery", "zh-CN": "护盾充能器", "aliases": ["Shield Battery"] }
+  ],
+  "terminology": [
+    { "en": "Mastery Set", "zh-CN": "技能组", "aliases": ["Mastery Set", "Power Set"] },
+    { "en": "Solar Lance", "zh-CN": "太阳能长枪", "aliases": ["Solar Lance"] }
   ]
 }

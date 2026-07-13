@@ -9680,7 +9680,7 @@
         },
         {
             "type": "amonunit",
-            "title": "哨兵",
+            "title": "机械哨兵",
             "subtitle": "Amon Protoss unit",
             "path": "units/#protoss/amon3",
             "text": "Light Mechanical Psionic",
@@ -9690,7 +9690,7 @@
                 "Light",
                 "Mechanical",
                 "Psionic",
-                "哨兵",
+                "机械哨兵",
                 "amonprotossunit"
             ]
         },
@@ -44603,7 +44603,7 @@
                 "i": 590,
                 "$": {
                     "0": {
-                        "v": "哨兵",
+                        "v": "机械哨兵",
                         "n": 1
                     },
                     "1": [
@@ -44633,7 +44633,7 @@
                             "n": 1
                         },
                         {
-                            "v": "哨兵",
+                            "v": "机械哨兵",
                             "i": 5,
                             "n": 1
                         },

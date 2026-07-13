@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "english": "Aegis Guard",
+      "zh-CN": "壁垒卫士",
+      "reason": "合作任务专属单位；官方简体中文资料未提供独立名称，沿用社区常用译名。",
+      "source": "community"
+    },
+    {
+      "english": "Warhound Turret",
+      "zh-CN": "战狼炮台",
+      "reason": "泰凯斯合作任务专属单位；保留合作任务语境中的现有译名。",
+      "source": "community"
+    },
+    {
+      "english": "Primal Warden",
+      "zh-CN": "原始守卫",
+      "reason": "德哈卡合作任务专属单位；官方简体中文资料未提供独立名称。",
+      "source": "community"
+    }
+  ]
+}

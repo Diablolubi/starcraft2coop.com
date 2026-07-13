@@ -220,7 +220,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>威力</th>
+                <th>精通项目</th>
                 <th>数值</th>
                 <th>推荐投入点数</th>
                 <th>其他考量</th>
@@ -245,7 +245,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>威力</th>
+                <th>精通项目</th>
                 <th>数值</th>
                 <th>推荐投入点数</th>
                 <th>其他考量</th>
@@ -270,7 +270,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="masteryTable">
         <thead>
             <tr>
-                <th>威力</th>
+                <th>精通项目</th>
                 <th>数值</th>
                 <th>推荐投入点数</th>
                 <th>其他考量</th>
@@ -1005,8 +1005,8 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <p class="buildOrder">
         14 王虫<br>
         14 岩石处建造运营孵化场<br>
-        19 萃取房<br>
-        21 萃取房<br>
+        19 萃取巢<br>
+        21 萃取巢<br>
         24 岩石处建造运营孵化场<br>
         28 孵化池<br>
         33 王虫<br>

@@ -1357,9 +1357,9 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <h2 id="buildOrder">建造顺序</h2>
     <p>以下是德哈卡的标准经济建造顺序。有关建造顺序的阅读方法和编排思路，请参阅<a href="/guides/buildordertheory">建造顺序理论</a>。</p>
     <p class="buildOrder">
-        23 萃取房<br>
+        23 萃取巢<br>
         23 原始守卫<br>
-        25 萃取房<br>
+        25 萃取巢<br>
         29 格利维格之巢<br>
         29 2 只原始跳虫 → 岩石<br>
         原始守卫 → 岩石<br>
