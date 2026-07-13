@@ -78,6 +78,7 @@ export function parseUnitHash(hash: string): { commander: Token | null, unit: To
 function selectUnitHash(event: Event, hash: string): void {
     event.preventDefault();
     window.location.hash = hash;
+    window.dispatchEvent(new CustomEvent("units-hashchange", { detail: hash }));
 }
 
 function displayBaseName(name: string): string {
@@ -144,6 +145,9 @@ class Units extends preact.Component {
         window.addEventListener("hashchange", () => {
             this.updateStateFromHash();
         });
+        window.addEventListener("units-hashchange", (event) => {
+            this.updateStateFromHash((event as CustomEvent<string>).detail);
+        });
         this.syncInitialHash();
     }
     syncInitialHash = () => {
@@ -151,8 +155,8 @@ class Units extends preact.Component {
         if (window.location.hash || this.initialHashSyncAttempts++ >= 20) return;
         setTimeout(this.syncInitialHash, 50);
     }
-    updateStateFromHash(): void {
-        const { commander, unit } = parseUnitHash(window.location.hash);
+    updateStateFromHash(hash = window.location.hash): void {
+        const { commander, unit } = parseUnitHash(hash);
         const modifiers = commander && unit ? UnitStats.modifiers(commander, unit) : null;
         this.setState({ commander, unit, modifiers, compareModifiers: null });
     }
@@ -175,7 +179,9 @@ class Units extends preact.Component {
         if (this.state.error) {
             return <p>错误：<pre style="color: #ff6633;">{this.state.error}</pre></p>;
         }
-        const selection = parseUnitHash(window.location.hash);
+        const selection = this.state.commander
+            ? { commander: this.state.commander, unit: this.state.unit }
+            : parseUnitHash(window.location.hash);
         const commander = selection.commander;
         const unit = selection.unit;
         const modifiers = commander && unit
