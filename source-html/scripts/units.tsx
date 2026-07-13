@@ -152,7 +152,7 @@ class Units extends preact.Component {
     }
     syncInitialHash = () => {
         this.updateStateFromHash();
-        if (window.location.hash || this.initialHashSyncAttempts++ >= 20) return;
+        if (this.initialHashSyncAttempts++ >= 20) return;
         setTimeout(this.syncInitialHash, 50);
     }
     updateStateFromHash(hash = window.location.hash): void {
