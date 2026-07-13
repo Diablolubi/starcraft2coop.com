@@ -175,12 +175,20 @@ class Units extends preact.Component {
         if (this.state.error) {
             return <p>错误：<pre style="color: #ff6633;">{this.state.error}</pre></p>;
         }
+        const selection = parseUnitHash(window.location.hash);
+        const commander = selection.commander;
+        const unit = selection.unit;
+        const modifiers = commander && unit
+            ? (this.state.modifiers?.commander === commander && this.state.modifiers?.unit === unit
+                ? this.state.modifiers
+                : UnitStats.modifiers(commander, unit))
+            : null;
         return (
             <table class="units">
                 <tr>
-                    <CommanderSelector commander={this.state.commander} />
-                    <UnitSelector commander={this.state.commander} unit={this.state.unit} />
-                    {this.state.commander && <UnitStats modifiers={this.state.modifiers} onSetModifiers={this.onSetModifiers} onClickCompare={this.onClickCompare} formKey="1" />}
+                    <CommanderSelector commander={commander} />
+                    <UnitSelector commander={commander} unit={unit} />
+                    {commander && <UnitStats modifiers={modifiers} onSetModifiers={this.onSetModifiers} onClickCompare={this.onClickCompare} formKey="1" />}
                     {this.state.compareModifiers && <UnitStats modifiers={this.state.compareModifiers} onSetModifiers={this.onSetCompareModifiers} onClickClose={this.onClickClose} formKey="2" />}
                 </tr>
             </table>
