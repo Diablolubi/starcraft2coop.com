@@ -80,7 +80,9 @@ foreach ($pages as $page) {
 foreach ($to_delete as $generatedPhp) {
     clearstatcache(true, $generatedPhp);
     for ($attempt = 0; $attempt < 5 && file_exists($generatedPhp); $attempt++) {
-        if (@unlink($generatedPhp)) break;
+        if (@unlink($generatedPhp)) {
+            break;
+        }
         usleep(100000);
     }
 }
@@ -88,11 +90,15 @@ foreach ($to_delete as $generatedPhp) {
 // JSON data is consumed directly by the browser, so apply the same visible-name
 // normalization after build scripts have emitted their data snapshots.
 foreach (new RecursiveIteratorIterator(new RecursiveDirectoryIterator($HTML_DIR)) as $file) {
-    if (!$file->isFile() || $file->getExtension() !== 'json') continue;
+    if (!$file->isFile() || $file->getExtension() !== 'json') {
+        continue;
+    }
     $path = $file->getPathname();
     $contents = file_get_contents($path);
     $normalized = preg_replace_callback($officialTermPattern, fn(array $match): string => $officialVisibleTerms[$match[0]], $contents);
-    if ($normalized !== $contents) file_put_contents($path, $normalized);
+    if ($normalized !== $contents) {
+        file_put_contents($path, $normalized);
+    }
 }
 
 foreach ($all_errors as $error) {
