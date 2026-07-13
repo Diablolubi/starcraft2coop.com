@@ -128,7 +128,6 @@ interface UnitModifiers {
 }
 
 class Units extends preact.Component {
-    initialHashSyncAttempts = 0;
     override state: {
         commander: Token | null,
         unit: Token | null,
@@ -141,27 +140,6 @@ class Units extends preact.Component {
             modifiers: null,
             compareModifiers: null,
         };
-    override componentDidMount() {
-        window.addEventListener("hashchange", () => {
-            this.updateStateFromHash();
-        });
-        window.addEventListener("units-hashchange", (event) => {
-            this.updateStateFromHash((event as CustomEvent<string>).detail);
-        });
-        this.syncInitialHash();
-    }
-    syncInitialHash = () => {
-        this.updateStateFromHash();
-        if (this.initialHashSyncAttempts++ >= 20) return;
-        setTimeout(this.syncInitialHash, 50);
-    }
-    updateStateFromHash(hash = window.location.hash): void {
-        const { commander, unit } = parseUnitHash(hash);
-        console.log("units:update", hash, commander, unit);
-        ((window as typeof window & { __unitsDebug?: unknown[] }).__unitsDebug ??= []).push({ hash, commander, unit });
-        const modifiers = commander && unit ? UnitStats.modifiers(commander, unit) : null;
-        this.setState({ commander, unit, modifiers, compareModifiers: null });
-    }
     onSetModifiers = (modifiers: Partial<UnitModifiers>) => {
         this.setState({ modifiers: { ...this.state.modifiers, ...modifiers } });
     };
@@ -181,9 +159,7 @@ class Units extends preact.Component {
         if (this.state.error) {
             return <p>错误：<pre style="color: #ff6633;">{this.state.error}</pre></p>;
         }
-        const selection = this.state.commander
-            ? { commander: this.state.commander, unit: this.state.unit }
-            : parseUnitHash(window.location.hash);
+        const selection = parseUnitHash(window.location.hash);
         const commander = selection.commander;
         const unit = selection.unit;
         const modifiers = commander && unit
@@ -1016,5 +992,14 @@ export class UnitStats extends preact.Component<{
 }
 
 if (typeof document !== "undefined") {
-    preact.render(<Units />, document.getElementById("units")!);
+    const root = document.getElementById("units")!;
+    const renderUnits = () => preact.render(<Units />, root);
+    window.addEventListener("hashchange", renderUnits);
+    renderUnits();
+    let attempts = 0;
+    const syncInitialHash = () => {
+        renderUnits();
+        if (attempts++ < 20) setTimeout(syncInitialHash, 50);
+    };
+    syncInitialHash();
 }
