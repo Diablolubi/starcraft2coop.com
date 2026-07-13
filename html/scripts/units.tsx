@@ -162,9 +162,10 @@ class Units extends preact.Component {
         if (this.state.error) {
             return <p>错误：<pre style="color: #ff6633;">{this.state.error}</pre></p>;
         }
-        const selection = parseUnitHash(window.location.hash);
-        const commander = selection.commander;
-        const unit = selection.unit;
+        const rawHash = window.location.hash.replace(/^#/, "");
+        const separator = rawHash.indexOf("/");
+        const commander = (separator >= 0 ? rawHash.slice(0, separator) : rawHash) as Token || null;
+        const unit = (separator >= 0 ? rawHash.slice(separator + 1) : "") as Token || null;
         const modifiers = commander && unit
             ? (this.state.modifiers?.commander === commander && this.state.modifiers?.unit === unit
                 ? this.state.modifiers
