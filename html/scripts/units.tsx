@@ -994,7 +994,8 @@ export class UnitStats extends preact.Component<{
 if (typeof document !== "undefined") {
     const root = document.getElementById("units")!;
     const renderUnits = () => {
-        ((window as typeof window & { __unitsRenderHashes?: string[] }).__unitsRenderHashes ??= []).push(window.location.hash);
+        const selection = parseUnitHash(window.location.hash);
+        root.setAttribute("data-unit-debug", `${window.location.hash}|${selection.commander ?? ""}|${selection.unit ?? ""}`);
         return preact.render(<Units />, root);
     };
     window.addEventListener("hashchange", renderUnits);
