@@ -75,6 +75,11 @@ export function parseUnitHash(hash: string): { commander: Token | null, unit: To
     };
 }
 
+function selectUnitHash(event: Event, hash: string): void {
+    event.preventDefault();
+    window.location.hash = hash;
+}
+
 function displayBaseName(name: string): string {
     return name.replace(/（[^）]+）$/, "").trim();
 }
@@ -193,7 +198,7 @@ class CommanderSelector extends preact.Component<{ commander: string | null }> {
                 <p class="units-head"><em>指挥官</em></p>
                 <ul class="units-nav">
                     {commandersummaries.map((commander) => (
-                        <li><a href={`#${token(commander.commander)}`} aria-selected={this.isSelected(commander.commander)}>
+                        <li><a href={`#${token(commander.commander)}`} onClick={(event) => selectUnitHash(event, `#${token(commander.commander)}`)} aria-selected={this.isSelected(commander.commander)}>
                             <img src={`/images/commanderportraits/${token(commander.commander)}portrait.png`} alt="" width="21" height="21" style="margin-right:3px" />
                             {commander.fullname}
                         </a></li>
@@ -202,7 +207,7 @@ class CommanderSelector extends preact.Component<{ commander: string | null }> {
                 <p class="units-head"><em>埃蒙</em></p>
                 <ul class="units-nav">
                     {AMON_UNIT_TYPES.map((type) => (
-                        <li><a href={`#${token(type)}`} aria-selected={this.isSelected(type)}>{AMON_UNIT_TYPE_LABELS[type]}</a></li>
+                        <li><a href={`#${token(type)}`} onClick={(event) => selectUnitHash(event, `#${token(type)}`)} aria-selected={this.isSelected(type)}>{AMON_UNIT_TYPE_LABELS[type]}</a></li>
                     ))}
                 </ul>
             </td>
@@ -250,19 +255,19 @@ class UnitSelector extends preact.Component<{ commander: Token | null, unit: Tok
                 {!!normalUnits.length && <p class="units-head"><em>单位</em></p>}
                 {!!normalUnits.length && <ul class="units-nav">
                     {normalUnits.map((unit) => (
-                        <li><a href={`#${this.props.commander!}/${unit.token}`} aria-selected={this.props.unit === unit.token || undefined}>{unit.label}</a></li>
+                        <li><a href={`#${this.props.commander!}/${unit.token}`} onClick={(event) => selectUnitHash(event, `#${this.props.commander!}/${unit.token}`)} aria-selected={this.props.unit === unit.token || undefined}>{unit.label}</a></li>
                     ))}
                 </ul>}
                 {!!heroes.length && <p class="units-head"><em>英雄</em></p>}
                 {!!heroes.length && <ul class="units-nav">
                     {heroes.map((hero) => (
-                        <li><a href={`#${this.props.commander!}/${hero.token}`} aria-selected={this.props.unit === hero.token || undefined}>{hero.label}</a></li>
+                        <li><a href={`#${this.props.commander!}/${hero.token}`} onClick={(event) => selectUnitHash(event, `#${this.props.commander!}/${hero.token}`)} aria-selected={this.props.unit === hero.token || undefined}>{hero.label}</a></li>
                     ))}
                 </ul>}
                 {!!structures.length && <p class="units-head"><em>建筑</em></p>}
                 {!!structures.length && <ul class="units-nav">
                     {structures.map((structure) => (
-                        <li><a href={`#${this.props.commander!}/${structure.token}`} aria-selected={this.props.unit === structure.token || undefined}>{structure.label}</a></li>
+                        <li><a href={`#${this.props.commander!}/${structure.token}`} onClick={(event) => selectUnitHash(event, `#${this.props.commander!}/${structure.token}`)} aria-selected={this.props.unit === structure.token || undefined}>{structure.label}</a></li>
                     ))}
                 </ul>}
             </td>
