@@ -157,6 +157,7 @@ class Units extends preact.Component {
     }
     updateStateFromHash(hash = window.location.hash): void {
         const { commander, unit } = parseUnitHash(hash);
+        console.log("units:update", hash, commander, unit);
         const modifiers = commander && unit ? UnitStats.modifiers(commander, unit) : null;
         this.setState({ commander, unit, modifiers, compareModifiers: null });
     }
