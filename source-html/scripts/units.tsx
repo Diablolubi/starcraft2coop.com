@@ -122,6 +122,7 @@ interface UnitModifiers {
 }
 
 class Units extends preact.Component {
+    initialHashSyncAttempts = 0;
     override state: {
         commander: Token | null,
         unit: Token | null,
@@ -138,10 +139,12 @@ class Units extends preact.Component {
         window.addEventListener("hashchange", () => {
             this.updateStateFromHash();
         });
+        this.syncInitialHash();
+    }
+    syncInitialHash = () => {
         this.updateStateFromHash();
-        // Some browsers apply the initial fragment after deferred scripts run.
-        // Re-read it on the next task so direct #commander/unit links hydrate too.
-        setTimeout(() => this.updateStateFromHash(), 0);
+        if (window.location.hash || this.initialHashSyncAttempts++ >= 20) return;
+        setTimeout(this.syncInitialHash, 50);
     }
     updateStateFromHash(): void {
         const { commander, unit } = parseUnitHash(window.location.hash);
