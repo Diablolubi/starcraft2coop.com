@@ -139,6 +139,9 @@ class Units extends preact.Component {
             this.updateStateFromHash();
         });
         this.updateStateFromHash();
+        // Some browsers apply the initial fragment after deferred scripts run.
+        // Re-read it on the next task so direct #commander/unit links hydrate too.
+        setTimeout(() => this.updateStateFromHash(), 0);
     }
     updateStateFromHash(): void {
         const { commander, unit } = parseUnitHash(window.location.hash);
