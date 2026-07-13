@@ -441,7 +441,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P2：<strong>机械达人</strong></td>
+                <td class="prestigeTitle" colspan="2">P2：<strong>机械修理工</strong></td>
             </tr>
             <tr>
                 <th>优势</th>
@@ -480,7 +480,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P3：<strong>货运总监</strong></td>
+                <td class="prestigeTitle" colspan="2">P3：<strong>运载总监</strong></td>
             </tr>
             <tr>
                 <th>优势</th>

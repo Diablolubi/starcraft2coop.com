@@ -227,7 +227,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                         <li>开局时利用此技能先于水晶塔建造传送门，以加快攀升科技的速度。</li>
                         <li>部队推进时不断前移能量场，以便快速补充援军。</li>
                         <li>水晶塔失效时，可用于重新为静态防御建筑供能。</li>
-                        <li>使用“枢纽特使”威望时消耗 25 点能量。</li>
+                        <li>使用“星灵使节”威望时消耗 25 点能量。</li>
                     </ul>
                 </td>
                 <td>
@@ -373,7 +373,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P1：<strong>英勇激励者</strong></td>
+                <td class="prestigeTitle" colspan="2">P1：<strong>勇敢激励者</strong></td>
             </tr>
             <tr>
                 <th>优势</th>
@@ -427,7 +427,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P2：<strong>枢纽特使</strong></td>
+                <td class="prestigeTitle" colspan="2">P2：<strong>星灵使节</strong></td>
             </tr>
             <tr>
                 <th>优势</th>
@@ -466,7 +466,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P3：<strong>方舟舰指挥官</strong></td>
+                <td class="prestigeTitle" colspan="2">P3：<strong>方舟指挥官</strong></td>
             </tr>
             <tr>
                 <th>优势</th>
@@ -505,7 +505,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
         </tbody>
     </table>
-    <p>在常规游戏中，P3（方舟舰指挥官）、P2（枢纽特使）和 P0（无威望，达拉姆大主教）各有用武之地。P3（方舟舰指挥官）可以说最强也最灵活，但会失去阿塔尼斯的标志性技能。P2（枢纽特使）很强，但需要谨慎管理亚顿之矛的能量。P1（英勇激励者）成型较慢。P0（无威望，达拉姆大主教）容易补充部队，但缺乏机动性。</p>
+    <p>在常规游戏中，P3（方舟指挥官）、P2（星灵使节）和 P0（无威望，达拉姆大主教）各有用武之地。P3（方舟指挥官）可以说最强也最灵活，但会失去阿塔尼斯的标志性技能。P2（星灵使节）很强，但需要谨慎管理亚顿之矛的能量。P1（勇敢激励者）成型较慢。P0（无威望，达拉姆大主教）容易补充部队，但缺乏机动性。</p>
     <h2 id="army">推荐部队配置</h2>
     <p>阿塔尼斯的推荐部队配置如下。该建议假定未选择威望天赋，并采用推荐的精通点数分配。这只是部队基本框架；建议先了解<a href="#units">单位</a>章节中的各个单位，再根据实际情况加入科技单位，以便更好地应对所遇到的局面。</p>
     <img class="army" src="/images/commanderdata/units/artanis/zealot.jpg" alt="狂热者"><img class="army" src="/images/commanderdata/units/artanis/dragoon.jpg" alt="龙骑士">

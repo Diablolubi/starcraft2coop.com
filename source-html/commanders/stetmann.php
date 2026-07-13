@@ -424,7 +424,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P2：<strong>最佳好友</strong></td>
+                <td class="prestigeTitle" colspan="2">P2：<strong>最佳伙伴</strong></td>
             </tr>
             <tr>
                 <th>优势</th>
@@ -464,7 +464,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P3：<strong>石油大亨</strong></td>
+                <td class="prestigeTitle" colspan="2">P3：<strong>石油大王</strong></td>
             </tr>
             <tr>
                 <th>优势</th>
@@ -502,7 +502,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
         </tbody>
     </table>
-    <p>“最佳好友”远胜其他威望：它以极小的代价大幅提升超级盖瑞的强度。斯台特曼在 5 级前应使用“信号专家”，因为此时它没有劣势；达到 5 级后，若已解锁“最佳好友”便应改用该威望，并将玩法重心放在英雄单位上，以充分发挥威望的力量。</p>
+    <p>“最佳伙伴”远胜其他威望：它以极小的代价大幅提升超级盖瑞的强度。斯台特曼在 5 级前应使用“信号专家”，因为此时它没有劣势；达到 5 级后，若已解锁“最佳伙伴”便应改用该威望，并将玩法重心放在英雄单位上，以充分发挥威望的力量。</p>
     <h2 id="hero">英雄单位</h2>
     <a class="unitStatsLink" href="/units/#stetmann/gary"><img id="heroPic" src="/images/commanderdata/hero/stetmann/gary.jpg" alt="盖瑞"></a>
     <p>生成时间：4:00</p>

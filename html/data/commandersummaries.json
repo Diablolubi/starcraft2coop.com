@@ -43,7 +43,7 @@
         "mastery22": "强化定身波",
         "mastery31": "快速进化",
         "mastery32": "主要技能伤害和攻击速度",
-        "prestige1": "恶毒女王",
+        "prestige1": "恶毒族长",
         "prestige2": "人类的愚行",
         "prestige3": "荒寂女王"
     },
@@ -67,9 +67,9 @@
         "mastery22": "折跃单位速度提升",
         "mastery31": "时空提速效率",
         "mastery32": "亚顿之矛初始与最大能量",
-        "prestige1": "英勇激励者",
-        "prestige2": "枢纽特使",
-        "prestige3": "方舟舰指挥官"
+        "prestige1": "勇敢激励者",
+        "prestige2": "星灵使节",
+        "prestige3": "方舟指挥官"
     },
     {
         "commander": "swann",
@@ -92,8 +92,8 @@
         "mastery31": "瓦斯无人机费用",
         "mastery32": "激光钻机建造时间、升级时间与升级费用",
         "prestige1": "重武器专家",
-        "prestige2": "机械达人",
-        "prestige3": "货运总监"
+        "prestige2": "机械修理工",
+        "prestige3": "运载总监"
     },
     {
         "commander": "zagara",
@@ -115,9 +115,9 @@
         "mastery22": "跳虫闪避",
         "mastery31": "蟑螂伤害与生命值",
         "mastery32": "爆虫攻击伤害",
-        "prestige1": "爆蚊女王",
-        "prestige2": "造物之母",
-        "prestige3": "顶级捕食者"
+        "prestige1": "爆蚊虫后",
+        "prestige2": "构造体之母",
+        "prestige3": "顶级掠食者"
     },
     {
         "commander": "vorazun",
@@ -146,7 +146,7 @@
     {
         "commander": "karax",
         "fullname": "凯拉克斯",
-        "motto": "卡莱相位工匠",
+        "motto": "相位技师",
         "stat01": 2,
         "stat02": 1,
         "stat03": 2,
@@ -163,9 +163,9 @@
         "mastery22": "时空波能量恢复",
         "mastery31": "时空提速效率",
         "mastery32": "亚顿之矛初始及最大能量",
-        "prestige1": "战争设计师",
-        "prestige2": "圣堂显圣",
-        "prestige3": "太阳能天尊"
+        "prestige1": "战争建筑师",
+        "prestige2": "圣堂表象",
+        "prestige3": "天界太阳能"
     },
     {
         "commander": "abathur",
@@ -187,9 +187,9 @@
         "mastery22": "双倍生物质几率",
         "mastery31": "剧毒巢穴最大充能和冷却时间",
         "mastery32": "建筑变异与进化速度",
-        "prestige1": "精华搜集者",
-        "prestige2": "隧道惊魂",
-        "prestige3": "无尽进化"
+        "prestige1": "精华贮藏者",
+        "prestige2": "深隧惊惧",
+        "prestige3": "无限进化"
     },
     {
         "commander": "alarak",
@@ -211,8 +211,8 @@
         "mastery22": "死亡舰队冷却时间",
         "mastery31": "建筑超载护盾与攻击速度",
         "mastery32": "时空提速效率",
-        "prestige1": "灵魂工匠",
-        "prestige2": "暴君飞升",
+        "prestige1": "灵魂巧匠",
+        "prestige2": "暴君晋升者",
         "prestige3": "死亡阴影"
     },
     {
@@ -259,9 +259,9 @@
         "mastery22": "末日巨兽冷却时间",
         "mastery31": "感染步兵持续时间",
         "mastery32": "机械单位攻击速度",
-        "prestige1": "恐怖血肉焊工",
-        "prestige2": "瘟疫典狱长",
-        "prestige3": "感染大军之主"
+        "prestige1": "惊人血肉焊机",
+        "prestige2": "瘟疫守望者",
+        "prestige3": "尸群领主"
     },
     {
         "commander": "fenix",
@@ -283,9 +283,9 @@
         "mastery22": "勇士人工智能生命值和护盾",
         "mastery31": "时空提速效率",
         "mastery32": "额外初始人口",
-        "prestige1": "阿昆德拉尔",
+        "prestige1": "阿昆德拉",
         "prestige2": "网络管理员",
-        "prestige3": "不屈之魂"
+        "prestige3": "不屈意志"
     },
     {
         "commander": "dehaka",
@@ -308,8 +308,8 @@
         "mastery31": "基因突变几率",
         "mastery32": "德哈卡攻击速度",
         "prestige1": "吞噬者",
-        "prestige2": "原始挑战者",
-        "prestige3": "族群兄弟"
+        "prestige2": "原始竞争者",
+        "prestige3": "原生双雄"
     },
     {
         "commander": "horner",
@@ -355,9 +355,9 @@
         "mastery22": "亡命之徒可用时间",
         "mastery31": "医疗运输机接送冷却时间",
         "mastery32": "奥丁冷却时间",
-        "prestige1": "技术招募员",
+        "prestige1": "技术招聘专员",
         "prestige2": "独狼",
-        "prestige3": "尽职的遛狗人"
+        "prestige3": "忠诚遛狗师"
     },
     {
         "commander": "zeratul",
@@ -404,8 +404,8 @@
         "mastery31": "部署艾星冷却时间",
         "mastery32": "建筑变形速度",
         "prestige1": "信号专家",
-        "prestige2": "最佳好友",
-        "prestige3": "石油大亨"
+        "prestige2": "最佳伙伴",
+        "prestige3": "石油大王"
     },
     {
         "commander": "mengsk",

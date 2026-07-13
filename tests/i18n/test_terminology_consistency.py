@@ -68,6 +68,44 @@ class TerminologyConsistencyTests(unittest.TestCase):
         amon_units = load_json("source-data/amonunits.json")
         self.assertIn("机械哨兵", {item["name"] for item in amon_units})
 
+    def test_official_prestige_names(self):
+        commanders = load_json("source-data/commandersummaries.json")
+        expected = {
+            "kerrigan": ["恶毒族长", "人类的愚行", "荒寂女王"],
+            "artanis": ["勇敢激励者", "星灵使节", "方舟指挥官"],
+            "swann": ["重武器专家", "机械修理工", "运载总监"],
+            "zagara": ["爆蚊虫后", "构造体之母", "顶级掠食者"],
+            "karax": ["战争建筑师", "圣堂表象", "天界太阳能"],
+            "abathur": ["精华贮藏者", "深隧惊惧", "无限进化"],
+            "alarak": ["灵魂巧匠", "暴君晋升者", "死亡阴影"],
+            "dehaka": ["吞噬者", "原始竞争者", "原生双雄"],
+            "stukov": ["惊人血肉焊机", "瘟疫守望者", "尸群领主"],
+            "fenix": ["阿昆德拉", "网络管理员", "不屈意志"],
+            "stetmann": ["信号专家", "最佳伙伴", "石油大王"],
+            "tychus": ["技术招聘专员", "独狼", "忠诚遛狗师"],
+        }
+        actual = {
+            item["commander"]: [item["prestige1"], item["prestige2"], item["prestige3"]]
+            for item in commanders
+        }
+        for commander, names in expected.items():
+            with self.subTest(commander=commander):
+                self.assertEqual(actual[commander], names)
+
+    def test_karax_name_uses_official_simplified_chinese(self):
+        commanders = load_json("source-data/commandersummaries.json")
+        karax = next(item for item in commanders if item["commander"] == "karax")
+        self.assertEqual(karax["fullname"], "凯拉克斯")
+        self.assertEqual(karax["motto"], "相位技师")
+        offenders = []
+        for root in (ROOT / "source-html", ROOT / "source-data"):
+            for path in root.rglob("*"):
+                if path.is_file() and path.suffix.lower() in {".php", ".json", ".html", ".ts", ".tsx"}:
+                    text = path.read_text(encoding="utf-8")
+                    if "卡拉克斯" in text or "卡莱克斯" in text:
+                        offenders.append(str(path.relative_to(ROOT)))
+        self.assertFalse(offenders, f"发现错误的凯拉克斯译名: {offenders}")
+
     def test_exceptions_are_explicit(self):
         for entry in self.exceptions["entries"]:
             self.assertTrue(entry.get("english"))

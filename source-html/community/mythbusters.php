@@ -144,19 +144,19 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <br>“致命吸引”与“相互保证毁灭”可以叠加
     <br>阿拉纳克的攻击伤害精通会与“强化我”相乘
     <br>爆破机器人可以拾取“资源不足”的资源掉落物
-    <br><br><br><a href='https://www.youtube.com/watch?v=za7dKB3MqCo' rel='nofollow'>第 27 集</a><br>“原始挑战者”德哈卡离开地图时，治疗光环仍会生效
+    <br><br><br><a href='https://www.youtube.com/watch?v=za7dKB3MqCo' rel='nofollow'>第 27 集</a><br>“原始竞争者”德哈卡离开地图时，治疗光环仍会生效
     <br>补给地堡空投可以拾取冲锋队掉落的武器
     <br>阿拉纳克的生命精华不会被点防御无人机拦截
     <br>拦截机返回航母内部后免疫“黑死病”
     <br>脉冲炮会对启用“闪避机动”的单位造成完整伤害
     <br><br><br><a href='https://www.youtube.com/watch?v=lhWYJ1-hLUM' rel='nofollow'>第 28 集</a><br>未装备南河三双重治疗光束手套时，尼卡拉无法治疗执政官
     <br>德哈卡的跃击与灼热吐息会受对重甲加成影响
-    <br>“原始挑战者”德哈卡离开地图时仍可提供侦测
+    <br>“原始竞争者”德哈卡离开地图时仍可提供侦测
     <br>启用“强占地盘”时，埃蒙可以夺取剧毒巢穴
     <br>黑暗水晶塔被摧毁时，其召回会被取消
     <br><br><br><a href='https://www.youtube.com/watch?v=0QYYPhWb6-c' rel='nofollow'>第 29 集</a><br>“渗透专家”诺娃被黑暗水晶塔隐形后会失去超级隐形
-    <br>“原始挑战者”德哈卡离开地图时仍会被溅射伤害命中
-    <br>“原始挑战者”德哈卡离开地图时会移除瘟疫减益
+    <br>“原始竞争者”德哈卡离开地图时仍会被溅射伤害命中
+    <br>“原始竞争者”德哈卡离开地图时会移除瘟疫减益
     <br>大地碎裂炮攻击埃蒙的激光钻机时，会给予钻机反击所需的视野
     <br>抬起和诱捕效果可以反复叠加
     <br><br><br><a href='https://www.youtube.com/watch?v=JUfNlLG4lxk' rel='nofollow'>第 30 集</a><br>德哈卡族群首领进入坑道虫后，持续时间会暂停

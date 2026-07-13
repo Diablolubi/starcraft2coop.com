@@ -1,7 +1,7 @@
 {
     "commander": "karax",
     "fullname": "凯拉克斯",
-    "motto": "卡莱相位工匠",
+    "motto": "相位技师",
     "stat01": 2,
     "stat02": 1,
     "stat03": 2,
@@ -18,7 +18,7 @@
     "mastery22": "时空波能量恢复",
     "mastery31": "时空提速效率",
     "mastery32": "亚顿之矛初始及最大能量",
-    "prestige1": "战争设计师",
-    "prestige2": "圣堂显圣",
-    "prestige3": "太阳能天尊"
+    "prestige1": "战争建筑师",
+    "prestige2": "圣堂表象",
+    "prestige3": "天界太阳能"
 }

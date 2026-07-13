@@ -296,7 +296,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <table class="prestigeTable">
         <tbody>
             <tr>
-                <td class="prestigeTitle" colspan="2">P1：<strong>恶毒女王</strong></td>
+                <td class="prestigeTitle" colspan="2">P1：<strong>恶毒族长</strong></td>
             </tr>
             <tr>
                 <th>优势</th>

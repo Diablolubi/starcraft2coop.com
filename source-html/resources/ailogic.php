@@ -1218,7 +1218,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         </div>
     </div>
     <h2 id="mutator">突变因子单位</h2>
-    <p>注意：此处未列出埃蒙的卡拉克斯，因为他的技能一旦冷却完毕便会立即使用。</p>
+    <p>注意：此处未列出埃蒙的凯拉克斯，因为他的技能一旦冷却完毕便会立即使用。</p>
     <div class="leftImage">
         <div class="imageContainer">
             <img src="/images/ailogic/artanis.jpg" alt="阿塔尼斯">
