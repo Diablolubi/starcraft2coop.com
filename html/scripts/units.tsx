@@ -69,8 +69,14 @@ export type Token = Lowercase<string>;
 
 export function parseUnitHash(hash: string): { commander: Token | null, unit: Token | null } {
     const rawHash = String(hash);
-    const raw = rawHash.startsWith("#") ? rawHash.slice(1) : rawHash;
-    const separator = raw.indexOf("/");
+    const raw = rawHash.charCodeAt(0) === 35 ? rawHash.slice(1) : rawHash;
+    let separator = -1;
+    for (let index = 0; index < raw.length; index++) {
+        if (raw.charCodeAt(index) === 47) {
+            separator = index;
+            break;
+        }
+    }
     const commander = separator >= 0 ? raw.slice(0, separator) : raw;
     const unit = separator >= 0 ? raw.slice(separator + 1) : "";
     return {
@@ -163,12 +169,17 @@ class Units extends preact.Component {
         if (this.state.error) {
             return <p>错误：<pre style="color: #ff6633;">{this.state.error}</pre></p>;
         }
-        const rawHash = String(window.location.hash).replace(/^#/, "");
-        const debugParts = rawHash.split("/");
-        const separator = rawHash.indexOf("/");
+        const hashValue = String(window.location.hash);
+        const rawHash = hashValue.charCodeAt(0) === 35 ? hashValue.slice(1) : hashValue;
+        let separator = -1;
+        for (let index = 0; index < rawHash.length; index++) {
+            if (rawHash.charCodeAt(index) === 47) {
+                separator = index;
+                break;
+            }
+        }
         const commander = (separator >= 0 ? rawHash.slice(0, separator) : rawHash) as Token || null;
         const unit = (separator >= 0 ? rawHash.slice(separator + 1) : "") as Token || null;
-        document.getElementById("units")?.setAttribute("data-unit-debug", `${rawHash}|${debugParts.length}|${separator}|${rawHash.charCodeAt(6)}|${debugParts[0] ?? ""}|${debugParts[1] ?? ""}`);
         const modifiers = commander && unit
             ? (this.state.modifiers?.commander === commander && this.state.modifiers?.unit === unit
                 ? this.state.modifiers
