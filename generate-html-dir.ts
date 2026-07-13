@@ -29,6 +29,7 @@ await Bun.build({
         './html/scripts/search-results.tsx',
         './html/scripts/tooltips.ts',
         './html/scripts/units.tsx',
+        './html/scripts/units-page.tsx',
     ],
     outdir: './html/scripts',
     format: 'iife',

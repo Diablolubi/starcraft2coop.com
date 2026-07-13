@@ -89,7 +89,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
 <?= startContent() ?>
     <h1>单位</h1>
     <div id="units"></div>
-    <script src="/scripts/units.js?v3.0" defer></script>
+    <script src="/scripts/units-page.js?v1" defer></script>
     <script src="/scripts/tooltips.js" defer></script>
 
     <h3>数据说明</h3>
