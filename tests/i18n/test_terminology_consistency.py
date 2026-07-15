@@ -59,6 +59,7 @@ class TerminologyConsistencyTests(unittest.TestCase):
         self.assertEqual(entries["Ascension"], "晋升")
         self.assertEqual(entries["Ascension Level"], "晋升等级")
         self.assertEqual(entries["Wraith"], "怨灵战机")
+        self.assertEqual(entries["SCV"], "太空工程车")
 
     def test_representative_unit_data(self):
         units = load_json("source-data/playerunits.json")
