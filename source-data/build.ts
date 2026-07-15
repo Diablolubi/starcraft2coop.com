@@ -3,6 +3,10 @@ import tsj from "ts-json-schema-generator";
 import type { BrutalPlusList, CommanderList, Mission, MutationCycleList, MutationCycleWithScore, MutatorWithStats } from "./data-types";
 import glossary from "../translation/glossary.json";
 
+function token(text: string): string {
+    return text.toLowerCase().replace(/[^a-z0-9]+/g, '');
+}
+
 const files: [`${string}.json`, string][] = [
     ['brutalplus.json', 'BrutalPlusList'],
     ['commandersummaries.json', 'CommanderList'],
@@ -104,6 +108,28 @@ for (const [file, type] of files) {
     const data = await Bun.file(`source-data/${file}`).json();
     Bun.write(`html/data/${file}`, JSON.stringify(data, null, 4) + '\n');
 }
+
+const masteryBreakpointAbilities = await Bun.file('source-data/masterybreakpoints.json').json();
+const masteryBreakpointUnits = await Bun.file('source-data/amonunits.json').json();
+const baseline = await Bun.file('translation/baseline.json').json();
+const baselineAmonUnits = baseline.files.find((file: { path: string }) => file.path === 'source-data/amonunits.json')?.data || [];
+Bun.write('html/data/masterybreakpoints.json', JSON.stringify({
+    abilities: masteryBreakpointAbilities,
+    units: masteryBreakpointUnits
+        .map((unit: Record<string, number | string>, index: number) => ({ unit, index }))
+        .filter(({ unit }: { unit: { breakpoint: number } }) => unit.breakpoint === 1)
+        .map(({ unit, index }: { unit: Record<string, number | string>; index: number }) => ({
+            name: unit.name,
+            race: unit.race,
+            hp: unit.hp,
+            shields: unit.shields,
+            armor: unit.armor,
+            light: unit.light,
+            structure: unit.structure,
+            flyer: unit.flyer,
+            token: token(baselineAmonUnits[index]?.name || String(unit.name)),
+        })),
+}, null, 4) + '\n');
 
 console.log(`Writing to html/data/brutalplus/`);
 for (const brutalPlus of brutalPluses) {

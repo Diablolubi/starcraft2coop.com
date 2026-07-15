@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/global.css?v=70e9bc">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <title>《星际争霸 II》合作任务 - 残酷+难度</title>
   <meta name="description" content="《星际争霸 II》合作任务残酷+难度与突变因子">
@@ -208,7 +208,7 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         }
     })(jQuery);
 </script>
-<script src="/scripts/search.js" defer></script>
+<script src="/scripts/search.js?v=402a61" defer></script>
 <div id="content">
         <h1>残酷+难度：突变因子点数区间与模板</h1>
         <p>残酷+属于“扩展难度”：任务仍以普通残酷难度进行，但除标准任务机制外，还会加入一定数量的随机<a href="mutators">突变因子</a>。只要所用指挥官达到 15 级，就能加入残酷+的随机匹配；残酷+2 及以上难度则必须与队伍中的另一名玩家组队游玩。</p>
@@ -337,16 +337,9 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             $("#randomMutation").append("<p>正在加载……</p>");
             var difficultyLevel = parseInt($("#difficultyLevel").val());
 
-            $.ajax({
-                type: 'GET',
-                url: '/scripts/generatemutation.php',
-                data: { difficulty:difficultyLevel },
-                success: function(response) {
-                    var template = response;
-                    generateMutation(template);
-                },
-            dataType:"json"
-            });
+            var limits = $("#limits tbody tr").eq(difficultyLevel - 1).find("td").map(function(){ return parseInt($(this).text(), 10); }).get();
+            var template = generateTemplate(limits[3], limits[4], limits[1], limits[2]);
+            generateMutation(template);
 
 
         });
@@ -423,7 +416,7 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         }
 
     </script>
-<script src="/scripts/tooltips.js"></script>
+<script src="/scripts/tooltips.js?v=3a9060"></script>
 </div>
 
 <div id="footer">

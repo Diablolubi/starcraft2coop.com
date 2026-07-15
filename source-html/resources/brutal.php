@@ -201,16 +201,9 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             $("#randomMutation").append("<p>正在加载……</p>");
             var difficultyLevel = parseInt($("#difficultyLevel").val());
 
-            $.ajax({
-                type: 'GET',
-                url: '/scripts/generatemutation.php',
-                data: { difficulty:difficultyLevel },
-                success: function(response) {
-                    var template = response;
-                    generateMutation(template);
-                },
-            dataType:"json"
-            });
+            var limits = $("#limits tbody tr").eq(difficultyLevel - 1).find("td").map(function(){ return parseInt($(this).text(), 10); }).get();
+            var template = generateTemplate(limits[3], limits[4], limits[1], limits[2]);
+            generateMutation(template);
 
 
         });

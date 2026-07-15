@@ -482,17 +482,29 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         </div>
     </div>
     <script>
+        var amonUnits = [];
+        fetch("../data/amonunits.json").then(function(response){ return response.json(); }).then(function(data){ amonUnits = data; });
+
+        function renderAmonStats(unit) {
+            var html = "<span class='title'>" + unit.name + "</span>";
+            if (unit.shields !== 0) html += "<span id='unitShields'>护盾：" + unit.shields + "</span><br><span id='unitShieldArmor'>护盾护甲：" + unit.shieldarmor + "</span><br>";
+            html += "<span id='unitHP'>生命值：" + unit.hp + "</span><br><span id='unitArmor'>护甲：" + unit.armor + "</span><br><span class='title'>标签</span><br>";
+            [["light", "轻甲"], ["armored", "重甲"], ["biological", "生物"], ["mechanical", "机械"], ["psionic", "灵能"], ["heroic", "英雄"], ["massive", "重型"], ["structure", "建筑"]].forEach(function(tag){ if (unit[tag[0]]) html += tag[1] + "<br>"; });
+            return html;
+        }
+
+        function renderAmonTable(minVitality, maxVitality) {
+            var units = amonUnits.filter(function(unit){
+                var vitality = unit.hp + unit.shields;
+                return vitality >= minVitality && vitality <= maxVitality;
+            }).sort(function(a, b){ return a.name.localeCompare(b.name); });
+            return units.map(function(unit){ return "<div class='content " + unit.race + "' data-amon-id='" + unit.amonid + "'>" + unit.name + "</div>"; }).join("");
+        }
+
         $("#flexContainer").on("click",".content", function(){
             selectedUnit=$(this).data("amon-id");
-            $("#dataContainer").text("正在加载……");
-            $.ajax({
-                type: 'GET',
-                url: '../scripts/getamonstats.php',
-                data: { unit: selectedUnit },
-                success: function(response) {
-                    $("#dataContainer").html(response);
-                }
-            });
+            var unit = amonUnits.find(function(item){ return String(item.amonid) === String(selectedUnit); });
+            if (unit) $("#dataContainer").html(renderAmonStats(unit));
         })
         $("#filter").on("click", function(){
             var maxVit=$("#maxVitality").val();
@@ -504,18 +516,9 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                 if(minVit==""){
                     minVit = 0;
                 }
-                $.ajax({
-                    type: 'GET',
-                    url: '../scripts/generatetable.php',
-                    data: { maxvitality: maxVit, minvitality: minVit },
-                    success: function(response) {
-                        $("#flexContainer").html(response);
-                        $(".toggle").each(function(){
-                            if($(this).css("opacity")==0.25){
-                                $("#flexContainer").find("." + $(this).data("race")).css("display","none")
-                            }
-                        })
-                    }
+                $("#flexContainer").html(renderAmonTable(parseInt(minVit, 10), parseInt(maxVit, 10)));
+                $(".toggle").each(function(){
+                    if($(this).css("opacity")==0.25) $("#flexContainer").find("." + $(this).data("race")).css("display","none");
                 });
             }
 
@@ -526,14 +529,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             })
             $("#maxVitality").val("");
             $("#minVitality").val("");
-            $.ajax({
-                type: 'GET',
-                url: '../scripts/generatetable.php',
-                data: {},
-                success: function(response) {
-                    $("#flexContainer").html(response);
-                }
-            });
+            $("#flexContainer").html(renderAmonTable(0, Number.MAX_SAFE_INTEGER));
         })
     </script>
     <div class="clear"></div>

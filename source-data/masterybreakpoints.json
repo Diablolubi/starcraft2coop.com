@@ -1,0 +1,21 @@
+{
+    "immobilizationwave": { "spammable": false, "affectedByArmor": false, "baseDamage": 100, "damageIncrease": 0.0333, "air": true, "structure": false },
+    "leapingstrike": { "spammable": true, "affectedByArmor": false, "baseDamage": 300, "damageIncrease": 0.01, "air": false, "structure": true },
+    "psionicshift": { "spammable": true, "affectedByArmor": false, "baseDamage": 100, "damageIncrease": 0.01, "air": false, "structure": false },
+    "immobilizationwavep2": { "spammable": false, "affectedByArmor": false, "baseDamage": 50, "damageIncrease": 0.0333, "air": true, "structure": false },
+    "leapingstrikep2": { "spammable": true, "affectedByArmor": false, "baseDamage": 150, "damageIncrease": 0.01, "air": false, "structure": true },
+    "psionicshiftp2": { "spammable": true, "affectedByArmor": false, "baseDamage": 50, "damageIncrease": 0.01, "air": false, "structure": false },
+    "kineticblast": { "spammable": true, "affectedByArmor": false, "baseDamage": 300, "damageIncrease": 0.01, "air": true, "structure": true },
+    "crushinggrip": { "spammable": true, "affectedByArmor": false, "baseDamage": 50, "damageIncrease": 0.01, "air": true, "structure": false },
+    "concentratedbeam": { "spammable": false, "affectedByArmor": false, "baseDamage": 400, "damageIncrease": 0.02, "air": true, "structure": true },
+    "infesteddrop": { "spammable": true, "affectedByArmor": false, "baseDamage": 50, "damageIncrease": 0.02, "air": false, "structure": true },
+    "spawntoxicnest": { "spammable": true, "affectedByArmor": false, "baseDamage": 125, "damageIncrease": 0.02, "air": false, "structure": false },
+    "snipe": { "spammable": true, "affectedByArmor": false, "baseDamage": 200, "damageIncrease": 0.0167, "air": true, "structure": false },
+    "penetratingblast": { "spammable": true, "affectedByArmor": false, "baseDamage": 50, "damageIncrease": 0.0167, "air": false, "structure": true },
+    "sabotagedrone": { "spammable": false, "affectedByArmor": false, "baseDamage": 200, "damageIncrease": 0.0167, "air": false, "structure": true },
+    "stancedanceswitch": { "spammable": true, "affectedByArmor": false, "baseDamage": 100, "damageIncrease": 0.0167, "air": false, "structure": true },
+    "banelingbarrage": { "spammable": true, "affectedByArmor": true, "baseDamage": 40, "damageIncrease": 0.025, "air": false, "structure": true },
+    "alarakportrait": { "spammable": true, "affectedByArmor": true, "baseDamage": 30, "damageIncrease": 0.0333, "air": true, "structure": true },
+    "zagaraportrait": { "spammable": true, "affectedByArmor": true, "baseDamage": 30, "damageIncrease": 0.0333, "air": true, "structure": true },
+    "kerriganportrait": { "spammable": true, "affectedByArmor": true, "baseDamage": 40, "damageIncrease": 0.025, "air": true, "structure": true }
+}

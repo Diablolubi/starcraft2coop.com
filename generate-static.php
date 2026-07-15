@@ -25,6 +25,11 @@ $GENERATING_STATIC_PAGES = true;
 error_reporting(E_ALL);
 
 set_error_handler(function (int $severity, string $message, string $file, int $line) {
+    // Windows can briefly keep generated PHP files open while the previous
+    // build process exits. The cleanup loop below retries these warnings.
+    if (str_starts_with($message, 'unlink(')) {
+        return true;
+    }
     throw new ErrorException($message, 0, $severity, $file, $line);
 });
 

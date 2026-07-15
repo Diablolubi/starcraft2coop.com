@@ -1,3 +1,4 @@
+import json
 import tempfile
 import threading
 import unittest
@@ -12,6 +13,30 @@ from scripts.pages.serve_local import LocalSiteHandler
 
 
 class PackagePagesTests(unittest.TestCase):
+    def test_generated_asset_manifest_uses_web_style_paths(self) -> None:
+        manifest = Path("html/data/cachebusters.json").read_text(encoding="utf-8")
+        self.assertNotIn('\\\\', manifest)
+        self.assertIn('"/scripts/masterybreakpoints.js"', manifest)
+
+    def test_mastery_breakpoint_page_is_static(self) -> None:
+        page = Path("html/tools/masterybreakpoints.html").read_text(encoding="utf-8")
+        self.assertIn('fetch("../data/masterybreakpoints.json")', page)
+        self.assertNotIn("calculatebreakpoints.php", page)
+        data = json.loads(Path("html/data/masterybreakpoints.json").read_text(encoding="utf-8"))
+        self.assertEqual(19, len(data["abilities"]))
+        self.assertGreater(len(data["units"]), 0)
+
+    def test_brutal_mutation_generator_is_static(self) -> None:
+        page = Path("html/resources/brutal.html").read_text(encoding="utf-8")
+        self.assertNotIn("generatemutation.php", page)
+        self.assertIn("generateTemplate(limits[3], limits[4], limits[1], limits[2])", page)
+
+    def test_unitstats_enemy_data_is_static(self) -> None:
+        page = Path("html/tools/unitstats.html").read_text(encoding="utf-8")
+        self.assertIn('fetch("../data/amonunits.json")', page)
+        self.assertNotIn("getamonstats.php", page)
+        self.assertNotIn("generatetable.php", page)
+
     def test_rewrites_site_paths_and_preserves_external_urls(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/global.css?v=70e9bc">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <title>《星际争霸 II》合作任务 - 精通临界点计算器</title>
   <meta name="description" content="计算达到特定伤害临界点所需的精通点数。">
@@ -216,7 +216,7 @@ if (document.location.host === 'dev.starcraft2coop.com') {
         }
     })(jQuery);
 </script>
-<script src="/scripts/search.js" defer></script>
+<script src="/scripts/search.js?v=402a61" defer></script>
 <div id="content">
         <div id="tooltip">提示</div>
     <h1>精通临界点计算器</h1>
@@ -364,164 +364,88 @@ if (document.location.host === 'dev.starcraft2coop.com') {
             </tbody>
         </table>
     </div>
+    <script src="/scripts/masterybreakpoints.js?v=025042"></script>
     <script>
+        var breakpointData;
+        var selectedAbility;
+        var unitsList;
+        var multishot = false;
+        var breakpointDataPromise = fetch("../data/masterybreakpoints.json")
+            .then(function(response) { return response.json(); })
+            .then(function(data) { breakpointData = data; return data; });
+
         $( document ).ready(function() {
             $("#unitContainerSingle").hide();
             $("#unitContainerMulti").hide();
         });
-        var unitsList;
-        var multishot = false;
         $(document).on('mouseover','.tooltip',function(){
-            var text = $(this).attr("alt");
-            $("#tooltip").html(text);
-            $("#tooltip").show();
+            $("#tooltip").html($(this).attr("alt")).show();
         });
-
-        $(document).on('mouseleave','.tooltip',function(){
-            $("#tooltip").hide();
-        });
-
+        $(document).on('mouseleave','.tooltip',function(){ $("#tooltip").hide(); });
         $(document).on('mousemove','.tooltip',function(e){
-            $('#tooltip').css('top', e.pageY-40);
-            $('#tooltip').css('left', e.pageX+5);
-            $('#tooltip').css('position', "absolute");
-
+            $('#tooltip').css({top: e.pageY-40, left: e.pageX+5, position: "absolute"});
         });
         $(".tooltip").click(function(){
-            $(".selected").addClass("unselected");
-            $(".selected").removeClass("selected");
-            $(this).addClass("selected");
-            $(this).removeClass("unselected");
+            $(".selected").addClass("unselected").removeClass("selected");
+            $(this).addClass("selected").removeClass("unselected");
             var src = $(this).attr('src').split('/');
-            var abilityName = src[src.length-1];
-            abilityName = abilityName.substring(0, abilityName.length - 4);
-            $.ajax({
-                type: "POST",
-                url: "../scripts/calculatebreakpoints.php",
-                data: {
-                    ability: abilityName,
-                },
-                success: function(data) {
-
-                    var data = JSON.parse(data);
-                    unitsList = data[4];
-                    $("#baseDmg").text(data[2]);
-                    var dmgIncrease = Math.round(data[3] * 10000) / 100;
-                    $("#dmgIncrease").text(dmgIncrease);
-                    $("#calculatedOutput").css("display","inline-block");
-                    $("#unitContainerSingle").hide();
-                    $("#unitContainerMulti").hide();
-                    $("#slide").val(0);
-                    if(data[0]==1){
-                        $("#unitContainerMulti").show();
-                        multishot = true;
-                    }
-                    else{
-                        $("#unitContainerSingle").show();
-                        multishot=false;
-                    }
-                    if(data[1]==1){
-                        $("#armorContainer").show();
-                        $("#armor1").prop('checked',true);
-                    }
-                    else{
-                        $("#armorContainer").hide();
-                    }
-                    console.log(unitsList);
-                    updateUnits();
-                }
-            });
-        })
+            var abilityName = src[src.length-1].slice(0, -4);
+            if (!breakpointData) {
+                var clickedElement = this;
+                breakpointDataPromise.then(function() { $(clickedElement).trigger('click'); });
+                return;
+            }
+            if (!breakpointData.abilities[abilityName]) return;
+            selectedAbility = breakpointData.abilities[abilityName];
+            $("#baseDmg").text(selectedAbility.baseDamage);
+            $("#dmgIncrease").text(Math.round(selectedAbility.damageIncrease * 10000) / 100);
+            $("#calculatedOutput").css("display", "inline-block");
+            $("#unitContainerSingle").toggle(!selectedAbility.spammable);
+            $("#unitContainerMulti").toggle(selectedAbility.spammable);
+            multishot = selectedAbility.spammable;
+            $("#slide").val(0);
+            $("#armorContainer").toggle(selectedAbility.affectedByArmor);
+            if (selectedAbility.affectedByArmor) $("#armor1").prop('checked', true);
+            updateUnits();
+        });
         function updateUnits(){
-            var points = $("#slide").val();
-            var baseDamage = parseInt($("#baseDmg").text());
-            var damageIncrease = parseFloat($("#dmgIncrease").text());
-            //This is added units get left with 1HP even if they should be 1-shot
-            if(points==15 || points==30){
-                var currentDamage = Math.round(parseFloat(baseDamage) + (damageIncrease*points*parseFloat(baseDamage)/100));
-            }
-            else{
-                var currentDamage = Math.floor(parseFloat(baseDamage) + (damageIncrease*points*parseFloat(baseDamage)/100));
-            }
-
+            if (!selectedAbility || !breakpointData) return;
+            var points = parseInt($("#slide").val(), 10);
+            var armor = $("#armorContainer").is(":visible") ? parseInt($("input[name='armor']:checked").val(), 10) : 0;
+            var currentDamage = window.masteryBreakpoints.calculateDamage(selectedAbility, points);
+            var effectiveDamage = currentDamage - (selectedAbility.affectedByArmor ? armor : 0);
+            unitsList = window.masteryBreakpoints.classifyUnits(breakpointData.units, selectedAbility, points, armor);
             $("#currentDamage").text(currentDamage);
-            //Add bonus text for Penetrating Blast
-            if($("#penBlast1").hasClass("selected")){
-                var extraDamage = currentDamage;
-                $("#bonus").text("（+" + extraDamage + " 对轻甲）");
-            }
-            else if($("#penBlast2").hasClass("selected")){
-                var extraDamage = currentDamage;
-                $("#bonus").text("（+" + extraDamage + " 对轻甲）");
-            }
-            else if($("#sabotageDrone").hasClass("selected")){
-                var extraDamage = currentDamage;
-                $("#bonus").text("（+" + extraDamage + " 对建筑）");
-            }
-            else{
+            if($("#penBlast1").hasClass("selected") || $("#penBlast2").hasClass("selected")){
+                $("#bonus").text("（+" + currentDamage + " 对轻甲）");
+            } else if($("#sabotageDrone").hasClass("selected")){
+                $("#bonus").text("（+" + currentDamage + " 对建筑）");
+            } else {
                 $("#bonus").text("");
             }
-
-            if($("#armorContainer").is(":visible")){
-                var subtractor = $("input[name='armor']:checked").val();
-                currentDamage = currentDamage - subtractor;
-            }
-            var container = "";
-            if(multishot){
-                container = "#unitContainerMulti";
-            }
-            else{
-                container = "#unitContainerSingle";
-            }
+            var container = multishot ? "#unitContainerMulti" : "#unitContainerSingle";
             $("#masteryPoints").text(points);
-
             $(container + " table tbody tr").each(function(){
                 var row = $(this);
-                row.find("td:nth-child(2)").empty();
-                row.find("td:nth-child(3)").empty();
-                row.find("td:nth-child(4)").empty();
-                row.find("td:nth-child(5)").empty();
-                unitsList[row.find("td:nth-child(1)").data("race")].forEach(function (item, index) {
-                    var imageName = item[4] + ".png";
+                row.find("td").slice(1).empty();
+                (unitsList[row.find("td:first-child").data("race")] || []).forEach(function(item){
+                    var imageName = item.token + ".png";
                     var classes = "unit tooltip";
-                    var calculatedDamage = currentDamage;
-                    if(item[2]==1){
+                    var calculatedDamage = effectiveDamage;
+                    if(item.light==1){
                         classes += " light";
-                        if($("#penBlast1").hasClass("selected") || $("#penBlast2").hasClass("selected")){
-                            calculatedDamage *= 2;
-                        }
+                        if($("#penBlast1").hasClass("selected") || $("#penBlast2").hasClass("selected")) calculatedDamage *= 2;
                     }
-                    if(item[3]==1){
+                    if(item.structure==1){
                         classes += " structure";
-                        if($("#sabotageDrone").hasClass("selected")){
-                            calculatedDamage *= 2;
-                        }
+                        if($("#sabotageDrone").hasClass("selected")) calculatedDamage *= 2;
                     }
-                    if(multishot){
-                        if(item[0]<=calculatedDamage){
-                            row.find("td:nth-child(2)").append("<img class='" + classes + "' src='/images/comps/unitimages/" + imageName + "' alt='" + item[1] + "：" + item[0] + " 耐久度'>")
-                        }
-                        else if (item[0]<=2*calculatedDamage){
-                            row.find("td:nth-child(3)").append("<img class='" + classes + "' src='/images/comps/unitimages/" + imageName + "' alt='" + item[1] + "：" + item[0] + " 耐久度'>")
-                        }
-                        else if (item[0]<=3*calculatedDamage){
-                            row.find("td:nth-child(4)").append("<img class='" + classes + "' src='/images/comps/unitimages/" + imageName + "' alt='" + item[1] + "：" + item[0] + " 耐久度'>")
-                        }
-                        else{
-                            row.find("td:nth-child(5)").append("<img class='" + classes + "' src='/images/comps/unitimages/" + imageName + "' alt='" + item[1] + "：" + item[0] + " 耐久度'>")
-                        }
-                    }
-                    else{
-                        if(item[0]<=calculatedDamage){
-                            row.find("td:nth-child(2)").append("<img class='" + classes + "' src='/images/comps/unitimages/" + imageName + "' alt='" + item[1] + "：" + item[0] + " 耐久度'>")
-                        }
-                        else{
-                            row.find("td:nth-child(3)").append("<img class='" + classes + "' src='/images/comps/unitimages/" + imageName + "' alt='" + item[1] + "：" + item[0] + " 耐久度'>")
-                        }
-                    }
-
-
-               })
+                    var durability = item.hp + item.shields;
+                    var hitCount = multishot ? Math.min(Math.ceil(durability / calculatedDamage), 4) : (durability <= calculatedDamage ? 1 : 2);
+                    row.find("td:nth-child(" + (hitCount + 1) + ")").append(
+                        "<img class='" + classes + "' src='/images/comps/unitimages/" + imageName + "' alt='" + item.name + "：" + durability + " 耐久度'>"
+                    );
+                });
             });
         }
     </script>

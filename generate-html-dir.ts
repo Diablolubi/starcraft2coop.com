@@ -28,6 +28,7 @@ await Bun.build({
         './html/scripts/search.ts',
         './html/scripts/search-results.tsx',
         './html/scripts/tooltips.ts',
+        './html/scripts/masterybreakpoints.ts',
         './html/scripts/units.tsx',
         './html/scripts/units-page.tsx',
     ],
@@ -44,7 +45,8 @@ async function getAssetHashes() {
     for await (const file of assetScanner.scan({cwd: "html", onlyFiles: true})) {
         const contents = await Bun.file(`html/${file}`).arrayBuffer();
         const hash = new Bun.CryptoHasher('sha256').update(contents).digest('hex').slice(0, 6);
-        hashes.set(`/${file}`, `/${file}?v=` + hash);
+        const pathname = `/${file.replaceAll('\\', '/')}`;
+        hashes.set(pathname, pathname + `?v=` + hash);
     }
     return hashes;
 }
