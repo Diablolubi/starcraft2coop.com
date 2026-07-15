@@ -28,7 +28,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         <p><a href="#levelUnlocks">等级解锁</a></p>
         <p><a href="#achievements">成就</a></p>
         <p><a href="#suits">菲尼克斯装甲</a></p>
-        <p><a href="#leveling">飞升前升级</a></p>
+        <p><a href="#leveling">晋升前升级</a></p>
         <p><a href="#masteries">精通</a></p>
         <p><a href="#prestiges">威望</a></p>
         <p><a href="#army">推荐部队组成</a></p>
@@ -393,7 +393,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
         </tbody>
     </table>
-    <h2 id="leveling">飞升前升级</h2>
+    <h2 id="leveling">晋升前升级</h2>
     <p>难度：简单</p>
     <p>混合使用多种单位，升级初期重点发展使徒、不朽者和航母。尽可能依靠菲尼克斯的装甲技能，提高部队的生存能力。</p>
     <p>提升精通等级期间，若准备使用技能组3的初始人口精通，请为其分配点数。</p>

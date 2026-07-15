@@ -49,6 +49,16 @@ class TerminologyConsistencyTests(unittest.TestCase):
         }
         self.assertEqual({key: entries[key] for key in expected}, expected)
 
+    def test_ascension_terms_are_consistent(self):
+        entries = {
+            entry["en"]: entry["zh-CN"]
+            for category in ("units", "terminology")
+            for entry in self.glossary[category]
+        }
+        self.assertEqual(entries["Ascendant"], "晋升者")
+        self.assertEqual(entries["Ascension"], "晋升")
+        self.assertEqual(entries["Ascension Level"], "晋升等级")
+
     def test_representative_unit_data(self):
         units = load_json("source-data/playerunits.json")
         expected = {
@@ -125,6 +135,19 @@ class TerminologyConsistencyTests(unittest.TestCase):
                         if term in text:
                             offenders.append(f"{path.relative_to(ROOT)}: {term}")
         self.assertFalse(offenders, "发现已废弃的建筑/技能译名: " + "; ".join(offenders))
+
+    def test_ascension_terms_are_not_mislocalized(self):
+        roots = (ROOT / "source-html", ROOT / "source-data", ROOT / "includes")
+        retired = ("飞升者", "飞升前", "飞升等级", "新功能：飞升")
+        offenders = []
+        for root in roots:
+            for path in root.rglob("*"):
+                if path.is_file() and path.suffix.lower() in {".php", ".json", ".html", ".ts", ".tsx"}:
+                    text = path.read_text(encoding="utf-8")
+                    for term in retired:
+                        if term in text:
+                            offenders.append(f"{path.relative_to(ROOT)}: {term}")
+        self.assertFalse(offenders, "发现仍使用飞升表示晋升/晋升者: " + "; ".join(offenders))
 
 
 if __name__ == "__main__":

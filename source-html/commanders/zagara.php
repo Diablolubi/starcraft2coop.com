@@ -27,7 +27,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         <p><a href="#comSum">指挥官概览</a></p>
         <p><a href="#levelUnlocks">等级解锁</a></p>
         <p><a href="#achievements">成就</a></p>
-        <p><a href="#leveling">飞升前升级</a></p>
+        <p><a href="#leveling">晋升前升级</a></p>
         <p><a href="#masteries">精通</a></p>
         <p><a href="#prestiges">威望</a></p>
         <p><a href="#hero">英雄单位</a></p>
@@ -209,7 +209,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
         </tbody>
     </table>
-    <h2 id="leveling">飞升前升级</h2>
+    <h2 id="leveling">晋升前升级</h2>
     <p>难度：非常困难</p>
     <p>由于缺少免费的爆虫和虫群跳虫，扎加拉是低等级阶段最难练级的指挥官之一。务必稳扎稳打，避免无谓损失，并在资源有余时变异爆虫。部队中可加入一些畸变体，以提供持续伤害。</p>
     <h2 id="masteries">精通</h2>

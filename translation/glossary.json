@@ -2176,6 +2176,7 @@
     { "en": "Viking", "zh-CN": "维京战机", "aliases": ["Viking"] },
     { "en": "Zealot", "zh-CN": "狂热者", "aliases": ["Zealot"] },
     { "en": "Adept", "zh-CN": "使徒", "aliases": ["Adept"] },
+    { "en": "Ascendant", "zh-CN": "晋升者", "aliases": ["Ascendant", "飞升者"] },
     { "en": "Stalker", "zh-CN": "追猎者", "aliases": ["Stalker"] },
     { "en": "Immortal", "zh-CN": "不朽者", "aliases": ["Immortal"] },
     { "en": "Colossus", "zh-CN": "巨像", "aliases": ["Colossus"] },
@@ -2208,6 +2209,8 @@
   ],
   "terminology": [
     { "en": "Mastery Set", "zh-CN": "技能组", "aliases": ["Mastery Set", "Power Set"] },
+    { "en": "Ascension", "zh-CN": "晋升", "aliases": ["Ascension", "飞升"] },
+    { "en": "Ascension Level", "zh-CN": "晋升等级", "aliases": ["Ascension Level", "飞升等级"] },
     { "en": "Solar Lance", "zh-CN": "太阳能长枪", "aliases": ["Solar Lance"] }
   ]
 }

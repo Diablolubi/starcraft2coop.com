@@ -54,7 +54,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         <p><a href="#levelUnlocks">等级解锁</a></p>
         <p><a href="#achievements">成就</a></p>
         <p><a href="#calldowns">面板技能</a></p>
-        <p><a href="#leveling">飞升前升级</a></p>
+        <p><a href="#leveling">晋升前升级</a></p>
         <p><a href="#masteries">精通</a></p>
         <p><a href="#prestiges">威望</a></p>
         <p><a href="#army">推荐配兵</a></p>
@@ -316,7 +316,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
         </tbody>
     </table>
-    <h2 id="leveling">飞升前升级</h2>
+    <h2 id="leveling">晋升前升级</h2>
     <p>难度：中等</p>
     <p>斯旺在低等级时的玩法与巅峰等级阶段基本相同，但发育和成军速度明显更慢。前期应在分矿石旁建造一座指挥中心，因为单台 SCV 需要较长时间才能完成建造。后期建造 4 座重工厂，其中 2 座安装科技实验室，另 2 座安装反应堆，用于生产最终部队。</p>
     <p>提升精通等级时，先将点数投入技能组 1 的“集中光束宽度”精通，达到所需点数后再投入“战斗投放持续时间”精通。技能组 3 则平均分配点数。</p>

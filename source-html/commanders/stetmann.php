@@ -28,7 +28,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         <p><a href="#levelUnlocks">等级解锁</a></p>
         <p><a href="#achievements">成就</a></p>
         <p><a href="#stetzones">爱心区域</a></p>
-        <p><a href="#leveling">飞升前升级</a></p>
+        <p><a href="#leveling">晋升前升级</a></p>
         <p><a href="#masteries">精通</a></p>
         <p><a href="#prestiges">威望</a></p>
         <p><a href="#hero">英雄单位</a></p>
@@ -307,7 +307,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
         </tbody>
     </table>
-    <h2 id="leveling">飞升前升级</h2>
+    <h2 id="leveling">晋升前升级</h2>
     <p>难度：中等</p>
     <p>斯台特曼解锁超级盖瑞后，最好先依靠这名英雄单位清理敌方营地和基地，再派部队解决任务目标。解锁超级盖瑞前，建议以机械刺蛇和机械跳虫作为部队骨干，让机械跳虫为较脆弱的机械刺蛇承受伤害。</p>
     <h2 id="masteries">精通</h2>

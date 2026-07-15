@@ -70,7 +70,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         <p><a href="#levelUnlocks">等级解锁</a></p>
         <p><a href="#achievements">成就</a></p>
         <p><a href="#calldowns">面板技能</a></p>
-        <p><a href="#leveling">飞升前升级</a></p>
+        <p><a href="#leveling">晋升前升级</a></p>
         <p><a href="#masteries">精通</a></p>
         <p><a href="#prestiges">威望</a></p>
         <p><a href="#army">推荐部队组成</a></p>
@@ -342,7 +342,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
         </tbody>
     </table>
-    <h2 id="leveling">飞升前升级</h2>
+    <h2 id="leveling">晋升前升级</h2>
     <p>难度：中等</p>
     <p>在解锁大地碎裂炮之前，蒙斯克升级会非常困难，因为他几乎无法在交战中做到部队无损。解锁大地碎裂炮后，应在推进前用它削弱敌方基地与进攻波次。由冲锋队在前排阻挡敌军，再让冲击分队提供伤害。</p>
     <h2 id="masteries">精通</h2>

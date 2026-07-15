@@ -52,7 +52,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         <p><a href="#levelUnlocks">等级解锁</a></p>
         <p><a href="#achievements">成就</a></p>
         <p><a href="#calldowns">面板技能</a></p>
-        <p><a href="#leveling">飞升前升级</a></p>
+        <p><a href="#leveling">晋升前升级</a></p>
         <p><a href="#masteries">精通</a></p>
         <p><a href="#prestiges">威望</a></p>
         <p><a href="#hero">英雄单位</a></p>
@@ -872,7 +872,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
         </tbody>
     </table>
-    <h2 id="leveling">飞升前升级</h2>
+    <h2 id="leveling">晋升前升级</h2>
     <p>难度：简单</p>
     <p>升级初期以伏击者和执行者作为核心部队。达到 3 级后，伏击者会凭借强力的闪现伤害升级大幅提高输出。谨慎使用静滞射线——这是一项较差的面板技能。不要用它静滞整波进攻，而应将进攻波分割成更易处理的几部分。更积极地依赖军团面板技能，即使这意味着要暂时削减单位生产也无妨。</p>
     <h2 id="masteries">精通</h2>

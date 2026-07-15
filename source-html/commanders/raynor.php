@@ -28,7 +28,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         <p><a href="#levelUnlocks">等级解锁</a></p>
         <p><a href="#achievements">成就</a></p>
         <p><a href="#calldowns">面板技能</a></p>
-        <p><a href="#leveling">飞升前升级</a></p>
+        <p><a href="#leveling">晋升前升级</a></p>
         <p><a href="#masteries">精通</a></p>
         <p><a href="#prestiges">威望</a></p>
         <p><a href="#army">推荐部队配置</a></p>
@@ -298,9 +298,9 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </table>
         </div>
     </div>
-    <h2 id="leveling">飞升前升级</h2>
+    <h2 id="leveling">晋升前升级</h2>
     <p>难度：中等</p>
-    <p>雷诺在低等级时的玩法与飞升等级基本相同，区别只在于整体节奏慢得多：补给站需要建造时间，单位也无法直接投送至战场。由于后一点，务必清理部队与生产建筑之间的路线，防止增援单位被敌军截杀。</p>
+    <p>雷诺在低等级时的玩法与晋升等级基本相同，区别只在于整体节奏慢得多：补给站需要建造时间，单位也无法直接投送至战场。由于后一点，务必清理部队与生产建筑之间的路线，防止增援单位被敌军截杀。</p>
     <p>提升精通等级期间，在技能组1中平均分配点数。</p>
     <h2 id="masteries">精通</h2>
     <p>以下列出雷诺的三个技能组及各自的推荐点数分配。这是一套未选择任何威望时适用于所有地图的通用配置。强烈建议你根据自己的玩法和面临的特殊挑战（例如<a href="/resources/weeklymutations">每周突变</a>）调整精通点数。</p>

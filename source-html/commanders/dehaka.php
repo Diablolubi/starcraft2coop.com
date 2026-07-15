@@ -35,7 +35,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         <p><a href="#levelUnlocks">等级解锁</a></p>
         <p><a href="#achievements">成就</a></p>
         <p><a href="#calldowns">面板技能</a></p>
-        <p><a href="#leveling">飞升前升级</a></p>
+        <p><a href="#leveling">晋升前升级</a></p>
         <p><a href="#masteries">精通</a></p>
         <p><a href="#prestiges">威望</a></p>
         <p><a href="#hero">英雄单位</a></p>
@@ -464,7 +464,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </table>
         </div>
     </div>
-    <h2 id="leveling">飞升前升级</h2>
+    <h2 id="leveling">晋升前升级</h2>
     <p>难度：中等</p>
     <p>德哈卡升级过程中最大的难点在游戏前期：英雄登场时只有一个技能点，应优先投入吞噬。在尚未解锁原始战斗进化单位的低等级阶段，可用刺蛇和雷兽作为主力部队；雷兽在前排承伤，刺蛇在后排输出。</p>
     <h2 id="masteries">精通</h2>

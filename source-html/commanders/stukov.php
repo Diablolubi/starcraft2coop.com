@@ -28,7 +28,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         <p><a href="#levelUnlocks">等级解锁</a></p>
         <p><a href="#achievements">成就</a></p>
         <p><a href="#calldowns">面板技能</a></p>
-        <p><a href="#leveling">飞升前升级</a></p>
+        <p><a href="#leveling">晋升前升级</a></p>
         <p><a href="#masteries">精通</a></p>
         <p><a href="#prestiges">威望</a></p>
         <p><a href="#army">推荐部队构成</a></p>
@@ -323,7 +323,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </table>
         </div>
     </div>
-    <h2 id="leveling">飞升前升级</h2>
+    <h2 id="leveling">晋升前升级</h2>
     <p>难度：简单</p>
     <p>斯托科夫在低等级时的玩法与巅峰等级阶段基本相同。不过，他的感染单位生成速度会明显较慢（因为尚未解锁膨胀碉堡升级）。因此，选择卸载碉堡、一次性放出大量感染单位时需要谨慎，因为重新填满碉堡需要一段时间。</p>
     <h2 id="masteries">精通</h2>

@@ -28,7 +28,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         <p><a href="#levelUnlocks">等级解锁</a></p>
         <p><a href="#achievements">成就</a></p>
         <p><a href="#calldowns">面板技能</a></p>
-        <p><a href="#leveling">飞升前升级</a></p>
+        <p><a href="#leveling">晋升前升级</a></p>
         <p><a href="#masteries">精通</a></p>
         <p><a href="#prestiges">威望</a></p>
         <p><a href="#army">推荐部队组成</a></p>
@@ -273,7 +273,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         </tbody>
     </table>
     <p>注意：消灭单位时，单位每占用一点补给，就会掉落 2.5 点生物质。</p>
-    <h2 id="leveling">飞升前升级</h2>
+    <h2 id="leveling">晋升前升级</h2>
     <p>难度：简单</p>
     <p>阿巴瑟升级过程中最困难的是 1 级，此时还无法使用能带来巨大强度提升的终极进化。这个等级建议先使用蟑螂/破坏者/虫群女王组合。异龙表现不佳，因为它们尚未获得收集生物质带来的生命汲取，生存能力很弱。</p>
     <p>提升精通等级期间，将技能组 3 的点数平均分配。</p>
@@ -377,7 +377,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                 <td>7</td>
             </tr>
             <tr>
-                <th>建议</th><td>飞升前低等级升级时，这项威望很有用，因为终极进化体在 10 级解锁共生体前并不强。但进入精通等级后，它会剥夺阿巴瑟极其强势的前期能力与机动性，应尽量避免使用。面对黑死病这类会严重克制终极进化体的<a href="/resources/mutators">突变因子</a>时，这项威望表现不错。</td>
+                <th>建议</th><td>晋升前低等级升级时，这项威望很有用，因为终极进化体在 10 级解锁共生体前并不强。但进入精通等级后，它会剥夺阿巴瑟极其强势的前期能力与机动性，应尽量避免使用。面对黑死病这类会严重克制终极进化体的<a href="/resources/mutators">突变因子</a>时，这项威望表现不错。</td>
             </tr>
         </tbody>
     </table>
@@ -461,7 +461,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
         </tbody>
     </table>
-    <p>飞升前升级时，达到 7 级后精华贮藏者可让阿巴瑟回收部队掉落的全部生物质，是通用玩法的优秀选择。进入精通等级后，玩家可以根据预期玩法选择不使用威望或使用深隧惊惧，以帮助自己取得胜利。</p>
+    <p>晋升前升级时，达到 7 级后精华贮藏者可让阿巴瑟回收部队掉落的全部生物质，是通用玩法的优秀选择。进入精通等级后，玩家可以根据预期玩法选择不使用威望或使用深隧惊惧，以帮助自己取得胜利。</p>
     <h2 id="army">推荐部队组成</h2>
     <p>阿巴瑟的推荐部队组成如下。该方案假设未选择威望，并采用推荐的精通分配。这只是部队框架的基础建议。建议先了解<a href="#units">单位</a>章节中的各个单位，再根据所处局势加入科技单位。</p>
     <img class="army" src="/images/commanderdata/units/abathur/brutalisk.jpg" alt="莽兽"><img class="army" src="/images/commanderdata/units/abathur/leviathan.jpg" alt="利维坦"><img class="army" src="/images/commanderdata/units/abathur/mutalisk.jpg" alt="异龙">

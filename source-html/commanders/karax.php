@@ -61,7 +61,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         <p><a href="#levelUnlocks">等级解锁</a></p>
         <p><a href="#achievements">成就</a></p>
         <p><a href="#calldowns">面板技能</a></p>
-        <p><a href="#leveling">飞升前升级</a></p>
+        <p><a href="#leveling">晋升前升级</a></p>
         <p><a href="#masteries">精通</a></p>
         <p><a href="#prestiges">威望</a></p>
         <p><a href="#army">推荐部队组成</a></p>
@@ -334,7 +334,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </tr>
         </tbody>
     </table>
-    <h2 id="leveling">飞升前升级</h2>
+    <h2 id="leveling">晋升前升级</h2>
     <p>难度：困难</p>
     <p>凯拉克斯升级较为困难：他尚不能像常规玩法那样瞬间折跃光子炮等防御建筑，单位造价又极其昂贵。部队应以哨兵、不朽者和激励者为主。稳步推进任务，减少不必要的损失，并尽量依靠亚顿之矛技能削弱敌方基地和进攻波。</p>
     <h2 id="masteries">精通</h2>

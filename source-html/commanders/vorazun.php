@@ -28,7 +28,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         <p><a href="#levelUnlocks">等级解锁</a></p>
         <p><a href="#achievements">成就</a></p>
         <p><a href="#calldowns">面板技能</a></p>
-        <p><a href="#leveling">飞升前升级</a></p>
+        <p><a href="#leveling">晋升前升级</a></p>
         <p><a href="#masteries">精通</a></p>
         <p><a href="#prestiges">威望</a></p>
         <p><a href="#army">推荐部队配置</a></p>
@@ -360,7 +360,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             </table>
         </div>
     </div>
-    <h2 id="leveling">飞升前升级</h2>
+    <h2 id="leveling">晋升前升级</h2>
     <p>难度：中等</p>
     <p>低等级时，沃拉尊的海盗船无法隐形，黑洞也不能无视护甲，因此应以黑暗圣堂武士和追猎者作为部队核心。追猎者对空能力相当不错，尤其是在解锁闪现升级、能够迅速恢复护盾后。升级初期尚未解锁紧急召回，因此要积极使用黑洞，避免损失黑暗圣堂武士。</p>
     <p>进入精通等级后，先将点数投入技能组3的亚顿之矛能量，达到所需点数后再投入时空提速效率。</p>
