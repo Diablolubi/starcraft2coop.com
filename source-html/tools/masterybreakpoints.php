@@ -229,8 +229,9 @@ require_once __DIR__ . "/../../includes/wrapper.php";
         $(".tooltip").click(function(){
             $(".selected").addClass("unselected").removeClass("selected");
             $(this).addClass("selected").removeClass("unselected");
-            var src = $(this).attr('src').split('/');
-            var abilityName = src[src.length-1].slice(0, -4);
+            var src = $(this).attr('src');
+            var abilityMatch = src.match(/([^/]+)\.png$/);
+            var abilityName = abilityMatch ? abilityMatch[1] : '';
             if (!breakpointData) {
                 var clickedElement = this;
                 breakpointDataPromise.then(function() { $(clickedElement).trigger('click'); });
@@ -269,7 +270,9 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             $(container + " table tbody tr").each(function(){
                 var row = $(this);
                 row.find("td").slice(1).empty();
-                (unitsList[row.find("td:first-child").data("race")] || []).forEach(function(item){
+                var raceUnits = (unitsList[row.find("td:first-child").data("race")] || [])
+                    .reduce(function(all, bucket) { return all.concat(bucket); }, []);
+                raceUnits.forEach(function(item){
                     var imageName = item.token + ".png";
                     var classes = "unit tooltip";
                     var calculatedDamage = effectiveDamage;

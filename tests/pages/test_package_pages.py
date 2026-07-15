@@ -22,9 +22,18 @@ class PackagePagesTests(unittest.TestCase):
         page = Path("html/tools/masterybreakpoints.html").read_text(encoding="utf-8")
         self.assertIn('fetch("../data/masterybreakpoints.json")', page)
         self.assertNotIn("calculatebreakpoints.php", page)
+        self.assertIn("reduce(function(all, bucket)", page)
         data = json.loads(Path("html/data/masterybreakpoints.json").read_text(encoding="utf-8"))
         self.assertEqual(19, len(data["abilities"]))
         self.assertGreater(len(data["units"]), 0)
+
+    def test_packaged_mastery_breakpoint_page_keeps_ability_icon_parsing(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            destination = Path(temporary) / "site"
+            package_site(Path("html"), destination, "/starcraft2coop.com")
+            page = (destination / "tools/masterybreakpoints.html").read_text(encoding="utf-8")
+            self.assertIn("match(/([^/]+)\\.png$/)", page)
+            self.assertNotIn("split('/starcraft2coop.com/')", page)
 
     def test_brutal_mutation_generator_is_static(self) -> None:
         page = Path("html/resources/brutal.html").read_text(encoding="utf-8")
