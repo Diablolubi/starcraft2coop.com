@@ -79,7 +79,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
             <ul>
                 <li>主基地建筑（星灵枢纽、指挥中心、孵化场）</li>
                 <li>瓦斯采集建筑（吸纳舱、精炼厂、萃取巢）</li>
-                <li>工人（探机、太空工程车、工蜂）</li>
+                <li>工人（探机、SCV、工蜂）</li>
                 <li>人口建筑或单位（水晶塔、补给站、王虫）</li>
                 <li>虫后</li>
             </ul>
@@ -156,7 +156,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <p class="buildOrder">
         14 精炼厂<br>
         15 精炼厂<br>
-        18 太空工程车 -> 分矿<br>
+        18 SCV -> 分矿<br>
         19 指挥中心<br>
         20 兵营<br>
         24 陆战队员 -> 气矿石 -> 主矿石
@@ -164,7 +164,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <p class="buildOrderExp">
         概念 #2<br>
         概念 #2<br>
-        让太空工程车提前就位<br>
+        让 SCV 提前就位<br>
         概念 #3<br>
         <br>
         概念 #2
@@ -351,15 +351,15 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <p><a href="/commanders/swann">斯旺</a>也是一位打破概念 #3 的指挥官。通常会认为斯旺应当先在分矿石旁建好指挥中心，再清理矿石；但有两个因素使这一策略并非最优：</p>
     <ol type="1">
         <li>斯旺拥有能快速摧毁矿石的强力炮台</li>
-        <li>斯旺可以让多台太空工程车共同建造同一建筑，从而加快施工</li>
+        <li>斯旺可以让多台 SCV 共同建造同一建筑，从而加快施工</li>
     </ol>
     <p>因此，斯旺玩家可以快速建造炮台摧毁矿石，回收炮台后再迅速建造指挥中心。在这种独特条件下，概念 #5 取而代之，具体体现在以下斯旺建造顺序中：</p>
     <p class="buildOrder">
         14 补给站<br>
-        16 重工厂（4 台太空工程车）<br>
-        18 比利炮台（4 台太空工程车）<br>
-        18 比利炮台（4 台太空工程车）<br>
-        21 指挥中心（8 台太空工程车）
+        16 重工厂（4 台 SCV）<br>
+        18 比利炮台（4 台 SCV）<br>
+        18 比利炮台（4 台 SCV）<br>
+        21 指挥中心（8 台 SCV）
     </p>
     <p class="buildOrderExp">
         防止卡人口<br>

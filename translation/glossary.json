@@ -2212,7 +2212,7 @@
     { "en": "Mastery Set", "zh-CN": "技能组", "aliases": ["Mastery Set", "Power Set"] },
     { "en": "Ascension", "zh-CN": "晋升", "aliases": ["Ascension", "飞升"] },
     { "en": "Ascension Level", "zh-CN": "晋升等级", "aliases": ["Ascension Level", "飞升等级"] },
-    { "en": "SCV", "zh-CN": "太空工程车", "aliases": ["SCV", "Space Construction Vehicle"] },
+    { "en": "SCV", "zh-CN": "SCV", "aliases": ["SCV", "Space Construction Vehicle", "太空工程车"] },
     { "en": "Solar Lance", "zh-CN": "太阳能长枪", "aliases": ["Solar Lance"] }
   ]
 }
