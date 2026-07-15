@@ -178,7 +178,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                 <td>
                     在星港科技反应堆中解锁以下升级：
                     <ul>
-                        <li>使怨灵在隐形时能够闪避 20% 的来袭伤害。</li>
+                        <li>使怨灵战机在隐形时能够闪避 20% 的来袭伤害。</li>
                         <li>解锁科学船的“防御矩阵”，为目标提供一个持续 20 秒、可吸收 200 点伤害的护盾。</li>
                     </ul>
                 </td>
@@ -923,8 +923,8 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <div class="leftImage">
         <div class="imageContainer">
             <a class="unitStatsLink" href="/units/#swann/wraith">
-                <img src="/images/commanderdata/units/swann/wraith.jpg" alt="怨灵">
-                <p>怨灵</p>
+                <img src="/images/commanderdata/units/swann/wraith.jpg" alt="怨灵战机">
+                <p>怨灵战机</p>
             </a>
         </div>
         <div class="descContainer">
@@ -970,14 +970,14 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                     <tr>
                         <td><img src="/images/commanderdata/unitupgrades/swann/pulseamplifier.png" alt="脉冲增幅器"></td>
                         <td>脉冲增幅器</td>
-                        <td>怨灵移动时，双子飞弹的伤害提高 100%，爆裂激光的伤害提高 300%。</td>
+                        <td>怨灵战机移动时，双子飞弹的伤害提高 100%，爆裂激光的伤害提高 300%。</td>
                         <td>100/100</td>
                         <td>60 秒</td>
                     </tr>
                     <tr>
                         <td><img src="/images/commanderdata/unitupgrades/swann/displacementfield.png" alt="位移力场"></td>
                         <td>位移力场</td>
-                        <td>怨灵的移动速度提高 20%，并在隐形时闪避 20% 的来袭攻击。</td>
+                        <td>怨灵战机的移动速度提高 20%，并在隐形时闪避 20% 的来袭攻击。</td>
                         <td>100/100</td>
                         <td>60 秒</td>
                     </tr>
@@ -1790,7 +1790,7 @@ require_once __DIR__ . "/../../includes/wrapper.php";
     <h3>玩法提示</h3>
     <ul>
         <li>部队中务必配备足够的科学船。它们不仅能提供侦测，还能让你使用多种实用技能。</li>
-        <li>完成升级的怨灵只有在移动时才能造成高额伤害。你需要练习走A操作，才能有效发挥它们的威力。</li>
+        <li>完成升级的怨灵战机只有在移动时才能造成高额伤害。你需要练习走A操作，才能有效发挥它们的威力。</li>
         <li>大力神运输机可以装载已进入攻城模式的攻城坦克。利用这一点将受伤的攻城坦克从前排转移到后排，避免损失。</li>
         <li>从大力神运输机中卸载的攻城坦克，炮口总会朝向运输机面朝的方向。让大力神运输机面向预定目标，可缩短坦克转动火炮并开火所需的时间。</li>
         <li>雷诺可以使用你的科技反应堆！在盟友基地用重工厂建造科技反应堆，然后升空移走重工厂，雷诺便可使用它。</li>

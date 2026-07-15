@@ -352,12 +352,12 @@ require_once __DIR__ . "/../../includes/wrapper.php";
                 <tr>
                     <td>3</td>
                     <td><img src="/images/comps/unitimages/marine.png" alt="陆战队员"><img src="/images/comps/unitimages/medic.png" alt="医疗兵"><img src="/images/comps/unitimages/firebat.png" alt="火蝠"></td>
-                    <td><img src="/images/comps/unitimages/vulture.png" alt="秃鹫"><img src="/images/comps/unitimages/goliath.png" alt="歌利亚"><img src="/images/comps/unitimages/wraith.png" alt="怨灵"></td>
+                    <td><img src="/images/comps/unitimages/vulture.png" alt="秃鹫"><img src="/images/comps/unitimages/goliath.png" alt="歌利亚"><img src="/images/comps/unitimages/wraith.png" alt="怨灵战机"></td>
                 </tr>
                 <tr>
                     <td>4</td>
                     <td><img src="/images/comps/unitimages/marine.png" alt="陆战队员"><img src="/images/comps/unitimages/medic.png" alt="医疗兵"><img src="/images/comps/unitimages/siegetank.png" alt="攻城坦克"></td>
-                    <td><img src="/images/comps/unitimages/vulture.png" alt="秃鹫"><img src="/images/comps/unitimages/goliath.png" alt="歌利亚"><img src="/images/comps/unitimages/wraith.png" alt="怨灵"><img src="/images/comps/unitimages/siegetank.png" alt="攻城坦克"></td>
+                    <td><img src="/images/comps/unitimages/vulture.png" alt="秃鹫"><img src="/images/comps/unitimages/goliath.png" alt="歌利亚"><img src="/images/comps/unitimages/wraith.png" alt="怨灵战机"><img src="/images/comps/unitimages/siegetank.png" alt="攻城坦克"></td>
                 </tr>
                 <tr>
                     <td>5</td>

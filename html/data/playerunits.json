@@ -6362,7 +6362,7 @@
     {
         "unitid": 213,
         "basename": "Wraith",
-        "name": "怨灵（对空）",
+        "name": "怨灵战机（对空）",
         "commander": "Swann",
         "race": "Terran",
         "combatunit": 1,
@@ -6392,7 +6392,7 @@
     {
         "unitid": 214,
         "basename": "Wraith",
-        "name": "怨灵（对空）",
+        "name": "怨灵战机（对空）",
         "commander": "Swann",
         "race": "Terran",
         "combatunit": 1,
@@ -6422,7 +6422,7 @@
     {
         "unitid": 215,
         "basename": "Wraith",
-        "name": "怨灵（对地）",
+        "name": "怨灵战机（对地）",
         "commander": "Swann",
         "race": "Terran",
         "combatunit": 1,

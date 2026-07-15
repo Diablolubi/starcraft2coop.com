@@ -2174,7 +2174,7 @@
     { "en": "Siege Tank", "zh-CN": "攻城坦克", "aliases": ["Siege Tank"] },
     { "en": "Medivac", "zh-CN": "医疗运输机", "aliases": ["Medivac"] },
     { "en": "Viking", "zh-CN": "维京战机", "aliases": ["Viking"] },
-    { "en": "Wraith", "zh-CN": "怨灵", "aliases": ["Wraith", "怨灵战机"] },
+    { "en": "Wraith", "zh-CN": "怨灵战机", "aliases": ["Wraith", "怨灵"] },
     { "en": "Zealot", "zh-CN": "狂热者", "aliases": ["Zealot"] },
     { "en": "Adept", "zh-CN": "使徒", "aliases": ["Adept"] },
     { "en": "Ascendant", "zh-CN": "晋升者", "aliases": ["Ascendant", "飞升者"] },

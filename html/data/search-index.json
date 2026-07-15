@@ -7537,7 +7537,7 @@
         },
         {
             "type": "playerunit",
-            "title": "怨灵",
+            "title": "怨灵战机",
             "subtitle": "Swann unit",
             "commander": "Swann",
             "path": "units/#swann/wraith",
@@ -7547,7 +7547,7 @@
                 "Terran",
                 "Armored,Mechanical",
                 "combat unit",
-                "怨灵",
+                "怨灵战机",
                 "swannunit"
             ]
         },
@@ -38072,7 +38072,7 @@
                 "i": 454,
                 "$": {
                     "0": {
-                        "v": "怨灵",
+                        "v": "怨灵战机",
                         "n": 1
                     },
                     "1": [
@@ -38097,7 +38097,7 @@
                             "n": 0.707
                         },
                         {
-                            "v": "怨灵",
+                            "v": "怨灵战机",
                             "i": 4,
                             "n": 1
                         },
